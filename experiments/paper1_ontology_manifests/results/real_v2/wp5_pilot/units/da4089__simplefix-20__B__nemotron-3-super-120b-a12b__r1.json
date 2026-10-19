@@ -1,0 +1,60 @@
+{
+ "unit_id": "da4089__simplefix-20__B__nemotron-3-super-120b-a12b__r1",
+ "task_id": "da4089__simplefix-20",
+ "repo": "da4089/simplefix",
+ "stage": "evolution",
+ "condition": "B",
+ "model": "nvidia/nemotron-3-super-120b-a12b",
+ "run": 1,
+ "order": 19,
+ "env_build_s": 20.6,
+ "real_agent_manifest_at_base": [],
+ "started": "2026-10-06T15:29:30.553660+00:00",
+ "condition_meta": {
+  "source": "build_B_direct",
+  "chars": 3846,
+  "sha256": "dd92b56f809cb01c7962be4e0427e77702199643612d8b7ef8f200c03ee10a40"
+ },
+ "condition_available": true,
+ "retries": 0,
+ "exit_status": "RepeatedFormatError",
+ "error": "",
+ "steps": 11,
+ "wall_s": 160.4,
+ "prompt_tokens": 16336,
+ "completion_tokens": 1683,
+ "format_errors": 0,
+ "length_cutoffs": 6,
+ "api_errors": {},
+ "n_queries": 11,
+ "temperature": 0.7,
+ "top_p": 0.95,
+ "model_id_returned": "nvidia/nemotron-3-super-120b-a12b",
+ "mini_version": "2.4.6",
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "resolved": false,
+  "reason": "empty_patch",
+  "outcomes": {
+   "Y0": 0,
+   "Y5": 0,
+   "Y6": 11,
+   "hit_step_limit": 0,
+   "changed_lines": 0,
+   "gold_changed_lines": 73,
+   "Y1": null,
+   "Y2": null,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": null
+  }
+ },
+ "status": "done",
+ "finished": "2026-10-06T15:32:11.027749+00:00"
+}

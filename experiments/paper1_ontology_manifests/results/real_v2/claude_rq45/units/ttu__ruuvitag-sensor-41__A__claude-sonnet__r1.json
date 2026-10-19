@@ -1,0 +1,107 @@
+{
+ "unit_id": "ttu__ruuvitag-sensor-41__A__claude-sonnet__r1",
+ "task_id": "ttu__ruuvitag-sensor-41",
+ "repo": "ttu/ruuvitag-sensor",
+ "stage": "phase_out",
+ "condition": "A",
+ "model": "claude-code/sonnet",
+ "run": 1,
+ "condition_meta": {},
+ "started": "2026-10-18T08:57:53.907250+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 5,
+ "tool_calls": 4,
+ "usage": {
+  "input_tokens": 10,
+  "cache_creation_input_tokens": 2763,
+  "cache_read_input_tokens": 84459,
+  "output_tokens": 1052,
+  "output_tokens_details": {
+   "thinking_tokens": 265
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 2763,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 10,
+   "outputTokens": 1052,
+   "cacheReadInputTokens": 84459,
+   "cacheCreationInputTokens": 2763,
+   "webSearchRequests": 0,
+   "costUSD": 0.030037900000000003,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 265,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.030037900000000003,
+ "result_text": "I changed the Data Format 3 check in `_get_data_format_3` (`ruuvitag_sensor/ruuvi.py`) so it no longer fails on data from RuuviFW 1.2.8. The 15 existing tests pass, but I didn't add a test for trimmed data and didn't try it against a real tag.\n\nThe old check required the raw data to be exactly 54 characters, so a payload with its trailing NULLs trimmed was rejected. It now accepts anything from 18 to 54 characters (still checking for the `03` format marker). It pads shorter input with zeros back to 54 before returning the data.\n\nI didn't touch the Data Format 2/4 parsing. I also didn't implement #29, which the issue mentions.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792327800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0.05,
+    "resetsAt": 1792327800
+   },
+   "seven_day": {
+    "utilization": 0.14,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 19.4,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 5,
+   "hit_step_limit": 0,
+   "changed_lines": 5,
+   "gold_changed_lines": 9,
+   "Y1": 1,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": -0.84799690655495
+  },
+  "f2p_pass": 2,
+  "f2p_total": 2,
+  "p2p_pass": 13,
+  "p2p_total": 13,
+  "f2p_all_pass": true,
+  "p2p_all_pass": true,
+  "resolved": true,
+  "reason": "resolved",
+  "test_seconds": 0.5
+ },
+ "status": "done",
+ "finished": "2026-10-18T08:58:14.654095+00:00"
+}

@@ -1,0 +1,107 @@
+{
+ "unit_id": "cpplint__cpplint-288__A__claude-sonnet__r2",
+ "task_id": "cpplint__cpplint-288",
+ "repo": "cpplint/cpplint",
+ "stage": "evolution",
+ "condition": "A",
+ "model": "claude-code/sonnet",
+ "run": 2,
+ "condition_meta": {},
+ "started": "2026-10-18T05:27:37.316547+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 5,
+ "tool_calls": 4,
+ "usage": {
+  "input_tokens": 10,
+  "cache_creation_input_tokens": 2181,
+  "cache_read_input_tokens": 89961,
+  "output_tokens": 985,
+  "output_tokens_details": {
+   "thinking_tokens": 141
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 2181,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 10,
+   "outputTokens": 985,
+   "cacheReadInputTokens": 89961,
+   "cacheCreationInputTokens": 2181,
+   "webSearchRequests": 0,
+   "costUSD": 0.0275901,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 141,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.0275901,
+ "result_text": "cpplint no longer warns about the `;` after a C++20 concept's `requires` block. I ran it on a small file with your example and it stayed quiet. The change is in `cpplint.py`.\n\n- **Fixed cases:** the `requires(T t) {` form from your issue, and the parameterless `requires {` form.\n- **Still caught:** a stray `;` after a normal function body. In my test file, `int f() { return 1; };` still got the warning.\n\nI didn't run the existing test suite or add a test for the new cases.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792309800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0.11,
+    "resetsAt": 1792309800
+   },
+   "seven_day": {
+    "utilization": 0.12,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 38.1,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 5,
+   "hit_step_limit": 0,
+   "changed_lines": 3,
+   "gold_changed_lines": 3,
+   "Y1": 3,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": 0.0
+  },
+  "f2p_pass": 1,
+  "f2p_total": 1,
+  "p2p_pass": 202,
+  "p2p_total": 202,
+  "f2p_all_pass": true,
+  "p2p_all_pass": true,
+  "resolved": true,
+  "reason": "resolved",
+  "test_seconds": 6.9
+ },
+ "status": "done",
+ "finished": "2026-10-18T05:28:24.148432+00:00"
+}

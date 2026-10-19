@@ -1,0 +1,21 @@
+{
+ "repo": "vincent-uden/miro",
+ "chunk": 0,
+ "n_chunks": 1,
+ "model": "google/diffusiongemma-26b-a4b-it",
+ "prompt_sha256": "d0e02ff613417050168d859f2af6230c3712c6758bb5d9c40d60ff55e5ae87ca",
+ "user_sha256": "78901801599f1590b06ff6a2b7ec9c8d86655408229f1ea6b7c16b97cbefab60",
+ "text": "```json\n{\n  \"claims\": [\n    {\n      \"type\": \"command\",\n      \"subject\": \"build\",\n      \"runner\": \"cargo\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"command\",\n      \"subject\": \"run\",\n      \"runner\": \"cargo\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"command\",\n      \"subject\": \"test\",\n      \"runner\": \"cargo\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"command\",\n      \"subject\": \"test <test_name>\",\n      \"runner\": \"cargo\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"command\",\n      \"subject\": \"check\",\n      \"runner\": \"cargo\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"dependency\",\n      \"subject\": \"anyhow\",\n      \"ecosystem_hint\": \"cargo\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"dependency\",\n      \"subject\": \"tokio\",\n      \"ecosystem_hint\": \"cargo\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"dependency\",\n      \"subject\": \"tracing\",\n      \"ecosystem_hint\": \"cargo\",\n      \"mode\": \"asserts_existing\"\n    }\n  ]\n}\n```",
+ "parse_ok": true,
+ "parse_error": null,
+ "parse_retries": 0,
+ "latency_s": 1.893668749020435,
+ "usage": {
+  "prompt": 2581,
+  "completion": 361
+ },
+ "n_api_calls": 1,
+ "finish_reason": "stop",
+ "error": null,
+ "discarded_attempt_texts": []
+}

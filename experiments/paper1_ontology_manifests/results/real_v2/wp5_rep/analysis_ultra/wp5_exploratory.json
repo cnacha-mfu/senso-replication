@@ -1,0 +1,183 @@
+{
+ "D_vs_A": {
+  "ci": [
+   -0.1533211509126252,
+   0.39175504602399747
+  ],
+  "df": 60,
+  "est": 0.11921694755568615,
+  "p": 0.3850660126892351,
+  "ratio": 1.1266143079978406,
+  "ratio_ci": [
+   0.8578541769161988,
+   1.4795752391719637
+  ],
+  "se": 0.13624876029404004,
+  "stat": 0.8749947324174009
+ },
+ "config_sha256": "e8fc3a48605a1672af84660df9b3dd4068da976612e2d15ad961d280d1314fa0",
+ "four_level_stage_interaction": {
+  "df_num": 3,
+  "p": 0.6819385880271789,
+  "stat": 0.5025908204026311
+ },
+ "inferred_stage_replaces_declared": {
+  "reason": "only if RQ1 verdict is GO and inferred stage is available",
+  "status": "not run"
+ },
+ "label": "exploratory; no multiplicity claims",
+ "outcome_by_inferred_stage_within_declared": [],
+ "rates_by_model_stage_condition": [
+  {
+   "condition": "A",
+   "count": 32,
+   "mean": 0.25,
+   "model": "nvidia/nemotron-3-ultra-550b-a55b",
+   "stage": "EVO"
+  },
+  {
+   "condition": "C",
+   "count": 32,
+   "mean": 0.1875,
+   "model": "nvidia/nemotron-3-ultra-550b-a55b",
+   "stage": "EVO"
+  },
+  {
+   "condition": "D",
+   "count": 32,
+   "mean": 0.15625,
+   "model": "nvidia/nemotron-3-ultra-550b-a55b",
+   "stage": "EVO"
+  },
+  {
+   "condition": "A",
+   "count": 32,
+   "mean": 0.21875,
+   "model": "nvidia/nemotron-3-ultra-550b-a55b",
+   "stage": "ID"
+  },
+  {
+   "condition": "C",
+   "count": 32,
+   "mean": 0.21875,
+   "model": "nvidia/nemotron-3-ultra-550b-a55b",
+   "stage": "ID"
+  },
+  {
+   "condition": "D",
+   "count": 32,
+   "mean": 0.34375,
+   "model": "nvidia/nemotron-3-ultra-550b-a55b",
+   "stage": "ID"
+  },
+  {
+   "condition": "A",
+   "count": 62,
+   "mean": 0.2903225806451613,
+   "model": "nvidia/nemotron-3-ultra-550b-a55b",
+   "stage": "PO"
+  },
+  {
+   "condition": "C",
+   "count": 62,
+   "mean": 0.3064516129032258,
+   "model": "nvidia/nemotron-3-ultra-550b-a55b",
+   "stage": "PO"
+  },
+  {
+   "condition": "D",
+   "count": 62,
+   "mean": 0.3064516129032258,
+   "model": "nvidia/nemotron-3-ultra-550b-a55b",
+   "stage": "PO"
+  },
+  {
+   "condition": "A",
+   "count": 34,
+   "mean": 0.4117647058823529,
+   "model": "nvidia/nemotron-3-ultra-550b-a55b",
+   "stage": "SERV"
+  },
+  {
+   "condition": "C",
+   "count": 34,
+   "mean": 0.38235294117647056,
+   "model": "nvidia/nemotron-3-ultra-550b-a55b",
+   "stage": "SERV"
+  },
+  {
+   "condition": "D",
+   "count": 34,
+   "mean": 0.47058823529411764,
+   "model": "nvidia/nemotron-3-ultra-550b-a55b",
+   "stage": "SERV"
+  }
+ ],
+ "seed": 20261006,
+ "step_efficiency_curves": {
+  "curves": {
+   "A": {
+    "10": 0.0,
+    "15": 0.0,
+    "20": 0.01875,
+    "25": 0.04375,
+    "30": 0.075,
+    "35": 0.1125,
+    "40": 0.29375,
+    "5": 0.0
+   },
+   "C": {
+    "10": 0.0,
+    "15": 0.0,
+    "20": 0.0125,
+    "25": 0.01875,
+    "30": 0.0875,
+    "35": 0.1,
+    "40": 0.28125,
+    "5": 0.0
+   },
+   "D": {
+    "10": 0.0,
+    "15": 0.0,
+    "20": 0.01875,
+    "25": 0.06875,
+    "30": 0.1,
+    "35": 0.13125,
+    "40": 0.31875,
+    "5": 0.0
+   }
+  },
+  "definition": "share of runs resolved within <= s steps"
+ },
+ "synthetic": false,
+ "uptake_by_condition_model": [
+  {
+   "condition": "A",
+   "model": "nvidia/nemotron-3-ultra-550b-a55b",
+   "uptake_d1_name": 0.0,
+   "uptake_label_term": 0.0,
+   "uptake_repo_context": 0.0
+  },
+  {
+   "condition": "B",
+   "model": "nvidia/nemotron-3-ultra-550b-a55b",
+   "uptake_d1_name": 0.0,
+   "uptake_label_term": 0.0,
+   "uptake_repo_context": 0.0
+  },
+  {
+   "condition": "C",
+   "model": "nvidia/nemotron-3-ultra-550b-a55b",
+   "uptake_d1_name": 0.0,
+   "uptake_label_term": 0.0875,
+   "uptake_repo_context": 0.03125
+  },
+  {
+   "condition": "D",
+   "model": "nvidia/nemotron-3-ultra-550b-a55b",
+   "uptake_d1_name": 0.0,
+   "uptake_label_term": 0.0,
+   "uptake_repo_context": 0.01875
+  }
+ ]
+}

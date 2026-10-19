@@ -1,0 +1,318 @@
+{
+ "task_id": "zopefoundation__transaction-24",
+ "repo": "zopefoundation/transaction",
+ "stage": "servicing",
+ "rounds": 1,
+ "rejects": {},
+ "flags": [
+  "length_violation_F_R",
+  "length_violation_F_I"
+ ],
+ "info": {
+  "slots": {
+   "test_root": "transaction/tests",
+   "P1": {
+    "replaced": null,
+    "name": "core",
+    "F_R": "docs/core",
+    "F_I": "docs/_static/core"
+   },
+   "P2": {
+    "replaced": null,
+    "F_R": "transaction/tests/test_attempt.py",
+    "F_I": "ez_setup.py"
+   },
+   "C": {
+    "F_R": "make test",
+    "F_I": "make install"
+   },
+   "D": {
+    "replaced": null,
+    "F_R": "boltons",
+    "F_I": "boltons"
+   }
+  },
+  "why": {
+   "test_command": [
+    {
+     "root": "transaction/tests",
+     "T3": "SupportedClaim",
+     "T1": "SupportedClaim",
+     "collect_ok": true
+    }
+   ],
+   "kind1": {
+    "p1_idx": null,
+    "gold0": "docs",
+    "unrelated": null,
+    "base_R": "docs",
+    "base_I": "docs/_static"
+   },
+   "kind2": {
+    "p2_idx": null,
+    "n_deleted_py": 27,
+    "found": {
+     "F_R": "transaction/tests/test_attempt.py",
+     "F_I": "ez_setup.py"
+    }
+   },
+   "kind3": {
+    "run": "test",
+    "install": "install",
+    "test_ok": true,
+    "install_ok": true
+   },
+   "kind4": {
+    "deps": [
+     [
+      "zope-interface",
+      true
+     ]
+    ],
+    "d_idx": null,
+    "src_R": "zope-interface",
+    "src_I": "zope-interface",
+    "n_decls": 1,
+    "n_dist": 13
+   }
+  },
+  "length": {
+   "T": 270,
+   "F_R": 310,
+   "F_I": 317
+  },
+  "fallbacks": {
+   "F_R": [],
+   "F_I": []
+  },
+  "modes": {
+   "F_R": {
+    "1": "add",
+    "2": "add",
+    "3": "replace",
+    "4": "add"
+   },
+   "F_I": {
+    "1": "add",
+    "2": "add",
+    "3": "replace",
+    "4": "add"
+   }
+  },
+  "length_diff": {
+   "F_R": 40,
+   "F_I": 47
+  },
+  "n_claims_T": 8,
+  "n_false": {
+   "F_R": 4,
+   "F_I": 4
+  },
+  "pointer_in_issue": true,
+  "gold_dirs": [
+   "docs",
+   "transaction"
+  ],
+  "gold_files": [
+   "CHANGES.rst",
+   "buildout.cfg",
+   "docs/convenience.rst",
+   "transaction/_manager.py"
+  ]
+ },
+ "tokens": {
+  "F_R": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "docs/core",
+     "core"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "transaction/tests/test_attempt.py",
+     "test_attempt.py"
+    ]
+   },
+   {
+    "kind": 3,
+    "type": "regex",
+    "regex": "\\bmake\\b[^|;&\\n]*\\btest\\b",
+    "target": "test"
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "boltons"
+    ]
+   }
+  ],
+  "F_I": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "docs/_static/core",
+     "core"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "ez_setup.py",
+     "ez_setup.py"
+    ]
+   },
+   {
+    "kind": 3,
+    "type": "regex",
+    "regex": "\\bmake\\b[^|;&\\n]*\\binstall\\b",
+    "target": "install"
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "boltons"
+    ]
+   }
+  ]
+ },
+ "unresolved_pre_hermit": [],
+ "sha256": {
+  "T": "79bc441d853882135d7361a55442beb6a25347cf42ffa195a4ee33d8bf5db5fe",
+  "F_R": "d91cdd744d974ccba0a9a722fcae07281e94d2c5b913c529ee87f04e551713c2",
+  "F_I": "8a1b29b04b4cb1e4a796928eaa3a9ca48b9dc9b865dec7bf00c666b0bcd17032"
+ },
+ "chars": {
+  "T": 270,
+  "F_R": 310,
+  "F_I": 317
+ },
+ "claims": {
+  "T": [
+   "T1|docs",
+   "T1|transaction",
+   "T1|transaction/tests",
+   "T1|transaction/_transaction.py",
+   "T3|test_framework|pytest",
+   "T1|transaction/tests",
+   "T1|setup.py",
+   "T4|zope-interface|"
+  ],
+  "F_R": [
+   "T1|docs",
+   "T1|transaction",
+   "T1|transaction/tests",
+   "T1|docs/core",
+   "T1|transaction/_transaction.py",
+   "T1|transaction/tests/test_attempt.py",
+   "T5|make|test",
+   "T1|setup.py",
+   "T4|zope-interface|",
+   "T4|boltons|"
+  ],
+  "F_I": [
+   "T1|docs",
+   "T1|transaction",
+   "T1|transaction/tests",
+   "T1|docs/_static/core",
+   "T1|transaction/_transaction.py",
+   "T1|ez_setup.py",
+   "T3|test_framework|pytest",
+   "T1|transaction/tests",
+   "T5|make|install",
+   "T4|zope-interface|",
+   "T4|boltons|"
+  ]
+ },
+ "python_spec": null,
+ "token_audit": [
+  {
+   "cond": "F_R",
+   "kind": 1,
+   "type": "path",
+   "name": "docs/core",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 2,
+   "type": "path",
+   "name": "transaction/tests/test_attempt.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 3,
+   "type": "regex",
+   "name": "make test",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 4,
+   "type": "word",
+   "name": "boltons",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 1,
+   "type": "path",
+   "name": "docs/_static/core",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 2,
+   "type": "path",
+   "name": "ez_setup.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 3,
+   "type": "regex",
+   "name": "make install",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 4,
+   "type": "word",
+   "name": "boltons",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  }
+ ],
+ "dist_imports_used": {
+  "zope-interface": [
+   "zope"
+  ],
+  "boltons": null
+ }
+}

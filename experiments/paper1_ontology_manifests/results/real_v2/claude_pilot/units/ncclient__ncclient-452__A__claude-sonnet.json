@@ -1,0 +1,89 @@
+{
+ "unit_id": "ncclient__ncclient-452__A__claude-sonnet",
+ "task_id": "ncclient__ncclient-452",
+ "repo": "ncclient/ncclient",
+ "stage": "evolution",
+ "condition": "A",
+ "model": "claude-code/sonnet",
+ "run": 1,
+ "condition_meta": {},
+ "started": "2026-10-18T01:06:50.337134+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 3,
+ "tool_calls": 2,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 6615,
+  "cache_read_input_tokens": 43199,
+  "output_tokens": 640,
+  "output_tokens_details": {
+   "thinking_tokens": 0
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 6615,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 640,
+   "cacheReadInputTokens": 43199,
+   "cacheCreationInputTokens": 6615,
+   "webSearchRequests": 0,
+   "costUSD": 0.0371919,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.0371919,
+ "result_text": "`{*}data` needs lxml \u22653, which is fine. `qualify(\"data\")` defaults to the NETCONF base namespace.\n\nI changed `GetSchemaReply._parsing_hook` in `ncclient/operations/retrieve.py` so `get_schema` no longer crashes when the reply's `<data>` element isn't in the `ietf-netconf-monitoring` namespace, as in the Junos reply. I haven't run it or any tests, and I didn't check it against the Junos reply from your gist.\n\nIt now looks for `<data>` in three places, in order:\n- the `ietf-netconf-monitoring` namespace, as before;\n- the NETCONF base namespace;\n- any namespace.\n\nIf none of them matches, the schema text is `None` instead of raising `'NoneType' object has no attribute 'text'`.",
+ "wall_s": 18.3,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 3,
+   "hit_step_limit": 0,
+   "changed_lines": 8,
+   "gold_changed_lines": 95,
+   "Y1": 3,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": -3.569855608330948
+  },
+  "f2p_pass": 0,
+  "f2p_total": 2,
+  "p2p_pass": 11,
+  "p2p_total": 11,
+  "f2p_all_pass": false,
+  "p2p_all_pass": true,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 1.5
+ },
+ "status": "done",
+ "finished": "2026-10-18T01:07:11.283544+00:00"
+}

@@ -1,0 +1,107 @@
+{
+ "unit_id": "uilibs__uiprotect-275__A__claude-sonnet__r2",
+ "task_id": "uilibs__uiprotect-275",
+ "repo": "uilibs/uiprotect",
+ "stage": "phase_out",
+ "condition": "A",
+ "model": "claude-code/sonnet",
+ "run": 2,
+ "condition_meta": {},
+ "started": "2026-10-18T09:05:28.939169+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 7,
+ "tool_calls": 6,
+ "usage": {
+  "input_tokens": 14,
+  "cache_creation_input_tokens": 17157,
+  "cache_read_input_tokens": 132440,
+  "output_tokens": 2329,
+  "output_tokens_details": {
+   "thinking_tokens": 399
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 17157,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 14,
+   "outputTokens": 2329,
+   "cacheReadInputTokens": 132440,
+   "cacheCreationInputTokens": 17157,
+   "webSearchRequests": 0,
+   "costUSD": 0.10518999999999999,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 399,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.10518999999999999,
+ "result_text": "I added NFC card scan support to the library. I haven't run the tests or tried it against a real NVR or a captured NFC event.\n\n- **New event type:** `EventType.NFC_CARD_SCANNED` (`\"nfcCardScanned\"`) in `types.py`. I also added it to the device events list, so it is treated like a ring or motion event.\n- **Camera attributes:** `Camera` now has `last_nfc_card_scanned` and `last_nfc_card_scanned_event_id`, plus a `last_nfc_card_scanned_event` property. A scan updates them the same way a ring updates `last_ring`.\n- **Event metadata:** a new `NFCMetadata` class (`nfc_id`, optional `user_id`), available as `EventMetadata.nfc`. This is how Home Assistant can tell which card was scanned.\n\nThe names `nfcCardScanned`, `nfc`, `nfc_id` and `user_id` are my best guess at what UniFi Protect sends. I haven't checked them against a real payload. If the real event type or metadata keys differ, those four names are what to adjust.\n\nI didn't add a feature flag for NFC-capable cameras, and I didn't touch the tests.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792327800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0.06,
+    "resetsAt": 1792327800
+   },
+   "seven_day": {
+    "utilization": 0.14,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 33.3,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 4,
+   "Y6": 7,
+   "hit_step_limit": 0,
+   "changed_lines": 23,
+   "gold_changed_lines": 70,
+   "Y1": 2,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": -1.6057210608879535
+  },
+  "f2p_pass": 1,
+  "f2p_total": 9,
+  "p2p_pass": 51,
+  "p2p_total": 51,
+  "f2p_all_pass": false,
+  "p2p_all_pass": true,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 15.4
+ },
+ "status": "done",
+ "finished": "2026-10-18T09:06:19.834480+00:00"
+}

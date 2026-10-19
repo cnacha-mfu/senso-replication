@@ -1,0 +1,111 @@
+{
+ "unit_id": "VirtusLab__git-machete-463__C__claude-sonnet__r2",
+ "task_id": "VirtusLab__git-machete-463",
+ "repo": "VirtusLab/git-machete",
+ "stage": "phase_out",
+ "condition": "C",
+ "model": "claude-code/sonnet",
+ "run": 2,
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 3950,
+  "sha256": "8d30d0ef9ab1a64dd4344d2b6ffbaac0474f3241a21a6496a685b74661ca5135"
+ },
+ "started": "2026-10-18T04:08:40.750606+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 4,
+ "tool_calls": 3,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 2478,
+  "cache_read_input_tokens": 76746,
+  "output_tokens": 1127,
+  "output_tokens_details": {
+   "thinking_tokens": 90
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 2478,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 8,
+   "outputTokens": 1127,
+   "cacheReadInputTokens": 76746,
+   "cacheCreationInputTokens": 2478,
+   "webSearchRequests": 0,
+   "costUSD": 0.0288726,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 90,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.0288726,
+ "result_text": "`checkout_github_prs()` no longer fails when no PRs match. It now prints a warning and returns without fetching or checking out anything. I haven't run any tests or tried it against GitHub.\n\nThe change is in `git_machete/client.py`. `__get_valid_pull_requests` used to raise a `MacheteException` in each of these cases. It now warns instead:\n- no PRs are open in the repository (when asking for all of them)\n- the current user has no open PRs\n- the `--by` user has no open PRs\n- none of the explicitly given PR numbers exist\n\nThe last case is a change you didn't spell out: a single missing PR number used to raise an error, and now it only warns. Say so if you'd rather keep the error for explicit numbers.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792309800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0.06,
+    "resetsAt": 1792309800
+   },
+   "seven_day": {
+    "utilization": 0.12,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 23.2,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 4,
+   "hit_step_limit": 0,
+   "changed_lines": 17,
+   "gold_changed_lines": 15,
+   "Y1": -1,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": 0.18057224564182084
+  },
+  "f2p_pass": 0,
+  "f2p_total": 1,
+  "p2p_pass": 45,
+  "p2p_total": 45,
+  "f2p_all_pass": false,
+  "p2p_all_pass": true,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 64.1
+ },
+ "status": "done",
+ "finished": "2026-10-18T04:10:09.150415+00:00"
+}

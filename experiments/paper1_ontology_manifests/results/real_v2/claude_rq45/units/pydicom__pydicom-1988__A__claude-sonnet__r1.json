@@ -1,0 +1,107 @@
+{
+ "unit_id": "pydicom__pydicom-1988__A__claude-sonnet__r1",
+ "task_id": "pydicom__pydicom-1988",
+ "repo": "pydicom/pydicom",
+ "stage": "evolution",
+ "condition": "A",
+ "model": "claude-code/sonnet",
+ "run": 1,
+ "condition_meta": {},
+ "started": "2026-10-18T08:11:00.701096+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 4,
+ "tool_calls": 3,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 7744,
+  "cache_read_input_tokens": 60948,
+  "output_tokens": 1189,
+  "output_tokens_details": {
+   "thinking_tokens": 174
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 7744,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 8,
+   "outputTokens": 1189,
+   "cacheReadInputTokens": 60948,
+   "cacheCreationInputTokens": 7744,
+   "webSearchRequests": 0,
+   "costUSD": 0.048976799999999994,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 174,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.048976799999999994,
+ "result_text": "I fixed the `test_add_dataset` flakiness in `generate_uid()` in `src/pydicom/uid.py`. I haven't run any tests, so the fix is unverified.\n\n**Cause:** with a prefix, the random suffix was drawn from `[0, 10**n)`. When it came out with fewer than `n` digits, the UID was shorter than 64 characters. That changed the encoded length of the preceding dataset, which is the 398 vs 396 mismatch in the issue.\n\n**Change:** the suffix is now drawn from `[10**(n-1), 10**n)`, so it always has exactly `n` digits and the UID is always 64 characters. The range also keeps the suffix free of leading zeros, which a UID component can't have. The `[:64]` slice is gone because it's no longer needed.\n\nThe case with `entropy_srcs` still hashes as before. Its suffix is a SHA-512 value of about 154 digits and is cut at 64 characters, so it was already effectively fixed-length.\n\nI didn't look into the `tests/test_encoders.py::TestDatasetCompress::test_round_trip` failure. The issue only guesses it's a memory re-use problem, and nothing in this change touches it.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792327800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0.01,
+    "resetsAt": 1792327800
+   },
+   "seven_day": {
+    "utilization": 0.13,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 27.7,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 4,
+   "hit_step_limit": 0,
+   "changed_lines": 9,
+   "gold_changed_lines": 42,
+   "Y1": 0,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": -2.222392421336448
+  },
+  "f2p_pass": 0,
+  "f2p_total": 1,
+  "p2p_pass": 185,
+  "p2p_total": 185,
+  "f2p_all_pass": false,
+  "p2p_all_pass": true,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 3.6
+ },
+ "status": "done",
+ "finished": "2026-10-18T08:11:33.482948+00:00"
+}

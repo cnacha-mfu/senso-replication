@@ -1,0 +1,448 @@
+{
+ "repo": "yf-yang/v0-copilot",
+ "slug": "yf-yang__v0-copilot",
+ "S": "b55a59a805d495c862f3deafdc14721c1015c47a",
+ "manifest_path": ".github/copilot-instructions.md",
+ "input_sha": "f3a45929866342a6ba215fdfe3f8dd0ed1bfa28016aae819a8b7202ed3a705be",
+ "n_claims": 15,
+ "n_tree_files": 124,
+ "n_dep_manifests_parsed": null,
+ "seconds": 0.1,
+ "claims": [
+  {
+   "key_str": "T1|docs",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "docs",
+   "quote": "refer to the usage documentation in the `docs/` folder without omitting any code.",
+   "line": 22,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "docs",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 51,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|src/Component.stories.tsx",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "src/Component.stories.tsx",
+   "quote": "Generate the JSX code in `src/Component.tsx` and add storybook visualizations for all the possible variants at your best in `src/Component.stories.tsx`.",
+   "line": 6,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "src/Component.stories.tsx",
+    "is_dir": false,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 1,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|src/Component.tsx",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "src/Component.tsx",
+   "quote": "Generate the JSX code in `src/Component.tsx` and add storybook visualizations for all the possible variants at your best in `src/Component.stories.tsx`.",
+   "line": 6,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "src/Component.tsx",
+    "is_dir": false,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 1,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|tailwind.config.js",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "tailwind.config.js",
+   "quote": "`tailwind.config.js` provides custom colors and animations. Try to provide a good user experience by using them in your generated code.",
+   "line": 28,
+   "votes": 2,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "attrs": {
+    "path": "tailwind.config.js",
+    "is_dir": false,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 1,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T7|@/components/ui/carousel|",
+   "tcode": "T7",
+   "types": [
+    "ImportConstraintClaim"
+   ],
+   "headline": false,
+   "subject": "@/components/ui/carousel",
+   "quote": "import {\n   Carousel,\n   CarouselContent,\n   CarouselItem,\n   CarouselNext,\n   CarouselPrevious,\n } from \"@/components/ui/carousel\";",
+   "line": 609,
+   "votes": 1,
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "attrs": {
+    "target": "@/components/ui/carousel",
+    "scope": null
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "importFilesScanned": 62,
+     "forbiddenImportEdgeCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T7|@/components/ui/drawer|",
+   "tcode": "T7",
+   "types": [
+    "ImportConstraintClaim"
+   ],
+   "headline": false,
+   "subject": "@/components/ui/drawer",
+   "quote": "import {\n   Drawer,\n   DrawerClose,\n   DrawerContent,\n   DrawerDescription,\n   DrawerHeader,\n   DrawerTitle,\n   DrawerTrigger,\n   DrawerFooter,\n } from \"@/components/ui/drawer\";",
+   "line": 609,
+   "votes": 1,
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "attrs": {
+    "target": "@/components/ui/drawer",
+    "scope": null
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "importFilesScanned": 62,
+     "forbiddenImportEdgeCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T7|@/components/ui/pagination|",
+   "tcode": "T7",
+   "types": [
+    "ImportConstraintClaim"
+   ],
+   "headline": false,
+   "subject": "@/components/ui/pagination",
+   "quote": "import {\n   Pagination,\n   PaginationContent,\n   PaginationEllipsis,\n   PaginationItem,\n   PaginationLink,\n   PaginationNext,\n   PaginationPrevious,\n } from \"@/components/ui/pagination\";",
+   "line": 609,
+   "votes": 1,
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "attrs": {
+    "target": "@/components/ui/pagination",
+    "scope": null
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "importFilesScanned": 62,
+     "forbiddenImportEdgeCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T7|@/components/ui/resizable|",
+   "tcode": "T7",
+   "types": [
+    "ImportConstraintClaim"
+   ],
+   "headline": false,
+   "subject": "@/components/ui/resizable",
+   "quote": "import {\n   ResizableHandle,\n   ResizablePanel,\n   ResizablePanelGroup,\n } from \"@/components/ui/resizable\";",
+   "line": 609,
+   "votes": 1,
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "attrs": {
+    "target": "@/components/ui/resizable",
+    "scope": null
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "importFilesScanned": 62,
+     "forbiddenImportEdgeCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T7|@/components/ui/toggle|",
+   "tcode": "T7",
+   "types": [
+    "ImportConstraintClaim"
+   ],
+   "headline": false,
+   "subject": "@/components/ui/toggle",
+   "quote": "import { Toggle } from \"@/components/ui/toggle\";",
+   "line": 609,
+   "votes": 1,
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "attrs": {
+    "target": "@/components/ui/toggle",
+    "scope": null
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "importFilesScanned": 62,
+     "forbiddenImportEdgeCount": 1
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T7|@/components/ui/tooltip|",
+   "tcode": "T7",
+   "types": [
+    "ImportConstraintClaim"
+   ],
+   "headline": false,
+   "subject": "@/components/ui/tooltip",
+   "quote": "import {\n   TooltipProvider,\n   Tooltip,\n   TooltipContent,\n   TooltipTrigger,\n } from \"@/components/ui/tooltip\";",
+   "line": 609,
+   "votes": 1,
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "attrs": {
+    "target": "@/components/ui/tooltip",
+    "scope": null
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "importFilesScanned": 62,
+     "forbiddenImportEdgeCount": 1
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T7|@nivo/bar|",
+   "tcode": "T7",
+   "types": [
+    "ImportConstraintClaim"
+   ],
+   "headline": false,
+   "subject": "@nivo/bar",
+   "quote": "import { ResponsiveBar } from \"@nivo/bar\";",
+   "line": 744,
+   "votes": 1,
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "attrs": {
+    "target": "@nivo/bar",
+    "scope": null
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "importFilesScanned": 62,
+     "forbiddenImportEdgeCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T7|@nivo/heatmap|",
+   "tcode": "T7",
+   "types": [
+    "ImportConstraintClaim"
+   ],
+   "headline": false,
+   "subject": "@nivo/heatmap",
+   "quote": "import { ResponsiveHeatMap } from \"@nivo/heatmap\";",
+   "line": 820,
+   "votes": 1,
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "attrs": {
+    "target": "@nivo/heatmap",
+    "scope": null
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "importFilesScanned": 62,
+     "forbiddenImportEdgeCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T7|@nivo/line|",
+   "tcode": "T7",
+   "types": [
+    "ImportConstraintClaim"
+   ],
+   "headline": false,
+   "subject": "@nivo/line",
+   "quote": "import { ResponsiveLine } from \"@nivo/line\";",
+   "line": 856,
+   "votes": 1,
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "attrs": {
+    "target": "@nivo/line",
+    "scope": null
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "importFilesScanned": 62,
+     "forbiddenImportEdgeCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T7|@nivo/scatterplot|",
+   "tcode": "T7",
+   "types": [
+    "ImportConstraintClaim"
+   ],
+   "headline": false,
+   "subject": "@nivo/scatterplot",
+   "quote": "import { ResponsiveScatterPlot } from \"@nivo/scatterplot\";",
+   "line": 780,
+   "votes": 1,
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "attrs": {
+    "target": "@nivo/scatterplot",
+    "scope": null
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "importFilesScanned": 62,
+     "forbiddenImportEdgeCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T7|lucide-react|",
+   "tcode": "T7",
+   "types": [
+    "ImportConstraintClaim"
+   ],
+   "headline": false,
+   "subject": "lucide-react",
+   "quote": "import { Home, User, Settings } from \"lucide-react\";",
+   "line": 732,
+   "votes": 1,
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "attrs": {
+    "target": "lucide-react",
+    "scope": null
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "importFilesScanned": 62,
+     "forbiddenImportEdgeCount": 19
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  }
+ ]
+}

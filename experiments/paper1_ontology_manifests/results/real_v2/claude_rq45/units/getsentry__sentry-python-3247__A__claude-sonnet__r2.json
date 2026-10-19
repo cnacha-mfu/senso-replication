@@ -1,0 +1,107 @@
+{
+ "unit_id": "getsentry__sentry-python-3247__A__claude-sonnet__r2",
+ "task_id": "getsentry__sentry-python-3247",
+ "repo": "getsentry/sentry-python",
+ "stage": "servicing",
+ "condition": "A",
+ "model": "claude-code/sonnet",
+ "run": 2,
+ "condition_meta": {},
+ "started": "2026-10-18T05:45:11.751359+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 4,
+ "tool_calls": 3,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 7371,
+  "cache_read_input_tokens": 60490,
+  "output_tokens": 844,
+  "output_tokens_details": {
+   "thinking_tokens": 91
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 7371,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 8,
+   "outputTokens": 844,
+   "cacheReadInputTokens": 60490,
+   "cacheCreationInputTokens": 7371,
+   "webSearchRequests": 0,
+   "costUSD": 0.043989,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 91,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.043989,
+ "result_text": "`HttpTransport` in `sentry_sdk/transport.py` no longer uses `Hub`. I checked only that the module still imports; I didn't run the test suite.\n\n- **Removed:** the `from sentry_sdk import Hub` import and the `self.hub_cls = Hub` assignment in `__init__`.\n- **Simplified:** `capture_envelope` no longer grabs the current hub or runs `send_envelope_wrapper` inside `with hub:`. It now just runs the send and the client-report flush under `capture_internal_exceptions()`.\n\n`hub_cls` wasn't referenced anywhere else in the non-test code.\n\nThe envelope now gets sent on the worker thread without that thread entering the caller's hub. I judged this fine because the send only uses the transport's own state, but I didn't test it.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792309800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0.12,
+    "resetsAt": 1792309800
+   },
+   "seven_day": {
+    "utilization": 0.13,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 24.7,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 4,
+   "hit_step_limit": 0,
+   "changed_lines": 13,
+   "gold_changed_lines": 40,
+   "Y1": 0,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": -1.6214883767462702
+  },
+  "f2p_pass": 0,
+  "f2p_total": 1,
+  "p2p_pass": 44,
+  "p2p_total": 44,
+  "f2p_all_pass": false,
+  "p2p_all_pass": true,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 47.2
+ },
+ "status": "done",
+ "finished": "2026-10-18T05:46:26.132600+00:00"
+}

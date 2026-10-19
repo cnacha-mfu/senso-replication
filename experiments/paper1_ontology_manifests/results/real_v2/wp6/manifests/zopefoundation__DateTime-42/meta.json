@@ -1,0 +1,321 @@
+{
+ "task_id": "zopefoundation__DateTime-42",
+ "repo": "zopefoundation/DateTime",
+ "stage": "servicing",
+ "rounds": 1,
+ "rejects": {},
+ "flags": [
+  "length_violation_F_R",
+  "length_violation_F_I"
+ ],
+ "info": {
+  "slots": {
+   "test_root": "src/DateTime/tests",
+   "P1": {
+    "replaced": null,
+    "name": "core",
+    "F_R": "src/DateTime/core",
+    "F_I": "core"
+   },
+   "P2": {
+    "replaced": null,
+    "F_R": "src/DateTime/tests/testDateTime.py",
+    "F_I": "bootstrap.py"
+   },
+   "C": {
+    "F_R": "make test",
+    "F_I": "make install"
+   },
+   "D": {
+    "replaced": "pytz",
+    "F_R": "boltons",
+    "F_I": "tzlocal"
+   }
+  },
+  "why": {
+   "test_command": [
+    {
+     "root": "src/DateTime/tests",
+     "T3": "SupportedClaim",
+     "T1": "SupportedClaim",
+     "collect_ok": true
+    }
+   ],
+   "kind1": {
+    "p1_idx": null,
+    "gold0": "src/DateTime",
+    "unrelated": null,
+    "base_R": "src/DateTime",
+    "base_I": ""
+   },
+   "kind2": {
+    "p2_idx": null,
+    "n_deleted_py": 4,
+    "found": {
+     "F_R": "src/DateTime/tests/testDateTime.py",
+     "F_I": "bootstrap.py"
+    }
+   },
+   "kind3": {
+    "run": "test",
+    "install": "install",
+    "test_ok": true,
+    "install_ok": true
+   },
+   "kind4": {
+    "deps": [
+     [
+      "zope-interface",
+      true
+     ],
+     [
+      "pytz",
+      false
+     ]
+    ],
+    "d_idx": 1,
+    "src_R": "zope-interface",
+    "src_I": "pytz",
+    "n_decls": 2,
+    "n_dist": 18
+   }
+  },
+  "length": {
+   "T": 269,
+   "F_R": 308,
+   "F_I": 295
+  },
+  "fallbacks": {
+   "F_R": [],
+   "F_I": []
+  },
+  "modes": {
+   "F_R": {
+    "1": "add",
+    "2": "add",
+    "3": "replace",
+    "4": "replace"
+   },
+   "F_I": {
+    "1": "add",
+    "2": "add",
+    "3": "replace",
+    "4": "replace"
+   }
+  },
+  "length_diff": {
+   "F_R": 39,
+   "F_I": 26
+  },
+  "n_claims_T": 8,
+  "n_false": {
+   "F_R": 4,
+   "F_I": 4
+  },
+  "pointer_in_issue": true,
+  "gold_dirs": [
+   "src/DateTime"
+  ],
+  "gold_files": [
+   "CHANGES.rst",
+   "src/DateTime/DateTime.py"
+  ]
+ },
+ "tokens": {
+  "F_R": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "src/DateTime/core",
+     "core"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "src/DateTime/tests/testDateTime.py",
+     "testDateTime.py"
+    ]
+   },
+   {
+    "kind": 3,
+    "type": "regex",
+    "regex": "\\bmake\\b[^|;&\\n]*\\btest\\b",
+    "target": "test"
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "boltons"
+    ]
+   }
+  ],
+  "F_I": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "core",
+     "core"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "bootstrap.py",
+     "bootstrap.py"
+    ]
+   },
+   {
+    "kind": 3,
+    "type": "regex",
+    "regex": "\\bmake\\b[^|;&\\n]*\\binstall\\b",
+    "target": "install"
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "tzlocal"
+    ]
+   }
+  ]
+ },
+ "unresolved_pre_hermit": [],
+ "sha256": {
+  "T": "19c905242ff63cf262f2e1aba35cb3a3f0aaddcd3edafc73c10d8c7d14bf6f93",
+  "F_R": "61932f1902242970accd21fad8c1d349c9bd19b7cc33936e44d356c3fc582b69",
+  "F_I": "c7d867efe12bcf525f847c75ee7a6ec6e9d48ded6046b659b4fe430f0764d83f"
+ },
+ "chars": {
+  "T": 269,
+  "F_R": 308,
+  "F_I": 295
+ },
+ "claims": {
+  "T": [
+   "T1|src/DateTime",
+   "T1|src/DateTime/tests",
+   "T1|src/DateTime/DateTime.py",
+   "T3|test_framework|pytest",
+   "T1|src/DateTime/tests",
+   "T1|setup.py",
+   "T4|zope-interface|",
+   "T4|pytz|"
+  ],
+  "F_R": [
+   "T1|src/DateTime",
+   "T1|src/DateTime/tests",
+   "T1|src/DateTime/core",
+   "T1|src/DateTime/DateTime.py",
+   "T1|src/DateTime/tests/testDateTime.py",
+   "T5|make|test",
+   "T1|setup.py",
+   "T4|zope-interface|",
+   "T4|boltons|"
+  ],
+  "F_I": [
+   "T1|src/DateTime",
+   "T1|src/DateTime/tests",
+   "T1|core",
+   "T1|src/DateTime/DateTime.py",
+   "T1|bootstrap.py",
+   "T3|test_framework|pytest",
+   "T1|src/DateTime/tests",
+   "T5|make|install",
+   "T4|zope-interface|",
+   "T4|tzlocal|"
+  ]
+ },
+ "python_spec": null,
+ "token_audit": [
+  {
+   "cond": "F_R",
+   "kind": 1,
+   "type": "path",
+   "name": "src/DateTime/core",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 2,
+   "type": "path",
+   "name": "src/DateTime/tests/testDateTime.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 3,
+   "type": "regex",
+   "name": "make test",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 4,
+   "type": "word",
+   "name": "boltons",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 1,
+   "type": "path",
+   "name": "core",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 2,
+   "type": "path",
+   "name": "bootstrap.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 3,
+   "type": "regex",
+   "name": "make install",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 4,
+   "type": "word",
+   "name": "tzlocal",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  }
+ ],
+ "dist_imports_used": {
+  "zope-interface": [
+   "zope"
+  ],
+  "pytz": [
+   "pytz"
+  ],
+  "boltons": null,
+  "tzlocal": null
+ }
+}

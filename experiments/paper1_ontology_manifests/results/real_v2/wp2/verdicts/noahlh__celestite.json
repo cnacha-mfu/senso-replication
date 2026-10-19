@@ -1,0 +1,84 @@
+{
+ "repo": "noahlh/celestite",
+ "slug": "noahlh__celestite",
+ "engine": "hermit",
+ "tbox_sha256": "8266af98a762ae7567a0deb684fdd394c180f7c6875ac55011cd3e6e6b080b43",
+ "abox_sha256": "0d743e3500c507136cb0f309d7d41589fe624c782b0abaa5d833356d44213b3c",
+ "consistent": true,
+ "error": null,
+ "timings": {
+  "tbox_load_s": 0.05076069297501817,
+  "abox_load_s": 0.005765829002484679,
+  "reason_s": 4.319299336988479,
+  "extract_s": 0.02500279003288597,
+  "total_s": 4.401099127018824
+ },
+ "n_claims": 8,
+ "seconds": 4.4,
+ "abox_triples": 117,
+ "claims": {
+  "T1|Makefile": {
+   "leaves": [
+    "PathFoundBySuffix"
+   ],
+   "verdicts": [
+    "SupportedClaim"
+   ],
+   "chained": []
+  },
+  "T1|vite-render-server.js": {
+   "leaves": [
+    "PathFoundBySuffix"
+   ],
+   "verdicts": [
+    "SupportedClaim"
+   ],
+   "chained": []
+  },
+  "T1|vite.config.js": {
+   "leaves": [
+    "PathFoundExact"
+   ],
+   "verdicts": [
+    "SupportedClaim"
+   ],
+   "chained": []
+  },
+  "T3|build_tool|make": {
+   "leaves": [],
+   "verdicts": [],
+   "chained": []
+  },
+  "T3|build_tool|vite": {
+   "leaves": [],
+   "verdicts": [],
+   "chained": []
+  },
+  "T3|package_manager|bun": {
+   "leaves": [
+    "ToolAbsentCompetitorPresent"
+   ],
+   "verdicts": [
+    "ContradictedClaim"
+   ],
+   "chained": []
+  },
+  "T5|make|build": {
+   "leaves": [
+    "ScriptDefinedNested"
+   ],
+   "verdicts": [
+    "SupportedClaim"
+   ],
+   "chained": []
+  },
+  "T6|project_self|20000000000@1": {
+   "leaves": [],
+   "verdicts": [],
+   "chained": []
+  }
+ },
+ "document": [
+  "ManifestWithContradiction"
+ ]
+}

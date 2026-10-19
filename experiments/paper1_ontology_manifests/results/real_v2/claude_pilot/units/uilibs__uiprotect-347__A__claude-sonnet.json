@@ -1,0 +1,89 @@
+{
+ "unit_id": "uilibs__uiprotect-347__A__claude-sonnet",
+ "task_id": "uilibs__uiprotect-347",
+ "repo": "uilibs/uiprotect",
+ "stage": "phase_out",
+ "condition": "A",
+ "model": "claude-code/sonnet",
+ "run": 1,
+ "condition_meta": {},
+ "started": "2026-10-18T01:14:13.915164+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 6,
+ "tool_calls": 5,
+ "usage": {
+  "input_tokens": 12,
+  "cache_creation_input_tokens": 13186,
+  "cache_read_input_tokens": 106812,
+  "output_tokens": 1978,
+  "output_tokens_details": {
+   "thinking_tokens": 944
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 13186,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 12,
+   "outputTokens": 1978,
+   "cacheReadInputTokens": 106812,
+   "cacheCreationInputTokens": 13186,
+   "webSearchRequests": 0,
+   "costUSD": 0.0832292,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 944,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.0832292,
+ "result_text": "I changed `Light.set_light` in `src/uiprotect/data/devices.py` so it should now control a floodlight that Protect turned on. I haven't run it or the tests. The change is based on my reading of the code, not on reproducing the issue on a real device.\n\nMy guess at the cause is that Protect can turn the light on without setting the \"force on\" flag. In that case, asking the library to turn it off sets the flag to the value it already had. The library only sends a changed setting to the controller, so no request went out at all.\n\nNow, when the flag already matches the requested state, `set_light` sends the update directly instead of relying on a change being detected. It also still applies the optional `led_level`.\n\nI haven't confirmed the cause against the linked Home Assistant issue.",
+ "wall_s": 34.1,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 6,
+   "hit_step_limit": 0,
+   "changed_lines": 9,
+   "gold_changed_lines": 10,
+   "Y1": 2,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": -0.15200309344504995
+  },
+  "f2p_pass": 0,
+  "f2p_total": 3,
+  "p2p_pass": 59,
+  "p2p_total": 59,
+  "f2p_all_pass": false,
+  "p2p_all_pass": true,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 14.2
+ },
+ "status": "done",
+ "finished": "2026-10-18T01:15:04.553897+00:00"
+}

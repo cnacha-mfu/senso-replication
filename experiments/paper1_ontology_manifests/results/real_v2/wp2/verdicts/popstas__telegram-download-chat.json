@@ -1,0 +1,106 @@
+{
+ "repo": "popstas/telegram-download-chat",
+ "slug": "popstas__telegram-download-chat",
+ "engine": "hermit",
+ "tbox_sha256": "8266af98a762ae7567a0deb684fdd394c180f7c6875ac55011cd3e6e6b080b43",
+ "abox_sha256": "45e42ee5e6089ca143f19cc0d62005cb0fa476d9bc5373650a853b6f14ae8821",
+ "consistent": true,
+ "error": null,
+ "timings": {
+  "tbox_load_s": 0.34204796398989856,
+  "abox_load_s": 0.017658329976256937,
+  "reason_s": 6.285106265975628,
+  "extract_s": 0.026927119004540145,
+  "total_s": 6.672114462009631
+ },
+ "n_claims": 10,
+ "seconds": 6.67,
+ "abox_triples": 129,
+ "claims": {
+  "T1|_pyinstaller": {
+   "leaves": [
+    "PathNeverExisted"
+   ],
+   "verdicts": [
+    "ContradictedClaim"
+   ],
+   "chained": []
+  },
+  "T1|build_macos.sh": {
+   "leaves": [],
+   "verdicts": [],
+   "chained": []
+  },
+  "T1|cli.py": {
+   "leaves": [
+    "PathNeverExisted"
+   ],
+   "verdicts": [
+    "ContradictedClaim"
+   ],
+   "chained": []
+  },
+  "T1|core": {
+   "leaves": [
+    "PathFoundBySuffix"
+   ],
+   "verdicts": [
+    "SupportedClaim"
+   ],
+   "chained": []
+  },
+  "T1|gui_app.py": {
+   "leaves": [
+    "PathNeverExisted"
+   ],
+   "verdicts": [
+    "ContradictedClaim"
+   ],
+   "chained": []
+  },
+  "T1|mcp": {
+   "leaves": [
+    "PathFoundBySuffix"
+   ],
+   "verdicts": [
+    "SupportedClaim"
+   ],
+   "chained": []
+  },
+  "T1|paths.py": {
+   "leaves": [
+    "PathFoundBySuffix"
+   ],
+   "verdicts": [
+    "SupportedClaim"
+   ],
+   "chained": []
+  },
+  "T3|linter_formatter|black": {
+   "leaves": [
+    "ToolSignatureFound"
+   ],
+   "verdicts": [
+    "SupportedClaim"
+   ],
+   "chained": []
+  },
+  "T3|linter_formatter|mypy": {
+   "leaves": [
+    "ToolSignatureFound"
+   ],
+   "verdicts": [
+    "SupportedClaim"
+   ],
+   "chained": []
+  },
+  "T3|test_framework|pytest": {
+   "leaves": [],
+   "verdicts": [],
+   "chained": []
+  }
+ },
+ "document": [
+  "ManifestWithContradiction"
+ ]
+}

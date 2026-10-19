@@ -1,0 +1,72 @@
+{
+ "unit_id": "getsentry__sentry-python-3247__T__diffusiongemma-26b-a4b-it__r1",
+ "task_id": "getsentry__sentry-python-3247",
+ "repo": "getsentry/sentry-python",
+ "stage": "servicing",
+ "condition": "T",
+ "model": "google/diffusiongemma-26b-a4b-it",
+ "run": 1,
+ "order": 890,
+ "env_build_s": 86.0,
+ "started": "2026-10-10T03:03:03.723476+00:00",
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 506,
+  "sha256": "e94d55aae2ddcc9993e3c28d2cda19da4c0072269708b48a15d92687cb72e33d"
+ },
+ "condition_available": true,
+ "venv_reset_s": 2.71,
+ "retries": 0,
+ "venv_hash_before": "fe3278683a96b1b0",
+ "venv_hash_after": "fe3278683a96b1b0",
+ "venv_mutated": false,
+ "exit_status": "LimitsExceeded",
+ "error": "",
+ "steps": 40,
+ "wall_s": 610.5,
+ "prompt_tokens": 881250,
+ "completion_tokens": 12616,
+ "format_errors": 4,
+ "length_cutoffs": 1,
+ "api_errors": {
+  "429": 30,
+  "timeout": 1
+ },
+ "n_queries": 42,
+ "keys_used": {
+  "NVIDIA_API_KEY_2": 11,
+  "NVIDIA_API_KEY_5": 24,
+  "NVIDIA_API_KEY_4": 17,
+  "NVIDIA_API_KEY": 19
+ },
+ "temperature": 0.7,
+ "top_p": 0.95,
+ "model_id_returned": "google/diffusiongemma-26b-a4b-it",
+ "mini_version": "2.4.6",
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "resolved": false,
+  "reason": "empty_patch",
+  "outcomes": {
+   "Y0": 0,
+   "Y5": 0,
+   "Y6": 40,
+   "hit_step_limit": 1,
+   "changed_lines": 0,
+   "gold_changed_lines": 40,
+   "Y1": null,
+   "Y2": null,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": null
+  }
+ },
+ "status": "done",
+ "finished": "2026-10-10T03:13:19.657019+00:00"
+}

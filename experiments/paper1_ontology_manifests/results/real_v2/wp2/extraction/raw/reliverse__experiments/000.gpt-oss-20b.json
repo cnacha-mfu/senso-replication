@@ -1,0 +1,21 @@
+{
+ "repo": "reliverse/experiments",
+ "chunk": 0,
+ "n_chunks": 2,
+ "model": "openai/gpt-oss-20b",
+ "prompt_sha256": "d0e02ff613417050168d859f2af6230c3712c6758bb5d9c40d60ff55e5ae87ca",
+ "user_sha256": "86ef6c03dd64c9c19d4e337103dca53e1b72b484898da366d89deb2392fad221",
+ "text": "{\"claims\":[{\"type\":\"path_exists\",\"quote\":\"- `packages/` - Contains all workspace packages (relico, tsconfig, etc)\",\"line\":9,\"subject\":\"packages/\",\"mode\":\"asserts_existing\"},{\"type\":\"path_exists\",\"quote\":\"- `apps/` - Application definitions split by service (cli, scripts, etc)\",\"line\":10,\"subject\":\"apps/\",\"mode\":\"asserts_existing\"},{\"type\":\"tool_used\",\"quote\":\"The project uses bun workspaces for package management.\",\"line\":3,\"subject\":\"bun\",\"tool_category\":\"package_manager\",\"mode\":\"asserts_existing\"},{\"type\":\"tool_used\",\"quote\":\"The project uses Turborepo for task local & remote caching.\",\"line\":4,\"subject\":\"turborepo\",\"tool_category\":\"build_tool\",\"mode\":\"asserts_existing\"},{\"type\":\"dependency\",\"quote\":\"This project uses `@reliverse/dler` to manage bun monorepos easily\",\"line\":4,\"subject\":\"@reliverse/dler\",\"ecosystem_hint\":\"npm\",\"mode\":\"asserts_existing\"},{\"type\":\"dependency\",\"quote\":\"- Import shared modules using workspace names, ie. `@reliverse/relico`\",\"line\":42,\"subject\":\"@reliverse/relico\",\"ecosystem_hint\":\"npm\",\"mode\":\"asserts_existing\"}]}",
+ "parse_ok": true,
+ "parse_error": null,
+ "parse_retries": 0,
+ "latency_s": 31.090194194985088,
+ "usage": {
+  "prompt": 3625,
+  "completion": 526
+ },
+ "n_api_calls": 1,
+ "finish_reason": "stop",
+ "error": null,
+ "discarded_attempt_texts": []
+}

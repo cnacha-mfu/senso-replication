@@ -1,0 +1,1918 @@
+{
+ "repo": "MacPython/openblas-libs",
+ "snapshot_date": "2025-06-30",
+ "status": "ok",
+ "unmineable": false,
+ "unmineable_reason": null,
+ "replaces": null,
+ "settings": {
+  "dedup": true,
+  "complexity": false,
+  "dataset": "seo_v2",
+  "sensitivity": true
+ },
+ "versions": {
+  "owlready2": "0.51",
+  "pymannkendall": "1.4.3",
+  "lizard": "1.24.1",
+  "numpy": "2.5.3",
+  "scipy": "1.18.1",
+  "python": "3.12.15",
+  "git": "git version 2.53.0"
+ },
+ "measures": {
+  "monthsObserved": 36,
+  "monthsSinceLastCommit": 0,
+  "distinctAuthorsInWindow": 8,
+  "commitMKTau": 0.052381,
+  "commitMKpValue": 0.657719,
+  "activeMonthCount": 25,
+  "activeMonthRatio": 0.694444,
+  "meanMonthlyCommits": 8.027778,
+  "commitsLast3Months": 33,
+  "commitCountCV": 1.277951,
+  "commitCountCVSample": 1.296079,
+  "commitHalfRatio": 1.408333,
+  "commitSecondHalfMean": 9.388889,
+  "churnCV": 3.07904,
+  "linesAddedCV": 2.826466,
+  "mergeMonthRatio": 0.583333,
+  "multiAuthorMonthRatio": 0.194444,
+  "bugFixRatioFirstHalf": 0.241312,
+  "bugFixRatioSecondHalf": 0.178282,
+  "bugFixHalfRatio": 0.738802,
+  "locSeriesLength": 36,
+  "locRelSenSlopeAnnual": 0.193693,
+  "locMKTau": 0.933333,
+  "locMKS": 588,
+  "locMKpValue": 0.0,
+  "locSenSlope": 15.656863,
+  "locStart": 577,
+  "locEnd": 1113,
+  "locDelta": 536,
+  "locGrowthRate": 0.928943,
+  "locChangePct": 92.894281,
+  "locEndToStartRatio": 1.928943,
+  "locGrowthLast3": 0.048023,
+  "featureCommitsFirstHalf": 0,
+  "featureCommitsSecondHalf": 2,
+  "featureCommitsTotal": 2,
+  "locDeltaPerFeature": 268.0,
+  "recentAgentCommitRatio": 0.0,
+  "featCommitCount": 2,
+  "bugFixCommitCount": 62,
+  "commitCount": 289,
+  "monthly_series": {
+   "months": [
+    "2021-07",
+    "2021-08",
+    "2021-09",
+    "2021-10",
+    "2021-11",
+    "2021-12",
+    "2022-01",
+    "2022-02",
+    "2022-03",
+    "2022-04",
+    "2022-05",
+    "2022-06",
+    "2022-07",
+    "2022-08",
+    "2022-09",
+    "2022-10",
+    "2022-11",
+    "2022-12",
+    "2023-01",
+    "2023-02",
+    "2023-03",
+    "2023-04",
+    "2023-05",
+    "2023-06",
+    "2023-07",
+    "2023-08",
+    "2023-09",
+    "2023-10",
+    "2023-11",
+    "2023-12",
+    "2024-01",
+    "2024-02",
+    "2024-03",
+    "2024-04",
+    "2024-05",
+    "2024-06",
+    "2024-07",
+    "2024-08",
+    "2024-09",
+    "2024-10",
+    "2024-11",
+    "2024-12",
+    "2025-01",
+    "2025-02",
+    "2025-03",
+    "2025-04",
+    "2025-05",
+    "2025-06"
+   ],
+   "commits": [
+    16,
+    0,
+    0,
+    2,
+    0,
+    5,
+    2,
+    0,
+    8,
+    0,
+    9,
+    7,
+    1,
+    3,
+    0,
+    4,
+    14,
+    0,
+    0,
+    6,
+    0,
+    0,
+    3,
+    1,
+    28,
+    9,
+    22,
+    14,
+    13,
+    2,
+    28,
+    19,
+    1,
+    20,
+    5,
+    2,
+    45,
+    8,
+    0,
+    0,
+    0,
+    0,
+    8,
+    0,
+    0,
+    7,
+    15,
+    11
+   ],
+   "loc": [
+    548,
+    548,
+    548,
+    548,
+    548,
+    548,
+    548,
+    548,
+    575,
+    575,
+    577,
+    578,
+    577,
+    577,
+    577,
+    577,
+    612,
+    612,
+    612,
+    616,
+    616,
+    616,
+    616,
+    616,
+    623,
+    623,
+    954,
+    954,
+    956,
+    956,
+    984,
+    1005,
+    1005,
+    1012,
+    1020,
+    1020,
+    1020,
+    1053,
+    1053,
+    1053,
+    1053,
+    1053,
+    1062,
+    1062,
+    1062,
+    1062,
+    1109,
+    1113
+   ]
+  }
+ },
+ "window": {
+  "L": 36,
+  "first_month": "2022-07",
+  "last_month": "2025-06",
+  "n_months": 36,
+  "left_truncated": false,
+  "first_commit_month": "2016-06",
+  "mined_months": 48,
+  "commits_in_window": 289,
+  "commits_in_history": 484
+ },
+ "loc_instrument": {
+  "instrument": "nonblank-source-lines-v1",
+  "status": "ok",
+  "months": 48,
+  "month_end_commits_distinct": 29,
+  "source_blobs": 65,
+  "blobs_fetched": 2,
+  "t_ls_tree_s": 0.32470301899593323,
+  "t_fetch_s": 0.7817881329683587,
+  "t_read_s": 0.007905794016551226,
+  "series_present": true,
+  "extensions": [
+   ".bash",
+   ".c",
+   ".cc",
+   ".cjs",
+   ".clj",
+   ".cpp",
+   ".cs",
+   ".cxx",
+   ".dart",
+   ".erl",
+   ".ex",
+   ".exs",
+   ".f90",
+   ".go",
+   ".groovy",
+   ".h",
+   ".hh",
+   ".hpp",
+   ".hs",
+   ".java",
+   ".jl",
+   ".js",
+   ".jsx",
+   ".kt",
+   ".kts",
+   ".lua",
+   ".m",
+   ".mjs",
+   ".ml",
+   ".mm",
+   ".nim",
+   ".php",
+   ".pl",
+   ".pm",
+   ".py",
+   ".pyi",
+   ".r",
+   ".rb",
+   ".rs",
+   ".scala",
+   ".sh",
+   ".sql",
+   ".svelte",
+   ".swift",
+   ".ts",
+   ".tsx",
+   ".vue",
+   ".zig"
+  ],
+  "excluded_dirs": [
+   "node_modules",
+   "vendor",
+   "vendored",
+   "third_party",
+   "site-packages",
+   "bower_components"
+  ],
+  "max_blob_bytes": 1000000,
+  "first_parent": true
+ },
+ "mining": {
+  "churn": {
+   "t_churn_raw_s": 0.04796892497688532,
+   "t_churn_fetch_s": 1.067080957989674,
+   "t_churn_numstat_s": 0.06268349604215473,
+   "blobs_fetched_churn": 196
+  },
+  "timings": {
+   "t_clone": 1.695,
+   "t_mine": 2.912,
+   "t_loc": 1.114,
+   "t_reason_A": 2.608
+  },
+  "cached": false
+ },
+ "stage_a": {
+  "commits": 338,
+  "reasoned_commits": 323,
+  "inconsistent_chunks": 0,
+  "chunk_timings": [
+   {
+    "tbox_load_s": 0.037512892042286694,
+    "abox_load_s": 0.04228621697984636,
+    "reason_s": 2.514360899978783,
+    "extract_s": 0.004094099975191057,
+    "total_s": 2.5985296180006117,
+    "commits": 323
+   }
+  ],
+  "tbox_sha256": "da30ed577542b3643ecf06cb6a4649ccc8fce61ab7a0373beabd763e12883e86"
+ },
+ "activity": {
+  "last_commit_date": "2025-06-26T07:23:15+00:00",
+  "months_since_last_commit": 0,
+  "distinct_authors_in_window": 8,
+  "merge_commits_in_window": 72
+ },
+ "agent_adoption_date": null,
+ "commit_label_counts": {
+  "BugFixCommit": 62,
+  "FeatureCommit": 2,
+  "AgentCommit": 0
+ },
+ "series_months": [
+  {
+   "month": "2022-07",
+   "commit_count": 1,
+   "merge_count": 1,
+   "unique_authors": 1,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 577,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-08",
+   "commit_count": 3,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 4,
+   "lines_deleted": 0,
+   "total_churn": 4,
+   "files_changed": 1,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 577,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-09",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 577,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-10",
+   "commit_count": 4,
+   "merge_count": 0,
+   "unique_authors": 2,
+   "lines_added": 153,
+   "lines_deleted": 36,
+   "total_churn": 189,
+   "files_changed": 8,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 577,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-11",
+   "commit_count": 14,
+   "merge_count": 4,
+   "unique_authors": 1,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 612,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-12",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 612,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-01",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 612,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-02",
+   "commit_count": 6,
+   "merge_count": 3,
+   "unique_authors": 1,
+   "lines_added": 5,
+   "lines_deleted": 1,
+   "total_churn": 6,
+   "files_changed": 1,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 616,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-03",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 616,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-04",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 616,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-05",
+   "commit_count": 3,
+   "merge_count": 1,
+   "unique_authors": 1,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 616,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-06",
+   "commit_count": 1,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 616,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-07",
+   "commit_count": 28,
+   "merge_count": 8,
+   "unique_authors": 3,
+   "lines_added": 31,
+   "lines_deleted": 24,
+   "total_churn": 55,
+   "files_changed": 13,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 623,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-08",
+   "commit_count": 9,
+   "merge_count": 1,
+   "unique_authors": 1,
+   "lines_added": 203,
+   "lines_deleted": 60,
+   "total_churn": 263,
+   "files_changed": 15,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 623,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-09",
+   "commit_count": 22,
+   "merge_count": 7,
+   "unique_authors": 1,
+   "lines_added": 715,
+   "lines_deleted": 579,
+   "total_churn": 1294,
+   "files_changed": 37,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 954,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-10",
+   "commit_count": 14,
+   "merge_count": 2,
+   "unique_authors": 1,
+   "lines_added": 31,
+   "lines_deleted": 33,
+   "total_churn": 64,
+   "files_changed": 18,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 954,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-11",
+   "commit_count": 13,
+   "merge_count": 1,
+   "unique_authors": 1,
+   "lines_added": 59,
+   "lines_deleted": 48,
+   "total_churn": 107,
+   "files_changed": 14,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 956,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-12",
+   "commit_count": 2,
+   "merge_count": 1,
+   "unique_authors": 1,
+   "lines_added": 1,
+   "lines_deleted": 1,
+   "total_churn": 2,
+   "files_changed": 1,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 956,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-01",
+   "commit_count": 28,
+   "merge_count": 5,
+   "unique_authors": 1,
+   "lines_added": 54,
+   "lines_deleted": 23,
+   "total_churn": 77,
+   "files_changed": 18,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 984,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-02",
+   "commit_count": 19,
+   "merge_count": 6,
+   "unique_authors": 2,
+   "lines_added": 50,
+   "lines_deleted": 29,
+   "total_churn": 79,
+   "files_changed": 13,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 1005,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-03",
+   "commit_count": 1,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 1005,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-04",
+   "commit_count": 20,
+   "merge_count": 7,
+   "unique_authors": 1,
+   "lines_added": 10,
+   "lines_deleted": 2,
+   "total_churn": 12,
+   "files_changed": 4,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 1012,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-05",
+   "commit_count": 5,
+   "merge_count": 2,
+   "unique_authors": 1,
+   "lines_added": 17,
+   "lines_deleted": 9,
+   "total_churn": 26,
+   "files_changed": 3,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 1020,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-06",
+   "commit_count": 2,
+   "merge_count": 1,
+   "unique_authors": 1,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 1020,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-07",
+   "commit_count": 45,
+   "merge_count": 5,
+   "unique_authors": 1,
+   "lines_added": 76,
+   "lines_deleted": 79,
+   "total_churn": 155,
+   "files_changed": 30,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 1020,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-08",
+   "commit_count": 8,
+   "merge_count": 3,
+   "unique_authors": 1,
+   "lines_added": 77,
+   "lines_deleted": 41,
+   "total_churn": 118,
+   "files_changed": 7,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 1053,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-09",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 1053,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-10",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 1053,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-11",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 1053,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-12",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 1053,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2025-01",
+   "commit_count": 8,
+   "merge_count": 4,
+   "unique_authors": 2,
+   "lines_added": 10,
+   "lines_deleted": 1,
+   "total_churn": 11,
+   "files_changed": 1,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 1062,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2025-02",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 1062,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2025-03",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 1062,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2025-04",
+   "commit_count": 7,
+   "merge_count": 1,
+   "unique_authors": 3,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 1062,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2025-05",
+   "commit_count": 15,
+   "merge_count": 4,
+   "unique_authors": 3,
+   "lines_added": 50,
+   "lines_deleted": 1,
+   "total_churn": 51,
+   "files_changed": 4,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 1109,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2025-06",
+   "commit_count": 11,
+   "merge_count": 5,
+   "unique_authors": 3,
+   "lines_added": 6,
+   "lines_deleted": 3,
+   "total_churn": 9,
+   "files_changed": 2,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 1113,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  }
+ ],
+ "measures_derived": {
+  "bugFixRatioFirstHalf": 0.241312,
+  "bugFixRatioSecondHalf": 0.178282,
+  "bugFixHalfRatio": 0.738802,
+  "featureCommitsFirstHalf": 0,
+  "featureCommitsSecondHalf": 2,
+  "featureCommitsTotal": 2,
+  "locDeltaPerFeature": 268.0,
+  "recentAgentCommitRatio": 0.0
+ },
+ "inferred": {
+  "a0.05_L36_D12_G0.05_orig": {
+   "classes": [
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIINonConformant",
+    "LawIVConformant",
+    "LawVIConformant",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantSingleAuthor",
+    "LawVIINonConformant",
+    "LawVNonConformant",
+    "MKApplicable",
+    "MergeActive",
+    "MultiAuthorInactive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": "urn:senso:explanations:MacPython/openblas-libs:79f851de895e",
+   "tbox_sha256": "79f851de895e8301073d1746931d8ac1d34e4ed2e94897358fca050d9d07b63c",
+   "abox_triples": 40,
+   "t_reason_B_s": 1.803
+  },
+  "a0.01_L36_D12_G0.05_orig": {
+   "classes": [
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIINonConformant",
+    "LawIVConformant",
+    "LawVIConformant",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantSingleAuthor",
+    "LawVIINonConformant",
+    "LawVNonConformant",
+    "MKApplicable",
+    "MergeActive",
+    "MultiAuthorInactive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "956579a8859000216eba261c78e4795a2b5042e7edf95419211fd46e9dbeada9",
+   "abox_triples": 40,
+   "t_reason_B_s": 1.791
+  },
+  "a0.1_L36_D12_G0.05_orig": {
+   "classes": [
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIINonConformant",
+    "LawIVConformant",
+    "LawVIConformant",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantSingleAuthor",
+    "LawVIINonConformant",
+    "LawVNonConformant",
+    "MKApplicable",
+    "MergeActive",
+    "MultiAuthorInactive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "56009aa92bf68560113e153a97a62cd0cfdea303607eb909725e8e10a2536494",
+   "abox_triples": 40,
+   "t_reason_B_s": 1.842
+  },
+  "a0.05_L24_D12_G0.05_orig": {
+   "classes": [
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIINonConformant",
+    "LawIVConformant",
+    "LawVIConformant",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantSingleAuthor",
+    "LawVIINonConformant",
+    "LawVNonConformant",
+    "MKApplicable",
+    "MergeActive",
+    "MultiAuthorInactive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "79f851de895e8301073d1746931d8ac1d34e4ed2e94897358fca050d9d07b63c",
+   "abox_triples": 40,
+   "t_reason_B_s": 1.823
+  },
+  "a0.05_L48_D12_G0.05_orig": {
+   "classes": [
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIINonConformant",
+    "LawIVConformant",
+    "LawVIConformant",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantSingleAuthor",
+    "LawVIINonConformant",
+    "LawVNonConformant",
+    "MKApplicable",
+    "MergeActive",
+    "MultiAuthorInactive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "79f851de895e8301073d1746931d8ac1d34e4ed2e94897358fca050d9d07b63c",
+   "abox_triples": 40,
+   "t_reason_B_s": 1.817
+  },
+  "a0.05_L36_D6_G0.05_orig": {
+   "classes": [
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIINonConformant",
+    "LawIVConformant",
+    "LawVIConformant",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantSingleAuthor",
+    "LawVIINonConformant",
+    "LawVNonConformant",
+    "MKApplicable",
+    "MergeActive",
+    "MultiAuthorInactive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "a19e7e45f521324fec6b19741e2a4f08e5d15efd8e05802851c45a87515a7761",
+   "abox_triples": 40,
+   "t_reason_B_s": 1.822
+  },
+  "a0.05_L36_D18_G0.05_orig": {
+   "classes": [
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIINonConformant",
+    "LawIVConformant",
+    "LawVIConformant",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantSingleAuthor",
+    "LawVIINonConformant",
+    "LawVNonConformant",
+    "MKApplicable",
+    "MergeActive",
+    "MultiAuthorInactive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "f87900e0c68335fbd2cae9848efdc2926406c328fb39da8e6e393bb472a68fdc",
+   "abox_triples": 40,
+   "t_reason_B_s": 1.775
+  },
+  "a0.05_L36_D24_G0.05_orig": {
+   "classes": [
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIINonConformant",
+    "LawIVConformant",
+    "LawVIConformant",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantSingleAuthor",
+    "LawVIINonConformant",
+    "LawVNonConformant",
+    "MKApplicable",
+    "MergeActive",
+    "MultiAuthorInactive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "562211ba220cda59299aec70f3561ba96eadd88adaf45f6f7db3fce71cdcc77b",
+   "abox_triples": 40,
+   "t_reason_B_s": 1.822
+  },
+  "a0.05_L36_D12_G0_orig": {
+   "classes": [
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIINonConformant",
+    "LawIVConformant",
+    "LawVIConformant",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantSingleAuthor",
+    "LawVIINonConformant",
+    "LawVNonConformant",
+    "MKApplicable",
+    "MergeActive",
+    "MultiAuthorInactive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "c0de0e8b2e7424d23b10ed152acd4ff66c2f1a973196b7e54f6598e9d734d0dc",
+   "abox_triples": 40,
+   "t_reason_B_s": 1.775
+  },
+  "a0.05_L36_D12_G0.02_orig": {
+   "classes": [
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIINonConformant",
+    "LawIVConformant",
+    "LawVIConformant",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantSingleAuthor",
+    "LawVIINonConformant",
+    "LawVNonConformant",
+    "MKApplicable",
+    "MergeActive",
+    "MultiAuthorInactive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "2c6613dd6b3e4fa714d92eaa067f02157466a4b3ee0ccf6de289441d860de28d",
+   "abox_triples": 40,
+   "t_reason_B_s": 1.815
+  },
+  "a0.05_L36_D12_G0.1_orig": {
+   "classes": [
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIINonConformant",
+    "LawIVConformant",
+    "LawVIConformant",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantSingleAuthor",
+    "LawVIINonConformant",
+    "LawVNonConformant",
+    "MKApplicable",
+    "MergeActive",
+    "MultiAuthorInactive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "0cfde802b4494fc33a5ad0eb910980aaf152093f62848406bdc37bc099347936",
+   "abox_triples": 40,
+   "t_reason_B_s": 1.823
+  },
+  "a0.05_L36_D12_G0.05_hr": {
+   "classes": [
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIINonConformant",
+    "LawIVConformant",
+    "LawVIConformant",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantSingleAuthor",
+    "LawVIINonConformant",
+    "LawVNonConformant",
+    "MKApplicable",
+    "MergeActive",
+    "MultiAuthorInactive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "79f851de895e8301073d1746931d8ac1d34e4ed2e94897358fca050d9d07b63c",
+   "abox_triples": 40,
+   "t_reason_B_s": 1.793
+  }
+ },
+ "primary_config": "a0.05_L36_D12_G0.05_orig",
+ "project_iri": "http://senso-framework.org/data/MacPython_openblas-libs",
+ "consistent": true,
+ "inferred_labels": [
+  "GrowthStage",
+  "LawIConformant",
+  "LawIIINonConformant",
+  "LawIVConformant",
+  "LawVIConformant",
+  "LawVIIINonConformant",
+  "LawVIIINonConformantSingleAuthor",
+  "LawVIINonConformant",
+  "LawVNonConformant",
+  "MKApplicable",
+  "MergeActive",
+  "MultiAuthorInactive",
+  "RBActiveDevelopmentStage",
+  "RecentlyActive",
+  "SubstantialLocGrowth"
+ ],
+ "stage_labels": [
+  "GrowthStage",
+  "RBActiveDevelopmentStage"
+ ],
+ "law_labels": {
+  "I": "LawIConformant",
+  "III": "LawIIINonConformant",
+  "IV": "LawIVConformant",
+  "V": "LawVNonConformant",
+  "VI": "LawVIConformant",
+  "VII": "LawVIINonConformant",
+  "VIII": "LawVIIINonConformant"
+ },
+ "tbox_sha256_stage_b": "79f851de895e8301073d1746931d8ac1d34e4ed2e94897358fca050d9d07b63c",
+ "tbox_sha256_stage_a": "da30ed577542b3643ecf06cb6a4649ccc8fce61ab7a0373beabd763e12883e86",
+ "summary": {
+  "c1": "A",
+  "c2": "A",
+  "cf": "A",
+  "note": "debug summary; run_rq1_v2.py reads `inferred` and recomputes CF itself"
+ },
+ "explanations": {
+  "stage:GrowthStage": {
+   "class": "GrowthStage",
+   "target": "http://senso-framework.org/data/MacPython_openblas-libs type http://senso-framework.org/ontology/seo#GrowthStage",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_locMKTau_gt_0",
+       "text": "A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKpValue_lt_mk_alpha",
+       "text": "A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]"
+      },
+      {
+       "kind": "definition",
+       "subject": "GrowthStage",
+       "text": "GrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "MacPython_openblas-libs",
+       "prop": "locMKpValue",
+       "value": 0.0,
+       "raw": "MacPython_openblas-libs locMKpValue 0.0"
+      },
+      {
+       "subject": "MacPython_openblas-libs",
+       "prop": "locMKTau",
+       "value": 0.933333,
+       "raw": "MacPython_openblas-libs locMKTau 0.933333"
+      },
+      {
+       "subject": "MacPython_openblas-libs",
+       "prop": "locSeriesLength",
+       "value": 36,
+       "raw": "MacPython_openblas-libs locSeriesLength 36"
+      },
+      {
+       "subject": "MacPython_openblas-libs",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "MacPython_openblas-libs type SoftwareProject"
+      }
+     ],
+     "closures": [],
+     "raw": "MacPython_openblas-libs locMKpValue 0.0\nA_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\nMacPython_openblas-libs locMKTau 0.933333\nMacPython_openblas-libs locSeriesLength 36\nA_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\nMacPython_openblas-libs type SoftwareProject\nGrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject\nA_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\nA_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]"
+    }
+   ],
+   "raw_text": "Axiom: MacPython_openblas-libs type GrowthStage\n\nExplanation(s): \n1)   MacPython_openblas-libs locMKpValue 0.0\n     A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\n     MacPython_openblas-libs locMKTau 0.933333\n     MacPython_openblas-libs locSeriesLength 36\n     A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\n     MacPython_openblas-libs type SoftwareProject\n     GrowthStage equivalentTo A_locMKTau_gt_0\n                              and A_locMKpValue_lt_mk_alpha\n                              and MKApplicable\n                              and SoftwareProject\n     A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\n     A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]\n\n\n",
+   "seconds": 2.222063691006042,
+   "returncode": 0,
+   "error": null
+  },
+  "stage:RBActiveDevelopmentStage": {
+   "class": "RBActiveDevelopmentStage",
+   "target": "http://senso-framework.org/data/MacPython_openblas-libs type http://senso-framework.org/ontology/seo#RBActiveDevelopmentStage",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "RBActiveDevelopmentStage",
+       "text": "RBActiveDevelopmentStage equivalentTo GrowthStage and RecentlyActive and SoftwareProject and SubstantialLocGrowth"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable"
+      },
+      {
+       "kind": "definition",
+       "subject": "SubstantialLocGrowth",
+       "text": "SubstantialLocGrowth equivalentTo A_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKTau_gt_0",
+       "text": "A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKpValue_lt_mk_alpha",
+       "text": "A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]"
+      },
+      {
+       "kind": "definition",
+       "subject": "GrowthStage",
+       "text": "GrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year",
+       "text": "A_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year equivalentTo locRelSenSlopeAnnual some decimal[>= 0.05]"
+      },
+      {
+       "kind": "definition",
+       "subject": "RecentlyActive",
+       "text": "RecentlyActive equivalentTo A_monthsSinceLastCommit_lt_rb_dormancy_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_monthsSinceLastCommit_lt_rb_dormancy_months",
+       "text": "A_monthsSinceLastCommit_lt_rb_dormancy_months equivalentTo monthsSinceLastCommit some integer[< 12]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "MacPython_openblas-libs",
+       "prop": "locRelSenSlopeAnnual",
+       "value": 0.193693,
+       "raw": "MacPython_openblas-libs locRelSenSlopeAnnual 0.193693"
+      },
+      {
+       "subject": "MacPython_openblas-libs",
+       "prop": "monthsSinceLastCommit",
+       "value": 0,
+       "raw": "MacPython_openblas-libs monthsSinceLastCommit 0"
+      },
+      {
+       "subject": "MacPython_openblas-libs",
+       "prop": "locMKpValue",
+       "value": 0.0,
+       "raw": "MacPython_openblas-libs locMKpValue 0.0"
+      },
+      {
+       "subject": "MacPython_openblas-libs",
+       "prop": "locMKTau",
+       "value": 0.933333,
+       "raw": "MacPython_openblas-libs locMKTau 0.933333"
+      },
+      {
+       "subject": "MacPython_openblas-libs",
+       "prop": "locSeriesLength",
+       "value": 36,
+       "raw": "MacPython_openblas-libs locSeriesLength 36"
+      },
+      {
+       "subject": "MacPython_openblas-libs",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "MacPython_openblas-libs type SoftwareProject"
+      }
+     ],
+     "closures": [],
+     "raw": "MacPython_openblas-libs locRelSenSlopeAnnual 0.193693\nMacPython_openblas-libs monthsSinceLastCommit 0\nMacPython_openblas-libs locMKpValue 0.0\nMacPython_openblas-libs locMKTau 0.933333\nRBActiveDevelopmentStage equivalentTo GrowthStage and RecentlyActive and SoftwareProject and SubstantialLocGrowth\nA_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\nSubstantialLocGrowth equivalentTo A_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year and SoftwareProject\nA_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\nMacPython_openblas-libs locSeriesLength 36\nA_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\nMacPython_openblas-libs type SoftwareProject\nGrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject\nA_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year equivalentTo locRelSenSlopeAnnual some decimal[>= 0.05]\nRecentlyActive equivalentTo A_monthsSinceLastCommit_lt_rb_dormancy_months and SoftwareProject\nA_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]\nA_monthsSinceLastCommit_lt_rb_dormancy_months equivalentTo monthsSinceLastCommit some integer[< 12]"
+    }
+   ],
+   "raw_text": "Axiom: MacPython_openblas-libs type RBActiveDevelopmentStage\n\nExplanation(s): \n1)   MacPython_openblas-libs locRelSenSlopeAnnual 0.193693\n     MacPython_openblas-libs monthsSinceLastCommit 0\n     MacPython_openblas-libs locMKpValue 0.0\n     MacPython_openblas-libs locMKTau 0.933333\n     RBActiveDevelopmentStage equivalentTo GrowthStage\n                                           and RecentlyActive\n                                           and SoftwareProject\n                                           and SubstantialLocGrowth\n     A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\n     SubstantialLocGrowth equivalentTo A_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year\n                                       and SoftwareProject\n     A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\n     MacPython_openblas-libs locSeriesLength 36\n     A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\n     MacPython_openblas-libs type SoftwareProject\n     GrowthStage equivalentTo A_locMKTau_gt_0\n                              and A_locMKpValue_lt_mk_alpha\n                              and MKApplicable\n                              and SoftwareProject\n     A_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year equivalentTo locRelSenSlopeAnnual some decimal[>= 0.05]\n     RecentlyActive equivalentTo A_monthsSinceLastCommit_lt_rb_dormancy_months\n                                 and SoftwareProject\n     A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]\n     A_monthsSinceLastCommit_lt_rb_dormancy_months equivalentTo monthsSinceLastCommit some integer[< 12]\n\n\n",
+   "seconds": 2.2558775349752977,
+   "returncode": 0,
+   "error": null
+  },
+  "lawI": {
+   "class": "LawIConformant",
+   "target": "http://senso-framework.org/data/MacPython_openblas-libs type http://senso-framework.org/ontology/seo#LawIConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law1_min_months",
+       "text": "A_monthsObserved_ge_p_law1_min_months equivalentTo monthsObserved some integer[>= 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawIConformant",
+       "text": "LawIConformant equivalentTo A_activeMonthRatio_ge_p_law1_active_ratio and A_monthsObserved_ge_p_law1_min_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_activeMonthRatio_ge_p_law1_active_ratio",
+       "text": "A_activeMonthRatio_ge_p_law1_active_ratio equivalentTo activeMonthRatio some decimal[>= 0.5]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "MacPython_openblas-libs",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "MacPython_openblas-libs monthsObserved 36"
+      },
+      {
+       "subject": "MacPython_openblas-libs",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "MacPython_openblas-libs type SoftwareProject"
+      },
+      {
+       "subject": "MacPython_openblas-libs",
+       "prop": "activeMonthRatio",
+       "value": 0.694444,
+       "raw": "MacPython_openblas-libs activeMonthRatio 0.694444"
+      }
+     ],
+     "closures": [],
+     "raw": "MacPython_openblas-libs monthsObserved 36\nA_monthsObserved_ge_p_law1_min_months equivalentTo monthsObserved some integer[>= 2]\nMacPython_openblas-libs type SoftwareProject\nMacPython_openblas-libs activeMonthRatio 0.694444\nLawIConformant equivalentTo A_activeMonthRatio_ge_p_law1_active_ratio and A_monthsObserved_ge_p_law1_min_months and SoftwareProject\nA_activeMonthRatio_ge_p_law1_active_ratio equivalentTo activeMonthRatio some decimal[>= 0.5]"
+    }
+   ],
+   "raw_text": "Axiom: MacPython_openblas-libs type LawIConformant\n\nExplanation(s): \n1)   MacPython_openblas-libs monthsObserved 36\n     A_monthsObserved_ge_p_law1_min_months equivalentTo monthsObserved some integer[>= 2]\n     MacPython_openblas-libs type SoftwareProject\n     MacPython_openblas-libs activeMonthRatio 0.694444\n     LawIConformant equivalentTo A_activeMonthRatio_ge_p_law1_active_ratio\n                                 and A_monthsObserved_ge_p_law1_min_months\n                                 and SoftwareProject\n     A_activeMonthRatio_ge_p_law1_active_ratio equivalentTo activeMonthRatio some decimal[>= 0.5]\n\n\n",
+   "seconds": 2.137263375974726,
+   "returncode": 0,
+   "error": null
+  },
+  "lawIII": {
+   "class": "LawIIINonConformant",
+   "target": "http://senso-framework.org/data/MacPython_openblas-libs type http://senso-framework.org/ontology/seo#LawIIINonConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_churnCV_ge_p_law3_churn_cv",
+       "text": "A_churnCV_ge_p_law3_churn_cv equivalentTo churnCV some decimal[>= 2.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law3_min_months",
+       "text": "A_monthsObserved_ge_p_law3_min_months equivalentTo monthsObserved some integer[>= 6]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawIIINonConformant",
+       "text": "LawIIINonConformant equivalentTo A_churnCV_ge_p_law3_churn_cv and A_monthsObserved_ge_p_law3_min_months and SoftwareProject"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "MacPython_openblas-libs",
+       "prop": "churnCV",
+       "value": 3.07904,
+       "raw": "MacPython_openblas-libs churnCV 3.07904"
+      },
+      {
+       "subject": "MacPython_openblas-libs",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "MacPython_openblas-libs monthsObserved 36"
+      },
+      {
+       "subject": "MacPython_openblas-libs",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "MacPython_openblas-libs type SoftwareProject"
+      }
+     ],
+     "closures": [],
+     "raw": "A_churnCV_ge_p_law3_churn_cv equivalentTo churnCV some decimal[>= 2.0]\nA_monthsObserved_ge_p_law3_min_months equivalentTo monthsObserved some integer[>= 6]\nMacPython_openblas-libs churnCV 3.07904\nMacPython_openblas-libs monthsObserved 36\nMacPython_openblas-libs type SoftwareProject\nLawIIINonConformant equivalentTo A_churnCV_ge_p_law3_churn_cv and A_monthsObserved_ge_p_law3_min_months and SoftwareProject"
+    }
+   ],
+   "raw_text": "Axiom: MacPython_openblas-libs type LawIIINonConformant\n\nExplanation(s): \n1)   A_churnCV_ge_p_law3_churn_cv equivalentTo churnCV some decimal[>= 2.0]\n     A_monthsObserved_ge_p_law3_min_months equivalentTo monthsObserved some integer[>= 6]\n     MacPython_openblas-libs churnCV 3.07904\n     MacPython_openblas-libs monthsObserved 36\n     MacPython_openblas-libs type SoftwareProject\n     LawIIINonConformant equivalentTo A_churnCV_ge_p_law3_churn_cv\n                                      and A_monthsObserved_ge_p_law3_min_months\n                                      and SoftwareProject\n\n\n",
+   "seconds": 2.2712805659975857,
+   "returncode": 0,
+   "error": null
+  },
+  "lawIV": {
+   "class": "LawIVConformant",
+   "target": "http://senso-framework.org/data/MacPython_openblas-libs type http://senso-framework.org/ontology/seo#LawIVConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law4_min_months",
+       "text": "A_monthsObserved_ge_p_law4_min_months equivalentTo monthsObserved some integer[>= 6]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawIVConformant",
+       "text": "LawIVConformant equivalentTo A_commitCountCV_lt_p_law4_commit_cv and A_monthsObserved_ge_p_law4_min_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_commitCountCV_lt_p_law4_commit_cv",
+       "text": "A_commitCountCV_lt_p_law4_commit_cv equivalentTo commitCountCV some decimal[< 1.5]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "MacPython_openblas-libs",
+       "prop": "commitCountCV",
+       "value": 1.277951,
+       "raw": "MacPython_openblas-libs commitCountCV 1.277951"
+      },
+      {
+       "subject": "MacPython_openblas-libs",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "MacPython_openblas-libs monthsObserved 36"
+      },
+      {
+       "subject": "MacPython_openblas-libs",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "MacPython_openblas-libs type SoftwareProject"
+      }
+     ],
+     "closures": [],
+     "raw": "A_monthsObserved_ge_p_law4_min_months equivalentTo monthsObserved some integer[>= 6]\nMacPython_openblas-libs commitCountCV 1.277951\nMacPython_openblas-libs monthsObserved 36\nLawIVConformant equivalentTo A_commitCountCV_lt_p_law4_commit_cv and A_monthsObserved_ge_p_law4_min_months and SoftwareProject\nMacPython_openblas-libs type SoftwareProject\nA_commitCountCV_lt_p_law4_commit_cv equivalentTo commitCountCV some decimal[< 1.5]"
+    }
+   ],
+   "raw_text": "Axiom: MacPython_openblas-libs type LawIVConformant\n\nExplanation(s): \n1)   A_monthsObserved_ge_p_law4_min_months equivalentTo monthsObserved some integer[>= 6]\n     MacPython_openblas-libs commitCountCV 1.277951\n     MacPython_openblas-libs monthsObserved 36\n     LawIVConformant equivalentTo A_commitCountCV_lt_p_law4_commit_cv\n                                  and A_monthsObserved_ge_p_law4_min_months\n                                  and SoftwareProject\n     MacPython_openblas-libs type SoftwareProject\n     A_commitCountCV_lt_p_law4_commit_cv equivalentTo commitCountCV some decimal[< 1.5]\n\n\n",
+   "seconds": 2.3612909090006724,
+   "returncode": 0,
+   "error": null
+  },
+  "lawV": {
+   "class": "LawVNonConformant",
+   "target": "http://senso-framework.org/data/MacPython_openblas-libs type http://senso-framework.org/ontology/seo#LawVNonConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_linesAddedCV_ge_p_law5_additions_cv",
+       "text": "A_linesAddedCV_ge_p_law5_additions_cv equivalentTo linesAddedCV some decimal[>= 2.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawVNonConformant",
+       "text": "LawVNonConformant equivalentTo A_linesAddedCV_ge_p_law5_additions_cv and A_monthsObserved_ge_p_law5_min_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law5_min_months",
+       "text": "A_monthsObserved_ge_p_law5_min_months equivalentTo monthsObserved some integer[>= 4]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "MacPython_openblas-libs",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "MacPython_openblas-libs monthsObserved 36"
+      },
+      {
+       "subject": "MacPython_openblas-libs",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "MacPython_openblas-libs type SoftwareProject"
+      },
+      {
+       "subject": "MacPython_openblas-libs",
+       "prop": "linesAddedCV",
+       "value": 2.826466,
+       "raw": "MacPython_openblas-libs linesAddedCV 2.826466"
+      }
+     ],
+     "closures": [],
+     "raw": "A_linesAddedCV_ge_p_law5_additions_cv equivalentTo linesAddedCV some decimal[>= 2.0]\nMacPython_openblas-libs monthsObserved 36\nLawVNonConformant equivalentTo A_linesAddedCV_ge_p_law5_additions_cv and A_monthsObserved_ge_p_law5_min_months and SoftwareProject\nMacPython_openblas-libs type SoftwareProject\nA_monthsObserved_ge_p_law5_min_months equivalentTo monthsObserved some integer[>= 4]\nMacPython_openblas-libs linesAddedCV 2.826466"
+    }
+   ],
+   "raw_text": "Axiom: MacPython_openblas-libs type LawVNonConformant\n\nExplanation(s): \n1)   A_linesAddedCV_ge_p_law5_additions_cv equivalentTo linesAddedCV some decimal[>= 2.0]\n     MacPython_openblas-libs monthsObserved 36\n     LawVNonConformant equivalentTo A_linesAddedCV_ge_p_law5_additions_cv\n                                    and A_monthsObserved_ge_p_law5_min_months\n                                    and SoftwareProject\n     MacPython_openblas-libs type SoftwareProject\n     A_monthsObserved_ge_p_law5_min_months equivalentTo monthsObserved some integer[>= 4]\n     MacPython_openblas-libs linesAddedCV 2.826466\n\n\n",
+   "seconds": 2.3947689770138822,
+   "returncode": 0,
+   "error": null
+  },
+  "lawVI": {
+   "class": "LawVIConformant",
+   "target": "http://senso-framework.org/data/MacPython_openblas-libs type http://senso-framework.org/ontology/seo#LawVIConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "subclass",
+       "subject": "GrowthStage",
+       "text": "GrowthStage subClassOf LawVIConformant"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKTau_gt_0",
+       "text": "A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKpValue_lt_mk_alpha",
+       "text": "A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]"
+      },
+      {
+       "kind": "definition",
+       "subject": "GrowthStage",
+       "text": "GrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "MacPython_openblas-libs",
+       "prop": "locMKpValue",
+       "value": 0.0,
+       "raw": "MacPython_openblas-libs locMKpValue 0.0"
+      },
+      {
+       "subject": "MacPython_openblas-libs",
+       "prop": "locMKTau",
+       "value": 0.933333,
+       "raw": "MacPython_openblas-libs locMKTau 0.933333"
+      },
+      {
+       "subject": "MacPython_openblas-libs",
+       "prop": "locSeriesLength",
+       "value": 36,
+       "raw": "MacPython_openblas-libs locSeriesLength 36"
+      },
+      {
+       "subject": "MacPython_openblas-libs",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "MacPython_openblas-libs type SoftwareProject"
+      }
+     ],
+     "closures": [],
+     "raw": "MacPython_openblas-libs locMKpValue 0.0\nMacPython_openblas-libs locMKTau 0.933333\nGrowthStage subClassOf LawVIConformant\nA_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\nA_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\nMacPython_openblas-libs locSeriesLength 36\nA_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\nMacPython_openblas-libs type SoftwareProject\nGrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject\nA_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]"
+    }
+   ],
+   "raw_text": "Axiom: MacPython_openblas-libs type LawVIConformant\n\nExplanation(s): \n1)   MacPython_openblas-libs locMKpValue 0.0\n     MacPython_openblas-libs locMKTau 0.933333\n     GrowthStage subClassOf LawVIConformant\n     A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\n     A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\n     MacPython_openblas-libs locSeriesLength 36\n     A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\n     MacPython_openblas-libs type SoftwareProject\n     GrowthStage equivalentTo A_locMKTau_gt_0\n                              and A_locMKpValue_lt_mk_alpha\n                              and MKApplicable\n                              and SoftwareProject\n     A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]\n\n\n",
+   "seconds": 2.32814805500675,
+   "returncode": 0,
+   "error": null
+  },
+  "lawVII": {
+   "class": "LawVIINonConformant",
+   "target": "http://senso-framework.org/data/MacPython_openblas-libs type http://senso-framework.org/ontology/seo#LawVIINonConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_bugFixRatioFirstHalf_gt_0",
+       "text": "A_bugFixRatioFirstHalf_gt_0 equivalentTo bugFixRatioFirstHalf some decimal[> 0.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_bugFixHalfRatio_lt_p_law7_tolerance",
+       "text": "A_bugFixHalfRatio_lt_p_law7_tolerance equivalentTo bugFixHalfRatio some decimal[< 0.9]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_activeMonthCount_ge_p_law7_min_active_months",
+       "text": "A_activeMonthCount_ge_p_law7_min_active_months equivalentTo activeMonthCount some integer[>= 4]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawVIINonConformant",
+       "text": "LawVIINonConformant equivalentTo A_activeMonthCount_ge_p_law7_min_active_months and A_bugFixHalfRatio_lt_p_law7_tolerance and A_bugFixRatioFirstHalf_gt_0 and SoftwareProject"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "MacPython_openblas-libs",
+       "prop": "bugFixHalfRatio",
+       "value": 0.738802,
+       "raw": "MacPython_openblas-libs bugFixHalfRatio 0.738802"
+      },
+      {
+       "subject": "MacPython_openblas-libs",
+       "prop": "activeMonthCount",
+       "value": 25,
+       "raw": "MacPython_openblas-libs activeMonthCount 25"
+      },
+      {
+       "subject": "MacPython_openblas-libs",
+       "prop": "bugFixRatioFirstHalf",
+       "value": 0.241312,
+       "raw": "MacPython_openblas-libs bugFixRatioFirstHalf 0.241312"
+      },
+      {
+       "subject": "MacPython_openblas-libs",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "MacPython_openblas-libs type SoftwareProject"
+      }
+     ],
+     "closures": [],
+     "raw": "MacPython_openblas-libs bugFixHalfRatio 0.738802\nMacPython_openblas-libs activeMonthCount 25\nA_bugFixRatioFirstHalf_gt_0 equivalentTo bugFixRatioFirstHalf some decimal[> 0.0]\nA_bugFixHalfRatio_lt_p_law7_tolerance equivalentTo bugFixHalfRatio some decimal[< 0.9]\nMacPython_openblas-libs bugFixRatioFirstHalf 0.241312\nA_activeMonthCount_ge_p_law7_min_active_months equivalentTo activeMonthCount some integer[>= 4]\nMacPython_openblas-libs type SoftwareProject\nLawVIINonConformant equivalentTo A_activeMonthCount_ge_p_law7_min_active_months and A_bugFixHalfRatio_lt_p_law7_tolerance and A_bugFixRatioFirstHalf_gt_0 and SoftwareProject"
+    }
+   ],
+   "raw_text": "Axiom: MacPython_openblas-libs type LawVIINonConformant\n\nExplanation(s): \n1)   MacPython_openblas-libs bugFixHalfRatio 0.738802\n     MacPython_openblas-libs activeMonthCount 25\n     A_bugFixRatioFirstHalf_gt_0 equivalentTo bugFixRatioFirstHalf some decimal[> 0.0]\n     A_bugFixHalfRatio_lt_p_law7_tolerance equivalentTo bugFixHalfRatio some decimal[< 0.9]\n     MacPython_openblas-libs bugFixRatioFirstHalf 0.241312\n     A_activeMonthCount_ge_p_law7_min_active_months equivalentTo activeMonthCount some integer[>= 4]\n     MacPython_openblas-libs type SoftwareProject\n     LawVIINonConformant equivalentTo A_activeMonthCount_ge_p_law7_min_active_months\n                                      and A_bugFixHalfRatio_lt_p_law7_tolerance\n                                      and A_bugFixRatioFirstHalf_gt_0\n                                      and SoftwareProject\n\n\n",
+   "seconds": 2.4419310800149105,
+   "returncode": 0,
+   "error": null
+  },
+  "lawVIII": {
+   "class": "LawVIIINonConformant",
+   "target": "http://senso-framework.org/data/MacPython_openblas-libs type http://senso-framework.org/ontology/seo#LawVIIINonConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_multiAuthorMonthRatio_le_p_law8_multiauthor_ratio",
+       "text": "A_multiAuthorMonthRatio_le_p_law8_multiauthor_ratio equivalentTo MultiAuthorInactive"
+      },
+      {
+       "kind": "subclass",
+       "subject": "LawVIIINonConformantSingleAuthor",
+       "text": "LawVIIINonConformantSingleAuthor subClassOf LawVIIINonConformant"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_multiAuthorMonthRatio_le_p_law8_multiauthor_ratio",
+       "text": "A_multiAuthorMonthRatio_le_p_law8_multiauthor_ratio equivalentTo multiAuthorMonthRatio some decimal[<= 0.3]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law8_min_months",
+       "text": "A_monthsObserved_ge_p_law8_min_months equivalentTo monthsObserved some integer[>= 6]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawVIIINonConformantSingleAuthor",
+       "text": "LawVIIINonConformantSingleAuthor equivalentTo A_monthsObserved_ge_p_law8_min_months and MultiAuthorInactive and SoftwareProject"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "MacPython_openblas-libs",
+       "prop": "multiAuthorMonthRatio",
+       "value": 0.194444,
+       "raw": "MacPython_openblas-libs multiAuthorMonthRatio 0.194444"
+      },
+      {
+       "subject": "MacPython_openblas-libs",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "MacPython_openblas-libs monthsObserved 36"
+      },
+      {
+       "subject": "MacPython_openblas-libs",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "MacPython_openblas-libs type SoftwareProject"
+      }
+     ],
+     "closures": [],
+     "raw": "A_multiAuthorMonthRatio_le_p_law8_multiauthor_ratio equivalentTo MultiAuthorInactive\nLawVIIINonConformantSingleAuthor subClassOf LawVIIINonConformant\nA_multiAuthorMonthRatio_le_p_law8_multiauthor_ratio equivalentTo multiAuthorMonthRatio some decimal[<= 0.3]\nMacPython_openblas-libs multiAuthorMonthRatio 0.194444\nMacPython_openblas-libs monthsObserved 36\nA_monthsObserved_ge_p_law8_min_months equivalentTo monthsObserved some integer[>= 6]\nMacPython_openblas-libs type SoftwareProject\nLawVIIINonConformantSingleAuthor equivalentTo A_monthsObserved_ge_p_law8_min_months and MultiAuthorInactive and SoftwareProject"
+    }
+   ],
+   "raw_text": "Axiom: MacPython_openblas-libs type LawVIIINonConformant\n\nExplanation(s): \n1)   A_multiAuthorMonthRatio_le_p_law8_multiauthor_ratio equivalentTo MultiAuthorInactive\n     LawVIIINonConformantSingleAuthor subClassOf LawVIIINonConformant\n     A_multiAuthorMonthRatio_le_p_law8_multiauthor_ratio equivalentTo multiAuthorMonthRatio some decimal[<= 0.3]\n     MacPython_openblas-libs multiAuthorMonthRatio 0.194444\n     MacPython_openblas-libs monthsObserved 36\n     A_monthsObserved_ge_p_law8_min_months equivalentTo monthsObserved some integer[>= 6]\n     MacPython_openblas-libs type SoftwareProject\n     LawVIIINonConformantSingleAuthor equivalentTo A_monthsObserved_ge_p_law8_min_months\n                                                   and MultiAuthorInactive\n                                                   and SoftwareProject\n\n\n",
+   "seconds": 2.444313950953074,
+   "returncode": 0,
+   "error": null
+  }
+ },
+ "fuseki": {
+  "dataset": "seo_v2",
+  "graph_triples": {
+   "urn:senso:abox:MacPython/openblas-libs": 388,
+   "urn:senso:commits:MacPython/openblas-libs": 1735,
+   "urn:senso:abox-derived:MacPython/openblas-libs": 8,
+   "urn:senso:inferred:MacPython/openblas-libs:79f851de895e": 264,
+   "urn:senso:explanations:MacPython/openblas-libs:79f851de895e": 177
+  }
+ },
+ "timings": {
+  "t_clone": 1.695,
+  "t_mine": 2.912,
+  "t_loc": 1.114,
+  "t_reason_A": 2.608,
+  "mining_cached": false,
+  "t_reason_B": 21.704,
+  "n_configs": 12,
+  "t_explain": 20.943,
+  "n_explain_calls": 9,
+  "t_writeback": 6.872,
+  "t_total": 56.396
+ }
+}

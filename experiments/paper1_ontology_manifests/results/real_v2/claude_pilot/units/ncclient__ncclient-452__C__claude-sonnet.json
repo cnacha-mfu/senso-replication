@@ -1,0 +1,93 @@
+{
+ "unit_id": "ncclient__ncclient-452__C__claude-sonnet",
+ "task_id": "ncclient__ncclient-452",
+ "repo": "ncclient/ncclient",
+ "stage": "evolution",
+ "condition": "C",
+ "model": "claude-code/sonnet",
+ "run": 1,
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 4602,
+  "sha256": "85afe45d19620f086be59d17f7b41a71f3fa03f63aad87fdc8aa849f0ad9dc30"
+ },
+ "started": "2026-10-18T01:07:12.169250+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 4,
+ "tool_calls": 3,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 7664,
+  "cache_read_input_tokens": 67923,
+  "output_tokens": 1047,
+  "output_tokens_details": {
+   "thinking_tokens": 40
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 7664,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 8,
+   "outputTokens": 1047,
+   "cacheReadInputTokens": 67923,
+   "cacheCreationInputTokens": 7664,
+   "webSearchRequests": 0,
+   "costUSD": 0.0479343,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 40,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.0479343,
+ "result_text": "`get_schema` should no longer crash on Junos replies. I haven't run it or any tests, and I didn't try it against a Junos device or the gist reply.\n\nThe fix is in `GetSchemaReply._parsing_hook` in `ncclient/operations/retrieve.py`. It still looks for `data` in the `ietf-netconf-monitoring` namespace first. If that finds nothing, it takes the first child of the reply root whose tag is `data`, whatever its namespace. If there is no `data` element at all, `_data` stays `None` instead of raising `'NoneType' object has no attribute 'text'`.\n\nI used a plain loop over the children rather than the `{*}data` wildcard because that wildcard needs Python 3.8 or later.",
+ "wall_s": 17.9,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 4,
+   "hit_step_limit": 0,
+   "changed_lines": 10,
+   "gold_changed_lines": 95,
+   "Y1": 5,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": -3.2479275134435857
+  },
+  "f2p_pass": 0,
+  "f2p_total": 2,
+  "p2p_pass": 11,
+  "p2p_total": 11,
+  "f2p_all_pass": false,
+  "p2p_all_pass": true,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 1.6
+ },
+ "status": "done",
+ "finished": "2026-10-18T01:07:32.536949+00:00"
+}

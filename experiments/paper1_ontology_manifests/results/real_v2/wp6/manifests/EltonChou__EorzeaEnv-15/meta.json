@@ -1,0 +1,328 @@
+{
+ "task_id": "EltonChou__EorzeaEnv-15",
+ "repo": "EltonChou/EorzeaEnv",
+ "stage": "evolution",
+ "rounds": 1,
+ "rejects": {},
+ "flags": [
+  "kind4_R_used_I_competitor",
+  "length_violation_F_R"
+ ],
+ "info": {
+  "slots": {
+   "test_root": "test",
+   "P1": {
+    "replaced": "EorzeaEnv/Data",
+    "name": "core",
+    "F_R": "EorzeaEnv/core",
+    "F_I": "EorzeaEnv/Data/core"
+   },
+   "P2": {
+    "replaced": null,
+    "F_R": "EorzeaEnv/Data/FuzzyTerritoryWeather.py",
+    "F_I": "setup.py"
+   },
+   "C": {
+    "F_R": "make tests",
+    "F_I": "make dev"
+   },
+   "D": {
+    "replaced": "rapidfuzz",
+    "F_R": "boltons",
+    "F_I": "boltons"
+   }
+  },
+  "why": {
+   "test_command": [
+    {
+     "root": "test",
+     "T3": "SupportedClaim",
+     "T1": "SupportedClaim",
+     "collect_ok": true
+    }
+   ],
+   "kind1": {
+    "p1_idx": 1,
+    "gold0": "EorzeaEnv",
+    "unrelated": "EorzeaEnv/Data",
+    "base_R": "EorzeaEnv",
+    "base_I": "EorzeaEnv/Data"
+   },
+   "kind2": {
+    "p2_idx": null,
+    "n_deleted_py": 20,
+    "found": {
+     "F_R": "EorzeaEnv/Data/FuzzyTerritoryWeather.py",
+     "F_I": "setup.py"
+    }
+   },
+   "kind3": {
+    "run": "tests",
+    "install": "dev",
+    "test_ok": true,
+    "install_ok": true
+   },
+   "kind4": {
+    "deps": [
+     [
+      "numpy",
+      false
+     ],
+     [
+      "rapidfuzz",
+      false
+     ]
+    ],
+    "d_idx": 1,
+    "src_R": "rapidfuzz",
+    "src_I": "rapidfuzz",
+    "n_decls": 47,
+    "n_dist": 36
+   }
+  },
+  "length": {
+   "T": 311,
+   "F_R": 335,
+   "F_I": 312
+  },
+  "fallbacks": {
+   "F_R": [
+    "kind4_I_competitor"
+   ],
+   "F_I": []
+  },
+  "modes": {
+   "F_R": {
+    "1": "replace",
+    "2": "add",
+    "3": "replace",
+    "4": "replace"
+   },
+   "F_I": {
+    "1": "replace",
+    "2": "add",
+    "3": "replace",
+    "4": "replace"
+   }
+  },
+  "length_diff": {
+   "F_R": 24,
+   "F_I": 1
+  },
+  "n_claims_T": 11,
+  "n_false": {
+   "F_R": 4,
+   "F_I": 4
+  },
+  "pointer_in_issue": true,
+  "gold_dirs": [
+   "EorzeaEnv"
+  ],
+  "gold_files": [
+   "EorzeaEnv/eorzea_time.py"
+  ]
+ },
+ "tokens": {
+  "F_R": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "EorzeaEnv/core",
+     "core"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "EorzeaEnv/Data/FuzzyTerritoryWeather.py",
+     "FuzzyTerritoryWeather.py"
+    ]
+   },
+   {
+    "kind": 3,
+    "type": "regex",
+    "regex": "\\bmake\\b[^|;&\\n]*\\btests\\b",
+    "target": "tests"
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "boltons"
+    ]
+   }
+  ],
+  "F_I": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "EorzeaEnv/Data/core",
+     "core"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "setup.py",
+     "setup.py"
+    ]
+   },
+   {
+    "kind": 3,
+    "type": "regex",
+    "regex": "\\bmake\\b[^|;&\\n]*\\bdev\\b",
+    "target": "dev"
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "boltons"
+    ]
+   }
+  ]
+ },
+ "unresolved_pre_hermit": [],
+ "sha256": {
+  "T": "7f836b0f21e6a95e88461e23b65b2f71330b872a91628836becb6aad8c3e2b43",
+  "F_R": "b29494f86ac942440c7e087d61d2afcb7b453bb7266bd1023b8002cd7ca3ad0c",
+  "F_I": "a2b71db1712991f3a276579e89fe223def66f26aed2b75a17fe0836bf3b581a2"
+ },
+ "chars": {
+  "T": 311,
+  "F_R": 335,
+  "F_I": 312
+ },
+ "claims": {
+  "T": [
+   "T1|EorzeaEnv",
+   "T1|EorzeaEnv/Data",
+   "T1|test",
+   "T1|EorzeaEnv/Data/PlaceName.py",
+   "T1|EorzeaEnv/Data/Weather.py",
+   "T3|test_framework|pytest",
+   "T1|test",
+   "T1|pyproject.toml",
+   "T4|numpy|",
+   "T4|rapidfuzz|",
+   "T6|python|3008000000@2"
+  ],
+  "F_R": [
+   "T1|EorzeaEnv",
+   "T1|EorzeaEnv/core",
+   "T1|test",
+   "T1|EorzeaEnv/Data/PlaceName.py",
+   "T1|EorzeaEnv/Data/Weather.py",
+   "T1|EorzeaEnv/Data/FuzzyTerritoryWeather.py",
+   "T5|make|tests",
+   "T1|pyproject.toml",
+   "T4|numpy|",
+   "T4|boltons|",
+   "T6|python|3008000000@2"
+  ],
+  "F_I": [
+   "T1|EorzeaEnv",
+   "T1|EorzeaEnv/Data/core",
+   "T1|test",
+   "T1|EorzeaEnv/Data/PlaceName.py",
+   "T1|EorzeaEnv/Data/Weather.py",
+   "T1|setup.py",
+   "T3|test_framework|pytest",
+   "T1|test",
+   "T5|make|dev",
+   "T4|numpy|",
+   "T4|boltons|",
+   "T6|python|3008000000@2"
+  ]
+ },
+ "python_spec": ">=3.8,<=3.13",
+ "token_audit": [
+  {
+   "cond": "F_R",
+   "kind": 1,
+   "type": "path",
+   "name": "EorzeaEnv/core",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 2,
+   "type": "path",
+   "name": "EorzeaEnv/Data/FuzzyTerritoryWeather.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 3,
+   "type": "regex",
+   "name": "make tests",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 4,
+   "type": "word",
+   "name": "boltons",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 1,
+   "type": "path",
+   "name": "EorzeaEnv/Data/core",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 2,
+   "type": "path",
+   "name": "setup.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 3,
+   "type": "regex",
+   "name": "make dev",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 4,
+   "type": "word",
+   "name": "boltons",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  }
+ ],
+ "dist_imports_used": {
+  "numpy": [
+   "numpy"
+  ],
+  "rapidfuzz": [
+   "rapidfuzz"
+  ],
+  "boltons": null
+ }
+}

@@ -1,0 +1,111 @@
+{
+ "unit_id": "ncclient__ncclient-452__D__claude-sonnet__r1",
+ "task_id": "ncclient__ncclient-452",
+ "repo": "ncclient/ncclient",
+ "stage": "evolution",
+ "condition": "D",
+ "model": "claude-code/sonnet",
+ "run": 1,
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 4159,
+  "sha256": "8212c4643c92e7570ffa9362cfe4406e6af32f0d2109233bf9ea18ec3fd583c2"
+ },
+ "started": "2026-10-18T06:49:39.195307+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 4,
+ "tool_calls": 3,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 7567,
+  "cache_read_input_tokens": 67990,
+  "output_tokens": 945,
+  "output_tokens_details": {
+   "thinking_tokens": 0
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 7567,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 8,
+   "outputTokens": 945,
+   "cacheReadInputTokens": 67990,
+   "cacheCreationInputTokens": 7567,
+   "webSearchRequests": 0,
+   "costUSD": 0.046533,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.046533,
+ "result_text": "`get_schema` no longer crashes when the device's `<data>` element isn't in the `ietf-netconf-monitoring` namespace, as with Junos. The change is in `GetSchemaReply._parsing_hook` in `ncclient/operations/retrieve.py`.\n\nIt still looks for `<data>` in the `ietf-netconf-monitoring` namespace first. If that finds nothing, it tries the base NETCONF namespace, then `<data>` in any namespace, then `<data>` with no namespace. If none match, the schema data is set to `None` instead of raising the `'NoneType' object has no attribute 'text'` error.\n\nI tested it with a made-up reply whose `<data>` sits in an unrelated namespace, and it returned the text. I didn't run it against the real Junos reply from the gist or run the existing test suite.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792309800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0.17,
+    "resetsAt": 1792309800
+   },
+   "seven_day": {
+    "utilization": 0.13,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 21.6,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 4,
+   "hit_step_limit": 0,
+   "changed_lines": 10,
+   "gold_changed_lines": 95,
+   "Y1": 4,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": -3.2479275134435857
+  },
+  "f2p_pass": 0,
+  "f2p_total": 2,
+  "p2p_pass": 11,
+  "p2p_total": 11,
+  "f2p_all_pass": false,
+  "p2p_all_pass": true,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 1.4
+ },
+ "status": "done",
+ "finished": "2026-10-18T06:50:03.094677+00:00"
+}

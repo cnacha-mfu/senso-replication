@@ -1,0 +1,75 @@
+{
+ "unit_id": "getsentry__sentry-python-3247__C__nemotron-3-super-120b-a12b__r1",
+ "task_id": "getsentry__sentry-python-3247",
+ "repo": "getsentry/sentry-python",
+ "stage": "servicing",
+ "condition": "C",
+ "model": "nvidia/nemotron-3-super-120b-a12b",
+ "run": 1,
+ "order": 253,
+ "env_build_s": 126.3,
+ "real_agent_manifest_at_base": [],
+ "started": "2026-10-07T05:27:13.894091+00:00",
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 6260,
+  "sha256": "400baab49274090999289a1bad16e3a1d4ec4b694d90e26212cca83a8e29b7c0"
+ },
+ "condition_available": true,
+ "retries": 0,
+ "exit_status": "LimitsExceeded",
+ "error": "",
+ "steps": 40,
+ "wall_s": 112.2,
+ "prompt_tokens": 339513,
+ "completion_tokens": 5478,
+ "format_errors": 0,
+ "length_cutoffs": 0,
+ "api_errors": {
+  "429": 2
+ },
+ "n_queries": 40,
+ "keys_used": {
+  "NVIDIA_API_KEY": 14,
+  "NVIDIA_API_KEY_4": 13,
+  "NVIDIA_API_KEY_5": 11,
+  "NVIDIA_API_KEY_2": 4
+ },
+ "temperature": 0.7,
+ "top_p": 0.95,
+ "model_id_returned": "nvidia/nemotron-3-super-120b-a12b",
+ "mini_version": "2.4.6",
+ "uptake": {
+  "repo_context": false,
+  "label_term": true,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 40,
+   "hit_step_limit": 1,
+   "changed_lines": 3,
+   "gold_changed_lines": 40,
+   "Y1": 0,
+   "Y2": 0,
+   "Y3": 0.0,
+   "Y3_gold": 0.0,
+   "Y3_excess": 0.0,
+   "Y3w": 0.3142857142857143,
+   "Y4": -3.736965594166206
+  },
+  "f2p_pass": 0,
+  "f2p_total": 1,
+  "p2p_pass": 4,
+  "p2p_total": 44,
+  "f2p_all_pass": false,
+  "p2p_all_pass": false,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 32.3
+ },
+ "status": "done",
+ "finished": "2026-10-07T05:29:38.587191+00:00"
+}

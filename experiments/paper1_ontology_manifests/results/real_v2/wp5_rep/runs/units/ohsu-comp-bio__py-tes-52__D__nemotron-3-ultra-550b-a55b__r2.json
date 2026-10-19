@@ -1,0 +1,80 @@
+{
+ "unit_id": "ohsu-comp-bio__py-tes-52__D__nemotron-3-ultra-550b-a55b__r2",
+ "task_id": "ohsu-comp-bio__py-tes-52",
+ "repo": "ohsu-comp-bio/py-tes",
+ "stage": "initial_development",
+ "condition": "D",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "run": 2,
+ "order": 155,
+ "env_build_s": 30.5,
+ "started": "2026-10-15T06:17:31.401693+00:00",
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 3298,
+  "sha256": "b68a8efe5dfff85ae3df40b83110d22ef3d714246e37ef5c8c10621e56933835"
+ },
+ "condition_available": true,
+ "venv_reset_s": 0.74,
+ "stray_procs_killed": 0,
+ "retries": 0,
+ "venv_hash_before": "81d4a651a39adea2",
+ "venv_hash_after": "eb0b85c8bb95860d",
+ "venv_mutated": true,
+ "exit_status": "LimitsExceeded",
+ "error": "",
+ "steps": 40,
+ "wall_s": 490.6,
+ "prompt_tokens": 669040,
+ "completion_tokens": 7040,
+ "format_errors": 0,
+ "length_cutoffs": 0,
+ "api_errors": {
+  "429": 13,
+  "503": 10
+ },
+ "n_queries": 50,
+ "keys_used": {
+  "NVIDIA_API_KEY_5": 13,
+  "NVIDIA_API_KEY_4": 11,
+  "NVIDIA_API_KEY": 17,
+  "NVIDIA_API_KEY_2": 22
+ },
+ "temperature": 0.7,
+ "top_p": 0.95,
+ "model_id_returned": "nvidia/nemotron-3-ultra-550b-a55b",
+ "mini_version": "2.4.6",
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 0,
+   "Y5": 0,
+   "Y6": 40,
+   "hit_step_limit": 1,
+   "changed_lines": 0,
+   "gold_changed_lines": 64,
+   "Y1": null,
+   "Y2": null,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": null
+  },
+  "f2p_pass": 0,
+  "f2p_total": 4,
+  "p2p_pass": 18,
+  "p2p_total": 18,
+  "f2p_all_pass": false,
+  "p2p_all_pass": true,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 3.3
+ },
+ "status": "done",
+ "finished": "2026-10-15T06:25:49.116094+00:00"
+}

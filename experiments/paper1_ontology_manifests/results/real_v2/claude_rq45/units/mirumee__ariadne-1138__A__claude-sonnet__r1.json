@@ -1,0 +1,107 @@
+{
+ "unit_id": "mirumee__ariadne-1138__A__claude-sonnet__r1",
+ "task_id": "mirumee__ariadne-1138",
+ "repo": "mirumee/ariadne",
+ "stage": "initial_development",
+ "condition": "A",
+ "model": "claude-code/sonnet",
+ "run": 1,
+ "condition_meta": {},
+ "started": "2026-10-18T06:39:01.785918+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 7,
+ "tool_calls": 6,
+ "usage": {
+  "input_tokens": 14,
+  "cache_creation_input_tokens": 15746,
+  "cache_read_input_tokens": 133856,
+  "output_tokens": 3604,
+  "output_tokens_details": {
+   "thinking_tokens": 382
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 15746,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 14,
+   "outputTokens": 3604,
+   "cacheReadInputTokens": 133856,
+   "cacheCreationInputTokens": 15746,
+   "webSearchRequests": 0,
+   "costUSD": 0.1124376,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 382,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.1124376,
+ "result_text": "`validate_schema_enum_values` was already exported. I added `repair_default_enum_values(schema)` and removed `set_default_enum_values_on_schema`.\n\nThe test suite finishes with 614 passed and 10 failed. All 10 failures are websocket tests under `tests/asgi/`, which this change doesn't touch. I didn't re-run them without my change to confirm they already failed.\n\n- **New function:** `repair_default_enum_values(schema)` in `ariadne/enums.py` is now exported from `ariadne`. It walks every field argument and input field. It replaces enum default names with the Python values bound to those members, including inside lists and nested input objects.\n- **Removed:** `set_default_enum_values_on_schema` and `EnumType.bind_to_default_values`. The old `repair_default_enum_values(schema, bindables)` helper in `ariadne/executable_schema.py` is also gone, since the new function replaces it. `make_executable_schema` now calls the new version.\n\nI didn't update `CHANGELOG.md`.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792309800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0.16,
+    "resetsAt": 1792309800
+   },
+   "seven_day": {
+    "utilization": 0.13,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 53.2,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 3,
+   "Y6": 7,
+   "hit_step_limit": 0,
+   "changed_lines": 106,
+   "gold_changed_lines": 1015,
+   "Y1": 7,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": -3.2593435575093395
+  },
+  "f2p_pass": 0,
+  "f2p_total": 4,
+  "p2p_pass": 30,
+  "p2p_total": 30,
+  "f2p_all_pass": false,
+  "p2p_all_pass": true,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 1.8
+ },
+ "status": "done",
+ "finished": "2026-10-18T06:39:59.014391+00:00"
+}

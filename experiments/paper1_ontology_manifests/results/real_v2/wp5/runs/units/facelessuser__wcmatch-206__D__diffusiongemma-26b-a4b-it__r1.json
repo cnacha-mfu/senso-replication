@@ -1,0 +1,73 @@
+{
+ "unit_id": "facelessuser__wcmatch-206__D__diffusiongemma-26b-a4b-it__r1",
+ "task_id": "facelessuser__wcmatch-206",
+ "repo": "facelessuser/wcmatch",
+ "stage": "evolution",
+ "condition": "D",
+ "model": "google/diffusiongemma-26b-a4b-it",
+ "run": 1,
+ "order": 835,
+ "env_build_s": 38.7,
+ "real_agent_manifest_at_base": [],
+ "started": "2026-10-07T13:28:02.812572+00:00",
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 3680,
+  "sha256": "f2900d3002f0ce2257ebd7d1a9d23ce09258042c5c41a31dd1c3f0ddfb2fe4d0"
+ },
+ "condition_available": true,
+ "retries": 0,
+ "exit_status": "LimitsExceeded",
+ "error": "",
+ "steps": 40,
+ "wall_s": 394.3,
+ "prompt_tokens": 374706,
+ "completion_tokens": 7437,
+ "format_errors": 9,
+ "length_cutoffs": 0,
+ "api_errors": {},
+ "n_queries": 40,
+ "keys_used": {
+  "NVIDIA_API_KEY_5": 16,
+  "NVIDIA_API_KEY_4": 9,
+  "NVIDIA_API_KEY_2": 8,
+  "NVIDIA_API_KEY": 7
+ },
+ "temperature": 0.7,
+ "top_p": 0.95,
+ "model_id_returned": "google/diffusiongemma-26b-a4b-it",
+ "mini_version": "2.4.6",
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 2,
+   "Y6": 40,
+   "hit_step_limit": 1,
+   "changed_lines": 23,
+   "gold_changed_lines": 12,
+   "Y1": 0,
+   "Y2": 1,
+   "Y3": null,
+   "Y3_gold": 0.0,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": 0.9385994553358568
+  },
+  "f2p_pass": 0,
+  "f2p_total": 3,
+  "p2p_pass": 342,
+  "p2p_total": 342,
+  "f2p_all_pass": false,
+  "p2p_all_pass": true,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 2.7
+ },
+ "status": "done",
+ "finished": "2026-10-07T13:34:39.952761+00:00"
+}

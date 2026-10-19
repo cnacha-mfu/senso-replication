@@ -1,0 +1,21 @@
+{
+ "repo": "hapifhir/org.hl7.fhir.validator-wrapper",
+ "chunk": 3,
+ "n_chunks": 4,
+ "model": "openai/gpt-oss-20b",
+ "prompt_sha256": "d0e02ff613417050168d859f2af6230c3712c6758bb5d9c40d60ff55e5ae87ca",
+ "user_sha256": "5ce6090c7683b02f79277f675bb1ade942b052634caf36606a3c132b144c3fab",
+ "text": "{\"claims\":[{\"type\":\"path_exists\",\"quote\":\"Create controller interface + implementation in `controller/<feature>/`\",\"line\":342,\"subject\":\"controller/<feature>/\",\"mode\":\"asserts_existing\"},{\"type\":\"path_exists\",\"quote\":\"Add route definitions in `<Feature>Module.kt`\",\"line\":344,\"subject\":\"<Feature>Module.kt\",\"mode\":\"asserts_existing\"},{\"type\":\"path_exists\",\"quote\":\"Register in `Module.kt` (main Ktor module)\",\"line\":345,\"subject\":\"Module.kt\",\"mode\":\"asserts_existing\"},{\"type\":\"path_exists\",\"quote\":\"Add DI bindings in `ControllersInjection.kt` or `ApiInjection.kt`\",\"line\":346,\"subject\":\"ControllersInjection.kt\",\"mode\":\"asserts_existing\"},{\"type\":\"path_exists\",\"quote\":\"Add DI bindings in `ControllersInjection.kt` or `ApiInjection.kt`\",\"line\":346,\"subject\":\"ApiInjection.kt\",\"mode\":\"asserts_existing\"},{\"type\":\"path_exists\",\"quote\":\"Update context provider (`context/<ContextName>.kt`):\",\"line\":354,\"subject\":\"context/<ContextName>.kt\",\"mode\":\"asserts_existing\"},{\"type\":\"path_exists\",\"quote\":\"Add API function in `api/ValidatorApi.kt` if server communication is needed\",\"line\":359,\"subject\":\"api/ValidatorApi.kt\",\"mode\":\"asserts_existing\"},{\"type\":\"path_exists\",\"quote\":\"Update or create component in `ui/components/`\",\"line\":361,\"subject\":\"ui/components/\",\"mode\":\"asserts_existing\"}]}",
+ "parse_ok": true,
+ "parse_error": null,
+ "parse_retries": 0,
+ "latency_s": 8.570212972001173,
+ "usage": {
+  "prompt": 2819,
+  "completion": 414
+ },
+ "n_api_calls": 1,
+ "finish_reason": "stop",
+ "error": null,
+ "discarded_attempt_texts": []
+}

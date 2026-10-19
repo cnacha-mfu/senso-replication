@@ -1,0 +1,328 @@
+{
+ "task_id": "ucfopen__canvasapi-271",
+ "repo": "ucfopen/canvasapi",
+ "stage": "initial_development",
+ "rounds": 1,
+ "rejects": {},
+ "flags": [
+  "no_test_command",
+  "length_violation_F_R",
+  "length_violation_F_I"
+ ],
+ "info": {
+  "slots": {
+   "P1": {
+    "replaced": null,
+    "name": "core",
+    "F_R": "canvasapi/core",
+    "F_I": "docs/core"
+   },
+   "P2": {
+    "replaced": null,
+    "F_R": "pycanvas/course_nickname.py",
+    "F_I": "course_nickname.py"
+   },
+   "C": {
+    "F_R": "make test",
+    "F_I": "make install"
+   },
+   "D": {
+    "replaced": "requests",
+    "F_R": "pasteurize",
+    "F_I": "httpx"
+   }
+  },
+  "why": {
+   "test_command": [
+    {
+     "root": "tests",
+     "T3": "ContradictedClaim",
+     "T1": "SupportedClaim",
+     "collect_ok": null
+    }
+   ],
+   "kind1": {
+    "p1_idx": null,
+    "gold0": "canvasapi",
+    "unrelated": null,
+    "base_R": "canvasapi",
+    "base_I": "docs"
+   },
+   "kind2": {
+    "p2_idx": null,
+    "n_deleted_py": 530,
+    "found": {
+     "F_R": "pycanvas/course_nickname.py",
+     "F_I": "course_nickname.py"
+    }
+   },
+   "kind3": {
+    "run": "test",
+    "install": "install",
+    "test_ok": false,
+    "install_ok": true
+   },
+   "kind4": {
+    "deps": [
+     [
+      "six",
+      true
+     ],
+     [
+      "pytz",
+      false
+     ],
+     [
+      "requests",
+      false
+     ]
+    ],
+    "d_idx": 2,
+    "src_R": "six",
+    "src_I": "requests",
+    "n_decls": 6,
+    "n_dist": 27
+   }
+  },
+  "length": {
+   "T": 195,
+   "F_R": 278,
+   "F_I": 226
+  },
+  "fallbacks": {
+   "F_R": [],
+   "F_I": []
+  },
+  "modes": {
+   "F_R": {
+    "1": "add",
+    "2": "add",
+    "3": "add",
+    "4": "replace"
+   },
+   "F_I": {
+    "1": "add",
+    "2": "add",
+    "3": "replace",
+    "4": "replace"
+   }
+  },
+  "length_diff": {
+   "F_R": 83,
+   "F_I": 31
+  },
+  "n_claims_T": 7,
+  "n_false": {
+   "F_R": 4,
+   "F_I": 4
+  },
+  "pointer_in_issue": true,
+  "gold_dirs": [
+   "canvasapi"
+  ],
+  "gold_files": [
+   "AUTHORS.md",
+   "CHANGELOG.md",
+   "canvasapi/quiz.py"
+  ]
+ },
+ "tokens": {
+  "F_R": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "canvasapi/core",
+     "core"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "pycanvas/course_nickname.py",
+     "course_nickname.py"
+    ]
+   },
+   {
+    "kind": 3,
+    "type": "regex",
+    "regex": "\\bmake\\b[^|;&\\n]*\\btest\\b",
+    "target": "test"
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "pasteurize"
+    ]
+   }
+  ],
+  "F_I": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "docs/core",
+     "core"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "course_nickname.py",
+     "course_nickname.py"
+    ]
+   },
+   {
+    "kind": 3,
+    "type": "regex",
+    "regex": "\\bmake\\b[^|;&\\n]*\\binstall\\b",
+    "target": "install"
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "httpx"
+    ]
+   }
+  ]
+ },
+ "unresolved_pre_hermit": [],
+ "sha256": {
+  "T": "e941df715cec7d54e81375e5ad626d2a87cb5c766fd565abed76a08d8e4427af",
+  "F_R": "5f9d2307a872369d00bd55091425f4121cc8fd09e96073373c86918caa9118a8",
+  "F_I": "b88dc30d7d57ec8496bb0679f6fae26e5933dc09b52484b2634270a276f3f53d"
+ },
+ "chars": {
+  "T": 195,
+  "F_R": 278,
+  "F_I": 226
+ },
+ "claims": {
+  "T": [
+   "T1|canvasapi",
+   "T1|tests",
+   "T1|canvasapi/course.py",
+   "T1|setup.py",
+   "T4|six|",
+   "T4|pytz|",
+   "T4|requests|"
+  ],
+  "F_R": [
+   "T1|canvasapi",
+   "T1|tests",
+   "T1|canvasapi/core",
+   "T1|canvasapi/course.py",
+   "T1|pycanvas/course_nickname.py",
+   "T1|setup.py",
+   "T5|make|test",
+   "T4|six|",
+   "T4|pytz|",
+   "T4|pasteurize|"
+  ],
+  "F_I": [
+   "T1|canvasapi",
+   "T1|tests",
+   "T1|docs/core",
+   "T1|canvasapi/course.py",
+   "T1|course_nickname.py",
+   "T5|make|install",
+   "T4|six|",
+   "T4|pytz|",
+   "T4|httpx|"
+  ]
+ },
+ "python_spec": null,
+ "token_audit": [
+  {
+   "cond": "F_R",
+   "kind": 1,
+   "type": "path",
+   "name": "canvasapi/core",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 2,
+   "type": "path",
+   "name": "pycanvas/course_nickname.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 3,
+   "type": "regex",
+   "name": "make test",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 4,
+   "type": "word",
+   "name": "pasteurize",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 1,
+   "type": "path",
+   "name": "docs/core",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 2,
+   "type": "path",
+   "name": "course_nickname.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 3,
+   "type": "regex",
+   "name": "make install",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 4,
+   "type": "word",
+   "name": "httpx",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  }
+ ],
+ "dist_imports_used": {
+  "six": [
+   "six"
+  ],
+  "pytz": [
+   "pytz"
+  ],
+  "requests": [
+   "requests"
+  ],
+  "pasteurize": null,
+  "httpx": null
+ }
+}

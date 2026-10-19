@@ -1,0 +1,107 @@
+{
+ "unit_id": "agronholm__sqlacodegen-371__A__claude-sonnet__r2",
+ "task_id": "agronholm__sqlacodegen-371",
+ "repo": "agronholm/sqlacodegen",
+ "stage": "evolution",
+ "condition": "A",
+ "model": "claude-code/sonnet",
+ "run": 2,
+ "condition_meta": {},
+ "started": "2026-10-18T04:58:20.491392+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 5,
+ "tool_calls": 4,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 2686,
+  "cache_read_input_tokens": 68075,
+  "output_tokens": 1107,
+  "output_tokens_details": {
+   "thinking_tokens": 191
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 2686,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 8,
+   "outputTokens": 1107,
+   "cacheReadInputTokens": 68075,
+   "cacheCreationInputTokens": 2686,
+   "webSearchRequests": 0,
+   "costUSD": 0.028637499999999996,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 191,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.028637499999999996,
+ "result_text": "I changed `get_adapted_type` in `src/sqlacodegen/generators.py` so MySQL `DOUBLE(11,2)` is no longer turned into `Double(11, True)`. I didn't run it against MySQL or add a test for this case. The existing test suite passes (94 passed).\n\n**Cause:** When generic `Double` is substituted for the MySQL type, the scale is lost, so the compiled SQL no longer matches `DOUBLE(11, 2)`. The code deliberately ignores that mismatch for `Float` types (and arrays of them), because on PostgreSQL `Float` can stand for both REAL and DOUBLE_PRECISION. That exception ran on every dialect, so MySQL got `Double(11, True)` too.\n\n**Fix:** The exception now applies only on PostgreSQL. On other dialects, a mismatch means the original type is kept. I expect MySQL to keep its own `DOUBLE` class, which retains the scale, rather than the generic `Double`.\n\nI didn't check what other dialects with a `Float` mismatch now render. They will also keep their original type, not generic `Float`/`Double`.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792309800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0.08,
+    "resetsAt": 1792309800
+   },
+   "seven_day": {
+    "utilization": 0.12,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 49.6,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 5,
+   "hit_step_limit": 0,
+   "changed_lines": 9,
+   "gold_changed_lines": 11,
+   "Y1": 1,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": -0.2895066171949848
+  },
+  "f2p_pass": 1,
+  "f2p_total": 1,
+  "p2p_pass": 36,
+  "p2p_total": 36,
+  "f2p_all_pass": true,
+  "p2p_all_pass": true,
+  "resolved": true,
+  "reason": "resolved",
+  "test_seconds": 5.7
+ },
+ "status": "done",
+ "finished": "2026-10-18T04:59:17.698408+00:00"
+}

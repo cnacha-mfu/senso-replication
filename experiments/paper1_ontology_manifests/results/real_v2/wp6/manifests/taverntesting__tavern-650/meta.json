@@ -1,0 +1,300 @@
+{
+ "task_id": "taverntesting__tavern-650",
+ "repo": "taverntesting/tavern",
+ "stage": "phase_out",
+ "rounds": 1,
+ "rejects": {},
+ "flags": [
+  "kind3_dropped",
+  "kind4_R_used_I_competitor"
+ ],
+ "info": {
+  "slots": {
+   "test_root": "tests",
+   "P1": {
+    "replaced": "tavern/testutils",
+    "name": "internal",
+    "F_R": "docs/source/internal",
+    "F_I": "tavern/_plugins/internal"
+   },
+   "P2": {
+    "replaced": "tavern/_plugins/rest/request.py",
+    "F_R": "tavern/util/python_2_util.py",
+    "F_I": "tests/test_response.py"
+   },
+   "D": {
+    "replaced": "pyyaml",
+    "F_R": "ruamel-yaml",
+    "F_I": "ruamel-yaml"
+   }
+  },
+  "why": {
+   "test_command": [
+    {
+     "root": "tests",
+     "T3": "SupportedClaim",
+     "T1": "SupportedClaim",
+     "collect_ok": true
+    }
+   ],
+   "kind1": {
+    "p1_idx": 5,
+    "gold0": "docs/source",
+    "unrelated": "tavern/_plugins",
+    "base_R": "docs/source",
+    "base_I": "tavern/_plugins"
+   },
+   "kind2": {
+    "p2_idx": 2,
+    "n_deleted_py": 23,
+    "found": {
+     "F_R": "tavern/util/python_2_util.py",
+     "F_I": "tests/test_response.py"
+    }
+   },
+   "kind3": {
+    "run": null,
+    "install": null,
+    "test_ok": true,
+    "install_ok": true
+   },
+   "kind4": {
+    "deps": [
+     [
+      "pyyaml",
+      false
+     ]
+    ],
+    "d_idx": 0,
+    "src_R": "pyyaml",
+    "src_I": "pyyaml",
+    "n_decls": 28,
+    "n_dist": 98
+   }
+  },
+  "length": {
+   "T": 409,
+   "F_R": 405,
+   "F_I": 403
+  },
+  "fallbacks": {
+   "F_R": [
+    "kind4_I_competitor"
+   ],
+   "F_I": []
+  },
+  "modes": {
+   "F_R": {
+    "1": "replace",
+    "2": "replace",
+    "4": "replace"
+   },
+   "F_I": {
+    "1": "replace",
+    "2": "replace",
+    "4": "replace"
+   }
+  },
+  "length_diff": {
+   "F_R": -4,
+   "F_I": -6
+  },
+  "n_claims_T": 15,
+  "n_false": {
+   "F_R": 3,
+   "F_I": 3
+  },
+  "pointer_in_issue": false,
+  "gold_dirs": [
+   "docs/source",
+   "tavern/util"
+  ],
+  "gold_files": [
+   "docs/source/basics.md",
+   "tavern/util/exceptions.py"
+  ]
+ },
+ "tokens": {
+  "F_R": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "docs/source/internal",
+     "internal"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "tavern/util/python_2_util.py",
+     "python_2_util.py"
+    ]
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "ruamel-yaml",
+     "ruamel_yaml"
+    ]
+   }
+  ],
+  "F_I": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "tavern/_plugins/internal",
+     "internal"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "tests/test_response.py",
+     "test_response.py"
+    ]
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "ruamel-yaml",
+     "ruamel_yaml"
+    ]
+   }
+  ]
+ },
+ "unresolved_pre_hermit": [],
+ "sha256": {
+  "T": "7b8ba166f0dca8a57da261e47e6ae9e37bbd0ba19d4c14b48c0a930b44b8af97",
+  "F_R": "b5236c67d0ea4b12d222f0fc4f4873d5616b52c23cc3e3388e1ff5060b66d7a2",
+  "F_I": "fd3b967d175ed52354308d78a3c0e6b02fe3845ff4972e43fb0d1dd3c46905e5"
+ },
+ "chars": {
+  "T": 409,
+  "F_R": 405,
+  "F_I": 403
+ },
+ "claims": {
+  "T": [
+   "T1|docs/source",
+   "T1|tavern",
+   "T1|tavern/_plugins",
+   "T1|tavern/request",
+   "T1|tavern/schemas",
+   "T1|tavern/testutils",
+   "T1|tavern/util",
+   "T1|tests",
+   "T1|tavern/util/dict_util.py",
+   "T1|tavern/util/loader.py",
+   "T1|tavern/_plugins/rest/request.py",
+   "T3|test_framework|pytest",
+   "T1|tests",
+   "T1|setup.py",
+   "T4|pyyaml|"
+  ],
+  "F_R": [
+   "T1|docs/source",
+   "T1|tavern",
+   "T1|tavern/_plugins",
+   "T1|tavern/request",
+   "T1|tavern/schemas",
+   "T1|docs/source/internal",
+   "T1|tavern/util",
+   "T1|tests",
+   "T1|tavern/util/dict_util.py",
+   "T1|tavern/util/loader.py",
+   "T1|tavern/util/python_2_util.py",
+   "T3|test_framework|pytest",
+   "T1|tests",
+   "T1|setup.py",
+   "T4|ruamel-yaml|"
+  ],
+  "F_I": [
+   "T1|docs/source",
+   "T1|tavern",
+   "T1|tavern/_plugins",
+   "T1|tavern/request",
+   "T1|tavern/schemas",
+   "T1|tavern/_plugins/internal",
+   "T1|tavern/util",
+   "T1|tests",
+   "T1|tavern/util/dict_util.py",
+   "T1|tavern/util/loader.py",
+   "T1|tests/test_response.py",
+   "T3|test_framework|pytest",
+   "T1|tests",
+   "T1|setup.py",
+   "T4|ruamel-yaml|"
+  ]
+ },
+ "python_spec": null,
+ "token_audit": [
+  {
+   "cond": "F_R",
+   "kind": 1,
+   "type": "path",
+   "name": "docs/source/internal",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 2,
+   "type": "path",
+   "name": "tavern/util/python_2_util.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 4,
+   "type": "word",
+   "name": "ruamel-yaml",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 1,
+   "type": "path",
+   "name": "tavern/_plugins/internal",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 2,
+   "type": "path",
+   "name": "tests/test_response.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 4,
+   "type": "word",
+   "name": "ruamel-yaml",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  }
+ ],
+ "dist_imports_used": {
+  "pyyaml": [
+   "yaml"
+  ],
+  "ruamel-yaml": null
+ }
+}

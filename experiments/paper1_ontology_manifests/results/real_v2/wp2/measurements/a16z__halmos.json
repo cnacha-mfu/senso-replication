@@ -1,0 +1,177 @@
+{
+ "repo": "a16z/halmos",
+ "slug": "a16z__halmos",
+ "S": "079bb4241d1b460baf986257d56ea86977d73451",
+ "manifest_path": ".github/copilot-instructions.md",
+ "input_sha": "c84b569a1aca57de6f3e567f303eb159db17e298aa1bdc1cd900aef88266e80a",
+ "n_claims": 5,
+ "n_tree_files": 219,
+ "n_dep_manifests_parsed": 2,
+ "seconds": 0.1,
+ "claims": [
+  {
+   "key_str": "T1|src",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "src",
+   "quote": "ruff check src/",
+   "line": 11,
+   "votes": 2,
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "src",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 26,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T3|linter_formatter|ruff",
+   "tcode": "T3",
+   "types": [
+    "ToolUsageClaim",
+    "NonPackageManagerToolClaim"
+   ],
+   "headline": true,
+   "subject": "ruff",
+   "quote": "ruff check src/",
+   "line": 11,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "tool": "ruff",
+    "category": "linter_formatter"
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "toolSignatureHitCount": 2,
+     "toolEcosystemAnchorCount": 2,
+     "competingToolSignatureCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T3|package_manager|uv",
+   "tcode": "T3",
+   "types": [
+    "ToolUsageClaim",
+    "PackageManagerClaim"
+   ],
+   "headline": true,
+   "subject": "uv",
+   "quote": "uv run pytest -vv -k \"not long and not ffi and not regression\"",
+   "line": 17,
+   "votes": 2,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "attrs": {
+    "tool": "uv",
+    "category": "package_manager"
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "toolSignatureHitCount": 0,
+     "toolEcosystemAnchorCount": 2,
+     "competingToolSignatureCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T3|test_framework|pytest",
+   "tcode": "T3",
+   "types": [
+    "ToolUsageClaim",
+    "NonPackageManagerToolClaim"
+   ],
+   "headline": true,
+   "subject": "pytest",
+   "quote": "uv run pytest -vv -k \"not long and not ffi and not regression\"",
+   "line": 17,
+   "votes": 2,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "attrs": {
+    "tool": "pytest",
+    "category": "test_framework"
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "toolSignatureHitCount": 4,
+     "toolEcosystemAnchorCount": 2,
+     "competingToolSignatureCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T6|python|3011000000@2",
+   "tcode": "T6",
+   "types": [
+    "VersionClaim",
+    "MinVersionClaim"
+   ],
+   "headline": true,
+   "subject": "python",
+   "quote": "Use Python ≥ 3.11",
+   "line": 25,
+   "votes": 2,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "subject_type": "python",
+    "version": "3.11",
+    "code": 3011000000,
+    "precision": 2,
+    "qualifier": "min"
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "versionSourceCount": 1
+    },
+    "evidences": [
+     {
+      "versionSourcePath": "pyproject.toml",
+      "versionSourceRaw": ">=3.11",
+      "versionLowerDelta": 0,
+      "versionUpperUnboundedCount": 1
+     }
+    ],
+    "meta": {}
+   }
+  }
+ ]
+}

@@ -1,0 +1,107 @@
+{
+ "unit_id": "StellarCN__py-stellar-base-817__A__claude-sonnet__r2",
+ "task_id": "StellarCN__py-stellar-base-817",
+ "repo": "StellarCN/py-stellar-base",
+ "stage": "initial_development",
+ "condition": "A",
+ "model": "claude-code/sonnet",
+ "run": 2,
+ "condition_meta": {},
+ "started": "2026-10-18T03:30:40.873314+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 3,
+ "tool_calls": 2,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 8830,
+  "cache_read_input_tokens": 51268,
+  "output_tokens": 623,
+  "output_tokens_details": {
+   "thinking_tokens": 174
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 8830,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 623,
+   "cacheReadInputTokens": 51268,
+   "cacheCreationInputTokens": 8830,
+   "webSearchRequests": 0,
+   "costUSD": 0.04668880000000001,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 174,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.04668880000000001,
+ "result_text": "I fixed `to_struct` in `stellar_sdk/scval.py` so it sorts the struct fields by name before building the map. I haven't run the tests or the reproduction script against the testnet.\n\nYour XDR had the map keys in the order `source, asset, price, timestamp`. As far as I can tell, Soroban requires `ScMap` keys to be sorted, so the host rejected the map with \"failed to convert ScVal to host value\". Rust sorts struct fields when it builds the map, which is why the Rust test worked.\n\n`to_map` still keeps keys in the order you give it. If you build a map by hand with unsorted keys, you will likely hit the same error. I only changed `to_struct`.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792309800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0.03,
+    "resetsAt": 1792309800
+   },
+   "seven_day": {
+    "utilization": 0.12,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 13.7,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 3,
+   "hit_step_limit": 0,
+   "changed_lines": 2,
+   "gold_changed_lines": 5,
+   "Y1": 0,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": -1.3219280948873622
+  },
+  "f2p_pass": 1,
+  "f2p_total": 1,
+  "p2p_pass": 70,
+  "p2p_total": 70,
+  "f2p_all_pass": true,
+  "p2p_all_pass": true,
+  "resolved": true,
+  "reason": "resolved",
+  "test_seconds": 2.2
+ },
+ "status": "done",
+ "finished": "2026-10-18T03:30:57.698655+00:00"
+}

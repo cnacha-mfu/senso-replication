@@ -1,0 +1,111 @@
+{
+ "unit_id": "myusuf3__delorean-103__D__claude-sonnet__r2",
+ "task_id": "myusuf3__delorean-103",
+ "repo": "myusuf3/delorean",
+ "stage": "initial_development",
+ "condition": "D",
+ "model": "claude-code/sonnet",
+ "run": 2,
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 3396,
+  "sha256": "9525a14dc35a636da0ea2e8a69fe5a014e74bedc2f5b6e3e3e3ab32a0f4ee3a0"
+ },
+ "started": "2026-10-18T06:47:56.974614+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 5,
+ "tool_calls": 4,
+ "usage": {
+  "input_tokens": 10,
+  "cache_creation_input_tokens": 3145,
+  "cache_read_input_tokens": 94120,
+  "output_tokens": 1453,
+  "output_tokens_details": {
+   "thinking_tokens": 388
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 3145,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 10,
+   "outputTokens": 1453,
+   "cacheReadInputTokens": 94120,
+   "cacheCreationInputTokens": 3145,
+   "webSearchRequests": 0,
+   "costUSD": 0.036542,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 388,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.036542,
+ "result_text": "`parse('2017-05-02T05:38:49.899Z')` now returns 2017-05-02 05:38:49.899 UTC instead of swapping month and day. I didn't run the test suite.\n\nThe cause was that the defaults `dayfirst=True, yearfirst=True` make dateutil read a leading year as year-day-month. In `parse` in `delorean/interface.py`, I now force `dayfirst=False` when the string starts with `YYYY-M-D`. Other formats, such as `01/05/09`, still follow whatever `dayfirst` you pass.\n\nI could only confirm the fix with `TZ=America/New_York`. With the default timezone here, `parse` crashes with `AttributeError: 'zoneinfo.ZoneInfo' object has no attribute 'localize'`. That crash also happens without my change, so it isn't caused by the fix. It looks like an incompatibility between the installed local-timezone library and pytz's `localize`, which I didn't investigate.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792309800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0.17,
+    "resetsAt": 1792309800
+   },
+   "seven_day": {
+    "utilization": 0.13,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 40.9,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 5,
+   "hit_step_limit": 0,
+   "changed_lines": 4,
+   "gold_changed_lines": 38,
+   "Y1": 1,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": -3.2479275134435857
+  },
+  "f2p_pass": 0,
+  "f2p_total": 1,
+  "p2p_pass": 89,
+  "p2p_total": 89,
+  "f2p_all_pass": false,
+  "p2p_all_pass": true,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 0.9
+ },
+ "status": "done",
+ "finished": "2026-10-18T06:48:40.218405+00:00"
+}

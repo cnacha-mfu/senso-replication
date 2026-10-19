@@ -1,0 +1,13 @@
+# WP2 deviations log (design: wp2-design.md, commit 09860cf; thresholds/configs/prompt committed before extraction)
+
+| # | What | Before/after seeing verdicts | Why / impact |
+|---|------|------------------------------|--------------|
+| 1 | `xunit.v3` added to `configs/wp2_tool_signatures.yaml` after the pre-extraction commit. | After | Missing signature for a .NET test framework; diff is in git history. |
+| 2 | Normalization and measurement fixes after inspecting first-pass Contradicted claims: imports and `@/` aliases no longer path claims; dotted package names without a known extension rejected; glob asterisks preserved; tree-diagram wrapping root handled; T5 runner and target must co-occur in the quote; T4 subject must be a code span / contain `/` or `@` / follow an install command; self-references rejected; parsers for pubspec, mix, sbt, Package.swift, gemspec, settings.ini; segment matching for Go-style module paths. | After | Each fix removes a mechanical false contradiction (extraction or parsing artefact), none changes a verdict rule or threshold. First-pass counts and the fix list are in `results/real_v2/wp2/first_pass_summary.json`; the paper must report both passes. |
+| 3 | 500 diffusiongemma claims with a missing `quote` were repaired mechanically from the subject's line. | During | Strict no-repair variant reported in `agreement.json` (mean pairwise F1 0.53 (report.json: 0.5323) vs 0.61). |
+| 4 | Extraction concurrency 1-2 workers per model (4 total) instead of 2 per model; gpt-oss-20b with `reasoning_effort=low`; nemotron with thinking disabled. | Before extraction | Latency (gpt-oss default 100-270 s per chunk) and VM load limits. |
+| 5 | HermiT-vs-Pellet verdict cross-check not available: Pellet 2.3.1 crashes ("Adding type to a pruned node") classifying the claims TBox on 79/79 manifests. | — | Logged in `verdicts_pellet/`; Pellet justifications still obtained for 58/65 Contradicted claims. |
+| 6 | Optional slow-model robustness run abandoned (NIM 504s; 4/40 calls in 35 min); partial data deleted. | — | Optional in the design. |
+| 7 | T7 measured (1 claim) but not re-checked; excluded from headline rates as designed. T8 not done. JCSSE section-category covariate not done. | — | Scope. |
+| 8 | T6 compared at min(claim precision, source precision); T4 module-path matching by any name segment (design: last segment); drift flip commit found by bisection assuming a single flip. | During implementation | Implementation choices to be stated in the method section. |
+| 9 | Sensitivity verdict directories (11 variants) not committed (size); kept at ~/research/data/wp2_sensitivity_verdicts; `sensitivity.json` committed. | — | Storage. |

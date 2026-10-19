@@ -1,0 +1,766 @@
+{
+ "repo": "jaxen-xpath/jaxen",
+ "slug": "jaxen-xpath__jaxen",
+ "S": "7e4b5f686bc475aaecc63a311aa251aa673c111e",
+ "manifest_path": ".github/copilot-instructions.md",
+ "input_sha": "9766792f69d0d4e5ada2a102a3b710a788fb227c48441071d22098dbafb65332",
+ "n_claims": 23,
+ "n_tree_files": 393,
+ "n_dep_manifests_parsed": null,
+ "seconds": 0.1,
+ "claims": [
+  {
+   "key_str": "T1|.circleci/config.yml",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": ".circleci/config.yml",
+   "quote": ".circleci/config.yml        # CI configuration (runs mvn test only)",
+   "line": 49,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": ".circleci/config.yml",
+    "is_dir": false,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 1,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|.github",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": ".github",
+   "quote": ".github/                    # GitHub configuration",
+   "line": 50,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": ".github",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 1,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|README.md",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "README.md",
+   "quote": "README.md                   # Basic project info",
+   "line": 60,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "README.md",
+    "is_dir": false,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 1,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|RELEASING.md",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "RELEASING.md",
+   "quote": "RELEASING.md                # Release process documentation",
+   "line": 61,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "RELEASING.md",
+    "is_dir": false,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 1,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|core",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "core",
+   "quote": "core/                       # Main Jaxen library module",
+   "line": 51,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "core",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 330,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|core/pom.xml",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "core/pom.xml",
+   "quote": "- `core/pom.xml` - Core module configuration",
+   "line": 201,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "core/pom.xml",
+    "is_dir": false,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 1,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|core/src/java/main/org/jaxen/BaseXPath.java",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "core/src/java/main/org/jaxen/BaseXPath.java",
+   "quote": "- `core/src/java/main/org/jaxen/BaseXPath.java` - Main XPath implementation",
+   "line": 194,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "core/src/java/main/org/jaxen/BaseXPath.java",
+    "is_dir": false,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 1,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|core/src/java/main/org/jaxen/Navigator.java",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "core/src/java/main/org/jaxen/Navigator.java",
+   "quote": "- `core/src/java/main/org/jaxen/Navigator.java` - Object model navigation interface",
+   "line": 195,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "core/src/java/main/org/jaxen/Navigator.java",
+    "is_dir": false,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 1,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|core/src/java/main/org/jaxen/function",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "core/src/java/main/org/jaxen/function",
+   "quote": "- `core/src/java/main/org/jaxen/function/` - XPath function implementations",
+   "line": 196,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "core/src/java/main/org/jaxen/function",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 36,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|integration-tests",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "integration-tests",
+   "quote": "integration-tests/          # Integration test module",
+   "line": 56,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "integration-tests",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 36,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|integration-tests/pom.xml",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "integration-tests/pom.xml",
+   "quote": "- `integration-tests/pom.xml` - Integration test configuration",
+   "line": 202,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "integration-tests/pom.xml",
+    "is_dir": false,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 1,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|integration-tests/xml",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "integration-tests/xml",
+   "quote": "Check XML test files in `integration-tests/xml/` are accessible",
+   "line": 162,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "integration-tests/xml",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 29,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|jaxen",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "jaxen",
+   "quote": "jaxen/                          # Root directory",
+   "line": 48,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "jaxen",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 0,
+     "pathSuffixMatchCount": 3
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|jaxen/integration-tests/src/java/test",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "jaxen/integration-tests/src/java/test",
+   "quote": "│   ├── src/java/test/          # Navigator tests for DOM/JDOM/DOM4J/XOM",
+   "line": 57,
+   "votes": 1,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it"
+   ],
+   "attrs": {
+    "path": "jaxen/integration-tests/src/java/test",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false,
+    "tree": true,
+    "alt_path": "integration-tests/src/java/test"
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 6,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {
+     "alt_path_used": "integration-tests/src/java/test"
+    }
+   }
+  },
+  {
+   "key_str": "T1|org/jaxen",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "org/jaxen",
+   "quote": "org/jaxen/          # Core XPath engine",
+   "line": 53,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "org/jaxen",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 0,
+     "pathSuffixMatchCount": 3
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|pom.xml",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "pom.xml",
+   "quote": "pom.xml                     # Parent Maven configuration",
+   "line": 59,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "pom.xml",
+    "is_dir": false,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 1,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|src/java/main",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "src/java/main",
+   "quote": "src/java/main/          # Main source code",
+   "line": 52,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "src/java/main",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 0,
+     "pathSuffixMatchCount": 1
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|src/java/samples",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "src/java/samples",
+   "quote": "src/java/samples/       # Demo code (DOMDemo, Dom4jDemo, JDOMDemo)",
+   "line": 55,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "src/java/samples",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 0,
+     "pathSuffixMatchCount": 1
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|src/java/test",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "src/java/test",
+   "quote": "src/java/test/          # Unit tests (85 test classes)",
+   "line": 54,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "src/java/test",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 0,
+     "pathSuffixMatchCount": 2
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|xml",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "xml",
+   "quote": "xml/                    # Test XML files",
+   "line": 58,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "xml",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 0,
+     "pathSuffixMatchCount": 2
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T3|package_manager|maven",
+   "tcode": "T3",
+   "types": [
+    "ToolUsageClaim",
+    "PackageManagerClaim"
+   ],
+   "headline": true,
+   "subject": "maven",
+   "quote": "- **Maven**: 3.6.3 or later (enforced by build)",
+   "line": 10,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "tool": "maven",
+    "category": "package_manager"
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "toolSignatureHitCount": 5,
+     "toolEcosystemAnchorCount": 3,
+     "competingToolSignatureCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T6|java|1005000000@2",
+   "tcode": "T6",
+   "types": [
+    "VersionClaim",
+    "ExactVersionClaim"
+   ],
+   "headline": true,
+   "subject": "java",
+   "quote": "Java 1.5 configured in pom.xml FAILS on modern JDKs",
+   "line": 11,
+   "votes": 1,
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "attrs": {
+    "subject_type": "java",
+    "version": "1.5",
+    "code": 1005000000,
+    "precision": 2,
+    "qualifier": "exact"
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "versionSourceCount": 1
+    },
+    "evidences": [
+     {
+      "versionSourcePath": "pom.xml",
+      "versionSourceRaw": "1.5",
+      "versionLowerDelta": 4000000000,
+      "versionUpperDelta": 4000000000,
+      "versionUpperUnboundedCount": 0
+     }
+    ],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T6|java|8000000000@1",
+   "tcode": "T6",
+   "types": [
+    "VersionClaim",
+    "ExactVersionClaim"
+   ],
+   "headline": true,
+   "subject": "java",
+   "quote": "- **Java**: JDK 8 required (Java 1.5 configured in pom.xml FAILS on modern JDKs)",
+   "line": 11,
+   "votes": 2,
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "subject_type": "java",
+    "version": "8",
+    "code": 8000000000,
+    "precision": 1,
+    "qualifier": "exact"
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "versionSourceCount": 1
+    },
+    "evidences": [
+     {
+      "versionSourcePath": "pom.xml",
+      "versionSourceRaw": "1.5",
+      "versionLowerDelta": -3000000000,
+      "versionUpperDelta": -3000000000,
+      "versionUpperUnboundedCount": 0
+     }
+    ],
+    "meta": {}
+   }
+  }
+ ]
+}

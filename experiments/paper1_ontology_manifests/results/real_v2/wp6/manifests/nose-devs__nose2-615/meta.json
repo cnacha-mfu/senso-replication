@@ -1,0 +1,327 @@
+{
+ "task_id": "nose-devs__nose2-615",
+ "repo": "nose-devs/nose2",
+ "stage": "phase_out",
+ "rounds": 1,
+ "rejects": {},
+ "flags": [
+  "kind4_R_used_I_competitor",
+  "length_violation_F_R"
+ ],
+ "info": {
+  "slots": {
+   "test_root": "nose2/tests",
+   "P1": {
+    "replaced": "nose2/tools",
+    "name": "core",
+    "F_R": "docs/core",
+    "F_I": "nose2/plugins/core"
+   },
+   "P2": {
+    "replaced": "nose2/tools/such.py",
+    "F_R": "nose2/_vendor/six.py",
+    "F_I": "unit_workaround.py"
+   },
+   "C": {
+    "F_R": "make tests",
+    "F_I": "make install"
+   },
+   "D": {
+    "replaced": "coverage",
+    "F_R": "boltons",
+    "F_I": "boltons"
+   }
+  },
+  "why": {
+   "test_command": [
+    {
+     "root": "nose2/tests",
+     "T3": "SupportedClaim",
+     "T1": "SupportedClaim",
+     "collect_ok": true
+    }
+   ],
+   "kind1": {
+    "p1_idx": 4,
+    "gold0": "docs",
+    "unrelated": "nose2/plugins",
+    "base_R": "docs",
+    "base_I": "nose2/plugins"
+   },
+   "kind2": {
+    "p2_idx": 2,
+    "n_deleted_py": 35,
+    "found": {
+     "F_R": "nose2/_vendor/six.py",
+     "F_I": "unit_workaround.py"
+    }
+   },
+   "kind3": {
+    "run": "tests",
+    "install": "install",
+    "test_ok": true,
+    "install_ok": true
+   },
+   "kind4": {
+    "deps": [
+     [
+      "coverage",
+      false
+     ]
+    ],
+    "d_idx": 0,
+    "src_R": "coverage",
+    "src_I": "coverage",
+    "n_decls": 5,
+    "n_dist": 37
+   }
+  },
+  "length": {
+   "T": 335,
+   "F_R": 315,
+   "F_I": 336
+  },
+  "fallbacks": {
+   "F_R": [
+    "kind4_I_competitor"
+   ],
+   "F_I": []
+  },
+  "modes": {
+   "F_R": {
+    "1": "replace",
+    "2": "replace",
+    "3": "replace",
+    "4": "replace"
+   },
+   "F_I": {
+    "1": "replace",
+    "2": "replace",
+    "3": "replace",
+    "4": "replace"
+   }
+  },
+  "length_diff": {
+   "F_R": -20,
+   "F_I": 1
+  },
+  "n_claims_T": 13,
+  "n_false": {
+   "F_R": 4,
+   "F_I": 4
+  },
+  "pointer_in_issue": true,
+  "gold_dirs": [
+   "docs",
+   "nose2"
+  ],
+  "gold_files": [
+   "docs/changelog.rst",
+   "nose2/session.py"
+  ]
+ },
+ "tokens": {
+  "F_R": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "docs/core",
+     "core"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "nose2/_vendor/six.py",
+     "six.py"
+    ]
+   },
+   {
+    "kind": 3,
+    "type": "regex",
+    "regex": "\\bmake\\b[^|;&\\n]*\\btests\\b",
+    "target": "tests"
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "boltons"
+    ]
+   }
+  ],
+  "F_I": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "nose2/plugins/core",
+     "core"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "unit_workaround.py",
+     "unit_workaround.py"
+    ]
+   },
+   {
+    "kind": 3,
+    "type": "regex",
+    "regex": "\\bmake\\b[^|;&\\n]*\\binstall\\b",
+    "target": "install"
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "boltons"
+    ]
+   }
+  ]
+ },
+ "unresolved_pre_hermit": [],
+ "sha256": {
+  "T": "5f0ef3204cb9dc753f3909038d2f27d07c0d3a1615481682f66125c8b617506d",
+  "F_R": "a3e81b6e8f46a1d6cfd2ad0eb99a91ab4cde2f6eaf218ead314a46065549381b",
+  "F_I": "f81b01d74a7204b97432fe5aefaf11367d4c9df6e322a09a9f91a0e8bea72cdf"
+ },
+ "chars": {
+  "T": 335,
+  "F_R": 315,
+  "F_I": 336
+ },
+ "claims": {
+  "T": [
+   "T1|docs",
+   "T1|nose2",
+   "T1|nose2/plugins",
+   "T1|nose2/tests",
+   "T1|nose2/tools",
+   "T1|nose2/events.py",
+   "T1|nose2/plugins/mp.py",
+   "T1|nose2/tools/such.py",
+   "T3|test_framework|pytest",
+   "T1|nose2/tests",
+   "T1|pyproject.toml",
+   "T4|coverage|",
+   "T6|python|3008000000@2"
+  ],
+  "F_R": [
+   "T1|docs",
+   "T1|nose2",
+   "T1|nose2/plugins",
+   "T1|nose2/tests",
+   "T1|docs/core",
+   "T1|nose2/events.py",
+   "T1|nose2/plugins/mp.py",
+   "T1|nose2/_vendor/six.py",
+   "T5|make|tests",
+   "T1|pyproject.toml",
+   "T4|boltons|",
+   "T6|python|3008000000@2"
+  ],
+  "F_I": [
+   "T1|docs",
+   "T1|nose2",
+   "T1|nose2/plugins",
+   "T1|nose2/tests",
+   "T1|nose2/plugins/core",
+   "T1|nose2/events.py",
+   "T1|nose2/plugins/mp.py",
+   "T1|unit_workaround.py",
+   "T3|test_framework|pytest",
+   "T1|nose2/tests",
+   "T5|make|install",
+   "T4|boltons|",
+   "T6|python|3008000000@2"
+  ]
+ },
+ "python_spec": ">=3.8",
+ "token_audit": [
+  {
+   "cond": "F_R",
+   "kind": 1,
+   "type": "path",
+   "name": "docs/core",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 2,
+   "type": "path",
+   "name": "nose2/_vendor/six.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 3,
+   "type": "regex",
+   "name": "make tests",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 4,
+   "type": "word",
+   "name": "boltons",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 1,
+   "type": "path",
+   "name": "nose2/plugins/core",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 2,
+   "type": "path",
+   "name": "unit_workaround.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 3,
+   "type": "regex",
+   "name": "make install",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 4,
+   "type": "word",
+   "name": "boltons",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  }
+ ],
+ "dist_imports_used": {
+  "coverage": [
+   "coverage"
+  ],
+  "boltons": null
+ }
+}

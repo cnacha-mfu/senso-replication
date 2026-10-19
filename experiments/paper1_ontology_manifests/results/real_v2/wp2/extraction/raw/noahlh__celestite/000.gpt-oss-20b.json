@@ -1,0 +1,21 @@
+{
+ "repo": "noahlh/celestite",
+ "chunk": 0,
+ "n_chunks": 1,
+ "model": "openai/gpt-oss-20b",
+ "prompt_sha256": "d0e02ff613417050168d859f2af6230c3712c6758bb5d9c40d60ff55e5ae87ca",
+ "user_sha256": "1bc118fd710b3a11d7a7bc22ecf1abb1ad9f498be35ceed7a56ca90e1c88fc22",
+ "text": "{\"claims\": [\n  {\"type\":\"path_exists\",\"quote\":\"- **celestite.cr** - Main module entry point.\",\"line\":34,\"subject\":\"celestite.cr\",\"mode\":\"asserts_existing\"},\n  {\"type\":\"path_exists\",\"quote\":\"- **renderer.cr** - Core SSR logic.\",\"line\":35,\"subject\":\"renderer.cr\",\"mode\":\"asserts_existing\"},\n  {\"type\":\"path_exists\",\"quote\":\"- **config.cr** - Configuration options: port (default 4000), vite_port (default 5173), env, component/layout/build directories, dev_secure (HTTPS mode), disable_a11y_warnings.\",\"line\":36,\"subject\":\"config.cr\",\"mode\":\"asserts_existing\"},\n  {\"type\":\"path_exists\",\"quote\":\"- **engine.cr** - Engine enum (currently only Svelte).\",\"line\":37,\"subject\":\"engine.cr\",\"mode\":\"asserts_existing\"},\n  {\"type\":\"path_exists\",\"quote\":\"- **amber.cr** - Framework adapters.\",\"line\":38,\"subject\":\"amber.cr\",\"mode\":\"asserts_existing\"},\n  {\"type\":\"path_exists\",\"quote\":\"- **vite-render-server.js** - Bun HTTP server using Vite for Svelte 5 SSR.\",\"line\":41,\"subject\":\"vite-render-server.js\",\"mode\":\"asserts_existing\"},\n  {\"type\":\"path_exists\",\"quote\":\"- **vite.config.js** - Vite configuration for production builds.\",\"line\":42,\"subject\":\"vite.config.js\",\"mode\":\"asserts_existing\"},\n  {\"type\":\"path_exists\",\"quote\":\"- **Makefile** - Launches render server with environment variables.\",\"line\":43,\"subject\":\"Makefile\",\"mode\":\"asserts_existing\"},\n  {\"type\":\"tool_used\",\"quote\":\"make build COMPONENT_DIR=/path/to/views BUILD_DIR=/path/to/public/celestite\",\"line\":24,\"subject\":\"make\",\"tool_category\":\"build_tool\",\"mode\":\"asserts_existing\"},\n  {\"type\":\"command\",\"quote\":\"shards install  # Installs Crystal deps and runs bun install via postinstall hook\",\"line\":12,\"subject\":\"install\",\"runner\":\"shards\",\"mode\":\"asserts_existing\"},\n  {\"type\":\"command\",\"quote\":\"crystal spec                           # Run all tests\",\"line\":17,\"subject\":\"spec\",\"runner\":\"crystal\",\"mode\":\"asserts_existing\"},\n  {\"type\":\"command\",\"quote\":\"crystal spec spec/celestite_spec.cr    # Run specific test file\",\"line\":18,\"subject\":\"spec\",\"runner\":\"crystal\",\"mode\":\"asserts_existing\"},\n  {\"type\":\"command\",\"quote\":\"make build COMPONENT_DIR=/path/to/views BUILD_DIR=/path/to/public/celestite\",\"line\":24,\"subject\":\"build\",\"runner\":\"make\",\"mode\":\"asserts_existing\"}\n]}",
+ "parse_ok": true,
+ "parse_error": null,
+ "parse_retries": 0,
+ "latency_s": 12.081526409019716,
+ "usage": {
+  "prompt": 2875,
+  "completion": 635
+ },
+ "n_api_calls": 1,
+ "finish_reason": "stop",
+ "error": null,
+ "discarded_attempt_texts": []
+}

@@ -1,0 +1,111 @@
+{
+ "unit_id": "XKNX__xknx-1551__D__claude-sonnet__r2",
+ "task_id": "XKNX__xknx-1551",
+ "repo": "XKNX/xknx",
+ "stage": "evolution",
+ "condition": "D",
+ "model": "claude-code/sonnet",
+ "run": 2,
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 4754,
+  "sha256": "5bf1c2153bae6675b0f489cdfd0dc634c0c0902687676e280ee55f860847b3fd"
+ },
+ "started": "2026-10-18T04:45:31.434857+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 17,
+ "tool_calls": 16,
+ "usage": {
+  "input_tokens": 32,
+  "cache_creation_input_tokens": 17820,
+  "cache_read_input_tokens": 443266,
+  "output_tokens": 4865,
+  "output_tokens_details": {
+   "thinking_tokens": 1972
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 17820,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 32,
+   "outputTokens": 4865,
+   "cacheReadInputTokens": 443266,
+   "cacheCreationInputTokens": 17820,
+   "webSearchRequests": 0,
+   "costUSD": 0.16432059999999998,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 1972,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.16432059999999998,
+ "result_text": "I fixed the bit layout of the controller status byte (`DPTHVACStatus`) in `xknx/dpt/dpt_20.py`, so `0x21` now reads as Comfort instead of Night. I didn't run the test suite. I only checked with a short script that a `0x21` response now sets the climate device to Comfort/Cool.\n\nThe previous xknx release decoded the low nibble as the operation mode (`0x21` was Comfort, `0x22` Standby, `0x24` Night, `0x28` Frost Protection). The newer `DPTHVACStatus` decoder in 3.1.0 had the byte reversed. It treated the high bits as the mode, so `0x21` came out as Economy/Night, which Home Assistant shows as \"Sleep\".\n\nThe layout is now:\n\n| Bit | Meaning |\n|---|---|\n| 0 | Comfort |\n| 1 | Standby |\n| 2 | Economy (Night) |\n| 3 | Building protection |\n| 4 | Dew point |\n| 5 | Frost alarm |\n| 6 | Inactive |\n| 7 | Heat (1) / Cool (0) |\n\nBoth reading and writing the byte use this layout. Your `0x21` is Comfort with the frost-alarm bit set.\n\nI took this layout from the old decoder's values plus my recollection of the Eberle status spec (AN097), not from the spec itself. Heat/cool is the least certain part. Your `0x21` has bit 7 clear, so it now reads as Cool. If the controller is actually heating, the heat/cool bit may be placed differently.\n\nThe existing tests for this DPT probably still use the old bit positions and will likely fail. I left them alone, as you asked.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792309800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0.08,
+    "resetsAt": 1792309800
+   },
+   "seven_day": {
+    "utilization": 0.12,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 108.2,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 17,
+   "hit_step_limit": 0,
+   "changed_lines": 32,
+   "gold_changed_lines": 36,
+   "Y1": 0,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": -0.16992500144231246
+  },
+  "f2p_pass": 1,
+  "f2p_total": 5,
+  "p2p_pass": 84,
+  "p2p_total": 84,
+  "f2p_all_pass": false,
+  "p2p_all_pass": true,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 2.5
+ },
+ "status": "done",
+ "finished": "2026-10-18T04:47:24.386513+00:00"
+}

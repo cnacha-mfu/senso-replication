@@ -1,0 +1,2367 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://senso-framework.org/ontology/seo/seo-inference"
+         xmlns="http://senso-framework.org/ontology/seo/seo-inference#"
+         xmlns:seo="http://senso-framework.org/ontology/seo#">
+
+<owl:Ontology rdf:about="http://senso-framework.org/ontology/seo/seo-inference">
+  <owl:imports rdf:resource="http://senso-framework.org/ontology/seo/seo-entities"/>
+  <owl:imports rdf:resource="http://senso-framework.org/ontology/seo/seo-laws"/>
+  <owl:imports rdf:resource="http://senso-framework.org/ontology/seo/seo-metrics"/>
+  <owl:imports rdf:resource="http://senso-framework.org/ontology/seo/seo-patterns"/>
+  <owl:imports rdf:resource="http://senso-framework.org/ontology/seo/seo-processes"/>
+</owl:Ontology>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_locSeriesLength_ge_mk_min_months">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#locSeriesLength"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</xsd:minInclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{locSeriesLength} &gt;= 4</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mk_min_months</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/population/populate.py:533</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#MKApplicable">
+  <owl:equivalentClass rdf:resource="http://senso-framework.org/ontology/seo#A_locSeriesLength_ge_mk_min_months"/>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{locSeriesLength} months of LOC</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mk_min_months</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/population/populate.py:533</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_locMKpValue_lt_mk_alpha">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#locMKpValue"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.1</xsd:maxExclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{locMKpValue} &lt; 0.1</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mk_alpha</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/population/populate.py:101,545</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_locMKpValue_ge_mk_alpha">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#locMKpValue"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.1</xsd:minInclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{locMKpValue} &gt;= 0.1</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mk_alpha</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/population/populate.py:101,545</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_locMKTau_gt_0">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#locMKTau"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</xsd:minExclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{locMKTau} &gt; 0</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_locMKTau_lt_0">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#locMKTau"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</xsd:maxExclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{locMKTau} &lt; 0</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#GrowthStage">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#MKApplicable"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_locMKpValue_lt_mk_alpha"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_locMKTau_gt_0"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#LawVIConformant"/>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">significant growing LOC trend (Mann-Kendall tau = {locMKTau}, p = {locMKpValue}, {locSeriesLength} months)</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mk_alpha</seo:thresholdId>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mk_min_months</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/population/populate.py:101,545</seo:thresholdSource>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/population/populate.py:533</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#DeclineStage">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#MKApplicable"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_locMKpValue_lt_mk_alpha"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_locMKTau_lt_0"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#NonSubstantialChange"/>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">significant shrinking LOC trend (Mann-Kendall tau = {locMKTau}, p = {locMKpValue}, {locSeriesLength} months)</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mk_alpha</seo:thresholdId>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mk_min_months</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/population/populate.py:101,545</seo:thresholdSource>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/population/populate.py:533</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#StabilizationStage">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#MKApplicable"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_locMKpValue_ge_mk_alpha"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#LawVIConformant"/>
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#NonSubstantialChange"/>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no significant LOC trend (Mann-Kendall tau = {locMKTau}, p = {locMKpValue}, {locSeriesLength} months)</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mk_alpha</seo:thresholdId>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mk_min_months</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/population/populate.py:101,545</seo:thresholdSource>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/population/populate.py:533</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_monthsSinceLastCommit_ge_rb_dormancy_months">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#monthsSinceLastCommit"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</xsd:minInclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{monthsSinceLastCommit} &gt;= 12</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rb_dormancy_months</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">papers/paper1/rq1-preregistration.md section 2.2</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#Dormant">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_monthsSinceLastCommit_ge_rb_dormancy_months"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no commit for {monthsSinceLastCommit} months</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rb_dormancy_months</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">papers/paper1/rq1-preregistration.md section 2.2</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_monthsSinceLastCommit_lt_rb_dormancy_months">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#monthsSinceLastCommit"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</xsd:maxExclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{monthsSinceLastCommit} &lt; 12</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rb_dormancy_months</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">papers/paper1/rq1-preregistration.md section 2.2</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#RecentlyActive">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_monthsSinceLastCommit_lt_rb_dormancy_months"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">last commit {monthsSinceLastCommit} months before the snapshot</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rb_dormancy_months</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">papers/paper1/rq1-preregistration.md section 2.2</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#locRelSenSlopeAnnual"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.05</xsd:minInclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{locRelSenSlopeAnnual} &gt;= 0.05</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rb_min_rel_loc_growth_per_year</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">papers/paper1/rq1-preregistration.md section 2.2</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#SubstantialLocGrowth">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">net LOC growth of {locRelSenSlopeAnnual} of median size per year (Sen slope)</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rb_min_rel_loc_growth_per_year</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">papers/paper1/rq1-preregistration.md section 2.2</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_locRelSenSlopeAnnual_lt_rb_min_rel_loc_growth_per_year">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#locRelSenSlopeAnnual"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.05</xsd:maxExclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{locRelSenSlopeAnnual} &lt; 0.05</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rb_min_rel_loc_growth_per_year</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">papers/paper1/rq1-preregistration.md section 2.2</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#MinorLocGrowth">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_locRelSenSlopeAnnual_lt_rb_min_rel_loc_growth_per_year"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#NonSubstantialChange"/>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">net LOC growth of only {locRelSenSlopeAnnual} of median size per year (Sen slope)</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rb_min_rel_loc_growth_per_year</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">papers/paper1/rq1-preregistration.md section 2.2</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#NonSubstantialChange">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no significant LOC growth, or growth below the substantial-growth rate</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mk_alpha</seo:thresholdId>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mk_min_months</seo:thresholdId>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rb_min_rel_loc_growth_per_year</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/population/populate.py:101,545</seo:thresholdSource>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/population/populate.py:533</seo:thresholdSource>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">papers/paper1/rq1-preregistration.md section 2.2</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#RBPhaseOutStage">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#Dormant"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">phase-out: no commit for {monthsSinceLastCommit} months</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rb_dormancy_months</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">papers/paper1/rq1-preregistration.md section 2.2</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#RBActiveDevelopmentStage">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#RecentlyActive"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#GrowthStage"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#SubstantialLocGrowth"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">active development: recent commits, significant LOC growth (tau = {locMKTau}, p = {locMKpValue}) of {locRelSenSlopeAnnual} of median size per year</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mk_alpha</seo:thresholdId>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mk_min_months</seo:thresholdId>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rb_dormancy_months</seo:thresholdId>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rb_min_rel_loc_growth_per_year</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/population/populate.py:101,545</seo:thresholdSource>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/population/populate.py:533</seo:thresholdSource>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">papers/paper1/rq1-preregistration.md section 2.2</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#RBServicingStage">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#RecentlyActive"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#NonSubstantialChange"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">servicing: recent commits, but no substantial LOC growth</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mk_alpha</seo:thresholdId>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mk_min_months</seo:thresholdId>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rb_dormancy_months</seo:thresholdId>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rb_min_rel_loc_growth_per_year</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/population/populate.py:101,545</seo:thresholdSource>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/population/populate.py:533</seo:thresholdSource>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">papers/paper1/rq1-preregistration.md section 2.2</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_monthsObserved_ge_p_law1_min_months">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#monthsObserved"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</xsd:minInclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{monthsObserved} &gt;= 2</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">p_law1_min_months</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/population/populate.py:628</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_activeMonthRatio_ge_p_law1_active_ratio">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#activeMonthRatio"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.5</xsd:minInclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{activeMonthRatio} &gt;= 0.5</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">p_law1_active_ratio</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/population/populate.py:634</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_activeMonthRatio_lt_p_law1_active_ratio">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#activeMonthRatio"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.5</xsd:maxExclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{activeMonthRatio} &lt; 0.5</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">p_law1_active_ratio</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/population/populate.py:634</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#LawIConformant">
+  <owl:disjointWith rdf:resource="http://senso-framework.org/ontology/seo#LawINonConformant"/>
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_monthsObserved_ge_p_law1_min_months"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_activeMonthRatio_ge_p_law1_active_ratio"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{activeMonthCount} of {monthsObserved} months active (ratio {activeMonthRatio} &gt;= 0.5)</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">p_law1_active_ratio</seo:thresholdId>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">p_law1_min_months</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/population/populate.py:628</seo:thresholdSource>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/population/populate.py:634</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#LawINonConformant">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_monthsObserved_ge_p_law1_min_months"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_activeMonthRatio_lt_p_law1_active_ratio"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{activeMonthCount} of {monthsObserved} months active (ratio {activeMonthRatio} &lt; 0.5)</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">p_law1_active_ratio</seo:thresholdId>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">p_law1_min_months</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/population/populate.py:628</seo:thresholdSource>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/population/populate.py:634</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_complexityMonthCount_ge_p_law2_min_complexity_months">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#complexityMonthCount"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</xsd:minInclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{complexityMonthCount} &gt;= 3</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">p_law2_min_complexity_months</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/population/populate.py:648</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_complexityHalfMeanChange_ge_0">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#complexityHalfMeanChange"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</xsd:minInclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{complexityHalfMeanChange} &gt;= 0</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_complexityHalfMeanChange_lt_0">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#complexityHalfMeanChange"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</xsd:maxExclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{complexityHalfMeanChange} &lt; 0</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#LawIIConformant">
+  <owl:disjointWith rdf:resource="http://senso-framework.org/ontology/seo#LawIINonConformant"/>
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_complexityMonthCount_ge_p_law2_min_complexity_months"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_complexityHalfMeanChange_ge_0"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">second-half mean complexity {complexityHalfMeanSecond} &gt;= first-half {complexityHalfMeanFirst}</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">p_law2_min_complexity_months</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/population/populate.py:648</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#LawIINonConformant">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_complexityMonthCount_ge_p_law2_min_complexity_months"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_complexityHalfMeanChange_lt_0"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">second-half mean complexity {complexityHalfMeanSecond} &lt; first-half {complexityHalfMeanFirst}</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">p_law2_min_complexity_months</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/population/populate.py:648</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_monthsObserved_ge_p_law3_min_months">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#monthsObserved"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</xsd:minInclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{monthsObserved} &gt;= 6</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">p_law3_min_months</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/population/populate.py:668</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_churnCV_lt_p_law3_churn_cv">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#churnCV"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0</xsd:maxExclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{churnCV} &lt; 2.0</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">p_law3_churn_cv</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/population/populate.py:677</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_churnCV_ge_p_law3_churn_cv">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#churnCV"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0</xsd:minInclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{churnCV} &gt;= 2.0</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">p_law3_churn_cv</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/population/populate.py:677</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#LawIIIConformant">
+  <owl:disjointWith rdf:resource="http://senso-framework.org/ontology/seo#LawIIINonConformant"/>
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_monthsObserved_ge_p_law3_min_months"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_churnCV_lt_p_law3_churn_cv"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">churn CV {churnCV} &lt; 2.0 over {monthsObserved} months</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">p_law3_churn_cv</seo:thresholdId>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">p_law3_min_months</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/population/populate.py:668</seo:thresholdSource>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/population/populate.py:677</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#LawIIINonConformant">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_monthsObserved_ge_p_law3_min_months"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_churnCV_ge_p_law3_churn_cv"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">churn CV {churnCV} &gt;= 2.0 over {monthsObserved} months</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">p_law3_churn_cv</seo:thresholdId>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">p_law3_min_months</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/population/populate.py:668</seo:thresholdSource>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/population/populate.py:677</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_monthsObserved_ge_p_law4_min_months">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#monthsObserved"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</xsd:minInclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{monthsObserved} &gt;= 6</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">p_law4_min_months</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/population/populate.py:687</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_commitCountCV_lt_p_law4_commit_cv">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#commitCountCV"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.5</xsd:maxExclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{commitCountCV} &lt; 1.5</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">p_law4_commit_cv</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/population/populate.py:695</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_commitCountCV_ge_p_law4_commit_cv">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#commitCountCV"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.5</xsd:minInclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{commitCountCV} &gt;= 1.5</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">p_law4_commit_cv</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/population/populate.py:695</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#LawIVConformant">
+  <owl:disjointWith rdf:resource="http://senso-framework.org/ontology/seo#LawIVNonConformant"/>
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_monthsObserved_ge_p_law4_min_months"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_commitCountCV_lt_p_law4_commit_cv"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">commit-rate CV {commitCountCV} &lt; 1.5 over {monthsObserved} months</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">p_law4_commit_cv</seo:thresholdId>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">p_law4_min_months</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/population/populate.py:687</seo:thresholdSource>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/population/populate.py:695</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#LawIVNonConformant">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_monthsObserved_ge_p_law4_min_months"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_commitCountCV_ge_p_law4_commit_cv"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">commit-rate CV {commitCountCV} &gt;= 1.5 over {monthsObserved} months</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">p_law4_commit_cv</seo:thresholdId>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">p_law4_min_months</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/population/populate.py:687</seo:thresholdSource>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/population/populate.py:695</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_monthsObserved_ge_p_law5_min_months">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#monthsObserved"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</xsd:minInclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{monthsObserved} &gt;= 4</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">p_law5_min_months</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/population/populate.py:705</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_linesAddedCV_lt_p_law5_additions_cv">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#linesAddedCV"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0</xsd:maxExclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{linesAddedCV} &lt; 2.0</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">p_law5_additions_cv</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/population/populate.py:713</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_linesAddedCV_ge_p_law5_additions_cv">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#linesAddedCV"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0</xsd:minInclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{linesAddedCV} &gt;= 2.0</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">p_law5_additions_cv</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/population/populate.py:713</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#LawVConformant">
+  <owl:disjointWith rdf:resource="http://senso-framework.org/ontology/seo#LawVNonConformant"/>
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_monthsObserved_ge_p_law5_min_months"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_linesAddedCV_lt_p_law5_additions_cv"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lines-added CV {linesAddedCV} &lt; 2.0 over {monthsObserved} months</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">p_law5_additions_cv</seo:thresholdId>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">p_law5_min_months</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/population/populate.py:705</seo:thresholdSource>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/population/populate.py:713</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#LawVNonConformant">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_monthsObserved_ge_p_law5_min_months"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_linesAddedCV_ge_p_law5_additions_cv"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lines-added CV {linesAddedCV} &gt;= 2.0 over {monthsObserved} months</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">p_law5_additions_cv</seo:thresholdId>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">p_law5_min_months</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/population/populate.py:705</seo:thresholdSource>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/population/populate.py:713</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#LawVIConformant">
+  <owl:disjointWith rdf:resource="http://senso-framework.org/ontology/seo#LawVINonConformant"/>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stage is growth or stabilization (see the stage justification)</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mk_alpha</seo:thresholdId>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mk_min_months</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/population/populate.py:101,545</seo:thresholdSource>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/population/populate.py:533</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#LawVINonConformant">
+  <owl:equivalentClass rdf:resource="http://senso-framework.org/ontology/seo#DeclineStage"/>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stage is decline (see the stage justification)</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mk_alpha</seo:thresholdId>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mk_min_months</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/population/populate.py:101,545</seo:thresholdSource>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/population/populate.py:533</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_activeMonthCount_ge_p_law7_min_active_months">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#activeMonthCount"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</xsd:minInclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{activeMonthCount} &gt;= 4</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">p_law7_min_active_months</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/population/populate.py:742</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_bugFixRatioFirstHalf_gt_0">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#bugFixRatioFirstHalf"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</xsd:minExclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{bugFixRatioFirstHalf} &gt; 0</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_bugFixRatioFirstHalf_le_0">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#bugFixRatioFirstHalf"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</xsd:maxInclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{bugFixRatioFirstHalf} &lt;= 0</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_bugFixHalfRatio_ge_p_law7_tolerance">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#bugFixHalfRatio"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.9</xsd:minInclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{bugFixHalfRatio} &gt;= 0.9</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">p_law7_tolerance</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/population/populate.py:750</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#LawVIIConformantRatio">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_activeMonthCount_ge_p_law7_min_active_months"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_bugFixRatioFirstHalf_gt_0"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_bugFixHalfRatio_ge_p_law7_tolerance"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#LawVIIConformant"/>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#LawVIIConformantNoFixesBefore">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_activeMonthCount_ge_p_law7_min_active_months"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_bugFixRatioFirstHalf_le_0"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#LawVIIConformant"/>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#LawVIIConformant">
+  <owl:disjointWith rdf:resource="http://senso-framework.org/ontology/seo#LawVIINonConformant"/>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bug-fix ratio second half {bugFixRatioSecondHalf} &gt;= 0.9 x first half {bugFixRatioFirstHalf}</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">p_law7_min_active_months</seo:thresholdId>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">p_law7_tolerance</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/population/populate.py:742</seo:thresholdSource>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/population/populate.py:750</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_bugFixHalfRatio_lt_p_law7_tolerance">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#bugFixHalfRatio"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.9</xsd:maxExclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{bugFixHalfRatio} &lt; 0.9</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">p_law7_tolerance</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/population/populate.py:750</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#LawVIINonConformant">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_activeMonthCount_ge_p_law7_min_active_months"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_bugFixRatioFirstHalf_gt_0"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_bugFixHalfRatio_lt_p_law7_tolerance"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bug-fix ratio second half {bugFixRatioSecondHalf} &lt; 0.9 x first half {bugFixRatioFirstHalf}</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">p_law7_min_active_months</seo:thresholdId>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">p_law7_tolerance</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/population/populate.py:742</seo:thresholdSource>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/population/populate.py:750</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_monthsObserved_ge_p_law8_min_months">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#monthsObserved"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</xsd:minInclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{monthsObserved} &gt;= 6</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">p_law8_min_months</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/population/populate.py:760</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_mergeMonthRatio_gt_p_law8_merge_ratio">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#mergeMonthRatio"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.3</xsd:minExclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{mergeMonthRatio} &gt; 0.3</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">p_law8_merge_ratio</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/population/populate.py:771</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#MergeActive">
+  <owl:equivalentClass rdf:resource="http://senso-framework.org/ontology/seo#A_mergeMonthRatio_gt_p_law8_merge_ratio"/>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_mergeMonthRatio_le_p_law8_merge_ratio">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#mergeMonthRatio"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.3</xsd:maxInclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{mergeMonthRatio} &lt;= 0.3</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">p_law8_merge_ratio</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/population/populate.py:771</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#MergeInactive">
+  <owl:equivalentClass rdf:resource="http://senso-framework.org/ontology/seo#A_mergeMonthRatio_le_p_law8_merge_ratio"/>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#multiAuthorMonthRatio"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.3</xsd:minExclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{multiAuthorMonthRatio} &gt; 0.3</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">p_law8_multiauthor_ratio</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/population/populate.py:771</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#MultiAuthorActive">
+  <owl:equivalentClass rdf:resource="http://senso-framework.org/ontology/seo#A_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio"/>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_multiAuthorMonthRatio_le_p_law8_multiauthor_ratio">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#multiAuthorMonthRatio"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.3</xsd:maxInclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{multiAuthorMonthRatio} &lt;= 0.3</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">p_law8_multiauthor_ratio</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/population/populate.py:771</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#MultiAuthorInactive">
+  <owl:equivalentClass rdf:resource="http://senso-framework.org/ontology/seo#A_multiAuthorMonthRatio_le_p_law8_multiauthor_ratio"/>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#LawVIIIConformant">
+  <owl:disjointWith rdf:resource="http://senso-framework.org/ontology/seo#LawVIIINonConformant"/>
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_monthsObserved_ge_p_law8_min_months"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#MergeActive"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#MultiAuthorActive"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">merge months {mergeMonthRatio} &gt; 0.3 and multi-author months {multiAuthorMonthRatio} &gt; 0.3</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">p_law8_merge_ratio</seo:thresholdId>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">p_law8_min_months</seo:thresholdId>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">p_law8_multiauthor_ratio</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/population/populate.py:760</seo:thresholdSource>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/population/populate.py:771</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#LawVIIINonConformantNoMerge">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_monthsObserved_ge_p_law8_min_months"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#MergeInactive"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#LawVIIINonConformant"/>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">merge months {mergeMonthRatio} &lt;= 0.3</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">p_law8_merge_ratio</seo:thresholdId>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">p_law8_min_months</seo:thresholdId>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">p_law8_multiauthor_ratio</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/population/populate.py:760</seo:thresholdSource>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/population/populate.py:771</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#LawVIIINonConformantSingleAuthor">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_monthsObserved_ge_p_law8_min_months"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#MultiAuthorInactive"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#LawVIIINonConformant"/>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">multi-author months {multiAuthorMonthRatio} &lt;= 0.3</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">p_law8_merge_ratio</seo:thresholdId>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">p_law8_min_months</seo:thresholdId>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">p_law8_multiauthor_ratio</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/population/populate.py:760</seo:thresholdSource>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/population/populate.py:771</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#LawVIIINonConformant">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">merge months {mergeMonthRatio} or multi-author months {multiAuthorMonthRatio} at or below the threshold</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">p_law8_merge_ratio</seo:thresholdId>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">p_law8_min_months</seo:thresholdId>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">p_law8_multiauthor_ratio</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/population/populate.py:760</seo:thresholdSource>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/population/populate.py:771</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_monthsObserved_ge_a_min_months">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#monthsObserved"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</xsd:minInclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{monthsObserved} &gt;= 2</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a_min_months</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/scenario_bank/test_scenarios.py:326</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_locGrowthRate_gt_0">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#locGrowthRate"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</xsd:minExclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{locGrowthRate} &gt; 0</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_locGrowthRate_lt_0">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#locGrowthRate"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</xsd:maxExclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{locGrowthRate} &lt; 0</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_locGrowthRate_ge_0">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#locGrowthRate"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</xsd:minInclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{locGrowthRate} &gt;= 0</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_locGrowthRate_le_0">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#locGrowthRate"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</xsd:maxInclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{locGrowthRate} &lt;= 0</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#LocGrowthZero">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_locGrowthRate_ge_0"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_locGrowthRate_le_0"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_complexityToLocGrowthRatio_gt_a_cx_vs_loc_factor">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#complexityToLocGrowthRatio"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.5</xsd:minExclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{complexityToLocGrowthRatio} &gt; 0.5</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a_cx_vs_loc_factor</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/scenario_bank/test_scenarios.py:351</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#ComplexityOutpacesLocGrowthUp">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_locGrowthRate_gt_0"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_complexityToLocGrowthRatio_gt_a_cx_vs_loc_factor"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#ComplexityOutpacesLocGrowth"/>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_complexityToLocGrowthRatio_lt_a_cx_vs_loc_factor">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#complexityToLocGrowthRatio"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.5</xsd:maxExclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{complexityToLocGrowthRatio} &lt; 0.5</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a_cx_vs_loc_factor</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/scenario_bank/test_scenarios.py:351</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#ComplexityOutpacesLocGrowthDown">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_locGrowthRate_lt_0"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_complexityToLocGrowthRatio_lt_a_cx_vs_loc_factor"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#ComplexityOutpacesLocGrowth"/>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_complexityGrowthRate_gt_0">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#complexityGrowthRate"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</xsd:minExclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{complexityGrowthRate} &gt; 0</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#ComplexityOutpacesLocGrowthFlat">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#LocGrowthZero"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_complexityGrowthRate_gt_0"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#ComplexityOutpacesLocGrowth"/>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#ComplexityOutpacesLocGrowth">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">complexity growth {complexityGrowthRate} &gt; 0.5 x LOC growth {locGrowthRate}</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a_cx_vs_loc_factor</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/scenario_bank/test_scenarios.py:351</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_recentAgentCommitRatio_gt_a_agent_shadow">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#recentAgentCommitRatio"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.25</xsd:minExclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{recentAgentCommitRatio} &gt; 0.25</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a_agent_shadow</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/scenario_bank/test_scenarios.py:351</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_complexityGrowthRate_gt_a_cx_growth_shadow">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#complexityGrowthRate"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.15</xsd:minExclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{complexityGrowthRate} &gt; 0.15</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a_cx_growth_shadow</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/scenario_bank/test_scenarios.py:351</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#ExhibitsAgentAssociatedComplexityGrowth">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_monthsObserved_ge_a_min_months"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_recentAgentCommitRatio_gt_a_agent_shadow"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#ComplexityOutpacesLocGrowth"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_complexityGrowthRate_gt_a_cx_growth_shadow"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">recent agent-commit ratio {recentAgentCommitRatio} &gt; 0.25 while complexity growth {complexityGrowthRate} outpaces LOC growth {locGrowthRate} (association only)</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a_agent_shadow</seo:thresholdId>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a_cx_growth_shadow</seo:thresholdId>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a_cx_vs_loc_factor</seo:thresholdId>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a_min_months</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/scenario_bank/test_scenarios.py:326</seo:thresholdSource>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/scenario_bank/test_scenarios.py:351</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_dependencyGrowthRate_gt_a_dep_growth">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#dependencyGrowthRate"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.3</xsd:minExclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{dependencyGrowthRate} &gt; 0.3</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a_dep_growth</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/scenario_bank/test_scenarios.py:355</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_recentAgentCommitRatio_gt_a_agent_dep">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#recentAgentCommitRatio"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.05</xsd:minExclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{recentAgentCommitRatio} &gt; 0.05</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a_agent_dep</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/scenario_bank/test_scenarios.py:355</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#ExhibitsDependencySprawl">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_monthsObserved_ge_a_min_months"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_dependencyGrowthRate_gt_a_dep_growth"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_recentAgentCommitRatio_gt_a_agent_dep"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dependency growth {dependencyGrowthRate} &gt; 0.3 with recent agent ratio {recentAgentCommitRatio} (no dependency data is mined, D9)</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a_agent_dep</seo:thresholdId>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a_dep_growth</seo:thresholdId>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a_min_months</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/scenario_bank/test_scenarios.py:326</seo:thresholdSource>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/scenario_bank/test_scenarios.py:355</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_recentAgentCommitRatio_gt_a_agent_refactor">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#recentAgentCommitRatio"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.3</xsd:minExclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{recentAgentCommitRatio} &gt; 0.3</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a_agent_refactor</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/scenario_bank/test_scenarios.py:359</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_refactoringRatio_lt_a_refactor_ratio">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#refactoringRatio"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.12</xsd:maxExclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{refactoringRatio} &lt; 0.12</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a_refactor_ratio</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/scenario_bank/test_scenarios.py:359</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_complexityGrowthRate_gt_a_cx_growth_refactor">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#complexityGrowthRate"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.1</xsd:minExclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{complexityGrowthRate} &gt; 0.1</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a_cx_growth_refactor</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/scenario_bank/test_scenarios.py:359</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#ExhibitsRefactoringAvoidance">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_monthsObserved_ge_a_min_months"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_recentAgentCommitRatio_gt_a_agent_refactor"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_refactoringRatio_lt_a_refactor_ratio"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_complexityGrowthRate_gt_a_cx_growth_refactor"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">recent agent ratio {recentAgentCommitRatio} &gt; 0.3, refactoring ratio {refactoringRatio} &lt; 0.12, complexity growth {complexityGrowthRate}</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a_agent_refactor</seo:thresholdId>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a_cx_growth_refactor</seo:thresholdId>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a_min_months</seo:thresholdId>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a_refactor_ratio</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/scenario_bank/test_scenarios.py:326</seo:thresholdSource>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/scenario_bank/test_scenarios.py:359</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_locDeltaPerFeature_gt_a_loc_per_feature">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#locDeltaPerFeature"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">800.0</xsd:minExclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{locDeltaPerFeature} &gt; 800</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a_loc_per_feature</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/scenario_bank/test_scenarios.py:365</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#LocPerFeatureHigh">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_locDeltaPerFeature_gt_a_loc_per_feature"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#CopyPasteEvidence"/>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LOC added per feature commit ({locDeltaPerFeature}) exceeds 800</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a_loc_per_feature</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/scenario_bank/test_scenarios.py:365</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_complexityGrowthRate_lt_0">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#complexityGrowthRate"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</xsd:maxExclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{complexityGrowthRate} &lt; 0</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_complexityGrowthRate_ge_0">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#complexityGrowthRate"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</xsd:minInclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{complexityGrowthRate} &gt;= 0</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_complexityGrowthRate_le_0">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#complexityGrowthRate"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</xsd:maxInclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{complexityGrowthRate} &lt;= 0</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#ComplexityGrowthZero">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_complexityGrowthRate_ge_0"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_complexityGrowthRate_le_0"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_locToComplexityGrowthRatio_gt_a_loc_vs_cx_factor">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#locToComplexityGrowthRatio"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0</xsd:minExclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{locToComplexityGrowthRatio} &gt; 3</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a_loc_vs_cx_factor</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/scenario_bank/test_scenarios.py:366</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#LocOutpacesComplexityGrowthUp">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_complexityGrowthRate_gt_0"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_locToComplexityGrowthRatio_gt_a_loc_vs_cx_factor"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#LocOutpacesComplexityGrowth"/>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_locToComplexityGrowthRatio_lt_a_loc_vs_cx_factor">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#locToComplexityGrowthRatio"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0</xsd:maxExclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{locToComplexityGrowthRatio} &lt; 3</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a_loc_vs_cx_factor</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/scenario_bank/test_scenarios.py:366</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#LocOutpacesComplexityGrowthDown">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_complexityGrowthRate_lt_0"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_locToComplexityGrowthRatio_lt_a_loc_vs_cx_factor"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#LocOutpacesComplexityGrowth"/>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#LocOutpacesComplexityGrowthFlat">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#ComplexityGrowthZero"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_locGrowthRate_gt_0"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#LocOutpacesComplexityGrowth"/>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#LocOutpacesComplexityGrowth">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LOC growth {locGrowthRate} &gt; 3 x complexity growth {complexityGrowthRate}</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a_loc_vs_cx_factor</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/scenario_bank/test_scenarios.py:366</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_locGrowthRate_gt_a_loc_growth_copy2">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#locGrowthRate"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</xsd:minExclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{locGrowthRate} &gt; 1.0</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a_loc_growth_copy2</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/scenario_bank/test_scenarios.py:366</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#LocBloatBranch">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#LocOutpacesComplexityGrowth"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_locGrowthRate_gt_a_loc_growth_copy2"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#CopyPasteEvidence"/>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#CopyPasteEvidence">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_recentAgentCommitRatio_gt_a_agent_copy">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#recentAgentCommitRatio"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.3</xsd:minExclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{recentAgentCommitRatio} &gt; 0.3</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a_agent_copy</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/scenario_bank/test_scenarios.py:364</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_locGrowthRate_gt_a_loc_growth_copy">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#locGrowthRate"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.5</xsd:minExclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{locGrowthRate} &gt; 0.5</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a_loc_growth_copy</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/scenario_bank/test_scenarios.py:364</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#ExhibitsCopyPasteOverReuse">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_monthsObserved_ge_a_min_months"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_recentAgentCommitRatio_gt_a_agent_copy"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_locGrowthRate_gt_a_loc_growth_copy"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#CopyPasteEvidence"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">recent agent ratio {recentAgentCommitRatio} &gt; 0.3 with LOC growth {locGrowthRate} &gt; 0.5 and bloat evidence</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a_agent_copy</seo:thresholdId>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a_loc_growth_copy2</seo:thresholdId>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a_loc_growth_copy</seo:thresholdId>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a_loc_per_feature</seo:thresholdId>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a_loc_vs_cx_factor</seo:thresholdId>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a_min_months</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/scenario_bank/test_scenarios.py:326</seo:thresholdSource>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/scenario_bank/test_scenarios.py:364</seo:thresholdSource>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/scenario_bank/test_scenarios.py:365</seo:thresholdSource>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ontology/scenario_bank/test_scenarios.py:366</seo:thresholdSource>
+</owl:Class>
+
+<owl:AllDisjointClasses>
+  <owl:members rdf:parseType="Collection">
+    <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#RBActiveDevelopmentStage"/>
+    <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#RBServicingStage"/>
+    <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#RBPhaseOutStage"/>
+  </owl:members>
+</owl:AllDisjointClasses>
+
+<owl:AllDisjointClasses>
+  <owl:members rdf:parseType="Collection">
+    <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#GrowthStage"/>
+    <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#DeclineStage"/>
+    <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#StabilizationStage"/>
+  </owl:members>
+</owl:AllDisjointClasses>
+
+
+</rdf:RDF>

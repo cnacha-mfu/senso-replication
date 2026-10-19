@@ -1,0 +1,35 @@
+{
+ "repo": "mscraftsman/generative-ai",
+ "slug": "mscraftsman__generative-ai",
+ "input_sha": "0a36ae206d5bff949b0416943996f8425b455c42ff6651548f90005a2d08e3a4",
+ "explanations": [
+  {
+   "key": "T1|src/Mscc.GenerativeAI/Mscc.GenerativeAI.csproj",
+   "verdict": "SupportedClaim",
+   "leaf": "PathFoundExact",
+   "seconds": 3.53,
+   "retried_on_claim_subgraph": false,
+   "error": null,
+   "returncode": 0,
+   "n_justifications": 1,
+   "facts": [
+    {
+     "prop": "extractionVotes",
+     "value": 3
+    },
+    {
+     "prop": "pathExactMatchCount",
+     "value": 1
+    }
+   ],
+   "axioms": [
+    "PathFoundExact equivalentTo A_pathExactMatchCount_ge_1 and CheckedClaim and PathExistenceClaim",
+    "A_extractionVotes_ge_wp2_consensus_min_votes equivalentTo extractionVotes some integer[>= 2]",
+    "A_pathExactMatchCount_ge_1 equivalentTo pathExactMatchCount some integer[>= 1]",
+    "CheckedClaim equivalentTo A_extractionVotes_ge_wp2_consensus_min_votes and ManifestClaim",
+    "PathFoundExact subClassOf SupportedClaim"
+   ],
+   "closures": []
+  }
+ ]
+}

@@ -1,0 +1,23 @@
+{
+ "repo": "jaxen-xpath/jaxen",
+ "chunk": 1,
+ "n_chunks": 2,
+ "model": "google/diffusiongemma-26b-a4b-it",
+ "prompt_sha256": "d0e02ff613417050168d859f2af6230c3712c6758bb5d9c40d60ff55e5ae87ca",
+ "user_sha256": "8ce7cccc406340544ff396f770e6792642c422652b7511404480e92c3b5e0ed9",
+ "text": "{\"claims\": [{\"type\": \"path_exists\", \"subject\": \"integration-tests/xml/\", \"line\": 162, \"mode\": \"asserts_existing\"}, {\"type\": \"dependency\", \"subject\": \"JUnit\", \"ecos_hint\": \"maven\", \"version\": \"3.8.2\", \"mode\": \"asserts_existing\"}, {\"type\": \"dependency\", \"subject\": \"JDOM\", \"ecos_hint\": \"maven\", \"version\": \"1.1.3\", \"mode\": \"asserts_existing\"}, {\"type\": \"dependency\", \"subject\": \"DOM4J\", \"ecos_hint\": \"maven\", \"version\": \"1.6.1\", \"mode\": \"asserts_existing\"}, {\"type\": \"dependency\", \"subject\": \"XOM\", \"ecos_hint\": \"maven\", \"version\": \"1.3.8\", \"mode\": \"asserts_existing\"}, {\"type\": \"tool_used\", \"subject\": \"maven\", \"tool_category\": \"build_tool\", \"mode\": \"asserts_existing\"}, {\"type\": \"command\", \"subject\": \"test\", \"runner\": \"maven\", \"line\": 178, \"mode\": \"asserts_existing\"}, {\"type\": \"version\", \"subject\": \"java\", \"version\": \"8\", \"qualifier\": \"exact\", \"line\": 179, \"mode\": \"asserts_existing\"}, {\"type\": \"path_exists\", \"subject\": \"RELEASING.md\", \"line\": 186, \"mode\": \"asserts_existing\"}, {\"type\": \"path_exists\", \"subject\": \"core/src/java/main/org/jaxen/BaseXPath.java\", \"line\": 194, \"mode\": \"asserts_existing\"}, {\"type\": \"path_exists\", \"subject\": \"core/src/java/main/org/jaxen/Navigator.java\", \"line\": 195, \"mode\": \"asserts_existing\"}, {\"type\": \"path_exists\", \"subject\": \"core/src/java/main/org/jaxen/function/\", \"line\": 196, \"mode\": \"asserts_existing\"}, {\"type\": \"path_exists\", \"subject\": \"integration-tests/xml/\", \"line\": 197, \"mode\": \"asserts_existing\"}, {\"type\": \"path_exists\", \"subject\": \"pom.xml\", \"line\": 200, \"mode\": \"asserts_existing\"}, {\"type\": \"path_exists\", \"subject\": \"core/pom.xml\", \"line\": 201, \"mode\": \"asserts_existing\"}, {\"type\": \"path_exists\", \"subject\": \"integration-tests/pom.xml\", \"line\": 202, \"mode\": \"asserts_existing\"}, {\"type\": \"path_exists\", \"subject\": \".circleci/config.yml\", \"line\": 203, \"mode\": \"asserts_existing\"}]}",
+ "parse_ok": true,
+ "parse_error": null,
+ "parse_retries": 1,
+ "latency_s": 7.60343193996232,
+ "usage": {
+  "prompt": 5949,
+  "completion": 1165
+ },
+ "n_api_calls": 2,
+ "finish_reason": "stop",
+ "error": null,
+ "discarded_attempt_texts": [
+  "```json\n[\n  {\"type\": \"path_exists\", \"subject\": \"integration-tests/xml/\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"dependency\", \"subject\": \"JUnit\", \"version\": \"3.8.2\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"dependency\", \"subject\": \"JDOM\", \"version\": \"1.1.3\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"dependency\", \"subject\": \"DOM4J\", \"version\": \"1.6.1\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"dependency\", \"subject\": \"XOM\", \"version\": \"1.3.8\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"command\", \"subject\": \"mvn test\", \"runner\": \"maven\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"version\", \"subject\": \"java\", \"version\": \"8\", \"qualifier\": \"exact\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"path_exists\", \"subject\": \"RELEASING.md\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"path_exists\", \"subject\": \"core/src/java/main/org/jaxen/BaseXPath.java\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"path_exists\", \"subject\": \"core/src/java/main/org/jaxen/Navigator.java\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"path_exists\", \"subject\": \"core/src/java/main/org/jaxen/function/\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"path_exists\", \"subject\": \"pom.xml\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"path_exists\", \"subject\": \"core/pom.xml\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"path_exists\", \"subject\": \"integration-tests/pom.xml\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"path_exists\", \"subject\": \".circleci/config.yml\", \"mode\": \"asserts_existing\"}\n]\n```"
+ ]
+}

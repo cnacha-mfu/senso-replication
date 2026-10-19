@@ -1,0 +1,364 @@
+{
+ "task_id": "Fatal1ty__mashumaro-178",
+ "repo": "Fatal1ty/mashumaro",
+ "stage": "phase_out",
+ "rounds": 1,
+ "rejects": {},
+ "flags": [],
+ "info": {
+  "slots": {
+   "test_root": "tests",
+   "P1": {
+    "replaced": "mashumaro/mixins",
+    "name": "internal",
+    "F_R": "mashumaro/core/internal",
+    "F_I": "mashumaro/jsonschema/internal"
+   },
+   "P2": {
+    "replaced": "mashumaro/mixins/dict.py",
+    "F_R": "mashumaro/core/meta/patch.py",
+    "F_I": "benchmark/run.py"
+   },
+   "C": {
+    "F_R": "make test",
+    "F_I": "make install"
+   },
+   "D": {
+    "replaced": "orjson",
+    "F_R": "toolz",
+    "F_I": "boltons"
+   }
+  },
+  "why": {
+   "test_command": [
+    {
+     "root": "tests",
+     "T3": "SupportedClaim",
+     "T1": "SupportedClaim",
+     "collect_ok": true
+    }
+   ],
+   "kind1": {
+    "p1_idx": 3,
+    "gold0": "mashumaro/core",
+    "unrelated": "mashumaro/jsonschema",
+    "base_R": "mashumaro/core",
+    "base_I": "mashumaro/jsonschema"
+   },
+   "kind2": {
+    "p2_idx": 2,
+    "n_deleted_py": 46,
+    "found": {
+     "F_R": "mashumaro/core/meta/patch.py",
+     "F_I": "benchmark/run.py"
+    }
+   },
+   "kind3": {
+    "run": "test",
+    "install": "install",
+    "test_ok": true,
+    "install_ok": true
+   },
+   "kind4": {
+    "deps": [
+     [
+      "typing-extensions",
+      true
+     ],
+     [
+      "ciso8601",
+      true
+     ],
+     [
+      "msgpack",
+      false
+     ],
+     [
+      "orjson",
+      false
+     ],
+     [
+      "pendulum",
+      true
+     ]
+    ],
+    "d_idx": 3,
+    "src_R": "typing-extensions",
+    "src_I": "orjson",
+    "n_decls": 28,
+    "n_dist": 69
+   }
+  },
+  "length": {
+   "T": 483,
+   "F_R": 473,
+   "F_I": 478
+  },
+  "fallbacks": {
+   "F_R": [],
+   "F_I": []
+  },
+  "modes": {
+   "F_R": {
+    "1": "replace",
+    "2": "replace",
+    "3": "replace",
+    "4": "replace"
+   },
+   "F_I": {
+    "1": "replace",
+    "2": "replace",
+    "3": "replace",
+    "4": "replace"
+   }
+  },
+  "length_diff": {
+   "F_R": -10,
+   "F_I": -5
+  },
+  "n_claims_T": 17,
+  "n_false": {
+   "F_R": 4,
+   "F_I": 4
+  },
+  "pointer_in_issue": false,
+  "gold_dirs": [
+   "mashumaro/core"
+  ],
+  "gold_files": [
+   "mashumaro/core/meta/code/builder.py",
+   "mashumaro/core/meta/helpers.py",
+   "mashumaro/core/meta/types/pack.py",
+   "mashumaro/core/meta/types/unpack.py"
+  ]
+ },
+ "tokens": {
+  "F_R": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "mashumaro/core/internal",
+     "internal"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "mashumaro/core/meta/patch.py",
+     "patch.py"
+    ]
+   },
+   {
+    "kind": 3,
+    "type": "regex",
+    "regex": "\\bmake\\b[^|;&\\n]*\\btest\\b",
+    "target": "test"
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "toolz"
+    ]
+   }
+  ],
+  "F_I": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "mashumaro/jsonschema/internal",
+     "internal"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "benchmark/run.py",
+     "run.py"
+    ]
+   },
+   {
+    "kind": 3,
+    "type": "regex",
+    "regex": "\\bmake\\b[^|;&\\n]*\\binstall\\b",
+    "target": "install"
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "boltons"
+    ]
+   }
+  ]
+ },
+ "unresolved_pre_hermit": [],
+ "sha256": {
+  "T": "302fe7cc11143234cb417e36d1974e34814b9bf25370db1d241d6857f4b2984d",
+  "F_R": "f391f43ad6e84272fb634afade9b7043923532c93859ae02f9b778bac3568e95",
+  "F_I": "a3f83845147aacb189d154058bab593440603ff2e247777de0bb697f09306710"
+ },
+ "chars": {
+  "T": 483,
+  "F_R": 473,
+  "F_I": 478
+ },
+ "claims": {
+  "T": [
+   "T1|mashumaro",
+   "T1|mashumaro/core",
+   "T1|mashumaro/jsonschema",
+   "T1|mashumaro/mixins",
+   "T1|tests",
+   "T1|mashumaro/core/meta/code/builder.py",
+   "T1|mashumaro/core/meta/types/unpack.py",
+   "T1|mashumaro/mixins/dict.py",
+   "T3|test_framework|pytest",
+   "T1|tests",
+   "T1|pyproject.toml",
+   "T4|typing-extensions|",
+   "T4|ciso8601|",
+   "T4|msgpack|",
+   "T4|orjson|",
+   "T4|pendulum|",
+   "T6|python|3008000000@2"
+  ],
+  "F_R": [
+   "T1|mashumaro",
+   "T1|mashumaro/core",
+   "T1|mashumaro/jsonschema",
+   "T1|mashumaro/core/internal",
+   "T1|tests",
+   "T1|mashumaro/core/meta/code/builder.py",
+   "T1|mashumaro/core/meta/types/unpack.py",
+   "T1|mashumaro/core/meta/patch.py",
+   "T5|make|test",
+   "T1|pyproject.toml",
+   "T4|typing-extensions|",
+   "T4|ciso8601|",
+   "T4|msgpack|",
+   "T4|toolz|",
+   "T4|pendulum|",
+   "T6|python|3008000000@2"
+  ],
+  "F_I": [
+   "T1|mashumaro",
+   "T1|mashumaro/core",
+   "T1|mashumaro/jsonschema",
+   "T1|mashumaro/jsonschema/internal",
+   "T1|tests",
+   "T1|mashumaro/core/meta/code/builder.py",
+   "T1|mashumaro/core/meta/types/unpack.py",
+   "T1|benchmark/run.py",
+   "T3|test_framework|pytest",
+   "T1|tests",
+   "T5|make|install",
+   "T4|typing-extensions|",
+   "T4|ciso8601|",
+   "T4|msgpack|",
+   "T4|boltons|",
+   "T4|pendulum|",
+   "T6|python|3008000000@2"
+  ]
+ },
+ "python_spec": ">=3.8",
+ "token_audit": [
+  {
+   "cond": "F_R",
+   "kind": 1,
+   "type": "path",
+   "name": "mashumaro/core/internal",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 2,
+   "type": "path",
+   "name": "mashumaro/core/meta/patch.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 3,
+   "type": "regex",
+   "name": "make test",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 4,
+   "type": "word",
+   "name": "toolz",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 1,
+   "type": "path",
+   "name": "mashumaro/jsonschema/internal",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 2,
+   "type": "path",
+   "name": "benchmark/run.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 3,
+   "type": "regex",
+   "name": "make install",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 4,
+   "type": "word",
+   "name": "boltons",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  }
+ ],
+ "dist_imports_used": {
+  "typing-extensions": [
+   "typing_extensions"
+  ],
+  "ciso8601": [
+   "ciso8601"
+  ],
+  "msgpack": [
+   "msgpack"
+  ],
+  "orjson": [
+   "orjson"
+  ],
+  "pendulum": [
+   "pendulum"
+  ],
+  "toolz": null,
+  "boltons": null
+ }
+}

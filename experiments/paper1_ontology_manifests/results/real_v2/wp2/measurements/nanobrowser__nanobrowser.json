@@ -1,0 +1,1652 @@
+{
+ "repo": "nanobrowser/nanobrowser",
+ "slug": "nanobrowser__nanobrowser",
+ "S": "322384f8b4d48d8614343e51efca68c85e64f90b",
+ "manifest_path": "CLAUDE.md",
+ "input_sha": "142c7c48787e806b5ef04c698b544e479aaa1c58fbb583eb6aa10a197c90dabe",
+ "n_claims": 51,
+ "n_tree_files": 239,
+ "n_dep_manifests_parsed": 16,
+ "seconds": 0.1,
+ "claims": [
+  {
+   "key_str": "T1|Chrome/Edge",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "Chrome/Edge",
+   "quote": "- Only supports Chrome/Edge",
+   "line": 275,
+   "votes": 1,
+   "models": [
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "Chrome/Edge",
+    "is_dir": false,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 0,
+     "pathSuffixMatchCount": 0,
+     "pathIgnoredCount": 0,
+     "pathSubmoduleCount": 0,
+     "pathEverTrackedCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|chrome-extension",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "chrome-extension",
+   "quote": "- `chrome-extension/` - Main Chrome extension manifest and background scripts",
+   "line": 60,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "chrome-extension",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 54,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|chrome-extension/src/**/__tests__",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "chrome-extension/src/**/__tests__",
+   "quote": "- Location/naming: `chrome-extension/src/**/__tests__` with `*.test.ts`",
+   "line": 123,
+   "votes": 1,
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "attrs": {
+    "path": "chrome-extension/src/**/__tests__",
+    "is_dir": false,
+    "glob": true,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 1,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|chrome-extension/src/background/agent",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "chrome-extension/src/background/agent",
+   "quote": "Agent logic is under `chrome-extension/src/background/agent/`.",
+   "line": 89,
+   "votes": 1,
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "attrs": {
+    "path": "chrome-extension/src/background/agent",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 21,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|chrome-extension/vite.config.mts",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "chrome-extension/vite.config.mts",
+   "quote": "- Vite aliases: pages use `@src` for page `src/`; the extension uses\n   `@root`, `@src`, `@assets` (see `chrome-extension/vite.config.mts`). Use\n   `packages/vite-config`’s `withPageConfig` for page w",
+   "line": 283,
+   "votes": 1,
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "attrs": {
+    "path": "chrome-extension/vite.config.mts",
+    "is_dir": false,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 1,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|content",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "content",
+   "quote": "- `content/` - Content script for page injection",
+   "line": 69,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "content",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 0,
+     "pathSuffixMatchCount": 1
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|dev-utils",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "dev-utils",
+   "quote": "- Others: `dev-utils/`, `zipper/`, `vite-config/`, `tailwind-config/`, `hmr/`,   `tsconfig/`",
+   "line": 78,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "dev-utils",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 0,
+     "pathSuffixMatchCount": 1
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|dist",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "dist",
+   "quote": "- Extension loads as unpacked from `dist/` directory after build",
+   "line": 111,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "dist",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 0,
+     "pathSuffixMatchCount": 0,
+     "pathIgnoredCount": 1,
+     "pathSubmoduleCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|dist-zip",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "dist-zip",
+   "quote": "- Distribution zips are written to `dist-zip/`",
+   "line": 116,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "dist-zip",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 0,
+     "pathSuffixMatchCount": 0,
+     "pathIgnoredCount": 1,
+     "pathSubmoduleCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|hmr",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "hmr",
+   "quote": "- Others: `dev-utils/`, `zipper/`, `vite-config/`, `tailwind-config/`, `hmr/`,   `tsconfig/`",
+   "line": 78,
+   "votes": 2,
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "hmr",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 0,
+     "pathSuffixMatchCount": 1
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|i18n",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "i18n",
+   "quote": "- `i18n/` - Internationalization",
+   "line": 77,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "i18n",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 0,
+     "pathSuffixMatchCount": 1
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|options",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "options",
+   "quote": "- `options/` - Extension settings page (React + TypeScript)",
+   "line": 68,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "options",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 0,
+     "pathSuffixMatchCount": 1
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|packages",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "packages",
+   "quote": "packages/",
+   "line": 33,
+   "votes": 1,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it"
+   ],
+   "attrs": {
+    "path": "packages",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 112,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|packages/i18n/genenrate-i18n.mjs",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "packages/i18n/genenrate-i18n.mjs",
+   "quote": "The generator `packages/i18n/genenrate-i18n.mjs` runs via the `@extension/i18n`",
+   "line": 214,
+   "votes": 2,
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "packages/i18n/genenrate-i18n.mjs",
+    "is_dir": false,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 1,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|packages/i18n/lib/**",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "packages/i18n/lib/**",
+   "quote": "Do not edit generated files under `packages/i18n/lib/**`.",
+   "line": 213,
+   "votes": 2,
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "packages/i18n/lib/**",
+    "is_dir": false,
+    "glob": true,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 4,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|packages/i18n/locales/**",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "packages/i18n/locales/**",
+   "quote": "Edit source locale JSON in `packages/i18n/locales/**` instead.",
+   "line": 216,
+   "votes": 2,
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "packages/i18n/locales/**",
+    "is_dir": false,
+    "glob": true,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 3,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|packages/vite-config",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "packages/vite-config",
+   "quote": "- Vite aliases: pages use `@src` for page `src/`; the extension uses\n   `@root`, `@src`, `@assets` (see `chrome-extension/vite.config.mts`). Use\n   `packages/vite-config`’s `withPageConfig` for page w",
+   "line": 283,
+   "votes": 1,
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "attrs": {
+    "path": "packages/vite-config",
+    "is_dir": false,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 4,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|pages",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "pages",
+   "quote": "pages/",
+   "line": 37,
+   "votes": 1,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it"
+   ],
+   "attrs": {
+    "path": "pages",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 40,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|schema-utils",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "schema-utils",
+   "quote": "- `schema-utils/` - Validation schemas",
+   "line": 76,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "schema-utils",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 0,
+     "pathSuffixMatchCount": 1
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|shared",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "shared",
+   "quote": "- `shared/` - Common utilities and types",
+   "line": 73,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "shared",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 0,
+     "pathSuffixMatchCount": 1
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|side-panel",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "side-panel",
+   "quote": "- `side-panel/` - Main chat interface (React + TypeScript + Tailwind)",
+   "line": 67,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "side-panel",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 0,
+     "pathSuffixMatchCount": 1
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|src/background",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "src/background",
+   "quote": "  - `src/background/` - Background service worker with multi-agent system",
+   "line": 61,
+   "votes": 2,
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "src/background",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 0,
+     "pathSuffixMatchCount": 1
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|src/background/agent",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "src/background/agent",
+   "quote": "  - `src/background/agent/` - AI agent implementations (Navigator, Planner, Validator)",
+   "line": 62,
+   "votes": 2,
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "src/background/agent",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 0,
+     "pathSuffixMatchCount": 1
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|src/background/browser",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "src/background/browser",
+   "quote": "  - `src/background/browser/` - Browser automation and DOM manipulation",
+   "line": 63,
+   "votes": 2,
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "src/background/browser",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 0,
+     "pathSuffixMatchCount": 1
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|storage",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "storage",
+   "quote": "- `storage/` - Chrome extension storage abstraction",
+   "line": 74,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "storage",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 0,
+     "pathSuffixMatchCount": 1
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|tailwind-config",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "tailwind-config",
+   "quote": "- Others: `dev-utils/`, `zipper/`, `vite-config/`, `tailwind-config/`, `hmr/`,   `tsconfig/`",
+   "line": 78,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "tailwind-config",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 0,
+     "pathSuffixMatchCount": 1
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|tsconfig",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "tsconfig",
+   "quote": "- Others: `dev-utils/`, `zipper/`, `vite-config/`, `tailwind-config/`, `hmr/`,   `tsconfig/`",
+   "line": 78,
+   "votes": 2,
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "tsconfig",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 0,
+     "pathSuffixMatchCount": 1
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|ui",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "ui",
+   "quote": "- `ui/` - Shared React components",
+   "line": 75,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "ui",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 0,
+     "pathSuffixMatchCount": 1
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|vite-config",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "vite-config",
+   "quote": "- Others: `dev-utils/`, `zipper/`, `vite-config/`, `tailwind-config/`, `hmr/`,   `tsconfig/`",
+   "line": 78,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "vite-config",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 0,
+     "pathSuffixMatchCount": 1
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|zipper",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "zipper",
+   "quote": "- Others: `dev-utils/`, `zipper/`, `vite-config/`, `tailwind-config/`, `hmr/`,   `tsconfig/`",
+   "line": 78,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "zipper",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 0,
+     "pathSuffixMatchCount": 1
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T2|build/**|protected",
+   "tcode": "T2",
+   "types": [
+    "PathExistenceClaim",
+    "ProtectedStatusClaim"
+   ],
+   "headline": false,
+   "subject": "build/**",
+   "quote": "- Do not edit generated outputs: `dist/**`, `build/**`, `packages/i18n/lib/**`",
+   "line": 118,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "build/**",
+    "is_dir": false,
+    "glob": true,
+    "bracket": false,
+    "status": "do_not_edit",
+    "status_kind": "protected"
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 0,
+     "pathSuffixMatchCount": 0,
+     "pathIgnoredCount": 1,
+     "pathSubmoduleCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T2|dist/**|protected",
+   "tcode": "T2",
+   "types": [
+    "PathExistenceClaim",
+    "ProtectedStatusClaim"
+   ],
+   "headline": false,
+   "subject": "dist/**",
+   "quote": "- Do not edit generated outputs: `dist/**`, `build/**`, `packages/i18n/lib/**`",
+   "line": 118,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "dist/**",
+    "is_dir": false,
+    "glob": true,
+    "bracket": false,
+    "status": "do_not_edit",
+    "status_kind": "protected"
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 0,
+     "pathSuffixMatchCount": 0,
+     "pathIgnoredCount": 1,
+     "pathSubmoduleCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T2|packages/i18n/lib/**|protected",
+   "tcode": "T2",
+   "types": [
+    "PathExistenceClaim",
+    "ProtectedStatusClaim"
+   ],
+   "headline": false,
+   "subject": "packages/i18n/lib/**",
+   "quote": "- Do not edit generated outputs: `dist/**`, `build/**`, `packages/i18n/lib/**`",
+   "line": 118,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "packages/i18n/lib/**",
+    "is_dir": false,
+    "glob": true,
+    "bracket": false,
+    "status": "do_not_edit",
+    "status_kind": "protected"
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 4,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T3|build_tool|turbo",
+   "tcode": "T3",
+   "types": [
+    "ToolUsageClaim",
+    "NonPackageManagerToolClaim"
+   ],
+   "headline": true,
+   "subject": "turbo",
+   "quote": "- **Turbo** manages task dependencies and caching",
+   "line": 93,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "tool": "turbo",
+    "category": "build_tool"
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "toolSignatureHitCount": 2,
+     "toolEcosystemAnchorCount": 16,
+     "competingToolSignatureCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T3|build_tool|vite",
+   "tcode": "T3",
+   "types": [
+    "ToolUsageClaim",
+    "NonPackageManagerToolClaim"
+   ],
+   "headline": true,
+   "subject": "vite",
+   "quote": "- **Vite** bundles each workspace independently",
+   "line": 94,
+   "votes": 2,
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "tool": "vite",
+    "category": "build_tool"
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "toolSignatureHitCount": 5,
+     "toolEcosystemAnchorCount": 16,
+     "competingToolSignatureCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T3|linter_formatter|eslint",
+   "tcode": "T3",
+   "types": [
+    "ToolUsageClaim",
+    "NonPackageManagerToolClaim"
+   ],
+   "headline": true,
+   "subject": "eslint",
+   "quote": "- **ESLint** + **Prettier** for code quality",
+   "line": 96,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "tool": "eslint",
+    "category": "linter_formatter"
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "toolSignatureHitCount": 2,
+     "toolEcosystemAnchorCount": 16,
+     "competingToolSignatureCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T3|linter_formatter|prettier",
+   "tcode": "T3",
+   "types": [
+    "ToolUsageClaim",
+    "NonPackageManagerToolClaim"
+   ],
+   "headline": true,
+   "subject": "prettier",
+   "quote": "- **ESLint** + **Prettier** for code quality",
+   "line": 96,
+   "votes": 2,
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "tool": "prettier",
+    "category": "linter_formatter"
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "toolSignatureHitCount": 2,
+     "toolEcosystemAnchorCount": 16,
+     "competingToolSignatureCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T3|package_manager|pnpm",
+   "tcode": "T3",
+   "types": [
+    "ToolUsageClaim",
+    "PackageManagerClaim"
+   ],
+   "headline": true,
+   "subject": "pnpm",
+   "quote": "**Package Manager**: Always use `pnpm` (required, configured in Cursor rules)",
+   "line": 11,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "tool": "pnpm",
+    "category": "package_manager"
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "toolSignatureHitCount": 4,
+     "toolEcosystemAnchorCount": 16,
+     "competingToolSignatureCount": 1
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T3|test_framework|vitest",
+   "tcode": "T3",
+   "types": [
+    "ToolUsageClaim",
+    "NonPackageManagerToolClaim"
+   ],
+   "headline": true,
+   "subject": "vitest",
+   "quote": "- Framework: Vitest",
+   "line": 122,
+   "votes": 2,
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "tool": "vitest",
+    "category": "test_framework"
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "toolSignatureHitCount": 1,
+     "toolEcosystemAnchorCount": 16,
+     "competingToolSignatureCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T5|script|build",
+   "tcode": "T5",
+   "types": [
+    "CommandClaim"
+   ],
+   "headline": true,
+   "subject": "build",
+   "quote": "- `pnpm build` - Build production version",
+   "line": 17,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "runner": "pnpm",
+    "kind": "script",
+    "target": "build"
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "scriptDefinedRootCount": 1,
+     "scriptDefinedAnyCount": 6,
+     "scriptHostFileCount": 16,
+     "dynamicTargetRuleCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T5|script|clean",
+   "tcode": "T5",
+   "types": [
+    "CommandClaim"
+   ],
+   "headline": true,
+   "subject": "clean",
+   "quote": "- `pnpm clean` - Clean all build artifacts and node_modules",
+   "line": 45,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "runner": "pnpm",
+    "kind": "script",
+    "target": "clean"
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "scriptDefinedRootCount": 1,
+     "scriptDefinedAnyCount": 14,
+     "scriptHostFileCount": 16,
+     "dynamicTargetRuleCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T5|script|clean:bundle",
+   "tcode": "T5",
+   "types": [
+    "CommandClaim"
+   ],
+   "headline": true,
+   "subject": "clean:bundle",
+   "quote": "- `pnpm clean:bundle` - Clean just build outputs",
+   "line": 46,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "runner": "pnpm",
+    "kind": "script",
+    "target": "clean:bundle"
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "scriptDefinedRootCount": 1,
+     "scriptDefinedAnyCount": 9,
+     "scriptHostFileCount": 16,
+     "dynamicTargetRuleCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T5|script|clean:install",
+   "tcode": "T5",
+   "types": [
+    "CommandClaim"
+   ],
+   "headline": true,
+   "subject": "clean:install",
+   "quote": "- `pnpm clean:install` - Clean node_modules and reinstall dependencies",
+   "line": 49,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "runner": "pnpm",
+    "kind": "script",
+    "target": "clean:install"
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "scriptDefinedRootCount": 1,
+     "scriptDefinedAnyCount": 1,
+     "scriptHostFileCount": 16,
+     "dynamicTargetRuleCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T5|script|clean:turbo",
+   "tcode": "T5",
+   "types": [
+    "CommandClaim"
+   ],
+   "headline": true,
+   "subject": "clean:turbo",
+   "quote": "- `pnpm clean:turbo` - Clear Turbo state/cache",
+   "line": 47,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "runner": "pnpm",
+    "kind": "script",
+    "target": "clean:turbo"
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "scriptDefinedRootCount": 1,
+     "scriptDefinedAnyCount": 13,
+     "scriptHostFileCount": 16,
+     "dynamicTargetRuleCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T5|script|dev",
+   "tcode": "T5",
+   "types": [
+    "CommandClaim"
+   ],
+   "headline": true,
+   "subject": "dev",
+   "quote": "- `pnpm dev` - Start development mode with hot reload",
+   "line": 16,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "runner": "pnpm",
+    "kind": "script",
+    "target": "dev"
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "scriptDefinedRootCount": 1,
+     "scriptDefinedAnyCount": 6,
+     "scriptHostFileCount": 16,
+     "dynamicTargetRuleCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T5|script|e2e",
+   "tcode": "T5",
+   "types": [
+    "CommandClaim"
+   ],
+   "headline": true,
+   "subject": "e2e",
+   "quote": "- `pnpm e2e` - Run end-to-end tests (builds and zips first)",
+   "line": 24,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "runner": "pnpm",
+    "kind": "script",
+    "target": "e2e"
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "scriptDefinedRootCount": 1,
+     "scriptDefinedAnyCount": 1,
+     "scriptHostFileCount": 16,
+     "dynamicTargetRuleCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T5|script|lint",
+   "tcode": "T5",
+   "types": [
+    "CommandClaim"
+   ],
+   "headline": true,
+   "subject": "lint",
+   "quote": "- `pnpm lint` - Run ESLint with auto-fix",
+   "line": 19,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "runner": "pnpm",
+    "kind": "script",
+    "target": "lint"
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "scriptDefinedRootCount": 1,
+     "scriptDefinedAnyCount": 13,
+     "scriptHostFileCount": 16,
+     "dynamicTargetRuleCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T5|script|prettier",
+   "tcode": "T5",
+   "types": [
+    "CommandClaim"
+   ],
+   "headline": true,
+   "subject": "prettier",
+   "quote": "- `pnpm prettier` - Format code with Prettier",
+   "line": 20,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "runner": "pnpm",
+    "kind": "script",
+    "target": "prettier"
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "scriptDefinedRootCount": 1,
+     "scriptDefinedAnyCount": 13,
+     "scriptHostFileCount": 16,
+     "dynamicTargetRuleCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T5|script|type-check",
+   "tcode": "T5",
+   "types": [
+    "CommandClaim"
+   ],
+   "headline": true,
+   "subject": "type-check",
+   "quote": "- `pnpm type-check` - Run TypeScript type checking",
+   "line": 18,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "runner": "pnpm",
+    "kind": "script",
+    "target": "type-check"
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "scriptDefinedRootCount": 1,
+     "scriptDefinedAnyCount": 13,
+     "scriptHostFileCount": 16,
+     "dynamicTargetRuleCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T5|script|update-version",
+   "tcode": "T5",
+   "types": [
+    "CommandClaim"
+   ],
+   "headline": true,
+   "subject": "update-version",
+   "quote": "- `pnpm update-version` - Update version across all packages",
+   "line": 50,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "runner": "pnpm",
+    "kind": "script",
+    "target": "update-version"
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "scriptDefinedRootCount": 1,
+     "scriptDefinedAnyCount": 1,
+     "scriptHostFileCount": 16,
+     "dynamicTargetRuleCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T5|script|zip",
+   "tcode": "T5",
+   "types": [
+    "CommandClaim"
+   ],
+   "headline": true,
+   "subject": "zip",
+   "quote": "- `pnpm zip` - Create extension zip for distribution",
+   "line": 25,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "runner": "pnpm",
+    "kind": "script",
+    "target": "zip"
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "scriptDefinedRootCount": 1,
+     "scriptDefinedAnyCount": 2,
+     "scriptHostFileCount": 16,
+     "dynamicTargetRuleCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  }
+ ]
+}

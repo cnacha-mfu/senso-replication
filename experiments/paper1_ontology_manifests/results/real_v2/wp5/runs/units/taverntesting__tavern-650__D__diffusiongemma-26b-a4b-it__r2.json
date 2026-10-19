@@ -1,0 +1,66 @@
+{
+ "unit_id": "taverntesting__tavern-650__D__diffusiongemma-26b-a4b-it__r2",
+ "task_id": "taverntesting__tavern-650",
+ "repo": "taverntesting/tavern",
+ "stage": "phase_out",
+ "condition": "D",
+ "model": "google/diffusiongemma-26b-a4b-it",
+ "run": 2,
+ "order": 98,
+ "env_build_s": 127.6,
+ "real_agent_manifest_at_base": [],
+ "started": "2026-10-07T03:21:48.244942+00:00",
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 3853,
+  "sha256": "90cd157685c33ac399fc47a6089d21e1f4376ab569e3985af88011d88b8109c2"
+ },
+ "condition_available": true,
+ "retries": 0,
+ "exit_status": "LimitsExceeded",
+ "error": "",
+ "steps": 40,
+ "wall_s": 330.1,
+ "prompt_tokens": 1251955,
+ "completion_tokens": 7101,
+ "format_errors": 2,
+ "length_cutoffs": 1,
+ "api_errors": {},
+ "n_queries": 40,
+ "keys_used": {
+  "NVIDIA_API_KEY_2": 11,
+  "NVIDIA_API_KEY_5": 6,
+  "NVIDIA_API_KEY": 10,
+  "NVIDIA_API_KEY_4": 13
+ },
+ "temperature": 0.7,
+ "top_p": 0.95,
+ "model_id_returned": "google/diffusiongemma-26b-a4b-it",
+ "mini_version": "2.4.6",
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "resolved": false,
+  "reason": "empty_patch",
+  "outcomes": {
+   "Y0": 0,
+   "Y5": 0,
+   "Y6": 40,
+   "hit_step_limit": 1,
+   "changed_lines": 0,
+   "gold_changed_lines": 50,
+   "Y1": null,
+   "Y2": null,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": null
+  }
+ },
+ "status": "done",
+ "finished": "2026-10-07T03:27:18.856566+00:00"
+}

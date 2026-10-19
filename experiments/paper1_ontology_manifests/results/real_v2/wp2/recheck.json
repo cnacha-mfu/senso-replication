@@ -1,0 +1,124 @@
+{
+ "independence_check": {
+  "forbidden_imports_found": []
+ },
+ "n_claims": 1227,
+ "confusion_matrix_rows_reasoner_cols_recheck": {
+  "SupportedClaim": {
+   "SupportedClaim": 1117,
+   "ContradictedClaim": 0,
+   "UnverifiableClaim": 0,
+   "IndeterminateClaim": 0,
+   "ConflictedClaim": 0,
+   "none": 0
+  },
+  "ContradictedClaim": {
+   "SupportedClaim": 1,
+   "ContradictedClaim": 64,
+   "UnverifiableClaim": 0,
+   "IndeterminateClaim": 0,
+   "ConflictedClaim": 0,
+   "none": 0
+  },
+  "UnverifiableClaim": {
+   "SupportedClaim": 0,
+   "ContradictedClaim": 0,
+   "UnverifiableClaim": 41,
+   "IndeterminateClaim": 0,
+   "ConflictedClaim": 0,
+   "none": 0
+  },
+  "IndeterminateClaim": {
+   "SupportedClaim": 0,
+   "ContradictedClaim": 0,
+   "UnverifiableClaim": 0,
+   "IndeterminateClaim": 1,
+   "ConflictedClaim": 0,
+   "none": 0
+  },
+  "ConflictedClaim": {
+   "SupportedClaim": 0,
+   "ContradictedClaim": 0,
+   "UnverifiableClaim": 0,
+   "IndeterminateClaim": 0,
+   "ConflictedClaim": 3,
+   "none": 0
+  },
+  "none": {
+   "SupportedClaim": 0,
+   "ContradictedClaim": 0,
+   "UnverifiableClaim": 0,
+   "IndeterminateClaim": 0,
+   "ConflictedClaim": 0,
+   "none": 0
+  }
+ },
+ "agree_verdict": 0.9991850040749797,
+ "agree_leaf": 0.9991850040749797,
+ "kappa_verdict": 0.9951090596001151,
+ "precision_contradicted": 0.9846153846153847,
+ "recall_contradicted": 1.0,
+ "n_reasoner_contradicted": 65,
+ "n_recheck_contradicted": 64,
+ "by_type": {
+  "T1": {
+   "n": 839,
+   "agree_verdict": 1.0,
+   "agree_leaf": 1.0,
+   "kappa": 1.0
+  },
+  "T2": {
+   "n": 12,
+   "agree_verdict": 1.0,
+   "agree_leaf": 1.0,
+   "kappa": 1.0
+  },
+  "T3": {
+   "n": 100,
+   "agree_verdict": 1.0,
+   "agree_leaf": 1.0,
+   "kappa": 1.0
+  },
+  "T4": {
+   "n": 65,
+   "agree_verdict": 0.9846153846153847,
+   "agree_leaf": 0.9846153846153847,
+   "kappa": 0.9532710280373834
+  },
+  "T5": {
+   "n": 189,
+   "agree_verdict": 1.0,
+   "agree_leaf": 1.0,
+   "kappa": 1.0
+  },
+  "T6": {
+   "n": 22,
+   "agree_verdict": 1.0,
+   "agree_leaf": 1.0,
+   "kappa": 1.0
+  }
+ },
+ "disagreements": [
+  {
+   "repo": "JunDamin/hwpapi",
+   "key": "T4|nbdev|",
+   "tcode": "T4",
+   "headline": true,
+   "reasoner_verdict": "ContradictedClaim",
+   "reasoner_leaf": "DependencyUndeclared",
+   "recheck_verdict": "SupportedClaim",
+   "recheck_leaf": "DependencyConfirmed",
+   "agree_verdict": false,
+   "agree_leaf": false,
+   "props": {
+    "dependencyExactMatchCount": 0,
+    "dependencySuffixMatchCount": 0,
+    "dependencyManifestParsedCount": 2
+   },
+   "n_evidences": 0,
+   "quote": "- `nbdev` - Notebook-driven development framework"
+  }
+ ],
+ "leaf_only_disagreements": [],
+ "note": "Encoding fidelity: does the reasoner decide exactly what the rules state? Not construct validity. Both sides read the same git objects through different code."
+}

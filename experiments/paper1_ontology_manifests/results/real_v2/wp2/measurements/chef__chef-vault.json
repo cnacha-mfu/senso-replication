@@ -1,0 +1,1680 @@
+{
+ "repo": "chef/chef-vault",
+ "slug": "chef__chef-vault",
+ "S": "498306f339fd7aae7bcaa590f85e8f49e8dcb204",
+ "manifest_path": ".github/copilot-instructions.md",
+ "input_sha": "dc2618263f926ff6eff7eb88a9fb414afc4ce57cd3f613d341899299e97edc23",
+ "n_claims": 49,
+ "n_tree_files": 106,
+ "n_dep_manifests_parsed": 2,
+ "seconds": 0.7,
+ "claims": [
+  {
+   "key_str": "T1|.expeditor/config.yml",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": ".expeditor/config.yml",
+   "quote": "Config: `.expeditor/config.yml`",
+   "line": 165,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": ".expeditor/config.yml",
+    "is_dir": false,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 1,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|CODEOWNERS",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "CODEOWNERS",
+   "quote": "`CODEOWNERS`",
+   "line": 348,
+   "votes": 1,
+   "models": [
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "CODEOWNERS",
+    "is_dir": false,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 0,
+     "pathSuffixMatchCount": 1
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|Gemfile",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "Gemfile",
+   "quote": "Use `Gemfile`, do not edit `Gemfile.lock` directly",
+   "line": 315,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "Gemfile",
+    "is_dir": false,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 1,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|Gemfile.lock",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "Gemfile.lock",
+   "quote": "Use `Gemfile`, do not edit `Gemfile.lock` directly",
+   "line": 315,
+   "votes": 2,
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "Gemfile.lock",
+    "is_dir": false,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 0,
+     "pathSuffixMatchCount": 0,
+     "pathIgnoredCount": 1,
+     "pathSubmoduleCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|LICENSE",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "LICENSE",
+   "quote": "LICENSE",
+   "line": 38,
+   "votes": 2,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "LICENSE",
+    "is_dir": false,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 1,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|chef-vault",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "chef-vault",
+   "quote": "chef-vault/",
+   "line": 12,
+   "votes": 2,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "chef-vault",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 0,
+     "pathSuffixMatchCount": 3
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|chef-vault/.expeditor",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "chef-vault/.expeditor",
+   "quote": "├── .expeditor/        # Expeditor build automation config",
+   "line": 30,
+   "votes": 2,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "chef-vault/.expeditor",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false,
+    "tree": true,
+    "alt_path": ".expeditor"
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 9,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {
+     "alt_path_used": ".expeditor"
+    }
+   }
+  },
+  {
+   "key_str": "T1|chef-vault/.github",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "chef-vault/.github",
+   "quote": "├── .github/           # GitHub workflows, CODEOWNERS, Copilot instructions",
+   "line": 13,
+   "votes": 2,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "chef-vault/.github",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false,
+    "tree": true,
+    "alt_path": ".github"
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 14,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {
+     "alt_path_used": ".github"
+    }
+   }
+  },
+  {
+   "key_str": "T1|chef-vault/CHANGELOG.md",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "chef-vault/CHANGELOG.md",
+   "quote": "├── CHANGELOG.md       # Changelog",
+   "line": 31,
+   "votes": 2,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "chef-vault/CHANGELOG.md",
+    "is_dir": false,
+    "glob": false,
+    "bracket": false,
+    "tree": true,
+    "alt_path": "CHANGELOG.md"
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 1,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {
+     "alt_path_used": "CHANGELOG.md"
+    }
+   }
+  },
+  {
+   "key_str": "T1|chef-vault/CODE_OF_CONDUCT.md",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "chef-vault/CODE_OF_CONDUCT.md",
+   "quote": "├── CODE_OF_CONDUCT.md # Code of conduct",
+   "line": 32,
+   "votes": 2,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "chef-vault/CODE_OF_CONDUCT.md",
+    "is_dir": false,
+    "glob": false,
+    "bracket": false,
+    "tree": true,
+    "alt_path": "CODE_OF_CONDUCT.md"
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 1,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {
+     "alt_path_used": "CODE_OF_CONDUCT.md"
+    }
+   }
+  },
+  {
+   "key_str": "T1|chef-vault/CONTRIBUTING.md",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "chef-vault/CONTRIBUTING.md",
+   "quote": "├── CONTRIBUTING.md    # Contribution guidelines",
+   "line": 33,
+   "votes": 2,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "chef-vault/CONTRIBUTING.md",
+    "is_dir": false,
+    "glob": false,
+    "bracket": false,
+    "tree": true,
+    "alt_path": "CONTRIBUTING.md"
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 1,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {
+     "alt_path_used": "CONTRIBUTING.md"
+    }
+   }
+  },
+  {
+   "key_str": "T1|chef-vault/DEMO.md",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "chef-vault/DEMO.md",
+   "quote": "├── DEMO.md            # Demo instructions",
+   "line": 34,
+   "votes": 2,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "chef-vault/DEMO.md",
+    "is_dir": false,
+    "glob": false,
+    "bracket": false,
+    "tree": true,
+    "alt_path": "DEMO.md"
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 1,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {
+     "alt_path_used": "DEMO.md"
+    }
+   }
+  },
+  {
+   "key_str": "T1|chef-vault/Gemfile",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "chef-vault/Gemfile",
+   "quote": "├── Gemfile            # Ruby gem dependencies",
+   "line": 35,
+   "votes": 1,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it"
+   ],
+   "attrs": {
+    "path": "chef-vault/Gemfile",
+    "is_dir": false,
+    "glob": false,
+    "bracket": false,
+    "tree": true,
+    "alt_path": "Gemfile"
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 1,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {
+     "alt_path_used": "Gemfile"
+    }
+   }
+  },
+  {
+   "key_str": "T1|chef-vault/Gemfile.lock",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "chef-vault/Gemfile.lock",
+   "quote": "├── Gemfile.lock       # Locked gem versions",
+   "line": 36,
+   "votes": 1,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it"
+   ],
+   "attrs": {
+    "path": "chef-vault/Gemfile.lock",
+    "is_dir": false,
+    "glob": false,
+    "bracket": false,
+    "tree": true,
+    "alt_path": "Gemfile.lock"
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 0,
+     "pathSuffixMatchCount": 0,
+     "pathIgnoredCount": 1,
+     "pathSubmoduleCount": 0
+    },
+    "evidences": [],
+    "meta": {
+     "alt_path_used": "Gemfile.lock"
+    }
+   }
+  },
+  {
+   "key_str": "T1|chef-vault/README.md",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "chef-vault/README.md",
+   "quote": "├── README.md          # Main documentation",
+   "line": 40,
+   "votes": 2,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "chef-vault/README.md",
+    "is_dir": false,
+    "glob": false,
+    "bracket": false,
+    "tree": true,
+    "alt_path": "README.md"
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 1,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {
+     "alt_path_used": "README.md"
+    }
+   }
+  },
+  {
+   "key_str": "T1|chef-vault/Rakefile",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "chef-vault/Rakefile",
+   "quote": "├── Rakefile           # Rake build/test tasks",
+   "line": 39,
+   "votes": 2,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "chef-vault/Rakefile",
+    "is_dir": false,
+    "glob": false,
+    "bracket": false,
+    "tree": true,
+    "alt_path": "Rakefile"
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 1,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {
+     "alt_path_used": "Rakefile"
+    }
+   }
+  },
+  {
+   "key_str": "T1|chef-vault/THEORY.md",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "chef-vault/THEORY.md",
+   "quote": "├── THEORY.md          # Vault design and theory",
+   "line": 42,
+   "votes": 2,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "chef-vault/THEORY.md",
+    "is_dir": false,
+    "glob": false,
+    "bracket": false,
+    "tree": true,
+    "alt_path": "THEORY.md"
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 1,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {
+     "alt_path_used": "THEORY.md"
+    }
+   }
+  },
+  {
+   "key_str": "T1|chef-vault/UPGRADE.md",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "chef-vault/UPGRADE.md",
+   "quote": "├── UPGRADE.md         # Vault upgrade instructions",
+   "line": 43,
+   "votes": 2,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "chef-vault/UPGRADE.md",
+    "is_dir": false,
+    "glob": false,
+    "bracket": false,
+    "tree": true,
+    "alt_path": "UPGRADE.md"
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 1,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {
+     "alt_path_used": "UPGRADE.md"
+    }
+   }
+  },
+  {
+   "key_str": "T1|chef-vault/VERSION",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "chef-vault/VERSION",
+   "quote": "├── VERSION            # Gem version",
+   "line": 44,
+   "votes": 1,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it"
+   ],
+   "attrs": {
+    "path": "chef-vault/VERSION",
+    "is_dir": false,
+    "glob": false,
+    "bracket": false,
+    "tree": true,
+    "alt_path": null
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 0,
+     "pathSuffixMatchCount": 0,
+     "pathIgnoredCount": 0,
+     "pathSubmoduleCount": 0,
+     "pathEverTrackedCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|chef-vault/bin",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "chef-vault/bin",
+   "quote": "├── bin/               # Executable scripts (e.g., chef-vault CLI)",
+   "line": 14,
+   "votes": 2,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "chef-vault/bin",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false,
+    "tree": true,
+    "alt_path": "bin"
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 1,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {
+     "alt_path_used": "bin"
+    }
+   }
+  },
+  {
+   "key_str": "T1|chef-vault/coverage",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "chef-vault/coverage",
+   "quote": "├── coverage/          # Test coverage reports",
+   "line": 15,
+   "votes": 2,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "chef-vault/coverage",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false,
+    "tree": true,
+    "alt_path": "coverage"
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 0,
+     "pathSuffixMatchCount": 0,
+     "pathIgnoredCount": 1,
+     "pathSubmoduleCount": 0
+    },
+    "evidences": [],
+    "meta": {
+     "alt_path_used": "coverage"
+    }
+   }
+  },
+  {
+   "key_str": "T1|chef-vault/features",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "chef-vault/features",
+   "quote": "├── features/          # Cucumber BDD feature tests",
+   "line": 17,
+   "votes": 2,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "chef-vault/features",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false,
+    "tree": true,
+    "alt_path": "features"
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 18,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {
+     "alt_path_used": "features"
+    }
+   }
+  },
+  {
+   "key_str": "T1|chef-vault/features/step_definitions",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "chef-vault/features/step_definitions",
+   "quote": "│   ├── step_definitions/ # Step definitions for Cucumber",
+   "line": 18,
+   "votes": 1,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it"
+   ],
+   "attrs": {
+    "path": "chef-vault/features/step_definitions",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false,
+    "tree": true,
+    "alt_path": "features/step_definitions"
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 4,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {
+     "alt_path_used": "features/step_definitions"
+    }
+   }
+  },
+  {
+   "key_str": "T1|chef-vault/features/support",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "chef-vault/features/support",
+   "quote": "│   └── support/           # Cucumber environment config",
+   "line": 19,
+   "votes": 1,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it"
+   ],
+   "attrs": {
+    "path": "chef-vault/features/support",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false,
+    "tree": true,
+    "alt_path": "features/support"
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 1,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {
+     "alt_path_used": "features/support"
+    }
+   }
+  },
+  {
+   "key_str": "T1|chef-vault/habitat",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "chef-vault/habitat",
+   "quote": "├── habitat/           # Habitat packaging and test scripts",
+   "line": 20,
+   "votes": 2,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "chef-vault/habitat",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false,
+    "tree": true,
+    "alt_path": "habitat"
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 4,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {
+     "alt_path_used": "habitat"
+    }
+   }
+  },
+  {
+   "key_str": "T1|chef-vault/hooks",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "chef-vault/hooks",
+   "quote": "├── hooks/             # Git hooks (e.g., pre-commit)",
+   "line": 21,
+   "votes": 2,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "chef-vault/hooks",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false,
+    "tree": true,
+    "alt_path": "hooks"
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 1,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {
+     "alt_path_used": "hooks"
+    }
+   }
+  },
+  {
+   "key_str": "T1|chef-vault/lib",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "chef-vault/lib",
+   "quote": "├── lib/               # Main Ruby library code",
+   "line": 22,
+   "votes": 2,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "chef-vault/lib",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false,
+    "tree": true,
+    "alt_path": "lib"
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 27,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {
+     "alt_path_used": "lib"
+    }
+   }
+  },
+  {
+   "key_str": "T1|chef-vault/lib/chef-vault",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "chef-vault/lib/chef-vault",
+   "quote": "│   └── chef-vault/        # Core gem logic",
+   "line": 24,
+   "votes": 1,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it"
+   ],
+   "attrs": {
+    "path": "chef-vault/lib/chef-vault",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false,
+    "tree": true,
+    "alt_path": "lib/chef-vault"
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 9,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {
+     "alt_path_used": "lib/chef-vault"
+    }
+   }
+  },
+  {
+   "key_str": "T1|chef-vault/lib/chef/knife",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "chef-vault/lib/chef/knife",
+   "quote": "│   ├── chef/knife/        # Knife plugin commands",
+   "line": 23,
+   "votes": 1,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it"
+   ],
+   "attrs": {
+    "path": "chef-vault/lib/chef/knife",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false,
+    "tree": true,
+    "alt_path": "lib/chef/knife"
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 17,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {
+     "alt_path_used": "lib/chef/knife"
+    }
+   }
+  },
+  {
+   "key_str": "T1|chef-vault/sonar-project.properties",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "chef-vault/sonar-project.properties",
+   "quote": "├── sonar-project.properties # SonarQube config",
+   "line": 41,
+   "votes": 1,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it"
+   ],
+   "attrs": {
+    "path": "chef-vault/sonar-project.properties",
+    "is_dir": false,
+    "glob": false,
+    "bracket": false,
+    "tree": true,
+    "alt_path": null
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 0,
+     "pathSuffixMatchCount": 0,
+     "pathIgnoredCount": 0,
+     "pathSubmoduleCount": 0,
+     "pathEverTrackedCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|chef-vault/spec",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "chef-vault/spec",
+   "quote": "├── spec/              # RSpec unit tests",
+   "line": 25,
+   "votes": 2,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "chef-vault/spec",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false,
+    "tree": true,
+    "alt_path": "spec"
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 9,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {
+     "alt_path_used": "spec"
+    }
+   }
+  },
+  {
+   "key_str": "T1|chef-vault/spec/chef",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "chef-vault/spec/chef",
+   "quote": "│   └── chef/              # Helper specs",
+   "line": 27,
+   "votes": 1,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it"
+   ],
+   "attrs": {
+    "path": "chef-vault/spec/chef",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false,
+    "tree": true,
+    "alt_path": "spec/chef"
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 1,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {
+     "alt_path_used": "spec/chef"
+    }
+   }
+  },
+  {
+   "key_str": "T1|chef-vault/spec/chef-vault",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "chef-vault/spec/chef-vault",
+   "quote": "│   ├── chef-vault/        # Unit tests for core logic",
+   "line": 26,
+   "votes": 1,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it"
+   ],
+   "attrs": {
+    "path": "chef-vault/spec/chef-vault",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false,
+    "tree": true,
+    "alt_path": "spec/chef-vault"
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 6,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {
+     "alt_path_used": "spec/chef-vault"
+    }
+   }
+  },
+  {
+   "key_str": "T1|chef-vault/tmp",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "chef-vault/tmp",
+   "quote": "├── tmp/               # Temp files for test runs",
+   "line": 28,
+   "votes": 2,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "chef-vault/tmp",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false,
+    "tree": true,
+    "alt_path": "tmp"
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 0,
+     "pathSuffixMatchCount": 0,
+     "pathIgnoredCount": 1,
+     "pathSubmoduleCount": 0
+    },
+    "evidences": [],
+    "meta": {
+     "alt_path_used": "tmp"
+    }
+   }
+  },
+  {
+   "key_str": "T1|chef-vault/vendor",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "chef-vault/vendor",
+   "quote": "├── vendor/            # Bundled dependencies",
+   "line": 29,
+   "votes": 2,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "chef-vault/vendor",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false,
+    "tree": true,
+    "alt_path": "vendor"
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 0,
+     "pathSuffixMatchCount": 0,
+     "pathIgnoredCount": 1,
+     "pathSubmoduleCount": 0
+    },
+    "evidences": [],
+    "meta": {
+     "alt_path_used": "vendor"
+    }
+   }
+  },
+  {
+   "key_str": "T1|dev",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "dev",
+   "quote": "dev/",
+   "line": 16,
+   "votes": 2,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "dev",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 3,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|dev/Dockerfile.*",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "dev/Dockerfile.*",
+   "quote": "- **Config files:** `.expeditor/config.yml`, `sonar-project.properties`, `dev/Dockerfile.*`, `habitat/plan.sh`, `habitat/plan.ps1`",
+   "line": 325,
+   "votes": 2,
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "dev/Dockerfile.*",
+    "is_dir": false,
+    "glob": true,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 2,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|dev/readme.md",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "dev/readme.md",
+   "quote": "See `dev/readme.md` for Docker issues",
+   "line": 247,
+   "votes": 2,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "dev/readme.md",
+    "is_dir": false,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 1,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|habitat/plan.ps1",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "habitat/plan.ps1",
+   "quote": "- **Config files:** `.expeditor/config.yml`, `sonar-project.properties`, `dev/Dockerfile.*`, `habitat/plan.sh`, `habitat/plan.ps1`",
+   "line": 325,
+   "votes": 2,
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "habitat/plan.ps1",
+    "is_dir": false,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 1,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|habitat/plan.sh",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "habitat/plan.sh",
+   "quote": "- **Config files:** `.expeditor/config.yml`, `sonar-project.properties`, `dev/Dockerfile.*`, `habitat/plan.sh`, `habitat/plan.ps1`",
+   "line": 325,
+   "votes": 2,
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "habitat/plan.sh",
+    "is_dir": false,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 1,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|spec_helper.rb",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "spec_helper.rb",
+   "quote": "Coverage: SimpleCov enabled in `spec_helper.rb`",
+   "line": 317,
+   "votes": 2,
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "spec_helper.rb",
+    "is_dir": false,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 0,
+     "pathSuffixMatchCount": 1
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T2|coverage|protected",
+   "tcode": "T2",
+   "types": [
+    "PathExistenceClaim",
+    "ProtectedStatusClaim"
+   ],
+   "headline": false,
+   "subject": "coverage",
+   "quote": "Never edit files in `coverage/`, `vendor/`, `tmp/`, or generated files.",
+   "line": 212,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "coverage",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false,
+    "status": "do_not_edit",
+    "status_kind": "protected"
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 0,
+     "pathSuffixMatchCount": 0,
+     "pathIgnoredCount": 1,
+     "pathSubmoduleCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T2|tmp|protected",
+   "tcode": "T2",
+   "types": [
+    "PathExistenceClaim",
+    "ProtectedStatusClaim"
+   ],
+   "headline": false,
+   "subject": "tmp",
+   "quote": "Never edit files in `coverage/`, `vendor/`, `tmp/`, or generated files.",
+   "line": 212,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "tmp",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false,
+    "status": "do_not_edit",
+    "status_kind": "protected"
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 0,
+     "pathSuffixMatchCount": 0,
+     "pathIgnoredCount": 1,
+     "pathSubmoduleCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T2|vendor|protected",
+   "tcode": "T2",
+   "types": [
+    "PathExistenceClaim",
+    "ProtectedStatusClaim"
+   ],
+   "headline": false,
+   "subject": "vendor",
+   "quote": "Never edit files in `coverage/`, `vendor/`, `tmp/`, or generated files.",
+   "line": 212,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "vendor",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false,
+    "status": "do_not_edit",
+    "status_kind": "protected"
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 0,
+     "pathSuffixMatchCount": 0,
+     "pathIgnoredCount": 1,
+     "pathSubmoduleCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T3|linter_formatter|rubocop",
+   "tcode": "T3",
+   "types": [
+    "ToolUsageClaim",
+    "NonPackageManagerToolClaim"
+   ],
+   "headline": true,
+   "subject": "rubocop",
+   "quote": "- **Style:** Chefstyle, RuboCop (`bundle exec chefstyle -a`)",
+   "line": 219,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "tool": "rubocop",
+    "category": "linter_formatter"
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "toolSignatureHitCount": 1,
+     "toolEcosystemAnchorCount": 2,
+     "competingToolSignatureCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T3|package_manager|bundler",
+   "tcode": "T3",
+   "types": [
+    "ToolUsageClaim",
+    "PackageManagerClaim"
+   ],
+   "headline": true,
+   "subject": "bundler",
+   "quote": "- **Bundler:**",
+   "line": 174,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "tool": "bundler",
+    "category": "package_manager"
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "toolSignatureHitCount": 1,
+     "toolEcosystemAnchorCount": 2,
+     "competingToolSignatureCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T3|test_framework|rspec",
+   "tcode": "T3",
+   "types": [
+    "ToolUsageClaim",
+    "NonPackageManagerToolClaim"
+   ],
+   "headline": true,
+   "subject": "rspec",
+   "quote": "- **RSpec:** `bundle exec rspec spec/`",
+   "line": 312,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "tool": "rspec",
+    "category": "test_framework"
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "toolSignatureHitCount": 4,
+     "toolEcosystemAnchorCount": 2,
+     "competingToolSignatureCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T4|gemfile|",
+   "tcode": "T4",
+   "types": [
+    "DependencyClaim",
+    "UnversionedDependencyClaim"
+   ],
+   "headline": true,
+   "subject": "gemfile",
+   "quote": "- **Dependencies:** Managed via Bundler (`Gemfile`).",
+   "line": 210,
+   "votes": 1,
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "attrs": {
+    "name": "gemfile",
+    "major": null,
+    "ecosystem_hint": "gem"
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "dependencyExactMatchCount": 0,
+     "dependencySuffixMatchCount": 0,
+     "dependencyManifestParsedCount": 2
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T6|project_self|80000000000@1",
+   "tcode": "T6",
+   "types": [
+    "VersionClaim",
+    "MinVersionClaim"
+   ],
+   "headline": true,
+   "subject": "project_self",
+   "quote": "- [x] >80% test coverage requirement mentioned multiple times",
+   "line": 336,
+   "votes": 1,
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "attrs": {
+    "subject_type": "project_self",
+    "version": "80%",
+    "code": 80000000000,
+    "precision": 1,
+    "qualifier": "min"
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "versionSourceCount": 1
+    },
+    "evidences": [
+     {
+      "versionSourcePath": "VERSION",
+      "versionSourceRaw": "4.2.8",
+      "versionLowerDelta": -76000000000,
+      "versionUpperDelta": -76000000000,
+      "versionUpperUnboundedCount": 0
+     }
+    ],
+    "meta": {}
+   }
+  }
+ ]
+}

@@ -1,0 +1,266 @@
+{
+ "task_id": "orangain__scrapy-s3pipeline-10",
+ "repo": "orangain/scrapy-s3pipeline",
+ "stage": "initial_development",
+ "rounds": 1,
+ "rejects": {},
+ "flags": [
+  "no_test_command",
+  "kind2_dropped",
+  "length_violation_F_R",
+  "length_violation_F_I"
+ ],
+ "info": {
+  "slots": {
+   "P1": {
+    "replaced": "s3pipeline/strategies",
+    "name": "core",
+    "F_R": "s3pipeline/core",
+    "F_I": "s3pipeline/strategies/core"
+   },
+   "C": {
+    "F_R": "make test",
+    "F_I": "make install"
+   },
+   "D": {
+    "replaced": null,
+    "F_R": "boltons",
+    "F_I": "boltons"
+   }
+  },
+  "why": {
+   "test_command": [
+    {
+     "root": "tests",
+     "T3": "ContradictedClaim",
+     "T1": "SupportedClaim",
+     "collect_ok": null
+    }
+   ],
+   "kind1": {
+    "p1_idx": 1,
+    "gold0": "s3pipeline",
+    "unrelated": "s3pipeline/strategies",
+    "base_R": "s3pipeline",
+    "base_I": "s3pipeline/strategies"
+   },
+   "kind2": {
+    "p2_idx": null,
+    "n_deleted_py": 0
+   },
+   "kind3": {
+    "run": "test",
+    "install": "install",
+    "test_ok": false,
+    "install_ok": true
+   },
+   "kind4": {
+    "deps": [
+     [
+      "scrapy",
+      true
+     ]
+    ],
+    "d_idx": null,
+    "src_R": "scrapy",
+    "src_I": "scrapy",
+    "n_decls": 1,
+    "n_dist": 61
+   }
+  },
+  "length": {
+   "T": 246,
+   "F_R": 281,
+   "F_I": 259
+  },
+  "fallbacks": {
+   "F_R": [],
+   "F_I": []
+  },
+  "modes": {
+   "F_R": {
+    "1": "replace",
+    "3": "add",
+    "4": "add"
+   },
+   "F_I": {
+    "1": "replace",
+    "3": "replace",
+    "4": "add"
+   }
+  },
+  "length_diff": {
+   "F_R": 35,
+   "F_I": 13
+  },
+  "n_claims_T": 7,
+  "n_false": {
+   "F_R": 3,
+   "F_I": 3
+  },
+  "pointer_in_issue": true,
+  "gold_dirs": [
+   "s3pipeline"
+  ],
+  "gold_files": [
+   "README.md",
+   "s3pipeline/pipelines.py"
+  ]
+ },
+ "tokens": {
+  "F_R": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "s3pipeline/core",
+     "core"
+    ]
+   },
+   {
+    "kind": 3,
+    "type": "regex",
+    "regex": "\\bmake\\b[^|;&\\n]*\\btest\\b",
+    "target": "test"
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "boltons"
+    ]
+   }
+  ],
+  "F_I": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "s3pipeline/strategies/core",
+     "core"
+    ]
+   },
+   {
+    "kind": 3,
+    "type": "regex",
+    "regex": "\\bmake\\b[^|;&\\n]*\\binstall\\b",
+    "target": "install"
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "boltons"
+    ]
+   }
+  ]
+ },
+ "unresolved_pre_hermit": [],
+ "sha256": {
+  "T": "146dad2ed128ce12deddae6850314280f5c47697d7168bc76e35d1017d2d9501",
+  "F_R": "7a205e3f52209793872d2ff0af1c9c7e1b9e564337d45be0e18637cd654f5ad7",
+  "F_I": "2e5993c2bfd1636e16c9603a897019cfeae720e3f7525957231db387358aec26"
+ },
+ "chars": {
+  "T": 246,
+  "F_R": 281,
+  "F_I": 259
+ },
+ "claims": {
+  "T": [
+   "T1|s3pipeline",
+   "T1|s3pipeline/strategies",
+   "T1|tests",
+   "T1|s3pipeline/pipelines.py",
+   "T1|s3pipeline/strategies/gcs.py",
+   "T1|setup.py",
+   "T4|scrapy|"
+  ],
+  "F_R": [
+   "T1|s3pipeline",
+   "T1|s3pipeline/core",
+   "T1|tests",
+   "T1|s3pipeline/pipelines.py",
+   "T1|s3pipeline/strategies/gcs.py",
+   "T1|setup.py",
+   "T5|make|test",
+   "T4|scrapy|",
+   "T4|boltons|"
+  ],
+  "F_I": [
+   "T1|s3pipeline",
+   "T1|s3pipeline/strategies/core",
+   "T1|tests",
+   "T1|s3pipeline/pipelines.py",
+   "T1|s3pipeline/strategies/gcs.py",
+   "T5|make|install",
+   "T4|scrapy|",
+   "T4|boltons|"
+  ]
+ },
+ "python_spec": null,
+ "token_audit": [
+  {
+   "cond": "F_R",
+   "kind": 1,
+   "type": "path",
+   "name": "s3pipeline/core",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 3,
+   "type": "regex",
+   "name": "make test",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 4,
+   "type": "word",
+   "name": "boltons",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 1,
+   "type": "path",
+   "name": "s3pipeline/strategies/core",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 3,
+   "type": "regex",
+   "name": "make install",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 4,
+   "type": "word",
+   "name": "boltons",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  }
+ ],
+ "dist_imports_used": {
+  "scrapy": [
+   "scrapy"
+  ],
+  "boltons": null
+ }
+}

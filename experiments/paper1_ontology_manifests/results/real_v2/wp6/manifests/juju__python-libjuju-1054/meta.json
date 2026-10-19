@@ -1,0 +1,323 @@
+{
+ "task_id": "juju__python-libjuju-1054",
+ "repo": "juju/python-libjuju",
+ "stage": "initial_development",
+ "rounds": 1,
+ "rejects": {},
+ "flags": [
+  "kind3_dropped",
+  "kind4_R_used_I_competitor",
+  "length_violation_F_I"
+ ],
+ "info": {
+  "slots": {
+   "test_root": "tests",
+   "P1": {
+    "replaced": "juju/client",
+    "name": "internal",
+    "F_R": "juju/internal",
+    "F_I": "juju/client/internal"
+   },
+   "P2": {
+    "replaced": null,
+    "F_R": "juju/charmstore.py",
+    "F_I": "juju/client/engine.py"
+   },
+   "D": {
+    "replaced": "kubernetes",
+    "F_R": "boltons",
+    "F_I": "boltons"
+   }
+  },
+  "why": {
+   "test_command": [
+    {
+     "root": "tests",
+     "T3": "SupportedClaim",
+     "T1": "SupportedClaim",
+     "collect_ok": true
+    }
+   ],
+   "kind1": {
+    "p1_idx": 1,
+    "gold0": "juju",
+    "unrelated": "juju/client",
+    "base_R": "juju",
+    "base_I": "juju/client"
+   },
+   "kind2": {
+    "p2_idx": null,
+    "n_deleted_py": 36,
+    "found": {
+     "F_R": "juju/charmstore.py",
+     "F_I": "juju/client/engine.py"
+    }
+   },
+   "kind3": {
+    "run": null,
+    "install": null,
+    "test_ok": true,
+    "install_ok": true
+   },
+   "kind4": {
+    "deps": [
+     [
+      "pyyaml",
+      false
+     ],
+     [
+      "pyrfc3339",
+      false
+     ],
+     [
+      "websockets",
+      false
+     ],
+     [
+      "macaroonbakery",
+      false
+     ],
+     [
+      "kubernetes",
+      false
+     ]
+    ],
+    "d_idx": 4,
+    "src_R": "kubernetes",
+    "src_I": "kubernetes",
+    "n_decls": 29,
+    "n_dist": 62
+   }
+  },
+  "length": {
+   "T": 369,
+   "F_R": 383,
+   "F_I": 393
+  },
+  "fallbacks": {
+   "F_R": [
+    "kind4_I_competitor"
+   ],
+   "F_I": [
+    "kind2_never_existed_fallback"
+   ]
+  },
+  "modes": {
+   "F_R": {
+    "1": "replace",
+    "2": "add",
+    "4": "replace"
+   },
+   "F_I": {
+    "1": "replace",
+    "2": "add",
+    "4": "replace"
+   }
+  },
+  "length_diff": {
+   "F_R": 14,
+   "F_I": 24
+  },
+  "n_claims_T": 13,
+  "n_false": {
+   "F_R": 3,
+   "F_I": 3
+  },
+  "pointer_in_issue": true,
+  "gold_dirs": [
+   "juju"
+  ],
+  "gold_files": [
+   "juju/constraints.py"
+  ]
+ },
+ "tokens": {
+  "F_R": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "juju/internal",
+     "internal"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "juju/charmstore.py",
+     "charmstore.py"
+    ]
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "boltons"
+    ]
+   }
+  ],
+  "F_I": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "juju/client/internal",
+     "internal"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "juju/client/engine.py",
+     "engine.py"
+    ]
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "boltons"
+    ]
+   }
+  ]
+ },
+ "unresolved_pre_hermit": [],
+ "sha256": {
+  "T": "bb42f59a31992a38a56f669096c525e56ca0d4b534879418bc9219cb2117a142",
+  "F_R": "7bd22ea35e7a3565346c8dfd566306cbbc6e7abeca167efb6341763cb68c9f2d",
+  "F_I": "a51875c6fc19026aaf472bf5439306dac2c5e5b629827548e28f1c05f43a573d"
+ },
+ "chars": {
+  "T": 369,
+  "F_R": 383,
+  "F_I": 393
+ },
+ "claims": {
+  "T": [
+   "T1|juju",
+   "T1|juju/client",
+   "T1|tests",
+   "T1|juju/client/_definitions.py",
+   "T1|juju/client/_client1.py",
+   "T3|test_framework|pytest",
+   "T1|tests",
+   "T1|setup.py",
+   "T4|pyyaml|",
+   "T4|pyrfc3339|",
+   "T4|websockets|",
+   "T4|macaroonbakery|",
+   "T4|kubernetes|"
+  ],
+  "F_R": [
+   "T1|juju",
+   "T1|juju/internal",
+   "T1|tests",
+   "T1|juju/client/_definitions.py",
+   "T1|juju/client/_client1.py",
+   "T1|juju/charmstore.py",
+   "T3|test_framework|pytest",
+   "T1|tests",
+   "T1|setup.py",
+   "T4|pyyaml|",
+   "T4|pyrfc3339|",
+   "T4|websockets|",
+   "T4|macaroonbakery|",
+   "T4|boltons|"
+  ],
+  "F_I": [
+   "T1|juju",
+   "T1|juju/client/internal",
+   "T1|tests",
+   "T1|juju/client/_definitions.py",
+   "T1|juju/client/_client1.py",
+   "T1|juju/client/engine.py",
+   "T3|test_framework|pytest",
+   "T1|tests",
+   "T1|setup.py",
+   "T4|pyyaml|",
+   "T4|pyrfc3339|",
+   "T4|websockets|",
+   "T4|macaroonbakery|",
+   "T4|boltons|"
+  ]
+ },
+ "python_spec": null,
+ "token_audit": [
+  {
+   "cond": "F_R",
+   "kind": 1,
+   "type": "path",
+   "name": "juju/internal",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 2,
+   "type": "path",
+   "name": "juju/charmstore.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 4,
+   "type": "word",
+   "name": "boltons",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 1,
+   "type": "path",
+   "name": "juju/client/internal",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 2,
+   "type": "path",
+   "name": "juju/client/engine.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 4,
+   "type": "word",
+   "name": "boltons",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  }
+ ],
+ "dist_imports_used": {
+  "pyyaml": [
+   "yaml"
+  ],
+  "pyrfc3339": [
+   "pyrfc3339"
+  ],
+  "websockets": [
+   "websockets"
+  ],
+  "macaroonbakery": [
+   "macaroonbakery"
+  ],
+  "kubernetes": [
+   "kubernetes"
+  ],
+  "boltons": null
+ }
+}

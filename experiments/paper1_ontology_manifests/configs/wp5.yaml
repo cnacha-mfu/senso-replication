@@ -1,0 +1,69 @@
+# WP5 execution-based agent evaluation (Paper 1 rebuild). Read by run_wp5.py.
+# Paths are relative to the project root unless absolute. Fixed before the pilot.
+
+output_dir: experiments/paper1_ontology_manifests/results/real_v2/wp5
+pilot_dir: experiments/paper1_ontology_manifests/results/real_v2/wp5_pilot
+# Heavy, non-committed data (repo clones, venvs, uv cache, trajectories before gzip).
+work_dir: /home/adtgrade/research/data/wp5
+wp3_config: experiments/paper1_ontology_manifests/configs/wp3_ground_truth.yaml
+wp3_cache: /home/adtgrade/research/data/wp3_cache
+seed: 20261006
+
+limits:
+  max_workers: 4            # VM-wide cap is 4 (was 3 until deviation 10)
+  max_load1: 6.0            # back off while the 1-minute load average is above this
+  min_free_mem_gb: 3.0
+  max_work_disk_gb: 15.0    # hard cap on work_dir (incl. uv cache)
+
+pool:
+  hf_dataset: nebius/SWE-rebench
+  hf_split: test
+  python_versions: ["3.8", "3.9", "3.10", "3.11", "3.12"]   # uv-installable; 3.5-3.7 excluded
+  cap_per_repo: 8
+  # Exclude installs that would blow the disk budget (substring match, lower case, on the
+  # pinned requirements and install_config pip_packages).
+  heavy_packages: ["torch", "tensorflow", "nvidia-", "jax", "cuda", "paddlepaddle", "mxnet", "xgboost", "opencv"]
+  max_f2p: 30               # drop tasks with huge FAIL_TO_PASS lists (slow, fragile)
+  max_p2p: 400
+  max_patch_files: 6        # gold source patch touches at most this many files
+  stages: [initial_development, evolution, servicing, phase_out]
+
+validate:
+  per_stage_target: {initial_development: 25, evolution: 25, servicing: 25, phase_out: 1000}
+  env_build_timeout_s: 900
+  test_timeout_s: 600
+  clone_timeout_s: 600
+
+agent:
+  step_limit: 40
+  wall_time_limit_seconds: 1800   # was 900 in pilot 1 (deviation, before wp5-run-freeze)
+  max_tokens: 4096                # was 2048 in pilot 1
+  max_consecutive_format_errors: 5  # mini-swe-agent default 3; length cutoffs and empty replies count as format errors
+  temperature: 0.7          # plan 0 (non-zero for run diversity); recorded per run
+  top_p: 0.95
+  command_timeout_s: 120
+  model_timeout_s: 240
+  max_retries: 8            # litellm retries on 429/503/timeouts, exponential backoff
+  models:
+    - {name: nvidia/nemotron-3-super-120b-a12b, key_env: NVIDIA_API_KEY_2, extra_body: {chat_template_kwargs: {enable_thinking: false}}}
+    - {name: google/diffusiongemma-26b-a4b-it, key_env: NVIDIA_API_KEY_4}
+  # Deviation 10: per-call rotation over this pool (any key can call any model); key_env stays as fallback/record.
+  key_pool: [NVIDIA_API_KEY, NVIDIA_API_KEY_2, NVIDIA_API_KEY_4, NVIDIA_API_KEY_5]
+  nim_base_url: https://integrate.api.nvidia.com/v1
+
+# Conditions (plan section 3). B, C and D texts come from manifests/generator/wp5_manifests.py and live in
+# <output_dir>/manifests/<task>/{B,C,D}.md; B falls back to the generator's build_B on the cache clone.
+conditions:
+  A: {manifest: false}
+  B: {manifest: true, char_cap: 8000}
+  C: {manifest: true}
+  D: {manifest: true}
+real_agent_manifest_files: ["CLAUDE.md", "AGENTS.md", "GEMINI.md", ".cursorrules", ".github/copilot-instructions.md"]
+rq1_verdict: NOGO            # passed to the manifest generator (C1 qualifier sentence)
+gold_repeats: 3              # plan 2.1: gold run repeated, flaky tests removed / task dropped
+infra_retries: 2             # plan 5: infra failures are retried from scratch up to this many times
+
+pilot:
+  n_tasks: 10
+  conditions: [A, B]
+  runs: 1

@@ -1,0 +1,298 @@
+{
+ "task_id": "sigma67__ytmusicapi-560",
+ "repo": "sigma67/ytmusicapi",
+ "stage": "dev",
+ "rounds": 1,
+ "rejects": {},
+ "flags": [
+  "kind3_dropped",
+  "kind4_R_used_I_competitor"
+ ],
+ "info": {
+  "slots": {
+   "test_root": "tests",
+   "P1": {
+    "replaced": "ytmusicapi/auth",
+    "name": "core",
+    "F_R": "ytmusicapi/core",
+    "F_I": "ytmusicapi/auth/core"
+   },
+   "P2": {
+    "replaced": "ytmusicapi/mixins/library.py",
+    "F_R": "ytmusicapi/auth/oauth/base.py",
+    "F_I": "ytmusicapi/auth/internal.py"
+   },
+   "D": {
+    "replaced": "requests",
+    "F_R": "httpx",
+    "F_I": "httpx"
+   }
+  },
+  "why": {
+   "test_command": [
+    {
+     "root": "tests",
+     "T3": "SupportedClaim",
+     "T1": "SupportedClaim",
+     "collect_ok": true
+    }
+   ],
+   "kind1": {
+    "p1_idx": 2,
+    "gold0": "ytmusicapi",
+    "unrelated": "ytmusicapi/auth",
+    "base_R": "ytmusicapi",
+    "base_I": "ytmusicapi/auth"
+   },
+   "kind2": {
+    "p2_idx": 2,
+    "n_deleted_py": 12,
+    "found": {
+     "F_R": "ytmusicapi/auth/oauth/base.py",
+     "F_I": "ytmusicapi/auth/internal.py"
+    }
+   },
+   "kind3": {
+    "run": null,
+    "install": null,
+    "test_ok": true,
+    "install_ok": true
+   },
+   "kind4": {
+    "deps": [
+     [
+      "requests",
+      false
+     ]
+    ],
+    "d_idx": 0,
+    "src_R": "requests",
+    "src_I": "requests",
+    "n_decls": 13,
+    "n_dist": 25
+   }
+  },
+  "length": {
+   "T": 389,
+   "F_R": 380,
+   "F_I": 383
+  },
+  "fallbacks": {
+   "F_R": [
+    "kind4_I_competitor"
+   ],
+   "F_I": [
+    "kind2_never_existed_fallback"
+   ]
+  },
+  "modes": {
+   "F_R": {
+    "1": "replace",
+    "2": "replace",
+    "4": "replace"
+   },
+   "F_I": {
+    "1": "replace",
+    "2": "replace",
+    "4": "replace"
+   }
+  },
+  "length_diff": {
+   "F_R": -9,
+   "F_I": -6
+  },
+  "n_claims_T": 13,
+  "n_false": {
+   "F_R": 3,
+   "F_I": 3
+  },
+  "pointer_in_issue": false,
+  "gold_dirs": [
+   "ytmusicapi",
+   "ytmusicapi/mixins",
+   "ytmusicapi/parsers"
+  ],
+  "gold_files": [
+   ".gitignore",
+   "ytmusicapi/mixins/browsing.py",
+   "ytmusicapi/navigation.py",
+   "ytmusicapi/parsers/albums.py",
+   "ytmusicapi/parsers/podcasts.py"
+  ]
+ },
+ "tokens": {
+  "F_R": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "ytmusicapi/core",
+     "core"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "ytmusicapi/auth/oauth/base.py",
+     "base.py"
+    ]
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "httpx"
+    ]
+   }
+  ],
+  "F_I": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "ytmusicapi/auth/core",
+     "core"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "ytmusicapi/auth/internal.py",
+     "internal.py"
+    ]
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "httpx"
+    ]
+   }
+  ]
+ },
+ "unresolved_pre_hermit": [],
+ "sha256": {
+  "T": "fdfe9edab84733017fd0fc157be84bd008772144c3df53709858c47510d7459a",
+  "F_R": "a3d2e623f52e8edf5a21af30f2ef2dadbb932e5b34bfc5405eb671f38149b346",
+  "F_I": "fb0e814e7ddb20a32eb518232e838c4710bb6ad432ec137871207e16491b679a"
+ },
+ "chars": {
+  "T": 389,
+  "F_R": 380,
+  "F_I": 383
+ },
+ "claims": {
+  "T": [
+   "T1|tests",
+   "T1|ytmusicapi",
+   "T1|ytmusicapi/auth",
+   "T1|ytmusicapi/mixins",
+   "T1|ytmusicapi/parsers",
+   "T1|ytmusicapi/mixins/browsing.py",
+   "T1|ytmusicapi/parsers/search.py",
+   "T1|ytmusicapi/mixins/library.py",
+   "T3|test_framework|pytest",
+   "T1|tests",
+   "T1|pyproject.toml",
+   "T4|requests|",
+   "T6|python|3008000000@2"
+  ],
+  "F_R": [
+   "T1|tests",
+   "T1|ytmusicapi",
+   "T1|ytmusicapi/core",
+   "T1|ytmusicapi/mixins",
+   "T1|ytmusicapi/parsers",
+   "T1|ytmusicapi/mixins/browsing.py",
+   "T1|ytmusicapi/parsers/search.py",
+   "T1|ytmusicapi/auth/oauth/base.py",
+   "T3|test_framework|pytest",
+   "T1|tests",
+   "T1|pyproject.toml",
+   "T4|httpx|",
+   "T6|python|3008000000@2"
+  ],
+  "F_I": [
+   "T1|tests",
+   "T1|ytmusicapi",
+   "T1|ytmusicapi/auth/core",
+   "T1|ytmusicapi/mixins",
+   "T1|ytmusicapi/parsers",
+   "T1|ytmusicapi/mixins/browsing.py",
+   "T1|ytmusicapi/parsers/search.py",
+   "T1|ytmusicapi/auth/internal.py",
+   "T3|test_framework|pytest",
+   "T1|tests",
+   "T1|pyproject.toml",
+   "T4|httpx|",
+   "T6|python|3008000000@2"
+  ]
+ },
+ "python_spec": ">=3.8",
+ "token_audit": [
+  {
+   "cond": "F_R",
+   "kind": 1,
+   "type": "path",
+   "name": "ytmusicapi/core",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 2,
+   "type": "path",
+   "name": "ytmusicapi/auth/oauth/base.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 4,
+   "type": "word",
+   "name": "httpx",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 1,
+   "type": "path",
+   "name": "ytmusicapi/auth/core",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 2,
+   "type": "path",
+   "name": "ytmusicapi/auth/internal.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 4,
+   "type": "word",
+   "name": "httpx",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  }
+ ],
+ "dist_imports_used": {
+  "requests": [
+   "requests"
+  ],
+  "httpx": null
+ }
+}

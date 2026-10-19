@@ -1,0 +1,107 @@
+{
+ "unit_id": "cityofaustin__knackpy-110__A__claude-sonnet__r2",
+ "task_id": "cityofaustin__knackpy-110",
+ "repo": "cityofaustin/knackpy",
+ "stage": "initial_development",
+ "condition": "A",
+ "model": "claude-code/sonnet",
+ "run": 2,
+ "condition_meta": {},
+ "started": "2026-10-18T05:19:45.227875+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 6,
+ "tool_calls": 5,
+ "usage": {
+  "input_tokens": 12,
+  "cache_creation_input_tokens": 3920,
+  "cache_read_input_tokens": 106630,
+  "output_tokens": 1017,
+  "output_tokens_details": {
+   "thinking_tokens": 94
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 3920,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 12,
+   "outputTokens": 1017,
+   "cacheReadInputTokens": 106630,
+   "cacheCreationInputTokens": 3920,
+   "webSearchRequests": 0,
+   "costUSD": 0.036537,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 94,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.036537,
+ "result_text": "Equation fields now use Knack's own formatted value for `.formatted`, so the days-vs-seconds case from the issue should come out as 4 instead of 372171.318. I haven't run anything, including the test suite, so this is untested.\n\nThe change is one line in `knackpy/models.py`: I added `\"equation\": {\"use_knack_format\": True}` to `FIELD_SETTINGS`. That's the same mechanism `timer` and `name` already use. `.raw` still holds the `field_377_raw` value.\n\nOne edge case: if Knack's formatted value is falsy, such as `0` or an empty string, `Field._format` in `knackpy/fields.py` falls back to the raw value. So a formatted `0` could still show the raw number. I left that check alone because it applies to every field type.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792309800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0.1,
+    "resetsAt": 1792309800
+   },
+   "seven_day": {
+    "utilization": 0.12,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 28.5,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 6,
+   "hit_step_limit": 0,
+   "changed_lines": 1,
+   "gold_changed_lines": 7,
+   "Y1": 0,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": -2.807354922057604
+  },
+  "f2p_pass": 1,
+  "f2p_total": 1,
+  "p2p_pass": 12,
+  "p2p_total": 12,
+  "f2p_all_pass": true,
+  "p2p_all_pass": true,
+  "resolved": true,
+  "reason": "resolved",
+  "test_seconds": 1.1
+ },
+ "status": "done",
+ "finished": "2026-10-18T05:20:16.146886+00:00"
+}

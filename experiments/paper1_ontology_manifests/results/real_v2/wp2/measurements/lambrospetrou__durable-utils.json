@@ -1,0 +1,239 @@
+{
+ "repo": "lambrospetrou/durable-utils",
+ "slug": "lambrospetrou__durable-utils",
+ "S": "9f29c7c9090231ab0df6ba1b09301a5ae3659333",
+ "manifest_path": "CLAUDE.md",
+ "input_sha": "a4abac81548dabb880979f95ead36f37cae6eadd6209b1e5274dc9b464ef7437",
+ "n_claims": 7,
+ "n_tree_files": 34,
+ "n_dep_manifests_parsed": 2,
+ "seconds": 0.0,
+ "claims": [
+  {
+   "key_str": "T3|linter_formatter|prettier",
+   "tcode": "T3",
+   "types": [
+    "ToolUsageClaim",
+    "NonPackageManagerToolClaim"
+   ],
+   "headline": true,
+   "subject": "prettier",
+   "quote": "Format code with Prettier",
+   "line": 16,
+   "votes": 1,
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "attrs": {
+    "tool": "prettier",
+    "category": "linter_formatter"
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "toolSignatureHitCount": 2,
+     "toolEcosystemAnchorCount": 2,
+     "competingToolSignatureCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T3|test_framework|vitest",
+   "tcode": "T3",
+   "types": [
+    "ToolUsageClaim",
+    "NonPackageManagerToolClaim"
+   ],
+   "headline": true,
+   "subject": "vitest",
+   "quote": "Use Vitest with describe/it/expect pattern",
+   "line": 23,
+   "votes": 2,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "attrs": {
+    "tool": "vitest",
+    "category": "test_framework"
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "toolSignatureHitCount": 2,
+     "toolEcosystemAnchorCount": 2,
+     "competingToolSignatureCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T5|script|build",
+   "tcode": "T5",
+   "types": [
+    "CommandClaim"
+   ],
+   "headline": true,
+   "subject": "build",
+   "quote": "Build project: `npm run build`",
+   "line": 8,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "runner": "npm",
+    "kind": "script",
+    "target": "build"
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "scriptDefinedRootCount": 1,
+     "scriptDefinedAnyCount": 1,
+     "scriptHostFileCount": 2,
+     "dynamicTargetRuleCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T5|script|fmt",
+   "tcode": "T5",
+   "types": [
+    "CommandClaim"
+   ],
+   "headline": true,
+   "subject": "fmt",
+   "quote": "Format code: `npm run fmt`",
+   "line": 6,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "runner": "npm",
+    "kind": "script",
+    "target": "fmt"
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "scriptDefinedRootCount": 1,
+     "scriptDefinedAnyCount": 1,
+     "scriptHostFileCount": 2,
+     "dynamicTargetRuleCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T5|script|gen:types",
+   "tcode": "T5",
+   "types": [
+    "CommandClaim"
+   ],
+   "headline": true,
+   "subject": "gen:types",
+   "quote": "Generate types: `npm run gen:types`",
+   "line": 7,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "runner": "npm",
+    "kind": "script",
+    "target": "gen:types"
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "scriptDefinedRootCount": 1,
+     "scriptDefinedAnyCount": 1,
+     "scriptHostFileCount": 2,
+     "dynamicTargetRuleCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T5|script|release",
+   "tcode": "T5",
+   "types": [
+    "CommandClaim"
+   ],
+   "headline": true,
+   "subject": "release",
+   "quote": "Release package: `npm run release`",
+   "line": 11,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "runner": "npm",
+    "kind": "script",
+    "target": "release"
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "scriptDefinedRootCount": 1,
+     "scriptDefinedAnyCount": 1,
+     "scriptHostFileCount": 2,
+     "dynamicTargetRuleCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T5|script|test",
+   "tcode": "T5",
+   "types": [
+    "CommandClaim"
+   ],
+   "headline": true,
+   "subject": "test",
+   "quote": "Run all tests: `npm test`",
+   "line": 9,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "runner": "npm",
+    "kind": "script",
+    "target": "test"
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "scriptDefinedRootCount": 1,
+     "scriptDefinedAnyCount": 1,
+     "scriptHostFileCount": 2,
+     "dynamicTargetRuleCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  }
+ ]
+}

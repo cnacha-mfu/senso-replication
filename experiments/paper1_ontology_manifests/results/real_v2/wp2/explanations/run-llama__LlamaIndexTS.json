@@ -1,0 +1,96 @@
+{
+ "repo": "run-llama/LlamaIndexTS",
+ "slug": "run-llama__LlamaIndexTS",
+ "input_sha": "904feed5c0a42d600903661bab7afa9e00550862f15166c70569fefca77458aa",
+ "explanations": [
+  {
+   "key": "T1|packages/cloud",
+   "verdict": "ContradictedClaim",
+   "leaf": "PathRemoved",
+   "seconds": 6.07,
+   "retried_on_claim_subgraph": false,
+   "error": null,
+   "returncode": 0,
+   "n_justifications": 1,
+   "facts": [
+    {
+     "prop": "pathIgnoredCount",
+     "value": 0
+    },
+    {
+     "prop": "pathEverTrackedCount",
+     "value": 169
+    },
+    {
+     "prop": "pathSuffixMatchCount",
+     "value": 0
+    },
+    {
+     "prop": "pathExactMatchCount",
+     "value": 0
+    },
+    {
+     "prop": "extractionVotes",
+     "value": 3
+    },
+    {
+     "prop": "pathSubmoduleCount",
+     "value": 0
+    }
+   ],
+   "axioms": [
+    "A_pathExactMatchCount_ge_0_le_0 equivalentTo pathExactMatchCount some integer[>= 0, <= 0]",
+    "A_extractionVotes_ge_wp2_consensus_min_votes equivalentTo extractionVotes some integer[>= 2]",
+    "CheckedClaim equivalentTo A_extractionVotes_ge_wp2_consensus_min_votes and ManifestClaim",
+    "PathRemoved subClassOf ContradictedClaim",
+    "A_pathSubmoduleCount_ge_0_le_0 equivalentTo pathSubmoduleCount some integer[>= 0, <= 0]",
+    "A_pathEverTrackedCount_ge_1 equivalentTo pathEverTrackedCount some integer[>= 1]",
+    "A_pathSuffixMatchCount_ge_0_le_0 equivalentTo pathSuffixMatchCount some integer[>= 0, <= 0]",
+    "A_pathIgnoredCount_ge_0_le_0 equivalentTo pathIgnoredCount some integer[>= 0, <= 0]",
+    "PathRemoved equivalentTo A_pathEverTrackedCount_ge_1 and A_pathExactMatchCount_ge_0_le_0 and A_pathIgnoredCount_ge_0_le_0 and A_pathSubmoduleCount_ge_0_le_0 and A_pathSuffixMatchCount_ge_0_le_0 and CheckedClaim and PathExistenceClaim"
+   ],
+   "closures": []
+  },
+  {
+   "key": "T1|core/chat-engine",
+   "verdict": "SupportedClaim",
+   "leaf": "PathFoundBySuffix",
+   "seconds": 10.97,
+   "retried_on_claim_subgraph": true,
+   "error": "Exception in thread \"main\" org.mindswap.pellet.exceptions.InternalReasonerException: Adding type to a pruned node \"anon(1)\" http://www.w3.org/2001/XMLSchema#integer\n\tat org.mindswap.pellet.Node.addType(Node.java:448)\n\tat org.mindswap.pellet.Literal.addType(Literal.java:257)\n\tat org.mindswap.pellet.tableau.completion.CompletionStrategy.addType(CompletionStrategy.java:438)\n\tat org.mindswap.pellet.tableau.completion.CompletionStrategy.applyDomainRange(CompletionStrategy.java:631)\n\tat org.mindswap.pellet.tableau.completion.CompletionStrategy.applyPropertyRestrictions(CompletionStrategy.java:592)\n\tat org.mindswap.pellet.tableau.completion.CompletionStrategy.addEdge(CompletionStrategy.java:583)\n\tat org.mindswap.pellet.tableau.completion.rule.SomeValuesRule.applySomeValuesRule(SomeValuesRule.java:186)\n\tat org.mindswap.pellet.tableau.completion.rule.SomeValuesRule.apply(SomeValuesRule.java:64)\n\tat org.mindswap.pellet.tableau.completion.rule.AbstractTableauRule.apply(AbstractTableauRule.java:64",
+   "returncode": 1,
+   "n_justifications": 0,
+   "facts": [],
+   "axioms": [],
+   "closures": []
+  },
+  {
+   "key": "T5|script|circular-check",
+   "verdict": "SupportedClaim",
+   "leaf": "ScriptDefinedRoot",
+   "seconds": 6.55,
+   "retried_on_claim_subgraph": false,
+   "error": null,
+   "returncode": 0,
+   "n_justifications": 1,
+   "facts": [
+    {
+     "prop": "scriptDefinedRootCount",
+     "value": 1
+    },
+    {
+     "prop": "extractionVotes",
+     "value": 3
+    }
+   ],
+   "axioms": [
+    "ScriptDefinedRoot equivalentTo A_scriptDefinedRootCount_ge_1 and CheckedClaim and CommandClaim",
+    "A_extractionVotes_ge_wp2_consensus_min_votes equivalentTo extractionVotes some integer[>= 2]",
+    "ScriptDefinedRoot subClassOf SupportedClaim",
+    "CheckedClaim equivalentTo A_extractionVotes_ge_wp2_consensus_min_votes and ManifestClaim",
+    "A_scriptDefinedRootCount_ge_1 equivalentTo scriptDefinedRootCount some integer[>= 1]"
+   ],
+   "closures": []
+  }
+ ]
+}

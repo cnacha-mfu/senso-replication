@@ -1,0 +1,107 @@
+{
+ "unit_id": "ncclient__ncclient-452__A__claude-sonnet__r2",
+ "task_id": "ncclient__ncclient-452",
+ "repo": "ncclient/ncclient",
+ "stage": "evolution",
+ "condition": "A",
+ "model": "claude-code/sonnet",
+ "run": 2,
+ "condition_meta": {},
+ "started": "2026-10-18T06:50:27.530176+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 5,
+ "tool_calls": 4,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 875,
+  "cache_read_input_tokens": 66603,
+  "output_tokens": 788,
+  "output_tokens_details": {
+   "thinking_tokens": 0
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 875,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 8,
+   "outputTokens": 788,
+   "cacheReadInputTokens": 66603,
+   "cacheCreationInputTokens": 875,
+   "webSearchRequests": 0,
+   "costUSD": 0.018056299999999997,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.018056299999999997,
+ "result_text": "`GetSchemaReply` in `ncclient/operations/retrieve.py` no longer crashes when the reply's `<data>` element isn't in the ietf-netconf-monitoring namespace, which is what Junos sends. I haven't run it against a real Junos reply or any tests.\n\nThe lookup now tries three places in order:\n1. The ietf-netconf-monitoring namespace, as before.\n2. The base NETCONF namespace.\n3. Any `<data>` element at any depth, whatever its namespace.\n\nIf none of them matches, `_data` is set to `None` instead of raising the `'NoneType' object has no attribute 'text'` error from the issue.\n\nI didn't change or add any tests, and nothing is committed.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792309800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0.17,
+    "resetsAt": 1792309800
+   },
+   "seven_day": {
+    "utilization": 0.13,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 24.1,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 5,
+   "hit_step_limit": 0,
+   "changed_lines": 11,
+   "gold_changed_lines": 95,
+   "Y1": 6,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": -3.1104239896936505
+  },
+  "f2p_pass": 0,
+  "f2p_total": 2,
+  "p2p_pass": 11,
+  "p2p_total": 11,
+  "f2p_all_pass": false,
+  "p2p_all_pass": true,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 1.4
+ },
+ "status": "done",
+ "finished": "2026-10-18T06:50:53.967053+00:00"
+}

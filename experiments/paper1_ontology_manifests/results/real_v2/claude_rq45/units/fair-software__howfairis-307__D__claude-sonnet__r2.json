@@ -1,0 +1,111 @@
+{
+ "unit_id": "fair-software__howfairis-307__D__claude-sonnet__r2",
+ "task_id": "fair-software__howfairis-307",
+ "repo": "fair-software/howfairis",
+ "stage": "initial_development",
+ "condition": "D",
+ "model": "claude-code/sonnet",
+ "run": 2,
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 4339,
+  "sha256": "face22f1f825f45fcda35d5f17da7c24c03e2a1d51a8d79c6a4a7fb8b503aac1"
+ },
+ "started": "2026-10-18T05:42:38.636305+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 5,
+ "tool_calls": 4,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 2983,
+  "cache_read_input_tokens": 56270,
+  "output_tokens": 1018,
+  "output_tokens_details": {
+   "thinking_tokens": 0
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 2983,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 1018,
+   "cacheReadInputTokens": 56270,
+   "cacheCreationInputTokens": 2983,
+   "webSearchRequests": 0,
+   "costUSD": 0.027751,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.027751,
+ "result_text": "I added a public `Compliance.badge_color()` method in `howfairis/compliance.py`. It returns \"red\" for 0\u20131 compliant recommendations, \"orange\" for 2\u20133, \"yellow\" for 4 and \"green\" for 5. `calc_badge` now calls it instead of computing the color inline. I haven't run the tests or any other code.\n\nThe issue didn't name the method, so `badge_color` is my choice. It's a one-word rename if you'd prefer something else.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792309800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0.12,
+    "resetsAt": 1792309800
+   },
+   "seven_day": {
+    "utilization": 0.13,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 18.9,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 5,
+   "hit_step_limit": 0,
+   "changed_lines": 30,
+   "gold_changed_lines": 33,
+   "Y1": 0,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": -0.13750352374993496
+  },
+  "f2p_pass": 0,
+  "f2p_total": 7,
+  "p2p_pass": 13,
+  "p2p_total": 13,
+  "f2p_all_pass": false,
+  "p2p_all_pass": true,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 1.2
+ },
+ "status": "done",
+ "finished": "2026-10-18T05:43:01.334434+00:00"
+}

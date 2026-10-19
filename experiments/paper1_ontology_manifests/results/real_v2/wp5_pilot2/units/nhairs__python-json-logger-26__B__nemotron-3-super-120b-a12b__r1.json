@@ -1,0 +1,70 @@
+{
+ "unit_id": "nhairs__python-json-logger-26__B__nemotron-3-super-120b-a12b__r1",
+ "task_id": "nhairs__python-json-logger-26",
+ "repo": "nhairs/python-json-logger",
+ "stage": "servicing",
+ "condition": "B",
+ "model": "nvidia/nemotron-3-super-120b-a12b",
+ "run": 1,
+ "order": 37,
+ "env_build_s": 70.2,
+ "real_agent_manifest_at_base": [],
+ "started": "2026-10-06T19:31:23.129620+00:00",
+ "condition_meta": {
+  "source": "build_B_direct",
+  "chars": 5395,
+  "sha256": "2511ae28844d50b81acd3be13c35cdf0ae97400a35e63b8164f7c14753ff25c5"
+ },
+ "condition_available": true,
+ "retries": 0,
+ "exit_status": "LimitsExceeded",
+ "error": "",
+ "steps": 40,
+ "wall_s": 835.0,
+ "prompt_tokens": 408723,
+ "completion_tokens": 3369,
+ "format_errors": 0,
+ "length_cutoffs": 0,
+ "api_errors": {
+  "429": 42,
+  "timeout": 2
+ },
+ "n_queries": 84,
+ "temperature": 0.7,
+ "top_p": 0.95,
+ "model_id_returned": "nvidia/nemotron-3-super-120b-a12b",
+ "mini_version": "2.4.6",
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 40,
+   "hit_step_limit": 1,
+   "changed_lines": 45,
+   "gold_changed_lines": 24,
+   "Y1": 0,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": 0.9068905956085185
+  },
+  "f2p_pass": 0,
+  "f2p_total": 9,
+  "p2p_pass": 0,
+  "p2p_total": 134,
+  "f2p_all_pass": false,
+  "p2p_all_pass": false,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 1.5
+ },
+ "status": "done",
+ "finished": "2026-10-06T19:45:19.717608+00:00"
+}

@@ -1,0 +1,711 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://senso-framework.org/ontology/seo/seo-evidence"
+         xmlns="http://senso-framework.org/ontology/seo/seo-evidence#"
+         xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+         xmlns:seo="http://senso-framework.org/ontology/seo#">
+
+<owl:Ontology rdf:about="http://senso-framework.org/ontology/seo/seo-evidence">
+  <owl:imports rdf:resource="http://senso-framework.org/ontology/seo/seo-entities"/>
+  <owl:imports rdf:resource="http://senso-framework.org/ontology/seo/seo-metrics"/>
+  <owl:imports rdf:resource="http://senso-framework.org/ontology/seo/seo-processes"/>
+</owl:Ontology>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#AgentCommitByTrailer">
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#AgentCommit"/>
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#Commit"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Co-authored-by trailer names an agent: {coAuthorTrailer}</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#AgentCommitByBotAuthor">
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#AgentCommit"/>
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#Commit"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">author name marks a bot account: {authorName}</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#AgentCommitByBranch">
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#AgentCommit"/>
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#Commit"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pull-request branch has an agent prefix: {branchName}</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#ClaudeCodeCommit">
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#AgentCommit"/>
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#Commit"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#CopilotCommit">
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#AgentCommit"/>
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#Commit"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#CodexCommit">
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#AgentCommit"/>
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#Commit"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#DevinCommit">
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#AgentCommit"/>
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#Commit"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#BugFixCommit">
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#Commit"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">commit subject "{commitSubject}" contains a bug-fix keyword</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#FeatureCommit">
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#Commit"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">commit subject "{commitSubject}" has a Conventional-Commit feat prefix</seo:explanationTemplate>
+</owl:Class>
+
+<rdf:Description rdf:about="http://senso-framework.org/ontology/seo#AgentCommit">
+  <rdfs:comment xml:lang="en">Inferred: each of trailer, bot-author and branch evidence is a subclass. Message markers and 'touches CLAUDE.md' are deliberately not evidence (WP1). The codex/devin author-name substring rule of populate.py is dropped pending a WP1 decision.</rdfs:comment>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">commit carries agent evidence (see the evidence class)</seo:explanationTemplate>
+</rdf:Description>
+
+<swrl:Variable rdf:about="urn:swrl#c"/>
+
+<swrl:Variable rdf:about="urn:swrl#t"/>
+
+<swrl:Variable rdf:about="urn:swrl#a"/>
+
+<swrl:Variable rdf:about="urn:swrl#b"/>
+
+<swrl:Variable rdf:about="urn:swrl#s"/>
+
+<swrl:Imp>
+  <swrl:body>
+    <rdf:Description>
+      <rdf:first>
+        <swrl:ClassAtom>
+          <swrl:classPredicate rdf:resource="http://senso-framework.org/ontology/seo#Commit"/>
+          <swrl:argument1 rdf:resource="urn:swrl#c"/>
+        </swrl:ClassAtom>
+      </rdf:first>
+      <rdf:rest>
+        <rdf:Description>
+          <rdf:first>
+            <swrl:DatavaluedPropertyAtom>
+              <swrl:propertyPredicate rdf:resource="http://senso-framework.org/ontology/seo#commitSubject"/>
+              <swrl:argument1 rdf:resource="urn:swrl#c"/>
+              <swrl:argument2 rdf:resource="urn:swrl#s"/>
+            </swrl:DatavaluedPropertyAtom>
+          </rdf:first>
+          <rdf:rest>
+            <rdf:Description>
+              <rdf:first>
+                <swrl:BuiltinAtom>
+                  <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#matches"/>
+                  <swrl:arguments>
+                    <rdf:Description>
+                      <rdf:first rdf:resource="urn:swrl#s"/>
+                      <rdf:rest>
+                        <rdf:Description>
+                          <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                          <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(?is)feat([(][^)]*[)])?!?:.*</rdf:first>
+                        </rdf:Description>
+                      </rdf:rest>
+                    </rdf:Description>
+                  </swrl:arguments>
+                </swrl:BuiltinAtom>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </rdf:rest>
+        </rdf:Description>
+      </rdf:rest>
+    </rdf:Description>
+  </swrl:body>
+  <swrl:head>
+    <rdf:Description>
+      <rdf:first>
+        <swrl:ClassAtom>
+          <swrl:classPredicate rdf:resource="http://senso-framework.org/ontology/seo#FeatureCommit"/>
+          <swrl:argument1 rdf:resource="urn:swrl#c"/>
+        </swrl:ClassAtom>
+      </rdf:first>
+      <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    </rdf:Description>
+  </swrl:head>
+</swrl:Imp>
+
+<swrl:Imp>
+  <swrl:body>
+    <rdf:Description>
+      <rdf:first>
+        <swrl:ClassAtom>
+          <swrl:classPredicate rdf:resource="http://senso-framework.org/ontology/seo#Commit"/>
+          <swrl:argument1 rdf:resource="urn:swrl#c"/>
+        </swrl:ClassAtom>
+      </rdf:first>
+      <rdf:rest>
+        <rdf:Description>
+          <rdf:first>
+            <swrl:DatavaluedPropertyAtom>
+              <swrl:propertyPredicate rdf:resource="http://senso-framework.org/ontology/seo#commitSubject"/>
+              <swrl:argument1 rdf:resource="urn:swrl#c"/>
+              <swrl:argument2 rdf:resource="urn:swrl#s"/>
+            </swrl:DatavaluedPropertyAtom>
+          </rdf:first>
+          <rdf:rest>
+            <rdf:Description>
+              <rdf:first>
+                <swrl:BuiltinAtom>
+                  <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#matches"/>
+                  <swrl:arguments>
+                    <rdf:Description>
+                      <rdf:first rdf:resource="urn:swrl#s"/>
+                      <rdf:rest>
+                        <rdf:Description>
+                          <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                          <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(?is).*(?&lt;![A-Za-z0-9_])(fix|bug|defect|patch|repair|resolve|issue|error|fault|failure|crash|exception|hotfix|hot-fix|bugfix|bug-fix|regression|correct|workaround).*</rdf:first>
+                        </rdf:Description>
+                      </rdf:rest>
+                    </rdf:Description>
+                  </swrl:arguments>
+                </swrl:BuiltinAtom>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </rdf:rest>
+        </rdf:Description>
+      </rdf:rest>
+    </rdf:Description>
+  </swrl:body>
+  <swrl:head>
+    <rdf:Description>
+      <rdf:first>
+        <swrl:ClassAtom>
+          <swrl:classPredicate rdf:resource="http://senso-framework.org/ontology/seo#BugFixCommit"/>
+          <swrl:argument1 rdf:resource="urn:swrl#c"/>
+        </swrl:ClassAtom>
+      </rdf:first>
+      <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    </rdf:Description>
+  </swrl:head>
+</swrl:Imp>
+
+<swrl:Imp>
+  <swrl:body>
+    <rdf:Description>
+      <rdf:first>
+        <swrl:ClassAtom>
+          <swrl:classPredicate rdf:resource="http://senso-framework.org/ontology/seo#Commit"/>
+          <swrl:argument1 rdf:resource="urn:swrl#c"/>
+        </swrl:ClassAtom>
+      </rdf:first>
+      <rdf:rest>
+        <rdf:Description>
+          <rdf:first>
+            <swrl:DatavaluedPropertyAtom>
+              <swrl:propertyPredicate rdf:resource="http://senso-framework.org/ontology/seo#branchName"/>
+              <swrl:argument1 rdf:resource="urn:swrl#c"/>
+              <swrl:argument2 rdf:resource="urn:swrl#b"/>
+            </swrl:DatavaluedPropertyAtom>
+          </rdf:first>
+          <rdf:rest>
+            <rdf:Description>
+              <rdf:first>
+                <swrl:BuiltinAtom>
+                  <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#matches"/>
+                  <swrl:arguments>
+                    <rdf:Description>
+                      <rdf:first rdf:resource="urn:swrl#b"/>
+                      <rdf:rest>
+                        <rdf:Description>
+                          <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                          <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(?i)copilot(/|-fix-).*</rdf:first>
+                        </rdf:Description>
+                      </rdf:rest>
+                    </rdf:Description>
+                  </swrl:arguments>
+                </swrl:BuiltinAtom>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </rdf:rest>
+        </rdf:Description>
+      </rdf:rest>
+    </rdf:Description>
+  </swrl:body>
+  <swrl:head>
+    <rdf:Description>
+      <rdf:first>
+        <swrl:ClassAtom>
+          <swrl:classPredicate rdf:resource="http://senso-framework.org/ontology/seo#AgentCommitByBranch"/>
+          <swrl:argument1 rdf:resource="urn:swrl#c"/>
+        </swrl:ClassAtom>
+      </rdf:first>
+      <rdf:rest>
+        <rdf:Description>
+          <rdf:first>
+            <swrl:ClassAtom>
+              <swrl:classPredicate rdf:resource="http://senso-framework.org/ontology/seo#CopilotCommit"/>
+              <swrl:argument1 rdf:resource="urn:swrl#c"/>
+            </swrl:ClassAtom>
+          </rdf:first>
+          <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+        </rdf:Description>
+      </rdf:rest>
+    </rdf:Description>
+  </swrl:head>
+</swrl:Imp>
+
+<swrl:Imp>
+  <swrl:body>
+    <rdf:Description>
+      <rdf:first>
+        <swrl:ClassAtom>
+          <swrl:classPredicate rdf:resource="http://senso-framework.org/ontology/seo#Commit"/>
+          <swrl:argument1 rdf:resource="urn:swrl#c"/>
+        </swrl:ClassAtom>
+      </rdf:first>
+      <rdf:rest>
+        <rdf:Description>
+          <rdf:first>
+            <swrl:DatavaluedPropertyAtom>
+              <swrl:propertyPredicate rdf:resource="http://senso-framework.org/ontology/seo#branchName"/>
+              <swrl:argument1 rdf:resource="urn:swrl#c"/>
+              <swrl:argument2 rdf:resource="urn:swrl#b"/>
+            </swrl:DatavaluedPropertyAtom>
+          </rdf:first>
+          <rdf:rest>
+            <rdf:Description>
+              <rdf:first>
+                <swrl:BuiltinAtom>
+                  <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#matches"/>
+                  <swrl:arguments>
+                    <rdf:Description>
+                      <rdf:first rdf:resource="urn:swrl#b"/>
+                      <rdf:rest>
+                        <rdf:Description>
+                          <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                          <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(?i)claude[/-].*</rdf:first>
+                        </rdf:Description>
+                      </rdf:rest>
+                    </rdf:Description>
+                  </swrl:arguments>
+                </swrl:BuiltinAtom>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </rdf:rest>
+        </rdf:Description>
+      </rdf:rest>
+    </rdf:Description>
+  </swrl:body>
+  <swrl:head>
+    <rdf:Description>
+      <rdf:first>
+        <swrl:ClassAtom>
+          <swrl:classPredicate rdf:resource="http://senso-framework.org/ontology/seo#AgentCommitByBranch"/>
+          <swrl:argument1 rdf:resource="urn:swrl#c"/>
+        </swrl:ClassAtom>
+      </rdf:first>
+      <rdf:rest>
+        <rdf:Description>
+          <rdf:first>
+            <swrl:ClassAtom>
+              <swrl:classPredicate rdf:resource="http://senso-framework.org/ontology/seo#ClaudeCodeCommit"/>
+              <swrl:argument1 rdf:resource="urn:swrl#c"/>
+            </swrl:ClassAtom>
+          </rdf:first>
+          <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+        </rdf:Description>
+      </rdf:rest>
+    </rdf:Description>
+  </swrl:head>
+</swrl:Imp>
+
+<swrl:Imp>
+  <swrl:body>
+    <rdf:Description>
+      <rdf:first>
+        <swrl:ClassAtom>
+          <swrl:classPredicate rdf:resource="http://senso-framework.org/ontology/seo#Commit"/>
+          <swrl:argument1 rdf:resource="urn:swrl#c"/>
+        </swrl:ClassAtom>
+      </rdf:first>
+      <rdf:rest>
+        <rdf:Description>
+          <rdf:first>
+            <swrl:DatavaluedPropertyAtom>
+              <swrl:propertyPredicate rdf:resource="http://senso-framework.org/ontology/seo#branchName"/>
+              <swrl:argument1 rdf:resource="urn:swrl#c"/>
+              <swrl:argument2 rdf:resource="urn:swrl#b"/>
+            </swrl:DatavaluedPropertyAtom>
+          </rdf:first>
+          <rdf:rest>
+            <rdf:Description>
+              <rdf:first>
+                <swrl:BuiltinAtom>
+                  <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#matches"/>
+                  <swrl:arguments>
+                    <rdf:Description>
+                      <rdf:first rdf:resource="urn:swrl#b"/>
+                      <rdf:rest>
+                        <rdf:Description>
+                          <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                          <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(?i)devin[/-].*</rdf:first>
+                        </rdf:Description>
+                      </rdf:rest>
+                    </rdf:Description>
+                  </swrl:arguments>
+                </swrl:BuiltinAtom>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </rdf:rest>
+        </rdf:Description>
+      </rdf:rest>
+    </rdf:Description>
+  </swrl:body>
+  <swrl:head>
+    <rdf:Description>
+      <rdf:first>
+        <swrl:ClassAtom>
+          <swrl:classPredicate rdf:resource="http://senso-framework.org/ontology/seo#AgentCommitByBranch"/>
+          <swrl:argument1 rdf:resource="urn:swrl#c"/>
+        </swrl:ClassAtom>
+      </rdf:first>
+      <rdf:rest>
+        <rdf:Description>
+          <rdf:first>
+            <swrl:ClassAtom>
+              <swrl:classPredicate rdf:resource="http://senso-framework.org/ontology/seo#DevinCommit"/>
+              <swrl:argument1 rdf:resource="urn:swrl#c"/>
+            </swrl:ClassAtom>
+          </rdf:first>
+          <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+        </rdf:Description>
+      </rdf:rest>
+    </rdf:Description>
+  </swrl:head>
+</swrl:Imp>
+
+<swrl:Imp>
+  <swrl:body>
+    <rdf:Description>
+      <rdf:first>
+        <swrl:ClassAtom>
+          <swrl:classPredicate rdf:resource="http://senso-framework.org/ontology/seo#Commit"/>
+          <swrl:argument1 rdf:resource="urn:swrl#c"/>
+        </swrl:ClassAtom>
+      </rdf:first>
+      <rdf:rest>
+        <rdf:Description>
+          <rdf:first>
+            <swrl:DatavaluedPropertyAtom>
+              <swrl:propertyPredicate rdf:resource="http://senso-framework.org/ontology/seo#branchName"/>
+              <swrl:argument1 rdf:resource="urn:swrl#c"/>
+              <swrl:argument2 rdf:resource="urn:swrl#b"/>
+            </swrl:DatavaluedPropertyAtom>
+          </rdf:first>
+          <rdf:rest>
+            <rdf:Description>
+              <rdf:first>
+                <swrl:BuiltinAtom>
+                  <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#matches"/>
+                  <swrl:arguments>
+                    <rdf:Description>
+                      <rdf:first rdf:resource="urn:swrl#b"/>
+                      <rdf:rest>
+                        <rdf:Description>
+                          <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                          <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(?i)codex[/-].*</rdf:first>
+                        </rdf:Description>
+                      </rdf:rest>
+                    </rdf:Description>
+                  </swrl:arguments>
+                </swrl:BuiltinAtom>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </rdf:rest>
+        </rdf:Description>
+      </rdf:rest>
+    </rdf:Description>
+  </swrl:body>
+  <swrl:head>
+    <rdf:Description>
+      <rdf:first>
+        <swrl:ClassAtom>
+          <swrl:classPredicate rdf:resource="http://senso-framework.org/ontology/seo#AgentCommitByBranch"/>
+          <swrl:argument1 rdf:resource="urn:swrl#c"/>
+        </swrl:ClassAtom>
+      </rdf:first>
+      <rdf:rest>
+        <rdf:Description>
+          <rdf:first>
+            <swrl:ClassAtom>
+              <swrl:classPredicate rdf:resource="http://senso-framework.org/ontology/seo#CodexCommit"/>
+              <swrl:argument1 rdf:resource="urn:swrl#c"/>
+            </swrl:ClassAtom>
+          </rdf:first>
+          <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+        </rdf:Description>
+      </rdf:rest>
+    </rdf:Description>
+  </swrl:head>
+</swrl:Imp>
+
+<swrl:Imp>
+  <swrl:body>
+    <rdf:Description>
+      <rdf:first>
+        <swrl:ClassAtom>
+          <swrl:classPredicate rdf:resource="http://senso-framework.org/ontology/seo#Commit"/>
+          <swrl:argument1 rdf:resource="urn:swrl#c"/>
+        </swrl:ClassAtom>
+      </rdf:first>
+      <rdf:rest>
+        <rdf:Description>
+          <rdf:first>
+            <swrl:DatavaluedPropertyAtom>
+              <swrl:propertyPredicate rdf:resource="http://senso-framework.org/ontology/seo#authorName"/>
+              <swrl:argument1 rdf:resource="urn:swrl#c"/>
+              <swrl:argument2 rdf:resource="urn:swrl#a"/>
+            </swrl:DatavaluedPropertyAtom>
+          </rdf:first>
+          <rdf:rest>
+            <rdf:Description>
+              <rdf:first>
+                <swrl:BuiltinAtom>
+                  <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#contains"/>
+                  <swrl:arguments>
+                    <rdf:Description>
+                      <rdf:first rdf:resource="urn:swrl#a"/>
+                      <rdf:rest>
+                        <rdf:Description>
+                          <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                          <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[bot]</rdf:first>
+                        </rdf:Description>
+                      </rdf:rest>
+                    </rdf:Description>
+                  </swrl:arguments>
+                </swrl:BuiltinAtom>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </rdf:rest>
+        </rdf:Description>
+      </rdf:rest>
+    </rdf:Description>
+  </swrl:body>
+  <swrl:head>
+    <rdf:Description>
+      <rdf:first>
+        <swrl:ClassAtom>
+          <swrl:classPredicate rdf:resource="http://senso-framework.org/ontology/seo#AgentCommitByBotAuthor"/>
+          <swrl:argument1 rdf:resource="urn:swrl#c"/>
+        </swrl:ClassAtom>
+      </rdf:first>
+      <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    </rdf:Description>
+  </swrl:head>
+</swrl:Imp>
+
+<swrl:Imp>
+  <swrl:body>
+    <rdf:Description>
+      <rdf:first>
+        <swrl:ClassAtom>
+          <swrl:classPredicate rdf:resource="http://senso-framework.org/ontology/seo#Commit"/>
+          <swrl:argument1 rdf:resource="urn:swrl#c"/>
+        </swrl:ClassAtom>
+      </rdf:first>
+      <rdf:rest>
+        <rdf:Description>
+          <rdf:first>
+            <swrl:DatavaluedPropertyAtom>
+              <swrl:propertyPredicate rdf:resource="http://senso-framework.org/ontology/seo#coAuthorTrailer"/>
+              <swrl:argument1 rdf:resource="urn:swrl#c"/>
+              <swrl:argument2 rdf:resource="urn:swrl#t"/>
+            </swrl:DatavaluedPropertyAtom>
+          </rdf:first>
+          <rdf:rest>
+            <rdf:Description>
+              <rdf:first>
+                <swrl:BuiltinAtom>
+                  <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#matches"/>
+                  <swrl:arguments>
+                    <rdf:Description>
+                      <rdf:first rdf:resource="urn:swrl#t"/>
+                      <rdf:rest>
+                        <rdf:Description>
+                          <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                          <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(?is).*co-authored-by:.*codex.*@openai.*</rdf:first>
+                        </rdf:Description>
+                      </rdf:rest>
+                    </rdf:Description>
+                  </swrl:arguments>
+                </swrl:BuiltinAtom>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </rdf:rest>
+        </rdf:Description>
+      </rdf:rest>
+    </rdf:Description>
+  </swrl:body>
+  <swrl:head>
+    <rdf:Description>
+      <rdf:first>
+        <swrl:ClassAtom>
+          <swrl:classPredicate rdf:resource="http://senso-framework.org/ontology/seo#AgentCommitByTrailer"/>
+          <swrl:argument1 rdf:resource="urn:swrl#c"/>
+        </swrl:ClassAtom>
+      </rdf:first>
+      <rdf:rest>
+        <rdf:Description>
+          <rdf:first>
+            <swrl:ClassAtom>
+              <swrl:classPredicate rdf:resource="http://senso-framework.org/ontology/seo#CodexCommit"/>
+              <swrl:argument1 rdf:resource="urn:swrl#c"/>
+            </swrl:ClassAtom>
+          </rdf:first>
+          <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+        </rdf:Description>
+      </rdf:rest>
+    </rdf:Description>
+  </swrl:head>
+</swrl:Imp>
+
+<swrl:Imp>
+  <swrl:body>
+    <rdf:Description>
+      <rdf:first>
+        <swrl:ClassAtom>
+          <swrl:classPredicate rdf:resource="http://senso-framework.org/ontology/seo#Commit"/>
+          <swrl:argument1 rdf:resource="urn:swrl#c"/>
+        </swrl:ClassAtom>
+      </rdf:first>
+      <rdf:rest>
+        <rdf:Description>
+          <rdf:first>
+            <swrl:DatavaluedPropertyAtom>
+              <swrl:propertyPredicate rdf:resource="http://senso-framework.org/ontology/seo#coAuthorTrailer"/>
+              <swrl:argument1 rdf:resource="urn:swrl#c"/>
+              <swrl:argument2 rdf:resource="urn:swrl#t"/>
+            </swrl:DatavaluedPropertyAtom>
+          </rdf:first>
+          <rdf:rest>
+            <rdf:Description>
+              <rdf:first>
+                <swrl:BuiltinAtom>
+                  <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#matches"/>
+                  <swrl:arguments>
+                    <rdf:Description>
+                      <rdf:first rdf:resource="urn:swrl#t"/>
+                      <rdf:rest>
+                        <rdf:Description>
+                          <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                          <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(?is).*co-authored-by:.*(copilot.*@github|github-copilot).*</rdf:first>
+                        </rdf:Description>
+                      </rdf:rest>
+                    </rdf:Description>
+                  </swrl:arguments>
+                </swrl:BuiltinAtom>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </rdf:rest>
+        </rdf:Description>
+      </rdf:rest>
+    </rdf:Description>
+  </swrl:body>
+  <swrl:head>
+    <rdf:Description>
+      <rdf:first>
+        <swrl:ClassAtom>
+          <swrl:classPredicate rdf:resource="http://senso-framework.org/ontology/seo#AgentCommitByTrailer"/>
+          <swrl:argument1 rdf:resource="urn:swrl#c"/>
+        </swrl:ClassAtom>
+      </rdf:first>
+      <rdf:rest>
+        <rdf:Description>
+          <rdf:first>
+            <swrl:ClassAtom>
+              <swrl:classPredicate rdf:resource="http://senso-framework.org/ontology/seo#CopilotCommit"/>
+              <swrl:argument1 rdf:resource="urn:swrl#c"/>
+            </swrl:ClassAtom>
+          </rdf:first>
+          <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+        </rdf:Description>
+      </rdf:rest>
+    </rdf:Description>
+  </swrl:head>
+</swrl:Imp>
+
+<swrl:Imp>
+  <swrl:body>
+    <rdf:Description>
+      <rdf:first>
+        <swrl:ClassAtom>
+          <swrl:classPredicate rdf:resource="http://senso-framework.org/ontology/seo#Commit"/>
+          <swrl:argument1 rdf:resource="urn:swrl#c"/>
+        </swrl:ClassAtom>
+      </rdf:first>
+      <rdf:rest>
+        <rdf:Description>
+          <rdf:first>
+            <swrl:DatavaluedPropertyAtom>
+              <swrl:propertyPredicate rdf:resource="http://senso-framework.org/ontology/seo#coAuthorTrailer"/>
+              <swrl:argument1 rdf:resource="urn:swrl#c"/>
+              <swrl:argument2 rdf:resource="urn:swrl#t"/>
+            </swrl:DatavaluedPropertyAtom>
+          </rdf:first>
+          <rdf:rest>
+            <rdf:Description>
+              <rdf:first>
+                <swrl:BuiltinAtom>
+                  <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#matches"/>
+                  <swrl:arguments>
+                    <rdf:Description>
+                      <rdf:first rdf:resource="urn:swrl#t"/>
+                      <rdf:rest>
+                        <rdf:Description>
+                          <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                          <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(?is).*co-authored-by:.*claude.*(@anthropic|noreply).*</rdf:first>
+                        </rdf:Description>
+                      </rdf:rest>
+                    </rdf:Description>
+                  </swrl:arguments>
+                </swrl:BuiltinAtom>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </rdf:rest>
+        </rdf:Description>
+      </rdf:rest>
+    </rdf:Description>
+  </swrl:body>
+  <swrl:head>
+    <rdf:Description>
+      <rdf:first>
+        <swrl:ClassAtom>
+          <swrl:classPredicate rdf:resource="http://senso-framework.org/ontology/seo#AgentCommitByTrailer"/>
+          <swrl:argument1 rdf:resource="urn:swrl#c"/>
+        </swrl:ClassAtom>
+      </rdf:first>
+      <rdf:rest>
+        <rdf:Description>
+          <rdf:first>
+            <swrl:ClassAtom>
+              <swrl:classPredicate rdf:resource="http://senso-framework.org/ontology/seo#ClaudeCodeCommit"/>
+              <swrl:argument1 rdf:resource="urn:swrl#c"/>
+            </swrl:ClassAtom>
+          </rdf:first>
+          <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+        </rdf:Description>
+      </rdf:rest>
+    </rdf:Description>
+  </swrl:head>
+</swrl:Imp>
+
+
+</rdf:RDF>

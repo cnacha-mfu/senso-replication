@@ -1,0 +1,336 @@
+{
+ "task_id": "Fatal1ty__mashumaro-185",
+ "repo": "Fatal1ty/mashumaro",
+ "stage": "phase_out",
+ "rounds": 1,
+ "rejects": {},
+ "flags": [],
+ "info": {
+  "slots": {
+   "test_root": "tests",
+   "P1": {
+    "replaced": "mashumaro/mixins",
+    "name": "internal",
+    "F_R": "mashumaro/core/internal",
+    "F_I": "mashumaro/codecs/internal"
+   },
+   "P2": {
+    "replaced": "mashumaro/codecs/_builder.py",
+    "F_R": "mashumaro/core/meta/patch.py",
+    "F_I": "examples/json_remapping.py"
+   },
+   "C": {
+    "F_R": "make test",
+    "F_I": "make install"
+   },
+   "D": {
+    "replaced": "tomli",
+    "F_R": "typing-inspect",
+    "F_I": "tomlkit"
+   }
+  },
+  "why": {
+   "test_command": [
+    {
+     "root": "tests",
+     "T3": "SupportedClaim",
+     "T1": "SupportedClaim",
+     "collect_ok": true
+    }
+   ],
+   "kind1": {
+    "p1_idx": 4,
+    "gold0": "mashumaro/core",
+    "unrelated": "mashumaro/codecs",
+    "base_R": "mashumaro/core",
+    "base_I": "mashumaro/codecs"
+   },
+   "kind2": {
+    "p2_idx": 2,
+    "n_deleted_py": 49,
+    "found": {
+     "F_R": "mashumaro/core/meta/patch.py",
+     "F_I": "examples/json_remapping.py"
+    }
+   },
+   "kind3": {
+    "run": "test",
+    "install": "install",
+    "test_ok": true,
+    "install_ok": true
+   },
+   "kind4": {
+    "deps": [
+     [
+      "typing-extensions",
+      true
+     ],
+     [
+      "tomli",
+      false
+     ]
+    ],
+    "d_idx": 1,
+    "src_R": "typing-extensions",
+    "src_I": "tomli",
+    "n_decls": 28,
+    "n_dist": 19
+   }
+  },
+  "length": {
+   "T": 449,
+   "F_R": 445,
+   "F_I": 447
+  },
+  "fallbacks": {
+   "F_R": [],
+   "F_I": []
+  },
+  "modes": {
+   "F_R": {
+    "1": "replace",
+    "2": "replace",
+    "3": "replace",
+    "4": "replace"
+   },
+   "F_I": {
+    "1": "replace",
+    "2": "replace",
+    "3": "replace",
+    "4": "replace"
+   }
+  },
+  "length_diff": {
+   "F_R": -4,
+   "F_I": -2
+  },
+  "n_claims_T": 15,
+  "n_false": {
+   "F_R": 4,
+   "F_I": 4
+  },
+  "pointer_in_issue": false,
+  "gold_dirs": [
+   "mashumaro/core"
+  ],
+  "gold_files": [
+   "README.md",
+   "mashumaro/core/meta/types/unpack.py"
+  ]
+ },
+ "tokens": {
+  "F_R": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "mashumaro/core/internal",
+     "internal"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "mashumaro/core/meta/patch.py",
+     "patch.py"
+    ]
+   },
+   {
+    "kind": 3,
+    "type": "regex",
+    "regex": "\\bmake\\b[^|;&\\n]*\\btest\\b",
+    "target": "test"
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "typing-inspect",
+     "typing_inspect"
+    ]
+   }
+  ],
+  "F_I": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "mashumaro/codecs/internal",
+     "internal"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "examples/json_remapping.py",
+     "json_remapping.py"
+    ]
+   },
+   {
+    "kind": 3,
+    "type": "regex",
+    "regex": "\\bmake\\b[^|;&\\n]*\\binstall\\b",
+    "target": "install"
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "tomlkit"
+    ]
+   }
+  ]
+ },
+ "unresolved_pre_hermit": [],
+ "sha256": {
+  "T": "7245c290b2fa721bf650bee21a64e929e49ef81668473039b055bc43a22eea75",
+  "F_R": "92994e0020cc586450c437a071afe03c2c7b3dbfe922c4d55070e8eb37e97814",
+  "F_I": "2a33ccb5422f0db21458d018eba2f896257be345e9f1b718073d06d74274a00c"
+ },
+ "chars": {
+  "T": 449,
+  "F_R": 445,
+  "F_I": 447
+ },
+ "claims": {
+  "T": [
+   "T1|mashumaro",
+   "T1|mashumaro/codecs",
+   "T1|mashumaro/core",
+   "T1|mashumaro/jsonschema",
+   "T1|mashumaro/mixins",
+   "T1|tests",
+   "T1|mashumaro/core/meta/code/builder.py",
+   "T1|mashumaro/core/meta/types/unpack.py",
+   "T1|mashumaro/codecs/_builder.py",
+   "T3|test_framework|pytest",
+   "T1|tests",
+   "T1|pyproject.toml",
+   "T4|typing-extensions|",
+   "T4|tomli|",
+   "T6|python|3008000000@2"
+  ],
+  "F_R": [
+   "T1|mashumaro",
+   "T1|mashumaro/codecs",
+   "T1|mashumaro/core",
+   "T1|mashumaro/jsonschema",
+   "T1|mashumaro/core/internal",
+   "T1|tests",
+   "T1|mashumaro/core/meta/code/builder.py",
+   "T1|mashumaro/core/meta/types/unpack.py",
+   "T1|mashumaro/core/meta/patch.py",
+   "T5|make|test",
+   "T1|pyproject.toml",
+   "T4|typing-extensions|",
+   "T4|typing-inspect|",
+   "T6|python|3008000000@2"
+  ],
+  "F_I": [
+   "T1|mashumaro",
+   "T1|mashumaro/codecs",
+   "T1|mashumaro/core",
+   "T1|mashumaro/jsonschema",
+   "T1|mashumaro/codecs/internal",
+   "T1|tests",
+   "T1|mashumaro/core/meta/code/builder.py",
+   "T1|mashumaro/core/meta/types/unpack.py",
+   "T1|examples/json_remapping.py",
+   "T3|test_framework|pytest",
+   "T1|tests",
+   "T5|make|install",
+   "T4|typing-extensions|",
+   "T4|tomlkit|",
+   "T6|python|3008000000@2"
+  ]
+ },
+ "python_spec": ">=3.8",
+ "token_audit": [
+  {
+   "cond": "F_R",
+   "kind": 1,
+   "type": "path",
+   "name": "mashumaro/core/internal",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 2,
+   "type": "path",
+   "name": "mashumaro/core/meta/patch.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 3,
+   "type": "regex",
+   "name": "make test",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 4,
+   "type": "word",
+   "name": "typing-inspect",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 1,
+   "type": "path",
+   "name": "mashumaro/codecs/internal",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 2,
+   "type": "path",
+   "name": "examples/json_remapping.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 3,
+   "type": "regex",
+   "name": "make install",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 4,
+   "type": "word",
+   "name": "tomlkit",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  }
+ ],
+ "dist_imports_used": {
+  "typing-extensions": [
+   "typing_extensions"
+  ],
+  "tomli": [
+   "tomli"
+  ],
+  "typing-inspect": null,
+  "tomlkit": null
+ }
+}

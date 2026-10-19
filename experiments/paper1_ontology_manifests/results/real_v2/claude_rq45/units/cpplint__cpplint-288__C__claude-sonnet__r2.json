@@ -1,0 +1,111 @@
+{
+ "unit_id": "cpplint__cpplint-288__C__claude-sonnet__r2",
+ "task_id": "cpplint__cpplint-288",
+ "repo": "cpplint/cpplint",
+ "stage": "evolution",
+ "condition": "C",
+ "model": "claude-code/sonnet",
+ "run": 2,
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 2805,
+  "sha256": "f15a2ab8ff90eb6b1aa85f69120d221af4195c4e7cbeffe07ad4c99608bb8269"
+ },
+ "started": "2026-10-18T05:28:25.352733+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 6,
+ "tool_calls": 5,
+ "usage": {
+  "input_tokens": 12,
+  "cache_creation_input_tokens": 10572,
+  "cache_read_input_tokens": 111395,
+  "output_tokens": 1534,
+  "output_tokens_details": {
+   "thinking_tokens": 278
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 10572,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 12,
+   "outputTokens": 1534,
+   "cacheReadInputTokens": 111395,
+   "cacheCreationInputTokens": 10572,
+   "webSearchRequests": 0,
+   "costUSD": 0.0687915,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 278,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.0687915,
+ "result_text": "cpplint no longer flags the `;` after a `requires(...) { ... }` block. I ran it on a test file with your `IndexableToChar` concept and it stayed quiet. The same file's genuine `void f() { int a; };` is still reported. I didn't run the repo's test suite.\n\nThe change is one added condition in `CheckTrailingSemicolon` in `cpplint.py`. It skips the semicolon check when the text before the parenthesis ends in `requires`.\n\nI also tried a bare `requires { ... };` with no parentheses. I didn't add handling for it, and I didn't check whether it still triggers the warning.\n\nI didn't add a test, as you asked.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792309800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0.11,
+    "resetsAt": 1792309800
+   },
+   "seven_day": {
+    "utilization": 0.12,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 26.1,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 6,
+   "hit_step_limit": 0,
+   "changed_lines": 1,
+   "gold_changed_lines": 3,
+   "Y1": 1,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": -1.5849625007211563
+  },
+  "f2p_pass": 1,
+  "f2p_total": 1,
+  "p2p_pass": 202,
+  "p2p_total": 202,
+  "f2p_all_pass": true,
+  "p2p_all_pass": true,
+  "resolved": true,
+  "reason": "resolved",
+  "test_seconds": 6.9
+ },
+ "status": "done",
+ "finished": "2026-10-18T05:29:00.276903+00:00"
+}

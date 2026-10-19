@@ -1,0 +1,95 @@
+# WP3 external ground truth (Paper 1, RQ1). Read by wp3_ground_truth.py.
+# Everything below, including quotas, the seed and the stage mapping, is fixed
+# BEFORE sampling. Paths are relative to the project root.
+
+output_dir: experiments/paper1_ontology_manifests/results/real_v2/wp3
+
+# Analysis snapshot: the classifier "in effect" is the one on the latest PyPI
+# release published on or before this date. Fixed (not "today") so the result
+# is reproducible and the snapshot lies well before data collection.
+snapshot_date: "2025-06-30"
+min_history_months: 24        # repo created_at must be <= snapshot - this
+close_down_dormant_months: 36 # archived + no push this long before snapshot -> close_down_candidate flag
+
+pool:
+  top_pypi_url: "https://hugovk.github.io/top-pypi-packages/top-pypi-packages.min.json"
+  top_n: 10000
+  # Targeted strata fill. GitHub search returns at most 1000 hits per query, so
+  # star bands are used to get past that cap. Archived repos are then mapped to
+  # PyPI packages by name and verified against project_urls.
+  archived_search:
+    enabled: true
+    language: python
+    star_bands: [[50, 99], [100, 199], [200, 499], [500, 999], [1000, 4999], [5000, 1000000]]
+    max_pages_per_band: 10
+  # PyPI search by classifier is behind a bot challenge (HTML only, no API), so
+  # Inactive (7) packages are found via the top-N scan and the archived search.
+
+# Sampling. One quota per stratum (mapped stage). close_down is not sampled:
+# it cannot be separated from phase_out with these signals (flag only).
+sampling:
+  seed: 20261006
+  min_stars: 10
+  prefer_unconflicted: true   # fill quota from conflict-free repos first, then conflicted ones
+  quotas:
+    initial_development: 30
+    evolution: 30
+    servicing: 30
+    phase_out: 30
+
+# Per-release history for the sampled repos (noise statistics).
+history:
+  max_releases_per_package: 80   # evenly spaced incl. first, last and snapshot release
+
+network:
+  workers: 4
+  timeout_s: 30
+  max_retries: 5
+
+# FROZEN mapping to Rajlich & Bennett stages (papers/paper1/rq1-preregistration.md, 2026-10-06).
+# Signals and their stage:
+#   Development Status classifier in effect at the snapshot:
+#     1,2,3,4 -> initial_development ; 5 -> evolution ; 6 -> servicing ; 7 -> phase_out
+#   GitHub archived AND last push <= snapshot ("archived_valid", time-consistent) -> phase_out
+#     (archived whose last push is after the snapshot is only flagged, not mapped:
+#      we cannot tell when it was archived)
+#   README phrases (current README, time not verifiable):
+#     unmaintained / no longer maintained / deprecated / abandoned -> phase_out
+#     "maintenance mode"                                            -> servicing
+# Resolution when signals disagree (all disagreements are flagged, never silent):
+#   priority = archived_valid > classifier 7 > README > classifier 1-6
+mapping_status: "FROZEN (rq1-preregistration)"
+stage_mapping:
+  classifier:
+    "1": initial_development
+    "2": initial_development
+    "3": initial_development
+    "4": initial_development
+    "5": evolution
+    "6": servicing
+    "7": phase_out
+  archived_valid: phase_out
+  readme_unmaintained: phase_out
+  readme_maintenance_mode: servicing
+  priority: [archived_valid, classifier_7, readme, classifier]
+
+# README patterns (case-insensitive). "deprecated" alone is too noisy in READMEs,
+# so it only counts in the first head_chars characters or in an explicit
+# "this project/package is deprecated" statement.
+readme:
+  head_chars: 1200
+  unmaintained:
+    - 'no longer (?:actively )?(?:maintained|supported|developed)'
+    - '\bunmaintained\b'
+    - 'not (?:actively )?maintained'
+    - '\b(?:this|the) (?:project|package|library|repo(?:sitory)?|tool) is (?:now |currently )?(?:deprecated|obsolete|abandoned|dead)'
+    - 'badge/maintenance-(?:no|deprecated|inactive|unmaintained)'
+    - 'badge/maintained-no'
+    - 'looking for (?:new )?maintainers?'
+  unmaintained_head_only:
+    - '\bdeprecated\b'
+    - '\barchived\b'
+  maintenance_mode:
+    - 'maintenance[ -]mode'
+    - 'in maintenance\b'
+    - 'badge/maintenance-(?:passively|minimal)'

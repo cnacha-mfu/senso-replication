@@ -1,0 +1,3632 @@
+{
+ "repo": "python-trio/trio",
+ "snapshot_date": "2024-08-31",
+ "status": "ok",
+ "unmineable": false,
+ "unmineable_reason": null,
+ "replaces": null,
+ "settings": {
+  "dedup": true,
+  "complexity": false,
+  "dataset": null,
+  "sensitivity": false,
+  "snapshot_commit": "4e979bfef4aac8c756fd4c6c521977cfcfdde1df",
+  "mode": "wp5_snapshot_commit",
+  "test_patch_files": [
+   "src/trio/_tests/test_timeouts.py"
+  ],
+  "package_roots": [
+   "src/trio"
+  ]
+ },
+ "versions": {
+  "owlready2": "0.51",
+  "pymannkendall": "1.4.3",
+  "lizard": "1.24.1",
+  "numpy": "2.5.3",
+  "scipy": "1.18.1",
+  "python": "3.12.15",
+  "git": "git version 2.53.0"
+ },
+ "task_id": "python-trio__trio-3096",
+ "base_commit": "4e979bfef4aac8c756fd4c6c521977cfcfdde1df",
+ "measures": {
+  "monthsObserved": 36,
+  "monthsSinceLastCommit": 0,
+  "distinctAuthorsInWindow": 60,
+  "commitMKTau": -0.214286,
+  "commitMKpValue": 0.067673,
+  "activeMonthCount": 36,
+  "activeMonthRatio": 1.0,
+  "meanMonthlyCommits": 42.777778,
+  "commitsLast3Months": 76,
+  "commitCountCV": 0.59975,
+  "commitCountCVSample": 0.608257,
+  "commitHalfRatio": 0.71875,
+  "commitSecondHalfMean": 35.777778,
+  "churnCV": 3.309004,
+  "linesAddedCV": 3.120483,
+  "mergeMonthRatio": 1.0,
+  "multiAuthorMonthRatio": 1.0,
+  "bugFixRatioFirstHalf": 0.126933,
+  "bugFixRatioSecondHalf": 0.146227,
+  "bugFixHalfRatio": 1.152005,
+  "locSeriesLength": 36,
+  "locRelSenSlopeAnnual": 0.123108,
+  "locMKTau": 0.922222,
+  "locMKS": 581,
+  "locMKpValue": 0.0,
+  "locSenSlope": 324.492754,
+  "locStart": 28948,
+  "locEnd": 39415,
+  "locDelta": 10467,
+  "locGrowthRate": 0.361579,
+  "locChangePct": 36.157938,
+  "locEndToStartRatio": 1.361579,
+  "locGrowthLast3": 0.015353,
+  "featureCommitsFirstHalf": 0,
+  "featureCommitsSecondHalf": 0,
+  "featureCommitsTotal": 0,
+  "locDeltaPerFeature": 10467.0,
+  "recentAgentCommitRatio": 0.217404,
+  "featCommitCount": 0,
+  "bugFixCommitCount": 206,
+  "commitCount": 1540,
+  "monthly_series": {
+   "months": [
+    "2020-09",
+    "2020-10",
+    "2020-11",
+    "2020-12",
+    "2021-01",
+    "2021-02",
+    "2021-03",
+    "2021-04",
+    "2021-05",
+    "2021-06",
+    "2021-07",
+    "2021-08",
+    "2021-09",
+    "2021-10",
+    "2021-11",
+    "2021-12",
+    "2022-01",
+    "2022-02",
+    "2022-03",
+    "2022-04",
+    "2022-05",
+    "2022-06",
+    "2022-07",
+    "2022-08",
+    "2022-09",
+    "2022-10",
+    "2022-11",
+    "2022-12",
+    "2023-01",
+    "2023-02",
+    "2023-03",
+    "2023-04",
+    "2023-05",
+    "2023-06",
+    "2023-07",
+    "2023-08",
+    "2023-09",
+    "2023-10",
+    "2023-11",
+    "2023-12",
+    "2024-01",
+    "2024-02",
+    "2024-03",
+    "2024-04",
+    "2024-05",
+    "2024-06",
+    "2024-07",
+    "2024-08"
+   ],
+   "commits": [
+    70,
+    65,
+    44,
+    68,
+    51,
+    61,
+    52,
+    80,
+    42,
+    63,
+    56,
+    40,
+    50,
+    81,
+    25,
+    9,
+    104,
+    61,
+    33,
+    27,
+    51,
+    41,
+    47,
+    26,
+    65,
+    19,
+    93,
+    39,
+    49,
+    76,
+    109,
+    9,
+    30,
+    16,
+    49,
+    42,
+    50,
+    51,
+    68,
+    25,
+    47,
+    16,
+    15,
+    19,
+    22,
+    22,
+    16,
+    38
+   ],
+   "loc": [
+    28806,
+    28850,
+    28923,
+    28692,
+    28729,
+    28741,
+    28793,
+    28806,
+    28806,
+    28854,
+    28947,
+    28948,
+    28948,
+    29077,
+    29077,
+    29089,
+    29222,
+    29219,
+    29219,
+    29219,
+    29215,
+    29213,
+    31352,
+    31352,
+    31254,
+    31254,
+    31541,
+    31550,
+    31576,
+    31643,
+    31630,
+    31630,
+    31933,
+    32604,
+    33664,
+    34830,
+    35939,
+    36982,
+    37575,
+    37272,
+    37920,
+    38094,
+    38077,
+    38098,
+    38713,
+    38819,
+    38748,
+    39415
+   ]
+  }
+ },
+ "window": {
+  "L": 36,
+  "first_month": "2021-09",
+  "last_month": "2024-08",
+  "n_months": 36,
+  "left_truncated": false,
+  "first_commit_month": "2017-01",
+  "mined_months": 48,
+  "commits_in_window": 1540,
+  "commits_in_history": 5771
+ },
+ "loc_instrument": {
+  "instrument": "nonblank-source-lines-v1",
+  "status": "ok",
+  "months": 48,
+  "month_end_commits_distinct": 48,
+  "source_blobs": 1293,
+  "blobs_fetched": 6,
+  "t_ls_tree_s": 1.2536924809683114,
+  "t_fetch_s": 1.0517880110419355,
+  "t_read_s": 0.47567371296463534,
+  "series_present": true,
+  "extensions": [
+   ".bash",
+   ".c",
+   ".cc",
+   ".cjs",
+   ".clj",
+   ".cpp",
+   ".cs",
+   ".cxx",
+   ".dart",
+   ".erl",
+   ".ex",
+   ".exs",
+   ".f90",
+   ".go",
+   ".groovy",
+   ".h",
+   ".hh",
+   ".hpp",
+   ".hs",
+   ".java",
+   ".jl",
+   ".js",
+   ".jsx",
+   ".kt",
+   ".kts",
+   ".lua",
+   ".m",
+   ".mjs",
+   ".ml",
+   ".mm",
+   ".nim",
+   ".php",
+   ".pl",
+   ".pm",
+   ".py",
+   ".pyi",
+   ".r",
+   ".rb",
+   ".rs",
+   ".scala",
+   ".sh",
+   ".sql",
+   ".svelte",
+   ".swift",
+   ".ts",
+   ".tsx",
+   ".vue",
+   ".zig"
+  ],
+  "excluded_dirs": [
+   "node_modules",
+   "vendor",
+   "vendored",
+   "third_party",
+   "site-packages",
+   "bower_components"
+  ],
+  "max_blob_bytes": 1000000,
+  "first_parent": true
+ },
+ "mining": {
+  "churn": {
+   "t_churn_raw_s": 0.7370266420184635,
+   "t_churn_fetch_s": 7.811895395978354,
+   "t_churn_numstat_s": 1.4866160480305552,
+   "blobs_fetched_churn": 2286
+  },
+  "timings": {
+   "t_clone": 0.009,
+   "t_mine": 10.368,
+   "t_loc": 2.782,
+   "t_reason_A": 18.647
+  },
+  "cached": false
+ },
+ "stage_a": {
+  "commits": 2232,
+  "reasoned_commits": 2117,
+  "inconsistent_chunks": 0,
+  "chunk_timings": [
+   {
+    "tbox_load_s": 0.05476645799353719,
+    "abox_load_s": 0.18238951900275424,
+    "reason_s": 6.883009722980205,
+    "extract_s": 0.014440105005633086,
+    "total_s": 7.135555018961895,
+    "commits": 1000
+   },
+   {
+    "tbox_load_s": 0.052493074035737664,
+    "abox_load_s": 0.14578346704365686,
+    "reason_s": 6.486400908033829,
+    "extract_s": 0.017953502014279366,
+    "total_s": 6.703538188012317,
+    "commits": 1000
+   },
+   {
+    "tbox_load_s": 0.055135353992227465,
+    "abox_load_s": 0.019210202037356794,
+    "reason_s": 4.641589495993685,
+    "extract_s": 0.00483599299332127,
+    "total_s": 4.7217107089818455,
+    "commits": 117
+   }
+  ],
+  "tbox_sha256": "f5ba00eaa76dc3582415cdf566fbd7abc1d3f2797ca928f41dad106dc1c0bdb5"
+ },
+ "activity": {
+  "last_commit_date": "2024-08-31T11:52:29+00:00",
+  "months_since_last_commit": 0,
+  "distinct_authors_in_window": 60,
+  "merge_commits_in_window": 466
+ },
+ "agent_adoption_date": "2021-09-01T06:38:09+00:00",
+ "commit_label_counts": {
+  "BugFixCommit": 206,
+  "FeatureCommit": 0,
+  "AgentCommit": 387
+ },
+ "series_months": [
+  {
+   "month": "2021-09",
+   "commit_count": 50,
+   "merge_count": 11,
+   "unique_authors": 4,
+   "lines_added": 2267,
+   "lines_deleted": 686,
+   "total_churn": 2953,
+   "files_changed": 55,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 28948,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2021-10",
+   "commit_count": 81,
+   "merge_count": 30,
+   "unique_authors": 7,
+   "lines_added": 374,
+   "lines_deleted": 70,
+   "total_churn": 444,
+   "files_changed": 21,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 29077,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2021-11",
+   "commit_count": 25,
+   "merge_count": 5,
+   "unique_authors": 6,
+   "lines_added": 63,
+   "lines_deleted": 22,
+   "total_churn": 85,
+   "files_changed": 11,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 29077,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2021-12",
+   "commit_count": 9,
+   "merge_count": 1,
+   "unique_authors": 3,
+   "lines_added": 126,
+   "lines_deleted": 60,
+   "total_churn": 186,
+   "files_changed": 12,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 29089,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-01",
+   "commit_count": 104,
+   "merge_count": 40,
+   "unique_authors": 11,
+   "lines_added": 240,
+   "lines_deleted": 1767,
+   "total_churn": 2007,
+   "files_changed": 61,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 29222,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-02",
+   "commit_count": 61,
+   "merge_count": 16,
+   "unique_authors": 4,
+   "lines_added": 860,
+   "lines_deleted": 90,
+   "total_churn": 950,
+   "files_changed": 20,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 29219,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-03",
+   "commit_count": 33,
+   "merge_count": 13,
+   "unique_authors": 4,
+   "lines_added": 4,
+   "lines_deleted": 4,
+   "total_churn": 8,
+   "files_changed": 3,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 29219,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-04",
+   "commit_count": 27,
+   "merge_count": 12,
+   "unique_authors": 3,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 29219,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-05",
+   "commit_count": 51,
+   "merge_count": 17,
+   "unique_authors": 3,
+   "lines_added": 182,
+   "lines_deleted": 51,
+   "total_churn": 233,
+   "files_changed": 18,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 29215,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-06",
+   "commit_count": 41,
+   "merge_count": 19,
+   "unique_authors": 8,
+   "lines_added": 31,
+   "lines_deleted": 31,
+   "total_churn": 62,
+   "files_changed": 11,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 29213,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-07",
+   "commit_count": 47,
+   "merge_count": 20,
+   "unique_authors": 7,
+   "lines_added": 188,
+   "lines_deleted": 48,
+   "total_churn": 236,
+   "files_changed": 13,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 31352,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-08",
+   "commit_count": 26,
+   "merge_count": 10,
+   "unique_authors": 5,
+   "lines_added": 270,
+   "lines_deleted": 23,
+   "total_churn": 293,
+   "files_changed": 9,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 31352,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-09",
+   "commit_count": 65,
+   "merge_count": 21,
+   "unique_authors": 6,
+   "lines_added": 389,
+   "lines_deleted": 53,
+   "total_churn": 442,
+   "files_changed": 32,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 31254,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-10",
+   "commit_count": 19,
+   "merge_count": 8,
+   "unique_authors": 5,
+   "lines_added": 1,
+   "lines_deleted": 2,
+   "total_churn": 3,
+   "files_changed": 1,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 31254,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-11",
+   "commit_count": 93,
+   "merge_count": 40,
+   "unique_authors": 11,
+   "lines_added": 798,
+   "lines_deleted": 436,
+   "total_churn": 1234,
+   "files_changed": 101,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 31541,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-12",
+   "commit_count": 39,
+   "merge_count": 25,
+   "unique_authors": 5,
+   "lines_added": 28,
+   "lines_deleted": 18,
+   "total_churn": 46,
+   "files_changed": 3,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 31550,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-01",
+   "commit_count": 49,
+   "merge_count": 22,
+   "unique_authors": 6,
+   "lines_added": 167,
+   "lines_deleted": 100,
+   "total_churn": 267,
+   "files_changed": 8,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 31576,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-02",
+   "commit_count": 76,
+   "merge_count": 27,
+   "unique_authors": 5,
+   "lines_added": 29,
+   "lines_deleted": 3,
+   "total_churn": 32,
+   "files_changed": 10,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 31643,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-03",
+   "commit_count": 109,
+   "merge_count": 33,
+   "unique_authors": 6,
+   "lines_added": 339,
+   "lines_deleted": 352,
+   "total_churn": 691,
+   "files_changed": 25,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 31630,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-04",
+   "commit_count": 9,
+   "merge_count": 3,
+   "unique_authors": 4,
+   "lines_added": 16815,
+   "lines_deleted": 16806,
+   "total_churn": 33621,
+   "files_changed": 124,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 31630,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-05",
+   "commit_count": 30,
+   "merge_count": 10,
+   "unique_authors": 9,
+   "lines_added": 404,
+   "lines_deleted": 54,
+   "total_churn": 458,
+   "files_changed": 13,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 31933,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-06",
+   "commit_count": 16,
+   "merge_count": 4,
+   "unique_authors": 6,
+   "lines_added": 1194,
+   "lines_deleted": 456,
+   "total_churn": 1650,
+   "files_changed": 27,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 32604,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-07",
+   "commit_count": 49,
+   "merge_count": 7,
+   "unique_authors": 11,
+   "lines_added": 3369,
+   "lines_deleted": 2001,
+   "total_churn": 5370,
+   "files_changed": 234,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 33664,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-08",
+   "commit_count": 42,
+   "merge_count": 2,
+   "unique_authors": 7,
+   "lines_added": 3237,
+   "lines_deleted": 1699,
+   "total_churn": 4936,
+   "files_changed": 157,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 34830,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-09",
+   "commit_count": 50,
+   "merge_count": 14,
+   "unique_authors": 11,
+   "lines_added": 2264,
+   "lines_deleted": 1050,
+   "total_churn": 3314,
+   "files_changed": 97,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 35939,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-10",
+   "commit_count": 51,
+   "merge_count": 6,
+   "unique_authors": 9,
+   "lines_added": 2864,
+   "lines_deleted": 1910,
+   "total_churn": 4774,
+   "files_changed": 248,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 36982,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-11",
+   "commit_count": 68,
+   "merge_count": 14,
+   "unique_authors": 14,
+   "lines_added": 43879,
+   "lines_deleted": 42776,
+   "total_churn": 86655,
+   "files_changed": 394,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 37575,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-12",
+   "commit_count": 25,
+   "merge_count": 6,
+   "unique_authors": 9,
+   "lines_added": 1144,
+   "lines_deleted": 1570,
+   "total_churn": 2714,
+   "files_changed": 104,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 37272,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-01",
+   "commit_count": 47,
+   "merge_count": 9,
+   "unique_authors": 9,
+   "lines_added": 1720,
+   "lines_deleted": 1294,
+   "total_churn": 3014,
+   "files_changed": 111,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 37920,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-02",
+   "commit_count": 16,
+   "merge_count": 2,
+   "unique_authors": 13,
+   "lines_added": 494,
+   "lines_deleted": 369,
+   "total_churn": 863,
+   "files_changed": 41,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 38094,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-03",
+   "commit_count": 15,
+   "merge_count": 2,
+   "unique_authors": 8,
+   "lines_added": 497,
+   "lines_deleted": 500,
+   "total_churn": 997,
+   "files_changed": 21,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 38077,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-04",
+   "commit_count": 19,
+   "merge_count": 4,
+   "unique_authors": 7,
+   "lines_added": 77,
+   "lines_deleted": 51,
+   "total_churn": 128,
+   "files_changed": 9,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 38098,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-05",
+   "commit_count": 22,
+   "merge_count": 4,
+   "unique_authors": 10,
+   "lines_added": 837,
+   "lines_deleted": 132,
+   "total_churn": 969,
+   "files_changed": 37,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 38713,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-06",
+   "commit_count": 22,
+   "merge_count": 3,
+   "unique_authors": 6,
+   "lines_added": 581,
+   "lines_deleted": 317,
+   "total_churn": 898,
+   "files_changed": 43,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 38819,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-07",
+   "commit_count": 16,
+   "merge_count": 2,
+   "unique_authors": 5,
+   "lines_added": 48,
+   "lines_deleted": 131,
+   "total_churn": 179,
+   "files_changed": 26,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 38748,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-08",
+   "commit_count": 38,
+   "merge_count": 4,
+   "unique_authors": 9,
+   "lines_added": 1256,
+   "lines_deleted": 569,
+   "total_churn": 1825,
+   "files_changed": 134,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 39415,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  }
+ ],
+ "measures_derived": {
+  "bugFixRatioFirstHalf": 0.126933,
+  "bugFixRatioSecondHalf": 0.146227,
+  "bugFixHalfRatio": 1.152005,
+  "featureCommitsFirstHalf": 0,
+  "featureCommitsSecondHalf": 0,
+  "featureCommitsTotal": 0,
+  "locDeltaPerFeature": 10467.0,
+  "recentAgentCommitRatio": 0.217404
+ },
+ "modules_meta": {
+  "anchor_S": "2024-09-23T23:56:30+00:00",
+  "window_months": 12,
+  "package_roots": [
+   "src/trio"
+  ],
+  "n_modules": 39,
+  "n_source_files": 129,
+  "n_window_commits": 198,
+  "cached": false,
+  "timings": {
+   "t_tree_loc": 0.961,
+   "t_history": 0.375,
+   "t_numstat": 1.438
+  },
+  "module_loc_instrument": "nonblank-source-lines-v1",
+  "label_counts": {
+   "StableModule": 0,
+   "ActiveModule": 39,
+   "undetermined": 0
+  },
+  "thresholds": {
+   "mod_window_months": 12,
+   "mod_stable_max_rel_churn": 0.1,
+   "mod_stable_max_change_months": 2
+  }
+ },
+ "inferred": {
+  "a0.05_L36_D12_G0.05_orig": {
+   "classes": [
+    "CopyPasteEvidence",
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIINonConformant",
+    "LawIVConformant",
+    "LawVIConformant",
+    "LawVIIConformant",
+    "LawVIIConformantRatio",
+    "LawVIIIConformant",
+    "LawVNonConformant",
+    "LocPerFeatureHigh",
+    "MKApplicable",
+    "MergeActive",
+    "MultiAuthorActive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": "urn:senso:explanations:python-trio__trio-3096:d20298612d99",
+   "tbox_sha256": "d20298612d99fa8f5c1a63c70eaab0195a3e82e2d6780de3bd1fd3ced72d6e5d",
+   "abox_triples": 430,
+   "t_reason_B_s": 3.096
+  }
+ },
+ "primary_config": "a0.05_L36_D12_G0.05_orig",
+ "project_iri": "http://senso-framework.org/data/python-trio__trio-3096",
+ "consistent": true,
+ "inferred_labels": [
+  "CopyPasteEvidence",
+  "GrowthStage",
+  "LawIConformant",
+  "LawIIINonConformant",
+  "LawIVConformant",
+  "LawVIConformant",
+  "LawVIIConformant",
+  "LawVIIConformantRatio",
+  "LawVIIIConformant",
+  "LawVNonConformant",
+  "LocPerFeatureHigh",
+  "MKApplicable",
+  "MergeActive",
+  "MultiAuthorActive",
+  "RBActiveDevelopmentStage",
+  "RecentlyActive",
+  "SubstantialLocGrowth"
+ ],
+ "stage_labels": [
+  "GrowthStage",
+  "RBActiveDevelopmentStage"
+ ],
+ "law_labels": {
+  "I": "LawIConformant",
+  "III": "LawIIINonConformant",
+  "IV": "LawIVConformant",
+  "V": "LawVNonConformant",
+  "VI": "LawVIConformant",
+  "VII": "LawVIIConformant",
+  "VIII": "LawVIIIConformant"
+ },
+ "tbox_sha256_stage_b": "d20298612d99fa8f5c1a63c70eaab0195a3e82e2d6780de3bd1fd3ced72d6e5d",
+ "tbox_sha256_stage_a": "f5ba00eaa76dc3582415cdf566fbd7abc1d3f2797ca928f41dad106dc1c0bdb5",
+ "summary": {
+  "c1": "A",
+  "c2": "A",
+  "cf": "A",
+  "note": "debug summary; run_rq1_v2.py reads `inferred` and recomputes CF itself"
+ },
+ "modules": {
+  "docs": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "docs",
+    "moduleLoc": 887,
+    "moduleCommitsInWindow": 21,
+    "moduleChangeMonthsInWindow": 11,
+    "moduleLinesChangedInWindow": 311,
+    "moduleRelChurnInWindow": 0.35062,
+    "moduleMonthsSinceLastChange": 0
+   },
+   "iri": "http://senso-framework.org/data/python-trio__trio-3096/module/docs-71ab8b",
+   "abox_asserted": true
+  },
+  "notes-to-self": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "notes-to-self",
+    "moduleLoc": 1968,
+    "moduleCommitsInWindow": 11,
+    "moduleChangeMonthsInWindow": 7,
+    "moduleLinesChangedInWindow": 235,
+    "moduleRelChurnInWindow": 0.119411,
+    "moduleMonthsSinceLastChange": 1
+   },
+   "iri": "http://senso-framework.org/data/python-trio__trio-3096/module/notes-to-self-1e36b0",
+   "abox_asserted": true
+  },
+  "src/trio/__init__.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "src/trio/__init__.py",
+    "moduleLoc": 126,
+    "moduleCommitsInWindow": 5,
+    "moduleChangeMonthsInWindow": 4,
+    "moduleLinesChangedInWindow": 189,
+    "moduleRelChurnInWindow": 1.5,
+    "moduleMonthsSinceLastChange": 6
+   },
+   "iri": "http://senso-framework.org/data/python-trio__trio-3096/module/src_trio___init__.py-7b859c",
+   "abox_asserted": true
+  },
+  "src/trio/__main__.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "RarelyChangedModule"
+   ],
+   "measures": {
+    "modulePath": "src/trio/__main__.py",
+    "moduleLoc": 2,
+    "moduleCommitsInWindow": 1,
+    "moduleChangeMonthsInWindow": 1,
+    "moduleLinesChangedInWindow": 3,
+    "moduleRelChurnInWindow": 1.5,
+    "moduleMonthsSinceLastChange": 4
+   },
+   "iri": "http://senso-framework.org/data/python-trio__trio-3096/module/src_trio___main__.py-e5de98",
+   "abox_asserted": true
+  },
+  "src/trio/_abc.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "src/trio/_abc.py",
+    "moduleLoc": 517,
+    "moduleCommitsInWindow": 6,
+    "moduleChangeMonthsInWindow": 5,
+    "moduleLinesChangedInWindow": 738,
+    "moduleRelChurnInWindow": 1.427466,
+    "moduleMonthsSinceLastChange": 1
+   },
+   "iri": "http://senso-framework.org/data/python-trio__trio-3096/module/src_trio__abc.py-4a2e43",
+   "abox_asserted": true
+  },
+  "src/trio/_channel.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "src/trio/_channel.py",
+    "moduleLoc": 356,
+    "moduleCommitsInWindow": 4,
+    "moduleChangeMonthsInWindow": 4,
+    "moduleLinesChangedInWindow": 486,
+    "moduleRelChurnInWindow": 1.365169,
+    "moduleMonthsSinceLastChange": 1
+   },
+   "iri": "http://senso-framework.org/data/python-trio__trio-3096/module/src_trio__channel.py-9fa19e",
+   "abox_asserted": true
+  },
+  "src/trio/_core": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "src/trio/_core",
+    "moduleLoc": 7284,
+    "moduleCommitsInWindow": 41,
+    "moduleChangeMonthsInWindow": 11,
+    "moduleLinesChangedInWindow": 11047,
+    "moduleRelChurnInWindow": 1.516612,
+    "moduleMonthsSinceLastChange": 0
+   },
+   "iri": "http://senso-framework.org/data/python-trio__trio-3096/module/src_trio__core-90e086",
+   "abox_asserted": true
+  },
+  "src/trio/_deprecate.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "src/trio/_deprecate.py",
+    "moduleLoc": 141,
+    "moduleCommitsInWindow": 4,
+    "moduleChangeMonthsInWindow": 4,
+    "moduleLinesChangedInWindow": 201,
+    "moduleRelChurnInWindow": 1.425532,
+    "moduleMonthsSinceLastChange": 4
+   },
+   "iri": "http://senso-framework.org/data/python-trio__trio-3096/module/src_trio__deprecate.py-eb33cb",
+   "abox_asserted": true
+  },
+  "src/trio/_dtls.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "src/trio/_dtls.py",
+    "moduleLoc": 1199,
+    "moduleCommitsInWindow": 5,
+    "moduleChangeMonthsInWindow": 4,
+    "moduleLinesChangedInWindow": 1497,
+    "moduleRelChurnInWindow": 1.24854,
+    "moduleMonthsSinceLastChange": 1
+   },
+   "iri": "http://senso-framework.org/data/python-trio__trio-3096/module/src_trio__dtls.py-96110f",
+   "abox_asserted": true
+  },
+  "src/trio/_file_io.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "src/trio/_file_io.py",
+    "moduleLoc": 405,
+    "moduleCommitsInWindow": 4,
+    "moduleChangeMonthsInWindow": 3,
+    "moduleLinesChangedInWindow": 545,
+    "moduleRelChurnInWindow": 1.345679,
+    "moduleMonthsSinceLastChange": 1
+   },
+   "iri": "http://senso-framework.org/data/python-trio__trio-3096/module/src_trio__file_io.py-2bc764",
+   "abox_asserted": true
+  },
+  "src/trio/_highlevel_generic.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "src/trio/_highlevel_generic.py",
+    "moduleLoc": 95,
+    "moduleCommitsInWindow": 3,
+    "moduleChangeMonthsInWindow": 3,
+    "moduleLinesChangedInWindow": 139,
+    "moduleRelChurnInWindow": 1.463158,
+    "moduleMonthsSinceLastChange": 1
+   },
+   "iri": "http://senso-framework.org/data/python-trio__trio-3096/module/src_trio__highlevel_generic.py-101b54",
+   "abox_asserted": true
+  },
+  "src/trio/_highlevel_open_tcp_listeners.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "src/trio/_highlevel_open_tcp_listeners.py",
+    "moduleLoc": 202,
+    "moduleCommitsInWindow": 5,
+    "moduleChangeMonthsInWindow": 5,
+    "moduleLinesChangedInWindow": 283,
+    "moduleRelChurnInWindow": 1.40099,
+    "moduleMonthsSinceLastChange": 1
+   },
+   "iri": "http://senso-framework.org/data/python-trio__trio-3096/module/src_trio__highlevel_open_tcp_listeners.py-f45125",
+   "abox_asserted": true
+  },
+  "src/trio/_highlevel_open_tcp_stream.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "src/trio/_highlevel_open_tcp_stream.py",
+    "moduleLoc": 363,
+    "moduleCommitsInWindow": 3,
+    "moduleChangeMonthsInWindow": 3,
+    "moduleLinesChangedInWindow": 425,
+    "moduleRelChurnInWindow": 1.170799,
+    "moduleMonthsSinceLastChange": 1
+   },
+   "iri": "http://senso-framework.org/data/python-trio__trio-3096/module/src_trio__highlevel_open_tcp_stream.py-575708",
+   "abox_asserted": true
+  },
+  "src/trio/_highlevel_open_unix_stream.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "RarelyChangedModule"
+   ],
+   "measures": {
+    "modulePath": "src/trio/_highlevel_open_unix_stream.py",
+    "moduleLoc": 45,
+    "moduleCommitsInWindow": 2,
+    "moduleChangeMonthsInWindow": 2,
+    "moduleLinesChangedInWindow": 69,
+    "moduleRelChurnInWindow": 1.533333,
+    "moduleMonthsSinceLastChange": 8
+   },
+   "iri": "http://senso-framework.org/data/python-trio__trio-3096/module/src_trio__highlevel_open_unix_stream.py-ae53ec",
+   "abox_asserted": true
+  },
+  "src/trio/_highlevel_serve_listeners.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "RarelyChangedModule"
+   ],
+   "measures": {
+    "modulePath": "src/trio/_highlevel_serve_listeners.py",
+    "moduleLoc": 114,
+    "moduleCommitsInWindow": 2,
+    "moduleChangeMonthsInWindow": 2,
+    "moduleLinesChangedInWindow": 149,
+    "moduleRelChurnInWindow": 1.307018,
+    "moduleMonthsSinceLastChange": 1
+   },
+   "iri": "http://senso-framework.org/data/python-trio__trio-3096/module/src_trio__highlevel_serve_listeners.py-0c9801",
+   "abox_asserted": true
+  },
+  "src/trio/_highlevel_socket.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "src/trio/_highlevel_socket.py",
+    "moduleLoc": 355,
+    "moduleCommitsInWindow": 3,
+    "moduleChangeMonthsInWindow": 3,
+    "moduleLinesChangedInWindow": 436,
+    "moduleRelChurnInWindow": 1.228169,
+    "moduleMonthsSinceLastChange": 1
+   },
+   "iri": "http://senso-framework.org/data/python-trio__trio-3096/module/src_trio__highlevel_socket.py-f086b1",
+   "abox_asserted": true
+  },
+  "src/trio/_highlevel_ssl_helpers.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "RarelyChangedModule"
+   ],
+   "measures": {
+    "modulePath": "src/trio/_highlevel_ssl_helpers.py",
+    "moduleLoc": 145,
+    "moduleCommitsInWindow": 2,
+    "moduleChangeMonthsInWindow": 2,
+    "moduleLinesChangedInWindow": 186,
+    "moduleRelChurnInWindow": 1.282759,
+    "moduleMonthsSinceLastChange": 1
+   },
+   "iri": "http://senso-framework.org/data/python-trio__trio-3096/module/src_trio__highlevel_ssl_helpers.py-a62293",
+   "abox_asserted": true
+  },
+  "src/trio/_path.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "src/trio/_path.py",
+    "moduleLoc": 219,
+    "moduleCommitsInWindow": 8,
+    "moduleChangeMonthsInWindow": 7,
+    "moduleLinesChangedInWindow": 1104,
+    "moduleRelChurnInWindow": 5.041096,
+    "moduleMonthsSinceLastChange": 1
+   },
+   "iri": "http://senso-framework.org/data/python-trio__trio-3096/module/src_trio__path.py-ed5f1a",
+   "abox_asserted": true
+  },
+  "src/trio/_repl.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "RarelyChangedModule"
+   ],
+   "measures": {
+    "modulePath": "src/trio/_repl.py",
+    "moduleLoc": 78,
+    "moduleCommitsInWindow": 2,
+    "moduleChangeMonthsInWindow": 1,
+    "moduleLinesChangedInWindow": 126,
+    "moduleRelChurnInWindow": 1.615385,
+    "moduleMonthsSinceLastChange": 4
+   },
+   "iri": "http://senso-framework.org/data/python-trio__trio-3096/module/src_trio__repl.py-08e589",
+   "abox_asserted": true
+  },
+  "src/trio/_signals.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "RarelyChangedModule"
+   ],
+   "measures": {
+    "modulePath": "src/trio/_signals.py",
+    "moduleLoc": 152,
+    "moduleCommitsInWindow": 2,
+    "moduleChangeMonthsInWindow": 2,
+    "moduleLinesChangedInWindow": 189,
+    "moduleRelChurnInWindow": 1.243421,
+    "moduleMonthsSinceLastChange": 1
+   },
+   "iri": "http://senso-framework.org/data/python-trio__trio-3096/module/src_trio__signals.py-abde86",
+   "abox_asserted": true
+  },
+  "src/trio/_socket.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "src/trio/_socket.py",
+    "moduleLoc": 1103,
+    "moduleCommitsInWindow": 10,
+    "moduleChangeMonthsInWindow": 5,
+    "moduleLinesChangedInWindow": 1503,
+    "moduleRelChurnInWindow": 1.362647,
+    "moduleMonthsSinceLastChange": 1
+   },
+   "iri": "http://senso-framework.org/data/python-trio__trio-3096/module/src_trio__socket.py-72114b",
+   "abox_asserted": true
+  },
+  "src/trio/_ssl.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "RarelyChangedModule"
+   ],
+   "measures": {
+    "modulePath": "src/trio/_ssl.py",
+    "moduleLoc": 854,
+    "moduleCommitsInWindow": 3,
+    "moduleChangeMonthsInWindow": 2,
+    "moduleLinesChangedInWindow": 957,
+    "moduleRelChurnInWindow": 1.120609,
+    "moduleMonthsSinceLastChange": 1
+   },
+   "iri": "http://senso-framework.org/data/python-trio__trio-3096/module/src_trio__ssl.py-bc05d5",
+   "abox_asserted": true
+  },
+  "src/trio/_subprocess.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "src/trio/_subprocess.py",
+    "moduleLoc": 980,
+    "moduleCommitsInWindow": 16,
+    "moduleChangeMonthsInWindow": 7,
+    "moduleLinesChangedInWindow": 1484,
+    "moduleRelChurnInWindow": 1.514286,
+    "moduleMonthsSinceLastChange": 0
+   },
+   "iri": "http://senso-framework.org/data/python-trio__trio-3096/module/src_trio__subprocess.py-5d5514",
+   "abox_asserted": true
+  },
+  "src/trio/_subprocess_platform": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "src/trio/_subprocess_platform",
+    "moduleLoc": 235,
+    "moduleCommitsInWindow": 6,
+    "moduleChangeMonthsInWindow": 4,
+    "moduleLinesChangedInWindow": 329,
+    "moduleRelChurnInWindow": 1.4,
+    "moduleMonthsSinceLastChange": 1
+   },
+   "iri": "http://senso-framework.org/data/python-trio__trio-3096/module/src_trio__subprocess_platform-7a1a2d",
+   "abox_asserted": true
+  },
+  "src/trio/_sync.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "src/trio/_sync.py",
+    "moduleLoc": 659,
+    "moduleCommitsInWindow": 6,
+    "moduleChangeMonthsInWindow": 5,
+    "moduleLinesChangedInWindow": 920,
+    "moduleRelChurnInWindow": 1.396055,
+    "moduleMonthsSinceLastChange": 1
+   },
+   "iri": "http://senso-framework.org/data/python-trio__trio-3096/module/src_trio__sync.py-c89ed7",
+   "abox_asserted": true
+  },
+  "src/trio/_tests": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "src/trio/_tests",
+    "moduleLoc": 625,
+    "moduleCommitsInWindow": 13,
+    "moduleChangeMonthsInWindow": 7,
+    "moduleLinesChangedInWindow": 1232,
+    "moduleRelChurnInWindow": 1.9712,
+    "moduleMonthsSinceLastChange": 1
+   },
+   "iri": "http://senso-framework.org/data/python-trio__trio-3096/module/src_trio__tests-f03e07",
+   "abox_asserted": true
+  },
+  "src/trio/_threads.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "src/trio/_threads.py",
+    "moduleLoc": 492,
+    "moduleCommitsInWindow": 13,
+    "moduleChangeMonthsInWindow": 7,
+    "moduleLinesChangedInWindow": 940,
+    "moduleRelChurnInWindow": 1.910569,
+    "moduleMonthsSinceLastChange": 1
+   },
+   "iri": "http://senso-framework.org/data/python-trio__trio-3096/module/src_trio__threads.py-362bf7",
+   "abox_asserted": true
+  },
+  "src/trio/_timeouts.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "src/trio/_timeouts.py",
+    "moduleLoc": 144,
+    "moduleCommitsInWindow": 19,
+    "moduleChangeMonthsInWindow": 4,
+    "moduleLinesChangedInWindow": 813,
+    "moduleRelChurnInWindow": 5.645833,
+    "moduleMonthsSinceLastChange": 0
+   },
+   "iri": "http://senso-framework.org/data/python-trio__trio-3096/module/src_trio__timeouts.py-2771ee",
+   "abox_asserted": true
+  },
+  "src/trio/_tools": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "src/trio/_tools",
+    "moduleLoc": 438,
+    "moduleCommitsInWindow": 11,
+    "moduleChangeMonthsInWindow": 9,
+    "moduleLinesChangedInWindow": 578,
+    "moduleRelChurnInWindow": 1.319635,
+    "moduleMonthsSinceLastChange": 0
+   },
+   "iri": "http://senso-framework.org/data/python-trio__trio-3096/module/src_trio__tools-100de2",
+   "abox_asserted": true
+  },
+  "src/trio/_unix_pipes.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "src/trio/_unix_pipes.py",
+    "moduleLoc": 173,
+    "moduleCommitsInWindow": 3,
+    "moduleChangeMonthsInWindow": 3,
+    "moduleLinesChangedInWindow": 216,
+    "moduleRelChurnInWindow": 1.248555,
+    "moduleMonthsSinceLastChange": 1
+   },
+   "iri": "http://senso-framework.org/data/python-trio__trio-3096/module/src_trio__unix_pipes.py-85e41a",
+   "abox_asserted": true
+  },
+  "src/trio/_util.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "src/trio/_util.py",
+    "moduleLoc": 329,
+    "moduleCommitsInWindow": 8,
+    "moduleChangeMonthsInWindow": 6,
+    "moduleLinesChangedInWindow": 499,
+    "moduleRelChurnInWindow": 1.516717,
+    "moduleMonthsSinceLastChange": 1
+   },
+   "iri": "http://senso-framework.org/data/python-trio__trio-3096/module/src_trio__util.py-68092e",
+   "abox_asserted": true
+  },
+  "src/trio/_version.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "src/trio/_version.py",
+    "moduleLoc": 2,
+    "moduleCommitsInWindow": 15,
+    "moduleChangeMonthsInWindow": 7,
+    "moduleLinesChangedInWindow": 31,
+    "moduleRelChurnInWindow": 15.5,
+    "moduleMonthsSinceLastChange": 1
+   },
+   "iri": "http://senso-framework.org/data/python-trio__trio-3096/module/src_trio__version.py-afafde",
+   "abox_asserted": true
+  },
+  "src/trio/_wait_for_object.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "RarelyChangedModule"
+   ],
+   "measures": {
+    "modulePath": "src/trio/_wait_for_object.py",
+    "moduleLoc": 55,
+    "moduleCommitsInWindow": 1,
+    "moduleChangeMonthsInWindow": 1,
+    "moduleLinesChangedInWindow": 67,
+    "moduleRelChurnInWindow": 1.218182,
+    "moduleMonthsSinceLastChange": 10
+   },
+   "iri": "http://senso-framework.org/data/python-trio__trio-3096/module/src_trio__wait_for_object.py-a5c15f",
+   "abox_asserted": true
+  },
+  "src/trio/_windows_pipes.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "RarelyChangedModule"
+   ],
+   "measures": {
+    "modulePath": "src/trio/_windows_pipes.py",
+    "moduleLoc": 116,
+    "moduleCommitsInWindow": 2,
+    "moduleChangeMonthsInWindow": 2,
+    "moduleLinesChangedInWindow": 152,
+    "moduleRelChurnInWindow": 1.310345,
+    "moduleMonthsSinceLastChange": 1
+   },
+   "iri": "http://senso-framework.org/data/python-trio__trio-3096/module/src_trio__windows_pipes.py-faed23",
+   "abox_asserted": true
+  },
+  "src/trio/abc.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "RarelyChangedModule"
+   ],
+   "measures": {
+    "modulePath": "src/trio/abc.py",
+    "moduleLoc": 22,
+    "moduleCommitsInWindow": 1,
+    "moduleChangeMonthsInWindow": 1,
+    "moduleLinesChangedInWindow": 23,
+    "moduleRelChurnInWindow": 1.045455,
+    "moduleMonthsSinceLastChange": 10
+   },
+   "iri": "http://senso-framework.org/data/python-trio__trio-3096/module/src_trio_abc.py-7f718d",
+   "abox_asserted": true
+  },
+  "src/trio/from_thread.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "RarelyChangedModule"
+   ],
+   "measures": {
+    "modulePath": "src/trio/from_thread.py",
+    "moduleLoc": 11,
+    "moduleCommitsInWindow": 2,
+    "moduleChangeMonthsInWindow": 2,
+    "moduleLinesChangedInWindow": 15,
+    "moduleRelChurnInWindow": 1.363636,
+    "moduleMonthsSinceLastChange": 8
+   },
+   "iri": "http://senso-framework.org/data/python-trio__trio-3096/module/src_trio_from_thread.py-2e2355",
+   "abox_asserted": true
+  },
+  "src/trio/lowlevel.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "RarelyChangedModule"
+   ],
+   "measures": {
+    "modulePath": "src/trio/lowlevel.py",
+    "moduleLoc": 73,
+    "moduleCommitsInWindow": 2,
+    "moduleChangeMonthsInWindow": 2,
+    "moduleLinesChangedInWindow": 83,
+    "moduleRelChurnInWindow": 1.136986,
+    "moduleMonthsSinceLastChange": 8
+   },
+   "iri": "http://senso-framework.org/data/python-trio__trio-3096/module/src_trio_lowlevel.py-3300c6",
+   "abox_asserted": true
+  },
+  "src/trio/socket.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "src/trio/socket.py",
+    "moduleLoc": 573,
+    "moduleCommitsInWindow": 8,
+    "moduleChangeMonthsInWindow": 4,
+    "moduleLinesChangedInWindow": 618,
+    "moduleRelChurnInWindow": 1.078534,
+    "moduleMonthsSinceLastChange": 1
+   },
+   "iri": "http://senso-framework.org/data/python-trio__trio-3096/module/src_trio_socket.py-017ff3",
+   "abox_asserted": true
+  },
+  "src/trio/to_thread.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "RarelyChangedModule"
+   ],
+   "measures": {
+    "modulePath": "src/trio/to_thread.py",
+    "moduleLoc": 3,
+    "moduleCommitsInWindow": 1,
+    "moduleChangeMonthsInWindow": 1,
+    "moduleLinesChangedInWindow": 4,
+    "moduleRelChurnInWindow": 1.333333,
+    "moduleMonthsSinceLastChange": 10
+   },
+   "iri": "http://senso-framework.org/data/python-trio__trio-3096/module/src_trio_to_thread.py-68826d",
+   "abox_asserted": true
+  }
+ },
+ "explanations": {
+  "stage:GrowthStage": {
+   "class": "GrowthStage",
+   "individual": "http://senso-framework.org/data/python-trio__trio-3096",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/python-trio__trio-3096 type http://senso-framework.org/ontology/seo#GrowthStage",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKTau_gt_0",
+       "text": "A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "GrowthStage",
+       "text": "GrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKpValue_lt_mk_alpha",
+       "text": "A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "python-trio__trio-3096",
+       "prop": "locSeriesLength",
+       "value": 36,
+       "raw": "python-trio__trio-3096 locSeriesLength 36"
+      },
+      {
+       "subject": "python-trio__trio-3096",
+       "prop": "locMKpValue",
+       "value": 0.0,
+       "raw": "python-trio__trio-3096 locMKpValue 0.0"
+      },
+      {
+       "subject": "python-trio__trio-3096",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "python-trio__trio-3096 type SoftwareProject"
+      },
+      {
+       "subject": "python-trio__trio-3096",
+       "prop": "locMKTau",
+       "value": 0.922222,
+       "raw": "python-trio__trio-3096 locMKTau 0.922222"
+      }
+     ],
+     "closures": [],
+     "raw": "A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\npython-trio__trio-3096 locSeriesLength 36\nA_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\nGrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject\npython-trio__trio-3096 locMKpValue 0.0\nA_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]\npython-trio__trio-3096 type SoftwareProject\nA_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\npython-trio__trio-3096 locMKTau 0.922222"
+    }
+   ],
+   "raw_text": "Axiom: python-trio__trio-3096 type GrowthStage\n\nExplanation(s): \n1)   A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\n     python-trio__trio-3096 locSeriesLength 36\n     A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\n     GrowthStage equivalentTo A_locMKTau_gt_0\n                              and A_locMKpValue_lt_mk_alpha\n                              and MKApplicable\n                              and SoftwareProject\n     python-trio__trio-3096 locMKpValue 0.0\n     A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]\n     python-trio__trio-3096 type SoftwareProject\n     A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\n     python-trio__trio-3096 locMKTau 0.922222\n\n\n",
+   "seconds": 2.645572318986524,
+   "returncode": 0,
+   "error": null
+  },
+  "stage:RBActiveDevelopmentStage": {
+   "class": "RBActiveDevelopmentStage",
+   "individual": "http://senso-framework.org/data/python-trio__trio-3096",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/python-trio__trio-3096 type http://senso-framework.org/ontology/seo#RBActiveDevelopmentStage",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable"
+      },
+      {
+       "kind": "definition",
+       "subject": "SubstantialLocGrowth",
+       "text": "SubstantialLocGrowth equivalentTo A_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKTau_gt_0",
+       "text": "A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "GrowthStage",
+       "text": "GrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year",
+       "text": "A_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year equivalentTo locRelSenSlopeAnnual some decimal[>= 0.05]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]"
+      },
+      {
+       "kind": "definition",
+       "subject": "RBActiveDevelopmentStage",
+       "text": "RBActiveDevelopmentStage equivalentTo GrowthStage and RecentlyActive and SoftwareProject and SubstantialLocGrowth"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKpValue_lt_mk_alpha",
+       "text": "A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]"
+      },
+      {
+       "kind": "definition",
+       "subject": "RecentlyActive",
+       "text": "RecentlyActive equivalentTo A_monthsSinceLastCommit_lt_rb_dormancy_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_monthsSinceLastCommit_lt_rb_dormancy_months",
+       "text": "A_monthsSinceLastCommit_lt_rb_dormancy_months equivalentTo monthsSinceLastCommit some integer[< 12]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "python-trio__trio-3096",
+       "prop": "locSeriesLength",
+       "value": 36,
+       "raw": "python-trio__trio-3096 locSeriesLength 36"
+      },
+      {
+       "subject": "python-trio__trio-3096",
+       "prop": "locMKpValue",
+       "value": 0.0,
+       "raw": "python-trio__trio-3096 locMKpValue 0.0"
+      },
+      {
+       "subject": "python-trio__trio-3096",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "python-trio__trio-3096 type SoftwareProject"
+      },
+      {
+       "subject": "python-trio__trio-3096",
+       "prop": "locRelSenSlopeAnnual",
+       "value": 0.123108,
+       "raw": "python-trio__trio-3096 locRelSenSlopeAnnual 0.123108"
+      },
+      {
+       "subject": "python-trio__trio-3096",
+       "prop": "monthsSinceLastCommit",
+       "value": 0,
+       "raw": "python-trio__trio-3096 monthsSinceLastCommit 0"
+      },
+      {
+       "subject": "python-trio__trio-3096",
+       "prop": "locMKTau",
+       "value": 0.922222,
+       "raw": "python-trio__trio-3096 locMKTau 0.922222"
+      }
+     ],
+     "closures": [],
+     "raw": "A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\npython-trio__trio-3096 locSeriesLength 36\nSubstantialLocGrowth equivalentTo A_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year and SoftwareProject\nA_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\nGrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject\nA_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year equivalentTo locRelSenSlopeAnnual some decimal[>= 0.05]\npython-trio__trio-3096 locMKpValue 0.0\nA_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]\npython-trio__trio-3096 type SoftwareProject\nRBActiveDevelopmentStage equivalentTo GrowthStage and RecentlyActive and SoftwareProject and SubstantialLocGrowth\npython-trio__trio-3096 locRelSenSlopeAnnual 0.123108\nA_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\nRecentlyActive equivalentTo A_monthsSinceLastCommit_lt_rb_dormancy_months and SoftwareProject\npython-trio__trio-3096 monthsSinceLastCommit 0\npython-trio__trio-3096 locMKTau 0.922222\nA_monthsSinceLastCommit_lt_rb_dormancy_months equivalentTo monthsSinceLastCommit some integer[< 12]"
+    }
+   ],
+   "raw_text": "Axiom: python-trio__trio-3096 type RBActiveDevelopmentStage\n\nExplanation(s): \n1)   A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\n     python-trio__trio-3096 locSeriesLength 36\n     SubstantialLocGrowth equivalentTo A_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year\n                                       and SoftwareProject\n     A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\n     GrowthStage equivalentTo A_locMKTau_gt_0\n                              and A_locMKpValue_lt_mk_alpha\n                              and MKApplicable\n                              and SoftwareProject\n     A_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year equivalentTo locRelSenSlopeAnnual some decimal[>= 0.05]\n     python-trio__trio-3096 locMKpValue 0.0\n     A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]\n     python-trio__trio-3096 type SoftwareProject\n     RBActiveDevelopmentStage equivalentTo GrowthStage\n                                           and RecentlyActive\n                                           and SoftwareProject\n                                           and SubstantialLocGrowth\n     python-trio__trio-3096 locRelSenSlopeAnnual 0.123108\n     A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\n     RecentlyActive equivalentTo A_monthsSinceLastCommit_lt_rb_dormancy_months\n                                 and SoftwareProject\n     python-trio__trio-3096 monthsSinceLastCommit 0\n     python-trio__trio-3096 locMKTau 0.922222\n     A_monthsSinceLastCommit_lt_rb_dormancy_months equivalentTo monthsSinceLastCommit some integer[< 12]\n\n\n",
+   "seconds": 2.7166839249548502,
+   "returncode": 0,
+   "error": null
+  },
+  "lawI": {
+   "class": "LawIConformant",
+   "individual": "http://senso-framework.org/data/python-trio__trio-3096",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/python-trio__trio-3096 type http://senso-framework.org/ontology/seo#LawIConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law1_min_months",
+       "text": "A_monthsObserved_ge_p_law1_min_months equivalentTo monthsObserved some integer[>= 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawIConformant",
+       "text": "LawIConformant equivalentTo A_activeMonthRatio_ge_p_law1_active_ratio and A_monthsObserved_ge_p_law1_min_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_activeMonthRatio_ge_p_law1_active_ratio",
+       "text": "A_activeMonthRatio_ge_p_law1_active_ratio equivalentTo activeMonthRatio some decimal[>= 0.5]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "python-trio__trio-3096",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "python-trio__trio-3096 monthsObserved 36"
+      },
+      {
+       "subject": "python-trio__trio-3096",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "python-trio__trio-3096 type SoftwareProject"
+      },
+      {
+       "subject": "python-trio__trio-3096",
+       "prop": "activeMonthRatio",
+       "value": 1.0,
+       "raw": "python-trio__trio-3096 activeMonthRatio 1.0"
+      }
+     ],
+     "closures": [],
+     "raw": "A_monthsObserved_ge_p_law1_min_months equivalentTo monthsObserved some integer[>= 2]\npython-trio__trio-3096 monthsObserved 36\npython-trio__trio-3096 type SoftwareProject\npython-trio__trio-3096 activeMonthRatio 1.0\nLawIConformant equivalentTo A_activeMonthRatio_ge_p_law1_active_ratio and A_monthsObserved_ge_p_law1_min_months and SoftwareProject\nA_activeMonthRatio_ge_p_law1_active_ratio equivalentTo activeMonthRatio some decimal[>= 0.5]"
+    }
+   ],
+   "raw_text": "Axiom: python-trio__trio-3096 type LawIConformant\n\nExplanation(s): \n1)   A_monthsObserved_ge_p_law1_min_months equivalentTo monthsObserved some integer[>= 2]\n     python-trio__trio-3096 monthsObserved 36\n     python-trio__trio-3096 type SoftwareProject\n     python-trio__trio-3096 activeMonthRatio 1.0\n     LawIConformant equivalentTo A_activeMonthRatio_ge_p_law1_active_ratio\n                                 and A_monthsObserved_ge_p_law1_min_months\n                                 and SoftwareProject\n     A_activeMonthRatio_ge_p_law1_active_ratio equivalentTo activeMonthRatio some decimal[>= 0.5]\n\n\n",
+   "seconds": 2.5505459620035253,
+   "returncode": 0,
+   "error": null
+  },
+  "lawIII": {
+   "class": "LawIIINonConformant",
+   "individual": "http://senso-framework.org/data/python-trio__trio-3096",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/python-trio__trio-3096 type http://senso-framework.org/ontology/seo#LawIIINonConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_churnCV_ge_p_law3_churn_cv",
+       "text": "A_churnCV_ge_p_law3_churn_cv equivalentTo churnCV some decimal[>= 2.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law3_min_months",
+       "text": "A_monthsObserved_ge_p_law3_min_months equivalentTo monthsObserved some integer[>= 6]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawIIINonConformant",
+       "text": "LawIIINonConformant equivalentTo A_churnCV_ge_p_law3_churn_cv and A_monthsObserved_ge_p_law3_min_months and SoftwareProject"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "python-trio__trio-3096",
+       "prop": "churnCV",
+       "value": 3.309004,
+       "raw": "python-trio__trio-3096 churnCV 3.309004"
+      },
+      {
+       "subject": "python-trio__trio-3096",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "python-trio__trio-3096 monthsObserved 36"
+      },
+      {
+       "subject": "python-trio__trio-3096",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "python-trio__trio-3096 type SoftwareProject"
+      }
+     ],
+     "closures": [],
+     "raw": "A_churnCV_ge_p_law3_churn_cv equivalentTo churnCV some decimal[>= 2.0]\nA_monthsObserved_ge_p_law3_min_months equivalentTo monthsObserved some integer[>= 6]\npython-trio__trio-3096 churnCV 3.309004\npython-trio__trio-3096 monthsObserved 36\npython-trio__trio-3096 type SoftwareProject\nLawIIINonConformant equivalentTo A_churnCV_ge_p_law3_churn_cv and A_monthsObserved_ge_p_law3_min_months and SoftwareProject"
+    }
+   ],
+   "raw_text": "Axiom: python-trio__trio-3096 type LawIIINonConformant\n\nExplanation(s): \n1)   A_churnCV_ge_p_law3_churn_cv equivalentTo churnCV some decimal[>= 2.0]\n     A_monthsObserved_ge_p_law3_min_months equivalentTo monthsObserved some integer[>= 6]\n     python-trio__trio-3096 churnCV 3.309004\n     python-trio__trio-3096 monthsObserved 36\n     python-trio__trio-3096 type SoftwareProject\n     LawIIINonConformant equivalentTo A_churnCV_ge_p_law3_churn_cv\n                                      and A_monthsObserved_ge_p_law3_min_months\n                                      and SoftwareProject\n\n\n",
+   "seconds": 2.683274941984564,
+   "returncode": 0,
+   "error": null
+  },
+  "lawIV": {
+   "class": "LawIVConformant",
+   "individual": "http://senso-framework.org/data/python-trio__trio-3096",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/python-trio__trio-3096 type http://senso-framework.org/ontology/seo#LawIVConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law4_min_months",
+       "text": "A_monthsObserved_ge_p_law4_min_months equivalentTo monthsObserved some integer[>= 6]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawIVConformant",
+       "text": "LawIVConformant equivalentTo A_commitCountCV_lt_p_law4_commit_cv and A_monthsObserved_ge_p_law4_min_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_commitCountCV_lt_p_law4_commit_cv",
+       "text": "A_commitCountCV_lt_p_law4_commit_cv equivalentTo commitCountCV some decimal[< 1.5]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "python-trio__trio-3096",
+       "prop": "commitCountCV",
+       "value": 0.59975,
+       "raw": "python-trio__trio-3096 commitCountCV 0.59975"
+      },
+      {
+       "subject": "python-trio__trio-3096",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "python-trio__trio-3096 monthsObserved 36"
+      },
+      {
+       "subject": "python-trio__trio-3096",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "python-trio__trio-3096 type SoftwareProject"
+      }
+     ],
+     "closures": [],
+     "raw": "A_monthsObserved_ge_p_law4_min_months equivalentTo monthsObserved some integer[>= 6]\npython-trio__trio-3096 commitCountCV 0.59975\nLawIVConformant equivalentTo A_commitCountCV_lt_p_law4_commit_cv and A_monthsObserved_ge_p_law4_min_months and SoftwareProject\npython-trio__trio-3096 monthsObserved 36\npython-trio__trio-3096 type SoftwareProject\nA_commitCountCV_lt_p_law4_commit_cv equivalentTo commitCountCV some decimal[< 1.5]"
+    }
+   ],
+   "raw_text": "Axiom: python-trio__trio-3096 type LawIVConformant\n\nExplanation(s): \n1)   A_monthsObserved_ge_p_law4_min_months equivalentTo monthsObserved some integer[>= 6]\n     python-trio__trio-3096 commitCountCV 0.59975\n     LawIVConformant equivalentTo A_commitCountCV_lt_p_law4_commit_cv\n                                  and A_monthsObserved_ge_p_law4_min_months\n                                  and SoftwareProject\n     python-trio__trio-3096 monthsObserved 36\n     python-trio__trio-3096 type SoftwareProject\n     A_commitCountCV_lt_p_law4_commit_cv equivalentTo commitCountCV some decimal[< 1.5]\n\n\n",
+   "seconds": 2.569931782025378,
+   "returncode": 0,
+   "error": null
+  },
+  "lawV": {
+   "class": "LawVNonConformant",
+   "individual": "http://senso-framework.org/data/python-trio__trio-3096",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/python-trio__trio-3096 type http://senso-framework.org/ontology/seo#LawVNonConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_linesAddedCV_ge_p_law5_additions_cv",
+       "text": "A_linesAddedCV_ge_p_law5_additions_cv equivalentTo linesAddedCV some decimal[>= 2.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawVNonConformant",
+       "text": "LawVNonConformant equivalentTo A_linesAddedCV_ge_p_law5_additions_cv and A_monthsObserved_ge_p_law5_min_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law5_min_months",
+       "text": "A_monthsObserved_ge_p_law5_min_months equivalentTo monthsObserved some integer[>= 4]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "python-trio__trio-3096",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "python-trio__trio-3096 monthsObserved 36"
+      },
+      {
+       "subject": "python-trio__trio-3096",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "python-trio__trio-3096 type SoftwareProject"
+      },
+      {
+       "subject": "python-trio__trio-3096",
+       "prop": "linesAddedCV",
+       "value": 3.120483,
+       "raw": "python-trio__trio-3096 linesAddedCV 3.120483"
+      }
+     ],
+     "closures": [],
+     "raw": "A_linesAddedCV_ge_p_law5_additions_cv equivalentTo linesAddedCV some decimal[>= 2.0]\nLawVNonConformant equivalentTo A_linesAddedCV_ge_p_law5_additions_cv and A_monthsObserved_ge_p_law5_min_months and SoftwareProject\nA_monthsObserved_ge_p_law5_min_months equivalentTo monthsObserved some integer[>= 4]\npython-trio__trio-3096 monthsObserved 36\npython-trio__trio-3096 type SoftwareProject\npython-trio__trio-3096 linesAddedCV 3.120483"
+    }
+   ],
+   "raw_text": "Axiom: python-trio__trio-3096 type LawVNonConformant\n\nExplanation(s): \n1)   A_linesAddedCV_ge_p_law5_additions_cv equivalentTo linesAddedCV some decimal[>= 2.0]\n     LawVNonConformant equivalentTo A_linesAddedCV_ge_p_law5_additions_cv\n                                    and A_monthsObserved_ge_p_law5_min_months\n                                    and SoftwareProject\n     A_monthsObserved_ge_p_law5_min_months equivalentTo monthsObserved some integer[>= 4]\n     python-trio__trio-3096 monthsObserved 36\n     python-trio__trio-3096 type SoftwareProject\n     python-trio__trio-3096 linesAddedCV 3.120483\n\n\n",
+   "seconds": 2.802478016994428,
+   "returncode": 0,
+   "error": null
+  },
+  "lawVI": {
+   "class": "LawVIConformant",
+   "individual": "http://senso-framework.org/data/python-trio__trio-3096",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/python-trio__trio-3096 type http://senso-framework.org/ontology/seo#LawVIConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "subclass",
+       "subject": "GrowthStage",
+       "text": "GrowthStage subClassOf LawVIConformant"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKTau_gt_0",
+       "text": "A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKpValue_lt_mk_alpha",
+       "text": "A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]"
+      },
+      {
+       "kind": "definition",
+       "subject": "GrowthStage",
+       "text": "GrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "python-trio__trio-3096",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "python-trio__trio-3096 type SoftwareProject"
+      },
+      {
+       "subject": "python-trio__trio-3096",
+       "prop": "locSeriesLength",
+       "value": 36,
+       "raw": "python-trio__trio-3096 locSeriesLength 36"
+      },
+      {
+       "subject": "python-trio__trio-3096",
+       "prop": "locMKpValue",
+       "value": 0.0,
+       "raw": "python-trio__trio-3096 locMKpValue 0.0"
+      },
+      {
+       "subject": "python-trio__trio-3096",
+       "prop": "locMKTau",
+       "value": 0.922222,
+       "raw": "python-trio__trio-3096 locMKTau 0.922222"
+      }
+     ],
+     "closures": [],
+     "raw": "python-trio__trio-3096 type SoftwareProject\nGrowthStage subClassOf LawVIConformant\nA_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\npython-trio__trio-3096 locSeriesLength 36\nA_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\nA_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\nGrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject\npython-trio__trio-3096 locMKpValue 0.0\npython-trio__trio-3096 locMKTau 0.922222\nA_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]"
+    }
+   ],
+   "raw_text": "Axiom: python-trio__trio-3096 type LawVIConformant\n\nExplanation(s): \n1)   python-trio__trio-3096 type SoftwareProject\n     GrowthStage subClassOf LawVIConformant\n     A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\n     python-trio__trio-3096 locSeriesLength 36\n     A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\n     A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\n     GrowthStage equivalentTo A_locMKTau_gt_0\n                              and A_locMKpValue_lt_mk_alpha\n                              and MKApplicable\n                              and SoftwareProject\n     python-trio__trio-3096 locMKpValue 0.0\n     python-trio__trio-3096 locMKTau 0.922222\n     A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]\n\n\n",
+   "seconds": 2.6670518849859945,
+   "returncode": 0,
+   "error": null
+  },
+  "lawVII": {
+   "class": "LawVIIConformant",
+   "individual": "http://senso-framework.org/data/python-trio__trio-3096",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/python-trio__trio-3096 type http://senso-framework.org/ontology/seo#LawVIIConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_bugFixHalfRatio_ge_p_law7_tolerance",
+       "text": "A_bugFixHalfRatio_ge_p_law7_tolerance equivalentTo bugFixHalfRatio some decimal[>= 0.9]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawVIIConformantRatio",
+       "text": "LawVIIConformantRatio equivalentTo A_activeMonthCount_ge_p_law7_min_active_months and A_bugFixHalfRatio_ge_p_law7_tolerance and A_bugFixRatioFirstHalf_gt_0 and SoftwareProject"
+      },
+      {
+       "kind": "subclass",
+       "subject": "LawVIIConformantRatio",
+       "text": "LawVIIConformantRatio subClassOf LawVIIConformant"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_bugFixRatioFirstHalf_gt_0",
+       "text": "A_bugFixRatioFirstHalf_gt_0 equivalentTo bugFixRatioFirstHalf some decimal[> 0.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_activeMonthCount_ge_p_law7_min_active_months",
+       "text": "A_activeMonthCount_ge_p_law7_min_active_months equivalentTo activeMonthCount some integer[>= 4]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "python-trio__trio-3096",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "python-trio__trio-3096 type SoftwareProject"
+      },
+      {
+       "subject": "python-trio__trio-3096",
+       "prop": "bugFixRatioFirstHalf",
+       "value": 0.126933,
+       "raw": "python-trio__trio-3096 bugFixRatioFirstHalf 0.126933"
+      },
+      {
+       "subject": "python-trio__trio-3096",
+       "prop": "bugFixHalfRatio",
+       "value": 1.152005,
+       "raw": "python-trio__trio-3096 bugFixHalfRatio 1.152005"
+      },
+      {
+       "subject": "python-trio__trio-3096",
+       "prop": "activeMonthCount",
+       "value": 36,
+       "raw": "python-trio__trio-3096 activeMonthCount 36"
+      }
+     ],
+     "closures": [],
+     "raw": "A_bugFixHalfRatio_ge_p_law7_tolerance equivalentTo bugFixHalfRatio some decimal[>= 0.9]\nLawVIIConformantRatio equivalentTo A_activeMonthCount_ge_p_law7_min_active_months and A_bugFixHalfRatio_ge_p_law7_tolerance and A_bugFixRatioFirstHalf_gt_0 and SoftwareProject\npython-trio__trio-3096 type SoftwareProject\nLawVIIConformantRatio subClassOf LawVIIConformant\npython-trio__trio-3096 bugFixRatioFirstHalf 0.126933\npython-trio__trio-3096 bugFixHalfRatio 1.152005\nA_bugFixRatioFirstHalf_gt_0 equivalentTo bugFixRatioFirstHalf some decimal[> 0.0]\nA_activeMonthCount_ge_p_law7_min_active_months equivalentTo activeMonthCount some integer[>= 4]\npython-trio__trio-3096 activeMonthCount 36"
+    }
+   ],
+   "raw_text": "Axiom: python-trio__trio-3096 type LawVIIConformant\n\nExplanation(s): \n1)   A_bugFixHalfRatio_ge_p_law7_tolerance equivalentTo bugFixHalfRatio some decimal[>= 0.9]\n     LawVIIConformantRatio equivalentTo A_activeMonthCount_ge_p_law7_min_active_months\n                                        and A_bugFixHalfRatio_ge_p_law7_tolerance\n                                        and A_bugFixRatioFirstHalf_gt_0\n                                        and SoftwareProject\n     python-trio__trio-3096 type SoftwareProject\n     LawVIIConformantRatio subClassOf LawVIIConformant\n     python-trio__trio-3096 bugFixRatioFirstHalf 0.126933\n     python-trio__trio-3096 bugFixHalfRatio 1.152005\n     A_bugFixRatioFirstHalf_gt_0 equivalentTo bugFixRatioFirstHalf some decimal[> 0.0]\n     A_activeMonthCount_ge_p_law7_min_active_months equivalentTo activeMonthCount some integer[>= 4]\n     python-trio__trio-3096 activeMonthCount 36\n\n\n",
+   "seconds": 2.61858970700996,
+   "returncode": 0,
+   "error": null
+  },
+  "lawVIII": {
+   "class": "LawVIIIConformant",
+   "individual": "http://senso-framework.org/data/python-trio__trio-3096",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/python-trio__trio-3096 type http://senso-framework.org/ontology/seo#LawVIIIConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio",
+       "text": "A_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio equivalentTo multiAuthorMonthRatio some decimal[> 0.3]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_mergeMonthRatio_gt_p_law8_merge_ratio",
+       "text": "A_mergeMonthRatio_gt_p_law8_merge_ratio equivalentTo MergeActive"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio",
+       "text": "A_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio equivalentTo MultiAuthorActive"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawVIIIConformant",
+       "text": "LawVIIIConformant equivalentTo A_monthsObserved_ge_p_law8_min_months and MergeActive and MultiAuthorActive and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law8_min_months",
+       "text": "A_monthsObserved_ge_p_law8_min_months equivalentTo monthsObserved some integer[>= 6]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_mergeMonthRatio_gt_p_law8_merge_ratio",
+       "text": "A_mergeMonthRatio_gt_p_law8_merge_ratio equivalentTo mergeMonthRatio some decimal[> 0.3]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "python-trio__trio-3096",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "python-trio__trio-3096 monthsObserved 36"
+      },
+      {
+       "subject": "python-trio__trio-3096",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "python-trio__trio-3096 type SoftwareProject"
+      },
+      {
+       "subject": "python-trio__trio-3096",
+       "prop": "multiAuthorMonthRatio",
+       "value": 1.0,
+       "raw": "python-trio__trio-3096 multiAuthorMonthRatio 1.0"
+      },
+      {
+       "subject": "python-trio__trio-3096",
+       "prop": "mergeMonthRatio",
+       "value": 1.0,
+       "raw": "python-trio__trio-3096 mergeMonthRatio 1.0"
+      }
+     ],
+     "closures": [],
+     "raw": "A_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio equivalentTo multiAuthorMonthRatio some decimal[> 0.3]\nA_mergeMonthRatio_gt_p_law8_merge_ratio equivalentTo MergeActive\npython-trio__trio-3096 monthsObserved 36\npython-trio__trio-3096 type SoftwareProject\nA_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio equivalentTo MultiAuthorActive\npython-trio__trio-3096 multiAuthorMonthRatio 1.0\nLawVIIIConformant equivalentTo A_monthsObserved_ge_p_law8_min_months and MergeActive and MultiAuthorActive and SoftwareProject\nA_monthsObserved_ge_p_law8_min_months equivalentTo monthsObserved some integer[>= 6]\npython-trio__trio-3096 mergeMonthRatio 1.0\nA_mergeMonthRatio_gt_p_law8_merge_ratio equivalentTo mergeMonthRatio some decimal[> 0.3]"
+    }
+   ],
+   "raw_text": "Axiom: python-trio__trio-3096 type LawVIIIConformant\n\nExplanation(s): \n1)   A_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio equivalentTo multiAuthorMonthRatio some decimal[> 0.3]\n     A_mergeMonthRatio_gt_p_law8_merge_ratio equivalentTo MergeActive\n     python-trio__trio-3096 monthsObserved 36\n     python-trio__trio-3096 type SoftwareProject\n     A_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio equivalentTo MultiAuthorActive\n     python-trio__trio-3096 multiAuthorMonthRatio 1.0\n     LawVIIIConformant equivalentTo A_monthsObserved_ge_p_law8_min_months\n                                    and MergeActive\n                                    and MultiAuthorActive\n                                    and SoftwareProject\n     A_monthsObserved_ge_p_law8_min_months equivalentTo monthsObserved some integer[>= 6]\n     python-trio__trio-3096 mergeMonthRatio 1.0\n     A_mergeMonthRatio_gt_p_law8_merge_ratio equivalentTo mergeMonthRatio some decimal[> 0.3]\n\n\n",
+   "seconds": 2.525286798016168,
+   "returncode": 0,
+   "error": null
+  },
+  "module:src/trio/_core": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/python-trio__trio-3096/module/src_trio__core-90e086",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/python-trio__trio-3096/module/src_trio__core-90e086 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "src_trio__core-90e086",
+       "prop": "type",
+       "value": "Module",
+       "raw": "src_trio__core-90e086 type Module"
+      },
+      {
+       "subject": "src_trio__core-90e086",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 11,
+       "raw": "src_trio__core-90e086 moduleChangeMonthsInWindow 11"
+      }
+     ],
+     "closures": [],
+     "raw": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\nsrc_trio__core-90e086 type Module\nsrc_trio__core-90e086 moduleChangeMonthsInWindow 11\nOftenChangedModule subClassOf ActiveModule"
+    }
+   ],
+   "raw_text": "Axiom: src_trio__core-90e086 type ActiveModule\n\nExplanation(s): \n1)   A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     src_trio__core-90e086 type Module\n     src_trio__core-90e086 moduleChangeMonthsInWindow 11\n     OftenChangedModule subClassOf ActiveModule\n\n\n",
+   "seconds": 2.5349167289678007,
+   "returncode": 0,
+   "error": null
+  },
+  "module:notes-to-self": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/python-trio__trio-3096/module/notes-to-self-1e36b0",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/python-trio__trio-3096/module/notes-to-self-1e36b0 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "notes-to-self-1e36b0",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 7,
+       "raw": "notes-to-self-1e36b0 moduleChangeMonthsInWindow 7"
+      },
+      {
+       "subject": "notes-to-self-1e36b0",
+       "prop": "type",
+       "value": "Module",
+       "raw": "notes-to-self-1e36b0 type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\nnotes-to-self-1e36b0 moduleChangeMonthsInWindow 7\nnotes-to-self-1e36b0 type Module\nOftenChangedModule subClassOf ActiveModule"
+    }
+   ],
+   "raw_text": "Axiom: notes-to-self-1e36b0 type ActiveModule\n\nExplanation(s): \n1)   A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     notes-to-self-1e36b0 moduleChangeMonthsInWindow 7\n     notes-to-self-1e36b0 type Module\n     OftenChangedModule subClassOf ActiveModule\n\n\n",
+   "seconds": 2.447508946992457,
+   "returncode": 0,
+   "error": null
+  },
+  "module:src/trio/_dtls.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/python-trio__trio-3096/module/src_trio__dtls.py-96110f",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/python-trio__trio-3096/module/src_trio__dtls.py-96110f type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "src_trio__dtls.py-96110f",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 4,
+       "raw": "src_trio__dtls.py-96110f moduleChangeMonthsInWindow 4"
+      },
+      {
+       "subject": "src_trio__dtls.py-96110f",
+       "prop": "type",
+       "value": "Module",
+       "raw": "src_trio__dtls.py-96110f type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\nsrc_trio__dtls.py-96110f moduleChangeMonthsInWindow 4\nsrc_trio__dtls.py-96110f type Module\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\nOftenChangedModule subClassOf ActiveModule"
+    }
+   ],
+   "raw_text": "Axiom: src_trio__dtls.py-96110f type ActiveModule\n\nExplanation(s): \n1)   A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     src_trio__dtls.py-96110f moduleChangeMonthsInWindow 4\n     src_trio__dtls.py-96110f type Module\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     OftenChangedModule subClassOf ActiveModule\n\n\n",
+   "seconds": 2.7095597159932368,
+   "returncode": 0,
+   "error": null
+  },
+  "module:src/trio/_socket.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/python-trio__trio-3096/module/src_trio__socket.py-72114b",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/python-trio__trio-3096/module/src_trio__socket.py-72114b type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "src_trio__socket.py-72114b",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 5,
+       "raw": "src_trio__socket.py-72114b moduleChangeMonthsInWindow 5"
+      },
+      {
+       "subject": "src_trio__socket.py-72114b",
+       "prop": "type",
+       "value": "Module",
+       "raw": "src_trio__socket.py-72114b type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\nsrc_trio__socket.py-72114b moduleChangeMonthsInWindow 5\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\nsrc_trio__socket.py-72114b type Module\nOftenChangedModule subClassOf ActiveModule"
+    }
+   ],
+   "raw_text": "Axiom: src_trio__socket.py-72114b type ActiveModule\n\nExplanation(s): \n1)   A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     src_trio__socket.py-72114b moduleChangeMonthsInWindow 5\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     src_trio__socket.py-72114b type Module\n     OftenChangedModule subClassOf ActiveModule\n\n\n",
+   "seconds": 2.636955230962485,
+   "returncode": 0,
+   "error": null
+  },
+  "module:src/trio/_subprocess.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/python-trio__trio-3096/module/src_trio__subprocess.py-5d5514",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/python-trio__trio-3096/module/src_trio__subprocess.py-5d5514 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "src_trio__subprocess.py-5d5514",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 7,
+       "raw": "src_trio__subprocess.py-5d5514 moduleChangeMonthsInWindow 7"
+      },
+      {
+       "subject": "src_trio__subprocess.py-5d5514",
+       "prop": "type",
+       "value": "Module",
+       "raw": "src_trio__subprocess.py-5d5514 type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "src_trio__subprocess.py-5d5514 moduleChangeMonthsInWindow 7\nsrc_trio__subprocess.py-5d5514 type Module\nA_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\nOftenChangedModule subClassOf ActiveModule"
+    }
+   ],
+   "raw_text": "Axiom: src_trio__subprocess.py-5d5514 type ActiveModule\n\nExplanation(s): \n1)   src_trio__subprocess.py-5d5514 moduleChangeMonthsInWindow 7\n     src_trio__subprocess.py-5d5514 type Module\n     A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     OftenChangedModule subClassOf ActiveModule\n\n\n",
+   "seconds": 2.6045243230182678,
+   "returncode": 0,
+   "error": null
+  },
+  "module:docs": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/python-trio__trio-3096/module/docs-71ab8b",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/python-trio__trio-3096/module/docs-71ab8b type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "docs-71ab8b",
+       "prop": "type",
+       "value": "Module",
+       "raw": "docs-71ab8b type Module"
+      },
+      {
+       "subject": "docs-71ab8b",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 11,
+       "raw": "docs-71ab8b moduleChangeMonthsInWindow 11"
+      }
+     ],
+     "closures": [],
+     "raw": "docs-71ab8b type Module\nA_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\ndocs-71ab8b moduleChangeMonthsInWindow 11\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\nOftenChangedModule subClassOf ActiveModule"
+    }
+   ],
+   "raw_text": "Axiom: docs-71ab8b type ActiveModule\n\nExplanation(s): \n1)   docs-71ab8b type Module\n     A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     docs-71ab8b moduleChangeMonthsInWindow 11\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     OftenChangedModule subClassOf ActiveModule\n\n\n",
+   "seconds": 2.797338915988803,
+   "returncode": 0,
+   "error": null
+  },
+  "module:src/trio/_ssl.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/python-trio__trio-3096/module/src_trio__ssl.py-bc05d5",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/python-trio__trio-3096/module/src_trio__ssl.py-bc05d5 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule subClassOf ActiveModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "src_trio__ssl.py-bc05d5",
+       "prop": "type",
+       "value": "Module",
+       "raw": "src_trio__ssl.py-bc05d5 type Module"
+      },
+      {
+       "subject": "src_trio__ssl.py-bc05d5",
+       "prop": "moduleRelChurnInWindow",
+       "value": 1.120609,
+       "raw": "src_trio__ssl.py-bc05d5 moduleRelChurnInWindow 1.120609"
+      }
+     ],
+     "closures": [],
+     "raw": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module\nHighRelChurnModule subClassOf ActiveModule\nsrc_trio__ssl.py-bc05d5 type Module\nsrc_trio__ssl.py-bc05d5 moduleRelChurnInWindow 1.120609\nA_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+    }
+   ],
+   "raw_text": "Axiom: src_trio__ssl.py-bc05d5 type ActiveModule\n\nExplanation(s): \n1)   HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn\n                                     and Module\n     HighRelChurnModule subClassOf ActiveModule\n     src_trio__ssl.py-bc05d5 type Module\n     src_trio__ssl.py-bc05d5 moduleRelChurnInWindow 1.120609\n     A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\n\n\n",
+   "seconds": 2.629389848036226,
+   "returncode": 0,
+   "error": null
+  },
+  "module:src/trio/_sync.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/python-trio__trio-3096/module/src_trio__sync.py-c89ed7",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/python-trio__trio-3096/module/src_trio__sync.py-c89ed7 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule subClassOf ActiveModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "src_trio__sync.py-c89ed7",
+       "prop": "type",
+       "value": "Module",
+       "raw": "src_trio__sync.py-c89ed7 type Module"
+      },
+      {
+       "subject": "src_trio__sync.py-c89ed7",
+       "prop": "moduleRelChurnInWindow",
+       "value": 1.396055,
+       "raw": "src_trio__sync.py-c89ed7 moduleRelChurnInWindow 1.396055"
+      }
+     ],
+     "closures": [],
+     "raw": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module\nHighRelChurnModule subClassOf ActiveModule\nsrc_trio__sync.py-c89ed7 type Module\nA_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\nsrc_trio__sync.py-c89ed7 moduleRelChurnInWindow 1.396055"
+    }
+   ],
+   "raw_text": "Axiom: src_trio__sync.py-c89ed7 type ActiveModule\n\nExplanation(s): \n1)   HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn\n                                     and Module\n     HighRelChurnModule subClassOf ActiveModule\n     src_trio__sync.py-c89ed7 type Module\n     A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\n     src_trio__sync.py-c89ed7 moduleRelChurnInWindow 1.396055\n\n\n",
+   "seconds": 2.617542430991307,
+   "returncode": 0,
+   "error": null
+  },
+  "module:src/trio/_tests": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/python-trio__trio-3096/module/src_trio__tests-f03e07",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/python-trio__trio-3096/module/src_trio__tests-f03e07 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "src_trio__tests-f03e07",
+       "prop": "type",
+       "value": "Module",
+       "raw": "src_trio__tests-f03e07 type Module"
+      },
+      {
+       "subject": "src_trio__tests-f03e07",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 7,
+       "raw": "src_trio__tests-f03e07 moduleChangeMonthsInWindow 7"
+      }
+     ],
+     "closures": [],
+     "raw": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\nsrc_trio__tests-f03e07 type Module\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\nsrc_trio__tests-f03e07 moduleChangeMonthsInWindow 7\nOftenChangedModule subClassOf ActiveModule"
+    }
+   ],
+   "raw_text": "Axiom: src_trio__tests-f03e07 type ActiveModule\n\nExplanation(s): \n1)   A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     src_trio__tests-f03e07 type Module\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     src_trio__tests-f03e07 moduleChangeMonthsInWindow 7\n     OftenChangedModule subClassOf ActiveModule\n\n\n",
+   "seconds": 2.627223960007541,
+   "returncode": 0,
+   "error": null
+  },
+  "module:src/trio/socket.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/python-trio__trio-3096/module/src_trio_socket.py-017ff3",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/python-trio__trio-3096/module/src_trio_socket.py-017ff3 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "src_trio_socket.py-017ff3",
+       "prop": "type",
+       "value": "Module",
+       "raw": "src_trio_socket.py-017ff3 type Module"
+      },
+      {
+       "subject": "src_trio_socket.py-017ff3",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 4,
+       "raw": "src_trio_socket.py-017ff3 moduleChangeMonthsInWindow 4"
+      }
+     ],
+     "closures": [],
+     "raw": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\nsrc_trio_socket.py-017ff3 type Module\nsrc_trio_socket.py-017ff3 moduleChangeMonthsInWindow 4\nOftenChangedModule subClassOf ActiveModule"
+    }
+   ],
+   "raw_text": "Axiom: src_trio_socket.py-017ff3 type ActiveModule\n\nExplanation(s): \n1)   A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     src_trio_socket.py-017ff3 type Module\n     src_trio_socket.py-017ff3 moduleChangeMonthsInWindow 4\n     OftenChangedModule subClassOf ActiveModule\n\n\n",
+   "seconds": 2.8106426669983193,
+   "returncode": 0,
+   "error": null
+  },
+  "module:src/trio/_abc.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/python-trio__trio-3096/module/src_trio__abc.py-4a2e43",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/python-trio__trio-3096/module/src_trio__abc.py-4a2e43 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "src_trio__abc.py-4a2e43",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 5,
+       "raw": "src_trio__abc.py-4a2e43 moduleChangeMonthsInWindow 5"
+      },
+      {
+       "subject": "src_trio__abc.py-4a2e43",
+       "prop": "type",
+       "value": "Module",
+       "raw": "src_trio__abc.py-4a2e43 type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "src_trio__abc.py-4a2e43 moduleChangeMonthsInWindow 5\nA_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\nsrc_trio__abc.py-4a2e43 type Module\nOftenChangedModule subClassOf ActiveModule"
+    }
+   ],
+   "raw_text": "Axiom: src_trio__abc.py-4a2e43 type ActiveModule\n\nExplanation(s): \n1)   src_trio__abc.py-4a2e43 moduleChangeMonthsInWindow 5\n     A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     src_trio__abc.py-4a2e43 type Module\n     OftenChangedModule subClassOf ActiveModule\n\n\n",
+   "seconds": 2.621612298011314,
+   "returncode": 0,
+   "error": null
+  },
+  "module:src/trio/_threads.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/python-trio__trio-3096/module/src_trio__threads.py-362bf7",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/python-trio__trio-3096/module/src_trio__threads.py-362bf7 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "src_trio__threads.py-362bf7",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 7,
+       "raw": "src_trio__threads.py-362bf7 moduleChangeMonthsInWindow 7"
+      },
+      {
+       "subject": "src_trio__threads.py-362bf7",
+       "prop": "type",
+       "value": "Module",
+       "raw": "src_trio__threads.py-362bf7 type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\nsrc_trio__threads.py-362bf7 moduleChangeMonthsInWindow 7\nOftenChangedModule subClassOf ActiveModule\nsrc_trio__threads.py-362bf7 type Module"
+    }
+   ],
+   "raw_text": "Axiom: src_trio__threads.py-362bf7 type ActiveModule\n\nExplanation(s): \n1)   A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     src_trio__threads.py-362bf7 moduleChangeMonthsInWindow 7\n     OftenChangedModule subClassOf ActiveModule\n     src_trio__threads.py-362bf7 type Module\n\n\n",
+   "seconds": 3.6514842470060103,
+   "returncode": 0,
+   "error": null
+  },
+  "module:src/trio/_tools": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/python-trio__trio-3096/module/src_trio__tools-100de2",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/python-trio__trio-3096/module/src_trio__tools-100de2 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "src_trio__tools-100de2",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 9,
+       "raw": "src_trio__tools-100de2 moduleChangeMonthsInWindow 9"
+      },
+      {
+       "subject": "src_trio__tools-100de2",
+       "prop": "type",
+       "value": "Module",
+       "raw": "src_trio__tools-100de2 type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "src_trio__tools-100de2 moduleChangeMonthsInWindow 9\nA_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\nsrc_trio__tools-100de2 type Module\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\nOftenChangedModule subClassOf ActiveModule"
+    }
+   ],
+   "raw_text": "Axiom: src_trio__tools-100de2 type ActiveModule\n\nExplanation(s): \n1)   src_trio__tools-100de2 moduleChangeMonthsInWindow 9\n     A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     src_trio__tools-100de2 type Module\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     OftenChangedModule subClassOf ActiveModule\n\n\n",
+   "seconds": 5.153170628007501,
+   "returncode": 0,
+   "error": null
+  },
+  "module:src/trio/_file_io.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/python-trio__trio-3096/module/src_trio__file_io.py-2bc764",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/python-trio__trio-3096/module/src_trio__file_io.py-2bc764 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "src_trio__file_io.py-2bc764",
+       "prop": "type",
+       "value": "Module",
+       "raw": "src_trio__file_io.py-2bc764 type Module"
+      },
+      {
+       "subject": "src_trio__file_io.py-2bc764",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 3,
+       "raw": "src_trio__file_io.py-2bc764 moduleChangeMonthsInWindow 3"
+      }
+     ],
+     "closures": [],
+     "raw": "src_trio__file_io.py-2bc764 type Module\nA_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\nsrc_trio__file_io.py-2bc764 moduleChangeMonthsInWindow 3\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\nOftenChangedModule subClassOf ActiveModule"
+    }
+   ],
+   "raw_text": "Axiom: src_trio__file_io.py-2bc764 type ActiveModule\n\nExplanation(s): \n1)   src_trio__file_io.py-2bc764 type Module\n     A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     src_trio__file_io.py-2bc764 moduleChangeMonthsInWindow 3\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     OftenChangedModule subClassOf ActiveModule\n\n\n",
+   "seconds": 4.926258663996123,
+   "returncode": 0,
+   "error": null
+  },
+  "module:src/trio/_highlevel_open_tcp_stream.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/python-trio__trio-3096/module/src_trio__highlevel_open_tcp_stream.py-575708",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/python-trio__trio-3096/module/src_trio__highlevel_open_tcp_stream.py-575708 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule subClassOf ActiveModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "src_trio__highlevel_open_tcp_stream.py-575708",
+       "prop": "type",
+       "value": "Module",
+       "raw": "src_trio__highlevel_open_tcp_stream.py-575708 type Module"
+      },
+      {
+       "subject": "src_trio__highlevel_open_tcp_stream.py-575708",
+       "prop": "moduleRelChurnInWindow",
+       "value": 1.170799,
+       "raw": "src_trio__highlevel_open_tcp_stream.py-575708 moduleRelChurnInWindow 1.170799"
+      }
+     ],
+     "closures": [],
+     "raw": "src_trio__highlevel_open_tcp_stream.py-575708 type Module\nHighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module\nHighRelChurnModule subClassOf ActiveModule\nA_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\nsrc_trio__highlevel_open_tcp_stream.py-575708 moduleRelChurnInWindow 1.170799"
+    }
+   ],
+   "raw_text": "Axiom: src_trio__highlevel_open_tcp_stream.py-575708 type ActiveModule\n\nExplanation(s): \n1)   src_trio__highlevel_open_tcp_stream.py-575708 type Module\n     HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn\n                                     and Module\n     HighRelChurnModule subClassOf ActiveModule\n     A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\n     src_trio__highlevel_open_tcp_stream.py-575708 moduleRelChurnInWindow 1.170799\n\n\n",
+   "seconds": 3.790479407995008,
+   "returncode": 0,
+   "error": null
+  },
+  "module:src/trio/_channel.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/python-trio__trio-3096/module/src_trio__channel.py-9fa19e",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/python-trio__trio-3096/module/src_trio__channel.py-9fa19e type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "src_trio__channel.py-9fa19e",
+       "prop": "type",
+       "value": "Module",
+       "raw": "src_trio__channel.py-9fa19e type Module"
+      },
+      {
+       "subject": "src_trio__channel.py-9fa19e",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 4,
+       "raw": "src_trio__channel.py-9fa19e moduleChangeMonthsInWindow 4"
+      }
+     ],
+     "closures": [],
+     "raw": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\nsrc_trio__channel.py-9fa19e type Module\nsrc_trio__channel.py-9fa19e moduleChangeMonthsInWindow 4\nOftenChangedModule subClassOf ActiveModule"
+    }
+   ],
+   "raw_text": "Axiom: src_trio__channel.py-9fa19e type ActiveModule\n\nExplanation(s): \n1)   A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     src_trio__channel.py-9fa19e type Module\n     src_trio__channel.py-9fa19e moduleChangeMonthsInWindow 4\n     OftenChangedModule subClassOf ActiveModule\n\n\n",
+   "seconds": 2.5864337259554304,
+   "returncode": 0,
+   "error": null
+  },
+  "module:src/trio/_highlevel_socket.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/python-trio__trio-3096/module/src_trio__highlevel_socket.py-f086b1",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/python-trio__trio-3096/module/src_trio__highlevel_socket.py-f086b1 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "src_trio__highlevel_socket.py-f086b1",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 3,
+       "raw": "src_trio__highlevel_socket.py-f086b1 moduleChangeMonthsInWindow 3"
+      },
+      {
+       "subject": "src_trio__highlevel_socket.py-f086b1",
+       "prop": "type",
+       "value": "Module",
+       "raw": "src_trio__highlevel_socket.py-f086b1 type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\nOftenChangedModule subClassOf ActiveModule\nsrc_trio__highlevel_socket.py-f086b1 moduleChangeMonthsInWindow 3\nsrc_trio__highlevel_socket.py-f086b1 type Module"
+    }
+   ],
+   "raw_text": "Axiom: src_trio__highlevel_socket.py-f086b1 type ActiveModule\n\nExplanation(s): \n1)   A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     OftenChangedModule subClassOf ActiveModule\n     src_trio__highlevel_socket.py-f086b1 moduleChangeMonthsInWindow 3\n     src_trio__highlevel_socket.py-f086b1 type Module\n\n\n",
+   "seconds": 2.6893003709847108,
+   "returncode": 0,
+   "error": null
+  },
+  "module:src/trio/_util.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/python-trio__trio-3096/module/src_trio__util.py-68092e",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/python-trio__trio-3096/module/src_trio__util.py-68092e type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "src_trio__util.py-68092e",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 6,
+       "raw": "src_trio__util.py-68092e moduleChangeMonthsInWindow 6"
+      },
+      {
+       "subject": "src_trio__util.py-68092e",
+       "prop": "type",
+       "value": "Module",
+       "raw": "src_trio__util.py-68092e type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\nsrc_trio__util.py-68092e moduleChangeMonthsInWindow 6\nOftenChangedModule subClassOf ActiveModule\nsrc_trio__util.py-68092e type Module"
+    }
+   ],
+   "raw_text": "Axiom: src_trio__util.py-68092e type ActiveModule\n\nExplanation(s): \n1)   A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     src_trio__util.py-68092e moduleChangeMonthsInWindow 6\n     OftenChangedModule subClassOf ActiveModule\n     src_trio__util.py-68092e type Module\n\n\n",
+   "seconds": 2.508046747010667,
+   "returncode": 0,
+   "error": null
+  },
+  "module:src/trio/_subprocess_platform": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/python-trio__trio-3096/module/src_trio__subprocess_platform-7a1a2d",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/python-trio__trio-3096/module/src_trio__subprocess_platform-7a1a2d type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "src_trio__subprocess_platform-7a1a2d",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 4,
+       "raw": "src_trio__subprocess_platform-7a1a2d moduleChangeMonthsInWindow 4"
+      },
+      {
+       "subject": "src_trio__subprocess_platform-7a1a2d",
+       "prop": "type",
+       "value": "Module",
+       "raw": "src_trio__subprocess_platform-7a1a2d type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\nsrc_trio__subprocess_platform-7a1a2d moduleChangeMonthsInWindow 4\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\nOftenChangedModule subClassOf ActiveModule\nsrc_trio__subprocess_platform-7a1a2d type Module"
+    }
+   ],
+   "raw_text": "Axiom: src_trio__subprocess_platform-7a1a2d type ActiveModule\n\nExplanation(s): \n1)   A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     src_trio__subprocess_platform-7a1a2d moduleChangeMonthsInWindow 4\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     OftenChangedModule subClassOf ActiveModule\n     src_trio__subprocess_platform-7a1a2d type Module\n\n\n",
+   "seconds": 2.5569584199693054,
+   "returncode": 0,
+   "error": null
+  },
+  "module:src/trio/_path.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/python-trio__trio-3096/module/src_trio__path.py-ed5f1a",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/python-trio__trio-3096/module/src_trio__path.py-ed5f1a type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "src_trio__path.py-ed5f1a",
+       "prop": "type",
+       "value": "Module",
+       "raw": "src_trio__path.py-ed5f1a type Module"
+      },
+      {
+       "subject": "src_trio__path.py-ed5f1a",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 7,
+       "raw": "src_trio__path.py-ed5f1a moduleChangeMonthsInWindow 7"
+      }
+     ],
+     "closures": [],
+     "raw": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\nsrc_trio__path.py-ed5f1a type Module\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\nsrc_trio__path.py-ed5f1a moduleChangeMonthsInWindow 7\nOftenChangedModule subClassOf ActiveModule"
+    }
+   ],
+   "raw_text": "Axiom: src_trio__path.py-ed5f1a type ActiveModule\n\nExplanation(s): \n1)   A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     src_trio__path.py-ed5f1a type Module\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     src_trio__path.py-ed5f1a moduleChangeMonthsInWindow 7\n     OftenChangedModule subClassOf ActiveModule\n\n\n",
+   "seconds": 2.5464566469890997,
+   "returncode": 0,
+   "error": null
+  },
+  "module:src/trio/_highlevel_open_tcp_listeners.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/python-trio__trio-3096/module/src_trio__highlevel_open_tcp_listeners.py-f45125",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/python-trio__trio-3096/module/src_trio__highlevel_open_tcp_listeners.py-f45125 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "src_trio__highlevel_open_tcp_listeners.py-f45125",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 5,
+       "raw": "src_trio__highlevel_open_tcp_listeners.py-f45125 moduleChangeMonthsInWindow 5"
+      },
+      {
+       "subject": "src_trio__highlevel_open_tcp_listeners.py-f45125",
+       "prop": "type",
+       "value": "Module",
+       "raw": "src_trio__highlevel_open_tcp_listeners.py-f45125 type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "src_trio__highlevel_open_tcp_listeners.py-f45125 moduleChangeMonthsInWindow 5\nA_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\nOftenChangedModule subClassOf ActiveModule\nsrc_trio__highlevel_open_tcp_listeners.py-f45125 type Module"
+    }
+   ],
+   "raw_text": "Axiom: src_trio__highlevel_open_tcp_listeners.py-f45125 type ActiveModule\n\nExplanation(s): \n1)   src_trio__highlevel_open_tcp_listeners.py-f45125 moduleChangeMonthsInWindow 5\n     A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     OftenChangedModule subClassOf ActiveModule\n     src_trio__highlevel_open_tcp_listeners.py-f45125 type Module\n\n\n",
+   "seconds": 2.653755237988662,
+   "returncode": 0,
+   "error": null
+  },
+  "module:src/trio/_unix_pipes.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/python-trio__trio-3096/module/src_trio__unix_pipes.py-85e41a",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/python-trio__trio-3096/module/src_trio__unix_pipes.py-85e41a type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "src_trio__unix_pipes.py-85e41a",
+       "prop": "type",
+       "value": "Module",
+       "raw": "src_trio__unix_pipes.py-85e41a type Module"
+      },
+      {
+       "subject": "src_trio__unix_pipes.py-85e41a",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 3,
+       "raw": "src_trio__unix_pipes.py-85e41a moduleChangeMonthsInWindow 3"
+      }
+     ],
+     "closures": [],
+     "raw": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\nsrc_trio__unix_pipes.py-85e41a type Module\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\nsrc_trio__unix_pipes.py-85e41a moduleChangeMonthsInWindow 3\nOftenChangedModule subClassOf ActiveModule"
+    }
+   ],
+   "raw_text": "Axiom: src_trio__unix_pipes.py-85e41a type ActiveModule\n\nExplanation(s): \n1)   A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     src_trio__unix_pipes.py-85e41a type Module\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     src_trio__unix_pipes.py-85e41a moduleChangeMonthsInWindow 3\n     OftenChangedModule subClassOf ActiveModule\n\n\n",
+   "seconds": 2.454396284010727,
+   "returncode": 0,
+   "error": null
+  },
+  "module:src/trio/_signals.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/python-trio__trio-3096/module/src_trio__signals.py-abde86",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/python-trio__trio-3096/module/src_trio__signals.py-abde86 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule subClassOf ActiveModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "src_trio__signals.py-abde86",
+       "prop": "type",
+       "value": "Module",
+       "raw": "src_trio__signals.py-abde86 type Module"
+      },
+      {
+       "subject": "src_trio__signals.py-abde86",
+       "prop": "moduleRelChurnInWindow",
+       "value": 1.243421,
+       "raw": "src_trio__signals.py-abde86 moduleRelChurnInWindow 1.243421"
+      }
+     ],
+     "closures": [],
+     "raw": "src_trio__signals.py-abde86 type Module\nHighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module\nHighRelChurnModule subClassOf ActiveModule\nA_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\nsrc_trio__signals.py-abde86 moduleRelChurnInWindow 1.243421"
+    }
+   ],
+   "raw_text": "Axiom: src_trio__signals.py-abde86 type ActiveModule\n\nExplanation(s): \n1)   src_trio__signals.py-abde86 type Module\n     HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn\n                                     and Module\n     HighRelChurnModule subClassOf ActiveModule\n     A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\n     src_trio__signals.py-abde86 moduleRelChurnInWindow 1.243421\n\n\n",
+   "seconds": 2.4139316480141133,
+   "returncode": 0,
+   "error": null
+  },
+  "module:src/trio/_highlevel_ssl_helpers.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/python-trio__trio-3096/module/src_trio__highlevel_ssl_helpers.py-a62293",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/python-trio__trio-3096/module/src_trio__highlevel_ssl_helpers.py-a62293 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule subClassOf ActiveModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "src_trio__highlevel_ssl_helpers.py-a62293",
+       "prop": "moduleRelChurnInWindow",
+       "value": 1.282759,
+       "raw": "src_trio__highlevel_ssl_helpers.py-a62293 moduleRelChurnInWindow 1.282759"
+      },
+      {
+       "subject": "src_trio__highlevel_ssl_helpers.py-a62293",
+       "prop": "type",
+       "value": "Module",
+       "raw": "src_trio__highlevel_ssl_helpers.py-a62293 type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "src_trio__highlevel_ssl_helpers.py-a62293 moduleRelChurnInWindow 1.282759\nHighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module\nHighRelChurnModule subClassOf ActiveModule\nsrc_trio__highlevel_ssl_helpers.py-a62293 type Module\nA_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+    }
+   ],
+   "raw_text": "Axiom: src_trio__highlevel_ssl_helpers.py-a62293 type ActiveModule\n\nExplanation(s): \n1)   src_trio__highlevel_ssl_helpers.py-a62293 moduleRelChurnInWindow 1.282759\n     HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn\n                                     and Module\n     HighRelChurnModule subClassOf ActiveModule\n     src_trio__highlevel_ssl_helpers.py-a62293 type Module\n     A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\n\n\n",
+   "seconds": 2.4384800139814615,
+   "returncode": 0,
+   "error": null
+  },
+  "module:src/trio/_timeouts.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/python-trio__trio-3096/module/src_trio__timeouts.py-2771ee",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/python-trio__trio-3096/module/src_trio__timeouts.py-2771ee type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "src_trio__timeouts.py-2771ee",
+       "prop": "type",
+       "value": "Module",
+       "raw": "src_trio__timeouts.py-2771ee type Module"
+      },
+      {
+       "subject": "src_trio__timeouts.py-2771ee",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 4,
+       "raw": "src_trio__timeouts.py-2771ee moduleChangeMonthsInWindow 4"
+      }
+     ],
+     "closures": [],
+     "raw": "src_trio__timeouts.py-2771ee type Module\nA_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\nsrc_trio__timeouts.py-2771ee moduleChangeMonthsInWindow 4\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\nOftenChangedModule subClassOf ActiveModule"
+    }
+   ],
+   "raw_text": "Axiom: src_trio__timeouts.py-2771ee type ActiveModule\n\nExplanation(s): \n1)   src_trio__timeouts.py-2771ee type Module\n     A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     src_trio__timeouts.py-2771ee moduleChangeMonthsInWindow 4\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     OftenChangedModule subClassOf ActiveModule\n\n\n",
+   "seconds": 2.722791287000291,
+   "returncode": 0,
+   "error": null
+  }
+ },
+ "timings": {
+  "t_clone": 0.009,
+  "t_mine": 10.368,
+  "t_loc": 2.782,
+  "t_reason_A": 18.647,
+  "mining_cached": false,
+  "t_modules": 2.924,
+  "t_reason_B": 3.096,
+  "n_configs": 1,
+  "t_explain": 96.019,
+  "n_explain_calls": 34,
+  "t_writeback": 0.0,
+  "t_total": 135.669
+ }
+}

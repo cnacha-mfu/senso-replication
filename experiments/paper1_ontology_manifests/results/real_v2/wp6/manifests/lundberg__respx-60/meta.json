@@ -1,0 +1,331 @@
+{
+ "task_id": "lundberg__respx-60",
+ "repo": "lundberg/respx",
+ "stage": "evolution",
+ "rounds": 1,
+ "rejects": {},
+ "flags": [
+  "length_violation_F_R"
+ ],
+ "info": {
+  "slots": {
+   "test_root": "tests",
+   "P1": {
+    "replaced": null,
+    "name": "core",
+    "F_R": "docs/core",
+    "F_I": "core"
+   },
+   "P2": {
+    "replaced": null,
+    "F_R": "docs/internal.py",
+    "F_I": "internal.py"
+   },
+   "C": {
+    "F_R": "make check",
+    "F_I": "make install"
+   },
+   "D": {
+    "replaced": "httpx",
+    "F_R": "boltons",
+    "F_I": "aiohttp"
+   }
+  },
+  "why": {
+   "test_command": [
+    {
+     "root": "tests",
+     "T3": "SupportedClaim",
+     "T1": "SupportedClaim",
+     "collect_ok": true
+    }
+   ],
+   "kind1": {
+    "p1_idx": null,
+    "gold0": "docs",
+    "unrelated": null,
+    "base_R": "docs",
+    "base_I": ""
+   },
+   "kind2": {
+    "p2_idx": null,
+    "n_deleted_py": 4,
+    "found": {
+     "F_R": "docs/internal.py",
+     "F_I": "internal.py"
+    }
+   },
+   "kind3": {
+    "run": "check",
+    "install": "install",
+    "test_ok": true,
+    "install_ok": true
+   },
+   "kind4": {
+    "deps": [
+     [
+      "asynctest",
+      true
+     ],
+     [
+      "httpx",
+      false
+     ]
+    ],
+    "d_idx": 1,
+    "src_R": "asynctest",
+    "src_I": "httpx",
+    "n_decls": 2,
+    "n_dist": 31
+   }
+  },
+  "length": {
+   "T": 266,
+   "F_R": 280,
+   "F_I": 278
+  },
+  "fallbacks": {
+   "F_R": [
+    "kind2_never_existed_fallback"
+   ],
+   "F_I": [
+    "kind2_never_existed_fallback"
+   ]
+  },
+  "modes": {
+   "F_R": {
+    "1": "add",
+    "2": "add",
+    "3": "replace",
+    "4": "replace"
+   },
+   "F_I": {
+    "1": "add",
+    "2": "add",
+    "3": "replace",
+    "4": "replace"
+   }
+  },
+  "length_diff": {
+   "F_R": 14,
+   "F_I": 12
+  },
+  "n_claims_T": 10,
+  "n_false": {
+   "F_R": 4,
+   "F_I": 4
+  },
+  "pointer_in_issue": true,
+  "gold_dirs": [
+   "docs",
+   "respx"
+  ],
+  "gold_files": [
+   "docs/api.md",
+   "respx/transports.py"
+  ]
+ },
+ "tokens": {
+  "F_R": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "docs/core",
+     "core"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "docs/internal.py",
+     "internal.py"
+    ]
+   },
+   {
+    "kind": 3,
+    "type": "regex",
+    "regex": "\\bmake\\b[^|;&\\n]*\\bcheck\\b",
+    "target": "check"
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "boltons"
+    ]
+   }
+  ],
+  "F_I": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "core",
+     "core"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "internal.py",
+     "internal.py"
+    ]
+   },
+   {
+    "kind": 3,
+    "type": "regex",
+    "regex": "\\bmake\\b[^|;&\\n]*\\binstall\\b",
+    "target": "install"
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "aiohttp"
+    ]
+   }
+  ]
+ },
+ "unresolved_pre_hermit": [],
+ "sha256": {
+  "T": "71478d8ccc84a66abf8e09b085e203c6cf80b7201a82ad24c5a58e9431e4ca31",
+  "F_R": "ca257431b74037e9b5ab0757440bb9b92b6a84ada80ad1daefdee9f885106b06",
+  "F_I": "a6cb1fb42070cb611925f6e2a5b7f2a6eed69e471093bfdbda1b862307d1367b"
+ },
+ "chars": {
+  "T": 266,
+  "F_R": 280,
+  "F_I": 278
+ },
+ "claims": {
+  "T": [
+   "T1|docs",
+   "T1|respx",
+   "T1|tests",
+   "T1|respx/transports.py",
+   "T3|test_framework|pytest",
+   "T1|tests",
+   "T1|setup.py",
+   "T4|asynctest|",
+   "T4|httpx|",
+   "T6|python|3006000000@2"
+  ],
+  "F_R": [
+   "T1|docs",
+   "T1|respx",
+   "T1|tests",
+   "T1|docs/core",
+   "T1|respx/transports.py",
+   "T1|docs/internal.py",
+   "T5|make|check",
+   "T1|setup.py",
+   "T4|asynctest|",
+   "T4|boltons|",
+   "T6|python|3006000000@2"
+  ],
+  "F_I": [
+   "T1|docs",
+   "T1|respx",
+   "T1|tests",
+   "T1|core",
+   "T1|respx/transports.py",
+   "T1|internal.py",
+   "T3|test_framework|pytest",
+   "T1|tests",
+   "T5|make|install",
+   "T4|asynctest|",
+   "T4|aiohttp|",
+   "T6|python|3006000000@2"
+  ]
+ },
+ "python_spec": ">=3.6",
+ "token_audit": [
+  {
+   "cond": "F_R",
+   "kind": 1,
+   "type": "path",
+   "name": "docs/core",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 2,
+   "type": "path",
+   "name": "docs/internal.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 3,
+   "type": "regex",
+   "name": "make check",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 4,
+   "type": "word",
+   "name": "boltons",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 1,
+   "type": "path",
+   "name": "core",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 2,
+   "type": "path",
+   "name": "internal.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 3,
+   "type": "regex",
+   "name": "make install",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 4,
+   "type": "word",
+   "name": "aiohttp",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  }
+ ],
+ "dist_imports_used": {
+  "asynctest": [
+   "asynctest"
+  ],
+  "httpx": [
+   "httpx"
+  ],
+  "boltons": null,
+  "aiohttp": null
+ }
+}

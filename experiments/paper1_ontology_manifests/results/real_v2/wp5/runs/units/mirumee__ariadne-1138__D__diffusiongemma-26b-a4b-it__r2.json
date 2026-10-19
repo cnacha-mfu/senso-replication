@@ -1,0 +1,68 @@
+{
+ "unit_id": "mirumee__ariadne-1138__D__diffusiongemma-26b-a4b-it__r2",
+ "task_id": "mirumee__ariadne-1138",
+ "repo": "mirumee/ariadne",
+ "stage": "initial_development",
+ "condition": "D",
+ "model": "google/diffusiongemma-26b-a4b-it",
+ "run": 2,
+ "order": 94,
+ "env_build_s": 58.4,
+ "real_agent_manifest_at_base": [],
+ "started": "2026-10-07T04:01:58.989145+00:00",
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 5570,
+  "sha256": "56fdd3347856fbf9d6dcd8f7193fd320fdc1f99b5ce5f1565e1115aafe27a645"
+ },
+ "condition_available": true,
+ "retries": 0,
+ "exit_status": "LimitsExceeded",
+ "error": "",
+ "steps": 40,
+ "wall_s": 1065.9,
+ "prompt_tokens": 973579,
+ "completion_tokens": 9259,
+ "format_errors": 9,
+ "length_cutoffs": 1,
+ "api_errors": {
+  "timeout": 2
+ },
+ "n_queries": 42,
+ "keys_used": {
+  "NVIDIA_API_KEY_5": 14,
+  "NVIDIA_API_KEY_2": 9,
+  "NVIDIA_API_KEY": 8,
+  "NVIDIA_API_KEY_4": 11
+ },
+ "temperature": 0.7,
+ "top_p": 0.95,
+ "model_id_returned": "google/diffusiongemma-26b-a4b-it",
+ "mini_version": "2.4.6",
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "resolved": false,
+  "reason": "empty_patch",
+  "outcomes": {
+   "Y0": 0,
+   "Y5": 0,
+   "Y6": 40,
+   "hit_step_limit": 1,
+   "changed_lines": 0,
+   "gold_changed_lines": 1015,
+   "Y1": null,
+   "Y2": null,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": null
+  }
+ },
+ "status": "done",
+ "finished": "2026-10-07T04:19:45.001691+00:00"
+}

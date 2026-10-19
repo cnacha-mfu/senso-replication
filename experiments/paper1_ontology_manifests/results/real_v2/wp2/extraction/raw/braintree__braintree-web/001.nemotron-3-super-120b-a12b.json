@@ -1,0 +1,21 @@
+{
+ "repo": "braintree/braintree-web",
+ "chunk": 1,
+ "n_chunks": 3,
+ "model": "nvidia/nemotron-3-super-120b-a12b",
+ "prompt_sha256": "d0e02ff613417050168d859f2af6230c3712c6758bb5d9c40d60ff55e5ae87ca",
+ "user_sha256": "7fe4c93233b0fdd102484f8eb856a56b45b20ce81ad2dc7d5de44c0e9fdaee2a",
+ "text": "{\n  \"claims\": [\n    {\n      \"type\": \"command\",\n      \"quote\": \"npm test client\",\n      \"line\": 180,\n      \"subject\": \"test\",\n      \"runner\": \"npm\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"tool_used\",\n      \"quote\": \"jest test/client/unit/client.js\",\n      \"line\": 183,\n      \"subject\": \"jest\",\n      \"tool_category\": \"test_framework\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"command\",\n      \"quote\": \"BRAINTREE_JS_ENV=development jest --coverage\",\n      \"line\": 186,\n      \"subject\": \"--coverage\",\n      \"runner\": \"jest\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"command\",\n      \"quote\": \"npm run test:integration\",\n      \"line\": 296,\n      \"subject\": \"test:integration\",\n      \"runner\": \"npm\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"command\",\n      \"quote\": \"npm run test:integration:local\",\n      \"line\": 299,\n      \"subject\": \"test:integration:local\",\n      \"runner\": \"npm\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"command\",\n      \"quote\": \"npm run test:integration -- --spec .storybook/tests/your-test.test.ts\",\n      \"line\": 302,\n      \"subject\": \"test:integration\",\n      \"runner\": \"npm\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"tool_used\",\n      \"quote\": \"Uses framebus for iframe communication (see Frame Service and Hosted Fields docs)\",\n      \"line\": 350,\n      \"subject\": \"framebus\",\n      \"tool_category\": \"linter_formatter\",\n      \"mode\": \"asserts_existing\"\n    }\n  ]\n}",
+ "parse_ok": true,
+ "parse_error": null,
+ "parse_retries": 0,
+ "latency_s": 2.5443684369674884,
+ "usage": {
+  "prompt": 4409,
+  "completion": 451
+ },
+ "n_api_calls": 1,
+ "finish_reason": "stop",
+ "error": null,
+ "discarded_attempt_texts": []
+}

@@ -1,0 +1,132 @@
+{
+ "repo": "carpenike/k8s-gitops",
+ "slug": "carpenike__k8s-gitops",
+ "engine": "hermit",
+ "tbox_sha256": "8266af98a762ae7567a0deb684fdd394c180f7c6875ac55011cd3e6e6b080b43",
+ "abox_sha256": "966d3a2f895df9e80b6dbdd052e0ac4d231365ab00350bf779932753e42d6554",
+ "consistent": true,
+ "error": null,
+ "timings": {
+  "tbox_load_s": 0.10996741498820484,
+  "abox_load_s": 0.011750366014894098,
+  "reason_s": 4.787719433021266,
+  "extract_s": 0.034072189999278635,
+  "total_s": 4.9438677940052
+ },
+ "n_claims": 12,
+ "seconds": 4.95,
+ "abox_triples": 141,
+ "claims": {
+  "T1|.kubeconform.yaml": {
+   "leaves": [
+    "PathNeverExisted"
+   ],
+   "verdicts": [
+    "ContradictedClaim"
+   ],
+   "chained": []
+  },
+  "T1|.taskfiles": {
+   "leaves": [
+    "PathFoundExact"
+   ],
+   "verdicts": [
+    "SupportedClaim"
+   ],
+   "chained": []
+  },
+  "T1|app": {
+   "leaves": [
+    "PathFoundBySuffix"
+   ],
+   "verdicts": [
+    "SupportedClaim"
+   ],
+   "chained": []
+  },
+  "T1|app/externalsecret.yaml": {
+   "leaves": [
+    "PathFoundBySuffix"
+   ],
+   "verdicts": [
+    "SupportedClaim"
+   ],
+   "chained": []
+  },
+  "T1|app/helmrelease.yaml": {
+   "leaves": [
+    "PathFoundBySuffix"
+   ],
+   "verdicts": [
+    "SupportedClaim"
+   ],
+   "chained": []
+  },
+  "T1|app/kustomization.yaml": {
+   "leaves": [
+    "PathFoundBySuffix"
+   ],
+   "verdicts": [
+    "SupportedClaim"
+   ],
+   "chained": []
+  },
+  "T1|app/pvc.yaml": {
+   "leaves": [
+    "PathFoundBySuffix"
+   ],
+   "verdicts": [
+    "SupportedClaim"
+   ],
+   "chained": []
+  },
+  "T1|docs": {
+   "leaves": [
+    "PathFoundExact"
+   ],
+   "verdicts": [
+    "SupportedClaim"
+   ],
+   "chained": []
+  },
+  "T1|ks.yaml": {
+   "leaves": [
+    "PathFoundBySuffix"
+   ],
+   "verdicts": [
+    "SupportedClaim"
+   ],
+   "chained": []
+  },
+  "T1|kubernetes/cluster-0": {
+   "leaves": [
+    "PathFoundExact"
+   ],
+   "verdicts": [
+    "SupportedClaim"
+   ],
+   "chained": []
+  },
+  "T1|kubernetes/nas-1": {
+   "leaves": [
+    "PathFoundExact"
+   ],
+   "verdicts": [
+    "SupportedClaim"
+   ],
+   "chained": []
+  },
+  "T3|linter_formatter|prettier": {
+   "leaves": [
+    "ToolSignatureFound"
+   ],
+   "verdicts": [
+    "SupportedClaim"
+   ],
+   "chained": []
+  }
+ },
+ "document": [
+  "ManifestWithContradiction"
+ ]
+}

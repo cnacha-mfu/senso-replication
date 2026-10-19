@@ -1,0 +1,335 @@
+{
+ "task_id": "nose-devs__nose2-268",
+ "repo": "nose-devs/nose2",
+ "stage": "phase_out",
+ "rounds": 1,
+ "rejects": {},
+ "flags": [
+  "kind4_R_used_I_competitor",
+  "length_violation_F_R"
+ ],
+ "info": {
+  "slots": {
+   "test_root": "nose2/tests",
+   "P1": {
+    "replaced": "nose2/tools",
+    "name": "core",
+    "F_R": "nose2/core",
+    "F_I": "nose2/backports/core"
+   },
+   "P2": {
+    "replaced": "nose2/tools/such.py",
+    "F_R": "nose2/_xml_util.py",
+    "F_I": "nose2/backports/internal.py"
+   },
+   "C": {
+    "F_R": "make tests",
+    "F_I": "make install"
+   },
+   "D": {
+    "replaced": "cov-core",
+    "F_R": "boltons",
+    "F_I": "boltons"
+   }
+  },
+  "why": {
+   "test_command": [
+    {
+     "root": "nose2/tests",
+     "T3": "SupportedClaim",
+     "T1": "SupportedClaim",
+     "collect_ok": true
+    }
+   ],
+   "kind1": {
+    "p1_idx": 4,
+    "gold0": "nose2",
+    "unrelated": "nose2/backports",
+    "base_R": "nose2",
+    "base_I": "nose2/backports"
+   },
+   "kind2": {
+    "p2_idx": 2,
+    "n_deleted_py": 27,
+    "found": {
+     "F_R": "nose2/_xml_util.py",
+     "F_I": "nose2/backports/internal.py"
+    }
+   },
+   "kind3": {
+    "run": "tests",
+    "install": "install",
+    "test_ok": true,
+    "install_ok": true
+   },
+   "kind4": {
+    "deps": [
+     [
+      "six",
+      false
+     ],
+     [
+      "cov-core",
+      false
+     ]
+    ],
+    "d_idx": 1,
+    "src_R": "cov-core",
+    "src_I": "cov-core",
+    "n_decls": 7,
+    "n_dist": 15
+   }
+  },
+  "length": {
+   "T": 348,
+   "F_R": 321,
+   "F_I": 354
+  },
+  "fallbacks": {
+   "F_R": [
+    "kind4_I_competitor"
+   ],
+   "F_I": [
+    "kind2_never_existed_fallback"
+   ]
+  },
+  "modes": {
+   "F_R": {
+    "1": "replace",
+    "2": "replace",
+    "3": "replace",
+    "4": "replace"
+   },
+   "F_I": {
+    "1": "replace",
+    "2": "replace",
+    "3": "replace",
+    "4": "replace"
+   }
+  },
+  "length_diff": {
+   "F_R": -27,
+   "F_I": 6
+  },
+  "n_claims_T": 13,
+  "n_false": {
+   "F_R": 4,
+   "F_I": 4
+  },
+  "pointer_in_issue": false,
+  "gold_dirs": [
+   "nose2"
+  ],
+  "gold_files": [
+   "nose2/suite.py"
+  ]
+ },
+ "tokens": {
+  "F_R": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "nose2/core",
+     "core"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "nose2/_xml_util.py",
+     "_xml_util.py"
+    ]
+   },
+   {
+    "kind": 3,
+    "type": "regex",
+    "regex": "\\bmake\\b[^|;&\\n]*\\btests\\b",
+    "target": "tests"
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "boltons"
+    ]
+   }
+  ],
+  "F_I": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "nose2/backports/core",
+     "core"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "nose2/backports/internal.py",
+     "internal.py"
+    ]
+   },
+   {
+    "kind": 3,
+    "type": "regex",
+    "regex": "\\bmake\\b[^|;&\\n]*\\binstall\\b",
+    "target": "install"
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "boltons"
+    ]
+   }
+  ]
+ },
+ "unresolved_pre_hermit": [],
+ "sha256": {
+  "T": "83b06c7df4adfb505c85f534f63ce736f9c6bd587c8372252ce6abd8a13fd0ab",
+  "F_R": "c782419936c11330a1f16e6c8e380fe41b0b4e69e56709928c23e7ad28047546",
+  "F_I": "4e8ebceeb77a6f3d248e787877167ed570bb281517b21042f5593bd3557cd914"
+ },
+ "chars": {
+  "T": 348,
+  "F_R": 321,
+  "F_I": 354
+ },
+ "claims": {
+  "T": [
+   "T1|nose2",
+   "T1|nose2/backports",
+   "T1|nose2/plugins",
+   "T1|nose2/tests",
+   "T1|nose2/tools",
+   "T1|nose2/events.py",
+   "T1|nose2/plugins/mp.py",
+   "T1|nose2/tools/such.py",
+   "T3|test_framework|pytest",
+   "T1|nose2/tests",
+   "T1|setup.py",
+   "T4|six|",
+   "T4|cov-core|"
+  ],
+  "F_R": [
+   "T1|nose2",
+   "T1|nose2/backports",
+   "T1|nose2/plugins",
+   "T1|nose2/tests",
+   "T1|nose2/core",
+   "T1|nose2/events.py",
+   "T1|nose2/plugins/mp.py",
+   "T1|nose2/_xml_util.py",
+   "T5|make|tests",
+   "T1|setup.py",
+   "T4|six|",
+   "T4|boltons|"
+  ],
+  "F_I": [
+   "T1|nose2",
+   "T1|nose2/backports",
+   "T1|nose2/plugins",
+   "T1|nose2/tests",
+   "T1|nose2/backports/core",
+   "T1|nose2/events.py",
+   "T1|nose2/plugins/mp.py",
+   "T1|nose2/backports/internal.py",
+   "T3|test_framework|pytest",
+   "T1|nose2/tests",
+   "T5|make|install",
+   "T4|six|",
+   "T4|boltons|"
+  ]
+ },
+ "python_spec": null,
+ "token_audit": [
+  {
+   "cond": "F_R",
+   "kind": 1,
+   "type": "path",
+   "name": "nose2/core",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 2,
+   "type": "path",
+   "name": "nose2/_xml_util.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 3,
+   "type": "regex",
+   "name": "make tests",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 4,
+   "type": "word",
+   "name": "boltons",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 1,
+   "type": "path",
+   "name": "nose2/backports/core",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 2,
+   "type": "path",
+   "name": "nose2/backports/internal.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 3,
+   "type": "regex",
+   "name": "make install",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 4,
+   "type": "word",
+   "name": "boltons",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  }
+ ],
+ "dist_imports_used": {
+  "six": [
+   "six"
+  ],
+  "cov-core": [
+   "cov_core",
+   "cov_core_init"
+  ],
+  "boltons": null
+ }
+}

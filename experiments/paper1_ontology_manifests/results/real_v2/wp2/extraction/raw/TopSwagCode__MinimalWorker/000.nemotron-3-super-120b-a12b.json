@@ -1,0 +1,21 @@
+{
+ "repo": "TopSwagCode/MinimalWorker",
+ "chunk": 0,
+ "n_chunks": 1,
+ "model": "nvidia/nemotron-3-super-120b-a12b",
+ "prompt_sha256": "d0e02ff613417050168d859f2af6230c3712c6758bb5d9c40d60ff55e5ae87ca",
+ "user_sha256": "a06da445fe366f1666f2083fb36437b112866ffe22cf1585bef83a2d000bf798",
+ "text": "{\n  \"claims\": [\n    {\n      \"type\": \"path_exists\",\n      \"quote\": \"`src/MinimalWorker/BackgroundWorkerExtensions.cs`\",\n      \"line\": 33,\n      \"subject\": \"src/MinimalWorker/BackgroundWorkerExtensions.cs\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"path_exists\",\n      \"quote\": \"`src/MinimalWorker.Generators/`\",\n      \"line\": 44,\n      \"subject\": \"src/MinimalWorker.Generators/\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"path_exists\",\n      \"quote\": \"`WorkerGenerator.cs`\",\n      \"line\": 45,\n      \"subject\": \"WorkerGenerator.cs\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"path_exists\",\n      \"quote\": \"`WorkerEmitter.cs`\",\n      \"line\": 46,\n      \"subject\": \"WorkerEmitter.cs\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"path_exists\",\n      \"quote\": \"`MinimalWorker.Generated.g.cs`\",\n      \"line\": 47,\n      \"subject\": \"MinimalWorker.Generated.g.cs\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"path_exists\",\n      \"quote\": \"`samples/MinimalWorker.Console.Sample`\",\n      \"line\": 21,\n      \"subject\": \"samples/MinimalWorker.Console.Sample\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"tool_used\",\n      \"quote\": \"dotnet build MinimalWorker.sln\",\n      \"line\": 9,\n      \"subject\": \"dotnet\",\n      \"tool_category\": \"build_tool\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"tool_used\",\n      \"quote\": \"dotnet test MinimalWorker.sln\",\n      \"line\": 12,\n      \"subject\": \"dotnet\",\n      \"tool_category\": \"build_tool\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"tool_used\",\n      \"quote\": \"dotnet test MinimalWorker.sln -f net10.0\",\n      \"line\": 15,\n      \"subject\": \"dotnet\",\n      \"tool_category\": \"build_tool\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"tool_used\",\n      \"quote\": \"dotnet test MinimalWorker.sln --filter \\\"FullyQualifiedName~PeriodicWorkerTests.PeriodicWorker_Should_Execute_Multiple_Times\\\"\",\n      \"line\": 18,\n      \"subject\": \"dotnet\",\n      \"tool_category\": \"build_tool\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"tool_used\",\n      \"quote\": \"dotnet run --project samples/MinimalWorker.Console.Sample\",\n      \"line\": 21,\n      \"subject\": \"dotnet\",\n      \"tool_category\": \"build_tool\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"tool_used\",\n      \"quote\": \"dotnet pack src/MinimalWorker --configuration Release --output ./nupkgs\",\n      \"line\": 24,\n      \"subject\": \"dotnet\",\n      \"tool_category\": \"build_tool\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"dependency\",\n      \"quote\": \"Microsoft.Extensions.TimeProvider.Testing\",\n      \"line\": 74,\n      \"subject\": \"Microsoft.Extensions.TimeProvider.Testing\",\n      \"ecosystem_hint\": \"nuget\",\n      \"mode\": \"asserts_existing\"\n    }\n  ]\n}",
+ "parse_ok": true,
+ "parse_error": null,
+ "parse_retries": 0,
+ "latency_s": 4.459699767001439,
+ "usage": {
+  "prompt": 3470,
+  "completion": 836
+ },
+ "n_api_calls": 1,
+ "finish_reason": "stop",
+ "error": null,
+ "discarded_attempt_texts": []
+}

@@ -1,0 +1,21 @@
+{
+ "repo": "DataDog/lading",
+ "chunk": 1,
+ "n_chunks": 2,
+ "model": "nvidia/nemotron-3-super-120b-a12b",
+ "prompt_sha256": "d0e02ff613417050168d859f2af6230c3712c6758bb5d9c40d60ff55e5ae87ca",
+ "user_sha256": "e87ec91426de9a785afaf227791a61fafc92b50f44f751fccec4439edeefef21",
+ "text": "{\n  \"claims\": [\n    {\n      \"type\": \"command\",\n      \"quote\": \"**MUST run `ci/validate` after any code changes.**\",\n      \"line\": 150,\n      \"subject\": \"ci/validate\",\n      \"runner\": \"make\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"command\",\n      \"quote\": \"| Full validation | `ci/validate` |\",\n      \"line\": 154,\n      \"subject\": \"ci/validate\",\n      \"runner\": \"make\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"command\",\n      \"quote\": \"| Format | `ci/fmt` |\",\n      \"line\": 155,\n      \"subject\": \"ci/fmt\",\n      \"runner\": \"make\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"command\",\n      \"quote\": \"| Check | `ci/check` |\",\n      \"line\": 156,\n      \"subject\": \"ci/check\",\n      \"runner\": \"make\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"command\",\n      \"quote\": \"| Lint | `ci/clippy` |\",\n      \"line\": 157,\n      \"subject\": \"ci/clippy\",\n      \"runner\": \"make\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"command\",\n      \"quote\": \"| Test | `ci/test` |\",\n      \"line\": 158,\n      \"subject\": \"ci/test\",\n      \"runner\": \"make\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"command\",\n      \"quote\": \"| Kani proofs | `ci/kani <crate>` |\",\n      \"line\": 159,\n      \"subject\": \"ci/kani\",\n      \"runner\": \"make\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"command\",\n      \"quote\": \"| Outdated deps | `ci/outdated` |\",\n      \"line\": 160,\n      \"subject\": \"ci/outdated\",\n      \"runner\": \"make\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"command\",\n      \"quote\": \"| Benchmarks | `cargo criterion` |\",\n      \"line\": 161,\n      \"subject\": \"criterion\",\n      \"runner\": \"cargo\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"command\",\n      \"quote\": \"Override locally: `PROPTEST_CASES=512 ci/test`\",\n      \"line\": 170,\n      \"subject\": \"ci/test\",\n      \"runner\": \"make\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"command\",\n      \"quote\": \"1. Run `ci/validate` after changes - never skip\",\n      \"line\": 174,\n      \"subject\": \"ci/validate\",\n      \"runner\": \"make\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"command\",\n      \"quote\": \"2. Use ci/ scripts, not raw cargo commands\",\n      \"line\": 175,\n      \"subject\": \"ci/\",\n      \"runner\": \"make\",\n      \"mode\": \"asserts_existing\"\n    }\n  ]\n}",
+ "parse_ok": true,
+ "parse_error": null,
+ "parse_retries": 0,
+ "latency_s": 6.205847813980654,
+ "usage": {
+  "prompt": 2496,
+  "completion": 774
+ },
+ "n_api_calls": 1,
+ "finish_reason": "stop",
+ "error": null,
+ "discarded_attempt_texts": []
+}

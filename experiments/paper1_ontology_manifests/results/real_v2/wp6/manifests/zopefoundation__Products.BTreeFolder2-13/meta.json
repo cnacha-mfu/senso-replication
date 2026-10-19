@@ -1,0 +1,355 @@
+{
+ "task_id": "zopefoundation__Products.BTreeFolder2-13",
+ "repo": "zopefoundation/Products.BTreeFolder2",
+ "stage": "servicing",
+ "rounds": 1,
+ "rejects": {},
+ "flags": [
+  "no_test_command",
+  "length_violation_F_R",
+  "length_violation_F_I"
+ ],
+ "info": {
+  "slots": {
+   "P1": {
+    "replaced": null,
+    "name": "core",
+    "F_R": "src/Products/core",
+    "F_I": "core"
+   },
+   "P2": {
+    "replaced": null,
+    "F_R": "bootstrap.py",
+    "F_I": "internal.py"
+   },
+   "C": {
+    "F_R": "make test",
+    "F_I": "make install"
+   },
+   "D": {
+    "replaced": null,
+    "F_R": "toolz",
+    "F_I": "boltons"
+   }
+  },
+  "why": {
+   "test_command": [
+    {
+     "root": "src/Products/BTreeFolder2/tests",
+     "T3": "SupportedClaim",
+     "T1": "SupportedClaim",
+     "collect_ok": false
+    }
+   ],
+   "kind1": {
+    "p1_idx": null,
+    "gold0": "src/Products",
+    "unrelated": null,
+    "base_R": "src/Products",
+    "base_I": ""
+   },
+   "kind2": {
+    "p2_idx": null,
+    "n_deleted_py": 1,
+    "found": {
+     "F_R": "bootstrap.py",
+     "F_I": "internal.py"
+    }
+   },
+   "kind3": {
+    "run": "test",
+    "install": "install",
+    "test_ok": false,
+    "install_ok": true
+   },
+   "kind4": {
+    "deps": [
+     [
+      "accesscontrol",
+      true
+     ],
+     [
+      "acquisition",
+      true
+     ],
+     [
+      "btrees",
+      true
+     ],
+     [
+      "persistence",
+      true
+     ],
+     [
+      "six",
+      true
+     ]
+    ],
+    "d_idx": null,
+    "src_R": "accesscontrol",
+    "src_I": "acquisition",
+    "n_decls": 12,
+    "n_dist": 91
+   }
+  },
+  "length": {
+   "T": 302,
+   "F_R": 381,
+   "F_I": 336
+  },
+  "fallbacks": {
+   "F_R": [],
+   "F_I": [
+    "kind2_never_existed_fallback"
+   ]
+  },
+  "modes": {
+   "F_R": {
+    "1": "add",
+    "2": "add",
+    "3": "add",
+    "4": "add"
+   },
+   "F_I": {
+    "1": "add",
+    "2": "add",
+    "3": "replace",
+    "4": "add"
+   }
+  },
+  "length_diff": {
+   "F_R": 79,
+   "F_I": 34
+  },
+  "n_claims_T": 10,
+  "n_false": {
+   "F_R": 4,
+   "F_I": 4
+  },
+  "pointer_in_issue": false,
+  "gold_dirs": [
+   "src/Products"
+  ],
+  "gold_files": [
+   "CHANGES.rst",
+   "src/Products/BTreeFolder2/BTreeFolder2.py",
+   "src/Products/BTreeFolder2/contents.dtml"
+  ]
+ },
+ "tokens": {
+  "F_R": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "src/Products/core",
+     "core"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "bootstrap.py",
+     "bootstrap.py"
+    ]
+   },
+   {
+    "kind": 3,
+    "type": "regex",
+    "regex": "\\bmake\\b[^|;&\\n]*\\btest\\b",
+    "target": "test"
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "toolz"
+    ]
+   }
+  ],
+  "F_I": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "core",
+     "core"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "internal.py",
+     "internal.py"
+    ]
+   },
+   {
+    "kind": 3,
+    "type": "regex",
+    "regex": "\\bmake\\b[^|;&\\n]*\\binstall\\b",
+    "target": "install"
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "boltons"
+    ]
+   }
+  ]
+ },
+ "unresolved_pre_hermit": [],
+ "sha256": {
+  "T": "63d46e2b559e687416d3794ea8bc82547f6ac821d47e777816418e216248330e",
+  "F_R": "3d4af9a933717d15c44ba68e1b10f1269f1a856f893a50966060e98ba509130f",
+  "F_I": "fe85635f7ebbc5ad345796b1a9654a9aa696a21a5fbe928c09b8df082ab3a0a4"
+ },
+ "chars": {
+  "T": 302,
+  "F_R": 381,
+  "F_I": 336
+ },
+ "claims": {
+  "T": [
+   "T1|src/Products",
+   "T1|src/Products/BTreeFolder2/tests",
+   "T1|src/Products/BTreeFolder2/BTreeFolder2.py",
+   "T1|setup.py",
+   "T4|accesscontrol|",
+   "T4|acquisition|",
+   "T4|btrees|",
+   "T4|persistence|",
+   "T4|six|",
+   "T6|python|2007000000@2"
+  ],
+  "F_R": [
+   "T1|src/Products",
+   "T1|src/Products/BTreeFolder2/tests",
+   "T1|src/Products/core",
+   "T1|src/Products/BTreeFolder2/BTreeFolder2.py",
+   "T1|bootstrap.py",
+   "T1|setup.py",
+   "T5|make|test",
+   "T4|accesscontrol|",
+   "T4|acquisition|",
+   "T4|btrees|",
+   "T4|persistence|",
+   "T4|six|",
+   "T4|toolz|",
+   "T6|python|2007000000@2"
+  ],
+  "F_I": [
+   "T1|src/Products",
+   "T1|src/Products/BTreeFolder2/tests",
+   "T1|core",
+   "T1|src/Products/BTreeFolder2/BTreeFolder2.py",
+   "T1|internal.py",
+   "T5|make|install",
+   "T4|accesscontrol|",
+   "T4|acquisition|",
+   "T4|btrees|",
+   "T4|persistence|",
+   "T4|six|",
+   "T4|boltons|",
+   "T6|python|2007000000@2"
+  ]
+ },
+ "python_spec": ">=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*",
+ "token_audit": [
+  {
+   "cond": "F_R",
+   "kind": 1,
+   "type": "path",
+   "name": "src/Products/core",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 2,
+   "type": "path",
+   "name": "bootstrap.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 3,
+   "type": "regex",
+   "name": "make test",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 4,
+   "type": "word",
+   "name": "toolz",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 1,
+   "type": "path",
+   "name": "core",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 2,
+   "type": "path",
+   "name": "internal.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 3,
+   "type": "regex",
+   "name": "make install",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 4,
+   "type": "word",
+   "name": "boltons",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  }
+ ],
+ "dist_imports_used": {
+  "accesscontrol": [
+   "AccessControl"
+  ],
+  "acquisition": [
+   "Acquisition"
+  ],
+  "btrees": [
+   "BTrees"
+  ],
+  "persistence": [
+   "Persistence"
+  ],
+  "six": [
+   "six"
+  ],
+  "toolz": null,
+  "boltons": null
+ }
+}

@@ -1,0 +1,111 @@
+{
+ "unit_id": "VirtusLab__git-machete-330__D__claude-sonnet__r1",
+ "task_id": "VirtusLab__git-machete-330",
+ "repo": "VirtusLab/git-machete",
+ "stage": "phase_out",
+ "condition": "D",
+ "model": "claude-code/sonnet",
+ "run": 1,
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 3740,
+  "sha256": "c03b0d4f031cf7ce0223c3bf95fe6fb3db6a0acb9bd6492dcf191350ee42aae4"
+ },
+ "started": "2026-10-18T03:51:04.039545+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 6,
+ "tool_calls": 5,
+ "usage": {
+  "input_tokens": 12,
+  "cache_creation_input_tokens": 12561,
+  "cache_read_input_tokens": 121807,
+  "output_tokens": 1447,
+  "output_tokens_details": {
+   "thinking_tokens": 72
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 12561,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 12,
+   "outputTokens": 1447,
+   "cacheReadInputTokens": 121807,
+   "cacheCreationInputTokens": 12561,
+   "webSearchRequests": 0,
+   "costUSD": 0.0769187,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 72,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.0769187,
+ "result_text": "I fixed the crash, but I haven't run anything to confirm it. mypy isn't installed here, and I didn't add a regression test or the broader safeguard you asked for.\n\n**Cause:** in `update_cli_opts_using_parsed_args` (`git_machete/cli.py`), `arg` comes from argparse and is typed `Any`. Assigning it to the typed option fields therefore passed mypy, but at runtime the fields held plain `str` values. `LocalBranchShortName` and `AnyRevision` are `str` subclasses with a `full_name()` method, so a plain `str` crashed when `full_name()` was called on it.\n\n**Fix:** I now convert the value when assigning it, using the types' own `of()` helpers:\n- `opt_branch` and `opt_onto` use `LocalBranchShortName.of(arg)`.\n- `opt_down_fork_point` and `opt_fork_point` use `AnyRevision.of(arg)`.\n- `opt_roots` maps `LocalBranchShortName.of` over the comma-split list.\n\n**For a systematic guard:** I'd annotate `arg` explicitly, or have the argparse arguments declare a `type=` that does the conversion, so mypy sees the real types. A parametrised test for `git machete add <existing unmanaged branch>` would cover the original traceback. Say if you want either.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792309800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0.05,
+    "resetsAt": 1792309800
+   },
+   "seven_day": {
+    "utilization": 0.12,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 27.1,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 6,
+   "hit_step_limit": 0,
+   "changed_lines": 10,
+   "gold_changed_lines": 20,
+   "Y1": 0,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": -1.0
+  },
+  "f2p_pass": 1,
+  "f2p_total": 1,
+  "p2p_pass": 44,
+  "p2p_total": 44,
+  "f2p_all_pass": true,
+  "p2p_all_pass": true,
+  "resolved": true,
+  "reason": "resolved",
+  "test_seconds": 65.3
+ },
+ "status": "done",
+ "finished": "2026-10-18T03:52:37.438363+00:00"
+}

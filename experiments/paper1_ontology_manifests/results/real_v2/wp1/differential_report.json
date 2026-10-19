@@ -1,0 +1,2155 @@
+{
+ "generated_at": "2026-10-06T10:11:17.896687+00:00",
+ "args": {
+  "n_random": "150",
+  "n_grid": "150",
+  "legacy_cases": "150",
+  "seed": "20261006",
+  "batch": "30",
+  "legacy_batch": "6",
+  "workers": "3",
+  "temp_dir": "/tmp/claude-1000/-home-adtgrade-research-senso-framework/7491d716-c882-418f-8b03-824d5136f574/scratchpad",
+  "out": "/home/adtgrade/research/senso-framework/.claude/worktrees/agent-a58b19a43e613c893/experiments/paper1_ontology_manifests/results/real_v2/wp1/differential_report.json",
+  "skip_commit_check": "False",
+  "canonical_only": "False",
+  "verbose": "False"
+ },
+ "tbox_sha256": "a11ee9ebe8df51c77a35d111c3b70fe59caeec86dcac5bbdc65220f5564cdf2b",
+ "tbox_sha256_with_legacy": "0e91488f7b13bccf6206b9f028cc9de035b84a28a8b47fdb28ba956273d471c1",
+ "n_cases": {
+  "scenario": 20,
+  "boundary": 18,
+  "random": 150,
+  "grid": 150
+ },
+ "n_cases_through_legacy": 150,
+ "summary": {
+  "comparisons_agree": 4844,
+  "hard_mismatches": 0,
+  "boundary_mismatches": 4,
+  "undetermined_vs_default": 736,
+  "agreement_pct_strict": 99.917,
+  "agreement_pct_excluding_boundary": 100.0
+ },
+ "agreement": {
+  "ensemble_phase": {
+   "n": 150,
+   "agree": 149,
+   "mismatch": 0,
+   "mismatch_boundary": 0,
+   "undetermined_vs_default": 1,
+   "agreement_pct_strict": 100.0,
+   "agreement_pct_excluding_boundary": 100.0
+  },
+  "mk_phase": {
+   "n": 338,
+   "agree": 338,
+   "mismatch": 0,
+   "mismatch_boundary": 0,
+   "undetermined_vs_default": 0,
+   "agreement_pct_strict": 100.0,
+   "agreement_pct_excluding_boundary": 100.0
+  },
+  "paper_law_I": {
+   "n": 150,
+   "agree": 149,
+   "mismatch": 0,
+   "mismatch_boundary": 0,
+   "undetermined_vs_default": 1,
+   "agreement_pct_strict": 100.0,
+   "agreement_pct_excluding_boundary": 100.0
+  },
+  "paper_law_II": {
+   "n": 150,
+   "agree": 148,
+   "mismatch": 0,
+   "mismatch_boundary": 1,
+   "undetermined_vs_default": 1,
+   "agreement_pct_strict": 99.33,
+   "agreement_pct_excluding_boundary": 100.0
+  },
+  "paper_law_III": {
+   "n": 150,
+   "agree": 149,
+   "mismatch": 0,
+   "mismatch_boundary": 0,
+   "undetermined_vs_default": 1,
+   "agreement_pct_strict": 100.0,
+   "agreement_pct_excluding_boundary": 100.0
+  },
+  "paper_law_IV": {
+   "n": 150,
+   "agree": 149,
+   "mismatch": 0,
+   "mismatch_boundary": 0,
+   "undetermined_vs_default": 1,
+   "agreement_pct_strict": 100.0,
+   "agreement_pct_excluding_boundary": 100.0
+  },
+  "paper_law_V": {
+   "n": 150,
+   "agree": 149,
+   "mismatch": 0,
+   "mismatch_boundary": 0,
+   "undetermined_vs_default": 1,
+   "agreement_pct_strict": 100.0,
+   "agreement_pct_excluding_boundary": 100.0
+  },
+  "paper_law_VI": {
+   "n": 150,
+   "agree": 149,
+   "mismatch": 0,
+   "mismatch_boundary": 0,
+   "undetermined_vs_default": 1,
+   "agreement_pct_strict": 100.0,
+   "agreement_pct_excluding_boundary": 100.0
+  },
+  "paper_law_VII": {
+   "n": 150,
+   "agree": 149,
+   "mismatch": 0,
+   "mismatch_boundary": 0,
+   "undetermined_vs_default": 1,
+   "agreement_pct_strict": 100.0,
+   "agreement_pct_excluding_boundary": 100.0
+  },
+  "paper_law_VIII": {
+   "n": 150,
+   "agree": 118,
+   "mismatch": 0,
+   "mismatch_boundary": 2,
+   "undetermined_vs_default": 30,
+   "agreement_pct_strict": 98.33,
+   "agreement_pct_excluding_boundary": 100.0
+  },
+  "pattern_CopyPasteOverReuse": {
+   "n": 338,
+   "agree": 338,
+   "mismatch": 0,
+   "mismatch_boundary": 0,
+   "undetermined_vs_default": 0,
+   "agreement_pct_strict": 100.0,
+   "agreement_pct_excluding_boundary": 100.0
+  },
+  "pattern_DependencySprawl": {
+   "n": 338,
+   "agree": 338,
+   "mismatch": 0,
+   "mismatch_boundary": 0,
+   "undetermined_vs_default": 0,
+   "agreement_pct_strict": 100.0,
+   "agreement_pct_excluding_boundary": 100.0
+  },
+  "pattern_RefactoringAvoidance": {
+   "n": 338,
+   "agree": 337,
+   "mismatch": 0,
+   "mismatch_boundary": 1,
+   "undetermined_vs_default": 0,
+   "agreement_pct_strict": 99.7,
+   "agreement_pct_excluding_boundary": 100.0
+  },
+  "pattern_ShadowTechDebt": {
+   "n": 338,
+   "agree": 338,
+   "mismatch": 0,
+   "mismatch_boundary": 0,
+   "undetermined_vs_default": 0,
+   "agreement_pct_strict": 100.0,
+   "agreement_pct_excluding_boundary": 100.0
+  },
+  "pipeline_law_I": {
+   "n": 318,
+   "agree": 317,
+   "mismatch": 0,
+   "mismatch_boundary": 0,
+   "undetermined_vs_default": 1,
+   "agreement_pct_strict": 100.0,
+   "agreement_pct_excluding_boundary": 100.0
+  },
+  "pipeline_law_II": {
+   "n": 318,
+   "agree": 276,
+   "mismatch": 0,
+   "mismatch_boundary": 0,
+   "undetermined_vs_default": 42,
+   "agreement_pct_strict": 100.0,
+   "agreement_pct_excluding_boundary": 100.0
+  },
+  "pipeline_law_III": {
+   "n": 318,
+   "agree": 171,
+   "mismatch": 0,
+   "mismatch_boundary": 0,
+   "undetermined_vs_default": 147,
+   "agreement_pct_strict": 100.0,
+   "agreement_pct_excluding_boundary": 100.0
+  },
+  "pipeline_law_IV": {
+   "n": 318,
+   "agree": 171,
+   "mismatch": 0,
+   "mismatch_boundary": 0,
+   "undetermined_vs_default": 147,
+   "agreement_pct_strict": 100.0,
+   "agreement_pct_excluding_boundary": 100.0
+  },
+  "pipeline_law_V": {
+   "n": 318,
+   "agree": 250,
+   "mismatch": 0,
+   "mismatch_boundary": 0,
+   "undetermined_vs_default": 68,
+   "agreement_pct_strict": 100.0,
+   "agreement_pct_excluding_boundary": 100.0
+  },
+  "pipeline_law_VI": {
+   "n": 318,
+   "agree": 250,
+   "mismatch": 0,
+   "mismatch_boundary": 0,
+   "undetermined_vs_default": 68,
+   "agreement_pct_strict": 100.0,
+   "agreement_pct_excluding_boundary": 100.0
+  },
+  "pipeline_law_VII": {
+   "n": 318,
+   "agree": 240,
+   "mismatch": 0,
+   "mismatch_boundary": 0,
+   "undetermined_vs_default": 78,
+   "agreement_pct_strict": 100.0,
+   "agreement_pct_excluding_boundary": 100.0
+  },
+  "pipeline_law_VIII": {
+   "n": 318,
+   "agree": 171,
+   "mismatch": 0,
+   "mismatch_boundary": 0,
+   "undetermined_vs_default": 147,
+   "agreement_pct_strict": 100.0,
+   "agreement_pct_excluding_boundary": 100.0
+  }
+ },
+ "mismatch_classes": {
+  "pattern_RefactoringAvoidance:mismatch_boundary": 1,
+  "paper_law_II:mismatch_boundary": 1,
+  "paper_law_VIII:mismatch_boundary": 2
+ },
+ "mismatches": [
+  {
+   "label": "pattern_RefactoringAvoidance",
+   "case": "random_0008",
+   "kind": "random",
+   "outcome": "mismatch_boundary",
+   "oracle": true,
+   "ontology": false,
+   "note": "",
+   "measurements": {
+    "monthsObserved": 4,
+    "activeMonthCount": 4,
+    "activeMonthRatio": 1.0,
+    "meanMonthlyCommits": 1.75,
+    "commitsLast3Months": 5,
+    "commitCountCV": 0.247436,
+    "commitCountCVSample": 0.285714,
+    "commitHalfRatio": 0.75,
+    "commitSecondHalfMean": 1.5,
+    "churnCV": 0.437262,
+    "linesAddedCV": 0.350309,
+    "mergeMonthRatio": 0.0,
+    "multiAuthorMonthRatio": 0.25,
+    "complexityMonthCount": 4,
+    "complexityHalfMeanFirst": 1.9,
+    "complexityHalfMeanSecond": 2.15,
+    "complexityHalfMeanChange": 0.25,
+    "complexityFirst": 2.0,
+    "complexityLast": 2.2,
+    "complexityChange": 0.2,
+    "complexityGrowthRate": 0.1,
+    "monthlyComplexityGrowth": 0.033333,
+    "bugFixRatioFirstHalf": 0.0,
+    "bugFixRatioSecondHalf": 0.25,
+    "locSeriesLength": 4,
+    "locMKTau": 0.5,
+    "locMKS": 3,
+    "locMKpValue": 0.470101,
+    "locSenSlope": 3.166667,
+    "locStart": 502,
+    "locEnd": 509,
+    "locDelta": 7,
+    "locGrowthRate": 0.013944,
+    "locChangePct": 1.394422,
+    "locEndToStartRatio": 1.013944,
+    "complexityToLocGrowthRatio": 7.171429,
+    "locToComplexityGrowthRatio": 0.139442,
+    "locGrowthLast3": 0.022088,
+    "featureCommitsFirstHalf": 0,
+    "featureCommitsSecondHalf": 0,
+    "featureCommitsTotal": 0,
+    "locDeltaPerFeature": 7.0,
+    "refactoringCommits": 0,
+    "refactoringRatio": 0.0,
+    "dependencyCountStart": 63,
+    "dependencyCountEnd": 73,
+    "dependencyGrowthRate": 0.15873,
+    "recentAgentCommitRatio": 0.32,
+    "correctiveLast2Months": 1,
+    "risingMonthCount": 1,
+    "correctiveMonthCount": 0,
+    "responsiveMonthCount": 0,
+    "correctiveToRisingRatio": 0.0
+   },
+   "months": [
+    {
+     "loc": 502,
+     "commits": 2,
+     "complexity_avg": 2.0,
+     "dependency_count": 63,
+     "agent_commit_ratio": 0.23,
+     "new_features": 0,
+     "bug_fixes": 0,
+     "refactorings": 0,
+     "month": "2023-01",
+     "total_churn": 70,
+     "lines_added": 42,
+     "merge_count": 0,
+     "unique_authors": 1
+    },
+    {
+     "loc": 498,
+     "commits": 2,
+     "complexity_avg": 1.8,
+     "dependency_count": 65,
+     "agent_commit_ratio": 0.33,
+     "new_features": 0,
+     "bug_fixes": 0,
+     "refactorings": 0,
+     "month": "2023-02",
+     "total_churn": 234,
+     "lines_added": 117,
+     "merge_count": 0,
+     "unique_authors": 2
+    },
+    {
+     "loc": 502,
+     "commits": 2,
+     "complexity_avg": 2.1,
+     "dependency_count": 69,
+     "agent_commit_ratio": 0.33,
+     "new_features": 0,
+     "bug_fixes": 1,
+     "refactorings": 0,
+     "month": "2023-03",
+     "total_churn": 308,
+     "lines_added": 123,
+     "merge_count": 0,
+     "unique_authors": 1
+    },
+    {
+     "loc": 509,
+     "commits": 1,
+     "complexity_avg": 2.2,
+     "dependency_count": 73,
+     "agent_commit_ratio": 0.3,
+     "new_features": 0,
+     "bug_fixes": 0,
+     "refactorings": 0,
+     "month": "2023-04",
+     "total_churn": 338,
+     "lines_added": 135,
+     "merge_count": 0,
+     "unique_authors": 1
+    }
+   ]
+  },
+  {
+   "label": "paper_law_II",
+   "case": "random_0010",
+   "kind": "random",
+   "outcome": "mismatch_boundary",
+   "oracle": false,
+   "ontology": "conformant",
+   "note": "",
+   "measurements": {
+    "monthsObserved": 11,
+    "activeMonthCount": 11,
+    "activeMonthRatio": 1.0,
+    "meanMonthlyCommits": 86.545455,
+    "commitsLast3Months": 325,
+    "commitCountCV": 0.281324,
+    "commitCountCVSample": 0.295056,
+    "commitHalfRatio": 1.563444,
+    "commitSecondHalfMean": 103.5,
+    "churnCV": 0.436493,
+    "linesAddedCV": 0.537019,
+    "mergeMonthRatio": 0.727273,
+    "multiAuthorMonthRatio": 0.727273,
+    "complexityMonthCount": 11,
+    "complexityHalfMeanFirst": 6.82,
+    "complexityHalfMeanSecond": 6.7,
+    "complexityHalfMeanChange": -0.12,
+    "complexityFirst": 6.7,
+    "complexityLast": 6.6,
+    "complexityChange": -0.1,
+    "complexityGrowthRate": -0.014925,
+    "monthlyComplexityGrowth": -0.001493,
+    "bugFixRatioFirstHalf": 0.321216,
+    "bugFixRatioSecondHalf": 0.282044,
+    "bugFixHalfRatio": 0.878051,
+    "locSeriesLength": 11,
+    "locMKTau": 1.0,
+    "locMKS": 55,
+    "locMKpValue": 2.6e-05,
+    "locSenSlope": 2509.0,
+    "locStart": 11991,
+    "locEnd": 38738,
+    "locDelta": 26747,
+    "locGrowthRate": 2.23059,
+    "locChangePct": 223.058961,
+    "locEndToStartRatio": 3.23059,
+    "complexityToLocGrowthRatio": -0.006691,
+    "locToComplexityGrowthRatio": -149.449504,
+    "locGrowthLast3": 0.215806,
+    "featureCommitsFirstHalf": 119,
+    "featureCommitsSecondHalf": 214,
+    "featureCommitsTotal": 333,
+    "featureSecondToFirstRatio": 1.798319,
+    "locDeltaPerFeature": 80.321321,
+    "refactoringCommits": 135,
+    "refactoringRatio": 0.141807,
+    "dependencyCountStart": 32,
+    "dependencyCountEnd": 41,
+    "dependencyGrowthRate": 0.28125,
+    "recentAgentCommitRatio": 0.45,
+    "correctiveLast2Months": 116,
+    "risingMonthCount": 3,
+    "correctiveMonthCount": 10,
+    "responsiveMonthCount": 3,
+    "correctiveToRisingRatio": 3.3333333333333335
+   },
+   "months": [
+    {
+     "loc": 11991,
+     "commits": 55,
+     "complexity_avg": 6.7,
+     "dependency_count": 32,
+     "agent_commit_ratio": 0.39,
+     "new_features": 7,
+     "bug_fixes": 8,
+     "refactorings": 3,
+     "month": "2023-01",
+     "total_churn": 5555,
+     "lines_added": 4444,
+     "merge_count": 12,
+     "unique_authors": 1
+    },
+    {
+     "loc": 13635,
+     "commits": 59,
+     "complexity_avg": 6.5,
+     "dependency_count": 33,
+     "agent_commit_ratio": 0.43,
+     "new_features": 38,
+     "bug_fixes": 28,
+     "refactorings": 13,
+     "month": "2023-02",
+     "total_churn": 22479,
+     "lines_added": 8991,
+     "merge_count": 0,
+     "unique_authors": 4
+    },
+    {
+     "loc": 15968,
+     "commits": 79,
+     "complexity_avg": 6.8,
+     "dependency_count": 34,
+     "agent_commit_ratio": 0.46,
+     "new_features": 42,
+     "bug_fixes": 47,
+     "refactorings": 15,
+     "month": "2023-03",
+     "total_churn": 28835,
+     "lines_added": 23068,
+     "merge_count": 5,
+     "unique_authors": 2
+    },
+    {
+     "loc": 17044,
+     "commits": 63,
+     "complexity_avg": 7.0,
+     "dependency_count": 34,
+     "agent_commit_ratio": 0.5,
+     "new_features": 31,
+     "bug_fixes": 7,
+     "refactorings": 1,
+     "month": "2023-04",
+     "total_churn": 17892,
+     "lines_added": 8946,
+     "merge_count": 13,
+     "unique_authors": 6
+    },
+    {
+     "loc": 19663,
+     "commits": 75,
+     "complexity_avg": 7.1,
+     "dependency_count": 35,
+     "agent_commit_ratio": 0.49,
+     "new_features": 1,
+     "bug_fixes": 21,
+     "refactorings": 0,
+     "month": "2023-05",
+     "total_churn": 19350,
+     "lines_added": 11610,
+     "merge_count": 31,
+     "unique_authors": 5
+    },
+    {
+     "loc": 22750,
+     "commits": 68,
+     "complexity_avg": 6.9,
+     "dependency_count": 36,
+     "agent_commit_ratio": 0.48,
+     "new_features": 30,
+     "bug_fixes": 24,
+     "refactorings": 0,
+     "month": "2023-06",
+     "total_churn": 4760,
+     "lines_added": 1904,
+     "merge_count": 0,
+     "unique_authors": 5
+    },
+    {
+     "loc": 22778,
+     "commits": 107,
+     "complexity_avg": 6.8,
+     "dependency_count": 38,
+     "agent_commit_ratio": 0.44,
+     "new_features": 53,
+     "bug_fixes": 4,
+     "refactorings": 31,
+     "month": "2023-07",
+     "total_churn": 16692,
+     "lines_added": 13353,
+     "merge_count": 52,
+     "unique_authors": 2
+    },
+    {
+     "loc": 27152,
+     "commits": 121,
+     "complexity_avg": 6.6,
+     "dependency_count": 41,
+     "agent_commit_ratio": 0.4,
+     "new_features": 50,
+     "bug_fixes": 29,
+     "refactorings": 3,
+     "month": "2023-08",
+     "total_churn": 12100,
+     "lines_added": 4840,
+     "merge_count": 18,
+     "unique_authors": 4
+    },
+    {
+     "loc": 31862,
+     "commits": 126,
+     "complexity_avg": 6.5,
+     "dependency_count": 40,
+     "agent_commit_ratio": 0.41,
+     "new_features": 48,
+     "bug_fixes": 36,
+     "refactorings": 33,
+     "month": "2023-09",
+     "total_churn": 21294,
+     "lines_added": 17035,
+     "merge_count": 0,
+     "unique_authors": 1
+    },
+    {
+     "loc": 33531,
+     "commits": 90,
+     "complexity_avg": 6.8,
+     "dependency_count": 40,
+     "agent_commit_ratio": 0.42,
+     "new_features": 31,
+     "bug_fixes": 22,
+     "refactorings": 25,
+     "month": "2023-10",
+     "total_churn": 17730,
+     "lines_added": 10638,
+     "merge_count": 41,
+     "unique_authors": 1
+    },
+    {
+     "loc": 38738,
+     "commits": 109,
+     "complexity_avg": 6.6,
+     "dependency_count": 41,
+     "agent_commit_ratio": 0.52,
+     "new_features": 2,
+     "bug_fixes": 58,
+     "refactorings": 11,
+     "month": "2023-11",
+     "total_churn": 30520,
+     "lines_added": 15260,
+     "merge_count": 19,
+     "unique_authors": 3
+    }
+   ]
+  },
+  {
+   "label": "paper_law_VIII",
+   "case": "random_0018",
+   "kind": "random",
+   "outcome": "mismatch_boundary",
+   "oracle": true,
+   "ontology": "nonconformant",
+   "note": "",
+   "measurements": {
+    "monthsObserved": 11,
+    "activeMonthCount": 11,
+    "activeMonthRatio": 1.0,
+    "meanMonthlyCommits": 90.636364,
+    "commitsLast3Months": 324,
+    "commitCountCV": 0.229284,
+    "commitCountCVSample": 0.240475,
+    "commitHalfRatio": 1.382222,
+    "commitSecondHalfMean": 103.666667,
+    "churnCV": 0.587283,
+    "linesAddedCV": 0.666462,
+    "mergeMonthRatio": 0.545455,
+    "multiAuthorMonthRatio": 0.909091,
+    "complexityMonthCount": 11,
+    "complexityHalfMeanFirst": 4.04,
+    "complexityHalfMeanSecond": 3.95,
+    "complexityHalfMeanChange": -0.09,
+    "complexityFirst": 4.2,
+    "complexityLast": 4.3,
+    "complexityChange": 0.1,
+    "complexityGrowthRate": 0.02381,
+    "monthlyComplexityGrowth": 0.002381,
+    "bugFixRatioFirstHalf": 0.279802,
+    "bugFixRatioSecondHalf": 0.300666,
+    "bugFixHalfRatio": 1.074565,
+    "locSeriesLength": 11,
+    "locMKTau": 1.0,
+    "locMKS": 55,
+    "locMKpValue": 2.6e-05,
+    "locSenSlope": 1824.0,
+    "locStart": 11704,
+    "locEnd": 33747,
+    "locDelta": 22043,
+    "locGrowthRate": 1.883373,
+    "locChangePct": 188.337321,
+    "locEndToStartRatio": 2.883373,
+    "complexityToLocGrowthRatio": 0.012642,
+    "locToComplexityGrowthRatio": 79.101675,
+    "locGrowthLast3": 0.338529,
+    "featureCommitsFirstHalf": 125,
+    "featureCommitsSecondHalf": 266,
+    "featureCommitsTotal": 391,
+    "featureSecondToFirstRatio": 2.128,
+    "locDeltaPerFeature": 56.375959,
+    "refactoringCommits": 130,
+    "refactoringRatio": 0.130391,
+    "dependencyCountStart": 35,
+    "dependencyCountEnd": 55,
+    "dependencyGrowthRate": 0.571429,
+    "recentAgentCommitRatio": 0.663333,
+    "correctiveLast2Months": 96,
+    "risingMonthCount": 1,
+    "correctiveMonthCount": 10,
+    "responsiveMonthCount": 0,
+    "correctiveToRisingRatio": 10.0
+   },
+   "months": [
+    {
+     "loc": 11704,
+     "commits": 80,
+     "complexity_avg": 4.2,
+     "dependency_count": 35,
+     "agent_commit_ratio": 0.42,
+     "new_features": 36,
+     "bug_fixes": 22,
+     "refactorings": 6,
+     "month": "2023-01",
+     "total_churn": 13280,
+     "lines_added": 5312,
+     "merge_count": 40,
+     "unique_authors": 2
+    },
+    {
+     "loc": 13481,
+     "commits": 62,
+     "complexity_avg": 4.1,
+     "dependency_count": 37,
+     "agent_commit_ratio": 0.41,
+     "new_features": 21,
+     "bug_fixes": 27,
+     "refactorings": 3,
+     "month": "2023-02",
+     "total_churn": 23126,
+     "lines_added": 18500,
+     "merge_count": 0,
+     "unique_authors": 4
+    },
+    {
+     "loc": 14918,
+     "commits": 85,
+     "complexity_avg": 4.0,
+     "dependency_count": 37,
+     "agent_commit_ratio": 0.5,
+     "new_features": 5,
+     "bug_fixes": 25,
+     "refactorings": 2,
+     "month": "2023-03",
+     "total_churn": 9435,
+     "lines_added": 7548,
+     "merge_count": 28,
+     "unique_authors": 1
+    },
+    {
+     "loc": 16235,
+     "commits": 56,
+     "complexity_avg": 3.9,
+     "dependency_count": 38,
+     "agent_commit_ratio": 0.53,
+     "new_features": 25,
+     "bug_fixes": 16,
+     "refactorings": 9,
+     "month": "2023-04",
+     "total_churn": 13216,
+     "lines_added": 5286,
+     "merge_count": 23,
+     "unique_authors": 4
+    },
+    {
+     "loc": 18165,
+     "commits": 92,
+     "complexity_avg": 4.0,
+     "dependency_count": 38,
+     "agent_commit_ratio": 0.5,
+     "new_features": 38,
+     "bug_fixes": 10,
+     "refactorings": 7,
+     "month": "2023-05",
+     "total_churn": 34592,
+     "lines_added": 20755,
+     "merge_count": 5,
+     "unique_authors": 6
+    },
+    {
+     "loc": 19426,
+     "commits": 98,
+     "complexity_avg": 3.8,
+     "dependency_count": 41,
+     "agent_commit_ratio": 0.59,
+     "new_features": 58,
+     "bug_fixes": 30,
+     "refactorings": 1,
+     "month": "2023-06",
+     "total_churn": 37142,
+     "lines_added": 22285,
+     "merge_count": 28,
+     "unique_authors": 5
+    },
+    {
+     "loc": 22613,
+     "commits": 77,
+     "complexity_avg": 3.8,
+     "dependency_count": 42,
+     "agent_commit_ratio": 0.61,
+     "new_features": 33,
+     "bug_fixes": 41,
+     "refactorings": 17,
+     "month": "2023-07",
+     "total_churn": 17556,
+     "lines_added": 8778,
+     "merge_count": 38,
+     "unique_authors": 5
+    },
+    {
+     "loc": 23531,
+     "commits": 123,
+     "complexity_avg": 3.9,
+     "dependency_count": 45,
+     "agent_commit_ratio": 0.58,
+     "new_features": 37,
+     "bug_fixes": 2,
+     "refactorings": 33,
+     "month": "2023-08",
+     "total_churn": 3813,
+     "lines_added": 3050,
+     "merge_count": 0,
+     "unique_authors": 5
+    },
+    {
+     "loc": 25212,
+     "commits": 98,
+     "complexity_avg": 3.9,
+     "dependency_count": 48,
+     "agent_commit_ratio": 0.67,
+     "new_features": 56,
+     "bug_fixes": 29,
+     "refactorings": 26,
+     "month": "2023-09",
+     "total_churn": 19992,
+     "lines_added": 7996,
+     "merge_count": 0,
+     "unique_authors": 4
+    },
+    {
+     "loc": 30246,
+     "commits": 124,
+     "complexity_avg": 4.0,
+     "dependency_count": 51,
+     "agent_commit_ratio": 0.66,
+     "new_features": 41,
+     "bug_fixes": 19,
+     "refactorings": 9,
+     "month": "2023-10",
+     "total_churn": 27156,
+     "lines_added": 13578,
+     "merge_count": 0,
+     "unique_authors": 5
+    },
+    {
+     "loc": 33747,
+     "commits": 102,
+     "complexity_avg": 4.3,
+     "dependency_count": 55,
+     "agent_commit_ratio": 0.66,
+     "new_features": 41,
+     "bug_fixes": 51,
+     "refactorings": 17,
+     "month": "2023-11",
+     "total_churn": 3366,
+     "lines_added": 1346,
+     "merge_count": 0,
+     "unique_authors": 2
+    }
+   ]
+  },
+  {
+   "label": "paper_law_VIII",
+   "case": "grid_0050",
+   "kind": "grid",
+   "outcome": "mismatch_boundary",
+   "oracle": true,
+   "ontology": "nonconformant",
+   "note": "",
+   "measurements": {
+    "monthsObserved": 5,
+    "activeMonthCount": 4,
+    "activeMonthRatio": 0.8,
+    "meanMonthlyCommits": 10.0,
+    "commitsLast3Months": 42,
+    "commitCountCV": 0.91214,
+    "commitCountCVSample": 1.019804,
+    "commitHalfRatio": 3.5,
+    "commitSecondHalfMean": 14.0,
+    "churnCV": 0.885336,
+    "linesAddedCV": 0.809207,
+    "mergeMonthRatio": 0.4,
+    "multiAuthorMonthRatio": 0.8,
+    "complexityMonthCount": 5,
+    "complexityHalfMeanFirst": 2.1,
+    "complexityHalfMeanSecond": 2.233333,
+    "complexityHalfMeanChange": 0.133333,
+    "complexityFirst": 2.1,
+    "complexityLast": 2.1,
+    "complexityChange": 0.0,
+    "complexityGrowthRate": 0.0,
+    "monthlyComplexityGrowth": 0.0,
+    "bugFixRatioFirstHalf": 0.2,
+    "bugFixRatioSecondHalf": 0.119048,
+    "bugFixHalfRatio": 0.595238,
+    "locSeriesLength": 5,
+    "locMKTau": -0.7,
+    "locMKS": -7,
+    "locMKpValue": 0.096092,
+    "locSenSlope": -5.833333,
+    "locStart": 190,
+    "locEnd": 160,
+    "locDelta": -30,
+    "locGrowthRate": -0.157895,
+    "locChangePct": -15.789474,
+    "locEndToStartRatio": 0.842105,
+    "complexityToLocGrowthRatio": -0.0,
+    "locGrowthLast3": -0.111111,
+    "featureCommitsFirstHalf": 55,
+    "featureCommitsSecondHalf": 22,
+    "featureCommitsTotal": 77,
+    "featureSecondToFirstRatio": 0.4,
+    "locDeltaPerFeature": -0.38961,
+    "refactoringCommits": 10,
+    "refactoringRatio": 0.2,
+    "dependencyCountStart": 100,
+    "dependencyCountEnd": 10,
+    "dependencyGrowthRate": -0.9,
+    "recentAgentCommitRatio": 0.183333,
+    "correctiveLast2Months": 10,
+    "risingMonthCount": 1,
+    "correctiveMonthCount": 1,
+    "responsiveMonthCount": 0,
+    "correctiveToRisingRatio": 1.0
+   },
+   "months": [
+    {
+     "loc": 190,
+     "commits": 5,
+     "complexity_avg": 2.1,
+     "dependency_count": 100,
+     "agent_commit_ratio": 0.5,
+     "new_features": 5,
+     "bug_fixes": 2,
+     "refactorings": 0,
+     "month": "2023-01",
+     "total_churn": 1990,
+     "lines_added": 1194,
+     "merge_count": 0,
+     "unique_authors": 5
+    },
+    {
+     "loc": 180,
+     "commits": 3,
+     "complexity_avg": 2.1,
+     "dependency_count": 10,
+     "agent_commit_ratio": 0.05,
+     "new_features": 50,
+     "bug_fixes": 0,
+     "refactorings": 1,
+     "month": "2023-02",
+     "total_churn": 930,
+     "lines_added": 372,
+     "merge_count": 1,
+     "unique_authors": 3
+    },
+    {
+     "loc": 180,
+     "commits": 0,
+     "complexity_avg": 2.2,
+     "dependency_count": 20,
+     "agent_commit_ratio": 0.0,
+     "new_features": 6,
+     "bug_fixes": 0,
+     "refactorings": 4,
+     "month": "2023-03",
+     "total_churn": 0,
+     "lines_added": 0,
+     "merge_count": 0,
+     "unique_authors": 0
+    },
+    {
+     "loc": 180,
+     "commits": 21,
+     "complexity_avg": 2.4,
+     "dependency_count": 10,
+     "agent_commit_ratio": 0.5,
+     "new_features": 15,
+     "bug_fixes": 4,
+     "refactorings": 4,
+     "month": "2023-04",
+     "total_churn": 5229,
+     "lines_added": 2614,
+     "merge_count": 6,
+     "unique_authors": 3
+    },
+    {
+     "loc": 160,
+     "commits": 21,
+     "complexity_avg": 2.1,
+     "dependency_count": 10,
+     "agent_commit_ratio": 0.05,
+     "new_features": 1,
+     "bug_fixes": 1,
+     "refactorings": 1,
+     "month": "2023-05",
+     "total_churn": 1827,
+     "lines_added": 1461,
+     "merge_count": 0,
+     "unique_authors": 5
+    }
+   ]
+  }
+ ],
+ "inconsistent_batches": [],
+ "cases_near_a_threshold_per_group": {
+  "paper_law_VIII": 171,
+  "pattern_ShadowTechDebt": 25,
+  "phase_ensemble": 54,
+  "paper_law_VII": 44,
+  "pipeline_law_II": 29,
+  "paper_law_I": 2,
+  "paper_law_III": 24,
+  "pattern_CopyPasteOverReuse": 18,
+  "phase_mk": 29,
+  "pipeline_law_I": 8,
+  "paper_law_II": 15,
+  "pattern_DependencySprawl": 9,
+  "pipeline_law_VII": 14,
+  "pattern_RefactoringAvoidance": 7,
+  "paper_law_VI": 1
+ },
+ "timings": {
+  "jvm_baseline_canonical_s": 1.6411966509767808,
+  "jvm_baseline_with_legacy_s": 2.13547793001635,
+  "workers": 3,
+  "batch_size": 30,
+  "legacy_batch_size": 6,
+  "wall_total_s": 657.6529780150158,
+  "batches": [
+   {
+    "legacy": false,
+    "n_cases": 30,
+    "wall_s": 15.269020056992304,
+    "pass1": {
+     "tbox_load_s": 0.4639571869629435,
+     "abox_load_s": 0.08128924499033019,
+     "reason_s": 14.67274400201859,
+     "extract_s": 0.016275727015454322,
+     "total_s": 15.235307659953833
+    },
+    "pass2": {},
+    "abox_triples": 1421,
+    "abox_individuals": 30
+   },
+   {
+    "legacy": false,
+    "n_cases": 30,
+    "wall_s": 23.753531667985953,
+    "pass1": {
+     "tbox_load_s": 0.478972676966805,
+     "abox_load_s": 0.08604778198059648,
+     "reason_s": 23.144369872985408,
+     "extract_s": 0.01693428703583777,
+     "total_s": 23.727497672953177
+    },
+    "pass2": {},
+    "abox_triples": 1535,
+    "abox_individuals": 30
+   },
+   {
+    "legacy": false,
+    "n_cases": 30,
+    "wall_s": 30.535078084969427,
+    "pass1": {
+     "tbox_load_s": 0.4425456289900467,
+     "abox_load_s": 0.09510923695052043,
+     "reason_s": 29.96606394095579,
+     "extract_s": 0.016851840016897768,
+     "total_s": 30.52147405600408
+    },
+    "pass2": {},
+    "abox_triples": 1577,
+    "abox_individuals": 30
+   },
+   {
+    "legacy": false,
+    "n_cases": 30,
+    "wall_s": 23.98891758994432,
+    "pass1": {
+     "tbox_load_s": 0.06140296597732231,
+     "abox_load_s": 0.01932511100312695,
+     "reason_s": 23.88122621300863,
+     "extract_s": 0.016254913993179798,
+     "total_s": 23.978445122018456
+    },
+    "pass2": {},
+    "abox_triples": 1558,
+    "abox_individuals": 30
+   },
+   {
+    "legacy": false,
+    "n_cases": 30,
+    "wall_s": 22.472513181972317,
+    "pass1": {
+     "tbox_load_s": 0.05883185297716409,
+     "abox_load_s": 0.01873494900064543,
+     "reason_s": 22.367739461013116,
+     "extract_s": 0.01684920903062448,
+     "total_s": 22.46237663301872
+    },
+    "pass2": {},
+    "abox_triples": 1563,
+    "abox_individuals": 30
+   },
+   {
+    "legacy": false,
+    "n_cases": 30,
+    "wall_s": 25.353222572011873,
+    "pass1": {
+     "tbox_load_s": 0.06005771801574156,
+     "abox_load_s": 0.01834472600603476,
+     "reason_s": 25.246182053000666,
+     "extract_s": 0.018376430962234735,
+     "total_s": 25.343200168048497
+    },
+    "pass2": {},
+    "abox_triples": 1572,
+    "abox_individuals": 30
+   },
+   {
+    "legacy": false,
+    "n_cases": 30,
+    "wall_s": 25.95661727298284,
+    "pass1": {
+     "tbox_load_s": 0.05882942595053464,
+     "abox_load_s": 0.018246699997689575,
+     "reason_s": 25.851364039990585,
+     "extract_s": 0.017718060000333935,
+     "total_s": 25.946389614022337
+    },
+    "pass2": {},
+    "abox_triples": 1573,
+    "abox_individuals": 30
+   },
+   {
+    "legacy": false,
+    "n_cases": 30,
+    "wall_s": 26.331994829000905,
+    "pass1": {
+     "tbox_load_s": 0.058608115010429174,
+     "abox_load_s": 0.018182105966843665,
+     "reason_s": 26.215898733003996,
+     "extract_s": 0.028590624046046287,
+     "total_s": 26.321523366961628
+    },
+    "pass2": {},
+    "abox_triples": 1570,
+    "abox_individuals": 30
+   },
+   {
+    "legacy": false,
+    "n_cases": 30,
+    "wall_s": 30.6591519350186,
+    "pass1": {
+     "tbox_load_s": 0.060840196965727955,
+     "abox_load_s": 0.018970932986121625,
+     "reason_s": 30.550251677981578,
+     "extract_s": 0.018125201982911676,
+     "total_s": 30.648469112988096
+    },
+    "pass2": {},
+    "abox_triples": 1577,
+    "abox_individuals": 30
+   },
+   {
+    "legacy": false,
+    "n_cases": 30,
+    "wall_s": 25.551338011049666,
+    "pass1": {
+     "tbox_load_s": 0.061697197961620986,
+     "abox_load_s": 0.01825948298210278,
+     "reason_s": 25.442142118990887,
+     "extract_s": 0.018706861999817193,
+     "total_s": 25.54102313600015
+    },
+    "pass2": {},
+    "abox_triples": 1567,
+    "abox_individuals": 30
+   },
+   {
+    "legacy": false,
+    "n_cases": 30,
+    "wall_s": 26.878992901998572,
+    "pass1": {
+     "tbox_load_s": 0.1302415700047277,
+     "abox_load_s": 0.027791502012405545,
+     "reason_s": 26.686183787009213,
+     "extract_s": 0.01648932899115607,
+     "total_s": 26.86198821599828
+    },
+    "pass2": {},
+    "abox_triples": 1571,
+    "abox_individuals": 30
+   },
+   {
+    "legacy": false,
+    "n_cases": 8,
+    "wall_s": 3.5441730719758198,
+    "pass1": {
+     "tbox_load_s": 0.06492215895559639,
+     "abox_load_s": 0.0059658989775925875,
+     "reason_s": 3.4581631399923936,
+     "extract_s": 0.009961123985704035,
+     "total_s": 3.5392379860277288
+    },
+    "pass2": {},
+    "abox_triples": 416,
+    "abox_individuals": 8
+   },
+   {
+    "legacy": true,
+    "n_cases": 6,
+    "wall_s": 57.72690174099989,
+    "pass1": {
+     "tbox_load_s": 0.07270574301946908,
+     "abox_load_s": 0.012593024992384017,
+     "reason_s": 27.732858726987615,
+     "extract_s": 0.03169948898721486,
+     "total_s": 27.850159561028704
+    },
+    "pass2": {
+     "tbox_load_s": 0.08291340398136526,
+     "abox_load_s": 0.013087257975712419,
+     "reason_s": 29.73715694900602,
+     "extract_s": 0.03228634502738714,
+     "total_s": 29.86579921701923
+    },
+    "abox_triples": 786,
+    "abox_individuals": 42
+   },
+   {
+    "legacy": true,
+    "n_cases": 6,
+    "wall_s": 55.89731331396615,
+    "pass1": {
+     "tbox_load_s": 0.08061027200892568,
+     "abox_load_s": 0.015261296008247882,
+     "reason_s": 26.541337564005516,
+     "extract_s": 0.09081327199237421,
+     "total_s": 26.728318884037435
+    },
+    "pass2": {
+     "tbox_load_s": 0.24011568096466362,
+     "abox_load_s": 0.03915157198207453,
+     "reason_s": 28.846612658002414,
+     "extract_s": 0.030127078003715724,
+     "total_s": 29.156649594020564
+    },
+    "abox_triples": 782,
+    "abox_individuals": 42
+   },
+   {
+    "legacy": true,
+    "n_cases": 6,
+    "wall_s": 89.86817789002089,
+    "pass1": {
+     "tbox_load_s": 0.07776040199678391,
+     "abox_load_s": 0.012056578998453915,
+     "reason_s": 44.71192389301723,
+     "extract_s": 0.030141303956042975,
+     "total_s": 44.83211161399959
+    },
+    "pass2": {
+     "tbox_load_s": 0.07780069200089201,
+     "abox_load_s": 0.01281107496470213,
+     "reason_s": 44.90347324096365,
+     "extract_s": 0.03008781000971794,
+     "total_s": 45.02444170298986
+    },
+    "abox_triples": 786,
+    "abox_individuals": 42
+   },
+   {
+    "legacy": true,
+    "n_cases": 6,
+    "wall_s": 41.921470817003865,
+    "pass1": {
+     "tbox_load_s": 0.07863368699327111,
+     "abox_load_s": 0.012113383039832115,
+     "reason_s": 21.02501439896878,
+     "extract_s": 0.028646730992477387,
+     "total_s": 21.144682300975546
+    },
+    "pass2": {
+     "tbox_load_s": 0.07594027800951153,
+     "abox_load_s": 0.011467143951449543,
+     "reason_s": 20.649105247983243,
+     "extract_s": 0.029760345991235226,
+     "total_s": 20.76649151399033
+    },
+    "abox_triples": 735,
+    "abox_individuals": 37
+   },
+   {
+    "legacy": true,
+    "n_cases": 6,
+    "wall_s": 28.538187413010746,
+    "pass1": {
+     "tbox_load_s": 0.08395446999929845,
+     "abox_load_s": 0.012550226994790137,
+     "reason_s": 14.25445489102276,
+     "extract_s": 0.03011197899468243,
+     "total_s": 14.381430987035856
+    },
+    "pass2": {
+     "tbox_load_s": 0.07385776902083308,
+     "abox_load_s": 0.01066068297950551,
+     "reason_s": 14.033044667972717,
+     "extract_s": 0.02898017398547381,
+     "total_s": 14.146784294978715
+    },
+    "abox_triples": 672,
+    "abox_individuals": 32
+   },
+   {
+    "legacy": true,
+    "n_cases": 6,
+    "wall_s": 19.73111016000621,
+    "pass1": {
+     "tbox_load_s": 0.07565000996692106,
+     "abox_load_s": 0.009264464024454355,
+     "reason_s": 11.079522003012244,
+     "extract_s": 0.027314454957377166,
+     "total_s": 11.191977011039853
+    },
+    "pass2": {
+     "tbox_load_s": 0.07826667302288115,
+     "abox_load_s": 0.006451491033658385,
+     "reason_s": 8.420135774009395,
+     "extract_s": 0.02592108299722895,
+     "total_s": 8.531009161961265
+    },
+    "abox_triples": 558,
+    "abox_individuals": 25
+   },
+   {
+    "legacy": true,
+    "n_cases": 6,
+    "wall_s": 62.42501023499062,
+    "pass1": {
+     "tbox_load_s": 0.0786909150192514,
+     "abox_load_s": 0.014101483975537121,
+     "reason_s": 35.478711539006326,
+     "extract_s": 0.028633642999920994,
+     "total_s": 35.6004089480266
+    },
+    "pass2": {
+     "tbox_load_s": 0.07754115399438888,
+     "abox_load_s": 0.012591548031195998,
+     "reason_s": 26.693212208978366,
+     "extract_s": 0.02785081905312836,
+     "total_s": 26.811423417006154
+    },
+    "abox_triples": 886,
+    "abox_individuals": 47
+   },
+   {
+    "legacy": true,
+    "n_cases": 6,
+    "wall_s": 88.51905795600032,
+    "pass1": {
+     "tbox_load_s": 0.07894480897812173,
+     "abox_load_s": 0.018866188009269536,
+     "reason_s": 44.271644385007676,
+     "extract_s": 0.03320405195700005,
+     "total_s": 44.403006151958834
+    },
+    "pass2": {
+     "tbox_load_s": 0.07614925497910008,
+     "abox_load_s": 0.016408910043537617,
+     "reason_s": 43.946623600961175,
+     "extract_s": 0.06338090897770599,
+     "total_s": 44.10289960697992
+    },
+    "abox_triples": 1107,
+    "abox_individuals": 62
+   },
+   {
+    "legacy": true,
+    "n_cases": 6,
+    "wall_s": 90.21138959901873,
+    "pass1": {
+     "tbox_load_s": 0.07548370998119935,
+     "abox_load_s": 0.012677742983214557,
+     "reason_s": 48.83983661100501,
+     "extract_s": 0.027495672984514385,
+     "total_s": 48.955760221986566
+    },
+    "pass2": {
+     "tbox_load_s": 0.07578179298434407,
+     "abox_load_s": 0.01202490704599768,
+     "reason_s": 41.12711797200609,
+     "extract_s": 0.029630864039063454,
+     "total_s": 41.24480373197002
+    },
+    "abox_triples": 821,
+    "abox_individuals": 42
+   },
+   {
+    "legacy": true,
+    "n_cases": 6,
+    "wall_s": 59.98215282498859,
+    "pass1": {
+     "tbox_load_s": 0.0765308840200305,
+     "abox_load_s": 0.013043165032286197,
+     "reason_s": 32.65092204901157,
+     "extract_s": 0.02853278798284009,
+     "total_s": 32.76932450098684
+    },
+    "pass2": {
+     "tbox_load_s": 0.24160741502419114,
+     "abox_load_s": 0.011739130015484989,
+     "reason_s": 26.91708230902441,
+     "extract_s": 0.03050781396450475,
+     "total_s": 27.201169641979504
+    },
+    "abox_triples": 825,
+    "abox_individuals": 42
+   },
+   {
+    "legacy": true,
+    "n_cases": 6,
+    "wall_s": 87.76155256596394,
+    "pass1": {
+     "tbox_load_s": 0.13562172395177186,
+     "abox_load_s": 0.026066495978739113,
+     "reason_s": 43.407826653972734,
+     "extract_s": 0.030857732985168695,
+     "total_s": 43.60132539801998
+    },
+    "pass2": {
+     "tbox_load_s": 0.07805276499129832,
+     "abox_load_s": 0.017815175000578165,
+     "reason_s": 44.016023679985665,
+     "extract_s": 0.031418033002410084,
+     "total_s": 44.14358919102233
+    },
+    "abox_triples": 1023,
+    "abox_individuals": 56
+   },
+   {
+    "legacy": true,
+    "n_cases": 6,
+    "wall_s": 55.552229007997084,
+    "pass1": {
+     "tbox_load_s": 0.07995108095929027,
+     "abox_load_s": 0.014671061013359576,
+     "reason_s": 30.446571320004296,
+     "extract_s": 0.0288042810279876,
+     "total_s": 30.570330138958525
+    },
+    "pass2": {
+     "tbox_load_s": 0.08646088198293,
+     "abox_load_s": 0.012635105988010764,
+     "reason_s": 24.842680979985744,
+     "extract_s": 0.02780428499681875,
+     "total_s": 24.969880255986936
+    },
+    "abox_triples": 827,
+    "abox_individuals": 42
+   },
+   {
+    "legacy": true,
+    "n_cases": 6,
+    "wall_s": 127.5608377919998,
+    "pass1": {
+     "tbox_load_s": 0.08188222697935998,
+     "abox_load_s": 0.014936276013031602,
+     "reason_s": 62.23585049499525,
+     "extract_s": 0.030249750998336822,
+     "total_s": 62.36316084302962
+    },
+    "pass2": {
+     "tbox_load_s": 0.29021806200034916,
+     "abox_load_s": 0.01504916901467368,
+     "reason_s": 64.84802213998046,
+     "extract_s": 0.030092414002865553,
+     "total_s": 65.18367667798884
+    },
+    "abox_triples": 981,
+    "abox_individuals": 53
+   },
+   {
+    "legacy": true,
+    "n_cases": 6,
+    "wall_s": 59.74560538097285,
+    "pass1": {
+     "tbox_load_s": 0.07659283297834918,
+     "abox_load_s": 0.01405243098270148,
+     "reason_s": 35.407816481019836,
+     "extract_s": 0.028916857030708343,
+     "total_s": 35.52760907704942
+    },
+    "pass2": {
+     "tbox_load_s": 0.07894482300616801,
+     "abox_load_s": 0.011945801030378789,
+     "reason_s": 24.08682222198695,
+     "extract_s": 0.028786283975932747,
+     "total_s": 24.206731325015426
+    },
+    "abox_triples": 922,
+    "abox_individuals": 49
+   },
+   {
+    "legacy": true,
+    "n_cases": 6,
+    "wall_s": 54.186067203001585,
+    "pass1": {
+     "tbox_load_s": 0.08129938197089359,
+     "abox_load_s": 0.013091137981973588,
+     "reason_s": 30.18064791202778,
+     "extract_s": 0.02676154102664441,
+     "total_s": 30.30204290902475
+    },
+    "pass2": {
+     "tbox_load_s": 0.07753369299462065,
+     "abox_load_s": 0.010774407011922449,
+     "reason_s": 23.73916964500677,
+     "extract_s": 0.04552780999802053,
+     "total_s": 23.873314513999503
+    },
+    "abox_triples": 808,
+    "abox_individuals": 41
+   },
+   {
+    "legacy": true,
+    "n_cases": 6,
+    "wall_s": 47.65789608703926,
+    "pass1": {
+     "tbox_load_s": 0.07646992901572958,
+     "abox_load_s": 0.011705397977493703,
+     "reason_s": 28.881587059004232,
+     "extract_s": 0.028382789983879775,
+     "total_s": 28.99840157898143
+    },
+    "pass2": {
+     "tbox_load_s": 0.0781136309960857,
+     "abox_load_s": 0.009432032995391637,
+     "reason_s": 18.53225064702565,
+     "extract_s": 0.02955484698759392,
+     "total_s": 18.649609910033178
+    },
+    "abox_triples": 735,
+    "abox_individuals": 36
+   },
+   {
+    "legacy": true,
+    "n_cases": 6,
+    "wall_s": 40.97615293599665,
+    "pass1": {
+     "tbox_load_s": 0.1588046100223437,
+     "abox_load_s": 0.018426350026857108,
+     "reason_s": 26.784141823998652,
+     "extract_s": 0.027363542991224676,
+     "total_s": 26.989688061992638
+    },
+    "pass2": {
+     "tbox_load_s": 0.07687159994384274,
+     "abox_load_s": 0.007548075984232128,
+     "reason_s": 13.852701951982453,
+     "extract_s": 0.026338932977523655,
+     "total_s": 13.963708785013296
+    },
+    "abox_triples": 713,
+    "abox_individuals": 34
+   },
+   {
+    "legacy": true,
+    "n_cases": 6,
+    "wall_s": 66.602739466005,
+    "pass1": {
+     "tbox_load_s": 0.07792885001981631,
+     "abox_load_s": 0.011380645970348269,
+     "reason_s": 37.29332495800918,
+     "extract_s": 0.027420861006248742,
+     "total_s": 37.410338825022336
+    },
+    "pass2": {
+     "tbox_load_s": 0.0782524129608646,
+     "abox_load_s": 0.008932558004744351,
+     "reason_s": 29.06429476599442,
+     "extract_s": 0.0309749849839136,
+     "total_s": 29.182733730005566
+    },
+    "abox_triples": 692,
+    "abox_individuals": 33
+   },
+   {
+    "legacy": true,
+    "n_cases": 6,
+    "wall_s": 58.20635335199768,
+    "pass1": {
+     "tbox_load_s": 0.08488716103602201,
+     "abox_load_s": 0.013244875008240342,
+     "reason_s": 32.20905819599284,
+     "extract_s": 0.028579535020980984,
+     "total_s": 32.336087196017615
+    },
+    "pass2": {
+     "tbox_load_s": 0.07744673098204657,
+     "abox_load_s": 0.0105900329654105,
+     "reason_s": 25.741086629976053,
+     "extract_s": 0.030050773988477886,
+     "total_s": 25.859404571005143
+    },
+    "abox_triples": 834,
+    "abox_individuals": 43
+   },
+   {
+    "legacy": true,
+    "n_cases": 6,
+    "wall_s": 82.53275426203618,
+    "pass1": {
+     "tbox_load_s": 0.3098717270186171,
+     "abox_load_s": 0.014481601014267653,
+     "reason_s": 40.46289634797722,
+     "extract_s": 0.0306219210033305,
+     "total_s": 40.818142389995046
+    },
+    "pass2": {
+     "tbox_load_s": 0.07951289898483083,
+     "abox_load_s": 0.014913043996784836,
+     "reason_s": 41.57273658399936,
+     "extract_s": 0.034004524000920355,
+     "total_s": 41.7014522299869
+    },
+    "abox_triples": 952,
+    "abox_individuals": 51
+   },
+   {
+    "legacy": true,
+    "n_cases": 6,
+    "wall_s": 52.262995723984204,
+    "pass1": {
+     "tbox_load_s": 0.08060860604746267,
+     "abox_load_s": 0.01178975700167939,
+     "reason_s": 29.475742456968874,
+     "extract_s": 0.027648784045595676,
+     "total_s": 29.596087171987165
+    },
+    "pass2": {
+     "tbox_load_s": 0.08622880501206964,
+     "abox_load_s": 0.01119810895761475,
+     "reason_s": 22.523548480996396,
+     "extract_s": 0.034937368996907026,
+     "total_s": 22.656173709023278
+    },
+    "abox_triples": 740,
+    "abox_individuals": 36
+   },
+   {
+    "legacy": true,
+    "n_cases": 6,
+    "wall_s": 56.80795497400686,
+    "pass1": {
+     "tbox_load_s": 0.08261318801669404,
+     "abox_load_s": 0.012562654970679432,
+     "reason_s": 28.962418120005168,
+     "extract_s": 0.02745225903345272,
+     "total_s": 29.08538631297415
+    },
+    "pass2": {
+     "tbox_load_s": 0.08257782197324559,
+     "abox_load_s": 0.011201501009054482,
+     "reason_s": 27.590142756002024,
+     "extract_s": 0.027458494994789362,
+     "total_s": 27.711678559018765
+    },
+    "abox_triples": 742,
+    "abox_individuals": 36
+   },
+   {
+    "legacy": true,
+    "n_cases": 6,
+    "wall_s": 45.52381353598321,
+    "pass1": {
+     "tbox_load_s": 0.08573462901404127,
+     "abox_load_s": 0.011643516016192734,
+     "reason_s": 29.73886217700783,
+     "extract_s": 0.028504949004855007,
+     "total_s": 29.8649870849913
+    },
+    "pass2": {
+     "tbox_load_s": 0.08256380504462868,
+     "abox_load_s": 0.007872275018598884,
+     "reason_s": 15.52966712799389,
+     "extract_s": 0.027972287964075804,
+     "total_s": 15.64833394199377
+    },
+    "abox_triples": 721,
+    "abox_individuals": 35
+   },
+   {
+    "legacy": true,
+    "n_cases": 6,
+    "wall_s": 95.27073130803183,
+    "pass1": {
+     "tbox_load_s": 0.45856206701137125,
+     "abox_load_s": 0.020554795977659523,
+     "reason_s": 52.870033138024155,
+     "extract_s": 0.030094482994172722,
+     "total_s": 53.380124032031745
+    },
+    "pass2": {
+     "tbox_load_s": 0.08010515198111534,
+     "abox_load_s": 0.012723169988021255,
+     "reason_s": 41.754584935028106,
+     "extract_s": 0.029016143002081662,
+     "total_s": 41.87665869400371
+    },
+    "abox_triples": 895,
+    "abox_individuals": 47
+   },
+   {
+    "legacy": true,
+    "n_cases": 6,
+    "wall_s": 47.42054770694813,
+    "pass1": {
+     "tbox_load_s": 0.0787680129869841,
+     "abox_load_s": 0.01411623100284487,
+     "reason_s": 30.715651218022685,
+     "extract_s": 0.02721444796770811,
+     "total_s": 30.836022367991973
+    },
+    "pass2": {
+     "tbox_load_s": 0.08015894499840215,
+     "abox_load_s": 0.008991134003736079,
+     "reason_s": 16.454395818000194,
+     "extract_s": 0.029255410947371274,
+     "total_s": 16.57302502100356
+    },
+    "abox_triples": 791,
+    "abox_individuals": 40
+   }
+  ]
+ },
+ "structure_check": {
+  "modules": {
+   "seo-entities": {
+    "swrl_rules": 0,
+    "datatype_restrictions": 0,
+    "equivalent_class_axioms": 0
+   },
+   "seo-processes": {
+    "swrl_rules": 0,
+    "datatype_restrictions": 0,
+    "equivalent_class_axioms": 0
+   },
+   "seo-metrics": {
+    "swrl_rules": 0,
+    "datatype_restrictions": 0,
+    "equivalent_class_axioms": 0
+   },
+   "seo-laws": {
+    "swrl_rules": 0,
+    "datatype_restrictions": 0,
+    "equivalent_class_axioms": 0
+   },
+   "seo-patterns": {
+    "swrl_rules": 0,
+    "datatype_restrictions": 0,
+    "equivalent_class_axioms": 0
+   },
+   "seo-inference": {
+    "swrl_rules": 0,
+    "datatype_restrictions": 108,
+    "equivalent_class_axioms": 93
+   },
+   "seo-evidence": {
+    "swrl_rules": 10,
+    "datatype_restrictions": 0,
+    "equivalent_class_axioms": 0
+   },
+   "seo-legacy": {
+    "swrl_rules": 0,
+    "datatype_restrictions": 216,
+    "equivalent_class_axioms": 212
+   }
+  },
+  "label_axioms_only_in_rule_modules": true,
+  "inference_module_is_swrl_free": true,
+  "legacy_module_is_swrl_free": true
+ },
+ "commit_rules": {
+  "n_commits": 38,
+  "agent_differences": [
+   "codex name substring only",
+   "devin name substring only",
+   "message marker only",
+   "message marker (protoc)",
+   "agent branch (new evidence)",
+   "claude branch",
+   "copilot-fix branch"
+  ],
+  "bugfix_differences": [
+   "subject: Prefix handling",
+   "subject: Prepatch notes",
+   "subject: Postfix config",
+   "subject: debugging output",
+   "subject: Unfixable"
+  ],
+  "note": "Agent differences are the intended WP1 changes: message markers and codex/devin author substrings dropped, branch evidence added. Bug-fix differences come from word-boundary matching on the subject only (D8).",
+  "stage_a_chunk_timings": [
+   {
+    "tbox_load_s": 0.04205943096894771,
+    "abox_load_s": 0.0064060669974423945,
+    "reason_s": 2.0454573939787224,
+    "extract_s": 0.0012598930043168366,
+    "total_s": 2.0954197910032235,
+    "commits": 38
+   }
+  ],
+  "rows": [
+   {
+    "desc": "plain",
+    "old_agent": false,
+    "new_agent": false,
+    "old_bugfix_keyword_substring": false,
+    "new_bugfix_rule": false,
+    "labels": []
+   },
+   {
+    "desc": "claude trailer",
+    "old_agent": true,
+    "new_agent": true,
+    "old_bugfix_keyword_substring": true,
+    "new_bugfix_rule": true,
+    "labels": [
+     "AgentCommit",
+     "AgentCommitByTrailer",
+     "BugFixCommit",
+     "ClaudeCodeCommit"
+    ]
+   },
+   {
+    "desc": "claude trailer mixed case",
+    "old_agent": true,
+    "new_agent": true,
+    "old_bugfix_keyword_substring": false,
+    "new_bugfix_rule": false,
+    "labels": [
+     "AgentCommit",
+     "AgentCommitByTrailer",
+     "ClaudeCodeCommit"
+    ]
+   },
+   {
+    "desc": "copilot trailer",
+    "old_agent": true,
+    "new_agent": true,
+    "old_bugfix_keyword_substring": false,
+    "new_bugfix_rule": false,
+    "labels": [
+     "AgentCommit",
+     "AgentCommitByTrailer",
+     "CopilotCommit"
+    ]
+   },
+   {
+    "desc": "github-copilot trailer",
+    "old_agent": true,
+    "new_agent": true,
+    "old_bugfix_keyword_substring": false,
+    "new_bugfix_rule": false,
+    "labels": [
+     "AgentCommit",
+     "AgentCommitByTrailer",
+     "CopilotCommit"
+    ]
+   },
+   {
+    "desc": "codex trailer",
+    "old_agent": true,
+    "new_agent": true,
+    "old_bugfix_keyword_substring": false,
+    "new_bugfix_rule": false,
+    "labels": [
+     "AgentCommit",
+     "AgentCommitByTrailer",
+     "CodexCommit"
+    ]
+   },
+   {
+    "desc": "bot author",
+    "old_agent": true,
+    "new_agent": true,
+    "old_bugfix_keyword_substring": false,
+    "new_bugfix_rule": false,
+    "labels": [
+     "AgentCommit",
+     "AgentCommitByBotAuthor"
+    ]
+   },
+   {
+    "desc": "codex name substring only",
+    "old_agent": true,
+    "new_agent": false,
+    "old_bugfix_keyword_substring": false,
+    "new_bugfix_rule": false,
+    "labels": []
+   },
+   {
+    "desc": "devin name substring only",
+    "old_agent": true,
+    "new_agent": false,
+    "old_bugfix_keyword_substring": false,
+    "new_bugfix_rule": false,
+    "labels": []
+   },
+   {
+    "desc": "message marker only",
+    "old_agent": true,
+    "new_agent": false,
+    "old_bugfix_keyword_substring": false,
+    "new_bugfix_rule": false,
+    "labels": []
+   },
+   {
+    "desc": "message marker (protoc)",
+    "old_agent": true,
+    "new_agent": false,
+    "old_bugfix_keyword_substring": false,
+    "new_bugfix_rule": false,
+    "labels": []
+   },
+   {
+    "desc": "agent branch (new evidence)",
+    "old_agent": false,
+    "new_agent": true,
+    "old_bugfix_keyword_substring": false,
+    "new_bugfix_rule": false,
+    "labels": [
+     "AgentCommit",
+     "AgentCommitByBranch",
+     "CodexCommit"
+    ]
+   },
+   {
+    "desc": "claude branch",
+    "old_agent": false,
+    "new_agent": true,
+    "old_bugfix_keyword_substring": false,
+    "new_bugfix_rule": false,
+    "labels": [
+     "AgentCommit",
+     "AgentCommitByBranch",
+     "ClaudeCodeCommit"
+    ]
+   },
+   {
+    "desc": "copilot-fix branch",
+    "old_agent": false,
+    "new_agent": true,
+    "old_bugfix_keyword_substring": false,
+    "new_bugfix_rule": false,
+    "labels": [
+     "AgentCommit",
+     "AgentCommitByBranch",
+     "CopilotCommit"
+    ]
+   },
+   {
+    "desc": "human branch",
+    "old_agent": false,
+    "new_agent": false,
+    "old_bugfix_keyword_substring": false,
+    "new_bugfix_rule": false,
+    "labels": []
+   },
+   {
+    "desc": "touches CLAUDE.md (no signal)",
+    "old_agent": false,
+    "new_agent": false,
+    "old_bugfix_keyword_substring": false,
+    "new_bugfix_rule": false,
+    "labels": []
+   },
+   {
+    "desc": "subject: Fix typo",
+    "old_agent": false,
+    "new_agent": false,
+    "old_bugfix_keyword_substring": true,
+    "new_bugfix_rule": true,
+    "labels": [
+     "BugFixCommit"
+    ]
+   },
+   {
+    "desc": "subject: fixes #12",
+    "old_agent": false,
+    "new_agent": false,
+    "old_bugfix_keyword_substring": true,
+    "new_bugfix_rule": true,
+    "labels": [
+     "BugFixCommit"
+    ]
+   },
+   {
+    "desc": "subject: Prefix handling",
+    "old_agent": false,
+    "new_agent": false,
+    "old_bugfix_keyword_substring": true,
+    "new_bugfix_rule": false,
+    "labels": []
+   },
+   {
+    "desc": "subject: Bugfix: crash",
+    "old_agent": false,
+    "new_agent": false,
+    "old_bugfix_keyword_substring": true,
+    "new_bugfix_rule": true,
+    "labels": [
+     "BugFixCommit"
+    ]
+   },
+   {
+    "desc": "subject: Hot-fix release",
+    "old_agent": false,
+    "new_agent": false,
+    "old_bugfix_keyword_substring": true,
+    "new_bugfix_rule": true,
+    "labels": [
+     "BugFixCommit"
+    ]
+   },
+   {
+    "desc": "subject: correct spelling",
+    "old_agent": false,
+    "new_agent": false,
+    "old_bugfix_keyword_substring": true,
+    "new_bugfix_rule": true,
+    "labels": [
+     "BugFixCommit"
+    ]
+   },
+   {
+    "desc": "subject: Add feature",
+    "old_agent": false,
+    "new_agent": false,
+    "old_bugfix_keyword_substring": false,
+    "new_bugfix_rule": false,
+    "labels": []
+   },
+   {
+    "desc": "subject: Refactor module",
+    "old_agent": false,
+    "new_agent": false,
+    "old_bugfix_keyword_substring": false,
+    "new_bugfix_rule": false,
+    "labels": []
+   },
+   {
+    "desc": "subject: Merge pull request #3",
+    "old_agent": false,
+    "new_agent": false,
+    "old_bugfix_keyword_substring": false,
+    "new_bugfix_rule": false,
+    "labels": []
+   },
+   {
+    "desc": "subject: issue 42 resolved",
+    "old_agent": false,
+    "new_agent": false,
+    "old_bugfix_keyword_substring": true,
+    "new_bugfix_rule": true,
+    "labels": [
+     "BugFixCommit"
+    ]
+   },
+   {
+    "desc": "subject: Prepatch notes",
+    "old_agent": false,
+    "new_agent": false,
+    "old_bugfix_keyword_substring": true,
+    "new_bugfix_rule": false,
+    "labels": []
+   },
+   {
+    "desc": "subject: Crashing on start",
+    "old_agent": false,
+    "new_agent": false,
+    "old_bugfix_keyword_substring": true,
+    "new_bugfix_rule": true,
+    "labels": [
+     "BugFixCommit"
+    ]
+   },
+   {
+    "desc": "subject: catch exception",
+    "old_agent": false,
+    "new_agent": false,
+    "old_bugfix_keyword_substring": true,
+    "new_bugfix_rule": true,
+    "labels": [
+     "BugFixCommit"
+    ]
+   },
+   {
+    "desc": "subject: failures in CI",
+    "old_agent": false,
+    "new_agent": false,
+    "old_bugfix_keyword_substring": true,
+    "new_bugfix_rule": true,
+    "labels": [
+     "BugFixCommit"
+    ]
+   },
+   {
+    "desc": "subject: Postfix config",
+    "old_agent": false,
+    "new_agent": false,
+    "old_bugfix_keyword_substring": true,
+    "new_bugfix_rule": false,
+    "labels": []
+   },
+   {
+    "desc": "subject: workaround for X",
+    "old_agent": false,
+    "new_agent": false,
+    "old_bugfix_keyword_substring": true,
+    "new_bugfix_rule": true,
+    "labels": [
+     "BugFixCommit"
+    ]
+   },
+   {
+    "desc": "subject: regression test",
+    "old_agent": false,
+    "new_agent": false,
+    "old_bugfix_keyword_substring": true,
+    "new_bugfix_rule": true,
+    "labels": [
+     "BugFixCommit"
+    ]
+   },
+   {
+    "desc": "subject: Bug-fix: x",
+    "old_agent": false,
+    "new_agent": false,
+    "old_bugfix_keyword_substring": true,
+    "new_bugfix_rule": true,
+    "labels": [
+     "BugFixCommit"
+    ]
+   },
+   {
+    "desc": "subject: debugging output",
+    "old_agent": false,
+    "new_agent": false,
+    "old_bugfix_keyword_substring": true,
+    "new_bugfix_rule": false,
+    "labels": []
+   },
+   {
+    "desc": "subject: Unfixable",
+    "old_agent": false,
+    "new_agent": false,
+    "old_bugfix_keyword_substring": true,
+    "new_bugfix_rule": false,
+    "labels": []
+   },
+   {
+    "desc": "subject: fix",
+    "old_agent": false,
+    "new_agent": false,
+    "old_bugfix_keyword_substring": true,
+    "new_bugfix_rule": true,
+    "labels": [
+     "BugFixCommit"
+    ]
+   },
+   {
+    "desc": "subject: FIX: caps",
+    "old_agent": false,
+    "new_agent": false,
+    "old_bugfix_keyword_substring": true,
+    "new_bugfix_rule": true,
+    "labels": [
+     "BugFixCommit"
+    ]
+   }
+  ]
+ }
+}

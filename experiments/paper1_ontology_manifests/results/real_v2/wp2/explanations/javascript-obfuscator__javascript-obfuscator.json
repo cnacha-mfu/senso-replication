@@ -1,0 +1,339 @@
+{
+ "repo": "javascript-obfuscator/javascript-obfuscator",
+ "slug": "javascript-obfuscator__javascript-obfuscator",
+ "input_sha": "a3da3fbd4599baab3089e4ed000b1c2c7ba490bd6b3bf84bc047eb31f9cbdca3",
+ "explanations": [
+  {
+   "key": "T1|src/node-transformers/converting-transformers/StringArrayTransformer.ts",
+   "verdict": "ContradictedClaim",
+   "leaf": "PathNeverExisted",
+   "seconds": 33.06,
+   "retried_on_claim_subgraph": false,
+   "error": null,
+   "returncode": 0,
+   "n_justifications": 1,
+   "facts": [
+    {
+     "prop": "pathEverTrackedCount",
+     "value": 0
+    },
+    {
+     "prop": "pathSubmoduleCount",
+     "value": 0
+    },
+    {
+     "prop": "extractionVotes",
+     "value": 2
+    },
+    {
+     "prop": "pathSuffixMatchCount",
+     "value": 0
+    },
+    {
+     "prop": "pathExactMatchCount",
+     "value": 0
+    },
+    {
+     "prop": "pathIgnoredCount",
+     "value": 0
+    }
+   ],
+   "axioms": [
+    "A_pathExactMatchCount_ge_0_le_0 equivalentTo pathExactMatchCount some integer[>= 0, <= 0]",
+    "A_extractionVotes_ge_wp2_consensus_min_votes equivalentTo extractionVotes some integer[>= 2]",
+    "CheckedClaim equivalentTo A_extractionVotes_ge_wp2_consensus_min_votes and ManifestClaim",
+    "A_pathSubmoduleCount_ge_0_le_0 equivalentTo pathSubmoduleCount some integer[>= 0, <= 0]",
+    "A_pathSuffixMatchCount_ge_0_le_0 equivalentTo pathSuffixMatchCount some integer[>= 0, <= 0]",
+    "A_pathIgnoredCount_ge_0_le_0 equivalentTo pathIgnoredCount some integer[>= 0, <= 0]",
+    "A_pathEverTrackedCount_ge_0_le_0 equivalentTo pathEverTrackedCount some integer[>= 0, <= 0]",
+    "PathNeverExisted equivalentTo A_pathEverTrackedCount_ge_0_le_0 and A_pathExactMatchCount_ge_0_le_0 and A_pathIgnoredCount_ge_0_le_0 and A_pathSubmoduleCount_ge_0_le_0 and A_pathSuffixMatchCount_ge_0_le_0 and CheckedClaim and PathExistenceCl",
+    "PathNeverExisted subClassOf ContradictedClaim"
+   ],
+   "closures": []
+  },
+  {
+   "key": "T5|script|lint:analyzers",
+   "verdict": "ContradictedClaim",
+   "leaf": "ScriptUndefined",
+   "seconds": 47.32,
+   "retried_on_claim_subgraph": false,
+   "error": null,
+   "returncode": 0,
+   "n_justifications": 1,
+   "facts": [
+    {
+     "prop": "dynamicTargetRuleCount",
+     "value": 0
+    },
+    {
+     "prop": "extractionVotes",
+     "value": 3
+    },
+    {
+     "prop": "scriptDefinedAnyCount",
+     "value": 0
+    },
+    {
+     "prop": "scriptHostFileCount",
+     "value": 1
+    }
+   ],
+   "axioms": [
+    "A_extractionVotes_ge_wp2_consensus_min_votes equivalentTo extractionVotes some integer[>= 2]",
+    "ScriptUndefined equivalentTo A_dynamicTargetRuleCount_ge_0_le_0 and A_scriptDefinedAnyCount_ge_0_le_0 and A_scriptHostFileCount_ge_1 and CheckedClaim and CommandClaim",
+    "CheckedClaim equivalentTo A_extractionVotes_ge_wp2_consensus_min_votes and ManifestClaim",
+    "A_scriptHostFileCount_ge_1 equivalentTo scriptHostFileCount some integer[>= 1]",
+    "ScriptUndefined subClassOf ContradictedClaim",
+    "A_scriptDefinedAnyCount_ge_0_le_0 equivalentTo scriptDefinedAnyCount some integer[>= 0, <= 0]",
+    "A_dynamicTargetRuleCount_ge_0_le_0 equivalentTo dynamicTargetRuleCount some integer[>= 0, <= 0]"
+   ],
+   "closures": []
+  },
+  {
+   "key": "T5|script|lint:fix",
+   "verdict": "ContradictedClaim",
+   "leaf": "ScriptUndefined",
+   "seconds": 33.55,
+   "retried_on_claim_subgraph": false,
+   "error": null,
+   "returncode": 0,
+   "n_justifications": 1,
+   "facts": [
+    {
+     "prop": "scriptHostFileCount",
+     "value": 1
+    },
+    {
+     "prop": "dynamicTargetRuleCount",
+     "value": 0
+    },
+    {
+     "prop": "extractionVotes",
+     "value": 3
+    },
+    {
+     "prop": "scriptDefinedAnyCount",
+     "value": 0
+    }
+   ],
+   "axioms": [
+    "A_extractionVotes_ge_wp2_consensus_min_votes equivalentTo extractionVotes some integer[>= 2]",
+    "ScriptUndefined equivalentTo A_dynamicTargetRuleCount_ge_0_le_0 and A_scriptDefinedAnyCount_ge_0_le_0 and A_scriptHostFileCount_ge_1 and CheckedClaim and CommandClaim",
+    "CheckedClaim equivalentTo A_extractionVotes_ge_wp2_consensus_min_votes and ManifestClaim",
+    "A_scriptHostFileCount_ge_1 equivalentTo scriptHostFileCount some integer[>= 1]",
+    "ScriptUndefined subClassOf ContradictedClaim",
+    "A_scriptDefinedAnyCount_ge_0_le_0 equivalentTo scriptDefinedAnyCount some integer[>= 0, <= 0]",
+    "A_dynamicTargetRuleCount_ge_0_le_0 equivalentTo dynamicTargetRuleCount some integer[>= 0, <= 0]"
+   ],
+   "closures": []
+  },
+  {
+   "key": "T5|script|lint:transformers",
+   "verdict": "ContradictedClaim",
+   "leaf": "ScriptUndefined",
+   "seconds": 30.83,
+   "retried_on_claim_subgraph": false,
+   "error": null,
+   "returncode": 0,
+   "n_justifications": 1,
+   "facts": [
+    {
+     "prop": "scriptHostFileCount",
+     "value": 1
+    },
+    {
+     "prop": "extractionVotes",
+     "value": 3
+    },
+    {
+     "prop": "scriptDefinedAnyCount",
+     "value": 0
+    },
+    {
+     "prop": "dynamicTargetRuleCount",
+     "value": 0
+    }
+   ],
+   "axioms": [
+    "A_extractionVotes_ge_wp2_consensus_min_votes equivalentTo extractionVotes some integer[>= 2]",
+    "ScriptUndefined equivalentTo A_dynamicTargetRuleCount_ge_0_le_0 and A_scriptDefinedAnyCount_ge_0_le_0 and A_scriptHostFileCount_ge_1 and CheckedClaim and CommandClaim",
+    "CheckedClaim equivalentTo A_extractionVotes_ge_wp2_consensus_min_votes and ManifestClaim",
+    "A_scriptHostFileCount_ge_1 equivalentTo scriptHostFileCount some integer[>= 1]",
+    "ScriptUndefined subClassOf ContradictedClaim",
+    "A_scriptDefinedAnyCount_ge_0_le_0 equivalentTo scriptDefinedAnyCount some integer[>= 0, <= 0]",
+    "A_dynamicTargetRuleCount_ge_0_le_0 equivalentTo dynamicTargetRuleCount some integer[>= 0, <= 0]"
+   ],
+   "closures": []
+  },
+  {
+   "key": "T5|script|test:analyzers",
+   "verdict": "ContradictedClaim",
+   "leaf": "ScriptUndefined",
+   "seconds": 40.18,
+   "retried_on_claim_subgraph": false,
+   "error": null,
+   "returncode": 0,
+   "n_justifications": 1,
+   "facts": [
+    {
+     "prop": "scriptDefinedAnyCount",
+     "value": 0
+    },
+    {
+     "prop": "scriptHostFileCount",
+     "value": 1
+    },
+    {
+     "prop": "dynamicTargetRuleCount",
+     "value": 0
+    },
+    {
+     "prop": "extractionVotes",
+     "value": 3
+    }
+   ],
+   "axioms": [
+    "A_extractionVotes_ge_wp2_consensus_min_votes equivalentTo extractionVotes some integer[>= 2]",
+    "ScriptUndefined equivalentTo A_dynamicTargetRuleCount_ge_0_le_0 and A_scriptDefinedAnyCount_ge_0_le_0 and A_scriptHostFileCount_ge_1 and CheckedClaim and CommandClaim",
+    "CheckedClaim equivalentTo A_extractionVotes_ge_wp2_consensus_min_votes and ManifestClaim",
+    "A_scriptHostFileCount_ge_1 equivalentTo scriptHostFileCount some integer[>= 1]",
+    "ScriptUndefined subClassOf ContradictedClaim",
+    "A_scriptDefinedAnyCount_ge_0_le_0 equivalentTo scriptDefinedAnyCount some integer[>= 0, <= 0]",
+    "A_dynamicTargetRuleCount_ge_0_le_0 equivalentTo dynamicTargetRuleCount some integer[>= 0, <= 0]"
+   ],
+   "closures": []
+  },
+  {
+   "key": "T5|script|test:options",
+   "verdict": "ContradictedClaim",
+   "leaf": "ScriptUndefined",
+   "seconds": 37.16,
+   "retried_on_claim_subgraph": false,
+   "error": null,
+   "returncode": 0,
+   "n_justifications": 1,
+   "facts": [
+    {
+     "prop": "scriptDefinedAnyCount",
+     "value": 0
+    },
+    {
+     "prop": "dynamicTargetRuleCount",
+     "value": 0
+    },
+    {
+     "prop": "extractionVotes",
+     "value": 3
+    },
+    {
+     "prop": "scriptHostFileCount",
+     "value": 1
+    }
+   ],
+   "axioms": [
+    "A_extractionVotes_ge_wp2_consensus_min_votes equivalentTo extractionVotes some integer[>= 2]",
+    "ScriptUndefined equivalentTo A_dynamicTargetRuleCount_ge_0_le_0 and A_scriptDefinedAnyCount_ge_0_le_0 and A_scriptHostFileCount_ge_1 and CheckedClaim and CommandClaim",
+    "CheckedClaim equivalentTo A_extractionVotes_ge_wp2_consensus_min_votes and ManifestClaim",
+    "A_scriptHostFileCount_ge_1 equivalentTo scriptHostFileCount some integer[>= 1]",
+    "ScriptUndefined subClassOf ContradictedClaim",
+    "A_scriptDefinedAnyCount_ge_0_le_0 equivalentTo scriptDefinedAnyCount some integer[>= 0, <= 0]",
+    "A_dynamicTargetRuleCount_ge_0_le_0 equivalentTo dynamicTargetRuleCount some integer[>= 0, <= 0]"
+   ],
+   "closures": []
+  },
+  {
+   "key": "T5|script|test:transformers",
+   "verdict": "ContradictedClaim",
+   "leaf": "ScriptUndefined",
+   "seconds": 41.95,
+   "retried_on_claim_subgraph": false,
+   "error": null,
+   "returncode": 0,
+   "n_justifications": 1,
+   "facts": [
+    {
+     "prop": "scriptDefinedAnyCount",
+     "value": 0
+    },
+    {
+     "prop": "dynamicTargetRuleCount",
+     "value": 0
+    },
+    {
+     "prop": "scriptHostFileCount",
+     "value": 1
+    },
+    {
+     "prop": "extractionVotes",
+     "value": 3
+    }
+   ],
+   "axioms": [
+    "A_extractionVotes_ge_wp2_consensus_min_votes equivalentTo extractionVotes some integer[>= 2]",
+    "ScriptUndefined equivalentTo A_dynamicTargetRuleCount_ge_0_le_0 and A_scriptDefinedAnyCount_ge_0_le_0 and A_scriptHostFileCount_ge_1 and CheckedClaim and CommandClaim",
+    "CheckedClaim equivalentTo A_extractionVotes_ge_wp2_consensus_min_votes and ManifestClaim",
+    "A_scriptHostFileCount_ge_1 equivalentTo scriptHostFileCount some integer[>= 1]",
+    "ScriptUndefined subClassOf ContradictedClaim",
+    "A_scriptDefinedAnyCount_ge_0_le_0 equivalentTo scriptDefinedAnyCount some integer[>= 0, <= 0]",
+    "A_dynamicTargetRuleCount_ge_0_le_0 equivalentTo dynamicTargetRuleCount some integer[>= 0, <= 0]"
+   ],
+   "closures": []
+  },
+  {
+   "key": "T1|test",
+   "verdict": "SupportedClaim",
+   "leaf": "PathFoundExact",
+   "seconds": 31.6,
+   "retried_on_claim_subgraph": false,
+   "error": null,
+   "returncode": 0,
+   "n_justifications": 1,
+   "facts": [
+    {
+     "prop": "pathExactMatchCount",
+     "value": 751
+    },
+    {
+     "prop": "extractionVotes",
+     "value": 3
+    }
+   ],
+   "axioms": [
+    "A_extractionVotes_ge_wp2_consensus_min_votes equivalentTo extractionVotes some integer[>= 2]",
+    "A_pathExactMatchCount_ge_1 equivalentTo pathExactMatchCount some integer[>= 1]",
+    "CheckedClaim equivalentTo A_extractionVotes_ge_wp2_consensus_min_votes and ManifestClaim",
+    "PathFoundExact subClassOf SupportedClaim",
+    "PathFoundExact equivalentTo A_pathExactMatchCount_ge_1 and CheckedClaim and PathExistenceClaim"
+   ],
+   "closures": []
+  },
+  {
+   "key": "T1|test/functional-tests/custom-code-helpers/**/*.spec.ts",
+   "verdict": "SupportedClaim",
+   "leaf": "PathFoundExact",
+   "seconds": 23.14,
+   "retried_on_claim_subgraph": false,
+   "error": null,
+   "returncode": 0,
+   "n_justifications": 1,
+   "facts": [
+    {
+     "prop": "pathExactMatchCount",
+     "value": 16
+    },
+    {
+     "prop": "extractionVotes",
+     "value": 2
+    }
+   ],
+   "axioms": [
+    "PathFoundExact equivalentTo A_pathExactMatchCount_ge_1 and CheckedClaim and PathExistenceClaim",
+    "A_extractionVotes_ge_wp2_consensus_min_votes equivalentTo extractionVotes some integer[>= 2]",
+    "A_pathExactMatchCount_ge_1 equivalentTo pathExactMatchCount some integer[>= 1]",
+    "CheckedClaim equivalentTo A_extractionVotes_ge_wp2_consensus_min_votes and ManifestClaim",
+    "PathFoundExact subClassOf SupportedClaim"
+   ],
+   "closures": []
+  }
+ ]
+}

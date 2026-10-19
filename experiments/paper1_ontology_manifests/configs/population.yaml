@@ -1,0 +1,36 @@
+# Population Pipeline Configuration — Paper 1
+# SENSO Framework: Software Evolution Ontology
+#
+# Usage:
+#   python ontology/population/populate.py --config experiments/paper1_ontology_manifests/configs/population.yaml --repo owner/name
+#   python ontology/population/populate.py --config experiments/paper1_ontology_manifests/configs/population.yaml --repos-file data/raw/repo_list.json
+
+# Mining settings
+mining:
+  lookback_months: 36          # How many months of git history to mine
+  complexity_sample_months: 6  # Number of recent months to run lizard snapshots
+
+# Fuseki triple store connection
+fuseki:
+  fuseki_url: "http://localhost:3030"
+  dataset: "seo"
+  batch_size: 100              # Triples per SPARQL INSERT DATA batch
+
+# Ontology settings
+ontology:
+  ontology_iri: "http://senso-framework.org/ontology/seo#"
+  owl_file: "ontology/modules/seo-full.owl"
+
+# Phase detection (Mann-Kendall trend test)
+phase_detection:
+  mann_kendall_alpha: 0.05     # Significance level for trend test
+
+# Clone settings
+cloning:
+  clone_base_dir: ""           # Base dir for repo clones (empty = system temp)
+
+# Output
+output:
+  output_dir: "data/processed/population/"
+  save_jsonld: true            # Save intermediate JSON-LD files per repo
+  save_triples: false          # Save N-Triples files per repo (large)

@@ -1,0 +1,107 @@
+{
+ "unit_id": "EltonChou__EorzeaEnv-15__A__claude-sonnet__r1",
+ "task_id": "EltonChou__EorzeaEnv-15",
+ "repo": "EltonChou/EorzeaEnv",
+ "stage": "evolution",
+ "condition": "A",
+ "model": "claude-code/sonnet",
+ "run": 1,
+ "condition_meta": {},
+ "started": "2026-10-18T01:40:03.069827+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 3,
+ "tool_calls": 2,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 612,
+  "cache_read_input_tokens": 49425,
+  "output_tokens": 330,
+  "output_tokens_details": {
+   "thinking_tokens": 0
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 612,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 330,
+   "cacheReadInputTokens": 49425,
+   "cacheCreationInputTokens": 612,
+   "webSearchRequests": 0,
+   "costUSD": 0.0107025,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.0107025,
+ "result_text": "I changed both rollover checks in `EorzeaEnv/eorzea_time.py` from `>` to `>=`. A bell of 24 now rolls over to 0 of the next sun, and a minute of 60 rolls over to 0 of the next bell. I didn't run the tests or try the `weather_period` case from the issue.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792291800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0.11,
+    "resetsAt": 1792291800
+   },
+   "seven_day": {
+    "utilization": 0.11,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 13.5,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 3,
+   "hit_step_limit": 0,
+   "changed_lines": 4,
+   "gold_changed_lines": 4,
+   "Y1": 0,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": 0.0
+  },
+  "f2p_pass": 1,
+  "f2p_total": 1,
+  "p2p_pass": 6,
+  "p2p_total": 6,
+  "f2p_all_pass": true,
+  "p2p_all_pass": true,
+  "resolved": true,
+  "reason": "resolved",
+  "test_seconds": 0.8
+ },
+ "status": "done",
+ "finished": "2026-10-18T01:40:19.153860+00:00"
+}

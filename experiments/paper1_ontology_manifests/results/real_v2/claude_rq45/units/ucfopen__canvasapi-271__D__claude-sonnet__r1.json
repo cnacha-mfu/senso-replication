@@ -1,0 +1,111 @@
+{
+ "unit_id": "ucfopen__canvasapi-271__D__claude-sonnet__r1",
+ "task_id": "ucfopen__canvasapi-271",
+ "repo": "ucfopen/canvasapi",
+ "stage": "initial_development",
+ "condition": "D",
+ "model": "claude-code/sonnet",
+ "run": 1,
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 5849,
+  "sha256": "ccb502f5dcbfb047e95a12629f011511c9d842165e52354a438c8d828d37282d"
+ },
+ "started": "2026-10-18T09:03:56.181388+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 7,
+ "tool_calls": 6,
+ "usage": {
+  "input_tokens": 14,
+  "cache_creation_input_tokens": 3447,
+  "cache_read_input_tokens": 151159,
+  "output_tokens": 1304,
+  "output_tokens_details": {
+   "thinking_tokens": 159
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 3447,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 14,
+   "outputTokens": 1304,
+   "cacheReadInputTokens": 151159,
+   "cacheCreationInputTokens": 3447,
+   "webSearchRequests": 0,
+   "costUSD": 0.041971900000000006,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 159,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.041971900000000006,
+ "result_text": "`quiz.get_all_quiz_submissions()` in `canvasapi/quiz.py` now returns a `PaginatedList` of `QuizSubmission` objects instead of a single page. I haven't run any tests or tried it against a Canvas instance.\n\nThe list reads from the `quiz_submissions` key in each response and follows the pagination links. It requests 100 per page by default, which is the existing `PaginatedList` default. Any extra keyword arguments still go through as before.\n\nThis changes the return type from a plain list to a `PaginatedList`. Iterating and indexing still work, but `len()` does not. I also updated the docstring's `:rtype:` to match. I didn't touch the tests, so any existing test that mocks the old single-page behaviour may need updating.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792327800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0.06,
+    "resetsAt": 1792327800
+   },
+   "seven_day": {
+    "utilization": 0.14,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 22.1,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 7,
+   "hit_step_limit": 0,
+   "changed_lines": 11,
+   "gold_changed_lines": 40,
+   "Y1": -1,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": -1.8624964762500649
+  },
+  "f2p_pass": 0,
+  "f2p_total": 1,
+  "p2p_pass": 26,
+  "p2p_total": 26,
+  "f2p_all_pass": false,
+  "p2p_all_pass": true,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 1.0
+ },
+ "status": "done",
+ "finished": "2026-10-18T09:04:20.323218+00:00"
+}

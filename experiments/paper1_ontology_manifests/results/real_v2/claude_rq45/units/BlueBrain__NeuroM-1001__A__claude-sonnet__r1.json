@@ -1,0 +1,107 @@
+{
+ "unit_id": "BlueBrain__NeuroM-1001__A__claude-sonnet__r1",
+ "task_id": "BlueBrain__NeuroM-1001",
+ "repo": "BlueBrain/NeuroM",
+ "stage": "servicing",
+ "condition": "A",
+ "model": "claude-code/sonnet",
+ "run": 1,
+ "condition_meta": {},
+ "started": "2026-10-18T01:32:53.494824+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 4,
+ "tool_calls": 3,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 1730,
+  "cache_read_input_tokens": 49405,
+  "output_tokens": 1019,
+  "output_tokens_details": {
+   "thinking_tokens": 255
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 1730,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 1019,
+   "cacheReadInputTokens": 49405,
+   "cacheCreationInputTokens": 1730,
+   "webSearchRequests": 0,
+   "costUSD": 0.0220625,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 255,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.0220625,
+ "result_text": "I changed `partition_asymmetry` in `neurom/features/bifurcation.py` so the Uylings variant no longer raises when both children of a bifurcation are leaves. It now returns `0.0` for that case. I didn't run any tests or the function itself.\n\nThat case gives `n, m = 1, 1`, so `n + m <= 2` and the old code raised `NeuroMError`. The Uylings formula would be `0/0` there, and `0.0` is a perfectly symmetric partition.\n\nI left the counting unchanged. It still counts all nodes in each child subtree, but the Uylings paper uses terminal tips. The `n + m <= 2` check only triggers when both children are leaves, so that mismatch only matters if you want the Uylings value to follow the paper exactly. Say if you want the Uylings branch to count leaves instead.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792291800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0.1,
+    "resetsAt": 1792291800
+   },
+   "seven_day": {
+    "utilization": 0.11,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 27.3,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 4,
+   "hit_step_limit": 0,
+   "changed_lines": 4,
+   "gold_changed_lines": 22,
+   "Y1": 0,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": -2.4594316186372973
+  },
+  "f2p_pass": 1,
+  "f2p_total": 1,
+  "p2p_pass": 5,
+  "p2p_total": 5,
+  "f2p_all_pass": true,
+  "p2p_all_pass": true,
+  "resolved": true,
+  "reason": "resolved",
+  "test_seconds": 1.2
+ },
+ "status": "done",
+ "finished": "2026-10-18T01:33:27.743462+00:00"
+}

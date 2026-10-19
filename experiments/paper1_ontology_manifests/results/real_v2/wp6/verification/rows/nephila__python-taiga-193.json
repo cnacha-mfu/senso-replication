@@ -1,0 +1,549 @@
+{
+ "task_id": "nephila__python-taiga-193",
+ "claims": {
+  "T1|changes": {
+   "claim": {
+    "key_str": "T1|changes",
+    "tcode": "T1",
+    "attrs": {
+     "path": "changes",
+     "is_dir": true,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "changes/",
+    "role": "true",
+    "slot": "layout",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "exists",
+     "path": "changes"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "PathFoundExact"
+   },
+   "probe": {
+    "ok": true,
+    "type": "exists"
+   },
+   "measure_error": null
+  },
+  "T1|taiga": {
+   "claim": {
+    "key_str": "T1|taiga",
+    "tcode": "T1",
+    "attrs": {
+     "path": "taiga",
+     "is_dir": true,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "taiga/",
+    "role": "true",
+    "slot": "layout",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "exists",
+     "path": "taiga"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "PathFoundExact"
+   },
+   "probe": {
+    "ok": true,
+    "type": "exists"
+   },
+   "measure_error": null
+  },
+  "T1|taiga/models": {
+   "claim": {
+    "key_str": "T1|taiga/models",
+    "tcode": "T1",
+    "attrs": {
+     "path": "taiga/models",
+     "is_dir": true,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "taiga/models/",
+    "role": "true",
+    "slot": "layout",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "exists",
+     "path": "taiga/models"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "PathFoundExact"
+   },
+   "probe": {
+    "ok": true,
+    "type": "exists"
+   },
+   "measure_error": null
+  },
+  "T1|tests": {
+   "claim": {
+    "key_str": "T1|tests",
+    "tcode": "T1",
+    "attrs": {
+     "path": "tests",
+     "is_dir": true,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "tests/",
+    "role": "true",
+    "slot": "layout",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "exists",
+     "path": "tests"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "PathFoundExact"
+   },
+   "probe": {
+    "ok": true,
+    "type": "exists"
+   },
+   "measure_error": null
+  },
+  "T1|taiga/models/models.py": {
+   "claim": {
+    "key_str": "T1|taiga/models/models.py",
+    "tcode": "T1",
+    "attrs": {
+     "path": "taiga/models/models.py",
+     "is_dir": false,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "taiga/models/models.py",
+    "role": "true",
+    "slot": "key_file",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "exists",
+     "path": "taiga/models/models.py"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "PathFoundExact"
+   },
+   "probe": {
+    "ok": true,
+    "type": "exists"
+   },
+   "measure_error": null
+  },
+  "T1|taiga/models/base.py": {
+   "claim": {
+    "key_str": "T1|taiga/models/base.py",
+    "tcode": "T1",
+    "attrs": {
+     "path": "taiga/models/base.py",
+     "is_dir": false,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "taiga/models/base.py",
+    "role": "true",
+    "slot": "key_file",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "exists",
+     "path": "taiga/models/base.py"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "PathFoundExact"
+   },
+   "probe": {
+    "ok": true,
+    "type": "exists"
+   },
+   "measure_error": null
+  },
+  "T3|test_framework|pytest": {
+   "claim": {
+    "key_str": "T3|test_framework|pytest",
+    "tcode": "T3",
+    "attrs": {
+     "tool": "pytest",
+     "category": "test_framework"
+    },
+    "quote": "python -m pytest tests",
+    "role": "true",
+    "slot": "test_cmd",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "pytest",
+     "root": "tests"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "ToolSignatureFound"
+   },
+   "probe": {
+    "ok": true,
+    "type": "pytest"
+   },
+   "measure_error": null
+  },
+  "T1|pyproject.toml": {
+   "claim": {
+    "key_str": "T1|pyproject.toml",
+    "tcode": "T1",
+    "attrs": {
+     "path": "pyproject.toml",
+     "is_dir": false,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "pyproject.toml",
+    "role": "true",
+    "slot": "install_cmd",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "exists",
+     "path": "pyproject.toml"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "PathFoundExact"
+   },
+   "probe": {
+    "ok": true,
+    "type": "exists"
+   },
+   "measure_error": null
+  },
+  "T6|python|3007000000@2": {
+   "claim": {
+    "key_str": "T6|python|3007000000@2",
+    "tcode": "T6",
+    "attrs": {
+     "subject_type": "python",
+     "version": "3.7",
+     "code": 3007000000,
+     "precision": 2,
+     "qualifier": "min"
+    },
+    "quote": "Python: >=3.7",
+    "role": "true",
+    "slot": "python",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": null,
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "VersionConfirmed"
+   },
+   "probe": {
+    "ok": true,
+    "type": "none"
+   },
+   "measure_error": null
+  },
+  "T1|changes/core": {
+   "claim": {
+    "key_str": "T1|changes/core",
+    "tcode": "T1",
+    "attrs": {
+     "path": "changes/core",
+     "is_dir": true,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "changes/core/",
+    "role": "false",
+    "slot": "P1",
+    "kind": 1,
+    "expect_verdict": "ContradictedClaim",
+    "expect_leaves": [
+     "PathNeverExisted"
+    ],
+    "probe": {
+     "type": "absent",
+     "path": "changes/core",
+     "history": "none"
+    },
+    "mode": "replace"
+   },
+   "recheck": {
+    "verdict": "ContradictedClaim",
+    "leaf": "PathNeverExisted"
+   },
+   "probe": {
+    "ok": true,
+    "type": "absent",
+    "log_count": 0
+   },
+   "measure_error": null
+  },
+  "T1|tests/test_userstories.py": {
+   "claim": {
+    "key_str": "T1|tests/test_userstories.py",
+    "tcode": "T1",
+    "attrs": {
+     "path": "tests/test_userstories.py",
+     "is_dir": false,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "tests/test_userstories.py",
+    "role": "false",
+    "slot": "P2",
+    "kind": 2,
+    "expect_verdict": "ContradictedClaim",
+    "expect_leaves": [
+     "PathRemoved"
+    ],
+    "probe": {
+     "type": "absent",
+     "path": "tests/test_userstories.py",
+     "history": "some"
+    },
+    "mode": "add"
+   },
+   "recheck": {
+    "verdict": "ContradictedClaim",
+    "leaf": "PathRemoved"
+   },
+   "probe": {
+    "ok": true,
+    "type": "absent",
+    "log_count": 3
+   },
+   "measure_error": null
+  },
+  "T4|toolz|": {
+   "claim": {
+    "key_str": "T4|toolz|",
+    "tcode": "T4",
+    "attrs": {
+     "name": "toolz",
+     "major": null,
+     "ecosystem_hint": "pypi"
+    },
+    "quote": "`toolz`",
+    "role": "false",
+    "slot": "D",
+    "kind": 4,
+    "expect_verdict": "ContradictedClaim",
+    "expect_leaves": [
+     "DependencyUndeclared"
+    ],
+    "probe": {
+     "type": "import_fail",
+     "modules": [
+      "toolz"
+     ]
+    },
+    "mode": "add"
+   },
+   "recheck": {
+    "verdict": "ContradictedClaim",
+    "leaf": "DependencyUndeclared"
+   },
+   "probe": {
+    "ok": true,
+    "type": "import_fail"
+   },
+   "measure_error": null
+  },
+  "T1|debian/core": {
+   "claim": {
+    "key_str": "T1|debian/core",
+    "tcode": "T1",
+    "attrs": {
+     "path": "debian/core",
+     "is_dir": true,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "debian/core/",
+    "role": "false",
+    "slot": "P1",
+    "kind": 1,
+    "expect_verdict": "ContradictedClaim",
+    "expect_leaves": [
+     "PathNeverExisted"
+    ],
+    "probe": {
+     "type": "absent",
+     "path": "debian/core",
+     "history": "none"
+    },
+    "mode": "add"
+   },
+   "recheck": {
+    "verdict": "ContradictedClaim",
+    "leaf": "PathNeverExisted"
+   },
+   "probe": {
+    "ok": true,
+    "type": "absent",
+    "log_count": 0
+   },
+   "measure_error": null
+  },
+  "T1|debian/internal.py": {
+   "claim": {
+    "key_str": "T1|debian/internal.py",
+    "tcode": "T1",
+    "attrs": {
+     "path": "debian/internal.py",
+     "is_dir": false,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "debian/internal.py",
+    "role": "false",
+    "slot": "P2",
+    "kind": 2,
+    "expect_verdict": "ContradictedClaim",
+    "expect_leaves": [
+     "PathNeverExisted"
+    ],
+    "probe": {
+     "type": "absent",
+     "path": "debian/internal.py",
+     "history": "none"
+    },
+    "mode": "add"
+   },
+   "recheck": {
+    "verdict": "ContradictedClaim",
+    "leaf": "PathNeverExisted"
+   },
+   "probe": {
+    "ok": true,
+    "type": "absent",
+    "log_count": 0
+   },
+   "measure_error": null
+  },
+  "T4|boltons|": {
+   "claim": {
+    "key_str": "T4|boltons|",
+    "tcode": "T4",
+    "attrs": {
+     "name": "boltons",
+     "major": null,
+     "ecosystem_hint": "pypi"
+    },
+    "quote": "`boltons`",
+    "role": "false",
+    "slot": "D",
+    "kind": 4,
+    "expect_verdict": "ContradictedClaim",
+    "expect_leaves": [
+     "DependencyUndeclared"
+    ],
+    "probe": {
+     "type": "import_fail",
+     "modules": [
+      "boltons"
+     ]
+    },
+    "mode": "add"
+   },
+   "recheck": {
+    "verdict": "ContradictedClaim",
+    "leaf": "DependencyUndeclared"
+   },
+   "probe": {
+    "ok": true,
+    "type": "import_fail"
+   },
+   "measure_error": null
+  }
+ },
+ "probe_log": {
+  "pytest:tests": {
+   "rc": 0,
+   "tail": "iga-193/.v/lib/python3.10/site-packages/_pytest/config/__init__.py:1464: PytestConfigWarning: Unknown config option: traceback\n  \n    self._warn_or_fail_if_strict(f\"Unknown config option: {key}\\n\")\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n220 tests collected in 0.41s\n"
+  },
+  "import:requests": {
+   "rc": 0,
+   "tail": ""
+  },
+  "import:jwkest": {
+   "rc": 0,
+   "tail": ""
+  },
+  "import:dateutil": {
+   "rc": 0,
+   "tail": ""
+  },
+  "make:test": {
+   "rc": 2,
+   "tail": "make: *** No rule to make target 'test'.  Stop.\n"
+  },
+  "make:check": {
+   "rc": 2,
+   "tail": "make: *** No rule to make target 'check'.  Stop.\n"
+  },
+  "make:install": {
+   "rc": 2,
+   "tail": "make: *** No rule to make target 'install'.  Stop.\n"
+  },
+  "make:dev": {
+   "rc": 2,
+   "tail": "make: *** No rule to make target 'dev'.  Stop.\n"
+  },
+  "make:develop": {
+   "rc": 2,
+   "tail": "make: *** No rule to make target 'develop'.  Stop.\n"
+  },
+  "import:boltons": {
+   "rc": 1,
+   "tail": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\nModuleNotFoundError: No module named 'boltons'\n"
+  },
+  "import:toolz": {
+   "rc": 1,
+   "tail": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\nModuleNotFoundError: No module named 'toolz'\n"
+  }
+ }
+}

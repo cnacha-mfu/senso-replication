@@ -1,0 +1,3061 @@
+{
+ "repo": "XKNX/xknx",
+ "snapshot_date": "2024-07-31",
+ "status": "ok",
+ "unmineable": false,
+ "unmineable_reason": null,
+ "replaces": null,
+ "settings": {
+  "dedup": true,
+  "complexity": false,
+  "dataset": null,
+  "sensitivity": false,
+  "snapshot_commit": "566e3a8e11f477bad1dae5af31baac4aa59d1b2e",
+  "mode": "wp5_snapshot_commit",
+  "test_patch_files": [
+   "test/devices_tests/climate_test.py",
+   "test/dpt_tests/dpt_20_hvac_mode_test.py"
+  ],
+  "package_roots": [
+   "xknx"
+  ]
+ },
+ "versions": {
+  "owlready2": "0.51",
+  "pymannkendall": "1.4.3",
+  "lizard": "1.24.1",
+  "numpy": "2.5.3",
+  "scipy": "1.18.1",
+  "python": "3.12.15",
+  "git": "git version 2.53.0"
+ },
+ "task_id": "XKNX__xknx-1551",
+ "base_commit": "566e3a8e11f477bad1dae5af31baac4aa59d1b2e",
+ "measures": {
+  "monthsObserved": 36,
+  "monthsSinceLastCommit": 0,
+  "distinctAuthorsInWindow": 25,
+  "commitMKTau": -0.036508,
+  "commitMKpValue": 0.763819,
+  "activeMonthCount": 36,
+  "activeMonthRatio": 1.0,
+  "meanMonthlyCommits": 21.111111,
+  "commitsLast3Months": 85,
+  "commitCountCV": 0.419652,
+  "commitCountCVSample": 0.425605,
+  "commitHalfRatio": 0.928934,
+  "commitSecondHalfMean": 20.333333,
+  "churnCV": 1.262869,
+  "linesAddedCV": 1.139453,
+  "mergeMonthRatio": 0.111111,
+  "multiAuthorMonthRatio": 1.0,
+  "bugFixRatioFirstHalf": 0.064896,
+  "bugFixRatioSecondHalf": 0.040324,
+  "bugFixHalfRatio": 0.621374,
+  "locSeriesLength": 36,
+  "locRelSenSlopeAnnual": 0.088528,
+  "locMKTau": 0.944444,
+  "locMKS": 595,
+  "locMKpValue": 0.0,
+  "locSenSlope": 359.396552,
+  "locStart": 41563,
+  "locEnd": 54329,
+  "locDelta": 12766,
+  "locGrowthRate": 0.307148,
+  "locChangePct": 30.714818,
+  "locEndToStartRatio": 1.307148,
+  "locGrowthLast3": 0.01944,
+  "featureCommitsFirstHalf": 0,
+  "featureCommitsSecondHalf": 0,
+  "featureCommitsTotal": 0,
+  "locDeltaPerFeature": 12766.0,
+  "recentAgentCommitRatio": 0.562217,
+  "featCommitCount": 0,
+  "bugFixCommitCount": 44,
+  "commitCount": 760,
+  "monthly_series": {
+   "months": [
+    "2020-08",
+    "2020-09",
+    "2020-10",
+    "2020-11",
+    "2020-12",
+    "2021-01",
+    "2021-02",
+    "2021-03",
+    "2021-04",
+    "2021-05",
+    "2021-06",
+    "2021-07",
+    "2021-08",
+    "2021-09",
+    "2021-10",
+    "2021-11",
+    "2021-12",
+    "2022-01",
+    "2022-02",
+    "2022-03",
+    "2022-04",
+    "2022-05",
+    "2022-06",
+    "2022-07",
+    "2022-08",
+    "2022-09",
+    "2022-10",
+    "2022-11",
+    "2022-12",
+    "2023-01",
+    "2023-02",
+    "2023-03",
+    "2023-04",
+    "2023-05",
+    "2023-06",
+    "2023-07",
+    "2023-08",
+    "2023-09",
+    "2023-10",
+    "2023-11",
+    "2023-12",
+    "2024-01",
+    "2024-02",
+    "2024-03",
+    "2024-04",
+    "2024-05",
+    "2024-06",
+    "2024-07"
+   ],
+   "commits": [
+    64,
+    94,
+    65,
+    39,
+    69,
+    48,
+    37,
+    58,
+    42,
+    19,
+    28,
+    15,
+    13,
+    8,
+    20,
+    20,
+    24,
+    23,
+    20,
+    21,
+    34,
+    25,
+    17,
+    15,
+    27,
+    14,
+    17,
+    28,
+    29,
+    39,
+    48,
+    25,
+    22,
+    24,
+    18,
+    11,
+    15,
+    15,
+    14,
+    8,
+    15,
+    16,
+    25,
+    15,
+    10,
+    16,
+    38,
+    31
+   ],
+   "loc": [
+    26892,
+    27605,
+    28720,
+    29490,
+    32243,
+    34867,
+    45662,
+    45085,
+    39475,
+    40402,
+    41284,
+    41501,
+    41563,
+    41563,
+    42370,
+    42971,
+    43060,
+    44122,
+    43924,
+    46692,
+    47208,
+    44393,
+    44753,
+    45294,
+    45628,
+    46179,
+    47208,
+    47729,
+    47724,
+    47905,
+    49528,
+    50885,
+    50792,
+    51140,
+    51149,
+    51171,
+    51180,
+    51180,
+    51180,
+    51180,
+    52168,
+    52431,
+    52516,
+    52545,
+    52545,
+    53293,
+    53959,
+    54329
+   ]
+  }
+ },
+ "window": {
+  "L": 36,
+  "first_month": "2021-08",
+  "last_month": "2024-07",
+  "n_months": 36,
+  "left_truncated": false,
+  "first_commit_month": "2016-02",
+  "mined_months": 48,
+  "commits_in_window": 760,
+  "commits_in_history": 2633
+ },
+ "loc_instrument": {
+  "instrument": "nonblank-source-lines-v1",
+  "status": "ok",
+  "months": 48,
+  "month_end_commits_distinct": 48,
+  "source_blobs": 2931,
+  "blobs_fetched": 0,
+  "t_ls_tree_s": 0.8488139460096136,
+  "t_fetch_s": 0.03815017099259421,
+  "t_read_s": 0.43239433300914243,
+  "series_present": true,
+  "extensions": [
+   ".bash",
+   ".c",
+   ".cc",
+   ".cjs",
+   ".clj",
+   ".cpp",
+   ".cs",
+   ".cxx",
+   ".dart",
+   ".erl",
+   ".ex",
+   ".exs",
+   ".f90",
+   ".go",
+   ".groovy",
+   ".h",
+   ".hh",
+   ".hpp",
+   ".hs",
+   ".java",
+   ".jl",
+   ".js",
+   ".jsx",
+   ".kt",
+   ".kts",
+   ".lua",
+   ".m",
+   ".mjs",
+   ".ml",
+   ".mm",
+   ".nim",
+   ".php",
+   ".pl",
+   ".pm",
+   ".py",
+   ".pyi",
+   ".r",
+   ".rb",
+   ".rs",
+   ".scala",
+   ".sh",
+   ".sql",
+   ".svelte",
+   ".swift",
+   ".ts",
+   ".tsx",
+   ".vue",
+   ".zig"
+  ],
+  "excluded_dirs": [
+   "node_modules",
+   "vendor",
+   "vendored",
+   "third_party",
+   "site-packages",
+   "bower_components"
+  ],
+  "max_blob_bytes": 1000000,
+  "first_parent": true
+ },
+ "mining": {
+  "churn": {
+   "t_churn_raw_s": 0.37522660702234134,
+   "t_churn_fetch_s": 15.309356273966841,
+   "t_churn_numstat_s": 0.9551699930452742,
+   "blobs_fetched_churn": 4833
+  },
+  "timings": {
+   "t_clone": 0.004,
+   "t_mine": 16.779,
+   "t_loc": 1.32,
+   "t_reason_A": 6.857
+  },
+  "cached": false
+ },
+ "stage_a": {
+  "commits": 1338,
+  "reasoned_commits": 1324,
+  "inconsistent_chunks": 0,
+  "chunk_timings": [
+   {
+    "tbox_load_s": 0.04207683599088341,
+    "abox_load_s": 0.13108087301952764,
+    "reason_s": 3.709050338016823,
+    "extract_s": 0.01748784095980227,
+    "total_s": 3.9001127099618316,
+    "commits": 1000
+   },
+   {
+    "tbox_load_s": 0.03707459202269092,
+    "abox_load_s": 0.04174911801237613,
+    "reason_s": 2.831197245977819,
+    "extract_s": 0.0052945970091968775,
+    "total_s": 2.915647446992807,
+    "commits": 324
+   }
+  ],
+  "tbox_sha256": "f5ba00eaa76dc3582415cdf566fbd7abc1d3f2797ca928f41dad106dc1c0bdb5"
+ },
+ "activity": {
+  "last_commit_date": "2024-07-31T19:46:39+00:00",
+  "months_since_last_commit": 0,
+  "distinct_authors_in_window": 25,
+  "merge_commits_in_window": 5
+ },
+ "agent_adoption_date": "2021-08-02T10:32:08+00:00",
+ "commit_label_counts": {
+  "BugFixCommit": 44,
+  "FeatureCommit": 0,
+  "AgentCommit": 450
+ },
+ "series_months": [
+  {
+   "month": "2021-08",
+   "commit_count": 13,
+   "merge_count": 2,
+   "unique_authors": 3,
+   "lines_added": 104,
+   "lines_deleted": 24,
+   "total_churn": 128,
+   "files_changed": 7,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 41563,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2021-09",
+   "commit_count": 8,
+   "merge_count": 1,
+   "unique_authors": 2,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 41563,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2021-10",
+   "commit_count": 20,
+   "merge_count": 1,
+   "unique_authors": 6,
+   "lines_added": 1846,
+   "lines_deleted": 880,
+   "total_churn": 2726,
+   "files_changed": 122,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 42370,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2021-11",
+   "commit_count": 20,
+   "merge_count": 0,
+   "unique_authors": 4,
+   "lines_added": 850,
+   "lines_deleted": 178,
+   "total_churn": 1028,
+   "files_changed": 40,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 42971,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2021-12",
+   "commit_count": 24,
+   "merge_count": 1,
+   "unique_authors": 5,
+   "lines_added": 276,
+   "lines_deleted": 195,
+   "total_churn": 471,
+   "files_changed": 33,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 43060,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-01",
+   "commit_count": 23,
+   "merge_count": 0,
+   "unique_authors": 4,
+   "lines_added": 2472,
+   "lines_deleted": 1248,
+   "total_churn": 3720,
+   "files_changed": 87,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 44122,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-02",
+   "commit_count": 20,
+   "merge_count": 0,
+   "unique_authors": 3,
+   "lines_added": 1514,
+   "lines_deleted": 1587,
+   "total_churn": 3101,
+   "files_changed": 214,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 43924,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-03",
+   "commit_count": 21,
+   "merge_count": 0,
+   "unique_authors": 3,
+   "lines_added": 3340,
+   "lines_deleted": 160,
+   "total_churn": 3500,
+   "files_changed": 55,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 46692,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-04",
+   "commit_count": 34,
+   "merge_count": 0,
+   "unique_authors": 3,
+   "lines_added": 2232,
+   "lines_deleted": 1613,
+   "total_churn": 3845,
+   "files_changed": 205,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 47208,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-05",
+   "commit_count": 25,
+   "merge_count": 0,
+   "unique_authors": 3,
+   "lines_added": 1306,
+   "lines_deleted": 4562,
+   "total_churn": 5868,
+   "files_changed": 87,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 44393,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-06",
+   "commit_count": 17,
+   "merge_count": 0,
+   "unique_authors": 4,
+   "lines_added": 410,
+   "lines_deleted": 16,
+   "total_churn": 426,
+   "files_changed": 10,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 44753,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-07",
+   "commit_count": 15,
+   "merge_count": 0,
+   "unique_authors": 2,
+   "lines_added": 1058,
+   "lines_deleted": 454,
+   "total_churn": 1512,
+   "files_changed": 70,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 45294,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-08",
+   "commit_count": 27,
+   "merge_count": 0,
+   "unique_authors": 4,
+   "lines_added": 518,
+   "lines_deleted": 159,
+   "total_churn": 677,
+   "files_changed": 18,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 45628,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-09",
+   "commit_count": 14,
+   "merge_count": 0,
+   "unique_authors": 2,
+   "lines_added": 827,
+   "lines_deleted": 182,
+   "total_churn": 1009,
+   "files_changed": 28,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 46179,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-10",
+   "commit_count": 17,
+   "merge_count": 0,
+   "unique_authors": 3,
+   "lines_added": 1576,
+   "lines_deleted": 451,
+   "total_churn": 2027,
+   "files_changed": 29,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 47208,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-11",
+   "commit_count": 28,
+   "merge_count": 0,
+   "unique_authors": 5,
+   "lines_added": 1076,
+   "lines_deleted": 518,
+   "total_churn": 1594,
+   "files_changed": 67,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 47729,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-12",
+   "commit_count": 29,
+   "merge_count": 0,
+   "unique_authors": 2,
+   "lines_added": 588,
+   "lines_deleted": 617,
+   "total_churn": 1205,
+   "files_changed": 69,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 47724,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-01",
+   "commit_count": 39,
+   "merge_count": 0,
+   "unique_authors": 4,
+   "lines_added": 2191,
+   "lines_deleted": 2013,
+   "total_churn": 4204,
+   "files_changed": 104,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 47905,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-02",
+   "commit_count": 48,
+   "merge_count": 0,
+   "unique_authors": 7,
+   "lines_added": 2653,
+   "lines_deleted": 842,
+   "total_churn": 3495,
+   "files_changed": 182,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 49528,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-03",
+   "commit_count": 25,
+   "merge_count": 0,
+   "unique_authors": 3,
+   "lines_added": 2459,
+   "lines_deleted": 867,
+   "total_churn": 3326,
+   "files_changed": 97,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 50885,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-04",
+   "commit_count": 22,
+   "merge_count": 0,
+   "unique_authors": 2,
+   "lines_added": 899,
+   "lines_deleted": 1015,
+   "total_churn": 1914,
+   "files_changed": 124,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 50792,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-05",
+   "commit_count": 24,
+   "merge_count": 0,
+   "unique_authors": 4,
+   "lines_added": 415,
+   "lines_deleted": 8,
+   "total_churn": 423,
+   "files_changed": 12,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 51140,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-06",
+   "commit_count": 18,
+   "merge_count": 0,
+   "unique_authors": 3,
+   "lines_added": 170,
+   "lines_deleted": 174,
+   "total_churn": 344,
+   "files_changed": 15,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 51149,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-07",
+   "commit_count": 11,
+   "merge_count": 0,
+   "unique_authors": 3,
+   "lines_added": 35,
+   "lines_deleted": 9,
+   "total_churn": 44,
+   "files_changed": 4,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 51171,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-08",
+   "commit_count": 15,
+   "merge_count": 0,
+   "unique_authors": 4,
+   "lines_added": 10,
+   "lines_deleted": 0,
+   "total_churn": 10,
+   "files_changed": 2,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 51180,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-09",
+   "commit_count": 15,
+   "merge_count": 0,
+   "unique_authors": 3,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 51180,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-10",
+   "commit_count": 14,
+   "merge_count": 0,
+   "unique_authors": 3,
+   "lines_added": 3,
+   "lines_deleted": 3,
+   "total_churn": 6,
+   "files_changed": 3,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 51180,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-11",
+   "commit_count": 8,
+   "merge_count": 0,
+   "unique_authors": 2,
+   "lines_added": 2,
+   "lines_deleted": 2,
+   "total_churn": 4,
+   "files_changed": 1,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 51180,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-12",
+   "commit_count": 15,
+   "merge_count": 0,
+   "unique_authors": 5,
+   "lines_added": 1225,
+   "lines_deleted": 8,
+   "total_churn": 1233,
+   "files_changed": 10,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 52168,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-01",
+   "commit_count": 16,
+   "merge_count": 0,
+   "unique_authors": 3,
+   "lines_added": 341,
+   "lines_deleted": 32,
+   "total_churn": 373,
+   "files_changed": 6,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 52431,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-02",
+   "commit_count": 25,
+   "merge_count": 0,
+   "unique_authors": 3,
+   "lines_added": 410,
+   "lines_deleted": 321,
+   "total_churn": 731,
+   "files_changed": 75,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 52516,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-03",
+   "commit_count": 15,
+   "merge_count": 0,
+   "unique_authors": 3,
+   "lines_added": 43,
+   "lines_deleted": 12,
+   "total_churn": 55,
+   "files_changed": 3,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 52545,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-04",
+   "commit_count": 10,
+   "merge_count": 0,
+   "unique_authors": 3,
+   "lines_added": 4,
+   "lines_deleted": 4,
+   "total_churn": 8,
+   "files_changed": 2,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 52545,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-05",
+   "commit_count": 16,
+   "merge_count": 0,
+   "unique_authors": 3,
+   "lines_added": 1624,
+   "lines_deleted": 492,
+   "total_churn": 2116,
+   "files_changed": 324,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 53293,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-06",
+   "commit_count": 38,
+   "merge_count": 0,
+   "unique_authors": 4,
+   "lines_added": 6580,
+   "lines_deleted": 5794,
+   "total_churn": 12374,
+   "files_changed": 363,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 53959,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-07",
+   "commit_count": 31,
+   "merge_count": 0,
+   "unique_authors": 3,
+   "lines_added": 3543,
+   "lines_deleted": 3123,
+   "total_churn": 6666,
+   "files_changed": 92,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 54329,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  }
+ ],
+ "measures_derived": {
+  "bugFixRatioFirstHalf": 0.064896,
+  "bugFixRatioSecondHalf": 0.040324,
+  "bugFixHalfRatio": 0.621374,
+  "featureCommitsFirstHalf": 0,
+  "featureCommitsSecondHalf": 0,
+  "featureCommitsTotal": 0,
+  "locDeltaPerFeature": 12766.0,
+  "recentAgentCommitRatio": 0.562217
+ },
+ "modules_meta": {
+  "anchor_S": "2024-08-19T11:01:07+00:00",
+  "window_months": 12,
+  "package_roots": [
+   "xknx"
+  ],
+  "n_modules": 20,
+  "n_source_files": 185,
+  "n_window_commits": 64,
+  "cached": false,
+  "timings": {
+   "t_tree_loc": 0.923,
+   "t_history": 0.318,
+   "t_numstat": 1.143
+  },
+  "module_loc_instrument": "nonblank-source-lines-v1",
+  "label_counts": {
+   "StableModule": 3,
+   "ActiveModule": 17,
+   "undetermined": 0
+  },
+  "thresholds": {
+   "mod_window_months": 12,
+   "mod_stable_max_rel_churn": 0.1,
+   "mod_stable_max_change_months": 2
+  }
+ },
+ "inferred": {
+  "a0.05_L36_D12_G0.05_orig": {
+   "classes": [
+    "CopyPasteEvidence",
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIIConformant",
+    "LawIVConformant",
+    "LawVConformant",
+    "LawVIConformant",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantNoMerge",
+    "LawVIINonConformant",
+    "LocPerFeatureHigh",
+    "MKApplicable",
+    "MergeInactive",
+    "MultiAuthorActive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": "urn:senso:explanations:XKNX__xknx-1551:d20298612d99",
+   "tbox_sha256": "d20298612d99fa8f5c1a63c70eaab0195a3e82e2d6780de3bd1fd3ced72d6e5d",
+   "abox_triples": 240,
+   "t_reason_B_s": 2.297
+  }
+ },
+ "primary_config": "a0.05_L36_D12_G0.05_orig",
+ "project_iri": "http://senso-framework.org/data/XKNX__xknx-1551",
+ "consistent": true,
+ "inferred_labels": [
+  "CopyPasteEvidence",
+  "GrowthStage",
+  "LawIConformant",
+  "LawIIIConformant",
+  "LawIVConformant",
+  "LawVConformant",
+  "LawVIConformant",
+  "LawVIIINonConformant",
+  "LawVIIINonConformantNoMerge",
+  "LawVIINonConformant",
+  "LocPerFeatureHigh",
+  "MKApplicable",
+  "MergeInactive",
+  "MultiAuthorActive",
+  "RBActiveDevelopmentStage",
+  "RecentlyActive",
+  "SubstantialLocGrowth"
+ ],
+ "stage_labels": [
+  "GrowthStage",
+  "RBActiveDevelopmentStage"
+ ],
+ "law_labels": {
+  "I": "LawIConformant",
+  "III": "LawIIIConformant",
+  "IV": "LawIVConformant",
+  "V": "LawVConformant",
+  "VI": "LawVIConformant",
+  "VII": "LawVIINonConformant",
+  "VIII": "LawVIIINonConformant"
+ },
+ "tbox_sha256_stage_b": "d20298612d99fa8f5c1a63c70eaab0195a3e82e2d6780de3bd1fd3ced72d6e5d",
+ "tbox_sha256_stage_a": "f5ba00eaa76dc3582415cdf566fbd7abc1d3f2797ca928f41dad106dc1c0bdb5",
+ "summary": {
+  "c1": "A",
+  "c2": "A",
+  "cf": "A",
+  "note": "debug summary; run_rq1_v2.py reads `inferred` and recomputes CF itself"
+ },
+ "modules": {
+  "examples": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "examples",
+    "moduleLoc": 1063,
+    "moduleCommitsInWindow": 12,
+    "moduleChangeMonthsInWindow": 6,
+    "moduleLinesChangedInWindow": 314,
+    "moduleRelChurnInWindow": 0.29539,
+    "moduleMonthsSinceLastChange": 1
+   },
+   "iri": "http://senso-framework.org/data/XKNX__xknx-1551/module/examples-99345c",
+   "abox_asserted": true
+  },
+  "script": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "script",
+    "moduleLoc": 140,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 18
+   },
+   "iri": "http://senso-framework.org/data/XKNX__xknx-1551/module/script-cb5346",
+   "abox_asserted": true
+  },
+  "xknx/__init__.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "RarelyChangedModule"
+   ],
+   "measures": {
+    "modulePath": "xknx/__init__.py",
+    "moduleLoc": 5,
+    "moduleCommitsInWindow": 2,
+    "moduleChangeMonthsInWindow": 2,
+    "moduleLinesChangedInWindow": 2,
+    "moduleRelChurnInWindow": 0.4,
+    "moduleMonthsSinceLastChange": 2
+   },
+   "iri": "http://senso-framework.org/data/XKNX__xknx-1551/module/xknx___init__.py-a6ded7",
+   "abox_asserted": true
+  },
+  "xknx/__version__.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "xknx/__version__.py",
+    "moduleLoc": 2,
+    "moduleCommitsInWindow": 5,
+    "moduleChangeMonthsInWindow": 4,
+    "moduleLinesChangedInWindow": 10,
+    "moduleRelChurnInWindow": 5.0,
+    "moduleMonthsSinceLastChange": 0
+   },
+   "iri": "http://senso-framework.org/data/XKNX__xknx-1551/module/xknx___version__.py-d0737f",
+   "abox_asserted": true
+  },
+  "xknx/cemi": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "LowRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "xknx/cemi",
+    "moduleLoc": 775,
+    "moduleCommitsInWindow": 3,
+    "moduleChangeMonthsInWindow": 3,
+    "moduleLinesChangedInWindow": 12,
+    "moduleRelChurnInWindow": 0.015484,
+    "moduleMonthsSinceLastChange": 2
+   },
+   "iri": "http://senso-framework.org/data/XKNX__xknx-1551/module/xknx_cemi-a067a2",
+   "abox_asserted": true
+  },
+  "xknx/core": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "xknx/core",
+    "moduleLoc": 779,
+    "moduleCommitsInWindow": 11,
+    "moduleChangeMonthsInWindow": 4,
+    "moduleLinesChangedInWindow": 207,
+    "moduleRelChurnInWindow": 0.265725,
+    "moduleMonthsSinceLastChange": 0
+   },
+   "iri": "http://senso-framework.org/data/XKNX__xknx-1551/module/xknx_core-73a920",
+   "abox_asserted": true
+  },
+  "xknx/devices": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "xknx/devices",
+    "moduleLoc": 3278,
+    "moduleCommitsInWindow": 23,
+    "moduleChangeMonthsInWindow": 5,
+    "moduleLinesChangedInWindow": 1540,
+    "moduleRelChurnInWindow": 0.469799,
+    "moduleMonthsSinceLastChange": 0
+   },
+   "iri": "http://senso-framework.org/data/XKNX__xknx-1551/module/xknx_devices-bd06ec",
+   "abox_asserted": true
+  },
+  "xknx/dpt": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "xknx/dpt",
+    "moduleLoc": 3419,
+    "moduleCommitsInWindow": 26,
+    "moduleChangeMonthsInWindow": 5,
+    "moduleLinesChangedInWindow": 9108,
+    "moduleRelChurnInWindow": 2.663937,
+    "moduleMonthsSinceLastChange": 0
+   },
+   "iri": "http://senso-framework.org/data/XKNX__xknx-1551/module/xknx_dpt-76da6c",
+   "abox_asserted": true
+  },
+  "xknx/exceptions": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "LowRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "xknx/exceptions",
+    "moduleLoc": 177,
+    "moduleCommitsInWindow": 3,
+    "moduleChangeMonthsInWindow": 3,
+    "moduleLinesChangedInWindow": 11,
+    "moduleRelChurnInWindow": 0.062147,
+    "moduleMonthsSinceLastChange": 2
+   },
+   "iri": "http://senso-framework.org/data/XKNX__xknx-1551/module/xknx_exceptions-575994",
+   "abox_asserted": true
+  },
+  "xknx/io": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "LowRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "xknx/io",
+    "moduleLoc": 3443,
+    "moduleCommitsInWindow": 10,
+    "moduleChangeMonthsInWindow": 7,
+    "moduleLinesChangedInWindow": 208,
+    "moduleRelChurnInWindow": 0.060412,
+    "moduleMonthsSinceLastChange": 1
+   },
+   "iri": "http://senso-framework.org/data/XKNX__xknx-1551/module/xknx_io-a42765",
+   "abox_asserted": true
+  },
+  "xknx/knxip": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "xknx/knxip",
+    "moduleLoc": 2533,
+    "moduleCommitsInWindow": 3,
+    "moduleChangeMonthsInWindow": 2,
+    "moduleLinesChangedInWindow": 43,
+    "moduleRelChurnInWindow": 0.016976,
+    "moduleMonthsSinceLastChange": 3
+   },
+   "iri": "http://senso-framework.org/data/XKNX__xknx-1551/module/xknx_knxip-be56eb",
+   "abox_asserted": true
+  },
+  "xknx/management": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "xknx/management",
+    "moduleLoc": 527,
+    "moduleCommitsInWindow": 7,
+    "moduleChangeMonthsInWindow": 5,
+    "moduleLinesChangedInWindow": 312,
+    "moduleRelChurnInWindow": 0.59203,
+    "moduleMonthsSinceLastChange": 2
+   },
+   "iri": "http://senso-framework.org/data/XKNX__xknx-1551/module/xknx_management-55d45f",
+   "abox_asserted": true
+  },
+  "xknx/profile": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "xknx/profile",
+    "moduleLoc": 289,
+    "moduleCommitsInWindow": 2,
+    "moduleChangeMonthsInWindow": 2,
+    "moduleLinesChangedInWindow": 4,
+    "moduleRelChurnInWindow": 0.013841,
+    "moduleMonthsSinceLastChange": 2
+   },
+   "iri": "http://senso-framework.org/data/XKNX__xknx-1551/module/xknx_profile-70d94d",
+   "abox_asserted": true
+  },
+  "xknx/remote_value": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "xknx/remote_value",
+    "moduleLoc": 1250,
+    "moduleCommitsInWindow": 20,
+    "moduleChangeMonthsInWindow": 5,
+    "moduleLinesChangedInWindow": 1153,
+    "moduleRelChurnInWindow": 0.9224,
+    "moduleMonthsSinceLastChange": 0
+   },
+   "iri": "http://senso-framework.org/data/XKNX__xknx-1551/module/xknx_remote_value-817c88",
+   "abox_asserted": true
+  },
+  "xknx/secure": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "LowRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "xknx/secure",
+    "moduleLoc": 1057,
+    "moduleCommitsInWindow": 4,
+    "moduleChangeMonthsInWindow": 4,
+    "moduleLinesChangedInWindow": 35,
+    "moduleRelChurnInWindow": 0.033113,
+    "moduleMonthsSinceLastChange": 2
+   },
+   "iri": "http://senso-framework.org/data/XKNX__xknx-1551/module/xknx_secure-0f5a57",
+   "abox_asserted": true
+  },
+  "xknx/telegram": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "xknx/telegram",
+    "moduleLoc": 2057,
+    "moduleCommitsInWindow": 11,
+    "moduleChangeMonthsInWindow": 6,
+    "moduleLinesChangedInWindow": 970,
+    "moduleRelChurnInWindow": 0.471561,
+    "moduleMonthsSinceLastChange": 0
+   },
+   "iri": "http://senso-framework.org/data/XKNX__xknx-1551/module/xknx_telegram-bd4c14",
+   "abox_asserted": true
+  },
+  "xknx/tools": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "RarelyChangedModule"
+   ],
+   "measures": {
+    "modulePath": "xknx/tools",
+    "moduleLoc": 114,
+    "moduleCommitsInWindow": 4,
+    "moduleChangeMonthsInWindow": 2,
+    "moduleLinesChangedInWindow": 22,
+    "moduleRelChurnInWindow": 0.192982,
+    "moduleMonthsSinceLastChange": 2
+   },
+   "iri": "http://senso-framework.org/data/XKNX__xknx-1551/module/xknx_tools-c6b5dc",
+   "abox_asserted": true
+  },
+  "xknx/typing": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "RarelyChangedModule"
+   ],
+   "measures": {
+    "modulePath": "xknx/typing",
+    "moduleLoc": 17,
+    "moduleCommitsInWindow": 4,
+    "moduleChangeMonthsInWindow": 2,
+    "moduleLinesChangedInWindow": 24,
+    "moduleRelChurnInWindow": 1.411765,
+    "moduleMonthsSinceLastChange": 1
+   },
+   "iri": "http://senso-framework.org/data/XKNX__xknx-1551/module/xknx_typing-9fc68f",
+   "abox_asserted": true
+  },
+  "xknx/util": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "RarelyChangedModule"
+   ],
+   "measures": {
+    "modulePath": "xknx/util",
+    "moduleLoc": 9,
+    "moduleCommitsInWindow": 1,
+    "moduleChangeMonthsInWindow": 1,
+    "moduleLinesChangedInWindow": 1,
+    "moduleRelChurnInWindow": 0.111111,
+    "moduleMonthsSinceLastChange": 3
+   },
+   "iri": "http://senso-framework.org/data/XKNX__xknx-1551/module/xknx_util-ddd280",
+   "abox_asserted": true
+  },
+  "xknx/xknx.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "xknx/xknx.py",
+    "moduleLoc": 171,
+    "moduleCommitsInWindow": 8,
+    "moduleChangeMonthsInWindow": 3,
+    "moduleLinesChangedInWindow": 35,
+    "moduleRelChurnInWindow": 0.204678,
+    "moduleMonthsSinceLastChange": 2
+   },
+   "iri": "http://senso-framework.org/data/XKNX__xknx-1551/module/xknx_xknx.py-8da538",
+   "abox_asserted": true
+  }
+ },
+ "explanations": {
+  "stage:GrowthStage": {
+   "class": "GrowthStage",
+   "individual": "http://senso-framework.org/data/XKNX__xknx-1551",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/XKNX__xknx-1551 type http://senso-framework.org/ontology/seo#GrowthStage",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKTau_gt_0",
+       "text": "A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "GrowthStage",
+       "text": "GrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKpValue_lt_mk_alpha",
+       "text": "A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "XKNX__xknx-1551",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "XKNX__xknx-1551 type SoftwareProject"
+      },
+      {
+       "subject": "XKNX__xknx-1551",
+       "prop": "locSeriesLength",
+       "value": 36,
+       "raw": "XKNX__xknx-1551 locSeriesLength 36"
+      },
+      {
+       "subject": "XKNX__xknx-1551",
+       "prop": "locMKTau",
+       "value": 0.944444,
+       "raw": "XKNX__xknx-1551 locMKTau 0.944444"
+      },
+      {
+       "subject": "XKNX__xknx-1551",
+       "prop": "locMKpValue",
+       "value": 0.0,
+       "raw": "XKNX__xknx-1551 locMKpValue 0.0"
+      }
+     ],
+     "closures": [],
+     "raw": "XKNX__xknx-1551 type SoftwareProject\nA_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\nA_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\nXKNX__xknx-1551 locSeriesLength 36\nGrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject\nXKNX__xknx-1551 locMKTau 0.944444\nA_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]\nXKNX__xknx-1551 locMKpValue 0.0\nA_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]"
+    }
+   ],
+   "raw_text": "Axiom: XKNX__xknx-1551 type GrowthStage\n\nExplanation(s): \n1)   XKNX__xknx-1551 type SoftwareProject\n     A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\n     A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\n     XKNX__xknx-1551 locSeriesLength 36\n     GrowthStage equivalentTo A_locMKTau_gt_0\n                              and A_locMKpValue_lt_mk_alpha\n                              and MKApplicable\n                              and SoftwareProject\n     XKNX__xknx-1551 locMKTau 0.944444\n     A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]\n     XKNX__xknx-1551 locMKpValue 0.0\n     A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\n\n\n",
+   "seconds": 2.9152231879998,
+   "returncode": 0,
+   "error": null
+  },
+  "stage:RBActiveDevelopmentStage": {
+   "class": "RBActiveDevelopmentStage",
+   "individual": "http://senso-framework.org/data/XKNX__xknx-1551",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/XKNX__xknx-1551 type http://senso-framework.org/ontology/seo#RBActiveDevelopmentStage",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable"
+      },
+      {
+       "kind": "definition",
+       "subject": "SubstantialLocGrowth",
+       "text": "SubstantialLocGrowth equivalentTo A_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKTau_gt_0",
+       "text": "A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "GrowthStage",
+       "text": "GrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year",
+       "text": "A_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year equivalentTo locRelSenSlopeAnnual some decimal[>= 0.05]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]"
+      },
+      {
+       "kind": "definition",
+       "subject": "RBActiveDevelopmentStage",
+       "text": "RBActiveDevelopmentStage equivalentTo GrowthStage and RecentlyActive and SoftwareProject and SubstantialLocGrowth"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKpValue_lt_mk_alpha",
+       "text": "A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]"
+      },
+      {
+       "kind": "definition",
+       "subject": "RecentlyActive",
+       "text": "RecentlyActive equivalentTo A_monthsSinceLastCommit_lt_rb_dormancy_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_monthsSinceLastCommit_lt_rb_dormancy_months",
+       "text": "A_monthsSinceLastCommit_lt_rb_dormancy_months equivalentTo monthsSinceLastCommit some integer[< 12]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "XKNX__xknx-1551",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "XKNX__xknx-1551 type SoftwareProject"
+      },
+      {
+       "subject": "XKNX__xknx-1551",
+       "prop": "locRelSenSlopeAnnual",
+       "value": 0.088528,
+       "raw": "XKNX__xknx-1551 locRelSenSlopeAnnual 0.088528"
+      },
+      {
+       "subject": "XKNX__xknx-1551",
+       "prop": "locSeriesLength",
+       "value": 36,
+       "raw": "XKNX__xknx-1551 locSeriesLength 36"
+      },
+      {
+       "subject": "XKNX__xknx-1551",
+       "prop": "locMKTau",
+       "value": 0.944444,
+       "raw": "XKNX__xknx-1551 locMKTau 0.944444"
+      },
+      {
+       "subject": "XKNX__xknx-1551",
+       "prop": "monthsSinceLastCommit",
+       "value": 0,
+       "raw": "XKNX__xknx-1551 monthsSinceLastCommit 0"
+      },
+      {
+       "subject": "XKNX__xknx-1551",
+       "prop": "locMKpValue",
+       "value": 0.0,
+       "raw": "XKNX__xknx-1551 locMKpValue 0.0"
+      }
+     ],
+     "closures": [],
+     "raw": "XKNX__xknx-1551 type SoftwareProject\nXKNX__xknx-1551 locRelSenSlopeAnnual 0.088528\nA_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\nSubstantialLocGrowth equivalentTo A_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year and SoftwareProject\nA_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\nXKNX__xknx-1551 locSeriesLength 36\nGrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject\nA_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year equivalentTo locRelSenSlopeAnnual some decimal[>= 0.05]\nXKNX__xknx-1551 locMKTau 0.944444\nA_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]\nXKNX__xknx-1551 monthsSinceLastCommit 0\nXKNX__xknx-1551 locMKpValue 0.0\nRBActiveDevelopmentStage equivalentTo GrowthStage and RecentlyActive and SoftwareProject and SubstantialLocGrowth\nA_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\nRecentlyActive equivalentTo A_monthsSinceLastCommit_lt_rb_dormancy_months and SoftwareProject\nA_monthsSinceLastCommit_lt_rb_dormancy_months equivalentTo monthsSinceLastCommit some integer[< 12]"
+    }
+   ],
+   "raw_text": "Axiom: XKNX__xknx-1551 type RBActiveDevelopmentStage\n\nExplanation(s): \n1)   XKNX__xknx-1551 type SoftwareProject\n     XKNX__xknx-1551 locRelSenSlopeAnnual 0.088528\n     A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\n     SubstantialLocGrowth equivalentTo A_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year\n                                       and SoftwareProject\n     A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\n     XKNX__xknx-1551 locSeriesLength 36\n     GrowthStage equivalentTo A_locMKTau_gt_0\n                              and A_locMKpValue_lt_mk_alpha\n                              and MKApplicable\n                              and SoftwareProject\n     A_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year equivalentTo locRelSenSlopeAnnual some decimal[>= 0.05]\n     XKNX__xknx-1551 locMKTau 0.944444\n     A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]\n     XKNX__xknx-1551 monthsSinceLastCommit 0\n     XKNX__xknx-1551 locMKpValue 0.0\n     RBActiveDevelopmentStage equivalentTo GrowthStage\n                                           and RecentlyActive\n                                           and SoftwareProject\n                                           and SubstantialLocGrowth\n     A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\n     RecentlyActive equivalentTo A_monthsSinceLastCommit_lt_rb_dormancy_months\n                                 and SoftwareProject\n     A_monthsSinceLastCommit_lt_rb_dormancy_months equivalentTo monthsSinceLastCommit some integer[< 12]\n\n\n",
+   "seconds": 3.0104568020324223,
+   "returncode": 0,
+   "error": null
+  },
+  "lawI": {
+   "class": "LawIConformant",
+   "individual": "http://senso-framework.org/data/XKNX__xknx-1551",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/XKNX__xknx-1551 type http://senso-framework.org/ontology/seo#LawIConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law1_min_months",
+       "text": "A_monthsObserved_ge_p_law1_min_months equivalentTo monthsObserved some integer[>= 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawIConformant",
+       "text": "LawIConformant equivalentTo A_activeMonthRatio_ge_p_law1_active_ratio and A_monthsObserved_ge_p_law1_min_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_activeMonthRatio_ge_p_law1_active_ratio",
+       "text": "A_activeMonthRatio_ge_p_law1_active_ratio equivalentTo activeMonthRatio some decimal[>= 0.5]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "XKNX__xknx-1551",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "XKNX__xknx-1551 type SoftwareProject"
+      },
+      {
+       "subject": "XKNX__xknx-1551",
+       "prop": "activeMonthRatio",
+       "value": 1.0,
+       "raw": "XKNX__xknx-1551 activeMonthRatio 1.0"
+      },
+      {
+       "subject": "XKNX__xknx-1551",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "XKNX__xknx-1551 monthsObserved 36"
+      }
+     ],
+     "closures": [],
+     "raw": "XKNX__xknx-1551 type SoftwareProject\nXKNX__xknx-1551 activeMonthRatio 1.0\nXKNX__xknx-1551 monthsObserved 36\nA_monthsObserved_ge_p_law1_min_months equivalentTo monthsObserved some integer[>= 2]\nLawIConformant equivalentTo A_activeMonthRatio_ge_p_law1_active_ratio and A_monthsObserved_ge_p_law1_min_months and SoftwareProject\nA_activeMonthRatio_ge_p_law1_active_ratio equivalentTo activeMonthRatio some decimal[>= 0.5]"
+    }
+   ],
+   "raw_text": "Axiom: XKNX__xknx-1551 type LawIConformant\n\nExplanation(s): \n1)   XKNX__xknx-1551 type SoftwareProject\n     XKNX__xknx-1551 activeMonthRatio 1.0\n     XKNX__xknx-1551 monthsObserved 36\n     A_monthsObserved_ge_p_law1_min_months equivalentTo monthsObserved some integer[>= 2]\n     LawIConformant equivalentTo A_activeMonthRatio_ge_p_law1_active_ratio\n                                 and A_monthsObserved_ge_p_law1_min_months\n                                 and SoftwareProject\n     A_activeMonthRatio_ge_p_law1_active_ratio equivalentTo activeMonthRatio some decimal[>= 0.5]\n\n\n",
+   "seconds": 2.621677457005717,
+   "returncode": 0,
+   "error": null
+  },
+  "lawIII": {
+   "class": "LawIIIConformant",
+   "individual": "http://senso-framework.org/data/XKNX__xknx-1551",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/XKNX__xknx-1551 type http://senso-framework.org/ontology/seo#LawIIIConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law3_min_months",
+       "text": "A_monthsObserved_ge_p_law3_min_months equivalentTo monthsObserved some integer[>= 6]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawIIIConformant",
+       "text": "LawIIIConformant equivalentTo A_churnCV_lt_p_law3_churn_cv and A_monthsObserved_ge_p_law3_min_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_churnCV_lt_p_law3_churn_cv",
+       "text": "A_churnCV_lt_p_law3_churn_cv equivalentTo churnCV some decimal[< 2.0]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "XKNX__xknx-1551",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "XKNX__xknx-1551 type SoftwareProject"
+      },
+      {
+       "subject": "XKNX__xknx-1551",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "XKNX__xknx-1551 monthsObserved 36"
+      },
+      {
+       "subject": "XKNX__xknx-1551",
+       "prop": "churnCV",
+       "value": 1.262869,
+       "raw": "XKNX__xknx-1551 churnCV 1.262869"
+      }
+     ],
+     "closures": [],
+     "raw": "XKNX__xknx-1551 type SoftwareProject\nA_monthsObserved_ge_p_law3_min_months equivalentTo monthsObserved some integer[>= 6]\nXKNX__xknx-1551 monthsObserved 36\nLawIIIConformant equivalentTo A_churnCV_lt_p_law3_churn_cv and A_monthsObserved_ge_p_law3_min_months and SoftwareProject\nXKNX__xknx-1551 churnCV 1.262869\nA_churnCV_lt_p_law3_churn_cv equivalentTo churnCV some decimal[< 2.0]"
+    }
+   ],
+   "raw_text": "Axiom: XKNX__xknx-1551 type LawIIIConformant\n\nExplanation(s): \n1)   XKNX__xknx-1551 type SoftwareProject\n     A_monthsObserved_ge_p_law3_min_months equivalentTo monthsObserved some integer[>= 6]\n     XKNX__xknx-1551 monthsObserved 36\n     LawIIIConformant equivalentTo A_churnCV_lt_p_law3_churn_cv\n                                   and A_monthsObserved_ge_p_law3_min_months\n                                   and SoftwareProject\n     XKNX__xknx-1551 churnCV 1.262869\n     A_churnCV_lt_p_law3_churn_cv equivalentTo churnCV some decimal[< 2.0]\n\n\n",
+   "seconds": 2.8862026249989867,
+   "returncode": 0,
+   "error": null
+  },
+  "lawIV": {
+   "class": "LawIVConformant",
+   "individual": "http://senso-framework.org/data/XKNX__xknx-1551",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/XKNX__xknx-1551 type http://senso-framework.org/ontology/seo#LawIVConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law4_min_months",
+       "text": "A_monthsObserved_ge_p_law4_min_months equivalentTo monthsObserved some integer[>= 6]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawIVConformant",
+       "text": "LawIVConformant equivalentTo A_commitCountCV_lt_p_law4_commit_cv and A_monthsObserved_ge_p_law4_min_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_commitCountCV_lt_p_law4_commit_cv",
+       "text": "A_commitCountCV_lt_p_law4_commit_cv equivalentTo commitCountCV some decimal[< 1.5]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "XKNX__xknx-1551",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "XKNX__xknx-1551 type SoftwareProject"
+      },
+      {
+       "subject": "XKNX__xknx-1551",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "XKNX__xknx-1551 monthsObserved 36"
+      },
+      {
+       "subject": "XKNX__xknx-1551",
+       "prop": "commitCountCV",
+       "value": 0.419652,
+       "raw": "XKNX__xknx-1551 commitCountCV 0.419652"
+      }
+     ],
+     "closures": [],
+     "raw": "A_monthsObserved_ge_p_law4_min_months equivalentTo monthsObserved some integer[>= 6]\nXKNX__xknx-1551 type SoftwareProject\nXKNX__xknx-1551 monthsObserved 36\nXKNX__xknx-1551 commitCountCV 0.419652\nLawIVConformant equivalentTo A_commitCountCV_lt_p_law4_commit_cv and A_monthsObserved_ge_p_law4_min_months and SoftwareProject\nA_commitCountCV_lt_p_law4_commit_cv equivalentTo commitCountCV some decimal[< 1.5]"
+    }
+   ],
+   "raw_text": "Axiom: XKNX__xknx-1551 type LawIVConformant\n\nExplanation(s): \n1)   A_monthsObserved_ge_p_law4_min_months equivalentTo monthsObserved some integer[>= 6]\n     XKNX__xknx-1551 type SoftwareProject\n     XKNX__xknx-1551 monthsObserved 36\n     XKNX__xknx-1551 commitCountCV 0.419652\n     LawIVConformant equivalentTo A_commitCountCV_lt_p_law4_commit_cv\n                                  and A_monthsObserved_ge_p_law4_min_months\n                                  and SoftwareProject\n     A_commitCountCV_lt_p_law4_commit_cv equivalentTo commitCountCV some decimal[< 1.5]\n\n\n",
+   "seconds": 2.5901293649803847,
+   "returncode": 0,
+   "error": null
+  },
+  "lawV": {
+   "class": "LawVConformant",
+   "individual": "http://senso-framework.org/data/XKNX__xknx-1551",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/XKNX__xknx-1551 type http://senso-framework.org/ontology/seo#LawVConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "LawVConformant",
+       "text": "LawVConformant equivalentTo A_linesAddedCV_lt_p_law5_additions_cv and A_monthsObserved_ge_p_law5_min_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_linesAddedCV_lt_p_law5_additions_cv",
+       "text": "A_linesAddedCV_lt_p_law5_additions_cv equivalentTo linesAddedCV some decimal[< 2.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law5_min_months",
+       "text": "A_monthsObserved_ge_p_law5_min_months equivalentTo monthsObserved some integer[>= 4]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "XKNX__xknx-1551",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "XKNX__xknx-1551 type SoftwareProject"
+      },
+      {
+       "subject": "XKNX__xknx-1551",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "XKNX__xknx-1551 monthsObserved 36"
+      },
+      {
+       "subject": "XKNX__xknx-1551",
+       "prop": "linesAddedCV",
+       "value": 1.139453,
+       "raw": "XKNX__xknx-1551 linesAddedCV 1.139453"
+      }
+     ],
+     "closures": [],
+     "raw": "XKNX__xknx-1551 type SoftwareProject\nXKNX__xknx-1551 monthsObserved 36\nXKNX__xknx-1551 linesAddedCV 1.139453\nLawVConformant equivalentTo A_linesAddedCV_lt_p_law5_additions_cv and A_monthsObserved_ge_p_law5_min_months and SoftwareProject\nA_linesAddedCV_lt_p_law5_additions_cv equivalentTo linesAddedCV some decimal[< 2.0]\nA_monthsObserved_ge_p_law5_min_months equivalentTo monthsObserved some integer[>= 4]"
+    }
+   ],
+   "raw_text": "Axiom: XKNX__xknx-1551 type LawVConformant\n\nExplanation(s): \n1)   XKNX__xknx-1551 type SoftwareProject\n     XKNX__xknx-1551 monthsObserved 36\n     XKNX__xknx-1551 linesAddedCV 1.139453\n     LawVConformant equivalentTo A_linesAddedCV_lt_p_law5_additions_cv\n                                 and A_monthsObserved_ge_p_law5_min_months\n                                 and SoftwareProject\n     A_linesAddedCV_lt_p_law5_additions_cv equivalentTo linesAddedCV some decimal[< 2.0]\n     A_monthsObserved_ge_p_law5_min_months equivalentTo monthsObserved some integer[>= 4]\n\n\n",
+   "seconds": 3.8581716320477426,
+   "returncode": 0,
+   "error": null
+  },
+  "lawVI": {
+   "class": "LawVIConformant",
+   "individual": "http://senso-framework.org/data/XKNX__xknx-1551",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/XKNX__xknx-1551 type http://senso-framework.org/ontology/seo#LawVIConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "subclass",
+       "subject": "GrowthStage",
+       "text": "GrowthStage subClassOf LawVIConformant"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKTau_gt_0",
+       "text": "A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "GrowthStage",
+       "text": "GrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKpValue_lt_mk_alpha",
+       "text": "A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "XKNX__xknx-1551",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "XKNX__xknx-1551 type SoftwareProject"
+      },
+      {
+       "subject": "XKNX__xknx-1551",
+       "prop": "locSeriesLength",
+       "value": 36,
+       "raw": "XKNX__xknx-1551 locSeriesLength 36"
+      },
+      {
+       "subject": "XKNX__xknx-1551",
+       "prop": "locMKTau",
+       "value": 0.944444,
+       "raw": "XKNX__xknx-1551 locMKTau 0.944444"
+      },
+      {
+       "subject": "XKNX__xknx-1551",
+       "prop": "locMKpValue",
+       "value": 0.0,
+       "raw": "XKNX__xknx-1551 locMKpValue 0.0"
+      }
+     ],
+     "closures": [],
+     "raw": "XKNX__xknx-1551 type SoftwareProject\nGrowthStage subClassOf LawVIConformant\nA_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\nA_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\nXKNX__xknx-1551 locSeriesLength 36\nGrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject\nXKNX__xknx-1551 locMKTau 0.944444\nA_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]\nXKNX__xknx-1551 locMKpValue 0.0\nA_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]"
+    }
+   ],
+   "raw_text": "Axiom: XKNX__xknx-1551 type LawVIConformant\n\nExplanation(s): \n1)   XKNX__xknx-1551 type SoftwareProject\n     GrowthStage subClassOf LawVIConformant\n     A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\n     A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\n     XKNX__xknx-1551 locSeriesLength 36\n     GrowthStage equivalentTo A_locMKTau_gt_0\n                              and A_locMKpValue_lt_mk_alpha\n                              and MKApplicable\n                              and SoftwareProject\n     XKNX__xknx-1551 locMKTau 0.944444\n     A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]\n     XKNX__xknx-1551 locMKpValue 0.0\n     A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\n\n\n",
+   "seconds": 5.460471510014031,
+   "returncode": 0,
+   "error": null
+  },
+  "lawVII": {
+   "class": "LawVIINonConformant",
+   "individual": "http://senso-framework.org/data/XKNX__xknx-1551",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/XKNX__xknx-1551 type http://senso-framework.org/ontology/seo#LawVIINonConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_bugFixRatioFirstHalf_gt_0",
+       "text": "A_bugFixRatioFirstHalf_gt_0 equivalentTo bugFixRatioFirstHalf some decimal[> 0.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_bugFixHalfRatio_lt_p_law7_tolerance",
+       "text": "A_bugFixHalfRatio_lt_p_law7_tolerance equivalentTo bugFixHalfRatio some decimal[< 0.9]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_activeMonthCount_ge_p_law7_min_active_months",
+       "text": "A_activeMonthCount_ge_p_law7_min_active_months equivalentTo activeMonthCount some integer[>= 4]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawVIINonConformant",
+       "text": "LawVIINonConformant equivalentTo A_activeMonthCount_ge_p_law7_min_active_months and A_bugFixHalfRatio_lt_p_law7_tolerance and A_bugFixRatioFirstHalf_gt_0 and SoftwareProject"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "XKNX__xknx-1551",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "XKNX__xknx-1551 type SoftwareProject"
+      },
+      {
+       "subject": "XKNX__xknx-1551",
+       "prop": "bugFixHalfRatio",
+       "value": 0.621374,
+       "raw": "XKNX__xknx-1551 bugFixHalfRatio 0.621374"
+      },
+      {
+       "subject": "XKNX__xknx-1551",
+       "prop": "bugFixRatioFirstHalf",
+       "value": 0.064896,
+       "raw": "XKNX__xknx-1551 bugFixRatioFirstHalf 0.064896"
+      },
+      {
+       "subject": "XKNX__xknx-1551",
+       "prop": "activeMonthCount",
+       "value": 36,
+       "raw": "XKNX__xknx-1551 activeMonthCount 36"
+      }
+     ],
+     "closures": [],
+     "raw": "XKNX__xknx-1551 type SoftwareProject\nA_bugFixRatioFirstHalf_gt_0 equivalentTo bugFixRatioFirstHalf some decimal[> 0.0]\nA_bugFixHalfRatio_lt_p_law7_tolerance equivalentTo bugFixHalfRatio some decimal[< 0.9]\nXKNX__xknx-1551 bugFixHalfRatio 0.621374\nA_activeMonthCount_ge_p_law7_min_active_months equivalentTo activeMonthCount some integer[>= 4]\nXKNX__xknx-1551 bugFixRatioFirstHalf 0.064896\nLawVIINonConformant equivalentTo A_activeMonthCount_ge_p_law7_min_active_months and A_bugFixHalfRatio_lt_p_law7_tolerance and A_bugFixRatioFirstHalf_gt_0 and SoftwareProject\nXKNX__xknx-1551 activeMonthCount 36"
+    }
+   ],
+   "raw_text": "Axiom: XKNX__xknx-1551 type LawVIINonConformant\n\nExplanation(s): \n1)   XKNX__xknx-1551 type SoftwareProject\n     A_bugFixRatioFirstHalf_gt_0 equivalentTo bugFixRatioFirstHalf some decimal[> 0.0]\n     A_bugFixHalfRatio_lt_p_law7_tolerance equivalentTo bugFixHalfRatio some decimal[< 0.9]\n     XKNX__xknx-1551 bugFixHalfRatio 0.621374\n     A_activeMonthCount_ge_p_law7_min_active_months equivalentTo activeMonthCount some integer[>= 4]\n     XKNX__xknx-1551 bugFixRatioFirstHalf 0.064896\n     LawVIINonConformant equivalentTo A_activeMonthCount_ge_p_law7_min_active_months\n                                      and A_bugFixHalfRatio_lt_p_law7_tolerance\n                                      and A_bugFixRatioFirstHalf_gt_0\n                                      and SoftwareProject\n     XKNX__xknx-1551 activeMonthCount 36\n\n\n",
+   "seconds": 5.408593766973354,
+   "returncode": 0,
+   "error": null
+  },
+  "lawVIII": {
+   "class": "LawVIIINonConformant",
+   "individual": "http://senso-framework.org/data/XKNX__xknx-1551",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/XKNX__xknx-1551 type http://senso-framework.org/ontology/seo#LawVIIINonConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_mergeMonthRatio_le_p_law8_merge_ratio",
+       "text": "A_mergeMonthRatio_le_p_law8_merge_ratio equivalentTo MergeInactive"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawVIIINonConformantNoMerge",
+       "text": "LawVIIINonConformantNoMerge equivalentTo A_monthsObserved_ge_p_law8_min_months and MergeInactive and SoftwareProject"
+      },
+      {
+       "kind": "subclass",
+       "subject": "LawVIIINonConformantNoMerge",
+       "text": "LawVIIINonConformantNoMerge subClassOf LawVIIINonConformant"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_mergeMonthRatio_le_p_law8_merge_ratio",
+       "text": "A_mergeMonthRatio_le_p_law8_merge_ratio equivalentTo mergeMonthRatio some decimal[<= 0.3]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law8_min_months",
+       "text": "A_monthsObserved_ge_p_law8_min_months equivalentTo monthsObserved some integer[>= 6]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "XKNX__xknx-1551",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "XKNX__xknx-1551 type SoftwareProject"
+      },
+      {
+       "subject": "XKNX__xknx-1551",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "XKNX__xknx-1551 monthsObserved 36"
+      },
+      {
+       "subject": "XKNX__xknx-1551",
+       "prop": "mergeMonthRatio",
+       "value": 0.111111,
+       "raw": "XKNX__xknx-1551 mergeMonthRatio 0.111111"
+      }
+     ],
+     "closures": [],
+     "raw": "A_mergeMonthRatio_le_p_law8_merge_ratio equivalentTo MergeInactive\nXKNX__xknx-1551 type SoftwareProject\nLawVIIINonConformantNoMerge equivalentTo A_monthsObserved_ge_p_law8_min_months and MergeInactive and SoftwareProject\nLawVIIINonConformantNoMerge subClassOf LawVIIINonConformant\nA_mergeMonthRatio_le_p_law8_merge_ratio equivalentTo mergeMonthRatio some decimal[<= 0.3]\nXKNX__xknx-1551 monthsObserved 36\nXKNX__xknx-1551 mergeMonthRatio 0.111111\nA_monthsObserved_ge_p_law8_min_months equivalentTo monthsObserved some integer[>= 6]"
+    }
+   ],
+   "raw_text": "Axiom: XKNX__xknx-1551 type LawVIIINonConformant\n\nExplanation(s): \n1)   A_mergeMonthRatio_le_p_law8_merge_ratio equivalentTo MergeInactive\n     XKNX__xknx-1551 type SoftwareProject\n     LawVIIINonConformantNoMerge equivalentTo A_monthsObserved_ge_p_law8_min_months\n                                              and MergeInactive\n                                              and SoftwareProject\n     LawVIIINonConformantNoMerge subClassOf LawVIIINonConformant\n     A_mergeMonthRatio_le_p_law8_merge_ratio equivalentTo mergeMonthRatio some decimal[<= 0.3]\n     XKNX__xknx-1551 monthsObserved 36\n     XKNX__xknx-1551 mergeMonthRatio 0.111111\n     A_monthsObserved_ge_p_law8_min_months equivalentTo monthsObserved some integer[>= 6]\n\n\n",
+   "seconds": 5.664978187007364,
+   "returncode": 0,
+   "error": null
+  },
+  "module:xknx/io": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/XKNX__xknx-1551/module/xknx_io-a42765",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/XKNX__xknx-1551/module/xknx_io-a42765 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "xknx_io-a42765",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 7,
+       "raw": "xknx_io-a42765 moduleChangeMonthsInWindow 7"
+      },
+      {
+       "subject": "xknx_io-a42765",
+       "prop": "type",
+       "value": "Module",
+       "raw": "xknx_io-a42765 type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\nxknx_io-a42765 moduleChangeMonthsInWindow 7\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\nxknx_io-a42765 type Module\nOftenChangedModule subClassOf ActiveModule"
+    }
+   ],
+   "raw_text": "Axiom: xknx_io-a42765 type ActiveModule\n\nExplanation(s): \n1)   A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     xknx_io-a42765 moduleChangeMonthsInWindow 7\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     xknx_io-a42765 type Module\n     OftenChangedModule subClassOf ActiveModule\n\n\n",
+   "seconds": 5.321810720022768,
+   "returncode": 0,
+   "error": null
+  },
+  "module:xknx/dpt": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/XKNX__xknx-1551/module/xknx_dpt-76da6c",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/XKNX__xknx-1551/module/xknx_dpt-76da6c type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "xknx_dpt-76da6c",
+       "prop": "type",
+       "value": "Module",
+       "raw": "xknx_dpt-76da6c type Module"
+      },
+      {
+       "subject": "xknx_dpt-76da6c",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 5,
+       "raw": "xknx_dpt-76da6c moduleChangeMonthsInWindow 5"
+      }
+     ],
+     "closures": [],
+     "raw": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\nxknx_dpt-76da6c type Module\nOftenChangedModule subClassOf ActiveModule\nxknx_dpt-76da6c moduleChangeMonthsInWindow 5"
+    }
+   ],
+   "raw_text": "Axiom: xknx_dpt-76da6c type ActiveModule\n\nExplanation(s): \n1)   A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     xknx_dpt-76da6c type Module\n     OftenChangedModule subClassOf ActiveModule\n     xknx_dpt-76da6c moduleChangeMonthsInWindow 5\n\n\n",
+   "seconds": 4.415724252001382,
+   "returncode": 0,
+   "error": null
+  },
+  "module:xknx/devices": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/XKNX__xknx-1551/module/xknx_devices-bd06ec",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/XKNX__xknx-1551/module/xknx_devices-bd06ec type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "xknx_devices-bd06ec",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 5,
+       "raw": "xknx_devices-bd06ec moduleChangeMonthsInWindow 5"
+      },
+      {
+       "subject": "xknx_devices-bd06ec",
+       "prop": "type",
+       "value": "Module",
+       "raw": "xknx_devices-bd06ec type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "xknx_devices-bd06ec moduleChangeMonthsInWindow 5\nA_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\nxknx_devices-bd06ec type Module\nOftenChangedModule subClassOf ActiveModule"
+    }
+   ],
+   "raw_text": "Axiom: xknx_devices-bd06ec type ActiveModule\n\nExplanation(s): \n1)   xknx_devices-bd06ec moduleChangeMonthsInWindow 5\n     A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     xknx_devices-bd06ec type Module\n     OftenChangedModule subClassOf ActiveModule\n\n\n",
+   "seconds": 2.7377003200235777,
+   "returncode": 0,
+   "error": null
+  },
+  "module:xknx/knxip": {
+   "class": "StableModule",
+   "individual": "http://senso-framework.org/data/XKNX__xknx-1551/module/xknx_knxip-be56eb",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/XKNX__xknx-1551/module/xknx_knxip-be56eb type http://senso-framework.org/ontology/seo#StableModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]"
+      },
+      {
+       "kind": "definition",
+       "subject": "StableModule",
+       "text": "StableModule equivalentTo LowRelChurnModule and RarelyChangedModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LowRelChurnModule",
+       "text": "LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "definition",
+       "subject": "RarelyChangedModule",
+       "text": "RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "xknx_knxip-be56eb",
+       "prop": "moduleRelChurnInWindow",
+       "value": 0.016976,
+       "raw": "xknx_knxip-be56eb moduleRelChurnInWindow 0.016976"
+      },
+      {
+       "subject": "xknx_knxip-be56eb",
+       "prop": "type",
+       "value": "Module",
+       "raw": "xknx_knxip-be56eb type Module"
+      },
+      {
+       "subject": "xknx_knxip-be56eb",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 2,
+       "raw": "xknx_knxip-be56eb moduleChangeMonthsInWindow 2"
+      }
+     ],
+     "closures": [],
+     "raw": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\nStableModule equivalentTo LowRelChurnModule and RarelyChangedModule\nxknx_knxip-be56eb moduleRelChurnInWindow 0.016976\nA_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\nLowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module\nRarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module\nxknx_knxip-be56eb type Module\nxknx_knxip-be56eb moduleChangeMonthsInWindow 2"
+    }
+   ],
+   "raw_text": "Axiom: xknx_knxip-be56eb type StableModule\n\nExplanation(s): \n1)   A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\n     StableModule equivalentTo LowRelChurnModule\n                               and RarelyChangedModule\n     xknx_knxip-be56eb moduleRelChurnInWindow 0.016976\n     A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\n     LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn\n                                    and Module\n     RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months\n                                      and Module\n     xknx_knxip-be56eb type Module\n     xknx_knxip-be56eb moduleChangeMonthsInWindow 2\n\n\n",
+   "seconds": 2.799860729952343,
+   "returncode": 0,
+   "error": null
+  },
+  "module:xknx/telegram": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/XKNX__xknx-1551/module/xknx_telegram-bd4c14",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/XKNX__xknx-1551/module/xknx_telegram-bd4c14 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "xknx_telegram-bd4c14",
+       "prop": "type",
+       "value": "Module",
+       "raw": "xknx_telegram-bd4c14 type Module"
+      },
+      {
+       "subject": "xknx_telegram-bd4c14",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 6,
+       "raw": "xknx_telegram-bd4c14 moduleChangeMonthsInWindow 6"
+      }
+     ],
+     "closures": [],
+     "raw": "xknx_telegram-bd4c14 type Module\nxknx_telegram-bd4c14 moduleChangeMonthsInWindow 6\nA_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\nOftenChangedModule subClassOf ActiveModule"
+    }
+   ],
+   "raw_text": "Axiom: xknx_telegram-bd4c14 type ActiveModule\n\nExplanation(s): \n1)   xknx_telegram-bd4c14 type Module\n     xknx_telegram-bd4c14 moduleChangeMonthsInWindow 6\n     A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     OftenChangedModule subClassOf ActiveModule\n\n\n",
+   "seconds": 2.6927832399960607,
+   "returncode": 0,
+   "error": null
+  },
+  "module:xknx/remote_value": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/XKNX__xknx-1551/module/xknx_remote_value-817c88",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/XKNX__xknx-1551/module/xknx_remote_value-817c88 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "xknx_remote_value-817c88",
+       "prop": "type",
+       "value": "Module",
+       "raw": "xknx_remote_value-817c88 type Module"
+      },
+      {
+       "subject": "xknx_remote_value-817c88",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 5,
+       "raw": "xknx_remote_value-817c88 moduleChangeMonthsInWindow 5"
+      }
+     ],
+     "closures": [],
+     "raw": "xknx_remote_value-817c88 type Module\nA_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\nOftenChangedModule subClassOf ActiveModule\nxknx_remote_value-817c88 moduleChangeMonthsInWindow 5"
+    }
+   ],
+   "raw_text": "Axiom: xknx_remote_value-817c88 type ActiveModule\n\nExplanation(s): \n1)   xknx_remote_value-817c88 type Module\n     A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     OftenChangedModule subClassOf ActiveModule\n     xknx_remote_value-817c88 moduleChangeMonthsInWindow 5\n\n\n",
+   "seconds": 2.6897677879896946,
+   "returncode": 0,
+   "error": null
+  },
+  "module:examples": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/XKNX__xknx-1551/module/examples-99345c",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/XKNX__xknx-1551/module/examples-99345c type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "examples-99345c",
+       "prop": "type",
+       "value": "Module",
+       "raw": "examples-99345c type Module"
+      },
+      {
+       "subject": "examples-99345c",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 6,
+       "raw": "examples-99345c moduleChangeMonthsInWindow 6"
+      }
+     ],
+     "closures": [],
+     "raw": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\nexamples-99345c type Module\nexamples-99345c moduleChangeMonthsInWindow 6\nOftenChangedModule subClassOf ActiveModule"
+    }
+   ],
+   "raw_text": "Axiom: examples-99345c type ActiveModule\n\nExplanation(s): \n1)   A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     examples-99345c type Module\n     examples-99345c moduleChangeMonthsInWindow 6\n     OftenChangedModule subClassOf ActiveModule\n\n\n",
+   "seconds": 2.7015570469666272,
+   "returncode": 0,
+   "error": null
+  },
+  "module:xknx/secure": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/XKNX__xknx-1551/module/xknx_secure-0f5a57",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/XKNX__xknx-1551/module/xknx_secure-0f5a57 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "xknx_secure-0f5a57",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 4,
+       "raw": "xknx_secure-0f5a57 moduleChangeMonthsInWindow 4"
+      },
+      {
+       "subject": "xknx_secure-0f5a57",
+       "prop": "type",
+       "value": "Module",
+       "raw": "xknx_secure-0f5a57 type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\nxknx_secure-0f5a57 moduleChangeMonthsInWindow 4\nxknx_secure-0f5a57 type Module\nOftenChangedModule subClassOf ActiveModule"
+    }
+   ],
+   "raw_text": "Axiom: xknx_secure-0f5a57 type ActiveModule\n\nExplanation(s): \n1)   A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     xknx_secure-0f5a57 moduleChangeMonthsInWindow 4\n     xknx_secure-0f5a57 type Module\n     OftenChangedModule subClassOf ActiveModule\n\n\n",
+   "seconds": 2.62715485697845,
+   "returncode": 0,
+   "error": null
+  },
+  "module:xknx/core": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/XKNX__xknx-1551/module/xknx_core-73a920",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/XKNX__xknx-1551/module/xknx_core-73a920 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "xknx_core-73a920",
+       "prop": "type",
+       "value": "Module",
+       "raw": "xknx_core-73a920 type Module"
+      },
+      {
+       "subject": "xknx_core-73a920",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 4,
+       "raw": "xknx_core-73a920 moduleChangeMonthsInWindow 4"
+      }
+     ],
+     "closures": [],
+     "raw": "xknx_core-73a920 type Module\nxknx_core-73a920 moduleChangeMonthsInWindow 4\nA_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\nOftenChangedModule subClassOf ActiveModule"
+    }
+   ],
+   "raw_text": "Axiom: xknx_core-73a920 type ActiveModule\n\nExplanation(s): \n1)   xknx_core-73a920 type Module\n     xknx_core-73a920 moduleChangeMonthsInWindow 4\n     A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     OftenChangedModule subClassOf ActiveModule\n\n\n",
+   "seconds": 2.654637283005286,
+   "returncode": 0,
+   "error": null
+  },
+  "module:xknx/cemi": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/XKNX__xknx-1551/module/xknx_cemi-a067a2",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/XKNX__xknx-1551/module/xknx_cemi-a067a2 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "xknx_cemi-a067a2",
+       "prop": "type",
+       "value": "Module",
+       "raw": "xknx_cemi-a067a2 type Module"
+      },
+      {
+       "subject": "xknx_cemi-a067a2",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 3,
+       "raw": "xknx_cemi-a067a2 moduleChangeMonthsInWindow 3"
+      }
+     ],
+     "closures": [],
+     "raw": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\nxknx_cemi-a067a2 type Module\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\nxknx_cemi-a067a2 moduleChangeMonthsInWindow 3\nOftenChangedModule subClassOf ActiveModule"
+    }
+   ],
+   "raw_text": "Axiom: xknx_cemi-a067a2 type ActiveModule\n\nExplanation(s): \n1)   A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     xknx_cemi-a067a2 type Module\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     xknx_cemi-a067a2 moduleChangeMonthsInWindow 3\n     OftenChangedModule subClassOf ActiveModule\n\n\n",
+   "seconds": 2.707764460996259,
+   "returncode": 0,
+   "error": null
+  },
+  "module:xknx/management": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/XKNX__xknx-1551/module/xknx_management-55d45f",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/XKNX__xknx-1551/module/xknx_management-55d45f type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "xknx_management-55d45f",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 5,
+       "raw": "xknx_management-55d45f moduleChangeMonthsInWindow 5"
+      },
+      {
+       "subject": "xknx_management-55d45f",
+       "prop": "type",
+       "value": "Module",
+       "raw": "xknx_management-55d45f type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "xknx_management-55d45f moduleChangeMonthsInWindow 5\nxknx_management-55d45f type Module\nA_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\nOftenChangedModule subClassOf ActiveModule"
+    }
+   ],
+   "raw_text": "Axiom: xknx_management-55d45f type ActiveModule\n\nExplanation(s): \n1)   xknx_management-55d45f moduleChangeMonthsInWindow 5\n     xknx_management-55d45f type Module\n     A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     OftenChangedModule subClassOf ActiveModule\n\n\n",
+   "seconds": 2.7412356600398198,
+   "returncode": 0,
+   "error": null
+  },
+  "module:xknx/profile": {
+   "class": "StableModule",
+   "individual": "http://senso-framework.org/data/XKNX__xknx-1551/module/xknx_profile-70d94d",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/XKNX__xknx-1551/module/xknx_profile-70d94d type http://senso-framework.org/ontology/seo#StableModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "StableModule",
+       "text": "StableModule equivalentTo LowRelChurnModule and RarelyChangedModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "LowRelChurnModule",
+       "text": "LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "definition",
+       "subject": "RarelyChangedModule",
+       "text": "RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "xknx_profile-70d94d",
+       "prop": "moduleRelChurnInWindow",
+       "value": 0.013841,
+       "raw": "xknx_profile-70d94d moduleRelChurnInWindow 0.013841"
+      },
+      {
+       "subject": "xknx_profile-70d94d",
+       "prop": "type",
+       "value": "Module",
+       "raw": "xknx_profile-70d94d type Module"
+      },
+      {
+       "subject": "xknx_profile-70d94d",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 2,
+       "raw": "xknx_profile-70d94d moduleChangeMonthsInWindow 2"
+      }
+     ],
+     "closures": [],
+     "raw": "xknx_profile-70d94d moduleRelChurnInWindow 0.013841\nA_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\nA_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\nxknx_profile-70d94d type Module\nxknx_profile-70d94d moduleChangeMonthsInWindow 2\nStableModule equivalentTo LowRelChurnModule and RarelyChangedModule\nLowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module\nRarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module"
+    }
+   ],
+   "raw_text": "Axiom: xknx_profile-70d94d type StableModule\n\nExplanation(s): \n1)   xknx_profile-70d94d moduleRelChurnInWindow 0.013841\n     A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\n     A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\n     xknx_profile-70d94d type Module\n     xknx_profile-70d94d moduleChangeMonthsInWindow 2\n     StableModule equivalentTo LowRelChurnModule\n                               and RarelyChangedModule\n     LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn\n                                    and Module\n     RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months\n                                      and Module\n\n\n",
+   "seconds": 2.508692861010786,
+   "returncode": 0,
+   "error": null
+  },
+  "module:xknx/exceptions": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/XKNX__xknx-1551/module/xknx_exceptions-575994",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/XKNX__xknx-1551/module/xknx_exceptions-575994 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "xknx_exceptions-575994",
+       "prop": "type",
+       "value": "Module",
+       "raw": "xknx_exceptions-575994 type Module"
+      },
+      {
+       "subject": "xknx_exceptions-575994",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 3,
+       "raw": "xknx_exceptions-575994 moduleChangeMonthsInWindow 3"
+      }
+     ],
+     "closures": [],
+     "raw": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\nxknx_exceptions-575994 type Module\nxknx_exceptions-575994 moduleChangeMonthsInWindow 3\nOftenChangedModule subClassOf ActiveModule"
+    }
+   ],
+   "raw_text": "Axiom: xknx_exceptions-575994 type ActiveModule\n\nExplanation(s): \n1)   A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     xknx_exceptions-575994 type Module\n     xknx_exceptions-575994 moduleChangeMonthsInWindow 3\n     OftenChangedModule subClassOf ActiveModule\n\n\n",
+   "seconds": 2.6388625210383907,
+   "returncode": 0,
+   "error": null
+  },
+  "module:xknx/xknx.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/XKNX__xknx-1551/module/xknx_xknx.py-8da538",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/XKNX__xknx-1551/module/xknx_xknx.py-8da538 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "xknx_xknx.py-8da538",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 3,
+       "raw": "xknx_xknx.py-8da538 moduleChangeMonthsInWindow 3"
+      },
+      {
+       "subject": "xknx_xknx.py-8da538",
+       "prop": "type",
+       "value": "Module",
+       "raw": "xknx_xknx.py-8da538 type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\nxknx_xknx.py-8da538 moduleChangeMonthsInWindow 3\nOftenChangedModule subClassOf ActiveModule\nxknx_xknx.py-8da538 type Module"
+    }
+   ],
+   "raw_text": "Axiom: xknx_xknx.py-8da538 type ActiveModule\n\nExplanation(s): \n1)   A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     xknx_xknx.py-8da538 moduleChangeMonthsInWindow 3\n     OftenChangedModule subClassOf ActiveModule\n     xknx_xknx.py-8da538 type Module\n\n\n",
+   "seconds": 2.520832823996898,
+   "returncode": 0,
+   "error": null
+  },
+  "module:script": {
+   "class": "StableModule",
+   "individual": "http://senso-framework.org/data/XKNX__xknx-1551/module/script-cb5346",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/XKNX__xknx-1551/module/script-cb5346 type http://senso-framework.org/ontology/seo#StableModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "StableModule",
+       "text": "StableModule equivalentTo LowRelChurnModule and RarelyChangedModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "LowRelChurnModule",
+       "text": "LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "definition",
+       "subject": "RarelyChangedModule",
+       "text": "RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "script-cb5346",
+       "prop": "moduleRelChurnInWindow",
+       "value": 0.0,
+       "raw": "script-cb5346 moduleRelChurnInWindow 0.0"
+      },
+      {
+       "subject": "script-cb5346",
+       "prop": "type",
+       "value": "Module",
+       "raw": "script-cb5346 type Module"
+      },
+      {
+       "subject": "script-cb5346",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 0,
+       "raw": "script-cb5346 moduleChangeMonthsInWindow 0"
+      }
+     ],
+     "closures": [],
+     "raw": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\nscript-cb5346 moduleRelChurnInWindow 0.0\nA_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\nscript-cb5346 type Module\nStableModule equivalentTo LowRelChurnModule and RarelyChangedModule\nscript-cb5346 moduleChangeMonthsInWindow 0\nLowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module\nRarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module"
+    }
+   ],
+   "raw_text": "Axiom: script-cb5346 type StableModule\n\nExplanation(s): \n1)   A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\n     script-cb5346 moduleRelChurnInWindow 0.0\n     A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\n     script-cb5346 type Module\n     StableModule equivalentTo LowRelChurnModule\n                               and RarelyChangedModule\n     script-cb5346 moduleChangeMonthsInWindow 0\n     LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn\n                                    and Module\n     RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months\n                                      and Module\n\n\n",
+   "seconds": 2.927012703032233,
+   "returncode": 0,
+   "error": null
+  },
+  "module:xknx/tools": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/XKNX__xknx-1551/module/xknx_tools-c6b5dc",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/XKNX__xknx-1551/module/xknx_tools-c6b5dc type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule subClassOf ActiveModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "xknx_tools-c6b5dc",
+       "prop": "type",
+       "value": "Module",
+       "raw": "xknx_tools-c6b5dc type Module"
+      },
+      {
+       "subject": "xknx_tools-c6b5dc",
+       "prop": "moduleRelChurnInWindow",
+       "value": 0.192982,
+       "raw": "xknx_tools-c6b5dc moduleRelChurnInWindow 0.192982"
+      }
+     ],
+     "closures": [],
+     "raw": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module\nHighRelChurnModule subClassOf ActiveModule\nxknx_tools-c6b5dc type Module\nxknx_tools-c6b5dc moduleRelChurnInWindow 0.192982\nA_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+    }
+   ],
+   "raw_text": "Axiom: xknx_tools-c6b5dc type ActiveModule\n\nExplanation(s): \n1)   HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn\n                                     and Module\n     HighRelChurnModule subClassOf ActiveModule\n     xknx_tools-c6b5dc type Module\n     xknx_tools-c6b5dc moduleRelChurnInWindow 0.192982\n     A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\n\n\n",
+   "seconds": 2.643104358983692,
+   "returncode": 0,
+   "error": null
+  },
+  "module:xknx/typing": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/XKNX__xknx-1551/module/xknx_typing-9fc68f",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/XKNX__xknx-1551/module/xknx_typing-9fc68f type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule subClassOf ActiveModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "xknx_typing-9fc68f",
+       "prop": "type",
+       "value": "Module",
+       "raw": "xknx_typing-9fc68f type Module"
+      },
+      {
+       "subject": "xknx_typing-9fc68f",
+       "prop": "moduleRelChurnInWindow",
+       "value": 1.411765,
+       "raw": "xknx_typing-9fc68f moduleRelChurnInWindow 1.411765"
+      }
+     ],
+     "closures": [],
+     "raw": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module\nHighRelChurnModule subClassOf ActiveModule\nxknx_typing-9fc68f type Module\nA_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\nxknx_typing-9fc68f moduleRelChurnInWindow 1.411765"
+    }
+   ],
+   "raw_text": "Axiom: xknx_typing-9fc68f type ActiveModule\n\nExplanation(s): \n1)   HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn\n                                     and Module\n     HighRelChurnModule subClassOf ActiveModule\n     xknx_typing-9fc68f type Module\n     A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\n     xknx_typing-9fc68f moduleRelChurnInWindow 1.411765\n\n\n",
+   "seconds": 2.592696674983017,
+   "returncode": 0,
+   "error": null
+  },
+  "module:xknx/util": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/XKNX__xknx-1551/module/xknx_util-ddd280",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/XKNX__xknx-1551/module/xknx_util-ddd280 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule subClassOf ActiveModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "xknx_util-ddd280",
+       "prop": "type",
+       "value": "Module",
+       "raw": "xknx_util-ddd280 type Module"
+      },
+      {
+       "subject": "xknx_util-ddd280",
+       "prop": "moduleRelChurnInWindow",
+       "value": 0.111111,
+       "raw": "xknx_util-ddd280 moduleRelChurnInWindow 0.111111"
+      }
+     ],
+     "closures": [],
+     "raw": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module\nHighRelChurnModule subClassOf ActiveModule\nxknx_util-ddd280 type Module\nA_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\nxknx_util-ddd280 moduleRelChurnInWindow 0.111111"
+    }
+   ],
+   "raw_text": "Axiom: xknx_util-ddd280 type ActiveModule\n\nExplanation(s): \n1)   HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn\n                                     and Module\n     HighRelChurnModule subClassOf ActiveModule\n     xknx_util-ddd280 type Module\n     A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\n     xknx_util-ddd280 moduleRelChurnInWindow 0.111111\n\n\n",
+   "seconds": 2.5834578049834818,
+   "returncode": 0,
+   "error": null
+  },
+  "module:xknx/__init__.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/XKNX__xknx-1551/module/xknx___init__.py-a6ded7",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/XKNX__xknx-1551/module/xknx___init__.py-a6ded7 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule subClassOf ActiveModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "xknx___init__.py-a6ded7",
+       "prop": "moduleRelChurnInWindow",
+       "value": 0.4,
+       "raw": "xknx___init__.py-a6ded7 moduleRelChurnInWindow 0.4"
+      },
+      {
+       "subject": "xknx___init__.py-a6ded7",
+       "prop": "type",
+       "value": "Module",
+       "raw": "xknx___init__.py-a6ded7 type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module\nHighRelChurnModule subClassOf ActiveModule\nxknx___init__.py-a6ded7 moduleRelChurnInWindow 0.4\nA_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\nxknx___init__.py-a6ded7 type Module"
+    }
+   ],
+   "raw_text": "Axiom: xknx___init__.py-a6ded7 type ActiveModule\n\nExplanation(s): \n1)   HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn\n                                     and Module\n     HighRelChurnModule subClassOf ActiveModule\n     xknx___init__.py-a6ded7 moduleRelChurnInWindow 0.4\n     A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\n     xknx___init__.py-a6ded7 type Module\n\n\n",
+   "seconds": 2.682062374020461,
+   "returncode": 0,
+   "error": null
+  },
+  "module:xknx/__version__.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/XKNX__xknx-1551/module/xknx___version__.py-d0737f",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/XKNX__xknx-1551/module/xknx___version__.py-d0737f type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "xknx___version__.py-d0737f",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 4,
+       "raw": "xknx___version__.py-d0737f moduleChangeMonthsInWindow 4"
+      },
+      {
+       "subject": "xknx___version__.py-d0737f",
+       "prop": "type",
+       "value": "Module",
+       "raw": "xknx___version__.py-d0737f type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\nxknx___version__.py-d0737f moduleChangeMonthsInWindow 4\nxknx___version__.py-d0737f type Module\nOftenChangedModule subClassOf ActiveModule"
+    }
+   ],
+   "raw_text": "Axiom: xknx___version__.py-d0737f type ActiveModule\n\nExplanation(s): \n1)   A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     xknx___version__.py-d0737f moduleChangeMonthsInWindow 4\n     xknx___version__.py-d0737f type Module\n     OftenChangedModule subClassOf ActiveModule\n\n\n",
+   "seconds": 2.7188754029921256,
+   "returncode": 0,
+   "error": null
+  }
+ },
+ "timings": {
+  "t_clone": 0.004,
+  "t_mine": 16.779,
+  "t_loc": 1.32,
+  "t_reason_A": 6.857,
+  "mining_cached": false,
+  "t_modules": 2.52,
+  "t_reason_B": 2.297,
+  "n_configs": 1,
+  "t_explain": 92.424,
+  "n_explain_calls": 29,
+  "t_writeback": 0.0,
+  "t_total": 123.876
+ }
+}

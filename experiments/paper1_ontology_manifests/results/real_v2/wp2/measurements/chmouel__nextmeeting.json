@@ -1,0 +1,567 @@
+{
+ "repo": "chmouel/nextmeeting",
+ "slug": "chmouel__nextmeeting",
+ "S": "b1c62e954f543b44e7b3c7d8079bec037115d325",
+ "manifest_path": "AGENTS.md",
+ "input_sha": "e9e3d782609e4e0a3059e1e9428d465d2be41ed548362d72f121394b791dac90",
+ "n_claims": 17,
+ "n_tree_files": 28,
+ "n_dep_manifests_parsed": 1,
+ "seconds": 0.1,
+ "claims": [
+  {
+   "key_str": "T1|.github/workflows/precommit.yml",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": ".github/workflows/precommit.yml",
+   "quote": "- CI: `.github/workflows/precommit.yml` runs lint/format via pre-commit.",
+   "line": 9,
+   "votes": 2,
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": ".github/workflows/precommit.yml",
+    "is_dir": false,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 1,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|cli.py",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "cli.py",
+   "quote": "- Source: `src/nextmeeting/` (CLI entry in `cli.py`).",
+   "line": 5,
+   "votes": 2,
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "cli.py",
+    "is_dir": false,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 0,
+     "pathSuffixMatchCount": 1
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|htmlcov/index.html",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "htmlcov/index.html",
+   "quote": "- Run: `make test`. For coverage HTML open `htmlcov/index.html` after `make coverage`.",
+   "line": 32,
+   "votes": 1,
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "attrs": {
+    "path": "htmlcov/index.html",
+    "is_dir": false,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 0,
+     "pathSuffixMatchCount": 0,
+     "pathIgnoredCount": 0,
+     "pathSubmoduleCount": 0,
+     "pathEverTrackedCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|packaging",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "packaging",
+   "quote": "- Packaging: `packaging/` (AUR, Nix flake, release scripts).",
+   "line": 8,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "packaging",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 6,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|src/nextmeeting",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "src/nextmeeting",
+   "quote": "- Source: `src/nextmeeting/` (CLI entry in `cli.py`).",
+   "line": 5,
+   "votes": 2,
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "src/nextmeeting",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 3,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|tests",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "tests",
+   "quote": "- Tests: `tests/` (create `test_*.py` files here).",
+   "line": 7,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "tests",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 5,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T3|build_tool|make",
+   "tcode": "T3",
+   "types": [
+    "ToolUsageClaim",
+    "NonPackageManagerToolClaim"
+   ],
+   "headline": true,
+   "subject": "make",
+   "quote": "Install deps: `make sync` (uses `uv`); alternatively `uv sync`.",
+   "line": 13,
+   "votes": 1,
+   "models": [
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "tool": "make",
+    "category": "build_tool"
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "toolSignatureHitCount": 1,
+     "toolEcosystemAnchorCount": 1,
+     "competingToolSignatureCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T3|linter_formatter|ruff",
+   "tcode": "T3",
+   "types": [
+    "ToolUsageClaim",
+    "NonPackageManagerToolClaim"
+   ],
+   "headline": true,
+   "subject": "ruff",
+   "quote": "- Lint: `make lint` (ruff + pylint).",
+   "line": 15,
+   "votes": 2,
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "tool": "ruff",
+    "category": "linter_formatter"
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "toolSignatureHitCount": 1,
+     "toolEcosystemAnchorCount": 1,
+     "competingToolSignatureCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T3|package_manager|uv",
+   "tcode": "T3",
+   "types": [
+    "ToolUsageClaim",
+    "PackageManagerClaim"
+   ],
+   "headline": true,
+   "subject": "uv",
+   "quote": "- Install deps: `make sync` (uses `uv`); alternatively `uv sync`.",
+   "line": 13,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "tool": "uv",
+    "category": "package_manager"
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "toolSignatureHitCount": 3,
+     "toolEcosystemAnchorCount": 1,
+     "competingToolSignatureCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T3|test_framework|pytest",
+   "tcode": "T3",
+   "types": [
+    "ToolUsageClaim",
+    "NonPackageManagerToolClaim"
+   ],
+   "headline": true,
+   "subject": "pytest",
+   "quote": "- Tests: `make test` or `uv run pytest -sv tests`.",
+   "line": 17,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "tool": "pytest",
+    "category": "test_framework"
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "toolSignatureHitCount": 1,
+     "toolEcosystemAnchorCount": 1,
+     "competingToolSignatureCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T4|gcalcli|",
+   "tcode": "T4",
+   "types": [
+    "DependencyClaim",
+    "UnversionedDependencyClaim"
+   ],
+   "headline": true,
+   "subject": "gcalcli",
+   "quote": "- External tools: relies on `gcalcli`;",
+   "line": 42,
+   "votes": 1,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it"
+   ],
+   "attrs": {
+    "name": "gcalcli",
+    "major": null,
+    "ecosystem_hint": "pypi"
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "dependencyExactMatchCount": 0,
+     "dependencySuffixMatchCount": 0,
+     "dependencyManifestParsedCount": 1
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T5|make|coverage",
+   "tcode": "T5",
+   "types": [
+    "CommandClaim"
+   ],
+   "headline": true,
+   "subject": "coverage",
+   "quote": "- Coverage: `make coverage` (HTML + terminal report).",
+   "line": 18,
+   "votes": 2,
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "runner": "make",
+    "kind": "make",
+    "target": "coverage"
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "scriptDefinedRootCount": 1,
+     "scriptDefinedAnyCount": 1,
+     "scriptHostFileCount": 1,
+     "dynamicTargetRuleCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T5|make|format",
+   "tcode": "T5",
+   "types": [
+    "CommandClaim"
+   ],
+   "headline": true,
+   "subject": "format",
+   "quote": "- Format: `make format` (ruff format).",
+   "line": 16,
+   "votes": 2,
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "runner": "make",
+    "kind": "make",
+    "target": "format"
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "scriptDefinedRootCount": 1,
+     "scriptDefinedAnyCount": 1,
+     "scriptHostFileCount": 1,
+     "dynamicTargetRuleCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T5|make|lint",
+   "tcode": "T5",
+   "types": [
+    "CommandClaim"
+   ],
+   "headline": true,
+   "subject": "lint",
+   "quote": "- Lint: `make lint` (ruff + pylint).",
+   "line": 15,
+   "votes": 2,
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "runner": "make",
+    "kind": "make",
+    "target": "lint"
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "scriptDefinedRootCount": 1,
+     "scriptDefinedAnyCount": 1,
+     "scriptHostFileCount": 1,
+     "dynamicTargetRuleCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T5|make|sync",
+   "tcode": "T5",
+   "types": [
+    "CommandClaim"
+   ],
+   "headline": true,
+   "subject": "sync",
+   "quote": "- Install deps: `make sync` (uses `uv`); alternatively `uv sync`.",
+   "line": 13,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "runner": "make",
+    "kind": "make",
+    "target": "sync"
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "scriptDefinedRootCount": 1,
+     "scriptDefinedAnyCount": 1,
+     "scriptHostFileCount": 1,
+     "dynamicTargetRuleCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T5|make|test",
+   "tcode": "T5",
+   "types": [
+    "CommandClaim"
+   ],
+   "headline": true,
+   "subject": "test",
+   "quote": "- Tests: `make test` or `uv run pytest -sv tests`.",
+   "line": 17,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "runner": "make",
+    "kind": "make",
+    "target": "test"
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "scriptDefinedRootCount": 1,
+     "scriptDefinedAnyCount": 1,
+     "scriptHostFileCount": 1,
+     "dynamicTargetRuleCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T6|python|3009000000@2",
+   "tcode": "T6",
+   "types": [
+    "VersionClaim",
+    "MinVersionClaim"
+   ],
+   "headline": true,
+   "subject": "python",
+   "quote": "- Language: Python 3.9+; 4‑space indentation; use type hints where helpful.",
+   "line": 22,
+   "votes": 2,
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "subject_type": "python",
+    "version": "3.9",
+    "code": 3009000000,
+    "precision": 2,
+    "qualifier": "min"
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "versionSourceCount": 2
+    },
+    "evidences": [
+     {
+      "versionSourcePath": "pyproject.toml",
+      "versionSourceRaw": ">=3.9",
+      "versionLowerDelta": 0,
+      "versionUpperUnboundedCount": 1
+     },
+     {
+      "versionSourcePath": ".python-version",
+      "versionSourceRaw": "3.12",
+      "versionLowerDelta": 3000000,
+      "versionUpperDelta": 3000000,
+      "versionUpperUnboundedCount": 0
+     }
+    ],
+    "meta": {}
+   }
+  }
+ ]
+}

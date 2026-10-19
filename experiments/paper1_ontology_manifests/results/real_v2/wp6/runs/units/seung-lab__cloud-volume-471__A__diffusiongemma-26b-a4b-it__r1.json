@@ -1,0 +1,67 @@
+{
+ "unit_id": "seung-lab__cloud-volume-471__A__diffusiongemma-26b-a4b-it__r1",
+ "task_id": "seung-lab__cloud-volume-471",
+ "repo": "seung-lab/cloud-volume",
+ "stage": "phase_out",
+ "condition": "A",
+ "model": "google/diffusiongemma-26b-a4b-it",
+ "run": 1,
+ "order": 1033,
+ "env_build_s": 383.6,
+ "started": "2026-10-10T05:46:53.754241+00:00",
+ "condition_meta": {},
+ "condition_available": true,
+ "venv_reset_s": 6.35,
+ "retries": 0,
+ "venv_hash_before": "ce9dd533af48eff4",
+ "venv_hash_after": "ce9dd533af48eff4",
+ "venv_mutated": false,
+ "exit_status": "LimitsExceeded",
+ "error": "",
+ "steps": 40,
+ "wall_s": 188.8,
+ "prompt_tokens": 441419,
+ "completion_tokens": 3274,
+ "format_errors": 2,
+ "length_cutoffs": 0,
+ "api_errors": {
+  "429": 54
+ },
+ "n_queries": 49,
+ "keys_used": {
+  "NVIDIA_API_KEY": 24,
+  "NVIDIA_API_KEY_5": 30,
+  "NVIDIA_API_KEY_4": 19,
+  "NVIDIA_API_KEY_2": 21
+ },
+ "temperature": 0.7,
+ "top_p": 0.95,
+ "model_id_returned": "google/diffusiongemma-26b-a4b-it",
+ "mini_version": "2.4.6",
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "resolved": false,
+  "reason": "empty_patch",
+  "outcomes": {
+   "Y0": 0,
+   "Y5": 0,
+   "Y6": 40,
+   "hit_step_limit": 1,
+   "changed_lines": 0,
+   "gold_changed_lines": 33,
+   "Y1": null,
+   "Y2": null,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": null
+  }
+ },
+ "status": "done",
+ "finished": "2026-10-10T05:50:15.660302+00:00"
+}

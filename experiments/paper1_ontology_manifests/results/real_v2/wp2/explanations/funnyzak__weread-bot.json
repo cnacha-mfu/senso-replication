@@ -1,0 +1,45 @@
+{
+ "repo": "funnyzak/weread-bot",
+ "slug": "funnyzak__weread-bot",
+ "input_sha": "5cf1f8094ed29b0c8cc93c51b725f7bf9ba141618d79df2aee7d92be81c96b78",
+ "explanations": [
+  {
+   "key": "T4|schedule|",
+   "verdict": "ContradictedClaim",
+   "leaf": "DependencyUndeclared",
+   "seconds": 8.34,
+   "retried_on_claim_subgraph": false,
+   "error": null,
+   "returncode": 0,
+   "n_justifications": 1,
+   "facts": [
+    {
+     "prop": "extractionVotes",
+     "value": 3
+    },
+    {
+     "prop": "dependencyManifestParsedCount",
+     "value": 1
+    },
+    {
+     "prop": "dependencySuffixMatchCount",
+     "value": 0
+    },
+    {
+     "prop": "dependencyExactMatchCount",
+     "value": 0
+    }
+   ],
+   "axioms": [
+    "DependencyUndeclared subClassOf ContradictedClaim",
+    "A_extractionVotes_ge_wp2_consensus_min_votes equivalentTo extractionVotes some integer[>= 2]",
+    "A_dependencyManifestParsedCount_ge_1 equivalentTo dependencyManifestParsedCount some integer[>= 1]",
+    "DependencyUndeclared equivalentTo A_dependencyExactMatchCount_ge_0_le_0 and A_dependencyManifestParsedCount_ge_1 and A_dependencySuffixMatchCount_ge_0_le_0 and CheckedClaim and DependencyClaim",
+    "CheckedClaim equivalentTo A_extractionVotes_ge_wp2_consensus_min_votes and ManifestClaim",
+    "A_dependencyExactMatchCount_ge_0_le_0 equivalentTo dependencyExactMatchCount some integer[>= 0, <= 0]",
+    "A_dependencySuffixMatchCount_ge_0_le_0 equivalentTo dependencySuffixMatchCount some integer[>= 0, <= 0]"
+   ],
+   "closures": []
+  }
+ ]
+}

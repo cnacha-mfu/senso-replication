@@ -1,0 +1,1964 @@
+{
+ "repo": "open-telemetry/opentelemetry-python",
+ "snapshot_date": "2025-06-30",
+ "status": "ok",
+ "unmineable": false,
+ "unmineable_reason": null,
+ "replaces": null,
+ "settings": {
+  "dedup": true,
+  "complexity": false,
+  "dataset": "seo_v2",
+  "sensitivity": true
+ },
+ "versions": {
+  "owlready2": "0.51",
+  "pymannkendall": "1.4.3",
+  "lizard": "1.24.1",
+  "numpy": "2.5.3",
+  "scipy": "1.18.1",
+  "python": "3.12.15",
+  "git": "git version 2.53.0"
+ },
+ "measures": {
+  "monthsObserved": 36,
+  "monthsSinceLastCommit": 0,
+  "distinctAuthorsInWindow": 171,
+  "commitMKTau": 0.104762,
+  "commitMKpValue": 0.374482,
+  "activeMonthCount": 36,
+  "activeMonthRatio": 1.0,
+  "meanMonthlyCommits": 18.055556,
+  "commitsLast3Months": 56,
+  "commitCountCV": 0.513275,
+  "commitCountCVSample": 0.520556,
+  "commitHalfRatio": 1.56917,
+  "commitSecondHalfMean": 22.055556,
+  "churnCV": 0.832222,
+  "linesAddedCV": 0.867489,
+  "mergeMonthRatio": 0.0,
+  "multiAuthorMonthRatio": 1.0,
+  "bugFixRatioFirstHalf": 0.21067,
+  "bugFixRatioSecondHalf": 0.211809,
+  "bugFixHalfRatio": 1.005405,
+  "locSeriesLength": 36,
+  "locRelSenSlopeAnnual": 0.117799,
+  "locMKTau": 0.695238,
+  "locMKS": 438,
+  "locMKpValue": 0.0,
+  "locSenSlope": 579.307576,
+  "locStart": 54281,
+  "locEnd": 74334,
+  "locDelta": 20053,
+  "locGrowthRate": 0.369429,
+  "locChangePct": 36.942945,
+  "locEndToStartRatio": 1.369429,
+  "locGrowthLast3": 0.012656,
+  "featureCommitsFirstHalf": 2,
+  "featureCommitsSecondHalf": 1,
+  "featureCommitsTotal": 3,
+  "featureSecondToFirstRatio": 0.5,
+  "locDeltaPerFeature": 6684.333333,
+  "recentAgentCommitRatio": 0.072518,
+  "featCommitCount": 3,
+  "bugFixCommitCount": 132,
+  "commitCount": 650,
+  "monthly_series": {
+   "months": [
+    "2021-07",
+    "2021-08",
+    "2021-09",
+    "2021-10",
+    "2021-11",
+    "2021-12",
+    "2022-01",
+    "2022-02",
+    "2022-03",
+    "2022-04",
+    "2022-05",
+    "2022-06",
+    "2022-07",
+    "2022-08",
+    "2022-09",
+    "2022-10",
+    "2022-11",
+    "2022-12",
+    "2023-01",
+    "2023-02",
+    "2023-03",
+    "2023-04",
+    "2023-05",
+    "2023-06",
+    "2023-07",
+    "2023-08",
+    "2023-09",
+    "2023-10",
+    "2023-11",
+    "2023-12",
+    "2024-01",
+    "2024-02",
+    "2024-03",
+    "2024-04",
+    "2024-05",
+    "2024-06",
+    "2024-07",
+    "2024-08",
+    "2024-09",
+    "2024-10",
+    "2024-11",
+    "2024-12",
+    "2025-01",
+    "2025-02",
+    "2025-03",
+    "2025-04",
+    "2025-05",
+    "2025-06"
+   ],
+   "commits": [
+    26,
+    28,
+    35,
+    40,
+    21,
+    11,
+    37,
+    27,
+    37,
+    31,
+    25,
+    22,
+    19,
+    33,
+    14,
+    14,
+    15,
+    7,
+    15,
+    23,
+    19,
+    6,
+    6,
+    14,
+    15,
+    10,
+    12,
+    8,
+    17,
+    6,
+    10,
+    35,
+    38,
+    29,
+    21,
+    29,
+    44,
+    29,
+    15,
+    13,
+    22,
+    14,
+    8,
+    13,
+    21,
+    17,
+    21,
+    18
+   ],
+   "loc": [
+    39721,
+    39974,
+    40300,
+    39576,
+    44091,
+    44103,
+    45659,
+    47171,
+    49024,
+    50679,
+    52649,
+    53830,
+    54281,
+    54291,
+    54769,
+    56032,
+    57387,
+    54297,
+    54521,
+    55256,
+    58630,
+    58728,
+    58909,
+    58863,
+    59117,
+    59350,
+    59585,
+    61202,
+    53282,
+    53317,
+    53426,
+    54286,
+    54630,
+    54965,
+    60769,
+    61635,
+    62403,
+    64159,
+    66759,
+    68695,
+    69324,
+    70243,
+    71789,
+    71936,
+    72872,
+    73405,
+    73894,
+    74334
+   ]
+  }
+ },
+ "window": {
+  "L": 36,
+  "first_month": "2022-07",
+  "last_month": "2025-06",
+  "n_months": 36,
+  "left_truncated": false,
+  "first_commit_month": "2019-05",
+  "mined_months": 48,
+  "commits_in_window": 650,
+  "commits_in_history": 1912
+ },
+ "loc_instrument": {
+  "instrument": "nonblank-source-lines-v1",
+  "status": "ok",
+  "months": 48,
+  "month_end_commits_distinct": 48,
+  "source_blobs": 2683,
+  "blobs_fetched": 27,
+  "t_ls_tree_s": 1.2577282669954002,
+  "t_fetch_s": 1.061938266037032,
+  "t_read_s": 0.4919264779891819,
+  "series_present": true,
+  "extensions": [
+   ".bash",
+   ".c",
+   ".cc",
+   ".cjs",
+   ".clj",
+   ".cpp",
+   ".cs",
+   ".cxx",
+   ".dart",
+   ".erl",
+   ".ex",
+   ".exs",
+   ".f90",
+   ".go",
+   ".groovy",
+   ".h",
+   ".hh",
+   ".hpp",
+   ".hs",
+   ".java",
+   ".jl",
+   ".js",
+   ".jsx",
+   ".kt",
+   ".kts",
+   ".lua",
+   ".m",
+   ".mjs",
+   ".ml",
+   ".mm",
+   ".nim",
+   ".php",
+   ".pl",
+   ".pm",
+   ".py",
+   ".pyi",
+   ".r",
+   ".rb",
+   ".rs",
+   ".scala",
+   ".sh",
+   ".sql",
+   ".svelte",
+   ".swift",
+   ".ts",
+   ".tsx",
+   ".vue",
+   ".zig"
+  ],
+  "excluded_dirs": [
+   "node_modules",
+   "vendor",
+   "vendored",
+   "third_party",
+   "site-packages",
+   "bower_components"
+  ],
+  "max_blob_bytes": 1000000,
+  "first_parent": true
+ },
+ "mining": {
+  "churn": {
+   "t_churn_raw_s": 0.553496738022659,
+   "t_churn_fetch_s": 12.014183118997607,
+   "t_churn_numstat_s": 0.9684052530210465,
+   "blobs_fetched_churn": 3441
+  },
+  "timings": {
+   "t_clone": 2.619,
+   "t_mine": 16.419,
+   "t_loc": 2.816,
+   "t_reason_A": 6.891
+  },
+  "cached": false
+ },
+ "stage_a": {
+  "commits": 990,
+  "reasoned_commits": 990,
+  "inconsistent_chunks": 0,
+  "chunk_timings": [
+   {
+    "tbox_load_s": 0.043178920983336866,
+    "abox_load_s": 0.14410715899430215,
+    "reason_s": 6.655715681961738,
+    "extract_s": 0.015022932959254831,
+    "total_s": 6.858419465017505,
+    "commits": 990
+   }
+  ],
+  "tbox_sha256": "da30ed577542b3643ecf06cb6a4649ccc8fce61ab7a0373beabd763e12883e86"
+ },
+ "activity": {
+  "last_commit_date": "2025-06-30T17:49:26+00:00",
+  "months_since_last_commit": 0,
+  "distinct_authors_in_window": 171,
+  "merge_commits_in_window": 0
+ },
+ "agent_adoption_date": "2023-02-21T19:04:04+00:00",
+ "commit_label_counts": {
+  "BugFixCommit": 132,
+  "FeatureCommit": 3,
+  "AgentCommit": 33
+ },
+ "series_months": [
+  {
+   "month": "2022-07",
+   "commit_count": 19,
+   "merge_count": 0,
+   "unique_authors": 12,
+   "lines_added": 902,
+   "lines_deleted": 363,
+   "total_churn": 1265,
+   "files_changed": 64,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 54281,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-08",
+   "commit_count": 33,
+   "merge_count": 0,
+   "unique_authors": 9,
+   "lines_added": 1176,
+   "lines_deleted": 1127,
+   "total_churn": 2303,
+   "files_changed": 119,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 54291,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-09",
+   "commit_count": 14,
+   "merge_count": 0,
+   "unique_authors": 6,
+   "lines_added": 730,
+   "lines_deleted": 203,
+   "total_churn": 933,
+   "files_changed": 48,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 54769,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-10",
+   "commit_count": 14,
+   "merge_count": 0,
+   "unique_authors": 7,
+   "lines_added": 3158,
+   "lines_deleted": 1679,
+   "total_churn": 4837,
+   "files_changed": 46,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 56032,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-11",
+   "commit_count": 15,
+   "merge_count": 0,
+   "unique_authors": 11,
+   "lines_added": 2441,
+   "lines_deleted": 837,
+   "total_churn": 3278,
+   "files_changed": 90,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 57387,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-12",
+   "commit_count": 7,
+   "merge_count": 0,
+   "unique_authors": 5,
+   "lines_added": 1422,
+   "lines_deleted": 4667,
+   "total_churn": 6089,
+   "files_changed": 49,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 54297,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-01",
+   "commit_count": 15,
+   "merge_count": 0,
+   "unique_authors": 14,
+   "lines_added": 629,
+   "lines_deleted": 359,
+   "total_churn": 988,
+   "files_changed": 31,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 54521,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-02",
+   "commit_count": 23,
+   "merge_count": 0,
+   "unique_authors": 12,
+   "lines_added": 1200,
+   "lines_deleted": 366,
+   "total_churn": 1566,
+   "files_changed": 87,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 55256,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-03",
+   "commit_count": 19,
+   "merge_count": 0,
+   "unique_authors": 10,
+   "lines_added": 4501,
+   "lines_deleted": 470,
+   "total_churn": 4971,
+   "files_changed": 75,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 58630,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-04",
+   "commit_count": 6,
+   "merge_count": 0,
+   "unique_authors": 4,
+   "lines_added": 2741,
+   "lines_deleted": 2685,
+   "total_churn": 5426,
+   "files_changed": 42,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 58728,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-05",
+   "commit_count": 6,
+   "merge_count": 0,
+   "unique_authors": 4,
+   "lines_added": 257,
+   "lines_deleted": 28,
+   "total_churn": 285,
+   "files_changed": 28,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 58909,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-06",
+   "commit_count": 14,
+   "merge_count": 0,
+   "unique_authors": 7,
+   "lines_added": 661,
+   "lines_deleted": 710,
+   "total_churn": 1371,
+   "files_changed": 43,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 58863,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-07",
+   "commit_count": 15,
+   "merge_count": 0,
+   "unique_authors": 8,
+   "lines_added": 430,
+   "lines_deleted": 148,
+   "total_churn": 578,
+   "files_changed": 45,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 59117,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-08",
+   "commit_count": 10,
+   "merge_count": 0,
+   "unique_authors": 6,
+   "lines_added": 353,
+   "lines_deleted": 85,
+   "total_churn": 438,
+   "files_changed": 18,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 59350,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-09",
+   "commit_count": 12,
+   "merge_count": 0,
+   "unique_authors": 7,
+   "lines_added": 407,
+   "lines_deleted": 123,
+   "total_churn": 530,
+   "files_changed": 44,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 59585,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-10",
+   "commit_count": 8,
+   "merge_count": 0,
+   "unique_authors": 5,
+   "lines_added": 2649,
+   "lines_deleted": 593,
+   "total_churn": 3242,
+   "files_changed": 15,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 61202,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-11",
+   "commit_count": 17,
+   "merge_count": 0,
+   "unique_authors": 11,
+   "lines_added": 293,
+   "lines_deleted": 9049,
+   "total_churn": 9342,
+   "files_changed": 102,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 53282,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-12",
+   "commit_count": 6,
+   "merge_count": 0,
+   "unique_authors": 4,
+   "lines_added": 55,
+   "lines_deleted": 18,
+   "total_churn": 73,
+   "files_changed": 21,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 53317,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-01",
+   "commit_count": 10,
+   "merge_count": 0,
+   "unique_authors": 6,
+   "lines_added": 239,
+   "lines_deleted": 85,
+   "total_churn": 324,
+   "files_changed": 21,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 53426,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-02",
+   "commit_count": 35,
+   "merge_count": 0,
+   "unique_authors": 19,
+   "lines_added": 1343,
+   "lines_deleted": 302,
+   "total_churn": 1645,
+   "files_changed": 97,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 54286,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-03",
+   "commit_count": 38,
+   "merge_count": 0,
+   "unique_authors": 16,
+   "lines_added": 537,
+   "lines_deleted": 95,
+   "total_churn": 632,
+   "files_changed": 49,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 54630,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-04",
+   "commit_count": 29,
+   "merge_count": 0,
+   "unique_authors": 17,
+   "lines_added": 671,
+   "lines_deleted": 287,
+   "total_churn": 958,
+   "files_changed": 47,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 54965,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-05",
+   "commit_count": 21,
+   "merge_count": 0,
+   "unique_authors": 13,
+   "lines_added": 7164,
+   "lines_deleted": 249,
+   "total_churn": 7413,
+   "files_changed": 139,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 60769,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-06",
+   "commit_count": 29,
+   "merge_count": 0,
+   "unique_authors": 10,
+   "lines_added": 2234,
+   "lines_deleted": 1218,
+   "total_churn": 3452,
+   "files_changed": 130,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 61635,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-07",
+   "commit_count": 44,
+   "merge_count": 0,
+   "unique_authors": 20,
+   "lines_added": 3476,
+   "lines_deleted": 2591,
+   "total_churn": 6067,
+   "files_changed": 161,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 62403,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-08",
+   "commit_count": 29,
+   "merge_count": 0,
+   "unique_authors": 19,
+   "lines_added": 2601,
+   "lines_deleted": 553,
+   "total_churn": 3154,
+   "files_changed": 132,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 64159,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-09",
+   "commit_count": 15,
+   "merge_count": 0,
+   "unique_authors": 9,
+   "lines_added": 3555,
+   "lines_deleted": 657,
+   "total_churn": 4212,
+   "files_changed": 88,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 66759,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-10",
+   "commit_count": 13,
+   "merge_count": 0,
+   "unique_authors": 7,
+   "lines_added": 4086,
+   "lines_deleted": 2235,
+   "total_churn": 6321,
+   "files_changed": 202,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 68695,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-11",
+   "commit_count": 22,
+   "merge_count": 0,
+   "unique_authors": 10,
+   "lines_added": 781,
+   "lines_deleted": 105,
+   "total_churn": 886,
+   "files_changed": 43,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 69324,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-12",
+   "commit_count": 14,
+   "merge_count": 0,
+   "unique_authors": 8,
+   "lines_added": 1275,
+   "lines_deleted": 129,
+   "total_churn": 1404,
+   "files_changed": 63,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 70243,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2025-01",
+   "commit_count": 8,
+   "merge_count": 0,
+   "unique_authors": 5,
+   "lines_added": 2133,
+   "lines_deleted": 337,
+   "total_churn": 2470,
+   "files_changed": 55,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 71789,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2025-02",
+   "commit_count": 13,
+   "merge_count": 0,
+   "unique_authors": 9,
+   "lines_added": 227,
+   "lines_deleted": 67,
+   "total_churn": 294,
+   "files_changed": 35,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 71936,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2025-03",
+   "commit_count": 21,
+   "merge_count": 0,
+   "unique_authors": 12,
+   "lines_added": 1428,
+   "lines_deleted": 351,
+   "total_churn": 1779,
+   "files_changed": 85,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 72872,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2025-04",
+   "commit_count": 17,
+   "merge_count": 0,
+   "unique_authors": 11,
+   "lines_added": 1943,
+   "lines_deleted": 1359,
+   "total_churn": 3302,
+   "files_changed": 77,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 73405,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2025-05",
+   "commit_count": 21,
+   "merge_count": 0,
+   "unique_authors": 11,
+   "lines_added": 1932,
+   "lines_deleted": 1389,
+   "total_churn": 3321,
+   "files_changed": 123,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 73894,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2025-06",
+   "commit_count": 18,
+   "merge_count": 0,
+   "unique_authors": 9,
+   "lines_added": 2721,
+   "lines_deleted": 2169,
+   "total_churn": 4890,
+   "files_changed": 89,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 74334,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  }
+ ],
+ "measures_derived": {
+  "bugFixRatioFirstHalf": 0.21067,
+  "bugFixRatioSecondHalf": 0.211809,
+  "bugFixHalfRatio": 1.005405,
+  "featureCommitsFirstHalf": 2,
+  "featureCommitsSecondHalf": 1,
+  "featureCommitsTotal": 3,
+  "featureSecondToFirstRatio": 0.5,
+  "locDeltaPerFeature": 6684.333333,
+  "recentAgentCommitRatio": 0.072518
+ },
+ "inferred": {
+  "a0.05_L36_D12_G0.05_orig": {
+   "classes": [
+    "CopyPasteEvidence",
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIIConformant",
+    "LawIVConformant",
+    "LawVConformant",
+    "LawVIConformant",
+    "LawVIIConformant",
+    "LawVIIConformantRatio",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantNoMerge",
+    "LocPerFeatureHigh",
+    "MKApplicable",
+    "MergeInactive",
+    "MultiAuthorActive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": "urn:senso:explanations:open-telemetry/opentelemetry-python:79f851de895e",
+   "tbox_sha256": "79f851de895e8301073d1746931d8ac1d34e4ed2e94897358fca050d9d07b63c",
+   "abox_triples": 41,
+   "t_reason_B_s": 3.522
+  },
+  "a0.01_L36_D12_G0.05_orig": {
+   "classes": [
+    "CopyPasteEvidence",
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIIConformant",
+    "LawIVConformant",
+    "LawVConformant",
+    "LawVIConformant",
+    "LawVIIConformant",
+    "LawVIIConformantRatio",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantNoMerge",
+    "LocPerFeatureHigh",
+    "MKApplicable",
+    "MergeInactive",
+    "MultiAuthorActive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "956579a8859000216eba261c78e4795a2b5042e7edf95419211fd46e9dbeada9",
+   "abox_triples": 41,
+   "t_reason_B_s": 2.134
+  },
+  "a0.1_L36_D12_G0.05_orig": {
+   "classes": [
+    "CopyPasteEvidence",
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIIConformant",
+    "LawIVConformant",
+    "LawVConformant",
+    "LawVIConformant",
+    "LawVIIConformant",
+    "LawVIIConformantRatio",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantNoMerge",
+    "LocPerFeatureHigh",
+    "MKApplicable",
+    "MergeInactive",
+    "MultiAuthorActive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "56009aa92bf68560113e153a97a62cd0cfdea303607eb909725e8e10a2536494",
+   "abox_triples": 41,
+   "t_reason_B_s": 2.864
+  },
+  "a0.05_L24_D12_G0.05_orig": {
+   "classes": [
+    "CopyPasteEvidence",
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIIConformant",
+    "LawIVConformant",
+    "LawVConformant",
+    "LawVIConformant",
+    "LawVIIConformant",
+    "LawVIIConformantRatio",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantNoMerge",
+    "LocPerFeatureHigh",
+    "MKApplicable",
+    "MergeInactive",
+    "MultiAuthorActive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "79f851de895e8301073d1746931d8ac1d34e4ed2e94897358fca050d9d07b63c",
+   "abox_triples": 41,
+   "t_reason_B_s": 2.109
+  },
+  "a0.05_L48_D12_G0.05_orig": {
+   "classes": [
+    "CopyPasteEvidence",
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIIConformant",
+    "LawIVConformant",
+    "LawVConformant",
+    "LawVIConformant",
+    "LawVIIConformant",
+    "LawVIIConformantRatio",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantNoMerge",
+    "LocPerFeatureHigh",
+    "MKApplicable",
+    "MergeInactive",
+    "MultiAuthorActive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "79f851de895e8301073d1746931d8ac1d34e4ed2e94897358fca050d9d07b63c",
+   "abox_triples": 41,
+   "t_reason_B_s": 2.078
+  },
+  "a0.05_L36_D6_G0.05_orig": {
+   "classes": [
+    "CopyPasteEvidence",
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIIConformant",
+    "LawIVConformant",
+    "LawVConformant",
+    "LawVIConformant",
+    "LawVIIConformant",
+    "LawVIIConformantRatio",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantNoMerge",
+    "LocPerFeatureHigh",
+    "MKApplicable",
+    "MergeInactive",
+    "MultiAuthorActive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "a19e7e45f521324fec6b19741e2a4f08e5d15efd8e05802851c45a87515a7761",
+   "abox_triples": 41,
+   "t_reason_B_s": 2.2
+  },
+  "a0.05_L36_D18_G0.05_orig": {
+   "classes": [
+    "CopyPasteEvidence",
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIIConformant",
+    "LawIVConformant",
+    "LawVConformant",
+    "LawVIConformant",
+    "LawVIIConformant",
+    "LawVIIConformantRatio",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantNoMerge",
+    "LocPerFeatureHigh",
+    "MKApplicable",
+    "MergeInactive",
+    "MultiAuthorActive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "f87900e0c68335fbd2cae9848efdc2926406c328fb39da8e6e393bb472a68fdc",
+   "abox_triples": 41,
+   "t_reason_B_s": 2.18
+  },
+  "a0.05_L36_D24_G0.05_orig": {
+   "classes": [
+    "CopyPasteEvidence",
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIIConformant",
+    "LawIVConformant",
+    "LawVConformant",
+    "LawVIConformant",
+    "LawVIIConformant",
+    "LawVIIConformantRatio",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantNoMerge",
+    "LocPerFeatureHigh",
+    "MKApplicable",
+    "MergeInactive",
+    "MultiAuthorActive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "562211ba220cda59299aec70f3561ba96eadd88adaf45f6f7db3fce71cdcc77b",
+   "abox_triples": 41,
+   "t_reason_B_s": 2.209
+  },
+  "a0.05_L36_D12_G0_orig": {
+   "classes": [
+    "CopyPasteEvidence",
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIIConformant",
+    "LawIVConformant",
+    "LawVConformant",
+    "LawVIConformant",
+    "LawVIIConformant",
+    "LawVIIConformantRatio",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantNoMerge",
+    "LocPerFeatureHigh",
+    "MKApplicable",
+    "MergeInactive",
+    "MultiAuthorActive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "c0de0e8b2e7424d23b10ed152acd4ff66c2f1a973196b7e54f6598e9d734d0dc",
+   "abox_triples": 41,
+   "t_reason_B_s": 2.164
+  },
+  "a0.05_L36_D12_G0.02_orig": {
+   "classes": [
+    "CopyPasteEvidence",
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIIConformant",
+    "LawIVConformant",
+    "LawVConformant",
+    "LawVIConformant",
+    "LawVIIConformant",
+    "LawVIIConformantRatio",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantNoMerge",
+    "LocPerFeatureHigh",
+    "MKApplicable",
+    "MergeInactive",
+    "MultiAuthorActive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "2c6613dd6b3e4fa714d92eaa067f02157466a4b3ee0ccf6de289441d860de28d",
+   "abox_triples": 41,
+   "t_reason_B_s": 2.238
+  },
+  "a0.05_L36_D12_G0.1_orig": {
+   "classes": [
+    "CopyPasteEvidence",
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIIConformant",
+    "LawIVConformant",
+    "LawVConformant",
+    "LawVIConformant",
+    "LawVIIConformant",
+    "LawVIIConformantRatio",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantNoMerge",
+    "LocPerFeatureHigh",
+    "MKApplicable",
+    "MergeInactive",
+    "MultiAuthorActive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "0cfde802b4494fc33a5ad0eb910980aaf152093f62848406bdc37bc099347936",
+   "abox_triples": 41,
+   "t_reason_B_s": 2.249
+  },
+  "a0.05_L36_D12_G0.05_hr": {
+   "classes": [
+    "CopyPasteEvidence",
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIIConformant",
+    "LawIVConformant",
+    "LawVConformant",
+    "LawVIConformant",
+    "LawVIIConformant",
+    "LawVIIConformantRatio",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantNoMerge",
+    "LocPerFeatureHigh",
+    "MKApplicable",
+    "MergeInactive",
+    "MultiAuthorActive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "79f851de895e8301073d1746931d8ac1d34e4ed2e94897358fca050d9d07b63c",
+   "abox_triples": 41,
+   "t_reason_B_s": 2.139
+  }
+ },
+ "primary_config": "a0.05_L36_D12_G0.05_orig",
+ "project_iri": "http://senso-framework.org/data/open-telemetry_opentelemetry-python",
+ "consistent": true,
+ "inferred_labels": [
+  "CopyPasteEvidence",
+  "GrowthStage",
+  "LawIConformant",
+  "LawIIIConformant",
+  "LawIVConformant",
+  "LawVConformant",
+  "LawVIConformant",
+  "LawVIIConformant",
+  "LawVIIConformantRatio",
+  "LawVIIINonConformant",
+  "LawVIIINonConformantNoMerge",
+  "LocPerFeatureHigh",
+  "MKApplicable",
+  "MergeInactive",
+  "MultiAuthorActive",
+  "RBActiveDevelopmentStage",
+  "RecentlyActive",
+  "SubstantialLocGrowth"
+ ],
+ "stage_labels": [
+  "GrowthStage",
+  "RBActiveDevelopmentStage"
+ ],
+ "law_labels": {
+  "I": "LawIConformant",
+  "III": "LawIIIConformant",
+  "IV": "LawIVConformant",
+  "V": "LawVConformant",
+  "VI": "LawVIConformant",
+  "VII": "LawVIIConformant",
+  "VIII": "LawVIIINonConformant"
+ },
+ "tbox_sha256_stage_b": "79f851de895e8301073d1746931d8ac1d34e4ed2e94897358fca050d9d07b63c",
+ "tbox_sha256_stage_a": "da30ed577542b3643ecf06cb6a4649ccc8fce61ab7a0373beabd763e12883e86",
+ "summary": {
+  "c1": "A",
+  "c2": "A",
+  "cf": "A",
+  "note": "debug summary; run_rq1_v2.py reads `inferred` and recomputes CF itself"
+ },
+ "explanations": {
+  "stage:GrowthStage": {
+   "class": "GrowthStage",
+   "target": "http://senso-framework.org/data/open-telemetry_opentelemetry-python type http://senso-framework.org/ontology/seo#GrowthStage",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_locMKTau_gt_0",
+       "text": "A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKpValue_lt_mk_alpha",
+       "text": "A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]"
+      },
+      {
+       "kind": "definition",
+       "subject": "GrowthStage",
+       "text": "GrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "open-telemetry_opentelemetry-python",
+       "prop": "locSeriesLength",
+       "value": 36,
+       "raw": "open-telemetry_opentelemetry-python locSeriesLength 36"
+      },
+      {
+       "subject": "open-telemetry_opentelemetry-python",
+       "prop": "locMKpValue",
+       "value": 0.0,
+       "raw": "open-telemetry_opentelemetry-python locMKpValue 0.0"
+      },
+      {
+       "subject": "open-telemetry_opentelemetry-python",
+       "prop": "locMKTau",
+       "value": 0.695238,
+       "raw": "open-telemetry_opentelemetry-python locMKTau 0.695238"
+      },
+      {
+       "subject": "open-telemetry_opentelemetry-python",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "open-telemetry_opentelemetry-python type SoftwareProject"
+      }
+     ],
+     "closures": [],
+     "raw": "open-telemetry_opentelemetry-python locSeriesLength 36\nA_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\nopen-telemetry_opentelemetry-python locMKpValue 0.0\nopen-telemetry_opentelemetry-python locMKTau 0.695238\nA_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\nopen-telemetry_opentelemetry-python type SoftwareProject\nGrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject\nA_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\nA_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]"
+    }
+   ],
+   "raw_text": "Axiom: open-telemetry_opentelemetry-python type GrowthStage\n\nExplanation(s): \n1)   open-telemetry_opentelemetry-python locSeriesLength 36\n     A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\n     open-telemetry_opentelemetry-python locMKpValue 0.0\n     open-telemetry_opentelemetry-python locMKTau 0.695238\n     A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\n     open-telemetry_opentelemetry-python type SoftwareProject\n     GrowthStage equivalentTo A_locMKTau_gt_0\n                              and A_locMKpValue_lt_mk_alpha\n                              and MKApplicable\n                              and SoftwareProject\n     A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\n     A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]\n\n\n",
+   "seconds": 2.4422533030156046,
+   "returncode": 0,
+   "error": null
+  },
+  "stage:RBActiveDevelopmentStage": {
+   "class": "RBActiveDevelopmentStage",
+   "target": "http://senso-framework.org/data/open-telemetry_opentelemetry-python type http://senso-framework.org/ontology/seo#RBActiveDevelopmentStage",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable"
+      },
+      {
+       "kind": "definition",
+       "subject": "SubstantialLocGrowth",
+       "text": "SubstantialLocGrowth equivalentTo A_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKTau_gt_0",
+       "text": "A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "GrowthStage",
+       "text": "GrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year",
+       "text": "A_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year equivalentTo locRelSenSlopeAnnual some decimal[>= 0.05]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]"
+      },
+      {
+       "kind": "definition",
+       "subject": "RBActiveDevelopmentStage",
+       "text": "RBActiveDevelopmentStage equivalentTo GrowthStage and RecentlyActive and SoftwareProject and SubstantialLocGrowth"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKpValue_lt_mk_alpha",
+       "text": "A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]"
+      },
+      {
+       "kind": "definition",
+       "subject": "RecentlyActive",
+       "text": "RecentlyActive equivalentTo A_monthsSinceLastCommit_lt_rb_dormancy_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_monthsSinceLastCommit_lt_rb_dormancy_months",
+       "text": "A_monthsSinceLastCommit_lt_rb_dormancy_months equivalentTo monthsSinceLastCommit some integer[< 12]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "open-telemetry_opentelemetry-python",
+       "prop": "locMKpValue",
+       "value": 0.0,
+       "raw": "open-telemetry_opentelemetry-python locMKpValue 0.0"
+      },
+      {
+       "subject": "open-telemetry_opentelemetry-python",
+       "prop": "locSeriesLength",
+       "value": 36,
+       "raw": "open-telemetry_opentelemetry-python locSeriesLength 36"
+      },
+      {
+       "subject": "open-telemetry_opentelemetry-python",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "open-telemetry_opentelemetry-python type SoftwareProject"
+      },
+      {
+       "subject": "open-telemetry_opentelemetry-python",
+       "prop": "monthsSinceLastCommit",
+       "value": 0,
+       "raw": "open-telemetry_opentelemetry-python monthsSinceLastCommit 0"
+      },
+      {
+       "subject": "open-telemetry_opentelemetry-python",
+       "prop": "locMKTau",
+       "value": 0.695238,
+       "raw": "open-telemetry_opentelemetry-python locMKTau 0.695238"
+      },
+      {
+       "subject": "open-telemetry_opentelemetry-python",
+       "prop": "locRelSenSlopeAnnual",
+       "value": 0.117799,
+       "raw": "open-telemetry_opentelemetry-python locRelSenSlopeAnnual 0.117799"
+      }
+     ],
+     "closures": [],
+     "raw": "open-telemetry_opentelemetry-python locMKpValue 0.0\nA_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\nSubstantialLocGrowth equivalentTo A_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year and SoftwareProject\nopen-telemetry_opentelemetry-python locSeriesLength 36\nA_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\nopen-telemetry_opentelemetry-python type SoftwareProject\nGrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject\nA_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year equivalentTo locRelSenSlopeAnnual some decimal[>= 0.05]\nopen-telemetry_opentelemetry-python monthsSinceLastCommit 0\nA_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]\nopen-telemetry_opentelemetry-python locMKTau 0.695238\nopen-telemetry_opentelemetry-python locRelSenSlopeAnnual 0.117799\nRBActiveDevelopmentStage equivalentTo GrowthStage and RecentlyActive and SoftwareProject and SubstantialLocGrowth\nA_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\nRecentlyActive equivalentTo A_monthsSinceLastCommit_lt_rb_dormancy_months and SoftwareProject\nA_monthsSinceLastCommit_lt_rb_dormancy_months equivalentTo monthsSinceLastCommit some integer[< 12]"
+    }
+   ],
+   "raw_text": "Axiom: open-telemetry_opentelemetry-python type RBActiveDevelopmentStage\n\nExplanation(s): \n1)   open-telemetry_opentelemetry-python locMKpValue 0.0\n     A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\n     SubstantialLocGrowth equivalentTo A_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year\n                                       and SoftwareProject\n     open-telemetry_opentelemetry-python locSeriesLength 36\n     A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\n     open-telemetry_opentelemetry-python type SoftwareProject\n     GrowthStage equivalentTo A_locMKTau_gt_0\n                              and A_locMKpValue_lt_mk_alpha\n                              and MKApplicable\n                              and SoftwareProject\n     A_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year equivalentTo locRelSenSlopeAnnual some decimal[>= 0.05]\n     open-telemetry_opentelemetry-python monthsSinceLastCommit 0\n     A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]\n     open-telemetry_opentelemetry-python locMKTau 0.695238\n     open-telemetry_opentelemetry-python locRelSenSlopeAnnual 0.117799\n     RBActiveDevelopmentStage equivalentTo GrowthStage\n                                           and RecentlyActive\n                                           and SoftwareProject\n                                           and SubstantialLocGrowth\n     A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\n     RecentlyActive equivalentTo A_monthsSinceLastCommit_lt_rb_dormancy_months\n                                 and SoftwareProject\n     A_monthsSinceLastCommit_lt_rb_dormancy_months equivalentTo monthsSinceLastCommit some integer[< 12]\n\n\n",
+   "seconds": 2.722808944003191,
+   "returncode": 0,
+   "error": null
+  },
+  "lawI": {
+   "class": "LawIConformant",
+   "target": "http://senso-framework.org/data/open-telemetry_opentelemetry-python type http://senso-framework.org/ontology/seo#LawIConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law1_min_months",
+       "text": "A_monthsObserved_ge_p_law1_min_months equivalentTo monthsObserved some integer[>= 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawIConformant",
+       "text": "LawIConformant equivalentTo A_activeMonthRatio_ge_p_law1_active_ratio and A_monthsObserved_ge_p_law1_min_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_activeMonthRatio_ge_p_law1_active_ratio",
+       "text": "A_activeMonthRatio_ge_p_law1_active_ratio equivalentTo activeMonthRatio some decimal[>= 0.5]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "open-telemetry_opentelemetry-python",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "open-telemetry_opentelemetry-python type SoftwareProject"
+      },
+      {
+       "subject": "open-telemetry_opentelemetry-python",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "open-telemetry_opentelemetry-python monthsObserved 36"
+      },
+      {
+       "subject": "open-telemetry_opentelemetry-python",
+       "prop": "activeMonthRatio",
+       "value": 1.0,
+       "raw": "open-telemetry_opentelemetry-python activeMonthRatio 1.0"
+      }
+     ],
+     "closures": [],
+     "raw": "A_monthsObserved_ge_p_law1_min_months equivalentTo monthsObserved some integer[>= 2]\nopen-telemetry_opentelemetry-python type SoftwareProject\nopen-telemetry_opentelemetry-python monthsObserved 36\nopen-telemetry_opentelemetry-python activeMonthRatio 1.0\nLawIConformant equivalentTo A_activeMonthRatio_ge_p_law1_active_ratio and A_monthsObserved_ge_p_law1_min_months and SoftwareProject\nA_activeMonthRatio_ge_p_law1_active_ratio equivalentTo activeMonthRatio some decimal[>= 0.5]"
+    }
+   ],
+   "raw_text": "Axiom: open-telemetry_opentelemetry-python type LawIConformant\n\nExplanation(s): \n1)   A_monthsObserved_ge_p_law1_min_months equivalentTo monthsObserved some integer[>= 2]\n     open-telemetry_opentelemetry-python type SoftwareProject\n     open-telemetry_opentelemetry-python monthsObserved 36\n     open-telemetry_opentelemetry-python activeMonthRatio 1.0\n     LawIConformant equivalentTo A_activeMonthRatio_ge_p_law1_active_ratio\n                                 and A_monthsObserved_ge_p_law1_min_months\n                                 and SoftwareProject\n     A_activeMonthRatio_ge_p_law1_active_ratio equivalentTo activeMonthRatio some decimal[>= 0.5]\n\n\n",
+   "seconds": 2.696337479981594,
+   "returncode": 0,
+   "error": null
+  },
+  "lawIII": {
+   "class": "LawIIIConformant",
+   "target": "http://senso-framework.org/data/open-telemetry_opentelemetry-python type http://senso-framework.org/ontology/seo#LawIIIConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law3_min_months",
+       "text": "A_monthsObserved_ge_p_law3_min_months equivalentTo monthsObserved some integer[>= 6]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawIIIConformant",
+       "text": "LawIIIConformant equivalentTo A_churnCV_lt_p_law3_churn_cv and A_monthsObserved_ge_p_law3_min_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_churnCV_lt_p_law3_churn_cv",
+       "text": "A_churnCV_lt_p_law3_churn_cv equivalentTo churnCV some decimal[< 2.0]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "open-telemetry_opentelemetry-python",
+       "prop": "churnCV",
+       "value": 0.832222,
+       "raw": "open-telemetry_opentelemetry-python churnCV 0.832222"
+      },
+      {
+       "subject": "open-telemetry_opentelemetry-python",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "open-telemetry_opentelemetry-python type SoftwareProject"
+      },
+      {
+       "subject": "open-telemetry_opentelemetry-python",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "open-telemetry_opentelemetry-python monthsObserved 36"
+      }
+     ],
+     "closures": [],
+     "raw": "A_monthsObserved_ge_p_law3_min_months equivalentTo monthsObserved some integer[>= 6]\nLawIIIConformant equivalentTo A_churnCV_lt_p_law3_churn_cv and A_monthsObserved_ge_p_law3_min_months and SoftwareProject\nA_churnCV_lt_p_law3_churn_cv equivalentTo churnCV some decimal[< 2.0]\nopen-telemetry_opentelemetry-python churnCV 0.832222\nopen-telemetry_opentelemetry-python type SoftwareProject\nopen-telemetry_opentelemetry-python monthsObserved 36"
+    }
+   ],
+   "raw_text": "Axiom: open-telemetry_opentelemetry-python type LawIIIConformant\n\nExplanation(s): \n1)   A_monthsObserved_ge_p_law3_min_months equivalentTo monthsObserved some integer[>= 6]\n     LawIIIConformant equivalentTo A_churnCV_lt_p_law3_churn_cv\n                                   and A_monthsObserved_ge_p_law3_min_months\n                                   and SoftwareProject\n     A_churnCV_lt_p_law3_churn_cv equivalentTo churnCV some decimal[< 2.0]\n     open-telemetry_opentelemetry-python churnCV 0.832222\n     open-telemetry_opentelemetry-python type SoftwareProject\n     open-telemetry_opentelemetry-python monthsObserved 36\n\n\n",
+   "seconds": 2.5118565369630232,
+   "returncode": 0,
+   "error": null
+  },
+  "lawIV": {
+   "class": "LawIVConformant",
+   "target": "http://senso-framework.org/data/open-telemetry_opentelemetry-python type http://senso-framework.org/ontology/seo#LawIVConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law4_min_months",
+       "text": "A_monthsObserved_ge_p_law4_min_months equivalentTo monthsObserved some integer[>= 6]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawIVConformant",
+       "text": "LawIVConformant equivalentTo A_commitCountCV_lt_p_law4_commit_cv and A_monthsObserved_ge_p_law4_min_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_commitCountCV_lt_p_law4_commit_cv",
+       "text": "A_commitCountCV_lt_p_law4_commit_cv equivalentTo commitCountCV some decimal[< 1.5]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "open-telemetry_opentelemetry-python",
+       "prop": "commitCountCV",
+       "value": 0.513275,
+       "raw": "open-telemetry_opentelemetry-python commitCountCV 0.513275"
+      },
+      {
+       "subject": "open-telemetry_opentelemetry-python",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "open-telemetry_opentelemetry-python type SoftwareProject"
+      },
+      {
+       "subject": "open-telemetry_opentelemetry-python",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "open-telemetry_opentelemetry-python monthsObserved 36"
+      }
+     ],
+     "closures": [],
+     "raw": "A_monthsObserved_ge_p_law4_min_months equivalentTo monthsObserved some integer[>= 6]\nopen-telemetry_opentelemetry-python commitCountCV 0.513275\nLawIVConformant equivalentTo A_commitCountCV_lt_p_law4_commit_cv and A_monthsObserved_ge_p_law4_min_months and SoftwareProject\nopen-telemetry_opentelemetry-python type SoftwareProject\nopen-telemetry_opentelemetry-python monthsObserved 36\nA_commitCountCV_lt_p_law4_commit_cv equivalentTo commitCountCV some decimal[< 1.5]"
+    }
+   ],
+   "raw_text": "Axiom: open-telemetry_opentelemetry-python type LawIVConformant\n\nExplanation(s): \n1)   A_monthsObserved_ge_p_law4_min_months equivalentTo monthsObserved some integer[>= 6]\n     open-telemetry_opentelemetry-python commitCountCV 0.513275\n     LawIVConformant equivalentTo A_commitCountCV_lt_p_law4_commit_cv\n                                  and A_monthsObserved_ge_p_law4_min_months\n                                  and SoftwareProject\n     open-telemetry_opentelemetry-python type SoftwareProject\n     open-telemetry_opentelemetry-python monthsObserved 36\n     A_commitCountCV_lt_p_law4_commit_cv equivalentTo commitCountCV some decimal[< 1.5]\n\n\n",
+   "seconds": 2.4224651969852857,
+   "returncode": 0,
+   "error": null
+  },
+  "lawV": {
+   "class": "LawVConformant",
+   "target": "http://senso-framework.org/data/open-telemetry_opentelemetry-python type http://senso-framework.org/ontology/seo#LawVConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "LawVConformant",
+       "text": "LawVConformant equivalentTo A_linesAddedCV_lt_p_law5_additions_cv and A_monthsObserved_ge_p_law5_min_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_linesAddedCV_lt_p_law5_additions_cv",
+       "text": "A_linesAddedCV_lt_p_law5_additions_cv equivalentTo linesAddedCV some decimal[< 2.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law5_min_months",
+       "text": "A_monthsObserved_ge_p_law5_min_months equivalentTo monthsObserved some integer[>= 4]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "open-telemetry_opentelemetry-python",
+       "prop": "linesAddedCV",
+       "value": 0.867489,
+       "raw": "open-telemetry_opentelemetry-python linesAddedCV 0.867489"
+      },
+      {
+       "subject": "open-telemetry_opentelemetry-python",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "open-telemetry_opentelemetry-python type SoftwareProject"
+      },
+      {
+       "subject": "open-telemetry_opentelemetry-python",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "open-telemetry_opentelemetry-python monthsObserved 36"
+      }
+     ],
+     "closures": [],
+     "raw": "open-telemetry_opentelemetry-python linesAddedCV 0.867489\nLawVConformant equivalentTo A_linesAddedCV_lt_p_law5_additions_cv and A_monthsObserved_ge_p_law5_min_months and SoftwareProject\nA_linesAddedCV_lt_p_law5_additions_cv equivalentTo linesAddedCV some decimal[< 2.0]\nA_monthsObserved_ge_p_law5_min_months equivalentTo monthsObserved some integer[>= 4]\nopen-telemetry_opentelemetry-python type SoftwareProject\nopen-telemetry_opentelemetry-python monthsObserved 36"
+    }
+   ],
+   "raw_text": "Axiom: open-telemetry_opentelemetry-python type LawVConformant\n\nExplanation(s): \n1)   open-telemetry_opentelemetry-python linesAddedCV 0.867489\n     LawVConformant equivalentTo A_linesAddedCV_lt_p_law5_additions_cv\n                                 and A_monthsObserved_ge_p_law5_min_months\n                                 and SoftwareProject\n     A_linesAddedCV_lt_p_law5_additions_cv equivalentTo linesAddedCV some decimal[< 2.0]\n     A_monthsObserved_ge_p_law5_min_months equivalentTo monthsObserved some integer[>= 4]\n     open-telemetry_opentelemetry-python type SoftwareProject\n     open-telemetry_opentelemetry-python monthsObserved 36\n\n\n",
+   "seconds": 2.5455784340156242,
+   "returncode": 0,
+   "error": null
+  },
+  "lawVI": {
+   "class": "LawVIConformant",
+   "target": "http://senso-framework.org/data/open-telemetry_opentelemetry-python type http://senso-framework.org/ontology/seo#LawVIConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "subclass",
+       "subject": "GrowthStage",
+       "text": "GrowthStage subClassOf LawVIConformant"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKTau_gt_0",
+       "text": "A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKpValue_lt_mk_alpha",
+       "text": "A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]"
+      },
+      {
+       "kind": "definition",
+       "subject": "GrowthStage",
+       "text": "GrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "open-telemetry_opentelemetry-python",
+       "prop": "locMKpValue",
+       "value": 0.0,
+       "raw": "open-telemetry_opentelemetry-python locMKpValue 0.0"
+      },
+      {
+       "subject": "open-telemetry_opentelemetry-python",
+       "prop": "locMKTau",
+       "value": 0.695238,
+       "raw": "open-telemetry_opentelemetry-python locMKTau 0.695238"
+      },
+      {
+       "subject": "open-telemetry_opentelemetry-python",
+       "prop": "locSeriesLength",
+       "value": 36,
+       "raw": "open-telemetry_opentelemetry-python locSeriesLength 36"
+      },
+      {
+       "subject": "open-telemetry_opentelemetry-python",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "open-telemetry_opentelemetry-python type SoftwareProject"
+      }
+     ],
+     "closures": [],
+     "raw": "open-telemetry_opentelemetry-python locMKpValue 0.0\nopen-telemetry_opentelemetry-python locMKTau 0.695238\nGrowthStage subClassOf LawVIConformant\nA_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\nopen-telemetry_opentelemetry-python locSeriesLength 36\nA_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\nA_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\nopen-telemetry_opentelemetry-python type SoftwareProject\nGrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject\nA_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]"
+    }
+   ],
+   "raw_text": "Axiom: open-telemetry_opentelemetry-python type LawVIConformant\n\nExplanation(s): \n1)   open-telemetry_opentelemetry-python locMKpValue 0.0\n     open-telemetry_opentelemetry-python locMKTau 0.695238\n     GrowthStage subClassOf LawVIConformant\n     A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\n     open-telemetry_opentelemetry-python locSeriesLength 36\n     A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\n     A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\n     open-telemetry_opentelemetry-python type SoftwareProject\n     GrowthStage equivalentTo A_locMKTau_gt_0\n                              and A_locMKpValue_lt_mk_alpha\n                              and MKApplicable\n                              and SoftwareProject\n     A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]\n\n\n",
+   "seconds": 2.3223465679911897,
+   "returncode": 0,
+   "error": null
+  },
+  "lawVII": {
+   "class": "LawVIIConformant",
+   "target": "http://senso-framework.org/data/open-telemetry_opentelemetry-python type http://senso-framework.org/ontology/seo#LawVIIConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_bugFixHalfRatio_ge_p_law7_tolerance",
+       "text": "A_bugFixHalfRatio_ge_p_law7_tolerance equivalentTo bugFixHalfRatio some decimal[>= 0.9]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawVIIConformantRatio",
+       "text": "LawVIIConformantRatio equivalentTo A_activeMonthCount_ge_p_law7_min_active_months and A_bugFixHalfRatio_ge_p_law7_tolerance and A_bugFixRatioFirstHalf_gt_0 and SoftwareProject"
+      },
+      {
+       "kind": "subclass",
+       "subject": "LawVIIConformantRatio",
+       "text": "LawVIIConformantRatio subClassOf LawVIIConformant"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_bugFixRatioFirstHalf_gt_0",
+       "text": "A_bugFixRatioFirstHalf_gt_0 equivalentTo bugFixRatioFirstHalf some decimal[> 0.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_activeMonthCount_ge_p_law7_min_active_months",
+       "text": "A_activeMonthCount_ge_p_law7_min_active_months equivalentTo activeMonthCount some integer[>= 4]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "open-telemetry_opentelemetry-python",
+       "prop": "bugFixRatioFirstHalf",
+       "value": 0.21067,
+       "raw": "open-telemetry_opentelemetry-python bugFixRatioFirstHalf 0.21067"
+      },
+      {
+       "subject": "open-telemetry_opentelemetry-python",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "open-telemetry_opentelemetry-python type SoftwareProject"
+      },
+      {
+       "subject": "open-telemetry_opentelemetry-python",
+       "prop": "activeMonthCount",
+       "value": 36,
+       "raw": "open-telemetry_opentelemetry-python activeMonthCount 36"
+      },
+      {
+       "subject": "open-telemetry_opentelemetry-python",
+       "prop": "bugFixHalfRatio",
+       "value": 1.005405,
+       "raw": "open-telemetry_opentelemetry-python bugFixHalfRatio 1.005405"
+      }
+     ],
+     "closures": [],
+     "raw": "A_bugFixHalfRatio_ge_p_law7_tolerance equivalentTo bugFixHalfRatio some decimal[>= 0.9]\nLawVIIConformantRatio equivalentTo A_activeMonthCount_ge_p_law7_min_active_months and A_bugFixHalfRatio_ge_p_law7_tolerance and A_bugFixRatioFirstHalf_gt_0 and SoftwareProject\nopen-telemetry_opentelemetry-python bugFixRatioFirstHalf 0.21067\nLawVIIConformantRatio subClassOf LawVIIConformant\nA_bugFixRatioFirstHalf_gt_0 equivalentTo bugFixRatioFirstHalf some decimal[> 0.0]\nA_activeMonthCount_ge_p_law7_min_active_months equivalentTo activeMonthCount some integer[>= 4]\nopen-telemetry_opentelemetry-python type SoftwareProject\nopen-telemetry_opentelemetry-python activeMonthCount 36\nopen-telemetry_opentelemetry-python bugFixHalfRatio 1.005405"
+    }
+   ],
+   "raw_text": "Axiom: open-telemetry_opentelemetry-python type LawVIIConformant\n\nExplanation(s): \n1)   A_bugFixHalfRatio_ge_p_law7_tolerance equivalentTo bugFixHalfRatio some decimal[>= 0.9]\n     LawVIIConformantRatio equivalentTo A_activeMonthCount_ge_p_law7_min_active_months\n                                        and A_bugFixHalfRatio_ge_p_law7_tolerance\n                                        and A_bugFixRatioFirstHalf_gt_0\n                                        and SoftwareProject\n     open-telemetry_opentelemetry-python bugFixRatioFirstHalf 0.21067\n     LawVIIConformantRatio subClassOf LawVIIConformant\n     A_bugFixRatioFirstHalf_gt_0 equivalentTo bugFixRatioFirstHalf some decimal[> 0.0]\n     A_activeMonthCount_ge_p_law7_min_active_months equivalentTo activeMonthCount some integer[>= 4]\n     open-telemetry_opentelemetry-python type SoftwareProject\n     open-telemetry_opentelemetry-python activeMonthCount 36\n     open-telemetry_opentelemetry-python bugFixHalfRatio 1.005405\n\n\n",
+   "seconds": 2.4611885719932616,
+   "returncode": 0,
+   "error": null
+  },
+  "lawVIII": {
+   "class": "LawVIIINonConformant",
+   "target": "http://senso-framework.org/data/open-telemetry_opentelemetry-python type http://senso-framework.org/ontology/seo#LawVIIINonConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "LawVIIINonConformantNoMerge",
+       "text": "LawVIIINonConformantNoMerge equivalentTo A_monthsObserved_ge_p_law8_min_months and MergeInactive and SoftwareProject"
+      },
+      {
+       "kind": "subclass",
+       "subject": "LawVIIINonConformantNoMerge",
+       "text": "LawVIIINonConformantNoMerge subClassOf LawVIIINonConformant"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law8_min_months",
+       "text": "A_monthsObserved_ge_p_law8_min_months equivalentTo monthsObserved some integer[>= 6]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_mergeMonthRatio_le_p_law8_merge_ratio",
+       "text": "A_mergeMonthRatio_le_p_law8_merge_ratio equivalentTo MergeInactive"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_mergeMonthRatio_le_p_law8_merge_ratio",
+       "text": "A_mergeMonthRatio_le_p_law8_merge_ratio equivalentTo mergeMonthRatio some decimal[<= 0.3]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "open-telemetry_opentelemetry-python",
+       "prop": "mergeMonthRatio",
+       "value": 0.0,
+       "raw": "open-telemetry_opentelemetry-python mergeMonthRatio 0.0"
+      },
+      {
+       "subject": "open-telemetry_opentelemetry-python",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "open-telemetry_opentelemetry-python monthsObserved 36"
+      },
+      {
+       "subject": "open-telemetry_opentelemetry-python",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "open-telemetry_opentelemetry-python type SoftwareProject"
+      }
+     ],
+     "closures": [],
+     "raw": "open-telemetry_opentelemetry-python mergeMonthRatio 0.0\nLawVIIINonConformantNoMerge equivalentTo A_monthsObserved_ge_p_law8_min_months and MergeInactive and SoftwareProject\nLawVIIINonConformantNoMerge subClassOf LawVIIINonConformant\nopen-telemetry_opentelemetry-python monthsObserved 36\nA_monthsObserved_ge_p_law8_min_months equivalentTo monthsObserved some integer[>= 6]\nopen-telemetry_opentelemetry-python type SoftwareProject\nA_mergeMonthRatio_le_p_law8_merge_ratio equivalentTo MergeInactive\nA_mergeMonthRatio_le_p_law8_merge_ratio equivalentTo mergeMonthRatio some decimal[<= 0.3]"
+    }
+   ],
+   "raw_text": "Axiom: open-telemetry_opentelemetry-python type LawVIIINonConformant\n\nExplanation(s): \n1)   open-telemetry_opentelemetry-python mergeMonthRatio 0.0\n     LawVIIINonConformantNoMerge equivalentTo A_monthsObserved_ge_p_law8_min_months\n                                              and MergeInactive\n                                              and SoftwareProject\n     LawVIIINonConformantNoMerge subClassOf LawVIIINonConformant\n     open-telemetry_opentelemetry-python monthsObserved 36\n     A_monthsObserved_ge_p_law8_min_months equivalentTo monthsObserved some integer[>= 6]\n     open-telemetry_opentelemetry-python type SoftwareProject\n     A_mergeMonthRatio_le_p_law8_merge_ratio equivalentTo MergeInactive\n     A_mergeMonthRatio_le_p_law8_merge_ratio equivalentTo mergeMonthRatio some decimal[<= 0.3]\n\n\n",
+   "seconds": 2.5744233559817076,
+   "returncode": 0,
+   "error": null
+  }
+ },
+ "fuseki": {
+  "dataset": "seo_v2",
+  "graph_triples": {
+   "urn:senso:abox:open-telemetry/opentelemetry-python": 388,
+   "urn:senso:commits:open-telemetry/opentelemetry-python": 4168,
+   "urn:senso:abox-derived:open-telemetry/opentelemetry-python": 9,
+   "urn:senso:inferred:open-telemetry/opentelemetry-python:79f851de895e": 404,
+   "urn:senso:explanations:open-telemetry/opentelemetry-python:79f851de895e": 178
+  }
+ },
+ "timings": {
+  "t_clone": 2.619,
+  "t_mine": 16.419,
+  "t_loc": 2.816,
+  "t_reason_A": 6.891,
+  "mining_cached": false,
+  "t_reason_B": 28.086,
+  "n_configs": 12,
+  "t_explain": 22.785,
+  "n_explain_calls": 9,
+  "t_writeback": 11.177,
+  "t_total": 88.63
+ }
+}

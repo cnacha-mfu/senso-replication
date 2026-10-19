@@ -1,0 +1,275 @@
+{
+ "repo": "Kaptensanders/skolmat",
+ "slug": "Kaptensanders__skolmat",
+ "input_sha": "a5ee85a20aff850b1327c4dd2fe6419d493ff8d618583774f1028d3b5a6a3854",
+ "explanations": [
+  {
+   "key": "T1|docs/context.md",
+   "verdict": "ContradictedClaim",
+   "leaf": "PathRemoved",
+   "seconds": 8.1,
+   "retried_on_claim_subgraph": true,
+   "error": null,
+   "returncode": 0,
+   "n_justifications": 1,
+   "facts": [
+    {
+     "prop": "pathSuffixMatchCount",
+     "value": 0
+    },
+    {
+     "prop": "pathIgnoredCount",
+     "value": 0
+    },
+    {
+     "prop": "pathEverTrackedCount",
+     "value": 2
+    },
+    {
+     "prop": "extractionVotes",
+     "value": 3
+    },
+    {
+     "prop": "pathExactMatchCount",
+     "value": 0
+    },
+    {
+     "prop": "pathSubmoduleCount",
+     "value": 0
+    }
+   ],
+   "axioms": [
+    "A_pathEverTrackedCount_ge_1 equivalentTo pathEverTrackedCount some integer[>= 1]",
+    "A_pathExactMatchCount_ge_0_le_0 equivalentTo pathExactMatchCount some integer[>= 0, <= 0]",
+    "A_pathSuffixMatchCount_ge_0_le_0 equivalentTo pathSuffixMatchCount some integer[>= 0, <= 0]",
+    "A_extractionVotes_ge_wp2_consensus_min_votes equivalentTo extractionVotes some integer[>= 2]",
+    "CheckedClaim equivalentTo A_extractionVotes_ge_wp2_consensus_min_votes and ManifestClaim",
+    "PathRemoved equivalentTo A_pathEverTrackedCount_ge_1 and A_pathExactMatchCount_ge_0_le_0 and A_pathIgnoredCount_ge_0_le_0 and A_pathSubmoduleCount_ge_0_le_0 and A_pathSuffixMatchCount_ge_0_le_0 and CheckedClaim and PathExistenceClaim",
+    "A_pathIgnoredCount_ge_0_le_0 equivalentTo pathIgnoredCount some integer[>= 0, <= 0]",
+    "PathRemoved subClassOf ContradictedClaim",
+    "A_pathSubmoduleCount_ge_0_le_0 equivalentTo pathSubmoduleCount some integer[>= 0, <= 0]"
+   ],
+   "closures": []
+  },
+  {
+   "key": "T1|docs/design/filtering-config-flow-design.md",
+   "verdict": "ContradictedClaim",
+   "leaf": "PathRemoved",
+   "seconds": 4.24,
+   "retried_on_claim_subgraph": false,
+   "error": null,
+   "returncode": 0,
+   "n_justifications": 1,
+   "facts": [
+    {
+     "prop": "pathSuffixMatchCount",
+     "value": 0
+    },
+    {
+     "prop": "pathSubmoduleCount",
+     "value": 0
+    },
+    {
+     "prop": "pathIgnoredCount",
+     "value": 0
+    },
+    {
+     "prop": "extractionVotes",
+     "value": 2
+    },
+    {
+     "prop": "pathExactMatchCount",
+     "value": 0
+    },
+    {
+     "prop": "pathEverTrackedCount",
+     "value": 2
+    }
+   ],
+   "axioms": [
+    "A_pathEverTrackedCount_ge_1 equivalentTo pathEverTrackedCount some integer[>= 1]",
+    "A_pathExactMatchCount_ge_0_le_0 equivalentTo pathExactMatchCount some integer[>= 0, <= 0]",
+    "A_pathSuffixMatchCount_ge_0_le_0 equivalentTo pathSuffixMatchCount some integer[>= 0, <= 0]",
+    "A_extractionVotes_ge_wp2_consensus_min_votes equivalentTo extractionVotes some integer[>= 2]",
+    "CheckedClaim equivalentTo A_extractionVotes_ge_wp2_consensus_min_votes and ManifestClaim",
+    "PathRemoved equivalentTo A_pathEverTrackedCount_ge_1 and A_pathExactMatchCount_ge_0_le_0 and A_pathIgnoredCount_ge_0_le_0 and A_pathSubmoduleCount_ge_0_le_0 and A_pathSuffixMatchCount_ge_0_le_0 and CheckedClaim and PathExistenceClaim",
+    "A_pathIgnoredCount_ge_0_le_0 equivalentTo pathIgnoredCount some integer[>= 0, <= 0]",
+    "PathRemoved subClassOf ContradictedClaim",
+    "A_pathSubmoduleCount_ge_0_le_0 equivalentTo pathSubmoduleCount some integer[>= 0, <= 0]"
+   ],
+   "closures": []
+  },
+  {
+   "key": "T1|docs/design/filtering-design-checkpoint.md",
+   "verdict": "ContradictedClaim",
+   "leaf": "PathRemoved",
+   "seconds": 9.2,
+   "retried_on_claim_subgraph": true,
+   "error": null,
+   "returncode": 0,
+   "n_justifications": 1,
+   "facts": [
+    {
+     "prop": "pathEverTrackedCount",
+     "value": 2
+    },
+    {
+     "prop": "pathExactMatchCount",
+     "value": 0
+    },
+    {
+     "prop": "extractionVotes",
+     "value": 2
+    },
+    {
+     "prop": "pathIgnoredCount",
+     "value": 0
+    },
+    {
+     "prop": "pathSubmoduleCount",
+     "value": 0
+    },
+    {
+     "prop": "pathSuffixMatchCount",
+     "value": 0
+    }
+   ],
+   "axioms": [
+    "A_pathEverTrackedCount_ge_1 equivalentTo pathEverTrackedCount some integer[>= 1]",
+    "A_pathExactMatchCount_ge_0_le_0 equivalentTo pathExactMatchCount some integer[>= 0, <= 0]",
+    "A_pathSuffixMatchCount_ge_0_le_0 equivalentTo pathSuffixMatchCount some integer[>= 0, <= 0]",
+    "A_extractionVotes_ge_wp2_consensus_min_votes equivalentTo extractionVotes some integer[>= 2]",
+    "CheckedClaim equivalentTo A_extractionVotes_ge_wp2_consensus_min_votes and ManifestClaim",
+    "PathRemoved equivalentTo A_pathEverTrackedCount_ge_1 and A_pathExactMatchCount_ge_0_le_0 and A_pathIgnoredCount_ge_0_le_0 and A_pathSubmoduleCount_ge_0_le_0 and A_pathSuffixMatchCount_ge_0_le_0 and CheckedClaim and PathExistenceClaim",
+    "A_pathIgnoredCount_ge_0_le_0 equivalentTo pathIgnoredCount some integer[>= 0, <= 0]",
+    "PathRemoved subClassOf ContradictedClaim",
+    "A_pathSubmoduleCount_ge_0_le_0 equivalentTo pathSubmoduleCount some integer[>= 0, <= 0]"
+   ],
+   "closures": []
+  },
+  {
+   "key": "T1|docs/resume_prompt.txt",
+   "verdict": "ContradictedClaim",
+   "leaf": "PathRemoved",
+   "seconds": 8.35,
+   "retried_on_claim_subgraph": true,
+   "error": null,
+   "returncode": 0,
+   "n_justifications": 1,
+   "facts": [
+    {
+     "prop": "pathEverTrackedCount",
+     "value": 2
+    },
+    {
+     "prop": "extractionVotes",
+     "value": 3
+    },
+    {
+     "prop": "pathSubmoduleCount",
+     "value": 0
+    },
+    {
+     "prop": "pathSuffixMatchCount",
+     "value": 0
+    },
+    {
+     "prop": "pathIgnoredCount",
+     "value": 0
+    },
+    {
+     "prop": "pathExactMatchCount",
+     "value": 0
+    }
+   ],
+   "axioms": [
+    "A_pathExactMatchCount_ge_0_le_0 equivalentTo pathExactMatchCount some integer[>= 0, <= 0]",
+    "A_extractionVotes_ge_wp2_consensus_min_votes equivalentTo extractionVotes some integer[>= 2]",
+    "CheckedClaim equivalentTo A_extractionVotes_ge_wp2_consensus_min_votes and ManifestClaim",
+    "PathRemoved subClassOf ContradictedClaim",
+    "A_pathSubmoduleCount_ge_0_le_0 equivalentTo pathSubmoduleCount some integer[>= 0, <= 0]",
+    "A_pathEverTrackedCount_ge_1 equivalentTo pathEverTrackedCount some integer[>= 1]",
+    "A_pathSuffixMatchCount_ge_0_le_0 equivalentTo pathSuffixMatchCount some integer[>= 0, <= 0]",
+    "PathRemoved equivalentTo A_pathEverTrackedCount_ge_1 and A_pathExactMatchCount_ge_0_le_0 and A_pathIgnoredCount_ge_0_le_0 and A_pathSubmoduleCount_ge_0_le_0 and A_pathSuffixMatchCount_ge_0_le_0 and CheckedClaim and PathExistenceClaim",
+    "A_pathIgnoredCount_ge_0_le_0 equivalentTo pathIgnoredCount some integer[>= 0, <= 0]"
+   ],
+   "closures": []
+  },
+  {
+   "key": "T1|docs/vibe/context.md",
+   "verdict": "ContradictedClaim",
+   "leaf": "PathRemoved",
+   "seconds": 7.35,
+   "retried_on_claim_subgraph": true,
+   "error": null,
+   "returncode": 0,
+   "n_justifications": 1,
+   "facts": [
+    {
+     "prop": "pathSubmoduleCount",
+     "value": 0
+    },
+    {
+     "prop": "pathIgnoredCount",
+     "value": 0
+    },
+    {
+     "prop": "pathSuffixMatchCount",
+     "value": 0
+    },
+    {
+     "prop": "pathEverTrackedCount",
+     "value": 2
+    },
+    {
+     "prop": "pathExactMatchCount",
+     "value": 0
+    },
+    {
+     "prop": "extractionVotes",
+     "value": 2
+    }
+   ],
+   "axioms": [
+    "A_pathEverTrackedCount_ge_1 equivalentTo pathEverTrackedCount some integer[>= 1]",
+    "A_pathExactMatchCount_ge_0_le_0 equivalentTo pathExactMatchCount some integer[>= 0, <= 0]",
+    "A_pathSuffixMatchCount_ge_0_le_0 equivalentTo pathSuffixMatchCount some integer[>= 0, <= 0]",
+    "A_extractionVotes_ge_wp2_consensus_min_votes equivalentTo extractionVotes some integer[>= 2]",
+    "CheckedClaim equivalentTo A_extractionVotes_ge_wp2_consensus_min_votes and ManifestClaim",
+    "PathRemoved equivalentTo A_pathEverTrackedCount_ge_1 and A_pathExactMatchCount_ge_0_le_0 and A_pathIgnoredCount_ge_0_le_0 and A_pathSubmoduleCount_ge_0_le_0 and A_pathSuffixMatchCount_ge_0_le_0 and CheckedClaim and PathExistenceClaim",
+    "A_pathIgnoredCount_ge_0_le_0 equivalentTo pathIgnoredCount some integer[>= 0, <= 0]",
+    "PathRemoved subClassOf ContradictedClaim",
+    "A_pathSubmoduleCount_ge_0_le_0 equivalentTo pathSubmoduleCount some integer[>= 0, <= 0]"
+   ],
+   "closures": []
+  },
+  {
+   "key": "T1|docs/design/calendar-contract.md",
+   "verdict": "SupportedClaim",
+   "leaf": "PathFoundExact",
+   "seconds": 4.78,
+   "retried_on_claim_subgraph": false,
+   "error": null,
+   "returncode": 0,
+   "n_justifications": 1,
+   "facts": [
+    {
+     "prop": "pathExactMatchCount",
+     "value": 1
+    },
+    {
+     "prop": "extractionVotes",
+     "value": 3
+    }
+   ],
+   "axioms": [
+    "PathFoundExact equivalentTo A_pathExactMatchCount_ge_1 and CheckedClaim and PathExistenceClaim",
+    "A_extractionVotes_ge_wp2_consensus_min_votes equivalentTo extractionVotes some integer[>= 2]",
+    "A_pathExactMatchCount_ge_1 equivalentTo pathExactMatchCount some integer[>= 1]",
+    "CheckedClaim equivalentTo A_extractionVotes_ge_wp2_consensus_min_votes and ManifestClaim",
+    "PathFoundExact subClassOf SupportedClaim"
+   ],
+   "closures": []
+  }
+ ]
+}

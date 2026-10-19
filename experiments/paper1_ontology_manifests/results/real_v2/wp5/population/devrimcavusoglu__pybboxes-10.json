@@ -1,0 +1,1439 @@
+{
+ "repo": "devrimcavusoglu/pybboxes",
+ "snapshot_date": "2022-11-30",
+ "status": "ok",
+ "unmineable": false,
+ "unmineable_reason": null,
+ "replaces": null,
+ "settings": {
+  "dedup": true,
+  "complexity": false,
+  "dataset": null,
+  "sensitivity": false,
+  "snapshot_commit": "6355977cd2e1c8d31deeddbfee51473373cb69b1",
+  "mode": "wp5_snapshot_commit",
+  "test_patch_files": [
+   "tests/pybboxes/boxes/test_albumentations_bounding_box.py",
+   "tests/pybboxes/boxes/test_coco_bounding_box.py",
+   "tests/pybboxes/boxes/test_fiftyone_bounding_box.py",
+   "tests/pybboxes/boxes/test_voc_bounding_box.py",
+   "tests/pybboxes/boxes/test_yolo_bounding_box.py",
+   "tests/pybboxes/conftest.py"
+  ],
+  "package_roots": [
+   "pybboxes"
+  ]
+ },
+ "versions": {
+  "owlready2": "0.51",
+  "pymannkendall": "1.4.3",
+  "lizard": "1.24.1",
+  "numpy": "2.5.3",
+  "scipy": "1.18.1",
+  "python": "3.12.15",
+  "git": "git version 2.53.0"
+ },
+ "task_id": "devrimcavusoglu__pybboxes-10",
+ "base_commit": "6355977cd2e1c8d31deeddbfee51473373cb69b1",
+ "measures": {
+  "monthsObserved": 8,
+  "monthsSinceLastCommit": 1,
+  "distinctAuthorsInWindow": 4,
+  "commitMKTau": -0.25,
+  "commitMKpValue": 0.454427,
+  "activeMonthCount": 6,
+  "activeMonthRatio": 0.75,
+  "meanMonthlyCommits": 7.625,
+  "commitsLast3Months": 5,
+  "commitCountCV": 1.185666,
+  "commitCountCVSample": 1.267531,
+  "commitHalfRatio": 0.270833,
+  "commitSecondHalfMean": 3.25,
+  "churnCV": 1.277802,
+  "linesAddedCV": 1.168781,
+  "mergeMonthRatio": 0.625,
+  "multiAuthorMonthRatio": 0.75,
+  "bugFixRatioFirstHalf": 0.045977,
+  "bugFixRatioSecondHalf": 0.210256,
+  "bugFixHalfRatio": 4.573077,
+  "locSeriesLength": 8,
+  "locRelSenSlopeAnnual": 1.18029,
+  "locMKTau": 0.928571,
+  "locMKS": 26,
+  "locMKpValue": 0.001681,
+  "locSenSlope": 128.75,
+  "locStart": 288,
+  "locEnd": 1411,
+  "locDelta": 1123,
+  "locGrowthRate": 3.899306,
+  "locChangePct": 389.930556,
+  "locEndToStartRatio": 4.899306,
+  "locGrowthLast3": 0.000709,
+  "featureCommitsFirstHalf": 0,
+  "featureCommitsSecondHalf": 0,
+  "featureCommitsTotal": 0,
+  "locDeltaPerFeature": 1123.0,
+  "recentAgentCommitRatio": 0.0,
+  "featCommitCount": 0,
+  "bugFixCommitCount": 9,
+  "commitCount": 61,
+  "monthly_series": {
+   "months": [
+    "2022-04",
+    "2022-05",
+    "2022-06",
+    "2022-07",
+    "2022-08",
+    "2022-09",
+    "2022-10",
+    "2022-11"
+   ],
+   "commits": [
+    2,
+    4,
+    29,
+    13,
+    8,
+    0,
+    5,
+    0
+   ],
+   "loc": [
+    288,
+    577,
+    1173,
+    1208,
+    1410,
+    1410,
+    1411,
+    1411
+   ]
+  }
+ },
+ "window": {
+  "L": 36,
+  "first_month": "2022-04",
+  "last_month": "2022-11",
+  "n_months": 8,
+  "left_truncated": true,
+  "first_commit_month": "2022-04",
+  "mined_months": 8,
+  "commits_in_window": 61,
+  "commits_in_history": 61
+ },
+ "loc_instrument": {
+  "instrument": "nonblank-source-lines-v1",
+  "status": "ok",
+  "months": 8,
+  "month_end_commits_distinct": 6,
+  "source_blobs": 75,
+  "blobs_fetched": 0,
+  "t_ls_tree_s": 0.04844742501154542,
+  "t_fetch_s": 0.007203139946796,
+  "t_read_s": 0.00821141799679026,
+  "series_present": true,
+  "extensions": [
+   ".bash",
+   ".c",
+   ".cc",
+   ".cjs",
+   ".clj",
+   ".cpp",
+   ".cs",
+   ".cxx",
+   ".dart",
+   ".erl",
+   ".ex",
+   ".exs",
+   ".f90",
+   ".go",
+   ".groovy",
+   ".h",
+   ".hh",
+   ".hpp",
+   ".hs",
+   ".java",
+   ".jl",
+   ".js",
+   ".jsx",
+   ".kt",
+   ".kts",
+   ".lua",
+   ".m",
+   ".mjs",
+   ".ml",
+   ".mm",
+   ".nim",
+   ".php",
+   ".pl",
+   ".pm",
+   ".py",
+   ".pyi",
+   ".r",
+   ".rb",
+   ".rs",
+   ".scala",
+   ".sh",
+   ".sql",
+   ".svelte",
+   ".swift",
+   ".ts",
+   ".tsx",
+   ".vue",
+   ".zig"
+  ],
+  "excluded_dirs": [
+   "node_modules",
+   "vendor",
+   "vendored",
+   "third_party",
+   "site-packages",
+   "bower_components"
+  ],
+  "max_blob_bytes": 1000000,
+  "first_parent": true
+ },
+ "mining": {
+  "churn": {
+   "t_churn_raw_s": 0.012804896978195757,
+   "t_churn_fetch_s": 0.9713232009671628,
+   "t_churn_numstat_s": 0.02194946602685377,
+   "blobs_fetched_churn": 197
+  },
+  "timings": {
+   "t_clone": 0.004,
+   "t_mine": 1.025,
+   "t_loc": 0.064,
+   "t_reason_A": 2.266
+  },
+  "cached": false
+ },
+ "stage_a": {
+  "commits": 61,
+  "reasoned_commits": 57,
+  "inconsistent_chunks": 0,
+  "chunk_timings": [
+   {
+    "tbox_load_s": 0.039764366985764354,
+    "abox_load_s": 0.009509369963780046,
+    "reason_s": 2.210695639019832,
+    "extract_s": 0.0016679110121913254,
+    "total_s": 2.2619364100391977,
+    "commits": 57
+   }
+  ],
+  "tbox_sha256": "f5ba00eaa76dc3582415cdf566fbd7abc1d3f2797ca928f41dad106dc1c0bdb5"
+ },
+ "activity": {
+  "last_commit_date": "2022-10-06T14:19:48+00:00",
+  "months_since_last_commit": 1,
+  "distinct_authors_in_window": 4,
+  "merge_commits_in_window": 16
+ },
+ "agent_adoption_date": null,
+ "commit_label_counts": {
+  "BugFixCommit": 9,
+  "FeatureCommit": 0,
+  "AgentCommit": 0
+ },
+ "series_months": [
+  {
+   "month": "2022-04",
+   "commit_count": 2,
+   "merge_count": 0,
+   "unique_authors": 2,
+   "lines_added": 356,
+   "lines_deleted": 0,
+   "total_churn": 356,
+   "files_changed": 8,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 288,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-05",
+   "commit_count": 4,
+   "merge_count": 2,
+   "unique_authors": 2,
+   "lines_added": 633,
+   "lines_deleted": 252,
+   "total_churn": 885,
+   "files_changed": 23,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 577,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-06",
+   "commit_count": 29,
+   "merge_count": 7,
+   "unique_authors": 4,
+   "lines_added": 1511,
+   "lines_deleted": 757,
+   "total_churn": 2268,
+   "files_changed": 107,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 1173,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-07",
+   "commit_count": 13,
+   "merge_count": 3,
+   "unique_authors": 2,
+   "lines_added": 1556,
+   "lines_deleted": 1317,
+   "total_churn": 2873,
+   "files_changed": 62,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 1208,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-08",
+   "commit_count": 8,
+   "merge_count": 1,
+   "unique_authors": 2,
+   "lines_added": 159,
+   "lines_deleted": 63,
+   "total_churn": 222,
+   "files_changed": 28,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 1410,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-09",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 1410,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-10",
+   "commit_count": 5,
+   "merge_count": 3,
+   "unique_authors": 2,
+   "lines_added": 1,
+   "lines_deleted": 0,
+   "total_churn": 1,
+   "files_changed": 1,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 1411,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-11",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 1411,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  }
+ ],
+ "measures_derived": {
+  "bugFixRatioFirstHalf": 0.045977,
+  "bugFixRatioSecondHalf": 0.210256,
+  "bugFixHalfRatio": 4.573077,
+  "featureCommitsFirstHalf": 0,
+  "featureCommitsSecondHalf": 0,
+  "featureCommitsTotal": 0,
+  "locDeltaPerFeature": 1123.0,
+  "recentAgentCommitRatio": 0.0
+ },
+ "modules_meta": {
+  "anchor_S": "2022-12-29T21:49:28+00:00",
+  "window_months": 12,
+  "package_roots": [
+   "pybboxes"
+  ],
+  "n_modules": 5,
+  "n_source_files": 13,
+  "n_window_commits": 42,
+  "cached": false,
+  "timings": {
+   "t_tree_loc": 0.773,
+   "t_history": 0.01,
+   "t_numstat": 0.859
+  },
+  "module_loc_instrument": "nonblank-source-lines-v1",
+  "label_counts": {
+   "StableModule": 0,
+   "ActiveModule": 5,
+   "undetermined": 0
+  },
+  "thresholds": {
+   "mod_window_months": 12,
+   "mod_stable_max_rel_churn": 0.1,
+   "mod_stable_max_change_months": 2
+  }
+ },
+ "inferred": {
+  "a0.05_L36_D12_G0.05_orig": {
+   "classes": [
+    "CopyPasteEvidence",
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIIConformant",
+    "LawIVConformant",
+    "LawVConformant",
+    "LawVIConformant",
+    "LawVIIConformant",
+    "LawVIIConformantRatio",
+    "LawVIIIConformant",
+    "LocPerFeatureHigh",
+    "MKApplicable",
+    "MergeActive",
+    "MultiAuthorActive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": "urn:senso:explanations:devrimcavusoglu__pybboxes-10:d20298612d99",
+   "tbox_sha256": "d20298612d99fa8f5c1a63c70eaab0195a3e82e2d6780de3bd1fd3ced72d6e5d",
+   "abox_triples": 90,
+   "t_reason_B_s": 2.201
+  }
+ },
+ "primary_config": "a0.05_L36_D12_G0.05_orig",
+ "project_iri": "http://senso-framework.org/data/devrimcavusoglu__pybboxes-10",
+ "consistent": true,
+ "inferred_labels": [
+  "CopyPasteEvidence",
+  "GrowthStage",
+  "LawIConformant",
+  "LawIIIConformant",
+  "LawIVConformant",
+  "LawVConformant",
+  "LawVIConformant",
+  "LawVIIConformant",
+  "LawVIIConformantRatio",
+  "LawVIIIConformant",
+  "LocPerFeatureHigh",
+  "MKApplicable",
+  "MergeActive",
+  "MultiAuthorActive",
+  "RBActiveDevelopmentStage",
+  "RecentlyActive",
+  "SubstantialLocGrowth"
+ ],
+ "stage_labels": [
+  "GrowthStage",
+  "RBActiveDevelopmentStage"
+ ],
+ "law_labels": {
+  "I": "LawIConformant",
+  "III": "LawIIIConformant",
+  "IV": "LawIVConformant",
+  "V": "LawVConformant",
+  "VI": "LawVIConformant",
+  "VII": "LawVIIConformant",
+  "VIII": "LawVIIIConformant"
+ },
+ "tbox_sha256_stage_b": "d20298612d99fa8f5c1a63c70eaab0195a3e82e2d6780de3bd1fd3ced72d6e5d",
+ "tbox_sha256_stage_a": "f5ba00eaa76dc3582415cdf566fbd7abc1d3f2797ca928f41dad106dc1c0bdb5",
+ "summary": {
+  "c1": "A",
+  "c2": "A",
+  "cf": "A",
+  "note": "debug summary; run_rq1_v2.py reads `inferred` and recomputes CF itself"
+ },
+ "modules": {
+  "pybboxes/__init__.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "pybboxes/__init__.py",
+    "moduleLoc": 10,
+    "moduleCommitsInWindow": 12,
+    "moduleChangeMonthsInWindow": 6,
+    "moduleLinesChangedInWindow": 41,
+    "moduleRelChurnInWindow": 4.1,
+    "moduleMonthsSinceLastChange": 0
+   },
+   "iri": "http://senso-framework.org/data/devrimcavusoglu__pybboxes-10/module/pybboxes___init__.py-558ef3",
+   "abox_asserted": true
+  },
+  "pybboxes/_typing.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "RarelyChangedModule"
+   ],
+   "measures": {
+    "modulePath": "pybboxes/_typing.py",
+    "moduleLoc": 6,
+    "moduleCommitsInWindow": 3,
+    "moduleChangeMonthsInWindow": 2,
+    "moduleLinesChangedInWindow": 24,
+    "moduleRelChurnInWindow": 4.0,
+    "moduleMonthsSinceLastChange": 5
+   },
+   "iri": "http://senso-framework.org/data/devrimcavusoglu__pybboxes-10/module/pybboxes__typing.py-de106d",
+   "abox_asserted": true
+  },
+  "pybboxes/boxes": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "RarelyChangedModule"
+   ],
+   "measures": {
+    "modulePath": "pybboxes/boxes",
+    "moduleLoc": 613,
+    "moduleCommitsInWindow": 12,
+    "moduleChangeMonthsInWindow": 2,
+    "moduleLinesChangedInWindow": 1145,
+    "moduleRelChurnInWindow": 1.867863,
+    "moduleMonthsSinceLastChange": 4
+   },
+   "iri": "http://senso-framework.org/data/devrimcavusoglu__pybboxes-10/module/pybboxes_boxes-683c25",
+   "abox_asserted": true
+  },
+  "pybboxes/functional.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "RarelyChangedModule"
+   ],
+   "measures": {
+    "modulePath": "pybboxes/functional.py",
+    "moduleLoc": 78,
+    "moduleCommitsInWindow": 3,
+    "moduleChangeMonthsInWindow": 2,
+    "moduleLinesChangedInWindow": 107,
+    "moduleRelChurnInWindow": 1.371795,
+    "moduleMonthsSinceLastChange": 5
+   },
+   "iri": "http://senso-framework.org/data/devrimcavusoglu__pybboxes-10/module/pybboxes_functional.py-0be414",
+   "abox_asserted": true
+  },
+  "pybboxes/utils.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "RarelyChangedModule"
+   ],
+   "measures": {
+    "modulePath": "pybboxes/utils.py",
+    "moduleLoc": 30,
+    "moduleCommitsInWindow": 2,
+    "moduleChangeMonthsInWindow": 1,
+    "moduleLinesChangedInWindow": 37,
+    "moduleRelChurnInWindow": 1.233333,
+    "moduleMonthsSinceLastChange": 6
+   },
+   "iri": "http://senso-framework.org/data/devrimcavusoglu__pybboxes-10/module/pybboxes_utils.py-13df05",
+   "abox_asserted": true
+  }
+ },
+ "explanations": {
+  "stage:GrowthStage": {
+   "class": "GrowthStage",
+   "individual": "http://senso-framework.org/data/devrimcavusoglu__pybboxes-10",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/devrimcavusoglu__pybboxes-10 type http://senso-framework.org/ontology/seo#GrowthStage",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKTau_gt_0",
+       "text": "A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "GrowthStage",
+       "text": "GrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKpValue_lt_mk_alpha",
+       "text": "A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "devrimcavusoglu__pybboxes-10",
+       "prop": "locSeriesLength",
+       "value": 8,
+       "raw": "devrimcavusoglu__pybboxes-10 locSeriesLength 8"
+      },
+      {
+       "subject": "devrimcavusoglu__pybboxes-10",
+       "prop": "locMKpValue",
+       "value": 0.001681,
+       "raw": "devrimcavusoglu__pybboxes-10 locMKpValue 0.001681"
+      },
+      {
+       "subject": "devrimcavusoglu__pybboxes-10",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "devrimcavusoglu__pybboxes-10 type SoftwareProject"
+      },
+      {
+       "subject": "devrimcavusoglu__pybboxes-10",
+       "prop": "locMKTau",
+       "value": 0.928571,
+       "raw": "devrimcavusoglu__pybboxes-10 locMKTau 0.928571"
+      }
+     ],
+     "closures": [],
+     "raw": "A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\ndevrimcavusoglu__pybboxes-10 locSeriesLength 8\nA_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\nGrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject\ndevrimcavusoglu__pybboxes-10 locMKpValue 0.001681\nA_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]\ndevrimcavusoglu__pybboxes-10 type SoftwareProject\nA_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\ndevrimcavusoglu__pybboxes-10 locMKTau 0.928571"
+    }
+   ],
+   "raw_text": "Axiom: devrimcavusoglu__pybboxes-10 type GrowthStage\n\nExplanation(s): \n1)   A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\n     devrimcavusoglu__pybboxes-10 locSeriesLength 8\n     A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\n     GrowthStage equivalentTo A_locMKTau_gt_0\n                              and A_locMKpValue_lt_mk_alpha\n                              and MKApplicable\n                              and SoftwareProject\n     devrimcavusoglu__pybboxes-10 locMKpValue 0.001681\n     A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]\n     devrimcavusoglu__pybboxes-10 type SoftwareProject\n     A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\n     devrimcavusoglu__pybboxes-10 locMKTau 0.928571\n\n\n",
+   "seconds": 2.3697141670272686,
+   "returncode": 0,
+   "error": null
+  },
+  "stage:RBActiveDevelopmentStage": {
+   "class": "RBActiveDevelopmentStage",
+   "individual": "http://senso-framework.org/data/devrimcavusoglu__pybboxes-10",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/devrimcavusoglu__pybboxes-10 type http://senso-framework.org/ontology/seo#RBActiveDevelopmentStage",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable"
+      },
+      {
+       "kind": "definition",
+       "subject": "SubstantialLocGrowth",
+       "text": "SubstantialLocGrowth equivalentTo A_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKTau_gt_0",
+       "text": "A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "GrowthStage",
+       "text": "GrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year",
+       "text": "A_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year equivalentTo locRelSenSlopeAnnual some decimal[>= 0.05]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]"
+      },
+      {
+       "kind": "definition",
+       "subject": "RBActiveDevelopmentStage",
+       "text": "RBActiveDevelopmentStage equivalentTo GrowthStage and RecentlyActive and SoftwareProject and SubstantialLocGrowth"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKpValue_lt_mk_alpha",
+       "text": "A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]"
+      },
+      {
+       "kind": "definition",
+       "subject": "RecentlyActive",
+       "text": "RecentlyActive equivalentTo A_monthsSinceLastCommit_lt_rb_dormancy_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_monthsSinceLastCommit_lt_rb_dormancy_months",
+       "text": "A_monthsSinceLastCommit_lt_rb_dormancy_months equivalentTo monthsSinceLastCommit some integer[< 12]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "devrimcavusoglu__pybboxes-10",
+       "prop": "locSeriesLength",
+       "value": 8,
+       "raw": "devrimcavusoglu__pybboxes-10 locSeriesLength 8"
+      },
+      {
+       "subject": "devrimcavusoglu__pybboxes-10",
+       "prop": "locMKpValue",
+       "value": 0.001681,
+       "raw": "devrimcavusoglu__pybboxes-10 locMKpValue 0.001681"
+      },
+      {
+       "subject": "devrimcavusoglu__pybboxes-10",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "devrimcavusoglu__pybboxes-10 type SoftwareProject"
+      },
+      {
+       "subject": "devrimcavusoglu__pybboxes-10",
+       "prop": "monthsSinceLastCommit",
+       "value": 1,
+       "raw": "devrimcavusoglu__pybboxes-10 monthsSinceLastCommit 1"
+      },
+      {
+       "subject": "devrimcavusoglu__pybboxes-10",
+       "prop": "locRelSenSlopeAnnual",
+       "value": 1.18029,
+       "raw": "devrimcavusoglu__pybboxes-10 locRelSenSlopeAnnual 1.18029"
+      },
+      {
+       "subject": "devrimcavusoglu__pybboxes-10",
+       "prop": "locMKTau",
+       "value": 0.928571,
+       "raw": "devrimcavusoglu__pybboxes-10 locMKTau 0.928571"
+      }
+     ],
+     "closures": [],
+     "raw": "A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\ndevrimcavusoglu__pybboxes-10 locSeriesLength 8\nSubstantialLocGrowth equivalentTo A_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year and SoftwareProject\nA_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\nGrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject\nA_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year equivalentTo locRelSenSlopeAnnual some decimal[>= 0.05]\ndevrimcavusoglu__pybboxes-10 locMKpValue 0.001681\nA_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]\ndevrimcavusoglu__pybboxes-10 type SoftwareProject\ndevrimcavusoglu__pybboxes-10 monthsSinceLastCommit 1\nRBActiveDevelopmentStage equivalentTo GrowthStage and RecentlyActive and SoftwareProject and SubstantialLocGrowth\nA_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\ndevrimcavusoglu__pybboxes-10 locRelSenSlopeAnnual 1.18029\nRecentlyActive equivalentTo A_monthsSinceLastCommit_lt_rb_dormancy_months and SoftwareProject\ndevrimcavusoglu__pybboxes-10 locMKTau 0.928571\nA_monthsSinceLastCommit_lt_rb_dormancy_months equivalentTo monthsSinceLastCommit some integer[< 12]"
+    }
+   ],
+   "raw_text": "Axiom: devrimcavusoglu__pybboxes-10 type RBActiveDevelopmentStage\n\nExplanation(s): \n1)   A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\n     devrimcavusoglu__pybboxes-10 locSeriesLength 8\n     SubstantialLocGrowth equivalentTo A_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year\n                                       and SoftwareProject\n     A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\n     GrowthStage equivalentTo A_locMKTau_gt_0\n                              and A_locMKpValue_lt_mk_alpha\n                              and MKApplicable\n                              and SoftwareProject\n     A_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year equivalentTo locRelSenSlopeAnnual some decimal[>= 0.05]\n     devrimcavusoglu__pybboxes-10 locMKpValue 0.001681\n     A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]\n     devrimcavusoglu__pybboxes-10 type SoftwareProject\n     devrimcavusoglu__pybboxes-10 monthsSinceLastCommit 1\n     RBActiveDevelopmentStage equivalentTo GrowthStage\n                                           and RecentlyActive\n                                           and SoftwareProject\n                                           and SubstantialLocGrowth\n     A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\n     devrimcavusoglu__pybboxes-10 locRelSenSlopeAnnual 1.18029\n     RecentlyActive equivalentTo A_monthsSinceLastCommit_lt_rb_dormancy_months\n                                 and SoftwareProject\n     devrimcavusoglu__pybboxes-10 locMKTau 0.928571\n     A_monthsSinceLastCommit_lt_rb_dormancy_months equivalentTo monthsSinceLastCommit some integer[< 12]\n\n\n",
+   "seconds": 2.6642750119790435,
+   "returncode": 0,
+   "error": null
+  },
+  "lawI": {
+   "class": "LawIConformant",
+   "individual": "http://senso-framework.org/data/devrimcavusoglu__pybboxes-10",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/devrimcavusoglu__pybboxes-10 type http://senso-framework.org/ontology/seo#LawIConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law1_min_months",
+       "text": "A_monthsObserved_ge_p_law1_min_months equivalentTo monthsObserved some integer[>= 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawIConformant",
+       "text": "LawIConformant equivalentTo A_activeMonthRatio_ge_p_law1_active_ratio and A_monthsObserved_ge_p_law1_min_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_activeMonthRatio_ge_p_law1_active_ratio",
+       "text": "A_activeMonthRatio_ge_p_law1_active_ratio equivalentTo activeMonthRatio some decimal[>= 0.5]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "devrimcavusoglu__pybboxes-10",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "devrimcavusoglu__pybboxes-10 type SoftwareProject"
+      },
+      {
+       "subject": "devrimcavusoglu__pybboxes-10",
+       "prop": "monthsObserved",
+       "value": 8,
+       "raw": "devrimcavusoglu__pybboxes-10 monthsObserved 8"
+      },
+      {
+       "subject": "devrimcavusoglu__pybboxes-10",
+       "prop": "activeMonthRatio",
+       "value": 0.75,
+       "raw": "devrimcavusoglu__pybboxes-10 activeMonthRatio 0.75"
+      }
+     ],
+     "closures": [],
+     "raw": "devrimcavusoglu__pybboxes-10 type SoftwareProject\ndevrimcavusoglu__pybboxes-10 monthsObserved 8\ndevrimcavusoglu__pybboxes-10 activeMonthRatio 0.75\nA_monthsObserved_ge_p_law1_min_months equivalentTo monthsObserved some integer[>= 2]\nLawIConformant equivalentTo A_activeMonthRatio_ge_p_law1_active_ratio and A_monthsObserved_ge_p_law1_min_months and SoftwareProject\nA_activeMonthRatio_ge_p_law1_active_ratio equivalentTo activeMonthRatio some decimal[>= 0.5]"
+    }
+   ],
+   "raw_text": "Axiom: devrimcavusoglu__pybboxes-10 type LawIConformant\n\nExplanation(s): \n1)   devrimcavusoglu__pybboxes-10 type SoftwareProject\n     devrimcavusoglu__pybboxes-10 monthsObserved 8\n     devrimcavusoglu__pybboxes-10 activeMonthRatio 0.75\n     A_monthsObserved_ge_p_law1_min_months equivalentTo monthsObserved some integer[>= 2]\n     LawIConformant equivalentTo A_activeMonthRatio_ge_p_law1_active_ratio\n                                 and A_monthsObserved_ge_p_law1_min_months\n                                 and SoftwareProject\n     A_activeMonthRatio_ge_p_law1_active_ratio equivalentTo activeMonthRatio some decimal[>= 0.5]\n\n\n",
+   "seconds": 4.670769623015076,
+   "returncode": 0,
+   "error": null
+  },
+  "lawIII": {
+   "class": "LawIIIConformant",
+   "individual": "http://senso-framework.org/data/devrimcavusoglu__pybboxes-10",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/devrimcavusoglu__pybboxes-10 type http://senso-framework.org/ontology/seo#LawIIIConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law3_min_months",
+       "text": "A_monthsObserved_ge_p_law3_min_months equivalentTo monthsObserved some integer[>= 6]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawIIIConformant",
+       "text": "LawIIIConformant equivalentTo A_churnCV_lt_p_law3_churn_cv and A_monthsObserved_ge_p_law3_min_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_churnCV_lt_p_law3_churn_cv",
+       "text": "A_churnCV_lt_p_law3_churn_cv equivalentTo churnCV some decimal[< 2.0]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "devrimcavusoglu__pybboxes-10",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "devrimcavusoglu__pybboxes-10 type SoftwareProject"
+      },
+      {
+       "subject": "devrimcavusoglu__pybboxes-10",
+       "prop": "monthsObserved",
+       "value": 8,
+       "raw": "devrimcavusoglu__pybboxes-10 monthsObserved 8"
+      },
+      {
+       "subject": "devrimcavusoglu__pybboxes-10",
+       "prop": "churnCV",
+       "value": 1.277802,
+       "raw": "devrimcavusoglu__pybboxes-10 churnCV 1.277802"
+      }
+     ],
+     "closures": [],
+     "raw": "A_monthsObserved_ge_p_law3_min_months equivalentTo monthsObserved some integer[>= 6]\ndevrimcavusoglu__pybboxes-10 type SoftwareProject\nLawIIIConformant equivalentTo A_churnCV_lt_p_law3_churn_cv and A_monthsObserved_ge_p_law3_min_months and SoftwareProject\nA_churnCV_lt_p_law3_churn_cv equivalentTo churnCV some decimal[< 2.0]\ndevrimcavusoglu__pybboxes-10 monthsObserved 8\ndevrimcavusoglu__pybboxes-10 churnCV 1.277802"
+    }
+   ],
+   "raw_text": "Axiom: devrimcavusoglu__pybboxes-10 type LawIIIConformant\n\nExplanation(s): \n1)   A_monthsObserved_ge_p_law3_min_months equivalentTo monthsObserved some integer[>= 6]\n     devrimcavusoglu__pybboxes-10 type SoftwareProject\n     LawIIIConformant equivalentTo A_churnCV_lt_p_law3_churn_cv\n                                   and A_monthsObserved_ge_p_law3_min_months\n                                   and SoftwareProject\n     A_churnCV_lt_p_law3_churn_cv equivalentTo churnCV some decimal[< 2.0]\n     devrimcavusoglu__pybboxes-10 monthsObserved 8\n     devrimcavusoglu__pybboxes-10 churnCV 1.277802\n\n\n",
+   "seconds": 4.47565677203238,
+   "returncode": 0,
+   "error": null
+  },
+  "lawIV": {
+   "class": "LawIVConformant",
+   "individual": "http://senso-framework.org/data/devrimcavusoglu__pybboxes-10",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/devrimcavusoglu__pybboxes-10 type http://senso-framework.org/ontology/seo#LawIVConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law4_min_months",
+       "text": "A_monthsObserved_ge_p_law4_min_months equivalentTo monthsObserved some integer[>= 6]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawIVConformant",
+       "text": "LawIVConformant equivalentTo A_commitCountCV_lt_p_law4_commit_cv and A_monthsObserved_ge_p_law4_min_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_commitCountCV_lt_p_law4_commit_cv",
+       "text": "A_commitCountCV_lt_p_law4_commit_cv equivalentTo commitCountCV some decimal[< 1.5]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "devrimcavusoglu__pybboxes-10",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "devrimcavusoglu__pybboxes-10 type SoftwareProject"
+      },
+      {
+       "subject": "devrimcavusoglu__pybboxes-10",
+       "prop": "commitCountCV",
+       "value": 1.185666,
+       "raw": "devrimcavusoglu__pybboxes-10 commitCountCV 1.185666"
+      },
+      {
+       "subject": "devrimcavusoglu__pybboxes-10",
+       "prop": "monthsObserved",
+       "value": 8,
+       "raw": "devrimcavusoglu__pybboxes-10 monthsObserved 8"
+      }
+     ],
+     "closures": [],
+     "raw": "A_monthsObserved_ge_p_law4_min_months equivalentTo monthsObserved some integer[>= 6]\ndevrimcavusoglu__pybboxes-10 type SoftwareProject\ndevrimcavusoglu__pybboxes-10 commitCountCV 1.185666\nLawIVConformant equivalentTo A_commitCountCV_lt_p_law4_commit_cv and A_monthsObserved_ge_p_law4_min_months and SoftwareProject\ndevrimcavusoglu__pybboxes-10 monthsObserved 8\nA_commitCountCV_lt_p_law4_commit_cv equivalentTo commitCountCV some decimal[< 1.5]"
+    }
+   ],
+   "raw_text": "Axiom: devrimcavusoglu__pybboxes-10 type LawIVConformant\n\nExplanation(s): \n1)   A_monthsObserved_ge_p_law4_min_months equivalentTo monthsObserved some integer[>= 6]\n     devrimcavusoglu__pybboxes-10 type SoftwareProject\n     devrimcavusoglu__pybboxes-10 commitCountCV 1.185666\n     LawIVConformant equivalentTo A_commitCountCV_lt_p_law4_commit_cv\n                                  and A_monthsObserved_ge_p_law4_min_months\n                                  and SoftwareProject\n     devrimcavusoglu__pybboxes-10 monthsObserved 8\n     A_commitCountCV_lt_p_law4_commit_cv equivalentTo commitCountCV some decimal[< 1.5]\n\n\n",
+   "seconds": 4.561404066043906,
+   "returncode": 0,
+   "error": null
+  },
+  "lawV": {
+   "class": "LawVConformant",
+   "individual": "http://senso-framework.org/data/devrimcavusoglu__pybboxes-10",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/devrimcavusoglu__pybboxes-10 type http://senso-framework.org/ontology/seo#LawVConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "LawVConformant",
+       "text": "LawVConformant equivalentTo A_linesAddedCV_lt_p_law5_additions_cv and A_monthsObserved_ge_p_law5_min_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_linesAddedCV_lt_p_law5_additions_cv",
+       "text": "A_linesAddedCV_lt_p_law5_additions_cv equivalentTo linesAddedCV some decimal[< 2.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law5_min_months",
+       "text": "A_monthsObserved_ge_p_law5_min_months equivalentTo monthsObserved some integer[>= 4]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "devrimcavusoglu__pybboxes-10",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "devrimcavusoglu__pybboxes-10 type SoftwareProject"
+      },
+      {
+       "subject": "devrimcavusoglu__pybboxes-10",
+       "prop": "linesAddedCV",
+       "value": 1.168781,
+       "raw": "devrimcavusoglu__pybboxes-10 linesAddedCV 1.168781"
+      },
+      {
+       "subject": "devrimcavusoglu__pybboxes-10",
+       "prop": "monthsObserved",
+       "value": 8,
+       "raw": "devrimcavusoglu__pybboxes-10 monthsObserved 8"
+      }
+     ],
+     "closures": [],
+     "raw": "devrimcavusoglu__pybboxes-10 type SoftwareProject\ndevrimcavusoglu__pybboxes-10 linesAddedCV 1.168781\nLawVConformant equivalentTo A_linesAddedCV_lt_p_law5_additions_cv and A_monthsObserved_ge_p_law5_min_months and SoftwareProject\nA_linesAddedCV_lt_p_law5_additions_cv equivalentTo linesAddedCV some decimal[< 2.0]\nA_monthsObserved_ge_p_law5_min_months equivalentTo monthsObserved some integer[>= 4]\ndevrimcavusoglu__pybboxes-10 monthsObserved 8"
+    }
+   ],
+   "raw_text": "Axiom: devrimcavusoglu__pybboxes-10 type LawVConformant\n\nExplanation(s): \n1)   devrimcavusoglu__pybboxes-10 type SoftwareProject\n     devrimcavusoglu__pybboxes-10 linesAddedCV 1.168781\n     LawVConformant equivalentTo A_linesAddedCV_lt_p_law5_additions_cv\n                                 and A_monthsObserved_ge_p_law5_min_months\n                                 and SoftwareProject\n     A_linesAddedCV_lt_p_law5_additions_cv equivalentTo linesAddedCV some decimal[< 2.0]\n     A_monthsObserved_ge_p_law5_min_months equivalentTo monthsObserved some integer[>= 4]\n     devrimcavusoglu__pybboxes-10 monthsObserved 8\n\n\n",
+   "seconds": 4.585461842012592,
+   "returncode": 0,
+   "error": null
+  },
+  "lawVI": {
+   "class": "LawVIConformant",
+   "individual": "http://senso-framework.org/data/devrimcavusoglu__pybboxes-10",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/devrimcavusoglu__pybboxes-10 type http://senso-framework.org/ontology/seo#LawVIConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "subclass",
+       "subject": "GrowthStage",
+       "text": "GrowthStage subClassOf LawVIConformant"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKTau_gt_0",
+       "text": "A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKpValue_lt_mk_alpha",
+       "text": "A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]"
+      },
+      {
+       "kind": "definition",
+       "subject": "GrowthStage",
+       "text": "GrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "devrimcavusoglu__pybboxes-10",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "devrimcavusoglu__pybboxes-10 type SoftwareProject"
+      },
+      {
+       "subject": "devrimcavusoglu__pybboxes-10",
+       "prop": "locSeriesLength",
+       "value": 8,
+       "raw": "devrimcavusoglu__pybboxes-10 locSeriesLength 8"
+      },
+      {
+       "subject": "devrimcavusoglu__pybboxes-10",
+       "prop": "locMKpValue",
+       "value": 0.001681,
+       "raw": "devrimcavusoglu__pybboxes-10 locMKpValue 0.001681"
+      },
+      {
+       "subject": "devrimcavusoglu__pybboxes-10",
+       "prop": "locMKTau",
+       "value": 0.928571,
+       "raw": "devrimcavusoglu__pybboxes-10 locMKTau 0.928571"
+      }
+     ],
+     "closures": [],
+     "raw": "devrimcavusoglu__pybboxes-10 type SoftwareProject\nGrowthStage subClassOf LawVIConformant\nA_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\ndevrimcavusoglu__pybboxes-10 locSeriesLength 8\nA_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\nA_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\nGrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject\ndevrimcavusoglu__pybboxes-10 locMKpValue 0.001681\ndevrimcavusoglu__pybboxes-10 locMKTau 0.928571\nA_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]"
+    }
+   ],
+   "raw_text": "Axiom: devrimcavusoglu__pybboxes-10 type LawVIConformant\n\nExplanation(s): \n1)   devrimcavusoglu__pybboxes-10 type SoftwareProject\n     GrowthStage subClassOf LawVIConformant\n     A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\n     devrimcavusoglu__pybboxes-10 locSeriesLength 8\n     A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\n     A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\n     GrowthStage equivalentTo A_locMKTau_gt_0\n                              and A_locMKpValue_lt_mk_alpha\n                              and MKApplicable\n                              and SoftwareProject\n     devrimcavusoglu__pybboxes-10 locMKpValue 0.001681\n     devrimcavusoglu__pybboxes-10 locMKTau 0.928571\n     A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]\n\n\n",
+   "seconds": 4.6484613720094785,
+   "returncode": 0,
+   "error": null
+  },
+  "lawVII": {
+   "class": "LawVIIConformant",
+   "individual": "http://senso-framework.org/data/devrimcavusoglu__pybboxes-10",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/devrimcavusoglu__pybboxes-10 type http://senso-framework.org/ontology/seo#LawVIIConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_bugFixHalfRatio_ge_p_law7_tolerance",
+       "text": "A_bugFixHalfRatio_ge_p_law7_tolerance equivalentTo bugFixHalfRatio some decimal[>= 0.9]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawVIIConformantRatio",
+       "text": "LawVIIConformantRatio equivalentTo A_activeMonthCount_ge_p_law7_min_active_months and A_bugFixHalfRatio_ge_p_law7_tolerance and A_bugFixRatioFirstHalf_gt_0 and SoftwareProject"
+      },
+      {
+       "kind": "subclass",
+       "subject": "LawVIIConformantRatio",
+       "text": "LawVIIConformantRatio subClassOf LawVIIConformant"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_bugFixRatioFirstHalf_gt_0",
+       "text": "A_bugFixRatioFirstHalf_gt_0 equivalentTo bugFixRatioFirstHalf some decimal[> 0.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_activeMonthCount_ge_p_law7_min_active_months",
+       "text": "A_activeMonthCount_ge_p_law7_min_active_months equivalentTo activeMonthCount some integer[>= 4]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "devrimcavusoglu__pybboxes-10",
+       "prop": "bugFixRatioFirstHalf",
+       "value": 0.045977,
+       "raw": "devrimcavusoglu__pybboxes-10 bugFixRatioFirstHalf 0.045977"
+      },
+      {
+       "subject": "devrimcavusoglu__pybboxes-10",
+       "prop": "activeMonthCount",
+       "value": 6,
+       "raw": "devrimcavusoglu__pybboxes-10 activeMonthCount 6"
+      },
+      {
+       "subject": "devrimcavusoglu__pybboxes-10",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "devrimcavusoglu__pybboxes-10 type SoftwareProject"
+      },
+      {
+       "subject": "devrimcavusoglu__pybboxes-10",
+       "prop": "bugFixHalfRatio",
+       "value": 4.573077,
+       "raw": "devrimcavusoglu__pybboxes-10 bugFixHalfRatio 4.573077"
+      }
+     ],
+     "closures": [],
+     "raw": "devrimcavusoglu__pybboxes-10 bugFixRatioFirstHalf 0.045977\nA_bugFixHalfRatio_ge_p_law7_tolerance equivalentTo bugFixHalfRatio some decimal[>= 0.9]\ndevrimcavusoglu__pybboxes-10 activeMonthCount 6\nLawVIIConformantRatio equivalentTo A_activeMonthCount_ge_p_law7_min_active_months and A_bugFixHalfRatio_ge_p_law7_tolerance and A_bugFixRatioFirstHalf_gt_0 and SoftwareProject\ndevrimcavusoglu__pybboxes-10 type SoftwareProject\nLawVIIConformantRatio subClassOf LawVIIConformant\ndevrimcavusoglu__pybboxes-10 bugFixHalfRatio 4.573077\nA_bugFixRatioFirstHalf_gt_0 equivalentTo bugFixRatioFirstHalf some decimal[> 0.0]\nA_activeMonthCount_ge_p_law7_min_active_months equivalentTo activeMonthCount some integer[>= 4]"
+    }
+   ],
+   "raw_text": "Axiom: devrimcavusoglu__pybboxes-10 type LawVIIConformant\n\nExplanation(s): \n1)   devrimcavusoglu__pybboxes-10 bugFixRatioFirstHalf 0.045977\n     A_bugFixHalfRatio_ge_p_law7_tolerance equivalentTo bugFixHalfRatio some decimal[>= 0.9]\n     devrimcavusoglu__pybboxes-10 activeMonthCount 6\n     LawVIIConformantRatio equivalentTo A_activeMonthCount_ge_p_law7_min_active_months\n                                        and A_bugFixHalfRatio_ge_p_law7_tolerance\n                                        and A_bugFixRatioFirstHalf_gt_0\n                                        and SoftwareProject\n     devrimcavusoglu__pybboxes-10 type SoftwareProject\n     LawVIIConformantRatio subClassOf LawVIIConformant\n     devrimcavusoglu__pybboxes-10 bugFixHalfRatio 4.573077\n     A_bugFixRatioFirstHalf_gt_0 equivalentTo bugFixRatioFirstHalf some decimal[> 0.0]\n     A_activeMonthCount_ge_p_law7_min_active_months equivalentTo activeMonthCount some integer[>= 4]\n\n\n",
+   "seconds": 4.645371049991809,
+   "returncode": 0,
+   "error": null
+  },
+  "lawVIII": {
+   "class": "LawVIIIConformant",
+   "individual": "http://senso-framework.org/data/devrimcavusoglu__pybboxes-10",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/devrimcavusoglu__pybboxes-10 type http://senso-framework.org/ontology/seo#LawVIIIConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio",
+       "text": "A_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio equivalentTo multiAuthorMonthRatio some decimal[> 0.3]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_mergeMonthRatio_gt_p_law8_merge_ratio",
+       "text": "A_mergeMonthRatio_gt_p_law8_merge_ratio equivalentTo MergeActive"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio",
+       "text": "A_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio equivalentTo MultiAuthorActive"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawVIIIConformant",
+       "text": "LawVIIIConformant equivalentTo A_monthsObserved_ge_p_law8_min_months and MergeActive and MultiAuthorActive and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law8_min_months",
+       "text": "A_monthsObserved_ge_p_law8_min_months equivalentTo monthsObserved some integer[>= 6]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_mergeMonthRatio_gt_p_law8_merge_ratio",
+       "text": "A_mergeMonthRatio_gt_p_law8_merge_ratio equivalentTo mergeMonthRatio some decimal[> 0.3]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "devrimcavusoglu__pybboxes-10",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "devrimcavusoglu__pybboxes-10 type SoftwareProject"
+      },
+      {
+       "subject": "devrimcavusoglu__pybboxes-10",
+       "prop": "multiAuthorMonthRatio",
+       "value": 0.75,
+       "raw": "devrimcavusoglu__pybboxes-10 multiAuthorMonthRatio 0.75"
+      },
+      {
+       "subject": "devrimcavusoglu__pybboxes-10",
+       "prop": "monthsObserved",
+       "value": 8,
+       "raw": "devrimcavusoglu__pybboxes-10 monthsObserved 8"
+      },
+      {
+       "subject": "devrimcavusoglu__pybboxes-10",
+       "prop": "mergeMonthRatio",
+       "value": 0.625,
+       "raw": "devrimcavusoglu__pybboxes-10 mergeMonthRatio 0.625"
+      }
+     ],
+     "closures": [],
+     "raw": "devrimcavusoglu__pybboxes-10 type SoftwareProject\nA_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio equivalentTo multiAuthorMonthRatio some decimal[> 0.3]\nA_mergeMonthRatio_gt_p_law8_merge_ratio equivalentTo MergeActive\ndevrimcavusoglu__pybboxes-10 multiAuthorMonthRatio 0.75\nA_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio equivalentTo MultiAuthorActive\ndevrimcavusoglu__pybboxes-10 monthsObserved 8\nLawVIIIConformant equivalentTo A_monthsObserved_ge_p_law8_min_months and MergeActive and MultiAuthorActive and SoftwareProject\ndevrimcavusoglu__pybboxes-10 mergeMonthRatio 0.625\nA_monthsObserved_ge_p_law8_min_months equivalentTo monthsObserved some integer[>= 6]\nA_mergeMonthRatio_gt_p_law8_merge_ratio equivalentTo mergeMonthRatio some decimal[> 0.3]"
+    }
+   ],
+   "raw_text": "Axiom: devrimcavusoglu__pybboxes-10 type LawVIIIConformant\n\nExplanation(s): \n1)   devrimcavusoglu__pybboxes-10 type SoftwareProject\n     A_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio equivalentTo multiAuthorMonthRatio some decimal[> 0.3]\n     A_mergeMonthRatio_gt_p_law8_merge_ratio equivalentTo MergeActive\n     devrimcavusoglu__pybboxes-10 multiAuthorMonthRatio 0.75\n     A_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio equivalentTo MultiAuthorActive\n     devrimcavusoglu__pybboxes-10 monthsObserved 8\n     LawVIIIConformant equivalentTo A_monthsObserved_ge_p_law8_min_months\n                                    and MergeActive\n                                    and MultiAuthorActive\n                                    and SoftwareProject\n     devrimcavusoglu__pybboxes-10 mergeMonthRatio 0.625\n     A_monthsObserved_ge_p_law8_min_months equivalentTo monthsObserved some integer[>= 6]\n     A_mergeMonthRatio_gt_p_law8_merge_ratio equivalentTo mergeMonthRatio some decimal[> 0.3]\n\n\n",
+   "seconds": 3.797019988996908,
+   "returncode": 0,
+   "error": null
+  },
+  "module:pybboxes/boxes": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/devrimcavusoglu__pybboxes-10/module/pybboxes_boxes-683c25",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/devrimcavusoglu__pybboxes-10/module/pybboxes_boxes-683c25 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule subClassOf ActiveModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "pybboxes_boxes-683c25",
+       "prop": "type",
+       "value": "Module",
+       "raw": "pybboxes_boxes-683c25 type Module"
+      },
+      {
+       "subject": "pybboxes_boxes-683c25",
+       "prop": "moduleRelChurnInWindow",
+       "value": 1.867863,
+       "raw": "pybboxes_boxes-683c25 moduleRelChurnInWindow 1.867863"
+      }
+     ],
+     "closures": [],
+     "raw": "pybboxes_boxes-683c25 type Module\nHighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module\npybboxes_boxes-683c25 moduleRelChurnInWindow 1.867863\nHighRelChurnModule subClassOf ActiveModule\nA_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+    }
+   ],
+   "raw_text": "Axiom: pybboxes_boxes-683c25 type ActiveModule\n\nExplanation(s): \n1)   pybboxes_boxes-683c25 type Module\n     HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn\n                                     and Module\n     pybboxes_boxes-683c25 moduleRelChurnInWindow 1.867863\n     HighRelChurnModule subClassOf ActiveModule\n     A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\n\n\n",
+   "seconds": 2.3668744360329583,
+   "returncode": 0,
+   "error": null
+  },
+  "module:pybboxes/functional.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/devrimcavusoglu__pybboxes-10/module/pybboxes_functional.py-0be414",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/devrimcavusoglu__pybboxes-10/module/pybboxes_functional.py-0be414 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule subClassOf ActiveModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "pybboxes_functional.py-0be414",
+       "prop": "type",
+       "value": "Module",
+       "raw": "pybboxes_functional.py-0be414 type Module"
+      },
+      {
+       "subject": "pybboxes_functional.py-0be414",
+       "prop": "moduleRelChurnInWindow",
+       "value": 1.371795,
+       "raw": "pybboxes_functional.py-0be414 moduleRelChurnInWindow 1.371795"
+      }
+     ],
+     "closures": [],
+     "raw": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module\nHighRelChurnModule subClassOf ActiveModule\npybboxes_functional.py-0be414 type Module\nA_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\npybboxes_functional.py-0be414 moduleRelChurnInWindow 1.371795"
+    }
+   ],
+   "raw_text": "Axiom: pybboxes_functional.py-0be414 type ActiveModule\n\nExplanation(s): \n1)   HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn\n                                     and Module\n     HighRelChurnModule subClassOf ActiveModule\n     pybboxes_functional.py-0be414 type Module\n     A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\n     pybboxes_functional.py-0be414 moduleRelChurnInWindow 1.371795\n\n\n",
+   "seconds": 2.4529895100276917,
+   "returncode": 0,
+   "error": null
+  },
+  "module:pybboxes/utils.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/devrimcavusoglu__pybboxes-10/module/pybboxes_utils.py-13df05",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/devrimcavusoglu__pybboxes-10/module/pybboxes_utils.py-13df05 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule subClassOf ActiveModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "pybboxes_utils.py-13df05",
+       "prop": "moduleRelChurnInWindow",
+       "value": 1.233333,
+       "raw": "pybboxes_utils.py-13df05 moduleRelChurnInWindow 1.233333"
+      },
+      {
+       "subject": "pybboxes_utils.py-13df05",
+       "prop": "type",
+       "value": "Module",
+       "raw": "pybboxes_utils.py-13df05 type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module\nHighRelChurnModule subClassOf ActiveModule\nA_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\npybboxes_utils.py-13df05 moduleRelChurnInWindow 1.233333\npybboxes_utils.py-13df05 type Module"
+    }
+   ],
+   "raw_text": "Axiom: pybboxes_utils.py-13df05 type ActiveModule\n\nExplanation(s): \n1)   HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn\n                                     and Module\n     HighRelChurnModule subClassOf ActiveModule\n     A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\n     pybboxes_utils.py-13df05 moduleRelChurnInWindow 1.233333\n     pybboxes_utils.py-13df05 type Module\n\n\n",
+   "seconds": 2.3297660690150224,
+   "returncode": 0,
+   "error": null
+  },
+  "module:pybboxes/__init__.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/devrimcavusoglu__pybboxes-10/module/pybboxes___init__.py-558ef3",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/devrimcavusoglu__pybboxes-10/module/pybboxes___init__.py-558ef3 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule subClassOf ActiveModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "pybboxes___init__.py-558ef3",
+       "prop": "type",
+       "value": "Module",
+       "raw": "pybboxes___init__.py-558ef3 type Module"
+      },
+      {
+       "subject": "pybboxes___init__.py-558ef3",
+       "prop": "moduleRelChurnInWindow",
+       "value": 4.1,
+       "raw": "pybboxes___init__.py-558ef3 moduleRelChurnInWindow 4.1"
+      }
+     ],
+     "closures": [],
+     "raw": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module\nHighRelChurnModule subClassOf ActiveModule\nA_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\npybboxes___init__.py-558ef3 type Module\npybboxes___init__.py-558ef3 moduleRelChurnInWindow 4.1"
+    }
+   ],
+   "raw_text": "Axiom: pybboxes___init__.py-558ef3 type ActiveModule\n\nExplanation(s): \n1)   HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn\n                                     and Module\n     HighRelChurnModule subClassOf ActiveModule\n     A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\n     pybboxes___init__.py-558ef3 type Module\n     pybboxes___init__.py-558ef3 moduleRelChurnInWindow 4.1\n\n\n",
+   "seconds": 2.318356367992237,
+   "returncode": 0,
+   "error": null
+  },
+  "module:pybboxes/_typing.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/devrimcavusoglu__pybboxes-10/module/pybboxes__typing.py-de106d",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/devrimcavusoglu__pybboxes-10/module/pybboxes__typing.py-de106d type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule subClassOf ActiveModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "pybboxes__typing.py-de106d",
+       "prop": "type",
+       "value": "Module",
+       "raw": "pybboxes__typing.py-de106d type Module"
+      },
+      {
+       "subject": "pybboxes__typing.py-de106d",
+       "prop": "moduleRelChurnInWindow",
+       "value": 4.0,
+       "raw": "pybboxes__typing.py-de106d moduleRelChurnInWindow 4.0"
+      }
+     ],
+     "closures": [],
+     "raw": "pybboxes__typing.py-de106d type Module\nHighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module\nHighRelChurnModule subClassOf ActiveModule\nA_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\npybboxes__typing.py-de106d moduleRelChurnInWindow 4.0"
+    }
+   ],
+   "raw_text": "Axiom: pybboxes__typing.py-de106d type ActiveModule\n\nExplanation(s): \n1)   pybboxes__typing.py-de106d type Module\n     HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn\n                                     and Module\n     HighRelChurnModule subClassOf ActiveModule\n     A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\n     pybboxes__typing.py-de106d moduleRelChurnInWindow 4.0\n\n\n",
+   "seconds": 2.364385379012674,
+   "returncode": 0,
+   "error": null
+  }
+ },
+ "timings": {
+  "t_clone": 0.004,
+  "t_mine": 1.025,
+  "t_loc": 0.064,
+  "t_reason_A": 2.266,
+  "mining_cached": false,
+  "t_modules": 1.761,
+  "t_reason_B": 2.201,
+  "n_configs": 1,
+  "t_explain": 48.347,
+  "n_explain_calls": 14,
+  "t_writeback": 0.0,
+  "t_total": 57.193
+ }
+}

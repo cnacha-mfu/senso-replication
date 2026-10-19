@@ -1,0 +1,284 @@
+{
+ "task_id": "nephila__python-taiga-193",
+ "repo": "nephila/python-taiga",
+ "stage": "evolution",
+ "rounds": 1,
+ "rejects": {},
+ "flags": [
+  "kind3_dropped",
+  "length_violation_F_R",
+  "length_violation_F_I"
+ ],
+ "info": {
+  "slots": {
+   "test_root": "tests",
+   "P1": {
+    "replaced": "taiga",
+    "name": "core",
+    "F_R": "changes/core",
+    "F_I": "debian/core"
+   },
+   "P2": {
+    "replaced": null,
+    "F_R": "tests/test_userstories.py",
+    "F_I": "debian/internal.py"
+   },
+   "D": {
+    "replaced": null,
+    "F_R": "toolz",
+    "F_I": "boltons"
+   }
+  },
+  "why": {
+   "test_command": [
+    {
+     "root": "tests",
+     "T3": "SupportedClaim",
+     "T1": "SupportedClaim",
+     "collect_ok": true
+    }
+   ],
+   "kind1": {
+    "p1_idx": 1,
+    "gold0": "changes",
+    "unrelated": null,
+    "base_R": "changes",
+    "base_I": "debian"
+   },
+   "kind2": {
+    "p2_idx": null,
+    "n_deleted_py": 2,
+    "found": {
+     "F_R": "tests/test_userstories.py",
+     "F_I": "debian/internal.py"
+    }
+   },
+   "kind3": {
+    "run": null,
+    "install": null,
+    "test_ok": true,
+    "install_ok": true
+   },
+   "kind4": {
+    "deps": [],
+    "d_idx": null,
+    "src_R": "coverage",
+    "src_I": "coveralls",
+    "n_decls": 12,
+    "n_dist": 29
+   }
+  },
+  "length": {
+   "T": 264,
+   "F_R": 326,
+   "F_I": 331
+  },
+  "fallbacks": {
+   "F_R": [],
+   "F_I": [
+    "kind2_never_existed_fallback"
+   ]
+  },
+  "modes": {
+   "F_R": {
+    "1": "replace",
+    "2": "add",
+    "4": "add"
+   },
+   "F_I": {
+    "1": "add",
+    "2": "add",
+    "4": "add"
+   }
+  },
+  "length_diff": {
+   "F_R": 62,
+   "F_I": 67
+  },
+  "n_claims_T": 10,
+  "n_false": {
+   "F_R": 3,
+   "F_I": 3
+  },
+  "pointer_in_issue": false,
+  "gold_dirs": [
+   "changes",
+   "taiga/models"
+  ],
+  "gold_files": [
+   "changes/169.bugfix",
+   "changes/185.bugfix",
+   "taiga/models/base.py",
+   "taiga/models/models.py"
+  ]
+ },
+ "tokens": {
+  "F_R": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "changes/core",
+     "core"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "tests/test_userstories.py",
+     "test_userstories.py"
+    ]
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "toolz"
+    ]
+   }
+  ],
+  "F_I": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "debian/core",
+     "core"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "debian/internal.py",
+     "internal.py"
+    ]
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "boltons"
+    ]
+   }
+  ]
+ },
+ "unresolved_pre_hermit": [],
+ "sha256": {
+  "T": "c06519165202de30b614782c2c8a19797cdeb30193596f158d9eab1fba42be28",
+  "F_R": "9d9844195b4c68349633440a90ebbeb361900a2b5399d49ff3de0c8c4b13d6e8",
+  "F_I": "08fd3125761f96b4e58a408c9fbbfc7f7b85b142e92e43fc68a3b5f27bb8ff42"
+ },
+ "chars": {
+  "T": 264,
+  "F_R": 326,
+  "F_I": 331
+ },
+ "claims": {
+  "T": [
+   "T1|changes",
+   "T1|taiga",
+   "T1|taiga/models",
+   "T1|tests",
+   "T1|taiga/models/models.py",
+   "T1|taiga/models/base.py",
+   "T3|test_framework|pytest",
+   "T1|tests",
+   "T1|pyproject.toml",
+   "T6|python|3007000000@2"
+  ],
+  "F_R": [
+   "T1|changes",
+   "T1|changes/core",
+   "T1|taiga/models",
+   "T1|tests",
+   "T1|taiga/models/models.py",
+   "T1|taiga/models/base.py",
+   "T1|tests/test_userstories.py",
+   "T3|test_framework|pytest",
+   "T1|tests",
+   "T1|pyproject.toml",
+   "T4|toolz|",
+   "T6|python|3007000000@2"
+  ],
+  "F_I": [
+   "T1|changes",
+   "T1|taiga",
+   "T1|taiga/models",
+   "T1|tests",
+   "T1|debian/core",
+   "T1|taiga/models/models.py",
+   "T1|taiga/models/base.py",
+   "T1|debian/internal.py",
+   "T3|test_framework|pytest",
+   "T1|tests",
+   "T1|pyproject.toml",
+   "T4|boltons|",
+   "T6|python|3007000000@2"
+  ]
+ },
+ "python_spec": ">=3.7",
+ "token_audit": [
+  {
+   "cond": "F_R",
+   "kind": 1,
+   "type": "path",
+   "name": "changes/core",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 2,
+   "type": "path",
+   "name": "tests/test_userstories.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 4,
+   "type": "word",
+   "name": "toolz",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 1,
+   "type": "path",
+   "name": "debian/core",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 2,
+   "type": "path",
+   "name": "debian/internal.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 4,
+   "type": "word",
+   "name": "boltons",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  }
+ ],
+ "dist_imports_used": {
+  "toolz": null,
+  "boltons": null
+ }
+}

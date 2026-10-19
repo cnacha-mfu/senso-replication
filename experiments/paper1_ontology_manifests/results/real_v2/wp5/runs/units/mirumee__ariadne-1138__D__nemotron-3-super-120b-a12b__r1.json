@@ -1,0 +1,75 @@
+{
+ "unit_id": "mirumee__ariadne-1138__D__nemotron-3-super-120b-a12b__r1",
+ "task_id": "mirumee__ariadne-1138",
+ "repo": "mirumee/ariadne",
+ "stage": "initial_development",
+ "condition": "D",
+ "model": "nvidia/nemotron-3-super-120b-a12b",
+ "run": 1,
+ "order": 91,
+ "env_build_s": 58.4,
+ "real_agent_manifest_at_base": [],
+ "started": "2026-10-07T03:39:36.111610+00:00",
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 5570,
+  "sha256": "56fdd3347856fbf9d6dcd8f7193fd320fdc1f99b5ce5f1565e1115aafe27a645"
+ },
+ "condition_available": true,
+ "retries": 0,
+ "exit_status": "LimitsExceeded",
+ "error": "",
+ "steps": 40,
+ "wall_s": 80.1,
+ "prompt_tokens": 491984,
+ "completion_tokens": 4247,
+ "format_errors": 1,
+ "length_cutoffs": 0,
+ "api_errors": {
+  "429": 1
+ },
+ "n_queries": 40,
+ "keys_used": {
+  "NVIDIA_API_KEY_5": 12,
+  "NVIDIA_API_KEY_4": 14,
+  "NVIDIA_API_KEY": 12,
+  "NVIDIA_API_KEY_2": 3
+ },
+ "temperature": 0.7,
+ "top_p": 0.95,
+ "model_id_returned": "nvidia/nemotron-3-super-120b-a12b",
+ "mini_version": "2.4.6",
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 2,
+   "Y6": 40,
+   "hit_step_limit": 1,
+   "changed_lines": 39,
+   "gold_changed_lines": 1015,
+   "Y1": -36,
+   "Y2": 0,
+   "Y3": 0.0,
+   "Y3_gold": 0.0,
+   "Y3_excess": 0.0,
+   "Y3w": 0.2743589743589744,
+   "Y4": -4.70186179321029
+  },
+  "f2p_pass": 0,
+  "f2p_total": 4,
+  "p2p_pass": 0,
+  "p2p_total": 30,
+  "f2p_all_pass": false,
+  "p2p_all_pass": false,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 1.8
+ },
+ "status": "done",
+ "finished": "2026-10-07T03:40:58.226613+00:00"
+}

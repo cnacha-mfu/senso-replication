@@ -1,0 +1,107 @@
+{
+ "unit_id": "ttu__ruuvitag-sensor-41__A__claude-sonnet__r2",
+ "task_id": "ttu__ruuvitag-sensor-41",
+ "repo": "ttu/ruuvitag-sensor",
+ "stage": "phase_out",
+ "condition": "A",
+ "model": "claude-code/sonnet",
+ "run": 2,
+ "condition_meta": {},
+ "started": "2026-10-18T08:57:33.969216+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 5,
+ "tool_calls": 4,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 6999,
+  "cache_read_input_tokens": 63470,
+  "output_tokens": 1106,
+  "output_tokens_details": {
+   "thinking_tokens": 142
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 6999,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 8,
+   "outputTokens": 1106,
+   "cacheReadInputTokens": 63470,
+   "cacheCreationInputTokens": 6999,
+   "webSearchRequests": 0,
+   "costUSD": 0.045419,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 142,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.045419,
+ "result_text": "I changed the Data Format 3 check in `ruuvitag_sensor/ruuvi.py` so it accepts the shorter payloads that RuuviFW 1.2.8 sends. I haven't run the tests or tried it against real tag data.\n\nBefore, `_get_data_format_3` rejected any payload that wasn't exactly 54 hex characters. Firmware 1.2.8 trims trailing NULLs, so valid Format 3 data failed that length check. It now accepts anything from 18 to 54 characters. It still requires `03` at the format position, and it pads the payload with zeros back to 54 characters before returning it, so the decoder gets the full-length data it expects.\n\nI didn't touch the Format 2/4 detection, since it searches the decoded text for `ruu.vi/#` or `r/` and doesn't depend on length. I also didn't do #29, which the issue mentioned.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792327800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0.05,
+    "resetsAt": 1792327800
+   },
+   "seven_day": {
+    "utilization": 0.14,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 17.9,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 5,
+   "hit_step_limit": 0,
+   "changed_lines": 5,
+   "gold_changed_lines": 9,
+   "Y1": 1,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": -0.84799690655495
+  },
+  "f2p_pass": 2,
+  "f2p_total": 2,
+  "p2p_pass": 13,
+  "p2p_total": 13,
+  "f2p_all_pass": true,
+  "p2p_all_pass": true,
+  "resolved": true,
+  "reason": "resolved",
+  "test_seconds": 0.5
+ },
+ "status": "done",
+ "finished": "2026-10-18T08:57:53.204614+00:00"
+}

@@ -1,0 +1,111 @@
+{
+ "unit_id": "PyCQA__pyflakes-675__D__claude-sonnet__r2",
+ "task_id": "PyCQA__pyflakes-675",
+ "repo": "PyCQA/pyflakes",
+ "stage": "servicing",
+ "condition": "D",
+ "model": "claude-code/sonnet",
+ "run": 2,
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 3462,
+  "sha256": "868958dbd177358ae81241343a22e81d0398d6d5073a90da29ace8a6ed41f600"
+ },
+ "started": "2026-10-18T03:27:55.211363+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 4,
+ "tool_calls": 3,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 1647,
+  "cache_read_input_tokens": 73381,
+  "output_tokens": 940,
+  "output_tokens_details": {
+   "thinking_tokens": 160
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 1647,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 8,
+   "outputTokens": 940,
+   "cacheReadInputTokens": 73381,
+   "cacheCreationInputTokens": 1647,
+   "webSearchRequests": 0,
+   "costUSD": 0.023342099999999998,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 160,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.023342099999999998,
+ "result_text": "I fixed the crash: pyflakes no longer raises an internal error on `__all__, = (\"fizz\", \"buzz\")`. Running `python -m pyflakes` on that exact file now prints nothing, and the existing test suite passes (714 passed, 44 skipped). I didn't add a test, since you said not to touch tests.\n\nThe cause was in `pyflakes/checker.py`. Pyflakes treated any binding named `__all__` at module level as an export list. With `__all__, = ...`, the name's parent node is a tuple of targets, not the assignment, so `ExportBinding` looked for `.value` on a `Tuple` and failed.\n\nThe check now only creates an `ExportBinding` when `__all__` is the direct target of an `Assign`, `AugAssign` or `AnnAssign`. Anything else, such as the tuple-unpacking form, is treated as an ordinary binding.\n\nThe issue suggested reporting this form as invalid to the user. I didn't add a warning. The unpacked `__all__` is just not tracked as an export list, so the names `fizz` and `buzz` aren't checked against it.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792309800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0.03,
+    "resetsAt": 1792309800
+   },
+   "seven_day": {
+    "utilization": 0.12,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 23.2,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 4,
+   "hit_step_limit": 0,
+   "changed_lines": 9,
+   "gold_changed_lines": 9,
+   "Y1": 1,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": 0.0
+  },
+  "f2p_pass": 1,
+  "f2p_total": 1,
+  "p2p_pass": 131,
+  "p2p_total": 131,
+  "f2p_all_pass": true,
+  "p2p_all_pass": true,
+  "resolved": true,
+  "reason": "resolved",
+  "test_seconds": 1.1
+ },
+ "status": "done",
+ "finished": "2026-10-18T03:28:20.380675+00:00"
+}

@@ -1,0 +1,107 @@
+{
+ "unit_id": "Fatal1ty__mashumaro-220__A__claude-sonnet__r1",
+ "task_id": "Fatal1ty__mashumaro-220",
+ "repo": "Fatal1ty/mashumaro",
+ "stage": "phase_out",
+ "condition": "A",
+ "model": "claude-code/sonnet",
+ "run": 1,
+ "condition_meta": {},
+ "started": "2026-10-18T03:07:10.453724+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 15,
+ "tool_calls": 14,
+ "usage": {
+  "input_tokens": 30,
+  "cache_creation_input_tokens": 13996,
+  "cache_read_input_tokens": 304403,
+  "output_tokens": 3436,
+  "output_tokens_details": {
+   "thinking_tokens": 378
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 13996,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 30,
+   "outputTokens": 3436,
+   "cacheReadInputTokens": 304403,
+   "cacheCreationInputTokens": 13996,
+   "webSearchRequests": 0,
+   "costUSD": 0.12084429999999999,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 378,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.12084429999999999,
+ "result_text": "The `RecursionError` is fixed. Your example now builds, and `C(1).to_dict()` gives `{'x': 1}` and `C.from_dict({\"x\": 2})` gives `C(x=2)`.\n\n**Cause:** an annotated strategy compiles its packer or unpacker by resolving the type from the `serialize`/`deserialize` annotation, which here is `Any`. That inner lookup still saw the same `serialization_strategy` in the field's metadata, picked the strategy again, and recursed forever.\n\n**Fix:** the inner lookup now gets a copy of the field metadata without that strategy. I added a small `_without_strategy` helper to `mashumaro/core/meta/types/pack.py` and `mashumaro/core/meta/types/unpack.py`, and used it in the two functions that handle annotated strategies. The strategy is only dropped when it is the exact object from the field metadata, so strategies set through config or dialects are unaffected.\n\n**Tests:** the suite has 23 collection errors, and `tests/test_pep_646.py::test_type_name_for_unpacks_py_less_than_311` also fails. All of these happen without my change too. The remaining tests pass (203). I didn't add or change any tests, and nothing is committed.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792309800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0,
+    "resetsAt": 1792309800
+   },
+   "seven_day": {
+    "utilization": 0.12,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 131.5,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 2,
+   "Y6": 15,
+   "hit_step_limit": 0,
+   "changed_lines": 24,
+   "gold_changed_lines": 23,
+   "Y1": 4,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": 0.06140054466414327
+  },
+  "f2p_pass": 1,
+  "f2p_total": 1,
+  "p2p_pass": 4,
+  "p2p_total": 4,
+  "f2p_all_pass": true,
+  "p2p_all_pass": true,
+  "resolved": true,
+  "reason": "resolved",
+  "test_seconds": 0.9
+ },
+ "status": "done",
+ "finished": "2026-10-18T03:09:23.983506+00:00"
+}

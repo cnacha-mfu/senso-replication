@@ -1,0 +1,73 @@
+{
+ "unit_id": "gitpython-developers__GitPython-1838__D__diffusiongemma-26b-a4b-it__r2",
+ "task_id": "gitpython-developers__GitPython-1838",
+ "repo": "gitpython-developers/GitPython",
+ "stage": "servicing",
+ "condition": "D",
+ "model": "google/diffusiongemma-26b-a4b-it",
+ "run": 2,
+ "order": 374,
+ "env_build_s": 78.3,
+ "real_agent_manifest_at_base": [],
+ "started": "2026-10-07T07:38:42.573362+00:00",
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 4119,
+  "sha256": "cb4750ce0a23038bb6aab5f20282d6db9a8e391ed6db4cc5920221c1ab56c17f"
+ },
+ "condition_available": true,
+ "retries": 0,
+ "exit_status": "LimitsExceeded",
+ "error": "",
+ "steps": 40,
+ "wall_s": 427.8,
+ "prompt_tokens": 483133,
+ "completion_tokens": 5786,
+ "format_errors": 4,
+ "length_cutoffs": 0,
+ "api_errors": {},
+ "n_queries": 40,
+ "keys_used": {
+  "NVIDIA_API_KEY_4": 11,
+  "NVIDIA_API_KEY": 9,
+  "NVIDIA_API_KEY_5": 17,
+  "NVIDIA_API_KEY_2": 3
+ },
+ "temperature": 0.7,
+ "top_p": 0.95,
+ "model_id_returned": "google/diffusiongemma-26b-a4b-it",
+ "mini_version": "2.4.6",
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 2,
+   "Y6": 40,
+   "hit_step_limit": 1,
+   "changed_lines": 38,
+   "gold_changed_lines": 62,
+   "Y1": 5,
+   "Y2": 1,
+   "Y3": 0.0,
+   "Y3_gold": 0.0,
+   "Y3_excess": 0.0,
+   "Y3w": 0.7333333333333333,
+   "Y4": -0.7062687969432897
+  },
+  "f2p_pass": 0,
+  "f2p_total": 10,
+  "p2p_pass": 0,
+  "p2p_total": 94,
+  "f2p_all_pass": false,
+  "p2p_all_pass": false,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 2.8
+ },
+ "status": "done",
+ "finished": "2026-10-07T07:45:53.553327+00:00"
+}

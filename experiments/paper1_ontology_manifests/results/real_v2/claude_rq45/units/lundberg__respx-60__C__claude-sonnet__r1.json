@@ -1,0 +1,111 @@
+{
+ "unit_id": "lundberg__respx-60__C__claude-sonnet__r1",
+ "task_id": "lundberg__respx-60",
+ "repo": "lundberg/respx",
+ "stage": "evolution",
+ "condition": "C",
+ "model": "claude-code/sonnet",
+ "run": 1,
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 3324,
+  "sha256": "b041f2e49e47b88a22e800930b53c8109c257851a74c9d5e92b33551aceef0fe"
+ },
+ "started": "2026-10-18T06:30:37.268814+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 4,
+ "tool_calls": 3,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 1258,
+  "cache_read_input_tokens": 72668,
+  "output_tokens": 668,
+  "output_tokens_details": {
+   "thinking_tokens": 0
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 1258,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 8,
+   "outputTokens": 668,
+   "cacheReadInputTokens": 72668,
+   "cacheCreationInputTokens": 1258,
+   "webSearchRequests": 0,
+   "costUSD": 0.0189948,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.0189948,
+ "result_text": "I added `pop(alias, default=...)` to `BaseMockTransport` in `respx/transports.py`. I haven't run it or any tests.\n\nIt removes the pattern from both `aliases` and `patterns` and returns it, so the fixture example in the issue becomes `mock_services.pop(\"endpoint a\")`. It follows `dict.pop`: if the alias doesn't exist, it raises `KeyError`, unless you pass a `default`, in which case that is returned.\n\nI didn't add tests or docs, and I didn't commit.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792309800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0.15,
+    "resetsAt": 1792309800
+   },
+   "seven_day": {
+    "utilization": 0.13,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 19.4,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 4,
+   "hit_step_limit": 0,
+   "changed_lines": 14,
+   "gold_changed_lines": 68,
+   "Y1": 3,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": -2.2801079191927354
+  },
+  "f2p_pass": 1,
+  "f2p_total": 1,
+  "p2p_pass": 4,
+  "p2p_total": 4,
+  "f2p_all_pass": true,
+  "p2p_all_pass": true,
+  "resolved": true,
+  "reason": "resolved",
+  "test_seconds": 2.1
+ },
+ "status": "done",
+ "finished": "2026-10-18T06:30:59.604102+00:00"
+}

@@ -1,0 +1,379 @@
+{
+ "task_id": "prjemian__pyRestTable-32",
+ "claims": {
+  "T1|src/pyRestTable": {
+   "claim": {
+    "key_str": "T1|src/pyRestTable",
+    "tcode": "T1",
+    "attrs": {
+     "path": "src/pyRestTable",
+     "is_dir": true,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "src/pyRestTable/",
+    "role": "true",
+    "slot": "layout",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "exists",
+     "path": "src/pyRestTable"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "PathFoundExact"
+   },
+   "probe": {
+    "ok": true,
+    "type": "exists"
+   },
+   "measure_error": null
+  },
+  "T1|tests": {
+   "claim": {
+    "key_str": "T1|tests",
+    "tcode": "T1",
+    "attrs": {
+     "path": "tests",
+     "is_dir": true,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "tests/",
+    "role": "true",
+    "slot": "layout",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "exists",
+     "path": "tests"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "PathFoundExact"
+   },
+   "probe": {
+    "ok": true,
+    "type": "exists"
+   },
+   "measure_error": null
+  },
+  "T1|src/pyRestTable/_version.py": {
+   "claim": {
+    "key_str": "T1|src/pyRestTable/_version.py",
+    "tcode": "T1",
+    "attrs": {
+     "path": "src/pyRestTable/_version.py",
+     "is_dir": false,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "src/pyRestTable/_version.py",
+    "role": "true",
+    "slot": "key_file",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "exists",
+     "path": "src/pyRestTable/_version.py"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "PathFoundExact"
+   },
+   "probe": {
+    "ok": true,
+    "type": "exists"
+   },
+   "measure_error": null
+  },
+  "T1|setup.py": {
+   "claim": {
+    "key_str": "T1|setup.py",
+    "tcode": "T1",
+    "attrs": {
+     "path": "setup.py",
+     "is_dir": false,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "setup.py",
+    "role": "true",
+    "slot": "install_cmd",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "exists",
+     "path": "setup.py"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "PathFoundExact"
+   },
+   "probe": {
+    "ok": true,
+    "type": "exists"
+   },
+   "measure_error": null
+  },
+  "T4|lxml|": {
+   "claim": {
+    "key_str": "T4|lxml|",
+    "tcode": "T4",
+    "attrs": {
+     "name": "lxml",
+     "major": null,
+     "ecosystem_hint": "pypi"
+    },
+    "quote": "`lxml`",
+    "role": "true",
+    "slot": "dep",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "import_ok",
+     "modules": [
+      "lxml"
+     ]
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "DependencyConfirmed"
+   },
+   "probe": {
+    "ok": true,
+    "type": "import_ok"
+   },
+   "measure_error": null
+  },
+  "T1|src/pyRestTable/core": {
+   "claim": {
+    "key_str": "T1|src/pyRestTable/core",
+    "tcode": "T1",
+    "attrs": {
+     "path": "src/pyRestTable/core",
+     "is_dir": true,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "src/pyRestTable/core/",
+    "role": "false",
+    "slot": "P1",
+    "kind": 1,
+    "expect_verdict": "ContradictedClaim",
+    "expect_leaves": [
+     "PathNeverExisted"
+    ],
+    "probe": {
+     "type": "absent",
+     "path": "src/pyRestTable/core",
+     "history": "none"
+    },
+    "mode": "add"
+   },
+   "recheck": {
+    "verdict": "ContradictedClaim",
+    "leaf": "PathNeverExisted"
+   },
+   "probe": {
+    "ok": true,
+    "type": "absent",
+    "log_count": 0
+   },
+   "measure_error": null
+  },
+  "T1|src/qa_qc/test_unittest.py": {
+   "claim": {
+    "key_str": "T1|src/qa_qc/test_unittest.py",
+    "tcode": "T1",
+    "attrs": {
+     "path": "src/qa_qc/test_unittest.py",
+     "is_dir": false,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "src/qa_qc/test_unittest.py",
+    "role": "false",
+    "slot": "P2",
+    "kind": 2,
+    "expect_verdict": "ContradictedClaim",
+    "expect_leaves": [
+     "PathRemoved"
+    ],
+    "probe": {
+     "type": "absent",
+     "path": "src/qa_qc/test_unittest.py",
+     "history": "some"
+    },
+    "mode": "add"
+   },
+   "recheck": {
+    "verdict": "ContradictedClaim",
+    "leaf": "PathRemoved"
+   },
+   "probe": {
+    "ok": true,
+    "type": "absent",
+    "log_count": 3
+   },
+   "measure_error": null
+  },
+  "T4|selectolax|": {
+   "claim": {
+    "key_str": "T4|selectolax|",
+    "tcode": "T4",
+    "attrs": {
+     "name": "selectolax",
+     "major": null,
+     "ecosystem_hint": "pypi"
+    },
+    "quote": "`selectolax`",
+    "role": "false",
+    "slot": "D",
+    "kind": 4,
+    "expect_verdict": "ContradictedClaim",
+    "expect_leaves": [
+     "DependencyUndeclared"
+    ],
+    "probe": {
+     "type": "import_fail",
+     "modules": [
+      "selectolax"
+     ]
+    },
+    "mode": "replace"
+   },
+   "recheck": {
+    "verdict": "ContradictedClaim",
+    "leaf": "DependencyUndeclared"
+   },
+   "probe": {
+    "ok": true,
+    "type": "import_fail"
+   },
+   "measure_error": null
+  },
+  "T1|conda-recipe/core": {
+   "claim": {
+    "key_str": "T1|conda-recipe/core",
+    "tcode": "T1",
+    "attrs": {
+     "path": "conda-recipe/core",
+     "is_dir": true,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "conda-recipe/core/",
+    "role": "false",
+    "slot": "P1",
+    "kind": 1,
+    "expect_verdict": "ContradictedClaim",
+    "expect_leaves": [
+     "PathNeverExisted"
+    ],
+    "probe": {
+     "type": "absent",
+     "path": "conda-recipe/core",
+     "history": "none"
+    },
+    "mode": "add"
+   },
+   "recheck": {
+    "verdict": "ContradictedClaim",
+    "leaf": "PathNeverExisted"
+   },
+   "probe": {
+    "ok": true,
+    "type": "absent",
+    "log_count": 0
+   },
+   "measure_error": null
+  },
+  "T1|tests/_version_test.py": {
+   "claim": {
+    "key_str": "T1|tests/_version_test.py",
+    "tcode": "T1",
+    "attrs": {
+     "path": "tests/_version_test.py",
+     "is_dir": false,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "tests/_version_test.py",
+    "role": "false",
+    "slot": "P2",
+    "kind": 2,
+    "expect_verdict": "ContradictedClaim",
+    "expect_leaves": [
+     "PathRemoved"
+    ],
+    "probe": {
+     "type": "absent",
+     "path": "tests/_version_test.py",
+     "history": "some"
+    },
+    "mode": "add"
+   },
+   "recheck": {
+    "verdict": "ContradictedClaim",
+    "leaf": "PathRemoved"
+   },
+   "probe": {
+    "ok": true,
+    "type": "absent",
+    "log_count": 2
+   },
+   "measure_error": null
+  }
+ },
+ "probe_log": {
+  "import:lxml": {
+   "rc": 0,
+   "tail": ""
+  },
+  "make:test": {
+   "rc": 2,
+   "tail": "make: *** No rule to make target 'test'.  Stop.\n"
+  },
+  "make:tests": {
+   "rc": 0,
+   "tail": "make: Nothing to be done for 'tests'.\n"
+  },
+  "make:check": {
+   "rc": 2,
+   "tail": "make: *** No rule to make target 'check'.  Stop.\n"
+  },
+  "make:install": {
+   "rc": 2,
+   "tail": "make: *** No rule to make target 'install'.  Stop.\n"
+  },
+  "make:dev": {
+   "rc": 2,
+   "tail": "make: *** No rule to make target 'dev'.  Stop.\n"
+  },
+  "make:develop": {
+   "rc": 2,
+   "tail": "make: *** No rule to make target 'develop'.  Stop.\n"
+  },
+  "import:selectolax": {
+   "rc": 1,
+   "tail": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\nModuleNotFoundError: No module named 'selectolax'\n"
+  }
+ }
+}

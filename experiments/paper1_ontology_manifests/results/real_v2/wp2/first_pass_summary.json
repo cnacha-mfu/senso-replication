@@ -1,0 +1,37 @@
+{
+ "note": "First pass over the 80 manifests (consensus >= 2 votes, headline claims), BEFORE the normalization and measurement fixes listed in fixes. Kept for transparency; superseded by report.json.",
+ "manifests_with_ge1_contradiction": 38,
+ "manifests": 79,
+ "leaf_counts_by_type": {
+  "T1:PathFoundBySuffix": 165,
+  "T1:PathFoundExact": 553,
+  "T1:PathInSubmodule": 3,
+  "T1:PathNeverExisted": 57,
+  "T1:PathRemoved": 10,
+  "T1:PathUntrackedByDesign": 23,
+  "T2:InactivePathModerate": 1,
+  "T2:InactivePathQuiet": 3,
+  "T3:ToolAbsentCompetitorPresent": 1,
+  "T3:ToolAbsentInEcosystem": 4,
+  "T3:ToolSignatureFound": 95,
+  "T4:DependencyConfirmed": 67,
+  "T4:DependencyMajorInRange": 23,
+  "T4:DependencyMajorTooOld": 1,
+  "T4:DependencyUndeclared": 25,
+  "T5:ScriptDefinedNested": 12,
+  "T5:ScriptDefinedRoot": 186,
+  "T5:ScriptHostMissing": 1,
+  "T5:ScriptPossiblyDynamic": 1,
+  "T5:ScriptUndefined": 10,
+  "T6:NoVersionSource": 3,
+  "T6:VersionConfirmed": 12,
+  "T6:VersionContradicted": 4,
+  "T6:VersionSourcesConflict": 3
+ },
+ "fixes_after_inspecting_first_pass_contradictions": [
+  "T1: reject import statements, @/ aliases and dotted package names without a known file extension; stop stripping glob asterisks; reject bracket placeholders; tree diagrams keep the wrapping root and fall back to the root-dropped path at measurement",
+  "T5: the runner and target must co-occur in the quote (excludes bunx/npx/mix)",
+  "T4: subject must be in a code span, contain / or @, or follow an install command; reject * names; add pubspec/mix/sbt/Package.swift/gemspec parsers; segment match for module paths",
+  "T3: xunit.v3 dependency name"
+ ]
+}

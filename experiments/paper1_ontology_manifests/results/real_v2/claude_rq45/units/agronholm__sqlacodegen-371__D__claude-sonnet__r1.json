@@ -1,0 +1,111 @@
+{
+ "unit_id": "agronholm__sqlacodegen-371__D__claude-sonnet__r1",
+ "task_id": "agronholm__sqlacodegen-371",
+ "repo": "agronholm/sqlacodegen",
+ "stage": "evolution",
+ "condition": "D",
+ "model": "claude-code/sonnet",
+ "run": 1,
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 3457,
+  "sha256": "828388cd8d2891d8686badb9626a4ead99f235c2908178091491367ba38e3492"
+ },
+ "started": "2026-10-18T05:02:31.686836+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 15,
+ "tool_calls": 14,
+ "usage": {
+  "input_tokens": 30,
+  "cache_creation_input_tokens": 10224,
+  "cache_read_input_tokens": 337396,
+  "output_tokens": 6200,
+  "output_tokens_details": {
+   "thinking_tokens": 2329
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 10224,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 30,
+   "outputTokens": 6200,
+   "cacheReadInputTokens": 337396,
+   "cacheCreationInputTokens": 10224,
+   "webSearchRequests": 0,
+   "costUSD": 0.1366956,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 2329,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.1366956,
+ "result_text": "I fixed the MySQL `DOUBLE(11,2)` rendering. Before the change, a MySQL `DOUBLE(11, 2)` column came out as `Double(11, True)`. Now it comes out as `DOUBLE(11, 2)`. I checked this with a mock MySQL engine rather than a real database, and the existing test suite still passes (94 tests). I added no tests, as you asked.\n\nThe cause was in `get_adapted_type` in `src/sqlacodegen/generators.py`. It swapped the reflected MySQL type for the generic `Double`, which has no scale, so the scale was lost. The `2` then ended up in the `asdecimal` slot and rendered as `True`. The compile-equality check didn't catch it, because on this SQLAlchemy version (2.0.55) both types compile to plain `DOUBLE`.\n\nThe fix is a check that skips the substitution when the original type has a scale and the replacement doesn't, so the original MySQL type is kept. Types without a scale, such as plain `DOUBLE`, are still adapted as before.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792309800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0.09,
+    "resetsAt": 1792309800
+   },
+   "seven_day": {
+    "utilization": 0.12,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 158.7,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 15,
+   "hit_step_limit": 0,
+   "changed_lines": 6,
+   "gold_changed_lines": 11,
+   "Y1": 2,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": -0.8744691179161412
+  },
+  "f2p_pass": 1,
+  "f2p_total": 1,
+  "p2p_pass": 36,
+  "p2p_total": 36,
+  "f2p_all_pass": true,
+  "p2p_all_pass": true,
+  "resolved": true,
+  "reason": "resolved",
+  "test_seconds": 5.5
+ },
+ "status": "done",
+ "finished": "2026-10-18T05:05:17.805532+00:00"
+}

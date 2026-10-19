@@ -1,0 +1,21 @@
+{
+ "repo": "lambrospetrou/durable-utils",
+ "chunk": 0,
+ "n_chunks": 1,
+ "model": "nvidia/nemotron-3-super-120b-a12b",
+ "prompt_sha256": "d0e02ff613417050168d859f2af6230c3712c6758bb5d9c40d60ff55e5ae87ca",
+ "user_sha256": "0d1f7ccbebda3ebd5afadbe36a1b7c63d008606d760fcfae7594d3eda16ea309",
+ "text": "{\n  \"claims\": [\n    {\n      \"type\": \"command\",\n      \"quote\": \"Format code: `npm run fmt`\",\n      \"line\": 6,\n      \"subject\": \"fmt\",\n      \"runner\": \"npm\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"command\",\n      \"quote\": \"Generate types: `npm run gen:types`\",\n      \"line\": 7,\n      \"subject\": \"gen:types\",\n      \"runner\": \"npm\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"command\",\n      \"quote\": \"Build project: `npm run build`\",\n      \"line\": 8,\n      \"subject\": \"build\",\n      \"runner\": \"npm\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"command\",\n      \"quote\": \"Run all tests: `npm test`\",\n      \"line\": 9,\n      \"subject\": \"test\",\n      \"runner\": \"npm\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"command\",\n      \"quote\": \"Release package: `npm run release`\",\n      \"line\": 11,\n      \"subject\": \"release\",\n      \"runner\": \"npm\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"tool_used\",\n      \"quote\": \"Format code with Prettier\",\n      \"line\": 16,\n      \"subject\": \"Prettier\",\n      \"tool_category\": \"linter_formatter\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"tool_used\",\n      \"quote\": \"Use Vitest with describe/it/expect pattern\",\n      \"line\": 23,\n      \"subject\": \"Vitest\",\n      \"tool_category\": \"test_framework\",\n      \"mode\": \"asserts_existing\"\n    }\n  ]\n}",
+ "parse_ok": true,
+ "parse_error": null,
+ "parse_retries": 0,
+ "latency_s": 2.3671803930192254,
+ "usage": {
+  "prompt": 2321,
+  "completion": 425
+ },
+ "n_api_calls": 1,
+ "finish_reason": "stop",
+ "error": null,
+ "discarded_attempt_texts": []
+}

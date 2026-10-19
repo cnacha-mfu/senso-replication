@@ -1,0 +1,498 @@
+{
+ "task_id": "VirtusLab__git-machete-483",
+ "claims": {
+  "T1|docs/source": {
+   "claim": {
+    "key_str": "T1|docs/source",
+    "tcode": "T1",
+    "attrs": {
+     "path": "docs/source",
+     "is_dir": true,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "docs/source/",
+    "role": "true",
+    "slot": "layout",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "exists",
+     "path": "docs/source"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "PathFoundExact"
+   },
+   "probe": {
+    "ok": true,
+    "type": "exists"
+   },
+   "measure_error": null
+  },
+  "T1|git_machete": {
+   "claim": {
+    "key_str": "T1|git_machete",
+    "tcode": "T1",
+    "attrs": {
+     "path": "git_machete",
+     "is_dir": true,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "git_machete/",
+    "role": "true",
+    "slot": "layout",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "exists",
+     "path": "git_machete"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "PathFoundExact"
+   },
+   "probe": {
+    "ok": true,
+    "type": "exists"
+   },
+   "measure_error": null
+  },
+  "T1|git_machete/tests": {
+   "claim": {
+    "key_str": "T1|git_machete/tests",
+    "tcode": "T1",
+    "attrs": {
+     "path": "git_machete/tests",
+     "is_dir": true,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "git_machete/tests/",
+    "role": "true",
+    "slot": "layout",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "exists",
+     "path": "git_machete/tests"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "PathFoundExact"
+   },
+   "probe": {
+    "ok": true,
+    "type": "exists"
+   },
+   "measure_error": null
+  },
+  "T1|git_machete/client.py": {
+   "claim": {
+    "key_str": "T1|git_machete/client.py",
+    "tcode": "T1",
+    "attrs": {
+     "path": "git_machete/client.py",
+     "is_dir": false,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "git_machete/client.py",
+    "role": "true",
+    "slot": "key_file",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "exists",
+     "path": "git_machete/client.py"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "PathFoundExact"
+   },
+   "probe": {
+    "ok": true,
+    "type": "exists"
+   },
+   "measure_error": null
+  },
+  "T3|test_framework|pytest": {
+   "claim": {
+    "key_str": "T3|test_framework|pytest",
+    "tcode": "T3",
+    "attrs": {
+     "tool": "pytest",
+     "category": "test_framework"
+    },
+    "quote": "python -m pytest git_machete/tests",
+    "role": "true",
+    "slot": "test_cmd",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "pytest",
+     "root": "git_machete/tests"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "ToolSignatureFound"
+   },
+   "probe": {
+    "ok": true,
+    "type": "pytest"
+   },
+   "measure_error": null
+  },
+  "T1|setup.py": {
+   "claim": {
+    "key_str": "T1|setup.py",
+    "tcode": "T1",
+    "attrs": {
+     "path": "setup.py",
+     "is_dir": false,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "setup.py",
+    "role": "true",
+    "slot": "install_cmd",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "exists",
+     "path": "setup.py"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "PathFoundExact"
+   },
+   "probe": {
+    "ok": true,
+    "type": "exists"
+   },
+   "measure_error": null
+  },
+  "T6|python|3006000000@2": {
+   "claim": {
+    "key_str": "T6|python|3006000000@2",
+    "tcode": "T6",
+    "attrs": {
+     "subject_type": "python",
+     "version": "3.6",
+     "code": 3006000000,
+     "precision": 2,
+     "qualifier": "min"
+    },
+    "quote": "Python: >=3.6",
+    "role": "true",
+    "slot": "python",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": null,
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "VersionConfirmed"
+   },
+   "probe": {
+    "ok": true,
+    "type": "none"
+   },
+   "measure_error": null
+  },
+  "T1|docs/source/core": {
+   "claim": {
+    "key_str": "T1|docs/source/core",
+    "tcode": "T1",
+    "attrs": {
+     "path": "docs/source/core",
+     "is_dir": true,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "docs/source/core/",
+    "role": "false",
+    "slot": "P1",
+    "kind": 1,
+    "expect_verdict": "ContradictedClaim",
+    "expect_leaves": [
+     "PathNeverExisted"
+    ],
+    "probe": {
+     "type": "absent",
+     "path": "docs/source/core",
+     "history": "none"
+    },
+    "mode": "add"
+   },
+   "recheck": {
+    "verdict": "ContradictedClaim",
+    "leaf": "PathNeverExisted"
+   },
+   "probe": {
+    "ok": true,
+    "type": "absent",
+    "log_count": 0
+   },
+   "measure_error": null
+  },
+  "T1|git_machete/cmd.py": {
+   "claim": {
+    "key_str": "T1|git_machete/cmd.py",
+    "tcode": "T1",
+    "attrs": {
+     "path": "git_machete/cmd.py",
+     "is_dir": false,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "git_machete/cmd.py",
+    "role": "false",
+    "slot": "P2",
+    "kind": 2,
+    "expect_verdict": "ContradictedClaim",
+    "expect_leaves": [
+     "PathRemoved"
+    ],
+    "probe": {
+     "type": "absent",
+     "path": "git_machete/cmd.py",
+     "history": "some"
+    },
+    "mode": "add"
+   },
+   "recheck": {
+    "verdict": "ContradictedClaim",
+    "leaf": "PathRemoved"
+   },
+   "probe": {
+    "ok": true,
+    "type": "absent",
+    "log_count": 148
+   },
+   "measure_error": null
+  },
+  "T5|make|test": {
+   "claim": {
+    "key_str": "T5|make|test",
+    "tcode": "T5",
+    "attrs": {
+     "runner": "make",
+     "kind": "make",
+     "target": "test"
+    },
+    "quote": "make test",
+    "role": "false",
+    "slot": "C_R",
+    "kind": 3,
+    "expect_verdict": "ContradictedClaim",
+    "expect_leaves": [
+     "ScriptUndefined",
+     "ScriptHostMissing"
+    ],
+    "probe": {
+     "type": "make_fail",
+     "target": "test"
+    },
+    "mode": "replace"
+   },
+   "recheck": {
+    "verdict": "ContradictedClaim",
+    "leaf": "ScriptHostMissing"
+   },
+   "probe": {
+    "ok": true,
+    "type": "make_fail",
+    "result": {
+     "rc": 2,
+     "tail": "make: *** No rule to make target 'test'.  Stop.\n"
+    }
+   },
+   "measure_error": null
+  },
+  "T4|boltons|": {
+   "claim": {
+    "key_str": "T4|boltons|",
+    "tcode": "T4",
+    "attrs": {
+     "name": "boltons",
+     "major": null,
+     "ecosystem_hint": "pypi"
+    },
+    "quote": "`boltons`",
+    "role": "false",
+    "slot": "D",
+    "kind": 4,
+    "expect_verdict": "ContradictedClaim",
+    "expect_leaves": [
+     "DependencyUndeclared"
+    ],
+    "probe": {
+     "type": "import_fail",
+     "modules": [
+      "boltons"
+     ]
+    },
+    "mode": "add"
+   },
+   "recheck": {
+    "verdict": "ContradictedClaim",
+    "leaf": "DependencyUndeclared"
+   },
+   "probe": {
+    "ok": true,
+    "type": "import_fail"
+   },
+   "measure_error": null
+  },
+  "T1|blogs/core": {
+   "claim": {
+    "key_str": "T1|blogs/core",
+    "tcode": "T1",
+    "attrs": {
+     "path": "blogs/core",
+     "is_dir": true,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "blogs/core/",
+    "role": "false",
+    "slot": "P1",
+    "kind": 1,
+    "expect_verdict": "ContradictedClaim",
+    "expect_leaves": [
+     "PathNeverExisted"
+    ],
+    "probe": {
+     "type": "absent",
+     "path": "blogs/core",
+     "history": "none"
+    },
+    "mode": "add"
+   },
+   "recheck": {
+    "verdict": "ContradictedClaim",
+    "leaf": "PathNeverExisted"
+   },
+   "probe": {
+    "ok": true,
+    "type": "absent",
+    "log_count": 0
+   },
+   "measure_error": null
+  },
+  "T1|blogs/internal.py": {
+   "claim": {
+    "key_str": "T1|blogs/internal.py",
+    "tcode": "T1",
+    "attrs": {
+     "path": "blogs/internal.py",
+     "is_dir": false,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "blogs/internal.py",
+    "role": "false",
+    "slot": "P2",
+    "kind": 2,
+    "expect_verdict": "ContradictedClaim",
+    "expect_leaves": [
+     "PathNeverExisted"
+    ],
+    "probe": {
+     "type": "absent",
+     "path": "blogs/internal.py",
+     "history": "none"
+    },
+    "mode": "add"
+   },
+   "recheck": {
+    "verdict": "ContradictedClaim",
+    "leaf": "PathNeverExisted"
+   },
+   "probe": {
+    "ok": true,
+    "type": "absent",
+    "log_count": 0
+   },
+   "measure_error": null
+  },
+  "T5|make|dev": {
+   "claim": {
+    "key_str": "T5|make|dev",
+    "tcode": "T5",
+    "attrs": {
+     "runner": "make",
+     "kind": "make",
+     "target": "dev"
+    },
+    "quote": "make dev",
+    "role": "false",
+    "slot": "C_I",
+    "kind": 3,
+    "expect_verdict": "ContradictedClaim",
+    "expect_leaves": [
+     "ScriptUndefined",
+     "ScriptHostMissing"
+    ],
+    "probe": {
+     "type": "make_fail",
+     "target": "dev"
+    },
+    "mode": "replace"
+   },
+   "recheck": {
+    "verdict": "ContradictedClaim",
+    "leaf": "ScriptHostMissing"
+   },
+   "probe": {
+    "ok": true,
+    "type": "make_fail",
+    "result": {
+     "rc": 2,
+     "tail": "make: *** No rule to make target 'dev'.  Stop.\n"
+    }
+   },
+   "measure_error": null
+  }
+ },
+ "probe_log": {
+  "pytest:git_machete/tests": {
+   "rc": 0,
+   "tail": "/test_machete.py::MacheteTester::test_update_with_fork_point_not_specified\ngit_machete/tests/functional/test_machete.py::MacheteTester::test_update_with_fork_point_specified\ngit_machete/tests/functional/test_machete.py::MacheteTester::test_update_with_invalid_fork_point\n\n48 tests collected in 0.34s\n"
+  },
+  "make:test": {
+   "rc": 2,
+   "tail": "make: *** No rule to make target 'test'.  Stop.\n"
+  },
+  "make:dev": {
+   "rc": 2,
+   "tail": "make: *** No rule to make target 'dev'.  Stop.\n"
+  },
+  "import:boltons": {
+   "rc": 1,
+   "tail": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\nModuleNotFoundError: No module named 'boltons'\n"
+  }
+ }
+}

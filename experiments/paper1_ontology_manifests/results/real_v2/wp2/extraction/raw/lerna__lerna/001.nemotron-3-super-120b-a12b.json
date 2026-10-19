@@ -1,0 +1,21 @@
+{
+ "repo": "lerna/lerna",
+ "chunk": 1,
+ "n_chunks": 2,
+ "model": "nvidia/nemotron-3-super-120b-a12b",
+ "prompt_sha256": "d0e02ff613417050168d859f2af6230c3712c6758bb5d9c40d60ff55e5ae87ca",
+ "user_sha256": "488766f53949b4c1723ba030f0eaed719cb7445c4c029b31712dc60dba11683b",
+ "text": "{\n  \"claims\": [\n    {\n      \"type\": \"tool_used\",\n      \"quote\": \"npm install\",\n      \"line\": 142,\n      \"subject\": \"npm\",\n      \"tool_category\": \"package_manager\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"command\",\n      \"quote\": \"npm run build\",\n      \"line\": 145,\n      \"subject\": \"build\",\n      \"runner\": \"npm\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"tool_used\",\n      \"quote\": \"nx run-many -t build\",\n      \"line\": 147,\n      \"subject\": \"nx\",\n      \"tool_category\": \"build_tool\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"command\",\n      \"quote\": \"npm run test\",\n      \"line\": 150,\n      \"subject\": \"test\",\n      \"runner\": \"npm\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"tool_used\",\n      \"quote\": \"nx run-many -t test\",\n      \"line\": 152,\n      \"subject\": \"nx\",\n      \"tool_category\": \"build_tool\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"command\",\n      \"quote\": \"npm run integration\",\n      \"line\": 155,\n      \"subject\": \"integration\",\n      \"runner\": \"npm\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"command\",\n      \"quote\": \"nx e2e publish\",\n      \"line\": 158,\n      \"subject\": \"e2e publish\",\n      \"runner\": \"nx\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"command\",\n      \"quote\": \"npm run format:write\",\n      \"line\": 161,\n      \"subject\": \"format:write\",\n      \"runner\": \"npm\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"command\",\n      \"quote\": \"npm run format:check\",\n      \"line\": 164,\n      \"subject\": \"format:check\",\n      \"runner\": \"npm\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"command\",\n      \"quote\": \"npm run lint\",\n      \"line\": 167,\n      \"subject\": \"lint\",\n      \"runner\": \"npm\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"tool_used\",\n      \"quote\": \"nx run-many -t lint\",\n      \"line\": 169,\n      \"subject\": \"nx\",\n      \"tool_category\": \"build_tool\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"command\",\n      \"quote\": \"nx test commands-publish\",\n      \"line\": 172,\n      \"subject\": \"test commands-publish\",\n      \"runner\": \"nx\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"command\",\n      \"quote\": \"nx run-many -t build test lint\",\n      \"line\": 175,\n      \"subject\": \"build test lint\",\n      \"runner\": \"nx\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"command\",\n      \"quote\": \"npm run e2e-start-local-registry\",\n      \"line\": 178,\n      \"subject\": \"e2e-start-local-registry\",\n      \"runner\": \"npm\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"command\",\n      \"quote\": \"npm run e2e-build-package-publish\",\n      \"line\": 181,\n      \"subject\": \"e2e-build-package-publish\",\n      \"runner\": \"npm\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"path_exists\",\n      \"quote\": \"The project includes a `lerna.json` configuration file\",\n      \"line\": 186,\n      \"subject\": \"lerna.json\",\n      \"mode\": \"asserts_existing\"\n    }\n  ]\n}",
+ "parse_ok": true,
+ "parse_error": null,
+ "parse_retries": 0,
+ "latency_s": 11.336626310017891,
+ "usage": {
+  "prompt": 2533,
+  "completion": 950
+ },
+ "n_api_calls": 1,
+ "finish_reason": "stop",
+ "error": null,
+ "discarded_attempt_texts": []
+}

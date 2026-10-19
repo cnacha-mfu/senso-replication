@@ -1,0 +1,75 @@
+{
+ "unit_id": "PyCQA__pyflakes-675__D__diffusiongemma-26b-a4b-it__r2",
+ "task_id": "PyCQA__pyflakes-675",
+ "repo": "PyCQA/pyflakes",
+ "stage": "servicing",
+ "condition": "D",
+ "model": "google/diffusiongemma-26b-a4b-it",
+ "run": 2,
+ "order": 700,
+ "env_build_s": 19.8,
+ "real_agent_manifest_at_base": [],
+ "started": "2026-10-07T11:54:41.376517+00:00",
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 3462,
+  "sha256": "868958dbd177358ae81241343a22e81d0398d6d5073a90da29ace8a6ed41f600"
+ },
+ "condition_available": true,
+ "retries": 0,
+ "exit_status": "Submitted",
+ "error": "",
+ "steps": 20,
+ "wall_s": 880.0,
+ "prompt_tokens": 95241,
+ "completion_tokens": 2146,
+ "format_errors": 1,
+ "length_cutoffs": 0,
+ "api_errors": {
+  "timeout": 2
+ },
+ "n_queries": 22,
+ "keys_used": {
+  "NVIDIA_API_KEY_5": 5,
+  "NVIDIA_API_KEY_2": 7,
+  "NVIDIA_API_KEY": 7,
+  "NVIDIA_API_KEY_4": 3
+ },
+ "temperature": 0.7,
+ "top_p": 0.95,
+ "model_id_returned": "google/diffusiongemma-26b-a4b-it",
+ "mini_version": "2.4.6",
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 3,
+   "Y6": 20,
+   "hit_step_limit": 0,
+   "changed_lines": 12,
+   "gold_changed_lines": 9,
+   "Y1": 2,
+   "Y2": 0,
+   "Y3": 0.0,
+   "Y3_gold": 0.0,
+   "Y3_excess": 0.0,
+   "Y3w": 0.8571428571428571,
+   "Y4": 0.41503749927884376
+  },
+  "f2p_pass": 1,
+  "f2p_total": 1,
+  "p2p_pass": 131,
+  "p2p_total": 131,
+  "f2p_all_pass": true,
+  "p2p_all_pass": true,
+  "resolved": true,
+  "reason": "resolved",
+  "test_seconds": 1.4
+ },
+ "status": "done",
+ "finished": "2026-10-07T12:09:23.218840+00:00"
+}

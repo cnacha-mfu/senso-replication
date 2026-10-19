@@ -1,0 +1,20 @@
+[
+  {
+    "what": "Earlier pipeline version run on 3 sample repos (takluyver/entrypoints, MarketSquare/AssertionEngine, asweigart/PyRect) during development; labels seen; outputs deleted (papers/paper1/rq1-deviations-log.md #1)",
+    "why": "Brief corrected after runs; no rule or threshold changed afterwards",
+    "when": "2026-10-06T13:21:16+00:00",
+    "before_unblinding": true
+  },
+  {
+    "what": "Development set: 5 of 12 planned dev-set repos run (rq1-deviations-log.md #2)",
+    "why": "Sufficient to exercise all code paths incl. LOC failure; never reported",
+    "when": "2026-10-06T13:21:16+00:00",
+    "before_unblinding": true
+  },
+  {
+    "what": "Differential check (prereg 9.4) did not run in the first analysis run because one repo had no LOC series; analysis code fixed (commit 7a4a2f8) and the whole analysis re-run; first-run outputs kept outside the repo",
+    "why": "Bug in the check's handling of the pre-registered LOC-failure path; the check does not use the ground truth and the fix cannot change labels or agreement numbers (verified identical)",
+    "when": "2026-10-06T13:21:16+00:00",
+    "before_unblinding": false
+  }
+]

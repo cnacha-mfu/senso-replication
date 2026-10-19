@@ -1,0 +1,111 @@
+{
+ "unit_id": "prjemian__pyRestTable-32__C__claude-sonnet__r2",
+ "task_id": "prjemian__pyRestTable-32",
+ "repo": "prjemian/pyRestTable",
+ "stage": "servicing",
+ "condition": "C",
+ "model": "claude-code/sonnet",
+ "run": 2,
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 3815,
+  "sha256": "ae3911234e15c58a00c29456b8826e410efd9b8d7f543968c2cf10736875d1dc"
+ },
+ "started": "2026-10-18T08:09:46.933899+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 4,
+ "tool_calls": 3,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 316,
+  "cache_read_input_tokens": 77754,
+  "output_tokens": 591,
+  "output_tokens_details": {
+   "thinking_tokens": 39
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 316,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 8,
+   "outputTokens": 591,
+   "cacheReadInputTokens": 77754,
+   "cacheCreationInputTokens": 316,
+   "webSearchRequests": 0,
+   "costUSD": 0.014965399999999998,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 39,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.014965399999999998,
+ "result_text": "I fixed the column widths in `find_widths` in `src/pyRestTable/rest_table.py`. I haven't run your example or the test suite, so the fix is untested.\n\nThe width calculation used `str(_ or '')`. That treats a cell value of `0` or `0.0` as empty, so a column holding only zeros (like `h` and `mu`) got a width of 0. It now treats only `None` as empty.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792327800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0.01,
+    "resetsAt": 1792327800
+   },
+   "seven_day": {
+    "utilization": 0.13,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 17.0,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 4,
+   "hit_step_limit": 0,
+   "changed_lines": 2,
+   "gold_changed_lines": 20,
+   "Y1": 0,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": -3.321928094887362
+  },
+  "f2p_pass": 1,
+  "f2p_total": 1,
+  "p2p_pass": 17,
+  "p2p_total": 17,
+  "f2p_all_pass": true,
+  "p2p_all_pass": true,
+  "resolved": true,
+  "reason": "resolved",
+  "test_seconds": 1.0
+ },
+ "status": "done",
+ "finished": "2026-10-18T08:10:06.138901+00:00"
+}

@@ -1,0 +1,334 @@
+{
+ "task_id": "getsentry__sentry-python-3247",
+ "repo": "getsentry/sentry-python",
+ "stage": "servicing",
+ "rounds": 1,
+ "rejects": {},
+ "flags": [
+  "kind3_dropped"
+ ],
+ "info": {
+  "slots": {
+   "test_root": "tests",
+   "P1": {
+    "replaced": "sentry_sdk/profiler",
+    "name": "core",
+    "F_R": "sentry_sdk/core",
+    "F_I": "sentry_sdk/ai/core"
+   },
+   "P2": {
+    "replaced": "sentry_sdk/crons/decorator.py",
+    "F_R": "sentry_sdk/tracing_utils_py2.py",
+    "F_I": "tests/test_profiler.py"
+   },
+   "D": {
+    "replaced": "asttokens",
+    "F_R": "toolz",
+    "F_I": "boltons"
+   }
+  },
+  "why": {
+   "test_command": [
+    {
+     "root": "tests",
+     "T3": "SupportedClaim",
+     "T1": "SupportedClaim",
+     "collect_ok": true
+    }
+   ],
+   "kind1": {
+    "p1_idx": 5,
+    "gold0": "sentry_sdk",
+    "unrelated": "sentry_sdk/ai",
+    "base_R": "sentry_sdk",
+    "base_I": "sentry_sdk/ai"
+   },
+   "kind2": {
+    "p2_idx": 2,
+    "n_deleted_py": 49,
+    "found": {
+     "F_R": "sentry_sdk/tracing_utils_py2.py",
+     "F_I": "tests/test_profiler.py"
+    }
+   },
+   "kind3": {
+    "run": null,
+    "install": "install",
+    "test_ok": true,
+    "install_ok": true
+   },
+   "kind4": {
+    "deps": [
+     [
+      "typing-extensions",
+      false
+     ],
+     [
+      "opentelemetry-distro",
+      false
+     ],
+     [
+      "urllib3",
+      true
+     ],
+     [
+      "executing",
+      false
+     ],
+     [
+      "asttokens",
+      false
+     ]
+    ],
+    "d_idx": 4,
+    "src_R": "urllib3",
+    "src_I": "asttokens",
+    "n_decls": 41,
+    "n_dist": 86
+   }
+  },
+  "length": {
+   "T": 506,
+   "F_R": 500,
+   "F_I": 496
+  },
+  "fallbacks": {
+   "F_R": [],
+   "F_I": []
+  },
+  "modes": {
+   "F_R": {
+    "1": "replace",
+    "2": "replace",
+    "4": "replace"
+   },
+   "F_I": {
+    "1": "replace",
+    "2": "replace",
+    "4": "replace"
+   }
+  },
+  "length_diff": {
+   "F_R": -6,
+   "F_I": -10
+  },
+  "n_claims_T": 19,
+  "n_false": {
+   "F_R": 3,
+   "F_I": 3
+  },
+  "pointer_in_issue": true,
+  "gold_dirs": [
+   "sentry_sdk"
+  ],
+  "gold_files": [
+   "sentry_sdk/transport.py"
+  ]
+ },
+ "tokens": {
+  "F_R": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "sentry_sdk/core",
+     "core"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "sentry_sdk/tracing_utils_py2.py",
+     "tracing_utils_py2.py"
+    ]
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "toolz"
+    ]
+   }
+  ],
+  "F_I": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "sentry_sdk/ai/core",
+     "core"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "tests/test_profiler.py",
+     "test_profiler.py"
+    ]
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "boltons"
+    ]
+   }
+  ]
+ },
+ "unresolved_pre_hermit": [],
+ "sha256": {
+  "T": "e94d55aae2ddcc9993e3c28d2cda19da4c0072269708b48a15d92687cb72e33d",
+  "F_R": "c67b2909c9ea13eb68a047914ecc11cff7c6f464ef37cc0592f781a0cbe7020a",
+  "F_I": "a180fcc17623785b5ac9e81d20712c4b461f576391e936adf018acf8add4e76f"
+ },
+ "chars": {
+  "T": 506,
+  "F_R": 500,
+  "F_I": 496
+ },
+ "claims": {
+  "T": [
+   "T1|sentry_sdk",
+   "T1|sentry_sdk/ai",
+   "T1|sentry_sdk/crons",
+   "T1|sentry_sdk/db",
+   "T1|sentry_sdk/integrations",
+   "T1|sentry_sdk/profiler",
+   "T1|tests",
+   "T1|sentry_sdk/scope.py",
+   "T1|sentry_sdk/integrations/starlette.py",
+   "T1|sentry_sdk/crons/decorator.py",
+   "T3|test_framework|pytest",
+   "T1|tests",
+   "T1|pyproject.toml",
+   "T4|typing-extensions|",
+   "T4|opentelemetry-distro|",
+   "T4|urllib3|",
+   "T4|executing|",
+   "T4|asttokens|",
+   "T6|python|3006000000@2"
+  ],
+  "F_R": [
+   "T1|sentry_sdk",
+   "T1|sentry_sdk/ai",
+   "T1|sentry_sdk/crons",
+   "T1|sentry_sdk/db",
+   "T1|sentry_sdk/integrations",
+   "T1|sentry_sdk/core",
+   "T1|tests",
+   "T1|sentry_sdk/scope.py",
+   "T1|sentry_sdk/integrations/starlette.py",
+   "T1|sentry_sdk/tracing_utils_py2.py",
+   "T3|test_framework|pytest",
+   "T1|tests",
+   "T1|pyproject.toml",
+   "T4|typing-extensions|",
+   "T4|opentelemetry-distro|",
+   "T4|urllib3|",
+   "T4|executing|",
+   "T4|toolz|",
+   "T6|python|3006000000@2"
+  ],
+  "F_I": [
+   "T1|sentry_sdk",
+   "T1|sentry_sdk/ai",
+   "T1|sentry_sdk/crons",
+   "T1|sentry_sdk/db",
+   "T1|sentry_sdk/integrations",
+   "T1|sentry_sdk/ai/core",
+   "T1|tests",
+   "T1|sentry_sdk/scope.py",
+   "T1|sentry_sdk/integrations/starlette.py",
+   "T1|tests/test_profiler.py",
+   "T3|test_framework|pytest",
+   "T1|tests",
+   "T1|pyproject.toml",
+   "T4|typing-extensions|",
+   "T4|opentelemetry-distro|",
+   "T4|urllib3|",
+   "T4|executing|",
+   "T4|boltons|",
+   "T6|python|3006000000@2"
+  ]
+ },
+ "python_spec": ">=3.6",
+ "token_audit": [
+  {
+   "cond": "F_R",
+   "kind": 1,
+   "type": "path",
+   "name": "sentry_sdk/core",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 2,
+   "type": "path",
+   "name": "sentry_sdk/tracing_utils_py2.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 4,
+   "type": "word",
+   "name": "toolz",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 1,
+   "type": "path",
+   "name": "sentry_sdk/ai/core",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 2,
+   "type": "path",
+   "name": "tests/test_profiler.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 4,
+   "type": "word",
+   "name": "boltons",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  }
+ ],
+ "dist_imports_used": {
+  "typing-extensions": [
+   "typing_extensions"
+  ],
+  "opentelemetry-distro": [
+   "opentelemetry"
+  ],
+  "urllib3": [
+   "urllib3"
+  ],
+  "executing": [
+   "executing"
+  ],
+  "asttokens": [
+   "asttokens"
+  ],
+  "toolz": null,
+  "boltons": null
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "repo": "nanobrowser/nanobrowser",
+ "chunk": 2,
+ "n_chunks": 3,
+ "model": "openai/gpt-oss-20b",
+ "prompt_sha256": "d0e02ff613417050168d859f2af6230c3712c6758bb5d9c40d60ff55e5ae87ca",
+ "user_sha256": "96d4c617a99c366df891ce0d2d82e84194599022617cb190e88bbe2de5b7800b",
+ "text": "{\"claims\":[{\"type\":\"tool_used\",\"quote\":\"- Always use `pnpm` package manager (required for this project)\",\"line\":268,\"subject\":\"pnpm\",\"tool_category\":\"package_manager\",\"mode\":\"asserts_existing\"},{\"type\":\"tool_used\",\"quote\":\"- Turbo manages task dependencies and caching across workspaces\",\"line\":272,\"subject\":\"Turbo\",\"tool_category\":\"build_tool\",\"mode\":\"asserts_existing\"},{\"type\":\"tool_used\",\"quote\":\"- Vite aliases: pages use `@src` for page `src/`; the extension uses\",\"line\":273,\"subject\":\"Vite\",\"tool_category\":\"build_tool\",\"mode\":\"asserts_existing\"},{\"type\":\"path_exists\",\"quote\":\"- Extension builds to `dist/` directory which is loaded as unpacked extension\",\"line\":273,\"subject\":\"dist/\",\"mode\":\"asserts_existing\"},{\"type\":\"path_exists\",\"quote\":\"- Zipped distributions are written to `dist-zip/`\",\"line\":274,\"subject\":\"dist-zip/\",\"mode\":\"asserts_existing\"},{\"type\":\"path_exists\",\"quote\":\"- Only supports Chrome/Edge\",\"line\":275,\"subject\":\"Chrome/Edge\",\"mode\":\"asserts_existing\"},{\"type\":\"path_exists\",\"quote\":\"- Keep diffs minimal and scoped; avoid mass refactors or reformatting unrelated files\",\"line\":276,\"subject\":\"diffs minimal\",\"mode\":\"asserts_existing\"},{\"type\":\"path_status\",\"quote\":\"- Do not modify generated artifacts (`dist/**`, `build/**`, `packages/i18n/lib/**`)\",\"line\":277,\"subject\":\"dist/**\",\"status\":\"do_not_edit\",\"mode\":\"asserts_existing\"},{\"type\":\"path_status\",\"quote\":\"- Do not modify generated artifacts (`dist/**`, `build/**`, `packages/i18n/lib/**`)\",\"line\":277,\"subject\":\"build/**\",\"status\":\"do_not_edit\",\"mode\":\"asserts_existing\"},{\"type\":\"path_status\",\"quote\":\"- Do not modify generated artifacts (`dist/**`, `build/**`, `packages/i18n/lib/**`)\",\"line\":277,\"subject\":\"packages/i18n/lib/**\",\"status\":\"do_not_edit\",\"mode\":\"asserts_existing\"},{\"type\":\"path_status\",\"quote\":\"- or workspace/global configs (`turbo.json`, `pnpm-workspace.yaml`, `tsconfig*`) without approval\",\"line\":278,\"subject\":\"turbo.json\",\"status\":\"do_not_edit\",\"mode\":\"asserts_existing\"},{\"type\":\"path_status\",\"quote\":\"- or workspace/global configs (`turbo.json`, `pnpm-workspace.yaml`, `tsconfig*`) without approval\",\"line\":278,\"subject\":\"pnpm-workspace.yaml\",\"status\":\"do_not_edit\",\"mode\":\"asserts_existing\"},{\"type\":\"path_status\",\"quote\":\"- or workspace/global configs (`turbo.json`, `pnpm-workspace.yaml`, `tsconfig*`) without approval\",\"line\":278,\"subject\":\"tsconfig*\",\"status\":\"do_not_edit\",\"mode\":\"asserts_existing\"},{\"type\":\"command\",\"quote\":\"`pnpm -F <workspace> type-check`\",\"line\":281,\"subject\":\"type-check\",\"runner\":\"pnpm\",\"mode\":\"asserts_existing\"},{\"type\":\"command\",\"quote\":\"`pnpm -F <workspace> lint`\",\"line\":281,\"subject\":\"lint\",\"runner\":\"pnpm\",\"mode\":\"asserts_existing\"},{\"type\":\"command\",\"quote\":\"`pnpm -F <workspace> prettier -- <changed-file>`\",\"line\":282,\"subject\":\"prettier\",\"runner\":\"pnpm\",\"mode\":\"asserts_existing\"},{\"type\":\"command\",\"quote\":\"and build if applicable\",\"line\":282,\"subject\":\"build\",\"runner\":\"pnpm\",\"mode\":\"asserts_existing\"}]}",
+ "parse_ok": true,
+ "parse_error": null,
+ "parse_retries": 0,
+ "latency_s": 28.172490785014816,
+ "usage": {
+  "prompt": 2423,
+  "completion": 1361
+ },
+ "n_api_calls": 1,
+ "finish_reason": "stop",
+ "error": null,
+ "discarded_attempt_texts": []
+}

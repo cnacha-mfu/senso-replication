@@ -1,0 +1,111 @@
+{
+ "unit_id": "PyCQA__isort-2283__C__claude-sonnet__r2",
+ "task_id": "PyCQA__isort-2283",
+ "repo": "PyCQA/isort",
+ "stage": "servicing",
+ "condition": "C",
+ "model": "claude-code/sonnet",
+ "run": 2,
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 6434,
+  "sha256": "019404ff6a4bfc2865241df58d85d9211ebaa7623244a2176e78f4199e282543"
+ },
+ "started": "2026-10-18T03:22:29.278194+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 9,
+ "tool_calls": 8,
+ "usage": {
+  "input_tokens": 16,
+  "cache_creation_input_tokens": 15198,
+  "cache_read_input_tokens": 174624,
+  "output_tokens": 2654,
+  "output_tokens_details": {
+   "thinking_tokens": 999
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 15198,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 16,
+   "outputTokens": 2654,
+   "cacheReadInputTokens": 174624,
+   "cacheCreationInputTokens": 15198,
+   "webSearchRequests": 0,
+   "costUSD": 0.1048264,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 999,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.1048264,
+ "result_text": "`--sort-reexports` now sorts a multi-line `__all__` correctly, including when the file starts with imports or comments. The fix is in `isort/core.py`.\n\n**Cause:** `isort` kept a running count of input characters to decide where in the output to rewrite `__all__`. Once the imports were reformatted, that count no longer matched the output, so the rewrite landed in the wrong place. That's what produced `fro__all__ = ...`.\n\n**Fix:** it now takes the position from `output_stream.tell()` right after the `__all__` line is written, and again after each sorted block. Because it reads the actual output position, it no longer drifts.\n\n**Checked:**\n- **Issue example (imports, then multi-line `__all__`):** the output is now correct. Imports are joined into one line and `__all__` becomes `('func1', 'func4')`.\n- **Comment first, then a multi-line list:** `# c` followed by `__all__ = [\"b\",\\n \"a\"]` comes out as `__all__ = ['a', 'b']`.\n- **Existing tests:** `tests/unit/test_isort.py` and `tests/unit/test_regressions.py` pass (285 passed, 1 skipped). Running the rest of `tests/unit` hit collection errors in 8 test files (I didn't look into them), so I didn't run the full suite.\n\nI didn't touch any tests, and nothing is committed.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792309800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0.02,
+    "resetsAt": 1792309800
+   },
+   "seven_day": {
+    "utilization": 0.12,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 42.4,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 9,
+   "hit_step_limit": 0,
+   "changed_lines": 15,
+   "gold_changed_lines": 22,
+   "Y1": 1,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": -0.5525410230287788
+  },
+  "f2p_pass": 2,
+  "f2p_total": 3,
+  "p2p_pass": 213,
+  "p2p_total": 213,
+  "f2p_all_pass": false,
+  "p2p_all_pass": true,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 4.7
+ },
+ "status": "done",
+ "finished": "2026-10-18T03:23:17.102348+00:00"
+}

@@ -1,0 +1,270 @@
+{
+ "task_id": "tkarabela__pysubs2-77",
+ "repo": "tkarabela/pysubs2",
+ "stage": "evolution",
+ "rounds": 1,
+ "rejects": {},
+ "flags": [
+  "kind3_dropped",
+  "length_violation_F_R",
+  "length_violation_F_I"
+ ],
+ "info": {
+  "slots": {
+   "test_root": "tests",
+   "P1": {
+    "replaced": null,
+    "name": "core",
+    "F_R": "pysubs2/core",
+    "F_I": "docs/core"
+   },
+   "P2": {
+    "replaced": null,
+    "F_R": "pysubs2/webtt.py",
+    "F_I": "tests/test_font.py"
+   },
+   "D": {
+    "replaced": null,
+    "F_R": "toolz",
+    "F_I": "boltons"
+   }
+  },
+  "why": {
+   "test_command": [
+    {
+     "root": "tests",
+     "T3": "SupportedClaim",
+     "T1": "SupportedClaim",
+     "collect_ok": true
+    }
+   ],
+   "kind1": {
+    "p1_idx": null,
+    "gold0": "pysubs2",
+    "unrelated": null,
+    "base_R": "pysubs2",
+    "base_I": "docs"
+   },
+   "kind2": {
+    "p2_idx": null,
+    "n_deleted_py": 11,
+    "found": {
+     "F_R": "pysubs2/webtt.py",
+     "F_I": "tests/test_font.py"
+    }
+   },
+   "kind3": {
+    "run": null,
+    "install": null,
+    "test_ok": true,
+    "install_ok": true
+   },
+   "kind4": {
+    "deps": [],
+    "d_idx": null,
+    "src_R": "mypy",
+    "src_I": "pytest",
+    "n_decls": 8,
+    "n_dist": 25
+   }
+  },
+  "length": {
+   "T": 206,
+   "F_R": 270,
+   "F_I": 271
+  },
+  "fallbacks": {
+   "F_R": [],
+   "F_I": []
+  },
+  "modes": {
+   "F_R": {
+    "1": "add",
+    "2": "add",
+    "4": "add"
+   },
+   "F_I": {
+    "1": "add",
+    "2": "add",
+    "4": "add"
+   }
+  },
+  "length_diff": {
+   "F_R": 64,
+   "F_I": 65
+  },
+  "n_claims_T": 7,
+  "n_false": {
+   "F_R": 3,
+   "F_I": 3
+  },
+  "pointer_in_issue": true,
+  "gold_dirs": [
+   "pysubs2"
+  ],
+  "gold_files": [
+   "pysubs2/substation.py"
+  ]
+ },
+ "tokens": {
+  "F_R": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "pysubs2/core",
+     "core"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "pysubs2/webtt.py",
+     "webtt.py"
+    ]
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "toolz"
+    ]
+   }
+  ],
+  "F_I": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "docs/core",
+     "core"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "tests/test_font.py",
+     "test_font.py"
+    ]
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "boltons"
+    ]
+   }
+  ]
+ },
+ "unresolved_pre_hermit": [],
+ "sha256": {
+  "T": "079e5850f04308467b8ac6268902f2f26375aafeb00d2b8ff0e3ebfe9737fd0b",
+  "F_R": "087ea52d632d593662ea2c7f0a71bf51482d03ab01bc990ebb1afb5b30e780cb",
+  "F_I": "bcce64bc7399da13d0a502a362f9394bb208769cb4c39276be923e03f7d46511"
+ },
+ "chars": {
+  "T": 206,
+  "F_R": 270,
+  "F_I": 271
+ },
+ "claims": {
+  "T": [
+   "T1|pysubs2",
+   "T1|tests",
+   "T1|pysubs2/ssafile.py",
+   "T3|test_framework|pytest",
+   "T1|tests",
+   "T1|pyproject.toml",
+   "T6|python|3008000000@2"
+  ],
+  "F_R": [
+   "T1|pysubs2",
+   "T1|tests",
+   "T1|pysubs2/core",
+   "T1|pysubs2/ssafile.py",
+   "T1|pysubs2/webtt.py",
+   "T3|test_framework|pytest",
+   "T1|tests",
+   "T1|pyproject.toml",
+   "T4|toolz|",
+   "T6|python|3008000000@2"
+  ],
+  "F_I": [
+   "T1|pysubs2",
+   "T1|tests",
+   "T1|docs/core",
+   "T1|pysubs2/ssafile.py",
+   "T1|tests/test_font.py",
+   "T3|test_framework|pytest",
+   "T1|tests",
+   "T1|pyproject.toml",
+   "T4|boltons|",
+   "T6|python|3008000000@2"
+  ]
+ },
+ "python_spec": ">=3.8",
+ "token_audit": [
+  {
+   "cond": "F_R",
+   "kind": 1,
+   "type": "path",
+   "name": "pysubs2/core",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 2,
+   "type": "path",
+   "name": "pysubs2/webtt.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 4,
+   "type": "word",
+   "name": "toolz",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 1,
+   "type": "path",
+   "name": "docs/core",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 2,
+   "type": "path",
+   "name": "tests/test_font.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 4,
+   "type": "word",
+   "name": "boltons",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  }
+ ],
+ "dist_imports_used": {
+  "toolz": null,
+  "boltons": null
+ }
+}

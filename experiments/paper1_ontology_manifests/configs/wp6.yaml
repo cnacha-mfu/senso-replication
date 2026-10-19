@@ -1,0 +1,41 @@
+# WP6 (Study B: do wrong manifests hurt agents?) settings. Read by run_wp6.py and run_wp6_analysis.py.
+# Design: papers/paper1/wp6-harm-design.md (tag wp6-prereg). Everything not set here is inherited from
+# configs/wp5.yaml (agent settings, v2 NIM panel, 4-key pool without NVIDIA_API_KEY_3, limits, validation).
+# Paths are relative to the project root unless absolute.
+base_config: experiments/paper1_ontology_manifests/configs/wp5.yaml
+
+output_dir: experiments/paper1_ontology_manifests/results/real_v2/wp6
+pilot_dir: experiments/paper1_ontology_manifests/results/real_v2/wp6/pilot
+# Heavy, non-committed data. `repos`, `validation` and `uv_cache` are symlinks to the WP5 work dir (shared bare
+# clones, validation checkpoints, uv cache); task roots and venvs are WP6's own.
+work_dir: /home/adtgrade/research/data/wp6
+shared_work_dir: /home/adtgrade/research/data/wp5
+seed: 20261009
+wp5_tasks: experiments/paper1_ontology_manifests/results/real_v2/wp5/wp5_tasks.json
+wp5_output_dir: experiments/paper1_ontology_manifests/results/real_v2/wp5
+competitors: experiments/paper1_ontology_manifests/configs/wp6_competitors.yaml
+
+replicates: 2                     # per task x condition x model (design section 5)
+tbox_dir: /home/adtgrade/research/data/wp2_tbox/baseline   # frozen seo-claims.owl used by WP2 (HermiT)
+project_python: /home/adtgrade/research/senso-framework/.venv/bin/python   # has owlready2 (HermiT); the run venv has not
+
+# Manifest generator (design section 2). Fixed vocabulary and order; no randomness.
+manifest:
+  n_layout: 8
+  n_key_files: 3
+  n_deps: 5
+  k_false: 4
+  length_tolerance: 0.05
+  names: [core, internal, engine, backends, handlers, services, common, impl]
+  make_targets_run: [test, tests, check]
+  make_targets_install: [install, dev, develop]
+  generic_dependency_fallback: [boltons, toolz, tenacity, cachetools, pendulum, orjson, ujson, msgpack]
+  runtime_deny: [python, pip, setuptools, wheel, pkg-resources, distribute, build, hatchling, flit-core, poetry-core]
+  probe_timeout_s: 300
+  collect_accept_partial: true    # deviation 14 (design 2.3 said rc 0): also accept rc 2 with >= 1 test collected, only if re-check and HermiT mark the claim Supported
+
+conditions:
+  A: {manifest: false}
+  T: {manifest: true}
+  F_R: {manifest: true}
+  F_I: {manifest: true}

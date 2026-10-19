@@ -1,0 +1,2116 @@
+{
+ "repo": "fair-software/howfairis",
+ "snapshot_date": "2021-02-28",
+ "status": "ok",
+ "unmineable": false,
+ "unmineable_reason": null,
+ "replaces": null,
+ "settings": {
+  "dedup": true,
+  "complexity": false,
+  "dataset": null,
+  "sensitivity": false,
+  "snapshot_commit": "0d69e5ef85ba9a4005b5a03bf7da2bedc29ec38c",
+  "mode": "wp5_snapshot_commit",
+  "test_patch_files": [
+   "tests/test_compliance.py",
+   "tests/test_compliance_no_args.py"
+  ],
+  "package_roots": [
+   "howfairis"
+  ]
+ },
+ "versions": {
+  "owlready2": "0.51",
+  "pymannkendall": "1.4.3",
+  "lizard": "1.24.1",
+  "numpy": "2.5.3",
+  "scipy": "1.18.1",
+  "python": "3.12.15",
+  "git": "git version 2.53.0"
+ },
+ "task_id": "fair-software__howfairis-307",
+ "base_commit": "0d69e5ef85ba9a4005b5a03bf7da2bedc29ec38c",
+ "measures": {
+  "monthsObserved": 6,
+  "monthsSinceLastCommit": 0,
+  "distinctAuthorsInWindow": 12,
+  "commitMKTau": 0.4,
+  "commitMKpValue": 0.338888,
+  "activeMonthCount": 4,
+  "activeMonthRatio": 0.666667,
+  "meanMonthlyCommits": 159.666667,
+  "commitsLast3Months": 600,
+  "commitCountCV": 1.327124,
+  "commitCountCVSample": 1.453792,
+  "commitHalfRatio": 1.675978,
+  "commitSecondHalfMean": 200.0,
+  "churnCV": 1.704597,
+  "linesAddedCV": 1.694621,
+  "mergeMonthRatio": 0.666667,
+  "multiAuthorMonthRatio": 0.5,
+  "bugFixRatioFirstHalf": 0.260056,
+  "bugFixRatioSecondHalf": 0.141852,
+  "bugFixHalfRatio": 0.545467,
+  "locSeriesLength": 6,
+  "locRelSenSlopeAnnual": 0.434608,
+  "locMKTau": 0.8,
+  "locMKS": 12,
+  "locMKpValue": 0.026773,
+  "locSenSlope": 27.0,
+  "locStart": 732,
+  "locEnd": 3153,
+  "locDelta": 2421,
+  "locGrowthRate": 3.307377,
+  "locChangePct": 330.737705,
+  "locEndToStartRatio": 4.307377,
+  "locGrowthLast3": 3.15415,
+  "featureCommitsFirstHalf": 1,
+  "featureCommitsSecondHalf": 0,
+  "featureCommitsTotal": 1,
+  "featureSecondToFirstRatio": 0.0,
+  "locDeltaPerFeature": 2421.0,
+  "recentAgentCommitRatio": 0.0,
+  "featCommitCount": 1,
+  "bugFixCommitCount": 112,
+  "commitCount": 958,
+  "monthly_series": {
+   "months": [
+    "2020-09",
+    "2020-10",
+    "2020-11",
+    "2020-12",
+    "2021-01",
+    "2021-02"
+   ],
+   "commits": [
+    358,
+    0,
+    0,
+    10,
+    50,
+    540
+   ],
+   "loc": [
+    732,
+    732,
+    732,
+    759,
+    812,
+    3153
+   ]
+  }
+ },
+ "window": {
+  "L": 36,
+  "first_month": "2020-09",
+  "last_month": "2021-02",
+  "n_months": 6,
+  "left_truncated": true,
+  "first_commit_month": "2020-09",
+  "mined_months": 6,
+  "commits_in_window": 958,
+  "commits_in_history": 958
+ },
+ "loc_instrument": {
+  "instrument": "nonblank-source-lines-v1",
+  "status": "ok",
+  "months": 6,
+  "month_end_commits_distinct": 4,
+  "source_blobs": 139,
+  "blobs_fetched": 6,
+  "t_ls_tree_s": 0.04134279501158744,
+  "t_fetch_s": 0.7968915129895322,
+  "t_read_s": 0.010919891006778926,
+  "series_present": true,
+  "extensions": [
+   ".bash",
+   ".c",
+   ".cc",
+   ".cjs",
+   ".clj",
+   ".cpp",
+   ".cs",
+   ".cxx",
+   ".dart",
+   ".erl",
+   ".ex",
+   ".exs",
+   ".f90",
+   ".go",
+   ".groovy",
+   ".h",
+   ".hh",
+   ".hpp",
+   ".hs",
+   ".java",
+   ".jl",
+   ".js",
+   ".jsx",
+   ".kt",
+   ".kts",
+   ".lua",
+   ".m",
+   ".mjs",
+   ".ml",
+   ".mm",
+   ".nim",
+   ".php",
+   ".pl",
+   ".pm",
+   ".py",
+   ".pyi",
+   ".r",
+   ".rb",
+   ".rs",
+   ".scala",
+   ".sh",
+   ".sql",
+   ".svelte",
+   ".swift",
+   ".ts",
+   ".tsx",
+   ".vue",
+   ".zig"
+  ],
+  "excluded_dirs": [
+   "node_modules",
+   "vendor",
+   "vendored",
+   "third_party",
+   "site-packages",
+   "bower_components"
+  ],
+  "max_blob_bytes": 1000000,
+  "first_parent": true
+ },
+ "mining": {
+  "churn": {
+   "t_churn_raw_s": 0.1688560780021362,
+   "t_churn_fetch_s": 3.24026164598763,
+   "t_churn_numstat_s": 0.19992921000812203,
+   "blobs_fetched_churn": 1132
+  },
+  "timings": {
+   "t_clone": 0.005,
+   "t_mine": 3.671,
+   "t_loc": 0.849,
+   "t_reason_A": 3.676
+  },
+  "cached": false
+ },
+ "stage_a": {
+  "commits": 958,
+  "reasoned_commits": 798,
+  "inconsistent_chunks": 0,
+  "chunk_timings": [
+   {
+    "tbox_load_s": 0.041075913002714515,
+    "abox_load_s": 0.10439224494621158,
+    "reason_s": 3.4974363439832814,
+    "extract_s": 0.007877427968196571,
+    "total_s": 3.6511678000097163,
+    "commits": 798
+   }
+  ],
+  "tbox_sha256": "f5ba00eaa76dc3582415cdf566fbd7abc1d3f2797ca928f41dad106dc1c0bdb5"
+ },
+ "activity": {
+  "last_commit_date": "2021-02-26T13:29:18+00:00",
+  "months_since_last_commit": 0,
+  "distinct_authors_in_window": 12,
+  "merge_commits_in_window": 189
+ },
+ "agent_adoption_date": null,
+ "commit_label_counts": {
+  "BugFixCommit": 112,
+  "FeatureCommit": 1,
+  "AgentCommit": 0
+ },
+ "series_months": [
+  {
+   "month": "2020-09",
+   "commit_count": 358,
+   "merge_count": 55,
+   "unique_authors": 7,
+   "lines_added": 3292,
+   "lines_deleted": 2386,
+   "total_churn": 5678,
+   "files_changed": 357,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 732,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2020-10",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 732,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2020-11",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 732,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2020-12",
+   "commit_count": 10,
+   "merge_count": 2,
+   "unique_authors": 1,
+   "lines_added": 31,
+   "lines_deleted": 16,
+   "total_churn": 47,
+   "files_changed": 8,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 759,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2021-01",
+   "commit_count": 50,
+   "merge_count": 11,
+   "unique_authors": 6,
+   "lines_added": 353,
+   "lines_deleted": 211,
+   "total_churn": 564,
+   "files_changed": 46,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 812,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2021-02",
+   "commit_count": 540,
+   "merge_count": 121,
+   "unique_authors": 6,
+   "lines_added": 12884,
+   "lines_deleted": 9708,
+   "total_churn": 22592,
+   "files_changed": 1009,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 3153,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  }
+ ],
+ "measures_derived": {
+  "bugFixRatioFirstHalf": 0.260056,
+  "bugFixRatioSecondHalf": 0.141852,
+  "bugFixHalfRatio": 0.545467,
+  "featureCommitsFirstHalf": 1,
+  "featureCommitsSecondHalf": 0,
+  "featureCommitsTotal": 1,
+  "featureSecondToFirstRatio": 0.0,
+  "locDeltaPerFeature": 2421.0,
+  "recentAgentCommitRatio": 0.0
+ },
+ "modules_meta": {
+  "anchor_S": "2021-03-02T11:55:27+00:00",
+  "window_months": 12,
+  "package_roots": [
+   "howfairis"
+  ],
+  "n_modules": 16,
+  "n_source_files": 53,
+  "n_window_commits": 497,
+  "cached": false,
+  "timings": {
+   "t_tree_loc": 0.786,
+   "t_history": 0.067,
+   "t_numstat": 1.05
+  },
+  "module_loc_instrument": "nonblank-source-lines-v1",
+  "label_counts": {
+   "StableModule": 0,
+   "ActiveModule": 16,
+   "undetermined": 0
+  },
+  "thresholds": {
+   "mod_window_months": 12,
+   "mod_stable_max_rel_churn": 0.1,
+   "mod_stable_max_change_months": 2
+  }
+ },
+ "inferred": {
+  "a0.05_L36_D12_G0.05_orig": {
+   "classes": [
+    "CopyPasteEvidence",
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIIConformant",
+    "LawIVConformant",
+    "LawVConformant",
+    "LawVIConformant",
+    "LawVIIIConformant",
+    "LawVIINonConformant",
+    "LocPerFeatureHigh",
+    "MKApplicable",
+    "MergeActive",
+    "MultiAuthorActive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": "urn:senso:explanations:fair-software__howfairis-307:d20298612d99",
+   "tbox_sha256": "d20298612d99fa8f5c1a63c70eaab0195a3e82e2d6780de3bd1fd3ced72d6e5d",
+   "abox_triples": 201,
+   "t_reason_B_s": 2.437
+  }
+ },
+ "primary_config": "a0.05_L36_D12_G0.05_orig",
+ "project_iri": "http://senso-framework.org/data/fair-software__howfairis-307",
+ "consistent": true,
+ "inferred_labels": [
+  "CopyPasteEvidence",
+  "GrowthStage",
+  "LawIConformant",
+  "LawIIIConformant",
+  "LawIVConformant",
+  "LawVConformant",
+  "LawVIConformant",
+  "LawVIIIConformant",
+  "LawVIINonConformant",
+  "LocPerFeatureHigh",
+  "MKApplicable",
+  "MergeActive",
+  "MultiAuthorActive",
+  "RBActiveDevelopmentStage",
+  "RecentlyActive",
+  "SubstantialLocGrowth"
+ ],
+ "stage_labels": [
+  "GrowthStage",
+  "RBActiveDevelopmentStage"
+ ],
+ "law_labels": {
+  "I": "LawIConformant",
+  "III": "LawIIIConformant",
+  "IV": "LawIVConformant",
+  "V": "LawVConformant",
+  "VI": "LawVIConformant",
+  "VII": "LawVIINonConformant",
+  "VIII": "LawVIIIConformant"
+ },
+ "tbox_sha256_stage_b": "d20298612d99fa8f5c1a63c70eaab0195a3e82e2d6780de3bd1fd3ced72d6e5d",
+ "tbox_sha256_stage_a": "f5ba00eaa76dc3582415cdf566fbd7abc1d3f2797ca928f41dad106dc1c0bdb5",
+ "summary": {
+  "c1": "A",
+  "c2": "A",
+  "cf": "A",
+  "note": "debug summary; run_rq1_v2.py reads `inferred` and recomputes CF itself"
+ },
+ "modules": {
+  "docs": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "RarelyChangedModule"
+   ],
+   "measures": {
+    "modulePath": "docs",
+    "moduleLoc": 159,
+    "moduleCommitsInWindow": 10,
+    "moduleChangeMonthsInWindow": 1,
+    "moduleLinesChangedInWindow": 264,
+    "moduleRelChurnInWindow": 1.660377,
+    "moduleMonthsSinceLastChange": 1
+   },
+   "iri": "http://senso-framework.org/data/fair-software__howfairis-307/module/docs-71ab8b",
+   "abox_asserted": true
+  },
+  "howfairis/__init__.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "RarelyChangedModule"
+   ],
+   "measures": {
+    "modulePath": "howfairis/__init__.py",
+    "moduleLoc": 18,
+    "moduleCommitsInWindow": 35,
+    "moduleChangeMonthsInWindow": 2,
+    "moduleLinesChangedInWindow": 195,
+    "moduleRelChurnInWindow": 10.833333,
+    "moduleMonthsSinceLastChange": 1
+   },
+   "iri": "http://senso-framework.org/data/fair-software__howfairis-307/module/howfairis___init__.py-1a3984",
+   "abox_asserted": true
+  },
+  "howfairis/__version__.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "howfairis/__version__.py",
+    "moduleLoc": 1,
+    "moduleCommitsInWindow": 21,
+    "moduleChangeMonthsInWindow": 3,
+    "moduleLinesChangedInWindow": 39,
+    "moduleRelChurnInWindow": 39.0,
+    "moduleMonthsSinceLastChange": 1
+   },
+   "iri": "http://senso-framework.org/data/fair-software__howfairis-307/module/howfairis___version__.py-72be91",
+   "abox_asserted": true
+  },
+  "howfairis/checker.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "RarelyChangedModule"
+   ],
+   "measures": {
+    "modulePath": "howfairis/checker.py",
+    "moduleLoc": 217,
+    "moduleCommitsInWindow": 41,
+    "moduleChangeMonthsInWindow": 1,
+    "moduleLinesChangedInWindow": 725,
+    "moduleRelChurnInWindow": 3.341014,
+    "moduleMonthsSinceLastChange": 1
+   },
+   "iri": "http://senso-framework.org/data/fair-software__howfairis-307/module/howfairis_checker.py-88cd5c",
+   "abox_asserted": true
+  },
+  "howfairis/cli": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "RarelyChangedModule"
+   ],
+   "measures": {
+    "modulePath": "howfairis/cli",
+    "moduleLoc": 131,
+    "moduleCommitsInWindow": 20,
+    "moduleChangeMonthsInWindow": 2,
+    "moduleLinesChangedInWindow": 409,
+    "moduleRelChurnInWindow": 3.122137,
+    "moduleMonthsSinceLastChange": 0
+   },
+   "iri": "http://senso-framework.org/data/fair-software__howfairis-307/module/howfairis_cli-153d72",
+   "abox_asserted": true
+  },
+  "howfairis/code_repository_platforms.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "RarelyChangedModule"
+   ],
+   "measures": {
+    "modulePath": "howfairis/code_repository_platforms.py",
+    "moduleLoc": 8,
+    "moduleCommitsInWindow": 2,
+    "moduleChangeMonthsInWindow": 1,
+    "moduleLinesChangedInWindow": 10,
+    "moduleRelChurnInWindow": 1.25,
+    "moduleMonthsSinceLastChange": 1
+   },
+   "iri": "http://senso-framework.org/data/fair-software__howfairis-307/module/howfairis_code_repository_platforms.py-d5d4cb",
+   "abox_asserted": true
+  },
+  "howfairis/compliance.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "RarelyChangedModule"
+   ],
+   "measures": {
+    "modulePath": "howfairis/compliance.py",
+    "moduleLoc": 94,
+    "moduleCommitsInWindow": 12,
+    "moduleChangeMonthsInWindow": 1,
+    "moduleLinesChangedInWindow": 297,
+    "moduleRelChurnInWindow": 3.159574,
+    "moduleMonthsSinceLastChange": 1
+   },
+   "iri": "http://senso-framework.org/data/fair-software__howfairis-307/module/howfairis_compliance.py-0ec7e5",
+   "abox_asserted": true
+  },
+  "howfairis/exceptions": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "RarelyChangedModule"
+   ],
+   "measures": {
+    "modulePath": "howfairis/exceptions",
+    "moduleLoc": 8,
+    "moduleCommitsInWindow": 10,
+    "moduleChangeMonthsInWindow": 1,
+    "moduleLinesChangedInWindow": 72,
+    "moduleRelChurnInWindow": 9.0,
+    "moduleMonthsSinceLastChange": 1
+   },
+   "iri": "http://senso-framework.org/data/fair-software__howfairis-307/module/howfairis_exceptions-3b5249",
+   "abox_asserted": true
+  },
+  "howfairis/get_apikeys_from_env_vars.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "RarelyChangedModule"
+   ],
+   "measures": {
+    "modulePath": "howfairis/get_apikeys_from_env_vars.py",
+    "moduleLoc": 18,
+    "moduleCommitsInWindow": 1,
+    "moduleChangeMonthsInWindow": 1,
+    "moduleLinesChangedInWindow": 23,
+    "moduleRelChurnInWindow": 1.277778,
+    "moduleMonthsSinceLastChange": 1
+   },
+   "iri": "http://senso-framework.org/data/fair-software__howfairis-307/module/howfairis_get_apikeys_from_env_vars.py-ba7689",
+   "abox_asserted": true
+  },
+  "howfairis/mixins": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "howfairis/mixins",
+    "moduleLoc": 254,
+    "moduleCommitsInWindow": 53,
+    "moduleChangeMonthsInWindow": 3,
+    "moduleLinesChangedInWindow": 2094,
+    "moduleRelChurnInWindow": 8.244094,
+    "moduleMonthsSinceLastChange": 1
+   },
+   "iri": "http://senso-framework.org/data/fair-software__howfairis-307/module/howfairis_mixins-610bcb",
+   "abox_asserted": true
+  },
+  "howfairis/readme.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "RarelyChangedModule"
+   ],
+   "measures": {
+    "modulePath": "howfairis/readme.py",
+    "moduleLoc": 72,
+    "moduleCommitsInWindow": 18,
+    "moduleChangeMonthsInWindow": 1,
+    "moduleLinesChangedInWindow": 214,
+    "moduleRelChurnInWindow": 2.972222,
+    "moduleMonthsSinceLastChange": 1
+   },
+   "iri": "http://senso-framework.org/data/fair-software__howfairis-307/module/howfairis_readme.py-538393",
+   "abox_asserted": true
+  },
+  "howfairis/readme_format.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "RarelyChangedModule"
+   ],
+   "measures": {
+    "modulePath": "howfairis/readme_format.py",
+    "moduleLoc": 7,
+    "moduleCommitsInWindow": 1,
+    "moduleChangeMonthsInWindow": 1,
+    "moduleLinesChangedInWindow": 9,
+    "moduleRelChurnInWindow": 1.285714,
+    "moduleMonthsSinceLastChange": 1
+   },
+   "iri": "http://senso-framework.org/data/fair-software__howfairis-307/module/howfairis_readme_format.py-0fc97d",
+   "abox_asserted": true
+  },
+  "howfairis/repo.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "RarelyChangedModule"
+   ],
+   "measures": {
+    "modulePath": "howfairis/repo.py",
+    "moduleLoc": 97,
+    "moduleCommitsInWindow": 24,
+    "moduleChangeMonthsInWindow": 2,
+    "moduleLinesChangedInWindow": 226,
+    "moduleRelChurnInWindow": 2.329897,
+    "moduleMonthsSinceLastChange": 0
+   },
+   "iri": "http://senso-framework.org/data/fair-software__howfairis-307/module/howfairis_repo.py-eaf7ca",
+   "abox_asserted": true
+  },
+  "howfairis/requesting": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "RarelyChangedModule"
+   ],
+   "measures": {
+    "modulePath": "howfairis/requesting",
+    "moduleLoc": 187,
+    "moduleCommitsInWindow": 11,
+    "moduleChangeMonthsInWindow": 2,
+    "moduleLinesChangedInWindow": 780,
+    "moduleRelChurnInWindow": 4.171123,
+    "moduleMonthsSinceLastChange": 0
+   },
+   "iri": "http://senso-framework.org/data/fair-software__howfairis-307/module/howfairis_requesting-bf77f2",
+   "abox_asserted": true
+  },
+  "howfairis/schema.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "RarelyChangedModule"
+   ],
+   "measures": {
+    "modulePath": "howfairis/schema.py",
+    "moduleLoc": 12,
+    "moduleCommitsInWindow": 6,
+    "moduleChangeMonthsInWindow": 2,
+    "moduleLinesChangedInWindow": 57,
+    "moduleRelChurnInWindow": 4.75,
+    "moduleMonthsSinceLastChange": 1
+   },
+   "iri": "http://senso-framework.org/data/fair-software__howfairis-307/module/howfairis_schema.py-e08165",
+   "abox_asserted": true
+  },
+  "howfairis/workarounds": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "RarelyChangedModule"
+   ],
+   "measures": {
+    "modulePath": "howfairis/workarounds",
+    "moduleLoc": 26,
+    "moduleCommitsInWindow": 15,
+    "moduleChangeMonthsInWindow": 2,
+    "moduleLinesChangedInWindow": 106,
+    "moduleRelChurnInWindow": 4.076923,
+    "moduleMonthsSinceLastChange": 0
+   },
+   "iri": "http://senso-framework.org/data/fair-software__howfairis-307/module/howfairis_workarounds-a5ebdc",
+   "abox_asserted": true
+  }
+ },
+ "explanations": {
+  "stage:GrowthStage": {
+   "class": "GrowthStage",
+   "individual": "http://senso-framework.org/data/fair-software__howfairis-307",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/fair-software__howfairis-307 type http://senso-framework.org/ontology/seo#GrowthStage",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKTau_gt_0",
+       "text": "A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "GrowthStage",
+       "text": "GrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKpValue_lt_mk_alpha",
+       "text": "A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "fair-software__howfairis-307",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "fair-software__howfairis-307 type SoftwareProject"
+      },
+      {
+       "subject": "fair-software__howfairis-307",
+       "prop": "locSeriesLength",
+       "value": 6,
+       "raw": "fair-software__howfairis-307 locSeriesLength 6"
+      },
+      {
+       "subject": "fair-software__howfairis-307",
+       "prop": "locMKTau",
+       "value": 0.8,
+       "raw": "fair-software__howfairis-307 locMKTau 0.8"
+      },
+      {
+       "subject": "fair-software__howfairis-307",
+       "prop": "locMKpValue",
+       "value": 0.026773,
+       "raw": "fair-software__howfairis-307 locMKpValue 0.026773"
+      }
+     ],
+     "closures": [],
+     "raw": "fair-software__howfairis-307 type SoftwareProject\nA_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\nA_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\nfair-software__howfairis-307 locSeriesLength 6\nGrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject\nA_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]\nfair-software__howfairis-307 locMKTau 0.8\nfair-software__howfairis-307 locMKpValue 0.026773\nA_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]"
+    }
+   ],
+   "raw_text": "Axiom: fair-software__howfairis-307 type GrowthStage\n\nExplanation(s): \n1)   fair-software__howfairis-307 type SoftwareProject\n     A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\n     A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\n     fair-software__howfairis-307 locSeriesLength 6\n     GrowthStage equivalentTo A_locMKTau_gt_0\n                              and A_locMKpValue_lt_mk_alpha\n                              and MKApplicable\n                              and SoftwareProject\n     A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]\n     fair-software__howfairis-307 locMKTau 0.8\n     fair-software__howfairis-307 locMKpValue 0.026773\n     A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\n\n\n",
+   "seconds": 2.4744847230031155,
+   "returncode": 0,
+   "error": null
+  },
+  "stage:RBActiveDevelopmentStage": {
+   "class": "RBActiveDevelopmentStage",
+   "individual": "http://senso-framework.org/data/fair-software__howfairis-307",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/fair-software__howfairis-307 type http://senso-framework.org/ontology/seo#RBActiveDevelopmentStage",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable"
+      },
+      {
+       "kind": "definition",
+       "subject": "SubstantialLocGrowth",
+       "text": "SubstantialLocGrowth equivalentTo A_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKTau_gt_0",
+       "text": "A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "GrowthStage",
+       "text": "GrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year",
+       "text": "A_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year equivalentTo locRelSenSlopeAnnual some decimal[>= 0.05]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]"
+      },
+      {
+       "kind": "definition",
+       "subject": "RBActiveDevelopmentStage",
+       "text": "RBActiveDevelopmentStage equivalentTo GrowthStage and RecentlyActive and SoftwareProject and SubstantialLocGrowth"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKpValue_lt_mk_alpha",
+       "text": "A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]"
+      },
+      {
+       "kind": "definition",
+       "subject": "RecentlyActive",
+       "text": "RecentlyActive equivalentTo A_monthsSinceLastCommit_lt_rb_dormancy_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_monthsSinceLastCommit_lt_rb_dormancy_months",
+       "text": "A_monthsSinceLastCommit_lt_rb_dormancy_months equivalentTo monthsSinceLastCommit some integer[< 12]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "fair-software__howfairis-307",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "fair-software__howfairis-307 type SoftwareProject"
+      },
+      {
+       "subject": "fair-software__howfairis-307",
+       "prop": "locSeriesLength",
+       "value": 6,
+       "raw": "fair-software__howfairis-307 locSeriesLength 6"
+      },
+      {
+       "subject": "fair-software__howfairis-307",
+       "prop": "locRelSenSlopeAnnual",
+       "value": 0.434608,
+       "raw": "fair-software__howfairis-307 locRelSenSlopeAnnual 0.434608"
+      },
+      {
+       "subject": "fair-software__howfairis-307",
+       "prop": "monthsSinceLastCommit",
+       "value": 0,
+       "raw": "fair-software__howfairis-307 monthsSinceLastCommit 0"
+      },
+      {
+       "subject": "fair-software__howfairis-307",
+       "prop": "locMKTau",
+       "value": 0.8,
+       "raw": "fair-software__howfairis-307 locMKTau 0.8"
+      },
+      {
+       "subject": "fair-software__howfairis-307",
+       "prop": "locMKpValue",
+       "value": 0.026773,
+       "raw": "fair-software__howfairis-307 locMKpValue 0.026773"
+      }
+     ],
+     "closures": [],
+     "raw": "fair-software__howfairis-307 type SoftwareProject\nA_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\nSubstantialLocGrowth equivalentTo A_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year and SoftwareProject\nA_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\nfair-software__howfairis-307 locSeriesLength 6\nGrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject\nA_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year equivalentTo locRelSenSlopeAnnual some decimal[>= 0.05]\nfair-software__howfairis-307 locRelSenSlopeAnnual 0.434608\nfair-software__howfairis-307 monthsSinceLastCommit 0\nA_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]\nRBActiveDevelopmentStage equivalentTo GrowthStage and RecentlyActive and SoftwareProject and SubstantialLocGrowth\nfair-software__howfairis-307 locMKTau 0.8\nfair-software__howfairis-307 locMKpValue 0.026773\nA_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\nRecentlyActive equivalentTo A_monthsSinceLastCommit_lt_rb_dormancy_months and SoftwareProject\nA_monthsSinceLastCommit_lt_rb_dormancy_months equivalentTo monthsSinceLastCommit some integer[< 12]"
+    }
+   ],
+   "raw_text": "Axiom: fair-software__howfairis-307 type RBActiveDevelopmentStage\n\nExplanation(s): \n1)   fair-software__howfairis-307 type SoftwareProject\n     A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\n     SubstantialLocGrowth equivalentTo A_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year\n                                       and SoftwareProject\n     A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\n     fair-software__howfairis-307 locSeriesLength 6\n     GrowthStage equivalentTo A_locMKTau_gt_0\n                              and A_locMKpValue_lt_mk_alpha\n                              and MKApplicable\n                              and SoftwareProject\n     A_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year equivalentTo locRelSenSlopeAnnual some decimal[>= 0.05]\n     fair-software__howfairis-307 locRelSenSlopeAnnual 0.434608\n     fair-software__howfairis-307 monthsSinceLastCommit 0\n     A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]\n     RBActiveDevelopmentStage equivalentTo GrowthStage\n                                           and RecentlyActive\n                                           and SoftwareProject\n                                           and SubstantialLocGrowth\n     fair-software__howfairis-307 locMKTau 0.8\n     fair-software__howfairis-307 locMKpValue 0.026773\n     A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\n     RecentlyActive equivalentTo A_monthsSinceLastCommit_lt_rb_dormancy_months\n                                 and SoftwareProject\n     A_monthsSinceLastCommit_lt_rb_dormancy_months equivalentTo monthsSinceLastCommit some integer[< 12]\n\n\n",
+   "seconds": 2.57732596504502,
+   "returncode": 0,
+   "error": null
+  },
+  "lawI": {
+   "class": "LawIConformant",
+   "individual": "http://senso-framework.org/data/fair-software__howfairis-307",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/fair-software__howfairis-307 type http://senso-framework.org/ontology/seo#LawIConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law1_min_months",
+       "text": "A_monthsObserved_ge_p_law1_min_months equivalentTo monthsObserved some integer[>= 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawIConformant",
+       "text": "LawIConformant equivalentTo A_activeMonthRatio_ge_p_law1_active_ratio and A_monthsObserved_ge_p_law1_min_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_activeMonthRatio_ge_p_law1_active_ratio",
+       "text": "A_activeMonthRatio_ge_p_law1_active_ratio equivalentTo activeMonthRatio some decimal[>= 0.5]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "fair-software__howfairis-307",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "fair-software__howfairis-307 type SoftwareProject"
+      },
+      {
+       "subject": "fair-software__howfairis-307",
+       "prop": "activeMonthRatio",
+       "value": 0.666667,
+       "raw": "fair-software__howfairis-307 activeMonthRatio 0.666667"
+      },
+      {
+       "subject": "fair-software__howfairis-307",
+       "prop": "monthsObserved",
+       "value": 6,
+       "raw": "fair-software__howfairis-307 monthsObserved 6"
+      }
+     ],
+     "closures": [],
+     "raw": "fair-software__howfairis-307 type SoftwareProject\nfair-software__howfairis-307 activeMonthRatio 0.666667\nA_monthsObserved_ge_p_law1_min_months equivalentTo monthsObserved some integer[>= 2]\nLawIConformant equivalentTo A_activeMonthRatio_ge_p_law1_active_ratio and A_monthsObserved_ge_p_law1_min_months and SoftwareProject\nA_activeMonthRatio_ge_p_law1_active_ratio equivalentTo activeMonthRatio some decimal[>= 0.5]\nfair-software__howfairis-307 monthsObserved 6"
+    }
+   ],
+   "raw_text": "Axiom: fair-software__howfairis-307 type LawIConformant\n\nExplanation(s): \n1)   fair-software__howfairis-307 type SoftwareProject\n     fair-software__howfairis-307 activeMonthRatio 0.666667\n     A_monthsObserved_ge_p_law1_min_months equivalentTo monthsObserved some integer[>= 2]\n     LawIConformant equivalentTo A_activeMonthRatio_ge_p_law1_active_ratio\n                                 and A_monthsObserved_ge_p_law1_min_months\n                                 and SoftwareProject\n     A_activeMonthRatio_ge_p_law1_active_ratio equivalentTo activeMonthRatio some decimal[>= 0.5]\n     fair-software__howfairis-307 monthsObserved 6\n\n\n",
+   "seconds": 2.4772429180447944,
+   "returncode": 0,
+   "error": null
+  },
+  "lawIII": {
+   "class": "LawIIIConformant",
+   "individual": "http://senso-framework.org/data/fair-software__howfairis-307",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/fair-software__howfairis-307 type http://senso-framework.org/ontology/seo#LawIIIConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law3_min_months",
+       "text": "A_monthsObserved_ge_p_law3_min_months equivalentTo monthsObserved some integer[>= 6]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawIIIConformant",
+       "text": "LawIIIConformant equivalentTo A_churnCV_lt_p_law3_churn_cv and A_monthsObserved_ge_p_law3_min_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_churnCV_lt_p_law3_churn_cv",
+       "text": "A_churnCV_lt_p_law3_churn_cv equivalentTo churnCV some decimal[< 2.0]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "fair-software__howfairis-307",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "fair-software__howfairis-307 type SoftwareProject"
+      },
+      {
+       "subject": "fair-software__howfairis-307",
+       "prop": "churnCV",
+       "value": 1.704597,
+       "raw": "fair-software__howfairis-307 churnCV 1.704597"
+      },
+      {
+       "subject": "fair-software__howfairis-307",
+       "prop": "monthsObserved",
+       "value": 6,
+       "raw": "fair-software__howfairis-307 monthsObserved 6"
+      }
+     ],
+     "closures": [],
+     "raw": "fair-software__howfairis-307 type SoftwareProject\nA_monthsObserved_ge_p_law3_min_months equivalentTo monthsObserved some integer[>= 6]\nLawIIIConformant equivalentTo A_churnCV_lt_p_law3_churn_cv and A_monthsObserved_ge_p_law3_min_months and SoftwareProject\nfair-software__howfairis-307 churnCV 1.704597\nA_churnCV_lt_p_law3_churn_cv equivalentTo churnCV some decimal[< 2.0]\nfair-software__howfairis-307 monthsObserved 6"
+    }
+   ],
+   "raw_text": "Axiom: fair-software__howfairis-307 type LawIIIConformant\n\nExplanation(s): \n1)   fair-software__howfairis-307 type SoftwareProject\n     A_monthsObserved_ge_p_law3_min_months equivalentTo monthsObserved some integer[>= 6]\n     LawIIIConformant equivalentTo A_churnCV_lt_p_law3_churn_cv\n                                   and A_monthsObserved_ge_p_law3_min_months\n                                   and SoftwareProject\n     fair-software__howfairis-307 churnCV 1.704597\n     A_churnCV_lt_p_law3_churn_cv equivalentTo churnCV some decimal[< 2.0]\n     fair-software__howfairis-307 monthsObserved 6\n\n\n",
+   "seconds": 2.510478176001925,
+   "returncode": 0,
+   "error": null
+  },
+  "lawIV": {
+   "class": "LawIVConformant",
+   "individual": "http://senso-framework.org/data/fair-software__howfairis-307",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/fair-software__howfairis-307 type http://senso-framework.org/ontology/seo#LawIVConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law4_min_months",
+       "text": "A_monthsObserved_ge_p_law4_min_months equivalentTo monthsObserved some integer[>= 6]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawIVConformant",
+       "text": "LawIVConformant equivalentTo A_commitCountCV_lt_p_law4_commit_cv and A_monthsObserved_ge_p_law4_min_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_commitCountCV_lt_p_law4_commit_cv",
+       "text": "A_commitCountCV_lt_p_law4_commit_cv equivalentTo commitCountCV some decimal[< 1.5]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "fair-software__howfairis-307",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "fair-software__howfairis-307 type SoftwareProject"
+      },
+      {
+       "subject": "fair-software__howfairis-307",
+       "prop": "commitCountCV",
+       "value": 1.327124,
+       "raw": "fair-software__howfairis-307 commitCountCV 1.327124"
+      },
+      {
+       "subject": "fair-software__howfairis-307",
+       "prop": "monthsObserved",
+       "value": 6,
+       "raw": "fair-software__howfairis-307 monthsObserved 6"
+      }
+     ],
+     "closures": [],
+     "raw": "A_monthsObserved_ge_p_law4_min_months equivalentTo monthsObserved some integer[>= 6]\nfair-software__howfairis-307 type SoftwareProject\nLawIVConformant equivalentTo A_commitCountCV_lt_p_law4_commit_cv and A_monthsObserved_ge_p_law4_min_months and SoftwareProject\nfair-software__howfairis-307 commitCountCV 1.327124\nA_commitCountCV_lt_p_law4_commit_cv equivalentTo commitCountCV some decimal[< 1.5]\nfair-software__howfairis-307 monthsObserved 6"
+    }
+   ],
+   "raw_text": "Axiom: fair-software__howfairis-307 type LawIVConformant\n\nExplanation(s): \n1)   A_monthsObserved_ge_p_law4_min_months equivalentTo monthsObserved some integer[>= 6]\n     fair-software__howfairis-307 type SoftwareProject\n     LawIVConformant equivalentTo A_commitCountCV_lt_p_law4_commit_cv\n                                  and A_monthsObserved_ge_p_law4_min_months\n                                  and SoftwareProject\n     fair-software__howfairis-307 commitCountCV 1.327124\n     A_commitCountCV_lt_p_law4_commit_cv equivalentTo commitCountCV some decimal[< 1.5]\n     fair-software__howfairis-307 monthsObserved 6\n\n\n",
+   "seconds": 2.4532124619581737,
+   "returncode": 0,
+   "error": null
+  },
+  "lawV": {
+   "class": "LawVConformant",
+   "individual": "http://senso-framework.org/data/fair-software__howfairis-307",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/fair-software__howfairis-307 type http://senso-framework.org/ontology/seo#LawVConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "LawVConformant",
+       "text": "LawVConformant equivalentTo A_linesAddedCV_lt_p_law5_additions_cv and A_monthsObserved_ge_p_law5_min_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_linesAddedCV_lt_p_law5_additions_cv",
+       "text": "A_linesAddedCV_lt_p_law5_additions_cv equivalentTo linesAddedCV some decimal[< 2.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law5_min_months",
+       "text": "A_monthsObserved_ge_p_law5_min_months equivalentTo monthsObserved some integer[>= 4]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "fair-software__howfairis-307",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "fair-software__howfairis-307 type SoftwareProject"
+      },
+      {
+       "subject": "fair-software__howfairis-307",
+       "prop": "linesAddedCV",
+       "value": 1.694621,
+       "raw": "fair-software__howfairis-307 linesAddedCV 1.694621"
+      },
+      {
+       "subject": "fair-software__howfairis-307",
+       "prop": "monthsObserved",
+       "value": 6,
+       "raw": "fair-software__howfairis-307 monthsObserved 6"
+      }
+     ],
+     "closures": [],
+     "raw": "fair-software__howfairis-307 type SoftwareProject\nLawVConformant equivalentTo A_linesAddedCV_lt_p_law5_additions_cv and A_monthsObserved_ge_p_law5_min_months and SoftwareProject\nA_linesAddedCV_lt_p_law5_additions_cv equivalentTo linesAddedCV some decimal[< 2.0]\nA_monthsObserved_ge_p_law5_min_months equivalentTo monthsObserved some integer[>= 4]\nfair-software__howfairis-307 linesAddedCV 1.694621\nfair-software__howfairis-307 monthsObserved 6"
+    }
+   ],
+   "raw_text": "Axiom: fair-software__howfairis-307 type LawVConformant\n\nExplanation(s): \n1)   fair-software__howfairis-307 type SoftwareProject\n     LawVConformant equivalentTo A_linesAddedCV_lt_p_law5_additions_cv\n                                 and A_monthsObserved_ge_p_law5_min_months\n                                 and SoftwareProject\n     A_linesAddedCV_lt_p_law5_additions_cv equivalentTo linesAddedCV some decimal[< 2.0]\n     A_monthsObserved_ge_p_law5_min_months equivalentTo monthsObserved some integer[>= 4]\n     fair-software__howfairis-307 linesAddedCV 1.694621\n     fair-software__howfairis-307 monthsObserved 6\n\n\n",
+   "seconds": 2.462189743993804,
+   "returncode": 0,
+   "error": null
+  },
+  "lawVI": {
+   "class": "LawVIConformant",
+   "individual": "http://senso-framework.org/data/fair-software__howfairis-307",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/fair-software__howfairis-307 type http://senso-framework.org/ontology/seo#LawVIConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "subclass",
+       "subject": "GrowthStage",
+       "text": "GrowthStage subClassOf LawVIConformant"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKTau_gt_0",
+       "text": "A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKpValue_lt_mk_alpha",
+       "text": "A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]"
+      },
+      {
+       "kind": "definition",
+       "subject": "GrowthStage",
+       "text": "GrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "fair-software__howfairis-307",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "fair-software__howfairis-307 type SoftwareProject"
+      },
+      {
+       "subject": "fair-software__howfairis-307",
+       "prop": "locMKTau",
+       "value": 0.8,
+       "raw": "fair-software__howfairis-307 locMKTau 0.8"
+      },
+      {
+       "subject": "fair-software__howfairis-307",
+       "prop": "locMKpValue",
+       "value": 0.026773,
+       "raw": "fair-software__howfairis-307 locMKpValue 0.026773"
+      },
+      {
+       "subject": "fair-software__howfairis-307",
+       "prop": "locSeriesLength",
+       "value": 6,
+       "raw": "fair-software__howfairis-307 locSeriesLength 6"
+      }
+     ],
+     "closures": [],
+     "raw": "fair-software__howfairis-307 type SoftwareProject\nGrowthStage subClassOf LawVIConformant\nA_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\nfair-software__howfairis-307 locMKTau 0.8\nA_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\nfair-software__howfairis-307 locMKpValue 0.026773\nfair-software__howfairis-307 locSeriesLength 6\nA_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\nGrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject\nA_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]"
+    }
+   ],
+   "raw_text": "Axiom: fair-software__howfairis-307 type LawVIConformant\n\nExplanation(s): \n1)   fair-software__howfairis-307 type SoftwareProject\n     GrowthStage subClassOf LawVIConformant\n     A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\n     fair-software__howfairis-307 locMKTau 0.8\n     A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\n     fair-software__howfairis-307 locMKpValue 0.026773\n     fair-software__howfairis-307 locSeriesLength 6\n     A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\n     GrowthStage equivalentTo A_locMKTau_gt_0\n                              and A_locMKpValue_lt_mk_alpha\n                              and MKApplicable\n                              and SoftwareProject\n     A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]\n\n\n",
+   "seconds": 2.6365695529966615,
+   "returncode": 0,
+   "error": null
+  },
+  "lawVII": {
+   "class": "LawVIINonConformant",
+   "individual": "http://senso-framework.org/data/fair-software__howfairis-307",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/fair-software__howfairis-307 type http://senso-framework.org/ontology/seo#LawVIINonConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_bugFixRatioFirstHalf_gt_0",
+       "text": "A_bugFixRatioFirstHalf_gt_0 equivalentTo bugFixRatioFirstHalf some decimal[> 0.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_bugFixHalfRatio_lt_p_law7_tolerance",
+       "text": "A_bugFixHalfRatio_lt_p_law7_tolerance equivalentTo bugFixHalfRatio some decimal[< 0.9]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_activeMonthCount_ge_p_law7_min_active_months",
+       "text": "A_activeMonthCount_ge_p_law7_min_active_months equivalentTo activeMonthCount some integer[>= 4]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawVIINonConformant",
+       "text": "LawVIINonConformant equivalentTo A_activeMonthCount_ge_p_law7_min_active_months and A_bugFixHalfRatio_lt_p_law7_tolerance and A_bugFixRatioFirstHalf_gt_0 and SoftwareProject"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "fair-software__howfairis-307",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "fair-software__howfairis-307 type SoftwareProject"
+      },
+      {
+       "subject": "fair-software__howfairis-307",
+       "prop": "activeMonthCount",
+       "value": 4,
+       "raw": "fair-software__howfairis-307 activeMonthCount 4"
+      },
+      {
+       "subject": "fair-software__howfairis-307",
+       "prop": "bugFixHalfRatio",
+       "value": 0.545467,
+       "raw": "fair-software__howfairis-307 bugFixHalfRatio 0.545467"
+      },
+      {
+       "subject": "fair-software__howfairis-307",
+       "prop": "bugFixRatioFirstHalf",
+       "value": 0.260056,
+       "raw": "fair-software__howfairis-307 bugFixRatioFirstHalf 0.260056"
+      }
+     ],
+     "closures": [],
+     "raw": "fair-software__howfairis-307 type SoftwareProject\nA_bugFixRatioFirstHalf_gt_0 equivalentTo bugFixRatioFirstHalf some decimal[> 0.0]\nA_bugFixHalfRatio_lt_p_law7_tolerance equivalentTo bugFixHalfRatio some decimal[< 0.9]\nA_activeMonthCount_ge_p_law7_min_active_months equivalentTo activeMonthCount some integer[>= 4]\nfair-software__howfairis-307 activeMonthCount 4\nfair-software__howfairis-307 bugFixHalfRatio 0.545467\nLawVIINonConformant equivalentTo A_activeMonthCount_ge_p_law7_min_active_months and A_bugFixHalfRatio_lt_p_law7_tolerance and A_bugFixRatioFirstHalf_gt_0 and SoftwareProject\nfair-software__howfairis-307 bugFixRatioFirstHalf 0.260056"
+    }
+   ],
+   "raw_text": "Axiom: fair-software__howfairis-307 type LawVIINonConformant\n\nExplanation(s): \n1)   fair-software__howfairis-307 type SoftwareProject\n     A_bugFixRatioFirstHalf_gt_0 equivalentTo bugFixRatioFirstHalf some decimal[> 0.0]\n     A_bugFixHalfRatio_lt_p_law7_tolerance equivalentTo bugFixHalfRatio some decimal[< 0.9]\n     A_activeMonthCount_ge_p_law7_min_active_months equivalentTo activeMonthCount some integer[>= 4]\n     fair-software__howfairis-307 activeMonthCount 4\n     fair-software__howfairis-307 bugFixHalfRatio 0.545467\n     LawVIINonConformant equivalentTo A_activeMonthCount_ge_p_law7_min_active_months\n                                      and A_bugFixHalfRatio_lt_p_law7_tolerance\n                                      and A_bugFixRatioFirstHalf_gt_0\n                                      and SoftwareProject\n     fair-software__howfairis-307 bugFixRatioFirstHalf 0.260056\n\n\n",
+   "seconds": 2.5473315810086206,
+   "returncode": 0,
+   "error": null
+  },
+  "lawVIII": {
+   "class": "LawVIIIConformant",
+   "individual": "http://senso-framework.org/data/fair-software__howfairis-307",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/fair-software__howfairis-307 type http://senso-framework.org/ontology/seo#LawVIIIConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio",
+       "text": "A_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio equivalentTo multiAuthorMonthRatio some decimal[> 0.3]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_mergeMonthRatio_gt_p_law8_merge_ratio",
+       "text": "A_mergeMonthRatio_gt_p_law8_merge_ratio equivalentTo MergeActive"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio",
+       "text": "A_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio equivalentTo MultiAuthorActive"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawVIIIConformant",
+       "text": "LawVIIIConformant equivalentTo A_monthsObserved_ge_p_law8_min_months and MergeActive and MultiAuthorActive and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law8_min_months",
+       "text": "A_monthsObserved_ge_p_law8_min_months equivalentTo monthsObserved some integer[>= 6]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_mergeMonthRatio_gt_p_law8_merge_ratio",
+       "text": "A_mergeMonthRatio_gt_p_law8_merge_ratio equivalentTo mergeMonthRatio some decimal[> 0.3]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "fair-software__howfairis-307",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "fair-software__howfairis-307 type SoftwareProject"
+      },
+      {
+       "subject": "fair-software__howfairis-307",
+       "prop": "mergeMonthRatio",
+       "value": 0.666667,
+       "raw": "fair-software__howfairis-307 mergeMonthRatio 0.666667"
+      },
+      {
+       "subject": "fair-software__howfairis-307",
+       "prop": "multiAuthorMonthRatio",
+       "value": 0.5,
+       "raw": "fair-software__howfairis-307 multiAuthorMonthRatio 0.5"
+      },
+      {
+       "subject": "fair-software__howfairis-307",
+       "prop": "monthsObserved",
+       "value": 6,
+       "raw": "fair-software__howfairis-307 monthsObserved 6"
+      }
+     ],
+     "closures": [],
+     "raw": "fair-software__howfairis-307 type SoftwareProject\nA_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio equivalentTo multiAuthorMonthRatio some decimal[> 0.3]\nA_mergeMonthRatio_gt_p_law8_merge_ratio equivalentTo MergeActive\nA_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio equivalentTo MultiAuthorActive\nLawVIIIConformant equivalentTo A_monthsObserved_ge_p_law8_min_months and MergeActive and MultiAuthorActive and SoftwareProject\nfair-software__howfairis-307 mergeMonthRatio 0.666667\nA_monthsObserved_ge_p_law8_min_months equivalentTo monthsObserved some integer[>= 6]\nfair-software__howfairis-307 multiAuthorMonthRatio 0.5\nfair-software__howfairis-307 monthsObserved 6\nA_mergeMonthRatio_gt_p_law8_merge_ratio equivalentTo mergeMonthRatio some decimal[> 0.3]"
+    }
+   ],
+   "raw_text": "Axiom: fair-software__howfairis-307 type LawVIIIConformant\n\nExplanation(s): \n1)   fair-software__howfairis-307 type SoftwareProject\n     A_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio equivalentTo multiAuthorMonthRatio some decimal[> 0.3]\n     A_mergeMonthRatio_gt_p_law8_merge_ratio equivalentTo MergeActive\n     A_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio equivalentTo MultiAuthorActive\n     LawVIIIConformant equivalentTo A_monthsObserved_ge_p_law8_min_months\n                                    and MergeActive\n                                    and MultiAuthorActive\n                                    and SoftwareProject\n     fair-software__howfairis-307 mergeMonthRatio 0.666667\n     A_monthsObserved_ge_p_law8_min_months equivalentTo monthsObserved some integer[>= 6]\n     fair-software__howfairis-307 multiAuthorMonthRatio 0.5\n     fair-software__howfairis-307 monthsObserved 6\n     A_mergeMonthRatio_gt_p_law8_merge_ratio equivalentTo mergeMonthRatio some decimal[> 0.3]\n\n\n",
+   "seconds": 2.4427900709561072,
+   "returncode": 0,
+   "error": null
+  },
+  "module:howfairis/mixins": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/fair-software__howfairis-307/module/howfairis_mixins-610bcb",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/fair-software__howfairis-307/module/howfairis_mixins-610bcb type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "howfairis_mixins-610bcb",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 3,
+       "raw": "howfairis_mixins-610bcb moduleChangeMonthsInWindow 3"
+      },
+      {
+       "subject": "howfairis_mixins-610bcb",
+       "prop": "type",
+       "value": "Module",
+       "raw": "howfairis_mixins-610bcb type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "howfairis_mixins-610bcb moduleChangeMonthsInWindow 3\nA_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\nhowfairis_mixins-610bcb type Module\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\nOftenChangedModule subClassOf ActiveModule"
+    }
+   ],
+   "raw_text": "Axiom: howfairis_mixins-610bcb type ActiveModule\n\nExplanation(s): \n1)   howfairis_mixins-610bcb moduleChangeMonthsInWindow 3\n     A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     howfairis_mixins-610bcb type Module\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     OftenChangedModule subClassOf ActiveModule\n\n\n",
+   "seconds": 2.3492156690335833,
+   "returncode": 0,
+   "error": null
+  },
+  "module:howfairis/checker.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/fair-software__howfairis-307/module/howfairis_checker.py-88cd5c",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/fair-software__howfairis-307/module/howfairis_checker.py-88cd5c type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule subClassOf ActiveModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "howfairis_checker.py-88cd5c",
+       "prop": "type",
+       "value": "Module",
+       "raw": "howfairis_checker.py-88cd5c type Module"
+      },
+      {
+       "subject": "howfairis_checker.py-88cd5c",
+       "prop": "moduleRelChurnInWindow",
+       "value": 3.341014,
+       "raw": "howfairis_checker.py-88cd5c moduleRelChurnInWindow 3.341014"
+      }
+     ],
+     "closures": [],
+     "raw": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module\nhowfairis_checker.py-88cd5c type Module\nHighRelChurnModule subClassOf ActiveModule\nA_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\nhowfairis_checker.py-88cd5c moduleRelChurnInWindow 3.341014"
+    }
+   ],
+   "raw_text": "Axiom: howfairis_checker.py-88cd5c type ActiveModule\n\nExplanation(s): \n1)   HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn\n                                     and Module\n     howfairis_checker.py-88cd5c type Module\n     HighRelChurnModule subClassOf ActiveModule\n     A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\n     howfairis_checker.py-88cd5c moduleRelChurnInWindow 3.341014\n\n\n",
+   "seconds": 2.4131249359925278,
+   "returncode": 0,
+   "error": null
+  },
+  "module:howfairis/requesting": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/fair-software__howfairis-307/module/howfairis_requesting-bf77f2",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/fair-software__howfairis-307/module/howfairis_requesting-bf77f2 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule subClassOf ActiveModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "howfairis_requesting-bf77f2",
+       "prop": "type",
+       "value": "Module",
+       "raw": "howfairis_requesting-bf77f2 type Module"
+      },
+      {
+       "subject": "howfairis_requesting-bf77f2",
+       "prop": "moduleRelChurnInWindow",
+       "value": 4.171123,
+       "raw": "howfairis_requesting-bf77f2 moduleRelChurnInWindow 4.171123"
+      }
+     ],
+     "closures": [],
+     "raw": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module\nHighRelChurnModule subClassOf ActiveModule\nhowfairis_requesting-bf77f2 type Module\nA_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\nhowfairis_requesting-bf77f2 moduleRelChurnInWindow 4.171123"
+    }
+   ],
+   "raw_text": "Axiom: howfairis_requesting-bf77f2 type ActiveModule\n\nExplanation(s): \n1)   HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn\n                                     and Module\n     HighRelChurnModule subClassOf ActiveModule\n     howfairis_requesting-bf77f2 type Module\n     A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\n     howfairis_requesting-bf77f2 moduleRelChurnInWindow 4.171123\n\n\n",
+   "seconds": 2.5411717129754834,
+   "returncode": 0,
+   "error": null
+  },
+  "module:docs": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/fair-software__howfairis-307/module/docs-71ab8b",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/fair-software__howfairis-307/module/docs-71ab8b type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule subClassOf ActiveModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "docs-71ab8b",
+       "prop": "moduleRelChurnInWindow",
+       "value": 1.660377,
+       "raw": "docs-71ab8b moduleRelChurnInWindow 1.660377"
+      },
+      {
+       "subject": "docs-71ab8b",
+       "prop": "type",
+       "value": "Module",
+       "raw": "docs-71ab8b type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "docs-71ab8b moduleRelChurnInWindow 1.660377\nHighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module\ndocs-71ab8b type Module\nHighRelChurnModule subClassOf ActiveModule\nA_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+    }
+   ],
+   "raw_text": "Axiom: docs-71ab8b type ActiveModule\n\nExplanation(s): \n1)   docs-71ab8b moduleRelChurnInWindow 1.660377\n     HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn\n                                     and Module\n     docs-71ab8b type Module\n     HighRelChurnModule subClassOf ActiveModule\n     A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\n\n\n",
+   "seconds": 3.3514371110359207,
+   "returncode": 0,
+   "error": null
+  },
+  "module:howfairis/cli": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/fair-software__howfairis-307/module/howfairis_cli-153d72",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/fair-software__howfairis-307/module/howfairis_cli-153d72 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule subClassOf ActiveModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "howfairis_cli-153d72",
+       "prop": "moduleRelChurnInWindow",
+       "value": 3.122137,
+       "raw": "howfairis_cli-153d72 moduleRelChurnInWindow 3.122137"
+      },
+      {
+       "subject": "howfairis_cli-153d72",
+       "prop": "type",
+       "value": "Module",
+       "raw": "howfairis_cli-153d72 type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "howfairis_cli-153d72 moduleRelChurnInWindow 3.122137\nhowfairis_cli-153d72 type Module\nHighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module\nHighRelChurnModule subClassOf ActiveModule\nA_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+    }
+   ],
+   "raw_text": "Axiom: howfairis_cli-153d72 type ActiveModule\n\nExplanation(s): \n1)   howfairis_cli-153d72 moduleRelChurnInWindow 3.122137\n     howfairis_cli-153d72 type Module\n     HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn\n                                     and Module\n     HighRelChurnModule subClassOf ActiveModule\n     A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\n\n\n",
+   "seconds": 4.838910024962388,
+   "returncode": 0,
+   "error": null
+  },
+  "module:howfairis/repo.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/fair-software__howfairis-307/module/howfairis_repo.py-eaf7ca",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/fair-software__howfairis-307/module/howfairis_repo.py-eaf7ca type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule subClassOf ActiveModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "howfairis_repo.py-eaf7ca",
+       "prop": "moduleRelChurnInWindow",
+       "value": 2.329897,
+       "raw": "howfairis_repo.py-eaf7ca moduleRelChurnInWindow 2.329897"
+      },
+      {
+       "subject": "howfairis_repo.py-eaf7ca",
+       "prop": "type",
+       "value": "Module",
+       "raw": "howfairis_repo.py-eaf7ca type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "howfairis_repo.py-eaf7ca moduleRelChurnInWindow 2.329897\nHighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module\nHighRelChurnModule subClassOf ActiveModule\nA_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\nhowfairis_repo.py-eaf7ca type Module"
+    }
+   ],
+   "raw_text": "Axiom: howfairis_repo.py-eaf7ca type ActiveModule\n\nExplanation(s): \n1)   howfairis_repo.py-eaf7ca moduleRelChurnInWindow 2.329897\n     HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn\n                                     and Module\n     HighRelChurnModule subClassOf ActiveModule\n     A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\n     howfairis_repo.py-eaf7ca type Module\n\n\n",
+   "seconds": 4.622188325971365,
+   "returncode": 0,
+   "error": null
+  },
+  "module:howfairis/compliance.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/fair-software__howfairis-307/module/howfairis_compliance.py-0ec7e5",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/fair-software__howfairis-307/module/howfairis_compliance.py-0ec7e5 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule subClassOf ActiveModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "howfairis_compliance.py-0ec7e5",
+       "prop": "moduleRelChurnInWindow",
+       "value": 3.159574,
+       "raw": "howfairis_compliance.py-0ec7e5 moduleRelChurnInWindow 3.159574"
+      },
+      {
+       "subject": "howfairis_compliance.py-0ec7e5",
+       "prop": "type",
+       "value": "Module",
+       "raw": "howfairis_compliance.py-0ec7e5 type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "howfairis_compliance.py-0ec7e5 moduleRelChurnInWindow 3.159574\nHighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module\nhowfairis_compliance.py-0ec7e5 type Module\nHighRelChurnModule subClassOf ActiveModule\nA_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+    }
+   ],
+   "raw_text": "Axiom: howfairis_compliance.py-0ec7e5 type ActiveModule\n\nExplanation(s): \n1)   howfairis_compliance.py-0ec7e5 moduleRelChurnInWindow 3.159574\n     HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn\n                                     and Module\n     howfairis_compliance.py-0ec7e5 type Module\n     HighRelChurnModule subClassOf ActiveModule\n     A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\n\n\n",
+   "seconds": 4.968244120012969,
+   "returncode": 0,
+   "error": null
+  },
+  "module:howfairis/readme.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/fair-software__howfairis-307/module/howfairis_readme.py-538393",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/fair-software__howfairis-307/module/howfairis_readme.py-538393 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule subClassOf ActiveModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "howfairis_readme.py-538393",
+       "prop": "type",
+       "value": "Module",
+       "raw": "howfairis_readme.py-538393 type Module"
+      },
+      {
+       "subject": "howfairis_readme.py-538393",
+       "prop": "moduleRelChurnInWindow",
+       "value": 2.972222,
+       "raw": "howfairis_readme.py-538393 moduleRelChurnInWindow 2.972222"
+      }
+     ],
+     "closures": [],
+     "raw": "howfairis_readme.py-538393 type Module\nHighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module\nHighRelChurnModule subClassOf ActiveModule\nA_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\nhowfairis_readme.py-538393 moduleRelChurnInWindow 2.972222"
+    }
+   ],
+   "raw_text": "Axiom: howfairis_readme.py-538393 type ActiveModule\n\nExplanation(s): \n1)   howfairis_readme.py-538393 type Module\n     HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn\n                                     and Module\n     HighRelChurnModule subClassOf ActiveModule\n     A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\n     howfairis_readme.py-538393 moduleRelChurnInWindow 2.972222\n\n\n",
+   "seconds": 4.681057267996948,
+   "returncode": 0,
+   "error": null
+  },
+  "module:howfairis/workarounds": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/fair-software__howfairis-307/module/howfairis_workarounds-a5ebdc",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/fair-software__howfairis-307/module/howfairis_workarounds-a5ebdc type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule subClassOf ActiveModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "howfairis_workarounds-a5ebdc",
+       "prop": "moduleRelChurnInWindow",
+       "value": 4.076923,
+       "raw": "howfairis_workarounds-a5ebdc moduleRelChurnInWindow 4.076923"
+      },
+      {
+       "subject": "howfairis_workarounds-a5ebdc",
+       "prop": "type",
+       "value": "Module",
+       "raw": "howfairis_workarounds-a5ebdc type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "howfairis_workarounds-a5ebdc moduleRelChurnInWindow 4.076923\nhowfairis_workarounds-a5ebdc type Module\nHighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module\nHighRelChurnModule subClassOf ActiveModule\nA_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+    }
+   ],
+   "raw_text": "Axiom: howfairis_workarounds-a5ebdc type ActiveModule\n\nExplanation(s): \n1)   howfairis_workarounds-a5ebdc moduleRelChurnInWindow 4.076923\n     howfairis_workarounds-a5ebdc type Module\n     HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn\n                                     and Module\n     HighRelChurnModule subClassOf ActiveModule\n     A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\n\n\n",
+   "seconds": 4.5806662770337425,
+   "returncode": 0,
+   "error": null
+  },
+  "module:howfairis/__init__.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/fair-software__howfairis-307/module/howfairis___init__.py-1a3984",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/fair-software__howfairis-307/module/howfairis___init__.py-1a3984 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule subClassOf ActiveModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "howfairis___init__.py-1a3984",
+       "prop": "type",
+       "value": "Module",
+       "raw": "howfairis___init__.py-1a3984 type Module"
+      },
+      {
+       "subject": "howfairis___init__.py-1a3984",
+       "prop": "moduleRelChurnInWindow",
+       "value": 10.833333,
+       "raw": "howfairis___init__.py-1a3984 moduleRelChurnInWindow 10.833333"
+      }
+     ],
+     "closures": [],
+     "raw": "howfairis___init__.py-1a3984 type Module\nHighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module\nhowfairis___init__.py-1a3984 moduleRelChurnInWindow 10.833333\nHighRelChurnModule subClassOf ActiveModule\nA_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+    }
+   ],
+   "raw_text": "Axiom: howfairis___init__.py-1a3984 type ActiveModule\n\nExplanation(s): \n1)   howfairis___init__.py-1a3984 type Module\n     HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn\n                                     and Module\n     howfairis___init__.py-1a3984 moduleRelChurnInWindow 10.833333\n     HighRelChurnModule subClassOf ActiveModule\n     A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\n\n\n",
+   "seconds": 4.6412125110509805,
+   "returncode": 0,
+   "error": null
+  },
+  "module:howfairis/get_apikeys_from_env_vars.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/fair-software__howfairis-307/module/howfairis_get_apikeys_from_env_vars.py-ba7689",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/fair-software__howfairis-307/module/howfairis_get_apikeys_from_env_vars.py-ba7689 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule subClassOf ActiveModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "howfairis_get_apikeys_from_env_vars.py-ba7689",
+       "prop": "type",
+       "value": "Module",
+       "raw": "howfairis_get_apikeys_from_env_vars.py-ba7689 type Module"
+      },
+      {
+       "subject": "howfairis_get_apikeys_from_env_vars.py-ba7689",
+       "prop": "moduleRelChurnInWindow",
+       "value": 1.277778,
+       "raw": "howfairis_get_apikeys_from_env_vars.py-ba7689 moduleRelChurnInWindow 1.277778"
+      }
+     ],
+     "closures": [],
+     "raw": "howfairis_get_apikeys_from_env_vars.py-ba7689 type Module\nHighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module\nHighRelChurnModule subClassOf ActiveModule\nhowfairis_get_apikeys_from_env_vars.py-ba7689 moduleRelChurnInWindow 1.277778\nA_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+    }
+   ],
+   "raw_text": "Axiom: howfairis_get_apikeys_from_env_vars.py-ba7689 type ActiveModule\n\nExplanation(s): \n1)   howfairis_get_apikeys_from_env_vars.py-ba7689 type Module\n     HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn\n                                     and Module\n     HighRelChurnModule subClassOf ActiveModule\n     howfairis_get_apikeys_from_env_vars.py-ba7689 moduleRelChurnInWindow 1.277778\n     A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\n\n\n",
+   "seconds": 2.891769711044617,
+   "returncode": 0,
+   "error": null
+  },
+  "module:howfairis/schema.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/fair-software__howfairis-307/module/howfairis_schema.py-e08165",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/fair-software__howfairis-307/module/howfairis_schema.py-e08165 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule subClassOf ActiveModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "howfairis_schema.py-e08165",
+       "prop": "moduleRelChurnInWindow",
+       "value": 4.75,
+       "raw": "howfairis_schema.py-e08165 moduleRelChurnInWindow 4.75"
+      },
+      {
+       "subject": "howfairis_schema.py-e08165",
+       "prop": "type",
+       "value": "Module",
+       "raw": "howfairis_schema.py-e08165 type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module\nHighRelChurnModule subClassOf ActiveModule\nhowfairis_schema.py-e08165 moduleRelChurnInWindow 4.75\nA_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\nhowfairis_schema.py-e08165 type Module"
+    }
+   ],
+   "raw_text": "Axiom: howfairis_schema.py-e08165 type ActiveModule\n\nExplanation(s): \n1)   HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn\n                                     and Module\n     HighRelChurnModule subClassOf ActiveModule\n     howfairis_schema.py-e08165 moduleRelChurnInWindow 4.75\n     A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\n     howfairis_schema.py-e08165 type Module\n\n\n",
+   "seconds": 2.54709196096519,
+   "returncode": 0,
+   "error": null
+  },
+  "module:howfairis/code_repository_platforms.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/fair-software__howfairis-307/module/howfairis_code_repository_platforms.py-d5d4cb",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/fair-software__howfairis-307/module/howfairis_code_repository_platforms.py-d5d4cb type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule subClassOf ActiveModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "howfairis_code_repository_platforms.py-d5d4cb",
+       "prop": "type",
+       "value": "Module",
+       "raw": "howfairis_code_repository_platforms.py-d5d4cb type Module"
+      },
+      {
+       "subject": "howfairis_code_repository_platforms.py-d5d4cb",
+       "prop": "moduleRelChurnInWindow",
+       "value": 1.25,
+       "raw": "howfairis_code_repository_platforms.py-d5d4cb moduleRelChurnInWindow 1.25"
+      }
+     ],
+     "closures": [],
+     "raw": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module\nHighRelChurnModule subClassOf ActiveModule\nhowfairis_code_repository_platforms.py-d5d4cb type Module\nA_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\nhowfairis_code_repository_platforms.py-d5d4cb moduleRelChurnInWindow 1.25"
+    }
+   ],
+   "raw_text": "Axiom: howfairis_code_repository_platforms.py-d5d4cb type ActiveModule\n\nExplanation(s): \n1)   HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn\n                                     and Module\n     HighRelChurnModule subClassOf ActiveModule\n     howfairis_code_repository_platforms.py-d5d4cb type Module\n     A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\n     howfairis_code_repository_platforms.py-d5d4cb moduleRelChurnInWindow 1.25\n\n\n",
+   "seconds": 2.396080402948428,
+   "returncode": 0,
+   "error": null
+  },
+  "module:howfairis/exceptions": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/fair-software__howfairis-307/module/howfairis_exceptions-3b5249",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/fair-software__howfairis-307/module/howfairis_exceptions-3b5249 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule subClassOf ActiveModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "howfairis_exceptions-3b5249",
+       "prop": "moduleRelChurnInWindow",
+       "value": 9.0,
+       "raw": "howfairis_exceptions-3b5249 moduleRelChurnInWindow 9.0"
+      },
+      {
+       "subject": "howfairis_exceptions-3b5249",
+       "prop": "type",
+       "value": "Module",
+       "raw": "howfairis_exceptions-3b5249 type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module\nhowfairis_exceptions-3b5249 moduleRelChurnInWindow 9.0\nHighRelChurnModule subClassOf ActiveModule\nhowfairis_exceptions-3b5249 type Module\nA_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+    }
+   ],
+   "raw_text": "Axiom: howfairis_exceptions-3b5249 type ActiveModule\n\nExplanation(s): \n1)   HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn\n                                     and Module\n     howfairis_exceptions-3b5249 moduleRelChurnInWindow 9.0\n     HighRelChurnModule subClassOf ActiveModule\n     howfairis_exceptions-3b5249 type Module\n     A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\n\n\n",
+   "seconds": 2.271062229992822,
+   "returncode": 0,
+   "error": null
+  },
+  "module:howfairis/readme_format.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/fair-software__howfairis-307/module/howfairis_readme_format.py-0fc97d",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/fair-software__howfairis-307/module/howfairis_readme_format.py-0fc97d type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule subClassOf ActiveModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "howfairis_readme_format.py-0fc97d",
+       "prop": "moduleRelChurnInWindow",
+       "value": 1.285714,
+       "raw": "howfairis_readme_format.py-0fc97d moduleRelChurnInWindow 1.285714"
+      },
+      {
+       "subject": "howfairis_readme_format.py-0fc97d",
+       "prop": "type",
+       "value": "Module",
+       "raw": "howfairis_readme_format.py-0fc97d type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module\nHighRelChurnModule subClassOf ActiveModule\nhowfairis_readme_format.py-0fc97d moduleRelChurnInWindow 1.285714\nA_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\nhowfairis_readme_format.py-0fc97d type Module"
+    }
+   ],
+   "raw_text": "Axiom: howfairis_readme_format.py-0fc97d type ActiveModule\n\nExplanation(s): \n1)   HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn\n                                     and Module\n     HighRelChurnModule subClassOf ActiveModule\n     howfairis_readme_format.py-0fc97d moduleRelChurnInWindow 1.285714\n     A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\n     howfairis_readme_format.py-0fc97d type Module\n\n\n",
+   "seconds": 2.238033188972622,
+   "returncode": 0,
+   "error": null
+  },
+  "module:howfairis/__version__.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/fair-software__howfairis-307/module/howfairis___version__.py-72be91",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/fair-software__howfairis-307/module/howfairis___version__.py-72be91 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule subClassOf ActiveModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "howfairis___version__.py-72be91",
+       "prop": "moduleRelChurnInWindow",
+       "value": 39.0,
+       "raw": "howfairis___version__.py-72be91 moduleRelChurnInWindow 39.0"
+      },
+      {
+       "subject": "howfairis___version__.py-72be91",
+       "prop": "type",
+       "value": "Module",
+       "raw": "howfairis___version__.py-72be91 type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module\nHighRelChurnModule subClassOf ActiveModule\nhowfairis___version__.py-72be91 moduleRelChurnInWindow 39.0\nA_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\nhowfairis___version__.py-72be91 type Module"
+    }
+   ],
+   "raw_text": "Axiom: howfairis___version__.py-72be91 type ActiveModule\n\nExplanation(s): \n1)   HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn\n                                     and Module\n     HighRelChurnModule subClassOf ActiveModule\n     howfairis___version__.py-72be91 moduleRelChurnInWindow 39.0\n     A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\n     howfairis___version__.py-72be91 type Module\n\n\n",
+   "seconds": 2.2837026020279154,
+   "returncode": 0,
+   "error": null
+  }
+ },
+ "timings": {
+  "t_clone": 0.005,
+  "t_mine": 3.671,
+  "t_loc": 0.849,
+  "t_reason_A": 3.676,
+  "mining_cached": false,
+  "t_modules": 2.06,
+  "t_reason_B": 2.437,
+  "n_configs": 1,
+  "t_explain": 76.31,
+  "n_explain_calls": 25,
+  "t_writeback": 0.0,
+  "t_total": 90.595
+ }
+}

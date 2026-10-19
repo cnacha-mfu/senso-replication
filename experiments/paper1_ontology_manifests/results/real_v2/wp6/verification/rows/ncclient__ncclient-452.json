@@ -1,0 +1,780 @@
+{
+ "task_id": "ncclient__ncclient-452",
+ "claims": {
+  "T1|ncclient": {
+   "claim": {
+    "key_str": "T1|ncclient",
+    "tcode": "T1",
+    "attrs": {
+     "path": "ncclient",
+     "is_dir": true,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "ncclient/",
+    "role": "true",
+    "slot": "layout",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "exists",
+     "path": "ncclient"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "PathFoundExact"
+   },
+   "probe": {
+    "ok": true,
+    "type": "exists"
+   },
+   "measure_error": null
+  },
+  "T1|ncclient/devices": {
+   "claim": {
+    "key_str": "T1|ncclient/devices",
+    "tcode": "T1",
+    "attrs": {
+     "path": "ncclient/devices",
+     "is_dir": true,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "ncclient/devices/",
+    "role": "true",
+    "slot": "layout",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "exists",
+     "path": "ncclient/devices"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "PathFoundExact"
+   },
+   "probe": {
+    "ok": true,
+    "type": "exists"
+   },
+   "measure_error": null
+  },
+  "T1|ncclient/operations": {
+   "claim": {
+    "key_str": "T1|ncclient/operations",
+    "tcode": "T1",
+    "attrs": {
+     "path": "ncclient/operations",
+     "is_dir": true,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "ncclient/operations/",
+    "role": "true",
+    "slot": "layout",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "exists",
+     "path": "ncclient/operations"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "PathFoundExact"
+   },
+   "probe": {
+    "ok": true,
+    "type": "exists"
+   },
+   "measure_error": null
+  },
+  "T1|ncclient/transport": {
+   "claim": {
+    "key_str": "T1|ncclient/transport",
+    "tcode": "T1",
+    "attrs": {
+     "path": "ncclient/transport",
+     "is_dir": true,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "ncclient/transport/",
+    "role": "true",
+    "slot": "layout",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "exists",
+     "path": "ncclient/transport"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "PathFoundExact"
+   },
+   "probe": {
+    "ok": true,
+    "type": "exists"
+   },
+   "measure_error": null
+  },
+  "T1|test": {
+   "claim": {
+    "key_str": "T1|test",
+    "tcode": "T1",
+    "attrs": {
+     "path": "test",
+     "is_dir": true,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "test/",
+    "role": "true",
+    "slot": "layout",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "exists",
+     "path": "test"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "PathFoundExact"
+   },
+   "probe": {
+    "ok": true,
+    "type": "exists"
+   },
+   "measure_error": null
+  },
+  "T1|ncclient/transport/ssh.py": {
+   "claim": {
+    "key_str": "T1|ncclient/transport/ssh.py",
+    "tcode": "T1",
+    "attrs": {
+     "path": "ncclient/transport/ssh.py",
+     "is_dir": false,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "ncclient/transport/ssh.py",
+    "role": "true",
+    "slot": "key_file",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "exists",
+     "path": "ncclient/transport/ssh.py"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "PathFoundExact"
+   },
+   "probe": {
+    "ok": true,
+    "type": "exists"
+   },
+   "measure_error": null
+  },
+  "T1|ncclient/operations/rpc.py": {
+   "claim": {
+    "key_str": "T1|ncclient/operations/rpc.py",
+    "tcode": "T1",
+    "attrs": {
+     "path": "ncclient/operations/rpc.py",
+     "is_dir": false,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "ncclient/operations/rpc.py",
+    "role": "true",
+    "slot": "key_file",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "exists",
+     "path": "ncclient/operations/rpc.py"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "PathFoundExact"
+   },
+   "probe": {
+    "ok": true,
+    "type": "exists"
+   },
+   "measure_error": null
+  },
+  "T1|ncclient/devices/default.py": {
+   "claim": {
+    "key_str": "T1|ncclient/devices/default.py",
+    "tcode": "T1",
+    "attrs": {
+     "path": "ncclient/devices/default.py",
+     "is_dir": false,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "ncclient/devices/default.py",
+    "role": "true",
+    "slot": "key_file",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "exists",
+     "path": "ncclient/devices/default.py"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "PathFoundExact"
+   },
+   "probe": {
+    "ok": true,
+    "type": "exists"
+   },
+   "measure_error": null
+  },
+  "T3|test_framework|pytest": {
+   "claim": {
+    "key_str": "T3|test_framework|pytest",
+    "tcode": "T3",
+    "attrs": {
+     "tool": "pytest",
+     "category": "test_framework"
+    },
+    "quote": "python -m pytest test",
+    "role": "true",
+    "slot": "test_cmd",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "pytest",
+     "root": "test"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "ToolSignatureFound"
+   },
+   "probe": {
+    "ok": true,
+    "type": "pytest"
+   },
+   "measure_error": null
+  },
+  "T1|setup.py": {
+   "claim": {
+    "key_str": "T1|setup.py",
+    "tcode": "T1",
+    "attrs": {
+     "path": "setup.py",
+     "is_dir": false,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "setup.py",
+    "role": "true",
+    "slot": "install_cmd",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "exists",
+     "path": "setup.py"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "PathFoundExact"
+   },
+   "probe": {
+    "ok": true,
+    "type": "exists"
+   },
+   "measure_error": null
+  },
+  "T4|lxml|": {
+   "claim": {
+    "key_str": "T4|lxml|",
+    "tcode": "T4",
+    "attrs": {
+     "name": "lxml",
+     "major": null,
+     "ecosystem_hint": "pypi"
+    },
+    "quote": "`lxml>=3.3.0`",
+    "role": "true",
+    "slot": "dep",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "import_ok",
+     "modules": [
+      "lxml"
+     ]
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "DependencyConfirmed"
+   },
+   "probe": {
+    "ok": true,
+    "type": "import_ok"
+   },
+   "measure_error": null
+  },
+  "T4|six|": {
+   "claim": {
+    "key_str": "T4|six|",
+    "tcode": "T4",
+    "attrs": {
+     "name": "six",
+     "major": null,
+     "ecosystem_hint": "pypi"
+    },
+    "quote": "`six`",
+    "role": "true",
+    "slot": "dep",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "import_ok",
+     "modules": [
+      "six"
+     ]
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "DependencyConfirmed"
+   },
+   "probe": {
+    "ok": true,
+    "type": "import_ok"
+   },
+   "measure_error": null
+  },
+  "T4|paramiko|": {
+   "claim": {
+    "key_str": "T4|paramiko|",
+    "tcode": "T4",
+    "attrs": {
+     "name": "paramiko",
+     "major": null,
+     "ecosystem_hint": "pypi"
+    },
+    "quote": "`paramiko>=1.15.0`",
+    "role": "true",
+    "slot": "dep",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "import_ok",
+     "modules": [
+      "paramiko"
+     ]
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "DependencyConfirmed"
+   },
+   "probe": {
+    "ok": true,
+    "type": "import_ok"
+   },
+   "measure_error": null
+  },
+  "T6|python|2007000000@2": {
+   "claim": {
+    "key_str": "T6|python|2007000000@2",
+    "tcode": "T6",
+    "attrs": {
+     "subject_type": "python",
+     "version": "2.7",
+     "code": 2007000000,
+     "precision": 2,
+     "qualifier": "min"
+    },
+    "quote": "Python: >=2.7",
+    "role": "true",
+    "slot": "python",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": null,
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "VersionConfirmed"
+   },
+   "probe": {
+    "ok": true,
+    "type": "none"
+   },
+   "measure_error": null
+  },
+  "T1|ncclient/core": {
+   "claim": {
+    "key_str": "T1|ncclient/core",
+    "tcode": "T1",
+    "attrs": {
+     "path": "ncclient/core",
+     "is_dir": true,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "ncclient/core/",
+    "role": "false",
+    "slot": "P1",
+    "kind": 1,
+    "expect_verdict": "ContradictedClaim",
+    "expect_leaves": [
+     "PathNeverExisted"
+    ],
+    "probe": {
+     "type": "absent",
+     "path": "ncclient/core",
+     "history": "none"
+    },
+    "mode": "replace"
+   },
+   "recheck": {
+    "verdict": "ContradictedClaim",
+    "leaf": "PathNeverExisted"
+   },
+   "probe": {
+    "ok": true,
+    "type": "absent",
+    "log_count": 0
+   },
+   "measure_error": null
+  },
+  "T1|ncclient/ElementTree.py": {
+   "claim": {
+    "key_str": "T1|ncclient/ElementTree.py",
+    "tcode": "T1",
+    "attrs": {
+     "path": "ncclient/ElementTree.py",
+     "is_dir": false,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "ncclient/ElementTree.py",
+    "role": "false",
+    "slot": "P2",
+    "kind": 2,
+    "expect_verdict": "ContradictedClaim",
+    "expect_leaves": [
+     "PathRemoved"
+    ],
+    "probe": {
+     "type": "absent",
+     "path": "ncclient/ElementTree.py",
+     "history": "some"
+    },
+    "mode": "replace"
+   },
+   "recheck": {
+    "verdict": "ContradictedClaim",
+    "leaf": "PathRemoved"
+   },
+   "probe": {
+    "ok": true,
+    "type": "absent",
+    "log_count": 2
+   },
+   "measure_error": null
+  },
+  "T5|make|tests": {
+   "claim": {
+    "key_str": "T5|make|tests",
+    "tcode": "T5",
+    "attrs": {
+     "runner": "make",
+     "kind": "make",
+     "target": "tests"
+    },
+    "quote": "make tests",
+    "role": "false",
+    "slot": "C_R",
+    "kind": 3,
+    "expect_verdict": "ContradictedClaim",
+    "expect_leaves": [
+     "ScriptUndefined",
+     "ScriptHostMissing"
+    ],
+    "probe": {
+     "type": "make_fail",
+     "target": "tests"
+    },
+    "mode": "replace"
+   },
+   "recheck": {
+    "verdict": "ContradictedClaim",
+    "leaf": "ScriptUndefined"
+   },
+   "probe": {
+    "ok": true,
+    "type": "make_fail",
+    "result": {
+     "rc": 2,
+     "tail": "make: *** No rule to make target 'tests'.  Stop.\n"
+    }
+   },
+   "measure_error": null
+  },
+  "T4|selectolax|": {
+   "claim": {
+    "key_str": "T4|selectolax|",
+    "tcode": "T4",
+    "attrs": {
+     "name": "selectolax",
+     "major": null,
+     "ecosystem_hint": "pypi"
+    },
+    "quote": "`selectolax`",
+    "role": "false",
+    "slot": "D",
+    "kind": 4,
+    "expect_verdict": "ContradictedClaim",
+    "expect_leaves": [
+     "DependencyUndeclared"
+    ],
+    "probe": {
+     "type": "import_fail",
+     "modules": [
+      "selectolax"
+     ]
+    },
+    "mode": "replace"
+   },
+   "recheck": {
+    "verdict": "ContradictedClaim",
+    "leaf": "DependencyUndeclared"
+   },
+   "probe": {
+    "ok": true,
+    "type": "import_fail"
+   },
+   "measure_error": null
+  },
+  "T1|ncclient/transport/core": {
+   "claim": {
+    "key_str": "T1|ncclient/transport/core",
+    "tcode": "T1",
+    "attrs": {
+     "path": "ncclient/transport/core",
+     "is_dir": true,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "ncclient/transport/core/",
+    "role": "false",
+    "slot": "P1",
+    "kind": 1,
+    "expect_verdict": "ContradictedClaim",
+    "expect_leaves": [
+     "PathNeverExisted"
+    ],
+    "probe": {
+     "type": "absent",
+     "path": "ncclient/transport/core",
+     "history": "none"
+    },
+    "mode": "replace"
+   },
+   "recheck": {
+    "verdict": "ContradictedClaim",
+    "leaf": "PathNeverExisted"
+   },
+   "probe": {
+    "ok": true,
+    "type": "absent",
+    "log_count": 0
+   },
+   "measure_error": null
+  },
+  "T1|examples/misc.py": {
+   "claim": {
+    "key_str": "T1|examples/misc.py",
+    "tcode": "T1",
+    "attrs": {
+     "path": "examples/misc.py",
+     "is_dir": false,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "examples/misc.py",
+    "role": "false",
+    "slot": "P2",
+    "kind": 2,
+    "expect_verdict": "ContradictedClaim",
+    "expect_leaves": [
+     "PathRemoved"
+    ],
+    "probe": {
+     "type": "absent",
+     "path": "examples/misc.py",
+     "history": "some"
+    },
+    "mode": "replace"
+   },
+   "recheck": {
+    "verdict": "ContradictedClaim",
+    "leaf": "PathRemoved"
+   },
+   "probe": {
+    "ok": true,
+    "type": "absent",
+    "log_count": 2
+   },
+   "measure_error": null
+  },
+  "T5|make|install": {
+   "claim": {
+    "key_str": "T5|make|install",
+    "tcode": "T5",
+    "attrs": {
+     "runner": "make",
+     "kind": "make",
+     "target": "install"
+    },
+    "quote": "make install",
+    "role": "false",
+    "slot": "C_I",
+    "kind": 3,
+    "expect_verdict": "ContradictedClaim",
+    "expect_leaves": [
+     "ScriptUndefined",
+     "ScriptHostMissing"
+    ],
+    "probe": {
+     "type": "make_fail",
+     "target": "install"
+    },
+    "mode": "replace"
+   },
+   "recheck": {
+    "verdict": "ContradictedClaim",
+    "leaf": "ScriptUndefined"
+   },
+   "probe": {
+    "ok": true,
+    "type": "make_fail",
+    "result": {
+     "rc": 2,
+     "tail": "make: *** No rule to make target 'install'.  Stop.\n"
+    }
+   },
+   "measure_error": null
+  },
+  "T4|asyncssh|": {
+   "claim": {
+    "key_str": "T4|asyncssh|",
+    "tcode": "T4",
+    "attrs": {
+     "name": "asyncssh",
+     "major": null,
+     "ecosystem_hint": "pypi"
+    },
+    "quote": "`asyncssh`",
+    "role": "false",
+    "slot": "D",
+    "kind": 4,
+    "expect_verdict": "ContradictedClaim",
+    "expect_leaves": [
+     "DependencyUndeclared"
+    ],
+    "probe": {
+     "type": "import_fail",
+     "modules": [
+      "asyncssh"
+     ]
+    },
+    "mode": "replace"
+   },
+   "recheck": {
+    "verdict": "ContradictedClaim",
+    "leaf": "DependencyUndeclared"
+   },
+   "probe": {
+    "ok": true,
+    "type": "import_fail"
+   },
+   "measure_error": null
+  }
+ },
+ "probe_log": {
+  "pytest:test": {
+   "rc": 2,
+   "tail": "ror: No module named 'nose'\n=========================== short test summary info ============================\nERROR test/unit/test_xml_.py\n!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n==================== 241 tests collected, 1 error in 0.94s =====================\n"
+  },
+  "import:lxml": {
+   "rc": 0,
+   "tail": ""
+  },
+  "import:six": {
+   "rc": 0,
+   "tail": ""
+  },
+  "import:paramiko": {
+   "rc": 0,
+   "tail": ""
+  },
+  "make:test": {
+   "rc": 0,
+   "tail": "make: Nothing to be done for 'test'.\n"
+  },
+  "make:tests": {
+   "rc": 2,
+   "tail": "make: *** No rule to make target 'tests'.  Stop.\n"
+  },
+  "make:install": {
+   "rc": 2,
+   "tail": "make: *** No rule to make target 'install'.  Stop.\n"
+  },
+  "import:asyncssh": {
+   "rc": 1,
+   "tail": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\nModuleNotFoundError: No module named 'asyncssh'\n"
+  },
+  "import:selectolax": {
+   "rc": 1,
+   "tail": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\nModuleNotFoundError: No module named 'selectolax'\n"
+  }
+ }
+}

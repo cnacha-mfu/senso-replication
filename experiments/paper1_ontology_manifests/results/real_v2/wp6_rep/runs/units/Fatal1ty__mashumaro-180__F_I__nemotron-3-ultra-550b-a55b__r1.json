@@ -1,0 +1,80 @@
+{
+ "unit_id": "Fatal1ty__mashumaro-180__F_I__nemotron-3-ultra-550b-a55b__r1",
+ "task_id": "Fatal1ty__mashumaro-180",
+ "repo": "Fatal1ty/mashumaro",
+ "stage": "phase_out",
+ "condition": "F_I",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "run": 1,
+ "order": 439,
+ "env_build_s": 102.5,
+ "started": "2026-10-14T10:14:10.848218+00:00",
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 501,
+  "sha256": "ea1b60e64b99b4435d603fddac71b9986a754f10e7d7df07b16a9a38f3903b17"
+ },
+ "condition_available": true,
+ "venv_reset_s": 2.3,
+ "stray_procs_killed": 0,
+ "retries": 0,
+ "venv_hash_before": "8dc0ada7816ccf52",
+ "venv_hash_after": "8dc0ada7816ccf52",
+ "venv_mutated": false,
+ "exit_status": "LimitsExceeded",
+ "error": "",
+ "steps": 40,
+ "wall_s": 928.6,
+ "prompt_tokens": 385146,
+ "completion_tokens": 3299,
+ "format_errors": 0,
+ "length_cutoffs": 0,
+ "api_errors": {
+  "503": 13,
+  "timeout": 2
+ },
+ "n_queries": 55,
+ "keys_used": {
+  "NVIDIA_API_KEY": 13,
+  "NVIDIA_API_KEY_2": 17,
+  "NVIDIA_API_KEY_4": 13,
+  "NVIDIA_API_KEY_5": 12
+ },
+ "temperature": 0.7,
+ "top_p": 0.95,
+ "model_id_returned": "nvidia/nemotron-3-ultra-550b-a55b",
+ "mini_version": "2.4.6",
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 0,
+   "Y5": 0,
+   "Y6": 40,
+   "hit_step_limit": 1,
+   "changed_lines": 0,
+   "gold_changed_lines": 93,
+   "Y1": null,
+   "Y2": null,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": null
+  },
+  "f2p_pass": 0,
+  "f2p_total": 1,
+  "p2p_pass": 7,
+  "p2p_total": 7,
+  "f2p_all_pass": false,
+  "p2p_all_pass": true,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 1.0
+ },
+ "status": "done",
+ "finished": "2026-10-14T10:29:45.448572+00:00"
+}

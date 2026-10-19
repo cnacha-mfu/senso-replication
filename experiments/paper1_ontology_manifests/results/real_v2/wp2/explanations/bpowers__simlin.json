@@ -1,0 +1,35 @@
+{
+ "repo": "bpowers/simlin",
+ "slug": "bpowers__simlin",
+ "input_sha": "1b0beafca3e81bc8ef3c068f05525be526d76ffff09b3b2bee2fc9938cb442f9",
+ "explanations": [
+  {
+   "key": "T1|src/engine",
+   "verdict": "SupportedClaim",
+   "leaf": "PathFoundExact",
+   "seconds": 5.73,
+   "retried_on_claim_subgraph": false,
+   "error": null,
+   "returncode": 0,
+   "n_justifications": 1,
+   "facts": [
+    {
+     "prop": "extractionVotes",
+     "value": 2
+    },
+    {
+     "prop": "pathExactMatchCount",
+     "value": 47
+    }
+   ],
+   "axioms": [
+    "PathFoundExact equivalentTo A_pathExactMatchCount_ge_1 and CheckedClaim and PathExistenceClaim",
+    "A_extractionVotes_ge_wp2_consensus_min_votes equivalentTo extractionVotes some integer[>= 2]",
+    "A_pathExactMatchCount_ge_1 equivalentTo pathExactMatchCount some integer[>= 1]",
+    "CheckedClaim equivalentTo A_extractionVotes_ge_wp2_consensus_min_votes and ManifestClaim",
+    "PathFoundExact subClassOf SupportedClaim"
+   ],
+   "closures": []
+  }
+ ]
+}

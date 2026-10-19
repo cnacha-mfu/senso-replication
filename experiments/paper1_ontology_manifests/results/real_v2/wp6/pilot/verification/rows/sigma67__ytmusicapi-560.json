@@ -1,0 +1,603 @@
+{
+ "task_id": "sigma67__ytmusicapi-560",
+ "claims": {
+  "T1|tests": {
+   "claim": {
+    "key_str": "T1|tests",
+    "tcode": "T1",
+    "attrs": {
+     "path": "tests",
+     "is_dir": true,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "tests/",
+    "role": "true",
+    "slot": "layout",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "exists",
+     "path": "tests"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "PathFoundExact"
+   },
+   "probe": {
+    "ok": true,
+    "type": "exists"
+   },
+   "measure_error": null
+  },
+  "T1|ytmusicapi": {
+   "claim": {
+    "key_str": "T1|ytmusicapi",
+    "tcode": "T1",
+    "attrs": {
+     "path": "ytmusicapi",
+     "is_dir": true,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "ytmusicapi/",
+    "role": "true",
+    "slot": "layout",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "exists",
+     "path": "ytmusicapi"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "PathFoundExact"
+   },
+   "probe": {
+    "ok": true,
+    "type": "exists"
+   },
+   "measure_error": null
+  },
+  "T1|ytmusicapi/auth": {
+   "claim": {
+    "key_str": "T1|ytmusicapi/auth",
+    "tcode": "T1",
+    "attrs": {
+     "path": "ytmusicapi/auth",
+     "is_dir": true,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "ytmusicapi/auth/",
+    "role": "true",
+    "slot": "layout",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "exists",
+     "path": "ytmusicapi/auth"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "PathFoundExact"
+   },
+   "probe": {
+    "ok": true,
+    "type": "exists"
+   },
+   "measure_error": null
+  },
+  "T1|ytmusicapi/mixins": {
+   "claim": {
+    "key_str": "T1|ytmusicapi/mixins",
+    "tcode": "T1",
+    "attrs": {
+     "path": "ytmusicapi/mixins",
+     "is_dir": true,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "ytmusicapi/mixins/",
+    "role": "true",
+    "slot": "layout",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "exists",
+     "path": "ytmusicapi/mixins"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "PathFoundExact"
+   },
+   "probe": {
+    "ok": true,
+    "type": "exists"
+   },
+   "measure_error": null
+  },
+  "T1|ytmusicapi/parsers": {
+   "claim": {
+    "key_str": "T1|ytmusicapi/parsers",
+    "tcode": "T1",
+    "attrs": {
+     "path": "ytmusicapi/parsers",
+     "is_dir": true,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "ytmusicapi/parsers/",
+    "role": "true",
+    "slot": "layout",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "exists",
+     "path": "ytmusicapi/parsers"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "PathFoundExact"
+   },
+   "probe": {
+    "ok": true,
+    "type": "exists"
+   },
+   "measure_error": null
+  },
+  "T1|ytmusicapi/mixins/browsing.py": {
+   "claim": {
+    "key_str": "T1|ytmusicapi/mixins/browsing.py",
+    "tcode": "T1",
+    "attrs": {
+     "path": "ytmusicapi/mixins/browsing.py",
+     "is_dir": false,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "ytmusicapi/mixins/browsing.py",
+    "role": "true",
+    "slot": "key_file",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "exists",
+     "path": "ytmusicapi/mixins/browsing.py"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "PathFoundExact"
+   },
+   "probe": {
+    "ok": true,
+    "type": "exists"
+   },
+   "measure_error": null
+  },
+  "T1|ytmusicapi/parsers/search.py": {
+   "claim": {
+    "key_str": "T1|ytmusicapi/parsers/search.py",
+    "tcode": "T1",
+    "attrs": {
+     "path": "ytmusicapi/parsers/search.py",
+     "is_dir": false,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "ytmusicapi/parsers/search.py",
+    "role": "true",
+    "slot": "key_file",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "exists",
+     "path": "ytmusicapi/parsers/search.py"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "PathFoundExact"
+   },
+   "probe": {
+    "ok": true,
+    "type": "exists"
+   },
+   "measure_error": null
+  },
+  "T1|ytmusicapi/mixins/library.py": {
+   "claim": {
+    "key_str": "T1|ytmusicapi/mixins/library.py",
+    "tcode": "T1",
+    "attrs": {
+     "path": "ytmusicapi/mixins/library.py",
+     "is_dir": false,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "ytmusicapi/mixins/library.py",
+    "role": "true",
+    "slot": "key_file",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "exists",
+     "path": "ytmusicapi/mixins/library.py"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "PathFoundExact"
+   },
+   "probe": {
+    "ok": true,
+    "type": "exists"
+   },
+   "measure_error": null
+  },
+  "T3|test_framework|pytest": {
+   "claim": {
+    "key_str": "T3|test_framework|pytest",
+    "tcode": "T3",
+    "attrs": {
+     "tool": "pytest",
+     "category": "test_framework"
+    },
+    "quote": "python -m pytest tests",
+    "role": "true",
+    "slot": "test_cmd",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "pytest",
+     "root": "tests"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "ToolSignatureFound"
+   },
+   "probe": {
+    "ok": true,
+    "type": "pytest"
+   },
+   "measure_error": null
+  },
+  "T1|pyproject.toml": {
+   "claim": {
+    "key_str": "T1|pyproject.toml",
+    "tcode": "T1",
+    "attrs": {
+     "path": "pyproject.toml",
+     "is_dir": false,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "pyproject.toml",
+    "role": "true",
+    "slot": "install_cmd",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "exists",
+     "path": "pyproject.toml"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "PathFoundExact"
+   },
+   "probe": {
+    "ok": true,
+    "type": "exists"
+   },
+   "measure_error": null
+  },
+  "T4|requests|": {
+   "claim": {
+    "key_str": "T4|requests|",
+    "tcode": "T4",
+    "attrs": {
+     "name": "requests",
+     "major": null,
+     "ecosystem_hint": "pypi"
+    },
+    "quote": "`requests>= 2.22`",
+    "role": "true",
+    "slot": "dep",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "import_ok",
+     "modules": [
+      "requests"
+     ]
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "DependencyConfirmed"
+   },
+   "probe": {
+    "ok": true,
+    "type": "import_ok"
+   },
+   "measure_error": null
+  },
+  "T6|python|3008000000@2": {
+   "claim": {
+    "key_str": "T6|python|3008000000@2",
+    "tcode": "T6",
+    "attrs": {
+     "subject_type": "python",
+     "version": "3.8",
+     "code": 3008000000,
+     "precision": 2,
+     "qualifier": "min"
+    },
+    "quote": "Python: >=3.8",
+    "role": "true",
+    "slot": "python",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": null,
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "VersionConfirmed"
+   },
+   "probe": {
+    "ok": true,
+    "type": "none"
+   },
+   "measure_error": null
+  },
+  "T1|ytmusicapi/core": {
+   "claim": {
+    "key_str": "T1|ytmusicapi/core",
+    "tcode": "T1",
+    "attrs": {
+     "path": "ytmusicapi/core",
+     "is_dir": true,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "ytmusicapi/core/",
+    "role": "false",
+    "slot": "P1",
+    "kind": 1,
+    "expect_verdict": "ContradictedClaim",
+    "expect_leaves": [
+     "PathNeverExisted"
+    ],
+    "probe": {
+     "type": "absent",
+     "path": "ytmusicapi/core",
+     "history": "none"
+    },
+    "mode": "replace"
+   },
+   "recheck": {
+    "verdict": "ContradictedClaim",
+    "leaf": "PathNeverExisted"
+   },
+   "probe": {
+    "ok": true,
+    "type": "absent",
+    "log_count": 0
+   },
+   "measure_error": null
+  },
+  "T1|ytmusicapi/auth/oauth/base.py": {
+   "claim": {
+    "key_str": "T1|ytmusicapi/auth/oauth/base.py",
+    "tcode": "T1",
+    "attrs": {
+     "path": "ytmusicapi/auth/oauth/base.py",
+     "is_dir": false,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "ytmusicapi/auth/oauth/base.py",
+    "role": "false",
+    "slot": "P2",
+    "kind": 2,
+    "expect_verdict": "ContradictedClaim",
+    "expect_leaves": [
+     "PathRemoved"
+    ],
+    "probe": {
+     "type": "absent",
+     "path": "ytmusicapi/auth/oauth/base.py",
+     "history": "some"
+    },
+    "mode": "replace"
+   },
+   "recheck": {
+    "verdict": "ContradictedClaim",
+    "leaf": "PathRemoved"
+   },
+   "probe": {
+    "ok": true,
+    "type": "absent",
+    "log_count": 7
+   },
+   "measure_error": null
+  },
+  "T4|httpx|": {
+   "claim": {
+    "key_str": "T4|httpx|",
+    "tcode": "T4",
+    "attrs": {
+     "name": "httpx",
+     "major": null,
+     "ecosystem_hint": "pypi"
+    },
+    "quote": "`httpx`",
+    "role": "false",
+    "slot": "D",
+    "kind": 4,
+    "expect_verdict": "ContradictedClaim",
+    "expect_leaves": [
+     "DependencyUndeclared"
+    ],
+    "probe": {
+     "type": "import_fail",
+     "modules": [
+      "httpx"
+     ]
+    },
+    "mode": "replace"
+   },
+   "recheck": {
+    "verdict": "ContradictedClaim",
+    "leaf": "DependencyUndeclared"
+   },
+   "probe": {
+    "ok": true,
+    "type": "import_fail"
+   },
+   "measure_error": null
+  },
+  "T1|ytmusicapi/auth/core": {
+   "claim": {
+    "key_str": "T1|ytmusicapi/auth/core",
+    "tcode": "T1",
+    "attrs": {
+     "path": "ytmusicapi/auth/core",
+     "is_dir": true,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "ytmusicapi/auth/core/",
+    "role": "false",
+    "slot": "P1",
+    "kind": 1,
+    "expect_verdict": "ContradictedClaim",
+    "expect_leaves": [
+     "PathNeverExisted"
+    ],
+    "probe": {
+     "type": "absent",
+     "path": "ytmusicapi/auth/core",
+     "history": "none"
+    },
+    "mode": "replace"
+   },
+   "recheck": {
+    "verdict": "ContradictedClaim",
+    "leaf": "PathNeverExisted"
+   },
+   "probe": {
+    "ok": true,
+    "type": "absent",
+    "log_count": 0
+   },
+   "measure_error": null
+  },
+  "T1|ytmusicapi/auth/internal.py": {
+   "claim": {
+    "key_str": "T1|ytmusicapi/auth/internal.py",
+    "tcode": "T1",
+    "attrs": {
+     "path": "ytmusicapi/auth/internal.py",
+     "is_dir": false,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "ytmusicapi/auth/internal.py",
+    "role": "false",
+    "slot": "P2",
+    "kind": 2,
+    "expect_verdict": "ContradictedClaim",
+    "expect_leaves": [
+     "PathNeverExisted"
+    ],
+    "probe": {
+     "type": "absent",
+     "path": "ytmusicapi/auth/internal.py",
+     "history": "none"
+    },
+    "mode": "replace"
+   },
+   "recheck": {
+    "verdict": "ContradictedClaim",
+    "leaf": "PathNeverExisted"
+   },
+   "probe": {
+    "ok": true,
+    "type": "absent",
+    "log_count": 0
+   },
+   "measure_error": null
+  }
+ },
+ "probe_log": {
+  "pytest:tests": {
+   "rc": 0,
+   "tail": "                     28     17  39.29%\nytmusicapi/ytmusic.py                    130     94  27.69%\n-----------------------------------------------------------\nTOTAL                                   2135   1596  25.25%\n========================= 70 tests collected in 1.74s ==========================\n"
+  },
+  "import:requests": {
+   "rc": 0,
+   "tail": ""
+  },
+  "make:test": {
+   "rc": 2,
+   "tail": "make: *** No rule to make target 'test'.  Stop.\n"
+  },
+  "make:tests": {
+   "rc": 0,
+   "tail": "make: Nothing to be done for 'tests'.\n"
+  },
+  "make:check": {
+   "rc": 2,
+   "tail": "make: *** No rule to make target 'check'.  Stop.\n"
+  },
+  "make:install": {
+   "rc": 2,
+   "tail": "make: *** No rule to make target 'install'.  Stop.\n"
+  },
+  "make:dev": {
+   "rc": 2,
+   "tail": "make: *** No rule to make target 'dev'.  Stop.\n"
+  },
+  "make:develop": {
+   "rc": 2,
+   "tail": "make: *** No rule to make target 'develop'.  Stop.\n"
+  },
+  "import:httpx": {
+   "rc": 1,
+   "tail": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\nModuleNotFoundError: No module named 'httpx'\n"
+  }
+ }
+}

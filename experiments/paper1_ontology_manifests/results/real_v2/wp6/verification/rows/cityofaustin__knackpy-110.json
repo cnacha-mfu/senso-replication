@@ -1,0 +1,510 @@
+{
+ "task_id": "cityofaustin__knackpy-110",
+ "claims": {
+  "T1|knackpy": {
+   "claim": {
+    "key_str": "T1|knackpy",
+    "tcode": "T1",
+    "attrs": {
+     "path": "knackpy",
+     "is_dir": true,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "knackpy/",
+    "role": "true",
+    "slot": "layout",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "exists",
+     "path": "knackpy"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "PathFoundExact"
+   },
+   "probe": {
+    "ok": true,
+    "type": "exists"
+   },
+   "measure_error": null
+  },
+  "T1|tests": {
+   "claim": {
+    "key_str": "T1|tests",
+    "tcode": "T1",
+    "attrs": {
+     "path": "tests",
+     "is_dir": true,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "tests/",
+    "role": "true",
+    "slot": "layout",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "exists",
+     "path": "tests"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "PathFoundExact"
+   },
+   "probe": {
+    "ok": true,
+    "type": "exists"
+   },
+   "measure_error": null
+  },
+  "T1|knackpy/app.py": {
+   "claim": {
+    "key_str": "T1|knackpy/app.py",
+    "tcode": "T1",
+    "attrs": {
+     "path": "knackpy/app.py",
+     "is_dir": false,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "knackpy/app.py",
+    "role": "true",
+    "slot": "key_file",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "exists",
+     "path": "knackpy/app.py"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "PathFoundExact"
+   },
+   "probe": {
+    "ok": true,
+    "type": "exists"
+   },
+   "measure_error": null
+  },
+  "T3|test_framework|pytest": {
+   "claim": {
+    "key_str": "T3|test_framework|pytest",
+    "tcode": "T3",
+    "attrs": {
+     "tool": "pytest",
+     "category": "test_framework"
+    },
+    "quote": "python -m pytest tests",
+    "role": "true",
+    "slot": "test_cmd",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "pytest",
+     "root": "tests"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "ToolSignatureFound"
+   },
+   "probe": {
+    "ok": true,
+    "type": "pytest"
+   },
+   "measure_error": null
+  },
+  "T1|setup.py": {
+   "claim": {
+    "key_str": "T1|setup.py",
+    "tcode": "T1",
+    "attrs": {
+     "path": "setup.py",
+     "is_dir": false,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "setup.py",
+    "role": "true",
+    "slot": "install_cmd",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "exists",
+     "path": "setup.py"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "PathFoundExact"
+   },
+   "probe": {
+    "ok": true,
+    "type": "exists"
+   },
+   "measure_error": null
+  },
+  "T4|requests|": {
+   "claim": {
+    "key_str": "T4|requests|",
+    "tcode": "T4",
+    "attrs": {
+     "name": "requests",
+     "major": null,
+     "ecosystem_hint": "pypi"
+    },
+    "quote": "`requests`",
+    "role": "true",
+    "slot": "dep",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "import_ok",
+     "modules": [
+      "requests"
+     ]
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "DependencyConfirmed"
+   },
+   "probe": {
+    "ok": true,
+    "type": "import_ok"
+   },
+   "measure_error": null
+  },
+  "T4|pytz|": {
+   "claim": {
+    "key_str": "T4|pytz|",
+    "tcode": "T4",
+    "attrs": {
+     "name": "pytz",
+     "major": null,
+     "ecosystem_hint": "pypi"
+    },
+    "quote": "`pytz`",
+    "role": "true",
+    "slot": "dep",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "import_ok",
+     "modules": [
+      "pytz"
+     ]
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "DependencyConfirmed"
+   },
+   "probe": {
+    "ok": true,
+    "type": "import_ok"
+   },
+   "measure_error": null
+  },
+  "T1|knackpy/core": {
+   "claim": {
+    "key_str": "T1|knackpy/core",
+    "tcode": "T1",
+    "attrs": {
+     "path": "knackpy/core",
+     "is_dir": true,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "knackpy/core/",
+    "role": "false",
+    "slot": "P1",
+    "kind": 1,
+    "expect_verdict": "ContradictedClaim",
+    "expect_leaves": [
+     "PathNeverExisted"
+    ],
+    "probe": {
+     "type": "absent",
+     "path": "knackpy/core",
+     "history": "none"
+    },
+    "mode": "add"
+   },
+   "recheck": {
+    "verdict": "ContradictedClaim",
+    "leaf": "PathNeverExisted"
+   },
+   "probe": {
+    "ok": true,
+    "type": "absent",
+    "log_count": 0
+   },
+   "measure_error": null
+  },
+  "T1|knackpy/tests/test_knackpy.py": {
+   "claim": {
+    "key_str": "T1|knackpy/tests/test_knackpy.py",
+    "tcode": "T1",
+    "attrs": {
+     "path": "knackpy/tests/test_knackpy.py",
+     "is_dir": false,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "knackpy/tests/test_knackpy.py",
+    "role": "false",
+    "slot": "P2",
+    "kind": 2,
+    "expect_verdict": "ContradictedClaim",
+    "expect_leaves": [
+     "PathRemoved"
+    ],
+    "probe": {
+     "type": "absent",
+     "path": "knackpy/tests/test_knackpy.py",
+     "history": "some"
+    },
+    "mode": "add"
+   },
+   "recheck": {
+    "verdict": "ContradictedClaim",
+    "leaf": "PathRemoved"
+   },
+   "probe": {
+    "ok": true,
+    "type": "absent",
+    "log_count": 3
+   },
+   "measure_error": null
+  },
+  "T5|make|test": {
+   "claim": {
+    "key_str": "T5|make|test",
+    "tcode": "T5",
+    "attrs": {
+     "runner": "make",
+     "kind": "make",
+     "target": "test"
+    },
+    "quote": "make test",
+    "role": "false",
+    "slot": "C_R",
+    "kind": 3,
+    "expect_verdict": "ContradictedClaim",
+    "expect_leaves": [
+     "ScriptUndefined",
+     "ScriptHostMissing"
+    ],
+    "probe": {
+     "type": "make_fail",
+     "target": "test"
+    },
+    "mode": "replace"
+   },
+   "recheck": {
+    "verdict": "ContradictedClaim",
+    "leaf": "ScriptHostMissing"
+   },
+   "probe": {
+    "ok": true,
+    "type": "make_fail",
+    "result": {
+     "rc": 2,
+     "tail": "make: *** No rule to make target 'test'.  Stop.\n"
+    }
+   },
+   "measure_error": null
+  },
+  "T4|tzlocal|": {
+   "claim": {
+    "key_str": "T4|tzlocal|",
+    "tcode": "T4",
+    "attrs": {
+     "name": "tzlocal",
+     "major": null,
+     "ecosystem_hint": "pypi"
+    },
+    "quote": "`tzlocal`",
+    "role": "false",
+    "slot": "D",
+    "kind": 4,
+    "expect_verdict": "ContradictedClaim",
+    "expect_leaves": [
+     "DependencyUndeclared"
+    ],
+    "probe": {
+     "type": "import_fail",
+     "modules": [
+      "tzlocal"
+     ]
+    },
+    "mode": "replace"
+   },
+   "recheck": {
+    "verdict": "ContradictedClaim",
+    "leaf": "DependencyUndeclared"
+   },
+   "probe": {
+    "ok": true,
+    "type": "import_fail"
+   },
+   "measure_error": null
+  },
+  "T1|docs/core": {
+   "claim": {
+    "key_str": "T1|docs/core",
+    "tcode": "T1",
+    "attrs": {
+     "path": "docs/core",
+     "is_dir": true,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "docs/core/",
+    "role": "false",
+    "slot": "P1",
+    "kind": 1,
+    "expect_verdict": "ContradictedClaim",
+    "expect_leaves": [
+     "PathNeverExisted"
+    ],
+    "probe": {
+     "type": "absent",
+     "path": "docs/core",
+     "history": "none"
+    },
+    "mode": "add"
+   },
+   "recheck": {
+    "verdict": "ContradictedClaim",
+    "leaf": "PathNeverExisted"
+   },
+   "probe": {
+    "ok": true,
+    "type": "absent",
+    "log_count": 0
+   },
+   "measure_error": null
+  },
+  "T1|tests/config.py": {
+   "claim": {
+    "key_str": "T1|tests/config.py",
+    "tcode": "T1",
+    "attrs": {
+     "path": "tests/config.py",
+     "is_dir": false,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "tests/config.py",
+    "role": "false",
+    "slot": "P2",
+    "kind": 2,
+    "expect_verdict": "ContradictedClaim",
+    "expect_leaves": [
+     "PathRemoved"
+    ],
+    "probe": {
+     "type": "absent",
+     "path": "tests/config.py",
+     "history": "some"
+    },
+    "mode": "add"
+   },
+   "recheck": {
+    "verdict": "ContradictedClaim",
+    "leaf": "PathRemoved"
+   },
+   "probe": {
+    "ok": true,
+    "type": "absent",
+    "log_count": 2
+   },
+   "measure_error": null
+  },
+  "T5|make|install": {
+   "claim": {
+    "key_str": "T5|make|install",
+    "tcode": "T5",
+    "attrs": {
+     "runner": "make",
+     "kind": "make",
+     "target": "install"
+    },
+    "quote": "make install",
+    "role": "false",
+    "slot": "C_I",
+    "kind": 3,
+    "expect_verdict": "ContradictedClaim",
+    "expect_leaves": [
+     "ScriptUndefined",
+     "ScriptHostMissing"
+    ],
+    "probe": {
+     "type": "make_fail",
+     "target": "install"
+    },
+    "mode": "replace"
+   },
+   "recheck": {
+    "verdict": "ContradictedClaim",
+    "leaf": "ScriptHostMissing"
+   },
+   "probe": {
+    "ok": true,
+    "type": "make_fail",
+    "result": {
+     "rc": 2,
+     "tail": "make: *** No rule to make target 'install'.  Stop.\n"
+    }
+   },
+   "measure_error": null
+  }
+ },
+ "probe_log": {
+  "pytest:tests": {
+   "rc": 2,
+   "tail": "========================= short test summary info ============================\nERROR tests/test_api.py - KeyError: 'KNACK_APP_ID'\nERROR tests/test_app.py - KeyError: 'KNACK_APP_ID'\n!!!!!!!!!!!!!!!!!!! Interrupted: 2 errors during collection !!!!!!!!!!!!!!!!!!!!\n37 tests collected, 2 errors in 0.62s\n"
+  },
+  "import:requests": {
+   "rc": 0,
+   "tail": ""
+  },
+  "import:pytz": {
+   "rc": 0,
+   "tail": ""
+  },
+  "make:test": {
+   "rc": 2,
+   "tail": "make: *** No rule to make target 'test'.  Stop.\n"
+  },
+  "make:install": {
+   "rc": 2,
+   "tail": "make: *** No rule to make target 'install'.  Stop.\n"
+  },
+  "import:tzlocal": {
+   "rc": 1,
+   "tail": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\nModuleNotFoundError: No module named 'tzlocal'\n"
+  }
+ }
+}

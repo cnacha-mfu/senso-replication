@@ -1,0 +1,68 @@
+{
+ "unit_id": "uilibs__uiprotect-275__A__nemotron-3-ultra-550b-a55b__r1",
+ "task_id": "uilibs__uiprotect-275",
+ "repo": "uilibs/uiprotect",
+ "stage": "phase_out",
+ "condition": "A",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "run": 1,
+ "order": 87,
+ "env_build_s": 65.3,
+ "started": "2026-10-15T02:55:36.388494+00:00",
+ "condition_meta": {},
+ "condition_available": true,
+ "venv_reset_s": 1.42,
+ "stray_procs_killed": 0,
+ "retries": 0,
+ "venv_hash_before": "1689fdb5b7d5a566",
+ "venv_hash_after": "1689fdb5b7d5a566",
+ "venv_mutated": false,
+ "exit_status": "LimitsExceeded",
+ "error": "",
+ "steps": 40,
+ "wall_s": 143.4,
+ "prompt_tokens": 496996,
+ "completion_tokens": 2538,
+ "format_errors": 0,
+ "length_cutoffs": 0,
+ "api_errors": {
+  "429": 9
+ },
+ "n_queries": 40,
+ "keys_used": {
+  "NVIDIA_API_KEY_4": 9,
+  "NVIDIA_API_KEY_5": 8,
+  "NVIDIA_API_KEY": 12,
+  "NVIDIA_API_KEY_2": 20
+ },
+ "temperature": 0.7,
+ "top_p": 0.95,
+ "model_id_returned": "nvidia/nemotron-3-ultra-550b-a55b",
+ "mini_version": "2.4.6",
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "resolved": false,
+  "reason": "empty_patch",
+  "outcomes": {
+   "Y0": 0,
+   "Y5": 0,
+   "Y6": 40,
+   "hit_step_limit": 1,
+   "changed_lines": 0,
+   "gold_changed_lines": 70,
+   "Y1": null,
+   "Y2": null,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": null
+  }
+ },
+ "status": "done",
+ "finished": "2026-10-15T02:58:02.821973+00:00"
+}

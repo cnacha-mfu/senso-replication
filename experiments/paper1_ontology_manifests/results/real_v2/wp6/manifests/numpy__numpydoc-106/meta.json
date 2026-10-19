@@ -1,0 +1,318 @@
+{
+ "task_id": "numpy__numpydoc-106",
+ "repo": "numpy/numpydoc",
+ "stage": "phase_out",
+ "rounds": 1,
+ "rejects": {},
+ "flags": [
+  "no_test_command",
+  "length_violation_F_R",
+  "length_violation_F_I"
+ ],
+ "info": {
+  "slots": {
+   "P1": {
+    "replaced": null,
+    "name": "core",
+    "F_R": "numpydoc/core",
+    "F_I": "numpydoc/templates/core"
+   },
+   "P2": {
+    "replaced": null,
+    "F_R": "numpydoc/linkcode.py",
+    "F_I": "comment_eater.py"
+   },
+   "C": {
+    "F_R": "make test",
+    "F_I": "make install"
+   },
+   "D": {
+    "replaced": null,
+    "F_R": "boltons",
+    "F_I": "mako"
+   }
+  },
+  "why": {
+   "test_command": [
+    {
+     "root": "numpydoc/tests",
+     "T3": "ContradictedClaim",
+     "T1": "SupportedClaim",
+     "collect_ok": null
+    }
+   ],
+   "kind1": {
+    "p1_idx": null,
+    "gold0": "numpydoc",
+    "unrelated": null,
+    "base_R": "numpydoc",
+    "base_I": "numpydoc/templates"
+   },
+   "kind2": {
+    "p2_idx": null,
+    "n_deleted_py": 24,
+    "found": {
+     "F_R": "numpydoc/linkcode.py",
+     "F_I": "comment_eater.py"
+    }
+   },
+   "kind3": {
+    "run": "test",
+    "install": "install",
+    "test_ok": false,
+    "install_ok": true
+   },
+   "kind4": {
+    "deps": [
+     [
+      "sphinx",
+      true
+     ],
+     [
+      "jinja2",
+      true
+     ]
+    ],
+    "d_idx": null,
+    "src_R": "sphinx",
+    "src_I": "jinja2",
+    "n_decls": 2,
+    "n_dist": 34
+   }
+  },
+  "length": {
+   "T": 210,
+   "F_R": 295,
+   "F_I": 265
+  },
+  "fallbacks": {
+   "F_R": [],
+   "F_I": []
+  },
+  "modes": {
+   "F_R": {
+    "1": "add",
+    "2": "add",
+    "3": "add",
+    "4": "add"
+   },
+   "F_I": {
+    "1": "add",
+    "2": "add",
+    "3": "replace",
+    "4": "add"
+   }
+  },
+  "length_diff": {
+   "F_R": 85,
+   "F_I": 55
+  },
+  "n_claims_T": 6,
+  "n_false": {
+   "F_R": 4,
+   "F_I": 4
+  },
+  "pointer_in_issue": true,
+  "gold_dirs": [
+   "numpydoc"
+  ],
+  "gold_files": [
+   "numpydoc/docscrape_sphinx.py"
+  ]
+ },
+ "tokens": {
+  "F_R": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "numpydoc/core",
+     "core"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "numpydoc/linkcode.py",
+     "linkcode.py"
+    ]
+   },
+   {
+    "kind": 3,
+    "type": "regex",
+    "regex": "\\bmake\\b[^|;&\\n]*\\btest\\b",
+    "target": "test"
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "boltons"
+    ]
+   }
+  ],
+  "F_I": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "numpydoc/templates/core",
+     "core"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "comment_eater.py",
+     "comment_eater.py"
+    ]
+   },
+   {
+    "kind": 3,
+    "type": "regex",
+    "regex": "\\bmake\\b[^|;&\\n]*\\binstall\\b",
+    "target": "install"
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "mako"
+    ]
+   }
+  ]
+ },
+ "unresolved_pre_hermit": [],
+ "sha256": {
+  "T": "601ae5aa5c5eb8fe5eb716610eb63a6597d4a1e3e119807f068325d37e9d9eaf",
+  "F_R": "d83e39e0b31fd39f973f84a9eb6d9b3633d789b8c66c15e0d4ca22d0f29b102d",
+  "F_I": "d5703b3b37a9c17b1bfc3b9585ecb070320039260c5c7d07fe10133e784bc5f2"
+ },
+ "chars": {
+  "T": 210,
+  "F_R": 295,
+  "F_I": 265
+ },
+ "claims": {
+  "T": [
+   "T1|numpydoc",
+   "T1|numpydoc/tests",
+   "T1|numpydoc/docscrape.py",
+   "T1|setup.py",
+   "T4|sphinx|",
+   "T4|jinja2|"
+  ],
+  "F_R": [
+   "T1|numpydoc",
+   "T1|numpydoc/tests",
+   "T1|numpydoc/core",
+   "T1|numpydoc/docscrape.py",
+   "T1|numpydoc/linkcode.py",
+   "T1|setup.py",
+   "T5|make|test",
+   "T4|sphinx|",
+   "T4|jinja2|",
+   "T4|boltons|"
+  ],
+  "F_I": [
+   "T1|numpydoc",
+   "T1|numpydoc/tests",
+   "T1|numpydoc/templates/core",
+   "T1|numpydoc/docscrape.py",
+   "T1|comment_eater.py",
+   "T5|make|install",
+   "T4|sphinx|",
+   "T4|jinja2|",
+   "T4|mako|"
+  ]
+ },
+ "python_spec": null,
+ "token_audit": [
+  {
+   "cond": "F_R",
+   "kind": 1,
+   "type": "path",
+   "name": "numpydoc/core",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 2,
+   "type": "path",
+   "name": "numpydoc/linkcode.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 3,
+   "type": "regex",
+   "name": "make test",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 4,
+   "type": "word",
+   "name": "boltons",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 1,
+   "type": "path",
+   "name": "numpydoc/templates/core",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 2,
+   "type": "path",
+   "name": "comment_eater.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 3,
+   "type": "regex",
+   "name": "make install",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 4,
+   "type": "word",
+   "name": "mako",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  }
+ ],
+ "dist_imports_used": {
+  "sphinx": [
+   "sphinx"
+  ],
+  "jinja2": [
+   "jinja2"
+  ],
+  "boltons": null,
+  "mako": null
+ }
+}

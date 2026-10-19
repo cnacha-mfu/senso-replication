@@ -1,0 +1,3522 @@
+{
+ "repo": "boto/botocore",
+ "snapshot_date": "2020-02-29",
+ "status": "ok",
+ "unmineable": false,
+ "unmineable_reason": null,
+ "replaces": null,
+ "settings": {
+  "dedup": true,
+  "complexity": false,
+  "dataset": null,
+  "sensitivity": false,
+  "snapshot_commit": "94127c6a89918ec039389291933a7372916cff28",
+  "mode": "wp5_snapshot_commit",
+  "test_patch_files": [
+   "tests/functional/test_stub.py",
+   "tests/unit/test_handlers.py"
+  ],
+  "package_roots": [
+   "botocore"
+  ]
+ },
+ "versions": {
+  "owlready2": "0.51",
+  "pymannkendall": "1.4.3",
+  "lizard": "1.24.1",
+  "numpy": "2.5.3",
+  "scipy": "1.18.1",
+  "python": "3.12.15",
+  "git": "git version 2.53.0"
+ },
+ "task_id": "boto__botocore-1996",
+ "base_commit": "94127c6a89918ec039389291933a7372916cff28",
+ "measures": {
+  "monthsObserved": 36,
+  "monthsSinceLastCommit": 0,
+  "distinctAuthorsInWindow": 69,
+  "commitMKTau": 0.107937,
+  "commitMKpValue": 0.361186,
+  "activeMonthCount": 36,
+  "activeMonthRatio": 1.0,
+  "meanMonthlyCommits": 84.666667,
+  "commitsLast3Months": 211,
+  "commitCountCV": 0.236302,
+  "commitCountCVSample": 0.239654,
+  "commitHalfRatio": 1.026596,
+  "commitSecondHalfMean": 85.777778,
+  "churnCV": 1.078393,
+  "linesAddedCV": 1.046093,
+  "mergeMonthRatio": 1.0,
+  "multiAuthorMonthRatio": 1.0,
+  "bugFixRatioFirstHalf": 0.050955,
+  "bugFixRatioSecondHalf": 0.044423,
+  "bugFixHalfRatio": 0.871823,
+  "locSeriesLength": 36,
+  "locRelSenSlopeAnnual": 0.13801,
+  "locMKTau": 0.987302,
+  "locMKS": 622,
+  "locMKpValue": 0.0,
+  "locSenSlope": 545.017857,
+  "locStart": 38415,
+  "locEnd": 58230,
+  "locDelta": 19815,
+  "locGrowthRate": 0.515814,
+  "locChangePct": 51.581414,
+  "locEndToStartRatio": 1.515814,
+  "locGrowthLast3": 0.037265,
+  "featureCommitsFirstHalf": 0,
+  "featureCommitsSecondHalf": 0,
+  "featureCommitsTotal": 0,
+  "locDeltaPerFeature": 19815.0,
+  "recentAgentCommitRatio": 0.0,
+  "featCommitCount": 0,
+  "bugFixCommitCount": 159,
+  "commitCount": 3048,
+  "monthly_series": {
+   "months": [
+    "2016-03",
+    "2016-04",
+    "2016-05",
+    "2016-06",
+    "2016-07",
+    "2016-08",
+    "2016-09",
+    "2016-10",
+    "2016-11",
+    "2016-12",
+    "2017-01",
+    "2017-02",
+    "2017-03",
+    "2017-04",
+    "2017-05",
+    "2017-06",
+    "2017-07",
+    "2017-08",
+    "2017-09",
+    "2017-10",
+    "2017-11",
+    "2017-12",
+    "2018-01",
+    "2018-02",
+    "2018-03",
+    "2018-04",
+    "2018-05",
+    "2018-06",
+    "2018-07",
+    "2018-08",
+    "2018-09",
+    "2018-10",
+    "2018-11",
+    "2018-12",
+    "2019-01",
+    "2019-02",
+    "2019-03",
+    "2019-04",
+    "2019-05",
+    "2019-06",
+    "2019-07",
+    "2019-08",
+    "2019-09",
+    "2019-10",
+    "2019-11",
+    "2019-12",
+    "2020-01",
+    "2020-02"
+   ],
+   "commits": [
+    112,
+    73,
+    62,
+    80,
+    41,
+    64,
+    55,
+    64,
+    80,
+    81,
+    57,
+    51,
+    79,
+    59,
+    54,
+    92,
+    70,
+    83,
+    67,
+    66,
+    100,
+    80,
+    71,
+    93,
+    88,
+    66,
+    84,
+    86,
+    116,
+    150,
+    113,
+    123,
+    107,
+    85,
+    68,
+    68,
+    70,
+    60,
+    94,
+    97,
+    92,
+    83,
+    76,
+    98,
+    99,
+    78,
+    59,
+    74
+   ],
+   "loc": [
+    34639,
+    35073,
+    35254,
+    36429,
+    36787,
+    35902,
+    36111,
+    36394,
+    37002,
+    37617,
+    38059,
+    38207,
+    38415,
+    39549,
+    39727,
+    39894,
+    40069,
+    40571,
+    40606,
+    40819,
+    43211,
+    43491,
+    43778,
+    44052,
+    44240,
+    45576,
+    45622,
+    45769,
+    45857,
+    46881,
+    47898,
+    48366,
+    50139,
+    52804,
+    53055,
+    53056,
+    53055,
+    53085,
+    53060,
+    53169,
+    54010,
+    54014,
+    54014,
+    54501,
+    54625,
+    56138,
+    56023,
+    58230
+   ]
+  }
+ },
+ "window": {
+  "L": 36,
+  "first_month": "2017-03",
+  "last_month": "2020-02",
+  "n_months": 36,
+  "left_truncated": false,
+  "first_commit_month": "2012-11",
+  "mined_months": 48,
+  "commits_in_window": 3048,
+  "commits_in_history": 6555
+ },
+ "loc_instrument": {
+  "instrument": "nonblank-source-lines-v1",
+  "status": "ok",
+  "months": 48,
+  "month_end_commits_distinct": 48,
+  "source_blobs": 993,
+  "blobs_fetched": 33,
+  "t_ls_tree_s": 1.7470749620115384,
+  "t_fetch_s": 1.0460153390304185,
+  "t_read_s": 0.42550284595927224,
+  "series_present": true,
+  "extensions": [
+   ".bash",
+   ".c",
+   ".cc",
+   ".cjs",
+   ".clj",
+   ".cpp",
+   ".cs",
+   ".cxx",
+   ".dart",
+   ".erl",
+   ".ex",
+   ".exs",
+   ".f90",
+   ".go",
+   ".groovy",
+   ".h",
+   ".hh",
+   ".hpp",
+   ".hs",
+   ".java",
+   ".jl",
+   ".js",
+   ".jsx",
+   ".kt",
+   ".kts",
+   ".lua",
+   ".m",
+   ".mjs",
+   ".ml",
+   ".mm",
+   ".nim",
+   ".php",
+   ".pl",
+   ".pm",
+   ".py",
+   ".pyi",
+   ".r",
+   ".rb",
+   ".rs",
+   ".scala",
+   ".sh",
+   ".sql",
+   ".svelte",
+   ".swift",
+   ".ts",
+   ".tsx",
+   ".vue",
+   ".zig"
+  ],
+  "excluded_dirs": [
+   "node_modules",
+   "vendor",
+   "vendored",
+   "third_party",
+   "site-packages",
+   "bower_components"
+  ],
+  "max_blob_bytes": 1000000,
+  "first_parent": true
+ },
+ "mining": {
+  "churn": {
+   "t_churn_raw_s": 7.671533759043086,
+   "t_churn_fetch_s": 10.01765285898,
+   "t_churn_numstat_s": 9.10456178302411,
+   "blobs_fetched_churn": 3296
+  },
+  "timings": {
+   "t_clone": 0.004,
+   "t_mine": 27.075,
+   "t_loc": 3.219,
+   "t_reason_A": 15.877
+  },
+  "cached": false
+ },
+ "stage_a": {
+  "commits": 3868,
+  "reasoned_commits": 2882,
+  "inconsistent_chunks": 0,
+  "chunk_timings": [
+   {
+    "tbox_load_s": 0.051814420032314956,
+    "abox_load_s": 0.19171940500382334,
+    "reason_s": 6.118757577962242,
+    "extract_s": 0.010310646030120552,
+    "total_s": 6.37366058799671,
+    "commits": 1000
+   },
+   {
+    "tbox_load_s": 0.05631143500795588,
+    "abox_load_s": 0.1477144020027481,
+    "reason_s": 5.483497178007383,
+    "extract_s": 0.00933598302071914,
+    "total_s": 5.6980203409912065,
+    "commits": 1000
+   },
+   {
+    "tbox_load_s": 0.039686056959908456,
+    "abox_load_s": 0.11105755600146949,
+    "reason_s": 3.5485523890238255,
+    "extract_s": 0.008073912002146244,
+    "total_s": 3.707726778986398,
+    "commits": 882
+   }
+  ],
+  "tbox_sha256": "f5ba00eaa76dc3582415cdf566fbd7abc1d3f2797ca928f41dad106dc1c0bdb5"
+ },
+ "activity": {
+  "last_commit_date": "2020-02-29T00:36:53+00:00",
+  "months_since_last_commit": 0,
+  "distinct_authors_in_window": 69,
+  "merge_commits_in_window": 912
+ },
+ "agent_adoption_date": null,
+ "commit_label_counts": {
+  "BugFixCommit": 159,
+  "FeatureCommit": 0,
+  "AgentCommit": 0
+ },
+ "series_months": [
+  {
+   "month": "2017-03",
+   "commit_count": 79,
+   "merge_count": 18,
+   "unique_authors": 9,
+   "lines_added": 913,
+   "lines_deleted": 193,
+   "total_churn": 1106,
+   "files_changed": 89,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 38415,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2017-04",
+   "commit_count": 59,
+   "merge_count": 20,
+   "unique_authors": 9,
+   "lines_added": 826,
+   "lines_deleted": 69,
+   "total_churn": 895,
+   "files_changed": 46,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 39549,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2017-05",
+   "commit_count": 54,
+   "merge_count": 15,
+   "unique_authors": 9,
+   "lines_added": 166,
+   "lines_deleted": 51,
+   "total_churn": 217,
+   "files_changed": 39,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 39727,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2017-06",
+   "commit_count": 92,
+   "merge_count": 26,
+   "unique_authors": 13,
+   "lines_added": 668,
+   "lines_deleted": 678,
+   "total_churn": 1346,
+   "files_changed": 118,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 39894,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2017-07",
+   "commit_count": 70,
+   "merge_count": 29,
+   "unique_authors": 8,
+   "lines_added": 332,
+   "lines_deleted": 66,
+   "total_churn": 398,
+   "files_changed": 41,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 40069,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2017-08",
+   "commit_count": 83,
+   "merge_count": 25,
+   "unique_authors": 6,
+   "lines_added": 3019,
+   "lines_deleted": 1791,
+   "total_churn": 4810,
+   "files_changed": 81,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 40571,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2017-09",
+   "commit_count": 67,
+   "merge_count": 20,
+   "unique_authors": 6,
+   "lines_added": 180,
+   "lines_deleted": 43,
+   "total_churn": 223,
+   "files_changed": 40,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 40606,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2017-10",
+   "commit_count": 66,
+   "merge_count": 23,
+   "unique_authors": 6,
+   "lines_added": 165,
+   "lines_deleted": 38,
+   "total_churn": 203,
+   "files_changed": 44,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 40819,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2017-11",
+   "commit_count": 100,
+   "merge_count": 30,
+   "unique_authors": 9,
+   "lines_added": 848,
+   "lines_deleted": 218,
+   "total_churn": 1066,
+   "files_changed": 76,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 43211,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2017-12",
+   "commit_count": 80,
+   "merge_count": 27,
+   "unique_authors": 6,
+   "lines_added": 433,
+   "lines_deleted": 110,
+   "total_churn": 543,
+   "files_changed": 58,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 43491,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2018-01",
+   "commit_count": 71,
+   "merge_count": 24,
+   "unique_authors": 9,
+   "lines_added": 250,
+   "lines_deleted": 58,
+   "total_churn": 308,
+   "files_changed": 44,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 43778,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2018-02",
+   "commit_count": 93,
+   "merge_count": 27,
+   "unique_authors": 8,
+   "lines_added": 1373,
+   "lines_deleted": 194,
+   "total_churn": 1567,
+   "files_changed": 69,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 44052,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2018-03",
+   "commit_count": 88,
+   "merge_count": 25,
+   "unique_authors": 7,
+   "lines_added": 1077,
+   "lines_deleted": 170,
+   "total_churn": 1247,
+   "files_changed": 70,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 44240,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2018-04",
+   "commit_count": 66,
+   "merge_count": 22,
+   "unique_authors": 7,
+   "lines_added": 249,
+   "lines_deleted": 76,
+   "total_churn": 325,
+   "files_changed": 39,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 45576,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2018-05",
+   "commit_count": 84,
+   "merge_count": 26,
+   "unique_authors": 9,
+   "lines_added": 1613,
+   "lines_deleted": 144,
+   "total_churn": 1757,
+   "files_changed": 65,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 45622,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2018-06",
+   "commit_count": 86,
+   "merge_count": 24,
+   "unique_authors": 7,
+   "lines_added": 1229,
+   "lines_deleted": 771,
+   "total_churn": 2000,
+   "files_changed": 101,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 45769,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2018-07",
+   "commit_count": 116,
+   "merge_count": 25,
+   "unique_authors": 6,
+   "lines_added": 845,
+   "lines_deleted": 533,
+   "total_churn": 1378,
+   "files_changed": 140,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 45857,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2018-08",
+   "commit_count": 150,
+   "merge_count": 40,
+   "unique_authors": 9,
+   "lines_added": 2472,
+   "lines_deleted": 641,
+   "total_churn": 3113,
+   "files_changed": 168,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 46881,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2018-09",
+   "commit_count": 113,
+   "merge_count": 27,
+   "unique_authors": 10,
+   "lines_added": 1833,
+   "lines_deleted": 1112,
+   "total_churn": 2945,
+   "files_changed": 170,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 47898,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2018-10",
+   "commit_count": 123,
+   "merge_count": 32,
+   "unique_authors": 13,
+   "lines_added": 3887,
+   "lines_deleted": 1715,
+   "total_churn": 5602,
+   "files_changed": 131,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 48366,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2018-11",
+   "commit_count": 107,
+   "merge_count": 35,
+   "unique_authors": 9,
+   "lines_added": 398,
+   "lines_deleted": 212,
+   "total_churn": 610,
+   "files_changed": 79,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 50139,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2018-12",
+   "commit_count": 85,
+   "merge_count": 33,
+   "unique_authors": 10,
+   "lines_added": 1203,
+   "lines_deleted": 115,
+   "total_churn": 1318,
+   "files_changed": 54,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 52804,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2019-01",
+   "commit_count": 68,
+   "merge_count": 20,
+   "unique_authors": 8,
+   "lines_added": 236,
+   "lines_deleted": 94,
+   "total_churn": 330,
+   "files_changed": 41,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 53055,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2019-02",
+   "commit_count": 68,
+   "merge_count": 21,
+   "unique_authors": 6,
+   "lines_added": 70,
+   "lines_deleted": 44,
+   "total_churn": 114,
+   "files_changed": 41,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 53056,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2019-03",
+   "commit_count": 70,
+   "merge_count": 23,
+   "unique_authors": 4,
+   "lines_added": 42,
+   "lines_deleted": 43,
+   "total_churn": 85,
+   "files_changed": 42,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 53055,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2019-04",
+   "commit_count": 60,
+   "merge_count": 16,
+   "unique_authors": 4,
+   "lines_added": 126,
+   "lines_deleted": 165,
+   "total_churn": 291,
+   "files_changed": 37,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 53085,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2019-05",
+   "commit_count": 94,
+   "merge_count": 30,
+   "unique_authors": 9,
+   "lines_added": 72,
+   "lines_deleted": 46,
+   "total_churn": 118,
+   "files_changed": 47,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 53060,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2019-06",
+   "commit_count": 97,
+   "merge_count": 30,
+   "unique_authors": 7,
+   "lines_added": 1190,
+   "lines_deleted": 255,
+   "total_churn": 1445,
+   "files_changed": 66,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 53169,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2019-07",
+   "commit_count": 92,
+   "merge_count": 29,
+   "unique_authors": 7,
+   "lines_added": 280,
+   "lines_deleted": 116,
+   "total_churn": 396,
+   "files_changed": 58,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 54010,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2019-08",
+   "commit_count": 83,
+   "merge_count": 24,
+   "unique_authors": 5,
+   "lines_added": 615,
+   "lines_deleted": 82,
+   "total_churn": 697,
+   "files_changed": 55,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 54014,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2019-09",
+   "commit_count": 76,
+   "merge_count": 21,
+   "unique_authors": 4,
+   "lines_added": 80,
+   "lines_deleted": 63,
+   "total_churn": 143,
+   "files_changed": 42,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 54014,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2019-10",
+   "commit_count": 98,
+   "merge_count": 30,
+   "unique_authors": 7,
+   "lines_added": 563,
+   "lines_deleted": 419,
+   "total_churn": 982,
+   "files_changed": 62,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 54501,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2019-11",
+   "commit_count": 99,
+   "merge_count": 32,
+   "unique_authors": 5,
+   "lines_added": 2333,
+   "lines_deleted": 737,
+   "total_churn": 3070,
+   "files_changed": 88,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 54625,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2019-12",
+   "commit_count": 78,
+   "merge_count": 25,
+   "unique_authors": 7,
+   "lines_added": 152,
+   "lines_deleted": 63,
+   "total_churn": 215,
+   "files_changed": 51,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 56138,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2020-01",
+   "commit_count": 59,
+   "merge_count": 16,
+   "unique_authors": 3,
+   "lines_added": 2722,
+   "lines_deleted": 251,
+   "total_churn": 2973,
+   "files_changed": 71,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 56023,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2020-02",
+   "commit_count": 74,
+   "merge_count": 22,
+   "unique_authors": 5,
+   "lines_added": 59,
+   "lines_deleted": 48,
+   "total_churn": 107,
+   "files_changed": 42,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 58230,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  }
+ ],
+ "measures_derived": {
+  "bugFixRatioFirstHalf": 0.050955,
+  "bugFixRatioSecondHalf": 0.044423,
+  "bugFixHalfRatio": 0.871823,
+  "featureCommitsFirstHalf": 0,
+  "featureCommitsSecondHalf": 0,
+  "featureCommitsTotal": 0,
+  "locDeltaPerFeature": 19815.0,
+  "recentAgentCommitRatio": 0.0
+ },
+ "modules_meta": {
+  "anchor_S": "2020-03-09T19:35:13+00:00",
+  "window_months": 12,
+  "package_roots": [
+   "botocore"
+  ],
+  "n_modules": 38,
+  "n_source_files": 63,
+  "n_window_commits": 311,
+  "cached": false,
+  "timings": {
+   "t_tree_loc": 1.165,
+   "t_history": 0.806,
+   "t_numstat": 1.49
+  },
+  "module_loc_instrument": "nonblank-source-lines-v1",
+  "label_counts": {
+   "StableModule": 24,
+   "ActiveModule": 14,
+   "undetermined": 0
+  },
+  "thresholds": {
+   "mod_window_months": 12,
+   "mod_stable_max_rel_churn": 0.1,
+   "mod_stable_max_change_months": 2
+  }
+ },
+ "inferred": {
+  "a0.05_L36_D12_G0.05_orig": {
+   "classes": [
+    "CopyPasteEvidence",
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIIConformant",
+    "LawIVConformant",
+    "LawVConformant",
+    "LawVIConformant",
+    "LawVIIIConformant",
+    "LawVIINonConformant",
+    "LocPerFeatureHigh",
+    "MKApplicable",
+    "MergeActive",
+    "MultiAuthorActive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": "urn:senso:explanations:boto__botocore-1996:d20298612d99",
+   "tbox_sha256": "d20298612d99fa8f5c1a63c70eaab0195a3e82e2d6780de3bd1fd3ced72d6e5d",
+   "abox_triples": 420,
+   "t_reason_B_s": 2.597
+  }
+ },
+ "primary_config": "a0.05_L36_D12_G0.05_orig",
+ "project_iri": "http://senso-framework.org/data/boto__botocore-1996",
+ "consistent": true,
+ "inferred_labels": [
+  "CopyPasteEvidence",
+  "GrowthStage",
+  "LawIConformant",
+  "LawIIIConformant",
+  "LawIVConformant",
+  "LawVConformant",
+  "LawVIConformant",
+  "LawVIIIConformant",
+  "LawVIINonConformant",
+  "LocPerFeatureHigh",
+  "MKApplicable",
+  "MergeActive",
+  "MultiAuthorActive",
+  "RBActiveDevelopmentStage",
+  "RecentlyActive",
+  "SubstantialLocGrowth"
+ ],
+ "stage_labels": [
+  "GrowthStage",
+  "RBActiveDevelopmentStage"
+ ],
+ "law_labels": {
+  "I": "LawIConformant",
+  "III": "LawIIIConformant",
+  "IV": "LawIVConformant",
+  "V": "LawVConformant",
+  "VI": "LawVIConformant",
+  "VII": "LawVIINonConformant",
+  "VIII": "LawVIIIConformant"
+ },
+ "tbox_sha256_stage_b": "d20298612d99fa8f5c1a63c70eaab0195a3e82e2d6780de3bd1fd3ced72d6e5d",
+ "tbox_sha256_stage_a": "f5ba00eaa76dc3582415cdf566fbd7abc1d3f2797ca928f41dad106dc1c0bdb5",
+ "summary": {
+  "c1": "A",
+  "c2": "A",
+  "cf": "A",
+  "note": "debug summary; run_rq1_v2.py reads `inferred` and recomputes CF itself"
+ },
+ "modules": {
+  "botocore/__init__.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "botocore/__init__.py",
+    "moduleLoc": 75,
+    "moduleCommitsInWindow": 229,
+    "moduleChangeMonthsInWindow": 13,
+    "moduleLinesChangedInWindow": 458,
+    "moduleRelChurnInWindow": 6.106667,
+    "moduleMonthsSinceLastChange": 0
+   },
+   "iri": "http://senso-framework.org/data/boto__botocore-1996/module/botocore___init__.py-186968",
+   "abox_asserted": true
+  },
+  "botocore/args.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "botocore/args.py",
+    "moduleLoc": 331,
+    "moduleCommitsInWindow": 4,
+    "moduleChangeMonthsInWindow": 3,
+    "moduleLinesChangedInWindow": 260,
+    "moduleRelChurnInWindow": 0.785498,
+    "moduleMonthsSinceLastChange": 2
+   },
+   "iri": "http://senso-framework.org/data/boto__botocore-1996/module/botocore_args.py-313084",
+   "abox_asserted": true
+  },
+  "botocore/auth.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "botocore/auth.py",
+    "moduleLoc": 742,
+    "moduleCommitsInWindow": 1,
+    "moduleChangeMonthsInWindow": 1,
+    "moduleLinesChangedInWindow": 13,
+    "moduleRelChurnInWindow": 0.01752,
+    "moduleMonthsSinceLastChange": 4
+   },
+   "iri": "http://senso-framework.org/data/boto__botocore-1996/module/botocore_auth.py-04d3a7",
+   "abox_asserted": true
+  },
+  "botocore/awsrequest.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "LowRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "botocore/awsrequest.py",
+    "moduleLoc": 510,
+    "moduleCommitsInWindow": 3,
+    "moduleChangeMonthsInWindow": 3,
+    "moduleLinesChangedInWindow": 47,
+    "moduleRelChurnInWindow": 0.092157,
+    "moduleMonthsSinceLastChange": 2
+   },
+   "iri": "http://senso-framework.org/data/boto__botocore-1996/module/botocore_awsrequest.py-f77347",
+   "abox_asserted": true
+  },
+  "botocore/client.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "botocore/client.py",
+    "moduleLoc": 784,
+    "moduleCommitsInWindow": 8,
+    "moduleChangeMonthsInWindow": 5,
+    "moduleLinesChangedInWindow": 179,
+    "moduleRelChurnInWindow": 0.228316,
+    "moduleMonthsSinceLastChange": 2
+   },
+   "iri": "http://senso-framework.org/data/boto__botocore-1996/module/botocore_client.py-ce53ab",
+   "abox_asserted": true
+  },
+  "botocore/compat.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "botocore/compat.py",
+    "moduleLoc": 279,
+    "moduleCommitsInWindow": 3,
+    "moduleChangeMonthsInWindow": 3,
+    "moduleLinesChangedInWindow": 88,
+    "moduleRelChurnInWindow": 0.315412,
+    "moduleMonthsSinceLastChange": 0
+   },
+   "iri": "http://senso-framework.org/data/boto__botocore-1996/module/botocore_compat.py-1b9dfd",
+   "abox_asserted": true
+  },
+  "botocore/config.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "RarelyChangedModule"
+   ],
+   "measures": {
+    "modulePath": "botocore/config.py",
+    "moduleLoc": 220,
+    "moduleCommitsInWindow": 2,
+    "moduleChangeMonthsInWindow": 2,
+    "moduleLinesChangedInWindow": 46,
+    "moduleRelChurnInWindow": 0.209091,
+    "moduleMonthsSinceLastChange": 2
+   },
+   "iri": "http://senso-framework.org/data/boto__botocore-1996/module/botocore_config.py-c78132",
+   "abox_asserted": true
+  },
+  "botocore/configloader.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "botocore/configloader.py",
+    "moduleLoc": 220,
+    "moduleCommitsInWindow": 1,
+    "moduleChangeMonthsInWindow": 1,
+    "moduleLinesChangedInWindow": 2,
+    "moduleRelChurnInWindow": 0.009091,
+    "moduleMonthsSinceLastChange": 7
+   },
+   "iri": "http://senso-framework.org/data/boto__botocore-1996/module/botocore_configloader.py-6d0469",
+   "abox_asserted": true
+  },
+  "botocore/configprovider.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "botocore/configprovider.py",
+    "moduleLoc": 455,
+    "moduleCommitsInWindow": 6,
+    "moduleChangeMonthsInWindow": 4,
+    "moduleLinesChangedInWindow": 188,
+    "moduleRelChurnInWindow": 0.413187,
+    "moduleMonthsSinceLastChange": 2
+   },
+   "iri": "http://senso-framework.org/data/boto__botocore-1996/module/botocore_configprovider.py-3fddc3",
+   "abox_asserted": true
+  },
+  "botocore/credentials.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "botocore/credentials.py",
+    "moduleLoc": 1649,
+    "moduleCommitsInWindow": 7,
+    "moduleChangeMonthsInWindow": 4,
+    "moduleLinesChangedInWindow": 531,
+    "moduleRelChurnInWindow": 0.322013,
+    "moduleMonthsSinceLastChange": 7
+   },
+   "iri": "http://senso-framework.org/data/boto__botocore-1996/module/botocore_credentials.py-d1b4cf",
+   "abox_asserted": true
+  },
+  "botocore/discovery.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "botocore/discovery.py",
+    "moduleLoc": 217,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 15
+   },
+   "iri": "http://senso-framework.org/data/boto__botocore-1996/module/botocore_discovery.py-06e6d1",
+   "abox_asserted": true
+  },
+  "botocore/docs": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "botocore/docs",
+    "moduleLoc": 2976,
+    "moduleCommitsInWindow": 1,
+    "moduleChangeMonthsInWindow": 1,
+    "moduleLinesChangedInWindow": 7,
+    "moduleRelChurnInWindow": 0.002352,
+    "moduleMonthsSinceLastChange": 9
+   },
+   "iri": "http://senso-framework.org/data/boto__botocore-1996/module/botocore_docs-972a41",
+   "abox_asserted": true
+  },
+  "botocore/endpoint.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "botocore/endpoint.py",
+    "moduleLoc": 266,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 17
+   },
+   "iri": "http://senso-framework.org/data/boto__botocore-1996/module/botocore_endpoint.py-4589df",
+   "abox_asserted": true
+  },
+  "botocore/errorfactory.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "botocore/errorfactory.py",
+    "moduleLoc": 80,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 38
+   },
+   "iri": "http://senso-framework.org/data/boto__botocore-1996/module/botocore_errorfactory.py-cf08f9",
+   "abox_asserted": true
+  },
+  "botocore/eventstream.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "botocore/eventstream.py",
+    "moduleLoc": 482,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 23
+   },
+   "iri": "http://senso-framework.org/data/boto__botocore-1996/module/botocore_eventstream.py-53586c",
+   "abox_asserted": true
+  },
+  "botocore/exceptions.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "botocore/exceptions.py",
+    "moduleLoc": 398,
+    "moduleCommitsInWindow": 5,
+    "moduleChangeMonthsInWindow": 3,
+    "moduleLinesChangedInWindow": 49,
+    "moduleRelChurnInWindow": 0.123116,
+    "moduleMonthsSinceLastChange": 2
+   },
+   "iri": "http://senso-framework.org/data/boto__botocore-1996/module/botocore_exceptions.py-99d8a5",
+   "abox_asserted": true
+  },
+  "botocore/handlers.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "botocore/handlers.py",
+    "moduleLoc": 935,
+    "moduleCommitsInWindow": 4,
+    "moduleChangeMonthsInWindow": 4,
+    "moduleLinesChangedInWindow": 100,
+    "moduleRelChurnInWindow": 0.106952,
+    "moduleMonthsSinceLastChange": 3
+   },
+   "iri": "http://senso-framework.org/data/boto__botocore-1996/module/botocore_handlers.py-93d72d",
+   "abox_asserted": true
+  },
+  "botocore/history.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "botocore/history.py",
+    "moduleLoc": 43,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 24
+   },
+   "iri": "http://senso-framework.org/data/boto__botocore-1996/module/botocore_history.py-7b49b1",
+   "abox_asserted": true
+  },
+  "botocore/hooks.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "botocore/hooks.py",
+    "moduleLoc": 499,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 19
+   },
+   "iri": "http://senso-framework.org/data/boto__botocore-1996/module/botocore_hooks.py-69f246",
+   "abox_asserted": true
+  },
+  "botocore/httpsession.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "botocore/httpsession.py",
+    "moduleLoc": 257,
+    "moduleCommitsInWindow": 2,
+    "moduleChangeMonthsInWindow": 2,
+    "moduleLinesChangedInWindow": 7,
+    "moduleRelChurnInWindow": 0.027237,
+    "moduleMonthsSinceLastChange": 8
+   },
+   "iri": "http://senso-framework.org/data/boto__botocore-1996/module/botocore_httpsession.py-9509e2",
+   "abox_asserted": true
+  },
+  "botocore/loaders.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "botocore/loaders.py",
+    "moduleLoc": 366,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 40
+   },
+   "iri": "http://senso-framework.org/data/boto__botocore-1996/module/botocore_loaders.py-6192a3",
+   "abox_asserted": true
+  },
+  "botocore/model.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "botocore/model.py",
+    "moduleLoc": 624,
+    "moduleCommitsInWindow": 2,
+    "moduleChangeMonthsInWindow": 2,
+    "moduleLinesChangedInWindow": 7,
+    "moduleRelChurnInWindow": 0.011218,
+    "moduleMonthsSinceLastChange": 2
+   },
+   "iri": "http://senso-framework.org/data/boto__botocore-1996/module/botocore_model.py-67a06c",
+   "abox_asserted": true
+  },
+  "botocore/monitoring.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "botocore/monitoring.py",
+    "moduleLoc": 452,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 14
+   },
+   "iri": "http://senso-framework.org/data/boto__botocore-1996/module/botocore_monitoring.py-5a07b3",
+   "abox_asserted": true
+  },
+  "botocore/paginate.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "botocore/paginate.py",
+    "moduleLoc": 593,
+    "moduleCommitsInWindow": 1,
+    "moduleChangeMonthsInWindow": 1,
+    "moduleLinesChangedInWindow": 6,
+    "moduleRelChurnInWindow": 0.010118,
+    "moduleMonthsSinceLastChange": 9
+   },
+   "iri": "http://senso-framework.org/data/boto__botocore-1996/module/botocore_paginate.py-d6c1d9",
+   "abox_asserted": true
+  },
+  "botocore/parsers.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "botocore/parsers.py",
+    "moduleLoc": 832,
+    "moduleCommitsInWindow": 1,
+    "moduleChangeMonthsInWindow": 1,
+    "moduleLinesChangedInWindow": 2,
+    "moduleRelChurnInWindow": 0.002404,
+    "moduleMonthsSinceLastChange": 3
+   },
+   "iri": "http://senso-framework.org/data/boto__botocore-1996/module/botocore_parsers.py-dde002",
+   "abox_asserted": true
+  },
+  "botocore/regions.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "botocore/regions.py",
+    "moduleLoc": 164,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 43
+   },
+   "iri": "http://senso-framework.org/data/boto__botocore-1996/module/botocore_regions.py-4e947c",
+   "abox_asserted": true
+  },
+  "botocore/response.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "botocore/response.py",
+    "moduleLoc": 140,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 15
+   },
+   "iri": "http://senso-framework.org/data/boto__botocore-1996/module/botocore_response.py-0a6c91",
+   "abox_asserted": true
+  },
+  "botocore/retries": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "RarelyChangedModule"
+   ],
+   "measures": {
+    "modulePath": "botocore/retries",
+    "moduleLoc": 745,
+    "moduleCommitsInWindow": 2,
+    "moduleChangeMonthsInWindow": 1,
+    "moduleLinesChangedInWindow": 1024,
+    "moduleRelChurnInWindow": 1.374497,
+    "moduleMonthsSinceLastChange": 2
+   },
+   "iri": "http://senso-framework.org/data/boto__botocore-1996/module/botocore_retries-795e03",
+   "abox_asserted": true
+  },
+  "botocore/retryhandler.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "botocore/retryhandler.py",
+    "moduleLoc": 290,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 19
+   },
+   "iri": "http://senso-framework.org/data/boto__botocore-1996/module/botocore_retryhandler.py-3a4245",
+   "abox_asserted": true
+  },
+  "botocore/serialize.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "botocore/serialize.py",
+    "moduleLoc": 595,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 15
+   },
+   "iri": "http://senso-framework.org/data/boto__botocore-1996/module/botocore_serialize.py-564d33",
+   "abox_asserted": true
+  },
+  "botocore/session.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "LowRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "botocore/session.py",
+    "moduleLoc": 875,
+    "moduleCommitsInWindow": 5,
+    "moduleChangeMonthsInWindow": 5,
+    "moduleLinesChangedInWindow": 65,
+    "moduleRelChurnInWindow": 0.074286,
+    "moduleMonthsSinceLastChange": 3
+   },
+   "iri": "http://senso-framework.org/data/boto__botocore-1996/module/botocore_session.py-243f0a",
+   "abox_asserted": true
+  },
+  "botocore/signers.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "botocore/signers.py",
+    "moduleLoc": 584,
+    "moduleCommitsInWindow": 2,
+    "moduleChangeMonthsInWindow": 1,
+    "moduleLinesChangedInWindow": 21,
+    "moduleRelChurnInWindow": 0.035959,
+    "moduleMonthsSinceLastChange": 4
+   },
+   "iri": "http://senso-framework.org/data/boto__botocore-1996/module/botocore_signers.py-891458",
+   "abox_asserted": true
+  },
+  "botocore/stub.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "botocore/stub.py",
+    "moduleLoc": 324,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 17
+   },
+   "iri": "http://senso-framework.org/data/boto__botocore-1996/module/botocore_stub.py-a900c1",
+   "abox_asserted": true
+  },
+  "botocore/translate.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "botocore/translate.py",
+    "moduleLoc": 66,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 31
+   },
+   "iri": "http://senso-framework.org/data/boto__botocore-1996/module/botocore_translate.py-8e0ab4",
+   "abox_asserted": true
+  },
+  "botocore/utils.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "botocore/utils.py",
+    "moduleLoc": 1463,
+    "moduleCommitsInWindow": 18,
+    "moduleChangeMonthsInWindow": 8,
+    "moduleLinesChangedInWindow": 642,
+    "moduleRelChurnInWindow": 0.438824,
+    "moduleMonthsSinceLastChange": 0
+   },
+   "iri": "http://senso-framework.org/data/boto__botocore-1996/module/botocore_utils.py-d413f4",
+   "abox_asserted": true
+  },
+  "botocore/validate.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "botocore/validate.py",
+    "moduleLoc": 246,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 16
+   },
+   "iri": "http://senso-framework.org/data/boto__botocore-1996/module/botocore_validate.py-872028",
+   "abox_asserted": true
+  },
+  "botocore/waiter.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "botocore/waiter.py",
+    "moduleLoc": 276,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 31
+   },
+   "iri": "http://senso-framework.org/data/boto__botocore-1996/module/botocore_waiter.py-d64ad7",
+   "abox_asserted": true
+  },
+  "docs": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "docs",
+    "moduleLoc": 197,
+    "moduleCommitsInWindow": 229,
+    "moduleChangeMonthsInWindow": 13,
+    "moduleLinesChangedInWindow": 472,
+    "moduleRelChurnInWindow": 2.395939,
+    "moduleMonthsSinceLastChange": 0
+   },
+   "iri": "http://senso-framework.org/data/boto__botocore-1996/module/docs-71ab8b",
+   "abox_asserted": true
+  }
+ },
+ "explanations": {
+  "stage:GrowthStage": {
+   "class": "GrowthStage",
+   "individual": "http://senso-framework.org/data/boto__botocore-1996",
+   "attempts": 3,
+   "target": "http://senso-framework.org/data/boto__botocore-1996 type http://senso-framework.org/ontology/seo#GrowthStage",
+   "justifications": [],
+   "raw_text": "",
+   "seconds": 3.0220954439719208,
+   "returncode": 1,
+   "error": "Exception in thread \"main\" org.mindswap.pellet.exceptions.InternalReasonerException: Adding type to a pruned node \"anon(31)\" restrictedDatatype(http://www.w3.org/2001/XMLSchema#decimal,[facet(http://www.w3.org/2001/XMLSchema#minExclusive,literal(0.15,(),http://www.w3.org/2001/XMLSchema#decimal))])\n\tat org.mindswap.pellet.Node.addType(Node.java:448)\n\tat org.mindswap.pellet.Literal.addType(Literal.java:257)\n\tat org.mindswap.pellet.tableau.completion.CompletionStrategy.addType(CompletionStrategy.java:438)\n\tat org.mindswap.pellet.tableau.completion.rule.SomeValuesRule.applySomeValuesRule(SomeValuesRule.java:180)\n\tat org.mindswap.pellet.tableau.completion.rule.SomeValuesRule.apply(SomeValuesRule.java:64)\n\tat org.mindswap.pellet.tableau.completion.rule.AbstractTableauRule.apply(AbstractTableauRule.java:64)\n\tat org.mindswap.pellet.tableau.completion.SROIQStrategy.complete(SROIQStrategy.java:157)\n\tat org.mindswap.pellet.ABox.isConsistent(ABox.java:1423)\n\tat org.mindswap.pellet.ABox.isSatisfiab"
+  },
+  "stage:RBActiveDevelopmentStage": {
+   "class": "RBActiveDevelopmentStage",
+   "individual": "http://senso-framework.org/data/boto__botocore-1996",
+   "attempts": 3,
+   "target": "http://senso-framework.org/data/boto__botocore-1996 type http://senso-framework.org/ontology/seo#RBActiveDevelopmentStage",
+   "justifications": [],
+   "raw_text": "",
+   "seconds": 2.9883074429817498,
+   "returncode": 1,
+   "error": "Exception in thread \"main\" org.mindswap.pellet.exceptions.InternalReasonerException: Adding type to a pruned node \"anon(31)\" restrictedDatatype(http://www.w3.org/2001/XMLSchema#decimal,[facet(http://www.w3.org/2001/XMLSchema#minExclusive,literal(0.15,(),http://www.w3.org/2001/XMLSchema#decimal))])\n\tat org.mindswap.pellet.Node.addType(Node.java:448)\n\tat org.mindswap.pellet.Literal.addType(Literal.java:257)\n\tat org.mindswap.pellet.tableau.completion.CompletionStrategy.addType(CompletionStrategy.java:438)\n\tat org.mindswap.pellet.tableau.completion.rule.SomeValuesRule.applySomeValuesRule(SomeValuesRule.java:180)\n\tat org.mindswap.pellet.tableau.completion.rule.SomeValuesRule.apply(SomeValuesRule.java:64)\n\tat org.mindswap.pellet.tableau.completion.rule.AbstractTableauRule.apply(AbstractTableauRule.java:64)\n\tat org.mindswap.pellet.tableau.completion.SROIQStrategy.complete(SROIQStrategy.java:157)\n\tat org.mindswap.pellet.ABox.isConsistent(ABox.java:1423)\n\tat org.mindswap.pellet.ABox.isSatisfiab"
+  },
+  "lawI": {
+   "class": "LawIConformant",
+   "individual": "http://senso-framework.org/data/boto__botocore-1996",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/boto__botocore-1996 type http://senso-framework.org/ontology/seo#LawIConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law1_min_months",
+       "text": "A_monthsObserved_ge_p_law1_min_months equivalentTo monthsObserved some integer[>= 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawIConformant",
+       "text": "LawIConformant equivalentTo A_activeMonthRatio_ge_p_law1_active_ratio and A_monthsObserved_ge_p_law1_min_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_activeMonthRatio_ge_p_law1_active_ratio",
+       "text": "A_activeMonthRatio_ge_p_law1_active_ratio equivalentTo activeMonthRatio some decimal[>= 0.5]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "boto__botocore-1996",
+       "prop": "activeMonthRatio",
+       "value": 1.0,
+       "raw": "boto__botocore-1996 activeMonthRatio 1.0"
+      },
+      {
+       "subject": "boto__botocore-1996",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "boto__botocore-1996 type SoftwareProject"
+      },
+      {
+       "subject": "boto__botocore-1996",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "boto__botocore-1996 monthsObserved 36"
+      }
+     ],
+     "closures": [],
+     "raw": "A_monthsObserved_ge_p_law1_min_months equivalentTo monthsObserved some integer[>= 2]\nboto__botocore-1996 activeMonthRatio 1.0\nLawIConformant equivalentTo A_activeMonthRatio_ge_p_law1_active_ratio and A_monthsObserved_ge_p_law1_min_months and SoftwareProject\nA_activeMonthRatio_ge_p_law1_active_ratio equivalentTo activeMonthRatio some decimal[>= 0.5]\nboto__botocore-1996 type SoftwareProject\nboto__botocore-1996 monthsObserved 36"
+    }
+   ],
+   "raw_text": "Axiom: boto__botocore-1996 type LawIConformant\n\nExplanation(s): \n1)   A_monthsObserved_ge_p_law1_min_months equivalentTo monthsObserved some integer[>= 2]\n     boto__botocore-1996 activeMonthRatio 1.0\n     LawIConformant equivalentTo A_activeMonthRatio_ge_p_law1_active_ratio\n                                 and A_monthsObserved_ge_p_law1_min_months\n                                 and SoftwareProject\n     A_activeMonthRatio_ge_p_law1_active_ratio equivalentTo activeMonthRatio some decimal[>= 0.5]\n     boto__botocore-1996 type SoftwareProject\n     boto__botocore-1996 monthsObserved 36\n\n\n",
+   "seconds": 3.1363284069811925,
+   "returncode": 0,
+   "error": null
+  },
+  "lawIII": {
+   "class": "LawIIIConformant",
+   "individual": "http://senso-framework.org/data/boto__botocore-1996",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/boto__botocore-1996 type http://senso-framework.org/ontology/seo#LawIIIConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law3_min_months",
+       "text": "A_monthsObserved_ge_p_law3_min_months equivalentTo monthsObserved some integer[>= 6]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawIIIConformant",
+       "text": "LawIIIConformant equivalentTo A_churnCV_lt_p_law3_churn_cv and A_monthsObserved_ge_p_law3_min_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_churnCV_lt_p_law3_churn_cv",
+       "text": "A_churnCV_lt_p_law3_churn_cv equivalentTo churnCV some decimal[< 2.0]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "boto__botocore-1996",
+       "prop": "churnCV",
+       "value": 1.078393,
+       "raw": "boto__botocore-1996 churnCV 1.078393"
+      },
+      {
+       "subject": "boto__botocore-1996",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "boto__botocore-1996 type SoftwareProject"
+      },
+      {
+       "subject": "boto__botocore-1996",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "boto__botocore-1996 monthsObserved 36"
+      }
+     ],
+     "closures": [],
+     "raw": "A_monthsObserved_ge_p_law3_min_months equivalentTo monthsObserved some integer[>= 6]\nLawIIIConformant equivalentTo A_churnCV_lt_p_law3_churn_cv and A_monthsObserved_ge_p_law3_min_months and SoftwareProject\nboto__botocore-1996 churnCV 1.078393\nA_churnCV_lt_p_law3_churn_cv equivalentTo churnCV some decimal[< 2.0]\nboto__botocore-1996 type SoftwareProject\nboto__botocore-1996 monthsObserved 36"
+    }
+   ],
+   "raw_text": "Axiom: boto__botocore-1996 type LawIIIConformant\n\nExplanation(s): \n1)   A_monthsObserved_ge_p_law3_min_months equivalentTo monthsObserved some integer[>= 6]\n     LawIIIConformant equivalentTo A_churnCV_lt_p_law3_churn_cv\n                                   and A_monthsObserved_ge_p_law3_min_months\n                                   and SoftwareProject\n     boto__botocore-1996 churnCV 1.078393\n     A_churnCV_lt_p_law3_churn_cv equivalentTo churnCV some decimal[< 2.0]\n     boto__botocore-1996 type SoftwareProject\n     boto__botocore-1996 monthsObserved 36\n\n\n",
+   "seconds": 3.32119078701362,
+   "returncode": 0,
+   "error": null
+  },
+  "lawIV": {
+   "class": "LawIVConformant",
+   "individual": "http://senso-framework.org/data/boto__botocore-1996",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/boto__botocore-1996 type http://senso-framework.org/ontology/seo#LawIVConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law4_min_months",
+       "text": "A_monthsObserved_ge_p_law4_min_months equivalentTo monthsObserved some integer[>= 6]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawIVConformant",
+       "text": "LawIVConformant equivalentTo A_commitCountCV_lt_p_law4_commit_cv and A_monthsObserved_ge_p_law4_min_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_commitCountCV_lt_p_law4_commit_cv",
+       "text": "A_commitCountCV_lt_p_law4_commit_cv equivalentTo commitCountCV some decimal[< 1.5]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "boto__botocore-1996",
+       "prop": "commitCountCV",
+       "value": 0.236302,
+       "raw": "boto__botocore-1996 commitCountCV 0.236302"
+      },
+      {
+       "subject": "boto__botocore-1996",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "boto__botocore-1996 type SoftwareProject"
+      },
+      {
+       "subject": "boto__botocore-1996",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "boto__botocore-1996 monthsObserved 36"
+      }
+     ],
+     "closures": [],
+     "raw": "A_monthsObserved_ge_p_law4_min_months equivalentTo monthsObserved some integer[>= 6]\nLawIVConformant equivalentTo A_commitCountCV_lt_p_law4_commit_cv and A_monthsObserved_ge_p_law4_min_months and SoftwareProject\nboto__botocore-1996 commitCountCV 0.236302\nA_commitCountCV_lt_p_law4_commit_cv equivalentTo commitCountCV some decimal[< 1.5]\nboto__botocore-1996 type SoftwareProject\nboto__botocore-1996 monthsObserved 36"
+    }
+   ],
+   "raw_text": "Axiom: boto__botocore-1996 type LawIVConformant\n\nExplanation(s): \n1)   A_monthsObserved_ge_p_law4_min_months equivalentTo monthsObserved some integer[>= 6]\n     LawIVConformant equivalentTo A_commitCountCV_lt_p_law4_commit_cv\n                                  and A_monthsObserved_ge_p_law4_min_months\n                                  and SoftwareProject\n     boto__botocore-1996 commitCountCV 0.236302\n     A_commitCountCV_lt_p_law4_commit_cv equivalentTo commitCountCV some decimal[< 1.5]\n     boto__botocore-1996 type SoftwareProject\n     boto__botocore-1996 monthsObserved 36\n\n\n",
+   "seconds": 3.082150188041851,
+   "returncode": 0,
+   "error": null
+  },
+  "lawV": {
+   "class": "LawVConformant",
+   "individual": "http://senso-framework.org/data/boto__botocore-1996",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/boto__botocore-1996 type http://senso-framework.org/ontology/seo#LawVConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "LawVConformant",
+       "text": "LawVConformant equivalentTo A_linesAddedCV_lt_p_law5_additions_cv and A_monthsObserved_ge_p_law5_min_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_linesAddedCV_lt_p_law5_additions_cv",
+       "text": "A_linesAddedCV_lt_p_law5_additions_cv equivalentTo linesAddedCV some decimal[< 2.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law5_min_months",
+       "text": "A_monthsObserved_ge_p_law5_min_months equivalentTo monthsObserved some integer[>= 4]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "boto__botocore-1996",
+       "prop": "linesAddedCV",
+       "value": 1.046093,
+       "raw": "boto__botocore-1996 linesAddedCV 1.046093"
+      },
+      {
+       "subject": "boto__botocore-1996",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "boto__botocore-1996 type SoftwareProject"
+      },
+      {
+       "subject": "boto__botocore-1996",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "boto__botocore-1996 monthsObserved 36"
+      }
+     ],
+     "closures": [],
+     "raw": "LawVConformant equivalentTo A_linesAddedCV_lt_p_law5_additions_cv and A_monthsObserved_ge_p_law5_min_months and SoftwareProject\nA_linesAddedCV_lt_p_law5_additions_cv equivalentTo linesAddedCV some decimal[< 2.0]\nA_monthsObserved_ge_p_law5_min_months equivalentTo monthsObserved some integer[>= 4]\nboto__botocore-1996 linesAddedCV 1.046093\nboto__botocore-1996 type SoftwareProject\nboto__botocore-1996 monthsObserved 36"
+    }
+   ],
+   "raw_text": "Axiom: boto__botocore-1996 type LawVConformant\n\nExplanation(s): \n1)   LawVConformant equivalentTo A_linesAddedCV_lt_p_law5_additions_cv\n                                 and A_monthsObserved_ge_p_law5_min_months\n                                 and SoftwareProject\n     A_linesAddedCV_lt_p_law5_additions_cv equivalentTo linesAddedCV some decimal[< 2.0]\n     A_monthsObserved_ge_p_law5_min_months equivalentTo monthsObserved some integer[>= 4]\n     boto__botocore-1996 linesAddedCV 1.046093\n     boto__botocore-1996 type SoftwareProject\n     boto__botocore-1996 monthsObserved 36\n\n\n",
+   "seconds": 3.0501239300356247,
+   "returncode": 0,
+   "error": null
+  },
+  "lawVI": {
+   "class": "LawVIConformant",
+   "individual": "http://senso-framework.org/data/boto__botocore-1996",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/boto__botocore-1996 type http://senso-framework.org/ontology/seo#LawVIConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "subclass",
+       "subject": "GrowthStage",
+       "text": "GrowthStage subClassOf LawVIConformant"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKTau_gt_0",
+       "text": "A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "GrowthStage",
+       "text": "GrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKpValue_lt_mk_alpha",
+       "text": "A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "boto__botocore-1996",
+       "prop": "locSeriesLength",
+       "value": 36,
+       "raw": "boto__botocore-1996 locSeriesLength 36"
+      },
+      {
+       "subject": "boto__botocore-1996",
+       "prop": "locMKpValue",
+       "value": 0.0,
+       "raw": "boto__botocore-1996 locMKpValue 0.0"
+      },
+      {
+       "subject": "boto__botocore-1996",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "boto__botocore-1996 type SoftwareProject"
+      },
+      {
+       "subject": "boto__botocore-1996",
+       "prop": "locMKTau",
+       "value": 0.987302,
+       "raw": "boto__botocore-1996 locMKTau 0.987302"
+      }
+     ],
+     "closures": [],
+     "raw": "boto__botocore-1996 locSeriesLength 36\nGrowthStage subClassOf LawVIConformant\nA_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\nA_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\nboto__botocore-1996 locMKpValue 0.0\nGrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject\nA_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]\nboto__botocore-1996 type SoftwareProject\nA_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\nboto__botocore-1996 locMKTau 0.987302"
+    }
+   ],
+   "raw_text": "Axiom: boto__botocore-1996 type LawVIConformant\n\nExplanation(s): \n1)   boto__botocore-1996 locSeriesLength 36\n     GrowthStage subClassOf LawVIConformant\n     A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\n     A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\n     boto__botocore-1996 locMKpValue 0.0\n     GrowthStage equivalentTo A_locMKTau_gt_0\n                              and A_locMKpValue_lt_mk_alpha\n                              and MKApplicable\n                              and SoftwareProject\n     A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]\n     boto__botocore-1996 type SoftwareProject\n     A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\n     boto__botocore-1996 locMKTau 0.987302\n\n\n",
+   "seconds": 3.3682656200253405,
+   "returncode": 0,
+   "error": null
+  },
+  "lawVII": {
+   "class": "LawVIINonConformant",
+   "individual": "http://senso-framework.org/data/boto__botocore-1996",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/boto__botocore-1996 type http://senso-framework.org/ontology/seo#LawVIINonConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_bugFixRatioFirstHalf_gt_0",
+       "text": "A_bugFixRatioFirstHalf_gt_0 equivalentTo bugFixRatioFirstHalf some decimal[> 0.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_bugFixHalfRatio_lt_p_law7_tolerance",
+       "text": "A_bugFixHalfRatio_lt_p_law7_tolerance equivalentTo bugFixHalfRatio some decimal[< 0.9]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_activeMonthCount_ge_p_law7_min_active_months",
+       "text": "A_activeMonthCount_ge_p_law7_min_active_months equivalentTo activeMonthCount some integer[>= 4]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawVIINonConformant",
+       "text": "LawVIINonConformant equivalentTo A_activeMonthCount_ge_p_law7_min_active_months and A_bugFixHalfRatio_lt_p_law7_tolerance and A_bugFixRatioFirstHalf_gt_0 and SoftwareProject"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "boto__botocore-1996",
+       "prop": "bugFixRatioFirstHalf",
+       "value": 0.050955,
+       "raw": "boto__botocore-1996 bugFixRatioFirstHalf 0.050955"
+      },
+      {
+       "subject": "boto__botocore-1996",
+       "prop": "bugFixHalfRatio",
+       "value": 0.871823,
+       "raw": "boto__botocore-1996 bugFixHalfRatio 0.871823"
+      },
+      {
+       "subject": "boto__botocore-1996",
+       "prop": "activeMonthCount",
+       "value": 36,
+       "raw": "boto__botocore-1996 activeMonthCount 36"
+      },
+      {
+       "subject": "boto__botocore-1996",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "boto__botocore-1996 type SoftwareProject"
+      }
+     ],
+     "closures": [],
+     "raw": "boto__botocore-1996 bugFixRatioFirstHalf 0.050955\nA_bugFixRatioFirstHalf_gt_0 equivalentTo bugFixRatioFirstHalf some decimal[> 0.0]\nA_bugFixHalfRatio_lt_p_law7_tolerance equivalentTo bugFixHalfRatio some decimal[< 0.9]\nboto__botocore-1996 bugFixHalfRatio 0.871823\nA_activeMonthCount_ge_p_law7_min_active_months equivalentTo activeMonthCount some integer[>= 4]\nboto__botocore-1996 activeMonthCount 36\nLawVIINonConformant equivalentTo A_activeMonthCount_ge_p_law7_min_active_months and A_bugFixHalfRatio_lt_p_law7_tolerance and A_bugFixRatioFirstHalf_gt_0 and SoftwareProject\nboto__botocore-1996 type SoftwareProject"
+    }
+   ],
+   "raw_text": "Axiom: boto__botocore-1996 type LawVIINonConformant\n\nExplanation(s): \n1)   boto__botocore-1996 bugFixRatioFirstHalf 0.050955\n     A_bugFixRatioFirstHalf_gt_0 equivalentTo bugFixRatioFirstHalf some decimal[> 0.0]\n     A_bugFixHalfRatio_lt_p_law7_tolerance equivalentTo bugFixHalfRatio some decimal[< 0.9]\n     boto__botocore-1996 bugFixHalfRatio 0.871823\n     A_activeMonthCount_ge_p_law7_min_active_months equivalentTo activeMonthCount some integer[>= 4]\n     boto__botocore-1996 activeMonthCount 36\n     LawVIINonConformant equivalentTo A_activeMonthCount_ge_p_law7_min_active_months\n                                      and A_bugFixHalfRatio_lt_p_law7_tolerance\n                                      and A_bugFixRatioFirstHalf_gt_0\n                                      and SoftwareProject\n     boto__botocore-1996 type SoftwareProject\n\n\n",
+   "seconds": 2.9326128810062073,
+   "returncode": 0,
+   "error": null
+  },
+  "lawVIII": {
+   "class": "LawVIIIConformant",
+   "individual": "http://senso-framework.org/data/boto__botocore-1996",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/boto__botocore-1996 type http://senso-framework.org/ontology/seo#LawVIIIConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio",
+       "text": "A_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio equivalentTo multiAuthorMonthRatio some decimal[> 0.3]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_mergeMonthRatio_gt_p_law8_merge_ratio",
+       "text": "A_mergeMonthRatio_gt_p_law8_merge_ratio equivalentTo MergeActive"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio",
+       "text": "A_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio equivalentTo MultiAuthorActive"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawVIIIConformant",
+       "text": "LawVIIIConformant equivalentTo A_monthsObserved_ge_p_law8_min_months and MergeActive and MultiAuthorActive and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law8_min_months",
+       "text": "A_monthsObserved_ge_p_law8_min_months equivalentTo monthsObserved some integer[>= 6]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_mergeMonthRatio_gt_p_law8_merge_ratio",
+       "text": "A_mergeMonthRatio_gt_p_law8_merge_ratio equivalentTo mergeMonthRatio some decimal[> 0.3]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "boto__botocore-1996",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "boto__botocore-1996 type SoftwareProject"
+      },
+      {
+       "subject": "boto__botocore-1996",
+       "prop": "mergeMonthRatio",
+       "value": 1.0,
+       "raw": "boto__botocore-1996 mergeMonthRatio 1.0"
+      },
+      {
+       "subject": "boto__botocore-1996",
+       "prop": "multiAuthorMonthRatio",
+       "value": 1.0,
+       "raw": "boto__botocore-1996 multiAuthorMonthRatio 1.0"
+      },
+      {
+       "subject": "boto__botocore-1996",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "boto__botocore-1996 monthsObserved 36"
+      }
+     ],
+     "closures": [],
+     "raw": "A_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio equivalentTo multiAuthorMonthRatio some decimal[> 0.3]\nA_mergeMonthRatio_gt_p_law8_merge_ratio equivalentTo MergeActive\nA_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio equivalentTo MultiAuthorActive\nboto__botocore-1996 type SoftwareProject\nLawVIIIConformant equivalentTo A_monthsObserved_ge_p_law8_min_months and MergeActive and MultiAuthorActive and SoftwareProject\nboto__botocore-1996 mergeMonthRatio 1.0\nA_monthsObserved_ge_p_law8_min_months equivalentTo monthsObserved some integer[>= 6]\nboto__botocore-1996 multiAuthorMonthRatio 1.0\nA_mergeMonthRatio_gt_p_law8_merge_ratio equivalentTo mergeMonthRatio some decimal[> 0.3]\nboto__botocore-1996 monthsObserved 36"
+    }
+   ],
+   "raw_text": "Axiom: boto__botocore-1996 type LawVIIIConformant\n\nExplanation(s): \n1)   A_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio equivalentTo multiAuthorMonthRatio some decimal[> 0.3]\n     A_mergeMonthRatio_gt_p_law8_merge_ratio equivalentTo MergeActive\n     A_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio equivalentTo MultiAuthorActive\n     boto__botocore-1996 type SoftwareProject\n     LawVIIIConformant equivalentTo A_monthsObserved_ge_p_law8_min_months\n                                    and MergeActive\n                                    and MultiAuthorActive\n                                    and SoftwareProject\n     boto__botocore-1996 mergeMonthRatio 1.0\n     A_monthsObserved_ge_p_law8_min_months equivalentTo monthsObserved some integer[>= 6]\n     boto__botocore-1996 multiAuthorMonthRatio 1.0\n     A_mergeMonthRatio_gt_p_law8_merge_ratio equivalentTo mergeMonthRatio some decimal[> 0.3]\n     boto__botocore-1996 monthsObserved 36\n\n\n",
+   "seconds": 3.199463361990638,
+   "returncode": 0,
+   "error": null
+  },
+  "module:botocore/docs": {
+   "class": "StableModule",
+   "individual": "http://senso-framework.org/data/boto__botocore-1996/module/botocore_docs-972a41",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/boto__botocore-1996/module/botocore_docs-972a41 type http://senso-framework.org/ontology/seo#StableModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "StableModule",
+       "text": "StableModule equivalentTo LowRelChurnModule and RarelyChangedModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "LowRelChurnModule",
+       "text": "LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "definition",
+       "subject": "RarelyChangedModule",
+       "text": "RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "botocore_docs-972a41",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 1,
+       "raw": "botocore_docs-972a41 moduleChangeMonthsInWindow 1"
+      },
+      {
+       "subject": "botocore_docs-972a41",
+       "prop": "moduleRelChurnInWindow",
+       "value": 0.002352,
+       "raw": "botocore_docs-972a41 moduleRelChurnInWindow 0.002352"
+      },
+      {
+       "subject": "botocore_docs-972a41",
+       "prop": "type",
+       "value": "Module",
+       "raw": "botocore_docs-972a41 type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "botocore_docs-972a41 moduleChangeMonthsInWindow 1\nA_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\nA_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\nbotocore_docs-972a41 moduleRelChurnInWindow 0.002352\nbotocore_docs-972a41 type Module\nStableModule equivalentTo LowRelChurnModule and RarelyChangedModule\nLowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module\nRarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module"
+    }
+   ],
+   "raw_text": "Axiom: botocore_docs-972a41 type StableModule\n\nExplanation(s): \n1)   botocore_docs-972a41 moduleChangeMonthsInWindow 1\n     A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\n     A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\n     botocore_docs-972a41 moduleRelChurnInWindow 0.002352\n     botocore_docs-972a41 type Module\n     StableModule equivalentTo LowRelChurnModule\n                               and RarelyChangedModule\n     LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn\n                                    and Module\n     RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months\n                                      and Module\n\n\n",
+   "seconds": 3.1516712800366804,
+   "returncode": 0,
+   "error": null
+  },
+  "module:botocore/credentials.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/boto__botocore-1996/module/botocore_credentials.py-d1b4cf",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/boto__botocore-1996/module/botocore_credentials.py-d1b4cf type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "botocore_credentials.py-d1b4cf",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 4,
+       "raw": "botocore_credentials.py-d1b4cf moduleChangeMonthsInWindow 4"
+      },
+      {
+       "subject": "botocore_credentials.py-d1b4cf",
+       "prop": "type",
+       "value": "Module",
+       "raw": "botocore_credentials.py-d1b4cf type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "botocore_credentials.py-d1b4cf moduleChangeMonthsInWindow 4\nA_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\nbotocore_credentials.py-d1b4cf type Module\nOftenChangedModule subClassOf ActiveModule"
+    }
+   ],
+   "raw_text": "Axiom: botocore_credentials.py-d1b4cf type ActiveModule\n\nExplanation(s): \n1)   botocore_credentials.py-d1b4cf moduleChangeMonthsInWindow 4\n     A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     botocore_credentials.py-d1b4cf type Module\n     OftenChangedModule subClassOf ActiveModule\n\n\n",
+   "seconds": 3.1501300020026974,
+   "returncode": 0,
+   "error": null
+  },
+  "module:botocore/utils.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/boto__botocore-1996/module/botocore_utils.py-d413f4",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/boto__botocore-1996/module/botocore_utils.py-d413f4 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "botocore_utils.py-d413f4",
+       "prop": "type",
+       "value": "Module",
+       "raw": "botocore_utils.py-d413f4 type Module"
+      },
+      {
+       "subject": "botocore_utils.py-d413f4",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 8,
+       "raw": "botocore_utils.py-d413f4 moduleChangeMonthsInWindow 8"
+      }
+     ],
+     "closures": [],
+     "raw": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\nbotocore_utils.py-d413f4 type Module\nbotocore_utils.py-d413f4 moduleChangeMonthsInWindow 8\nOftenChangedModule subClassOf ActiveModule"
+    }
+   ],
+   "raw_text": "Axiom: botocore_utils.py-d413f4 type ActiveModule\n\nExplanation(s): \n1)   A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     botocore_utils.py-d413f4 type Module\n     botocore_utils.py-d413f4 moduleChangeMonthsInWindow 8\n     OftenChangedModule subClassOf ActiveModule\n\n\n",
+   "seconds": 4.213711609016173,
+   "returncode": 0,
+   "error": null
+  },
+  "module:botocore/handlers.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/boto__botocore-1996/module/botocore_handlers.py-93d72d",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/boto__botocore-1996/module/botocore_handlers.py-93d72d type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "botocore_handlers.py-93d72d",
+       "prop": "type",
+       "value": "Module",
+       "raw": "botocore_handlers.py-93d72d type Module"
+      },
+      {
+       "subject": "botocore_handlers.py-93d72d",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 4,
+       "raw": "botocore_handlers.py-93d72d moduleChangeMonthsInWindow 4"
+      }
+     ],
+     "closures": [],
+     "raw": "botocore_handlers.py-93d72d type Module\nbotocore_handlers.py-93d72d moduleChangeMonthsInWindow 4\nA_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\nOftenChangedModule subClassOf ActiveModule"
+    }
+   ],
+   "raw_text": "Axiom: botocore_handlers.py-93d72d type ActiveModule\n\nExplanation(s): \n1)   botocore_handlers.py-93d72d type Module\n     botocore_handlers.py-93d72d moduleChangeMonthsInWindow 4\n     A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     OftenChangedModule subClassOf ActiveModule\n\n\n",
+   "seconds": 5.99114241101779,
+   "returncode": 0,
+   "error": null
+  },
+  "module:botocore/session.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/boto__botocore-1996/module/botocore_session.py-243f0a",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/boto__botocore-1996/module/botocore_session.py-243f0a type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "botocore_session.py-243f0a",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 5,
+       "raw": "botocore_session.py-243f0a moduleChangeMonthsInWindow 5"
+      },
+      {
+       "subject": "botocore_session.py-243f0a",
+       "prop": "type",
+       "value": "Module",
+       "raw": "botocore_session.py-243f0a type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\nbotocore_session.py-243f0a moduleChangeMonthsInWindow 5\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\nbotocore_session.py-243f0a type Module\nOftenChangedModule subClassOf ActiveModule"
+    }
+   ],
+   "raw_text": "Axiom: botocore_session.py-243f0a type ActiveModule\n\nExplanation(s): \n1)   A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     botocore_session.py-243f0a moduleChangeMonthsInWindow 5\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     botocore_session.py-243f0a type Module\n     OftenChangedModule subClassOf ActiveModule\n\n\n",
+   "seconds": 5.935888190986589,
+   "returncode": 0,
+   "error": null
+  },
+  "module:botocore/parsers.py": {
+   "class": "StableModule",
+   "individual": "http://senso-framework.org/data/boto__botocore-1996/module/botocore_parsers.py-dde002",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/boto__botocore-1996/module/botocore_parsers.py-dde002 type http://senso-framework.org/ontology/seo#StableModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "StableModule",
+       "text": "StableModule equivalentTo LowRelChurnModule and RarelyChangedModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "LowRelChurnModule",
+       "text": "LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "definition",
+       "subject": "RarelyChangedModule",
+       "text": "RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "botocore_parsers.py-dde002",
+       "prop": "type",
+       "value": "Module",
+       "raw": "botocore_parsers.py-dde002 type Module"
+      },
+      {
+       "subject": "botocore_parsers.py-dde002",
+       "prop": "moduleRelChurnInWindow",
+       "value": 0.002404,
+       "raw": "botocore_parsers.py-dde002 moduleRelChurnInWindow 0.002404"
+      },
+      {
+       "subject": "botocore_parsers.py-dde002",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 1,
+       "raw": "botocore_parsers.py-dde002 moduleChangeMonthsInWindow 1"
+      }
+     ],
+     "closures": [],
+     "raw": "botocore_parsers.py-dde002 type Module\nA_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\nA_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\nbotocore_parsers.py-dde002 moduleRelChurnInWindow 0.002404\nbotocore_parsers.py-dde002 moduleChangeMonthsInWindow 1\nStableModule equivalentTo LowRelChurnModule and RarelyChangedModule\nLowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module\nRarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module"
+    }
+   ],
+   "raw_text": "Axiom: botocore_parsers.py-dde002 type StableModule\n\nExplanation(s): \n1)   botocore_parsers.py-dde002 type Module\n     A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\n     A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\n     botocore_parsers.py-dde002 moduleRelChurnInWindow 0.002404\n     botocore_parsers.py-dde002 moduleChangeMonthsInWindow 1\n     StableModule equivalentTo LowRelChurnModule\n                               and RarelyChangedModule\n     LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn\n                                    and Module\n     RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months\n                                      and Module\n\n\n",
+   "seconds": 6.09887995995814,
+   "returncode": 0,
+   "error": null
+  },
+  "module:botocore/client.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/boto__botocore-1996/module/botocore_client.py-ce53ab",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/boto__botocore-1996/module/botocore_client.py-ce53ab type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "botocore_client.py-ce53ab",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 5,
+       "raw": "botocore_client.py-ce53ab moduleChangeMonthsInWindow 5"
+      },
+      {
+       "subject": "botocore_client.py-ce53ab",
+       "prop": "type",
+       "value": "Module",
+       "raw": "botocore_client.py-ce53ab type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\nbotocore_client.py-ce53ab moduleChangeMonthsInWindow 5\nbotocore_client.py-ce53ab type Module\nOftenChangedModule subClassOf ActiveModule"
+    }
+   ],
+   "raw_text": "Axiom: botocore_client.py-ce53ab type ActiveModule\n\nExplanation(s): \n1)   A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     botocore_client.py-ce53ab moduleChangeMonthsInWindow 5\n     botocore_client.py-ce53ab type Module\n     OftenChangedModule subClassOf ActiveModule\n\n\n",
+   "seconds": 5.963972677011043,
+   "returncode": 0,
+   "error": null
+  },
+  "module:botocore/retries": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/boto__botocore-1996/module/botocore_retries-795e03",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/boto__botocore-1996/module/botocore_retries-795e03 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule subClassOf ActiveModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "botocore_retries-795e03",
+       "prop": "type",
+       "value": "Module",
+       "raw": "botocore_retries-795e03 type Module"
+      },
+      {
+       "subject": "botocore_retries-795e03",
+       "prop": "moduleRelChurnInWindow",
+       "value": 1.374497,
+       "raw": "botocore_retries-795e03 moduleRelChurnInWindow 1.374497"
+      }
+     ],
+     "closures": [],
+     "raw": "botocore_retries-795e03 type Module\nHighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module\nHighRelChurnModule subClassOf ActiveModule\nbotocore_retries-795e03 moduleRelChurnInWindow 1.374497\nA_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+    }
+   ],
+   "raw_text": "Axiom: botocore_retries-795e03 type ActiveModule\n\nExplanation(s): \n1)   botocore_retries-795e03 type Module\n     HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn\n                                     and Module\n     HighRelChurnModule subClassOf ActiveModule\n     botocore_retries-795e03 moduleRelChurnInWindow 1.374497\n     A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\n\n\n",
+   "seconds": 4.87116059003165,
+   "returncode": 0,
+   "error": null
+  },
+  "module:botocore/auth.py": {
+   "class": "StableModule",
+   "individual": "http://senso-framework.org/data/boto__botocore-1996/module/botocore_auth.py-04d3a7",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/boto__botocore-1996/module/botocore_auth.py-04d3a7 type http://senso-framework.org/ontology/seo#StableModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "StableModule",
+       "text": "StableModule equivalentTo LowRelChurnModule and RarelyChangedModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "LowRelChurnModule",
+       "text": "LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "definition",
+       "subject": "RarelyChangedModule",
+       "text": "RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "botocore_auth.py-04d3a7",
+       "prop": "moduleRelChurnInWindow",
+       "value": 0.01752,
+       "raw": "botocore_auth.py-04d3a7 moduleRelChurnInWindow 0.01752"
+      },
+      {
+       "subject": "botocore_auth.py-04d3a7",
+       "prop": "type",
+       "value": "Module",
+       "raw": "botocore_auth.py-04d3a7 type Module"
+      },
+      {
+       "subject": "botocore_auth.py-04d3a7",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 1,
+       "raw": "botocore_auth.py-04d3a7 moduleChangeMonthsInWindow 1"
+      }
+     ],
+     "closures": [],
+     "raw": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\nbotocore_auth.py-04d3a7 moduleRelChurnInWindow 0.01752\nbotocore_auth.py-04d3a7 type Module\nA_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\nStableModule equivalentTo LowRelChurnModule and RarelyChangedModule\nbotocore_auth.py-04d3a7 moduleChangeMonthsInWindow 1\nLowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module\nRarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module"
+    }
+   ],
+   "raw_text": "Axiom: botocore_auth.py-04d3a7 type StableModule\n\nExplanation(s): \n1)   A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\n     botocore_auth.py-04d3a7 moduleRelChurnInWindow 0.01752\n     botocore_auth.py-04d3a7 type Module\n     A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\n     StableModule equivalentTo LowRelChurnModule\n                               and RarelyChangedModule\n     botocore_auth.py-04d3a7 moduleChangeMonthsInWindow 1\n     LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn\n                                    and Module\n     RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months\n                                      and Module\n\n\n",
+   "seconds": 3.2490096740075387,
+   "returncode": 0,
+   "error": null
+  },
+  "module:botocore/model.py": {
+   "class": "StableModule",
+   "individual": "http://senso-framework.org/data/boto__botocore-1996/module/botocore_model.py-67a06c",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/boto__botocore-1996/module/botocore_model.py-67a06c type http://senso-framework.org/ontology/seo#StableModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "StableModule",
+       "text": "StableModule equivalentTo LowRelChurnModule and RarelyChangedModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "LowRelChurnModule",
+       "text": "LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "definition",
+       "subject": "RarelyChangedModule",
+       "text": "RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "botocore_model.py-67a06c",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 2,
+       "raw": "botocore_model.py-67a06c moduleChangeMonthsInWindow 2"
+      },
+      {
+       "subject": "botocore_model.py-67a06c",
+       "prop": "type",
+       "value": "Module",
+       "raw": "botocore_model.py-67a06c type Module"
+      },
+      {
+       "subject": "botocore_model.py-67a06c",
+       "prop": "moduleRelChurnInWindow",
+       "value": 0.011218,
+       "raw": "botocore_model.py-67a06c moduleRelChurnInWindow 0.011218"
+      }
+     ],
+     "closures": [],
+     "raw": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\nA_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\nStableModule equivalentTo LowRelChurnModule and RarelyChangedModule\nbotocore_model.py-67a06c moduleChangeMonthsInWindow 2\nbotocore_model.py-67a06c type Module\nbotocore_model.py-67a06c moduleRelChurnInWindow 0.011218\nLowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module\nRarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module"
+    }
+   ],
+   "raw_text": "Axiom: botocore_model.py-67a06c type StableModule\n\nExplanation(s): \n1)   A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\n     A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\n     StableModule equivalentTo LowRelChurnModule\n                               and RarelyChangedModule\n     botocore_model.py-67a06c moduleChangeMonthsInWindow 2\n     botocore_model.py-67a06c type Module\n     botocore_model.py-67a06c moduleRelChurnInWindow 0.011218\n     LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn\n                                    and Module\n     RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months\n                                      and Module\n\n\n",
+   "seconds": 3.1832219139905646,
+   "returncode": 0,
+   "error": null
+  },
+  "module:botocore/serialize.py": {
+   "class": "StableModule",
+   "individual": "http://senso-framework.org/data/boto__botocore-1996/module/botocore_serialize.py-564d33",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/boto__botocore-1996/module/botocore_serialize.py-564d33 type http://senso-framework.org/ontology/seo#StableModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "StableModule",
+       "text": "StableModule equivalentTo LowRelChurnModule and RarelyChangedModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "LowRelChurnModule",
+       "text": "LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "definition",
+       "subject": "RarelyChangedModule",
+       "text": "RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "botocore_serialize.py-564d33",
+       "prop": "type",
+       "value": "Module",
+       "raw": "botocore_serialize.py-564d33 type Module"
+      },
+      {
+       "subject": "botocore_serialize.py-564d33",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 0,
+       "raw": "botocore_serialize.py-564d33 moduleChangeMonthsInWindow 0"
+      },
+      {
+       "subject": "botocore_serialize.py-564d33",
+       "prop": "moduleRelChurnInWindow",
+       "value": 0.0,
+       "raw": "botocore_serialize.py-564d33 moduleRelChurnInWindow 0.0"
+      }
+     ],
+     "closures": [],
+     "raw": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\nbotocore_serialize.py-564d33 type Module\nA_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\nStableModule equivalentTo LowRelChurnModule and RarelyChangedModule\nbotocore_serialize.py-564d33 moduleChangeMonthsInWindow 0\nLowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module\nRarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module\nbotocore_serialize.py-564d33 moduleRelChurnInWindow 0.0"
+    }
+   ],
+   "raw_text": "Axiom: botocore_serialize.py-564d33 type StableModule\n\nExplanation(s): \n1)   A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\n     botocore_serialize.py-564d33 type Module\n     A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\n     StableModule equivalentTo LowRelChurnModule\n                               and RarelyChangedModule\n     botocore_serialize.py-564d33 moduleChangeMonthsInWindow 0\n     LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn\n                                    and Module\n     RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months\n                                      and Module\n     botocore_serialize.py-564d33 moduleRelChurnInWindow 0.0\n\n\n",
+   "seconds": 3.1523925120127387,
+   "returncode": 0,
+   "error": null
+  },
+  "module:botocore/paginate.py": {
+   "class": "StableModule",
+   "individual": "http://senso-framework.org/data/boto__botocore-1996/module/botocore_paginate.py-d6c1d9",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/boto__botocore-1996/module/botocore_paginate.py-d6c1d9 type http://senso-framework.org/ontology/seo#StableModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "StableModule",
+       "text": "StableModule equivalentTo LowRelChurnModule and RarelyChangedModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "LowRelChurnModule",
+       "text": "LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "definition",
+       "subject": "RarelyChangedModule",
+       "text": "RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "botocore_paginate.py-d6c1d9",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 1,
+       "raw": "botocore_paginate.py-d6c1d9 moduleChangeMonthsInWindow 1"
+      },
+      {
+       "subject": "botocore_paginate.py-d6c1d9",
+       "prop": "moduleRelChurnInWindow",
+       "value": 0.010118,
+       "raw": "botocore_paginate.py-d6c1d9 moduleRelChurnInWindow 0.010118"
+      },
+      {
+       "subject": "botocore_paginate.py-d6c1d9",
+       "prop": "type",
+       "value": "Module",
+       "raw": "botocore_paginate.py-d6c1d9 type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\nbotocore_paginate.py-d6c1d9 moduleChangeMonthsInWindow 1\nA_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\nbotocore_paginate.py-d6c1d9 moduleRelChurnInWindow 0.010118\nbotocore_paginate.py-d6c1d9 type Module\nStableModule equivalentTo LowRelChurnModule and RarelyChangedModule\nLowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module\nRarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module"
+    }
+   ],
+   "raw_text": "Axiom: botocore_paginate.py-d6c1d9 type StableModule\n\nExplanation(s): \n1)   A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\n     botocore_paginate.py-d6c1d9 moduleChangeMonthsInWindow 1\n     A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\n     botocore_paginate.py-d6c1d9 moduleRelChurnInWindow 0.010118\n     botocore_paginate.py-d6c1d9 type Module\n     StableModule equivalentTo LowRelChurnModule\n                               and RarelyChangedModule\n     LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn\n                                    and Module\n     RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months\n                                      and Module\n\n\n",
+   "seconds": 3.0215080929920077,
+   "returncode": 0,
+   "error": null
+  },
+  "module:botocore/signers.py": {
+   "class": "StableModule",
+   "individual": "http://senso-framework.org/data/boto__botocore-1996/module/botocore_signers.py-891458",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/boto__botocore-1996/module/botocore_signers.py-891458 type http://senso-framework.org/ontology/seo#StableModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "StableModule",
+       "text": "StableModule equivalentTo LowRelChurnModule and RarelyChangedModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "LowRelChurnModule",
+       "text": "LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "definition",
+       "subject": "RarelyChangedModule",
+       "text": "RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "botocore_signers.py-891458",
+       "prop": "moduleRelChurnInWindow",
+       "value": 0.035959,
+       "raw": "botocore_signers.py-891458 moduleRelChurnInWindow 0.035959"
+      },
+      {
+       "subject": "botocore_signers.py-891458",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 1,
+       "raw": "botocore_signers.py-891458 moduleChangeMonthsInWindow 1"
+      },
+      {
+       "subject": "botocore_signers.py-891458",
+       "prop": "type",
+       "value": "Module",
+       "raw": "botocore_signers.py-891458 type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "botocore_signers.py-891458 moduleRelChurnInWindow 0.035959\nA_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\nA_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\nStableModule equivalentTo LowRelChurnModule and RarelyChangedModule\nbotocore_signers.py-891458 moduleChangeMonthsInWindow 1\nLowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module\nRarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module\nbotocore_signers.py-891458 type Module"
+    }
+   ],
+   "raw_text": "Axiom: botocore_signers.py-891458 type StableModule\n\nExplanation(s): \n1)   botocore_signers.py-891458 moduleRelChurnInWindow 0.035959\n     A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\n     A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\n     StableModule equivalentTo LowRelChurnModule\n                               and RarelyChangedModule\n     botocore_signers.py-891458 moduleChangeMonthsInWindow 1\n     LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn\n                                    and Module\n     RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months\n                                      and Module\n     botocore_signers.py-891458 type Module\n\n\n",
+   "seconds": 3.4420939299743623,
+   "returncode": 0,
+   "error": null
+  },
+  "module:botocore/awsrequest.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/boto__botocore-1996/module/botocore_awsrequest.py-f77347",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/boto__botocore-1996/module/botocore_awsrequest.py-f77347 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "botocore_awsrequest.py-f77347",
+       "prop": "type",
+       "value": "Module",
+       "raw": "botocore_awsrequest.py-f77347 type Module"
+      },
+      {
+       "subject": "botocore_awsrequest.py-f77347",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 3,
+       "raw": "botocore_awsrequest.py-f77347 moduleChangeMonthsInWindow 3"
+      }
+     ],
+     "closures": [],
+     "raw": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\nbotocore_awsrequest.py-f77347 type Module\nbotocore_awsrequest.py-f77347 moduleChangeMonthsInWindow 3\nOftenChangedModule subClassOf ActiveModule"
+    }
+   ],
+   "raw_text": "Axiom: botocore_awsrequest.py-f77347 type ActiveModule\n\nExplanation(s): \n1)   A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     botocore_awsrequest.py-f77347 type Module\n     botocore_awsrequest.py-f77347 moduleChangeMonthsInWindow 3\n     OftenChangedModule subClassOf ActiveModule\n\n\n",
+   "seconds": 3.106946579995565,
+   "returncode": 0,
+   "error": null
+  },
+  "module:botocore/hooks.py": {
+   "class": "StableModule",
+   "individual": "http://senso-framework.org/data/boto__botocore-1996/module/botocore_hooks.py-69f246",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/boto__botocore-1996/module/botocore_hooks.py-69f246 type http://senso-framework.org/ontology/seo#StableModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]"
+      },
+      {
+       "kind": "definition",
+       "subject": "StableModule",
+       "text": "StableModule equivalentTo LowRelChurnModule and RarelyChangedModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LowRelChurnModule",
+       "text": "LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "definition",
+       "subject": "RarelyChangedModule",
+       "text": "RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "botocore_hooks.py-69f246",
+       "prop": "moduleRelChurnInWindow",
+       "value": 0.0,
+       "raw": "botocore_hooks.py-69f246 moduleRelChurnInWindow 0.0"
+      },
+      {
+       "subject": "botocore_hooks.py-69f246",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 0,
+       "raw": "botocore_hooks.py-69f246 moduleChangeMonthsInWindow 0"
+      },
+      {
+       "subject": "botocore_hooks.py-69f246",
+       "prop": "type",
+       "value": "Module",
+       "raw": "botocore_hooks.py-69f246 type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "botocore_hooks.py-69f246 moduleRelChurnInWindow 0.0\nA_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\nStableModule equivalentTo LowRelChurnModule and RarelyChangedModule\nbotocore_hooks.py-69f246 moduleChangeMonthsInWindow 0\nA_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\nLowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module\nRarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module\nbotocore_hooks.py-69f246 type Module"
+    }
+   ],
+   "raw_text": "Axiom: botocore_hooks.py-69f246 type StableModule\n\nExplanation(s): \n1)   botocore_hooks.py-69f246 moduleRelChurnInWindow 0.0\n     A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\n     StableModule equivalentTo LowRelChurnModule\n                               and RarelyChangedModule\n     botocore_hooks.py-69f246 moduleChangeMonthsInWindow 0\n     A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\n     LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn\n                                    and Module\n     RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months\n                                      and Module\n     botocore_hooks.py-69f246 type Module\n\n\n",
+   "seconds": 3.185471069009509,
+   "returncode": 0,
+   "error": null
+  },
+  "module:botocore/eventstream.py": {
+   "class": "StableModule",
+   "individual": "http://senso-framework.org/data/boto__botocore-1996/module/botocore_eventstream.py-53586c",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/boto__botocore-1996/module/botocore_eventstream.py-53586c type http://senso-framework.org/ontology/seo#StableModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "StableModule",
+       "text": "StableModule equivalentTo LowRelChurnModule and RarelyChangedModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "LowRelChurnModule",
+       "text": "LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "definition",
+       "subject": "RarelyChangedModule",
+       "text": "RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "botocore_eventstream.py-53586c",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 0,
+       "raw": "botocore_eventstream.py-53586c moduleChangeMonthsInWindow 0"
+      },
+      {
+       "subject": "botocore_eventstream.py-53586c",
+       "prop": "moduleRelChurnInWindow",
+       "value": 0.0,
+       "raw": "botocore_eventstream.py-53586c moduleRelChurnInWindow 0.0"
+      },
+      {
+       "subject": "botocore_eventstream.py-53586c",
+       "prop": "type",
+       "value": "Module",
+       "raw": "botocore_eventstream.py-53586c type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "botocore_eventstream.py-53586c moduleChangeMonthsInWindow 0\nA_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\nA_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\nStableModule equivalentTo LowRelChurnModule and RarelyChangedModule\nLowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module\nbotocore_eventstream.py-53586c moduleRelChurnInWindow 0.0\nbotocore_eventstream.py-53586c type Module\nRarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module"
+    }
+   ],
+   "raw_text": "Axiom: botocore_eventstream.py-53586c type StableModule\n\nExplanation(s): \n1)   botocore_eventstream.py-53586c moduleChangeMonthsInWindow 0\n     A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\n     A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\n     StableModule equivalentTo LowRelChurnModule\n                               and RarelyChangedModule\n     LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn\n                                    and Module\n     botocore_eventstream.py-53586c moduleRelChurnInWindow 0.0\n     botocore_eventstream.py-53586c type Module\n     RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months\n                                      and Module\n\n\n",
+   "seconds": 3.2124637389788404,
+   "returncode": 0,
+   "error": null
+  },
+  "module:botocore/configprovider.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/boto__botocore-1996/module/botocore_configprovider.py-3fddc3",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/boto__botocore-1996/module/botocore_configprovider.py-3fddc3 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "botocore_configprovider.py-3fddc3",
+       "prop": "type",
+       "value": "Module",
+       "raw": "botocore_configprovider.py-3fddc3 type Module"
+      },
+      {
+       "subject": "botocore_configprovider.py-3fddc3",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 4,
+       "raw": "botocore_configprovider.py-3fddc3 moduleChangeMonthsInWindow 4"
+      }
+     ],
+     "closures": [],
+     "raw": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\nbotocore_configprovider.py-3fddc3 type Module\nOftenChangedModule subClassOf ActiveModule\nbotocore_configprovider.py-3fddc3 moduleChangeMonthsInWindow 4"
+    }
+   ],
+   "raw_text": "Axiom: botocore_configprovider.py-3fddc3 type ActiveModule\n\nExplanation(s): \n1)   A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     botocore_configprovider.py-3fddc3 type Module\n     OftenChangedModule subClassOf ActiveModule\n     botocore_configprovider.py-3fddc3 moduleChangeMonthsInWindow 4\n\n\n",
+   "seconds": 3.159757042012643,
+   "returncode": 0,
+   "error": null
+  },
+  "module:botocore/monitoring.py": {
+   "class": "StableModule",
+   "individual": "http://senso-framework.org/data/boto__botocore-1996/module/botocore_monitoring.py-5a07b3",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/boto__botocore-1996/module/botocore_monitoring.py-5a07b3 type http://senso-framework.org/ontology/seo#StableModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "StableModule",
+       "text": "StableModule equivalentTo LowRelChurnModule and RarelyChangedModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "LowRelChurnModule",
+       "text": "LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "definition",
+       "subject": "RarelyChangedModule",
+       "text": "RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "botocore_monitoring.py-5a07b3",
+       "prop": "type",
+       "value": "Module",
+       "raw": "botocore_monitoring.py-5a07b3 type Module"
+      },
+      {
+       "subject": "botocore_monitoring.py-5a07b3",
+       "prop": "moduleRelChurnInWindow",
+       "value": 0.0,
+       "raw": "botocore_monitoring.py-5a07b3 moduleRelChurnInWindow 0.0"
+      },
+      {
+       "subject": "botocore_monitoring.py-5a07b3",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 0,
+       "raw": "botocore_monitoring.py-5a07b3 moduleChangeMonthsInWindow 0"
+      }
+     ],
+     "closures": [],
+     "raw": "botocore_monitoring.py-5a07b3 type Module\nA_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\nbotocore_monitoring.py-5a07b3 moduleRelChurnInWindow 0.0\nA_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\nbotocore_monitoring.py-5a07b3 moduleChangeMonthsInWindow 0\nStableModule equivalentTo LowRelChurnModule and RarelyChangedModule\nLowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module\nRarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module"
+    }
+   ],
+   "raw_text": "Axiom: botocore_monitoring.py-5a07b3 type StableModule\n\nExplanation(s): \n1)   botocore_monitoring.py-5a07b3 type Module\n     A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\n     botocore_monitoring.py-5a07b3 moduleRelChurnInWindow 0.0\n     A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\n     botocore_monitoring.py-5a07b3 moduleChangeMonthsInWindow 0\n     StableModule equivalentTo LowRelChurnModule\n                               and RarelyChangedModule\n     LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn\n                                    and Module\n     RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months\n                                      and Module\n\n\n",
+   "seconds": 3.1904990889597684,
+   "returncode": 0,
+   "error": null
+  },
+  "module:botocore/exceptions.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/boto__botocore-1996/module/botocore_exceptions.py-99d8a5",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/boto__botocore-1996/module/botocore_exceptions.py-99d8a5 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "botocore_exceptions.py-99d8a5",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 3,
+       "raw": "botocore_exceptions.py-99d8a5 moduleChangeMonthsInWindow 3"
+      },
+      {
+       "subject": "botocore_exceptions.py-99d8a5",
+       "prop": "type",
+       "value": "Module",
+       "raw": "botocore_exceptions.py-99d8a5 type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\nbotocore_exceptions.py-99d8a5 moduleChangeMonthsInWindow 3\nOftenChangedModule subClassOf ActiveModule\nbotocore_exceptions.py-99d8a5 type Module"
+    }
+   ],
+   "raw_text": "Axiom: botocore_exceptions.py-99d8a5 type ActiveModule\n\nExplanation(s): \n1)   A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     botocore_exceptions.py-99d8a5 moduleChangeMonthsInWindow 3\n     OftenChangedModule subClassOf ActiveModule\n     botocore_exceptions.py-99d8a5 type Module\n\n\n",
+   "seconds": 3.240681838011369,
+   "returncode": 0,
+   "error": null
+  },
+  "module:botocore/loaders.py": {
+   "class": "StableModule",
+   "individual": "http://senso-framework.org/data/boto__botocore-1996/module/botocore_loaders.py-6192a3",
+   "attempts": 3,
+   "target": "http://senso-framework.org/data/boto__botocore-1996/module/botocore_loaders.py-6192a3 type http://senso-framework.org/ontology/seo#StableModule",
+   "justifications": [],
+   "raw_text": "",
+   "seconds": 3.2363457669853233,
+   "returncode": 1,
+   "error": "Exception in thread \"main\" org.mindswap.pellet.exceptions.InternalReasonerException: Adding type to a pruned node \"anon(30)\" restrictedDatatype(http://www.w3.org/2001/XMLSchema#decimal,[facet(http://www.w3.org/2001/XMLSchema#minExclusive,literal(0.15,(),http://www.w3.org/2001/XMLSchema#decimal))])\n\tat org.mindswap.pellet.Node.addType(Node.java:448)\n\tat org.mindswap.pellet.Literal.addType(Literal.java:257)\n\tat org.mindswap.pellet.tableau.completion.CompletionStrategy.addType(CompletionStrategy.java:438)\n\tat org.mindswap.pellet.tableau.completion.rule.SomeValuesRule.applySomeValuesRule(SomeValuesRule.java:180)\n\tat org.mindswap.pellet.tableau.completion.rule.SomeValuesRule.apply(SomeValuesRule.java:64)\n\tat org.mindswap.pellet.tableau.completion.rule.AbstractTableauRule.apply(AbstractTableauRule.java:64)\n\tat org.mindswap.pellet.tableau.completion.SROIQStrategy.complete(SROIQStrategy.java:157)\n\tat org.mindswap.pellet.ABox.isConsistent(ABox.java:1423)\n\tat org.mindswap.pellet.ABox.isSatisfiab"
+  },
+  "module:botocore/args.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/boto__botocore-1996/module/botocore_args.py-313084",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/boto__botocore-1996/module/botocore_args.py-313084 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "botocore_args.py-313084",
+       "prop": "type",
+       "value": "Module",
+       "raw": "botocore_args.py-313084 type Module"
+      },
+      {
+       "subject": "botocore_args.py-313084",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 3,
+       "raw": "botocore_args.py-313084 moduleChangeMonthsInWindow 3"
+      }
+     ],
+     "closures": [],
+     "raw": "botocore_args.py-313084 type Module\nA_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\nbotocore_args.py-313084 moduleChangeMonthsInWindow 3\nOftenChangedModule subClassOf ActiveModule"
+    }
+   ],
+   "raw_text": "Axiom: botocore_args.py-313084 type ActiveModule\n\nExplanation(s): \n1)   botocore_args.py-313084 type Module\n     A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     botocore_args.py-313084 moduleChangeMonthsInWindow 3\n     OftenChangedModule subClassOf ActiveModule\n\n\n",
+   "seconds": 3.119594165997114,
+   "returncode": 0,
+   "error": null
+  },
+  "module:botocore/stub.py": {
+   "class": "StableModule",
+   "individual": "http://senso-framework.org/data/boto__botocore-1996/module/botocore_stub.py-a900c1",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/boto__botocore-1996/module/botocore_stub.py-a900c1 type http://senso-framework.org/ontology/seo#StableModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "StableModule",
+       "text": "StableModule equivalentTo LowRelChurnModule and RarelyChangedModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "LowRelChurnModule",
+       "text": "LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "definition",
+       "subject": "RarelyChangedModule",
+       "text": "RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "botocore_stub.py-a900c1",
+       "prop": "type",
+       "value": "Module",
+       "raw": "botocore_stub.py-a900c1 type Module"
+      },
+      {
+       "subject": "botocore_stub.py-a900c1",
+       "prop": "moduleRelChurnInWindow",
+       "value": 0.0,
+       "raw": "botocore_stub.py-a900c1 moduleRelChurnInWindow 0.0"
+      },
+      {
+       "subject": "botocore_stub.py-a900c1",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 0,
+       "raw": "botocore_stub.py-a900c1 moduleChangeMonthsInWindow 0"
+      }
+     ],
+     "closures": [],
+     "raw": "botocore_stub.py-a900c1 type Module\nA_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\nA_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\nbotocore_stub.py-a900c1 moduleRelChurnInWindow 0.0\nStableModule equivalentTo LowRelChurnModule and RarelyChangedModule\nbotocore_stub.py-a900c1 moduleChangeMonthsInWindow 0\nLowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module\nRarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module"
+    }
+   ],
+   "raw_text": "Axiom: botocore_stub.py-a900c1 type StableModule\n\nExplanation(s): \n1)   botocore_stub.py-a900c1 type Module\n     A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\n     A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\n     botocore_stub.py-a900c1 moduleRelChurnInWindow 0.0\n     StableModule equivalentTo LowRelChurnModule\n                               and RarelyChangedModule\n     botocore_stub.py-a900c1 moduleChangeMonthsInWindow 0\n     LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn\n                                    and Module\n     RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months\n                                      and Module\n\n\n",
+   "seconds": 3.1840997629915364,
+   "returncode": 0,
+   "error": null
+  },
+  "module:botocore/retryhandler.py": {
+   "class": "StableModule",
+   "individual": "http://senso-framework.org/data/boto__botocore-1996/module/botocore_retryhandler.py-3a4245",
+   "attempts": 3,
+   "target": "http://senso-framework.org/data/boto__botocore-1996/module/botocore_retryhandler.py-3a4245 type http://senso-framework.org/ontology/seo#StableModule",
+   "justifications": [],
+   "raw_text": "",
+   "seconds": 4.203868498967495,
+   "returncode": 1,
+   "error": "Exception in thread \"main\" org.mindswap.pellet.exceptions.InternalReasonerException: Adding type to a pruned node \"anon(30)\" restrictedDatatype(http://www.w3.org/2001/XMLSchema#decimal,[facet(http://www.w3.org/2001/XMLSchema#minExclusive,literal(0.15,(),http://www.w3.org/2001/XMLSchema#decimal))])\n\tat org.mindswap.pellet.Node.addType(Node.java:448)\n\tat org.mindswap.pellet.Literal.addType(Literal.java:257)\n\tat org.mindswap.pellet.tableau.completion.CompletionStrategy.addType(CompletionStrategy.java:438)\n\tat org.mindswap.pellet.tableau.completion.rule.SomeValuesRule.applySomeValuesRule(SomeValuesRule.java:180)\n\tat org.mindswap.pellet.tableau.completion.rule.SomeValuesRule.apply(SomeValuesRule.java:64)\n\tat org.mindswap.pellet.tableau.completion.rule.AbstractTableauRule.apply(AbstractTableauRule.java:64)\n\tat org.mindswap.pellet.tableau.completion.SROIQStrategy.complete(SROIQStrategy.java:157)\n\tat org.mindswap.pellet.ABox.isConsistent(ABox.java:1423)\n\tat org.mindswap.pellet.ABox.isSatisfiab"
+  },
+  "module:botocore/compat.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/boto__botocore-1996/module/botocore_compat.py-1b9dfd",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/boto__botocore-1996/module/botocore_compat.py-1b9dfd type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "botocore_compat.py-1b9dfd",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 3,
+       "raw": "botocore_compat.py-1b9dfd moduleChangeMonthsInWindow 3"
+      },
+      {
+       "subject": "botocore_compat.py-1b9dfd",
+       "prop": "type",
+       "value": "Module",
+       "raw": "botocore_compat.py-1b9dfd type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "botocore_compat.py-1b9dfd moduleChangeMonthsInWindow 3\nA_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\nOftenChangedModule subClassOf ActiveModule\nbotocore_compat.py-1b9dfd type Module"
+    }
+   ],
+   "raw_text": "Axiom: botocore_compat.py-1b9dfd type ActiveModule\n\nExplanation(s): \n1)   botocore_compat.py-1b9dfd moduleChangeMonthsInWindow 3\n     A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     OftenChangedModule subClassOf ActiveModule\n     botocore_compat.py-1b9dfd type Module\n\n\n",
+   "seconds": 7.434769639046863,
+   "returncode": 0,
+   "error": null
+  },
+  "module:botocore/waiter.py": {
+   "class": "StableModule",
+   "individual": "http://senso-framework.org/data/boto__botocore-1996/module/botocore_waiter.py-d64ad7",
+   "attempts": 3,
+   "target": "http://senso-framework.org/data/boto__botocore-1996/module/botocore_waiter.py-d64ad7 type http://senso-framework.org/ontology/seo#StableModule",
+   "justifications": [],
+   "raw_text": "",
+   "seconds": 3.1258454810013063,
+   "returncode": 1,
+   "error": "Exception in thread \"main\" org.mindswap.pellet.exceptions.InternalReasonerException: Adding type to a pruned node \"anon(30)\" restrictedDatatype(http://www.w3.org/2001/XMLSchema#decimal,[facet(http://www.w3.org/2001/XMLSchema#minExclusive,literal(0.15,(),http://www.w3.org/2001/XMLSchema#decimal))])\n\tat org.mindswap.pellet.Node.addType(Node.java:448)\n\tat org.mindswap.pellet.Literal.addType(Literal.java:257)\n\tat org.mindswap.pellet.tableau.completion.CompletionStrategy.addType(CompletionStrategy.java:438)\n\tat org.mindswap.pellet.tableau.completion.rule.SomeValuesRule.applySomeValuesRule(SomeValuesRule.java:180)\n\tat org.mindswap.pellet.tableau.completion.rule.SomeValuesRule.apply(SomeValuesRule.java:64)\n\tat org.mindswap.pellet.tableau.completion.rule.AbstractTableauRule.apply(AbstractTableauRule.java:64)\n\tat org.mindswap.pellet.tableau.completion.SROIQStrategy.complete(SROIQStrategy.java:157)\n\tat org.mindswap.pellet.ABox.isConsistent(ABox.java:1423)\n\tat org.mindswap.pellet.ABox.isSatisfiab"
+  }
+ },
+ "timings": {
+  "t_clone": 0.004,
+  "t_mine": 27.075,
+  "t_loc": 3.219,
+  "t_reason_A": 15.877,
+  "mining_cached": false,
+  "t_modules": 3.622,
+  "t_reason_B": 2.597,
+  "n_configs": 1,
+  "t_explain": 160.202,
+  "n_explain_calls": 34,
+  "t_writeback": 0.0,
+  "t_total": 214.4
+ }
+}

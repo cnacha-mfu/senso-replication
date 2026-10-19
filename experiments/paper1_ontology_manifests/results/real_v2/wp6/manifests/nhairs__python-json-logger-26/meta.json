@@ -1,0 +1,341 @@
+{
+ "task_id": "nhairs__python-json-logger-26",
+ "repo": "nhairs/python-json-logger",
+ "stage": "servicing",
+ "rounds": 1,
+ "rejects": {},
+ "flags": [
+  "length_violation_F_R",
+  "length_violation_F_I"
+ ],
+ "info": {
+  "slots": {
+   "test_root": "tests",
+   "P1": {
+    "replaced": null,
+    "name": "internal",
+    "F_R": "docs/internal",
+    "F_I": "scripts/internal"
+   },
+   "P2": {
+    "replaced": null,
+    "F_R": "src/pythonjsonlogger/jsonlogger.py",
+    "F_I": "tests/test_jsonlogger.py"
+   },
+   "C": {
+    "F_R": "make test",
+    "F_I": "make install"
+   },
+   "D": {
+    "replaced": "orjson",
+    "F_R": "typing-inspect",
+    "F_I": "boltons"
+   }
+  },
+  "why": {
+   "test_command": [
+    {
+     "root": "tests",
+     "T3": "SupportedClaim",
+     "T1": "SupportedClaim",
+     "collect_ok": true
+    }
+   ],
+   "kind1": {
+    "p1_idx": null,
+    "gold0": "docs",
+    "unrelated": null,
+    "base_R": "docs",
+    "base_I": "scripts"
+   },
+   "kind2": {
+    "p2_idx": null,
+    "n_deleted_py": 12,
+    "found": {
+     "F_R": "src/pythonjsonlogger/jsonlogger.py",
+     "F_I": "tests/test_jsonlogger.py"
+    }
+   },
+   "kind3": {
+    "run": "test",
+    "install": "install",
+    "test_ok": true,
+    "install_ok": true
+   },
+   "kind4": {
+    "deps": [
+     [
+      "typing-extensions",
+      true
+     ],
+     [
+      "msgspec",
+      false
+     ],
+     [
+      "orjson",
+      false
+     ]
+    ],
+    "d_idx": 2,
+    "src_R": "typing-extensions",
+    "src_I": "orjson",
+    "n_decls": 21,
+    "n_dist": 77
+   }
+  },
+  "length": {
+   "T": 299,
+   "F_R": 352,
+   "F_I": 347
+  },
+  "fallbacks": {
+   "F_R": [],
+   "F_I": []
+  },
+  "modes": {
+   "F_R": {
+    "1": "add",
+    "2": "add",
+    "3": "replace",
+    "4": "replace"
+   },
+   "F_I": {
+    "1": "add",
+    "2": "add",
+    "3": "replace",
+    "4": "replace"
+   }
+  },
+  "length_diff": {
+   "F_R": 53,
+   "F_I": 48
+  },
+  "n_claims_T": 11,
+  "n_false": {
+   "F_R": 4,
+   "F_I": 4
+  },
+  "pointer_in_issue": false,
+  "gold_dirs": [
+   "docs",
+   "src/pythonjsonlogger"
+  ],
+  "gold_files": [
+   "docs/changelog.md",
+   "docs/quickstart.md",
+   "pyproject.toml",
+   "src/pythonjsonlogger/core.py"
+  ]
+ },
+ "tokens": {
+  "F_R": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "docs/internal",
+     "internal"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "src/pythonjsonlogger/jsonlogger.py",
+     "jsonlogger.py"
+    ]
+   },
+   {
+    "kind": 3,
+    "type": "regex",
+    "regex": "\\bmake\\b[^|;&\\n]*\\btest\\b",
+    "target": "test"
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "typing-inspect",
+     "typing_inspect"
+    ]
+   }
+  ],
+  "F_I": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "scripts/internal",
+     "internal"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "tests/test_jsonlogger.py",
+     "test_jsonlogger.py"
+    ]
+   },
+   {
+    "kind": 3,
+    "type": "regex",
+    "regex": "\\bmake\\b[^|;&\\n]*\\binstall\\b",
+    "target": "install"
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "boltons"
+    ]
+   }
+  ]
+ },
+ "unresolved_pre_hermit": [],
+ "sha256": {
+  "T": "52ede59cdb8606472afa2a43e660b4fdb7877f3c7b5ee6d565c90d8c848f7f95",
+  "F_R": "ca220d93205290c0c40a34086793746fe4955a95e7544e3c8352a79d26635d64",
+  "F_I": "f612c92eebe08c271fd6ef8a9fd37d7618688c4c0ed53f324fb9e2b6f1666c30"
+ },
+ "chars": {
+  "T": 299,
+  "F_R": 352,
+  "F_I": 347
+ },
+ "claims": {
+  "T": [
+   "T1|docs",
+   "T1|src/pythonjsonlogger",
+   "T1|tests",
+   "T1|src/pythonjsonlogger/core.py",
+   "T3|test_framework|pytest",
+   "T1|tests",
+   "T1|pyproject.toml",
+   "T4|typing-extensions|",
+   "T4|msgspec|",
+   "T4|orjson|",
+   "T6|python|3008000000@2"
+  ],
+  "F_R": [
+   "T1|docs",
+   "T1|src/pythonjsonlogger",
+   "T1|tests",
+   "T1|docs/internal",
+   "T1|src/pythonjsonlogger/core.py",
+   "T1|src/pythonjsonlogger/jsonlogger.py",
+   "T5|make|test",
+   "T1|pyproject.toml",
+   "T4|typing-extensions|",
+   "T4|msgspec|",
+   "T4|typing-inspect|",
+   "T6|python|3008000000@2"
+  ],
+  "F_I": [
+   "T1|docs",
+   "T1|src/pythonjsonlogger",
+   "T1|tests",
+   "T1|scripts/internal",
+   "T1|src/pythonjsonlogger/core.py",
+   "T1|tests/test_jsonlogger.py",
+   "T3|test_framework|pytest",
+   "T1|tests",
+   "T5|make|install",
+   "T4|typing-extensions|",
+   "T4|msgspec|",
+   "T4|boltons|",
+   "T6|python|3008000000@2"
+  ]
+ },
+ "python_spec": ">=3.8",
+ "token_audit": [
+  {
+   "cond": "F_R",
+   "kind": 1,
+   "type": "path",
+   "name": "docs/internal",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 2,
+   "type": "path",
+   "name": "src/pythonjsonlogger/jsonlogger.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 3,
+   "type": "regex",
+   "name": "make test",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 4,
+   "type": "word",
+   "name": "typing-inspect",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 1,
+   "type": "path",
+   "name": "scripts/internal",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 2,
+   "type": "path",
+   "name": "tests/test_jsonlogger.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 3,
+   "type": "regex",
+   "name": "make install",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 4,
+   "type": "word",
+   "name": "boltons",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  }
+ ],
+ "dist_imports_used": {
+  "typing-extensions": [
+   "typing_extensions"
+  ],
+  "msgspec": [
+   "msgspec"
+  ],
+  "orjson": [
+   "orjson"
+  ],
+  "typing-inspect": null,
+  "boltons": null
+ }
+}

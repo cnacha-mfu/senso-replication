@@ -1,0 +1,107 @@
+{
+ "unit_id": "graphistry__pygraphistry-562__A__claude-sonnet__r2",
+ "task_id": "graphistry__pygraphistry-562",
+ "repo": "graphistry/pygraphistry",
+ "stage": "servicing",
+ "condition": "A",
+ "model": "claude-code/sonnet",
+ "run": 2,
+ "condition_meta": {},
+ "started": "2026-10-18T06:05:28.869442+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 4,
+ "tool_calls": 3,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 7768,
+  "cache_read_input_tokens": 65618,
+  "output_tokens": 878,
+  "output_tokens_details": {
+   "thinking_tokens": 0
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 7768,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 8,
+   "outputTokens": 878,
+   "cacheReadInputTokens": 65618,
+   "cacheCreationInputTokens": 7768,
+   "webSearchRequests": 0,
+   "costUSD": 0.0464298,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.0464298,
+ "result_text": "`Chain.from_json(chain.to_json())` now works for your example: the round trip rebuilds the `is_in` predicate, and the re-serialised JSON matches the original. I only ran that one check, not the test suite.\n\nThe cause was in `maybe_filter_dict_from_json` in `graphistry/compute/ast.py`. It called `ASTPredicate.from_json`, the generic base-class method, which can't tell which predicate class a JSON dict describes. It now calls the dispatcher in `graphistry/compute/predicates/from_json.py`, which picks the right class from the `type` field. That function is used for node and edge matches, including `edge_match`. I added the import next to the existing `filter_by_dict` import.\n\nI didn't add a test, as you asked.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792309800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0.13,
+    "resetsAt": 1792309800
+   },
+   "seven_day": {
+    "utilization": 0.13,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 38.9,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 4,
+   "hit_step_limit": 0,
+   "changed_lines": 3,
+   "gold_changed_lines": 10,
+   "Y1": 0,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": -1.7369655941662063
+  },
+  "f2p_pass": 1,
+  "f2p_total": 1,
+  "p2p_pass": 7,
+  "p2p_total": 7,
+  "f2p_all_pass": true,
+  "p2p_all_pass": true,
+  "resolved": true,
+  "reason": "resolved",
+  "test_seconds": 2.7
+ },
+ "status": "done",
+ "finished": "2026-10-18T06:06:19.162596+00:00"
+}

@@ -1,0 +1,107 @@
+{
+ "unit_id": "uilibs__uiprotect-283__A__claude-sonnet__r2",
+ "task_id": "uilibs__uiprotect-283",
+ "repo": "uilibs/uiprotect",
+ "stage": "phase_out",
+ "condition": "A",
+ "model": "claude-code/sonnet",
+ "run": 2,
+ "condition_meta": {},
+ "started": "2026-10-18T09:18:41.159583+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 8,
+ "tool_calls": 7,
+ "usage": {
+  "input_tokens": 14,
+  "cache_creation_input_tokens": 3013,
+  "cache_read_input_tokens": 121440,
+  "output_tokens": 1194,
+  "output_tokens_details": {
+   "thinking_tokens": 84
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 3013,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 14,
+   "outputTokens": 1194,
+   "cacheReadInputTokens": 121440,
+   "cacheCreationInputTokens": 3013,
+   "webSearchRequests": 0,
+   "costUSD": 0.036164,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 84,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.036164,
+ "result_text": "I fixed the `IndexError` when `icr_custom_value` is 0. I haven't run any tests or the reproduction.\n\n`LUX_MAPPING_VALUES` had 10 entries, but `icr_custom_value` can be 0 to 10. A value of 0 looked up index `10 - 0 = 10`, which is out of range. I made two changes:\n\n- **Lux table:** I appended `0` to `LUX_MAPPING_VALUES` in `src/uiprotect/data/devices.py`. A custom value of 0 now shows as 0 lux (\"under 1 lux\").\n- **Lux range:** I changed `ICRLuxValue` in `src/uiprotect/data/types.py` from `ge = 1` to `ge = 0`. This lets `set_icr_custom_lux(0)` be used. It maps to a custom value of 0, which matches the new table entry.\n\nMy first edit hit the wrong line in `devices.py`, so I reverted that file and redid it. The diff above is the final state.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792327800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0.07,
+    "resetsAt": 1792327800
+   },
+   "seven_day": {
+    "utilization": 0.14,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 24.5,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 2,
+   "Y6": 8,
+   "hit_step_limit": 0,
+   "changed_lines": 3,
+   "gold_changed_lines": 13,
+   "Y1": 0,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": -2.115477217419936
+  },
+  "f2p_pass": 1,
+  "f2p_total": 1,
+  "p2p_pass": 143,
+  "p2p_total": 143,
+  "f2p_all_pass": true,
+  "p2p_all_pass": true,
+  "resolved": true,
+  "reason": "resolved",
+  "test_seconds": 15.9
+ },
+ "status": "done",
+ "finished": "2026-10-18T09:19:23.427253+00:00"
+}

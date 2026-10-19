@@ -1,0 +1,23 @@
+{
+ "repo": "nats-io/nats.go",
+ "chunk": 1,
+ "n_chunks": 2,
+ "model": "google/diffusiongemma-26b-a4b-it",
+ "prompt_sha256": "d0e02ff613417050168d859f2af6230c3712c6758bb5d9c40d60ff55e5ae87ca",
+ "user_sha256": "56b2dd8a5c5b435a230b5d7788c806973158ff6d8c54585b5ae7ff15f5653880",
+ "text": "```json\n{\n  \"claims\": [\n    {\n      \"type\": \"path_exists\",\n      \"subject\": \"nats.go\"\n    },\n    {\n      \"type\": \"path_exists\",\n      \"subject\": \"jetstream.go\"\n    },\n    {\n      \"type\": \"path_exists\",\n      \"subject\": \"micro.go\"\n    },\n    {\n      \"type\": \"path_exists\",\n      \"subject\": \"go.mod\"\n    },\n    {\n      \"type\": \"path_exists\",\n      \"subject\": \"go_test.mod\"\n    },\n    {\n      \"type\": \"dependency\",\n      \"subject\": \"klauspost/compress\",\n      \"ecosystem_hint\": \"go\"\n    },\n    {\n      \"type\": \"dependency\",\n      \"subject\": \"nkeys\",\n      \"ecosystem_hint\": \"go\"\n    },\n    {\n      \"type\": \"dependency\",\n      \"subject\": \"nuid\",\n      \"ecosystem_hint\": \"go\"\n    },\n    {\n      \"type\": \"dependency\",\n      \"subject\": \"nats-server\",\n      \"ecosystem_hint\": \"go\"\n    },\n    {\n      \"type\": \"dependency\",\n      \"subject\": \"protobuf\",\n      \"ecosystem_hint\": \"go\"\n    },\n    {\n      \"type\": \"command\",\n      \"subject\": \"git commit -s\",\n      \"runner\": \"git\"\n    },\n    {\n      \"type\": \"command\",\n      \"subject\": \"misspell\",\n      \"runner\": \"misspell\"\n    }\n  ]\n}\n```",
+ "parse_ok": true,
+ "parse_error": null,
+ "parse_retries": 1,
+ "latency_s": 18.064376210037153,
+ "usage": {
+  "prompt": 5096,
+  "completion": 819
+ },
+ "n_api_calls": 2,
+ "finish_reason": "stop",
+ "error": null,
+ "discarded_attempt_texts": [
+  "json\n[\n  {\n    \"type\": \"path_exists\",\n    \"subject\": \"nats.go\",\n    \"mode\": \"asserts_existing\"\n  },\n  {\n    \"type\": \"path_exists\",\n    \"subject\": \"jetstream/errors.go\",\n    \"mode\": \"asserts_existing\"\n  },\n  {\n    \"type\": \"path_exists\",\n    \"subject\": \"go.mod\",\n    \"mode\": \"asserts_existing\"\n  },\n  {\n    \"type\": \"path_exists\",\n    \"subject\": \"go_test.mod\",\n    \"mode\": \"asserts_existing\"\n  },\n  {\n    \"type\": \"dependency\",\n    \"subject\": \"klauspost/compress\",\n    \"ecosystem_hint\": \"go\",\n    \"mode\": \"asserts_existing\"\n  },\n  {\n    \"type\": \"dependency\",\n    \"subject\": \"nkeys\",\n    \"ecosystem_hint\": \"go\",\n    \"mode\": \"asserts_existing\"\n  },\n  {\n    \"type\": \"dependency\",\n    \"subject\": \"nuid\",\n    \"ecosystem_hint\": \"go\",\n    \"mode\": \"asserts_existing\"\n  },\n  {\n    \"type\": \"dependency\",\n    \"subject\": \"nats-server\",\n    \"ecosystem_hint\": \"go\",\n    \"mode\": \"asserts_existing\"\n  },\n  {\n    \"type\": \"dependency\",\n    \"subject\": \"protobuf\",\n    \"ecosystem_hint\": \"go\",\n    \"mode\": \"asserts_existing\"\n  },\n  {\n    \"type\": \"command\",\n    \"subject\": \"commit -s\",\n    \"runner\": \"git\",\n    \"mode\": \"asserts_existing\"\n  }\n]"
+ ]
+}

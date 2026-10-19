@@ -1,0 +1,111 @@
+{
+ "unit_id": "construct__construct-399__D__claude-sonnet__r2",
+ "task_id": "construct__construct-399",
+ "repo": "construct/construct",
+ "stage": "phase_out",
+ "condition": "D",
+ "model": "claude-code/sonnet",
+ "run": 2,
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 3539,
+  "sha256": "9b810ba5692a41b0ae406c0d95b0aa14cff0e8b3bd0a677d9baad298e786aa8a"
+ },
+ "started": "2026-10-18T05:24:29.821010+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 5,
+ "tool_calls": 4,
+ "usage": {
+  "input_tokens": 10,
+  "cache_creation_input_tokens": 1978,
+  "cache_read_input_tokens": 96256,
+  "output_tokens": 869,
+  "output_tokens_details": {
+   "thinking_tokens": 57
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 1978,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 10,
+   "outputTokens": 869,
+   "cacheReadInputTokens": 96256,
+   "cacheCreationInputTokens": 1978,
+   "webSearchRequests": 0,
+   "costUSD": 0.026247599999999996,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 57,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.026247599999999996,
+ "result_text": "`RepeatUntil` now only reports \"missing terminator when parsing\" when the stream runs out of data. Any other parse error, such as the `ConstError` from `Const(Int32ul, 2)`, propagates unchanged.\n\nI haven't run your `TEN_TWOS` example, but the new `except` clause no longer catches a `ConstError`, so it should now raise \"expected 2 but parsed 1\".\n\nThe change is in `RepeatUntil._parse` in `construct/core.py`. It used to catch every `ConstructError` except `ExplicitError` and convert it to a `RangeError`. It now catches only `FieldError`, which is what running out of data raises, and still converts that to the `RangeError`.\n\nI ran the test suite with `tests/examples` excluded: 192 passed, 5 xfailed. Two files in `tests/examples` fail at collection, and they fail the same way without my change, so I left them alone.\n\nI changed no tests and didn't commit.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792309800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0.11,
+    "resetsAt": 1792309800
+   },
+   "seven_day": {
+    "utilization": 0.12,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 30.6,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 5,
+   "hit_step_limit": 0,
+   "changed_lines": 4,
+   "gold_changed_lines": 17,
+   "Y1": 0,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": -2.0874628412503395
+  },
+  "f2p_pass": 0,
+  "f2p_total": 1,
+  "p2p_pass": 132,
+  "p2p_total": 132,
+  "f2p_all_pass": false,
+  "p2p_all_pass": true,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 2.8
+ },
+ "status": "done",
+ "finished": "2026-10-18T05:25:04.776975+00:00"
+}

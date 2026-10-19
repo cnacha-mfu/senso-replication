@@ -1,0 +1,503 @@
+{
+ "repo": "DataDog/lading",
+ "slug": "DataDog__lading",
+ "S": "c60ab1b385fc4d91ec732cfb9f838ac9d51ce9a9",
+ "manifest_path": "AGENTS.md",
+ "input_sha": "5a85442db01256a687b9f3f46f23a7c5475b2774fbf734543080fcd1a2c87505",
+ "n_claims": 16,
+ "n_tree_files": 378,
+ "n_dep_manifests_parsed": null,
+ "seconds": 0.0,
+ "claims": [
+  {
+   "key_str": "T1|ci/check",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "ci/check",
+   "quote": "| Check | `ci/check` |",
+   "line": 156,
+   "votes": 1,
+   "models": [
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "ci/check",
+    "is_dir": false,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 1,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|ci/clippy",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "ci/clippy",
+   "quote": "| Lint | `ci/clippy` |",
+   "line": 157,
+   "votes": 1,
+   "models": [
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "ci/clippy",
+    "is_dir": false,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 1,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|ci/fmt",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "ci/fmt",
+   "quote": "| Format | `ci/fmt` |",
+   "line": 155,
+   "votes": 1,
+   "models": [
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "ci/fmt",
+    "is_dir": false,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 1,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|ci/kani",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "ci/kani",
+   "quote": "ci/kani <crate>",
+   "line": 12,
+   "votes": 2,
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "ci/kani",
+    "is_dir": false,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 1,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|ci/outdated",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "ci/outdated",
+   "quote": "| Outdated deps | `ci/outdated` |",
+   "line": 160,
+   "votes": 1,
+   "models": [
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "ci/outdated",
+    "is_dir": false,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 1,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|ci/test",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "ci/test",
+   "quote": "ci/test",
+   "line": 11,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "ci/test",
+    "is_dir": false,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 1,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|ci/validate",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "ci/validate",
+   "quote": "ci/validate",
+   "line": 10,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "ci/validate",
+    "is_dir": false,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 1,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|docs/adr/001-generator-target-blackhole-architecture.md",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "docs/adr/001-generator-target-blackhole-architecture.md",
+   "quote": "docs/adr/001-generator-target-blackhole-architecture.md",
+   "line": 21,
+   "votes": 2,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "attrs": {
+    "path": "docs/adr/001-generator-target-blackhole-architecture.md",
+    "is_dir": false,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 1,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|docs/adr/002-precomputation-philosophy.md",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "docs/adr/002-precomputation-philosophy.md",
+   "quote": "docs/adr/002-precomputation-philosophy.md",
+   "line": 21,
+   "votes": 1,
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "attrs": {
+    "path": "docs/adr/002-precomputation-philosophy.md",
+    "is_dir": false,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 1,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|docs/adr/003-determinism-requirements.md",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "docs/adr/003-determinism-requirements.md",
+   "quote": "docs/adr/003-determinism-requirements.md",
+   "line": 21,
+   "votes": 1,
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "attrs": {
+    "path": "docs/adr/003-determinism-requirements.md",
+    "is_dir": false,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 1,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|docs/adr/004-no-panic-error-handling.md",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "docs/adr/004-no-panic-error-handling.md",
+   "quote": "docs/adr/004-no-panic-error-handling.md",
+   "line": 88,
+   "votes": 2,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "attrs": {
+    "path": "docs/adr/004-no-panic-error-handling.md",
+    "is_dir": false,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 1,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|docs/adr/005-performance-first-design.md",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "docs/adr/005-performance-first-design.md",
+   "quote": "docs/adr/005-performance-first-design.md",
+   "line": 23,
+   "votes": 1,
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "attrs": {
+    "path": "docs/adr/005-performance-first-design.md",
+    "is_dir": false,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 1,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|docs/adr/006-testing-strategy.md",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "docs/adr/006-testing-strategy.md",
+   "quote": "docs/adr/006-testing-strategy.md",
+   "line": 21,
+   "votes": 1,
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "attrs": {
+    "path": "docs/adr/006-testing-strategy.md",
+    "is_dir": false,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 1,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|docs/adr/007-code-style-and-abstraction.md",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "docs/adr/007-code-style-and-abstraction.md",
+   "quote": "docs/adr/007-code-style-and-abstraction.md",
+   "line": 28,
+   "votes": 2,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "attrs": {
+    "path": "docs/adr/007-code-style-and-abstraction.md",
+    "is_dir": false,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 1,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|docs/adr/008-dependency-philosophy.md",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "docs/adr/008-dependency-philosophy.md",
+   "quote": "docs/adr/008-dependency-philosophy.md",
+   "line": 27,
+   "votes": 2,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "attrs": {
+    "path": "docs/adr/008-dependency-philosophy.md",
+    "is_dir": false,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 1,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|docs/adr/README.md",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "docs/adr/README.md",
+   "quote": "docs/adr/README.md",
+   "line": 4,
+   "votes": 2,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "attrs": {
+    "path": "docs/adr/README.md",
+    "is_dir": false,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 1,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  }
+ ]
+}

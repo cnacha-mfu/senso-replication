@@ -1,0 +1,216 @@
+{
+ "repo": "aptos-labs/aptos-docs",
+ "slug": "aptos-labs__aptos-docs",
+ "input_sha": "7f63b20d66a7374555d4f44a259f485664591403cd0d4c453e6209afe59c5a42",
+ "explanations": [
+  {
+   "key": "T1|src/content/docs/es",
+   "verdict": "ContradictedClaim",
+   "leaf": "PathRemoved",
+   "seconds": 7.42,
+   "retried_on_claim_subgraph": true,
+   "error": null,
+   "returncode": 0,
+   "n_justifications": 1,
+   "facts": [
+    {
+     "prop": "pathIgnoredCount",
+     "value": 0
+    },
+    {
+     "prop": "pathSubmoduleCount",
+     "value": 0
+    },
+    {
+     "prop": "extractionVotes",
+     "value": 2
+    },
+    {
+     "prop": "pathEverTrackedCount",
+     "value": 60
+    },
+    {
+     "prop": "pathExactMatchCount",
+     "value": 0
+    },
+    {
+     "prop": "pathSuffixMatchCount",
+     "value": 0
+    }
+   ],
+   "axioms": [
+    "A_pathExactMatchCount_ge_0_le_0 equivalentTo pathExactMatchCount some integer[>= 0, <= 0]",
+    "A_extractionVotes_ge_wp2_consensus_min_votes equivalentTo extractionVotes some integer[>= 2]",
+    "CheckedClaim equivalentTo A_extractionVotes_ge_wp2_consensus_min_votes and ManifestClaim",
+    "PathRemoved subClassOf ContradictedClaim",
+    "A_pathSubmoduleCount_ge_0_le_0 equivalentTo pathSubmoduleCount some integer[>= 0, <= 0]",
+    "A_pathEverTrackedCount_ge_1 equivalentTo pathEverTrackedCount some integer[>= 1]",
+    "A_pathSuffixMatchCount_ge_0_le_0 equivalentTo pathSuffixMatchCount some integer[>= 0, <= 0]",
+    "PathRemoved equivalentTo A_pathEverTrackedCount_ge_1 and A_pathExactMatchCount_ge_0_le_0 and A_pathIgnoredCount_ge_0_le_0 and A_pathSubmoduleCount_ge_0_le_0 and A_pathSuffixMatchCount_ge_0_le_0 and CheckedClaim and PathExistenceClaim",
+    "A_pathIgnoredCount_ge_0_le_0 equivalentTo pathIgnoredCount some integer[>= 0, <= 0]"
+   ],
+   "closures": []
+  },
+  {
+   "key": "T1|src/content/docs/es/network/glossary.mdx",
+   "verdict": "ContradictedClaim",
+   "leaf": "PathRemoved",
+   "seconds": 6.58,
+   "retried_on_claim_subgraph": true,
+   "error": null,
+   "returncode": 0,
+   "n_justifications": 1,
+   "facts": [
+    {
+     "prop": "pathSubmoduleCount",
+     "value": 0
+    },
+    {
+     "prop": "pathEverTrackedCount",
+     "value": 7
+    },
+    {
+     "prop": "pathExactMatchCount",
+     "value": 0
+    },
+    {
+     "prop": "pathSuffixMatchCount",
+     "value": 0
+    },
+    {
+     "prop": "extractionVotes",
+     "value": 2
+    },
+    {
+     "prop": "pathIgnoredCount",
+     "value": 0
+    }
+   ],
+   "axioms": [
+    "A_pathExactMatchCount_ge_0_le_0 equivalentTo pathExactMatchCount some integer[>= 0, <= 0]",
+    "A_extractionVotes_ge_wp2_consensus_min_votes equivalentTo extractionVotes some integer[>= 2]",
+    "CheckedClaim equivalentTo A_extractionVotes_ge_wp2_consensus_min_votes and ManifestClaim",
+    "PathRemoved subClassOf ContradictedClaim",
+    "A_pathSubmoduleCount_ge_0_le_0 equivalentTo pathSubmoduleCount some integer[>= 0, <= 0]",
+    "A_pathEverTrackedCount_ge_1 equivalentTo pathEverTrackedCount some integer[>= 1]",
+    "A_pathSuffixMatchCount_ge_0_le_0 equivalentTo pathSuffixMatchCount some integer[>= 0, <= 0]",
+    "PathRemoved equivalentTo A_pathEverTrackedCount_ge_1 and A_pathExactMatchCount_ge_0_le_0 and A_pathIgnoredCount_ge_0_le_0 and A_pathSubmoduleCount_ge_0_le_0 and A_pathSuffixMatchCount_ge_0_le_0 and CheckedClaim and PathExistenceClaim",
+    "A_pathIgnoredCount_ge_0_le_0 equivalentTo pathIgnoredCount some integer[>= 0, <= 0]"
+   ],
+   "closures": []
+  },
+  {
+   "key": "T4|esbuild|",
+   "verdict": "ContradictedClaim",
+   "leaf": "DependencyUndeclared",
+   "seconds": 6.0,
+   "retried_on_claim_subgraph": false,
+   "error": null,
+   "returncode": 0,
+   "n_justifications": 1,
+   "facts": [
+    {
+     "prop": "dependencyManifestParsedCount",
+     "value": 2
+    },
+    {
+     "prop": "extractionVotes",
+     "value": 2
+    },
+    {
+     "prop": "dependencyExactMatchCount",
+     "value": 0
+    },
+    {
+     "prop": "dependencySuffixMatchCount",
+     "value": 0
+    }
+   ],
+   "axioms": [
+    "DependencyUndeclared subClassOf ContradictedClaim",
+    "A_extractionVotes_ge_wp2_consensus_min_votes equivalentTo extractionVotes some integer[>= 2]",
+    "A_dependencyManifestParsedCount_ge_1 equivalentTo dependencyManifestParsedCount some integer[>= 1]",
+    "DependencyUndeclared equivalentTo A_dependencyExactMatchCount_ge_0_le_0 and A_dependencyManifestParsedCount_ge_1 and A_dependencySuffixMatchCount_ge_0_le_0 and CheckedClaim and DependencyClaim",
+    "CheckedClaim equivalentTo A_extractionVotes_ge_wp2_consensus_min_votes and ManifestClaim",
+    "A_dependencyExactMatchCount_ge_0_le_0 equivalentTo dependencyExactMatchCount some integer[>= 0, <= 0]",
+    "A_dependencySuffixMatchCount_ge_0_le_0 equivalentTo dependencySuffixMatchCount some integer[>= 0, <= 0]"
+   ],
+   "closures": []
+  },
+  {
+   "key": "T6|node|24000000000@1",
+   "verdict": "ContradictedClaim",
+   "leaf": "VersionContradicted",
+   "seconds": 4.31,
+   "retried_on_claim_subgraph": false,
+   "error": null,
+   "returncode": 0,
+   "n_justifications": 1,
+   "facts": [
+    {
+     "prop": "evidenceFor",
+     "value": "f527e9881782"
+    },
+    {
+     "prop": "extractionVotes",
+     "value": 3
+    },
+    {
+     "prop": "versionLowerDelta",
+     "value": -2000000000
+    },
+    {
+     "prop": "hasEvidence",
+     "value": "ev1"
+    },
+    {
+     "prop": "evidenceFor",
+     "value": "f527e9881782"
+    },
+    {
+     "prop": "versionLowerDelta",
+     "value": -2000000000
+    }
+   ],
+   "axioms": [
+    "A_extractionVotes_ge_wp2_consensus_min_votes equivalentTo extractionVotes some integer[>= 2]",
+    "A_versionLowerDelta_lt_0 equivalentTo versionLowerDelta some integer[< 0]",
+    "DisagreeingVersionEvidence subClassOf NonAgreeingVersionEvidence",
+    "CheckedClaim equivalentTo A_extractionVotes_ge_wp2_consensus_min_votes and ManifestClaim",
+    "VersionContradicted subClassOf ContradictedClaim",
+    "MinVersionLowerThanClaimed equivalentTo A_versionLowerDelta_lt_0 and VersionEvidence and evidenceFor some MinVersionClaim",
+    "VersionContradicted equivalentTo CheckedClaim and VersionClaim and hasEvidence only NonAgreeingVersionEvidence and hasEvidence some DisagreeingVersionEvidence",
+    "MinVersionLowerThanClaimed subClassOf DisagreeingVersionEvidence"
+   ],
+   "closures": []
+  },
+  {
+   "key": "T3|linter_formatter|biome",
+   "verdict": "SupportedClaim",
+   "leaf": "ToolSignatureFound",
+   "seconds": 3.75,
+   "retried_on_claim_subgraph": false,
+   "error": null,
+   "returncode": 0,
+   "n_justifications": 1,
+   "facts": [
+    {
+     "prop": "extractionVotes",
+     "value": 2
+    },
+    {
+     "prop": "toolSignatureHitCount",
+     "value": 2
+    }
+   ],
+   "axioms": [
+    "A_extractionVotes_ge_wp2_consensus_min_votes equivalentTo extractionVotes some integer[>= 2]",
+    "ToolSignatureFound equivalentTo A_toolSignatureHitCount_ge_1 and CheckedClaim and ToolUsageClaim",
+    "CheckedClaim equivalentTo A_extractionVotes_ge_wp2_consensus_min_votes and ManifestClaim",
+    "A_toolSignatureHitCount_ge_1 equivalentTo toolSignatureHitCount some integer[>= 1]",
+    "ToolSignatureFound subClassOf SupportedClaim"
+   ],
+   "closures": []
+  }
+ ]
+}

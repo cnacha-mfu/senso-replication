@@ -1,0 +1,111 @@
+{
+ "unit_id": "zopefoundation__DocumentTemplate-55__D__claude-sonnet__r1",
+ "task_id": "zopefoundation__DocumentTemplate-55",
+ "repo": "zopefoundation/DocumentTemplate",
+ "stage": "servicing",
+ "condition": "D",
+ "model": "claude-code/sonnet",
+ "run": 1,
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 6165,
+  "sha256": "e8755e1c26118737fc51231cd469e7b895e73401505c11df2de706e355eaf1a5"
+ },
+ "started": "2026-10-18T09:44:37.804352+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 5,
+ "tool_calls": 4,
+ "usage": {
+  "input_tokens": 10,
+  "cache_creation_input_tokens": 1300,
+  "cache_read_input_tokens": 102639,
+  "output_tokens": 834,
+  "output_tokens_details": {
+   "thinking_tokens": 0
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 1300,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 10,
+   "outputTokens": 834,
+   "cacheReadInputTokens": 102639,
+   "cacheCreationInputTokens": 1300,
+   "webSearchRequests": 0,
+   "costUSD": 0.023823900000000002,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.023823900000000002,
+ "result_text": "`bytes_sql_quote()` in `src/DocumentTemplate/DT_Var.py` now returns text on Python 3, so `<dtml-sqlvar xy type=\"string\">` output can be concatenated with the rest of the query. I haven't run the tests or tried it on a real query.\n\nAfter removing and doubling the dangerous characters, the function decodes the result as UTF-8, as in the patch from the issue. I guarded the decode with `six.PY3`. On Python 2, `bytes` is `str`, and decoding would turn it into `unicode`, so it still returns the plain string there.\n\nBytes that aren't valid UTF-8 will now raise a `UnicodeDecodeError` instead of passing through.\n\nThe system reported that `DT_Var.py` changed on disk after my edit. I didn't look at what changed, so I haven't checked that my edit is still in place.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792327800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0.1,
+    "resetsAt": 1792327800
+   },
+   "seven_day": {
+    "utilization": 0.14,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 16.9,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 5,
+   "hit_step_limit": 0,
+   "changed_lines": 4,
+   "gold_changed_lines": 50,
+   "Y1": 1,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": -3.643856189774725
+  },
+  "f2p_pass": 3,
+  "f2p_total": 3,
+  "p2p_pass": 49,
+  "p2p_total": 49,
+  "f2p_all_pass": true,
+  "p2p_all_pass": true,
+  "resolved": true,
+  "reason": "resolved",
+  "test_seconds": 1.2
+ },
+ "status": "done",
+ "finished": "2026-10-18T09:44:57.266831+00:00"
+}

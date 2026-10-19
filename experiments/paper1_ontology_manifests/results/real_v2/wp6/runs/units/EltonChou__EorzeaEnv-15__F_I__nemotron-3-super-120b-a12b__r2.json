@@ -1,0 +1,77 @@
+{
+ "unit_id": "EltonChou__EorzeaEnv-15__F_I__nemotron-3-super-120b-a12b__r2",
+ "task_id": "EltonChou__EorzeaEnv-15",
+ "repo": "EltonChou/EorzeaEnv",
+ "stage": "evolution",
+ "condition": "F_I",
+ "model": "nvidia/nemotron-3-super-120b-a12b",
+ "run": 2,
+ "order": 706,
+ "env_build_s": 50.7,
+ "started": "2026-10-09T22:01:29.660411+00:00",
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 312,
+  "sha256": "a2b71db1712991f3a276579e89fe223def66f26aed2b75a17fe0836bf3b581a2"
+ },
+ "condition_available": true,
+ "venv_reset_s": 1.68,
+ "retries": 0,
+ "venv_hash_before": "0c85ee41ca42d410",
+ "venv_hash_after": "0c85ee41ca42d410",
+ "venv_mutated": false,
+ "exit_status": "Submitted",
+ "error": "",
+ "steps": 12,
+ "wall_s": 26.0,
+ "prompt_tokens": 46720,
+ "completion_tokens": 2303,
+ "format_errors": 0,
+ "length_cutoffs": 0,
+ "api_errors": {
+  "429": 1
+ },
+ "n_queries": 12,
+ "keys_used": {
+  "NVIDIA_API_KEY": 6,
+  "NVIDIA_API_KEY_2": 4,
+  "NVIDIA_API_KEY_5": 3
+ },
+ "temperature": 0.7,
+ "top_p": 0.95,
+ "model_id_returned": "nvidia/nemotron-3-super-120b-a12b",
+ "mini_version": "2.4.6",
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 12,
+   "hit_step_limit": 0,
+   "changed_lines": 4,
+   "gold_changed_lines": 4,
+   "Y1": 0,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": 0.0
+  },
+  "f2p_pass": 1,
+  "f2p_total": 1,
+  "p2p_pass": 6,
+  "p2p_total": 6,
+  "f2p_all_pass": true,
+  "p2p_all_pass": true,
+  "resolved": true,
+  "reason": "resolved",
+  "test_seconds": 0.8
+ },
+ "status": "done",
+ "finished": "2026-10-09T22:01:59.968978+00:00"
+}

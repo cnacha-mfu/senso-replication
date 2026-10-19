@@ -1,0 +1,21 @@
+{
+ "repo": "managedcode/Storage",
+ "chunk": 0,
+ "n_chunks": 1,
+ "model": "nvidia/nemotron-3-super-120b-a12b",
+ "prompt_sha256": "d0e02ff613417050168d859f2af6230c3712c6758bb5d9c40d60ff55e5ae87ca",
+ "user_sha256": "4ff8243ae85e629234c1de4c447425d7f92c9eada4841c4ce219c46bf9d31fa4",
+ "text": "{\n  \"claims\": [\n    {\n      \"type\": \"path_exists\",\n      \"quote\": \"- **Run single test project**: `dotnet test Tests/ManagedCode.Storage.Tests/ManagedCode.Storage.Tests.csproj`\",\n      \"line\": 14,\n      \"subject\": \"Tests/ManagedCode.Storage.Tests/ManagedCode.Storage.Tests.csproj\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"path_exists\",\n      \"quote\": \"- **Storage Providers** (in `Storages/` directory):\",\n      \"line\": 30,\n      \"subject\": \"Storages/\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"path_exists\",\n      \"quote\": \"- **Integrations** (in `Integraions/` directory):\",\n      \"line\": 37,\n      \"subject\": \"Integraions/\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"tool_used\",\n      \"quote\": \"- Uses xUnit with Shouldly\",\n      \"line\": 60,\n      \"subject\": \"xUnit\",\n      \"tool_category\": \"test_framework\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"tool_used\",\n      \"quote\": \"- Uses xUnit with Shouldly\",\n      \"line\": 60,\n      \"subject\": \"Shouldly\",\n      \"tool_category\": \"test_framework\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"tool_used\",\n      \"quote\": \"- Testcontainers for integration testing (Azurite, LocalStack, FakeGcsServer)\",\n      \"line\": 61,\n      \"subject\": \"Testcontainers\",\n      \"tool_category\": \"test_framework\",\n      \"mode\": \"asserts_existing\"\n    }\n  ]\n}",
+ "parse_ok": true,
+ "parse_error": null,
+ "parse_retries": 0,
+ "latency_s": 2.399558073026128,
+ "usage": {
+  "prompt": 3215,
+  "completion": 403
+ },
+ "n_api_calls": 1,
+ "finish_reason": "stop",
+ "error": null,
+ "discarded_attempt_texts": []
+}

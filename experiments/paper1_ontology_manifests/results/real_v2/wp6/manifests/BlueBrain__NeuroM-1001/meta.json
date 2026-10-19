@@ -1,0 +1,342 @@
+{
+ "task_id": "BlueBrain__NeuroM-1001",
+ "repo": "BlueBrain/NeuroM",
+ "stage": "servicing",
+ "rounds": 1,
+ "rejects": {},
+ "flags": [
+  "kind3_dropped"
+ ],
+ "info": {
+  "slots": {
+   "test_root": "tests",
+   "P1": {
+    "replaced": "neurom/view",
+    "name": "internal",
+    "F_R": "neurom/features/internal",
+    "F_I": "neurom/apps/internal"
+   },
+   "P2": {
+    "replaced": "neurom/core/morphology.py",
+    "F_R": "neurom/features/neuritefunc.py",
+    "F_I": "examples/neuron_iteration_analysis.py"
+   },
+   "D": {
+    "replaced": "click",
+    "F_R": "jax",
+    "F_I": "typer"
+   }
+  },
+  "why": {
+   "test_command": [
+    {
+     "root": "tests",
+     "T3": "SupportedClaim",
+     "T1": "SupportedClaim",
+     "collect_ok": true
+    }
+   ],
+   "kind1": {
+    "p1_idx": 6,
+    "gold0": "neurom/features",
+    "unrelated": "neurom/apps",
+    "base_R": "neurom/features",
+    "base_I": "neurom/apps"
+   },
+   "kind2": {
+    "p2_idx": 2,
+    "n_deleted_py": 224,
+    "found": {
+     "F_R": "neurom/features/neuritefunc.py",
+     "F_I": "examples/neuron_iteration_analysis.py"
+    }
+   },
+   "kind3": {
+    "run": null,
+    "install": null,
+    "test_ok": true,
+    "install_ok": true
+   },
+   "kind4": {
+    "deps": [
+     [
+      "numpy",
+      true
+     ],
+     [
+      "morphio",
+      false
+     ],
+     [
+      "matplotlib",
+      false
+     ],
+     [
+      "scipy",
+      false
+     ],
+     [
+      "click",
+      false
+     ]
+    ],
+    "d_idx": 4,
+    "src_R": "numpy",
+    "src_I": "click",
+    "n_decls": 10,
+    "n_dist": 37
+   }
+  },
+  "length": {
+   "T": 489,
+   "F_R": 500,
+   "F_I": 505
+  },
+  "fallbacks": {
+   "F_R": [],
+   "F_I": []
+  },
+  "modes": {
+   "F_R": {
+    "1": "replace",
+    "2": "replace",
+    "4": "replace"
+   },
+   "F_I": {
+    "1": "replace",
+    "2": "replace",
+    "4": "replace"
+   }
+  },
+  "length_diff": {
+   "F_R": 11,
+   "F_I": 16
+  },
+  "n_claims_T": 20,
+  "n_false": {
+   "F_R": 3,
+   "F_I": 3
+  },
+  "pointer_in_issue": true,
+  "gold_dirs": [
+   "neurom/features"
+  ],
+  "gold_files": [
+   "CHANGELOG.rst",
+   "neurom/features/bifurcation.py"
+  ]
+ },
+ "tokens": {
+  "F_R": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "neurom/features/internal",
+     "internal"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "neurom/features/neuritefunc.py",
+     "neuritefunc.py"
+    ]
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "jax"
+    ]
+   }
+  ],
+  "F_I": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "neurom/apps/internal",
+     "internal"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "examples/neuron_iteration_analysis.py",
+     "neuron_iteration_analysis.py"
+    ]
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "typer"
+    ]
+   }
+  ]
+ },
+ "unresolved_pre_hermit": [],
+ "sha256": {
+  "T": "ef4445a1c2ab76d53b80b77aee9c532c8fc15bf893cda400b73e16f749912c90",
+  "F_R": "c640be165809e5faf3aa2bb5af4608229d4643eb417665071711c77822b146b0",
+  "F_I": "ead7c47a0b216ea43bad7c82f5f095d54c727a24076f01f77d38ce020d746d8e"
+ },
+ "chars": {
+  "T": 489,
+  "F_R": 500,
+  "F_I": 505
+ },
+ "claims": {
+  "T": [
+   "T1|neurom",
+   "T1|neurom/apps",
+   "T1|neurom/check",
+   "T1|neurom/core",
+   "T1|neurom/features",
+   "T1|neurom/geom",
+   "T1|neurom/view",
+   "T1|tests",
+   "T1|neurom/features/morphology.py",
+   "T1|neurom/features/neurite.py",
+   "T1|neurom/core/morphology.py",
+   "T3|test_framework|pytest",
+   "T1|tests",
+   "T1|pyproject.toml",
+   "T4|numpy|",
+   "T4|morphio|",
+   "T4|matplotlib|",
+   "T4|scipy|",
+   "T4|click|",
+   "T6|python|3007000000@2"
+  ],
+  "F_R": [
+   "T1|neurom",
+   "T1|neurom/apps",
+   "T1|neurom/check",
+   "T1|neurom/core",
+   "T1|neurom/features",
+   "T1|neurom/geom",
+   "T1|neurom/features/internal",
+   "T1|tests",
+   "T1|neurom/features/morphology.py",
+   "T1|neurom/features/neurite.py",
+   "T1|neurom/features/neuritefunc.py",
+   "T3|test_framework|pytest",
+   "T1|tests",
+   "T1|pyproject.toml",
+   "T4|numpy|",
+   "T4|morphio|",
+   "T4|matplotlib|",
+   "T4|scipy|",
+   "T4|jax|",
+   "T6|python|3007000000@2"
+  ],
+  "F_I": [
+   "T1|neurom",
+   "T1|neurom/apps",
+   "T1|neurom/check",
+   "T1|neurom/core",
+   "T1|neurom/features",
+   "T1|neurom/geom",
+   "T1|neurom/apps/internal",
+   "T1|tests",
+   "T1|neurom/features/morphology.py",
+   "T1|neurom/features/neurite.py",
+   "T1|examples/neuron_iteration_analysis.py",
+   "T3|test_framework|pytest",
+   "T1|tests",
+   "T1|pyproject.toml",
+   "T4|numpy|",
+   "T4|morphio|",
+   "T4|matplotlib|",
+   "T4|scipy|",
+   "T4|typer|",
+   "T6|python|3007000000@2"
+  ]
+ },
+ "python_spec": ">=3.7",
+ "token_audit": [
+  {
+   "cond": "F_R",
+   "kind": 1,
+   "type": "path",
+   "name": "neurom/features/internal",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 2,
+   "type": "path",
+   "name": "neurom/features/neuritefunc.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 4,
+   "type": "word",
+   "name": "jax",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 1,
+   "type": "path",
+   "name": "neurom/apps/internal",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 2,
+   "type": "path",
+   "name": "examples/neuron_iteration_analysis.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 4,
+   "type": "word",
+   "name": "typer",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  }
+ ],
+ "dist_imports_used": {
+  "numpy": [
+   "numpy",
+   "numpy.libs"
+  ],
+  "morphio": [
+   "morphio"
+  ],
+  "matplotlib": [
+   "matplotlib",
+   "mpl_toolkits",
+   "pylab"
+  ],
+  "scipy": [
+   "scipy",
+   "scipy.libs"
+  ],
+  "click": [
+   "click"
+  ],
+  "jax": null,
+  "typer": null
+ }
+}

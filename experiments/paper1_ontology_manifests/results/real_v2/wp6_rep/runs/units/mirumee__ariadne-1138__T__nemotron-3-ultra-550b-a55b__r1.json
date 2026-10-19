@@ -1,0 +1,79 @@
+{
+ "unit_id": "mirumee__ariadne-1138__T__nemotron-3-ultra-550b-a55b__r1",
+ "task_id": "mirumee__ariadne-1138",
+ "repo": "mirumee/ariadne",
+ "stage": "initial_development",
+ "condition": "T",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "run": 1,
+ "order": 200,
+ "env_build_s": 55.9,
+ "started": "2026-10-13T11:39:11.498281+00:00",
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 539,
+  "sha256": "e278055558c59ada08e626ac1eaaaa9eddbc4dada5dfa95fe2de21c55f402033"
+ },
+ "condition_available": true,
+ "venv_reset_s": 2.05,
+ "retries": 0,
+ "venv_hash_before": "034c7ce27ee5d3fb",
+ "venv_hash_after": "034c7ce27ee5d3fb",
+ "venv_mutated": false,
+ "exit_status": "LimitsExceeded",
+ "error": "",
+ "steps": 40,
+ "wall_s": 647.1,
+ "prompt_tokens": 624474,
+ "completion_tokens": 10026,
+ "format_errors": 0,
+ "length_cutoffs": 0,
+ "api_errors": {
+  "429": 51,
+  "503": 2
+ },
+ "n_queries": 47,
+ "keys_used": {
+  "NVIDIA_API_KEY_2": 22,
+  "NVIDIA_API_KEY": 23,
+  "NVIDIA_API_KEY_4": 26,
+  "NVIDIA_API_KEY_5": 22
+ },
+ "temperature": 0.7,
+ "top_p": 0.95,
+ "model_id_returned": "nvidia/nemotron-3-ultra-550b-a55b",
+ "mini_version": "2.4.6",
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 0,
+   "Y5": 0,
+   "Y6": 40,
+   "hit_step_limit": 1,
+   "changed_lines": 0,
+   "gold_changed_lines": 1015,
+   "Y1": null,
+   "Y2": null,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": null
+  },
+  "f2p_pass": 0,
+  "f2p_total": 4,
+  "p2p_pass": 30,
+  "p2p_total": 30,
+  "f2p_all_pass": false,
+  "p2p_all_pass": true,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 2.0
+ },
+ "status": "done",
+ "finished": "2026-10-13T11:50:04.893267+00:00"
+}

@@ -1,0 +1,76 @@
+{
+ "unit_id": "agronholm__sqlacodegen-371__B__nemotron-3-super-120b-a12b__r1",
+ "task_id": "agronholm__sqlacodegen-371",
+ "repo": "agronholm/sqlacodegen",
+ "stage": "evolution",
+ "condition": "B",
+ "model": "nvidia/nemotron-3-super-120b-a12b",
+ "run": 1,
+ "order": 523,
+ "env_build_s": 49.0,
+ "real_agent_manifest_at_base": [],
+ "started": "2026-10-07T10:20:36.940488+00:00",
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 2573,
+  "sha256": "e53eef95b9215e42b6a0cd3896e9561567517f3be784bdd5e16e8ce6c1fa7858"
+ },
+ "condition_available": true,
+ "retries": 0,
+ "exit_status": "LimitsExceeded",
+ "error": "",
+ "steps": 40,
+ "wall_s": 367.8,
+ "prompt_tokens": 265509,
+ "completion_tokens": 4635,
+ "format_errors": 0,
+ "length_cutoffs": 0,
+ "api_errors": {
+  "429": 2,
+  "timeout": 1
+ },
+ "n_queries": 41,
+ "keys_used": {
+  "NVIDIA_API_KEY_2": 7,
+  "NVIDIA_API_KEY_4": 12,
+  "NVIDIA_API_KEY_5": 12,
+  "NVIDIA_API_KEY": 12
+ },
+ "temperature": 0.7,
+ "top_p": 0.95,
+ "model_id_returned": "nvidia/nemotron-3-super-120b-a12b",
+ "mini_version": "2.4.6",
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 40,
+   "hit_step_limit": 1,
+   "changed_lines": 4,
+   "gold_changed_lines": 11,
+   "Y1": 1,
+   "Y2": 0,
+   "Y3": 1.0,
+   "Y3_gold": 1.0,
+   "Y3_excess": 0.0,
+   "Y3w": 0.6,
+   "Y4": -1.4594316186372973
+  },
+  "f2p_pass": 0,
+  "f2p_total": 1,
+  "p2p_pass": 34,
+  "p2p_total": 36,
+  "f2p_all_pass": false,
+  "p2p_all_pass": false,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 5.9
+ },
+ "status": "done",
+ "finished": "2026-10-07T10:26:50.916287+00:00"
+}

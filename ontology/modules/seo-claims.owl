@@ -1,0 +1,3001 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://senso-framework.org/ontology/seo/seo-claims"
+         xmlns="http://senso-framework.org/ontology/seo/seo-claims#"
+         xmlns:seo="http://senso-framework.org/ontology/seo#">
+
+<owl:Ontology rdf:about="http://senso-framework.org/ontology/seo/seo-claims">
+  <owl:imports rdf:resource="http://senso-framework.org/ontology/seo/seo-entities"/>
+  <rdfs:comment xml:lang="en">WP2 claim vocabulary and consistency verdicts. SWRL-free; imports seo-entities only.</rdfs:comment>
+</owl:Ontology>
+
+<owl:ObjectProperty rdf:about="http://senso-framework.org/ontology/seo#makesClaim">
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#ManifestDocument"/>
+  <rdfs:range rdf:resource="http://senso-framework.org/ontology/seo#ManifestClaim"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://senso-framework.org/ontology/seo#makesExcludedClaim">
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#ManifestDocument"/>
+  <rdfs:range rdf:resource="http://senso-framework.org/ontology/seo#ManifestClaim"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://senso-framework.org/ontology/seo#hasEvidence">
+  <owl:inverseOf rdf:resource="http://senso-framework.org/ontology/seo#evidenceFor"/>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#ManifestClaim"/>
+  <rdfs:range rdf:resource="http://senso-framework.org/ontology/seo#ClaimEvidence"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://senso-framework.org/ontology/seo#evidenceFor">
+  <owl:inverseOf rdf:resource="http://senso-framework.org/ontology/seo#hasEvidence"/>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#ClaimEvidence"/>
+  <rdfs:range rdf:resource="http://senso-framework.org/ontology/seo#ManifestClaim"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://senso-framework.org/ontology/seo#introducedAs">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#ManifestClaim"/>
+  <rdfs:range rdf:resource="http://senso-framework.org/ontology/seo#ManifestClaim"/>
+</owl:ObjectProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#claimQuote">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Verbatim quote from the manifest (context). Unit: text. Computed by: wp2.consensus.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#ManifestClaim"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wp2.consensus</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#claimSubject">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Normalized subject of the claim (context). Unit: text. Computed by: wp2.normalize.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#ManifestClaim"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wp2.normalize</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#claimKey">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Canonical claim key (type, normalized subject, ...). Unit: text. Computed by: wp2.normalize.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#ManifestClaim"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wp2.normalize</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#claimLine">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Global line number of the quote in the manifest. Unit: line. Computed by: wp2.consensus.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#ManifestClaim"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wp2.consensus</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">line</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#extractionVotes">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Number of extraction models (1 to 3) that proposed this claim key. Unit: models. Computed by: wp2.consensus.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#ManifestClaim"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wp2.consensus</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">models</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#snapshotCommit">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Commit S at which the manifest and repository are examined. Unit: sha. Computed by: wp2.snapshot.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#ManifestDocument"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wp2.snapshot</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sha</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#manifestPath">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Repository path of the manifest. Unit: path. Computed by: wp2.snapshot.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#ManifestDocument"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wp2.snapshot</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">path</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#pathExactMatchCount">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Tracked files equal to the path, under the directory, or matching the glob at S. Unit: paths. Computed by: wp2.measure.path_counts.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#ManifestClaim"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wp2.measure.path_counts</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">paths</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#pathSuffixMatchCount">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Tracked paths that end with '/' + path (monorepo-relative mentions). Unit: paths. Computed by: wp2.measure.path_counts.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#ManifestClaim"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wp2.measure.path_counts</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">paths</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#pathIgnoredCount">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">1 if a .gitignore at S matches the path, else 0. Unit: 0/1. Computed by: wp2.measure.path_counts.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#ManifestClaim"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wp2.measure.path_counts</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0/1</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#pathSubmoduleCount">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">1 if a gitlink (mode 160000) is a prefix of the path, else 0. Unit: 0/1. Computed by: wp2.measure.path_counts.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#ManifestClaim"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wp2.measure.path_counts</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0/1</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#pathEverTrackedCount">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Commits up to S that touched the path. Unit: commits. Computed by: wp2.measure.path_counts.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#ManifestClaim"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wp2.measure.path_counts</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">commits</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#daysSincePathLastTracked">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Days between the last commit touching the path and S (context). Unit: days. Computed by: wp2.measure.path_counts.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#ManifestClaim"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wp2.measure.path_counts</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">days</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#pathCommitsIn90d">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Non-merge first-parent commits touching the path in the 90 days before S. Unit: commits. Computed by: wp2.measure.path_churn.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#ManifestClaim"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wp2.measure.path_churn</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">commits</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#pathCommitsIn180d">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Same for 180 days. Unit: commits. Computed by: wp2.measure.path_churn.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#ManifestClaim"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wp2.measure.path_churn</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">commits</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#pathCommitsIn365d">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Same for 365 days. Unit: commits. Computed by: wp2.measure.path_churn.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#ManifestClaim"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wp2.measure.path_churn</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">commits</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#pathLinesChangedIn90d">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Lines added plus deleted inside the path, 90 days before S. Unit: lines. Computed by: wp2.measure.path_churn.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#ManifestClaim"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wp2.measure.path_churn</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lines</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#pathLinesChangedIn180d">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Same for 180 days. Unit: lines. Computed by: wp2.measure.path_churn.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#ManifestClaim"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wp2.measure.path_churn</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lines</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#pathLinesChangedIn365d">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Same for 365 days. Unit: lines. Computed by: wp2.measure.path_churn.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#ManifestClaim"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wp2.measure.path_churn</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lines</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#repoCommitsIn180d">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Repository commits in the 180 days before S (context). Unit: commits. Computed by: wp2.measure.path_churn.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#ManifestClaim"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wp2.measure.path_churn</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">commits</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#daysSincePathLastChange">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Days since the path last changed before S (context). Unit: days. Computed by: wp2.measure.path_churn.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#ManifestClaim"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wp2.measure.path_churn</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">days</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#toolSignatureHitCount">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Tracked files, manifest keys and declared dependencies that match the tool's signature at S. Unit: signatures. Computed by: wp2.measure.tool_hits.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#ManifestClaim"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wp2.measure.tool_hits</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">signatures</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#toolEcosystemAnchorCount">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Tracked ecosystem anchor files (package.json, pyproject.toml, ...) at S. Unit: files. Computed by: wp2.measure.tool_hits.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#ManifestClaim"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wp2.measure.tool_hits</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">files</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#competingToolSignatureCount">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Signature hits of competing tools of the same category and ecosystem. Unit: signatures. Computed by: wp2.measure.tool_hits.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#ManifestClaim"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wp2.measure.tool_hits</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">signatures</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#dependencyExactMatchCount">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Declarations of the dependency (normalized name) across tracked manifests at S. Unit: declarations. Computed by: wp2.depparse.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#ManifestClaim"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wp2.depparse</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">declarations</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#dependencySuffixMatchCount">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Declarations whose name matches after the last '/'. Unit: declarations. Computed by: wp2.depparse.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#ManifestClaim"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wp2.depparse</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">declarations</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#dependencyManifestParsedCount">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Dependency manifests parsed at S. Unit: files. Computed by: wp2.depparse.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#ManifestClaim"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wp2.depparse</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">files</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#claimedMajor">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Major version written in the claim. Unit: major. Computed by: wp2.depparse.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#ManifestClaim"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wp2.depparse</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">major</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#declaredLowerMajorDelta">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Lowest declared lower-bound major minus claimedMajor. Unit: major. Computed by: wp2.depparse.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#ManifestClaim"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wp2.depparse</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">major</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#declaredUpperMajorDelta">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Highest declared upper-bound major minus claimedMajor; asserted only if bounded. Unit: major. Computed by: wp2.depparse.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#ManifestClaim"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wp2.depparse</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">major</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#declaredUpperUnboundedCount">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">1 if some declaration has no upper bound. Unit: 0/1. Computed by: wp2.depparse.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#ManifestClaim"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wp2.depparse</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0/1</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#scriptDefinedRootCount">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Definitions of the script/target in root package.json, composer.json or Makefile. Unit: definitions. Computed by: wp2.measure.script_counts.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#ManifestClaim"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wp2.measure.script_counts</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definitions</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#scriptDefinedAnyCount">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Definitions anywhere in tracked package.json, composer.json, Makefile and *.mk files. Unit: definitions. Computed by: wp2.measure.script_counts.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#ManifestClaim"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wp2.measure.script_counts</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definitions</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#scriptHostFileCount">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Tracked files that could define the script (package.json / composer.json / Makefile ...). Unit: files. Computed by: wp2.measure.script_counts.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#ManifestClaim"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wp2.measure.script_counts</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">files</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#dynamicTargetRuleCount">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Make pattern rules or targets containing $(...). Unit: rules. Computed by: wp2.measure.script_counts.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#ManifestClaim"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wp2.measure.script_counts</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rules</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#ciInvocationCount">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">CI configs at S invoking the script (context, triangulation). Unit: files. Computed by: wp2.measure.script_counts.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#ManifestClaim"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wp2.measure.script_counts</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">files</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#versionSourceCount">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Parseable version sources for the claim's subject at S. Unit: sources. Computed by: wp2.measure.version_evidence.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#ManifestClaim"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wp2.measure.version_evidence</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sources</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#versionLowerDelta">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Declared lower bound minus claimed version, truncated to the claim's precision. Unit: version code. Computed by: wp2.measure.version_evidence.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#ClaimEvidence"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wp2.measure.version_evidence</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">version code</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#versionUpperDelta">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Declared upper bound minus claimed version; asserted only if bounded. Unit: version code. Computed by: wp2.measure.version_evidence.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#ClaimEvidence"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wp2.measure.version_evidence</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">version code</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#versionUpperUnboundedCount">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">1 if the source has no upper bound. Unit: 0/1. Computed by: wp2.measure.version_evidence.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#ClaimEvidence"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wp2.measure.version_evidence</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0/1</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#versionSourcePath">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Source file (context). Unit: path. Computed by: wp2.measure.version_evidence.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#ClaimEvidence"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wp2.measure.version_evidence</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">path</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#versionSourceRaw">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Raw declared version (context). Unit: text. Computed by: wp2.measure.version_evidence.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#ClaimEvidence"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wp2.measure.version_evidence</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#importFilesScanned">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Tracked source files scanned inside the claim's scope. Unit: files. Computed by: wp2.measure.import_edges.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#ManifestClaim"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wp2.measure.import_edges</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">files</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#forbiddenImportEdgeCount">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Import statements that reference the forbidden target. Unit: edges. Computed by: wp2.measure.import_edges.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#ManifestClaim"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wp2.measure.import_edges</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">edges</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#ManifestDocument">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#ManifestClaim">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#ClaimEvidence">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#VersionEvidence">
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#ClaimEvidence"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#PathExistenceClaim">
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#ManifestClaim"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#PathStatusClaim">
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#ManifestClaim"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#InactiveStatusClaim">
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#PathStatusClaim"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#ProtectedStatusClaim">
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#ManifestClaim"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#ToolUsageClaim">
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#ManifestClaim"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#PackageManagerClaim">
+  <owl:disjointWith rdf:resource="http://senso-framework.org/ontology/seo#NonPackageManagerToolClaim"/>
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#ToolUsageClaim"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#NonPackageManagerToolClaim">
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#NoCompetingPackageManagerEvidence"/>
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#ToolUsageClaim"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#DependencyClaim">
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#ManifestClaim"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#UnversionedDependencyClaim">
+  <owl:disjointWith rdf:resource="http://senso-framework.org/ontology/seo#VersionedDependencyClaim"/>
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#DependencyClaim"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#VersionedDependencyClaim">
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#DependencyClaim"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#CommandClaim">
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#ManifestClaim"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#VersionClaim">
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#ManifestClaim"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#MinVersionClaim">
+  <owl:disjointWith rdf:resource="http://senso-framework.org/ontology/seo#ExactVersionClaim"/>
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#VersionClaim"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#ExactVersionClaim">
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#VersionClaim"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#ImportConstraintClaim">
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#ManifestClaim"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_extractionVotes_ge_wp2_consensus_min_votes">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#extractionVotes"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</xsd:minInclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{extractionVotes} &gt;= 2</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wp2_consensus_min_votes</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">papers/paper1/wp2-design.md section 5.4</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#CheckedClaim">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#ManifestClaim"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_extractionVotes_ge_wp2_consensus_min_votes"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">extracted by {extractionVotes} models (consensus threshold)</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wp2_consensus_min_votes</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">papers/paper1/wp2-design.md section 5.4</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_pathExactMatchCount_ge_0_le_0">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#pathExactMatchCount"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:maxInclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest>
+                <rdf:Description>
+                  <rdf:first>
+                    <rdf:Description>
+                      <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:minInclusive>
+                    </rdf:Description>
+                  </rdf:first>
+                  <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                </rdf:Description>
+              </rdf:rest>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{pathExactMatchCount} within [0, 0]</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_pathSuffixMatchCount_ge_0_le_0">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#pathSuffixMatchCount"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:maxInclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest>
+                <rdf:Description>
+                  <rdf:first>
+                    <rdf:Description>
+                      <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:minInclusive>
+                    </rdf:Description>
+                  </rdf:first>
+                  <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                </rdf:Description>
+              </rdf:rest>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{pathSuffixMatchCount} within [0, 0]</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_pathIgnoredCount_ge_0_le_0">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#pathIgnoredCount"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:maxInclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest>
+                <rdf:Description>
+                  <rdf:first>
+                    <rdf:Description>
+                      <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:minInclusive>
+                    </rdf:Description>
+                  </rdf:first>
+                  <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                </rdf:Description>
+              </rdf:rest>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{pathIgnoredCount} within [0, 0]</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_pathSubmoduleCount_ge_0_le_0">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#pathSubmoduleCount"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:maxInclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest>
+                <rdf:Description>
+                  <rdf:first>
+                    <rdf:Description>
+                      <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:minInclusive>
+                    </rdf:Description>
+                  </rdf:first>
+                  <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                </rdf:Description>
+              </rdf:rest>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{pathSubmoduleCount} within [0, 0]</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_pathEverTrackedCount_ge_0_le_0">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#pathEverTrackedCount"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:maxInclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest>
+                <rdf:Description>
+                  <rdf:first>
+                    <rdf:Description>
+                      <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:minInclusive>
+                    </rdf:Description>
+                  </rdf:first>
+                  <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                </rdf:Description>
+              </rdf:rest>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{pathEverTrackedCount} within [0, 0]</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_pathExactMatchCount_ge_1">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#pathExactMatchCount"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</xsd:minInclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{pathExactMatchCount} &gt;= 1</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#PathFoundExact">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#CheckedClaim"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#PathExistenceClaim"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_pathExactMatchCount_ge_1"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#SupportedClaim"/>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{claimSubject} matches {pathExactMatchCount} tracked path(s) at the snapshot</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_pathSuffixMatchCount_ge_1">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#pathSuffixMatchCount"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</xsd:minInclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{pathSuffixMatchCount} &gt;= 1</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#PathFoundBySuffix">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#CheckedClaim"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#PathExistenceClaim"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_pathExactMatchCount_ge_0_le_0"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_pathSuffixMatchCount_ge_1"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#SupportedClaim"/>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{claimSubject} is not tracked at the root but {pathSuffixMatchCount} tracked path(s) end with it (relocated)</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_pathIgnoredCount_ge_1">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#pathIgnoredCount"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</xsd:minInclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{pathIgnoredCount} &gt;= 1</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#PathUntrackedByDesign">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#CheckedClaim"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#PathExistenceClaim"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_pathExactMatchCount_ge_0_le_0"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_pathSuffixMatchCount_ge_0_le_0"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_pathIgnoredCount_ge_1"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#UnverifiableClaim"/>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{claimSubject} is not tracked but is matched by a .gitignore at the snapshot</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_pathSubmoduleCount_ge_1">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#pathSubmoduleCount"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</xsd:minInclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{pathSubmoduleCount} &gt;= 1</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#PathInSubmodule">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#CheckedClaim"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#PathExistenceClaim"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_pathExactMatchCount_ge_0_le_0"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_pathSuffixMatchCount_ge_0_le_0"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_pathSubmoduleCount_ge_1"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#UnverifiableClaim"/>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{claimSubject} lies inside a git submodule</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_pathEverTrackedCount_ge_1">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#pathEverTrackedCount"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</xsd:minInclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{pathEverTrackedCount} &gt;= 1</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#PathRemoved">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#CheckedClaim"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#PathExistenceClaim"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_pathExactMatchCount_ge_0_le_0"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_pathSuffixMatchCount_ge_0_le_0"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_pathIgnoredCount_ge_0_le_0"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_pathSubmoduleCount_ge_0_le_0"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_pathEverTrackedCount_ge_1"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#ContradictedClaim"/>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{claimSubject} is not tracked at the snapshot and not git-ignored; {pathEverTrackedCount} earlier commit(s) touched it</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#PathNeverExisted">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#CheckedClaim"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#PathExistenceClaim"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_pathExactMatchCount_ge_0_le_0"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_pathSuffixMatchCount_ge_0_le_0"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_pathIgnoredCount_ge_0_le_0"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_pathSubmoduleCount_ge_0_le_0"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_pathEverTrackedCount_ge_0_le_0"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#ContradictedClaim"/>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{claimSubject} is not tracked at the snapshot, not git-ignored, and no commit up to the snapshot ever touched it</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#StatusPathUnresolved">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#CheckedClaim"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#InactiveStatusClaim"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_pathExactMatchCount_ge_0_le_0"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_pathSuffixMatchCount_ge_0_le_0"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#UnverifiableClaim"/>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{claimSubject} does not resolve to a tracked path, so churn is not measured</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_pathSuffixMatchCount_ge_2">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#pathSuffixMatchCount"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</xsd:minInclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{pathSuffixMatchCount} &gt;= 2</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#StatusPathAmbiguous">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#CheckedClaim"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#InactiveStatusClaim"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_pathExactMatchCount_ge_0_le_0"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_pathSuffixMatchCount_ge_2"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#UnverifiableClaim"/>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{claimSubject} matches {pathSuffixMatchCount} tracked paths by suffix, so churn is not measured</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_pathCommitsIn180d_le_wp2_inactive_support_max_commits">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#pathCommitsIn180d"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</xsd:maxInclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{pathCommitsIn180d} &lt;= 1</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wp2_inactive_support_max_commits</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">papers/paper1/wp2-design.md section 3 (T2)</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#InactivePathQuiet">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#CheckedClaim"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#InactiveStatusClaim"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_pathCommitsIn180d_le_wp2_inactive_support_max_commits"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#SupportedClaim"/>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">labelled inactive, and only {pathCommitsIn180d} commit(s) touched it in the window</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wp2_inactive_support_max_commits</seo:thresholdId>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wp2_status_window_days</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">papers/paper1/wp2-design.md section 3 (T2)</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_pathCommitsIn180d_ge_wp2_inactive_contradict_min_commits">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#pathCommitsIn180d"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</xsd:minInclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{pathCommitsIn180d} &gt;= 5</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wp2_inactive_contradict_min_commits</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">papers/paper1/wp2-design.md section 3 (T2)</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_pathLinesChangedIn180d_ge_wp2_inactive_contradict_min_lines">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#pathLinesChangedIn180d"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</xsd:minInclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{pathLinesChangedIn180d} &gt;= 100</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wp2_inactive_contradict_min_lines</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">papers/paper1/wp2-design.md section 3 (T2)</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#InactivePathActive">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#CheckedClaim"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#InactiveStatusClaim"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_pathCommitsIn180d_ge_wp2_inactive_contradict_min_commits"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_pathLinesChangedIn180d_ge_wp2_inactive_contradict_min_lines"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#ContradictedClaim"/>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">labelled inactive, yet {pathCommitsIn180d} commits and {pathLinesChangedIn180d} changed lines fell in the window</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wp2_inactive_contradict_min_commits</seo:thresholdId>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wp2_inactive_contradict_min_lines</seo:thresholdId>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wp2_status_window_days</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">papers/paper1/wp2-design.md section 3 (T2)</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_pathCommitsIn180d_lt_wp2_inactive_contradict_min_commits">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#pathCommitsIn180d"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</xsd:maxExclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#InactiveNotActive"/>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{pathCommitsIn180d} &lt; 5</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wp2_inactive_contradict_min_commits</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">papers/paper1/wp2-design.md section 3 (T2)</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_pathLinesChangedIn180d_lt_wp2_inactive_contradict_min_lines">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#pathLinesChangedIn180d"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</xsd:maxExclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#InactiveNotActive"/>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{pathLinesChangedIn180d} &lt; 100</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wp2_inactive_contradict_min_lines</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">papers/paper1/wp2-design.md section 3 (T2)</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#InactiveNotActive">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_pathCommitsIn180d_gt_wp2_inactive_support_max_commits">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#pathCommitsIn180d"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</xsd:minExclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{pathCommitsIn180d} &gt; 1</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wp2_inactive_support_max_commits</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">papers/paper1/wp2-design.md section 3 (T2)</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#InactivePathModerate">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#CheckedClaim"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#InactiveStatusClaim"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_pathCommitsIn180d_gt_wp2_inactive_support_max_commits"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#InactiveNotActive"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#IndeterminateClaim"/>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">labelled inactive; {pathCommitsIn180d} commit(s) in the window is between the quiet and active bands</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wp2_inactive_contradict_min_commits</seo:thresholdId>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wp2_inactive_contradict_min_lines</seo:thresholdId>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wp2_inactive_support_max_commits</seo:thresholdId>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wp2_status_window_days</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">papers/paper1/wp2-design.md section 3 (T2)</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_toolSignatureHitCount_ge_0_le_0">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#toolSignatureHitCount"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:maxInclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest>
+                <rdf:Description>
+                  <rdf:first>
+                    <rdf:Description>
+                      <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:minInclusive>
+                    </rdf:Description>
+                  </rdf:first>
+                  <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                </rdf:Description>
+              </rdf:rest>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{toolSignatureHitCount} within [0, 0]</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_toolSignatureHitCount_ge_1">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#toolSignatureHitCount"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</xsd:minInclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{toolSignatureHitCount} &gt;= 1</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#ToolSignatureFound">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#CheckedClaim"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#ToolUsageClaim"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_toolSignatureHitCount_ge_1"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#SupportedClaim"/>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{claimSubject} has {toolSignatureHitCount} matching signature(s) in the repository</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_competingToolSignatureCount_ge_1">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#competingToolSignatureCount"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</xsd:minInclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{competingToolSignatureCount} &gt;= 1</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#ToolAbsentCompetitorPresent">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#CheckedClaim"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#ToolUsageClaim"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#PackageManagerClaim"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_toolSignatureHitCount_ge_0_le_0"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_competingToolSignatureCount_ge_1"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#ContradictedClaim"/>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{claimSubject} has no signature while {competingToolSignatureCount} signature(s) of a competing package manager exist</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_competingToolSignatureCount_le_0">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#competingToolSignatureCount"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:maxInclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#NoCompetingPackageManagerEvidence"/>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{competingToolSignatureCount} &lt;= 0</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#NoCompetingPackageManagerEvidence">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_toolEcosystemAnchorCount_ge_1">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#toolEcosystemAnchorCount"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</xsd:minInclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{toolEcosystemAnchorCount} &gt;= 1</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#ToolAbsentInEcosystem">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#CheckedClaim"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#ToolUsageClaim"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_toolSignatureHitCount_ge_0_le_0"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_toolEcosystemAnchorCount_ge_1"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#NoCompetingPackageManagerEvidence"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#ContradictedClaim"/>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{claimSubject} has no signature although the ecosystem is present ({toolEcosystemAnchorCount} anchor file(s))</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_toolEcosystemAnchorCount_ge_0_le_0">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#toolEcosystemAnchorCount"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:maxInclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest>
+                <rdf:Description>
+                  <rdf:first>
+                    <rdf:Description>
+                      <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:minInclusive>
+                    </rdf:Description>
+                  </rdf:first>
+                  <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                </rdf:Description>
+              </rdf:rest>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{toolEcosystemAnchorCount} within [0, 0]</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#ToolEcosystemAbsent">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#CheckedClaim"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#ToolUsageClaim"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_toolSignatureHitCount_ge_0_le_0"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_toolEcosystemAnchorCount_ge_0_le_0"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#UnverifiableClaim"/>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{claimSubject} has no signature and the tool's ecosystem has no anchor file, so it cannot be checked</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_dependencyExactMatchCount_ge_1">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#dependencyExactMatchCount"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</xsd:minInclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{dependencyExactMatchCount} &gt;= 1</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_dependencyExactMatchCount_ge_0_le_0">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#dependencyExactMatchCount"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:maxInclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest>
+                <rdf:Description>
+                  <rdf:first>
+                    <rdf:Description>
+                      <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:minInclusive>
+                    </rdf:Description>
+                  </rdf:first>
+                  <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                </rdf:Description>
+              </rdf:rest>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{dependencyExactMatchCount} within [0, 0]</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_dependencySuffixMatchCount_ge_0_le_0">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#dependencySuffixMatchCount"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:maxInclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest>
+                <rdf:Description>
+                  <rdf:first>
+                    <rdf:Description>
+                      <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:minInclusive>
+                    </rdf:Description>
+                  </rdf:first>
+                  <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                </rdf:Description>
+              </rdf:rest>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{dependencySuffixMatchCount} within [0, 0]</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#DependencyDeclaredExact">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#CheckedClaim"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#DependencyClaim"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_dependencyExactMatchCount_ge_1"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#DependencyDeclared"/>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_dependencySuffixMatchCount_ge_1">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#dependencySuffixMatchCount"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</xsd:minInclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{dependencySuffixMatchCount} &gt;= 1</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#DependencyDeclaredBySuffix">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#CheckedClaim"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#DependencyClaim"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_dependencyExactMatchCount_ge_0_le_0"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_dependencySuffixMatchCount_ge_1"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#DependencyDeclared"/>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#DependencyDeclared">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#DependencyConfirmed">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#UnversionedDependencyClaim"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#DependencyDeclared"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#SupportedClaim"/>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{claimSubject} is declared ({dependencyExactMatchCount} declaration(s))</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_dependencyManifestParsedCount_ge_1">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#dependencyManifestParsedCount"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</xsd:minInclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{dependencyManifestParsedCount} &gt;= 1</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#DependencyUndeclared">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#CheckedClaim"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#DependencyClaim"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_dependencyExactMatchCount_ge_0_le_0"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_dependencySuffixMatchCount_ge_0_le_0"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_dependencyManifestParsedCount_ge_1"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#ContradictedClaim"/>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{claimSubject} is declared in none of the {dependencyManifestParsedCount} parsed manifests</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_dependencyManifestParsedCount_ge_0_le_0">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#dependencyManifestParsedCount"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:maxInclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest>
+                <rdf:Description>
+                  <rdf:first>
+                    <rdf:Description>
+                      <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:minInclusive>
+                    </rdf:Description>
+                  </rdf:first>
+                  <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                </rdf:Description>
+              </rdf:rest>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{dependencyManifestParsedCount} within [0, 0]</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#DependencyNoManifest">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#CheckedClaim"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#DependencyClaim"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_dependencyManifestParsedCount_ge_0_le_0"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#UnverifiableClaim"/>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no dependency manifest could be parsed at the snapshot</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_declaredLowerMajorDelta_gt_0">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#declaredLowerMajorDelta"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:minExclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{declaredLowerMajorDelta} &gt; 0</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#DependencyMajorTooOld">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#VersionedDependencyClaim"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#DependencyDeclared"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_declaredLowerMajorDelta_gt_0"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#ContradictedClaim"/>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{claimSubject}: declared lower bound is {declaredLowerMajorDelta} major(s) above the claimed major</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_declaredUpperMajorDelta_lt_0">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#declaredUpperMajorDelta"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:maxExclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{declaredUpperMajorDelta} &lt; 0</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#DependencyMajorTooNew">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#VersionedDependencyClaim"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#DependencyDeclared"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_declaredUpperMajorDelta_lt_0"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#ContradictedClaim"/>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{claimSubject}: declared upper bound is {declaredUpperMajorDelta} major(s) below the claimed major</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_declaredUpperMajorDelta_ge_0">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#declaredUpperMajorDelta"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:minInclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#DependencyUpperCompatible"/>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{declaredUpperMajorDelta} &gt;= 0</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_declaredUpperUnboundedCount_ge_1">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#declaredUpperUnboundedCount"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</xsd:minInclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#DependencyUpperCompatible"/>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{declaredUpperUnboundedCount} &gt;= 1</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#DependencyUpperCompatible">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_declaredLowerMajorDelta_le_0">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#declaredLowerMajorDelta"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:maxInclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{declaredLowerMajorDelta} &lt;= 0</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#DependencyMajorInRange">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#VersionedDependencyClaim"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#DependencyDeclared"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_declaredLowerMajorDelta_le_0"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#DependencyUpperCompatible"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#SupportedClaim"/>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{claimSubject}: the claimed major lies within the declared range</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_scriptDefinedAnyCount_ge_0_le_0">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#scriptDefinedAnyCount"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:maxInclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest>
+                <rdf:Description>
+                  <rdf:first>
+                    <rdf:Description>
+                      <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:minInclusive>
+                    </rdf:Description>
+                  </rdf:first>
+                  <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                </rdf:Description>
+              </rdf:rest>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{scriptDefinedAnyCount} within [0, 0]</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_scriptDefinedRootCount_ge_1">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#scriptDefinedRootCount"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</xsd:minInclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{scriptDefinedRootCount} &gt;= 1</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#ScriptDefinedRoot">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#CheckedClaim"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#CommandClaim"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_scriptDefinedRootCount_ge_1"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#SupportedClaim"/>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{claimSubject} is defined {scriptDefinedRootCount} time(s) at the repository root</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_scriptDefinedRootCount_ge_0_le_0">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#scriptDefinedRootCount"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:maxInclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest>
+                <rdf:Description>
+                  <rdf:first>
+                    <rdf:Description>
+                      <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:minInclusive>
+                    </rdf:Description>
+                  </rdf:first>
+                  <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                </rdf:Description>
+              </rdf:rest>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{scriptDefinedRootCount} within [0, 0]</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_scriptDefinedAnyCount_ge_1">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#scriptDefinedAnyCount"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</xsd:minInclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{scriptDefinedAnyCount} &gt;= 1</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#ScriptDefinedNested">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#CheckedClaim"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#CommandClaim"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_scriptDefinedRootCount_ge_0_le_0"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_scriptDefinedAnyCount_ge_1"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#SupportedClaim"/>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{claimSubject} is defined only in nested files ({scriptDefinedAnyCount} definition(s))</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_scriptHostFileCount_ge_1">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#scriptHostFileCount"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</xsd:minInclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{scriptHostFileCount} &gt;= 1</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_dynamicTargetRuleCount_ge_0_le_0">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#dynamicTargetRuleCount"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:maxInclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest>
+                <rdf:Description>
+                  <rdf:first>
+                    <rdf:Description>
+                      <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:minInclusive>
+                    </rdf:Description>
+                  </rdf:first>
+                  <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                </rdf:Description>
+              </rdf:rest>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{dynamicTargetRuleCount} within [0, 0]</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#ScriptUndefined">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#CheckedClaim"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#CommandClaim"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_scriptDefinedAnyCount_ge_0_le_0"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_scriptHostFileCount_ge_1"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_dynamicTargetRuleCount_ge_0_le_0"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#ContradictedClaim"/>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{claimSubject} is defined in none of {scriptHostFileCount} script file(s)</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_scriptHostFileCount_ge_0_le_0">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#scriptHostFileCount"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:maxInclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest>
+                <rdf:Description>
+                  <rdf:first>
+                    <rdf:Description>
+                      <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:minInclusive>
+                    </rdf:Description>
+                  </rdf:first>
+                  <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                </rdf:Description>
+              </rdf:rest>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{scriptHostFileCount} within [0, 0]</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#ScriptHostMissing">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#CheckedClaim"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#CommandClaim"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_scriptDefinedAnyCount_ge_0_le_0"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_scriptHostFileCount_ge_0_le_0"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#ContradictedClaim"/>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">the repository has no file that could define {claimSubject}</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_dynamicTargetRuleCount_ge_1">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#dynamicTargetRuleCount"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</xsd:minInclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{dynamicTargetRuleCount} &gt;= 1</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#ScriptPossiblyDynamic">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#CheckedClaim"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#CommandClaim"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_scriptDefinedAnyCount_ge_0_le_0"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_dynamicTargetRuleCount_ge_1"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#UnverifiableClaim"/>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{claimSubject} is undefined but {dynamicTargetRuleCount} dynamic make rule(s) could generate it</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_versionLowerDelta_ge_0_le_0">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#versionLowerDelta"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:maxInclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest>
+                <rdf:Description>
+                  <rdf:first>
+                    <rdf:Description>
+                      <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:minInclusive>
+                    </rdf:Description>
+                  </rdf:first>
+                  <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                </rdf:Description>
+              </rdf:rest>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{versionLowerDelta} within [0, 0]</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_versionUpperDelta_ge_0">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#versionUpperDelta"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:minInclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#VersionUpperCompatible"/>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{versionUpperDelta} &gt;= 0</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_versionUpperUnboundedCount_ge_1">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#versionUpperUnboundedCount"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</xsd:minInclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#VersionUpperCompatible"/>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{versionUpperUnboundedCount} &gt;= 1</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#VersionUpperCompatible">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#MinVersionAgreement">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#VersionEvidence"/>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#evidenceFor"/>
+          <owl:someValuesFrom rdf:resource="http://senso-framework.org/ontology/seo#MinVersionClaim"/>
+        </owl:Restriction>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_versionLowerDelta_ge_0_le_0"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#AgreeingVersionEvidence"/>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">declared lower bound equals the claimed minimum</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_versionLowerDelta_le_0">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#versionLowerDelta"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:maxInclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{versionLowerDelta} &lt;= 0</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#ExactVersionAgreement">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#VersionEvidence"/>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#evidenceFor"/>
+          <owl:someValuesFrom rdf:resource="http://senso-framework.org/ontology/seo#ExactVersionClaim"/>
+        </owl:Restriction>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_versionLowerDelta_le_0"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#VersionUpperCompatible"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#AgreeingVersionEvidence"/>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">claimed version lies within the declared range</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#AgreeingVersionEvidence">
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#NonDisagreeingVersionEvidence"/>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_versionLowerDelta_lt_0">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#versionLowerDelta"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:maxExclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{versionLowerDelta} &lt; 0</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#MinVersionLowerThanClaimed">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#VersionEvidence"/>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#evidenceFor"/>
+          <owl:someValuesFrom rdf:resource="http://senso-framework.org/ontology/seo#MinVersionClaim"/>
+        </owl:Restriction>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_versionLowerDelta_lt_0"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#DisagreeingVersionEvidence"/>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">declared lower bound is below the claimed minimum</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_versionLowerDelta_gt_0">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#versionLowerDelta"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:minExclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{versionLowerDelta} &gt; 0</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#MinVersionHigherThanClaimed">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#VersionEvidence"/>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#evidenceFor"/>
+          <owl:someValuesFrom rdf:resource="http://senso-framework.org/ontology/seo#MinVersionClaim"/>
+        </owl:Restriction>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_versionLowerDelta_gt_0"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#DisagreeingVersionEvidence"/>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">declared lower bound is above the claimed minimum</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#ExactVersionBelowRange">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#VersionEvidence"/>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#evidenceFor"/>
+          <owl:someValuesFrom rdf:resource="http://senso-framework.org/ontology/seo#ExactVersionClaim"/>
+        </owl:Restriction>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_versionLowerDelta_gt_0"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#DisagreeingVersionEvidence"/>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">claimed version is below the declared lower bound</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_versionUpperDelta_lt_0">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#versionUpperDelta"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:maxExclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{versionUpperDelta} &lt; 0</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#ExactVersionAboveRange">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#VersionEvidence"/>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#evidenceFor"/>
+          <owl:someValuesFrom rdf:resource="http://senso-framework.org/ontology/seo#ExactVersionClaim"/>
+        </owl:Restriction>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_versionUpperDelta_lt_0"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#DisagreeingVersionEvidence"/>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">claimed version is above the declared upper bound</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#DisagreeingVersionEvidence">
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#NonAgreeingVersionEvidence"/>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#NonDisagreeingVersionEvidence">
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#VersionEvidence"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#NonAgreeingVersionEvidence">
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#VersionEvidence"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#VersionConfirmed">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#CheckedClaim"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#VersionClaim"/>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#hasEvidence"/>
+          <owl:someValuesFrom rdf:resource="http://senso-framework.org/ontology/seo#AgreeingVersionEvidence"/>
+        </owl:Restriction>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#hasEvidence"/>
+          <owl:allValuesFrom rdf:resource="http://senso-framework.org/ontology/seo#NonDisagreeingVersionEvidence"/>
+        </owl:Restriction>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#SupportedClaim"/>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">every parseable source ({versionSourceCount}) agrees with the claimed version</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#VersionContradicted">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#CheckedClaim"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#VersionClaim"/>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#hasEvidence"/>
+          <owl:someValuesFrom rdf:resource="http://senso-framework.org/ontology/seo#DisagreeingVersionEvidence"/>
+        </owl:Restriction>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#hasEvidence"/>
+          <owl:allValuesFrom rdf:resource="http://senso-framework.org/ontology/seo#NonAgreeingVersionEvidence"/>
+        </owl:Restriction>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#ContradictedClaim"/>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">every parseable source ({versionSourceCount}) disagrees with the claimed version</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#VersionSourcesConflict">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#CheckedClaim"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#VersionClaim"/>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#hasEvidence"/>
+          <owl:someValuesFrom rdf:resource="http://senso-framework.org/ontology/seo#AgreeingVersionEvidence"/>
+        </owl:Restriction>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#hasEvidence"/>
+          <owl:someValuesFrom rdf:resource="http://senso-framework.org/ontology/seo#DisagreeingVersionEvidence"/>
+        </owl:Restriction>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#ConflictedClaim"/>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sources disagree with each other: some agree and some contradict the claimed version</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_versionSourceCount_ge_0_le_0">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#versionSourceCount"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:maxInclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest>
+                <rdf:Description>
+                  <rdf:first>
+                    <rdf:Description>
+                      <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:minInclusive>
+                    </rdf:Description>
+                  </rdf:first>
+                  <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                </rdf:Description>
+              </rdf:rest>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{versionSourceCount} within [0, 0]</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#NoVersionSource">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#CheckedClaim"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#VersionClaim"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_versionSourceCount_ge_0_le_0"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#UnverifiableClaim"/>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no parseable version source exists for the claim's subject at the snapshot</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_forbiddenImportEdgeCount_ge_wp2_import_violation_min_edges">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#forbiddenImportEdgeCount"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</xsd:minInclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{forbiddenImportEdgeCount} &gt;= 1</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wp2_import_violation_min_edges</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">papers/paper1/wp2-design.md section 3 (T7)</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#ImportRuleViolated">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#CheckedClaim"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#ImportConstraintClaim"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_forbiddenImportEdgeCount_ge_wp2_import_violation_min_edges"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#ContradictedClaim"/>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{forbiddenImportEdgeCount} import edge(s) reference the forbidden target</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wp2_import_violation_min_edges</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">papers/paper1/wp2-design.md section 3 (T7)</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_forbiddenImportEdgeCount_ge_0_le_0">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#forbiddenImportEdgeCount"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:maxInclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest>
+                <rdf:Description>
+                  <rdf:first>
+                    <rdf:Description>
+                      <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:minInclusive>
+                    </rdf:Description>
+                  </rdf:first>
+                  <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                </rdf:Description>
+              </rdf:rest>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{forbiddenImportEdgeCount} within [0, 0]</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_importFilesScanned_ge_1">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#importFilesScanned"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</xsd:minInclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{importFilesScanned} &gt;= 1</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#ImportRuleHeld">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#CheckedClaim"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#ImportConstraintClaim"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_forbiddenImportEdgeCount_ge_0_le_0"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_importFilesScanned_ge_1"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#SupportedClaim"/>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no forbidden import in {importFilesScanned} scanned file(s)</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_forbiddenImportEdgeCount_gt_0">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#forbiddenImportEdgeCount"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:minExclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{forbiddenImportEdgeCount} &gt; 0</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_forbiddenImportEdgeCount_lt_wp2_import_violation_min_edges">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#forbiddenImportEdgeCount"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</xsd:maxExclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{forbiddenImportEdgeCount} &lt; 1</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wp2_import_violation_min_edges</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">papers/paper1/wp2-design.md section 3 (T7)</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#ImportRuleModerate">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#CheckedClaim"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#ImportConstraintClaim"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_forbiddenImportEdgeCount_gt_0"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_forbiddenImportEdgeCount_lt_wp2_import_violation_min_edges"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#IndeterminateClaim"/>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{forbiddenImportEdgeCount} forbidden import(s), below the violation threshold</seo:explanationTemplate>
+  <seo:thresholdId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wp2_import_violation_min_edges</seo:thresholdId>
+  <seo:thresholdSource rdf:datatype="http://www.w3.org/2001/XMLSchema#string">papers/paper1/wp2-design.md section 3 (T7)</seo:thresholdSource>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#A_importFilesScanned_ge_0_le_0">
+  <owl:equivalentClass>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#importFilesScanned"/>
+      <owl:someValuesFrom>
+        <rdfs:Datatype>
+          <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+          <owl:withRestrictions>
+            <rdf:Description>
+              <rdf:first>
+                <rdf:Description>
+                  <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:maxInclusive>
+                </rdf:Description>
+              </rdf:first>
+              <rdf:rest>
+                <rdf:Description>
+                  <rdf:first>
+                    <rdf:Description>
+                      <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:minInclusive>
+                    </rdf:Description>
+                  </rdf:first>
+                  <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                </rdf:Description>
+              </rdf:rest>
+            </rdf:Description>
+          </owl:withRestrictions>
+        </rdfs:Datatype>
+      </owl:someValuesFrom>
+    </owl:Restriction>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{importFilesScanned} within [0, 0]</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#ImportScopeEmpty">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#CheckedClaim"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#ImportConstraintClaim"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#A_importFilesScanned_ge_0_le_0"/>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#UnverifiableClaim"/>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no source file was found in the claim's scope</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#SupportedClaim">
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#ManifestClaim"/>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SupportedClaim: a claim in one of its leaf classes</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#ContradictedClaim">
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#ManifestClaim"/>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ContradictedClaim: a claim in one of its leaf classes</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#UnverifiableClaim">
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#ManifestClaim"/>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UnverifiableClaim: a claim in one of its leaf classes</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#IndeterminateClaim">
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#ManifestClaim"/>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IndeterminateClaim: a claim in one of its leaf classes</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#ConflictedClaim">
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#ManifestClaim"/>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ConflictedClaim: a claim in one of its leaf classes</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#ManifestWithContradiction">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#ManifestDocument"/>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#makesClaim"/>
+          <owl:someValuesFrom rdf:resource="http://senso-framework.org/ontology/seo#ContradictedClaim"/>
+        </owl:Restriction>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">the manifest makes at least one contradicted claim</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#DriftedClaim">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#ContradictedClaim"/>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#introducedAs"/>
+          <owl:someValuesFrom rdf:resource="http://senso-framework.org/ontology/seo#SupportedClaim"/>
+        </owl:Restriction>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">contradicted at the snapshot but supported when the claim text was introduced</seo:explanationTemplate>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#BornWrongClaim">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#ContradictedClaim"/>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="http://senso-framework.org/ontology/seo#introducedAs"/>
+          <owl:someValuesFrom rdf:resource="http://senso-framework.org/ontology/seo#ContradictedClaim"/>
+        </owl:Restriction>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <seo:explanationTemplate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">contradicted both at the snapshot and when the claim text was introduced</seo:explanationTemplate>
+</owl:Class>
+
+<owl:AllDisjointClasses>
+  <owl:members rdf:parseType="Collection">
+    <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#SupportedClaim"/>
+    <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#ContradictedClaim"/>
+    <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#UnverifiableClaim"/>
+    <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#IndeterminateClaim"/>
+    <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#ConflictedClaim"/>
+  </owl:members>
+</owl:AllDisjointClasses>
+
+<owl:AllDisjointClasses>
+  <owl:members rdf:parseType="Collection">
+    <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#PathExistenceClaim"/>
+    <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#PathStatusClaim"/>
+    <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#ToolUsageClaim"/>
+    <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#DependencyClaim"/>
+    <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#CommandClaim"/>
+    <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#VersionClaim"/>
+    <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#ImportConstraintClaim"/>
+  </owl:members>
+</owl:AllDisjointClasses>
+
+
+</rdf:RDF>

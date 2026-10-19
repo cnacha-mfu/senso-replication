@@ -1,0 +1,23 @@
+{
+ "repo": "VCnoC/Claude-Code-Zen-mcp-Skill-Work",
+ "chunk": 4,
+ "n_chunks": 5,
+ "model": "google/diffusiongemma-26b-a4b-it",
+ "prompt_sha256": "d0e02ff613417050168d859f2af6230c3712c6758bb5d9c40d60ff55e5ae87ca",
+ "user_sha256": "b3de676829a1269a5f26cc143222f187788ba4c286518ccd68c20ee6a14378f6",
+ "text": "{\"claims\": [\n  {\"type\": \"path_exists\", \"subject\": \"PROJECTWIKI.md\", \"line\": 818, \"mode\": \"asserts_existing\"},\n  {\"type\": \"path_exists\", \"subject\": \"CHANGELOG.md\", \"line\": 820, \"mode\": \"asserts_existing\"},\n  {\"type\": \"path_exists\", \"subject\": \"references/standards/p4_final_validation.md\", \"line\": 835, \"mode\": \"asserts_existing\"},\n  {\"type\": \"path_exists\", \"subject\": \"docs/adr/\", \"line\": 935, \"mode\": \"asserts_existing\"},\n  {\"type\": \"path_exists\", \"subject\": \"20250101-select-database.md\", \"line\": 938, \"mode\": \"asserts_existing\"}\n]}",
+ "parse_ok": true,
+ "parse_error": null,
+ "parse_retries": 1,
+ "latency_s": 3.183607828046661,
+ "usage": {
+  "prompt": 11493,
+  "completion": 827
+ },
+ "n_api_calls": 2,
+ "finish_reason": "stop",
+ "error": null,
+ "discarded_attempt_texts": [
+  "claims\": [\n  {\"type\": \"path_exists\", \"quote\": \"更新后的 `PROJECTWIKI.md`（包含缺陷复盘）。\", \"line\": 0818, \"subject\": \"PROJECTWIKI.md\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"path_exists\", \"quote\": \"`CHANGELOG.md` 中记录的修复变更摘要。\", \"line\": 0820, \"subject\": \"CHANGELOG.md\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"path_exists\", \"quote\": \"见 `references/standards/p4_final_validation.md`\", \"line\": 0835, \"subject\": \"references/standards/p4_final_validation.md\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"tool_used\", \"quote\": \"codex 双轮验证（codereview 工作流 + clink CLI 深度分析）\", \"line\": 0829, \"subject\": \"clink CLI\", \"tool_category\": \"build_tool\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"path_exists\", \"quote\": \"架构决策记录（ADR，MADR 模板，`YYYYMMDD-title.md`）\", \"line\": 0867, \"subject\": \"YYYYMMDD-title.md\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"path_exists\", \"quote\": \"目录：`docs/adr/`\", \"line\": 0935, \"subject\": \"docs/adr/\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"path_exists\", \"quote\": \"（示例）`20250101-database.md`\", \"line\": 0938, \"subject\": \"20250101-database.md\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"version\", \"quote\": \"本文件格式遵循 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.1.0/)，并遵循 [语义化版本](https://semver.org/lang/zh-CN/) 规范。\", \"line\": 0982, \"subject\": \"project_self\", \"version\": \"1.1.0\", \"qualifier\": \"exact\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"version\", \"quote\": \"## [1.0.0] - 2025-01-01\", \"line\": 0986, \"subject\": \"project_self\", \"version\": \"1.0.0\", \"qualifier\": \"exact\", \"mode\": \"asserts_existing\"}\n]"
+ ]
+}

@@ -1,0 +1,1656 @@
+{
+ "summary": {
+  "n_tasks": 2,
+  "n_claims_checked": 38,
+  "n_claims_ok": 38,
+  "n_claims_failing": 0,
+  "ok_by_kind": {
+   "kind1": "4/4",
+   "kind2": "4/4",
+   "kind3": "2/2",
+   "kind4": "3/3",
+   "true": "25/25"
+  },
+  "instrument_1_2_agreement": {
+   "agree": 38,
+   "of": 38,
+   "rate": 1.0
+  },
+  "tasks_with_all_manifests_ok": 2,
+  "tasks_hermit_missing_or_inconsistent": [],
+  "flag_counts": {
+   "kind3_dropped": 1,
+   "kind4_R_used_I_competitor": 1
+  },
+  "tasks_with_four_false_claims_F_R": 1,
+  "tasks_with_four_false_claims_F_I": 1,
+  "tasks_with_fallback": [
+   "sigma67__ytmusicapi-560"
+  ],
+  "length_violations": [],
+  "chars_T": {
+   "min": 389,
+   "median": 402,
+   "max": 402,
+   "mean": 395.5
+  },
+  "pointer_in_issue": 0,
+  "dose_distribution_F_R": {
+   "3": 1,
+   "4": 1
+  },
+  "dose_distribution_F_I": {
+   "3": 1,
+   "4": 1
+  },
+  "false_claims_by_mode": {
+   "F_R:replace": 6,
+   "F_R:add": 1,
+   "F_I:replace": 6,
+   "F_I:add": 1
+  },
+  "false_claims_by_kind_mode": {
+   "kind1:replace": 4,
+   "kind2:add": 2,
+   "kind3:replace": 2,
+   "kind4:replace": 4,
+   "kind2:replace": 2
+  },
+  "length_diff_chars_F_minus_T": {
+   "F_R": {
+    "min": -9,
+    "median": -4,
+    "max": -4,
+    "mean": -6.5
+   },
+   "F_I": {
+    "min": -6,
+    "median": 17,
+    "max": 17,
+    "mean": 5.5
+   }
+  },
+  "length_diff_rel": {
+   "F_R": {
+    "min": -2,
+    "median": -1,
+    "max": -1,
+    "mean": -1.5
+   },
+   "F_I": {
+    "min": -2,
+    "median": 4,
+    "max": 4,
+    "mean": 1.0
+   }
+  },
+  "tasks_with_no_false_claim": [],
+  "token_audit": {
+   "n_tokens": 14,
+   "n_failing": 0,
+   "failing": []
+  },
+  "failures": []
+ },
+ "tasks": {
+  "imankulov__linguee-api-51": {
+   "claims": {
+    "T1|linguee_api": {
+     "claim": {
+      "key_str": "T1|linguee_api",
+      "tcode": "T1",
+      "attrs": {
+       "path": "linguee_api",
+       "is_dir": true,
+       "glob": false,
+       "bracket": false
+      },
+      "quote": "linguee_api/",
+      "role": "true",
+      "slot": "layout",
+      "kind": null,
+      "expect_verdict": "SupportedClaim",
+      "expect_leaves": [],
+      "probe": {
+       "type": "exists",
+       "path": "linguee_api"
+      },
+      "mode": null
+     },
+     "instrument1_hermit": {
+      "verdict": "SupportedClaim",
+      "leaf": "PathFoundExact",
+      "ok": true
+     },
+     "instrument2_recheck": {
+      "verdict": "SupportedClaim",
+      "leaf": "PathFoundExact",
+      "ok": true
+     },
+     "probe": {
+      "ok": true,
+      "type": "exists"
+     },
+     "agree_1_2": true,
+     "ok": true
+    },
+    "T1|linguee_api/downloaders": {
+     "claim": {
+      "key_str": "T1|linguee_api/downloaders",
+      "tcode": "T1",
+      "attrs": {
+       "path": "linguee_api/downloaders",
+       "is_dir": true,
+       "glob": false,
+       "bracket": false
+      },
+      "quote": "linguee_api/downloaders/",
+      "role": "true",
+      "slot": "layout",
+      "kind": null,
+      "expect_verdict": "SupportedClaim",
+      "expect_leaves": [],
+      "probe": {
+       "type": "exists",
+       "path": "linguee_api/downloaders"
+      },
+      "mode": null
+     },
+     "instrument1_hermit": {
+      "verdict": "SupportedClaim",
+      "leaf": "PathFoundExact",
+      "ok": true
+     },
+     "instrument2_recheck": {
+      "verdict": "SupportedClaim",
+      "leaf": "PathFoundExact",
+      "ok": true
+     },
+     "probe": {
+      "ok": true,
+      "type": "exists"
+     },
+     "agree_1_2": true,
+     "ok": true
+    },
+    "T1|tests": {
+     "claim": {
+      "key_str": "T1|tests",
+      "tcode": "T1",
+      "attrs": {
+       "path": "tests",
+       "is_dir": true,
+       "glob": false,
+       "bracket": false
+      },
+      "quote": "tests/",
+      "role": "true",
+      "slot": "layout",
+      "kind": null,
+      "expect_verdict": "SupportedClaim",
+      "expect_leaves": [],
+      "probe": {
+       "type": "exists",
+       "path": "tests"
+      },
+      "mode": null
+     },
+     "instrument1_hermit": {
+      "verdict": "SupportedClaim",
+      "leaf": "PathFoundExact",
+      "ok": true
+     },
+     "instrument2_recheck": {
+      "verdict": "SupportedClaim",
+      "leaf": "PathFoundExact",
+      "ok": true
+     },
+     "probe": {
+      "ok": true,
+      "type": "exists"
+     },
+     "agree_1_2": true,
+     "ok": true
+    },
+    "T1|linguee_api/parsers.py": {
+     "claim": {
+      "key_str": "T1|linguee_api/parsers.py",
+      "tcode": "T1",
+      "attrs": {
+       "path": "linguee_api/parsers.py",
+       "is_dir": false,
+       "glob": false,
+       "bracket": false
+      },
+      "quote": "linguee_api/parsers.py",
+      "role": "true",
+      "slot": "key_file",
+      "kind": null,
+      "expect_verdict": "SupportedClaim",
+      "expect_leaves": [],
+      "probe": {
+       "type": "exists",
+       "path": "linguee_api/parsers.py"
+      },
+      "mode": null
+     },
+     "instrument1_hermit": {
+      "verdict": "SupportedClaim",
+      "leaf": "PathFoundExact",
+      "ok": true
+     },
+     "instrument2_recheck": {
+      "verdict": "SupportedClaim",
+      "leaf": "PathFoundExact",
+      "ok": true
+     },
+     "probe": {
+      "ok": true,
+      "type": "exists"
+     },
+     "agree_1_2": true,
+     "ok": true
+    },
+    "T1|linguee_api/downloaders/sqlite_cache.py": {
+     "claim": {
+      "key_str": "T1|linguee_api/downloaders/sqlite_cache.py",
+      "tcode": "T1",
+      "attrs": {
+       "path": "linguee_api/downloaders/sqlite_cache.py",
+       "is_dir": false,
+       "glob": false,
+       "bracket": false
+      },
+      "quote": "linguee_api/downloaders/sqlite_cache.py",
+      "role": "true",
+      "slot": "key_file",
+      "kind": null,
+      "expect_verdict": "SupportedClaim",
+      "expect_leaves": [],
+      "probe": {
+       "type": "exists",
+       "path": "linguee_api/downloaders/sqlite_cache.py"
+      },
+      "mode": null
+     },
+     "instrument1_hermit": {
+      "verdict": "SupportedClaim",
+      "leaf": "PathFoundExact",
+      "ok": true
+     },
+     "instrument2_recheck": {
+      "verdict": "SupportedClaim",
+      "leaf": "PathFoundExact",
+      "ok": true
+     },
+     "probe": {
+      "ok": true,
+      "type": "exists"
+     },
+     "agree_1_2": true,
+     "ok": true
+    },
+    "T3|test_framework|pytest": {
+     "claim": {
+      "key_str": "T3|test_framework|pytest",
+      "tcode": "T3",
+      "attrs": {
+       "tool": "pytest",
+       "category": "test_framework"
+      },
+      "quote": "python -m pytest tests",
+      "role": "true",
+      "slot": "test_cmd",
+      "kind": null,
+      "expect_verdict": "SupportedClaim",
+      "expect_leaves": [],
+      "probe": {
+       "type": "pytest",
+       "root": "tests"
+      },
+      "mode": null
+     },
+     "instrument1_hermit": {
+      "verdict": "SupportedClaim",
+      "leaf": "ToolSignatureFound",
+      "ok": true
+     },
+     "instrument2_recheck": {
+      "verdict": "SupportedClaim",
+      "leaf": "ToolSignatureFound",
+      "ok": true
+     },
+     "probe": {
+      "ok": true,
+      "type": "pytest"
+     },
+     "agree_1_2": true,
+     "ok": true
+    },
+    "T1|pyproject.toml": {
+     "claim": {
+      "key_str": "T1|pyproject.toml",
+      "tcode": "T1",
+      "attrs": {
+       "path": "pyproject.toml",
+       "is_dir": false,
+       "glob": false,
+       "bracket": false
+      },
+      "quote": "pyproject.toml",
+      "role": "true",
+      "slot": "install_cmd",
+      "kind": null,
+      "expect_verdict": "SupportedClaim",
+      "expect_leaves": [],
+      "probe": {
+       "type": "exists",
+       "path": "pyproject.toml"
+      },
+      "mode": null
+     },
+     "instrument1_hermit": {
+      "verdict": "SupportedClaim",
+      "leaf": "PathFoundExact",
+      "ok": true
+     },
+     "instrument2_recheck": {
+      "verdict": "SupportedClaim",
+      "leaf": "PathFoundExact",
+      "ok": true
+     },
+     "probe": {
+      "ok": true,
+      "type": "exists"
+     },
+     "agree_1_2": true,
+     "ok": true
+    },
+    "T4|pydantic|": {
+     "claim": {
+      "key_str": "T4|pydantic|",
+      "tcode": "T4",
+      "attrs": {
+       "name": "pydantic",
+       "major": null,
+       "ecosystem_hint": "pypi"
+      },
+      "quote": "`pydantic^1.10.8`",
+      "role": "true",
+      "slot": "dep",
+      "kind": null,
+      "expect_verdict": "SupportedClaim",
+      "expect_leaves": [],
+      "probe": {
+       "type": "import_ok",
+       "modules": [
+        "pydantic"
+       ]
+      },
+      "mode": null
+     },
+     "instrument1_hermit": {
+      "verdict": "SupportedClaim",
+      "leaf": "DependencyConfirmed",
+      "ok": true
+     },
+     "instrument2_recheck": {
+      "verdict": "SupportedClaim",
+      "leaf": "DependencyConfirmed",
+      "ok": true
+     },
+     "probe": {
+      "ok": true,
+      "type": "import_ok"
+     },
+     "agree_1_2": true,
+     "ok": true
+    },
+    "T4|xextract|": {
+     "claim": {
+      "key_str": "T4|xextract|",
+      "tcode": "T4",
+      "attrs": {
+       "name": "xextract",
+       "major": null,
+       "ecosystem_hint": "pypi"
+      },
+      "quote": "`xextract^0.1.8`",
+      "role": "true",
+      "slot": "dep",
+      "kind": null,
+      "expect_verdict": "SupportedClaim",
+      "expect_leaves": [],
+      "probe": {
+       "type": "import_ok",
+       "modules": [
+        "xextract"
+       ]
+      },
+      "mode": null
+     },
+     "instrument1_hermit": {
+      "verdict": "SupportedClaim",
+      "leaf": "DependencyConfirmed",
+      "ok": true
+     },
+     "instrument2_recheck": {
+      "verdict": "SupportedClaim",
+      "leaf": "DependencyConfirmed",
+      "ok": true
+     },
+     "probe": {
+      "ok": true,
+      "type": "import_ok"
+     },
+     "agree_1_2": true,
+     "ok": true
+    },
+    "T4|aiosqlite|": {
+     "claim": {
+      "key_str": "T4|aiosqlite|",
+      "tcode": "T4",
+      "attrs": {
+       "name": "aiosqlite",
+       "major": null,
+       "ecosystem_hint": "pypi"
+      },
+      "quote": "`aiosqlite^0.19.0`",
+      "role": "true",
+      "slot": "dep",
+      "kind": null,
+      "expect_verdict": "SupportedClaim",
+      "expect_leaves": [],
+      "probe": {
+       "type": "import_ok",
+       "modules": [
+        "aiosqlite"
+       ]
+      },
+      "mode": null
+     },
+     "instrument1_hermit": {
+      "verdict": "SupportedClaim",
+      "leaf": "DependencyConfirmed",
+      "ok": true
+     },
+     "instrument2_recheck": {
+      "verdict": "SupportedClaim",
+      "leaf": "DependencyConfirmed",
+      "ok": true
+     },
+     "probe": {
+      "ok": true,
+      "type": "import_ok"
+     },
+     "agree_1_2": true,
+     "ok": true
+    },
+    "T4|async-lru|": {
+     "claim": {
+      "key_str": "T4|async-lru|",
+      "tcode": "T4",
+      "attrs": {
+       "name": "async-lru",
+       "major": null,
+       "ecosystem_hint": "pypi"
+      },
+      "quote": "`async-lru^2.0.2`",
+      "role": "true",
+      "slot": "dep",
+      "kind": null,
+      "expect_verdict": "SupportedClaim",
+      "expect_leaves": [],
+      "probe": {
+       "type": "import_ok",
+       "modules": [
+        "async_lru"
+       ]
+      },
+      "mode": null
+     },
+     "instrument1_hermit": {
+      "verdict": "SupportedClaim",
+      "leaf": "DependencyConfirmed",
+      "ok": true
+     },
+     "instrument2_recheck": {
+      "verdict": "SupportedClaim",
+      "leaf": "DependencyConfirmed",
+      "ok": true
+     },
+     "probe": {
+      "ok": true,
+      "type": "import_ok"
+     },
+     "agree_1_2": true,
+     "ok": true
+    },
+    "T4|fastapi|": {
+     "claim": {
+      "key_str": "T4|fastapi|",
+      "tcode": "T4",
+      "attrs": {
+       "name": "fastapi",
+       "major": null,
+       "ecosystem_hint": "pypi"
+      },
+      "quote": "`fastapi^0.109.2`",
+      "role": "true",
+      "slot": "dep",
+      "kind": null,
+      "expect_verdict": "SupportedClaim",
+      "expect_leaves": [],
+      "probe": {
+       "type": "import_ok",
+       "modules": [
+        "fastapi"
+       ]
+      },
+      "mode": null
+     },
+     "instrument1_hermit": {
+      "verdict": "SupportedClaim",
+      "leaf": "DependencyConfirmed",
+      "ok": true
+     },
+     "instrument2_recheck": {
+      "verdict": "SupportedClaim",
+      "leaf": "DependencyConfirmed",
+      "ok": true
+     },
+     "probe": {
+      "ok": true,
+      "type": "import_ok"
+     },
+     "agree_1_2": true,
+     "ok": true
+    },
+    "T6|python|3008000000@2": {
+     "claim": {
+      "key_str": "T6|python|3008000000@2",
+      "tcode": "T6",
+      "attrs": {
+       "subject_type": "python",
+       "version": "3.8",
+       "code": 3008000000,
+       "precision": 2,
+       "qualifier": "min"
+      },
+      "quote": "Python: >=3.8",
+      "role": "true",
+      "slot": "python",
+      "kind": null,
+      "expect_verdict": "SupportedClaim",
+      "expect_leaves": [],
+      "probe": null,
+      "mode": null
+     },
+     "instrument1_hermit": {
+      "verdict": "SupportedClaim",
+      "leaf": "VersionConfirmed",
+      "ok": true
+     },
+     "instrument2_recheck": {
+      "verdict": "SupportedClaim",
+      "leaf": "VersionConfirmed",
+      "ok": true
+     },
+     "probe": {
+      "ok": true,
+      "type": "none"
+     },
+     "agree_1_2": true,
+     "ok": true
+    },
+    "T1|linguee_api/core": {
+     "claim": {
+      "key_str": "T1|linguee_api/core",
+      "tcode": "T1",
+      "attrs": {
+       "path": "linguee_api/core",
+       "is_dir": true,
+       "glob": false,
+       "bracket": false
+      },
+      "quote": "linguee_api/core/",
+      "role": "false",
+      "slot": "P1",
+      "kind": 1,
+      "expect_verdict": "ContradictedClaim",
+      "expect_leaves": [
+       "PathNeverExisted"
+      ],
+      "probe": {
+       "type": "absent",
+       "path": "linguee_api/core",
+       "history": "none"
+      },
+      "mode": "replace"
+     },
+     "instrument1_hermit": {
+      "verdict": "ContradictedClaim",
+      "leaf": "PathNeverExisted",
+      "ok": true
+     },
+     "instrument2_recheck": {
+      "verdict": "ContradictedClaim",
+      "leaf": "PathNeverExisted",
+      "ok": true
+     },
+     "probe": {
+      "ok": true,
+      "type": "absent",
+      "log_count": 0
+     },
+     "agree_1_2": true,
+     "ok": true
+    },
+    "T1|linguee_api/schema.py": {
+     "claim": {
+      "key_str": "T1|linguee_api/schema.py",
+      "tcode": "T1",
+      "attrs": {
+       "path": "linguee_api/schema.py",
+       "is_dir": false,
+       "glob": false,
+       "bracket": false
+      },
+      "quote": "linguee_api/schema.py",
+      "role": "false",
+      "slot": "P2",
+      "kind": 2,
+      "expect_verdict": "ContradictedClaim",
+      "expect_leaves": [
+       "PathRemoved"
+      ],
+      "probe": {
+       "type": "absent",
+       "path": "linguee_api/schema.py",
+       "history": "some"
+      },
+      "mode": "add"
+     },
+     "instrument1_hermit": {
+      "verdict": "ContradictedClaim",
+      "leaf": "PathRemoved",
+      "ok": true
+     },
+     "instrument2_recheck": {
+      "verdict": "ContradictedClaim",
+      "leaf": "PathRemoved",
+      "ok": true
+     },
+     "probe": {
+      "ok": true,
+      "type": "absent",
+      "log_count": 4
+     },
+     "agree_1_2": true,
+     "ok": true
+    },
+    "T5|make|test": {
+     "claim": {
+      "key_str": "T5|make|test",
+      "tcode": "T5",
+      "attrs": {
+       "runner": "make",
+       "kind": "make",
+       "target": "test"
+      },
+      "quote": "make test",
+      "role": "false",
+      "slot": "C_R",
+      "kind": 3,
+      "expect_verdict": "ContradictedClaim",
+      "expect_leaves": [
+       "ScriptUndefined",
+       "ScriptHostMissing"
+      ],
+      "probe": {
+       "type": "make_fail",
+       "target": "test"
+      },
+      "mode": "replace"
+     },
+     "instrument1_hermit": {
+      "verdict": "ContradictedClaim",
+      "leaf": "ScriptHostMissing",
+      "ok": true
+     },
+     "instrument2_recheck": {
+      "verdict": "ContradictedClaim",
+      "leaf": "ScriptHostMissing",
+      "ok": true
+     },
+     "probe": {
+      "ok": true,
+      "type": "make_fail",
+      "result": {
+       "rc": 2,
+       "tail": "make: *** No rule to make target 'test'.  Stop.\n"
+      }
+     },
+     "agree_1_2": true,
+     "ok": true
+    },
+    "T4|toolz|": {
+     "claim": {
+      "key_str": "T4|toolz|",
+      "tcode": "T4",
+      "attrs": {
+       "name": "toolz",
+       "major": null,
+       "ecosystem_hint": "pypi"
+      },
+      "quote": "`toolz`",
+      "role": "false",
+      "slot": "D",
+      "kind": 4,
+      "expect_verdict": "ContradictedClaim",
+      "expect_leaves": [
+       "DependencyUndeclared"
+      ],
+      "probe": {
+       "type": "import_fail",
+       "modules": [
+        "toolz"
+       ]
+      },
+      "mode": "replace"
+     },
+     "instrument1_hermit": {
+      "verdict": "ContradictedClaim",
+      "leaf": "DependencyUndeclared",
+      "ok": true
+     },
+     "instrument2_recheck": {
+      "verdict": "ContradictedClaim",
+      "leaf": "DependencyUndeclared",
+      "ok": true
+     },
+     "probe": {
+      "ok": true,
+      "type": "import_fail"
+     },
+     "agree_1_2": true,
+     "ok": true
+    },
+    "T1|linguee_api/downloaders/core": {
+     "claim": {
+      "key_str": "T1|linguee_api/downloaders/core",
+      "tcode": "T1",
+      "attrs": {
+       "path": "linguee_api/downloaders/core",
+       "is_dir": true,
+       "glob": false,
+       "bracket": false
+      },
+      "quote": "linguee_api/downloaders/core/",
+      "role": "false",
+      "slot": "P1",
+      "kind": 1,
+      "expect_verdict": "ContradictedClaim",
+      "expect_leaves": [
+       "PathNeverExisted"
+      ],
+      "probe": {
+       "type": "absent",
+       "path": "linguee_api/downloaders/core",
+       "history": "none"
+      },
+      "mode": "replace"
+     },
+     "instrument1_hermit": {
+      "verdict": "ContradictedClaim",
+      "leaf": "PathNeverExisted",
+      "ok": true
+     },
+     "instrument2_recheck": {
+      "verdict": "ContradictedClaim",
+      "leaf": "PathNeverExisted",
+      "ok": true
+     },
+     "probe": {
+      "ok": true,
+      "type": "absent",
+      "log_count": 0
+     },
+     "agree_1_2": true,
+     "ok": true
+    },
+    "T1|scripts/examples.py": {
+     "claim": {
+      "key_str": "T1|scripts/examples.py",
+      "tcode": "T1",
+      "attrs": {
+       "path": "scripts/examples.py",
+       "is_dir": false,
+       "glob": false,
+       "bracket": false
+      },
+      "quote": "scripts/examples.py",
+      "role": "false",
+      "slot": "P2",
+      "kind": 2,
+      "expect_verdict": "ContradictedClaim",
+      "expect_leaves": [
+       "PathRemoved"
+      ],
+      "probe": {
+       "type": "absent",
+       "path": "scripts/examples.py",
+       "history": "some"
+      },
+      "mode": "add"
+     },
+     "instrument1_hermit": {
+      "verdict": "ContradictedClaim",
+      "leaf": "PathRemoved",
+      "ok": true
+     },
+     "instrument2_recheck": {
+      "verdict": "ContradictedClaim",
+      "leaf": "PathRemoved",
+      "ok": true
+     },
+     "probe": {
+      "ok": true,
+      "type": "absent",
+      "log_count": 6
+     },
+     "agree_1_2": true,
+     "ok": true
+    },
+    "T5|make|install": {
+     "claim": {
+      "key_str": "T5|make|install",
+      "tcode": "T5",
+      "attrs": {
+       "runner": "make",
+       "kind": "make",
+       "target": "install"
+      },
+      "quote": "make install",
+      "role": "false",
+      "slot": "C_I",
+      "kind": 3,
+      "expect_verdict": "ContradictedClaim",
+      "expect_leaves": [
+       "ScriptUndefined",
+       "ScriptHostMissing"
+      ],
+      "probe": {
+       "type": "make_fail",
+       "target": "install"
+      },
+      "mode": "replace"
+     },
+     "instrument1_hermit": {
+      "verdict": "ContradictedClaim",
+      "leaf": "ScriptHostMissing",
+      "ok": true
+     },
+     "instrument2_recheck": {
+      "verdict": "ContradictedClaim",
+      "leaf": "ScriptHostMissing",
+      "ok": true
+     },
+     "probe": {
+      "ok": true,
+      "type": "make_fail",
+      "result": {
+       "rc": 2,
+       "tail": "make: *** No rule to make target 'install'.  Stop.\n"
+      }
+     },
+     "agree_1_2": true,
+     "ok": true
+    },
+    "T4|boltons|": {
+     "claim": {
+      "key_str": "T4|boltons|",
+      "tcode": "T4",
+      "attrs": {
+       "name": "boltons",
+       "major": null,
+       "ecosystem_hint": "pypi"
+      },
+      "quote": "`boltons`",
+      "role": "false",
+      "slot": "D",
+      "kind": 4,
+      "expect_verdict": "ContradictedClaim",
+      "expect_leaves": [
+       "DependencyUndeclared"
+      ],
+      "probe": {
+       "type": "import_fail",
+       "modules": [
+        "boltons"
+       ]
+      },
+      "mode": "replace"
+     },
+     "instrument1_hermit": {
+      "verdict": "ContradictedClaim",
+      "leaf": "DependencyUndeclared",
+      "ok": true
+     },
+     "instrument2_recheck": {
+      "verdict": "ContradictedClaim",
+      "leaf": "DependencyUndeclared",
+      "ok": true
+     },
+     "probe": {
+      "ok": true,
+      "type": "import_fail"
+     },
+     "agree_1_2": true,
+     "ok": true
+    }
+   },
+   "manifest_all_ok": {
+    "T": true,
+    "F_R": true,
+    "F_I": true
+   },
+   "hermit_consistent": true,
+   "flags": []
+  },
+  "sigma67__ytmusicapi-560": {
+   "claims": {
+    "T1|tests": {
+     "claim": {
+      "key_str": "T1|tests",
+      "tcode": "T1",
+      "attrs": {
+       "path": "tests",
+       "is_dir": true,
+       "glob": false,
+       "bracket": false
+      },
+      "quote": "tests/",
+      "role": "true",
+      "slot": "layout",
+      "kind": null,
+      "expect_verdict": "SupportedClaim",
+      "expect_leaves": [],
+      "probe": {
+       "type": "exists",
+       "path": "tests"
+      },
+      "mode": null
+     },
+     "instrument1_hermit": {
+      "verdict": "SupportedClaim",
+      "leaf": "PathFoundExact",
+      "ok": true
+     },
+     "instrument2_recheck": {
+      "verdict": "SupportedClaim",
+      "leaf": "PathFoundExact",
+      "ok": true
+     },
+     "probe": {
+      "ok": true,
+      "type": "exists"
+     },
+     "agree_1_2": true,
+     "ok": true
+    },
+    "T1|ytmusicapi": {
+     "claim": {
+      "key_str": "T1|ytmusicapi",
+      "tcode": "T1",
+      "attrs": {
+       "path": "ytmusicapi",
+       "is_dir": true,
+       "glob": false,
+       "bracket": false
+      },
+      "quote": "ytmusicapi/",
+      "role": "true",
+      "slot": "layout",
+      "kind": null,
+      "expect_verdict": "SupportedClaim",
+      "expect_leaves": [],
+      "probe": {
+       "type": "exists",
+       "path": "ytmusicapi"
+      },
+      "mode": null
+     },
+     "instrument1_hermit": {
+      "verdict": "SupportedClaim",
+      "leaf": "PathFoundExact",
+      "ok": true
+     },
+     "instrument2_recheck": {
+      "verdict": "SupportedClaim",
+      "leaf": "PathFoundExact",
+      "ok": true
+     },
+     "probe": {
+      "ok": true,
+      "type": "exists"
+     },
+     "agree_1_2": true,
+     "ok": true
+    },
+    "T1|ytmusicapi/auth": {
+     "claim": {
+      "key_str": "T1|ytmusicapi/auth",
+      "tcode": "T1",
+      "attrs": {
+       "path": "ytmusicapi/auth",
+       "is_dir": true,
+       "glob": false,
+       "bracket": false
+      },
+      "quote": "ytmusicapi/auth/",
+      "role": "true",
+      "slot": "layout",
+      "kind": null,
+      "expect_verdict": "SupportedClaim",
+      "expect_leaves": [],
+      "probe": {
+       "type": "exists",
+       "path": "ytmusicapi/auth"
+      },
+      "mode": null
+     },
+     "instrument1_hermit": {
+      "verdict": "SupportedClaim",
+      "leaf": "PathFoundExact",
+      "ok": true
+     },
+     "instrument2_recheck": {
+      "verdict": "SupportedClaim",
+      "leaf": "PathFoundExact",
+      "ok": true
+     },
+     "probe": {
+      "ok": true,
+      "type": "exists"
+     },
+     "agree_1_2": true,
+     "ok": true
+    },
+    "T1|ytmusicapi/mixins": {
+     "claim": {
+      "key_str": "T1|ytmusicapi/mixins",
+      "tcode": "T1",
+      "attrs": {
+       "path": "ytmusicapi/mixins",
+       "is_dir": true,
+       "glob": false,
+       "bracket": false
+      },
+      "quote": "ytmusicapi/mixins/",
+      "role": "true",
+      "slot": "layout",
+      "kind": null,
+      "expect_verdict": "SupportedClaim",
+      "expect_leaves": [],
+      "probe": {
+       "type": "exists",
+       "path": "ytmusicapi/mixins"
+      },
+      "mode": null
+     },
+     "instrument1_hermit": {
+      "verdict": "SupportedClaim",
+      "leaf": "PathFoundExact",
+      "ok": true
+     },
+     "instrument2_recheck": {
+      "verdict": "SupportedClaim",
+      "leaf": "PathFoundExact",
+      "ok": true
+     },
+     "probe": {
+      "ok": true,
+      "type": "exists"
+     },
+     "agree_1_2": true,
+     "ok": true
+    },
+    "T1|ytmusicapi/parsers": {
+     "claim": {
+      "key_str": "T1|ytmusicapi/parsers",
+      "tcode": "T1",
+      "attrs": {
+       "path": "ytmusicapi/parsers",
+       "is_dir": true,
+       "glob": false,
+       "bracket": false
+      },
+      "quote": "ytmusicapi/parsers/",
+      "role": "true",
+      "slot": "layout",
+      "kind": null,
+      "expect_verdict": "SupportedClaim",
+      "expect_leaves": [],
+      "probe": {
+       "type": "exists",
+       "path": "ytmusicapi/parsers"
+      },
+      "mode": null
+     },
+     "instrument1_hermit": {
+      "verdict": "SupportedClaim",
+      "leaf": "PathFoundExact",
+      "ok": true
+     },
+     "instrument2_recheck": {
+      "verdict": "SupportedClaim",
+      "leaf": "PathFoundExact",
+      "ok": true
+     },
+     "probe": {
+      "ok": true,
+      "type": "exists"
+     },
+     "agree_1_2": true,
+     "ok": true
+    },
+    "T1|ytmusicapi/mixins/browsing.py": {
+     "claim": {
+      "key_str": "T1|ytmusicapi/mixins/browsing.py",
+      "tcode": "T1",
+      "attrs": {
+       "path": "ytmusicapi/mixins/browsing.py",
+       "is_dir": false,
+       "glob": false,
+       "bracket": false
+      },
+      "quote": "ytmusicapi/mixins/browsing.py",
+      "role": "true",
+      "slot": "key_file",
+      "kind": null,
+      "expect_verdict": "SupportedClaim",
+      "expect_leaves": [],
+      "probe": {
+       "type": "exists",
+       "path": "ytmusicapi/mixins/browsing.py"
+      },
+      "mode": null
+     },
+     "instrument1_hermit": {
+      "verdict": "SupportedClaim",
+      "leaf": "PathFoundExact",
+      "ok": true
+     },
+     "instrument2_recheck": {
+      "verdict": "SupportedClaim",
+      "leaf": "PathFoundExact",
+      "ok": true
+     },
+     "probe": {
+      "ok": true,
+      "type": "exists"
+     },
+     "agree_1_2": true,
+     "ok": true
+    },
+    "T1|ytmusicapi/parsers/search.py": {
+     "claim": {
+      "key_str": "T1|ytmusicapi/parsers/search.py",
+      "tcode": "T1",
+      "attrs": {
+       "path": "ytmusicapi/parsers/search.py",
+       "is_dir": false,
+       "glob": false,
+       "bracket": false
+      },
+      "quote": "ytmusicapi/parsers/search.py",
+      "role": "true",
+      "slot": "key_file",
+      "kind": null,
+      "expect_verdict": "SupportedClaim",
+      "expect_leaves": [],
+      "probe": {
+       "type": "exists",
+       "path": "ytmusicapi/parsers/search.py"
+      },
+      "mode": null
+     },
+     "instrument1_hermit": {
+      "verdict": "SupportedClaim",
+      "leaf": "PathFoundExact",
+      "ok": true
+     },
+     "instrument2_recheck": {
+      "verdict": "SupportedClaim",
+      "leaf": "PathFoundExact",
+      "ok": true
+     },
+     "probe": {
+      "ok": true,
+      "type": "exists"
+     },
+     "agree_1_2": true,
+     "ok": true
+    },
+    "T1|ytmusicapi/mixins/library.py": {
+     "claim": {
+      "key_str": "T1|ytmusicapi/mixins/library.py",
+      "tcode": "T1",
+      "attrs": {
+       "path": "ytmusicapi/mixins/library.py",
+       "is_dir": false,
+       "glob": false,
+       "bracket": false
+      },
+      "quote": "ytmusicapi/mixins/library.py",
+      "role": "true",
+      "slot": "key_file",
+      "kind": null,
+      "expect_verdict": "SupportedClaim",
+      "expect_leaves": [],
+      "probe": {
+       "type": "exists",
+       "path": "ytmusicapi/mixins/library.py"
+      },
+      "mode": null
+     },
+     "instrument1_hermit": {
+      "verdict": "SupportedClaim",
+      "leaf": "PathFoundExact",
+      "ok": true
+     },
+     "instrument2_recheck": {
+      "verdict": "SupportedClaim",
+      "leaf": "PathFoundExact",
+      "ok": true
+     },
+     "probe": {
+      "ok": true,
+      "type": "exists"
+     },
+     "agree_1_2": true,
+     "ok": true
+    },
+    "T3|test_framework|pytest": {
+     "claim": {
+      "key_str": "T3|test_framework|pytest",
+      "tcode": "T3",
+      "attrs": {
+       "tool": "pytest",
+       "category": "test_framework"
+      },
+      "quote": "python -m pytest tests",
+      "role": "true",
+      "slot": "test_cmd",
+      "kind": null,
+      "expect_verdict": "SupportedClaim",
+      "expect_leaves": [],
+      "probe": {
+       "type": "pytest",
+       "root": "tests"
+      },
+      "mode": null
+     },
+     "instrument1_hermit": {
+      "verdict": "SupportedClaim",
+      "leaf": "ToolSignatureFound",
+      "ok": true
+     },
+     "instrument2_recheck": {
+      "verdict": "SupportedClaim",
+      "leaf": "ToolSignatureFound",
+      "ok": true
+     },
+     "probe": {
+      "ok": true,
+      "type": "pytest"
+     },
+     "agree_1_2": true,
+     "ok": true
+    },
+    "T1|pyproject.toml": {
+     "claim": {
+      "key_str": "T1|pyproject.toml",
+      "tcode": "T1",
+      "attrs": {
+       "path": "pyproject.toml",
+       "is_dir": false,
+       "glob": false,
+       "bracket": false
+      },
+      "quote": "pyproject.toml",
+      "role": "true",
+      "slot": "install_cmd",
+      "kind": null,
+      "expect_verdict": "SupportedClaim",
+      "expect_leaves": [],
+      "probe": {
+       "type": "exists",
+       "path": "pyproject.toml"
+      },
+      "mode": null
+     },
+     "instrument1_hermit": {
+      "verdict": "SupportedClaim",
+      "leaf": "PathFoundExact",
+      "ok": true
+     },
+     "instrument2_recheck": {
+      "verdict": "SupportedClaim",
+      "leaf": "PathFoundExact",
+      "ok": true
+     },
+     "probe": {
+      "ok": true,
+      "type": "exists"
+     },
+     "agree_1_2": true,
+     "ok": true
+    },
+    "T4|requests|": {
+     "claim": {
+      "key_str": "T4|requests|",
+      "tcode": "T4",
+      "attrs": {
+       "name": "requests",
+       "major": null,
+       "ecosystem_hint": "pypi"
+      },
+      "quote": "`requests>= 2.22`",
+      "role": "true",
+      "slot": "dep",
+      "kind": null,
+      "expect_verdict": "SupportedClaim",
+      "expect_leaves": [],
+      "probe": {
+       "type": "import_ok",
+       "modules": [
+        "requests"
+       ]
+      },
+      "mode": null
+     },
+     "instrument1_hermit": {
+      "verdict": "SupportedClaim",
+      "leaf": "DependencyConfirmed",
+      "ok": true
+     },
+     "instrument2_recheck": {
+      "verdict": "SupportedClaim",
+      "leaf": "DependencyConfirmed",
+      "ok": true
+     },
+     "probe": {
+      "ok": true,
+      "type": "import_ok"
+     },
+     "agree_1_2": true,
+     "ok": true
+    },
+    "T6|python|3008000000@2": {
+     "claim": {
+      "key_str": "T6|python|3008000000@2",
+      "tcode": "T6",
+      "attrs": {
+       "subject_type": "python",
+       "version": "3.8",
+       "code": 3008000000,
+       "precision": 2,
+       "qualifier": "min"
+      },
+      "quote": "Python: >=3.8",
+      "role": "true",
+      "slot": "python",
+      "kind": null,
+      "expect_verdict": "SupportedClaim",
+      "expect_leaves": [],
+      "probe": null,
+      "mode": null
+     },
+     "instrument1_hermit": {
+      "verdict": "SupportedClaim",
+      "leaf": "VersionConfirmed",
+      "ok": true
+     },
+     "instrument2_recheck": {
+      "verdict": "SupportedClaim",
+      "leaf": "VersionConfirmed",
+      "ok": true
+     },
+     "probe": {
+      "ok": true,
+      "type": "none"
+     },
+     "agree_1_2": true,
+     "ok": true
+    },
+    "T1|ytmusicapi/core": {
+     "claim": {
+      "key_str": "T1|ytmusicapi/core",
+      "tcode": "T1",
+      "attrs": {
+       "path": "ytmusicapi/core",
+       "is_dir": true,
+       "glob": false,
+       "bracket": false
+      },
+      "quote": "ytmusicapi/core/",
+      "role": "false",
+      "slot": "P1",
+      "kind": 1,
+      "expect_verdict": "ContradictedClaim",
+      "expect_leaves": [
+       "PathNeverExisted"
+      ],
+      "probe": {
+       "type": "absent",
+       "path": "ytmusicapi/core",
+       "history": "none"
+      },
+      "mode": "replace"
+     },
+     "instrument1_hermit": {
+      "verdict": "ContradictedClaim",
+      "leaf": "PathNeverExisted",
+      "ok": true
+     },
+     "instrument2_recheck": {
+      "verdict": "ContradictedClaim",
+      "leaf": "PathNeverExisted",
+      "ok": true
+     },
+     "probe": {
+      "ok": true,
+      "type": "absent",
+      "log_count": 0
+     },
+     "agree_1_2": true,
+     "ok": true
+    },
+    "T1|ytmusicapi/auth/oauth/base.py": {
+     "claim": {
+      "key_str": "T1|ytmusicapi/auth/oauth/base.py",
+      "tcode": "T1",
+      "attrs": {
+       "path": "ytmusicapi/auth/oauth/base.py",
+       "is_dir": false,
+       "glob": false,
+       "bracket": false
+      },
+      "quote": "ytmusicapi/auth/oauth/base.py",
+      "role": "false",
+      "slot": "P2",
+      "kind": 2,
+      "expect_verdict": "ContradictedClaim",
+      "expect_leaves": [
+       "PathRemoved"
+      ],
+      "probe": {
+       "type": "absent",
+       "path": "ytmusicapi/auth/oauth/base.py",
+       "history": "some"
+      },
+      "mode": "replace"
+     },
+     "instrument1_hermit": {
+      "verdict": "ContradictedClaim",
+      "leaf": "PathRemoved",
+      "ok": true
+     },
+     "instrument2_recheck": {
+      "verdict": "ContradictedClaim",
+      "leaf": "PathRemoved",
+      "ok": true
+     },
+     "probe": {
+      "ok": true,
+      "type": "absent",
+      "log_count": 7
+     },
+     "agree_1_2": true,
+     "ok": true
+    },
+    "T4|httpx|": {
+     "claim": {
+      "key_str": "T4|httpx|",
+      "tcode": "T4",
+      "attrs": {
+       "name": "httpx",
+       "major": null,
+       "ecosystem_hint": "pypi"
+      },
+      "quote": "`httpx`",
+      "role": "false",
+      "slot": "D",
+      "kind": 4,
+      "expect_verdict": "ContradictedClaim",
+      "expect_leaves": [
+       "DependencyUndeclared"
+      ],
+      "probe": {
+       "type": "import_fail",
+       "modules": [
+        "httpx"
+       ]
+      },
+      "mode": "replace"
+     },
+     "instrument1_hermit": {
+      "verdict": "ContradictedClaim",
+      "leaf": "DependencyUndeclared",
+      "ok": true
+     },
+     "instrument2_recheck": {
+      "verdict": "ContradictedClaim",
+      "leaf": "DependencyUndeclared",
+      "ok": true
+     },
+     "probe": {
+      "ok": true,
+      "type": "import_fail"
+     },
+     "agree_1_2": true,
+     "ok": true
+    },
+    "T1|ytmusicapi/auth/core": {
+     "claim": {
+      "key_str": "T1|ytmusicapi/auth/core",
+      "tcode": "T1",
+      "attrs": {
+       "path": "ytmusicapi/auth/core",
+       "is_dir": true,
+       "glob": false,
+       "bracket": false
+      },
+      "quote": "ytmusicapi/auth/core/",
+      "role": "false",
+      "slot": "P1",
+      "kind": 1,
+      "expect_verdict": "ContradictedClaim",
+      "expect_leaves": [
+       "PathNeverExisted"
+      ],
+      "probe": {
+       "type": "absent",
+       "path": "ytmusicapi/auth/core",
+       "history": "none"
+      },
+      "mode": "replace"
+     },
+     "instrument1_hermit": {
+      "verdict": "ContradictedClaim",
+      "leaf": "PathNeverExisted",
+      "ok": true
+     },
+     "instrument2_recheck": {
+      "verdict": "ContradictedClaim",
+      "leaf": "PathNeverExisted",
+      "ok": true
+     },
+     "probe": {
+      "ok": true,
+      "type": "absent",
+      "log_count": 0
+     },
+     "agree_1_2": true,
+     "ok": true
+    },
+    "T1|ytmusicapi/auth/internal.py": {
+     "claim": {
+      "key_str": "T1|ytmusicapi/auth/internal.py",
+      "tcode": "T1",
+      "attrs": {
+       "path": "ytmusicapi/auth/internal.py",
+       "is_dir": false,
+       "glob": false,
+       "bracket": false
+      },
+      "quote": "ytmusicapi/auth/internal.py",
+      "role": "false",
+      "slot": "P2",
+      "kind": 2,
+      "expect_verdict": "ContradictedClaim",
+      "expect_leaves": [
+       "PathNeverExisted"
+      ],
+      "probe": {
+       "type": "absent",
+       "path": "ytmusicapi/auth/internal.py",
+       "history": "none"
+      },
+      "mode": "replace"
+     },
+     "instrument1_hermit": {
+      "verdict": "ContradictedClaim",
+      "leaf": "PathNeverExisted",
+      "ok": true
+     },
+     "instrument2_recheck": {
+      "verdict": "ContradictedClaim",
+      "leaf": "PathNeverExisted",
+      "ok": true
+     },
+     "probe": {
+      "ok": true,
+      "type": "absent",
+      "log_count": 0
+     },
+     "agree_1_2": true,
+     "ok": true
+    }
+   },
+   "manifest_all_ok": {
+    "T": true,
+    "F_R": true,
+    "F_I": true
+   },
+   "hermit_consistent": true,
+   "flags": [
+    "kind3_dropped",
+    "kind4_R_used_I_competitor"
+   ]
+  }
+ },
+ "design": "papers/paper1/wp6-harm-design.md section 2.3"
+}

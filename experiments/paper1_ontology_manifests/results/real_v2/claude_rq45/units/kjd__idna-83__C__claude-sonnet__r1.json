@@ -1,0 +1,111 @@
+{
+ "unit_id": "kjd__idna-83__C__claude-sonnet__r1",
+ "task_id": "kjd__idna-83",
+ "repo": "kjd/idna",
+ "stage": "phase_out",
+ "condition": "C",
+ "model": "claude-code/sonnet",
+ "run": 1,
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 3984,
+  "sha256": "025dfd0bc1de5fffff143648d90d8f006130c0c192cd4d2d04d42f7a89e0e7a2"
+ },
+ "started": "2026-10-18T06:19:46.413820+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 3,
+ "tool_calls": 2,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 8209,
+  "cache_read_input_tokens": 46490,
+  "output_tokens": 442,
+  "output_tokens_details": {
+   "thinking_tokens": 0
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 8209,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 442,
+   "cacheReadInputTokens": 46490,
+   "cacheCreationInputTokens": 8209,
+   "webSearchRequests": 0,
+   "costUSD": 0.041917,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.041917,
+ "result_text": "`idna.ulabel('xn--')` now raises `IDNAError('Malformed A-label, no Punycode eligible content found')` instead of an `IndexError`. I haven't run it or the test suite.\n\nThe fix is in `ulabel` in `idna/core.py`. After the `xn--` prefix is stripped, an empty remainder now raises that error before the trailing-hyphen check, which was indexing `[-1]` on an empty string.\n\n`IDNAError` is a `UnicodeError` subclass, so callers catching either one will see it.\n\nThe tool reported that `idna/core.py` changed on disk after my edit. I didn't re-read the file, so I can't say whether that change touches this fix.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792309800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0.14,
+    "resetsAt": 1792309800
+   },
+   "seven_day": {
+    "utilization": 0.13,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 26.0,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 3,
+   "hit_step_limit": 0,
+   "changed_lines": 2,
+   "gold_changed_lines": 2,
+   "Y1": 1,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": 0.0
+  },
+  "f2p_pass": 1,
+  "f2p_total": 1,
+  "p2p_pass": 9,
+  "p2p_total": 9,
+  "f2p_all_pass": true,
+  "p2p_all_pass": true,
+  "resolved": true,
+  "reason": "resolved",
+  "test_seconds": 0.6
+ },
+ "status": "done",
+ "finished": "2026-10-18T06:20:13.863867+00:00"
+}

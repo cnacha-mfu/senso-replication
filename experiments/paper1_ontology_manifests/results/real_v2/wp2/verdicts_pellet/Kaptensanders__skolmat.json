@@ -1,0 +1,18 @@
+{
+ "repo": "Kaptensanders/skolmat",
+ "slug": "Kaptensanders__skolmat",
+ "engine": "pellet",
+ "tbox_sha256": "8266af98a762ae7567a0deb684fdd394c180f7c6875ac55011cd3e6e6b080b43",
+ "abox_sha256": "2d06e0431ca9441108a9b39ead4f7d0aa59279ac9f98a305e06c42804440a03f",
+ "consistent": false,
+ "error": "java error: Java error message is:\nClassifying 152 elements\n\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\rException in thread \"main\" org.mindswap.pellet.exceptions.InternalReasonerException: Adding type to a pruned node \"anon(2)\" restrictedDatatype(http://www.w3.org/2001/XMLSchema#integer,[facet(http://www.w3.org/2001/XMLSchema#minInclusive,literal(1,(),http://www.w3.org/2001/XMLSchema#integer))])\n\tat org.mindswap.pellet.Node.addType(Node.java:448)\n\tat org.mindswap.pellet.Literal.addType(Literal.java:257)\n\tat org.mindswap.pellet.tableau.completion.CompletionStrategy.addType(CompletionStrategy.java:438)\n\tat org.mindswap.pellet.tableau.completion.rule.SomeValuesRule.applySomeValuesRule(SomeValuesRule.java:180)\n\tat org.mindswap.pellet.tableau.completion.rule.SomeValuesRule.apply(SomeValuesRule.java:64)\n\tat org.mindswap.pellet.tableau.completion.EmptySRIQStrategy.expand(EmptySRIQStrategy.java:303)\n\tat org.mindswap.pellet.tableau.completion.EmptySRIQStrategy.complete(EmptySRIQStrategy.java:162)\n\tat org.mindswap.pellet.ABox.isConsistent(ABox.java:1423)\n\tat org.mindswap.pellet.ABox.isSatisfiable(ABox.java:595)\n\tat org.mindswap.pellet.taxonomy.CDOptimizedTaxonomyBuilder.checkSatisfiability(CDOptimizedTaxonomyBuilder.java:763)\n\tat org.mindswap.pellet.taxonomy.CDOptimizedTaxonomyBuilder.classify(CDOptimizedTaxonomyBuilder.java:814)\n\tat org.mindswap.pellet.taxonomy.CDOptimizedTaxonomyBuilder.classify(CDOptimizedTaxonomyBuilder.java:265)\n\tat org.mindswap.pellet.taxonomy.CDOptimizedTaxonomyBuilder.classify(CDOptimizedTaxonomyBuilder.java:218)\n\tat org.mindswap.pellet.KnowledgeBase.classify(KnowledgeBase.java:2095)\n\tat pellet.PelletRealize.run(PelletRealize.java:77)\n\tat pellet.Pellet.run(Pellet.java:105)\n\tat pellet.Pellet.main(Pellet.java:59)\n",
+ "timings": {
+  "tbox_load_s": 0.0614815570297651,
+  "abox_load_s": 0.012255457986611873,
+  "reason_s": 6.057258754968643,
+  "total_s": 6.131484850018751
+ },
+ "n_claims": 35,
+ "seconds": 6.13,
+ "abox_triples": 443
+}

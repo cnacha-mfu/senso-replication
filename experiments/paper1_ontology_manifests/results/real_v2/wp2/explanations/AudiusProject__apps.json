@@ -1,0 +1,35 @@
+{
+ "repo": "AudiusProject/apps",
+ "slug": "AudiusProject__apps",
+ "input_sha": "b04f749a61b876e2dddf84faa93a574bbe7394da62c532de8f05a5c8f8f4cc1f",
+ "explanations": [
+  {
+   "key": "T5|script|android:dev",
+   "verdict": "SupportedClaim",
+   "leaf": "ScriptDefinedRoot",
+   "seconds": 3.37,
+   "retried_on_claim_subgraph": false,
+   "error": null,
+   "returncode": 0,
+   "n_justifications": 1,
+   "facts": [
+    {
+     "prop": "extractionVotes",
+     "value": 2
+    },
+    {
+     "prop": "scriptDefinedRootCount",
+     "value": 1
+    }
+   ],
+   "axioms": [
+    "A_extractionVotes_ge_wp2_consensus_min_votes equivalentTo extractionVotes some integer[>= 2]",
+    "ScriptDefinedRoot subClassOf SupportedClaim",
+    "CheckedClaim equivalentTo A_extractionVotes_ge_wp2_consensus_min_votes and ManifestClaim",
+    "ScriptDefinedRoot equivalentTo A_scriptDefinedRootCount_ge_1 and CheckedClaim and CommandClaim",
+    "A_scriptDefinedRootCount_ge_1 equivalentTo scriptDefinedRootCount some integer[>= 1]"
+   ],
+   "closures": []
+  }
+ ]
+}

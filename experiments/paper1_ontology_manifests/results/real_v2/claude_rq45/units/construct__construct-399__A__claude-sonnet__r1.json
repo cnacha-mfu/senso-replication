@@ -1,0 +1,107 @@
+{
+ "unit_id": "construct__construct-399__A__claude-sonnet__r1",
+ "task_id": "construct__construct-399",
+ "repo": "construct/construct",
+ "stage": "phase_out",
+ "condition": "A",
+ "model": "claude-code/sonnet",
+ "run": 1,
+ "condition_meta": {},
+ "started": "2026-10-18T05:20:54.259625+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 5,
+ "tool_calls": 4,
+ "usage": {
+  "input_tokens": 10,
+  "cache_creation_input_tokens": 8418,
+  "cache_read_input_tokens": 82066,
+  "output_tokens": 785,
+  "output_tokens_details": {
+   "thinking_tokens": 83
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 8418,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 10,
+   "outputTokens": 785,
+   "cacheReadInputTokens": 82066,
+   "cacheCreationInputTokens": 8418,
+   "webSearchRequests": 0,
+   "costUSD": 0.049748600000000004,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 83,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.049748600000000004,
+ "result_text": "`RepeatUntil` now lets a subcon's own error through, so your `TEN_TWOS` example should raise `ConstError: expected 2 but parsed 1` instead of \"missing terminator\". I didn't run the issue's snippet itself.\n\nIn `RepeatUntil._parse` in `construct/core.py`, the broad `except ConstructError` is now `except FieldError`. \"missing terminator when parsing\" (a `RangeError`) is now raised only when the stream runs out before the predicate is satisfied. The old `except ExplicitError: raise` clause is gone because other errors now propagate on their own.\n\n`tests/test_all.py` passes (133 passed, 4 xfailed). Running the whole `tests` directory stops at 2 collection errors, one of them in `tests/examples/test_protocols.py`. I didn't look into those.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792309800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0.1,
+    "resetsAt": 1792309800
+   },
+   "seven_day": {
+    "utilization": 0.12,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 58.1,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 5,
+   "hit_step_limit": 0,
+   "changed_lines": 4,
+   "gold_changed_lines": 17,
+   "Y1": 0,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": -2.0874628412503395
+  },
+  "f2p_pass": 0,
+  "f2p_total": 1,
+  "p2p_pass": 132,
+  "p2p_total": 132,
+  "f2p_all_pass": false,
+  "p2p_all_pass": true,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 2.9
+ },
+ "status": "done",
+ "finished": "2026-10-18T05:21:56.768239+00:00"
+}

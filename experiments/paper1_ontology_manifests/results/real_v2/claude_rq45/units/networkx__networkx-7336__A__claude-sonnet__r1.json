@@ -1,0 +1,107 @@
+{
+ "unit_id": "networkx__networkx-7336__A__claude-sonnet__r1",
+ "task_id": "networkx__networkx-7336",
+ "repo": "networkx/networkx",
+ "stage": "evolution",
+ "condition": "A",
+ "model": "claude-code/sonnet",
+ "run": 1,
+ "condition_meta": {},
+ "started": "2026-10-18T07:03:23.917925+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 5,
+ "tool_calls": 4,
+ "usage": {
+  "input_tokens": 10,
+  "cache_creation_input_tokens": 10267,
+  "cache_read_input_tokens": 85932,
+  "output_tokens": 2509,
+  "output_tokens_details": {
+   "thinking_tokens": 1488
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 10267,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 10,
+   "outputTokens": 2509,
+   "cacheReadInputTokens": 85932,
+   "cacheCreationInputTokens": 10267,
+   "webSearchRequests": 0,
+   "costUSD": 0.07477120000000001,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 1488,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.07477120000000001,
+ "result_text": "I changed `louvain_partitions` in `networkx/algorithms/community/louvain.py` so the `threshold` is honored at every level. The 14 tests in `test_louvain.py` pass. I didn't re-run the issue's random-seed experiment, so I haven't measured the 83/100 failure rate after the change.\n\n**Cause:** the old code yielded each level's partition before checking whether that level's modularity gain exceeded `threshold`. The last level, which had a gain below the threshold, was still returned. With `threshold=0.3`, `louvain_communities` therefore often returned the same refined partition as the default. Which of the two partitions scored higher then came down to random variation, not the threshold, and that is why `mod1 < mod2` failed on some seeds.\n\n**Change:** the gain check now runs before the yield, and a level whose gain is at or below the threshold is dropped. The first level is always yielded, so at least one partition comes back. The old code also yielded that first level unconditionally.\n\nI left the test alone, as you asked. The issue suggests relaxing it to `mod1 <= mod2`. With this fix the strict `<` should hold more reliably, but I haven't checked that across seeds.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792309800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0.18,
+    "resetsAt": 1792309800
+   },
+   "seven_day": {
+    "utilization": 0.13,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 63.5,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 5,
+   "hit_step_limit": 0,
+   "changed_lines": 9,
+   "gold_changed_lines": 127,
+   "Y1": 1,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": -3.8187596853298533
+  },
+  "f2p_pass": 0,
+  "f2p_total": 2,
+  "p2p_pass": 20,
+  "p2p_total": 20,
+  "f2p_all_pass": false,
+  "p2p_all_pass": true,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 4.5
+ },
+ "status": "done",
+ "finished": "2026-10-18T07:04:37.200587+00:00"
+}

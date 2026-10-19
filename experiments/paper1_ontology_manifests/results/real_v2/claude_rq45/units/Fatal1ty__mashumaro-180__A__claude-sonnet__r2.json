@@ -1,0 +1,107 @@
+{
+ "unit_id": "Fatal1ty__mashumaro-180__A__claude-sonnet__r2",
+ "task_id": "Fatal1ty__mashumaro-180",
+ "repo": "Fatal1ty/mashumaro",
+ "stage": "phase_out",
+ "condition": "A",
+ "model": "claude-code/sonnet",
+ "run": 2,
+ "condition_meta": {},
+ "started": "2026-10-18T02:44:31.895058+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 10,
+ "tool_calls": 9,
+ "usage": {
+  "input_tokens": 18,
+  "cache_creation_input_tokens": 13724,
+  "cache_read_input_tokens": 175752,
+  "output_tokens": 3105,
+  "output_tokens_details": {
+   "thinking_tokens": 561
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 13724,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 18,
+   "outputTokens": 3105,
+   "cacheReadInputTokens": 175752,
+   "cacheCreationInputTokens": 13724,
+   "webSearchRequests": 0,
+   "costUSD": 0.10355719999999999,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 561,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.10355719999999999,
+ "result_text": "Types defined inside a function now work: a dataclass declared in a function and used as a field in another no longer produces invalid generated code. I ran your example, extended with `Optional[Foo]` and `List[Foo]` fields. `from_dict` and `to_dict` both work.\n\nOne test still fails in the full run: `tests/test_pep_646.py::test_type_name_for_unpacks_py_less_than_311`. It fails the same way with my changes stashed, so it isn't caused by them. I ran the suite with `-x`, so it stopped at that failure; 26151 tests passed before it.\n\nI didn't add the `CodeBuilder` wrapper you suggested. `type_name` is also called recursively for nested type arguments, which a wrapper at the call sites would miss.\n\n- **`type_name`** (`mashumaro/core/meta/helpers.py`): when a type's qualified name contains `<locals>`, it returns a valid identifier, with `.`, `<` and `>` replaced by `_`. A new `local_type_name` helper builds that name.\n- **`add_type_modules`** (`mashumaro/core/meta/code/builder.py`): it registers such a type in the generated code's globals under the same name. It already walks nested type arguments such as `Optional[Foo]`.\n\nI made no commit and changed no tests.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792309800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0,
+    "resetsAt": 1792309800
+   },
+   "seven_day": {
+    "utilization": 0.12,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 379.3,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 2,
+   "Y6": 10,
+   "hit_step_limit": 0,
+   "changed_lines": 12,
+   "gold_changed_lines": 93,
+   "Y1": 4,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": -2.9541963103868754
+  },
+  "f2p_pass": 1,
+  "f2p_total": 1,
+  "p2p_pass": 7,
+  "p2p_total": 7,
+  "f2p_all_pass": true,
+  "p2p_all_pass": true,
+  "resolved": true,
+  "reason": "resolved",
+  "test_seconds": 1.1
+ },
+ "status": "done",
+ "finished": "2026-10-18T02:50:55.078747+00:00"
+}

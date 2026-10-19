@@ -1,0 +1,21 @@
+{
+ "repo": "derrickburns/generalized-kmeans-clustering",
+ "chunk": 0,
+ "n_chunks": 3,
+ "model": "openai/gpt-oss-20b",
+ "prompt_sha256": "d0e02ff613417050168d859f2af6230c3712c6758bb5d9c40d60ff55e5ae87ca",
+ "user_sha256": "52c0b9f28ff21efc5977d2602bbf4eb99e633f7cf26b068c09950a36011f36ce",
+ "text": "{\"claims\": [\n  {\n    \"type\": \"path_exists\",\n    \"quote\": \"Inspect `ROADMAP.md` at the start of significant work to understand current priorities and context.\",\n    \"line\": 38,\n    \"subject\": \"ROADMAP.md\",\n    \"mode\": \"asserts_existing\"\n  },\n  {\n    \"type\": \"path_exists\",\n    \"quote\": \"Move completed work (features, fixes, docs, perf) into `CHANGELOG.md` with dates and drop it from `ROADMAP.md` so the roadmap stays forward-looking.\",\n    \"line\": 44,\n    \"subject\": \"CHANGELOG.md\",\n    \"mode\": \"asserts_existing\"\n  },\n  {\n    \"type\": \"path_exists\",\n    \"quote\": \"Package structure:\",\n    \"line\": 61,\n    \"subject\": \"\",\n    \"path_components\": [\"clusterer.ml.*\", \"clusterer.ml.df.*\", \"clusterer.ml.df.kernels.*\", \"clusterer.ml.df.strategies.*\", \"clusterer.ml.df.strategies.impl.*\"],\n    \"mode\": \"asserts_existing\"\n  },\n  {\n    \"type\": \"version\",\n    \"quote\": \"Scala: 2.13.x primary (keep code Scala-3-friendly where feasible).\",\n    \"line\": 55,\n    \"subject\": \"scala\",\n    \"version\": \"2.13\",\n    \"qualifier\": \"min\",\n    \"mode\": \"asserts_existing\"\n  },\n  {\n    \"type\": \"version\",\n    \"quote\": \"Java: 17.\",\n    \"line\": 56,\n    \"subject\": \"java\",\n    \"version\": \"17\",\n    \"qualifier\": \"exact\",\n    \"mode\": \"asserts_existing\"\n  }\n]}",
+ "parse_ok": true,
+ "parse_error": null,
+ "parse_retries": 0,
+ "latency_s": 9.689437104971148,
+ "usage": {
+  "prompt": 3746,
+  "completion": 452
+ },
+ "n_api_calls": 1,
+ "finish_reason": "stop",
+ "error": null,
+ "discarded_attempt_texts": []
+}

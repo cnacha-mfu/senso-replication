@@ -1,0 +1,21 @@
+{
+ "repo": "iflow-ai/NioPD",
+ "chunk": 0,
+ "n_chunks": 2,
+ "model": "google/diffusiongemma-26b-a4b-it",
+ "prompt_sha256": "d0e02ff613417050168d859f2af6230c3712c6758bb5d9c40d60ff55e5ae87ca",
+ "user_sha256": "258c24fdaf08014817c48c559dcced273059529af19f7b767b0b302716b60326",
+ "text": "```json\n{\n  \"claims\": [\n    {\"type\": \"path_exists\", \"quote\": \"All data is stored in markdown files within the `niopd-workspace/` directory, and the AI's behavior is guided by a series of command prompts and agent definitions.\", \"subject\": \"niopd-workspace/\", \"mode\": \"asserts_existing\"},\n    {\"type\": \"path_exists\", \"quote\": \"Your primary role as an agent is to follow the instructions defined in the `commands/niopd/` and `agents/niopd/` directories to execute these transformations accurately.\", \"subject\": \"commands/niopd/\", \"mode\": \"asserts_existing\"},\n    {\"type\": \"path_exists\", \"quote\": \"Your primary role as an agent is to follow the instructions defined in the `commands/niopd/` and `agents/niopd/` directories to execute these transformations accurately.\", \"subject\": \"agents/niopd/\", \"mode\": \"asserts_existing\"},\n    {\"type\": \"path_exists\", \"quote\": \"All files in the `niopd-workspace/initiatives/` directory.\", \"subject\": \"niopd-workspace/initiatives/\", \"mode\": \"asserts_existing\"},\n    {\"type\": \"path_exists\", \"quote\": \"The entire NioPD system is operated through a series of `/niopd:` commands. Each command has a corresponding definition file in `.claude/commands/niopd/.\", \"subject\": \".claude/commands/niopd/\", \"mode\": \"asserts_existing\"},\n    {\"type\": \"path_exists\", \"quote\": \"When a user runs a command (e.g., `/niopd:draft-prd`), you must:\\n1.  Read the corresponding command file (e.g., `.claude/commands/niopd/draft-prd.md`).\", \"subject\": \".claude/commands/niopd/draft-prd.md\", \"mode\": \"example\"},\n    {\"type\": \"path_exists\", \"quote\": \"- **Adding a new command:** Create a new `.md` file in `.claude/commands/niopd/`.\", \"subject\": \".claude/commands/niopd/\", \"mode\": \"to_be_created\"},\n    {\"type\": \"path_exists\", \"quote\": \"- **Adding a new agent:** Create a new agent definition in `.claude/agents/niopd/`.\", \"subject\": \".claude/agents/niopd/\", \"mode\": \"to_be_created\"},\n    {\"type\": \"path_exists\", \"quote\": \"- **Adding a new template:** Add a new template file to `.claude/templates/`.\", \"subject\": \".claude/templates/\", \"mode\": \"to_be_created\"}\n  ]\n}\n```",
+ "parse_ok": true,
+ "parse_error": null,
+ "parse_retries": 0,
+ "latency_s": 2.2889331369660795,
+ "usage": {
+  "prompt": 3951,
+  "completion": 628
+ },
+ "n_api_calls": 1,
+ "finish_reason": "stop",
+ "error": null,
+ "discarded_attempt_texts": []
+}

@@ -1,0 +1,79 @@
+{
+ "unit_id": "prjemian__pyRestTable-32__F_I__nemotron-3-ultra-550b-a55b__r1",
+ "task_id": "prjemian__pyRestTable-32",
+ "repo": "prjemian/pyRestTable",
+ "stage": "servicing",
+ "condition": "F_I",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "run": 1,
+ "order": 188,
+ "env_build_s": 32.5,
+ "started": "2026-10-13T11:08:18.446442+00:00",
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 244,
+  "sha256": "49867663c6f57af8ef52a7287e23e48bd97453aefbf1ad599d6f28f90712302a"
+ },
+ "condition_available": true,
+ "venv_reset_s": 0.81,
+ "retries": 0,
+ "venv_hash_before": "1d2e698c08050430",
+ "venv_hash_after": "1d2e698c08050430",
+ "venv_mutated": false,
+ "exit_status": "LimitsExceeded",
+ "error": "",
+ "steps": 40,
+ "wall_s": 351.1,
+ "prompt_tokens": 454474,
+ "completion_tokens": 5568,
+ "format_errors": 0,
+ "length_cutoffs": 0,
+ "api_errors": {
+  "429": 75,
+  "503": 4
+ },
+ "n_queries": 56,
+ "keys_used": {
+  "NVIDIA_API_KEY": 31,
+  "NVIDIA_API_KEY_2": 27,
+  "NVIDIA_API_KEY_5": 28,
+  "NVIDIA_API_KEY_4": 33
+ },
+ "temperature": 0.7,
+ "top_p": 0.95,
+ "model_id_returned": "nvidia/nemotron-3-ultra-550b-a55b",
+ "mini_version": "2.4.6",
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 9,
+   "Y6": 40,
+   "hit_step_limit": 1,
+   "changed_lines": 856,
+   "gold_changed_lines": 20,
+   "Y1": 72,
+   "Y2": 3,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": 5.419538891513785
+  },
+  "f2p_pass": 1,
+  "f2p_total": 1,
+  "p2p_pass": 17,
+  "p2p_total": 17,
+  "f2p_all_pass": true,
+  "p2p_all_pass": true,
+  "resolved": true,
+  "reason": "resolved",
+  "test_seconds": 1.1
+ },
+ "status": "done",
+ "finished": "2026-10-13T11:14:12.463981+00:00"
+}

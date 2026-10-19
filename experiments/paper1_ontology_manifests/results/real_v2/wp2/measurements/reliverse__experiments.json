@@ -1,0 +1,235 @@
+{
+ "repo": "reliverse/experiments",
+ "slug": "reliverse__experiments",
+ "S": "33d3ba35b730abd10de39d85f94b72a05fdbf5f0",
+ "manifest_path": "AGENTS.md",
+ "input_sha": "98b83af4a264144411f62a68f672d386f89be2fad2c47e3391ac79c1e9dccd04",
+ "n_claims": 7,
+ "n_tree_files": 854,
+ "n_dep_manifests_parsed": 42,
+ "seconds": 0.1,
+ "claims": [
+  {
+   "key_str": "T1|apps",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "apps",
+   "quote": "- `apps/` - Application definitions split by service (cli, scripts, etc)",
+   "line": 10,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "apps",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 395,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|packages",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "packages",
+   "quote": "- `packages/` - Contains all workspace packages (relico, tsconfig, etc)",
+   "line": 9,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "packages",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 301,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T3|build_tool|turbo",
+   "tcode": "T3",
+   "types": [
+    "ToolUsageClaim",
+    "NonPackageManagerToolClaim"
+   ],
+   "headline": true,
+   "subject": "turbo",
+   "quote": "The project uses Turborepo for task local & remote caching.",
+   "line": 4,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "tool": "turbo",
+    "category": "build_tool"
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "toolSignatureHitCount": 4,
+     "toolEcosystemAnchorCount": 42,
+     "competingToolSignatureCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T3|linter_formatter|biome",
+   "tcode": "T3",
+   "types": [
+    "ToolUsageClaim",
+    "NonPackageManagerToolClaim"
+   ],
+   "headline": true,
+   "subject": "biome",
+   "quote": "Biome's linter will catch most issues automatically.",
+   "line": 143,
+   "votes": 2,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "attrs": {
+    "tool": "biome",
+    "category": "linter_formatter"
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "toolSignatureHitCount": 1,
+     "toolEcosystemAnchorCount": 42,
+     "competingToolSignatureCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T3|package_manager|bun",
+   "tcode": "T3",
+   "types": [
+    "ToolUsageClaim",
+    "PackageManagerClaim"
+   ],
+   "headline": true,
+   "subject": "bun",
+   "quote": "This is an Bun monorepo with TypeScript. The project uses bun workspaces for package management.",
+   "line": 3,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "tool": "bun",
+    "category": "package_manager"
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "toolSignatureHitCount": 2,
+     "toolEcosystemAnchorCount": 42,
+     "competingToolSignatureCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T4|@reliverse/dler|",
+   "tcode": "T4",
+   "types": [
+    "DependencyClaim",
+    "UnversionedDependencyClaim"
+   ],
+   "headline": true,
+   "subject": "@reliverse/dler",
+   "quote": "This project uses `@reliverse/dler` to manage bun monorepos easily",
+   "line": 14,
+   "votes": 2,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "name": "@reliverse/dler",
+    "major": null,
+    "ecosystem_hint": "npm"
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "dependencyExactMatchCount": 6,
+     "dependencySuffixMatchCount": 0,
+     "dependencyManifestParsedCount": 42
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T4|@reliverse/relico|",
+   "tcode": "T4",
+   "types": [
+    "DependencyClaim",
+    "UnversionedDependencyClaim"
+   ],
+   "headline": true,
+   "subject": "@reliverse/relico",
+   "quote": "- Import shared modules using workspace names, ie. `@reliverse/relico`",
+   "line": 42,
+   "votes": 1,
+   "models": [
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "name": "@reliverse/relico",
+    "major": null,
+    "ecosystem_hint": "npm"
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "dependencyExactMatchCount": 11,
+     "dependencySuffixMatchCount": 0,
+     "dependencyManifestParsedCount": 42
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  }
+ ]
+}

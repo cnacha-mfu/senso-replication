@@ -1,0 +1,73 @@
+{
+ "unit_id": "boto__botocore-1996__D__nemotron-3-super-120b-a12b__r1",
+ "task_id": "boto__botocore-1996",
+ "repo": "boto/botocore",
+ "stage": "phase_out",
+ "condition": "D",
+ "model": "nvidia/nemotron-3-super-120b-a12b",
+ "run": 1,
+ "order": 1196,
+ "env_build_s": 37.9,
+ "real_agent_manifest_at_base": [],
+ "started": "2026-10-07T18:06:45.161056+00:00",
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 5859,
+  "sha256": "c41398010a49760edbbd367907378214ae704e3bb2599a06f218d40e60b22d08"
+ },
+ "condition_available": true,
+ "retries": 0,
+ "exit_status": "Submitted",
+ "error": "",
+ "steps": 27,
+ "wall_s": 80.8,
+ "prompt_tokens": 288541,
+ "completion_tokens": 3734,
+ "format_errors": 0,
+ "length_cutoffs": 0,
+ "api_errors": {},
+ "n_queries": 27,
+ "keys_used": {
+  "NVIDIA_API_KEY_5": 8,
+  "NVIDIA_API_KEY_2": 5,
+  "NVIDIA_API_KEY": 11,
+  "NVIDIA_API_KEY_4": 3
+ },
+ "temperature": 0.7,
+ "top_p": 0.95,
+ "model_id_returned": "nvidia/nemotron-3-super-120b-a12b",
+ "mini_version": "2.4.6",
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 27,
+   "hit_step_limit": 0,
+   "changed_lines": 4,
+   "gold_changed_lines": 8,
+   "Y1": 1,
+   "Y2": 0,
+   "Y3": 0.0,
+   "Y3_gold": 0.0,
+   "Y3_excess": 0.0,
+   "Y3w": 0.7105263157894737,
+   "Y4": -1.0
+  },
+  "f2p_pass": 1,
+  "f2p_total": 1,
+  "p2p_pass": 136,
+  "p2p_total": 136,
+  "f2p_all_pass": true,
+  "p2p_all_pass": true,
+  "resolved": true,
+  "reason": "resolved",
+  "test_seconds": 5.0
+ },
+ "status": "done",
+ "finished": "2026-10-07T18:08:11.391403+00:00"
+}

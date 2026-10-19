@@ -1,0 +1,713 @@
+{
+ "repo": "WordPress/wp-ai-client",
+ "slug": "WordPress__wp-ai-client",
+ "S": "f53a17eeb5aa7d7e82faaa598ea553940544bcf6",
+ "manifest_path": "AGENTS.md",
+ "input_sha": "799522d20c9601af965a159e6c6ee2b34a57fc9addbbf1260c0521ccef8c6376",
+ "n_claims": 22,
+ "n_tree_files": 70,
+ "n_dep_manifests_parsed": 2,
+ "seconds": 0.2,
+ "claims": [
+  {
+   "key_str": "T1|API_Credentials",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "API_Credentials",
+   "quote": "*   `API_Credentials/`: Manages API keys and settings.",
+   "line": 48,
+   "votes": 2,
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "API_Credentials",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 0,
+     "pathSuffixMatchCount": 1
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|Builders",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "Builders",
+   "quote": "*   `Builders/`: Prompt builder implementations.",
+   "line": 49,
+   "votes": 2,
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "Builders",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 0,
+     "pathSuffixMatchCount": 2
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|Capabilities",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "Capabilities",
+   "quote": "*   `Capabilities/`: Capability management.",
+   "line": 50,
+   "votes": 2,
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "Capabilities",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 0,
+     "pathSuffixMatchCount": 2
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|HTTP",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "HTTP",
+   "quote": "*   `HTTP/`: HTTP client integrations.",
+   "line": 51,
+   "votes": 2,
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "HTTP",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 0,
+     "pathSuffixMatchCount": 1
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|REST_API",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "REST_API",
+   "quote": "*   `REST_API/`: REST API controllers.",
+   "line": 52,
+   "votes": 2,
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "REST_API",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 0,
+     "pathSuffixMatchCount": 2
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|build",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "build",
+   "quote": "*   `build/`: Compiled JavaScript and CSS assets.",
+   "line": 46,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "build",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 2,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|includes",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "includes",
+   "quote": "*   `includes/`: Main PHP source files (PSR-4 autoloaded).",
+   "line": 47,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "includes",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 15,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|includes/REST_API",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "includes/REST_API",
+   "quote": "2.  **REST API (`includes/REST_API/`)**: Exposes the AI capabilities to the client-side. It handles authentication and validation.",
+   "line": 41,
+   "votes": 1,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it"
+   ],
+   "attrs": {
+    "path": "includes/REST_API",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 3,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|phpunit",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "phpunit",
+   "quote": "*   `phpunit/`: Test suite configuration and test files.",
+   "line": 55,
+   "votes": 2,
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "phpunit",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 0,
+     "pathSuffixMatchCount": 1
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|src",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "src",
+   "quote": "*   `src/`: Source TypeScript/JavaScript files.",
+   "line": 53,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "src",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 14,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|tests",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "tests",
+   "quote": "*   `tests/`: PHPUnit tests.",
+   "line": 54,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "tests",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 16,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|tests/phpunit",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "tests/phpunit",
+   "quote": "*   **DO:** Add unit tests for new PHP functionality in `tests/phpunit/tests/`.",
+   "line": 67,
+   "votes": 1,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it"
+   ],
+   "attrs": {
+    "path": "tests/phpunit",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 16,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|tests/phpunit/tests",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "tests/phpunit/tests",
+   "quote": "*   **DO:** Add unit tests for new PHP functionality in `tests/phpunit/tests/`.",
+   "line": 67,
+   "votes": 1,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it"
+   ],
+   "attrs": {
+    "path": "tests/phpunit/tests",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 9,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|vendor",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "vendor",
+   "quote": "*   `vendor/`: Composer dependencies.",
+   "line": 56,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "vendor",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 0,
+     "pathSuffixMatchCount": 0,
+     "pathIgnoredCount": 1,
+     "pathSubmoduleCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T3|linter_formatter|prettier",
+   "tcode": "T3",
+   "types": [
+    "ToolUsageClaim",
+    "NonPackageManagerToolClaim"
+   ],
+   "headline": true,
+   "subject": "prettier",
+   "quote": "**Note:** In order to follow the WordPress code style in JavaScript, the project uses a WordPress-specific fork of Prettier (`wp-prettier`) under the hood.",
+   "line": 19,
+   "votes": 2,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "attrs": {
+    "tool": "prettier",
+    "category": "linter_formatter"
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "toolSignatureHitCount": 0,
+     "toolEcosystemAnchorCount": 1,
+     "competingToolSignatureCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T3|package_manager|composer",
+   "tcode": "T3",
+   "types": [
+    "ToolUsageClaim",
+    "PackageManagerClaim"
+   ],
+   "headline": true,
+   "subject": "composer",
+   "quote": "`composer lint`: Lints the PHP code (PHPCodeSniffer and PHPStan).",
+   "line": 9,
+   "votes": 2,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "tool": "composer",
+    "category": "package_manager"
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "toolSignatureHitCount": 2,
+     "toolEcosystemAnchorCount": 1,
+     "competingToolSignatureCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T3|package_manager|npm",
+   "tcode": "T3",
+   "types": [
+    "ToolUsageClaim",
+    "PackageManagerClaim"
+   ],
+   "headline": true,
+   "subject": "npm",
+   "quote": "`npm run build`: Builds the JavaScript assets.",
+   "line": 12,
+   "votes": 2,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "tool": "npm",
+    "category": "package_manager"
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "toolSignatureHitCount": 1,
+     "toolEcosystemAnchorCount": 1,
+     "competingToolSignatureCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T3|test_framework|phpunit",
+   "tcode": "T3",
+   "types": [
+    "ToolUsageClaim",
+    "NonPackageManagerToolClaim"
+   ],
+   "headline": true,
+   "subject": "phpunit",
+   "quote": "*   `phpunit/`: Test suite configuration and test files.",
+   "line": 55,
+   "votes": 1,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it"
+   ],
+   "attrs": {
+    "tool": "phpunit",
+    "category": "test_framework"
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "toolSignatureHitCount": 1,
+     "toolEcosystemAnchorCount": 1,
+     "competingToolSignatureCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T4|wordpress/php-ai-client|",
+   "tcode": "T4",
+   "types": [
+    "DependencyClaim",
+    "UnversionedDependencyClaim"
+   ],
+   "headline": true,
+   "subject": "wordpress/php-ai-client",
+   "quote": "1.  **PHP SDK (`includes/`)**: The core logic, built on `wordpress/php-ai-client`. It handles prompt building, request execution, and response parsing. It also manages API credentials and integrates w",
+   "line": 40,
+   "votes": 1,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it"
+   ],
+   "attrs": {
+    "name": "wordpress/php-ai-client",
+    "major": null,
+    "ecosystem_hint": "composer"
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "dependencyExactMatchCount": 1,
+     "dependencySuffixMatchCount": 0,
+     "dependencyManifestParsedCount": 2
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T5|script|lint-php",
+   "tcode": "T5",
+   "types": [
+    "CommandClaim"
+   ],
+   "headline": true,
+   "subject": "lint-php",
+   "quote": "*   **DO:** Run `npm run lint-php` and `npm run test-php` before submitting changes.",
+   "line": 68,
+   "votes": 1,
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "attrs": {
+    "runner": "npm",
+    "kind": "script",
+    "target": "lint-php"
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "scriptDefinedRootCount": 1,
+     "scriptDefinedAnyCount": 1,
+     "scriptHostFileCount": 1,
+     "dynamicTargetRuleCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T5|script|test-php",
+   "tcode": "T5",
+   "types": [
+    "CommandClaim"
+   ],
+   "headline": true,
+   "subject": "test-php",
+   "quote": "*   **DO:** Run `npm run lint-php` and `npm run test-php` before submitting changes.",
+   "line": 68,
+   "votes": 1,
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "attrs": {
+    "runner": "npm",
+    "kind": "script",
+    "target": "test-php"
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "scriptDefinedRootCount": 1,
+     "scriptDefinedAnyCount": 1,
+     "scriptHostFileCount": 1,
+     "dynamicTargetRuleCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T6|php|7004000000@2",
+   "tcode": "T6",
+   "types": [
+    "VersionClaim",
+    "ExactVersionClaim"
+   ],
+   "headline": true,
+   "subject": "php",
+   "quote": "*   **PHP Version:** Code must be compatible with **PHP 7.4**.",
+   "line": 25,
+   "votes": 2,
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "subject_type": "php",
+    "version": "7.4",
+    "code": 7004000000,
+    "precision": 2,
+    "qualifier": "exact"
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "versionSourceCount": 2
+    },
+    "evidences": [
+     {
+      "versionSourcePath": "composer.json",
+      "versionSourceRaw": ">=7.4",
+      "versionLowerDelta": 0,
+      "versionUpperUnboundedCount": 1
+     },
+     {
+      "versionSourcePath": "composer.json",
+      "versionSourceRaw": "7.4",
+      "versionLowerDelta": 0,
+      "versionUpperDelta": 0,
+      "versionUpperUnboundedCount": 0
+     }
+    ],
+    "meta": {}
+   }
+  }
+ ]
+}

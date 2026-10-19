@@ -1,0 +1,470 @@
+{
+ "repo": "funnyzak/weread-bot",
+ "slug": "funnyzak__weread-bot",
+ "S": "096c3adb2fb697b247703743c306ef20ee9073bb",
+ "manifest_path": "AGENTS.md",
+ "input_sha": "589c913dc89c616b3c9e5511fc3e7aaa10a886c8b7330889cfe81ee2b56738a3",
+ "n_claims": 14,
+ "n_tree_files": 15,
+ "n_dep_manifests_parsed": 1,
+ "seconds": 0.0,
+ "claims": [
+  {
+   "key_str": "T1|config.yaml",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "config.yaml",
+   "quote": "Configuration templates (`config.yaml.example`) stay at the root; copy to `config.yaml` for local overrides.",
+   "line": 4,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "config.yaml",
+    "is_dir": false,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 0,
+     "pathSuffixMatchCount": 0,
+     "pathIgnoredCount": 1,
+     "pathSubmoduleCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|docs",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "docs",
+   "quote": "Docs and deployment references belong under `docs/`, persistent logs under `logs/`, and disposable experiments or generators inside `tmp/` to keep history clean.",
+   "line": 4,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "docs",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 2,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|docs/github-action-autoread-guide.md",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "docs/github-action-autoread-guide.md",
+   "quote": "`docs/github-action-autoread-guide.md`",
+   "line": 20,
+   "votes": 2,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "docs/github-action-autoread-guide.md",
+    "is_dir": false,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 1,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|logs",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "logs",
+   "quote": "Docs and deployment references belong under `docs/`, persistent logs under `logs/`, and disposable experiments or generators inside `tmp/` to keep history clean.",
+   "line": 4,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "logs",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 0,
+     "pathSuffixMatchCount": 0,
+     "pathIgnoredCount": 1,
+     "pathSubmoduleCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|logs/weread.log",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "logs/weread.log",
+   "quote": "inspect logs/weread.log for retry cadence, notification output, and multi-user sequencing issues.",
+   "line": 17,
+   "votes": 1,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it"
+   ],
+   "attrs": {
+    "path": "logs/weread.log",
+    "is_dir": false,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 0,
+     "pathSuffixMatchCount": 0,
+     "pathIgnoredCount": 1,
+     "pathSubmoduleCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|requirements.txt",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "requirements.txt",
+   "quote": "`pip install -r requirements.txt`: install runtime dependencies (requests, schedule, apprise, PyYAML, urllib3).",
+   "line": 8,
+   "votes": 1,
+   "models": [
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "requirements.txt",
+    "is_dir": false,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 1,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|tmp",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "tmp",
+   "quote": "Docs and deployment references belong under `docs/`, persistent logs under `logs/`, and disposable experiments or generators inside `tmp/` to keep history clean.",
+   "line": 4,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "tmp",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 0,
+     "pathSuffixMatchCount": 0,
+     "pathIgnoredCount": 1,
+     "pathSubmoduleCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|weread-bot.py",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "weread-bot.py",
+   "quote": "Main automation logic lives in `weread-bot.py`, orchestrating scheduling, reading simulation, and notifications.",
+   "line": 4,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "weread-bot.py",
+    "is_dir": false,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 1,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T4|apprise|",
+   "tcode": "T4",
+   "types": [
+    "DependencyClaim",
+    "UnversionedDependencyClaim"
+   ],
+   "headline": true,
+   "subject": "apprise",
+   "quote": "- `pip install -r requirements.txt`: install runtime dependencies (requests, schedule, apprise, PyYAML, urllib3).",
+   "line": 8,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "name": "apprise",
+    "major": null,
+    "ecosystem_hint": "pypi"
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "dependencyExactMatchCount": 1,
+     "dependencySuffixMatchCount": 0,
+     "dependencyManifestParsedCount": 1
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T4|pyyaml|",
+   "tcode": "T4",
+   "types": [
+    "DependencyClaim",
+    "UnversionedDependencyClaim"
+   ],
+   "headline": true,
+   "subject": "pyyaml",
+   "quote": "- `pip install -r requirements.txt`: install runtime dependencies (requests, schedule, apprise, PyYAML, urllib3).",
+   "line": 8,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "name": "pyyaml",
+    "major": null,
+    "ecosystem_hint": "pypi"
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "dependencyExactMatchCount": 1,
+     "dependencySuffixMatchCount": 0,
+     "dependencyManifestParsedCount": 1
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T4|requests|",
+   "tcode": "T4",
+   "types": [
+    "DependencyClaim",
+    "UnversionedDependencyClaim"
+   ],
+   "headline": true,
+   "subject": "requests",
+   "quote": "- `pip install -r requirements.txt`: install runtime dependencies (requests, schedule, apprise, PyYAML, urllib3).",
+   "line": 8,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "name": "requests",
+    "major": null,
+    "ecosystem_hint": "pypi"
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "dependencyExactMatchCount": 1,
+     "dependencySuffixMatchCount": 0,
+     "dependencyManifestParsedCount": 1
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T4|schedule|",
+   "tcode": "T4",
+   "types": [
+    "DependencyClaim",
+    "UnversionedDependencyClaim"
+   ],
+   "headline": true,
+   "subject": "schedule",
+   "quote": "- `pip install -r requirements.txt`: install runtime dependencies (requests, schedule, apprise, PyYAML, urllib3).",
+   "line": 8,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "name": "schedule",
+    "major": null,
+    "ecosystem_hint": "pypi"
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "dependencyExactMatchCount": 0,
+     "dependencySuffixMatchCount": 0,
+     "dependencyManifestParsedCount": 1
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T4|urllib3|",
+   "tcode": "T4",
+   "types": [
+    "DependencyClaim",
+    "UnversionedDependencyClaim"
+   ],
+   "headline": true,
+   "subject": "urllib3",
+   "quote": "- `pip install -r requirements.txt`: install runtime dependencies (requests, schedule, apprise, PyYAML, urllib3).",
+   "line": 8,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "name": "urllib3",
+    "major": null,
+    "ecosystem_hint": "pypi"
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "dependencyExactMatchCount": 1,
+     "dependencySuffixMatchCount": 0,
+     "dependencyManifestParsedCount": 1
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T6|python|3009000000@2",
+   "tcode": "T6",
+   "types": [
+    "VersionClaim",
+    "MinVersionClaim"
+   ],
+   "headline": true,
+   "subject": "python",
+   "quote": "- `python -m venv venv && source venv/bin/activate`: provision the Python 3.9+ environment expected by schedulers and HTTP clients.",
+   "line": 7,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "subject_type": "python",
+    "version": "3.9",
+    "code": 3009000000,
+    "precision": 2,
+    "qualifier": "min"
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "versionSourceCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  }
+ ]
+}

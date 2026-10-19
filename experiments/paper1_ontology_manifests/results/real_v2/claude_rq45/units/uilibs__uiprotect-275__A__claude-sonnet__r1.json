@@ -1,0 +1,107 @@
+{
+ "unit_id": "uilibs__uiprotect-275__A__claude-sonnet__r1",
+ "task_id": "uilibs__uiprotect-275",
+ "repo": "uilibs/uiprotect",
+ "stage": "phase_out",
+ "condition": "A",
+ "model": "claude-code/sonnet",
+ "run": 1,
+ "condition_meta": {},
+ "started": "2026-10-18T09:13:49.284479+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 8,
+ "tool_calls": 7,
+ "usage": {
+  "input_tokens": 14,
+  "cache_creation_input_tokens": 13329,
+  "cache_read_input_tokens": 143271,
+  "output_tokens": 2809,
+  "output_tokens_details": {
+   "thinking_tokens": 452
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 13329,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 14,
+   "outputTokens": 2809,
+   "cacheReadInputTokens": 143271,
+   "cacheCreationInputTokens": 13329,
+   "webSearchRequests": 0,
+   "costUSD": 0.09576110000000002,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 452,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.09576110000000002,
+ "result_text": "uiprotect now recognises NFC card scans, but I haven't tested it against a real NFC event, and the field names are my guesses.\n\n**What I changed**\n- **Event type:** I added `EventType.NFC_CARD_SCANNED` (`\"nfcCardScanned\"`) and included it in the device events.\n- **Camera attributes:** `Camera` gets `last_nfc_card_scanned`, `last_nfc_card_scanned_event_id` and a `last_nfc_card_scanned_event` property. These work like the existing ring ones, and the bootstrap updates them when an NFC event arrives.\n- **Event metadata:** `EventMetadata` gets an optional `nfc` field holding `nfc_id`, `user_id` and `user_name`. These field names and the `\"nfcCardScanned\"` string are guesses from how UniFi Protect structures other events.\n\n**Test run**\n- 428 tests passed.\n- One error, in `test_bootstrap_benchmark`, stopped the run early (with `-x`), so some tests may not have run. The error message was cut off, and I don't know whether it relates to my change.\n\nI didn't add or change any tests, and I haven't committed.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792327800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0.07,
+    "resetsAt": 1792327800
+   },
+   "seven_day": {
+    "utilization": 0.14,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 80.0,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 4,
+   "Y6": 8,
+   "hit_step_limit": 0,
+   "changed_lines": 26,
+   "gold_changed_lines": 70,
+   "Y1": 2,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": -1.4288432988038742
+  },
+  "f2p_pass": 1,
+  "f2p_total": 9,
+  "p2p_pass": 51,
+  "p2p_total": 51,
+  "f2p_all_pass": false,
+  "p2p_all_pass": true,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 15.0
+ },
+ "status": "done",
+ "finished": "2026-10-18T09:15:26.510685+00:00"
+}

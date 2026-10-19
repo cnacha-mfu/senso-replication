@@ -1,0 +1,21 @@
+{
+ "repo": "nats-io/nats.go",
+ "chunk": 1,
+ "n_chunks": 2,
+ "model": "nvidia/nemotron-3-super-120b-a12b",
+ "prompt_sha256": "d0e02ff613417050168d859f2af6230c3712c6758bb5d9c40d60ff55e5ae87ca",
+ "user_sha256": "56b2dd8a5c5b435a230b5d7788c806973158ff6d8c54585b5ae7ff15f5653880",
+ "text": "{\"claims\": [{\"type\": \"path_exists\", \"quote\": \"- **License header** -- Every `.go` file starts with the Apache 2.0 license header (Copyright year range).\", \"line\": 132, \"subject\": \".go\", \"mode\": \"asserts_existing\"}, {\"type\": \"path_exists\", \"quote\": \"- **Error variables** -- Exported errors defined as `var Err... = errors.New(\\\"nats: ...\\\")` in `nats.go`. JetStream errors in `jetstream/errors.go` follow the same pattern.\", \"line\": 133, \"subject\": \"nats.go\", \"mode\": \"asserts_existing\"}, {\"type\": \"path_exists\", \"quote\": \"- **Error variables** -- Exported errors defined as `var Err... = errors.New(\\\"nats: ...\\\")` in `nats.go`. JetStream errors in `jetstream/errors.go` follow the same pattern.\", \"line\": 133, \"subject\": \"jetstream/errors.go\", \"mode\": \"asserts_existing\"}, {\"type\": \"path_exists\", \"quote\": \"- **No external dependencies in production** -- Only `klauspost/compress`, `nkeys`, `nuid` in `go.mod`. Test deps (nats-server, protobuf) are isolated in `go_test.mod`. PRs adding dependencies are scrutinized heavily.\", \"line\": 135, \"subject\": \"go.mod\", \"mode\": \"asserts_existing\"}, {\"type\": \"path_exists\", \"quote\": \"- **No external dependencies in production** -- Only `klauspost/compress`, `nkeys`, `nuid` in `go.mod`. Test deps (nats-server, protobuf) are isolated in `go_test.mod`. PRs adding dependencies are scrutinized heavily.\", \"line\": 135, \"subject\": \"go_test.mod\", \"mode\": \"asserts_existing\"}, {\"type\": \"tool_used\", \"quote\": \"- **US English spelling** -- Enforced by `misspell -locale US` in CI.\", \"line\": 137, \"subject\": \"misspell\", \"tool_category\": \"linter_formatter\", \"mode\": \"asserts_existing\"}, {\"type\": \"dependency\", \"quote\": \"- **No external dependencies in production** -- Only `klauspost/compress`, `nkeys`, `nuid` in `go.mod`. Test deps (nats-server, protobuf) are isolated in `go_test.mod`. PRs adding dependencies are scrutinized heavily.\", \"line\": 135, \"subject\": \"klauspost/compress\", \"ecosystem_hint\": \"go\", \"mode\": \"asserts_existing\"}, {\"type\": \"dependency\", \"quote\": \"- **No external dependencies in production** -- Only `klauspost/compress`, `nkeys`, `nuid` in `go.mod`. Test deps (nats-server, protobuf) are isolated in `go_test.mod`. PRs adding dependencies are scrutinized heavily.\", \"line\": 135, \"subject\": \"nkeys\", \"ecosystem_hint\": \"go\", \"mode\": \"asserts_existing\"}, {\"type\": \"dependency\", \"quote\": \"- **No external dependencies in production** -- Only `klauspost/compress`, `nkeys`, `nuid` in `go.mod`. Test deps (nats-server, protobuf) are isolated in `go_test.mod`. PRs adding dependencies are scrutinized heavily.\", \"line\": 135, \"subject\": \"nuid\", \"ecosystem_hint\": \"go\", \"mode\": \"asserts_existing\"}, {\"type\": \"dependency\", \"quote\": \"- **No external dependencies in production** -- Only `klauspost/compress`, `nkeys`, `nuid` in `go.mod`. Test deps (nats-server, protobuf) are isolated in `go_test.mod`. PRs adding dependencies are scrutinized heavily.\", \"line\": 135, \"subject\": \"nats-server\", \"ecosystem_hint\": \"go\", \"mode\": \"asserts_existing\"}, {\"type\": \"dependency\", \"quote\": \"- **No external dependencies in production** -- Only `klauspost/compress`, `nkeys`, `nuid` in `go.mod`. Test deps (nats-server, protobuf) are isolated in `go_test.mod`. PRs adding dependencies are scrutinized heavily.\", \"line\": 135, \"subject\": \"protobuf\", \"ecosystem_hint\": \"go\", \"mode\": \"asserts_existing\"}]}",
+ "parse_ok": true,
+ "parse_error": null,
+ "parse_retries": 0,
+ "latency_s": 4.958790895994753,
+ "usage": {
+  "prompt": 2425,
+  "completion": 983
+ },
+ "n_api_calls": 1,
+ "finish_reason": "stop",
+ "error": null,
+ "discarded_attempt_texts": []
+}

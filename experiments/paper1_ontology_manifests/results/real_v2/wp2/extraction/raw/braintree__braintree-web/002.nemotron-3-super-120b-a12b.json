@@ -1,0 +1,21 @@
+{
+ "repo": "braintree/braintree-web",
+ "chunk": 2,
+ "n_chunks": 3,
+ "model": "nvidia/nemotron-3-super-120b-a12b",
+ "prompt_sha256": "d0e02ff613417050168d859f2af6230c3712c6758bb5d9c40d60ff55e5ae87ca",
+ "user_sha256": "3c92bf4ff83493b2c483df29efc8af93f1c7bb10600d3e288db1a55b893f7b8c",
+ "text": "{\n  \"claims\": [\n    {\n      \"type\": \"command\",\n      \"quote\": \"Run `npm test` after making changes (includes linting)\",\n      \"line\": 366,\n      \"subject\": \"test\",\n      \"runner\": \"npm\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"command\",\n      \"quote\": \"Use `npm run build <component>` to build specific components during development\",\n      \"line\": 367,\n      \"subject\": \"build\",\n      \"runner\": \"npm\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"command\",\n      \"quote\": \"Use `scripts/npm-to-gulp` wrapper for component-specific commands\",\n      \"line\": 370,\n      \"subject\": \"npm-to-gulp\",\n      \"runner\": \"npm\",\n      \"mode\": \"asserts_existing\"\n    }\n  ]\n}",
+ "parse_ok": true,
+ "parse_error": null,
+ "parse_retries": 0,
+ "latency_s": 4.736928333004471,
+ "usage": {
+  "prompt": 2203,
+  "completion": 206
+ },
+ "n_api_calls": 1,
+ "finish_reason": "stop",
+ "error": null,
+ "discarded_attempt_texts": []
+}

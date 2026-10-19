@@ -1,0 +1,653 @@
+{
+ "task_id": "twu__skjold-140",
+ "claims": {
+  "T1|src/skjold": {
+   "claim": {
+    "key_str": "T1|src/skjold",
+    "tcode": "T1",
+    "attrs": {
+     "path": "src/skjold",
+     "is_dir": true,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "src/skjold/",
+    "role": "true",
+    "slot": "layout",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "exists",
+     "path": "src/skjold"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "PathFoundExact"
+   },
+   "probe": {
+    "ok": true,
+    "type": "exists"
+   },
+   "measure_error": null
+  },
+  "T1|tests": {
+   "claim": {
+    "key_str": "T1|tests",
+    "tcode": "T1",
+    "attrs": {
+     "path": "tests",
+     "is_dir": true,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "tests/",
+    "role": "true",
+    "slot": "layout",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "exists",
+     "path": "tests"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "PathFoundExact"
+   },
+   "probe": {
+    "ok": true,
+    "type": "exists"
+   },
+   "measure_error": null
+  },
+  "T1|src/skjold/tasks.py": {
+   "claim": {
+    "key_str": "T1|src/skjold/tasks.py",
+    "tcode": "T1",
+    "attrs": {
+     "path": "src/skjold/tasks.py",
+     "is_dir": false,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "src/skjold/tasks.py",
+    "role": "true",
+    "slot": "key_file",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "exists",
+     "path": "src/skjold/tasks.py"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "PathFoundExact"
+   },
+   "probe": {
+    "ok": true,
+    "type": "exists"
+   },
+   "measure_error": null
+  },
+  "T3|test_framework|pytest": {
+   "claim": {
+    "key_str": "T3|test_framework|pytest",
+    "tcode": "T3",
+    "attrs": {
+     "tool": "pytest",
+     "category": "test_framework"
+    },
+    "quote": "python -m pytest tests",
+    "role": "true",
+    "slot": "test_cmd",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "pytest",
+     "root": "tests"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "ToolSignatureFound"
+   },
+   "probe": {
+    "ok": true,
+    "type": "pytest"
+   },
+   "measure_error": null
+  },
+  "T1|pyproject.toml": {
+   "claim": {
+    "key_str": "T1|pyproject.toml",
+    "tcode": "T1",
+    "attrs": {
+     "path": "pyproject.toml",
+     "is_dir": false,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "pyproject.toml",
+    "role": "true",
+    "slot": "install_cmd",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "exists",
+     "path": "pyproject.toml"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "PathFoundExact"
+   },
+   "probe": {
+    "ok": true,
+    "type": "exists"
+   },
+   "measure_error": null
+  },
+  "T4|packaging|": {
+   "claim": {
+    "key_str": "T4|packaging|",
+    "tcode": "T4",
+    "attrs": {
+     "name": "packaging",
+     "major": null,
+     "ecosystem_hint": "pypi"
+    },
+    "quote": "`packaging^21.0`",
+    "role": "true",
+    "slot": "dep",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "import_ok",
+     "modules": [
+      "packaging"
+     ]
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "DependencyConfirmed"
+   },
+   "probe": {
+    "ok": true,
+    "type": "import_ok"
+   },
+   "measure_error": null
+  },
+  "T4|click|": {
+   "claim": {
+    "key_str": "T4|click|",
+    "tcode": "T4",
+    "attrs": {
+     "name": "click",
+     "major": null,
+     "ecosystem_hint": "pypi"
+    },
+    "quote": "`click>=8,<9`",
+    "role": "true",
+    "slot": "dep",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "import_ok",
+     "modules": [
+      "click"
+     ]
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "DependencyConfirmed"
+   },
+   "probe": {
+    "ok": true,
+    "type": "import_ok"
+   },
+   "measure_error": null
+  },
+  "T4|pyyaml|": {
+   "claim": {
+    "key_str": "T4|pyyaml|",
+    "tcode": "T4",
+    "attrs": {
+     "name": "pyyaml",
+     "major": null,
+     "ecosystem_hint": "pypi"
+    },
+    "quote": "`pyyaml^6.0`",
+    "role": "true",
+    "slot": "dep",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "import_ok",
+     "modules": [
+      "yaml"
+     ]
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "DependencyConfirmed"
+   },
+   "probe": {
+    "ok": true,
+    "type": "import_ok"
+   },
+   "measure_error": null
+  },
+  "T4|toml|": {
+   "claim": {
+    "key_str": "T4|toml|",
+    "tcode": "T4",
+    "attrs": {
+     "name": "toml",
+     "major": null,
+     "ecosystem_hint": "pypi"
+    },
+    "quote": "`toml>=0.10.0`",
+    "role": "true",
+    "slot": "dep",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "import_ok",
+     "modules": [
+      "toml"
+     ]
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "DependencyConfirmed"
+   },
+   "probe": {
+    "ok": true,
+    "type": "import_ok"
+   },
+   "measure_error": null
+  },
+  "T6|python|3007000000@2": {
+   "claim": {
+    "key_str": "T6|python|3007000000@2",
+    "tcode": "T6",
+    "attrs": {
+     "subject_type": "python",
+     "version": "3.7",
+     "code": 3007000000,
+     "precision": 2,
+     "qualifier": "min"
+    },
+    "quote": "Python: >=3.7",
+    "role": "true",
+    "slot": "python",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": null,
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "VersionConfirmed"
+   },
+   "probe": {
+    "ok": true,
+    "type": "none"
+   },
+   "measure_error": null
+  },
+  "T1|src/skjold/internal": {
+   "claim": {
+    "key_str": "T1|src/skjold/internal",
+    "tcode": "T1",
+    "attrs": {
+     "path": "src/skjold/internal",
+     "is_dir": true,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "src/skjold/internal/",
+    "role": "false",
+    "slot": "P1",
+    "kind": 1,
+    "expect_verdict": "ContradictedClaim",
+    "expect_leaves": [
+     "PathNeverExisted"
+    ],
+    "probe": {
+     "type": "absent",
+     "path": "src/skjold/internal",
+     "history": "none"
+    },
+    "mode": "add"
+   },
+   "recheck": {
+    "verdict": "ContradictedClaim",
+    "leaf": "PathNeverExisted"
+   },
+   "probe": {
+    "ok": true,
+    "type": "absent",
+    "log_count": 0
+   },
+   "measure_error": null
+  },
+  "T1|src/skjold/models.py": {
+   "claim": {
+    "key_str": "T1|src/skjold/models.py",
+    "tcode": "T1",
+    "attrs": {
+     "path": "src/skjold/models.py",
+     "is_dir": false,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "src/skjold/models.py",
+    "role": "false",
+    "slot": "P2",
+    "kind": 2,
+    "expect_verdict": "ContradictedClaim",
+    "expect_leaves": [
+     "PathRemoved"
+    ],
+    "probe": {
+     "type": "absent",
+     "path": "src/skjold/models.py",
+     "history": "some"
+    },
+    "mode": "add"
+   },
+   "recheck": {
+    "verdict": "ContradictedClaim",
+    "leaf": "PathRemoved"
+   },
+   "probe": {
+    "ok": true,
+    "type": "absent",
+    "log_count": 5
+   },
+   "measure_error": null
+  },
+  "T5|make|test": {
+   "claim": {
+    "key_str": "T5|make|test",
+    "tcode": "T5",
+    "attrs": {
+     "runner": "make",
+     "kind": "make",
+     "target": "test"
+    },
+    "quote": "make test",
+    "role": "false",
+    "slot": "C_R",
+    "kind": 3,
+    "expect_verdict": "ContradictedClaim",
+    "expect_leaves": [
+     "ScriptUndefined",
+     "ScriptHostMissing"
+    ],
+    "probe": {
+     "type": "make_fail",
+     "target": "test"
+    },
+    "mode": "replace"
+   },
+   "recheck": {
+    "verdict": "ContradictedClaim",
+    "leaf": "ScriptUndefined"
+   },
+   "probe": {
+    "ok": true,
+    "type": "make_fail",
+    "result": {
+     "rc": 2,
+     "tail": "make: *** No rule to make target 'test'.  Stop.\n"
+    }
+   },
+   "measure_error": null
+  },
+  "T4|semantic-version|": {
+   "claim": {
+    "key_str": "T4|semantic-version|",
+    "tcode": "T4",
+    "attrs": {
+     "name": "semantic-version",
+     "major": null,
+     "ecosystem_hint": "pypi"
+    },
+    "quote": "`semantic-version`",
+    "role": "false",
+    "slot": "D",
+    "kind": 4,
+    "expect_verdict": "ContradictedClaim",
+    "expect_leaves": [
+     "DependencyUndeclared"
+    ],
+    "probe": {
+     "type": "import_fail",
+     "modules": [
+      "semantic_version"
+     ]
+    },
+    "mode": "replace"
+   },
+   "recheck": {
+    "verdict": "ContradictedClaim",
+    "leaf": "DependencyUndeclared"
+   },
+   "probe": {
+    "ok": true,
+    "type": "import_fail"
+   },
+   "measure_error": null
+  },
+  "T1|internal": {
+   "claim": {
+    "key_str": "T1|internal",
+    "tcode": "T1",
+    "attrs": {
+     "path": "internal",
+     "is_dir": true,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "internal/",
+    "role": "false",
+    "slot": "P1",
+    "kind": 1,
+    "expect_verdict": "ContradictedClaim",
+    "expect_leaves": [
+     "PathNeverExisted"
+    ],
+    "probe": {
+     "type": "absent",
+     "path": "internal",
+     "history": "none"
+    },
+    "mode": "add"
+   },
+   "recheck": {
+    "verdict": "ContradictedClaim",
+    "leaf": "PathNeverExisted"
+   },
+   "probe": {
+    "ok": true,
+    "type": "absent",
+    "log_count": 0
+   },
+   "measure_error": null
+  },
+  "T1|engine.py": {
+   "claim": {
+    "key_str": "T1|engine.py",
+    "tcode": "T1",
+    "attrs": {
+     "path": "engine.py",
+     "is_dir": false,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "engine.py",
+    "role": "false",
+    "slot": "P2",
+    "kind": 2,
+    "expect_verdict": "ContradictedClaim",
+    "expect_leaves": [
+     "PathNeverExisted"
+    ],
+    "probe": {
+     "type": "absent",
+     "path": "engine.py",
+     "history": "none"
+    },
+    "mode": "add"
+   },
+   "recheck": {
+    "verdict": "ContradictedClaim",
+    "leaf": "PathNeverExisted"
+   },
+   "probe": {
+    "ok": true,
+    "type": "absent",
+    "log_count": 0
+   },
+   "measure_error": null
+  },
+  "T5|make|install": {
+   "claim": {
+    "key_str": "T5|make|install",
+    "tcode": "T5",
+    "attrs": {
+     "runner": "make",
+     "kind": "make",
+     "target": "install"
+    },
+    "quote": "make install",
+    "role": "false",
+    "slot": "C_I",
+    "kind": 3,
+    "expect_verdict": "ContradictedClaim",
+    "expect_leaves": [
+     "ScriptUndefined",
+     "ScriptHostMissing"
+    ],
+    "probe": {
+     "type": "make_fail",
+     "target": "install"
+    },
+    "mode": "replace"
+   },
+   "recheck": {
+    "verdict": "ContradictedClaim",
+    "leaf": "ScriptUndefined"
+   },
+   "probe": {
+    "ok": true,
+    "type": "make_fail",
+    "result": {
+     "rc": 2,
+     "tail": "make: *** No rule to make target 'install'.  Stop.\n"
+    }
+   },
+   "measure_error": null
+  },
+  "T4|rtoml|": {
+   "claim": {
+    "key_str": "T4|rtoml|",
+    "tcode": "T4",
+    "attrs": {
+     "name": "rtoml",
+     "major": null,
+     "ecosystem_hint": "pypi"
+    },
+    "quote": "`rtoml`",
+    "role": "false",
+    "slot": "D",
+    "kind": 4,
+    "expect_verdict": "ContradictedClaim",
+    "expect_leaves": [
+     "DependencyUndeclared"
+    ],
+    "probe": {
+     "type": "import_fail",
+     "modules": [
+      "rtoml"
+     ]
+    },
+    "mode": "replace"
+   },
+   "recheck": {
+    "verdict": "ContradictedClaim",
+    "leaf": "DependencyUndeclared"
+   },
+   "probe": {
+    "ok": true,
+    "type": "import_fail"
+   },
+   "measure_error": null
+  }
+ },
+ "probe_log": {
+  "pytest:tests": {
+   "rc": 0,
+   "tail": "pyup.py::test_pyup_handle_metadata\ntests/test_pyup.py::test_ensure_accessing_advisories_triggers_update\ntests/test_sources.py::test_ensure_accessing_advisories_triggers_update\ntests/test_sources.py::test_register_source\ntests/test_sources.py::test_register_source_twice\n\n157 tests collected in 0.62s\n"
+  },
+  "import:packaging": {
+   "rc": 0,
+   "tail": ""
+  },
+  "import:click": {
+   "rc": 0,
+   "tail": ""
+  },
+  "import:yaml": {
+   "rc": 0,
+   "tail": ""
+  },
+  "import:toml": {
+   "rc": 0,
+   "tail": ""
+  },
+  "make:test": {
+   "rc": 2,
+   "tail": "make: *** No rule to make target 'test'.  Stop.\n"
+  },
+  "make:install": {
+   "rc": 2,
+   "tail": "make: *** No rule to make target 'install'.  Stop.\n"
+  },
+  "import:rtoml": {
+   "rc": 1,
+   "tail": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\nModuleNotFoundError: No module named 'rtoml'\n"
+  },
+  "import:semantic_version": {
+   "rc": 1,
+   "tail": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\nModuleNotFoundError: No module named 'semantic_version'\n"
+  }
+ }
+}

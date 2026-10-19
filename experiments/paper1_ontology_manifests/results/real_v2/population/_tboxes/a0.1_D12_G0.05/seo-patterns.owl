@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://senso-framework.org/ontology/seo/seo-patterns"
+         xmlns="http://senso-framework.org/ontology/seo/seo-patterns#">
+
+<owl:Ontology rdf:about="http://senso-framework.org/ontology/seo/seo-patterns">
+  <owl:imports rdf:resource="http://senso-framework.org/ontology/seo/seo-entities"/>
+  <owl:imports rdf:resource="http://senso-framework.org/ontology/seo/seo-laws"/>
+  <owl:imports rdf:resource="http://senso-framework.org/ontology/seo/seo-metrics"/>
+  <owl:imports rdf:resource="http://senso-framework.org/ontology/seo/seo-processes"/>
+</owl:Ontology>
+
+<owl:ObjectProperty rdf:about="http://senso-framework.org/ontology/seo#exhibitsPattern">
+  <rdfs:domain>
+    <owl:Class>
+      <owl:unionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#Version"/>
+      </owl:unionOf>
+    </owl:Class>
+  </rdfs:domain>
+  <rdfs:range rdf:resource="http://senso-framework.org/ontology/seo#EvolutionPattern"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://senso-framework.org/ontology/seo#detectedAt">
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#EvolutionPattern"/>
+  <rdfs:range rdf:resource="http://senso-framework.org/ontology/seo#Version"/>
+</owl:ObjectProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#patternSeverity">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#EvolutionPattern"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+</owl:DatatypeProperty>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#EvolutionPattern">
+  <rdfs:comment xml:lang="en">Paper 1 — base class for evolution patterns.</rdfs:comment>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#SustainableGrowth">
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#EvolutionPattern"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#TechnicalDebtAccumulation">
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#EvolutionPattern"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#BigBangRefactoring">
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#EvolutionPattern"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#GradualDecay">
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#EvolutionPattern"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#ArchitecturalErosion">
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#EvolutionPattern"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#AntiPattern">
+  <rdfs:comment xml:lang="en">Paper 1 — base class for anti-patterns, adds depth to hierarchy.</rdfs:comment>
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#EvolutionPattern"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#AgentAssociatedComplexityGrowth">
+  <rdfs:comment xml:lang="en">Paper 1 - agent-associated complexity growth (formerly ShadowTechDebt, renamed per decision D4).</rdfs:comment>
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#AntiPattern"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#DependencySprawl">
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#AntiPattern"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#RefactoringAvoidance">
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#AntiPattern"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#CopyPasteOverReuse">
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#AntiPattern"/>
+</owl:Class>
+
+<owl:AllDisjointClasses>
+  <owl:members rdf:parseType="Collection">
+    <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#AgentAssociatedComplexityGrowth"/>
+    <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#DependencySprawl"/>
+    <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#RefactoringAvoidance"/>
+    <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#CopyPasteOverReuse"/>
+  </owl:members>
+</owl:AllDisjointClasses>
+
+<owl:AllDisjointClasses>
+  <owl:members rdf:parseType="Collection">
+    <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#SustainableGrowth"/>
+    <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#TechnicalDebtAccumulation"/>
+    <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#BigBangRefactoring"/>
+    <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#GradualDecay"/>
+    <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#ArchitecturalErosion"/>
+    <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#AntiPattern"/>
+  </owl:members>
+</owl:AllDisjointClasses>
+
+
+</rdf:RDF>

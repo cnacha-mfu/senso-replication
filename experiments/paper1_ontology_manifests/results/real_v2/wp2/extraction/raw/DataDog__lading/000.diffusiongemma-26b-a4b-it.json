@@ -1,0 +1,23 @@
+{
+ "repo": "DataDog/lading",
+ "chunk": 0,
+ "n_chunks": 2,
+ "model": "google/diffusiongemma-26b-a4b-it",
+ "prompt_sha256": "d0e02ff613417050168d859f2af6230c3712c6758bb5d9c40d60ff55e5ae87ca",
+ "user_sha256": "22a6194b0210303f0fd0a4202236118a029e379e5e586312d2e2fc234156298a",
+ "text": "```json\n{\n  \"claims\": [\n    {\n      \"type\": \"path_exists\",\n      \"subject\": \"docs/adr/README.md\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"path_exists\",\n      \"subject\": \"ci/validate\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"path_exists\",\n      \"subject\": \"ci/test\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"path_exists\",\n      \"subject\": \"docs/adr/001-generator-target-blackhole-architecture.md\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"path_exists\",\n      \"subject\": \"docs/adr/002-precomputation-philosophy.md\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"path_exists\",\n      \"subject\": \"docs/adr/003-determinism-requirements.md\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"path_exists\",\n      \"subject\": \"docs/adr/006-testing-strategy.md\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"path_exists\",\n      \"subject\": \"docs/adr/005-performance-first-design.md\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"path_exists\",\n      \"subject\": \"docs/adr/008-dependency-philosophy.md\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"path_exists\",\n      \"subject\": \"docs/adr/007-code-style-and-abstraction.md\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"path_exists\",\n      \"subject\": \"docs/adr/004-no-panic-error-handling.md\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"import_rule\",\n      \"subject\": \"mod.rs\",\n      \"scope\": \"root\",\n      \"mode\": \"negated\"\n    }\n  ]\n}\n```",
+ "parse_ok": true,
+ "parse_error": null,
+ "parse_retries": 1,
+ "latency_s": 4.84483245597221,
+ "usage": {
+  "prompt": 9082,
+  "completion": 1192
+ },
+ "n_api_calls": 2,
+ "finish_reason": "stop",
+ "error": null,
+ "discarded_attempt_texts": [
+  "```json\n[\n  {\"type\": \"path_exists\", \"subject\": \"docs/adr/README.md\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"command\", \"subject\": \"ci/validate\", \"runner\": \"none\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"command\", \"subject\": \"ci/test\", \"runner\": \"none\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"command\", \"subject\": \"ci/kani <crate>\", \"runner\": \"none\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"dependency\", \"subject\": \"IndexMap\", \"ecosystem_hint\": \"cargo\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"dependency\", \"subject\": \"IndexSet\", \"ecosystem_hint\": \"cargo\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"path_exists\", \"subject\": \"docs/adr/001-generator-target-blackhole-architecture.md\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"path_exists\", \"subject\": \"docs/adr/002-precomputation-philosophy.md\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"path_exists\", \"subject\": \"docs/adr/003-determinism-requirements.md\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"path_exists\", \"subject\": \"docs/adr/006-testing-strategy.md\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"path_exists\", \"subject\": \"docs/adr/005-performance-first-design.md\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"path_exists\", \"subject\": \"docs/adr/008-dependency-philosophy.md\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"path_exists\", \"subject\": \"docs/adr/007-code-style-and-abstraction.md\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"path_exists\", \"subject\": \"docs/adr/004-error-handling.md\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"tool_used\", \"subject\": \"kani\", \"tool_category\": \"build_tool\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"tool_used\", \"subject\": \"proptest\", \"tool_category\": \"test_framework\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"tool_used\", \"subject\": \"thiserror\", \"tool_category\": \"linter_formatter\", \"mode\": \"asserts_existing\"}\n]\n```"
+ ]
+}

@@ -1,0 +1,3703 @@
+{
+ "repo": "ucfopen/canvasapi",
+ "snapshot_date": "2019-05-31",
+ "status": "ok",
+ "unmineable": false,
+ "unmineable_reason": null,
+ "replaces": null,
+ "settings": {
+  "dedup": true,
+  "complexity": false,
+  "dataset": null,
+  "sensitivity": false,
+  "snapshot_commit": "f60d8e2ba212476ef3d9e9eee559f5bd6c31a704",
+  "mode": "wp5_snapshot_commit",
+  "test_patch_files": [
+   "tests/test_quiz.py"
+  ],
+  "package_roots": [
+   "canvasapi"
+  ]
+ },
+ "versions": {
+  "owlready2": "0.51",
+  "pymannkendall": "1.4.3",
+  "lizard": "1.24.1",
+  "numpy": "2.5.3",
+  "scipy": "1.18.1",
+  "python": "3.12.15",
+  "git": "git version 2.53.0"
+ },
+ "task_id": "ucfopen__canvasapi-271",
+ "base_commit": "f60d8e2ba212476ef3d9e9eee559f5bd6c31a704",
+ "measures": {
+  "monthsObserved": 36,
+  "monthsSinceLastCommit": 0,
+  "distinctAuthorsInWindow": 39,
+  "commitMKTau": -0.225397,
+  "commitMKpValue": 0.054534,
+  "activeMonthCount": 35,
+  "activeMonthRatio": 0.972222,
+  "meanMonthlyCommits": 28.694444,
+  "commitsLast3Months": 51,
+  "commitCountCV": 0.689153,
+  "commitCountCVSample": 0.698929,
+  "commitHalfRatio": 0.631912,
+  "commitSecondHalfMean": 22.222222,
+  "churnCV": 2.201586,
+  "linesAddedCV": 1.737491,
+  "mergeMonthRatio": 0.888889,
+  "multiAuthorMonthRatio": 0.888889,
+  "bugFixRatioFirstHalf": 0.356598,
+  "bugFixRatioSecondHalf": 0.364757,
+  "bugFixHalfRatio": 1.022878,
+  "locSeriesLength": 36,
+  "locRelSenSlopeAnnual": 0.540346,
+  "locMKTau": 0.919048,
+  "locMKS": 579,
+  "locMKpValue": 0.0,
+  "locSenSlope": 473.928571,
+  "locStart": 3493,
+  "locEnd": 18714,
+  "locDelta": 15221,
+  "locGrowthRate": 4.357572,
+  "locChangePct": 435.757229,
+  "locEndToStartRatio": 5.357572,
+  "locGrowthLast3": 0.090559,
+  "featureCommitsFirstHalf": 0,
+  "featureCommitsSecondHalf": 0,
+  "featureCommitsTotal": 0,
+  "locDeltaPerFeature": 15221.0,
+  "recentAgentCommitRatio": 0.0,
+  "featCommitCount": 0,
+  "bugFixCommitCount": 394,
+  "commitCount": 1033,
+  "monthly_series": {
+   "months": [
+    "2016-02",
+    "2016-03",
+    "2016-04",
+    "2016-05",
+    "2016-06",
+    "2016-07",
+    "2016-08",
+    "2016-09",
+    "2016-10",
+    "2016-11",
+    "2016-12",
+    "2017-01",
+    "2017-02",
+    "2017-03",
+    "2017-04",
+    "2017-05",
+    "2017-06",
+    "2017-07",
+    "2017-08",
+    "2017-09",
+    "2017-10",
+    "2017-11",
+    "2017-12",
+    "2018-01",
+    "2018-02",
+    "2018-03",
+    "2018-04",
+    "2018-05",
+    "2018-06",
+    "2018-07",
+    "2018-08",
+    "2018-09",
+    "2018-10",
+    "2018-11",
+    "2018-12",
+    "2019-01",
+    "2019-02",
+    "2019-03",
+    "2019-04",
+    "2019-05"
+   ],
+   "commits": [
+    43,
+    27,
+    46,
+    189,
+    34,
+    76,
+    39,
+    2,
+    0,
+    23,
+    30,
+    64,
+    24,
+    16,
+    12,
+    35,
+    51,
+    20,
+    59,
+    34,
+    63,
+    51,
+    18,
+    58,
+    29,
+    61,
+    12,
+    37,
+    34,
+    11,
+    10,
+    15,
+    1,
+    19,
+    13,
+    10,
+    21,
+    15,
+    15,
+    21
+   ],
+   "loc": [
+    269,
+    862,
+    1320,
+    3241,
+    3493,
+    4192,
+    4192,
+    4192,
+    4192,
+    4192,
+    4192,
+    5903,
+    5903,
+    7743,
+    7743,
+    7743,
+    9812,
+    10006,
+    10092,
+    10092,
+    10525,
+    10525,
+    10525,
+    13108,
+    13108,
+    13704,
+    13704,
+    13704,
+    16895,
+    16895,
+    16895,
+    17160,
+    17160,
+    17160,
+    17160,
+    17160,
+    17160,
+    17160,
+    18540,
+    18714
+   ]
+  }
+ },
+ "window": {
+  "L": 36,
+  "first_month": "2016-06",
+  "last_month": "2019-05",
+  "n_months": 36,
+  "left_truncated": false,
+  "first_commit_month": "2016-02",
+  "mined_months": 40,
+  "commits_in_window": 1033,
+  "commits_in_history": 1338
+ },
+ "loc_instrument": {
+  "instrument": "nonblank-source-lines-v1",
+  "status": "ok",
+  "months": 40,
+  "month_end_commits_distinct": 19,
+  "source_blobs": 591,
+  "blobs_fetched": 3,
+  "t_ls_tree_s": 0.23196680203545839,
+  "t_fetch_s": 0.8014368409640156,
+  "t_read_s": 0.10670822905376554,
+  "series_present": true,
+  "extensions": [
+   ".bash",
+   ".c",
+   ".cc",
+   ".cjs",
+   ".clj",
+   ".cpp",
+   ".cs",
+   ".cxx",
+   ".dart",
+   ".erl",
+   ".ex",
+   ".exs",
+   ".f90",
+   ".go",
+   ".groovy",
+   ".h",
+   ".hh",
+   ".hpp",
+   ".hs",
+   ".java",
+   ".jl",
+   ".js",
+   ".jsx",
+   ".kt",
+   ".kts",
+   ".lua",
+   ".m",
+   ".mjs",
+   ".ml",
+   ".mm",
+   ".nim",
+   ".php",
+   ".pl",
+   ".pm",
+   ".py",
+   ".pyi",
+   ".r",
+   ".rb",
+   ".rs",
+   ".scala",
+   ".sh",
+   ".sql",
+   ".svelte",
+   ".swift",
+   ".ts",
+   ".tsx",
+   ".vue",
+   ".zig"
+  ],
+  "excluded_dirs": [
+   "node_modules",
+   "vendor",
+   "vendored",
+   "third_party",
+   "site-packages",
+   "bower_components"
+  ],
+  "max_blob_bytes": 1000000,
+  "first_parent": true
+ },
+ "mining": {
+  "churn": {
+   "t_churn_raw_s": 0.363147423020564,
+   "t_churn_fetch_s": 6.6553203809889965,
+   "t_churn_numstat_s": 0.6767810260062106,
+   "blobs_fetched_churn": 2292
+  },
+  "timings": {
+   "t_clone": 0.004,
+   "t_mine": 7.779,
+   "t_loc": 1.14,
+   "t_reason_A": 6.199
+  },
+  "cached": false
+ },
+ "stage_a": {
+  "commits": 1338,
+  "reasoned_commits": 1287,
+  "inconsistent_chunks": 0,
+  "chunk_timings": [
+   {
+    "tbox_load_s": 0.03845167497638613,
+    "abox_load_s": 0.1328521149698645,
+    "reason_s": 3.4267809569719248,
+    "extract_s": 0.012251075997482985,
+    "total_s": 3.610770399973262,
+    "commits": 1000
+   },
+   {
+    "tbox_load_s": 0.03590582200558856,
+    "abox_load_s": 0.036078081000596285,
+    "reason_s": 2.4727193999569863,
+    "extract_s": 0.0038102639955468476,
+    "total_s": 2.5487914889818057,
+    "commits": 287
+   }
+  ],
+  "tbox_sha256": "f5ba00eaa76dc3582415cdf566fbd7abc1d3f2797ca928f41dad106dc1c0bdb5"
+ },
+ "activity": {
+  "last_commit_date": "2019-05-23T21:05:10+00:00",
+  "months_since_last_commit": 0,
+  "distinct_authors_in_window": 39,
+  "merge_commits_in_window": 291
+ },
+ "agent_adoption_date": null,
+ "commit_label_counts": {
+  "BugFixCommit": 394,
+  "FeatureCommit": 0,
+  "AgentCommit": 0
+ },
+ "series_months": [
+  {
+   "month": "2016-06",
+   "commit_count": 34,
+   "merge_count": 9,
+   "unique_authors": 5,
+   "lines_added": 476,
+   "lines_deleted": 77,
+   "total_churn": 553,
+   "files_changed": 43,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 3493,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2016-07",
+   "commit_count": 76,
+   "merge_count": 13,
+   "unique_authors": 4,
+   "lines_added": 1697,
+   "lines_deleted": 636,
+   "total_churn": 2333,
+   "files_changed": 96,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 4192,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2016-08",
+   "commit_count": 39,
+   "merge_count": 8,
+   "unique_authors": 3,
+   "lines_added": 483,
+   "lines_deleted": 248,
+   "total_churn": 731,
+   "files_changed": 42,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 4192,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2016-09",
+   "commit_count": 2,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 974,
+   "lines_deleted": 132,
+   "total_churn": 1106,
+   "files_changed": 16,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 4192,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2016-10",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 4192,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2016-11",
+   "commit_count": 23,
+   "merge_count": 6,
+   "unique_authors": 3,
+   "lines_added": 575,
+   "lines_deleted": 375,
+   "total_churn": 950,
+   "files_changed": 83,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 4192,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2016-12",
+   "commit_count": 30,
+   "merge_count": 3,
+   "unique_authors": 2,
+   "lines_added": 1248,
+   "lines_deleted": 1047,
+   "total_churn": 2295,
+   "files_changed": 62,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 4192,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2017-01",
+   "commit_count": 64,
+   "merge_count": 14,
+   "unique_authors": 3,
+   "lines_added": 2193,
+   "lines_deleted": 373,
+   "total_churn": 2566,
+   "files_changed": 148,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 5903,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2017-02",
+   "commit_count": 24,
+   "merge_count": 7,
+   "unique_authors": 3,
+   "lines_added": 1202,
+   "lines_deleted": 648,
+   "total_churn": 1850,
+   "files_changed": 67,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 5903,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2017-03",
+   "commit_count": 16,
+   "merge_count": 4,
+   "unique_authors": 1,
+   "lines_added": 11731,
+   "lines_deleted": 11715,
+   "total_churn": 23446,
+   "files_changed": 204,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 7743,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2017-04",
+   "commit_count": 12,
+   "merge_count": 4,
+   "unique_authors": 3,
+   "lines_added": 162,
+   "lines_deleted": 2,
+   "total_churn": 164,
+   "files_changed": 4,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 7743,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2017-05",
+   "commit_count": 35,
+   "merge_count": 7,
+   "unique_authors": 4,
+   "lines_added": 1831,
+   "lines_deleted": 119,
+   "total_churn": 1950,
+   "files_changed": 79,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 7743,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2017-06",
+   "commit_count": 51,
+   "merge_count": 24,
+   "unique_authors": 5,
+   "lines_added": 1074,
+   "lines_deleted": 244,
+   "total_churn": 1318,
+   "files_changed": 45,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 9812,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2017-07",
+   "commit_count": 20,
+   "merge_count": 6,
+   "unique_authors": 2,
+   "lines_added": 611,
+   "lines_deleted": 293,
+   "total_churn": 904,
+   "files_changed": 242,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 10006,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2017-08",
+   "commit_count": 59,
+   "merge_count": 17,
+   "unique_authors": 4,
+   "lines_added": 616,
+   "lines_deleted": 357,
+   "total_churn": 973,
+   "files_changed": 49,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 10092,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2017-09",
+   "commit_count": 34,
+   "merge_count": 10,
+   "unique_authors": 7,
+   "lines_added": 1377,
+   "lines_deleted": 453,
+   "total_churn": 1830,
+   "files_changed": 39,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 10092,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2017-10",
+   "commit_count": 63,
+   "merge_count": 25,
+   "unique_authors": 5,
+   "lines_added": 2888,
+   "lines_deleted": 1451,
+   "total_churn": 4339,
+   "files_changed": 120,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 10525,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2017-11",
+   "commit_count": 51,
+   "merge_count": 15,
+   "unique_authors": 6,
+   "lines_added": 1248,
+   "lines_deleted": 262,
+   "total_churn": 1510,
+   "files_changed": 83,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 10525,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2017-12",
+   "commit_count": 18,
+   "merge_count": 9,
+   "unique_authors": 5,
+   "lines_added": 398,
+   "lines_deleted": 366,
+   "total_churn": 764,
+   "files_changed": 22,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 10525,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2018-01",
+   "commit_count": 58,
+   "merge_count": 21,
+   "unique_authors": 6,
+   "lines_added": 642,
+   "lines_deleted": 349,
+   "total_churn": 991,
+   "files_changed": 51,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 13108,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2018-02",
+   "commit_count": 29,
+   "merge_count": 11,
+   "unique_authors": 5,
+   "lines_added": 1154,
+   "lines_deleted": 389,
+   "total_churn": 1543,
+   "files_changed": 28,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 13108,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2018-03",
+   "commit_count": 61,
+   "merge_count": 9,
+   "unique_authors": 4,
+   "lines_added": 3984,
+   "lines_deleted": 728,
+   "total_churn": 4712,
+   "files_changed": 122,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 13704,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2018-04",
+   "commit_count": 12,
+   "merge_count": 4,
+   "unique_authors": 3,
+   "lines_added": 174,
+   "lines_deleted": 9,
+   "total_churn": 183,
+   "files_changed": 10,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 13704,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2018-05",
+   "commit_count": 37,
+   "merge_count": 10,
+   "unique_authors": 6,
+   "lines_added": 1629,
+   "lines_deleted": 924,
+   "total_churn": 2553,
+   "files_changed": 57,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 13704,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2018-06",
+   "commit_count": 34,
+   "merge_count": 14,
+   "unique_authors": 8,
+   "lines_added": 214,
+   "lines_deleted": 37,
+   "total_churn": 251,
+   "files_changed": 23,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 16895,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2018-07",
+   "commit_count": 11,
+   "merge_count": 5,
+   "unique_authors": 2,
+   "lines_added": 67,
+   "lines_deleted": 13,
+   "total_churn": 80,
+   "files_changed": 9,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 16895,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2018-08",
+   "commit_count": 10,
+   "merge_count": 3,
+   "unique_authors": 4,
+   "lines_added": 66,
+   "lines_deleted": 7,
+   "total_churn": 73,
+   "files_changed": 4,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 16895,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2018-09",
+   "commit_count": 15,
+   "merge_count": 8,
+   "unique_authors": 4,
+   "lines_added": 53,
+   "lines_deleted": 13,
+   "total_churn": 66,
+   "files_changed": 6,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 17160,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2018-10",
+   "commit_count": 1,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 73,
+   "lines_deleted": 0,
+   "total_churn": 73,
+   "files_changed": 2,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 17160,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2018-11",
+   "commit_count": 19,
+   "merge_count": 2,
+   "unique_authors": 4,
+   "lines_added": 638,
+   "lines_deleted": 38,
+   "total_churn": 676,
+   "files_changed": 32,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 17160,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2018-12",
+   "commit_count": 13,
+   "merge_count": 4,
+   "unique_authors": 5,
+   "lines_added": 343,
+   "lines_deleted": 19,
+   "total_churn": 362,
+   "files_changed": 10,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 17160,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2019-01",
+   "commit_count": 10,
+   "merge_count": 0,
+   "unique_authors": 2,
+   "lines_added": 491,
+   "lines_deleted": 12,
+   "total_churn": 503,
+   "files_changed": 13,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 17160,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2019-02",
+   "commit_count": 21,
+   "merge_count": 1,
+   "unique_authors": 3,
+   "lines_added": 293,
+   "lines_deleted": 118,
+   "total_churn": 411,
+   "files_changed": 18,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 17160,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2019-03",
+   "commit_count": 15,
+   "merge_count": 6,
+   "unique_authors": 7,
+   "lines_added": 77,
+   "lines_deleted": 27,
+   "total_churn": 104,
+   "files_changed": 15,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 17160,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2019-04",
+   "commit_count": 15,
+   "merge_count": 6,
+   "unique_authors": 3,
+   "lines_added": 95,
+   "lines_deleted": 41,
+   "total_churn": 136,
+   "files_changed": 8,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 18540,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2019-05",
+   "commit_count": 21,
+   "merge_count": 6,
+   "unique_authors": 5,
+   "lines_added": 328,
+   "lines_deleted": 107,
+   "total_churn": 435,
+   "files_changed": 19,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 18714,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  }
+ ],
+ "measures_derived": {
+  "bugFixRatioFirstHalf": 0.356598,
+  "bugFixRatioSecondHalf": 0.364757,
+  "bugFixHalfRatio": 1.022878,
+  "featureCommitsFirstHalf": 0,
+  "featureCommitsSecondHalf": 0,
+  "featureCommitsTotal": 0,
+  "locDeltaPerFeature": 15221.0,
+  "recentAgentCommitRatio": 0.0
+ },
+ "modules_meta": {
+  "anchor_S": "2019-06-20T20:53:14+00:00",
+  "window_months": 12,
+  "package_roots": [
+   "canvasapi"
+  ],
+  "n_modules": 55,
+  "n_source_files": 57,
+  "n_window_commits": 141,
+  "cached": false,
+  "timings": {
+   "t_tree_loc": 0.887,
+   "t_history": 0.119,
+   "t_numstat": 2.513
+  },
+  "module_loc_instrument": "nonblank-source-lines-v1",
+  "label_counts": {
+   "StableModule": 31,
+   "ActiveModule": 24,
+   "undetermined": 0
+  },
+  "thresholds": {
+   "mod_window_months": 12,
+   "mod_stable_max_rel_churn": 0.1,
+   "mod_stable_max_change_months": 2
+  }
+ },
+ "inferred": {
+  "a0.05_L36_D12_G0.05_orig": {
+   "classes": [
+    "CopyPasteEvidence",
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIINonConformant",
+    "LawIVConformant",
+    "LawVConformant",
+    "LawVIConformant",
+    "LawVIIConformant",
+    "LawVIIConformantRatio",
+    "LawVIIIConformant",
+    "LocPerFeatureHigh",
+    "MKApplicable",
+    "MergeActive",
+    "MultiAuthorActive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": "urn:senso:explanations:ucfopen__canvasapi-271:d20298612d99",
+   "tbox_sha256": "d20298612d99fa8f5c1a63c70eaab0195a3e82e2d6780de3bd1fd3ced72d6e5d",
+   "abox_triples": 590,
+   "t_reason_B_s": 3.342
+  }
+ },
+ "primary_config": "a0.05_L36_D12_G0.05_orig",
+ "project_iri": "http://senso-framework.org/data/ucfopen__canvasapi-271",
+ "consistent": true,
+ "inferred_labels": [
+  "CopyPasteEvidence",
+  "GrowthStage",
+  "LawIConformant",
+  "LawIIINonConformant",
+  "LawIVConformant",
+  "LawVConformant",
+  "LawVIConformant",
+  "LawVIIConformant",
+  "LawVIIConformantRatio",
+  "LawVIIIConformant",
+  "LocPerFeatureHigh",
+  "MKApplicable",
+  "MergeActive",
+  "MultiAuthorActive",
+  "RBActiveDevelopmentStage",
+  "RecentlyActive",
+  "SubstantialLocGrowth"
+ ],
+ "stage_labels": [
+  "GrowthStage",
+  "RBActiveDevelopmentStage"
+ ],
+ "law_labels": {
+  "I": "LawIConformant",
+  "III": "LawIIINonConformant",
+  "IV": "LawIVConformant",
+  "V": "LawVConformant",
+  "VI": "LawVIConformant",
+  "VII": "LawVIIConformant",
+  "VIII": "LawVIIIConformant"
+ },
+ "tbox_sha256_stage_b": "d20298612d99fa8f5c1a63c70eaab0195a3e82e2d6780de3bd1fd3ced72d6e5d",
+ "tbox_sha256_stage_a": "f5ba00eaa76dc3582415cdf566fbd7abc1d3f2797ca928f41dad106dc1c0bdb5",
+ "summary": {
+  "c1": "A",
+  "c2": "A",
+  "cf": "A",
+  "note": "debug summary; run_rq1_v2.py reads `inferred` and recomputes CF itself"
+ },
+ "modules": {
+  "canvasapi/__init__.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "RarelyChangedModule"
+   ],
+   "measures": {
+    "modulePath": "canvasapi/__init__.py",
+    "moduleLoc": 5,
+    "moduleCommitsInWindow": 2,
+    "moduleChangeMonthsInWindow": 2,
+    "moduleLinesChangedInWindow": 4,
+    "moduleRelChurnInWindow": 0.8,
+    "moduleMonthsSinceLastChange": 2
+   },
+   "iri": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi___init__.py-bcec55",
+   "abox_asserted": true
+  },
+  "canvasapi/account.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "canvasapi/account.py",
+    "moduleLoc": 1266,
+    "moduleCommitsInWindow": 9,
+    "moduleChangeMonthsInWindow": 5,
+    "moduleLinesChangedInWindow": 231,
+    "moduleRelChurnInWindow": 0.182464,
+    "moduleMonthsSinceLastChange": 0
+   },
+   "iri": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_account.py-8266af",
+   "abox_asserted": true
+  },
+  "canvasapi/appointment_group.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "canvasapi/appointment_group.py",
+    "moduleLoc": 45,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 19
+   },
+   "iri": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_appointment_group.py-a57187",
+   "abox_asserted": true
+  },
+  "canvasapi/assignment.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "canvasapi/assignment.py",
+    "moduleLoc": 319,
+    "moduleCommitsInWindow": 18,
+    "moduleChangeMonthsInWindow": 8,
+    "moduleLinesChangedInWindow": 277,
+    "moduleRelChurnInWindow": 0.868339,
+    "moduleMonthsSinceLastChange": 0
+   },
+   "iri": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_assignment.py-30920d",
+   "abox_asserted": true
+  },
+  "canvasapi/authentication_provider.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "canvasapi/authentication_provider.py",
+    "moduleLoc": 35,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 20
+   },
+   "iri": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_authentication_provider.py-2ef901",
+   "abox_asserted": true
+  },
+  "canvasapi/avatar.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "canvasapi/avatar.py",
+    "moduleLoc": 7,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 23
+   },
+   "iri": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_avatar.py-83e072",
+   "abox_asserted": true
+  },
+  "canvasapi/blueprint.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "RarelyChangedModule"
+   ],
+   "measures": {
+    "modulePath": "canvasapi/blueprint.py",
+    "moduleLoc": 264,
+    "moduleCommitsInWindow": 10,
+    "moduleChangeMonthsInWindow": 2,
+    "moduleLinesChangedInWindow": 439,
+    "moduleRelChurnInWindow": 1.662879,
+    "moduleMonthsSinceLastChange": 4
+   },
+   "iri": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_blueprint.py-14c3c3",
+   "abox_asserted": true
+  },
+  "canvasapi/bookmark.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "canvasapi/bookmark.py",
+    "moduleLoc": 35,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 20
+   },
+   "iri": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_bookmark.py-be8a62",
+   "abox_asserted": true
+  },
+  "canvasapi/calendar_event.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "canvasapi/calendar_event.py",
+    "moduleLoc": 34,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 20
+   },
+   "iri": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_calendar_event.py-32ec05",
+   "abox_asserted": true
+  },
+  "canvasapi/canvas.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "canvasapi/canvas.py",
+    "moduleLoc": 1110,
+    "moduleCommitsInWindow": 16,
+    "moduleChangeMonthsInWindow": 3,
+    "moduleLinesChangedInWindow": 345,
+    "moduleRelChurnInWindow": 0.310811,
+    "moduleMonthsSinceLastChange": 0
+   },
+   "iri": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_canvas.py-d1513d",
+   "abox_asserted": true
+  },
+  "canvasapi/canvas_object.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "canvasapi/canvas_object.py",
+    "moduleLoc": 59,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 20
+   },
+   "iri": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_canvas_object.py-495bad",
+   "abox_asserted": true
+  },
+  "canvasapi/communication_channel.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "canvasapi/communication_channel.py",
+    "moduleLoc": 204,
+    "moduleCommitsInWindow": 2,
+    "moduleChangeMonthsInWindow": 2,
+    "moduleLinesChangedInWindow": 20,
+    "moduleRelChurnInWindow": 0.098039,
+    "moduleMonthsSinceLastChange": 3
+   },
+   "iri": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_communication_channel.py-5e1bac",
+   "abox_asserted": true
+  },
+  "canvasapi/content_export.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "RarelyChangedModule"
+   ],
+   "measures": {
+    "modulePath": "canvasapi/content_export.py",
+    "moduleLoc": 7,
+    "moduleCommitsInWindow": 1,
+    "moduleChangeMonthsInWindow": 1,
+    "moduleLinesChangedInWindow": 11,
+    "moduleRelChurnInWindow": 1.571429,
+    "moduleMonthsSinceLastChange": 0
+   },
+   "iri": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_content_export.py-eb3615",
+   "abox_asserted": true
+  },
+  "canvasapi/content_migration.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "canvasapi/content_migration.py",
+    "moduleLoc": 215,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 13
+   },
+   "iri": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_content_migration.py-b489a2",
+   "abox_asserted": true
+  },
+  "canvasapi/conversation.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "canvasapi/conversation.py",
+    "moduleLoc": 93,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 16
+   },
+   "iri": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_conversation.py-242165",
+   "abox_asserted": true
+  },
+  "canvasapi/course.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "canvasapi/course.py",
+    "moduleLoc": 1905,
+    "moduleCommitsInWindow": 11,
+    "moduleChangeMonthsInWindow": 4,
+    "moduleLinesChangedInWindow": 305,
+    "moduleRelChurnInWindow": 0.160105,
+    "moduleMonthsSinceLastChange": 0
+   },
+   "iri": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_course.py-bcc202",
+   "abox_asserted": true
+  },
+  "canvasapi/current_user.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "RarelyChangedModule"
+   ],
+   "measures": {
+    "modulePath": "canvasapi/current_user.py",
+    "moduleLoc": 233,
+    "moduleCommitsInWindow": 10,
+    "moduleChangeMonthsInWindow": 1,
+    "moduleLinesChangedInWindow": 333,
+    "moduleRelChurnInWindow": 1.429185,
+    "moduleMonthsSinceLastChange": 0
+   },
+   "iri": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_current_user.py-a0ef27",
+   "abox_asserted": true
+  },
+  "canvasapi/discussion_topic.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "canvasapi/discussion_topic.py",
+    "moduleLoc": 546,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 13
+   },
+   "iri": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_discussion_topic.py-dc8ae1",
+   "abox_asserted": true
+  },
+  "canvasapi/enrollment.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "canvasapi/enrollment.py",
+    "moduleLoc": 42,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 20
+   },
+   "iri": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_enrollment.py-a21d6d",
+   "abox_asserted": true
+  },
+  "canvasapi/enrollment_term.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "canvasapi/enrollment_term.py",
+    "moduleLoc": 33,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 20
+   },
+   "iri": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_enrollment_term.py-c615ec",
+   "abox_asserted": true
+  },
+  "canvasapi/exceptions.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "RarelyChangedModule"
+   ],
+   "measures": {
+    "modulePath": "canvasapi/exceptions.py",
+    "moduleLoc": 40,
+    "moduleCommitsInWindow": 1,
+    "moduleChangeMonthsInWindow": 1,
+    "moduleLinesChangedInWindow": 7,
+    "moduleRelChurnInWindow": 0.175,
+    "moduleMonthsSinceLastChange": 7
+   },
+   "iri": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_exceptions.py-bc4f1f",
+   "abox_asserted": true
+  },
+  "canvasapi/external_feed.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "canvasapi/external_feed.py",
+    "moduleLoc": 7,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 23
+   },
+   "iri": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_external_feed.py-b24e9d",
+   "abox_asserted": true
+  },
+  "canvasapi/external_tool.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "canvasapi/external_tool.py",
+    "moduleLoc": 99,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 20
+   },
+   "iri": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_external_tool.py-d9163b",
+   "abox_asserted": true
+  },
+  "canvasapi/favorite.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "RarelyChangedModule"
+   ],
+   "measures": {
+    "modulePath": "canvasapi/favorite.py",
+    "moduleLoc": 29,
+    "moduleCommitsInWindow": 4,
+    "moduleChangeMonthsInWindow": 1,
+    "moduleLinesChangedInWindow": 53,
+    "moduleRelChurnInWindow": 1.827586,
+    "moduleMonthsSinceLastChange": 0
+   },
+   "iri": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_favorite.py-d8f6cd",
+   "abox_asserted": true
+  },
+  "canvasapi/file.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "canvasapi/file.py",
+    "moduleLoc": 41,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 17
+   },
+   "iri": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_file.py-f801c4",
+   "abox_asserted": true
+  },
+  "canvasapi/folder.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "canvasapi/folder.py",
+    "moduleLoc": 156,
+    "moduleCommitsInWindow": 1,
+    "moduleChangeMonthsInWindow": 1,
+    "moduleLinesChangedInWindow": 4,
+    "moduleRelChurnInWindow": 0.025641,
+    "moduleMonthsSinceLastChange": 12
+   },
+   "iri": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_folder.py-4fc334",
+   "abox_asserted": true
+  },
+  "canvasapi/grading_standard.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "canvasapi/grading_standard.py",
+    "moduleLoc": 7,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 19
+   },
+   "iri": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_grading_standard.py-af0961",
+   "abox_asserted": true
+  },
+  "canvasapi/group.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "RarelyChangedModule"
+   ],
+   "measures": {
+    "modulePath": "canvasapi/group.py",
+    "moduleLoc": 957,
+    "moduleCommitsInWindow": 4,
+    "moduleChangeMonthsInWindow": 2,
+    "moduleLinesChangedInWindow": 107,
+    "moduleRelChurnInWindow": 0.111808,
+    "moduleMonthsSinceLastChange": 0
+   },
+   "iri": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_group.py-9c0328",
+   "abox_asserted": true
+  },
+  "canvasapi/login.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "canvasapi/login.py",
+    "moduleLoc": 33,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 17
+   },
+   "iri": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_login.py-45990e",
+   "abox_asserted": true
+  },
+  "canvasapi/module.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "canvasapi/module.py",
+    "moduleLoc": 195,
+    "moduleCommitsInWindow": 1,
+    "moduleChangeMonthsInWindow": 1,
+    "moduleLinesChangedInWindow": 4,
+    "moduleRelChurnInWindow": 0.020513,
+    "moduleMonthsSinceLastChange": 10
+   },
+   "iri": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_module.py-a3275c",
+   "abox_asserted": true
+  },
+  "canvasapi/notification_preference.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "canvasapi/notification_preference.py",
+    "moduleLoc": 7,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 19
+   },
+   "iri": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_notification_preference.py-2ece2d",
+   "abox_asserted": true
+  },
+  "canvasapi/outcome.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "canvasapi/outcome.py",
+    "moduleLoc": 319,
+    "moduleCommitsInWindow": 1,
+    "moduleChangeMonthsInWindow": 1,
+    "moduleLinesChangedInWindow": 1,
+    "moduleRelChurnInWindow": 0.003135,
+    "moduleMonthsSinceLastChange": 11
+   },
+   "iri": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_outcome.py-2af374",
+   "abox_asserted": true
+  },
+  "canvasapi/page.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "canvasapi/page.py",
+    "moduleLoc": 227,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 13
+   },
+   "iri": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_page.py-d07f2a",
+   "abox_asserted": true
+  },
+  "canvasapi/page_view.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "canvasapi/page_view.py",
+    "moduleLoc": 7,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 23
+   },
+   "iri": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_page_view.py-269a87",
+   "abox_asserted": true
+  },
+  "canvasapi/paginated_list.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "canvasapi/paginated_list.py",
+    "moduleLoc": 91,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 13
+   },
+   "iri": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_paginated_list.py-a629fc",
+   "abox_asserted": true
+  },
+  "canvasapi/peer_review.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "RarelyChangedModule"
+   ],
+   "measures": {
+    "modulePath": "canvasapi/peer_review.py",
+    "moduleLoc": 7,
+    "moduleCommitsInWindow": 2,
+    "moduleChangeMonthsInWindow": 1,
+    "moduleLinesChangedInWindow": 12,
+    "moduleRelChurnInWindow": 1.714286,
+    "moduleMonthsSinceLastChange": 1
+   },
+   "iri": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_peer_review.py-79cb14",
+   "abox_asserted": true
+  },
+  "canvasapi/planner.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "RarelyChangedModule"
+   ],
+   "measures": {
+    "modulePath": "canvasapi/planner.py",
+    "moduleLoc": 64,
+    "moduleCommitsInWindow": 1,
+    "moduleChangeMonthsInWindow": 1,
+    "moduleLinesChangedInWindow": 88,
+    "moduleRelChurnInWindow": 1.375,
+    "moduleMonthsSinceLastChange": 0
+   },
+   "iri": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_planner.py-eddc73",
+   "abox_asserted": true
+  },
+  "canvasapi/poll.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "RarelyChangedModule"
+   ],
+   "measures": {
+    "modulePath": "canvasapi/poll.py",
+    "moduleLoc": 161,
+    "moduleCommitsInWindow": 13,
+    "moduleChangeMonthsInWindow": 1,
+    "moduleLinesChangedInWindow": 266,
+    "moduleRelChurnInWindow": 1.652174,
+    "moduleMonthsSinceLastChange": 0
+   },
+   "iri": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_poll.py-dede9e",
+   "abox_asserted": true
+  },
+  "canvasapi/poll_choice.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "RarelyChangedModule"
+   ],
+   "measures": {
+    "modulePath": "canvasapi/poll_choice.py",
+    "moduleLoc": 46,
+    "moduleCommitsInWindow": 6,
+    "moduleChangeMonthsInWindow": 1,
+    "moduleLinesChangedInWindow": 87,
+    "moduleRelChurnInWindow": 1.891304,
+    "moduleMonthsSinceLastChange": 0
+   },
+   "iri": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_poll_choice.py-0cfa94",
+   "abox_asserted": true
+  },
+  "canvasapi/poll_session.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "RarelyChangedModule"
+   ],
+   "measures": {
+    "modulePath": "canvasapi/poll_session.py",
+    "moduleLoc": 123,
+    "moduleCommitsInWindow": 7,
+    "moduleChangeMonthsInWindow": 1,
+    "moduleLinesChangedInWindow": 205,
+    "moduleRelChurnInWindow": 1.666667,
+    "moduleMonthsSinceLastChange": 0
+   },
+   "iri": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_poll_session.py-d75e59",
+   "abox_asserted": true
+  },
+  "canvasapi/poll_submission.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "RarelyChangedModule"
+   ],
+   "measures": {
+    "modulePath": "canvasapi/poll_submission.py",
+    "moduleLoc": 7,
+    "moduleCommitsInWindow": 1,
+    "moduleChangeMonthsInWindow": 1,
+    "moduleLinesChangedInWindow": 12,
+    "moduleRelChurnInWindow": 1.714286,
+    "moduleMonthsSinceLastChange": 0
+   },
+   "iri": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_poll_submission.py-2ef83a",
+   "abox_asserted": true
+  },
+  "canvasapi/progress.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "canvasapi/progress.py",
+    "moduleLoc": 21,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 20
+   },
+   "iri": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_progress.py-fa0e6a",
+   "abox_asserted": true
+  },
+  "canvasapi/quiz.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "canvasapi/quiz.py",
+    "moduleLoc": 358,
+    "moduleCommitsInWindow": 6,
+    "moduleChangeMonthsInWindow": 3,
+    "moduleLinesChangedInWindow": 179,
+    "moduleRelChurnInWindow": 0.5,
+    "moduleMonthsSinceLastChange": 6
+   },
+   "iri": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_quiz.py-f138c7",
+   "abox_asserted": true
+  },
+  "canvasapi/quiz_group.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "canvasapi/quiz_group.py",
+    "moduleLoc": 86,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 18
+   },
+   "iri": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_quiz_group.py-31a948",
+   "abox_asserted": true
+  },
+  "canvasapi/requester.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "canvasapi/requester.py",
+    "moduleLoc": 139,
+    "moduleCommitsInWindow": 3,
+    "moduleChangeMonthsInWindow": 3,
+    "moduleLinesChangedInWindow": 35,
+    "moduleRelChurnInWindow": 0.251799,
+    "moduleMonthsSinceLastChange": 2
+   },
+   "iri": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_requester.py-9eea6c",
+   "abox_asserted": true
+  },
+  "canvasapi/rubric.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "canvasapi/rubric.py",
+    "moduleLoc": 7,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 21
+   },
+   "iri": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_rubric.py-628441",
+   "abox_asserted": true
+  },
+  "canvasapi/section.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "RarelyChangedModule"
+   ],
+   "measures": {
+    "modulePath": "canvasapi/section.py",
+    "moduleLoc": 330,
+    "moduleCommitsInWindow": 4,
+    "moduleChangeMonthsInWindow": 2,
+    "moduleLinesChangedInWindow": 40,
+    "moduleRelChurnInWindow": 0.121212,
+    "moduleMonthsSinceLastChange": 6
+   },
+   "iri": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_section.py-508f5b",
+   "abox_asserted": true
+  },
+  "canvasapi/sis_import.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "RarelyChangedModule"
+   ],
+   "measures": {
+    "modulePath": "canvasapi/sis_import.py",
+    "moduleLoc": 35,
+    "moduleCommitsInWindow": 1,
+    "moduleChangeMonthsInWindow": 1,
+    "moduleLinesChangedInWindow": 46,
+    "moduleRelChurnInWindow": 1.314286,
+    "moduleMonthsSinceLastChange": 6
+   },
+   "iri": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_sis_import.py-919b9d",
+   "abox_asserted": true
+  },
+  "canvasapi/submission.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "RarelyChangedModule"
+   ],
+   "measures": {
+    "modulePath": "canvasapi/submission.py",
+    "moduleLoc": 157,
+    "moduleCommitsInWindow": 2,
+    "moduleChangeMonthsInWindow": 1,
+    "moduleLinesChangedInWindow": 218,
+    "moduleRelChurnInWindow": 1.388535,
+    "moduleMonthsSinceLastChange": 1
+   },
+   "iri": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_submission.py-96fe11",
+   "abox_asserted": true
+  },
+  "canvasapi/tab.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "canvasapi/tab.py",
+    "moduleLoc": 28,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 15
+   },
+   "iri": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_tab.py-ae3f5c",
+   "abox_asserted": true
+  },
+  "canvasapi/upload.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "canvasapi/upload.py",
+    "moduleLoc": 84,
+    "moduleCommitsInWindow": 1,
+    "moduleChangeMonthsInWindow": 1,
+    "moduleLinesChangedInWindow": 5,
+    "moduleRelChurnInWindow": 0.059524,
+    "moduleMonthsSinceLastChange": 9
+   },
+   "iri": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_upload.py-fa8bb3",
+   "abox_asserted": true
+  },
+  "canvasapi/user.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "canvasapi/user.py",
+    "moduleLoc": 724,
+    "moduleCommitsInWindow": 7,
+    "moduleChangeMonthsInWindow": 4,
+    "moduleLinesChangedInWindow": 141,
+    "moduleRelChurnInWindow": 0.194751,
+    "moduleMonthsSinceLastChange": 0
+   },
+   "iri": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_user.py-2398c7",
+   "abox_asserted": true
+  },
+  "canvasapi/util.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "canvasapi/util.py",
+    "moduleLoc": 135,
+    "moduleCommitsInWindow": 3,
+    "moduleChangeMonthsInWindow": 3,
+    "moduleLinesChangedInWindow": 33,
+    "moduleRelChurnInWindow": 0.244444,
+    "moduleMonthsSinceLastChange": 2
+   },
+   "iri": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_util.py-568b9b",
+   "abox_asserted": true
+  },
+  "docs": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "docs",
+    "moduleLoc": 219,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 27
+   },
+   "iri": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/docs-71ab8b",
+   "abox_asserted": true
+  },
+  "scripts": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "scripts",
+    "moduleLoc": 136,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 12
+   },
+   "iri": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/scripts-16728d",
+   "abox_asserted": true
+  }
+ },
+ "explanations": {
+  "stage:GrowthStage": {
+   "class": "GrowthStage",
+   "individual": "http://senso-framework.org/data/ucfopen__canvasapi-271",
+   "attempts": 3,
+   "target": "http://senso-framework.org/data/ucfopen__canvasapi-271 type http://senso-framework.org/ontology/seo#GrowthStage",
+   "justifications": [],
+   "raw_text": "",
+   "seconds": 3.407406938029453,
+   "returncode": 1,
+   "error": "Exception in thread \"main\" org.mindswap.pellet.exceptions.InternalReasonerException: Adding type to a pruned node \"anon(26)\" restrictedDatatype(http://www.w3.org/2001/XMLSchema#decimal,[facet(http://www.w3.org/2001/XMLSchema#minExclusive,literal(0.15,(),http://www.w3.org/2001/XMLSchema#decimal))])\n\tat org.mindswap.pellet.Node.addType(Node.java:448)\n\tat org.mindswap.pellet.Literal.addType(Literal.java:257)\n\tat org.mindswap.pellet.tableau.completion.CompletionStrategy.addType(CompletionStrategy.java:438)\n\tat org.mindswap.pellet.tableau.completion.rule.SomeValuesRule.applySomeValuesRule(SomeValuesRule.java:180)\n\tat org.mindswap.pellet.tableau.completion.rule.SomeValuesRule.apply(SomeValuesRule.java:64)\n\tat org.mindswap.pellet.tableau.completion.rule.AbstractTableauRule.apply(AbstractTableauRule.java:64)\n\tat org.mindswap.pellet.tableau.completion.SROIQStrategy.complete(SROIQStrategy.java:157)\n\tat org.mindswap.pellet.ABox.isConsistent(ABox.java:1423)\n\tat org.mindswap.pellet.ABox.isSatisfiab"
+  },
+  "stage:RBActiveDevelopmentStage": {
+   "class": "RBActiveDevelopmentStage",
+   "individual": "http://senso-framework.org/data/ucfopen__canvasapi-271",
+   "attempts": 3,
+   "target": "http://senso-framework.org/data/ucfopen__canvasapi-271 type http://senso-framework.org/ontology/seo#RBActiveDevelopmentStage",
+   "justifications": [],
+   "raw_text": "",
+   "seconds": 3.823285695980303,
+   "returncode": 1,
+   "error": "Exception in thread \"main\" org.mindswap.pellet.exceptions.InternalReasonerException: Adding type to a pruned node \"anon(26)\" restrictedDatatype(http://www.w3.org/2001/XMLSchema#decimal,[facet(http://www.w3.org/2001/XMLSchema#minExclusive,literal(0.15,(),http://www.w3.org/2001/XMLSchema#decimal))])\n\tat org.mindswap.pellet.Node.addType(Node.java:448)\n\tat org.mindswap.pellet.Literal.addType(Literal.java:257)\n\tat org.mindswap.pellet.tableau.completion.CompletionStrategy.addType(CompletionStrategy.java:438)\n\tat org.mindswap.pellet.tableau.completion.rule.SomeValuesRule.applySomeValuesRule(SomeValuesRule.java:180)\n\tat org.mindswap.pellet.tableau.completion.rule.SomeValuesRule.apply(SomeValuesRule.java:64)\n\tat org.mindswap.pellet.tableau.completion.rule.AbstractTableauRule.apply(AbstractTableauRule.java:64)\n\tat org.mindswap.pellet.tableau.completion.SROIQStrategy.complete(SROIQStrategy.java:157)\n\tat org.mindswap.pellet.ABox.isConsistent(ABox.java:1423)\n\tat org.mindswap.pellet.ABox.isSatisfiab"
+  },
+  "lawI": {
+   "class": "LawIConformant",
+   "individual": "http://senso-framework.org/data/ucfopen__canvasapi-271",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/ucfopen__canvasapi-271 type http://senso-framework.org/ontology/seo#LawIConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law1_min_months",
+       "text": "A_monthsObserved_ge_p_law1_min_months equivalentTo monthsObserved some integer[>= 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawIConformant",
+       "text": "LawIConformant equivalentTo A_activeMonthRatio_ge_p_law1_active_ratio and A_monthsObserved_ge_p_law1_min_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_activeMonthRatio_ge_p_law1_active_ratio",
+       "text": "A_activeMonthRatio_ge_p_law1_active_ratio equivalentTo activeMonthRatio some decimal[>= 0.5]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "ucfopen__canvasapi-271",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "ucfopen__canvasapi-271 type SoftwareProject"
+      },
+      {
+       "subject": "ucfopen__canvasapi-271",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "ucfopen__canvasapi-271 monthsObserved 36"
+      },
+      {
+       "subject": "ucfopen__canvasapi-271",
+       "prop": "activeMonthRatio",
+       "value": 0.972222,
+       "raw": "ucfopen__canvasapi-271 activeMonthRatio 0.972222"
+      }
+     ],
+     "closures": [],
+     "raw": "A_monthsObserved_ge_p_law1_min_months equivalentTo monthsObserved some integer[>= 2]\nucfopen__canvasapi-271 type SoftwareProject\nLawIConformant equivalentTo A_activeMonthRatio_ge_p_law1_active_ratio and A_monthsObserved_ge_p_law1_min_months and SoftwareProject\nA_activeMonthRatio_ge_p_law1_active_ratio equivalentTo activeMonthRatio some decimal[>= 0.5]\nucfopen__canvasapi-271 monthsObserved 36\nucfopen__canvasapi-271 activeMonthRatio 0.972222"
+    }
+   ],
+   "raw_text": "Axiom: ucfopen__canvasapi-271 type LawIConformant\n\nExplanation(s): \n1)   A_monthsObserved_ge_p_law1_min_months equivalentTo monthsObserved some integer[>= 2]\n     ucfopen__canvasapi-271 type SoftwareProject\n     LawIConformant equivalentTo A_activeMonthRatio_ge_p_law1_active_ratio\n                                 and A_monthsObserved_ge_p_law1_min_months\n                                 and SoftwareProject\n     A_activeMonthRatio_ge_p_law1_active_ratio equivalentTo activeMonthRatio some decimal[>= 0.5]\n     ucfopen__canvasapi-271 monthsObserved 36\n     ucfopen__canvasapi-271 activeMonthRatio 0.972222\n\n\n",
+   "seconds": 3.541866844985634,
+   "returncode": 0,
+   "error": null
+  },
+  "lawIII": {
+   "class": "LawIIINonConformant",
+   "individual": "http://senso-framework.org/data/ucfopen__canvasapi-271",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/ucfopen__canvasapi-271 type http://senso-framework.org/ontology/seo#LawIIINonConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_churnCV_ge_p_law3_churn_cv",
+       "text": "A_churnCV_ge_p_law3_churn_cv equivalentTo churnCV some decimal[>= 2.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law3_min_months",
+       "text": "A_monthsObserved_ge_p_law3_min_months equivalentTo monthsObserved some integer[>= 6]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawIIINonConformant",
+       "text": "LawIIINonConformant equivalentTo A_churnCV_ge_p_law3_churn_cv and A_monthsObserved_ge_p_law3_min_months and SoftwareProject"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "ucfopen__canvasapi-271",
+       "prop": "churnCV",
+       "value": 2.201586,
+       "raw": "ucfopen__canvasapi-271 churnCV 2.201586"
+      },
+      {
+       "subject": "ucfopen__canvasapi-271",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "ucfopen__canvasapi-271 type SoftwareProject"
+      },
+      {
+       "subject": "ucfopen__canvasapi-271",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "ucfopen__canvasapi-271 monthsObserved 36"
+      }
+     ],
+     "closures": [],
+     "raw": "A_churnCV_ge_p_law3_churn_cv equivalentTo churnCV some decimal[>= 2.0]\nA_monthsObserved_ge_p_law3_min_months equivalentTo monthsObserved some integer[>= 6]\nucfopen__canvasapi-271 churnCV 2.201586\nucfopen__canvasapi-271 type SoftwareProject\nucfopen__canvasapi-271 monthsObserved 36\nLawIIINonConformant equivalentTo A_churnCV_ge_p_law3_churn_cv and A_monthsObserved_ge_p_law3_min_months and SoftwareProject"
+    }
+   ],
+   "raw_text": "Axiom: ucfopen__canvasapi-271 type LawIIINonConformant\n\nExplanation(s): \n1)   A_churnCV_ge_p_law3_churn_cv equivalentTo churnCV some decimal[>= 2.0]\n     A_monthsObserved_ge_p_law3_min_months equivalentTo monthsObserved some integer[>= 6]\n     ucfopen__canvasapi-271 churnCV 2.201586\n     ucfopen__canvasapi-271 type SoftwareProject\n     ucfopen__canvasapi-271 monthsObserved 36\n     LawIIINonConformant equivalentTo A_churnCV_ge_p_law3_churn_cv\n                                      and A_monthsObserved_ge_p_law3_min_months\n                                      and SoftwareProject\n\n\n",
+   "seconds": 3.517592453979887,
+   "returncode": 0,
+   "error": null
+  },
+  "lawIV": {
+   "class": "LawIVConformant",
+   "individual": "http://senso-framework.org/data/ucfopen__canvasapi-271",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/ucfopen__canvasapi-271 type http://senso-framework.org/ontology/seo#LawIVConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law4_min_months",
+       "text": "A_monthsObserved_ge_p_law4_min_months equivalentTo monthsObserved some integer[>= 6]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawIVConformant",
+       "text": "LawIVConformant equivalentTo A_commitCountCV_lt_p_law4_commit_cv and A_monthsObserved_ge_p_law4_min_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_commitCountCV_lt_p_law4_commit_cv",
+       "text": "A_commitCountCV_lt_p_law4_commit_cv equivalentTo commitCountCV some decimal[< 1.5]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "ucfopen__canvasapi-271",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "ucfopen__canvasapi-271 type SoftwareProject"
+      },
+      {
+       "subject": "ucfopen__canvasapi-271",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "ucfopen__canvasapi-271 monthsObserved 36"
+      },
+      {
+       "subject": "ucfopen__canvasapi-271",
+       "prop": "commitCountCV",
+       "value": 0.689153,
+       "raw": "ucfopen__canvasapi-271 commitCountCV 0.689153"
+      }
+     ],
+     "closures": [],
+     "raw": "A_monthsObserved_ge_p_law4_min_months equivalentTo monthsObserved some integer[>= 6]\nLawIVConformant equivalentTo A_commitCountCV_lt_p_law4_commit_cv and A_monthsObserved_ge_p_law4_min_months and SoftwareProject\nucfopen__canvasapi-271 type SoftwareProject\nA_commitCountCV_lt_p_law4_commit_cv equivalentTo commitCountCV some decimal[< 1.5]\nucfopen__canvasapi-271 monthsObserved 36\nucfopen__canvasapi-271 commitCountCV 0.689153"
+    }
+   ],
+   "raw_text": "Axiom: ucfopen__canvasapi-271 type LawIVConformant\n\nExplanation(s): \n1)   A_monthsObserved_ge_p_law4_min_months equivalentTo monthsObserved some integer[>= 6]\n     LawIVConformant equivalentTo A_commitCountCV_lt_p_law4_commit_cv\n                                  and A_monthsObserved_ge_p_law4_min_months\n                                  and SoftwareProject\n     ucfopen__canvasapi-271 type SoftwareProject\n     A_commitCountCV_lt_p_law4_commit_cv equivalentTo commitCountCV some decimal[< 1.5]\n     ucfopen__canvasapi-271 monthsObserved 36\n     ucfopen__canvasapi-271 commitCountCV 0.689153\n\n\n",
+   "seconds": 3.4475271870032884,
+   "returncode": 0,
+   "error": null
+  },
+  "lawV": {
+   "class": "LawVConformant",
+   "individual": "http://senso-framework.org/data/ucfopen__canvasapi-271",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/ucfopen__canvasapi-271 type http://senso-framework.org/ontology/seo#LawVConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "LawVConformant",
+       "text": "LawVConformant equivalentTo A_linesAddedCV_lt_p_law5_additions_cv and A_monthsObserved_ge_p_law5_min_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_linesAddedCV_lt_p_law5_additions_cv",
+       "text": "A_linesAddedCV_lt_p_law5_additions_cv equivalentTo linesAddedCV some decimal[< 2.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law5_min_months",
+       "text": "A_monthsObserved_ge_p_law5_min_months equivalentTo monthsObserved some integer[>= 4]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "ucfopen__canvasapi-271",
+       "prop": "linesAddedCV",
+       "value": 1.737491,
+       "raw": "ucfopen__canvasapi-271 linesAddedCV 1.737491"
+      },
+      {
+       "subject": "ucfopen__canvasapi-271",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "ucfopen__canvasapi-271 type SoftwareProject"
+      },
+      {
+       "subject": "ucfopen__canvasapi-271",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "ucfopen__canvasapi-271 monthsObserved 36"
+      }
+     ],
+     "closures": [],
+     "raw": "ucfopen__canvasapi-271 linesAddedCV 1.737491\nLawVConformant equivalentTo A_linesAddedCV_lt_p_law5_additions_cv and A_monthsObserved_ge_p_law5_min_months and SoftwareProject\nA_linesAddedCV_lt_p_law5_additions_cv equivalentTo linesAddedCV some decimal[< 2.0]\nA_monthsObserved_ge_p_law5_min_months equivalentTo monthsObserved some integer[>= 4]\nucfopen__canvasapi-271 type SoftwareProject\nucfopen__canvasapi-271 monthsObserved 36"
+    }
+   ],
+   "raw_text": "Axiom: ucfopen__canvasapi-271 type LawVConformant\n\nExplanation(s): \n1)   ucfopen__canvasapi-271 linesAddedCV 1.737491\n     LawVConformant equivalentTo A_linesAddedCV_lt_p_law5_additions_cv\n                                 and A_monthsObserved_ge_p_law5_min_months\n                                 and SoftwareProject\n     A_linesAddedCV_lt_p_law5_additions_cv equivalentTo linesAddedCV some decimal[< 2.0]\n     A_monthsObserved_ge_p_law5_min_months equivalentTo monthsObserved some integer[>= 4]\n     ucfopen__canvasapi-271 type SoftwareProject\n     ucfopen__canvasapi-271 monthsObserved 36\n\n\n",
+   "seconds": 3.5793262229999527,
+   "returncode": 0,
+   "error": null
+  },
+  "lawVI": {
+   "class": "LawVIConformant",
+   "individual": "http://senso-framework.org/data/ucfopen__canvasapi-271",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/ucfopen__canvasapi-271 type http://senso-framework.org/ontology/seo#LawVIConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "subclass",
+       "subject": "GrowthStage",
+       "text": "GrowthStage subClassOf LawVIConformant"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKTau_gt_0",
+       "text": "A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "GrowthStage",
+       "text": "GrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKpValue_lt_mk_alpha",
+       "text": "A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "ucfopen__canvasapi-271",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "ucfopen__canvasapi-271 type SoftwareProject"
+      },
+      {
+       "subject": "ucfopen__canvasapi-271",
+       "prop": "locSeriesLength",
+       "value": 36,
+       "raw": "ucfopen__canvasapi-271 locSeriesLength 36"
+      },
+      {
+       "subject": "ucfopen__canvasapi-271",
+       "prop": "locMKpValue",
+       "value": 0.0,
+       "raw": "ucfopen__canvasapi-271 locMKpValue 0.0"
+      },
+      {
+       "subject": "ucfopen__canvasapi-271",
+       "prop": "locMKTau",
+       "value": 0.919048,
+       "raw": "ucfopen__canvasapi-271 locMKTau 0.919048"
+      }
+     ],
+     "closures": [],
+     "raw": "ucfopen__canvasapi-271 type SoftwareProject\nGrowthStage subClassOf LawVIConformant\nA_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\nA_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\nGrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject\nucfopen__canvasapi-271 locSeriesLength 36\nA_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]\nucfopen__canvasapi-271 locMKpValue 0.0\nucfopen__canvasapi-271 locMKTau 0.919048\nA_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]"
+    }
+   ],
+   "raw_text": "Axiom: ucfopen__canvasapi-271 type LawVIConformant\n\nExplanation(s): \n1)   ucfopen__canvasapi-271 type SoftwareProject\n     GrowthStage subClassOf LawVIConformant\n     A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\n     A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\n     GrowthStage equivalentTo A_locMKTau_gt_0\n                              and A_locMKpValue_lt_mk_alpha\n                              and MKApplicable\n                              and SoftwareProject\n     ucfopen__canvasapi-271 locSeriesLength 36\n     A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]\n     ucfopen__canvasapi-271 locMKpValue 0.0\n     ucfopen__canvasapi-271 locMKTau 0.919048\n     A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\n\n\n",
+   "seconds": 3.5910570329870097,
+   "returncode": 0,
+   "error": null
+  },
+  "lawVII": {
+   "class": "LawVIIConformant",
+   "individual": "http://senso-framework.org/data/ucfopen__canvasapi-271",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/ucfopen__canvasapi-271 type http://senso-framework.org/ontology/seo#LawVIIConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_bugFixHalfRatio_ge_p_law7_tolerance",
+       "text": "A_bugFixHalfRatio_ge_p_law7_tolerance equivalentTo bugFixHalfRatio some decimal[>= 0.9]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawVIIConformantRatio",
+       "text": "LawVIIConformantRatio equivalentTo A_activeMonthCount_ge_p_law7_min_active_months and A_bugFixHalfRatio_ge_p_law7_tolerance and A_bugFixRatioFirstHalf_gt_0 and SoftwareProject"
+      },
+      {
+       "kind": "subclass",
+       "subject": "LawVIIConformantRatio",
+       "text": "LawVIIConformantRatio subClassOf LawVIIConformant"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_bugFixRatioFirstHalf_gt_0",
+       "text": "A_bugFixRatioFirstHalf_gt_0 equivalentTo bugFixRatioFirstHalf some decimal[> 0.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_activeMonthCount_ge_p_law7_min_active_months",
+       "text": "A_activeMonthCount_ge_p_law7_min_active_months equivalentTo activeMonthCount some integer[>= 4]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "ucfopen__canvasapi-271",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "ucfopen__canvasapi-271 type SoftwareProject"
+      },
+      {
+       "subject": "ucfopen__canvasapi-271",
+       "prop": "bugFixHalfRatio",
+       "value": 1.022878,
+       "raw": "ucfopen__canvasapi-271 bugFixHalfRatio 1.022878"
+      },
+      {
+       "subject": "ucfopen__canvasapi-271",
+       "prop": "activeMonthCount",
+       "value": 35,
+       "raw": "ucfopen__canvasapi-271 activeMonthCount 35"
+      },
+      {
+       "subject": "ucfopen__canvasapi-271",
+       "prop": "bugFixRatioFirstHalf",
+       "value": 0.356598,
+       "raw": "ucfopen__canvasapi-271 bugFixRatioFirstHalf 0.356598"
+      }
+     ],
+     "closures": [],
+     "raw": "A_bugFixHalfRatio_ge_p_law7_tolerance equivalentTo bugFixHalfRatio some decimal[>= 0.9]\nLawVIIConformantRatio equivalentTo A_activeMonthCount_ge_p_law7_min_active_months and A_bugFixHalfRatio_ge_p_law7_tolerance and A_bugFixRatioFirstHalf_gt_0 and SoftwareProject\nucfopen__canvasapi-271 type SoftwareProject\nucfopen__canvasapi-271 bugFixHalfRatio 1.022878\nLawVIIConformantRatio subClassOf LawVIIConformant\nucfopen__canvasapi-271 activeMonthCount 35\nucfopen__canvasapi-271 bugFixRatioFirstHalf 0.356598\nA_bugFixRatioFirstHalf_gt_0 equivalentTo bugFixRatioFirstHalf some decimal[> 0.0]\nA_activeMonthCount_ge_p_law7_min_active_months equivalentTo activeMonthCount some integer[>= 4]"
+    }
+   ],
+   "raw_text": "Axiom: ucfopen__canvasapi-271 type LawVIIConformant\n\nExplanation(s): \n1)   A_bugFixHalfRatio_ge_p_law7_tolerance equivalentTo bugFixHalfRatio some decimal[>= 0.9]\n     LawVIIConformantRatio equivalentTo A_activeMonthCount_ge_p_law7_min_active_months\n                                        and A_bugFixHalfRatio_ge_p_law7_tolerance\n                                        and A_bugFixRatioFirstHalf_gt_0\n                                        and SoftwareProject\n     ucfopen__canvasapi-271 type SoftwareProject\n     ucfopen__canvasapi-271 bugFixHalfRatio 1.022878\n     LawVIIConformantRatio subClassOf LawVIIConformant\n     ucfopen__canvasapi-271 activeMonthCount 35\n     ucfopen__canvasapi-271 bugFixRatioFirstHalf 0.356598\n     A_bugFixRatioFirstHalf_gt_0 equivalentTo bugFixRatioFirstHalf some decimal[> 0.0]\n     A_activeMonthCount_ge_p_law7_min_active_months equivalentTo activeMonthCount some integer[>= 4]\n\n\n",
+   "seconds": 3.4009981750277802,
+   "returncode": 0,
+   "error": null
+  },
+  "lawVIII": {
+   "class": "LawVIIIConformant",
+   "individual": "http://senso-framework.org/data/ucfopen__canvasapi-271",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/ucfopen__canvasapi-271 type http://senso-framework.org/ontology/seo#LawVIIIConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio",
+       "text": "A_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio equivalentTo multiAuthorMonthRatio some decimal[> 0.3]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_mergeMonthRatio_gt_p_law8_merge_ratio",
+       "text": "A_mergeMonthRatio_gt_p_law8_merge_ratio equivalentTo MergeActive"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio",
+       "text": "A_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio equivalentTo MultiAuthorActive"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawVIIIConformant",
+       "text": "LawVIIIConformant equivalentTo A_monthsObserved_ge_p_law8_min_months and MergeActive and MultiAuthorActive and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law8_min_months",
+       "text": "A_monthsObserved_ge_p_law8_min_months equivalentTo monthsObserved some integer[>= 6]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_mergeMonthRatio_gt_p_law8_merge_ratio",
+       "text": "A_mergeMonthRatio_gt_p_law8_merge_ratio equivalentTo mergeMonthRatio some decimal[> 0.3]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "ucfopen__canvasapi-271",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "ucfopen__canvasapi-271 type SoftwareProject"
+      },
+      {
+       "subject": "ucfopen__canvasapi-271",
+       "prop": "mergeMonthRatio",
+       "value": 0.888889,
+       "raw": "ucfopen__canvasapi-271 mergeMonthRatio 0.888889"
+      },
+      {
+       "subject": "ucfopen__canvasapi-271",
+       "prop": "multiAuthorMonthRatio",
+       "value": 0.888889,
+       "raw": "ucfopen__canvasapi-271 multiAuthorMonthRatio 0.888889"
+      },
+      {
+       "subject": "ucfopen__canvasapi-271",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "ucfopen__canvasapi-271 monthsObserved 36"
+      }
+     ],
+     "closures": [],
+     "raw": "A_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio equivalentTo multiAuthorMonthRatio some decimal[> 0.3]\nA_mergeMonthRatio_gt_p_law8_merge_ratio equivalentTo MergeActive\nA_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio equivalentTo MultiAuthorActive\nucfopen__canvasapi-271 type SoftwareProject\nucfopen__canvasapi-271 mergeMonthRatio 0.888889\nLawVIIIConformant equivalentTo A_monthsObserved_ge_p_law8_min_months and MergeActive and MultiAuthorActive and SoftwareProject\nA_monthsObserved_ge_p_law8_min_months equivalentTo monthsObserved some integer[>= 6]\nucfopen__canvasapi-271 multiAuthorMonthRatio 0.888889\nA_mergeMonthRatio_gt_p_law8_merge_ratio equivalentTo mergeMonthRatio some decimal[> 0.3]\nucfopen__canvasapi-271 monthsObserved 36"
+    }
+   ],
+   "raw_text": "Axiom: ucfopen__canvasapi-271 type LawVIIIConformant\n\nExplanation(s): \n1)   A_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio equivalentTo multiAuthorMonthRatio some decimal[> 0.3]\n     A_mergeMonthRatio_gt_p_law8_merge_ratio equivalentTo MergeActive\n     A_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio equivalentTo MultiAuthorActive\n     ucfopen__canvasapi-271 type SoftwareProject\n     ucfopen__canvasapi-271 mergeMonthRatio 0.888889\n     LawVIIIConformant equivalentTo A_monthsObserved_ge_p_law8_min_months\n                                    and MergeActive\n                                    and MultiAuthorActive\n                                    and SoftwareProject\n     A_monthsObserved_ge_p_law8_min_months equivalentTo monthsObserved some integer[>= 6]\n     ucfopen__canvasapi-271 multiAuthorMonthRatio 0.888889\n     A_mergeMonthRatio_gt_p_law8_merge_ratio equivalentTo mergeMonthRatio some decimal[> 0.3]\n     ucfopen__canvasapi-271 monthsObserved 36\n\n\n",
+   "seconds": 3.562682671996299,
+   "returncode": 0,
+   "error": null
+  },
+  "module:canvasapi/course.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_course.py-bcc202",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_course.py-bcc202 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "canvasapi_course.py-bcc202",
+       "prop": "type",
+       "value": "Module",
+       "raw": "canvasapi_course.py-bcc202 type Module"
+      },
+      {
+       "subject": "canvasapi_course.py-bcc202",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 4,
+       "raw": "canvasapi_course.py-bcc202 moduleChangeMonthsInWindow 4"
+      }
+     ],
+     "closures": [],
+     "raw": "canvasapi_course.py-bcc202 type Module\nA_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\nOftenChangedModule subClassOf ActiveModule\ncanvasapi_course.py-bcc202 moduleChangeMonthsInWindow 4"
+    }
+   ],
+   "raw_text": "Axiom: canvasapi_course.py-bcc202 type ActiveModule\n\nExplanation(s): \n1)   canvasapi_course.py-bcc202 type Module\n     A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     OftenChangedModule subClassOf ActiveModule\n     canvasapi_course.py-bcc202 moduleChangeMonthsInWindow 4\n\n\n",
+   "seconds": 3.4050030260114,
+   "returncode": 0,
+   "error": null
+  },
+  "module:canvasapi/account.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_account.py-8266af",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_account.py-8266af type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "canvasapi_account.py-8266af",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 5,
+       "raw": "canvasapi_account.py-8266af moduleChangeMonthsInWindow 5"
+      },
+      {
+       "subject": "canvasapi_account.py-8266af",
+       "prop": "type",
+       "value": "Module",
+       "raw": "canvasapi_account.py-8266af type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\ncanvasapi_account.py-8266af moduleChangeMonthsInWindow 5\nOftenChangedModule subClassOf ActiveModule\ncanvasapi_account.py-8266af type Module"
+    }
+   ],
+   "raw_text": "Axiom: canvasapi_account.py-8266af type ActiveModule\n\nExplanation(s): \n1)   A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     canvasapi_account.py-8266af moduleChangeMonthsInWindow 5\n     OftenChangedModule subClassOf ActiveModule\n     canvasapi_account.py-8266af type Module\n\n\n",
+   "seconds": 3.3356823720387183,
+   "returncode": 0,
+   "error": null
+  },
+  "module:canvasapi/canvas.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_canvas.py-d1513d",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_canvas.py-d1513d type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "canvasapi_canvas.py-d1513d",
+       "prop": "type",
+       "value": "Module",
+       "raw": "canvasapi_canvas.py-d1513d type Module"
+      },
+      {
+       "subject": "canvasapi_canvas.py-d1513d",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 3,
+       "raw": "canvasapi_canvas.py-d1513d moduleChangeMonthsInWindow 3"
+      }
+     ],
+     "closures": [],
+     "raw": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\ncanvasapi_canvas.py-d1513d type Module\ncanvasapi_canvas.py-d1513d moduleChangeMonthsInWindow 3\nOftenChangedModule subClassOf ActiveModule"
+    }
+   ],
+   "raw_text": "Axiom: canvasapi_canvas.py-d1513d type ActiveModule\n\nExplanation(s): \n1)   A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     canvasapi_canvas.py-d1513d type Module\n     canvasapi_canvas.py-d1513d moduleChangeMonthsInWindow 3\n     OftenChangedModule subClassOf ActiveModule\n\n\n",
+   "seconds": 3.254692408023402,
+   "returncode": 0,
+   "error": null
+  },
+  "module:canvasapi/group.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_group.py-9c0328",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_group.py-9c0328 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule subClassOf ActiveModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "canvasapi_group.py-9c0328",
+       "prop": "moduleRelChurnInWindow",
+       "value": 0.111808,
+       "raw": "canvasapi_group.py-9c0328 moduleRelChurnInWindow 0.111808"
+      },
+      {
+       "subject": "canvasapi_group.py-9c0328",
+       "prop": "type",
+       "value": "Module",
+       "raw": "canvasapi_group.py-9c0328 type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "canvasapi_group.py-9c0328 moduleRelChurnInWindow 0.111808\nHighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module\ncanvasapi_group.py-9c0328 type Module\nHighRelChurnModule subClassOf ActiveModule\nA_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+    }
+   ],
+   "raw_text": "Axiom: canvasapi_group.py-9c0328 type ActiveModule\n\nExplanation(s): \n1)   canvasapi_group.py-9c0328 moduleRelChurnInWindow 0.111808\n     HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn\n                                     and Module\n     canvasapi_group.py-9c0328 type Module\n     HighRelChurnModule subClassOf ActiveModule\n     A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\n\n\n",
+   "seconds": 3.9271679439698346,
+   "returncode": 0,
+   "error": null
+  },
+  "module:canvasapi/user.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_user.py-2398c7",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_user.py-2398c7 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "canvasapi_user.py-2398c7",
+       "prop": "type",
+       "value": "Module",
+       "raw": "canvasapi_user.py-2398c7 type Module"
+      },
+      {
+       "subject": "canvasapi_user.py-2398c7",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 4,
+       "raw": "canvasapi_user.py-2398c7 moduleChangeMonthsInWindow 4"
+      }
+     ],
+     "closures": [],
+     "raw": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\ncanvasapi_user.py-2398c7 type Module\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\ncanvasapi_user.py-2398c7 moduleChangeMonthsInWindow 4\nOftenChangedModule subClassOf ActiveModule"
+    }
+   ],
+   "raw_text": "Axiom: canvasapi_user.py-2398c7 type ActiveModule\n\nExplanation(s): \n1)   A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     canvasapi_user.py-2398c7 type Module\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     canvasapi_user.py-2398c7 moduleChangeMonthsInWindow 4\n     OftenChangedModule subClassOf ActiveModule\n\n\n",
+   "seconds": 3.3109763539978303,
+   "returncode": 0,
+   "error": null
+  },
+  "module:canvasapi/discussion_topic.py": {
+   "class": "StableModule",
+   "individual": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_discussion_topic.py-dc8ae1",
+   "attempts": 3,
+   "target": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_discussion_topic.py-dc8ae1 type http://senso-framework.org/ontology/seo#StableModule",
+   "justifications": [],
+   "raw_text": "",
+   "seconds": 3.415617557009682,
+   "returncode": 1,
+   "error": "Exception in thread \"main\" org.mindswap.pellet.exceptions.InternalReasonerException: Adding type to a pruned node \"anon(25)\" restrictedDatatype(http://www.w3.org/2001/XMLSchema#decimal,[facet(http://www.w3.org/2001/XMLSchema#minExclusive,literal(0.15,(),http://www.w3.org/2001/XMLSchema#decimal))])\n\tat org.mindswap.pellet.Node.addType(Node.java:448)\n\tat org.mindswap.pellet.Literal.addType(Literal.java:257)\n\tat org.mindswap.pellet.tableau.completion.CompletionStrategy.addType(CompletionStrategy.java:438)\n\tat org.mindswap.pellet.tableau.completion.rule.SomeValuesRule.applySomeValuesRule(SomeValuesRule.java:180)\n\tat org.mindswap.pellet.tableau.completion.rule.SomeValuesRule.apply(SomeValuesRule.java:64)\n\tat org.mindswap.pellet.tableau.completion.rule.AbstractTableauRule.apply(AbstractTableauRule.java:64)\n\tat org.mindswap.pellet.tableau.completion.SROIQStrategy.complete(SROIQStrategy.java:157)\n\tat org.mindswap.pellet.ABox.isConsistent(ABox.java:1423)\n\tat org.mindswap.pellet.ABox.isSatisfiab"
+  },
+  "module:canvasapi/quiz.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_quiz.py-f138c7",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_quiz.py-f138c7 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "canvasapi_quiz.py-f138c7",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 3,
+       "raw": "canvasapi_quiz.py-f138c7 moduleChangeMonthsInWindow 3"
+      },
+      {
+       "subject": "canvasapi_quiz.py-f138c7",
+       "prop": "type",
+       "value": "Module",
+       "raw": "canvasapi_quiz.py-f138c7 type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "canvasapi_quiz.py-f138c7 moduleChangeMonthsInWindow 3\nA_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\ncanvasapi_quiz.py-f138c7 type Module\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\nOftenChangedModule subClassOf ActiveModule"
+    }
+   ],
+   "raw_text": "Axiom: canvasapi_quiz.py-f138c7 type ActiveModule\n\nExplanation(s): \n1)   canvasapi_quiz.py-f138c7 moduleChangeMonthsInWindow 3\n     A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     canvasapi_quiz.py-f138c7 type Module\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     OftenChangedModule subClassOf ActiveModule\n\n\n",
+   "seconds": 3.3731289209681563,
+   "returncode": 0,
+   "error": null
+  },
+  "module:canvasapi/section.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_section.py-508f5b",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_section.py-508f5b type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule subClassOf ActiveModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "canvasapi_section.py-508f5b",
+       "prop": "type",
+       "value": "Module",
+       "raw": "canvasapi_section.py-508f5b type Module"
+      },
+      {
+       "subject": "canvasapi_section.py-508f5b",
+       "prop": "moduleRelChurnInWindow",
+       "value": 0.121212,
+       "raw": "canvasapi_section.py-508f5b moduleRelChurnInWindow 0.121212"
+      }
+     ],
+     "closures": [],
+     "raw": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module\ncanvasapi_section.py-508f5b type Module\nHighRelChurnModule subClassOf ActiveModule\ncanvasapi_section.py-508f5b moduleRelChurnInWindow 0.121212\nA_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+    }
+   ],
+   "raw_text": "Axiom: canvasapi_section.py-508f5b type ActiveModule\n\nExplanation(s): \n1)   HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn\n                                     and Module\n     canvasapi_section.py-508f5b type Module\n     HighRelChurnModule subClassOf ActiveModule\n     canvasapi_section.py-508f5b moduleRelChurnInWindow 0.121212\n     A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\n\n\n",
+   "seconds": 3.394282885012217,
+   "returncode": 0,
+   "error": null
+  },
+  "module:canvasapi/assignment.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_assignment.py-30920d",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_assignment.py-30920d type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "canvasapi_assignment.py-30920d",
+       "prop": "type",
+       "value": "Module",
+       "raw": "canvasapi_assignment.py-30920d type Module"
+      },
+      {
+       "subject": "canvasapi_assignment.py-30920d",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 8,
+       "raw": "canvasapi_assignment.py-30920d moduleChangeMonthsInWindow 8"
+      }
+     ],
+     "closures": [],
+     "raw": "canvasapi_assignment.py-30920d type Module\nA_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\ncanvasapi_assignment.py-30920d moduleChangeMonthsInWindow 8\nOftenChangedModule subClassOf ActiveModule"
+    }
+   ],
+   "raw_text": "Axiom: canvasapi_assignment.py-30920d type ActiveModule\n\nExplanation(s): \n1)   canvasapi_assignment.py-30920d type Module\n     A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     canvasapi_assignment.py-30920d moduleChangeMonthsInWindow 8\n     OftenChangedModule subClassOf ActiveModule\n\n\n",
+   "seconds": 5.776107301993761,
+   "returncode": 0,
+   "error": null
+  },
+  "module:canvasapi/outcome.py": {
+   "class": "StableModule",
+   "individual": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_outcome.py-2af374",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_outcome.py-2af374 type http://senso-framework.org/ontology/seo#StableModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "StableModule",
+       "text": "StableModule equivalentTo LowRelChurnModule and RarelyChangedModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "LowRelChurnModule",
+       "text": "LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "definition",
+       "subject": "RarelyChangedModule",
+       "text": "RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "canvasapi_outcome.py-2af374",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 1,
+       "raw": "canvasapi_outcome.py-2af374 moduleChangeMonthsInWindow 1"
+      },
+      {
+       "subject": "canvasapi_outcome.py-2af374",
+       "prop": "moduleRelChurnInWindow",
+       "value": 0.003135,
+       "raw": "canvasapi_outcome.py-2af374 moduleRelChurnInWindow 0.003135"
+      },
+      {
+       "subject": "canvasapi_outcome.py-2af374",
+       "prop": "type",
+       "value": "Module",
+       "raw": "canvasapi_outcome.py-2af374 type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "canvasapi_outcome.py-2af374 moduleChangeMonthsInWindow 1\nA_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\nA_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\ncanvasapi_outcome.py-2af374 moduleRelChurnInWindow 0.003135\nStableModule equivalentTo LowRelChurnModule and RarelyChangedModule\ncanvasapi_outcome.py-2af374 type Module\nLowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module\nRarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module"
+    }
+   ],
+   "raw_text": "Axiom: canvasapi_outcome.py-2af374 type StableModule\n\nExplanation(s): \n1)   canvasapi_outcome.py-2af374 moduleChangeMonthsInWindow 1\n     A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\n     A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\n     canvasapi_outcome.py-2af374 moduleRelChurnInWindow 0.003135\n     StableModule equivalentTo LowRelChurnModule\n                               and RarelyChangedModule\n     canvasapi_outcome.py-2af374 type Module\n     LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn\n                                    and Module\n     RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months\n                                      and Module\n\n\n",
+   "seconds": 6.8698286970029585,
+   "returncode": 0,
+   "error": null
+  },
+  "module:canvasapi/blueprint.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_blueprint.py-14c3c3",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_blueprint.py-14c3c3 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule subClassOf ActiveModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "canvasapi_blueprint.py-14c3c3",
+       "prop": "type",
+       "value": "Module",
+       "raw": "canvasapi_blueprint.py-14c3c3 type Module"
+      },
+      {
+       "subject": "canvasapi_blueprint.py-14c3c3",
+       "prop": "moduleRelChurnInWindow",
+       "value": 1.662879,
+       "raw": "canvasapi_blueprint.py-14c3c3 moduleRelChurnInWindow 1.662879"
+      }
+     ],
+     "closures": [],
+     "raw": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module\ncanvasapi_blueprint.py-14c3c3 type Module\ncanvasapi_blueprint.py-14c3c3 moduleRelChurnInWindow 1.662879\nHighRelChurnModule subClassOf ActiveModule\nA_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+    }
+   ],
+   "raw_text": "Axiom: canvasapi_blueprint.py-14c3c3 type ActiveModule\n\nExplanation(s): \n1)   HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn\n                                     and Module\n     canvasapi_blueprint.py-14c3c3 type Module\n     canvasapi_blueprint.py-14c3c3 moduleRelChurnInWindow 1.662879\n     HighRelChurnModule subClassOf ActiveModule\n     A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\n\n\n",
+   "seconds": 6.556606044003274,
+   "returncode": 0,
+   "error": null
+  },
+  "module:canvasapi/current_user.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_current_user.py-a0ef27",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_current_user.py-a0ef27 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule subClassOf ActiveModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "canvasapi_current_user.py-a0ef27",
+       "prop": "moduleRelChurnInWindow",
+       "value": 1.429185,
+       "raw": "canvasapi_current_user.py-a0ef27 moduleRelChurnInWindow 1.429185"
+      },
+      {
+       "subject": "canvasapi_current_user.py-a0ef27",
+       "prop": "type",
+       "value": "Module",
+       "raw": "canvasapi_current_user.py-a0ef27 type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module\ncanvasapi_current_user.py-a0ef27 moduleRelChurnInWindow 1.429185\ncanvasapi_current_user.py-a0ef27 type Module\nHighRelChurnModule subClassOf ActiveModule\nA_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+    }
+   ],
+   "raw_text": "Axiom: canvasapi_current_user.py-a0ef27 type ActiveModule\n\nExplanation(s): \n1)   HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn\n                                     and Module\n     canvasapi_current_user.py-a0ef27 moduleRelChurnInWindow 1.429185\n     canvasapi_current_user.py-a0ef27 type Module\n     HighRelChurnModule subClassOf ActiveModule\n     A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\n\n\n",
+   "seconds": 6.926660963974427,
+   "returncode": 0,
+   "error": null
+  },
+  "module:canvasapi/page.py": {
+   "class": "StableModule",
+   "individual": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_page.py-d07f2a",
+   "attempts": 3,
+   "target": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_page.py-d07f2a type http://senso-framework.org/ontology/seo#StableModule",
+   "justifications": [],
+   "raw_text": "",
+   "seconds": 4.390179562964477,
+   "returncode": 1,
+   "error": "Exception in thread \"main\" org.mindswap.pellet.exceptions.InternalReasonerException: Adding type to a pruned node \"anon(25)\" restrictedDatatype(http://www.w3.org/2001/XMLSchema#decimal,[facet(http://www.w3.org/2001/XMLSchema#minExclusive,literal(0.15,(),http://www.w3.org/2001/XMLSchema#decimal))])\n\tat org.mindswap.pellet.Node.addType(Node.java:448)\n\tat org.mindswap.pellet.Literal.addType(Literal.java:257)\n\tat org.mindswap.pellet.tableau.completion.CompletionStrategy.addType(CompletionStrategy.java:438)\n\tat org.mindswap.pellet.tableau.completion.rule.SomeValuesRule.applySomeValuesRule(SomeValuesRule.java:180)\n\tat org.mindswap.pellet.tableau.completion.rule.SomeValuesRule.apply(SomeValuesRule.java:64)\n\tat org.mindswap.pellet.tableau.completion.rule.AbstractTableauRule.apply(AbstractTableauRule.java:64)\n\tat org.mindswap.pellet.tableau.completion.SROIQStrategy.complete(SROIQStrategy.java:157)\n\tat org.mindswap.pellet.ABox.isConsistent(ABox.java:1423)\n\tat org.mindswap.pellet.ABox.isSatisfiab"
+  },
+  "module:docs": {
+   "class": "StableModule",
+   "individual": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/docs-71ab8b",
+   "attempts": 3,
+   "target": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/docs-71ab8b type http://senso-framework.org/ontology/seo#StableModule",
+   "justifications": [],
+   "raw_text": "",
+   "seconds": 3.3318460430018604,
+   "returncode": 1,
+   "error": "Exception in thread \"main\" org.mindswap.pellet.exceptions.InternalReasonerException: Adding type to a pruned node \"anon(25)\" restrictedDatatype(http://www.w3.org/2001/XMLSchema#decimal,[facet(http://www.w3.org/2001/XMLSchema#minExclusive,literal(0.15,(),http://www.w3.org/2001/XMLSchema#decimal))])\n\tat org.mindswap.pellet.Node.addType(Node.java:448)\n\tat org.mindswap.pellet.Literal.addType(Literal.java:257)\n\tat org.mindswap.pellet.tableau.completion.CompletionStrategy.addType(CompletionStrategy.java:438)\n\tat org.mindswap.pellet.tableau.completion.rule.SomeValuesRule.applySomeValuesRule(SomeValuesRule.java:180)\n\tat org.mindswap.pellet.tableau.completion.rule.SomeValuesRule.apply(SomeValuesRule.java:64)\n\tat org.mindswap.pellet.tableau.completion.rule.AbstractTableauRule.apply(AbstractTableauRule.java:64)\n\tat org.mindswap.pellet.tableau.completion.SROIQStrategy.complete(SROIQStrategy.java:157)\n\tat org.mindswap.pellet.ABox.isConsistent(ABox.java:1423)\n\tat org.mindswap.pellet.ABox.isSatisfiab"
+  },
+  "module:canvasapi/content_migration.py": {
+   "class": "StableModule",
+   "individual": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_content_migration.py-b489a2",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_content_migration.py-b489a2 type http://senso-framework.org/ontology/seo#StableModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "StableModule",
+       "text": "StableModule equivalentTo LowRelChurnModule and RarelyChangedModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "LowRelChurnModule",
+       "text": "LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "definition",
+       "subject": "RarelyChangedModule",
+       "text": "RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "canvasapi_content_migration.py-b489a2",
+       "prop": "moduleRelChurnInWindow",
+       "value": 0.0,
+       "raw": "canvasapi_content_migration.py-b489a2 moduleRelChurnInWindow 0.0"
+      },
+      {
+       "subject": "canvasapi_content_migration.py-b489a2",
+       "prop": "type",
+       "value": "Module",
+       "raw": "canvasapi_content_migration.py-b489a2 type Module"
+      },
+      {
+       "subject": "canvasapi_content_migration.py-b489a2",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 0,
+       "raw": "canvasapi_content_migration.py-b489a2 moduleChangeMonthsInWindow 0"
+      }
+     ],
+     "closures": [],
+     "raw": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\ncanvasapi_content_migration.py-b489a2 moduleRelChurnInWindow 0.0\nA_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\ncanvasapi_content_migration.py-b489a2 type Module\nStableModule equivalentTo LowRelChurnModule and RarelyChangedModule\nLowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module\nRarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module\ncanvasapi_content_migration.py-b489a2 moduleChangeMonthsInWindow 0"
+    }
+   ],
+   "raw_text": "Axiom: canvasapi_content_migration.py-b489a2 type StableModule\n\nExplanation(s): \n1)   A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\n     canvasapi_content_migration.py-b489a2 moduleRelChurnInWindow 0.0\n     A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\n     canvasapi_content_migration.py-b489a2 type Module\n     StableModule equivalentTo LowRelChurnModule\n                               and RarelyChangedModule\n     LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn\n                                    and Module\n     RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months\n                                      and Module\n     canvasapi_content_migration.py-b489a2 moduleChangeMonthsInWindow 0\n\n\n",
+   "seconds": 3.274822785053402,
+   "returncode": 0,
+   "error": null
+  },
+  "module:canvasapi/communication_channel.py": {
+   "class": "StableModule",
+   "individual": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_communication_channel.py-5e1bac",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_communication_channel.py-5e1bac type http://senso-framework.org/ontology/seo#StableModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "StableModule",
+       "text": "StableModule equivalentTo LowRelChurnModule and RarelyChangedModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "LowRelChurnModule",
+       "text": "LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "definition",
+       "subject": "RarelyChangedModule",
+       "text": "RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "canvasapi_communication_channel.py-5e1bac",
+       "prop": "type",
+       "value": "Module",
+       "raw": "canvasapi_communication_channel.py-5e1bac type Module"
+      },
+      {
+       "subject": "canvasapi_communication_channel.py-5e1bac",
+       "prop": "moduleRelChurnInWindow",
+       "value": 0.098039,
+       "raw": "canvasapi_communication_channel.py-5e1bac moduleRelChurnInWindow 0.098039"
+      },
+      {
+       "subject": "canvasapi_communication_channel.py-5e1bac",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 2,
+       "raw": "canvasapi_communication_channel.py-5e1bac moduleChangeMonthsInWindow 2"
+      }
+     ],
+     "closures": [],
+     "raw": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\ncanvasapi_communication_channel.py-5e1bac type Module\nA_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\ncanvasapi_communication_channel.py-5e1bac moduleRelChurnInWindow 0.098039\nStableModule equivalentTo LowRelChurnModule and RarelyChangedModule\ncanvasapi_communication_channel.py-5e1bac moduleChangeMonthsInWindow 2\nLowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module\nRarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module"
+    }
+   ],
+   "raw_text": "Axiom: canvasapi_communication_channel.py-5e1bac type StableModule\n\nExplanation(s): \n1)   A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\n     canvasapi_communication_channel.py-5e1bac type Module\n     A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\n     canvasapi_communication_channel.py-5e1bac moduleRelChurnInWindow 0.098039\n     StableModule equivalentTo LowRelChurnModule\n                               and RarelyChangedModule\n     canvasapi_communication_channel.py-5e1bac moduleChangeMonthsInWindow 2\n     LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn\n                                    and Module\n     RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months\n                                      and Module\n\n\n",
+   "seconds": 3.895773398980964,
+   "returncode": 0,
+   "error": null
+  },
+  "module:canvasapi/module.py": {
+   "class": "StableModule",
+   "individual": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_module.py-a3275c",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_module.py-a3275c type http://senso-framework.org/ontology/seo#StableModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "StableModule",
+       "text": "StableModule equivalentTo LowRelChurnModule and RarelyChangedModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "LowRelChurnModule",
+       "text": "LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "definition",
+       "subject": "RarelyChangedModule",
+       "text": "RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "canvasapi_module.py-a3275c",
+       "prop": "type",
+       "value": "Module",
+       "raw": "canvasapi_module.py-a3275c type Module"
+      },
+      {
+       "subject": "canvasapi_module.py-a3275c",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 1,
+       "raw": "canvasapi_module.py-a3275c moduleChangeMonthsInWindow 1"
+      },
+      {
+       "subject": "canvasapi_module.py-a3275c",
+       "prop": "moduleRelChurnInWindow",
+       "value": 0.020513,
+       "raw": "canvasapi_module.py-a3275c moduleRelChurnInWindow 0.020513"
+      }
+     ],
+     "closures": [],
+     "raw": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\ncanvasapi_module.py-a3275c type Module\nA_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\ncanvasapi_module.py-a3275c moduleChangeMonthsInWindow 1\nStableModule equivalentTo LowRelChurnModule and RarelyChangedModule\ncanvasapi_module.py-a3275c moduleRelChurnInWindow 0.020513\nLowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module\nRarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module"
+    }
+   ],
+   "raw_text": "Axiom: canvasapi_module.py-a3275c type StableModule\n\nExplanation(s): \n1)   A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\n     canvasapi_module.py-a3275c type Module\n     A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\n     canvasapi_module.py-a3275c moduleChangeMonthsInWindow 1\n     StableModule equivalentTo LowRelChurnModule\n                               and RarelyChangedModule\n     canvasapi_module.py-a3275c moduleRelChurnInWindow 0.020513\n     LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn\n                                    and Module\n     RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months\n                                      and Module\n\n\n",
+   "seconds": 3.5955663680215366,
+   "returncode": 0,
+   "error": null
+  },
+  "module:canvasapi/poll.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_poll.py-dede9e",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_poll.py-dede9e type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule subClassOf ActiveModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "canvasapi_poll.py-dede9e",
+       "prop": "moduleRelChurnInWindow",
+       "value": 1.652174,
+       "raw": "canvasapi_poll.py-dede9e moduleRelChurnInWindow 1.652174"
+      },
+      {
+       "subject": "canvasapi_poll.py-dede9e",
+       "prop": "type",
+       "value": "Module",
+       "raw": "canvasapi_poll.py-dede9e type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "canvasapi_poll.py-dede9e moduleRelChurnInWindow 1.652174\nHighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module\nHighRelChurnModule subClassOf ActiveModule\ncanvasapi_poll.py-dede9e type Module\nA_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+    }
+   ],
+   "raw_text": "Axiom: canvasapi_poll.py-dede9e type ActiveModule\n\nExplanation(s): \n1)   canvasapi_poll.py-dede9e moduleRelChurnInWindow 1.652174\n     HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn\n                                     and Module\n     HighRelChurnModule subClassOf ActiveModule\n     canvasapi_poll.py-dede9e type Module\n     A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\n\n\n",
+   "seconds": 3.2104053620132618,
+   "returncode": 0,
+   "error": null
+  },
+  "module:canvasapi/submission.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_submission.py-96fe11",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_submission.py-96fe11 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule subClassOf ActiveModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "canvasapi_submission.py-96fe11",
+       "prop": "moduleRelChurnInWindow",
+       "value": 1.388535,
+       "raw": "canvasapi_submission.py-96fe11 moduleRelChurnInWindow 1.388535"
+      },
+      {
+       "subject": "canvasapi_submission.py-96fe11",
+       "prop": "type",
+       "value": "Module",
+       "raw": "canvasapi_submission.py-96fe11 type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "canvasapi_submission.py-96fe11 moduleRelChurnInWindow 1.388535\nHighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module\nHighRelChurnModule subClassOf ActiveModule\nA_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\ncanvasapi_submission.py-96fe11 type Module"
+    }
+   ],
+   "raw_text": "Axiom: canvasapi_submission.py-96fe11 type ActiveModule\n\nExplanation(s): \n1)   canvasapi_submission.py-96fe11 moduleRelChurnInWindow 1.388535\n     HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn\n                                     and Module\n     HighRelChurnModule subClassOf ActiveModule\n     A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\n     canvasapi_submission.py-96fe11 type Module\n\n\n",
+   "seconds": 3.389262026990764,
+   "returncode": 0,
+   "error": null
+  },
+  "module:canvasapi/folder.py": {
+   "class": "StableModule",
+   "individual": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_folder.py-4fc334",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_folder.py-4fc334 type http://senso-framework.org/ontology/seo#StableModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "StableModule",
+       "text": "StableModule equivalentTo LowRelChurnModule and RarelyChangedModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "LowRelChurnModule",
+       "text": "LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "definition",
+       "subject": "RarelyChangedModule",
+       "text": "RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "canvasapi_folder.py-4fc334",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 1,
+       "raw": "canvasapi_folder.py-4fc334 moduleChangeMonthsInWindow 1"
+      },
+      {
+       "subject": "canvasapi_folder.py-4fc334",
+       "prop": "moduleRelChurnInWindow",
+       "value": 0.025641,
+       "raw": "canvasapi_folder.py-4fc334 moduleRelChurnInWindow 0.025641"
+      },
+      {
+       "subject": "canvasapi_folder.py-4fc334",
+       "prop": "type",
+       "value": "Module",
+       "raw": "canvasapi_folder.py-4fc334 type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "canvasapi_folder.py-4fc334 moduleChangeMonthsInWindow 1\nA_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\nA_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\ncanvasapi_folder.py-4fc334 moduleRelChurnInWindow 0.025641\nStableModule equivalentTo LowRelChurnModule and RarelyChangedModule\ncanvasapi_folder.py-4fc334 type Module\nLowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module\nRarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module"
+    }
+   ],
+   "raw_text": "Axiom: canvasapi_folder.py-4fc334 type StableModule\n\nExplanation(s): \n1)   canvasapi_folder.py-4fc334 moduleChangeMonthsInWindow 1\n     A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\n     A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\n     canvasapi_folder.py-4fc334 moduleRelChurnInWindow 0.025641\n     StableModule equivalentTo LowRelChurnModule\n                               and RarelyChangedModule\n     canvasapi_folder.py-4fc334 type Module\n     LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn\n                                    and Module\n     RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months\n                                      and Module\n\n\n",
+   "seconds": 3.467542707978282,
+   "returncode": 0,
+   "error": null
+  },
+  "module:canvasapi/requester.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_requester.py-9eea6c",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_requester.py-9eea6c type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "canvasapi_requester.py-9eea6c",
+       "prop": "type",
+       "value": "Module",
+       "raw": "canvasapi_requester.py-9eea6c type Module"
+      },
+      {
+       "subject": "canvasapi_requester.py-9eea6c",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 3,
+       "raw": "canvasapi_requester.py-9eea6c moduleChangeMonthsInWindow 3"
+      }
+     ],
+     "closures": [],
+     "raw": "canvasapi_requester.py-9eea6c type Module\nA_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\ncanvasapi_requester.py-9eea6c moduleChangeMonthsInWindow 3\nOftenChangedModule subClassOf ActiveModule"
+    }
+   ],
+   "raw_text": "Axiom: canvasapi_requester.py-9eea6c type ActiveModule\n\nExplanation(s): \n1)   canvasapi_requester.py-9eea6c type Module\n     A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     canvasapi_requester.py-9eea6c moduleChangeMonthsInWindow 3\n     OftenChangedModule subClassOf ActiveModule\n\n\n",
+   "seconds": 3.5382645440404303,
+   "returncode": 0,
+   "error": null
+  },
+  "module:scripts": {
+   "class": "StableModule",
+   "individual": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/scripts-16728d",
+   "attempts": 3,
+   "target": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/scripts-16728d type http://senso-framework.org/ontology/seo#StableModule",
+   "justifications": [],
+   "raw_text": "",
+   "seconds": 3.3568600500002503,
+   "returncode": 1,
+   "error": "Exception in thread \"main\" org.mindswap.pellet.exceptions.InternalReasonerException: Adding type to a pruned node \"anon(25)\" restrictedDatatype(http://www.w3.org/2001/XMLSchema#decimal,[facet(http://www.w3.org/2001/XMLSchema#minExclusive,literal(0.15,(),http://www.w3.org/2001/XMLSchema#decimal))])\n\tat org.mindswap.pellet.Node.addType(Node.java:448)\n\tat org.mindswap.pellet.Literal.addType(Literal.java:257)\n\tat org.mindswap.pellet.tableau.completion.CompletionStrategy.addType(CompletionStrategy.java:438)\n\tat org.mindswap.pellet.tableau.completion.rule.SomeValuesRule.applySomeValuesRule(SomeValuesRule.java:180)\n\tat org.mindswap.pellet.tableau.completion.rule.SomeValuesRule.apply(SomeValuesRule.java:64)\n\tat org.mindswap.pellet.tableau.completion.rule.AbstractTableauRule.apply(AbstractTableauRule.java:64)\n\tat org.mindswap.pellet.tableau.completion.SROIQStrategy.complete(SROIQStrategy.java:157)\n\tat org.mindswap.pellet.ABox.isConsistent(ABox.java:1423)\n\tat org.mindswap.pellet.ABox.isSatisfiab"
+  },
+  "module:canvasapi/util.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_util.py-568b9b",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_util.py-568b9b type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "canvasapi_util.py-568b9b",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 3,
+       "raw": "canvasapi_util.py-568b9b moduleChangeMonthsInWindow 3"
+      },
+      {
+       "subject": "canvasapi_util.py-568b9b",
+       "prop": "type",
+       "value": "Module",
+       "raw": "canvasapi_util.py-568b9b type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\ncanvasapi_util.py-568b9b moduleChangeMonthsInWindow 3\ncanvasapi_util.py-568b9b type Module\nOftenChangedModule subClassOf ActiveModule"
+    }
+   ],
+   "raw_text": "Axiom: canvasapi_util.py-568b9b type ActiveModule\n\nExplanation(s): \n1)   A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     canvasapi_util.py-568b9b moduleChangeMonthsInWindow 3\n     canvasapi_util.py-568b9b type Module\n     OftenChangedModule subClassOf ActiveModule\n\n\n",
+   "seconds": 3.359715678030625,
+   "returncode": 0,
+   "error": null
+  },
+  "module:canvasapi/poll_session.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_poll_session.py-d75e59",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_poll_session.py-d75e59 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule subClassOf ActiveModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "canvasapi_poll_session.py-d75e59",
+       "prop": "type",
+       "value": "Module",
+       "raw": "canvasapi_poll_session.py-d75e59 type Module"
+      },
+      {
+       "subject": "canvasapi_poll_session.py-d75e59",
+       "prop": "moduleRelChurnInWindow",
+       "value": 1.666667,
+       "raw": "canvasapi_poll_session.py-d75e59 moduleRelChurnInWindow 1.666667"
+      }
+     ],
+     "closures": [],
+     "raw": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module\ncanvasapi_poll_session.py-d75e59 type Module\nHighRelChurnModule subClassOf ActiveModule\nA_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\ncanvasapi_poll_session.py-d75e59 moduleRelChurnInWindow 1.666667"
+    }
+   ],
+   "raw_text": "Axiom: canvasapi_poll_session.py-d75e59 type ActiveModule\n\nExplanation(s): \n1)   HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn\n                                     and Module\n     canvasapi_poll_session.py-d75e59 type Module\n     HighRelChurnModule subClassOf ActiveModule\n     A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\n     canvasapi_poll_session.py-d75e59 moduleRelChurnInWindow 1.666667\n\n\n",
+   "seconds": 3.396378460980486,
+   "returncode": 0,
+   "error": null
+  },
+  "module:canvasapi/external_tool.py": {
+   "class": "StableModule",
+   "individual": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_external_tool.py-d9163b",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/ucfopen__canvasapi-271/module/canvasapi_external_tool.py-d9163b type http://senso-framework.org/ontology/seo#StableModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "StableModule",
+       "text": "StableModule equivalentTo LowRelChurnModule and RarelyChangedModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "LowRelChurnModule",
+       "text": "LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "definition",
+       "subject": "RarelyChangedModule",
+       "text": "RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "canvasapi_external_tool.py-d9163b",
+       "prop": "moduleRelChurnInWindow",
+       "value": 0.0,
+       "raw": "canvasapi_external_tool.py-d9163b moduleRelChurnInWindow 0.0"
+      },
+      {
+       "subject": "canvasapi_external_tool.py-d9163b",
+       "prop": "type",
+       "value": "Module",
+       "raw": "canvasapi_external_tool.py-d9163b type Module"
+      },
+      {
+       "subject": "canvasapi_external_tool.py-d9163b",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 0,
+       "raw": "canvasapi_external_tool.py-d9163b moduleChangeMonthsInWindow 0"
+      }
+     ],
+     "closures": [],
+     "raw": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\ncanvasapi_external_tool.py-d9163b moduleRelChurnInWindow 0.0\nA_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\nStableModule equivalentTo LowRelChurnModule and RarelyChangedModule\nLowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module\nRarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module\ncanvasapi_external_tool.py-d9163b type Module\ncanvasapi_external_tool.py-d9163b moduleChangeMonthsInWindow 0"
+    }
+   ],
+   "raw_text": "Axiom: canvasapi_external_tool.py-d9163b type StableModule\n\nExplanation(s): \n1)   A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\n     canvasapi_external_tool.py-d9163b moduleRelChurnInWindow 0.0\n     A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\n     StableModule equivalentTo LowRelChurnModule\n                               and RarelyChangedModule\n     LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn\n                                    and Module\n     RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months\n                                      and Module\n     canvasapi_external_tool.py-d9163b type Module\n     canvasapi_external_tool.py-d9163b moduleChangeMonthsInWindow 0\n\n\n",
+   "seconds": 3.5413065379834734,
+   "returncode": 0,
+   "error": null
+  }
+ },
+ "timings": {
+  "t_clone": 0.004,
+  "t_mine": 7.779,
+  "t_loc": 1.14,
+  "t_reason_A": 6.199,
+  "mining_cached": false,
+  "t_modules": 3.707,
+  "t_reason_B": 3.342,
+  "n_configs": 1,
+  "t_explain": 179.29,
+  "n_explain_calls": 34,
+  "t_writeback": 0.0,
+  "t_total": 203.04
+ }
+}

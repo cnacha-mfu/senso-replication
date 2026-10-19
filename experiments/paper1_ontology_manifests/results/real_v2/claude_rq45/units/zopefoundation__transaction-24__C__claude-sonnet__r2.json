@@ -1,0 +1,111 @@
+{
+ "unit_id": "zopefoundation__transaction-24__C__claude-sonnet__r2",
+ "task_id": "zopefoundation__transaction-24",
+ "repo": "zopefoundation/transaction",
+ "stage": "servicing",
+ "condition": "C",
+ "model": "claude-code/sonnet",
+ "run": 2,
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 3740,
+  "sha256": "96a3545d7f8cc8add31e89309155a6076c632f737d157b3eeeee0ffed99c205c"
+ },
+ "started": "2026-10-18T09:58:25.078234+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 5,
+ "tool_calls": 4,
+ "usage": {
+  "input_tokens": 10,
+  "cache_creation_input_tokens": 820,
+  "cache_read_input_tokens": 93811,
+  "output_tokens": 840,
+  "output_tokens_details": {
+   "thinking_tokens": 0
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 820,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 10,
+   "outputTokens": 840,
+   "cacheReadInputTokens": 93811,
+   "cacheCreationInputTokens": 820,
+   "webSearchRequests": 0,
+   "costUSD": 0.0210811,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.0210811,
+ "result_text": "`manager.attempts()` now stops after the first attempt that commits, so a successful run is no longer repeated. I didn't run the issue's script. The change is untested beyond the existing suite.\n\nThe fix is in `transaction/_manager.py`. `Attempt` now records when its commit succeeds, and the `attempts()` generator breaks out of its loop once that happens. For the issue's example, that should give 0 0, 0 1, 0 2, then `current ntry: 3`.\n\nTest results: 164 pass and 1 fails, `test_notify_transaction_late_comers`. It fails the same way with my change stashed, so it isn't caused by this fix.\n\nThe last attempt is the manager itself rather than an `Attempt`, and I left that path alone. Retries in the final slot already end the loop anyway.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792327800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0.12,
+    "resetsAt": 1792327800
+   },
+   "seven_day": {
+    "utilization": 0.14,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 20.9,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 5,
+   "hit_step_limit": 0,
+   "changed_lines": 8,
+   "gold_changed_lines": 36,
+   "Y1": 1,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": -2.1699250014423126
+  },
+  "f2p_pass": 1,
+  "f2p_total": 1,
+  "p2p_pass": 45,
+  "p2p_total": 45,
+  "f2p_all_pass": true,
+  "p2p_all_pass": true,
+  "resolved": true,
+  "reason": "resolved",
+  "test_seconds": 0.6
+ },
+ "status": "done",
+ "finished": "2026-10-18T09:58:47.282479+00:00"
+}

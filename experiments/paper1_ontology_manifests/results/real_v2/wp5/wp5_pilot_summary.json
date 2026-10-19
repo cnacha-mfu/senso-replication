@@ -1,0 +1,28 @@
+{
+ "k_A_resolved": 2,
+ "n_A_runs": 20,
+ "p0_hat": 0.1,
+ "p0_jeffreys_80": [
+  0.04099269763095513,
+  0.21355652137333964
+ ],
+ "model_pair": [
+  "google/diffusiongemma-26b-a4b-it",
+  "nvidia/nemotron-3-super-120b-a12b"
+ ],
+ "model_AB_resolved_over_runs": {
+  "google/diffusiongemma-26b-a4b-it": [
+   1,
+   20
+  ],
+  "nvidia/nemotron-3-super-120b-a12b": [
+   3,
+   20
+  ]
+ },
+ "model_logor_raw": -0.9555114450274363,
+ "model_logor": -0.9555114450274363,
+ "pilot_icc": null,
+ "note": "pilot 2 (thinking off, 4096 tokens, 1800 s); model_logor is the RAW contrast: run_wp5_analysis.py power halves and clips it (plan 7.1). Pilot only, never evidence.",
+ "model_logor_halved_clipped": -0.4777557225137182
+}

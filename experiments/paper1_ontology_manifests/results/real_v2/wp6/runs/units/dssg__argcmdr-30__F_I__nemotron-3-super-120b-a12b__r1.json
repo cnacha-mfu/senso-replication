@@ -1,0 +1,78 @@
+{
+ "unit_id": "dssg__argcmdr-30__F_I__nemotron-3-super-120b-a12b__r1",
+ "task_id": "dssg__argcmdr-30",
+ "repo": "dssg/argcmdr",
+ "stage": "servicing",
+ "condition": "F_I",
+ "model": "nvidia/nemotron-3-super-120b-a12b",
+ "run": 1,
+ "order": 247,
+ "env_build_s": 37.6,
+ "started": "2026-10-09T10:21:25.946371+00:00",
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 322,
+  "sha256": "d5d3863e7734ec6e82824f96a9f6747bf1305129bdad7161d4c1b260956a2abe"
+ },
+ "condition_available": true,
+ "venv_reset_s": 0.93,
+ "retries": 0,
+ "venv_hash_before": "9849cb48e077e24b",
+ "venv_hash_after": "9849cb48e077e24b",
+ "venv_mutated": false,
+ "exit_status": "LimitsExceeded",
+ "error": "",
+ "steps": 40,
+ "wall_s": 292.3,
+ "prompt_tokens": 446612,
+ "completion_tokens": 8035,
+ "format_errors": 0,
+ "length_cutoffs": 0,
+ "api_errors": {
+  "429": 141
+ },
+ "n_queries": 63,
+ "keys_used": {
+  "NVIDIA_API_KEY": 47,
+  "NVIDIA_API_KEY_4": 40,
+  "NVIDIA_API_KEY_2": 46,
+  "NVIDIA_API_KEY_5": 48
+ },
+ "temperature": 0.7,
+ "top_p": 0.95,
+ "model_id_returned": "nvidia/nemotron-3-super-120b-a12b",
+ "mini_version": "2.4.6",
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 40,
+   "hit_step_limit": 1,
+   "changed_lines": 34,
+   "gold_changed_lines": 174,
+   "Y1": 1,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": -2.355480654598389
+  },
+  "f2p_pass": 0,
+  "f2p_total": 24,
+  "p2p_pass": 0,
+  "p2p_total": 31,
+  "f2p_all_pass": false,
+  "p2p_all_pass": false,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 1.1
+ },
+ "status": "done",
+ "finished": "2026-10-09T10:26:22.560495+00:00"
+}

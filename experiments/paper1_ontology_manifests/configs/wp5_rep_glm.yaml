@@ -1,0 +1,25 @@
+# WP5 (RQ4/RQ5) replication with two stronger NIM coding models (exploratory; not in the pre-registration, see
+# papers/paper1/wp5-deviations-log.md entry 15). Same 80 tasks, conditions A/B/C/D, manifests (symlinked from wp5/)
+# and agent as configs/wp5.yaml, but run with the WP6 runner, which restores the task venv before every run and
+# before evaluation (fixes WP5 deviation 14, shared venv). Ledgers: wp5.evaluate.write_ledgers over runs/units.
+# GLM phase: same as wp5_rep.yaml but agent.wall_time_limit_seconds 5400 (WP6 deviation 23: NIM latency for glm-5.3-flash ~85 s/call).
+# Usage:
+#   PY=/home/adtgrade/research/wp5_feasibility/.venv/bin/python
+#   $PY experiments/paper1_ontology_manifests/run_wp6.py --config experiments/paper1_ontology_manifests/configs/wp5_rep.yaml \
+#       run --conditions A B C D --replicates 2
+base_config: experiments/paper1_ontology_manifests/configs/wp5.yaml
+
+output_dir: experiments/paper1_ontology_manifests/results/real_v2/wp5_rep
+pilot_dir: experiments/paper1_ontology_manifests/results/real_v2/wp5_rep/pilot
+work_dir: /home/adtgrade/research/data/wp6
+shared_work_dir: /home/adtgrade/research/data/wp5
+seed: 20261012
+wp5_tasks: experiments/paper1_ontology_manifests/results/real_v2/wp5/wp5_tasks.json
+wp5_output_dir: experiments/paper1_ontology_manifests/results/real_v2/wp5
+replicates: 2
+
+agent:
+  models:
+    - {name: nvidia/nemotron-3-ultra-550b-a55b, key_env: NVIDIA_API_KEY_2, extra_body: {chat_template_kwargs: {enable_thinking: false}}}
+    - {name: z-ai/glm-5.3-flash, key_env: NVIDIA_API_KEY}   # replaced moonshotai/kimi-k3 on 2026-10-13 (WP6 deviation 22)
+  wall_time_limit_seconds: 5400   # WP6 deviation 23 (GLM phase only)

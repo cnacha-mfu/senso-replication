@@ -1,0 +1,111 @@
+{
+ "unit_id": "nhairs__python-json-logger-26__D__claude-sonnet__r2",
+ "task_id": "nhairs__python-json-logger-26",
+ "repo": "nhairs/python-json-logger",
+ "stage": "servicing",
+ "condition": "D",
+ "model": "claude-code/sonnet",
+ "run": 2,
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 3678,
+  "sha256": "e0ca7ec87523fb405d7218929f179adeacf77f47056f5bd72ddf2b759529ae1c"
+ },
+ "started": "2026-10-18T07:10:30.772790+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 7,
+ "tool_calls": 6,
+ "usage": {
+  "input_tokens": 14,
+  "cache_creation_input_tokens": 4992,
+  "cache_read_input_tokens": 139583,
+  "output_tokens": 1539,
+  "output_tokens_details": {
+   "thinking_tokens": 75
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 4992,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 14,
+   "outputTokens": 1539,
+   "cacheReadInputTokens": 139583,
+   "cacheCreationInputTokens": 4992,
+   "webSearchRequests": 0,
+   "costUSD": 0.0493443,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 75,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.0493443,
+ "result_text": "The `defaults` parameter now works. I only ran the existing test suite (152 passed, 4 xfailed), which doesn't cover `defaults`, and I didn't add any tests or try the new behavior directly.\n\nThe fix is in `src/pythonjsonlogger/core.py`:\n- **Stored:** the formatter now keeps `defaults` instead of ignoring it.\n- **Added to the output:** every default is added to the log output before other fields. It's still subject to `rename_fields`.\n- **Fallback:** a field named in the format string that is missing from the record falls back to its default instead of `None`.\n- **Precedence:** a value from the log record, `static_fields` or a logged dict overrides the default.\n\nI also updated the docstring, which used to say `defaults` was ignored.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792309800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0.19,
+    "resetsAt": 1792309800
+   },
+   "seven_day": {
+    "utilization": 0.13,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 35.4,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 7,
+   "hit_step_limit": 0,
+   "changed_lines": 11,
+   "gold_changed_lines": 24,
+   "Y1": 2,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": -1.125530882083859
+  },
+  "f2p_pass": 9,
+  "f2p_total": 9,
+  "p2p_pass": 134,
+  "p2p_total": 134,
+  "f2p_all_pass": true,
+  "p2p_all_pass": true,
+  "resolved": true,
+  "reason": "resolved",
+  "test_seconds": 1.1
+ },
+ "status": "done",
+ "finished": "2026-10-18T07:11:14.086186+00:00"
+}

@@ -1,0 +1,263 @@
+{
+ "task_id": "pahaz__sshtunnel-216",
+ "repo": "pahaz/sshtunnel",
+ "stage": "initial_development",
+ "rounds": 1,
+ "rejects": {},
+ "flags": [
+  "no_gold_dir",
+  "kind3_dropped",
+  "length_violation_F_R",
+  "length_violation_F_I"
+ ],
+ "info": {
+  "slots": {
+   "test_root": "tests",
+   "P1": {
+    "replaced": null,
+    "name": "core",
+    "F_R": "core",
+    "F_I": "docs/core"
+   },
+   "P2": {
+    "replaced": null,
+    "F_R": "testutls.py",
+    "F_I": "docs/internal.py"
+   },
+   "D": {
+    "replaced": null,
+    "F_R": "asyncssh",
+    "F_I": "boltons"
+   }
+  },
+  "why": {
+   "test_command": [
+    {
+     "root": "tests",
+     "T3": "SupportedClaim",
+     "T1": "SupportedClaim",
+     "collect_ok": true
+    }
+   ],
+   "kind1": {
+    "p1_idx": null,
+    "gold0": null,
+    "unrelated": null,
+    "base_R": "",
+    "base_I": "docs"
+   },
+   "kind2": {
+    "p2_idx": null,
+    "n_deleted_py": 3,
+    "found": {
+     "F_R": "testutls.py",
+     "F_I": "docs/internal.py"
+    }
+   },
+   "kind3": {
+    "run": null,
+    "install": null,
+    "test_ok": true,
+    "install_ok": true
+   },
+   "kind4": {
+    "deps": [],
+    "d_idx": null,
+    "src_R": "paramiko",
+    "src_I": "docutils",
+    "n_decls": 23,
+    "n_dist": 54
+   }
+  },
+  "length": {
+   "T": 141,
+   "F_R": 207,
+   "F_I": 216
+  },
+  "fallbacks": {
+   "F_R": [],
+   "F_I": [
+    "kind2_never_existed_fallback"
+   ]
+  },
+  "modes": {
+   "F_R": {
+    "1": "add",
+    "2": "add",
+    "4": "add"
+   },
+   "F_I": {
+    "1": "add",
+    "2": "add",
+    "4": "add"
+   }
+  },
+  "length_diff": {
+   "F_R": 66,
+   "F_I": 75
+  },
+  "n_claims_T": 4,
+  "n_false": {
+   "F_R": 3,
+   "F_I": 3
+  },
+  "pointer_in_issue": true,
+  "gold_dirs": [],
+  "gold_files": [
+   "appveyor.yml",
+   "sshtunnel.py"
+  ]
+ },
+ "tokens": {
+  "F_R": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "core",
+     "core"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "testutls.py",
+     "testutls.py"
+    ]
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "asyncssh"
+    ]
+   }
+  ],
+  "F_I": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "docs/core",
+     "core"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "docs/internal.py",
+     "internal.py"
+    ]
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "boltons"
+    ]
+   }
+  ]
+ },
+ "unresolved_pre_hermit": [],
+ "sha256": {
+  "T": "73643acb57bec86e5545539998394bf4121b0d42fe96f1dcce4c158f04e259e7",
+  "F_R": "063fd7baab1976676c51a37229154c4ea27424e709b0ed1aa3ce7f546e61a688",
+  "F_I": "4e7b292dab2444b735c051991107be0f78b77dc67ae46eeeb8e6ab1bd789da6d"
+ },
+ "chars": {
+  "T": 141,
+  "F_R": 207,
+  "F_I": 216
+ },
+ "claims": {
+  "T": [
+   "T1|tests",
+   "T3|test_framework|pytest",
+   "T1|tests",
+   "T1|pyproject.toml"
+  ],
+  "F_R": [
+   "T1|tests",
+   "T1|core",
+   "T1|testutls.py",
+   "T3|test_framework|pytest",
+   "T1|tests",
+   "T1|pyproject.toml",
+   "T4|asyncssh|"
+  ],
+  "F_I": [
+   "T1|tests",
+   "T1|docs/core",
+   "T1|docs/internal.py",
+   "T3|test_framework|pytest",
+   "T1|tests",
+   "T1|pyproject.toml",
+   "T4|boltons|"
+  ]
+ },
+ "python_spec": null,
+ "token_audit": [
+  {
+   "cond": "F_R",
+   "kind": 1,
+   "type": "path",
+   "name": "core",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 2,
+   "type": "path",
+   "name": "testutls.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 4,
+   "type": "word",
+   "name": "asyncssh",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 1,
+   "type": "path",
+   "name": "docs/core",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 2,
+   "type": "path",
+   "name": "docs/internal.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 4,
+   "type": "word",
+   "name": "boltons",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  }
+ ],
+ "dist_imports_used": {
+  "asyncssh": null,
+  "boltons": null
+ }
+}

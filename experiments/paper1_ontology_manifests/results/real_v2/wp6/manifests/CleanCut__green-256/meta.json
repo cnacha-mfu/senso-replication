@@ -1,0 +1,343 @@
+{
+ "task_id": "CleanCut__green-256",
+ "repo": "CleanCut/green",
+ "stage": "servicing",
+ "rounds": 1,
+ "rejects": {},
+ "flags": [
+  "no_test_command",
+  "kind4_R_used_I_competitor",
+  "length_violation_F_R",
+  "length_violation_F_I"
+ ],
+ "info": {
+  "slots": {
+   "P1": {
+    "replaced": null,
+    "name": "core",
+    "F_R": ".github/workflows/core",
+    "F_I": "example/core"
+   },
+   "P2": {
+    "replaced": null,
+    "F_R": "green/terminal.py",
+    "F_I": "examples/test_fast.py"
+   },
+   "C": {
+    "F_R": "make check",
+    "F_I": "make install"
+   },
+   "D": {
+    "replaced": "unidecode",
+    "F_R": "boltons",
+    "F_I": "boltons"
+   }
+  },
+  "why": {
+   "test_command": [
+    {
+     "root": "green/test",
+     "T3": "SupportedClaim",
+     "T1": "SupportedClaim",
+     "collect_ok": false
+    }
+   ],
+   "kind1": {
+    "p1_idx": null,
+    "gold0": ".github/workflows",
+    "unrelated": null,
+    "base_R": ".github/workflows",
+    "base_I": "example"
+   },
+   "kind2": {
+    "p2_idx": null,
+    "n_deleted_py": 14,
+    "found": {
+     "F_R": "green/terminal.py",
+     "F_I": "examples/test_fast.py"
+    }
+   },
+   "kind3": {
+    "run": "check",
+    "install": "install",
+    "test_ok": false,
+    "install_ok": true
+   },
+   "kind4": {
+    "deps": [
+     [
+      "coverage",
+      false
+     ],
+     [
+      "colorama",
+      false
+     ],
+     [
+      "lxml",
+      false
+     ],
+     [
+      "unidecode",
+      false
+     ]
+    ],
+    "d_idx": 3,
+    "src_R": "unidecode",
+    "src_I": "unidecode",
+    "n_decls": 8,
+    "n_dist": 17
+   }
+  },
+  "length": {
+   "T": 234,
+   "F_R": 312,
+   "F_I": 272
+  },
+  "fallbacks": {
+   "F_R": [
+    "kind4_I_competitor"
+   ],
+   "F_I": []
+  },
+  "modes": {
+   "F_R": {
+    "1": "add",
+    "2": "add",
+    "3": "add",
+    "4": "replace"
+   },
+   "F_I": {
+    "1": "add",
+    "2": "add",
+    "3": "replace",
+    "4": "replace"
+   }
+  },
+  "length_diff": {
+   "F_R": 78,
+   "F_I": 38
+  },
+  "n_claims_T": 9,
+  "n_false": {
+   "F_R": 4,
+   "F_I": 4
+  },
+  "pointer_in_issue": true,
+  "gold_dirs": [
+   ".github/workflows",
+   "green"
+  ],
+  "gold_files": [
+   ".github/workflows/label-sponsors.yml",
+   "green/loader.py"
+  ]
+ },
+ "tokens": {
+  "F_R": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     ".github/workflows/core",
+     "core"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "green/terminal.py",
+     "terminal.py"
+    ]
+   },
+   {
+    "kind": 3,
+    "type": "regex",
+    "regex": "\\bmake\\b[^|;&\\n]*\\bcheck\\b",
+    "target": "check"
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "boltons"
+    ]
+   }
+  ],
+  "F_I": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "example/core",
+     "core"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "examples/test_fast.py",
+     "test_fast.py"
+    ]
+   },
+   {
+    "kind": 3,
+    "type": "regex",
+    "regex": "\\bmake\\b[^|;&\\n]*\\binstall\\b",
+    "target": "install"
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "boltons"
+    ]
+   }
+  ]
+ },
+ "unresolved_pre_hermit": [],
+ "sha256": {
+  "T": "7b27978321a4d96614aafb2dada63cff1c198634d3d4f73c10d080ec54b69f08",
+  "F_R": "68f5a293985219b438d3a9ad6944ec2a2599ec49f2587cd51998295527dabeaf",
+  "F_I": "68d4873216072a179d2bce8e52850ab4aedfc3ea9453aa449c3bd87b8bca9b53"
+ },
+ "chars": {
+  "T": 234,
+  "F_R": 312,
+  "F_I": 272
+ },
+ "claims": {
+  "T": [
+   "T1|.github/workflows",
+   "T1|green",
+   "T1|green/test",
+   "T1|green/result.py",
+   "T1|setup.py",
+   "T4|coverage|",
+   "T4|colorama|",
+   "T4|lxml|",
+   "T4|unidecode|"
+  ],
+  "F_R": [
+   "T1|.github/workflows",
+   "T1|green",
+   "T1|green/test",
+   "T1|.github/workflows/core",
+   "T1|green/result.py",
+   "T1|green/terminal.py",
+   "T1|setup.py",
+   "T5|make|check",
+   "T4|coverage|",
+   "T4|colorama|",
+   "T4|lxml|",
+   "T4|boltons|"
+  ],
+  "F_I": [
+   "T1|.github/workflows",
+   "T1|green",
+   "T1|green/test",
+   "T1|example/core",
+   "T1|green/result.py",
+   "T1|examples/test_fast.py",
+   "T5|make|install",
+   "T4|coverage|",
+   "T4|colorama|",
+   "T4|lxml|",
+   "T4|boltons|"
+  ]
+ },
+ "python_spec": null,
+ "token_audit": [
+  {
+   "cond": "F_R",
+   "kind": 1,
+   "type": "path",
+   "name": ".github/workflows/core",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 2,
+   "type": "path",
+   "name": "green/terminal.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 3,
+   "type": "regex",
+   "name": "make check",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 4,
+   "type": "word",
+   "name": "boltons",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 1,
+   "type": "path",
+   "name": "example/core",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 2,
+   "type": "path",
+   "name": "examples/test_fast.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 3,
+   "type": "regex",
+   "name": "make install",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 4,
+   "type": "word",
+   "name": "boltons",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  }
+ ],
+ "dist_imports_used": {
+  "coverage": [
+   "coverage"
+  ],
+  "colorama": [
+   "colorama"
+  ],
+  "lxml": [
+   "lxml"
+  ],
+  "unidecode": [
+   "unidecode"
+  ],
+  "boltons": null
+ }
+}

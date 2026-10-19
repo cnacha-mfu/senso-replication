@@ -1,0 +1,23 @@
+{
+ "repo": "JunDamin/hwpapi",
+ "chunk": 1,
+ "n_chunks": 2,
+ "model": "openai/gpt-oss-20b",
+ "prompt_sha256": "d0e02ff613417050168d859f2af6230c3712c6758bb5d9c40d60ff55e5ae87ca",
+ "user_sha256": "400491c2c52f8635d708c1732b31f6de4a756421eff463b20f5b0bbe2a84cafe",
+ "text": "{\"claims\": []}",
+ "parse_ok": true,
+ "parse_error": null,
+ "parse_retries": 1,
+ "latency_s": 71.25693786208285,
+ "usage": {
+  "prompt": 6116,
+  "completion": 4962
+ },
+ "n_api_calls": 2,
+ "finish_reason": "stop",
+ "error": null,
+ "discarded_attempt_texts": [
+  "{\"claims\": [\n  {\"type\": \"path_exists\", \"quote\": \"Location: `tests/test_hparam.py`\", \"line\": 0185, \"subject\": \"tests/test_hparam.py\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"path_exists\", \"quote\": \"Examples: `examples/` directory\", \"line\": 0274, \"subject\": \"examples/\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"path_exists\", \"quote\": \"Tutorials: `nbs/01_tutorials/`\", \"line\": 0275, \"subject\": \"nbs/01_tutorials/\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"path_exists\", \"quote\": \"PSET_MIGRATION_SUMMARY.md\", \"line\": 0178, \"subject\": \"PSET_MIGRATION_SUMMARY.md\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"path_exists\", \"quote\": \"REFACTORING_SUMMARY.md\", \"line\": 0178, \"subject\": \"REFACTORING_SUMMARY.md\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"path_exists\", \"quote\": \"GitHub Actions workflow (`.github/workflows/deploy.yaml`)\", \"line\": 0208, \"subject\": \".github/workflows/deploy.yaml\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"tool_used\", \"quote\": \"Framework: unittest (Python standard library)\", \"line\": 0184, \"subject\": \"unittest\", \"tool_category\": \"test_framework\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"tool_used\", \"quote\": \"python -m pytest tests/\", \"line\": 0200, \"subject\": \"pytest\", \"tool_category\": \"test_framework\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"command\", \"quote\": \"nbdev_export          # Generate .py files from notebooks\", \"line\": 0194, \"subject\": \"nbdev_export\", \"runner\": \"bash\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"command\", \"quote\": \"python setup.py sdist bdist_wheel\", \"line\": 0195, \"subject\": \"setup.py\", \"runner\": \"bash\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"command\", \"quote\": \"python -m pytest tests/\", \"line\": 0200, \"subject\": \"pytest\", \"runner\": \"python\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"command\", \"quote\": \"nbdev_docs            # Generate documentation\", \"line\": 0205, \"subject\": \"nbdev_docs\", \"runner\": \"bash\", \"mode\": \"asserts_existing\"}\n]}"
+ ]
+}

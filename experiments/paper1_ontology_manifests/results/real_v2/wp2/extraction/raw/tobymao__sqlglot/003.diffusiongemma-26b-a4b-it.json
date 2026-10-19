@@ -1,0 +1,23 @@
+{
+ "repo": "tobymao/sqlglot",
+ "chunk": 3,
+ "n_chunks": 4,
+ "model": "google/diffusiongemma-26b-a4b-it",
+ "prompt_sha256": "d0e02ff613417050168d859f2af6230c3712c6758bb5d9c40d60ff55e5ae87ca",
+ "user_sha256": "b77d91a83e16958dda22bf045cc9c34429253f10a5dde0856dea18ca0b1b9d06",
+ "text": "{\"claims\": [{\"type\": \"path_exists\", \"quote\": \"Add tests to the appropriate dialect test file (e.g., `tests/dialects/test_snowflake.py`)\", \"line\": 514, \"subject\": \"tests/dialects/test_snowflake.py\", \"mode\": \"example\"}, {\"type\": \"path_exists\", \"quote\": \"Make sure all tests added to tests/dialects/*.py actually run in the relevant databases, such as snowflake or duckdb\", \"line\": 521, \"subject\": \"tests/dialects/*.py\", \"mode\": \"asserts_existing\"}]}",
+ "parse_ok": true,
+ "parse_error": null,
+ "parse_retries": 1,
+ "latency_s": 15.81168256001547,
+ "usage": {
+  "prompt": 4893,
+  "completion": 312
+ },
+ "n_api_calls": 2,
+ "finish_reason": "stop",
+ "error": null,
+ "discarded_attempt_texts": [
+  "```json\n[\n  {\n    \"type\": \"path_exists\",\n    \"subject\": \"tests/dialects/test_snowflake.py\",\n    \"path_components\": [\n      \"tests\",\n      \"dialects\",\n      \"test_snowflake.py\"\n    ],\n    \"line\": 0514,\n    \"mode\": \"asserts_existing\"\n  },\n  {\n    \"type\": \"path_exists\",\n    \"subject\": \"tests/dialects/*.py\",\n    \"path_components\": [\n      \"tests\",\n      \"dialects\",\n      \"*.py\"\n    ],\n    \"line\": 0521,\n    \"mode\": \"asserts_existing\"\n  }\n]\n```"
+ ]
+}

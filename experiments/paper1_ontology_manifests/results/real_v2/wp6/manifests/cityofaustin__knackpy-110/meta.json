@@ -1,0 +1,324 @@
+{
+ "task_id": "cityofaustin__knackpy-110",
+ "repo": "cityofaustin/knackpy",
+ "stage": "initial_development",
+ "rounds": 1,
+ "rejects": {},
+ "flags": [
+  "kind4_R_used_I_competitor",
+  "length_violation_F_R",
+  "length_violation_F_I"
+ ],
+ "info": {
+  "slots": {
+   "test_root": "tests",
+   "P1": {
+    "replaced": null,
+    "name": "core",
+    "F_R": "knackpy/core",
+    "F_I": "docs/core"
+   },
+   "P2": {
+    "replaced": null,
+    "F_R": "knackpy/tests/test_knackpy.py",
+    "F_I": "tests/config.py"
+   },
+   "C": {
+    "F_R": "make test",
+    "F_I": "make install"
+   },
+   "D": {
+    "replaced": "pytz",
+    "F_R": "tzlocal",
+    "F_I": "tzlocal"
+   }
+  },
+  "why": {
+   "test_command": [
+    {
+     "root": "tests",
+     "T3": "SupportedClaim",
+     "T1": "SupportedClaim",
+     "collect_ok": true
+    }
+   ],
+   "kind1": {
+    "p1_idx": null,
+    "gold0": "knackpy",
+    "unrelated": null,
+    "base_R": "knackpy",
+    "base_I": "docs"
+   },
+   "kind2": {
+    "p2_idx": null,
+    "n_deleted_py": 30,
+    "found": {
+     "F_R": "knackpy/tests/test_knackpy.py",
+     "F_I": "tests/config.py"
+    }
+   },
+   "kind3": {
+    "run": "test",
+    "install": "install",
+    "test_ok": true,
+    "install_ok": true
+   },
+   "kind4": {
+    "deps": [
+     [
+      "requests",
+      false
+     ],
+     [
+      "pytz",
+      false
+     ]
+    ],
+    "d_idx": 1,
+    "src_R": "pytz",
+    "src_I": "pytz",
+    "n_decls": 9,
+    "n_dist": 44
+   }
+  },
+  "length": {
+   "T": 222,
+   "F_R": 264,
+   "F_I": 256
+  },
+  "fallbacks": {
+   "F_R": [
+    "kind4_I_competitor"
+   ],
+   "F_I": []
+  },
+  "modes": {
+   "F_R": {
+    "1": "add",
+    "2": "add",
+    "3": "replace",
+    "4": "replace"
+   },
+   "F_I": {
+    "1": "add",
+    "2": "add",
+    "3": "replace",
+    "4": "replace"
+   }
+  },
+  "length_diff": {
+   "F_R": 42,
+   "F_I": 34
+  },
+  "n_claims_T": 8,
+  "n_false": {
+   "F_R": 4,
+   "F_I": 4
+  },
+  "pointer_in_issue": true,
+  "gold_dirs": [
+   "knackpy"
+  ],
+  "gold_files": [
+   "coverage.svg",
+   "knackpy/models.py",
+   "setup.py"
+  ]
+ },
+ "tokens": {
+  "F_R": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "knackpy/core",
+     "core"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "knackpy/tests/test_knackpy.py",
+     "test_knackpy.py"
+    ]
+   },
+   {
+    "kind": 3,
+    "type": "regex",
+    "regex": "\\bmake\\b[^|;&\\n]*\\btest\\b",
+    "target": "test"
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "tzlocal"
+    ]
+   }
+  ],
+  "F_I": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "docs/core",
+     "core"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "tests/config.py",
+     "config.py"
+    ]
+   },
+   {
+    "kind": 3,
+    "type": "regex",
+    "regex": "\\bmake\\b[^|;&\\n]*\\binstall\\b",
+    "target": "install"
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "tzlocal"
+    ]
+   }
+  ]
+ },
+ "unresolved_pre_hermit": [],
+ "sha256": {
+  "T": "78932c3b8e25de1c1680ceb179c0131c2b51172058f8ed912deaa7f56f364221",
+  "F_R": "75b3c5dddf9736494f9550c58fdb9158aee85a48d1a87fbf8bf4437734bb0e9c",
+  "F_I": "7e6e14e1b6e41ffdf4c5f059caae7c4b7c4bb8d278cc0e1651c10199a71b0979"
+ },
+ "chars": {
+  "T": 222,
+  "F_R": 264,
+  "F_I": 256
+ },
+ "claims": {
+  "T": [
+   "T1|knackpy",
+   "T1|tests",
+   "T1|knackpy/app.py",
+   "T3|test_framework|pytest",
+   "T1|tests",
+   "T1|setup.py",
+   "T4|requests|",
+   "T4|pytz|"
+  ],
+  "F_R": [
+   "T1|knackpy",
+   "T1|tests",
+   "T1|knackpy/core",
+   "T1|knackpy/app.py",
+   "T1|knackpy/tests/test_knackpy.py",
+   "T5|make|test",
+   "T1|setup.py",
+   "T4|requests|",
+   "T4|tzlocal|"
+  ],
+  "F_I": [
+   "T1|knackpy",
+   "T1|tests",
+   "T1|docs/core",
+   "T1|knackpy/app.py",
+   "T1|tests/config.py",
+   "T3|test_framework|pytest",
+   "T1|tests",
+   "T5|make|install",
+   "T4|requests|",
+   "T4|tzlocal|"
+  ]
+ },
+ "python_spec": null,
+ "token_audit": [
+  {
+   "cond": "F_R",
+   "kind": 1,
+   "type": "path",
+   "name": "knackpy/core",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 2,
+   "type": "path",
+   "name": "knackpy/tests/test_knackpy.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 3,
+   "type": "regex",
+   "name": "make test",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 4,
+   "type": "word",
+   "name": "tzlocal",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 1,
+   "type": "path",
+   "name": "docs/core",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 2,
+   "type": "path",
+   "name": "tests/config.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 3,
+   "type": "regex",
+   "name": "make install",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 4,
+   "type": "word",
+   "name": "tzlocal",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  }
+ ],
+ "dist_imports_used": {
+  "requests": [
+   "requests"
+  ],
+  "pytz": [
+   "pytz"
+  ],
+  "tzlocal": null
+ }
+}

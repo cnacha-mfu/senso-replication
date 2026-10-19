@@ -1,0 +1,23 @@
+{
+ "repo": "reliverse/experiments",
+ "chunk": 1,
+ "n_chunks": 2,
+ "model": "google/diffusiongemma-26b-a4b-it",
+ "prompt_sha256": "d0e02ff613417050168d859f2af6230c3712c6758bb5d9c40d60ff55e5ae87ca",
+ "user_sha256": "0695acb6c2a186ae01ae9b14f6beed0b4da18920c67b9c03f7e8446283963a2f",
+ "text": "{\"claims\": [{\"type\": \"tool_used\", \"subject\": \"Biome\", \"tool_category\": \"linter_formatter\", \"line\": 143, \"quote\": \"Biome's linter will catch most issues automatically.\", \"mode\": \"asserts_existing\"}, {\"type\": \"command\", \"subject\": \"ultracite fix\", \"runner\": \"bun\", \"line\": 154, \"quote\": \"Run `bunx ultracite fix` before committing to ensure compliance.\", \"mode\": \"asserts_existing\"}]}",
+ "parse_ok": true,
+ "parse_error": null,
+ "parse_retries": 1,
+ "latency_s": 2.2559744939790107,
+ "usage": {
+  "prompt": 4565,
+  "completion": 199
+ },
+ "n_api_calls": 2,
+ "finish_reason": "stop",
+ "error": null,
+ "discarded_attempt_texts": [
+  "```json\n{\"claims\": [\n  {\"type\": \"tool_used\", \"subject\": \"Biome\", \"tool_category\": \"linter_formatter\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"command\", \"subject\": \"ultracite fix\", \"runner\": \"bun\", \"mode\": \"asserts_existing\"}\n]\n```"
+ ]
+}

@@ -1,0 +1,107 @@
+{
+ "unit_id": "cevoaustralia__aws-google-auth-34__A__claude-sonnet__r1",
+ "task_id": "cevoaustralia__aws-google-auth-34",
+ "repo": "cevoaustralia/aws-google-auth",
+ "stage": "initial_development",
+ "condition": "A",
+ "model": "claude-code/sonnet",
+ "run": 1,
+ "condition_meta": {},
+ "started": "2026-10-18T05:14:03.662823+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 4,
+ "tool_calls": 3,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 8276,
+  "cache_read_input_tokens": 65948,
+  "output_tokens": 878,
+  "output_tokens_details": {
+   "thinking_tokens": 176
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 8276,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 8,
+   "outputTokens": 878,
+   "cacheReadInputTokens": 65948,
+   "cacheCreationInputTokens": 8276,
+   "webSearchRequests": 0,
+   "costUSD": 0.04849479999999999,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 176,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.04849479999999999,
+ "result_text": "I fixed the duplicate `[None]` sections. I haven't run the tests or tried it against a real credentials file.\n\n**Cause:** when no profile is set (no `-p` and no `AWS_PROFILE`), `config.profile` is `None`. `_store` still wrote the credentials, and `RawConfigParser` turned that `None` into a section literally named `None`. The aws-cli parser then failed on the repeated section. I didn't trace exactly how the second run ended up with two of them.\n\n**Fix:** in `aws_google_auth/__init__.py`, `_store` is now called only when a profile is set. With no profile, the tool prints the `export` lines, as it already did, and writes nothing to disk.\n\n**Behavior change:** a run with no profile no longer writes anything to `~/.aws/credentials` or `~/.aws/config`. Before, it wrote a `[None]` section. If you'd rather write to a default profile such as `default` in that case, say so and I'll change it.\n\nAny `[None]` sections already in your credentials file will still make aws-cli fail until you delete them by hand.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792309800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0.1,
+    "resetsAt": 1792309800
+   },
+   "seven_day": {
+    "utilization": 0.12,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 45.7,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 4,
+   "hit_step_limit": 0,
+   "changed_lines": 4,
+   "gold_changed_lines": 10,
+   "Y1": 0,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": -1.3219280948873622
+  },
+  "f2p_pass": 0,
+  "f2p_total": 1,
+  "p2p_pass": 1,
+  "p2p_total": 1,
+  "f2p_all_pass": false,
+  "p2p_all_pass": true,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 1.3
+ },
+ "status": "done",
+ "finished": "2026-10-18T05:14:52.578278+00:00"
+}

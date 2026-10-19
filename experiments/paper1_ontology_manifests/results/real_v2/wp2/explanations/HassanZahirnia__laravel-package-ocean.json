@@ -1,0 +1,348 @@
+{
+ "repo": "HassanZahirnia/laravel-package-ocean",
+ "slug": "HassanZahirnia__laravel-package-ocean",
+ "input_sha": "bd960c5d2ed6e5ef8251a6bd38be47eb5c53d59f4bca9fb71ccd1b789ea1ad15",
+ "explanations": [
+  {
+   "key": "T1|Actions",
+   "verdict": "ContradictedClaim",
+   "leaf": "PathNeverExisted",
+   "seconds": 7.38,
+   "retried_on_claim_subgraph": false,
+   "error": null,
+   "returncode": 0,
+   "n_justifications": 1,
+   "facts": [
+    {
+     "prop": "pathSubmoduleCount",
+     "value": 0
+    },
+    {
+     "prop": "extractionVotes",
+     "value": 3
+    },
+    {
+     "prop": "pathEverTrackedCount",
+     "value": 0
+    },
+    {
+     "prop": "pathExactMatchCount",
+     "value": 0
+    },
+    {
+     "prop": "pathSuffixMatchCount",
+     "value": 0
+    },
+    {
+     "prop": "pathIgnoredCount",
+     "value": 0
+    }
+   ],
+   "axioms": [
+    "A_pathExactMatchCount_ge_0_le_0 equivalentTo pathExactMatchCount some integer[>= 0, <= 0]",
+    "A_extractionVotes_ge_wp2_consensus_min_votes equivalentTo extractionVotes some integer[>= 2]",
+    "CheckedClaim equivalentTo A_extractionVotes_ge_wp2_consensus_min_votes and ManifestClaim",
+    "A_pathSubmoduleCount_ge_0_le_0 equivalentTo pathSubmoduleCount some integer[>= 0, <= 0]",
+    "A_pathSuffixMatchCount_ge_0_le_0 equivalentTo pathSuffixMatchCount some integer[>= 0, <= 0]",
+    "A_pathIgnoredCount_ge_0_le_0 equivalentTo pathIgnoredCount some integer[>= 0, <= 0]",
+    "A_pathEverTrackedCount_ge_0_le_0 equivalentTo pathEverTrackedCount some integer[>= 0, <= 0]",
+    "PathNeverExisted equivalentTo A_pathEverTrackedCount_ge_0_le_0 and A_pathExactMatchCount_ge_0_le_0 and A_pathIgnoredCount_ge_0_le_0 and A_pathSubmoduleCount_ge_0_le_0 and A_pathSuffixMatchCount_ge_0_le_0 and CheckedClaim and PathExistenceCl",
+    "PathNeverExisted subClassOf ContradictedClaim"
+   ],
+   "closures": []
+  },
+  {
+   "key": "T1|Schemas/Components",
+   "verdict": "ContradictedClaim",
+   "leaf": "PathNeverExisted",
+   "seconds": 7.04,
+   "retried_on_claim_subgraph": false,
+   "error": null,
+   "returncode": 0,
+   "n_justifications": 1,
+   "facts": [
+    {
+     "prop": "pathSubmoduleCount",
+     "value": 0
+    },
+    {
+     "prop": "pathEverTrackedCount",
+     "value": 0
+    },
+    {
+     "prop": "pathIgnoredCount",
+     "value": 0
+    },
+    {
+     "prop": "pathSuffixMatchCount",
+     "value": 0
+    },
+    {
+     "prop": "pathExactMatchCount",
+     "value": 0
+    },
+    {
+     "prop": "extractionVotes",
+     "value": 2
+    }
+   ],
+   "axioms": [
+    "A_pathExactMatchCount_ge_0_le_0 equivalentTo pathExactMatchCount some integer[>= 0, <= 0]",
+    "A_extractionVotes_ge_wp2_consensus_min_votes equivalentTo extractionVotes some integer[>= 2]",
+    "CheckedClaim equivalentTo A_extractionVotes_ge_wp2_consensus_min_votes and ManifestClaim",
+    "A_pathSubmoduleCount_ge_0_le_0 equivalentTo pathSubmoduleCount some integer[>= 0, <= 0]",
+    "A_pathSuffixMatchCount_ge_0_le_0 equivalentTo pathSuffixMatchCount some integer[>= 0, <= 0]",
+    "A_pathEverTrackedCount_ge_0_le_0 equivalentTo pathEverTrackedCount some integer[>= 0, <= 0]",
+    "A_pathIgnoredCount_ge_0_le_0 equivalentTo pathIgnoredCount some integer[>= 0, <= 0]",
+    "PathNeverExisted equivalentTo A_pathEverTrackedCount_ge_0_le_0 and A_pathExactMatchCount_ge_0_le_0 and A_pathIgnoredCount_ge_0_le_0 and A_pathSubmoduleCount_ge_0_le_0 and A_pathSuffixMatchCount_ge_0_le_0 and CheckedClaim and PathExistenceCl",
+    "PathNeverExisted subClassOf ContradictedClaim"
+   ],
+   "closures": []
+  },
+  {
+   "key": "T1|Tables/Columns",
+   "verdict": "ContradictedClaim",
+   "leaf": "PathNeverExisted",
+   "seconds": 5.9,
+   "retried_on_claim_subgraph": false,
+   "error": null,
+   "returncode": 0,
+   "n_justifications": 1,
+   "facts": [
+    {
+     "prop": "pathExactMatchCount",
+     "value": 0
+    },
+    {
+     "prop": "pathSuffixMatchCount",
+     "value": 0
+    },
+    {
+     "prop": "pathSubmoduleCount",
+     "value": 0
+    },
+    {
+     "prop": "extractionVotes",
+     "value": 2
+    },
+    {
+     "prop": "pathIgnoredCount",
+     "value": 0
+    },
+    {
+     "prop": "pathEverTrackedCount",
+     "value": 0
+    }
+   ],
+   "axioms": [
+    "A_pathExactMatchCount_ge_0_le_0 equivalentTo pathExactMatchCount some integer[>= 0, <= 0]",
+    "A_extractionVotes_ge_wp2_consensus_min_votes equivalentTo extractionVotes some integer[>= 2]",
+    "CheckedClaim equivalentTo A_extractionVotes_ge_wp2_consensus_min_votes and ManifestClaim",
+    "A_pathSubmoduleCount_ge_0_le_0 equivalentTo pathSubmoduleCount some integer[>= 0, <= 0]",
+    "A_pathSuffixMatchCount_ge_0_le_0 equivalentTo pathSuffixMatchCount some integer[>= 0, <= 0]",
+    "A_pathEverTrackedCount_ge_0_le_0 equivalentTo pathEverTrackedCount some integer[>= 0, <= 0]",
+    "A_pathIgnoredCount_ge_0_le_0 equivalentTo pathIgnoredCount some integer[>= 0, <= 0]",
+    "PathNeverExisted equivalentTo A_pathEverTrackedCount_ge_0_le_0 and A_pathExactMatchCount_ge_0_le_0 and A_pathIgnoredCount_ge_0_le_0 and A_pathSubmoduleCount_ge_0_le_0 and A_pathSuffixMatchCount_ge_0_le_0 and CheckedClaim and PathExistenceCl",
+    "PathNeverExisted subClassOf ContradictedClaim"
+   ],
+   "closures": []
+  },
+  {
+   "key": "T1|Tables/Filters",
+   "verdict": "ContradictedClaim",
+   "leaf": "PathNeverExisted",
+   "seconds": 6.89,
+   "retried_on_claim_subgraph": false,
+   "error": null,
+   "returncode": 0,
+   "n_justifications": 1,
+   "facts": [
+    {
+     "prop": "pathEverTrackedCount",
+     "value": 0
+    },
+    {
+     "prop": "extractionVotes",
+     "value": 2
+    },
+    {
+     "prop": "pathExactMatchCount",
+     "value": 0
+    },
+    {
+     "prop": "pathIgnoredCount",
+     "value": 0
+    },
+    {
+     "prop": "pathSubmoduleCount",
+     "value": 0
+    },
+    {
+     "prop": "pathSuffixMatchCount",
+     "value": 0
+    }
+   ],
+   "axioms": [
+    "A_pathExactMatchCount_ge_0_le_0 equivalentTo pathExactMatchCount some integer[>= 0, <= 0]",
+    "A_extractionVotes_ge_wp2_consensus_min_votes equivalentTo extractionVotes some integer[>= 2]",
+    "CheckedClaim equivalentTo A_extractionVotes_ge_wp2_consensus_min_votes and ManifestClaim",
+    "A_pathSubmoduleCount_ge_0_le_0 equivalentTo pathSubmoduleCount some integer[>= 0, <= 0]",
+    "A_pathSuffixMatchCount_ge_0_le_0 equivalentTo pathSuffixMatchCount some integer[>= 0, <= 0]",
+    "A_pathIgnoredCount_ge_0_le_0 equivalentTo pathIgnoredCount some integer[>= 0, <= 0]",
+    "A_pathEverTrackedCount_ge_0_le_0 equivalentTo pathEverTrackedCount some integer[>= 0, <= 0]",
+    "PathNeverExisted equivalentTo A_pathEverTrackedCount_ge_0_le_0 and A_pathExactMatchCount_ge_0_le_0 and A_pathIgnoredCount_ge_0_le_0 and A_pathSubmoduleCount_ge_0_le_0 and A_pathSuffixMatchCount_ge_0_le_0 and CheckedClaim and PathExistenceCl",
+    "PathNeverExisted subClassOf ContradictedClaim"
+   ],
+   "closures": []
+  },
+  {
+   "key": "T4|laravel/mcp|0",
+   "verdict": "ContradictedClaim",
+   "leaf": "DependencyUndeclared",
+   "seconds": 4.98,
+   "retried_on_claim_subgraph": false,
+   "error": null,
+   "returncode": 0,
+   "n_justifications": 1,
+   "facts": [
+    {
+     "prop": "dependencySuffixMatchCount",
+     "value": 0
+    },
+    {
+     "prop": "dependencyManifestParsedCount",
+     "value": 2
+    },
+    {
+     "prop": "extractionVotes",
+     "value": 2
+    },
+    {
+     "prop": "dependencyExactMatchCount",
+     "value": 0
+    }
+   ],
+   "axioms": [
+    "DependencyUndeclared subClassOf ContradictedClaim",
+    "A_extractionVotes_ge_wp2_consensus_min_votes equivalentTo extractionVotes some integer[>= 2]",
+    "A_dependencyManifestParsedCount_ge_1 equivalentTo dependencyManifestParsedCount some integer[>= 1]",
+    "DependencyUndeclared equivalentTo A_dependencyExactMatchCount_ge_0_le_0 and A_dependencyManifestParsedCount_ge_1 and A_dependencySuffixMatchCount_ge_0_le_0 and CheckedClaim and DependencyClaim",
+    "A_dependencySuffixMatchCount_ge_0_le_0 equivalentTo dependencySuffixMatchCount some integer[>= 0, <= 0]",
+    "CheckedClaim equivalentTo A_extractionVotes_ge_wp2_consensus_min_votes and ManifestClaim",
+    "A_dependencyExactMatchCount_ge_0_le_0 equivalentTo dependencyExactMatchCount some integer[>= 0, <= 0]"
+   ],
+   "closures": []
+  },
+  {
+   "key": "T4|pestphp/pest|3",
+   "verdict": "ContradictedClaim",
+   "leaf": "DependencyMajorTooOld",
+   "seconds": 6.17,
+   "retried_on_claim_subgraph": false,
+   "error": null,
+   "returncode": 0,
+   "n_justifications": 1,
+   "facts": [
+    {
+     "prop": "declaredLowerMajorDelta",
+     "value": 1
+    },
+    {
+     "prop": "dependencyExactMatchCount",
+     "value": 1
+    },
+    {
+     "prop": "extractionVotes",
+     "value": 2
+    }
+   ],
+   "axioms": [
+    "A_extractionVotes_ge_wp2_consensus_min_votes equivalentTo extractionVotes some integer[>= 2]",
+    "CheckedClaim equivalentTo A_extractionVotes_ge_wp2_consensus_min_votes and ManifestClaim",
+    "A_declaredLowerMajorDelta_gt_0 equivalentTo declaredLowerMajorDelta some integer[> 0]",
+    "A_dependencyExactMatchCount_ge_1 equivalentTo dependencyExactMatchCount some integer[>= 1]",
+    "DependencyDeclaredExact equivalentTo A_dependencyExactMatchCount_ge_1 and CheckedClaim and DependencyClaim",
+    "DependencyDeclaredExact subClassOf DependencyDeclared",
+    "DependencyMajorTooOld equivalentTo A_declaredLowerMajorDelta_gt_0 and DependencyDeclared and VersionedDependencyClaim",
+    "DependencyMajorTooOld subClassOf ContradictedClaim"
+   ],
+   "closures": []
+  },
+  {
+   "key": "T4|phpunit/phpunit|11",
+   "verdict": "ContradictedClaim",
+   "leaf": "DependencyUndeclared",
+   "seconds": 8.44,
+   "retried_on_claim_subgraph": false,
+   "error": null,
+   "returncode": 0,
+   "n_justifications": 1,
+   "facts": [
+    {
+     "prop": "dependencySuffixMatchCount",
+     "value": 0
+    },
+    {
+     "prop": "extractionVotes",
+     "value": 2
+    },
+    {
+     "prop": "dependencyExactMatchCount",
+     "value": 0
+    },
+    {
+     "prop": "dependencyManifestParsedCount",
+     "value": 2
+    }
+   ],
+   "axioms": [
+    "DependencyUndeclared subClassOf ContradictedClaim",
+    "A_extractionVotes_ge_wp2_consensus_min_votes equivalentTo extractionVotes some integer[>= 2]",
+    "A_dependencyManifestParsedCount_ge_1 equivalentTo dependencyManifestParsedCount some integer[>= 1]",
+    "DependencyUndeclared equivalentTo A_dependencyExactMatchCount_ge_0_le_0 and A_dependencyManifestParsedCount_ge_1 and A_dependencySuffixMatchCount_ge_0_le_0 and CheckedClaim and DependencyClaim",
+    "CheckedClaim equivalentTo A_extractionVotes_ge_wp2_consensus_min_votes and ManifestClaim",
+    "A_dependencyExactMatchCount_ge_0_le_0 equivalentTo dependencyExactMatchCount some integer[>= 0, <= 0]",
+    "A_dependencySuffixMatchCount_ge_0_le_0 equivalentTo dependencySuffixMatchCount some integer[>= 0, <= 0]"
+   ],
+   "closures": []
+  },
+  {
+   "key": "T5|composer|dev",
+   "verdict": "ContradictedClaim",
+   "leaf": "ScriptUndefined",
+   "seconds": 11.5,
+   "retried_on_claim_subgraph": false,
+   "error": null,
+   "returncode": 0,
+   "n_justifications": 1,
+   "facts": [
+    {
+     "prop": "extractionVotes",
+     "value": 2
+    },
+    {
+     "prop": "scriptHostFileCount",
+     "value": 1
+    },
+    {
+     "prop": "scriptDefinedAnyCount",
+     "value": 0
+    },
+    {
+     "prop": "dynamicTargetRuleCount",
+     "value": 0
+    }
+   ],
+   "axioms": [
+    "A_extractionVotes_ge_wp2_consensus_min_votes equivalentTo extractionVotes some integer[>= 2]",
+    "ScriptUndefined equivalentTo A_dynamicTargetRuleCount_ge_0_le_0 and A_scriptDefinedAnyCount_ge_0_le_0 and A_scriptHostFileCount_ge_1 and CheckedClaim and CommandClaim",
+    "CheckedClaim equivalentTo A_extractionVotes_ge_wp2_consensus_min_votes and ManifestClaim",
+    "A_scriptHostFileCount_ge_1 equivalentTo scriptHostFileCount some integer[>= 1]",
+    "ScriptUndefined subClassOf ContradictedClaim",
+    "A_scriptDefinedAnyCount_ge_0_le_0 equivalentTo scriptDefinedAnyCount some integer[>= 0, <= 0]",
+    "A_dynamicTargetRuleCount_ge_0_le_0 equivalentTo dynamicTargetRuleCount some integer[>= 0, <= 0]"
+   ],
+   "closures": []
+  }
+ ]
+}

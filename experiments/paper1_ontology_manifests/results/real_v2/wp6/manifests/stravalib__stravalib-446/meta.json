@@ -1,0 +1,366 @@
+{
+ "task_id": "stravalib__stravalib-446",
+ "repo": "stravalib/stravalib",
+ "stage": "evolution",
+ "rounds": 1,
+ "rejects": {},
+ "flags": [
+  "length_violation_F_R",
+  "length_violation_F_I"
+ ],
+ "info": {
+  "slots": {
+   "test_root": "src/stravalib/tests",
+   "P1": {
+    "replaced": null,
+    "name": "core",
+    "F_R": "docs/get-started/core",
+    "F_I": "examples/core"
+   },
+   "P2": {
+    "replaced": null,
+    "F_R": "stravalib/attributes.py",
+    "F_I": "stravalib/tests/unit/test_attributes.py"
+   },
+   "C": {
+    "F_R": "make tests",
+    "F_I": "make install"
+   },
+   "D": {
+    "replaced": "pytz",
+    "F_R": "httpx",
+    "F_I": "tzlocal"
+   }
+  },
+  "why": {
+   "test_command": [
+    {
+     "root": "src/stravalib/tests",
+     "T3": "SupportedClaim",
+     "T1": "SupportedClaim",
+     "collect_ok": true
+    }
+   ],
+   "kind1": {
+    "p1_idx": null,
+    "gold0": "docs/get-started",
+    "unrelated": null,
+    "base_R": "docs/get-started",
+    "base_I": "examples"
+   },
+   "kind2": {
+    "p2_idx": null,
+    "n_deleted_py": 48,
+    "found": {
+     "F_R": "stravalib/attributes.py",
+     "F_I": "stravalib/tests/unit/test_attributes.py"
+    }
+   },
+   "kind3": {
+    "run": "tests",
+    "install": "install",
+    "test_ok": true,
+    "install_ok": true
+   },
+   "kind4": {
+    "deps": [
+     [
+      "pint",
+      false
+     ],
+     [
+      "pydantic",
+      false
+     ],
+     [
+      "requests",
+      true
+     ],
+     [
+      "arrow",
+      true
+     ],
+     [
+      "pytz",
+      false
+     ]
+    ],
+    "d_idx": 4,
+    "src_R": "requests",
+    "src_I": "pytz",
+    "n_decls": 32,
+    "n_dist": 129
+   }
+  },
+  "length": {
+   "T": 364,
+   "F_R": 394,
+   "F_I": 426
+  },
+  "fallbacks": {
+   "F_R": [],
+   "F_I": []
+  },
+  "modes": {
+   "F_R": {
+    "1": "add",
+    "2": "add",
+    "3": "replace",
+    "4": "replace"
+   },
+   "F_I": {
+    "1": "add",
+    "2": "add",
+    "3": "replace",
+    "4": "replace"
+   }
+  },
+  "length_diff": {
+   "F_R": 30,
+   "F_I": 62
+  },
+  "n_claims_T": 14,
+  "n_false": {
+   "F_R": 4,
+   "F_I": 4
+  },
+  "pointer_in_issue": false,
+  "gold_dirs": [
+   "docs/get-started",
+   "docs/reference",
+   "src/stravalib"
+  ],
+  "gold_files": [
+   "changelog.md",
+   "docs/get-started/overview.rst",
+   "docs/reference/field-conversions.rst",
+   "docs/reference/utilities.rst",
+   "src/stravalib/protocol.py",
+   "src/stravalib/util/limiter.py"
+  ]
+ },
+ "tokens": {
+  "F_R": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "docs/get-started/core",
+     "core"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "stravalib/attributes.py",
+     "attributes.py"
+    ]
+   },
+   {
+    "kind": 3,
+    "type": "regex",
+    "regex": "\\bmake\\b[^|;&\\n]*\\btests\\b",
+    "target": "tests"
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "httpx"
+    ]
+   }
+  ],
+  "F_I": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "examples/core",
+     "core"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "stravalib/tests/unit/test_attributes.py",
+     "test_attributes.py"
+    ]
+   },
+   {
+    "kind": 3,
+    "type": "regex",
+    "regex": "\\bmake\\b[^|;&\\n]*\\binstall\\b",
+    "target": "install"
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "tzlocal"
+    ]
+   }
+  ]
+ },
+ "unresolved_pre_hermit": [],
+ "sha256": {
+  "T": "6a9158b51729705147db84e0c58d47a237366c72d5c9b312308242981d1945e8",
+  "F_R": "96e5c52ffdf8729b1e68b90fb545ef178a87b413e37d62f37dbb7c08fa16accd",
+  "F_I": "6dc06a02904a27504b43d64130529cc6816eb9636e15a83e28fa179651dbbf5c"
+ },
+ "chars": {
+  "T": 364,
+  "F_R": 394,
+  "F_I": 426
+ },
+ "claims": {
+  "T": [
+   "T1|docs/get-started",
+   "T1|docs/reference",
+   "T1|src/stravalib",
+   "T1|src/stravalib/tests",
+   "T1|src/stravalib/client.py",
+   "T3|test_framework|pytest",
+   "T1|src/stravalib/tests",
+   "T1|pyproject.toml",
+   "T4|pint|",
+   "T4|pydantic|",
+   "T4|requests|",
+   "T4|arrow|",
+   "T4|pytz|",
+   "T6|python|3009000000@2"
+  ],
+  "F_R": [
+   "T1|docs/get-started",
+   "T1|docs/reference",
+   "T1|src/stravalib",
+   "T1|src/stravalib/tests",
+   "T1|docs/get-started/core",
+   "T1|src/stravalib/client.py",
+   "T1|stravalib/attributes.py",
+   "T5|make|tests",
+   "T1|pyproject.toml",
+   "T4|pint|",
+   "T4|pydantic|",
+   "T4|requests|",
+   "T4|arrow|",
+   "T4|httpx|",
+   "T6|python|3009000000@2"
+  ],
+  "F_I": [
+   "T1|docs/get-started",
+   "T1|docs/reference",
+   "T1|src/stravalib",
+   "T1|src/stravalib/tests",
+   "T1|examples/core",
+   "T1|src/stravalib/client.py",
+   "T1|stravalib/tests/unit/test_attributes.py",
+   "T3|test_framework|pytest",
+   "T1|src/stravalib/tests",
+   "T5|make|install",
+   "T4|pint|",
+   "T4|pydantic|",
+   "T4|requests|",
+   "T4|arrow|",
+   "T4|tzlocal|",
+   "T6|python|3009000000@2"
+  ]
+ },
+ "python_spec": ">=3.9",
+ "token_audit": [
+  {
+   "cond": "F_R",
+   "kind": 1,
+   "type": "path",
+   "name": "docs/get-started/core",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 2,
+   "type": "path",
+   "name": "stravalib/attributes.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 3,
+   "type": "regex",
+   "name": "make tests",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 4,
+   "type": "word",
+   "name": "httpx",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 1,
+   "type": "path",
+   "name": "examples/core",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 2,
+   "type": "path",
+   "name": "stravalib/tests/unit/test_attributes.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 3,
+   "type": "regex",
+   "name": "make install",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 4,
+   "type": "word",
+   "name": "tzlocal",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  }
+ ],
+ "dist_imports_used": {
+  "pint": [
+   "pint"
+  ],
+  "pydantic": [
+   "pydantic"
+  ],
+  "requests": [
+   "requests"
+  ],
+  "arrow": [
+   "arrow"
+  ],
+  "pytz": [
+   "pytz"
+  ],
+  "httpx": null,
+  "tzlocal": null
+ }
+}

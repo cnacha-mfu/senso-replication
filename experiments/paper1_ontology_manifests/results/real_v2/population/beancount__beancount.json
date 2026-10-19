@@ -1,0 +1,1892 @@
+{
+ "repo": "beancount/beancount",
+ "snapshot_date": "2025-06-30",
+ "status": "ok",
+ "unmineable": false,
+ "unmineable_reason": null,
+ "replaces": null,
+ "settings": {
+  "dedup": true,
+  "complexity": false,
+  "dataset": "seo_v2",
+  "sensitivity": true
+ },
+ "versions": {
+  "owlready2": "0.51",
+  "pymannkendall": "1.4.3",
+  "lizard": "1.24.1",
+  "numpy": "2.5.3",
+  "scipy": "1.18.1",
+  "python": "3.12.15",
+  "git": "git version 2.53.0"
+ },
+ "measures": {
+  "monthsObserved": 36,
+  "monthsSinceLastCommit": 1,
+  "distinctAuthorsInWindow": 22,
+  "commitMKTau": 0.052381,
+  "commitMKpValue": 0.66061,
+  "activeMonthCount": 30,
+  "activeMonthRatio": 0.833333,
+  "meanMonthlyCommits": 9.166667,
+  "commitsLast3Months": 11,
+  "commitCountCV": 1.425042,
+  "commitCountCVSample": 1.445256,
+  "commitHalfRatio": 1.598425,
+  "commitSecondHalfMean": 11.277778,
+  "churnCV": 3.531984,
+  "linesAddedCV": 3.316149,
+  "mergeMonthRatio": 0.333333,
+  "multiAuthorMonthRatio": 0.416667,
+  "bugFixRatioFirstHalf": 0.211541,
+  "bugFixRatioSecondHalf": 0.15325,
+  "bugFixHalfRatio": 0.724449,
+  "locSeriesLength": 36,
+  "locRelSenSlopeAnnual": -0.08556,
+  "locMKTau": -0.549206,
+  "locMKS": -346,
+  "locMKpValue": 2e-06,
+  "locSenSlope": -382.125,
+  "locStart": 54129,
+  "locEnd": 41086,
+  "locDelta": -13043,
+  "locGrowthRate": -0.240961,
+  "locChangePct": -24.096141,
+  "locEndToStartRatio": 0.759039,
+  "locGrowthLast3": 0.009236,
+  "featureCommitsFirstHalf": 0,
+  "featureCommitsSecondHalf": 0,
+  "featureCommitsTotal": 0,
+  "locDeltaPerFeature": -13043.0,
+  "recentAgentCommitRatio": 0.0,
+  "featCommitCount": 0,
+  "bugFixCommitCount": 79,
+  "commitCount": 330,
+  "monthly_series": {
+   "months": [
+    "2021-07",
+    "2021-08",
+    "2021-09",
+    "2021-10",
+    "2021-11",
+    "2021-12",
+    "2022-01",
+    "2022-02",
+    "2022-03",
+    "2022-04",
+    "2022-05",
+    "2022-06",
+    "2022-07",
+    "2022-08",
+    "2022-09",
+    "2022-10",
+    "2022-11",
+    "2022-12",
+    "2023-01",
+    "2023-02",
+    "2023-03",
+    "2023-04",
+    "2023-05",
+    "2023-06",
+    "2023-07",
+    "2023-08",
+    "2023-09",
+    "2023-10",
+    "2023-11",
+    "2023-12",
+    "2024-01",
+    "2024-02",
+    "2024-03",
+    "2024-04",
+    "2024-05",
+    "2024-06",
+    "2024-07",
+    "2024-08",
+    "2024-09",
+    "2024-10",
+    "2024-11",
+    "2024-12",
+    "2025-01",
+    "2025-02",
+    "2025-03",
+    "2025-04",
+    "2025-05",
+    "2025-06"
+   ],
+   "commits": [
+    8,
+    2,
+    83,
+    11,
+    7,
+    2,
+    1,
+    12,
+    0,
+    10,
+    4,
+    15,
+    17,
+    3,
+    36,
+    0,
+    2,
+    12,
+    7,
+    0,
+    3,
+    10,
+    0,
+    5,
+    1,
+    0,
+    28,
+    2,
+    0,
+    1,
+    5,
+    1,
+    1,
+    7,
+    8,
+    47,
+    5,
+    2,
+    5,
+    1,
+    46,
+    39,
+    17,
+    1,
+    7,
+    3,
+    8,
+    0
+   ],
+   "loc": [
+    58476,
+    58476,
+    61076,
+    61076,
+    61116,
+    61116,
+    61116,
+    61116,
+    61116,
+    61116,
+    61116,
+    61116,
+    54129,
+    54129,
+    54086,
+    54086,
+    54096,
+    54175,
+    54170,
+    54170,
+    54173,
+    54397,
+    54397,
+    54397,
+    54397,
+    54397,
+    53478,
+    53478,
+    53478,
+    53478,
+    53594,
+    53594,
+    53594,
+    53931,
+    53937,
+    46446,
+    46451,
+    46451,
+    46462,
+    46462,
+    40644,
+    40576,
+    40663,
+    40663,
+    40684,
+    40710,
+    41086,
+    41086
+   ]
+  }
+ },
+ "window": {
+  "L": 36,
+  "first_month": "2022-07",
+  "last_month": "2025-06",
+  "n_months": 36,
+  "left_truncated": false,
+  "first_commit_month": "2008-04",
+  "mined_months": 48,
+  "commits_in_window": 330,
+  "commits_in_history": 6364
+ },
+ "loc_instrument": {
+  "instrument": "nonblank-source-lines-v1",
+  "status": "ok",
+  "months": 48,
+  "month_end_commits_distinct": 28,
+  "source_blobs": 1015,
+  "blobs_fetched": 15,
+  "t_ls_tree_s": 0.3905824219691567,
+  "t_fetch_s": 2.466354581003543,
+  "t_read_s": 0.18993747304193676,
+  "series_present": true,
+  "extensions": [
+   ".bash",
+   ".c",
+   ".cc",
+   ".cjs",
+   ".clj",
+   ".cpp",
+   ".cs",
+   ".cxx",
+   ".dart",
+   ".erl",
+   ".ex",
+   ".exs",
+   ".f90",
+   ".go",
+   ".groovy",
+   ".h",
+   ".hh",
+   ".hpp",
+   ".hs",
+   ".java",
+   ".jl",
+   ".js",
+   ".jsx",
+   ".kt",
+   ".kts",
+   ".lua",
+   ".m",
+   ".mjs",
+   ".ml",
+   ".mm",
+   ".nim",
+   ".php",
+   ".pl",
+   ".pm",
+   ".py",
+   ".pyi",
+   ".r",
+   ".rb",
+   ".rs",
+   ".scala",
+   ".sh",
+   ".sql",
+   ".svelte",
+   ".swift",
+   ".ts",
+   ".tsx",
+   ".vue",
+   ".zig"
+  ],
+  "excluded_dirs": [
+   "node_modules",
+   "vendor",
+   "vendored",
+   "third_party",
+   "site-packages",
+   "bower_components"
+  ],
+  "max_blob_bytes": 1000000,
+  "first_parent": true
+ },
+ "mining": {
+  "churn": {
+   "t_churn_raw_s": 0.1747331619844772,
+   "t_churn_fetch_s": 4.945158955000807,
+   "t_churn_numstat_s": 0.39788776100613177,
+   "blobs_fetched_churn": 1476
+  },
+  "timings": {
+   "t_clone": 2.728,
+   "t_mine": 8.432,
+   "t_loc": 3.047,
+   "t_reason_A": 3.483
+  },
+  "cached": false
+ },
+ "stage_a": {
+  "commits": 485,
+  "reasoned_commits": 451,
+  "inconsistent_chunks": 0,
+  "chunk_timings": [
+   {
+    "tbox_load_s": 0.03897950198734179,
+    "abox_load_s": 0.7530730370199308,
+    "reason_s": 2.6713134439778514,
+    "extract_s": 0.005862443009391427,
+    "total_s": 3.469652400002815,
+    "commits": 451
+   }
+  ],
+  "tbox_sha256": "da30ed577542b3643ecf06cb6a4649ccc8fce61ab7a0373beabd763e12883e86"
+ },
+ "activity": {
+  "last_commit_date": "2025-05-31T12:31:43+00:00",
+  "months_since_last_commit": 1,
+  "distinct_authors_in_window": 22,
+  "merge_commits_in_window": 33
+ },
+ "agent_adoption_date": "2023-10-18T01:12:44+00:00",
+ "commit_label_counts": {
+  "BugFixCommit": 79,
+  "FeatureCommit": 0,
+  "AgentCommit": 2
+ },
+ "series_months": [
+  {
+   "month": "2022-07",
+   "commit_count": 17,
+   "merge_count": 5,
+   "unique_authors": 1,
+   "lines_added": 402,
+   "lines_deleted": 121,
+   "total_churn": 523,
+   "files_changed": 16,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 54129,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-08",
+   "commit_count": 3,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 32,
+   "lines_deleted": 4,
+   "total_churn": 36,
+   "files_changed": 3,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 54129,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-09",
+   "commit_count": 36,
+   "merge_count": 3,
+   "unique_authors": 2,
+   "lines_added": 444,
+   "lines_deleted": 524,
+   "total_churn": 968,
+   "files_changed": 30,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 54086,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-10",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 54086,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-11",
+   "commit_count": 2,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 32,
+   "lines_deleted": 18,
+   "total_churn": 50,
+   "files_changed": 3,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 54096,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-12",
+   "commit_count": 12,
+   "merge_count": 4,
+   "unique_authors": 3,
+   "lines_added": 233,
+   "lines_deleted": 95,
+   "total_churn": 328,
+   "files_changed": 13,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 54175,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-01",
+   "commit_count": 7,
+   "merge_count": 1,
+   "unique_authors": 2,
+   "lines_added": 2,
+   "lines_deleted": 6,
+   "total_churn": 8,
+   "files_changed": 1,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 54170,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-02",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 54170,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-03",
+   "commit_count": 3,
+   "merge_count": 0,
+   "unique_authors": 2,
+   "lines_added": 276,
+   "lines_deleted": 45,
+   "total_churn": 321,
+   "files_changed": 4,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 54173,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-04",
+   "commit_count": 10,
+   "merge_count": 6,
+   "unique_authors": 1,
+   "lines_added": 228,
+   "lines_deleted": 182,
+   "total_churn": 410,
+   "files_changed": 24,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 54397,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-05",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 54397,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-06",
+   "commit_count": 5,
+   "merge_count": 3,
+   "unique_authors": 1,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 54397,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-07",
+   "commit_count": 1,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 54397,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-08",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 54397,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-09",
+   "commit_count": 28,
+   "merge_count": 4,
+   "unique_authors": 3,
+   "lines_added": 95,
+   "lines_deleted": 1039,
+   "total_churn": 1134,
+   "files_changed": 25,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 53478,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-10",
+   "commit_count": 2,
+   "merge_count": 0,
+   "unique_authors": 2,
+   "lines_added": 1026,
+   "lines_deleted": 971,
+   "total_churn": 1997,
+   "files_changed": 10,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 53478,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-11",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 53478,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-12",
+   "commit_count": 1,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 2,
+   "lines_deleted": 1,
+   "total_churn": 3,
+   "files_changed": 1,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 53478,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-01",
+   "commit_count": 5,
+   "merge_count": 2,
+   "unique_authors": 2,
+   "lines_added": 87,
+   "lines_deleted": 11,
+   "total_churn": 98,
+   "files_changed": 10,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 53594,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-02",
+   "commit_count": 1,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 53594,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-03",
+   "commit_count": 1,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 226,
+   "lines_deleted": 19,
+   "total_churn": 245,
+   "files_changed": 2,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 53594,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-04",
+   "commit_count": 7,
+   "merge_count": 2,
+   "unique_authors": 2,
+   "lines_added": 220,
+   "lines_deleted": 14,
+   "total_churn": 234,
+   "files_changed": 7,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 53931,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-05",
+   "commit_count": 8,
+   "merge_count": 0,
+   "unique_authors": 3,
+   "lines_added": 23,
+   "lines_deleted": 16,
+   "total_churn": 39,
+   "files_changed": 7,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 53937,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-06",
+   "commit_count": 47,
+   "merge_count": 1,
+   "unique_authors": 2,
+   "lines_added": 11927,
+   "lines_deleted": 20673,
+   "total_churn": 32600,
+   "files_changed": 324,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 46446,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-07",
+   "commit_count": 5,
+   "merge_count": 1,
+   "unique_authors": 2,
+   "lines_added": 13,
+   "lines_deleted": 8,
+   "total_churn": 21,
+   "files_changed": 4,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 46451,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-08",
+   "commit_count": 2,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 46451,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-09",
+   "commit_count": 5,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 24,
+   "lines_deleted": 8,
+   "total_churn": 32,
+   "files_changed": 6,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 46462,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-10",
+   "commit_count": 1,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 46462,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-11",
+   "commit_count": 46,
+   "merge_count": 0,
+   "unique_authors": 4,
+   "lines_added": 4115,
+   "lines_deleted": 11034,
+   "total_churn": 15149,
+   "files_changed": 43,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 40644,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-12",
+   "commit_count": 39,
+   "merge_count": 0,
+   "unique_authors": 4,
+   "lines_added": 1649,
+   "lines_deleted": 1685,
+   "total_churn": 3334,
+   "files_changed": 273,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 40576,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2025-01",
+   "commit_count": 17,
+   "merge_count": 1,
+   "unique_authors": 4,
+   "lines_added": 366,
+   "lines_deleted": 254,
+   "total_churn": 620,
+   "files_changed": 206,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 40663,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2025-02",
+   "commit_count": 1,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 53,
+   "lines_deleted": 8,
+   "total_churn": 61,
+   "files_changed": 1,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 40663,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2025-03",
+   "commit_count": 7,
+   "merge_count": 0,
+   "unique_authors": 2,
+   "lines_added": 109,
+   "lines_deleted": 134,
+   "total_churn": 243,
+   "files_changed": 16,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 40684,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2025-04",
+   "commit_count": 3,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 28,
+   "lines_deleted": 0,
+   "total_churn": 28,
+   "files_changed": 1,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 40710,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2025-05",
+   "commit_count": 8,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 579,
+   "lines_deleted": 128,
+   "total_churn": 707,
+   "files_changed": 15,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 41086,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2025-06",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 41086,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  }
+ ],
+ "measures_derived": {
+  "bugFixRatioFirstHalf": 0.211541,
+  "bugFixRatioSecondHalf": 0.15325,
+  "bugFixHalfRatio": 0.724449,
+  "featureCommitsFirstHalf": 0,
+  "featureCommitsSecondHalf": 0,
+  "featureCommitsTotal": 0,
+  "locDeltaPerFeature": -13043.0,
+  "recentAgentCommitRatio": 0.0
+ },
+ "inferred": {
+  "a0.05_L36_D12_G0.05_orig": {
+   "classes": [
+    "DeclineStage",
+    "LawIConformant",
+    "LawIIINonConformant",
+    "LawIVConformant",
+    "LawVIIIConformant",
+    "LawVIINonConformant",
+    "LawVINonConformant",
+    "LawVNonConformant",
+    "MKApplicable",
+    "MergeActive",
+    "MinorLocGrowth",
+    "MultiAuthorActive",
+    "NonSubstantialChange",
+    "RBServicingStage",
+    "RecentlyActive"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": "urn:senso:explanations:beancount/beancount:79f851de895e",
+   "tbox_sha256": "79f851de895e8301073d1746931d8ac1d34e4ed2e94897358fca050d9d07b63c",
+   "abox_triples": 40,
+   "t_reason_B_s": 1.881
+  },
+  "a0.01_L36_D12_G0.05_orig": {
+   "classes": [
+    "DeclineStage",
+    "LawIConformant",
+    "LawIIINonConformant",
+    "LawIVConformant",
+    "LawVIIIConformant",
+    "LawVIINonConformant",
+    "LawVINonConformant",
+    "LawVNonConformant",
+    "MKApplicable",
+    "MergeActive",
+    "MinorLocGrowth",
+    "MultiAuthorActive",
+    "NonSubstantialChange",
+    "RBServicingStage",
+    "RecentlyActive"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "956579a8859000216eba261c78e4795a2b5042e7edf95419211fd46e9dbeada9",
+   "abox_triples": 40,
+   "t_reason_B_s": 1.842
+  },
+  "a0.1_L36_D12_G0.05_orig": {
+   "classes": [
+    "DeclineStage",
+    "LawIConformant",
+    "LawIIINonConformant",
+    "LawIVConformant",
+    "LawVIIIConformant",
+    "LawVIINonConformant",
+    "LawVINonConformant",
+    "LawVNonConformant",
+    "MKApplicable",
+    "MergeActive",
+    "MinorLocGrowth",
+    "MultiAuthorActive",
+    "NonSubstantialChange",
+    "RBServicingStage",
+    "RecentlyActive"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "56009aa92bf68560113e153a97a62cd0cfdea303607eb909725e8e10a2536494",
+   "abox_triples": 40,
+   "t_reason_B_s": 1.862
+  },
+  "a0.05_L24_D12_G0.05_orig": {
+   "classes": [
+    "DeclineStage",
+    "LawIConformant",
+    "LawIIINonConformant",
+    "LawIVConformant",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantNoMerge",
+    "LawVIINonConformant",
+    "LawVINonConformant",
+    "LawVNonConformant",
+    "MKApplicable",
+    "MergeInactive",
+    "MinorLocGrowth",
+    "MultiAuthorActive",
+    "NonSubstantialChange",
+    "RBServicingStage",
+    "RecentlyActive"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "79f851de895e8301073d1746931d8ac1d34e4ed2e94897358fca050d9d07b63c",
+   "abox_triples": 40,
+   "t_reason_B_s": 1.932
+  },
+  "a0.05_L48_D12_G0.05_orig": {
+   "classes": [
+    "DeclineStage",
+    "LawIConformant",
+    "LawIIINonConformant",
+    "LawIVNonConformant",
+    "LawVIIIConformant",
+    "LawVIINonConformant",
+    "LawVINonConformant",
+    "LawVNonConformant",
+    "MKApplicable",
+    "MergeActive",
+    "MinorLocGrowth",
+    "MultiAuthorActive",
+    "NonSubstantialChange",
+    "RBServicingStage",
+    "RecentlyActive"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "79f851de895e8301073d1746931d8ac1d34e4ed2e94897358fca050d9d07b63c",
+   "abox_triples": 40,
+   "t_reason_B_s": 1.984
+  },
+  "a0.05_L36_D6_G0.05_orig": {
+   "classes": [
+    "DeclineStage",
+    "LawIConformant",
+    "LawIIINonConformant",
+    "LawIVConformant",
+    "LawVIIIConformant",
+    "LawVIINonConformant",
+    "LawVINonConformant",
+    "LawVNonConformant",
+    "MKApplicable",
+    "MergeActive",
+    "MinorLocGrowth",
+    "MultiAuthorActive",
+    "NonSubstantialChange",
+    "RBServicingStage",
+    "RecentlyActive"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "a19e7e45f521324fec6b19741e2a4f08e5d15efd8e05802851c45a87515a7761",
+   "abox_triples": 40,
+   "t_reason_B_s": 2.175
+  },
+  "a0.05_L36_D18_G0.05_orig": {
+   "classes": [
+    "DeclineStage",
+    "LawIConformant",
+    "LawIIINonConformant",
+    "LawIVConformant",
+    "LawVIIIConformant",
+    "LawVIINonConformant",
+    "LawVINonConformant",
+    "LawVNonConformant",
+    "MKApplicable",
+    "MergeActive",
+    "MinorLocGrowth",
+    "MultiAuthorActive",
+    "NonSubstantialChange",
+    "RBServicingStage",
+    "RecentlyActive"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "f87900e0c68335fbd2cae9848efdc2926406c328fb39da8e6e393bb472a68fdc",
+   "abox_triples": 40,
+   "t_reason_B_s": 2.065
+  },
+  "a0.05_L36_D24_G0.05_orig": {
+   "classes": [
+    "DeclineStage",
+    "LawIConformant",
+    "LawIIINonConformant",
+    "LawIVConformant",
+    "LawVIIIConformant",
+    "LawVIINonConformant",
+    "LawVINonConformant",
+    "LawVNonConformant",
+    "MKApplicable",
+    "MergeActive",
+    "MinorLocGrowth",
+    "MultiAuthorActive",
+    "NonSubstantialChange",
+    "RBServicingStage",
+    "RecentlyActive"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "562211ba220cda59299aec70f3561ba96eadd88adaf45f6f7db3fce71cdcc77b",
+   "abox_triples": 40,
+   "t_reason_B_s": 2.042
+  },
+  "a0.05_L36_D12_G0_orig": {
+   "classes": [
+    "DeclineStage",
+    "LawIConformant",
+    "LawIIINonConformant",
+    "LawIVConformant",
+    "LawVIIIConformant",
+    "LawVIINonConformant",
+    "LawVINonConformant",
+    "LawVNonConformant",
+    "MKApplicable",
+    "MergeActive",
+    "MinorLocGrowth",
+    "MultiAuthorActive",
+    "NonSubstantialChange",
+    "RBServicingStage",
+    "RecentlyActive"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "c0de0e8b2e7424d23b10ed152acd4ff66c2f1a973196b7e54f6598e9d734d0dc",
+   "abox_triples": 40,
+   "t_reason_B_s": 2.053
+  },
+  "a0.05_L36_D12_G0.02_orig": {
+   "classes": [
+    "DeclineStage",
+    "LawIConformant",
+    "LawIIINonConformant",
+    "LawIVConformant",
+    "LawVIIIConformant",
+    "LawVIINonConformant",
+    "LawVINonConformant",
+    "LawVNonConformant",
+    "MKApplicable",
+    "MergeActive",
+    "MinorLocGrowth",
+    "MultiAuthorActive",
+    "NonSubstantialChange",
+    "RBServicingStage",
+    "RecentlyActive"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "2c6613dd6b3e4fa714d92eaa067f02157466a4b3ee0ccf6de289441d860de28d",
+   "abox_triples": 40,
+   "t_reason_B_s": 2.156
+  },
+  "a0.05_L36_D12_G0.1_orig": {
+   "classes": [
+    "DeclineStage",
+    "LawIConformant",
+    "LawIIINonConformant",
+    "LawIVConformant",
+    "LawVIIIConformant",
+    "LawVIINonConformant",
+    "LawVINonConformant",
+    "LawVNonConformant",
+    "MKApplicable",
+    "MergeActive",
+    "MinorLocGrowth",
+    "MultiAuthorActive",
+    "NonSubstantialChange",
+    "RBServicingStage",
+    "RecentlyActive"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "0cfde802b4494fc33a5ad0eb910980aaf152093f62848406bdc37bc099347936",
+   "abox_triples": 40,
+   "t_reason_B_s": 2.072
+  },
+  "a0.05_L36_D12_G0.05_hr": {
+   "classes": [
+    "DeclineStage",
+    "LawIConformant",
+    "LawIIINonConformant",
+    "LawIVConformant",
+    "LawVIIIConformant",
+    "LawVIINonConformant",
+    "LawVINonConformant",
+    "LawVNonConformant",
+    "MKApplicable",
+    "MergeActive",
+    "MinorLocGrowth",
+    "MultiAuthorActive",
+    "NonSubstantialChange",
+    "RBServicingStage",
+    "RecentlyActive"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "79f851de895e8301073d1746931d8ac1d34e4ed2e94897358fca050d9d07b63c",
+   "abox_triples": 40,
+   "t_reason_B_s": 2.216
+  }
+ },
+ "primary_config": "a0.05_L36_D12_G0.05_orig",
+ "project_iri": "http://senso-framework.org/data/beancount_beancount",
+ "consistent": true,
+ "inferred_labels": [
+  "DeclineStage",
+  "LawIConformant",
+  "LawIIINonConformant",
+  "LawIVConformant",
+  "LawVIIIConformant",
+  "LawVIINonConformant",
+  "LawVINonConformant",
+  "LawVNonConformant",
+  "MKApplicable",
+  "MergeActive",
+  "MinorLocGrowth",
+  "MultiAuthorActive",
+  "NonSubstantialChange",
+  "RBServicingStage",
+  "RecentlyActive"
+ ],
+ "stage_labels": [
+  "DeclineStage",
+  "RBServicingStage"
+ ],
+ "law_labels": {
+  "I": "LawIConformant",
+  "III": "LawIIINonConformant",
+  "IV": "LawIVConformant",
+  "V": "LawVNonConformant",
+  "VI": "LawVINonConformant",
+  "VII": "LawVIINonConformant",
+  "VIII": "LawVIIIConformant"
+ },
+ "tbox_sha256_stage_b": "79f851de895e8301073d1746931d8ac1d34e4ed2e94897358fca050d9d07b63c",
+ "tbox_sha256_stage_a": "da30ed577542b3643ecf06cb6a4649ccc8fce61ab7a0373beabd763e12883e86",
+ "summary": {
+  "c1": "P",
+  "c2": "S",
+  "cf": "A",
+  "note": "debug summary; run_rq1_v2.py reads `inferred` and recomputes CF itself"
+ },
+ "explanations": {
+  "stage:DeclineStage": {
+   "class": "DeclineStage",
+   "target": "http://senso-framework.org/data/beancount_beancount type http://senso-framework.org/ontology/seo#DeclineStage",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKpValue_lt_mk_alpha",
+       "text": "A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]"
+      },
+      {
+       "kind": "definition",
+       "subject": "DeclineStage",
+       "text": "DeclineStage equivalentTo A_locMKTau_lt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKTau_lt_0",
+       "text": "A_locMKTau_lt_0 equivalentTo locMKTau some decimal[< 0.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "beancount_beancount",
+       "prop": "locMKTau",
+       "value": -0.549206,
+       "raw": "beancount_beancount locMKTau -0.549206"
+      },
+      {
+       "subject": "beancount_beancount",
+       "prop": "locSeriesLength",
+       "value": 36,
+       "raw": "beancount_beancount locSeriesLength 36"
+      },
+      {
+       "subject": "beancount_beancount",
+       "prop": "locMKpValue",
+       "value": 2e-06,
+       "raw": "beancount_beancount locMKpValue 2e-06"
+      },
+      {
+       "subject": "beancount_beancount",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "beancount_beancount type SoftwareProject"
+      }
+     ],
+     "closures": [],
+     "raw": "beancount_beancount locMKTau -0.549206\nbeancount_beancount locSeriesLength 36\nA_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\nbeancount_beancount locMKpValue 2e-06\nbeancount_beancount type SoftwareProject\nA_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\nDeclineStage equivalentTo A_locMKTau_lt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject\nA_locMKTau_lt_0 equivalentTo locMKTau some decimal[< 0.0]\nA_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]"
+    }
+   ],
+   "raw_text": "Axiom: beancount_beancount type DeclineStage\n\nExplanation(s): \n1)   beancount_beancount locMKTau -0.549206\n     beancount_beancount locSeriesLength 36\n     A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\n     beancount_beancount locMKpValue 2e-06\n     beancount_beancount type SoftwareProject\n     A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\n     DeclineStage equivalentTo A_locMKTau_lt_0\n                               and A_locMKpValue_lt_mk_alpha\n                               and MKApplicable\n                               and SoftwareProject\n     A_locMKTau_lt_0 equivalentTo locMKTau some decimal[< 0.0]\n     A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]\n\n\n",
+   "seconds": 2.3285322400042787,
+   "returncode": 0,
+   "error": null
+  },
+  "stage:RBServicingStage": {
+   "class": "RBServicingStage",
+   "target": "http://senso-framework.org/data/beancount_beancount type http://senso-framework.org/ontology/seo#RBServicingStage",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "subclass",
+       "subject": "MinorLocGrowth",
+       "text": "MinorLocGrowth subClassOf NonSubstantialChange"
+      },
+      {
+       "kind": "definition",
+       "subject": "RBServicingStage",
+       "text": "RBServicingStage equivalentTo NonSubstantialChange and RecentlyActive and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "RecentlyActive",
+       "text": "RecentlyActive equivalentTo A_monthsSinceLastCommit_lt_rb_dormancy_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locRelSenSlopeAnnual_lt_rb_min_rel_loc_growth_per_year",
+       "text": "A_locRelSenSlopeAnnual_lt_rb_min_rel_loc_growth_per_year equivalentTo locRelSenSlopeAnnual some decimal[< 0.05]"
+      },
+      {
+       "kind": "definition",
+       "subject": "MinorLocGrowth",
+       "text": "MinorLocGrowth equivalentTo A_locRelSenSlopeAnnual_lt_rb_min_rel_loc_growth_per_year and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_monthsSinceLastCommit_lt_rb_dormancy_months",
+       "text": "A_monthsSinceLastCommit_lt_rb_dormancy_months equivalentTo monthsSinceLastCommit some integer[< 12]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "beancount_beancount",
+       "prop": "monthsSinceLastCommit",
+       "value": 1,
+       "raw": "beancount_beancount monthsSinceLastCommit 1"
+      },
+      {
+       "subject": "beancount_beancount",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "beancount_beancount type SoftwareProject"
+      },
+      {
+       "subject": "beancount_beancount",
+       "prop": "locRelSenSlopeAnnual",
+       "value": -0.08556,
+       "raw": "beancount_beancount locRelSenSlopeAnnual -0.08556"
+      }
+     ],
+     "closures": [],
+     "raw": "beancount_beancount monthsSinceLastCommit 1\nbeancount_beancount type SoftwareProject\nMinorLocGrowth subClassOf NonSubstantialChange\nRBServicingStage equivalentTo NonSubstantialChange and RecentlyActive and SoftwareProject\nRecentlyActive equivalentTo A_monthsSinceLastCommit_lt_rb_dormancy_months and SoftwareProject\nA_locRelSenSlopeAnnual_lt_rb_min_rel_loc_growth_per_year equivalentTo locRelSenSlopeAnnual some decimal[< 0.05]\nMinorLocGrowth equivalentTo A_locRelSenSlopeAnnual_lt_rb_min_rel_loc_growth_per_year and SoftwareProject\nbeancount_beancount locRelSenSlopeAnnual -0.08556\nA_monthsSinceLastCommit_lt_rb_dormancy_months equivalentTo monthsSinceLastCommit some integer[< 12]"
+    }
+   ],
+   "raw_text": "Axiom: beancount_beancount type RBServicingStage\n\nExplanation(s): \n1)   beancount_beancount monthsSinceLastCommit 1\n     beancount_beancount type SoftwareProject\n     MinorLocGrowth subClassOf NonSubstantialChange\n     RBServicingStage equivalentTo NonSubstantialChange\n                                   and RecentlyActive\n                                   and SoftwareProject\n     RecentlyActive equivalentTo A_monthsSinceLastCommit_lt_rb_dormancy_months\n                                 and SoftwareProject\n     A_locRelSenSlopeAnnual_lt_rb_min_rel_loc_growth_per_year equivalentTo locRelSenSlopeAnnual some decimal[< 0.05]\n     MinorLocGrowth equivalentTo A_locRelSenSlopeAnnual_lt_rb_min_rel_loc_growth_per_year\n                                 and SoftwareProject\n     beancount_beancount locRelSenSlopeAnnual -0.08556\n     A_monthsSinceLastCommit_lt_rb_dormancy_months equivalentTo monthsSinceLastCommit some integer[< 12]\n\n\n",
+   "seconds": 2.4121599159552716,
+   "returncode": 0,
+   "error": null
+  },
+  "lawI": {
+   "class": "LawIConformant",
+   "target": "http://senso-framework.org/data/beancount_beancount type http://senso-framework.org/ontology/seo#LawIConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law1_min_months",
+       "text": "A_monthsObserved_ge_p_law1_min_months equivalentTo monthsObserved some integer[>= 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawIConformant",
+       "text": "LawIConformant equivalentTo A_activeMonthRatio_ge_p_law1_active_ratio and A_monthsObserved_ge_p_law1_min_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_activeMonthRatio_ge_p_law1_active_ratio",
+       "text": "A_activeMonthRatio_ge_p_law1_active_ratio equivalentTo activeMonthRatio some decimal[>= 0.5]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "beancount_beancount",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "beancount_beancount monthsObserved 36"
+      },
+      {
+       "subject": "beancount_beancount",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "beancount_beancount type SoftwareProject"
+      },
+      {
+       "subject": "beancount_beancount",
+       "prop": "activeMonthRatio",
+       "value": 0.833333,
+       "raw": "beancount_beancount activeMonthRatio 0.833333"
+      }
+     ],
+     "closures": [],
+     "raw": "beancount_beancount monthsObserved 36\nbeancount_beancount type SoftwareProject\nA_monthsObserved_ge_p_law1_min_months equivalentTo monthsObserved some integer[>= 2]\nLawIConformant equivalentTo A_activeMonthRatio_ge_p_law1_active_ratio and A_monthsObserved_ge_p_law1_min_months and SoftwareProject\nA_activeMonthRatio_ge_p_law1_active_ratio equivalentTo activeMonthRatio some decimal[>= 0.5]\nbeancount_beancount activeMonthRatio 0.833333"
+    }
+   ],
+   "raw_text": "Axiom: beancount_beancount type LawIConformant\n\nExplanation(s): \n1)   beancount_beancount monthsObserved 36\n     beancount_beancount type SoftwareProject\n     A_monthsObserved_ge_p_law1_min_months equivalentTo monthsObserved some integer[>= 2]\n     LawIConformant equivalentTo A_activeMonthRatio_ge_p_law1_active_ratio\n                                 and A_monthsObserved_ge_p_law1_min_months\n                                 and SoftwareProject\n     A_activeMonthRatio_ge_p_law1_active_ratio equivalentTo activeMonthRatio some decimal[>= 0.5]\n     beancount_beancount activeMonthRatio 0.833333\n\n\n",
+   "seconds": 2.4964430409600027,
+   "returncode": 0,
+   "error": null
+  },
+  "lawIII": {
+   "class": "LawIIINonConformant",
+   "target": "http://senso-framework.org/data/beancount_beancount type http://senso-framework.org/ontology/seo#LawIIINonConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_churnCV_ge_p_law3_churn_cv",
+       "text": "A_churnCV_ge_p_law3_churn_cv equivalentTo churnCV some decimal[>= 2.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law3_min_months",
+       "text": "A_monthsObserved_ge_p_law3_min_months equivalentTo monthsObserved some integer[>= 6]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawIIINonConformant",
+       "text": "LawIIINonConformant equivalentTo A_churnCV_ge_p_law3_churn_cv and A_monthsObserved_ge_p_law3_min_months and SoftwareProject"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "beancount_beancount",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "beancount_beancount monthsObserved 36"
+      },
+      {
+       "subject": "beancount_beancount",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "beancount_beancount type SoftwareProject"
+      },
+      {
+       "subject": "beancount_beancount",
+       "prop": "churnCV",
+       "value": 3.531984,
+       "raw": "beancount_beancount churnCV 3.531984"
+      }
+     ],
+     "closures": [],
+     "raw": "beancount_beancount monthsObserved 36\nA_churnCV_ge_p_law3_churn_cv equivalentTo churnCV some decimal[>= 2.0]\nA_monthsObserved_ge_p_law3_min_months equivalentTo monthsObserved some integer[>= 6]\nbeancount_beancount type SoftwareProject\nbeancount_beancount churnCV 3.531984\nLawIIINonConformant equivalentTo A_churnCV_ge_p_law3_churn_cv and A_monthsObserved_ge_p_law3_min_months and SoftwareProject"
+    }
+   ],
+   "raw_text": "Axiom: beancount_beancount type LawIIINonConformant\n\nExplanation(s): \n1)   beancount_beancount monthsObserved 36\n     A_churnCV_ge_p_law3_churn_cv equivalentTo churnCV some decimal[>= 2.0]\n     A_monthsObserved_ge_p_law3_min_months equivalentTo monthsObserved some integer[>= 6]\n     beancount_beancount type SoftwareProject\n     beancount_beancount churnCV 3.531984\n     LawIIINonConformant equivalentTo A_churnCV_ge_p_law3_churn_cv\n                                      and A_monthsObserved_ge_p_law3_min_months\n                                      and SoftwareProject\n\n\n",
+   "seconds": 2.6732609369792044,
+   "returncode": 0,
+   "error": null
+  },
+  "lawIV": {
+   "class": "LawIVConformant",
+   "target": "http://senso-framework.org/data/beancount_beancount type http://senso-framework.org/ontology/seo#LawIVConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law4_min_months",
+       "text": "A_monthsObserved_ge_p_law4_min_months equivalentTo monthsObserved some integer[>= 6]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawIVConformant",
+       "text": "LawIVConformant equivalentTo A_commitCountCV_lt_p_law4_commit_cv and A_monthsObserved_ge_p_law4_min_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_commitCountCV_lt_p_law4_commit_cv",
+       "text": "A_commitCountCV_lt_p_law4_commit_cv equivalentTo commitCountCV some decimal[< 1.5]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "beancount_beancount",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "beancount_beancount monthsObserved 36"
+      },
+      {
+       "subject": "beancount_beancount",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "beancount_beancount type SoftwareProject"
+      },
+      {
+       "subject": "beancount_beancount",
+       "prop": "commitCountCV",
+       "value": 1.425042,
+       "raw": "beancount_beancount commitCountCV 1.425042"
+      }
+     ],
+     "closures": [],
+     "raw": "A_monthsObserved_ge_p_law4_min_months equivalentTo monthsObserved some integer[>= 6]\nbeancount_beancount monthsObserved 36\nbeancount_beancount type SoftwareProject\nbeancount_beancount commitCountCV 1.425042\nLawIVConformant equivalentTo A_commitCountCV_lt_p_law4_commit_cv and A_monthsObserved_ge_p_law4_min_months and SoftwareProject\nA_commitCountCV_lt_p_law4_commit_cv equivalentTo commitCountCV some decimal[< 1.5]"
+    }
+   ],
+   "raw_text": "Axiom: beancount_beancount type LawIVConformant\n\nExplanation(s): \n1)   A_monthsObserved_ge_p_law4_min_months equivalentTo monthsObserved some integer[>= 6]\n     beancount_beancount monthsObserved 36\n     beancount_beancount type SoftwareProject\n     beancount_beancount commitCountCV 1.425042\n     LawIVConformant equivalentTo A_commitCountCV_lt_p_law4_commit_cv\n                                  and A_monthsObserved_ge_p_law4_min_months\n                                  and SoftwareProject\n     A_commitCountCV_lt_p_law4_commit_cv equivalentTo commitCountCV some decimal[< 1.5]\n\n\n",
+   "seconds": 2.6939906750340015,
+   "returncode": 0,
+   "error": null
+  },
+  "lawV": {
+   "class": "LawVNonConformant",
+   "target": "http://senso-framework.org/data/beancount_beancount type http://senso-framework.org/ontology/seo#LawVNonConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_linesAddedCV_ge_p_law5_additions_cv",
+       "text": "A_linesAddedCV_ge_p_law5_additions_cv equivalentTo linesAddedCV some decimal[>= 2.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawVNonConformant",
+       "text": "LawVNonConformant equivalentTo A_linesAddedCV_ge_p_law5_additions_cv and A_monthsObserved_ge_p_law5_min_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law5_min_months",
+       "text": "A_monthsObserved_ge_p_law5_min_months equivalentTo monthsObserved some integer[>= 4]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "beancount_beancount",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "beancount_beancount monthsObserved 36"
+      },
+      {
+       "subject": "beancount_beancount",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "beancount_beancount type SoftwareProject"
+      },
+      {
+       "subject": "beancount_beancount",
+       "prop": "linesAddedCV",
+       "value": 3.316149,
+       "raw": "beancount_beancount linesAddedCV 3.316149"
+      }
+     ],
+     "closures": [],
+     "raw": "beancount_beancount monthsObserved 36\nA_linesAddedCV_ge_p_law5_additions_cv equivalentTo linesAddedCV some decimal[>= 2.0]\nbeancount_beancount type SoftwareProject\nLawVNonConformant equivalentTo A_linesAddedCV_ge_p_law5_additions_cv and A_monthsObserved_ge_p_law5_min_months and SoftwareProject\nA_monthsObserved_ge_p_law5_min_months equivalentTo monthsObserved some integer[>= 4]\nbeancount_beancount linesAddedCV 3.316149"
+    }
+   ],
+   "raw_text": "Axiom: beancount_beancount type LawVNonConformant\n\nExplanation(s): \n1)   beancount_beancount monthsObserved 36\n     A_linesAddedCV_ge_p_law5_additions_cv equivalentTo linesAddedCV some decimal[>= 2.0]\n     beancount_beancount type SoftwareProject\n     LawVNonConformant equivalentTo A_linesAddedCV_ge_p_law5_additions_cv\n                                    and A_monthsObserved_ge_p_law5_min_months\n                                    and SoftwareProject\n     A_monthsObserved_ge_p_law5_min_months equivalentTo monthsObserved some integer[>= 4]\n     beancount_beancount linesAddedCV 3.316149\n\n\n",
+   "seconds": 2.5062093139858916,
+   "returncode": 0,
+   "error": null
+  },
+  "lawVI": {
+   "class": "LawVINonConformant",
+   "target": "http://senso-framework.org/data/beancount_beancount type http://senso-framework.org/ontology/seo#LawVINonConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKpValue_lt_mk_alpha",
+       "text": "A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]"
+      },
+      {
+       "kind": "definition",
+       "subject": "DeclineStage",
+       "text": "DeclineStage equivalentTo LawVINonConformant"
+      },
+      {
+       "kind": "definition",
+       "subject": "DeclineStage",
+       "text": "DeclineStage equivalentTo A_locMKTau_lt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKTau_lt_0",
+       "text": "A_locMKTau_lt_0 equivalentTo locMKTau some decimal[< 0.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "beancount_beancount",
+       "prop": "locMKTau",
+       "value": -0.549206,
+       "raw": "beancount_beancount locMKTau -0.549206"
+      },
+      {
+       "subject": "beancount_beancount",
+       "prop": "locSeriesLength",
+       "value": 36,
+       "raw": "beancount_beancount locSeriesLength 36"
+      },
+      {
+       "subject": "beancount_beancount",
+       "prop": "locMKpValue",
+       "value": 2e-06,
+       "raw": "beancount_beancount locMKpValue 2e-06"
+      },
+      {
+       "subject": "beancount_beancount",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "beancount_beancount type SoftwareProject"
+      }
+     ],
+     "closures": [],
+     "raw": "beancount_beancount locMKTau -0.549206\nbeancount_beancount locSeriesLength 36\nA_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\nbeancount_beancount locMKpValue 2e-06\nbeancount_beancount type SoftwareProject\nA_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\nDeclineStage equivalentTo LawVINonConformant\nDeclineStage equivalentTo A_locMKTau_lt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject\nA_locMKTau_lt_0 equivalentTo locMKTau some decimal[< 0.0]\nA_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]"
+    }
+   ],
+   "raw_text": "Axiom: beancount_beancount type LawVINonConformant\n\nExplanation(s): \n1)   beancount_beancount locMKTau -0.549206\n     beancount_beancount locSeriesLength 36\n     A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\n     beancount_beancount locMKpValue 2e-06\n     beancount_beancount type SoftwareProject\n     A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\n     DeclineStage equivalentTo LawVINonConformant\n     DeclineStage equivalentTo A_locMKTau_lt_0\n                               and A_locMKpValue_lt_mk_alpha\n                               and MKApplicable\n                               and SoftwareProject\n     A_locMKTau_lt_0 equivalentTo locMKTau some decimal[< 0.0]\n     A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]\n\n\n",
+   "seconds": 2.577991134021431,
+   "returncode": 0,
+   "error": null
+  },
+  "lawVII": {
+   "class": "LawVIINonConformant",
+   "target": "http://senso-framework.org/data/beancount_beancount type http://senso-framework.org/ontology/seo#LawVIINonConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_bugFixRatioFirstHalf_gt_0",
+       "text": "A_bugFixRatioFirstHalf_gt_0 equivalentTo bugFixRatioFirstHalf some decimal[> 0.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_bugFixHalfRatio_lt_p_law7_tolerance",
+       "text": "A_bugFixHalfRatio_lt_p_law7_tolerance equivalentTo bugFixHalfRatio some decimal[< 0.9]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_activeMonthCount_ge_p_law7_min_active_months",
+       "text": "A_activeMonthCount_ge_p_law7_min_active_months equivalentTo activeMonthCount some integer[>= 4]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawVIINonConformant",
+       "text": "LawVIINonConformant equivalentTo A_activeMonthCount_ge_p_law7_min_active_months and A_bugFixHalfRatio_lt_p_law7_tolerance and A_bugFixRatioFirstHalf_gt_0 and SoftwareProject"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "beancount_beancount",
+       "prop": "bugFixRatioFirstHalf",
+       "value": 0.211541,
+       "raw": "beancount_beancount bugFixRatioFirstHalf 0.211541"
+      },
+      {
+       "subject": "beancount_beancount",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "beancount_beancount type SoftwareProject"
+      },
+      {
+       "subject": "beancount_beancount",
+       "prop": "bugFixHalfRatio",
+       "value": 0.724449,
+       "raw": "beancount_beancount bugFixHalfRatio 0.724449"
+      },
+      {
+       "subject": "beancount_beancount",
+       "prop": "activeMonthCount",
+       "value": 30,
+       "raw": "beancount_beancount activeMonthCount 30"
+      }
+     ],
+     "closures": [],
+     "raw": "beancount_beancount bugFixRatioFirstHalf 0.211541\nbeancount_beancount type SoftwareProject\nbeancount_beancount bugFixHalfRatio 0.724449\nA_bugFixRatioFirstHalf_gt_0 equivalentTo bugFixRatioFirstHalf some decimal[> 0.0]\nA_bugFixHalfRatio_lt_p_law7_tolerance equivalentTo bugFixHalfRatio some decimal[< 0.9]\nA_activeMonthCount_ge_p_law7_min_active_months equivalentTo activeMonthCount some integer[>= 4]\nbeancount_beancount activeMonthCount 30\nLawVIINonConformant equivalentTo A_activeMonthCount_ge_p_law7_min_active_months and A_bugFixHalfRatio_lt_p_law7_tolerance and A_bugFixRatioFirstHalf_gt_0 and SoftwareProject"
+    }
+   ],
+   "raw_text": "Axiom: beancount_beancount type LawVIINonConformant\n\nExplanation(s): \n1)   beancount_beancount bugFixRatioFirstHalf 0.211541\n     beancount_beancount type SoftwareProject\n     beancount_beancount bugFixHalfRatio 0.724449\n     A_bugFixRatioFirstHalf_gt_0 equivalentTo bugFixRatioFirstHalf some decimal[> 0.0]\n     A_bugFixHalfRatio_lt_p_law7_tolerance equivalentTo bugFixHalfRatio some decimal[< 0.9]\n     A_activeMonthCount_ge_p_law7_min_active_months equivalentTo activeMonthCount some integer[>= 4]\n     beancount_beancount activeMonthCount 30\n     LawVIINonConformant equivalentTo A_activeMonthCount_ge_p_law7_min_active_months\n                                      and A_bugFixHalfRatio_lt_p_law7_tolerance\n                                      and A_bugFixRatioFirstHalf_gt_0\n                                      and SoftwareProject\n\n\n",
+   "seconds": 4.892648242006544,
+   "returncode": 0,
+   "error": null
+  },
+  "lawVIII": {
+   "class": "LawVIIIConformant",
+   "target": "http://senso-framework.org/data/beancount_beancount type http://senso-framework.org/ontology/seo#LawVIIIConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio",
+       "text": "A_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio equivalentTo multiAuthorMonthRatio some decimal[> 0.3]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_mergeMonthRatio_gt_p_law8_merge_ratio",
+       "text": "A_mergeMonthRatio_gt_p_law8_merge_ratio equivalentTo MergeActive"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio",
+       "text": "A_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio equivalentTo MultiAuthorActive"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawVIIIConformant",
+       "text": "LawVIIIConformant equivalentTo A_monthsObserved_ge_p_law8_min_months and MergeActive and MultiAuthorActive and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law8_min_months",
+       "text": "A_monthsObserved_ge_p_law8_min_months equivalentTo monthsObserved some integer[>= 6]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_mergeMonthRatio_gt_p_law8_merge_ratio",
+       "text": "A_mergeMonthRatio_gt_p_law8_merge_ratio equivalentTo mergeMonthRatio some decimal[> 0.3]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "beancount_beancount",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "beancount_beancount monthsObserved 36"
+      },
+      {
+       "subject": "beancount_beancount",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "beancount_beancount type SoftwareProject"
+      },
+      {
+       "subject": "beancount_beancount",
+       "prop": "multiAuthorMonthRatio",
+       "value": 0.416667,
+       "raw": "beancount_beancount multiAuthorMonthRatio 0.416667"
+      },
+      {
+       "subject": "beancount_beancount",
+       "prop": "mergeMonthRatio",
+       "value": 0.333333,
+       "raw": "beancount_beancount mergeMonthRatio 0.333333"
+      }
+     ],
+     "closures": [],
+     "raw": "beancount_beancount monthsObserved 36\nA_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio equivalentTo multiAuthorMonthRatio some decimal[> 0.3]\nA_mergeMonthRatio_gt_p_law8_merge_ratio equivalentTo MergeActive\nA_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio equivalentTo MultiAuthorActive\nLawVIIIConformant equivalentTo A_monthsObserved_ge_p_law8_min_months and MergeActive and MultiAuthorActive and SoftwareProject\nbeancount_beancount type SoftwareProject\nA_monthsObserved_ge_p_law8_min_months equivalentTo monthsObserved some integer[>= 6]\nbeancount_beancount multiAuthorMonthRatio 0.416667\nA_mergeMonthRatio_gt_p_law8_merge_ratio equivalentTo mergeMonthRatio some decimal[> 0.3]\nbeancount_beancount mergeMonthRatio 0.333333"
+    }
+   ],
+   "raw_text": "Axiom: beancount_beancount type LawVIIIConformant\n\nExplanation(s): \n1)   beancount_beancount monthsObserved 36\n     A_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio equivalentTo multiAuthorMonthRatio some decimal[> 0.3]\n     A_mergeMonthRatio_gt_p_law8_merge_ratio equivalentTo MergeActive\n     A_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio equivalentTo MultiAuthorActive\n     LawVIIIConformant equivalentTo A_monthsObserved_ge_p_law8_min_months\n                                    and MergeActive\n                                    and MultiAuthorActive\n                                    and SoftwareProject\n     beancount_beancount type SoftwareProject\n     A_monthsObserved_ge_p_law8_min_months equivalentTo monthsObserved some integer[>= 6]\n     beancount_beancount multiAuthorMonthRatio 0.416667\n     A_mergeMonthRatio_gt_p_law8_merge_ratio equivalentTo mergeMonthRatio some decimal[> 0.3]\n     beancount_beancount mergeMonthRatio 0.333333\n\n\n",
+   "seconds": 4.435835188021883,
+   "returncode": 0,
+   "error": null
+  }
+ },
+ "fuseki": {
+  "dataset": "seo_v2",
+  "graph_triples": {
+   "urn:senso:abox:beancount/beancount": 388,
+   "urn:senso:commits:beancount/beancount": 1981,
+   "urn:senso:abox-derived:beancount/beancount": 8,
+   "urn:senso:inferred:beancount/beancount:79f851de895e": 282,
+   "urn:senso:explanations:beancount/beancount:79f851de895e": 168
+  }
+ },
+ "timings": {
+  "t_clone": 2.728,
+  "t_mine": 8.432,
+  "t_loc": 3.047,
+  "t_reason_A": 3.483,
+  "mining_cached": false,
+  "t_reason_B": 24.28,
+  "n_configs": 12,
+  "t_explain": 27.11,
+  "n_explain_calls": 9,
+  "t_writeback": 7.48,
+  "t_total": 74.101
+ }
+}

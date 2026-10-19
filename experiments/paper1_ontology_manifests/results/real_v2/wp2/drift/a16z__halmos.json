@@ -1,0 +1,69 @@
+{
+ "repo": "a16z/halmos",
+ "slug": "a16z__halmos",
+ "input_sha": "3b1f80f9b61cb16b326d39317b71837507133c89a6ffcb643502e361fa7d2214",
+ "consistent": true,
+ "rows": [
+  {
+   "key": "T1|src",
+   "tcode": "T1",
+   "intro_commit": "b4266cf6ed98a960f7964c76aa9d99c65b4e0c17",
+   "intro_resolved": true,
+   "verdict_at_S": "SupportedClaim",
+   "leaf_at_S": "PathFoundExact",
+   "intro_iri": "http://senso-framework.org/data/claim/a16z_halmos/ad025d795ec3/intro",
+   "verdict_at_intro": "SupportedClaim",
+   "drifted": false,
+   "born_wrong": false
+  },
+  {
+   "key": "T3|linter_formatter|ruff",
+   "tcode": "T3",
+   "intro_commit": "b4266cf6ed98a960f7964c76aa9d99c65b4e0c17",
+   "intro_resolved": true,
+   "verdict_at_S": "SupportedClaim",
+   "leaf_at_S": "ToolSignatureFound",
+   "intro_iri": "http://senso-framework.org/data/claim/a16z_halmos/ca0adc2db6a3/intro",
+   "verdict_at_intro": "SupportedClaim",
+   "drifted": false,
+   "born_wrong": false
+  },
+  {
+   "key": "T3|package_manager|uv",
+   "tcode": "T3",
+   "intro_commit": "b4266cf6ed98a960f7964c76aa9d99c65b4e0c17",
+   "intro_resolved": true,
+   "verdict_at_S": "ContradictedClaim",
+   "leaf_at_S": "ToolAbsentInEcosystem",
+   "intro_iri": "http://senso-framework.org/data/claim/a16z_halmos/13e48c884ea9/intro",
+   "verdict_at_intro": "ContradictedClaim",
+   "drifted": false,
+   "born_wrong": true
+  },
+  {
+   "key": "T3|test_framework|pytest",
+   "tcode": "T3",
+   "intro_commit": "b4266cf6ed98a960f7964c76aa9d99c65b4e0c17",
+   "intro_resolved": true,
+   "verdict_at_S": "SupportedClaim",
+   "leaf_at_S": "ToolSignatureFound",
+   "intro_iri": "http://senso-framework.org/data/claim/a16z_halmos/dc14d36b73b6/intro",
+   "verdict_at_intro": "SupportedClaim",
+   "drifted": false,
+   "born_wrong": false
+  },
+  {
+   "key": "T6|python|3011000000@2",
+   "tcode": "T6",
+   "intro_commit": "b4266cf6ed98a960f7964c76aa9d99c65b4e0c17",
+   "intro_resolved": true,
+   "verdict_at_S": "SupportedClaim",
+   "leaf_at_S": "VersionConfirmed",
+   "intro_iri": "http://senso-framework.org/data/claim/a16z_halmos/3998532c41c3/intro",
+   "verdict_at_intro": "SupportedClaim",
+   "drifted": false,
+   "born_wrong": false
+  }
+ ],
+ "tbox_sha256": "8266af98a762ae7567a0deb684fdd394c180f7c6875ac55011cd3e6e6b080b43"
+}

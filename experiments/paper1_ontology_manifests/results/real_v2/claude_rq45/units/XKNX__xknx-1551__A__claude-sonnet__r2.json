@@ -1,0 +1,107 @@
+{
+ "unit_id": "XKNX__xknx-1551__A__claude-sonnet__r2",
+ "task_id": "XKNX__xknx-1551",
+ "repo": "XKNX/xknx",
+ "stage": "evolution",
+ "condition": "A",
+ "model": "claude-code/sonnet",
+ "run": 2,
+ "condition_meta": {},
+ "started": "2026-10-18T04:43:07.760306+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 15,
+ "tool_calls": 14,
+ "usage": {
+  "input_tokens": 30,
+  "cache_creation_input_tokens": 18085,
+  "cache_read_input_tokens": 385845,
+  "output_tokens": 5501,
+  "output_tokens_details": {
+   "thinking_tokens": 2077
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 18085,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 30,
+   "outputTokens": 5501,
+   "cacheReadInputTokens": 385845,
+   "cacheCreationInputTokens": 18085,
+   "webSearchRequests": 0,
+   "costUSD": 0.16599450000000002,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 2077,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.16599450000000002,
+ "result_text": "The controller status byte `0x21` from the Jung controller now decodes as Comfort in heat mode. Before, it decoded as Economy, which Home Assistant shows as \"Sleep\". I only checked that one value with a quick decode; I didn't run the test suite.\n\nThe bit layout in `DPTHVACStatus` (`xknx/dpt/dpt_20.py`) was wrong. Since the 3.0 refactor it treated the top bits as the mode (0x80 comfort, 0x40 standby, 0x20 economy, 0x10 protection). The pre-3.0 decoder, which was reverse-engineered from the Jung device, treated the low bits as the mode.\n\nI restored that layout for both reading and writing:\n- **Bits 0\u20133:** comfort, standby, economy (night), building protection.\n- **Bit 4:** frost alarm.\n- **Bit 5:** heat or cool.\n- **Bit 6:** inactive.\n- **Bit 7:** dew point.\n\nBits 4\u20137 are my reading of Eberle application note AN 097 from memory, not something I checked against the spec. The old code only ever decoded bits 0\u20133. If the existing DPT 20.60102 tests assert the old layout, they will fail and need updating. I didn't touch them, as you asked.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792309800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0.08,
+    "resetsAt": 1792309800
+   },
+   "seven_day": {
+    "utilization": 0.12,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 74.6,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 15,
+   "hit_step_limit": 0,
+   "changed_lines": 40,
+   "gold_changed_lines": 36,
+   "Y1": 0,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": 0.15200309344505006
+  },
+  "f2p_pass": 5,
+  "f2p_total": 5,
+  "p2p_pass": 84,
+  "p2p_total": 84,
+  "f2p_all_pass": true,
+  "p2p_all_pass": true,
+  "resolved": true,
+  "reason": "resolved",
+  "test_seconds": 2.4
+ },
+ "status": "done",
+ "finished": "2026-10-18T04:44:26.790893+00:00"
+}

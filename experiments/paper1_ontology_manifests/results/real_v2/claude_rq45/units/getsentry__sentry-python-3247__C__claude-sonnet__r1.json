@@ -1,0 +1,111 @@
+{
+ "unit_id": "getsentry__sentry-python-3247__C__claude-sonnet__r1",
+ "task_id": "getsentry__sentry-python-3247",
+ "repo": "getsentry/sentry-python",
+ "stage": "servicing",
+ "condition": "C",
+ "model": "claude-code/sonnet",
+ "run": 1,
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 6260,
+  "sha256": "400baab49274090999289a1bad16e3a1d4ec4b694d90e26212cca83a8e29b7c0"
+ },
+ "started": "2026-10-18T05:46:28.493522+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 4,
+ "tool_calls": 3,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 8512,
+  "cache_read_input_tokens": 69867,
+  "output_tokens": 864,
+  "output_tokens_details": {
+   "thinking_tokens": 126
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 8512,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 8,
+   "outputTokens": 864,
+   "cacheReadInputTokens": 69867,
+   "cacheCreationInputTokens": 8512,
+   "webSearchRequests": 0,
+   "costUSD": 0.0496907,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 126,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.0496907,
+ "result_text": "`HttpTransport` in `sentry_sdk/transport.py` no longer uses `Hub`. I haven't run the tests or any other check.\n\n- **Constructor:** I removed the `from sentry_sdk import Hub` import and the `self.hub_cls` attribute. Nothing else in the SDK referenced `hub_cls`.\n- **`capture_envelope`:** The send wrapper no longer captures `Hub.current` and wraps the send in `with hub:`. It now just runs `_send_envelope` and `_flush_client_reports` inside `capture_internal_exceptions()`.\n\nOne behaviour change: the old `with hub:` made the capturing thread's hub current while the worker thread sent the envelope. That no longer happens. I didn't replace it with a scope, since nothing in the transport appears to need it.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792309800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0.12,
+    "resetsAt": 1792309800
+   },
+   "seven_day": {
+    "utilization": 0.13,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 19.6,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 4,
+   "hit_step_limit": 0,
+   "changed_lines": 13,
+   "gold_changed_lines": 40,
+   "Y1": 0,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": -1.6214883767462702
+  },
+  "f2p_pass": 0,
+  "f2p_total": 1,
+  "p2p_pass": 44,
+  "p2p_total": 44,
+  "f2p_all_pass": false,
+  "p2p_all_pass": true,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 49.7
+ },
+ "status": "done",
+ "finished": "2026-10-18T05:47:40.187894+00:00"
+}

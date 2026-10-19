@@ -1,0 +1,418 @@
+{
+ "repo": "vinhnx/VT.ai",
+ "slug": "vinhnx__VT.ai",
+ "S": "5088b40737b8f411af9286e86a8680396a3a9009",
+ "manifest_path": ".github/copilot-instructions.md",
+ "input_sha": "3eed7bcb695e77b6c41721012f16e5d7789fc3a0d5895e351b1f9bcca9fa56ce",
+ "n_claims": 12,
+ "n_tree_files": 120,
+ "n_dep_manifests_parsed": 2,
+ "seconds": 0.1,
+ "claims": [
+  {
+   "key_str": "T1|.github",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": ".github",
+   "quote": "- `.github/`: GitHub specific files like workflows and issue templates.",
+   "line": 38,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": ".github",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 4,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|docs",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "docs",
+   "quote": "- `docs/`: Project documentation.",
+   "line": 36,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "docs",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 21,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|pyproject.toml",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "pyproject.toml",
+   "quote": "- `pyproject.toml`: Project metadata and dependencies.",
+   "line": 37,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "pyproject.toml",
+    "is_dir": false,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 1,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|scripts",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "scripts",
+   "quote": "- `scripts/`: Utility scripts for development or deployment.",
+   "line": 35,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "scripts",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 5,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|src",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "src",
+   "quote": "- `src/`: Contains the main application source code.",
+   "line": 32,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "src",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 0,
+     "pathSuffixMatchCount": 0,
+     "pathIgnoredCount": 0,
+     "pathSubmoduleCount": 0,
+     "pathEverTrackedCount": 145,
+     "daysSincePathLastTracked": 305
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|tests",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "tests",
+   "quote": "- Place tests in the `tests/` directory, mirroring the structure of the `src/` directory.",
+   "line": 22,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "tests",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 6,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|vt_ai",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "vt_ai",
+   "quote": "  - `vt_ai/`: Main package directory.",
+   "line": 33,
+   "votes": 2,
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "vt_ai",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 0,
+     "pathSuffixMatchCount": 0,
+     "pathIgnoredCount": 0,
+     "pathSubmoduleCount": 0,
+     "pathEverTrackedCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T3|package_manager|uv",
+   "tcode": "T3",
+   "types": [
+    "ToolUsageClaim",
+    "PackageManagerClaim"
+   ],
+   "headline": true,
+   "subject": "uv",
+   "quote": "- Key dependencies include Python 3.x and potentially libraries like `litellm`, `requests`, etc. Manage dependencies using `pyproject.toml` and `uv`.",
+   "line": 27,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "tool": "uv",
+    "category": "package_manager"
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "toolSignatureHitCount": 2,
+     "toolEcosystemAnchorCount": 2,
+     "competingToolSignatureCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T3|test_framework|pytest",
+   "tcode": "T3",
+   "types": [
+    "ToolUsageClaim",
+    "NonPackageManagerToolClaim"
+   ],
+   "headline": true,
+   "subject": "pytest",
+   "quote": "- Use `pytest` for writing and running unit and integration tests.",
+   "line": 21,
+   "votes": 2,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "attrs": {
+    "tool": "pytest",
+    "category": "test_framework"
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "toolSignatureHitCount": 2,
+     "toolEcosystemAnchorCount": 2,
+     "competingToolSignatureCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T4|litellm|",
+   "tcode": "T4",
+   "types": [
+    "DependencyClaim",
+    "UnversionedDependencyClaim"
+   ],
+   "headline": true,
+   "subject": "litellm",
+   "quote": "- Key dependencies include Python 3.x and potentially libraries like `litellm`, `requests`, etc. Manage dependencies using `pyproject.toml` and `uv`.",
+   "line": 27,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "name": "litellm",
+    "major": null,
+    "ecosystem_hint": "pypi"
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "dependencyExactMatchCount": 2,
+     "dependencySuffixMatchCount": 0,
+     "dependencyManifestParsedCount": 2
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T4|requests|",
+   "tcode": "T4",
+   "types": [
+    "DependencyClaim",
+    "UnversionedDependencyClaim"
+   ],
+   "headline": true,
+   "subject": "requests",
+   "quote": "- Key dependencies include Python 3.x and potentially libraries like `litellm`, `requests`, etc. Manage dependencies using `pyproject.toml` and `uv`.",
+   "line": 27,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "name": "requests",
+    "major": null,
+    "ecosystem_hint": "pypi"
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "dependencyExactMatchCount": 0,
+     "dependencySuffixMatchCount": 0,
+     "dependencyManifestParsedCount": 2
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T6|python|3000000000@1",
+   "tcode": "T6",
+   "types": [
+    "VersionClaim",
+    "MinVersionClaim"
+   ],
+   "headline": true,
+   "subject": "python",
+   "quote": "- Key dependencies include Python 3.x and potentially libraries like `litellm`, `requests`, etc. Manage dependencies using `pyproject.toml` and `uv`.",
+   "line": 27,
+   "votes": 2,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "attrs": {
+    "subject_type": "python",
+    "version": "3.x",
+    "code": 3000000000,
+    "precision": 1,
+    "qualifier": "min"
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "versionSourceCount": 2
+    },
+    "evidences": [
+     {
+      "versionSourcePath": "pyproject.toml",
+      "versionSourceRaw": ">= 3.11",
+      "versionLowerDelta": 0,
+      "versionUpperUnboundedCount": 1
+     },
+     {
+      "versionSourcePath": ".python-version",
+      "versionSourceRaw": "3.11.14",
+      "versionLowerDelta": 0,
+      "versionUpperDelta": 0,
+      "versionUpperUnboundedCount": 0
+     }
+    ],
+    "meta": {}
+   }
+  }
+ ]
+}

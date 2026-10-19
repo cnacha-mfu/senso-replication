@@ -1,0 +1,372 @@
+{
+ "task_id": "mirumee__ariadne-1138",
+ "repo": "mirumee/ariadne",
+ "stage": "initial_development",
+ "rounds": 1,
+ "rejects": {},
+ "flags": [
+  "length_violation_F_R"
+ ],
+ "info": {
+  "slots": {
+   "test_root": "tests",
+   "P1": {
+    "replaced": "tests_mypy",
+    "name": "internal",
+    "F_R": "ariadne/internal",
+    "F_I": "ariadne/asgi/internal"
+   },
+   "P2": {
+    "replaced": "ariadne/asgi/handlers/graphql_transport_ws.py",
+    "F_R": "ariadne/contrib/django/apps.py",
+    "F_I": "tests/asgi/snapshots/snap_test_explorer.py"
+   },
+   "C": {
+    "F_R": "make test",
+    "F_I": "make install"
+   },
+   "D": {
+    "replaced": "opentelemetry-api",
+    "F_R": "toolz",
+    "F_I": "boltons"
+   }
+  },
+  "why": {
+   "test_command": [
+    {
+     "root": "tests",
+     "T3": "SupportedClaim",
+     "T1": "SupportedClaim",
+     "collect_ok": true
+    }
+   ],
+   "kind1": {
+    "p1_idx": 6,
+    "gold0": "ariadne",
+    "unrelated": "ariadne/asgi",
+    "base_R": "ariadne",
+    "base_I": "ariadne/asgi"
+   },
+   "kind2": {
+    "p2_idx": 2,
+    "n_deleted_py": 158,
+    "found": {
+     "F_R": "ariadne/contrib/django/apps.py",
+     "F_I": "tests/asgi/snapshots/snap_test_explorer.py"
+    }
+   },
+   "kind3": {
+    "run": "test",
+    "install": "install",
+    "test_ok": true,
+    "install_ok": true
+   },
+   "kind4": {
+    "deps": [
+     [
+      "graphql-core",
+      true
+     ],
+     [
+      "starlette",
+      false
+     ],
+     [
+      "python-multipart",
+      false
+     ],
+     [
+      "typing-extensions",
+      false
+     ],
+     [
+      "opentelemetry-api",
+      false
+     ]
+    ],
+    "d_idx": 4,
+    "src_R": "graphql-core",
+    "src_I": "opentelemetry-api",
+    "n_decls": 44,
+    "n_dist": 53
+   }
+  },
+  "length": {
+   "T": 539,
+   "F_R": 505,
+   "F_I": 533
+  },
+  "fallbacks": {
+   "F_R": [],
+   "F_I": []
+  },
+  "modes": {
+   "F_R": {
+    "1": "replace",
+    "2": "replace",
+    "3": "replace",
+    "4": "replace"
+   },
+   "F_I": {
+    "1": "replace",
+    "2": "replace",
+    "3": "replace",
+    "4": "replace"
+   }
+  },
+  "length_diff": {
+   "F_R": -34,
+   "F_I": -6
+  },
+  "n_claims_T": 18,
+  "n_false": {
+   "F_R": 4,
+   "F_I": 4
+  },
+  "pointer_in_issue": true,
+  "gold_dirs": [
+   "ariadne"
+  ],
+  "gold_files": [
+   "CHANGELOG.md",
+   "ariadne/__init__.py",
+   "ariadne/enums.py",
+   "ariadne/enums_default_values.py",
+   "ariadne/enums_values_visitor.py",
+   "ariadne/executable_schema.py"
+  ]
+ },
+ "tokens": {
+  "F_R": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "ariadne/internal",
+     "internal"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "ariadne/contrib/django/apps.py",
+     "apps.py"
+    ]
+   },
+   {
+    "kind": 3,
+    "type": "regex",
+    "regex": "\\bmake\\b[^|;&\\n]*\\btest\\b",
+    "target": "test"
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "toolz"
+    ]
+   }
+  ],
+  "F_I": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "ariadne/asgi/internal",
+     "internal"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "tests/asgi/snapshots/snap_test_explorer.py",
+     "snap_test_explorer.py"
+    ]
+   },
+   {
+    "kind": 3,
+    "type": "regex",
+    "regex": "\\bmake\\b[^|;&\\n]*\\binstall\\b",
+    "target": "install"
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "boltons"
+    ]
+   }
+  ]
+ },
+ "unresolved_pre_hermit": [],
+ "sha256": {
+  "T": "e278055558c59ada08e626ac1eaaaa9eddbc4dada5dfa95fe2de21c55f402033",
+  "F_R": "29bd478ce7f5badcda87a5726f6cb7e3b0057bebddd1cd2d32d3ac76844c70fe",
+  "F_I": "d74f88c638d0cf47a46f9ed842e78185eda86960516b34fbf6ce1db45f1d9805"
+ },
+ "chars": {
+  "T": 539,
+  "F_R": 505,
+  "F_I": 533
+ },
+ "claims": {
+  "T": [
+   "T1|ariadne",
+   "T1|ariadne/asgi",
+   "T1|ariadne/contrib",
+   "T1|ariadne/explorer",
+   "T1|ariadne/validation",
+   "T1|tests",
+   "T1|tests_mypy",
+   "T1|ariadne/schema_visitor.py",
+   "T1|ariadne/contrib/tracing/opentelemetry.py",
+   "T1|ariadne/asgi/handlers/graphql_transport_ws.py",
+   "T3|test_framework|pytest",
+   "T1|tests",
+   "T1|pyproject.toml",
+   "T4|graphql-core|",
+   "T4|starlette|",
+   "T4|python-multipart|",
+   "T4|typing-extensions|",
+   "T4|opentelemetry-api|"
+  ],
+  "F_R": [
+   "T1|ariadne",
+   "T1|ariadne/asgi",
+   "T1|ariadne/contrib",
+   "T1|ariadne/explorer",
+   "T1|ariadne/validation",
+   "T1|tests",
+   "T1|ariadne/internal",
+   "T1|ariadne/schema_visitor.py",
+   "T1|ariadne/contrib/tracing/opentelemetry.py",
+   "T1|ariadne/contrib/django/apps.py",
+   "T5|make|test",
+   "T1|pyproject.toml",
+   "T4|graphql-core|",
+   "T4|starlette|",
+   "T4|python-multipart|",
+   "T4|typing-extensions|",
+   "T4|toolz|"
+  ],
+  "F_I": [
+   "T1|ariadne",
+   "T1|ariadne/asgi",
+   "T1|ariadne/contrib",
+   "T1|ariadne/explorer",
+   "T1|ariadne/validation",
+   "T1|tests",
+   "T1|ariadne/asgi/internal",
+   "T1|ariadne/schema_visitor.py",
+   "T1|ariadne/contrib/tracing/opentelemetry.py",
+   "T1|tests/asgi/snapshots/snap_test_explorer.py",
+   "T3|test_framework|pytest",
+   "T1|tests",
+   "T5|make|install",
+   "T4|graphql-core|",
+   "T4|starlette|",
+   "T4|python-multipart|",
+   "T4|typing-extensions|",
+   "T4|boltons|"
+  ]
+ },
+ "python_spec": null,
+ "token_audit": [
+  {
+   "cond": "F_R",
+   "kind": 1,
+   "type": "path",
+   "name": "ariadne/internal",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 2,
+   "type": "path",
+   "name": "ariadne/contrib/django/apps.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 3,
+   "type": "regex",
+   "name": "make test",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 4,
+   "type": "word",
+   "name": "toolz",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 1,
+   "type": "path",
+   "name": "ariadne/asgi/internal",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 2,
+   "type": "path",
+   "name": "tests/asgi/snapshots/snap_test_explorer.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 3,
+   "type": "regex",
+   "name": "make install",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 4,
+   "type": "word",
+   "name": "boltons",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  }
+ ],
+ "dist_imports_used": {
+  "graphql-core": [
+   "graphql"
+  ],
+  "starlette": [
+   "starlette"
+  ],
+  "python-multipart": [
+   "multipart",
+   "python_multipart"
+  ],
+  "typing-extensions": [
+   "typing_extensions"
+  ],
+  "opentelemetry-api": [
+   "opentelemetry"
+  ],
+  "toolz": null,
+  "boltons": null
+ }
+}

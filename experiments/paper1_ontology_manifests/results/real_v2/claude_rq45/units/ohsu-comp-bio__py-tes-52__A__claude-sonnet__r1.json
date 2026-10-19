@@ -1,0 +1,107 @@
+{
+ "unit_id": "ohsu-comp-bio__py-tes-52__A__claude-sonnet__r1",
+ "task_id": "ohsu-comp-bio__py-tes-52",
+ "repo": "ohsu-comp-bio/py-tes",
+ "stage": "initial_development",
+ "condition": "A",
+ "model": "claude-code/sonnet",
+ "run": 1,
+ "condition_meta": {},
+ "started": "2026-10-18T07:54:36.070162+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 4,
+ "tool_calls": 3,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 4039,
+  "cache_read_input_tokens": 71118,
+  "output_tokens": 1069,
+  "output_tokens_details": {
+   "thinking_tokens": 166
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 4039,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 8,
+   "outputTokens": 1069,
+   "cacheReadInputTokens": 71118,
+   "cacheCreationInputTokens": 4039,
+   "webSearchRequests": 0,
+   "costUSD": 0.0339738,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 166,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.0339738,
+ "result_text": "The issue asks for new unit tests, which I wasn't allowed to add, so I didn't write any. Instead I fixed three source bugs in the untested code in `tes/models.py`. The existing 17 tests still pass, but nothing covers the new behavior, and I did not look at the uncovered lines in `tes/client.py` or `tes/utils.py`.\n\n- **`Task.is_valid`, env and tags checks:** it looped over the dicts directly (`for k, v in e.env`) instead of calling `.items()`, so any task with env vars or tags would have raised an error. The type check also tested the key twice and never the value, and used `and` where it needed `or`. It now checks that both are strings.\n- **`list_of` validator error message:** it was missing its f-string prefix and referenced an undefined `values[0]`, so the text came out as a literal template. It now builds a proper message.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792327800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0.01,
+    "resetsAt": 1792327800
+   },
+   "seven_day": {
+    "utilization": 0.13,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 23.1,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 4,
+   "hit_step_limit": 0,
+   "changed_lines": 12,
+   "gold_changed_lines": 64,
+   "Y1": 0,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": -2.415037499278844
+  },
+  "f2p_pass": 0,
+  "f2p_total": 4,
+  "p2p_pass": 18,
+  "p2p_total": 18,
+  "f2p_all_pass": false,
+  "p2p_all_pass": true,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 2.9
+ },
+ "status": "done",
+ "finished": "2026-10-18T07:55:02.939387+00:00"
+}

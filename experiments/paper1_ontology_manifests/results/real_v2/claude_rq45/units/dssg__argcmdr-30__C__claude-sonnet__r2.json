@@ -1,0 +1,111 @@
+{
+ "unit_id": "dssg__argcmdr-30__C__claude-sonnet__r2",
+ "task_id": "dssg__argcmdr-30",
+ "repo": "dssg/argcmdr",
+ "stage": "servicing",
+ "condition": "C",
+ "model": "claude-code/sonnet",
+ "run": 2,
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 2872,
+  "sha256": "66b6d5bbbb5a83d404606c7455aa9992bb6297eb6d07a1490558bc5624bee38a"
+ },
+ "started": "2026-10-18T05:34:21.088517+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 6,
+ "tool_calls": 5,
+ "usage": {
+  "input_tokens": 12,
+  "cache_creation_input_tokens": 4759,
+  "cache_read_input_tokens": 113565,
+  "output_tokens": 1312,
+  "output_tokens_details": {
+   "thinking_tokens": 241
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 4759,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 12,
+   "outputTokens": 1312,
+   "cacheReadInputTokens": 113565,
+   "cacheCreationInputTokens": 4759,
+   "webSearchRequests": 0,
+   "costUSD": 0.0435365,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 241,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.0435365,
+ "result_text": "`Local` commands now receive their `local` lookup object as an optional third argument, after `args` and `parser`. For example, `def prepare(self, args, parser, local): return local['ls']` now works. I haven't added a test for the new argument.\n\nThree existing tests in `TestPrepareCallSignature` (`test_bad`, `test_fancy`, `test_tricky`) now fail. They define a third parameter on a `Local` command's `prepare` (`lang`, defaulting to `'en'` in `test_fancy`) and expect it to stay unfilled. That parameter is now filled with `local`, so those tests need updating to match the new signature. The other 46 tests pass, with 2 skipped. All 49 passed before the change. I left the tests alone, as you asked.\n\nThe change is in `src/argcmdr.py`. I added a `Command.get_call_args(args)` hook that returns `(args, parser)`. `Command.call` now builds its arguments through that hook, and `Local` overrides it to append `self.local`. Commands that aren't `Local` are unaffected.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792309800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0.11,
+    "resetsAt": 1792309800
+   },
+   "seven_day": {
+    "utilization": 0.12,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 28.6,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 6,
+   "hit_step_limit": 0,
+   "changed_lines": 8,
+   "gold_changed_lines": 174,
+   "Y1": 1,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": -4.442943495848728
+  },
+  "f2p_pass": 0,
+  "f2p_total": 24,
+  "p2p_pass": 31,
+  "p2p_total": 31,
+  "f2p_all_pass": false,
+  "p2p_all_pass": true,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 1.0
+ },
+ "status": "done",
+ "finished": "2026-10-18T05:34:51.892400+00:00"
+}

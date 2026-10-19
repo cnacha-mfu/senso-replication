@@ -1,0 +1,1944 @@
+{
+ "repo": "AnswerDotAI/fastcore",
+ "snapshot_date": "2025-06-30",
+ "status": "ok",
+ "unmineable": false,
+ "unmineable_reason": null,
+ "replaces": null,
+ "settings": {
+  "dedup": true,
+  "complexity": false,
+  "dataset": "seo_v2",
+  "sensitivity": true
+ },
+ "versions": {
+  "owlready2": "0.51",
+  "pymannkendall": "1.4.3",
+  "lizard": "1.24.1",
+  "numpy": "2.5.3",
+  "scipy": "1.18.1",
+  "python": "3.12.15",
+  "git": "git version 2.53.0"
+ },
+ "measures": {
+  "monthsObserved": 36,
+  "monthsSinceLastCommit": 0,
+  "distinctAuthorsInWindow": 43,
+  "commitMKTau": 0.080952,
+  "commitMKpValue": 0.492628,
+  "activeMonthCount": 28,
+  "activeMonthRatio": 0.777778,
+  "meanMonthlyCommits": 16.833333,
+  "commitsLast3Months": 28,
+  "commitCountCV": 1.263104,
+  "commitCountCVSample": 1.281021,
+  "commitHalfRatio": 1.767123,
+  "commitSecondHalfMean": 21.5,
+  "churnCV": 2.560302,
+  "linesAddedCV": 2.462968,
+  "mergeMonthRatio": 0.583333,
+  "multiAuthorMonthRatio": 0.638889,
+  "bugFixRatioFirstHalf": 0.37196,
+  "bugFixRatioSecondHalf": 0.279255,
+  "bugFixHalfRatio": 0.750766,
+  "locSeriesLength": 36,
+  "locRelSenSlopeAnnual": 0.096994,
+  "locMKTau": 0.74127,
+  "locMKS": 467,
+  "locMKpValue": 0.0,
+  "locSenSlope": 34.675439,
+  "locStart": 4086,
+  "locEnd": 5271,
+  "locDelta": 1185,
+  "locGrowthRate": 0.290015,
+  "locChangePct": 29.001468,
+  "locEndToStartRatio": 1.290015,
+  "locGrowthLast3": 0.019733,
+  "featureCommitsFirstHalf": 0,
+  "featureCommitsSecondHalf": 0,
+  "featureCommitsTotal": 0,
+  "locDeltaPerFeature": 1185.0,
+  "recentAgentCommitRatio": 0.0,
+  "featCommitCount": 0,
+  "bugFixCommitCount": 181,
+  "commitCount": 606,
+  "monthly_series": {
+   "months": [
+    "2021-07",
+    "2021-08",
+    "2021-09",
+    "2021-10",
+    "2021-11",
+    "2021-12",
+    "2022-01",
+    "2022-02",
+    "2022-03",
+    "2022-04",
+    "2022-05",
+    "2022-06",
+    "2022-07",
+    "2022-08",
+    "2022-09",
+    "2022-10",
+    "2022-11",
+    "2022-12",
+    "2023-01",
+    "2023-02",
+    "2023-03",
+    "2023-04",
+    "2023-05",
+    "2023-06",
+    "2023-07",
+    "2023-08",
+    "2023-09",
+    "2023-10",
+    "2023-11",
+    "2023-12",
+    "2024-01",
+    "2024-02",
+    "2024-03",
+    "2024-04",
+    "2024-05",
+    "2024-06",
+    "2024-07",
+    "2024-08",
+    "2024-09",
+    "2024-10",
+    "2024-11",
+    "2024-12",
+    "2025-01",
+    "2025-02",
+    "2025-03",
+    "2025-04",
+    "2025-05",
+    "2025-06"
+   ],
+   "commits": [
+    21,
+    34,
+    1,
+    6,
+    4,
+    0,
+    7,
+    12,
+    21,
+    57,
+    10,
+    21,
+    63,
+    83,
+    25,
+    2,
+    2,
+    10,
+    6,
+    13,
+    11,
+    1,
+    1,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    17,
+    52,
+    20,
+    30,
+    63,
+    32,
+    51,
+    21,
+    33,
+    6,
+    4,
+    28,
+    6,
+    8,
+    14
+   ],
+   "loc": [
+    2989,
+    3141,
+    3141,
+    3149,
+    3149,
+    3149,
+    3149,
+    3172,
+    3250,
+    3475,
+    3494,
+    3570,
+    4086,
+    4229,
+    4287,
+    4287,
+    4288,
+    4288,
+    4290,
+    4290,
+    4290,
+    4290,
+    4290,
+    4290,
+    4290,
+    4290,
+    4290,
+    4290,
+    4290,
+    4290,
+    4290,
+    4290,
+    4290,
+    4311,
+    4870,
+    4947,
+    5051,
+    5289,
+    5312,
+    5439,
+    5599,
+    5625,
+    5636,
+    5638,
+    5167,
+    5169,
+    5175,
+    5271
+   ]
+  }
+ },
+ "window": {
+  "L": 36,
+  "first_month": "2022-07",
+  "last_month": "2025-06",
+  "n_months": 36,
+  "left_truncated": false,
+  "first_commit_month": "2019-12",
+  "mined_months": 48,
+  "commits_in_window": 606,
+  "commits_in_history": 1662
+ },
+ "loc_instrument": {
+  "instrument": "nonblank-source-lines-v1",
+  "status": "ok",
+  "months": 48,
+  "month_end_commits_distinct": 35,
+  "source_blobs": 237,
+  "blobs_fetched": 3,
+  "t_ls_tree_s": 1.0506564649986103,
+  "t_fetch_s": 0.972417495038826,
+  "t_read_s": 0.06749921495793387,
+  "series_present": true,
+  "extensions": [
+   ".bash",
+   ".c",
+   ".cc",
+   ".cjs",
+   ".clj",
+   ".cpp",
+   ".cs",
+   ".cxx",
+   ".dart",
+   ".erl",
+   ".ex",
+   ".exs",
+   ".f90",
+   ".go",
+   ".groovy",
+   ".h",
+   ".hh",
+   ".hpp",
+   ".hs",
+   ".java",
+   ".jl",
+   ".js",
+   ".jsx",
+   ".kt",
+   ".kts",
+   ".lua",
+   ".m",
+   ".mjs",
+   ".ml",
+   ".mm",
+   ".nim",
+   ".php",
+   ".pl",
+   ".pm",
+   ".py",
+   ".pyi",
+   ".r",
+   ".rb",
+   ".rs",
+   ".scala",
+   ".sh",
+   ".sql",
+   ".svelte",
+   ".swift",
+   ".ts",
+   ".tsx",
+   ".vue",
+   ".zig"
+  ],
+  "excluded_dirs": [
+   "node_modules",
+   "vendor",
+   "vendored",
+   "third_party",
+   "site-packages",
+   "bower_components"
+  ],
+  "max_blob_bytes": 1000000,
+  "first_parent": true
+ },
+ "mining": {
+  "churn": {
+   "t_churn_raw_s": 0.274328829953447,
+   "t_churn_fetch_s": 3.0903795010526665,
+   "t_churn_numstat_s": 0.44711914099752903,
+   "blobs_fetched_churn": 690
+  },
+  "timings": {
+   "t_clone": 2.473,
+   "t_mine": 6.54,
+   "t_loc": 2.091,
+   "t_reason_A": 4.265
+  },
+  "cached": false
+ },
+ "stage_a": {
+  "commits": 800,
+  "reasoned_commits": 537,
+  "inconsistent_chunks": 0,
+  "chunk_timings": [
+   {
+    "tbox_load_s": 0.044496776012238115,
+    "abox_load_s": 0.07725693698739633,
+    "reason_s": 4.1103130679694,
+    "extract_s": 0.011330726963933557,
+    "total_s": 4.24381352000637,
+    "commits": 537
+   }
+  ],
+  "tbox_sha256": "da30ed577542b3643ecf06cb6a4649ccc8fce61ab7a0373beabd763e12883e86"
+ },
+ "activity": {
+  "last_commit_date": "2025-06-30T15:52:16+00:00",
+  "months_since_last_commit": 0,
+  "distinct_authors_in_window": 43,
+  "merge_commits_in_window": 88
+ },
+ "agent_adoption_date": null,
+ "commit_label_counts": {
+  "BugFixCommit": 181,
+  "FeatureCommit": 0,
+  "AgentCommit": 0
+ },
+ "series_months": [
+  {
+   "month": "2022-07",
+   "commit_count": 63,
+   "merge_count": 7,
+   "unique_authors": 4,
+   "lines_added": 2160,
+   "lines_deleted": 1646,
+   "total_churn": 3806,
+   "files_changed": 61,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 4086,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-08",
+   "commit_count": 83,
+   "merge_count": 18,
+   "unique_authors": 11,
+   "lines_added": 3411,
+   "lines_deleted": 3242,
+   "total_churn": 6653,
+   "files_changed": 86,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 4229,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-09",
+   "commit_count": 25,
+   "merge_count": 4,
+   "unique_authors": 3,
+   "lines_added": 545,
+   "lines_deleted": 485,
+   "total_churn": 1030,
+   "files_changed": 23,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 4287,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-10",
+   "commit_count": 2,
+   "merge_count": 0,
+   "unique_authors": 2,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 4287,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-11",
+   "commit_count": 2,
+   "merge_count": 1,
+   "unique_authors": 2,
+   "lines_added": 4,
+   "lines_deleted": 2,
+   "total_churn": 6,
+   "files_changed": 1,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 4288,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-12",
+   "commit_count": 10,
+   "merge_count": 0,
+   "unique_authors": 3,
+   "lines_added": 11,
+   "lines_deleted": 10,
+   "total_churn": 21,
+   "files_changed": 7,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 4288,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-01",
+   "commit_count": 6,
+   "merge_count": 3,
+   "unique_authors": 3,
+   "lines_added": 15,
+   "lines_deleted": 13,
+   "total_churn": 28,
+   "files_changed": 4,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 4290,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-02",
+   "commit_count": 13,
+   "merge_count": 9,
+   "unique_authors": 2,
+   "lines_added": 3,
+   "lines_deleted": 4,
+   "total_churn": 7,
+   "files_changed": 3,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 4290,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-03",
+   "commit_count": 11,
+   "merge_count": 1,
+   "unique_authors": 4,
+   "lines_added": 28,
+   "lines_deleted": 20,
+   "total_churn": 48,
+   "files_changed": 5,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 4290,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-04",
+   "commit_count": 1,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 4290,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-05",
+   "commit_count": 1,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 2,
+   "lines_deleted": 2,
+   "total_churn": 4,
+   "files_changed": 1,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 4290,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-06",
+   "commit_count": 2,
+   "merge_count": 1,
+   "unique_authors": 1,
+   "lines_added": 1,
+   "lines_deleted": 1,
+   "total_churn": 2,
+   "files_changed": 1,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 4290,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-07",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 4290,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-08",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 4290,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-09",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 4290,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-10",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 4290,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-11",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 4290,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-12",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 4290,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-01",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 4290,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-02",
+   "commit_count": 2,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 5,
+   "lines_deleted": 5,
+   "total_churn": 10,
+   "files_changed": 2,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 4290,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-03",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 4290,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-04",
+   "commit_count": 17,
+   "merge_count": 6,
+   "unique_authors": 3,
+   "lines_added": 151,
+   "lines_deleted": 134,
+   "total_churn": 285,
+   "files_changed": 11,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 4311,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-05",
+   "commit_count": 52,
+   "merge_count": 2,
+   "unique_authors": 3,
+   "lines_added": 1149,
+   "lines_deleted": 482,
+   "total_churn": 1631,
+   "files_changed": 64,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 4870,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-06",
+   "commit_count": 20,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 223,
+   "lines_deleted": 134,
+   "total_churn": 357,
+   "files_changed": 20,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 4947,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-07",
+   "commit_count": 30,
+   "merge_count": 1,
+   "unique_authors": 4,
+   "lines_added": 637,
+   "lines_deleted": 515,
+   "total_churn": 1152,
+   "files_changed": 44,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 5051,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-08",
+   "commit_count": 63,
+   "merge_count": 11,
+   "unique_authors": 7,
+   "lines_added": 461,
+   "lines_deleted": 181,
+   "total_churn": 642,
+   "files_changed": 70,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 5289,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-09",
+   "commit_count": 32,
+   "merge_count": 2,
+   "unique_authors": 3,
+   "lines_added": 118,
+   "lines_deleted": 89,
+   "total_churn": 207,
+   "files_changed": 25,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 5312,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-10",
+   "commit_count": 51,
+   "merge_count": 5,
+   "unique_authors": 6,
+   "lines_added": 254,
+   "lines_deleted": 113,
+   "total_churn": 367,
+   "files_changed": 39,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 5439,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-11",
+   "commit_count": 21,
+   "merge_count": 3,
+   "unique_authors": 4,
+   "lines_added": 200,
+   "lines_deleted": 9,
+   "total_churn": 209,
+   "files_changed": 11,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 5599,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-12",
+   "commit_count": 33,
+   "merge_count": 5,
+   "unique_authors": 5,
+   "lines_added": 59,
+   "lines_deleted": 32,
+   "total_churn": 91,
+   "files_changed": 19,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 5625,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2025-01",
+   "commit_count": 6,
+   "merge_count": 1,
+   "unique_authors": 3,
+   "lines_added": 33,
+   "lines_deleted": 21,
+   "total_churn": 54,
+   "files_changed": 5,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 5636,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2025-02",
+   "commit_count": 4,
+   "merge_count": 1,
+   "unique_authors": 2,
+   "lines_added": 6,
+   "lines_deleted": 4,
+   "total_churn": 10,
+   "files_changed": 3,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 5638,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2025-03",
+   "commit_count": 28,
+   "merge_count": 3,
+   "unique_authors": 6,
+   "lines_added": 156,
+   "lines_deleted": 694,
+   "total_churn": 850,
+   "files_changed": 22,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 5167,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2025-04",
+   "commit_count": 6,
+   "merge_count": 2,
+   "unique_authors": 2,
+   "lines_added": 6,
+   "lines_deleted": 5,
+   "total_churn": 11,
+   "files_changed": 2,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 5169,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2025-05",
+   "commit_count": 8,
+   "merge_count": 2,
+   "unique_authors": 3,
+   "lines_added": 12,
+   "lines_deleted": 6,
+   "total_churn": 18,
+   "files_changed": 6,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 5175,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2025-06",
+   "commit_count": 14,
+   "merge_count": 0,
+   "unique_authors": 2,
+   "lines_added": 130,
+   "lines_deleted": 24,
+   "total_churn": 154,
+   "files_changed": 14,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 5271,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  }
+ ],
+ "measures_derived": {
+  "bugFixRatioFirstHalf": 0.37196,
+  "bugFixRatioSecondHalf": 0.279255,
+  "bugFixHalfRatio": 0.750766,
+  "featureCommitsFirstHalf": 0,
+  "featureCommitsSecondHalf": 0,
+  "featureCommitsTotal": 0,
+  "locDeltaPerFeature": 1185.0,
+  "recentAgentCommitRatio": 0.0
+ },
+ "inferred": {
+  "a0.05_L36_D12_G0.05_orig": {
+   "classes": [
+    "CopyPasteEvidence",
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIINonConformant",
+    "LawIVConformant",
+    "LawVIConformant",
+    "LawVIIIConformant",
+    "LawVIINonConformant",
+    "LawVNonConformant",
+    "LocPerFeatureHigh",
+    "MKApplicable",
+    "MergeActive",
+    "MultiAuthorActive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": "urn:senso:explanations:AnswerDotAI/fastcore:79f851de895e",
+   "tbox_sha256": "79f851de895e8301073d1746931d8ac1d34e4ed2e94897358fca050d9d07b63c",
+   "abox_triples": 40,
+   "t_reason_B_s": 3.028
+  },
+  "a0.01_L36_D12_G0.05_orig": {
+   "classes": [
+    "CopyPasteEvidence",
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIINonConformant",
+    "LawIVConformant",
+    "LawVIConformant",
+    "LawVIIIConformant",
+    "LawVIINonConformant",
+    "LawVNonConformant",
+    "LocPerFeatureHigh",
+    "MKApplicable",
+    "MergeActive",
+    "MultiAuthorActive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "956579a8859000216eba261c78e4795a2b5042e7edf95419211fd46e9dbeada9",
+   "abox_triples": 40,
+   "t_reason_B_s": 3.275
+  },
+  "a0.1_L36_D12_G0.05_orig": {
+   "classes": [
+    "CopyPasteEvidence",
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIINonConformant",
+    "LawIVConformant",
+    "LawVIConformant",
+    "LawVIIIConformant",
+    "LawVIINonConformant",
+    "LawVNonConformant",
+    "LocPerFeatureHigh",
+    "MKApplicable",
+    "MergeActive",
+    "MultiAuthorActive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "56009aa92bf68560113e153a97a62cd0cfdea303607eb909725e8e10a2536494",
+   "abox_triples": 40,
+   "t_reason_B_s": 3.076
+  },
+  "a0.05_L24_D12_G0.05_orig": {
+   "classes": [
+    "CopyPasteEvidence",
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIIConformant",
+    "LawIVConformant",
+    "LawVConformant",
+    "LawVIConformant",
+    "LawVIIIConformant",
+    "LawVIINonConformant",
+    "LocPerFeatureHigh",
+    "MKApplicable",
+    "MergeActive",
+    "MultiAuthorActive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "79f851de895e8301073d1746931d8ac1d34e4ed2e94897358fca050d9d07b63c",
+   "abox_triples": 40,
+   "t_reason_B_s": 2.727
+  },
+  "a0.05_L48_D12_G0.05_orig": {
+   "classes": [
+    "CopyPasteEvidence",
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIINonConformant",
+    "LawIVConformant",
+    "LawVIConformant",
+    "LawVIIConformant",
+    "LawVIIConformantRatio",
+    "LawVIIIConformant",
+    "LawVNonConformant",
+    "LocPerFeatureHigh",
+    "MKApplicable",
+    "MergeActive",
+    "MultiAuthorActive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "79f851de895e8301073d1746931d8ac1d34e4ed2e94897358fca050d9d07b63c",
+   "abox_triples": 40,
+   "t_reason_B_s": 2.717
+  },
+  "a0.05_L36_D6_G0.05_orig": {
+   "classes": [
+    "CopyPasteEvidence",
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIINonConformant",
+    "LawIVConformant",
+    "LawVIConformant",
+    "LawVIIIConformant",
+    "LawVIINonConformant",
+    "LawVNonConformant",
+    "LocPerFeatureHigh",
+    "MKApplicable",
+    "MergeActive",
+    "MultiAuthorActive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "a19e7e45f521324fec6b19741e2a4f08e5d15efd8e05802851c45a87515a7761",
+   "abox_triples": 40,
+   "t_reason_B_s": 3.229
+  },
+  "a0.05_L36_D18_G0.05_orig": {
+   "classes": [
+    "CopyPasteEvidence",
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIINonConformant",
+    "LawIVConformant",
+    "LawVIConformant",
+    "LawVIIIConformant",
+    "LawVIINonConformant",
+    "LawVNonConformant",
+    "LocPerFeatureHigh",
+    "MKApplicable",
+    "MergeActive",
+    "MultiAuthorActive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "f87900e0c68335fbd2cae9848efdc2926406c328fb39da8e6e393bb472a68fdc",
+   "abox_triples": 40,
+   "t_reason_B_s": 2.578
+  },
+  "a0.05_L36_D24_G0.05_orig": {
+   "classes": [
+    "CopyPasteEvidence",
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIINonConformant",
+    "LawIVConformant",
+    "LawVIConformant",
+    "LawVIIIConformant",
+    "LawVIINonConformant",
+    "LawVNonConformant",
+    "LocPerFeatureHigh",
+    "MKApplicable",
+    "MergeActive",
+    "MultiAuthorActive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "562211ba220cda59299aec70f3561ba96eadd88adaf45f6f7db3fce71cdcc77b",
+   "abox_triples": 40,
+   "t_reason_B_s": 2.937
+  },
+  "a0.05_L36_D12_G0_orig": {
+   "classes": [
+    "CopyPasteEvidence",
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIINonConformant",
+    "LawIVConformant",
+    "LawVIConformant",
+    "LawVIIIConformant",
+    "LawVIINonConformant",
+    "LawVNonConformant",
+    "LocPerFeatureHigh",
+    "MKApplicable",
+    "MergeActive",
+    "MultiAuthorActive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "c0de0e8b2e7424d23b10ed152acd4ff66c2f1a973196b7e54f6598e9d734d0dc",
+   "abox_triples": 40,
+   "t_reason_B_s": 3.07
+  },
+  "a0.05_L36_D12_G0.02_orig": {
+   "classes": [
+    "CopyPasteEvidence",
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIINonConformant",
+    "LawIVConformant",
+    "LawVIConformant",
+    "LawVIIIConformant",
+    "LawVIINonConformant",
+    "LawVNonConformant",
+    "LocPerFeatureHigh",
+    "MKApplicable",
+    "MergeActive",
+    "MultiAuthorActive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "2c6613dd6b3e4fa714d92eaa067f02157466a4b3ee0ccf6de289441d860de28d",
+   "abox_triples": 40,
+   "t_reason_B_s": 3.54
+  },
+  "a0.05_L36_D12_G0.1_orig": {
+   "classes": [
+    "CopyPasteEvidence",
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIINonConformant",
+    "LawIVConformant",
+    "LawVIConformant",
+    "LawVIIIConformant",
+    "LawVIINonConformant",
+    "LawVNonConformant",
+    "LocPerFeatureHigh",
+    "MKApplicable",
+    "MergeActive",
+    "MinorLocGrowth",
+    "MultiAuthorActive",
+    "NonSubstantialChange",
+    "RBServicingStage",
+    "RecentlyActive"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "0cfde802b4494fc33a5ad0eb910980aaf152093f62848406bdc37bc099347936",
+   "abox_triples": 40,
+   "t_reason_B_s": 3.024
+  },
+  "a0.05_L36_D12_G0.05_hr": {
+   "classes": [
+    "CopyPasteEvidence",
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIINonConformant",
+    "LawIVConformant",
+    "LawVIConformant",
+    "LawVIIIConformant",
+    "LawVIINonConformant",
+    "LawVNonConformant",
+    "LocPerFeatureHigh",
+    "MKApplicable",
+    "MergeActive",
+    "MultiAuthorActive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "79f851de895e8301073d1746931d8ac1d34e4ed2e94897358fca050d9d07b63c",
+   "abox_triples": 40,
+   "t_reason_B_s": 3.136
+  }
+ },
+ "primary_config": "a0.05_L36_D12_G0.05_orig",
+ "project_iri": "http://senso-framework.org/data/AnswerDotAI_fastcore",
+ "consistent": true,
+ "inferred_labels": [
+  "CopyPasteEvidence",
+  "GrowthStage",
+  "LawIConformant",
+  "LawIIINonConformant",
+  "LawIVConformant",
+  "LawVIConformant",
+  "LawVIIIConformant",
+  "LawVIINonConformant",
+  "LawVNonConformant",
+  "LocPerFeatureHigh",
+  "MKApplicable",
+  "MergeActive",
+  "MultiAuthorActive",
+  "RBActiveDevelopmentStage",
+  "RecentlyActive",
+  "SubstantialLocGrowth"
+ ],
+ "stage_labels": [
+  "GrowthStage",
+  "RBActiveDevelopmentStage"
+ ],
+ "law_labels": {
+  "I": "LawIConformant",
+  "III": "LawIIINonConformant",
+  "IV": "LawIVConformant",
+  "V": "LawVNonConformant",
+  "VI": "LawVIConformant",
+  "VII": "LawVIINonConformant",
+  "VIII": "LawVIIIConformant"
+ },
+ "tbox_sha256_stage_b": "79f851de895e8301073d1746931d8ac1d34e4ed2e94897358fca050d9d07b63c",
+ "tbox_sha256_stage_a": "da30ed577542b3643ecf06cb6a4649ccc8fce61ab7a0373beabd763e12883e86",
+ "summary": {
+  "c1": "A",
+  "c2": "A",
+  "cf": "A",
+  "note": "debug summary; run_rq1_v2.py reads `inferred` and recomputes CF itself"
+ },
+ "explanations": {
+  "stage:GrowthStage": {
+   "class": "GrowthStage",
+   "target": "http://senso-framework.org/data/AnswerDotAI_fastcore type http://senso-framework.org/ontology/seo#GrowthStage",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKTau_gt_0",
+       "text": "A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKpValue_lt_mk_alpha",
+       "text": "A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]"
+      },
+      {
+       "kind": "definition",
+       "subject": "GrowthStage",
+       "text": "GrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "AnswerDotAI_fastcore",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "AnswerDotAI_fastcore type SoftwareProject"
+      },
+      {
+       "subject": "AnswerDotAI_fastcore",
+       "prop": "locSeriesLength",
+       "value": 36,
+       "raw": "AnswerDotAI_fastcore locSeriesLength 36"
+      },
+      {
+       "subject": "AnswerDotAI_fastcore",
+       "prop": "locMKTau",
+       "value": 0.74127,
+       "raw": "AnswerDotAI_fastcore locMKTau 0.74127"
+      },
+      {
+       "subject": "AnswerDotAI_fastcore",
+       "prop": "locMKpValue",
+       "value": 0.0,
+       "raw": "AnswerDotAI_fastcore locMKpValue 0.0"
+      }
+     ],
+     "closures": [],
+     "raw": "AnswerDotAI_fastcore type SoftwareProject\nA_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\nAnswerDotAI_fastcore locSeriesLength 36\nA_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\nAnswerDotAI_fastcore locMKTau 0.74127\nA_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\nGrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject\nAnswerDotAI_fastcore locMKpValue 0.0\nA_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]"
+    }
+   ],
+   "raw_text": "Axiom: AnswerDotAI_fastcore type GrowthStage\n\nExplanation(s): \n1)   AnswerDotAI_fastcore type SoftwareProject\n     A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\n     AnswerDotAI_fastcore locSeriesLength 36\n     A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\n     AnswerDotAI_fastcore locMKTau 0.74127\n     A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\n     GrowthStage equivalentTo A_locMKTau_gt_0\n                              and A_locMKpValue_lt_mk_alpha\n                              and MKApplicable\n                              and SoftwareProject\n     AnswerDotAI_fastcore locMKpValue 0.0\n     A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]\n\n\n",
+   "seconds": 3.605743688007351,
+   "returncode": 0,
+   "error": null
+  },
+  "stage:RBActiveDevelopmentStage": {
+   "class": "RBActiveDevelopmentStage",
+   "target": "http://senso-framework.org/data/AnswerDotAI_fastcore type http://senso-framework.org/ontology/seo#RBActiveDevelopmentStage",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable"
+      },
+      {
+       "kind": "definition",
+       "subject": "SubstantialLocGrowth",
+       "text": "SubstantialLocGrowth equivalentTo A_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKTau_gt_0",
+       "text": "A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "GrowthStage",
+       "text": "GrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year",
+       "text": "A_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year equivalentTo locRelSenSlopeAnnual some decimal[>= 0.05]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]"
+      },
+      {
+       "kind": "definition",
+       "subject": "RBActiveDevelopmentStage",
+       "text": "RBActiveDevelopmentStage equivalentTo GrowthStage and RecentlyActive and SoftwareProject and SubstantialLocGrowth"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKpValue_lt_mk_alpha",
+       "text": "A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]"
+      },
+      {
+       "kind": "definition",
+       "subject": "RecentlyActive",
+       "text": "RecentlyActive equivalentTo A_monthsSinceLastCommit_lt_rb_dormancy_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_monthsSinceLastCommit_lt_rb_dormancy_months",
+       "text": "A_monthsSinceLastCommit_lt_rb_dormancy_months equivalentTo monthsSinceLastCommit some integer[< 12]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "AnswerDotAI_fastcore",
+       "prop": "locRelSenSlopeAnnual",
+       "value": 0.096994,
+       "raw": "AnswerDotAI_fastcore locRelSenSlopeAnnual 0.096994"
+      },
+      {
+       "subject": "AnswerDotAI_fastcore",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "AnswerDotAI_fastcore type SoftwareProject"
+      },
+      {
+       "subject": "AnswerDotAI_fastcore",
+       "prop": "locMKTau",
+       "value": 0.74127,
+       "raw": "AnswerDotAI_fastcore locMKTau 0.74127"
+      },
+      {
+       "subject": "AnswerDotAI_fastcore",
+       "prop": "monthsSinceLastCommit",
+       "value": 0,
+       "raw": "AnswerDotAI_fastcore monthsSinceLastCommit 0"
+      },
+      {
+       "subject": "AnswerDotAI_fastcore",
+       "prop": "locSeriesLength",
+       "value": 36,
+       "raw": "AnswerDotAI_fastcore locSeriesLength 36"
+      },
+      {
+       "subject": "AnswerDotAI_fastcore",
+       "prop": "locMKpValue",
+       "value": 0.0,
+       "raw": "AnswerDotAI_fastcore locMKpValue 0.0"
+      }
+     ],
+     "closures": [],
+     "raw": "AnswerDotAI_fastcore locRelSenSlopeAnnual 0.096994\nAnswerDotAI_fastcore type SoftwareProject\nA_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\nSubstantialLocGrowth equivalentTo A_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year and SoftwareProject\nA_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\nAnswerDotAI_fastcore locMKTau 0.74127\nGrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject\nA_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year equivalentTo locRelSenSlopeAnnual some decimal[>= 0.05]\nAnswerDotAI_fastcore monthsSinceLastCommit 0\nA_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]\nRBActiveDevelopmentStage equivalentTo GrowthStage and RecentlyActive and SoftwareProject and SubstantialLocGrowth\nAnswerDotAI_fastcore locSeriesLength 36\nA_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\nRecentlyActive equivalentTo A_monthsSinceLastCommit_lt_rb_dormancy_months and SoftwareProject\nAnswerDotAI_fastcore locMKpValue 0.0\nA_monthsSinceLastCommit_lt_rb_dormancy_months equivalentTo monthsSinceLastCommit some integer[< 12]"
+    }
+   ],
+   "raw_text": "Axiom: AnswerDotAI_fastcore type RBActiveDevelopmentStage\n\nExplanation(s): \n1)   AnswerDotAI_fastcore locRelSenSlopeAnnual 0.096994\n     AnswerDotAI_fastcore type SoftwareProject\n     A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\n     SubstantialLocGrowth equivalentTo A_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year\n                                       and SoftwareProject\n     A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\n     AnswerDotAI_fastcore locMKTau 0.74127\n     GrowthStage equivalentTo A_locMKTau_gt_0\n                              and A_locMKpValue_lt_mk_alpha\n                              and MKApplicable\n                              and SoftwareProject\n     A_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year equivalentTo locRelSenSlopeAnnual some decimal[>= 0.05]\n     AnswerDotAI_fastcore monthsSinceLastCommit 0\n     A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]\n     RBActiveDevelopmentStage equivalentTo GrowthStage\n                                           and RecentlyActive\n                                           and SoftwareProject\n                                           and SubstantialLocGrowth\n     AnswerDotAI_fastcore locSeriesLength 36\n     A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\n     RecentlyActive equivalentTo A_monthsSinceLastCommit_lt_rb_dormancy_months\n                                 and SoftwareProject\n     AnswerDotAI_fastcore locMKpValue 0.0\n     A_monthsSinceLastCommit_lt_rb_dormancy_months equivalentTo monthsSinceLastCommit some integer[< 12]\n\n\n",
+   "seconds": 3.5067796490038745,
+   "returncode": 0,
+   "error": null
+  },
+  "lawI": {
+   "class": "LawIConformant",
+   "target": "http://senso-framework.org/data/AnswerDotAI_fastcore type http://senso-framework.org/ontology/seo#LawIConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law1_min_months",
+       "text": "A_monthsObserved_ge_p_law1_min_months equivalentTo monthsObserved some integer[>= 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawIConformant",
+       "text": "LawIConformant equivalentTo A_activeMonthRatio_ge_p_law1_active_ratio and A_monthsObserved_ge_p_law1_min_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_activeMonthRatio_ge_p_law1_active_ratio",
+       "text": "A_activeMonthRatio_ge_p_law1_active_ratio equivalentTo activeMonthRatio some decimal[>= 0.5]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "AnswerDotAI_fastcore",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "AnswerDotAI_fastcore monthsObserved 36"
+      },
+      {
+       "subject": "AnswerDotAI_fastcore",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "AnswerDotAI_fastcore type SoftwareProject"
+      },
+      {
+       "subject": "AnswerDotAI_fastcore",
+       "prop": "activeMonthRatio",
+       "value": 0.777778,
+       "raw": "AnswerDotAI_fastcore activeMonthRatio 0.777778"
+      }
+     ],
+     "closures": [],
+     "raw": "AnswerDotAI_fastcore monthsObserved 36\nA_monthsObserved_ge_p_law1_min_months equivalentTo monthsObserved some integer[>= 2]\nLawIConformant equivalentTo A_activeMonthRatio_ge_p_law1_active_ratio and A_monthsObserved_ge_p_law1_min_months and SoftwareProject\nA_activeMonthRatio_ge_p_law1_active_ratio equivalentTo activeMonthRatio some decimal[>= 0.5]\nAnswerDotAI_fastcore type SoftwareProject\nAnswerDotAI_fastcore activeMonthRatio 0.777778"
+    }
+   ],
+   "raw_text": "Axiom: AnswerDotAI_fastcore type LawIConformant\n\nExplanation(s): \n1)   AnswerDotAI_fastcore monthsObserved 36\n     A_monthsObserved_ge_p_law1_min_months equivalentTo monthsObserved some integer[>= 2]\n     LawIConformant equivalentTo A_activeMonthRatio_ge_p_law1_active_ratio\n                                 and A_monthsObserved_ge_p_law1_min_months\n                                 and SoftwareProject\n     A_activeMonthRatio_ge_p_law1_active_ratio equivalentTo activeMonthRatio some decimal[>= 0.5]\n     AnswerDotAI_fastcore type SoftwareProject\n     AnswerDotAI_fastcore activeMonthRatio 0.777778\n\n\n",
+   "seconds": 3.0741000390262343,
+   "returncode": 0,
+   "error": null
+  },
+  "lawIII": {
+   "class": "LawIIINonConformant",
+   "target": "http://senso-framework.org/data/AnswerDotAI_fastcore type http://senso-framework.org/ontology/seo#LawIIINonConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_churnCV_ge_p_law3_churn_cv",
+       "text": "A_churnCV_ge_p_law3_churn_cv equivalentTo churnCV some decimal[>= 2.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law3_min_months",
+       "text": "A_monthsObserved_ge_p_law3_min_months equivalentTo monthsObserved some integer[>= 6]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawIIINonConformant",
+       "text": "LawIIINonConformant equivalentTo A_churnCV_ge_p_law3_churn_cv and A_monthsObserved_ge_p_law3_min_months and SoftwareProject"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "AnswerDotAI_fastcore",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "AnswerDotAI_fastcore monthsObserved 36"
+      },
+      {
+       "subject": "AnswerDotAI_fastcore",
+       "prop": "churnCV",
+       "value": 2.560302,
+       "raw": "AnswerDotAI_fastcore churnCV 2.560302"
+      },
+      {
+       "subject": "AnswerDotAI_fastcore",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "AnswerDotAI_fastcore type SoftwareProject"
+      }
+     ],
+     "closures": [],
+     "raw": "AnswerDotAI_fastcore monthsObserved 36\nA_churnCV_ge_p_law3_churn_cv equivalentTo churnCV some decimal[>= 2.0]\nA_monthsObserved_ge_p_law3_min_months equivalentTo monthsObserved some integer[>= 6]\nAnswerDotAI_fastcore churnCV 2.560302\nAnswerDotAI_fastcore type SoftwareProject\nLawIIINonConformant equivalentTo A_churnCV_ge_p_law3_churn_cv and A_monthsObserved_ge_p_law3_min_months and SoftwareProject"
+    }
+   ],
+   "raw_text": "Axiom: AnswerDotAI_fastcore type LawIIINonConformant\n\nExplanation(s): \n1)   AnswerDotAI_fastcore monthsObserved 36\n     A_churnCV_ge_p_law3_churn_cv equivalentTo churnCV some decimal[>= 2.0]\n     A_monthsObserved_ge_p_law3_min_months equivalentTo monthsObserved some integer[>= 6]\n     AnswerDotAI_fastcore churnCV 2.560302\n     AnswerDotAI_fastcore type SoftwareProject\n     LawIIINonConformant equivalentTo A_churnCV_ge_p_law3_churn_cv\n                                      and A_monthsObserved_ge_p_law3_min_months\n                                      and SoftwareProject\n\n\n",
+   "seconds": 3.271283826965373,
+   "returncode": 0,
+   "error": null
+  },
+  "lawIV": {
+   "class": "LawIVConformant",
+   "target": "http://senso-framework.org/data/AnswerDotAI_fastcore type http://senso-framework.org/ontology/seo#LawIVConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law4_min_months",
+       "text": "A_monthsObserved_ge_p_law4_min_months equivalentTo monthsObserved some integer[>= 6]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawIVConformant",
+       "text": "LawIVConformant equivalentTo A_commitCountCV_lt_p_law4_commit_cv and A_monthsObserved_ge_p_law4_min_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_commitCountCV_lt_p_law4_commit_cv",
+       "text": "A_commitCountCV_lt_p_law4_commit_cv equivalentTo commitCountCV some decimal[< 1.5]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "AnswerDotAI_fastcore",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "AnswerDotAI_fastcore monthsObserved 36"
+      },
+      {
+       "subject": "AnswerDotAI_fastcore",
+       "prop": "commitCountCV",
+       "value": 1.263104,
+       "raw": "AnswerDotAI_fastcore commitCountCV 1.263104"
+      },
+      {
+       "subject": "AnswerDotAI_fastcore",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "AnswerDotAI_fastcore type SoftwareProject"
+      }
+     ],
+     "closures": [],
+     "raw": "A_monthsObserved_ge_p_law4_min_months equivalentTo monthsObserved some integer[>= 6]\nAnswerDotAI_fastcore monthsObserved 36\nLawIVConformant equivalentTo A_commitCountCV_lt_p_law4_commit_cv and A_monthsObserved_ge_p_law4_min_months and SoftwareProject\nAnswerDotAI_fastcore commitCountCV 1.263104\nA_commitCountCV_lt_p_law4_commit_cv equivalentTo commitCountCV some decimal[< 1.5]\nAnswerDotAI_fastcore type SoftwareProject"
+    }
+   ],
+   "raw_text": "Axiom: AnswerDotAI_fastcore type LawIVConformant\n\nExplanation(s): \n1)   A_monthsObserved_ge_p_law4_min_months equivalentTo monthsObserved some integer[>= 6]\n     AnswerDotAI_fastcore monthsObserved 36\n     LawIVConformant equivalentTo A_commitCountCV_lt_p_law4_commit_cv\n                                  and A_monthsObserved_ge_p_law4_min_months\n                                  and SoftwareProject\n     AnswerDotAI_fastcore commitCountCV 1.263104\n     A_commitCountCV_lt_p_law4_commit_cv equivalentTo commitCountCV some decimal[< 1.5]\n     AnswerDotAI_fastcore type SoftwareProject\n\n\n",
+   "seconds": 3.589833177975379,
+   "returncode": 0,
+   "error": null
+  },
+  "lawV": {
+   "class": "LawVNonConformant",
+   "target": "http://senso-framework.org/data/AnswerDotAI_fastcore type http://senso-framework.org/ontology/seo#LawVNonConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_linesAddedCV_ge_p_law5_additions_cv",
+       "text": "A_linesAddedCV_ge_p_law5_additions_cv equivalentTo linesAddedCV some decimal[>= 2.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawVNonConformant",
+       "text": "LawVNonConformant equivalentTo A_linesAddedCV_ge_p_law5_additions_cv and A_monthsObserved_ge_p_law5_min_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law5_min_months",
+       "text": "A_monthsObserved_ge_p_law5_min_months equivalentTo monthsObserved some integer[>= 4]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "AnswerDotAI_fastcore",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "AnswerDotAI_fastcore monthsObserved 36"
+      },
+      {
+       "subject": "AnswerDotAI_fastcore",
+       "prop": "linesAddedCV",
+       "value": 2.462968,
+       "raw": "AnswerDotAI_fastcore linesAddedCV 2.462968"
+      },
+      {
+       "subject": "AnswerDotAI_fastcore",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "AnswerDotAI_fastcore type SoftwareProject"
+      }
+     ],
+     "closures": [],
+     "raw": "AnswerDotAI_fastcore monthsObserved 36\nA_linesAddedCV_ge_p_law5_additions_cv equivalentTo linesAddedCV some decimal[>= 2.0]\nLawVNonConformant equivalentTo A_linesAddedCV_ge_p_law5_additions_cv and A_monthsObserved_ge_p_law5_min_months and SoftwareProject\nAnswerDotAI_fastcore linesAddedCV 2.462968\nA_monthsObserved_ge_p_law5_min_months equivalentTo monthsObserved some integer[>= 4]\nAnswerDotAI_fastcore type SoftwareProject"
+    }
+   ],
+   "raw_text": "Axiom: AnswerDotAI_fastcore type LawVNonConformant\n\nExplanation(s): \n1)   AnswerDotAI_fastcore monthsObserved 36\n     A_linesAddedCV_ge_p_law5_additions_cv equivalentTo linesAddedCV some decimal[>= 2.0]\n     LawVNonConformant equivalentTo A_linesAddedCV_ge_p_law5_additions_cv\n                                    and A_monthsObserved_ge_p_law5_min_months\n                                    and SoftwareProject\n     AnswerDotAI_fastcore linesAddedCV 2.462968\n     A_monthsObserved_ge_p_law5_min_months equivalentTo monthsObserved some integer[>= 4]\n     AnswerDotAI_fastcore type SoftwareProject\n\n\n",
+   "seconds": 4.9272685360047035,
+   "returncode": 0,
+   "error": null
+  },
+  "lawVI": {
+   "class": "LawVIConformant",
+   "target": "http://senso-framework.org/data/AnswerDotAI_fastcore type http://senso-framework.org/ontology/seo#LawVIConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "subclass",
+       "subject": "GrowthStage",
+       "text": "GrowthStage subClassOf LawVIConformant"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKTau_gt_0",
+       "text": "A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKpValue_lt_mk_alpha",
+       "text": "A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]"
+      },
+      {
+       "kind": "definition",
+       "subject": "GrowthStage",
+       "text": "GrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "AnswerDotAI_fastcore",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "AnswerDotAI_fastcore type SoftwareProject"
+      },
+      {
+       "subject": "AnswerDotAI_fastcore",
+       "prop": "locSeriesLength",
+       "value": 36,
+       "raw": "AnswerDotAI_fastcore locSeriesLength 36"
+      },
+      {
+       "subject": "AnswerDotAI_fastcore",
+       "prop": "locMKTau",
+       "value": 0.74127,
+       "raw": "AnswerDotAI_fastcore locMKTau 0.74127"
+      },
+      {
+       "subject": "AnswerDotAI_fastcore",
+       "prop": "locMKpValue",
+       "value": 0.0,
+       "raw": "AnswerDotAI_fastcore locMKpValue 0.0"
+      }
+     ],
+     "closures": [],
+     "raw": "GrowthStage subClassOf LawVIConformant\nAnswerDotAI_fastcore type SoftwareProject\nA_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\nAnswerDotAI_fastcore locSeriesLength 36\nA_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\nAnswerDotAI_fastcore locMKTau 0.74127\nA_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\nGrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject\nAnswerDotAI_fastcore locMKpValue 0.0\nA_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]"
+    }
+   ],
+   "raw_text": "Axiom: AnswerDotAI_fastcore type LawVIConformant\n\nExplanation(s): \n1)   GrowthStage subClassOf LawVIConformant\n     AnswerDotAI_fastcore type SoftwareProject\n     A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\n     AnswerDotAI_fastcore locSeriesLength 36\n     A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\n     AnswerDotAI_fastcore locMKTau 0.74127\n     A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\n     GrowthStage equivalentTo A_locMKTau_gt_0\n                              and A_locMKpValue_lt_mk_alpha\n                              and MKApplicable\n                              and SoftwareProject\n     AnswerDotAI_fastcore locMKpValue 0.0\n     A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]\n\n\n",
+   "seconds": 6.513614266994409,
+   "returncode": 0,
+   "error": null
+  },
+  "lawVII": {
+   "class": "LawVIINonConformant",
+   "target": "http://senso-framework.org/data/AnswerDotAI_fastcore type http://senso-framework.org/ontology/seo#LawVIINonConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_bugFixRatioFirstHalf_gt_0",
+       "text": "A_bugFixRatioFirstHalf_gt_0 equivalentTo bugFixRatioFirstHalf some decimal[> 0.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_bugFixHalfRatio_lt_p_law7_tolerance",
+       "text": "A_bugFixHalfRatio_lt_p_law7_tolerance equivalentTo bugFixHalfRatio some decimal[< 0.9]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_activeMonthCount_ge_p_law7_min_active_months",
+       "text": "A_activeMonthCount_ge_p_law7_min_active_months equivalentTo activeMonthCount some integer[>= 4]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawVIINonConformant",
+       "text": "LawVIINonConformant equivalentTo A_activeMonthCount_ge_p_law7_min_active_months and A_bugFixHalfRatio_lt_p_law7_tolerance and A_bugFixRatioFirstHalf_gt_0 and SoftwareProject"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "AnswerDotAI_fastcore",
+       "prop": "activeMonthCount",
+       "value": 28,
+       "raw": "AnswerDotAI_fastcore activeMonthCount 28"
+      },
+      {
+       "subject": "AnswerDotAI_fastcore",
+       "prop": "bugFixRatioFirstHalf",
+       "value": 0.37196,
+       "raw": "AnswerDotAI_fastcore bugFixRatioFirstHalf 0.37196"
+      },
+      {
+       "subject": "AnswerDotAI_fastcore",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "AnswerDotAI_fastcore type SoftwareProject"
+      },
+      {
+       "subject": "AnswerDotAI_fastcore",
+       "prop": "bugFixHalfRatio",
+       "value": 0.750766,
+       "raw": "AnswerDotAI_fastcore bugFixHalfRatio 0.750766"
+      }
+     ],
+     "closures": [],
+     "raw": "A_bugFixRatioFirstHalf_gt_0 equivalentTo bugFixRatioFirstHalf some decimal[> 0.0]\nA_bugFixHalfRatio_lt_p_law7_tolerance equivalentTo bugFixHalfRatio some decimal[< 0.9]\nA_activeMonthCount_ge_p_law7_min_active_months equivalentTo activeMonthCount some integer[>= 4]\nAnswerDotAI_fastcore activeMonthCount 28\nLawVIINonConformant equivalentTo A_activeMonthCount_ge_p_law7_min_active_months and A_bugFixHalfRatio_lt_p_law7_tolerance and A_bugFixRatioFirstHalf_gt_0 and SoftwareProject\nAnswerDotAI_fastcore bugFixRatioFirstHalf 0.37196\nAnswerDotAI_fastcore type SoftwareProject\nAnswerDotAI_fastcore bugFixHalfRatio 0.750766"
+    }
+   ],
+   "raw_text": "Axiom: AnswerDotAI_fastcore type LawVIINonConformant\n\nExplanation(s): \n1)   A_bugFixRatioFirstHalf_gt_0 equivalentTo bugFixRatioFirstHalf some decimal[> 0.0]\n     A_bugFixHalfRatio_lt_p_law7_tolerance equivalentTo bugFixHalfRatio some decimal[< 0.9]\n     A_activeMonthCount_ge_p_law7_min_active_months equivalentTo activeMonthCount some integer[>= 4]\n     AnswerDotAI_fastcore activeMonthCount 28\n     LawVIINonConformant equivalentTo A_activeMonthCount_ge_p_law7_min_active_months\n                                      and A_bugFixHalfRatio_lt_p_law7_tolerance\n                                      and A_bugFixRatioFirstHalf_gt_0\n                                      and SoftwareProject\n     AnswerDotAI_fastcore bugFixRatioFirstHalf 0.37196\n     AnswerDotAI_fastcore type SoftwareProject\n     AnswerDotAI_fastcore bugFixHalfRatio 0.750766\n\n\n",
+   "seconds": 4.497331991966348,
+   "returncode": 0,
+   "error": null
+  },
+  "lawVIII": {
+   "class": "LawVIIIConformant",
+   "target": "http://senso-framework.org/data/AnswerDotAI_fastcore type http://senso-framework.org/ontology/seo#LawVIIIConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio",
+       "text": "A_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio equivalentTo multiAuthorMonthRatio some decimal[> 0.3]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_mergeMonthRatio_gt_p_law8_merge_ratio",
+       "text": "A_mergeMonthRatio_gt_p_law8_merge_ratio equivalentTo MergeActive"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio",
+       "text": "A_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio equivalentTo MultiAuthorActive"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawVIIIConformant",
+       "text": "LawVIIIConformant equivalentTo A_monthsObserved_ge_p_law8_min_months and MergeActive and MultiAuthorActive and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law8_min_months",
+       "text": "A_monthsObserved_ge_p_law8_min_months equivalentTo monthsObserved some integer[>= 6]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_mergeMonthRatio_gt_p_law8_merge_ratio",
+       "text": "A_mergeMonthRatio_gt_p_law8_merge_ratio equivalentTo mergeMonthRatio some decimal[> 0.3]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "AnswerDotAI_fastcore",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "AnswerDotAI_fastcore type SoftwareProject"
+      },
+      {
+       "subject": "AnswerDotAI_fastcore",
+       "prop": "mergeMonthRatio",
+       "value": 0.583333,
+       "raw": "AnswerDotAI_fastcore mergeMonthRatio 0.583333"
+      },
+      {
+       "subject": "AnswerDotAI_fastcore",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "AnswerDotAI_fastcore monthsObserved 36"
+      },
+      {
+       "subject": "AnswerDotAI_fastcore",
+       "prop": "multiAuthorMonthRatio",
+       "value": 0.638889,
+       "raw": "AnswerDotAI_fastcore multiAuthorMonthRatio 0.638889"
+      }
+     ],
+     "closures": [],
+     "raw": "A_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio equivalentTo multiAuthorMonthRatio some decimal[> 0.3]\nA_mergeMonthRatio_gt_p_law8_merge_ratio equivalentTo MergeActive\nA_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio equivalentTo MultiAuthorActive\nAnswerDotAI_fastcore type SoftwareProject\nAnswerDotAI_fastcore mergeMonthRatio 0.583333\nLawVIIIConformant equivalentTo A_monthsObserved_ge_p_law8_min_months and MergeActive and MultiAuthorActive and SoftwareProject\nAnswerDotAI_fastcore monthsObserved 36\nA_monthsObserved_ge_p_law8_min_months equivalentTo monthsObserved some integer[>= 6]\nAnswerDotAI_fastcore multiAuthorMonthRatio 0.638889\nA_mergeMonthRatio_gt_p_law8_merge_ratio equivalentTo mergeMonthRatio some decimal[> 0.3]"
+    }
+   ],
+   "raw_text": "Axiom: AnswerDotAI_fastcore type LawVIIIConformant\n\nExplanation(s): \n1)   A_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio equivalentTo multiAuthorMonthRatio some decimal[> 0.3]\n     A_mergeMonthRatio_gt_p_law8_merge_ratio equivalentTo MergeActive\n     A_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio equivalentTo MultiAuthorActive\n     AnswerDotAI_fastcore type SoftwareProject\n     AnswerDotAI_fastcore mergeMonthRatio 0.583333\n     LawVIIIConformant equivalentTo A_monthsObserved_ge_p_law8_min_months\n                                    and MergeActive\n                                    and MultiAuthorActive\n                                    and SoftwareProject\n     AnswerDotAI_fastcore monthsObserved 36\n     A_monthsObserved_ge_p_law8_min_months equivalentTo monthsObserved some integer[>= 6]\n     AnswerDotAI_fastcore multiAuthorMonthRatio 0.638889\n     A_mergeMonthRatio_gt_p_law8_merge_ratio equivalentTo mergeMonthRatio some decimal[> 0.3]\n\n\n",
+   "seconds": 3.2652160500292666,
+   "returncode": 0,
+   "error": null
+  }
+ },
+ "fuseki": {
+  "dataset": "seo_v2",
+  "graph_triples": {
+   "urn:senso:abox:AnswerDotAI/fastcore": 388,
+   "urn:senso:commits:AnswerDotAI/fastcore": 3638,
+   "urn:senso:abox-derived:AnswerDotAI/fastcore": 8,
+   "urn:senso:inferred:AnswerDotAI/fastcore:79f851de895e": 379,
+   "urn:senso:explanations:AnswerDotAI/fastcore:79f851de895e": 181
+  }
+ },
+ "timings": {
+  "t_clone": 2.473,
+  "t_mine": 6.54,
+  "t_loc": 2.091,
+  "t_reason_A": 4.265,
+  "mining_cached": false,
+  "t_reason_B": 36.336,
+  "n_configs": 12,
+  "t_explain": 36.361,
+  "n_explain_calls": 9,
+  "t_writeback": 9.048,
+  "t_total": 95.096
+ }
+}

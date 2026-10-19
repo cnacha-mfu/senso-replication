@@ -1,0 +1,21 @@
+{
+ "repo": "simstudioai/sim",
+ "chunk": 1,
+ "n_chunks": 3,
+ "model": "google/diffusiongemma-26b-a4b-it",
+ "prompt_sha256": "d0e02ff613417050168d859f2af6230c3712c6758bb5d9c40d60ff55e5ae87ca",
+ "user_sha256": "80cae14e5c33ddd6ab5bcca753ae17124237a528ee4af52d701072e57535cb2c",
+ "text": "```json\n{\n  \"claims\": [\n    {\n      \"type\": \"dependency\",\n      \"subject\": \"TanStack Query\",\n      \"version\": \"v5\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"path_exists\",\n      \"subject\": \"@/lib/utils\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"import_rule\",\n      \"subject\": \"@/components/emcn\",\n      \"scope\": null,\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"tool_used\",\n      \"subject\": \"Vitest\",\n      \"tool_category\": \"test_framework\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"path_exists\",\n      \"subject\": \".cursor/rules/sim-testing.mdc\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"dependency\",\n      \"subject\": \"@sim/db\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"dependency\",\n      \"subject\": \"drizzle-orm\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"dependency\",\n      \"subject\": \"@sim/logger\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"dependency\",\n      \"subject\": \"@/blocks/registry\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"dependency\",\n      \"subject\": \"@trigger.dev/sdk\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"dependency\",\n      \"subject\": \"@sim/testing\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"dependency\",\n      \"subject\": \"@/lib/auth\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"path_exists\",\n      \"subject\": \"lib/\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"path_exists\",\n      \"subject\": \"tools/{service}/\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"path_exists\",\n      \"subject\": \"tools/{service}/\",\n      \"path_components\": [\n        \"index.ts\",\n        \"types.ts\",\n        \"{action}.ts\"\n      ],\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"path_exists\",\n      \"subject\": \"tools/registry.ts\",\n      \"mode\": \"asserts_existing\"\n    }\n  ]\n}\n```",
+ "parse_ok": true,
+ "parse_error": null,
+ "parse_retries": 0,
+ "latency_s": 2.9281666969764046,
+ "usage": {
+  "prompt": 3901,
+  "completion": 670
+ },
+ "n_api_calls": 1,
+ "finish_reason": "stop",
+ "error": null,
+ "discarded_attempt_texts": []
+}

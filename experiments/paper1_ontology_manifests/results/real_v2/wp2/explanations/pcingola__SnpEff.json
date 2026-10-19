@@ -1,0 +1,55 @@
+{
+ "repo": "pcingola/SnpEff",
+ "slug": "pcingola__SnpEff",
+ "input_sha": "7087dc3de43cabe237e1fc6bad03d9d209922d94d53590deafb04a398dde8492",
+ "explanations": [
+  {
+   "key": "T1|zip",
+   "verdict": "ContradictedClaim",
+   "leaf": "PathNeverExisted",
+   "seconds": 10.22,
+   "retried_on_claim_subgraph": true,
+   "error": null,
+   "returncode": 0,
+   "n_justifications": 1,
+   "facts": [
+    {
+     "prop": "extractionVotes",
+     "value": 3
+    },
+    {
+     "prop": "pathExactMatchCount",
+     "value": 0
+    },
+    {
+     "prop": "pathEverTrackedCount",
+     "value": 0
+    },
+    {
+     "prop": "pathIgnoredCount",
+     "value": 0
+    },
+    {
+     "prop": "pathSubmoduleCount",
+     "value": 0
+    },
+    {
+     "prop": "pathSuffixMatchCount",
+     "value": 0
+    }
+   ],
+   "axioms": [
+    "A_pathExactMatchCount_ge_0_le_0 equivalentTo pathExactMatchCount some integer[>= 0, <= 0]",
+    "A_pathSuffixMatchCount_ge_0_le_0 equivalentTo pathSuffixMatchCount some integer[>= 0, <= 0]",
+    "A_pathEverTrackedCount_ge_0_le_0 equivalentTo pathEverTrackedCount some integer[>= 0, <= 0]",
+    "A_extractionVotes_ge_wp2_consensus_min_votes equivalentTo extractionVotes some integer[>= 2]",
+    "CheckedClaim equivalentTo A_extractionVotes_ge_wp2_consensus_min_votes and ManifestClaim",
+    "A_pathIgnoredCount_ge_0_le_0 equivalentTo pathIgnoredCount some integer[>= 0, <= 0]",
+    "PathNeverExisted equivalentTo A_pathEverTrackedCount_ge_0_le_0 and A_pathExactMatchCount_ge_0_le_0 and A_pathIgnoredCount_ge_0_le_0 and A_pathSubmoduleCount_ge_0_le_0 and A_pathSuffixMatchCount_ge_0_le_0 and CheckedClaim and PathExistenceCl",
+    "PathNeverExisted subClassOf ContradictedClaim",
+    "A_pathSubmoduleCount_ge_0_le_0 equivalentTo pathSubmoduleCount some integer[>= 0, <= 0]"
+   ],
+   "closures": []
+  }
+ ]
+}

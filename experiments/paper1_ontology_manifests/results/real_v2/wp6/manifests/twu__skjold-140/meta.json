@@ -1,0 +1,346 @@
+{
+ "task_id": "twu__skjold-140",
+ "repo": "twu/skjold",
+ "stage": "initial_development",
+ "rounds": 1,
+ "rejects": {},
+ "flags": [
+  "length_violation_F_R",
+  "length_violation_F_I"
+ ],
+ "info": {
+  "slots": {
+   "test_root": "tests",
+   "P1": {
+    "replaced": null,
+    "name": "internal",
+    "F_R": "src/skjold/internal",
+    "F_I": "internal"
+   },
+   "P2": {
+    "replaced": null,
+    "F_R": "src/skjold/models.py",
+    "F_I": "engine.py"
+   },
+   "C": {
+    "F_R": "make test",
+    "F_I": "make install"
+   },
+   "D": {
+    "replaced": "toml",
+    "F_R": "semantic-version",
+    "F_I": "rtoml"
+   }
+  },
+  "why": {
+   "test_command": [
+    {
+     "root": "tests",
+     "T3": "SupportedClaim",
+     "T1": "SupportedClaim",
+     "collect_ok": true
+    }
+   ],
+   "kind1": {
+    "p1_idx": null,
+    "gold0": "src/skjold",
+    "unrelated": null,
+    "base_R": "src/skjold",
+    "base_I": ""
+   },
+   "kind2": {
+    "p2_idx": null,
+    "n_deleted_py": 1,
+    "found": {
+     "F_R": "src/skjold/models.py",
+     "F_I": "engine.py"
+    }
+   },
+   "kind3": {
+    "run": "test",
+    "install": "install",
+    "test_ok": true,
+    "install_ok": true
+   },
+   "kind4": {
+    "deps": [
+     [
+      "packaging",
+      true
+     ],
+     [
+      "click",
+      false
+     ],
+     [
+      "pyyaml",
+      false
+     ],
+     [
+      "toml",
+      false
+     ]
+    ],
+    "d_idx": 3,
+    "src_R": "packaging",
+    "src_I": "toml",
+    "n_decls": 26,
+    "n_dist": 17
+   }
+  },
+  "length": {
+   "T": 292,
+   "F_R": 333,
+   "F_I": 309
+  },
+  "fallbacks": {
+   "F_R": [],
+   "F_I": [
+    "kind2_never_existed_fallback"
+   ]
+  },
+  "modes": {
+   "F_R": {
+    "1": "add",
+    "2": "add",
+    "3": "replace",
+    "4": "replace"
+   },
+   "F_I": {
+    "1": "add",
+    "2": "add",
+    "3": "replace",
+    "4": "replace"
+   }
+  },
+  "length_diff": {
+   "F_R": 41,
+   "F_I": 17
+  },
+  "n_claims_T": 11,
+  "n_false": {
+   "F_R": 4,
+   "F_I": 4
+  },
+  "pointer_in_issue": true,
+  "gold_dirs": [
+   "src/skjold"
+  ],
+  "gold_files": [
+   "src/skjold/sources/pyup.py"
+  ]
+ },
+ "tokens": {
+  "F_R": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "src/skjold/internal",
+     "internal"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "src/skjold/models.py",
+     "models.py"
+    ]
+   },
+   {
+    "kind": 3,
+    "type": "regex",
+    "regex": "\\bmake\\b[^|;&\\n]*\\btest\\b",
+    "target": "test"
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "semantic-version",
+     "semantic_version"
+    ]
+   }
+  ],
+  "F_I": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "internal",
+     "internal"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "engine.py",
+     "engine.py"
+    ]
+   },
+   {
+    "kind": 3,
+    "type": "regex",
+    "regex": "\\bmake\\b[^|;&\\n]*\\binstall\\b",
+    "target": "install"
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "rtoml"
+    ]
+   }
+  ]
+ },
+ "unresolved_pre_hermit": [],
+ "sha256": {
+  "T": "cdc6f06d9af9074b425ce2190f7b42d3a1ba462886fa5443c825d85899ef296e",
+  "F_R": "9a987fbcfe7336f950a2c1b595924f9b91d222c83f77bcd32ea588661c03ec81",
+  "F_I": "8b200b72d9d3c7aa99db1be31465c442e9171b0d9deeaadd55983160884f9204"
+ },
+ "chars": {
+  "T": 292,
+  "F_R": 333,
+  "F_I": 309
+ },
+ "claims": {
+  "T": [
+   "T1|src/skjold",
+   "T1|tests",
+   "T1|src/skjold/tasks.py",
+   "T3|test_framework|pytest",
+   "T1|tests",
+   "T1|pyproject.toml",
+   "T4|packaging|",
+   "T4|click|",
+   "T4|pyyaml|",
+   "T4|toml|",
+   "T6|python|3007000000@2"
+  ],
+  "F_R": [
+   "T1|src/skjold",
+   "T1|tests",
+   "T1|src/skjold/internal",
+   "T1|src/skjold/tasks.py",
+   "T1|src/skjold/models.py",
+   "T5|make|test",
+   "T1|pyproject.toml",
+   "T4|packaging|",
+   "T4|click|",
+   "T4|pyyaml|",
+   "T4|semantic-version|",
+   "T6|python|3007000000@2"
+  ],
+  "F_I": [
+   "T1|src/skjold",
+   "T1|tests",
+   "T1|internal",
+   "T1|src/skjold/tasks.py",
+   "T1|engine.py",
+   "T3|test_framework|pytest",
+   "T1|tests",
+   "T5|make|install",
+   "T4|packaging|",
+   "T4|click|",
+   "T4|pyyaml|",
+   "T4|rtoml|",
+   "T6|python|3007000000@2"
+  ]
+ },
+ "python_spec": "^3.7",
+ "token_audit": [
+  {
+   "cond": "F_R",
+   "kind": 1,
+   "type": "path",
+   "name": "src/skjold/internal",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 2,
+   "type": "path",
+   "name": "src/skjold/models.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 3,
+   "type": "regex",
+   "name": "make test",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 4,
+   "type": "word",
+   "name": "semantic-version",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 1,
+   "type": "path",
+   "name": "internal",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 2,
+   "type": "path",
+   "name": "engine.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 3,
+   "type": "regex",
+   "name": "make install",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 4,
+   "type": "word",
+   "name": "rtoml",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  }
+ ],
+ "dist_imports_used": {
+  "packaging": [
+   "packaging"
+  ],
+  "click": [
+   "click"
+  ],
+  "pyyaml": [
+   "yaml"
+  ],
+  "toml": [
+   "toml"
+  ],
+  "semantic-version": null,
+  "rtoml": null
+ }
+}

@@ -1,0 +1,383 @@
+{
+ "task_id": "networkx__networkx-7336",
+ "repo": "networkx/networkx",
+ "stage": "evolution",
+ "rounds": 1,
+ "rejects": {},
+ "flags": [
+  "kind4_R_used_I_competitor"
+ ],
+ "info": {
+  "slots": {
+   "test_root": "networkx/algorithms/tests",
+   "P1": {
+    "replaced": "networkx/utils",
+    "name": "internal",
+    "F_R": "networkx/algorithms/internal",
+    "F_I": "networkx/classes/internal"
+   },
+   "P2": {
+    "replaced": "networkx/generators/random_graphs.py",
+    "F_R": "networkx/algorithms/isomorphism/tests/vf2pp/test_Ti_computing.py",
+    "F_I": "examples/geospatial/delaunay.py"
+   },
+   "C": {
+    "F_R": "make test",
+    "F_I": "make dev"
+   },
+   "D": {
+    "replaced": "pillow",
+    "F_R": "wand",
+    "F_I": "wand"
+   }
+  },
+  "why": {
+   "test_command": [
+    {
+     "root": "networkx/algorithms/tests",
+     "T3": "SupportedClaim",
+     "T1": "SupportedClaim",
+     "collect_ok": true
+    }
+   ],
+   "kind1": {
+    "p1_idx": 7,
+    "gold0": "networkx/algorithms",
+    "unrelated": "networkx/classes",
+    "base_R": "networkx/algorithms",
+    "base_I": "networkx/classes"
+   },
+   "kind2": {
+    "p2_idx": 2,
+    "n_deleted_py": 596,
+    "found": {
+     "F_R": "networkx/algorithms/isomorphism/tests/vf2pp/test_Ti_computing.py",
+     "F_I": "examples/geospatial/delaunay.py"
+    }
+   },
+   "kind3": {
+    "run": "test",
+    "install": "dev",
+    "test_ok": true,
+    "install_ok": true
+   },
+   "kind4": {
+    "deps": [
+     [
+      "numpy",
+      false
+     ],
+     [
+      "scipy",
+      false
+     ],
+     [
+      "pandas",
+      false
+     ],
+     [
+      "matplotlib",
+      false
+     ],
+     [
+      "pillow",
+      false
+     ]
+    ],
+    "d_idx": 4,
+    "src_R": "pillow",
+    "src_I": "pillow",
+    "n_decls": 54,
+    "n_dist": 57
+   }
+  },
+  "length": {
+   "T": 608,
+   "F_R": 610,
+   "F_I": 599
+  },
+  "fallbacks": {
+   "F_R": [
+    "kind4_I_competitor"
+   ],
+   "F_I": []
+  },
+  "modes": {
+   "F_R": {
+    "1": "replace",
+    "2": "replace",
+    "3": "replace",
+    "4": "replace"
+   },
+   "F_I": {
+    "1": "replace",
+    "2": "replace",
+    "3": "replace",
+    "4": "replace"
+   }
+  },
+  "length_diff": {
+   "F_R": 2,
+   "F_I": -9
+  },
+  "n_claims_T": 20,
+  "n_false": {
+   "F_R": 4,
+   "F_I": 4
+  },
+  "pointer_in_issue": false,
+  "gold_dirs": [
+   "networkx/algorithms",
+   "networkx/generators"
+  ],
+  "gold_files": [
+   "networkx/algorithms/approximation/clustering_coefficient.py",
+   "networkx/algorithms/approximation/distance_measures.py",
+   "networkx/algorithms/approximation/dominating_set.py",
+   "networkx/algorithms/approximation/maxcut.py",
+   "networkx/algorithms/approximation/steinertree.py",
+   "networkx/generators/small.py"
+  ]
+ },
+ "tokens": {
+  "F_R": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "networkx/algorithms/internal",
+     "internal"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "networkx/algorithms/isomorphism/tests/vf2pp/test_Ti_computing.py",
+     "test_Ti_computing.py"
+    ]
+   },
+   {
+    "kind": 3,
+    "type": "regex",
+    "regex": "\\bmake\\b[^|;&\\n]*\\btest\\b",
+    "target": "test"
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "wand"
+    ]
+   }
+  ],
+  "F_I": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "networkx/classes/internal",
+     "internal"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "examples/geospatial/delaunay.py",
+     "delaunay.py"
+    ]
+   },
+   {
+    "kind": 3,
+    "type": "regex",
+    "regex": "\\bmake\\b[^|;&\\n]*\\bdev\\b",
+    "target": "dev"
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "wand"
+    ]
+   }
+  ]
+ },
+ "unresolved_pre_hermit": [],
+ "sha256": {
+  "T": "4371349b1aeb9d41dbf59b693596e08d4a60106ca7843b5d0d6a000a1b32319a",
+  "F_R": "7c968b9a048d51d5ed5b58257ce57bf7783cfcc4ddb7c336b8730c2411cbefc4",
+  "F_I": "ea225ea1b5e054dcad804122321faac98072a4cc80baf12528cc1c89246fe1d5"
+ },
+ "chars": {
+  "T": 608,
+  "F_R": 610,
+  "F_I": 599
+ },
+ "claims": {
+  "T": [
+   "T1|networkx",
+   "T1|networkx/algorithms",
+   "T1|networkx/algorithms/tests",
+   "T1|networkx/classes",
+   "T1|networkx/generators",
+   "T1|networkx/linalg",
+   "T1|networkx/readwrite",
+   "T1|networkx/utils",
+   "T1|networkx/algorithms/shortest_paths/weighted.py",
+   "T1|networkx/algorithms/similarity.py",
+   "T1|networkx/generators/random_graphs.py",
+   "T3|test_framework|pytest",
+   "T1|networkx/algorithms/tests",
+   "T1|pyproject.toml",
+   "T4|numpy|",
+   "T4|scipy|",
+   "T4|pandas|",
+   "T4|matplotlib|",
+   "T4|pillow|",
+   "T6|python|3010000000@2"
+  ],
+  "F_R": [
+   "T1|networkx",
+   "T1|networkx/algorithms",
+   "T1|networkx/algorithms/tests",
+   "T1|networkx/classes",
+   "T1|networkx/generators",
+   "T1|networkx/linalg",
+   "T1|networkx/readwrite",
+   "T1|networkx/algorithms/internal",
+   "T1|networkx/algorithms/shortest_paths/weighted.py",
+   "T1|networkx/algorithms/similarity.py",
+   "T1|networkx/algorithms/isomorphism/tests/vf2pp/test_Ti_computing.py",
+   "T5|make|test",
+   "T1|pyproject.toml",
+   "T4|numpy|",
+   "T4|scipy|",
+   "T4|pandas|",
+   "T4|matplotlib|",
+   "T4|wand|",
+   "T6|python|3010000000@2"
+  ],
+  "F_I": [
+   "T1|networkx",
+   "T1|networkx/algorithms",
+   "T1|networkx/algorithms/tests",
+   "T1|networkx/classes",
+   "T1|networkx/generators",
+   "T1|networkx/linalg",
+   "T1|networkx/readwrite",
+   "T1|networkx/classes/internal",
+   "T1|networkx/algorithms/shortest_paths/weighted.py",
+   "T1|networkx/algorithms/similarity.py",
+   "T1|examples/geospatial/delaunay.py",
+   "T3|test_framework|pytest",
+   "T1|networkx/algorithms/tests",
+   "T5|make|dev",
+   "T4|numpy|",
+   "T4|scipy|",
+   "T4|pandas|",
+   "T4|matplotlib|",
+   "T4|wand|",
+   "T6|python|3010000000@2"
+  ]
+ },
+ "python_spec": ">=3.10",
+ "token_audit": [
+  {
+   "cond": "F_R",
+   "kind": 1,
+   "type": "path",
+   "name": "networkx/algorithms/internal",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 2,
+   "type": "path",
+   "name": "networkx/algorithms/isomorphism/tests/vf2pp/test_Ti_computing.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 3,
+   "type": "regex",
+   "name": "make test",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 4,
+   "type": "word",
+   "name": "wand",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 1,
+   "type": "path",
+   "name": "networkx/classes/internal",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 2,
+   "type": "path",
+   "name": "examples/geospatial/delaunay.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 3,
+   "type": "regex",
+   "name": "make dev",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 4,
+   "type": "word",
+   "name": "wand",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  }
+ ],
+ "dist_imports_used": {
+  "numpy": [
+   "numpy",
+   "numpy.libs"
+  ],
+  "scipy": [
+   "scipy",
+   "scipy.libs"
+  ],
+  "pandas": [
+   "pandas"
+  ],
+  "matplotlib": [
+   "matplotlib",
+   "mpl_toolkits",
+   "pylab"
+  ],
+  "pillow": [
+   "PIL"
+  ],
+  "wand": null
+ }
+}

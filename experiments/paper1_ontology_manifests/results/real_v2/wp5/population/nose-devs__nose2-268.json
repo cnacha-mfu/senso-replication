@@ -1,0 +1,3012 @@
+{
+ "repo": "nose-devs/nose2",
+ "snapshot_date": "2016-01-31",
+ "status": "ok",
+ "unmineable": false,
+ "unmineable_reason": null,
+ "replaces": null,
+ "settings": {
+  "dedup": true,
+  "complexity": false,
+  "dataset": null,
+  "sensitivity": false,
+  "snapshot_commit": "bbf5897eb1aa224100e86ba594042e4399fd2f5f",
+  "mode": "wp5_snapshot_commit",
+  "test_patch_files": [
+   "nose2/tests/functional/support/scenario/layers_and_non_layers/__init__.py",
+   "nose2/tests/functional/support/scenario/layers_and_non_layers/common.py",
+   "nose2/tests/functional/support/scenario/layers_and_non_layers/test_layers.py",
+   "nose2/tests/functional/support/scenario/layers_and_non_layers/test_such_with_has_setup.py",
+   "nose2/tests/functional/support/scenario/layers_and_non_layers/test_such_with_uses_decorator.py",
+   "nose2/tests/functional/test_layers_plugin.py"
+  ],
+  "package_roots": [
+   "nose2"
+  ]
+ },
+ "versions": {
+  "owlready2": "0.51",
+  "pymannkendall": "1.4.3",
+  "lizard": "1.24.1",
+  "numpy": "2.5.3",
+  "scipy": "1.18.1",
+  "python": "3.12.15",
+  "git": "git version 2.53.0"
+ },
+ "task_id": "nose-devs__nose2-268",
+ "base_commit": "bbf5897eb1aa224100e86ba594042e4399fd2f5f",
+ "measures": {
+  "monthsObserved": 36,
+  "monthsSinceLastCommit": 2,
+  "distinctAuthorsInWindow": 34,
+  "commitMKTau": -0.31746,
+  "commitMKpValue": 0.006189,
+  "activeMonthCount": 28,
+  "activeMonthRatio": 0.777778,
+  "meanMonthlyCommits": 8.388889,
+  "commitsLast3Months": 11,
+  "commitCountCV": 1.878566,
+  "commitCountCVSample": 1.905214,
+  "commitHalfRatio": 0.232653,
+  "commitSecondHalfMean": 3.166667,
+  "churnCV": 2.134627,
+  "linesAddedCV": 2.185604,
+  "mergeMonthRatio": 0.666667,
+  "multiAuthorMonthRatio": 0.638889,
+  "bugFixRatioFirstHalf": 0.28681,
+  "bugFixRatioSecondHalf": 0.445364,
+  "bugFixHalfRatio": 1.552821,
+  "locSeriesLength": 36,
+  "locRelSenSlopeAnnual": 0.081819,
+  "locMKTau": 0.91746,
+  "locMKS": 578,
+  "locMKpValue": 0.0,
+  "locSenSlope": 67.446429,
+  "locStart": 8254,
+  "locEnd": 10256,
+  "locDelta": 2002,
+  "locGrowthRate": 0.242549,
+  "locChangePct": 24.254907,
+  "locEndToStartRatio": 1.242549,
+  "locGrowthLast3": 0.0,
+  "featureCommitsFirstHalf": 0,
+  "featureCommitsSecondHalf": 0,
+  "featureCommitsTotal": 0,
+  "locDeltaPerFeature": 2002.0,
+  "recentAgentCommitRatio": 0.0,
+  "featCommitCount": 0,
+  "bugFixCommitCount": 116,
+  "commitCount": 302,
+  "monthly_series": {
+   "months": [
+    "2012-02",
+    "2012-03",
+    "2012-04",
+    "2012-05",
+    "2012-06",
+    "2012-07",
+    "2012-08",
+    "2012-09",
+    "2012-10",
+    "2012-11",
+    "2012-12",
+    "2013-01",
+    "2013-02",
+    "2013-03",
+    "2013-04",
+    "2013-05",
+    "2013-06",
+    "2013-07",
+    "2013-08",
+    "2013-09",
+    "2013-10",
+    "2013-11",
+    "2013-12",
+    "2014-01",
+    "2014-02",
+    "2014-03",
+    "2014-04",
+    "2014-05",
+    "2014-06",
+    "2014-07",
+    "2014-08",
+    "2014-09",
+    "2014-10",
+    "2014-11",
+    "2014-12",
+    "2015-01",
+    "2015-02",
+    "2015-03",
+    "2015-04",
+    "2015-05",
+    "2015-06",
+    "2015-07",
+    "2015-08",
+    "2015-09",
+    "2015-10",
+    "2015-11",
+    "2015-12",
+    "2016-01"
+   ],
+   "commits": [
+    19,
+    17,
+    10,
+    5,
+    8,
+    0,
+    0,
+    0,
+    4,
+    31,
+    9,
+    3,
+    3,
+    5,
+    10,
+    12,
+    9,
+    23,
+    5,
+    4,
+    0,
+    10,
+    3,
+    3,
+    20,
+    4,
+    8,
+    95,
+    21,
+    10,
+    4,
+    8,
+    2,
+    0,
+    4,
+    5,
+    2,
+    5,
+    3,
+    4,
+    9,
+    0,
+    0,
+    0,
+    0,
+    11,
+    0,
+    0
+   ],
+   "loc": [
+    5434,
+    6421,
+    6423,
+    7442,
+    7608,
+    7608,
+    7608,
+    7608,
+    7608,
+    8004,
+    8143,
+    8245,
+    8254,
+    8254,
+    8254,
+    8314,
+    8314,
+    8345,
+    8369,
+    8370,
+    8370,
+    8405,
+    8405,
+    8405,
+    8475,
+    8475,
+    8582,
+    9375,
+    9711,
+    9879,
+    9905,
+    9983,
+    10066,
+    10066,
+    10080,
+    10214,
+    10215,
+    10215,
+    10213,
+    10213,
+    10256,
+    10256,
+    10256,
+    10256,
+    10256,
+    10256,
+    10256,
+    10256
+   ]
+  }
+ },
+ "window": {
+  "L": 36,
+  "first_month": "2013-02",
+  "last_month": "2016-01",
+  "n_months": 36,
+  "left_truncated": false,
+  "first_commit_month": "2010-08",
+  "mined_months": 48,
+  "commits_in_window": 302,
+  "commits_in_history": 727
+ },
+ "loc_instrument": {
+  "instrument": "nonblank-source-lines-v1",
+  "status": "ok",
+  "months": 48,
+  "month_end_commits_distinct": 34,
+  "source_blobs": 454,
+  "blobs_fetched": 7,
+  "t_ls_tree_s": 0.3681448809802532,
+  "t_fetch_s": 0.8261900480138138,
+  "t_read_s": 0.06745921401306987,
+  "series_present": true,
+  "extensions": [
+   ".bash",
+   ".c",
+   ".cc",
+   ".cjs",
+   ".clj",
+   ".cpp",
+   ".cs",
+   ".cxx",
+   ".dart",
+   ".erl",
+   ".ex",
+   ".exs",
+   ".f90",
+   ".go",
+   ".groovy",
+   ".h",
+   ".hh",
+   ".hpp",
+   ".hs",
+   ".java",
+   ".jl",
+   ".js",
+   ".jsx",
+   ".kt",
+   ".kts",
+   ".lua",
+   ".m",
+   ".mjs",
+   ".ml",
+   ".mm",
+   ".nim",
+   ".php",
+   ".pl",
+   ".pm",
+   ".py",
+   ".pyi",
+   ".r",
+   ".rb",
+   ".rs",
+   ".scala",
+   ".sh",
+   ".sql",
+   ".svelte",
+   ".swift",
+   ".ts",
+   ".tsx",
+   ".vue",
+   ".zig"
+  ],
+  "excluded_dirs": [
+   "node_modules",
+   "vendor",
+   "vendored",
+   "third_party",
+   "site-packages",
+   "bower_components"
+  ],
+  "max_blob_bytes": 1000000,
+  "first_parent": true
+ },
+ "mining": {
+  "churn": {
+   "t_churn_raw_s": 0.16115088702645153,
+   "t_churn_fetch_s": 2.2256546639837325,
+   "t_churn_numstat_s": 0.17955310997786,
+   "blobs_fetched_churn": 641
+  },
+  "timings": {
+   "t_clone": 0.003,
+   "t_mine": 2.606,
+   "t_loc": 1.262,
+   "t_reason_A": 3.084
+  },
+  "cached": false
+ },
+ "stage_a": {
+  "commits": 408,
+  "reasoned_commits": 401,
+  "inconsistent_chunks": 0,
+  "chunk_timings": [
+   {
+    "tbox_load_s": 0.04909901903010905,
+    "abox_load_s": 0.054212621005717665,
+    "reason_s": 2.9593627210124396,
+    "extract_s": 0.005749144998844713,
+    "total_s": 3.068792811012827,
+    "commits": 401
+   }
+  ],
+  "tbox_sha256": "f5ba00eaa76dc3582415cdf566fbd7abc1d3f2797ca928f41dad106dc1c0bdb5"
+ },
+ "activity": {
+  "last_commit_date": "2015-11-17T13:48:24+00:00",
+  "months_since_last_commit": 2,
+  "distinct_authors_in_window": 34,
+  "merge_commits_in_window": 87
+ },
+ "agent_adoption_date": null,
+ "commit_label_counts": {
+  "BugFixCommit": 116,
+  "FeatureCommit": 0,
+  "AgentCommit": 0
+ },
+ "series_months": [
+  {
+   "month": "2013-02",
+   "commit_count": 3,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 110,
+   "lines_deleted": 99,
+   "total_churn": 209,
+   "files_changed": 5,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 8254,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2013-03",
+   "commit_count": 5,
+   "merge_count": 1,
+   "unique_authors": 4,
+   "lines_added": 14,
+   "lines_deleted": 11,
+   "total_churn": 25,
+   "files_changed": 5,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 8254,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2013-04",
+   "commit_count": 10,
+   "merge_count": 2,
+   "unique_authors": 5,
+   "lines_added": 58,
+   "lines_deleted": 11,
+   "total_churn": 69,
+   "files_changed": 7,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 8254,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2013-05",
+   "commit_count": 12,
+   "merge_count": 6,
+   "unique_authors": 4,
+   "lines_added": 29,
+   "lines_deleted": 10,
+   "total_churn": 39,
+   "files_changed": 9,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 8314,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2013-06",
+   "commit_count": 9,
+   "merge_count": 1,
+   "unique_authors": 3,
+   "lines_added": 651,
+   "lines_deleted": 183,
+   "total_churn": 834,
+   "files_changed": 107,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 8314,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2013-07",
+   "commit_count": 23,
+   "merge_count": 6,
+   "unique_authors": 5,
+   "lines_added": 120,
+   "lines_deleted": 11,
+   "total_churn": 131,
+   "files_changed": 14,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 8345,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2013-08",
+   "commit_count": 5,
+   "merge_count": 1,
+   "unique_authors": 2,
+   "lines_added": 35,
+   "lines_deleted": 0,
+   "total_churn": 35,
+   "files_changed": 1,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 8369,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2013-09",
+   "commit_count": 4,
+   "merge_count": 1,
+   "unique_authors": 1,
+   "lines_added": 3,
+   "lines_deleted": 2,
+   "total_churn": 5,
+   "files_changed": 3,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 8370,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2013-10",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 8370,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2013-11",
+   "commit_count": 10,
+   "merge_count": 2,
+   "unique_authors": 3,
+   "lines_added": 65,
+   "lines_deleted": 23,
+   "total_churn": 88,
+   "files_changed": 12,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 8405,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2013-12",
+   "commit_count": 3,
+   "merge_count": 1,
+   "unique_authors": 3,
+   "lines_added": 5,
+   "lines_deleted": 2,
+   "total_churn": 7,
+   "files_changed": 2,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 8405,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2014-01",
+   "commit_count": 3,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 68,
+   "lines_deleted": 3,
+   "total_churn": 71,
+   "files_changed": 5,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 8405,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2014-02",
+   "commit_count": 20,
+   "merge_count": 8,
+   "unique_authors": 4,
+   "lines_added": 28,
+   "lines_deleted": 7,
+   "total_churn": 35,
+   "files_changed": 8,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 8475,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2014-03",
+   "commit_count": 4,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 91,
+   "lines_deleted": 6,
+   "total_churn": 97,
+   "files_changed": 5,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 8475,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2014-04",
+   "commit_count": 8,
+   "merge_count": 2,
+   "unique_authors": 4,
+   "lines_added": 163,
+   "lines_deleted": 33,
+   "total_churn": 196,
+   "files_changed": 7,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 8582,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2014-05",
+   "commit_count": 95,
+   "merge_count": 20,
+   "unique_authors": 9,
+   "lines_added": 1164,
+   "lines_deleted": 244,
+   "total_churn": 1408,
+   "files_changed": 77,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 9375,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2014-06",
+   "commit_count": 21,
+   "merge_count": 8,
+   "unique_authors": 3,
+   "lines_added": 672,
+   "lines_deleted": 34,
+   "total_churn": 706,
+   "files_changed": 45,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 9711,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2014-07",
+   "commit_count": 10,
+   "merge_count": 6,
+   "unique_authors": 4,
+   "lines_added": 1,
+   "lines_deleted": 1,
+   "total_churn": 2,
+   "files_changed": 1,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 9879,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2014-08",
+   "commit_count": 4,
+   "merge_count": 1,
+   "unique_authors": 2,
+   "lines_added": 44,
+   "lines_deleted": 12,
+   "total_churn": 56,
+   "files_changed": 3,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 9905,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2014-09",
+   "commit_count": 8,
+   "merge_count": 3,
+   "unique_authors": 4,
+   "lines_added": 104,
+   "lines_deleted": 4,
+   "total_churn": 108,
+   "files_changed": 6,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 9983,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2014-10",
+   "commit_count": 2,
+   "merge_count": 1,
+   "unique_authors": 1,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 10066,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2014-11",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 10066,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2014-12",
+   "commit_count": 4,
+   "merge_count": 1,
+   "unique_authors": 2,
+   "lines_added": 117,
+   "lines_deleted": 4,
+   "total_churn": 121,
+   "files_changed": 8,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 10080,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2015-01",
+   "commit_count": 5,
+   "merge_count": 2,
+   "unique_authors": 3,
+   "lines_added": 64,
+   "lines_deleted": 9,
+   "total_churn": 73,
+   "files_changed": 8,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 10214,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2015-02",
+   "commit_count": 2,
+   "merge_count": 1,
+   "unique_authors": 2,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 10215,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2015-03",
+   "commit_count": 5,
+   "merge_count": 2,
+   "unique_authors": 2,
+   "lines_added": 153,
+   "lines_deleted": 151,
+   "total_churn": 304,
+   "files_changed": 31,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 10215,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2015-04",
+   "commit_count": 3,
+   "merge_count": 2,
+   "unique_authors": 2,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 10213,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2015-05",
+   "commit_count": 4,
+   "merge_count": 0,
+   "unique_authors": 3,
+   "lines_added": 49,
+   "lines_deleted": 7,
+   "total_churn": 56,
+   "files_changed": 4,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 10213,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2015-06",
+   "commit_count": 9,
+   "merge_count": 5,
+   "unique_authors": 3,
+   "lines_added": 18,
+   "lines_deleted": 7,
+   "total_churn": 25,
+   "files_changed": 4,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 10256,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2015-07",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 10256,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2015-08",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 10256,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2015-09",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 10256,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2015-10",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 10256,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2015-11",
+   "commit_count": 11,
+   "merge_count": 4,
+   "unique_authors": 4,
+   "lines_added": 12,
+   "lines_deleted": 8,
+   "total_churn": 20,
+   "files_changed": 4,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 10256,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2015-12",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 10256,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2016-01",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 10256,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  }
+ ],
+ "measures_derived": {
+  "bugFixRatioFirstHalf": 0.28681,
+  "bugFixRatioSecondHalf": 0.445364,
+  "bugFixHalfRatio": 1.552821,
+  "featureCommitsFirstHalf": 0,
+  "featureCommitsSecondHalf": 0,
+  "featureCommitsTotal": 0,
+  "locDeltaPerFeature": 2002.0,
+  "recentAgentCommitRatio": 0.0
+ },
+ "modules_meta": {
+  "anchor_S": "2016-02-15T08:06:17+00:00",
+  "window_months": 12,
+  "package_roots": [
+   "nose2"
+  ],
+  "n_modules": 20,
+  "n_source_files": 52,
+  "n_window_commits": 14,
+  "cached": false,
+  "timings": {
+   "t_tree_loc": 0.941,
+   "t_history": 0.064,
+   "t_numstat": 0.039
+  },
+  "module_loc_instrument": "nonblank-source-lines-v1",
+  "label_counts": {
+   "StableModule": 12,
+   "ActiveModule": 8,
+   "undetermined": 0
+  },
+  "thresholds": {
+   "mod_window_months": 12,
+   "mod_stable_max_rel_churn": 0.1,
+   "mod_stable_max_change_months": 2
+  }
+ },
+ "inferred": {
+  "a0.05_L36_D12_G0.05_orig": {
+   "classes": [
+    "CopyPasteEvidence",
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIINonConformant",
+    "LawIVNonConformant",
+    "LawVIConformant",
+    "LawVIIConformant",
+    "LawVIIConformantRatio",
+    "LawVIIIConformant",
+    "LawVNonConformant",
+    "LocPerFeatureHigh",
+    "MKApplicable",
+    "MergeActive",
+    "MultiAuthorActive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": "urn:senso:explanations:nose-devs__nose2-268:d20298612d99",
+   "tbox_sha256": "d20298612d99fa8f5c1a63c70eaab0195a3e82e2d6780de3bd1fd3ced72d6e5d",
+   "abox_triples": 240,
+   "t_reason_B_s": 2.175
+  }
+ },
+ "primary_config": "a0.05_L36_D12_G0.05_orig",
+ "project_iri": "http://senso-framework.org/data/nose-devs__nose2-268",
+ "consistent": true,
+ "inferred_labels": [
+  "CopyPasteEvidence",
+  "GrowthStage",
+  "LawIConformant",
+  "LawIIINonConformant",
+  "LawIVNonConformant",
+  "LawVIConformant",
+  "LawVIIConformant",
+  "LawVIIConformantRatio",
+  "LawVIIIConformant",
+  "LawVNonConformant",
+  "LocPerFeatureHigh",
+  "MKApplicable",
+  "MergeActive",
+  "MultiAuthorActive",
+  "RBActiveDevelopmentStage",
+  "RecentlyActive",
+  "SubstantialLocGrowth"
+ ],
+ "stage_labels": [
+  "GrowthStage",
+  "RBActiveDevelopmentStage"
+ ],
+ "law_labels": {
+  "I": "LawIConformant",
+  "III": "LawIIINonConformant",
+  "IV": "LawIVNonConformant",
+  "V": "LawVNonConformant",
+  "VI": "LawVIConformant",
+  "VII": "LawVIIConformant",
+  "VIII": "LawVIIIConformant"
+ },
+ "tbox_sha256_stage_b": "d20298612d99fa8f5c1a63c70eaab0195a3e82e2d6780de3bd1fd3ced72d6e5d",
+ "tbox_sha256_stage_a": "f5ba00eaa76dc3582415cdf566fbd7abc1d3f2797ca928f41dad106dc1c0bdb5",
+ "summary": {
+  "c1": "A",
+  "c2": "A",
+  "cf": "S",
+  "note": "debug summary; run_rq1_v2.py reads `inferred` and recomputes CF itself"
+ },
+ "modules": {
+  "docs": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "docs",
+    "moduleLoc": 183,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 31
+   },
+   "iri": "http://senso-framework.org/data/nose-devs__nose2-268/module/docs-71ab8b",
+   "abox_asserted": true
+  },
+  "nose2/__init__.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "nose2/__init__.py",
+    "moduleLoc": 1,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 47
+   },
+   "iri": "http://senso-framework.org/data/nose-devs__nose2-268/module/nose2___init__.py-b685a3",
+   "abox_asserted": true
+  },
+  "nose2/__main__.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "nose2/__main__.py",
+    "moduleLoc": 8,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 32
+   },
+   "iri": "http://senso-framework.org/data/nose-devs__nose2-268/module/nose2___main__.py-bcadec",
+   "abox_asserted": true
+  },
+  "nose2/backports": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "nose2/backports",
+    "moduleLoc": 222,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 32
+   },
+   "iri": "http://senso-framework.org/data/nose-devs__nose2-268/module/nose2_backports-9e7f36",
+   "abox_asserted": true
+  },
+  "nose2/collector.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "nose2/collector.py",
+    "moduleLoc": 26,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 13
+   },
+   "iri": "http://senso-framework.org/data/nose-devs__nose2-268/module/nose2_collector.py-fd41ff",
+   "abox_asserted": true
+  },
+  "nose2/compat.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "RarelyChangedModule"
+   ],
+   "measures": {
+    "modulePath": "nose2/compat.py",
+    "moduleLoc": 24,
+    "moduleCommitsInWindow": 1,
+    "moduleChangeMonthsInWindow": 1,
+    "moduleLinesChangedInWindow": 6,
+    "moduleRelChurnInWindow": 0.25,
+    "moduleMonthsSinceLastChange": 11
+   },
+   "iri": "http://senso-framework.org/data/nose-devs__nose2-268/module/nose2_compat.py-1bc9c2",
+   "abox_asserted": true
+  },
+  "nose2/config.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "nose2/config.py",
+    "moduleLoc": 61,
+    "moduleCommitsInWindow": 1,
+    "moduleChangeMonthsInWindow": 1,
+    "moduleLinesChangedInWindow": 4,
+    "moduleRelChurnInWindow": 0.065574,
+    "moduleMonthsSinceLastChange": 11
+   },
+   "iri": "http://senso-framework.org/data/nose-devs__nose2-268/module/nose2_config.py-cff413",
+   "abox_asserted": true
+  },
+  "nose2/events.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "nose2/events.py",
+    "moduleLoc": 752,
+    "moduleCommitsInWindow": 2,
+    "moduleChangeMonthsInWindow": 2,
+    "moduleLinesChangedInWindow": 68,
+    "moduleRelChurnInWindow": 0.090426,
+    "moduleMonthsSinceLastChange": 9
+   },
+   "iri": "http://senso-framework.org/data/nose-devs__nose2-268/module/nose2_events.py-65c81f",
+   "abox_asserted": true
+  },
+  "nose2/exceptions.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "RarelyChangedModule"
+   ],
+   "measures": {
+    "modulePath": "nose2/exceptions.py",
+    "moduleLoc": 7,
+    "moduleCommitsInWindow": 1,
+    "moduleChangeMonthsInWindow": 1,
+    "moduleLinesChangedInWindow": 2,
+    "moduleRelChurnInWindow": 0.285714,
+    "moduleMonthsSinceLastChange": 11
+   },
+   "iri": "http://senso-framework.org/data/nose-devs__nose2-268/module/nose2_exceptions.py-518504",
+   "abox_asserted": true
+  },
+  "nose2/loader.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "nose2/loader.py",
+    "moduleLoc": 101,
+    "moduleCommitsInWindow": 2,
+    "moduleChangeMonthsInWindow": 2,
+    "moduleLinesChangedInWindow": 10,
+    "moduleRelChurnInWindow": 0.09901,
+    "moduleMonthsSinceLastChange": 9
+   },
+   "iri": "http://senso-framework.org/data/nose-devs__nose2-268/module/nose2_loader.py-55a310",
+   "abox_asserted": true
+  },
+  "nose2/main.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "nose2/main.py",
+    "moduleLoc": 252,
+    "moduleCommitsInWindow": 4,
+    "moduleChangeMonthsInWindow": 3,
+    "moduleLinesChangedInWindow": 34,
+    "moduleRelChurnInWindow": 0.134921,
+    "moduleMonthsSinceLastChange": 3
+   },
+   "iri": "http://senso-framework.org/data/nose-devs__nose2-268/module/nose2_main.py-c8afd1",
+   "abox_asserted": true
+  },
+  "nose2/plugins": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "LowRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "nose2/plugins",
+    "moduleLoc": 2955,
+    "moduleCommitsInWindow": 4,
+    "moduleChangeMonthsInWindow": 4,
+    "moduleLinesChangedInWindow": 118,
+    "moduleRelChurnInWindow": 0.039932,
+    "moduleMonthsSinceLastChange": 3
+   },
+   "iri": "http://senso-framework.org/data/nose-devs__nose2-268/module/nose2_plugins-5ff478",
+   "abox_asserted": true
+  },
+  "nose2/result.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "RarelyChangedModule"
+   ],
+   "measures": {
+    "modulePath": "nose2/result.py",
+    "moduleLoc": 95,
+    "moduleCommitsInWindow": 1,
+    "moduleChangeMonthsInWindow": 1,
+    "moduleLinesChangedInWindow": 12,
+    "moduleRelChurnInWindow": 0.126316,
+    "moduleMonthsSinceLastChange": 11
+   },
+   "iri": "http://senso-framework.org/data/nose-devs__nose2-268/module/nose2_result.py-7d8f07",
+   "abox_asserted": true
+  },
+  "nose2/runner.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "nose2/runner.py",
+    "moduleLoc": 51,
+    "moduleCommitsInWindow": 1,
+    "moduleChangeMonthsInWindow": 1,
+    "moduleLinesChangedInWindow": 2,
+    "moduleRelChurnInWindow": 0.039216,
+    "moduleMonthsSinceLastChange": 11
+   },
+   "iri": "http://senso-framework.org/data/nose-devs__nose2-268/module/nose2_runner.py-502bb6",
+   "abox_asserted": true
+  },
+  "nose2/session.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "nose2/session.py",
+    "moduleLoc": 164,
+    "moduleCommitsInWindow": 1,
+    "moduleChangeMonthsInWindow": 1,
+    "moduleLinesChangedInWindow": 2,
+    "moduleRelChurnInWindow": 0.012195,
+    "moduleMonthsSinceLastChange": 11
+   },
+   "iri": "http://senso-framework.org/data/nose-devs__nose2-268/module/nose2_session.py-c72730",
+   "abox_asserted": true
+  },
+  "nose2/sphinxext.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "nose2/sphinxext.py",
+    "moduleLoc": 207,
+    "moduleCommitsInWindow": 1,
+    "moduleChangeMonthsInWindow": 1,
+    "moduleLinesChangedInWindow": 2,
+    "moduleRelChurnInWindow": 0.009662,
+    "moduleMonthsSinceLastChange": 11
+   },
+   "iri": "http://senso-framework.org/data/nose-devs__nose2-268/module/nose2_sphinxext.py-88d12f",
+   "abox_asserted": true
+  },
+  "nose2/suite.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "RarelyChangedModule"
+   ],
+   "measures": {
+    "modulePath": "nose2/suite.py",
+    "moduleLoc": 112,
+    "moduleCommitsInWindow": 3,
+    "moduleChangeMonthsInWindow": 2,
+    "moduleLinesChangedInWindow": 12,
+    "moduleRelChurnInWindow": 0.107143,
+    "moduleMonthsSinceLastChange": 8
+   },
+   "iri": "http://senso-framework.org/data/nose-devs__nose2-268/module/nose2_suite.py-aff059",
+   "abox_asserted": true
+  },
+  "nose2/tools": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "RarelyChangedModule"
+   ],
+   "measures": {
+    "modulePath": "nose2/tools",
+    "moduleLoc": 399,
+    "moduleCommitsInWindow": 1,
+    "moduleChangeMonthsInWindow": 1,
+    "moduleLinesChangedInWindow": 51,
+    "moduleRelChurnInWindow": 0.12782,
+    "moduleMonthsSinceLastChange": 11
+   },
+   "iri": "http://senso-framework.org/data/nose-devs__nose2-268/module/nose2_tools-5a1d82",
+   "abox_asserted": true
+  },
+  "nose2/util.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "RarelyChangedModule"
+   ],
+   "measures": {
+    "modulePath": "nose2/util.py",
+    "moduleLoc": 258,
+    "moduleCommitsInWindow": 1,
+    "moduleChangeMonthsInWindow": 1,
+    "moduleLinesChangedInWindow": 44,
+    "moduleRelChurnInWindow": 0.170543,
+    "moduleMonthsSinceLastChange": 11
+   },
+   "iri": "http://senso-framework.org/data/nose-devs__nose2-268/module/nose2_util.py-8170fb",
+   "abox_asserted": true
+  },
+  "unit_workaround.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "unit_workaround.py",
+    "moduleLoc": 22,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 23
+   },
+   "iri": "http://senso-framework.org/data/nose-devs__nose2-268/module/unit_workaround.py-a8a497",
+   "abox_asserted": true
+  }
+ },
+ "explanations": {
+  "stage:GrowthStage": {
+   "class": "GrowthStage",
+   "individual": "http://senso-framework.org/data/nose-devs__nose2-268",
+   "attempts": 3,
+   "target": "http://senso-framework.org/data/nose-devs__nose2-268 type http://senso-framework.org/ontology/seo#GrowthStage",
+   "justifications": [],
+   "raw_text": "",
+   "seconds": 2.5515596810146235,
+   "returncode": 1,
+   "error": "Exception in thread \"main\" org.mindswap.pellet.exceptions.InternalReasonerException: Adding type to a pruned node \"anon(14)\" restrictedDatatype(http://www.w3.org/2001/XMLSchema#decimal,[facet(http://www.w3.org/2001/XMLSchema#minExclusive,literal(0.15,(),http://www.w3.org/2001/XMLSchema#decimal))])\n\tat org.mindswap.pellet.Node.addType(Node.java:448)\n\tat org.mindswap.pellet.Literal.addType(Literal.java:257)\n\tat org.mindswap.pellet.tableau.completion.CompletionStrategy.addType(CompletionStrategy.java:438)\n\tat org.mindswap.pellet.tableau.completion.rule.SomeValuesRule.applySomeValuesRule(SomeValuesRule.java:180)\n\tat org.mindswap.pellet.tableau.completion.rule.SomeValuesRule.apply(SomeValuesRule.java:64)\n\tat org.mindswap.pellet.tableau.completion.rule.AbstractTableauRule.apply(AbstractTableauRule.java:64)\n\tat org.mindswap.pellet.tableau.completion.SROIQStrategy.complete(SROIQStrategy.java:157)\n\tat org.mindswap.pellet.ABox.isConsistent(ABox.java:1423)\n\tat org.mindswap.pellet.ABox.isSatisfiab"
+  },
+  "stage:RBActiveDevelopmentStage": {
+   "class": "RBActiveDevelopmentStage",
+   "individual": "http://senso-framework.org/data/nose-devs__nose2-268",
+   "attempts": 3,
+   "target": "http://senso-framework.org/data/nose-devs__nose2-268 type http://senso-framework.org/ontology/seo#RBActiveDevelopmentStage",
+   "justifications": [],
+   "raw_text": "",
+   "seconds": 2.509149477002211,
+   "returncode": 1,
+   "error": "Exception in thread \"main\" org.mindswap.pellet.exceptions.InternalReasonerException: Adding type to a pruned node \"anon(14)\" restrictedDatatype(http://www.w3.org/2001/XMLSchema#decimal,[facet(http://www.w3.org/2001/XMLSchema#minExclusive,literal(0.15,(),http://www.w3.org/2001/XMLSchema#decimal))])\n\tat org.mindswap.pellet.Node.addType(Node.java:448)\n\tat org.mindswap.pellet.Literal.addType(Literal.java:257)\n\tat org.mindswap.pellet.tableau.completion.CompletionStrategy.addType(CompletionStrategy.java:438)\n\tat org.mindswap.pellet.tableau.completion.rule.SomeValuesRule.applySomeValuesRule(SomeValuesRule.java:180)\n\tat org.mindswap.pellet.tableau.completion.rule.SomeValuesRule.apply(SomeValuesRule.java:64)\n\tat org.mindswap.pellet.tableau.completion.rule.AbstractTableauRule.apply(AbstractTableauRule.java:64)\n\tat org.mindswap.pellet.tableau.completion.SROIQStrategy.complete(SROIQStrategy.java:157)\n\tat org.mindswap.pellet.ABox.isConsistent(ABox.java:1423)\n\tat org.mindswap.pellet.ABox.isSatisfiab"
+  },
+  "lawI": {
+   "class": "LawIConformant",
+   "individual": "http://senso-framework.org/data/nose-devs__nose2-268",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/nose-devs__nose2-268 type http://senso-framework.org/ontology/seo#LawIConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law1_min_months",
+       "text": "A_monthsObserved_ge_p_law1_min_months equivalentTo monthsObserved some integer[>= 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawIConformant",
+       "text": "LawIConformant equivalentTo A_activeMonthRatio_ge_p_law1_active_ratio and A_monthsObserved_ge_p_law1_min_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_activeMonthRatio_ge_p_law1_active_ratio",
+       "text": "A_activeMonthRatio_ge_p_law1_active_ratio equivalentTo activeMonthRatio some decimal[>= 0.5]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "nose-devs__nose2-268",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "nose-devs__nose2-268 type SoftwareProject"
+      },
+      {
+       "subject": "nose-devs__nose2-268",
+       "prop": "activeMonthRatio",
+       "value": 0.777778,
+       "raw": "nose-devs__nose2-268 activeMonthRatio 0.777778"
+      },
+      {
+       "subject": "nose-devs__nose2-268",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "nose-devs__nose2-268 monthsObserved 36"
+      }
+     ],
+     "closures": [],
+     "raw": "nose-devs__nose2-268 type SoftwareProject\nnose-devs__nose2-268 activeMonthRatio 0.777778\nA_monthsObserved_ge_p_law1_min_months equivalentTo monthsObserved some integer[>= 2]\nLawIConformant equivalentTo A_activeMonthRatio_ge_p_law1_active_ratio and A_monthsObserved_ge_p_law1_min_months and SoftwareProject\nnose-devs__nose2-268 monthsObserved 36\nA_activeMonthRatio_ge_p_law1_active_ratio equivalentTo activeMonthRatio some decimal[>= 0.5]"
+    }
+   ],
+   "raw_text": "Axiom: nose-devs__nose2-268 type LawIConformant\n\nExplanation(s): \n1)   nose-devs__nose2-268 type SoftwareProject\n     nose-devs__nose2-268 activeMonthRatio 0.777778\n     A_monthsObserved_ge_p_law1_min_months equivalentTo monthsObserved some integer[>= 2]\n     LawIConformant equivalentTo A_activeMonthRatio_ge_p_law1_active_ratio\n                                 and A_monthsObserved_ge_p_law1_min_months\n                                 and SoftwareProject\n     nose-devs__nose2-268 monthsObserved 36\n     A_activeMonthRatio_ge_p_law1_active_ratio equivalentTo activeMonthRatio some decimal[>= 0.5]\n\n\n",
+   "seconds": 3.645439057960175,
+   "returncode": 0,
+   "error": null
+  },
+  "lawIII": {
+   "class": "LawIIINonConformant",
+   "individual": "http://senso-framework.org/data/nose-devs__nose2-268",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/nose-devs__nose2-268 type http://senso-framework.org/ontology/seo#LawIIINonConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_churnCV_ge_p_law3_churn_cv",
+       "text": "A_churnCV_ge_p_law3_churn_cv equivalentTo churnCV some decimal[>= 2.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law3_min_months",
+       "text": "A_monthsObserved_ge_p_law3_min_months equivalentTo monthsObserved some integer[>= 6]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawIIINonConformant",
+       "text": "LawIIINonConformant equivalentTo A_churnCV_ge_p_law3_churn_cv and A_monthsObserved_ge_p_law3_min_months and SoftwareProject"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "nose-devs__nose2-268",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "nose-devs__nose2-268 type SoftwareProject"
+      },
+      {
+       "subject": "nose-devs__nose2-268",
+       "prop": "churnCV",
+       "value": 2.134627,
+       "raw": "nose-devs__nose2-268 churnCV 2.134627"
+      },
+      {
+       "subject": "nose-devs__nose2-268",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "nose-devs__nose2-268 monthsObserved 36"
+      }
+     ],
+     "closures": [],
+     "raw": "nose-devs__nose2-268 type SoftwareProject\nA_churnCV_ge_p_law3_churn_cv equivalentTo churnCV some decimal[>= 2.0]\nA_monthsObserved_ge_p_law3_min_months equivalentTo monthsObserved some integer[>= 6]\nnose-devs__nose2-268 churnCV 2.134627\nnose-devs__nose2-268 monthsObserved 36\nLawIIINonConformant equivalentTo A_churnCV_ge_p_law3_churn_cv and A_monthsObserved_ge_p_law3_min_months and SoftwareProject"
+    }
+   ],
+   "raw_text": "Axiom: nose-devs__nose2-268 type LawIIINonConformant\n\nExplanation(s): \n1)   nose-devs__nose2-268 type SoftwareProject\n     A_churnCV_ge_p_law3_churn_cv equivalentTo churnCV some decimal[>= 2.0]\n     A_monthsObserved_ge_p_law3_min_months equivalentTo monthsObserved some integer[>= 6]\n     nose-devs__nose2-268 churnCV 2.134627\n     nose-devs__nose2-268 monthsObserved 36\n     LawIIINonConformant equivalentTo A_churnCV_ge_p_law3_churn_cv\n                                      and A_monthsObserved_ge_p_law3_min_months\n                                      and SoftwareProject\n\n\n",
+   "seconds": 5.2247454329626635,
+   "returncode": 0,
+   "error": null
+  },
+  "lawIV": {
+   "class": "LawIVNonConformant",
+   "individual": "http://senso-framework.org/data/nose-devs__nose2-268",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/nose-devs__nose2-268 type http://senso-framework.org/ontology/seo#LawIVNonConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law4_min_months",
+       "text": "A_monthsObserved_ge_p_law4_min_months equivalentTo monthsObserved some integer[>= 6]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawIVNonConformant",
+       "text": "LawIVNonConformant equivalentTo A_commitCountCV_ge_p_law4_commit_cv and A_monthsObserved_ge_p_law4_min_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_commitCountCV_ge_p_law4_commit_cv",
+       "text": "A_commitCountCV_ge_p_law4_commit_cv equivalentTo commitCountCV some decimal[>= 1.5]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "nose-devs__nose2-268",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "nose-devs__nose2-268 type SoftwareProject"
+      },
+      {
+       "subject": "nose-devs__nose2-268",
+       "prop": "commitCountCV",
+       "value": 1.878566,
+       "raw": "nose-devs__nose2-268 commitCountCV 1.878566"
+      },
+      {
+       "subject": "nose-devs__nose2-268",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "nose-devs__nose2-268 monthsObserved 36"
+      }
+     ],
+     "closures": [],
+     "raw": "A_monthsObserved_ge_p_law4_min_months equivalentTo monthsObserved some integer[>= 6]\nLawIVNonConformant equivalentTo A_commitCountCV_ge_p_law4_commit_cv and A_monthsObserved_ge_p_law4_min_months and SoftwareProject\nnose-devs__nose2-268 type SoftwareProject\nnose-devs__nose2-268 commitCountCV 1.878566\nA_commitCountCV_ge_p_law4_commit_cv equivalentTo commitCountCV some decimal[>= 1.5]\nnose-devs__nose2-268 monthsObserved 36"
+    }
+   ],
+   "raw_text": "Axiom: nose-devs__nose2-268 type LawIVNonConformant\n\nExplanation(s): \n1)   A_monthsObserved_ge_p_law4_min_months equivalentTo monthsObserved some integer[>= 6]\n     LawIVNonConformant equivalentTo A_commitCountCV_ge_p_law4_commit_cv\n                                     and A_monthsObserved_ge_p_law4_min_months\n                                     and SoftwareProject\n     nose-devs__nose2-268 type SoftwareProject\n     nose-devs__nose2-268 commitCountCV 1.878566\n     A_commitCountCV_ge_p_law4_commit_cv equivalentTo commitCountCV some decimal[>= 1.5]\n     nose-devs__nose2-268 monthsObserved 36\n\n\n",
+   "seconds": 5.222493014007341,
+   "returncode": 0,
+   "error": null
+  },
+  "lawV": {
+   "class": "LawVNonConformant",
+   "individual": "http://senso-framework.org/data/nose-devs__nose2-268",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/nose-devs__nose2-268 type http://senso-framework.org/ontology/seo#LawVNonConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_linesAddedCV_ge_p_law5_additions_cv",
+       "text": "A_linesAddedCV_ge_p_law5_additions_cv equivalentTo linesAddedCV some decimal[>= 2.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawVNonConformant",
+       "text": "LawVNonConformant equivalentTo A_linesAddedCV_ge_p_law5_additions_cv and A_monthsObserved_ge_p_law5_min_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law5_min_months",
+       "text": "A_monthsObserved_ge_p_law5_min_months equivalentTo monthsObserved some integer[>= 4]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "nose-devs__nose2-268",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "nose-devs__nose2-268 type SoftwareProject"
+      },
+      {
+       "subject": "nose-devs__nose2-268",
+       "prop": "linesAddedCV",
+       "value": 2.185604,
+       "raw": "nose-devs__nose2-268 linesAddedCV 2.185604"
+      },
+      {
+       "subject": "nose-devs__nose2-268",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "nose-devs__nose2-268 monthsObserved 36"
+      }
+     ],
+     "closures": [],
+     "raw": "nose-devs__nose2-268 type SoftwareProject\nA_linesAddedCV_ge_p_law5_additions_cv equivalentTo linesAddedCV some decimal[>= 2.0]\nLawVNonConformant equivalentTo A_linesAddedCV_ge_p_law5_additions_cv and A_monthsObserved_ge_p_law5_min_months and SoftwareProject\nnose-devs__nose2-268 linesAddedCV 2.185604\nA_monthsObserved_ge_p_law5_min_months equivalentTo monthsObserved some integer[>= 4]\nnose-devs__nose2-268 monthsObserved 36"
+    }
+   ],
+   "raw_text": "Axiom: nose-devs__nose2-268 type LawVNonConformant\n\nExplanation(s): \n1)   nose-devs__nose2-268 type SoftwareProject\n     A_linesAddedCV_ge_p_law5_additions_cv equivalentTo linesAddedCV some decimal[>= 2.0]\n     LawVNonConformant equivalentTo A_linesAddedCV_ge_p_law5_additions_cv\n                                    and A_monthsObserved_ge_p_law5_min_months\n                                    and SoftwareProject\n     nose-devs__nose2-268 linesAddedCV 2.185604\n     A_monthsObserved_ge_p_law5_min_months equivalentTo monthsObserved some integer[>= 4]\n     nose-devs__nose2-268 monthsObserved 36\n\n\n",
+   "seconds": 4.842942454968579,
+   "returncode": 0,
+   "error": null
+  },
+  "lawVI": {
+   "class": "LawVIConformant",
+   "individual": "http://senso-framework.org/data/nose-devs__nose2-268",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/nose-devs__nose2-268 type http://senso-framework.org/ontology/seo#LawVIConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "subclass",
+       "subject": "GrowthStage",
+       "text": "GrowthStage subClassOf LawVIConformant"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKTau_gt_0",
+       "text": "A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "GrowthStage",
+       "text": "GrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKpValue_lt_mk_alpha",
+       "text": "A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "nose-devs__nose2-268",
+       "prop": "locMKTau",
+       "value": 0.91746,
+       "raw": "nose-devs__nose2-268 locMKTau 0.91746"
+      },
+      {
+       "subject": "nose-devs__nose2-268",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "nose-devs__nose2-268 type SoftwareProject"
+      },
+      {
+       "subject": "nose-devs__nose2-268",
+       "prop": "locSeriesLength",
+       "value": 36,
+       "raw": "nose-devs__nose2-268 locSeriesLength 36"
+      },
+      {
+       "subject": "nose-devs__nose2-268",
+       "prop": "locMKpValue",
+       "value": 0.0,
+       "raw": "nose-devs__nose2-268 locMKpValue 0.0"
+      }
+     ],
+     "closures": [],
+     "raw": "GrowthStage subClassOf LawVIConformant\nA_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\nA_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\nGrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject\nnose-devs__nose2-268 locMKTau 0.91746\nA_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]\nnose-devs__nose2-268 type SoftwareProject\nnose-devs__nose2-268 locSeriesLength 36\nA_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\nnose-devs__nose2-268 locMKpValue 0.0"
+    }
+   ],
+   "raw_text": "Axiom: nose-devs__nose2-268 type LawVIConformant\n\nExplanation(s): \n1)   GrowthStage subClassOf LawVIConformant\n     A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\n     A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\n     GrowthStage equivalentTo A_locMKTau_gt_0\n                              and A_locMKpValue_lt_mk_alpha\n                              and MKApplicable\n                              and SoftwareProject\n     nose-devs__nose2-268 locMKTau 0.91746\n     A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]\n     nose-devs__nose2-268 type SoftwareProject\n     nose-devs__nose2-268 locSeriesLength 36\n     A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\n     nose-devs__nose2-268 locMKpValue 0.0\n\n\n",
+   "seconds": 5.792255700042006,
+   "returncode": 0,
+   "error": null
+  },
+  "lawVII": {
+   "class": "LawVIIConformant",
+   "individual": "http://senso-framework.org/data/nose-devs__nose2-268",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/nose-devs__nose2-268 type http://senso-framework.org/ontology/seo#LawVIIConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_bugFixHalfRatio_ge_p_law7_tolerance",
+       "text": "A_bugFixHalfRatio_ge_p_law7_tolerance equivalentTo bugFixHalfRatio some decimal[>= 0.9]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawVIIConformantRatio",
+       "text": "LawVIIConformantRatio equivalentTo A_activeMonthCount_ge_p_law7_min_active_months and A_bugFixHalfRatio_ge_p_law7_tolerance and A_bugFixRatioFirstHalf_gt_0 and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_bugFixRatioFirstHalf_gt_0",
+       "text": "A_bugFixRatioFirstHalf_gt_0 equivalentTo bugFixRatioFirstHalf some decimal[> 0.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_activeMonthCount_ge_p_law7_min_active_months",
+       "text": "A_activeMonthCount_ge_p_law7_min_active_months equivalentTo activeMonthCount some integer[>= 4]"
+      },
+      {
+       "kind": "subclass",
+       "subject": "LawVIIConformantRatio",
+       "text": "LawVIIConformantRatio subClassOf LawVIIConformant"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "nose-devs__nose2-268",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "nose-devs__nose2-268 type SoftwareProject"
+      },
+      {
+       "subject": "nose-devs__nose2-268",
+       "prop": "bugFixHalfRatio",
+       "value": 1.552821,
+       "raw": "nose-devs__nose2-268 bugFixHalfRatio 1.552821"
+      },
+      {
+       "subject": "nose-devs__nose2-268",
+       "prop": "activeMonthCount",
+       "value": 28,
+       "raw": "nose-devs__nose2-268 activeMonthCount 28"
+      },
+      {
+       "subject": "nose-devs__nose2-268",
+       "prop": "bugFixRatioFirstHalf",
+       "value": 0.28681,
+       "raw": "nose-devs__nose2-268 bugFixRatioFirstHalf 0.28681"
+      }
+     ],
+     "closures": [],
+     "raw": "A_bugFixHalfRatio_ge_p_law7_tolerance equivalentTo bugFixHalfRatio some decimal[>= 0.9]\nnose-devs__nose2-268 type SoftwareProject\nLawVIIConformantRatio equivalentTo A_activeMonthCount_ge_p_law7_min_active_months and A_bugFixHalfRatio_ge_p_law7_tolerance and A_bugFixRatioFirstHalf_gt_0 and SoftwareProject\nnose-devs__nose2-268 bugFixHalfRatio 1.552821\nnose-devs__nose2-268 activeMonthCount 28\nA_bugFixRatioFirstHalf_gt_0 equivalentTo bugFixRatioFirstHalf some decimal[> 0.0]\nA_activeMonthCount_ge_p_law7_min_active_months equivalentTo activeMonthCount some integer[>= 4]\nnose-devs__nose2-268 bugFixRatioFirstHalf 0.28681\nLawVIIConformantRatio subClassOf LawVIIConformant"
+    }
+   ],
+   "raw_text": "Axiom: nose-devs__nose2-268 type LawVIIConformant\n\nExplanation(s): \n1)   A_bugFixHalfRatio_ge_p_law7_tolerance equivalentTo bugFixHalfRatio some decimal[>= 0.9]\n     nose-devs__nose2-268 type SoftwareProject\n     LawVIIConformantRatio equivalentTo A_activeMonthCount_ge_p_law7_min_active_months\n                                        and A_bugFixHalfRatio_ge_p_law7_tolerance\n                                        and A_bugFixRatioFirstHalf_gt_0\n                                        and SoftwareProject\n     nose-devs__nose2-268 bugFixHalfRatio 1.552821\n     nose-devs__nose2-268 activeMonthCount 28\n     A_bugFixRatioFirstHalf_gt_0 equivalentTo bugFixRatioFirstHalf some decimal[> 0.0]\n     A_activeMonthCount_ge_p_law7_min_active_months equivalentTo activeMonthCount some integer[>= 4]\n     nose-devs__nose2-268 bugFixRatioFirstHalf 0.28681\n     LawVIIConformantRatio subClassOf LawVIIConformant\n\n\n",
+   "seconds": 4.996105158992577,
+   "returncode": 0,
+   "error": null
+  },
+  "lawVIII": {
+   "class": "LawVIIIConformant",
+   "individual": "http://senso-framework.org/data/nose-devs__nose2-268",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/nose-devs__nose2-268 type http://senso-framework.org/ontology/seo#LawVIIIConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio",
+       "text": "A_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio equivalentTo multiAuthorMonthRatio some decimal[> 0.3]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_mergeMonthRatio_gt_p_law8_merge_ratio",
+       "text": "A_mergeMonthRatio_gt_p_law8_merge_ratio equivalentTo MergeActive"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio",
+       "text": "A_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio equivalentTo MultiAuthorActive"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawVIIIConformant",
+       "text": "LawVIIIConformant equivalentTo A_monthsObserved_ge_p_law8_min_months and MergeActive and MultiAuthorActive and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law8_min_months",
+       "text": "A_monthsObserved_ge_p_law8_min_months equivalentTo monthsObserved some integer[>= 6]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_mergeMonthRatio_gt_p_law8_merge_ratio",
+       "text": "A_mergeMonthRatio_gt_p_law8_merge_ratio equivalentTo mergeMonthRatio some decimal[> 0.3]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "nose-devs__nose2-268",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "nose-devs__nose2-268 type SoftwareProject"
+      },
+      {
+       "subject": "nose-devs__nose2-268",
+       "prop": "multiAuthorMonthRatio",
+       "value": 0.638889,
+       "raw": "nose-devs__nose2-268 multiAuthorMonthRatio 0.638889"
+      },
+      {
+       "subject": "nose-devs__nose2-268",
+       "prop": "mergeMonthRatio",
+       "value": 0.666667,
+       "raw": "nose-devs__nose2-268 mergeMonthRatio 0.666667"
+      },
+      {
+       "subject": "nose-devs__nose2-268",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "nose-devs__nose2-268 monthsObserved 36"
+      }
+     ],
+     "closures": [],
+     "raw": "nose-devs__nose2-268 type SoftwareProject\nA_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio equivalentTo multiAuthorMonthRatio some decimal[> 0.3]\nA_mergeMonthRatio_gt_p_law8_merge_ratio equivalentTo MergeActive\nA_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio equivalentTo MultiAuthorActive\nLawVIIIConformant equivalentTo A_monthsObserved_ge_p_law8_min_months and MergeActive and MultiAuthorActive and SoftwareProject\nnose-devs__nose2-268 multiAuthorMonthRatio 0.638889\nnose-devs__nose2-268 mergeMonthRatio 0.666667\nA_monthsObserved_ge_p_law8_min_months equivalentTo monthsObserved some integer[>= 6]\nnose-devs__nose2-268 monthsObserved 36\nA_mergeMonthRatio_gt_p_law8_merge_ratio equivalentTo mergeMonthRatio some decimal[> 0.3]"
+    }
+   ],
+   "raw_text": "Axiom: nose-devs__nose2-268 type LawVIIIConformant\n\nExplanation(s): \n1)   nose-devs__nose2-268 type SoftwareProject\n     A_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio equivalentTo multiAuthorMonthRatio some decimal[> 0.3]\n     A_mergeMonthRatio_gt_p_law8_merge_ratio equivalentTo MergeActive\n     A_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio equivalentTo MultiAuthorActive\n     LawVIIIConformant equivalentTo A_monthsObserved_ge_p_law8_min_months\n                                    and MergeActive\n                                    and MultiAuthorActive\n                                    and SoftwareProject\n     nose-devs__nose2-268 multiAuthorMonthRatio 0.638889\n     nose-devs__nose2-268 mergeMonthRatio 0.666667\n     A_monthsObserved_ge_p_law8_min_months equivalentTo monthsObserved some integer[>= 6]\n     nose-devs__nose2-268 monthsObserved 36\n     A_mergeMonthRatio_gt_p_law8_merge_ratio equivalentTo mergeMonthRatio some decimal[> 0.3]\n\n\n",
+   "seconds": 5.421357630984858,
+   "returncode": 0,
+   "error": null
+  },
+  "module:nose2/plugins": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/nose-devs__nose2-268/module/nose2_plugins-5ff478",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/nose-devs__nose2-268/module/nose2_plugins-5ff478 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "nose2_plugins-5ff478",
+       "prop": "type",
+       "value": "Module",
+       "raw": "nose2_plugins-5ff478 type Module"
+      },
+      {
+       "subject": "nose2_plugins-5ff478",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 4,
+       "raw": "nose2_plugins-5ff478 moduleChangeMonthsInWindow 4"
+      }
+     ],
+     "closures": [],
+     "raw": "nose2_plugins-5ff478 type Module\nA_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\nnose2_plugins-5ff478 moduleChangeMonthsInWindow 4\nOftenChangedModule subClassOf ActiveModule"
+    }
+   ],
+   "raw_text": "Axiom: nose2_plugins-5ff478 type ActiveModule\n\nExplanation(s): \n1)   nose2_plugins-5ff478 type Module\n     A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     nose2_plugins-5ff478 moduleChangeMonthsInWindow 4\n     OftenChangedModule subClassOf ActiveModule\n\n\n",
+   "seconds": 3.589270649012178,
+   "returncode": 0,
+   "error": null
+  },
+  "module:nose2/events.py": {
+   "class": "StableModule",
+   "individual": "http://senso-framework.org/data/nose-devs__nose2-268/module/nose2_events.py-65c81f",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/nose-devs__nose2-268/module/nose2_events.py-65c81f type http://senso-framework.org/ontology/seo#StableModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "StableModule",
+       "text": "StableModule equivalentTo LowRelChurnModule and RarelyChangedModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "LowRelChurnModule",
+       "text": "LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "definition",
+       "subject": "RarelyChangedModule",
+       "text": "RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "nose2_events.py-65c81f",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 2,
+       "raw": "nose2_events.py-65c81f moduleChangeMonthsInWindow 2"
+      },
+      {
+       "subject": "nose2_events.py-65c81f",
+       "prop": "moduleRelChurnInWindow",
+       "value": 0.090426,
+       "raw": "nose2_events.py-65c81f moduleRelChurnInWindow 0.090426"
+      },
+      {
+       "subject": "nose2_events.py-65c81f",
+       "prop": "type",
+       "value": "Module",
+       "raw": "nose2_events.py-65c81f type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\nnose2_events.py-65c81f moduleChangeMonthsInWindow 2\nA_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\nStableModule equivalentTo LowRelChurnModule and RarelyChangedModule\nnose2_events.py-65c81f moduleRelChurnInWindow 0.090426\nLowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module\nRarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module\nnose2_events.py-65c81f type Module"
+    }
+   ],
+   "raw_text": "Axiom: nose2_events.py-65c81f type StableModule\n\nExplanation(s): \n1)   A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\n     nose2_events.py-65c81f moduleChangeMonthsInWindow 2\n     A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\n     StableModule equivalentTo LowRelChurnModule\n                               and RarelyChangedModule\n     nose2_events.py-65c81f moduleRelChurnInWindow 0.090426\n     LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn\n                                    and Module\n     RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months\n                                      and Module\n     nose2_events.py-65c81f type Module\n\n\n",
+   "seconds": 2.790802232979331,
+   "returncode": 0,
+   "error": null
+  },
+  "module:nose2/tools": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/nose-devs__nose2-268/module/nose2_tools-5a1d82",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/nose-devs__nose2-268/module/nose2_tools-5a1d82 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule subClassOf ActiveModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "nose2_tools-5a1d82",
+       "prop": "type",
+       "value": "Module",
+       "raw": "nose2_tools-5a1d82 type Module"
+      },
+      {
+       "subject": "nose2_tools-5a1d82",
+       "prop": "moduleRelChurnInWindow",
+       "value": 0.12782,
+       "raw": "nose2_tools-5a1d82 moduleRelChurnInWindow 0.12782"
+      }
+     ],
+     "closures": [],
+     "raw": "nose2_tools-5a1d82 type Module\nHighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module\nHighRelChurnModule subClassOf ActiveModule\nnose2_tools-5a1d82 moduleRelChurnInWindow 0.12782\nA_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+    }
+   ],
+   "raw_text": "Axiom: nose2_tools-5a1d82 type ActiveModule\n\nExplanation(s): \n1)   nose2_tools-5a1d82 type Module\n     HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn\n                                     and Module\n     HighRelChurnModule subClassOf ActiveModule\n     nose2_tools-5a1d82 moduleRelChurnInWindow 0.12782\n     A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\n\n\n",
+   "seconds": 2.6276180719723925,
+   "returncode": 0,
+   "error": null
+  },
+  "module:nose2/util.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/nose-devs__nose2-268/module/nose2_util.py-8170fb",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/nose-devs__nose2-268/module/nose2_util.py-8170fb type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule subClassOf ActiveModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "nose2_util.py-8170fb",
+       "prop": "moduleRelChurnInWindow",
+       "value": 0.170543,
+       "raw": "nose2_util.py-8170fb moduleRelChurnInWindow 0.170543"
+      },
+      {
+       "subject": "nose2_util.py-8170fb",
+       "prop": "type",
+       "value": "Module",
+       "raw": "nose2_util.py-8170fb type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "nose2_util.py-8170fb moduleRelChurnInWindow 0.170543\nnose2_util.py-8170fb type Module\nHighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module\nHighRelChurnModule subClassOf ActiveModule\nA_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+    }
+   ],
+   "raw_text": "Axiom: nose2_util.py-8170fb type ActiveModule\n\nExplanation(s): \n1)   nose2_util.py-8170fb moduleRelChurnInWindow 0.170543\n     nose2_util.py-8170fb type Module\n     HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn\n                                     and Module\n     HighRelChurnModule subClassOf ActiveModule\n     A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\n\n\n",
+   "seconds": 2.5930390610010363,
+   "returncode": 0,
+   "error": null
+  },
+  "module:nose2/main.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/nose-devs__nose2-268/module/nose2_main.py-c8afd1",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/nose-devs__nose2-268/module/nose2_main.py-c8afd1 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "nose2_main.py-c8afd1",
+       "prop": "type",
+       "value": "Module",
+       "raw": "nose2_main.py-c8afd1 type Module"
+      },
+      {
+       "subject": "nose2_main.py-c8afd1",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 3,
+       "raw": "nose2_main.py-c8afd1 moduleChangeMonthsInWindow 3"
+      }
+     ],
+     "closures": [],
+     "raw": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\nnose2_main.py-c8afd1 type Module\nnose2_main.py-c8afd1 moduleChangeMonthsInWindow 3\nOftenChangedModule subClassOf ActiveModule"
+    }
+   ],
+   "raw_text": "Axiom: nose2_main.py-c8afd1 type ActiveModule\n\nExplanation(s): \n1)   A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     nose2_main.py-c8afd1 type Module\n     nose2_main.py-c8afd1 moduleChangeMonthsInWindow 3\n     OftenChangedModule subClassOf ActiveModule\n\n\n",
+   "seconds": 2.5943252869765274,
+   "returncode": 0,
+   "error": null
+  },
+  "module:nose2/backports": {
+   "class": "StableModule",
+   "individual": "http://senso-framework.org/data/nose-devs__nose2-268/module/nose2_backports-9e7f36",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/nose-devs__nose2-268/module/nose2_backports-9e7f36 type http://senso-framework.org/ontology/seo#StableModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]"
+      },
+      {
+       "kind": "definition",
+       "subject": "StableModule",
+       "text": "StableModule equivalentTo LowRelChurnModule and RarelyChangedModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LowRelChurnModule",
+       "text": "LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "definition",
+       "subject": "RarelyChangedModule",
+       "text": "RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "nose2_backports-9e7f36",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 0,
+       "raw": "nose2_backports-9e7f36 moduleChangeMonthsInWindow 0"
+      },
+      {
+       "subject": "nose2_backports-9e7f36",
+       "prop": "type",
+       "value": "Module",
+       "raw": "nose2_backports-9e7f36 type Module"
+      },
+      {
+       "subject": "nose2_backports-9e7f36",
+       "prop": "moduleRelChurnInWindow",
+       "value": 0.0,
+       "raw": "nose2_backports-9e7f36 moduleRelChurnInWindow 0.0"
+      }
+     ],
+     "closures": [],
+     "raw": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\nStableModule equivalentTo LowRelChurnModule and RarelyChangedModule\nnose2_backports-9e7f36 moduleChangeMonthsInWindow 0\nA_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\nLowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module\nRarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module\nnose2_backports-9e7f36 type Module\nnose2_backports-9e7f36 moduleRelChurnInWindow 0.0"
+    }
+   ],
+   "raw_text": "Axiom: nose2_backports-9e7f36 type StableModule\n\nExplanation(s): \n1)   A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\n     StableModule equivalentTo LowRelChurnModule\n                               and RarelyChangedModule\n     nose2_backports-9e7f36 moduleChangeMonthsInWindow 0\n     A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\n     LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn\n                                    and Module\n     RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months\n                                      and Module\n     nose2_backports-9e7f36 type Module\n     nose2_backports-9e7f36 moduleRelChurnInWindow 0.0\n\n\n",
+   "seconds": 2.8036971620167606,
+   "returncode": 0,
+   "error": null
+  },
+  "module:nose2/sphinxext.py": {
+   "class": "StableModule",
+   "individual": "http://senso-framework.org/data/nose-devs__nose2-268/module/nose2_sphinxext.py-88d12f",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/nose-devs__nose2-268/module/nose2_sphinxext.py-88d12f type http://senso-framework.org/ontology/seo#StableModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "StableModule",
+       "text": "StableModule equivalentTo LowRelChurnModule and RarelyChangedModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "LowRelChurnModule",
+       "text": "LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "definition",
+       "subject": "RarelyChangedModule",
+       "text": "RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "nose2_sphinxext.py-88d12f",
+       "prop": "moduleRelChurnInWindow",
+       "value": 0.009662,
+       "raw": "nose2_sphinxext.py-88d12f moduleRelChurnInWindow 0.009662"
+      },
+      {
+       "subject": "nose2_sphinxext.py-88d12f",
+       "prop": "type",
+       "value": "Module",
+       "raw": "nose2_sphinxext.py-88d12f type Module"
+      },
+      {
+       "subject": "nose2_sphinxext.py-88d12f",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 1,
+       "raw": "nose2_sphinxext.py-88d12f moduleChangeMonthsInWindow 1"
+      }
+     ],
+     "closures": [],
+     "raw": "nose2_sphinxext.py-88d12f moduleRelChurnInWindow 0.009662\nA_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\nA_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\nnose2_sphinxext.py-88d12f type Module\nnose2_sphinxext.py-88d12f moduleChangeMonthsInWindow 1\nStableModule equivalentTo LowRelChurnModule and RarelyChangedModule\nLowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module\nRarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module"
+    }
+   ],
+   "raw_text": "Axiom: nose2_sphinxext.py-88d12f type StableModule\n\nExplanation(s): \n1)   nose2_sphinxext.py-88d12f moduleRelChurnInWindow 0.009662\n     A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\n     A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\n     nose2_sphinxext.py-88d12f type Module\n     nose2_sphinxext.py-88d12f moduleChangeMonthsInWindow 1\n     StableModule equivalentTo LowRelChurnModule\n                               and RarelyChangedModule\n     LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn\n                                    and Module\n     RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months\n                                      and Module\n\n\n",
+   "seconds": 2.7107321040239185,
+   "returncode": 0,
+   "error": null
+  },
+  "module:docs": {
+   "class": "StableModule",
+   "individual": "http://senso-framework.org/data/nose-devs__nose2-268/module/docs-71ab8b",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/nose-devs__nose2-268/module/docs-71ab8b type http://senso-framework.org/ontology/seo#StableModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "StableModule",
+       "text": "StableModule equivalentTo LowRelChurnModule and RarelyChangedModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "LowRelChurnModule",
+       "text": "LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "definition",
+       "subject": "RarelyChangedModule",
+       "text": "RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "docs-71ab8b",
+       "prop": "type",
+       "value": "Module",
+       "raw": "docs-71ab8b type Module"
+      },
+      {
+       "subject": "docs-71ab8b",
+       "prop": "moduleRelChurnInWindow",
+       "value": 0.0,
+       "raw": "docs-71ab8b moduleRelChurnInWindow 0.0"
+      },
+      {
+       "subject": "docs-71ab8b",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 0,
+       "raw": "docs-71ab8b moduleChangeMonthsInWindow 0"
+      }
+     ],
+     "closures": [],
+     "raw": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\nA_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\ndocs-71ab8b type Module\nStableModule equivalentTo LowRelChurnModule and RarelyChangedModule\ndocs-71ab8b moduleRelChurnInWindow 0.0\nLowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module\nRarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module\ndocs-71ab8b moduleChangeMonthsInWindow 0"
+    }
+   ],
+   "raw_text": "Axiom: docs-71ab8b type StableModule\n\nExplanation(s): \n1)   A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\n     A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\n     docs-71ab8b type Module\n     StableModule equivalentTo LowRelChurnModule\n                               and RarelyChangedModule\n     docs-71ab8b moduleRelChurnInWindow 0.0\n     LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn\n                                    and Module\n     RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months\n                                      and Module\n     docs-71ab8b moduleChangeMonthsInWindow 0\n\n\n",
+   "seconds": 2.6461281010415405,
+   "returncode": 0,
+   "error": null
+  },
+  "module:nose2/session.py": {
+   "class": "StableModule",
+   "individual": "http://senso-framework.org/data/nose-devs__nose2-268/module/nose2_session.py-c72730",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/nose-devs__nose2-268/module/nose2_session.py-c72730 type http://senso-framework.org/ontology/seo#StableModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "StableModule",
+       "text": "StableModule equivalentTo LowRelChurnModule and RarelyChangedModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "LowRelChurnModule",
+       "text": "LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "definition",
+       "subject": "RarelyChangedModule",
+       "text": "RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "nose2_session.py-c72730",
+       "prop": "type",
+       "value": "Module",
+       "raw": "nose2_session.py-c72730 type Module"
+      },
+      {
+       "subject": "nose2_session.py-c72730",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 1,
+       "raw": "nose2_session.py-c72730 moduleChangeMonthsInWindow 1"
+      },
+      {
+       "subject": "nose2_session.py-c72730",
+       "prop": "moduleRelChurnInWindow",
+       "value": 0.012195,
+       "raw": "nose2_session.py-c72730 moduleRelChurnInWindow 0.012195"
+      }
+     ],
+     "closures": [],
+     "raw": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\nnose2_session.py-c72730 type Module\nA_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\nStableModule equivalentTo LowRelChurnModule and RarelyChangedModule\nnose2_session.py-c72730 moduleChangeMonthsInWindow 1\nnose2_session.py-c72730 moduleRelChurnInWindow 0.012195\nLowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module\nRarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module"
+    }
+   ],
+   "raw_text": "Axiom: nose2_session.py-c72730 type StableModule\n\nExplanation(s): \n1)   A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\n     nose2_session.py-c72730 type Module\n     A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\n     StableModule equivalentTo LowRelChurnModule\n                               and RarelyChangedModule\n     nose2_session.py-c72730 moduleChangeMonthsInWindow 1\n     nose2_session.py-c72730 moduleRelChurnInWindow 0.012195\n     LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn\n                                    and Module\n     RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months\n                                      and Module\n\n\n",
+   "seconds": 2.6303198219975457,
+   "returncode": 0,
+   "error": null
+  },
+  "module:nose2/suite.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/nose-devs__nose2-268/module/nose2_suite.py-aff059",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/nose-devs__nose2-268/module/nose2_suite.py-aff059 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule subClassOf ActiveModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "nose2_suite.py-aff059",
+       "prop": "type",
+       "value": "Module",
+       "raw": "nose2_suite.py-aff059 type Module"
+      },
+      {
+       "subject": "nose2_suite.py-aff059",
+       "prop": "moduleRelChurnInWindow",
+       "value": 0.107143,
+       "raw": "nose2_suite.py-aff059 moduleRelChurnInWindow 0.107143"
+      }
+     ],
+     "closures": [],
+     "raw": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module\nHighRelChurnModule subClassOf ActiveModule\nnose2_suite.py-aff059 type Module\nA_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\nnose2_suite.py-aff059 moduleRelChurnInWindow 0.107143"
+    }
+   ],
+   "raw_text": "Axiom: nose2_suite.py-aff059 type ActiveModule\n\nExplanation(s): \n1)   HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn\n                                     and Module\n     HighRelChurnModule subClassOf ActiveModule\n     nose2_suite.py-aff059 type Module\n     A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\n     nose2_suite.py-aff059 moduleRelChurnInWindow 0.107143\n\n\n",
+   "seconds": 2.7218549799872562,
+   "returncode": 0,
+   "error": null
+  },
+  "module:nose2/loader.py": {
+   "class": "StableModule",
+   "individual": "http://senso-framework.org/data/nose-devs__nose2-268/module/nose2_loader.py-55a310",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/nose-devs__nose2-268/module/nose2_loader.py-55a310 type http://senso-framework.org/ontology/seo#StableModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "StableModule",
+       "text": "StableModule equivalentTo LowRelChurnModule and RarelyChangedModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "LowRelChurnModule",
+       "text": "LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "definition",
+       "subject": "RarelyChangedModule",
+       "text": "RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "nose2_loader.py-55a310",
+       "prop": "moduleRelChurnInWindow",
+       "value": 0.09901,
+       "raw": "nose2_loader.py-55a310 moduleRelChurnInWindow 0.09901"
+      },
+      {
+       "subject": "nose2_loader.py-55a310",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 2,
+       "raw": "nose2_loader.py-55a310 moduleChangeMonthsInWindow 2"
+      },
+      {
+       "subject": "nose2_loader.py-55a310",
+       "prop": "type",
+       "value": "Module",
+       "raw": "nose2_loader.py-55a310 type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\nnose2_loader.py-55a310 moduleRelChurnInWindow 0.09901\nnose2_loader.py-55a310 moduleChangeMonthsInWindow 2\nA_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\nStableModule equivalentTo LowRelChurnModule and RarelyChangedModule\nnose2_loader.py-55a310 type Module\nLowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module\nRarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module"
+    }
+   ],
+   "raw_text": "Axiom: nose2_loader.py-55a310 type StableModule\n\nExplanation(s): \n1)   A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\n     nose2_loader.py-55a310 moduleRelChurnInWindow 0.09901\n     nose2_loader.py-55a310 moduleChangeMonthsInWindow 2\n     A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\n     StableModule equivalentTo LowRelChurnModule\n                               and RarelyChangedModule\n     nose2_loader.py-55a310 type Module\n     LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn\n                                    and Module\n     RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months\n                                      and Module\n\n\n",
+   "seconds": 2.6559142739861272,
+   "returncode": 0,
+   "error": null
+  },
+  "module:nose2/result.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/nose-devs__nose2-268/module/nose2_result.py-7d8f07",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/nose-devs__nose2-268/module/nose2_result.py-7d8f07 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule subClassOf ActiveModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "nose2_result.py-7d8f07",
+       "prop": "moduleRelChurnInWindow",
+       "value": 0.126316,
+       "raw": "nose2_result.py-7d8f07 moduleRelChurnInWindow 0.126316"
+      },
+      {
+       "subject": "nose2_result.py-7d8f07",
+       "prop": "type",
+       "value": "Module",
+       "raw": "nose2_result.py-7d8f07 type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module\nHighRelChurnModule subClassOf ActiveModule\nA_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\nnose2_result.py-7d8f07 moduleRelChurnInWindow 0.126316\nnose2_result.py-7d8f07 type Module"
+    }
+   ],
+   "raw_text": "Axiom: nose2_result.py-7d8f07 type ActiveModule\n\nExplanation(s): \n1)   HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn\n                                     and Module\n     HighRelChurnModule subClassOf ActiveModule\n     A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\n     nose2_result.py-7d8f07 moduleRelChurnInWindow 0.126316\n     nose2_result.py-7d8f07 type Module\n\n\n",
+   "seconds": 2.5919313260237686,
+   "returncode": 0,
+   "error": null
+  },
+  "module:nose2/config.py": {
+   "class": "StableModule",
+   "individual": "http://senso-framework.org/data/nose-devs__nose2-268/module/nose2_config.py-cff413",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/nose-devs__nose2-268/module/nose2_config.py-cff413 type http://senso-framework.org/ontology/seo#StableModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "StableModule",
+       "text": "StableModule equivalentTo LowRelChurnModule and RarelyChangedModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "LowRelChurnModule",
+       "text": "LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "definition",
+       "subject": "RarelyChangedModule",
+       "text": "RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "nose2_config.py-cff413",
+       "prop": "moduleRelChurnInWindow",
+       "value": 0.065574,
+       "raw": "nose2_config.py-cff413 moduleRelChurnInWindow 0.065574"
+      },
+      {
+       "subject": "nose2_config.py-cff413",
+       "prop": "type",
+       "value": "Module",
+       "raw": "nose2_config.py-cff413 type Module"
+      },
+      {
+       "subject": "nose2_config.py-cff413",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 1,
+       "raw": "nose2_config.py-cff413 moduleChangeMonthsInWindow 1"
+      }
+     ],
+     "closures": [],
+     "raw": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\nnose2_config.py-cff413 moduleRelChurnInWindow 0.065574\nA_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\nnose2_config.py-cff413 type Module\nStableModule equivalentTo LowRelChurnModule and RarelyChangedModule\nnose2_config.py-cff413 moduleChangeMonthsInWindow 1\nLowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module\nRarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module"
+    }
+   ],
+   "raw_text": "Axiom: nose2_config.py-cff413 type StableModule\n\nExplanation(s): \n1)   A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\n     nose2_config.py-cff413 moduleRelChurnInWindow 0.065574\n     A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\n     nose2_config.py-cff413 type Module\n     StableModule equivalentTo LowRelChurnModule\n                               and RarelyChangedModule\n     nose2_config.py-cff413 moduleChangeMonthsInWindow 1\n     LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn\n                                    and Module\n     RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months\n                                      and Module\n\n\n",
+   "seconds": 2.605578651011456,
+   "returncode": 0,
+   "error": null
+  },
+  "module:nose2/runner.py": {
+   "class": "StableModule",
+   "individual": "http://senso-framework.org/data/nose-devs__nose2-268/module/nose2_runner.py-502bb6",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/nose-devs__nose2-268/module/nose2_runner.py-502bb6 type http://senso-framework.org/ontology/seo#StableModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]"
+      },
+      {
+       "kind": "definition",
+       "subject": "StableModule",
+       "text": "StableModule equivalentTo LowRelChurnModule and RarelyChangedModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LowRelChurnModule",
+       "text": "LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "definition",
+       "subject": "RarelyChangedModule",
+       "text": "RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "nose2_runner.py-502bb6",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 1,
+       "raw": "nose2_runner.py-502bb6 moduleChangeMonthsInWindow 1"
+      },
+      {
+       "subject": "nose2_runner.py-502bb6",
+       "prop": "moduleRelChurnInWindow",
+       "value": 0.039216,
+       "raw": "nose2_runner.py-502bb6 moduleRelChurnInWindow 0.039216"
+      },
+      {
+       "subject": "nose2_runner.py-502bb6",
+       "prop": "type",
+       "value": "Module",
+       "raw": "nose2_runner.py-502bb6 type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\nStableModule equivalentTo LowRelChurnModule and RarelyChangedModule\nnose2_runner.py-502bb6 moduleChangeMonthsInWindow 1\nnose2_runner.py-502bb6 moduleRelChurnInWindow 0.039216\nnose2_runner.py-502bb6 type Module\nA_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\nLowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module\nRarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module"
+    }
+   ],
+   "raw_text": "Axiom: nose2_runner.py-502bb6 type StableModule\n\nExplanation(s): \n1)   A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\n     StableModule equivalentTo LowRelChurnModule\n                               and RarelyChangedModule\n     nose2_runner.py-502bb6 moduleChangeMonthsInWindow 1\n     nose2_runner.py-502bb6 moduleRelChurnInWindow 0.039216\n     nose2_runner.py-502bb6 type Module\n     A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\n     LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn\n                                    and Module\n     RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months\n                                      and Module\n\n\n",
+   "seconds": 2.6954577440046705,
+   "returncode": 0,
+   "error": null
+  },
+  "module:nose2/collector.py": {
+   "class": "StableModule",
+   "individual": "http://senso-framework.org/data/nose-devs__nose2-268/module/nose2_collector.py-fd41ff",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/nose-devs__nose2-268/module/nose2_collector.py-fd41ff type http://senso-framework.org/ontology/seo#StableModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "StableModule",
+       "text": "StableModule equivalentTo LowRelChurnModule and RarelyChangedModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "LowRelChurnModule",
+       "text": "LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "definition",
+       "subject": "RarelyChangedModule",
+       "text": "RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "nose2_collector.py-fd41ff",
+       "prop": "type",
+       "value": "Module",
+       "raw": "nose2_collector.py-fd41ff type Module"
+      },
+      {
+       "subject": "nose2_collector.py-fd41ff",
+       "prop": "moduleRelChurnInWindow",
+       "value": 0.0,
+       "raw": "nose2_collector.py-fd41ff moduleRelChurnInWindow 0.0"
+      },
+      {
+       "subject": "nose2_collector.py-fd41ff",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 0,
+       "raw": "nose2_collector.py-fd41ff moduleChangeMonthsInWindow 0"
+      }
+     ],
+     "closures": [],
+     "raw": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\nnose2_collector.py-fd41ff type Module\nA_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\nnose2_collector.py-fd41ff moduleRelChurnInWindow 0.0\nStableModule equivalentTo LowRelChurnModule and RarelyChangedModule\nnose2_collector.py-fd41ff moduleChangeMonthsInWindow 0\nLowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module\nRarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module"
+    }
+   ],
+   "raw_text": "Axiom: nose2_collector.py-fd41ff type StableModule\n\nExplanation(s): \n1)   A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\n     nose2_collector.py-fd41ff type Module\n     A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\n     nose2_collector.py-fd41ff moduleRelChurnInWindow 0.0\n     StableModule equivalentTo LowRelChurnModule\n                               and RarelyChangedModule\n     nose2_collector.py-fd41ff moduleChangeMonthsInWindow 0\n     LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn\n                                    and Module\n     RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months\n                                      and Module\n\n\n",
+   "seconds": 2.8146196589805186,
+   "returncode": 0,
+   "error": null
+  },
+  "module:nose2/compat.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/nose-devs__nose2-268/module/nose2_compat.py-1bc9c2",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/nose-devs__nose2-268/module/nose2_compat.py-1bc9c2 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule subClassOf ActiveModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "nose2_compat.py-1bc9c2",
+       "prop": "moduleRelChurnInWindow",
+       "value": 0.25,
+       "raw": "nose2_compat.py-1bc9c2 moduleRelChurnInWindow 0.25"
+      },
+      {
+       "subject": "nose2_compat.py-1bc9c2",
+       "prop": "type",
+       "value": "Module",
+       "raw": "nose2_compat.py-1bc9c2 type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module\nHighRelChurnModule subClassOf ActiveModule\nnose2_compat.py-1bc9c2 moduleRelChurnInWindow 0.25\nnose2_compat.py-1bc9c2 type Module\nA_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+    }
+   ],
+   "raw_text": "Axiom: nose2_compat.py-1bc9c2 type ActiveModule\n\nExplanation(s): \n1)   HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn\n                                     and Module\n     HighRelChurnModule subClassOf ActiveModule\n     nose2_compat.py-1bc9c2 moduleRelChurnInWindow 0.25\n     nose2_compat.py-1bc9c2 type Module\n     A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\n\n\n",
+   "seconds": 2.561237073969096,
+   "returncode": 0,
+   "error": null
+  },
+  "module:unit_workaround.py": {
+   "class": "StableModule",
+   "individual": "http://senso-framework.org/data/nose-devs__nose2-268/module/unit_workaround.py-a8a497",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/nose-devs__nose2-268/module/unit_workaround.py-a8a497 type http://senso-framework.org/ontology/seo#StableModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "StableModule",
+       "text": "StableModule equivalentTo LowRelChurnModule and RarelyChangedModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "LowRelChurnModule",
+       "text": "LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "definition",
+       "subject": "RarelyChangedModule",
+       "text": "RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "unit_workaround.py-a8a497",
+       "prop": "moduleRelChurnInWindow",
+       "value": 0.0,
+       "raw": "unit_workaround.py-a8a497 moduleRelChurnInWindow 0.0"
+      },
+      {
+       "subject": "unit_workaround.py-a8a497",
+       "prop": "type",
+       "value": "Module",
+       "raw": "unit_workaround.py-a8a497 type Module"
+      },
+      {
+       "subject": "unit_workaround.py-a8a497",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 0,
+       "raw": "unit_workaround.py-a8a497 moduleChangeMonthsInWindow 0"
+      }
+     ],
+     "closures": [],
+     "raw": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\nunit_workaround.py-a8a497 moduleRelChurnInWindow 0.0\nunit_workaround.py-a8a497 type Module\nA_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\nunit_workaround.py-a8a497 moduleChangeMonthsInWindow 0\nStableModule equivalentTo LowRelChurnModule and RarelyChangedModule\nLowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module\nRarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module"
+    }
+   ],
+   "raw_text": "Axiom: unit_workaround.py-a8a497 type StableModule\n\nExplanation(s): \n1)   A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\n     unit_workaround.py-a8a497 moduleRelChurnInWindow 0.0\n     unit_workaround.py-a8a497 type Module\n     A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\n     unit_workaround.py-a8a497 moduleChangeMonthsInWindow 0\n     StableModule equivalentTo LowRelChurnModule\n                               and RarelyChangedModule\n     LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn\n                                    and Module\n     RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months\n                                      and Module\n\n\n",
+   "seconds": 2.5866268450045027,
+   "returncode": 0,
+   "error": null
+  },
+  "module:nose2/__main__.py": {
+   "class": "StableModule",
+   "individual": "http://senso-framework.org/data/nose-devs__nose2-268/module/nose2___main__.py-bcadec",
+   "attempts": 3,
+   "target": "http://senso-framework.org/data/nose-devs__nose2-268/module/nose2___main__.py-bcadec type http://senso-framework.org/ontology/seo#StableModule",
+   "justifications": [],
+   "raw_text": "",
+   "seconds": 2.5100074580404907,
+   "returncode": 1,
+   "error": "Exception in thread \"main\" org.mindswap.pellet.exceptions.InternalReasonerException: Adding type to a pruned node \"anon(13)\" restrictedDatatype(http://www.w3.org/2001/XMLSchema#decimal,[facet(http://www.w3.org/2001/XMLSchema#minExclusive,literal(0.15,(),http://www.w3.org/2001/XMLSchema#decimal))])\n\tat org.mindswap.pellet.Node.addType(Node.java:448)\n\tat org.mindswap.pellet.Literal.addType(Literal.java:257)\n\tat org.mindswap.pellet.tableau.completion.CompletionStrategy.addType(CompletionStrategy.java:438)\n\tat org.mindswap.pellet.tableau.completion.rule.SomeValuesRule.applySomeValuesRule(SomeValuesRule.java:180)\n\tat org.mindswap.pellet.tableau.completion.rule.SomeValuesRule.apply(SomeValuesRule.java:64)\n\tat org.mindswap.pellet.tableau.completion.rule.AbstractTableauRule.apply(AbstractTableauRule.java:64)\n\tat org.mindswap.pellet.tableau.completion.SROIQStrategy.complete(SROIQStrategy.java:157)\n\tat org.mindswap.pellet.ABox.isConsistent(ABox.java:1423)\n\tat org.mindswap.pellet.ABox.isSatisfiab"
+  },
+  "module:nose2/exceptions.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/nose-devs__nose2-268/module/nose2_exceptions.py-518504",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/nose-devs__nose2-268/module/nose2_exceptions.py-518504 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule subClassOf ActiveModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "nose2_exceptions.py-518504",
+       "prop": "type",
+       "value": "Module",
+       "raw": "nose2_exceptions.py-518504 type Module"
+      },
+      {
+       "subject": "nose2_exceptions.py-518504",
+       "prop": "moduleRelChurnInWindow",
+       "value": 0.285714,
+       "raw": "nose2_exceptions.py-518504 moduleRelChurnInWindow 0.285714"
+      }
+     ],
+     "closures": [],
+     "raw": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module\nnose2_exceptions.py-518504 type Module\nHighRelChurnModule subClassOf ActiveModule\nA_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\nnose2_exceptions.py-518504 moduleRelChurnInWindow 0.285714"
+    }
+   ],
+   "raw_text": "Axiom: nose2_exceptions.py-518504 type ActiveModule\n\nExplanation(s): \n1)   HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn\n                                     and Module\n     nose2_exceptions.py-518504 type Module\n     HighRelChurnModule subClassOf ActiveModule\n     A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\n     nose2_exceptions.py-518504 moduleRelChurnInWindow 0.285714\n\n\n",
+   "seconds": 2.5185440480127,
+   "returncode": 0,
+   "error": null
+  },
+  "module:nose2/__init__.py": {
+   "class": "StableModule",
+   "individual": "http://senso-framework.org/data/nose-devs__nose2-268/module/nose2___init__.py-b685a3",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/nose-devs__nose2-268/module/nose2___init__.py-b685a3 type http://senso-framework.org/ontology/seo#StableModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "StableModule",
+       "text": "StableModule equivalentTo LowRelChurnModule and RarelyChangedModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "LowRelChurnModule",
+       "text": "LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "definition",
+       "subject": "RarelyChangedModule",
+       "text": "RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "nose2___init__.py-b685a3",
+       "prop": "type",
+       "value": "Module",
+       "raw": "nose2___init__.py-b685a3 type Module"
+      },
+      {
+       "subject": "nose2___init__.py-b685a3",
+       "prop": "moduleRelChurnInWindow",
+       "value": 0.0,
+       "raw": "nose2___init__.py-b685a3 moduleRelChurnInWindow 0.0"
+      },
+      {
+       "subject": "nose2___init__.py-b685a3",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 0,
+       "raw": "nose2___init__.py-b685a3 moduleChangeMonthsInWindow 0"
+      }
+     ],
+     "closures": [],
+     "raw": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\nA_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\nnose2___init__.py-b685a3 type Module\nStableModule equivalentTo LowRelChurnModule and RarelyChangedModule\nnose2___init__.py-b685a3 moduleRelChurnInWindow 0.0\nLowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module\nRarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module\nnose2___init__.py-b685a3 moduleChangeMonthsInWindow 0"
+    }
+   ],
+   "raw_text": "Axiom: nose2___init__.py-b685a3 type StableModule\n\nExplanation(s): \n1)   A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\n     A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\n     nose2___init__.py-b685a3 type Module\n     StableModule equivalentTo LowRelChurnModule\n                               and RarelyChangedModule\n     nose2___init__.py-b685a3 moduleRelChurnInWindow 0.0\n     LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn\n                                    and Module\n     RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months\n                                      and Module\n     nose2___init__.py-b685a3 moduleChangeMonthsInWindow 0\n\n\n",
+   "seconds": 2.7601870769867674,
+   "returncode": 0,
+   "error": null
+  }
+ },
+ "timings": {
+  "t_clone": 0.003,
+  "t_mine": 2.606,
+  "t_loc": 1.262,
+  "t_reason_A": 3.084,
+  "mining_cached": false,
+  "t_modules": 1.162,
+  "t_reason_B": 2.175,
+  "n_configs": 1,
+  "t_explain": 109.466,
+  "n_explain_calls": 29,
+  "t_writeback": 0.0,
+  "t_total": 121.3
+ }
+}

@@ -1,0 +1,365 @@
+{
+ "tasks": {
+  "imankulov__linguee-api-51": {
+   "repo": "imankulov/linguee-api",
+   "stage": "dev",
+   "sha256": {
+    "T": "7af751c89663521311a6cd293a9506495bacad2e14ae05eb67b0f0ea80f1cbf1",
+    "F_R": "87a515b1c2a941f543100d84d65076577d5c2fdd5796bd7acad952d4ce48fcd6",
+    "F_I": "873b7c37a199401e4eb00aa450ca90b066d7c6254b243ec3f8233987b24adca6"
+   },
+   "chars": {
+    "T": 402,
+    "F_R": 398,
+    "F_I": 419
+   },
+   "flags": [],
+   "tokens": {
+    "F_R": [
+     {
+      "kind": 1,
+      "type": "path",
+      "values": [
+       "linguee_api/core",
+       "core"
+      ]
+     },
+     {
+      "kind": 2,
+      "type": "path",
+      "values": [
+       "linguee_api/schema.py",
+       "schema.py"
+      ]
+     },
+     {
+      "kind": 3,
+      "type": "regex",
+      "regex": "\\bmake\\b[^|;&\\n]*\\btest\\b",
+      "target": "test"
+     },
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "toolz"
+      ]
+     }
+    ],
+    "F_I": [
+     {
+      "kind": 1,
+      "type": "path",
+      "values": [
+       "linguee_api/downloaders/core",
+       "core"
+      ]
+     },
+     {
+      "kind": 2,
+      "type": "path",
+      "values": [
+       "scripts/examples.py",
+       "examples.py"
+      ]
+     },
+     {
+      "kind": 3,
+      "type": "regex",
+      "regex": "\\bmake\\b[^|;&\\n]*\\binstall\\b",
+      "target": "install"
+     },
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "boltons"
+      ]
+     }
+    ]
+   },
+   "rejects": {},
+   "rounds": 1,
+   "python_spec": "^3.8",
+   "slots": {
+    "test_root": "tests",
+    "P1": {
+     "replaced": "linguee_api/downloaders",
+     "name": "core",
+     "F_R": "linguee_api/core",
+     "F_I": "linguee_api/downloaders/core"
+    },
+    "P2": {
+     "replaced": null,
+     "F_R": "linguee_api/schema.py",
+     "F_I": "scripts/examples.py"
+    },
+    "C": {
+     "F_R": "make test",
+     "F_I": "make install"
+    },
+    "D": {
+     "replaced": "fastapi",
+     "F_R": "toolz",
+     "F_I": "boltons"
+    }
+   },
+   "fallbacks": {
+    "F_R": [],
+    "F_I": []
+   },
+   "n_claims_T": 14,
+   "n_false": {
+    "F_R": 4,
+    "F_I": 4
+   },
+   "pointer_in_issue": false,
+   "gold_dirs": [
+    "linguee_api"
+   ],
+   "manifest_all_ok": {
+    "T": true,
+    "F_R": true,
+    "F_I": true
+   },
+   "modes": {
+    "F_R": {
+     "1": "replace",
+     "2": "add",
+     "3": "replace",
+     "4": "replace"
+    },
+    "F_I": {
+     "1": "replace",
+     "2": "add",
+     "3": "replace",
+     "4": "replace"
+    }
+   },
+   "length_diff": {
+    "F_R": -4,
+    "F_I": 17
+   },
+   "false_claims": [
+    {
+     "cond": "F_R",
+     "key": "T1|linguee_api/core",
+     "kind": 1,
+     "mode": "replace"
+    },
+    {
+     "cond": "F_R",
+     "key": "T1|linguee_api/schema.py",
+     "kind": 2,
+     "mode": "add"
+    },
+    {
+     "cond": "F_R",
+     "key": "T5|make|test",
+     "kind": 3,
+     "mode": "replace"
+    },
+    {
+     "cond": "F_R",
+     "key": "T4|toolz|",
+     "kind": 4,
+     "mode": "replace"
+    },
+    {
+     "cond": "F_I",
+     "key": "T1|linguee_api/downloaders/core",
+     "kind": 1,
+     "mode": "replace"
+    },
+    {
+     "cond": "F_I",
+     "key": "T1|scripts/examples.py",
+     "kind": 2,
+     "mode": "add"
+    },
+    {
+     "cond": "F_I",
+     "key": "T5|make|install",
+     "kind": 3,
+     "mode": "replace"
+    },
+    {
+     "cond": "F_I",
+     "key": "T4|boltons|",
+     "kind": 4,
+     "mode": "replace"
+    }
+   ]
+  },
+  "sigma67__ytmusicapi-560": {
+   "repo": "sigma67/ytmusicapi",
+   "stage": "dev",
+   "sha256": {
+    "T": "fdfe9edab84733017fd0fc157be84bd008772144c3df53709858c47510d7459a",
+    "F_R": "a3d2e623f52e8edf5a21af30f2ef2dadbb932e5b34bfc5405eb671f38149b346",
+    "F_I": "fb0e814e7ddb20a32eb518232e838c4710bb6ad432ec137871207e16491b679a"
+   },
+   "chars": {
+    "T": 389,
+    "F_R": 380,
+    "F_I": 383
+   },
+   "flags": [
+    "kind3_dropped",
+    "kind4_R_used_I_competitor"
+   ],
+   "tokens": {
+    "F_R": [
+     {
+      "kind": 1,
+      "type": "path",
+      "values": [
+       "ytmusicapi/core",
+       "core"
+      ]
+     },
+     {
+      "kind": 2,
+      "type": "path",
+      "values": [
+       "ytmusicapi/auth/oauth/base.py",
+       "base.py"
+      ]
+     },
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "httpx"
+      ]
+     }
+    ],
+    "F_I": [
+     {
+      "kind": 1,
+      "type": "path",
+      "values": [
+       "ytmusicapi/auth/core",
+       "core"
+      ]
+     },
+     {
+      "kind": 2,
+      "type": "path",
+      "values": [
+       "ytmusicapi/auth/internal.py",
+       "internal.py"
+      ]
+     },
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "httpx"
+      ]
+     }
+    ]
+   },
+   "rejects": {},
+   "rounds": 1,
+   "python_spec": ">=3.8",
+   "slots": {
+    "test_root": "tests",
+    "P1": {
+     "replaced": "ytmusicapi/auth",
+     "name": "core",
+     "F_R": "ytmusicapi/core",
+     "F_I": "ytmusicapi/auth/core"
+    },
+    "P2": {
+     "replaced": "ytmusicapi/mixins/library.py",
+     "F_R": "ytmusicapi/auth/oauth/base.py",
+     "F_I": "ytmusicapi/auth/internal.py"
+    },
+    "D": {
+     "replaced": "requests",
+     "F_R": "httpx",
+     "F_I": "httpx"
+    }
+   },
+   "fallbacks": {
+    "F_R": [
+     "kind4_I_competitor"
+    ],
+    "F_I": [
+     "kind2_never_existed_fallback"
+    ]
+   },
+   "n_claims_T": 13,
+   "n_false": {
+    "F_R": 3,
+    "F_I": 3
+   },
+   "pointer_in_issue": false,
+   "gold_dirs": [
+    "ytmusicapi",
+    "ytmusicapi/mixins",
+    "ytmusicapi/parsers"
+   ],
+   "manifest_all_ok": {
+    "T": true,
+    "F_R": true,
+    "F_I": true
+   },
+   "modes": {
+    "F_R": {
+     "1": "replace",
+     "2": "replace",
+     "4": "replace"
+    },
+    "F_I": {
+     "1": "replace",
+     "2": "replace",
+     "4": "replace"
+    }
+   },
+   "length_diff": {
+    "F_R": -9,
+    "F_I": -6
+   },
+   "false_claims": [
+    {
+     "cond": "F_R",
+     "key": "T1|ytmusicapi/core",
+     "kind": 1,
+     "mode": "replace"
+    },
+    {
+     "cond": "F_R",
+     "key": "T1|ytmusicapi/auth/oauth/base.py",
+     "kind": 2,
+     "mode": "replace"
+    },
+    {
+     "cond": "F_R",
+     "key": "T4|httpx|",
+     "kind": 4,
+     "mode": "replace"
+    },
+    {
+     "cond": "F_I",
+     "key": "T1|ytmusicapi/auth/core",
+     "kind": 1,
+     "mode": "replace"
+    },
+    {
+     "cond": "F_I",
+     "key": "T1|ytmusicapi/auth/internal.py",
+     "kind": 2,
+     "mode": "replace"
+    },
+    {
+     "cond": "F_I",
+     "key": "T4|httpx|",
+     "kind": 4,
+     "mode": "replace"
+    }
+   ]
+  }
+ }
+}

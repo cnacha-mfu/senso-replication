@@ -1,0 +1,344 @@
+{
+ "task_id": "cevoaustralia__aws-google-auth-34",
+ "repo": "cevoaustralia/aws-google-auth",
+ "stage": "initial_development",
+ "rounds": 1,
+ "rejects": {},
+ "flags": [
+  "no_test_command",
+  "length_violation_F_R",
+  "length_violation_F_I"
+ ],
+ "info": {
+  "slots": {
+   "P1": {
+    "replaced": null,
+    "name": "core",
+    "F_R": "aws_google_auth/core",
+    "F_I": "core"
+   },
+   "P2": {
+    "replaced": null,
+    "F_R": "aws_google_auth/internal.py",
+    "F_I": "internal.py"
+   },
+   "C": {
+    "F_R": "make test",
+    "F_I": "make install"
+   },
+   "D": {
+    "replaced": null,
+    "F_R": "httpx",
+    "F_I": "selectolax"
+   }
+  },
+  "why": {
+   "test_command": [
+    {
+     "root": "aws_google_auth/tests",
+     "T3": "ContradictedClaim",
+     "T1": "SupportedClaim",
+     "collect_ok": null
+    }
+   ],
+   "kind1": {
+    "p1_idx": null,
+    "gold0": "aws_google_auth",
+    "unrelated": null,
+    "base_R": "aws_google_auth",
+    "base_I": ""
+   },
+   "kind2": {
+    "p2_idx": null,
+    "n_deleted_py": 1,
+    "found": {
+     "F_R": "aws_google_auth/internal.py",
+     "F_I": "internal.py"
+    }
+   },
+   "kind3": {
+    "run": "test",
+    "install": "install",
+    "test_ok": false,
+    "install_ok": true
+   },
+   "kind4": {
+    "deps": [
+     [
+      "requests",
+      true
+     ],
+     [
+      "beautifulsoup4",
+      true
+     ],
+     [
+      "boto3",
+      true
+     ],
+     [
+      "lxml",
+      true
+     ]
+    ],
+    "d_idx": null,
+    "src_R": "requests",
+    "src_I": "beautifulsoup4",
+    "n_decls": 6,
+    "n_dist": 29
+   }
+  },
+  "length": {
+   "T": 246,
+   "F_R": 343,
+   "F_I": 283
+  },
+  "fallbacks": {
+   "F_R": [
+    "kind2_never_existed_fallback"
+   ],
+   "F_I": [
+    "kind2_never_existed_fallback"
+   ]
+  },
+  "modes": {
+   "F_R": {
+    "1": "add",
+    "2": "add",
+    "3": "add",
+    "4": "add"
+   },
+   "F_I": {
+    "1": "add",
+    "2": "add",
+    "3": "replace",
+    "4": "add"
+   }
+  },
+  "length_diff": {
+   "F_R": 97,
+   "F_I": 37
+  },
+  "n_claims_T": 8,
+  "n_false": {
+   "F_R": 4,
+   "F_I": 4
+  },
+  "pointer_in_issue": false,
+  "gold_dirs": [
+   "aws_google_auth"
+  ],
+  "gold_files": [
+   "README.rst",
+   "aws_google_auth/__init__.py",
+   "aws_google_auth/prepare.py"
+  ]
+ },
+ "tokens": {
+  "F_R": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "aws_google_auth/core",
+     "core"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "aws_google_auth/internal.py",
+     "internal.py"
+    ]
+   },
+   {
+    "kind": 3,
+    "type": "regex",
+    "regex": "\\bmake\\b[^|;&\\n]*\\btest\\b",
+    "target": "test"
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "httpx"
+    ]
+   }
+  ],
+  "F_I": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "core",
+     "core"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "internal.py",
+     "internal.py"
+    ]
+   },
+   {
+    "kind": 3,
+    "type": "regex",
+    "regex": "\\bmake\\b[^|;&\\n]*\\binstall\\b",
+    "target": "install"
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "selectolax"
+    ]
+   }
+  ]
+ },
+ "unresolved_pre_hermit": [],
+ "sha256": {
+  "T": "123f0df62d86d1ce5e69d49900a3d0714bc98da871bf38e868937f976e80162c",
+  "F_R": "bb380977bda513108c7525151d1abf98ce09add65fbaf70102033340e66edf01",
+  "F_I": "c7ace7e3ddb96bbdb275d0ba509f8f995d90fe6ef62d095d3b0d0b9cb2be3ae7"
+ },
+ "chars": {
+  "T": 246,
+  "F_R": 343,
+  "F_I": 283
+ },
+ "claims": {
+  "T": [
+   "T1|aws_google_auth",
+   "T1|aws_google_auth/tests",
+   "T1|aws_google_auth/__init__.py",
+   "T1|setup.py",
+   "T4|requests|",
+   "T4|beautifulsoup4|",
+   "T4|boto3|",
+   "T4|lxml|"
+  ],
+  "F_R": [
+   "T1|aws_google_auth",
+   "T1|aws_google_auth/tests",
+   "T1|aws_google_auth/core",
+   "T1|aws_google_auth/__init__.py",
+   "T1|aws_google_auth/internal.py",
+   "T1|setup.py",
+   "T5|make|test",
+   "T4|requests|",
+   "T4|beautifulsoup4|",
+   "T4|boto3|",
+   "T4|lxml|",
+   "T4|httpx|"
+  ],
+  "F_I": [
+   "T1|aws_google_auth",
+   "T1|aws_google_auth/tests",
+   "T1|core",
+   "T1|aws_google_auth/__init__.py",
+   "T1|internal.py",
+   "T5|make|install",
+   "T4|requests|",
+   "T4|beautifulsoup4|",
+   "T4|boto3|",
+   "T4|lxml|",
+   "T4|selectolax|"
+  ]
+ },
+ "python_spec": null,
+ "token_audit": [
+  {
+   "cond": "F_R",
+   "kind": 1,
+   "type": "path",
+   "name": "aws_google_auth/core",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 2,
+   "type": "path",
+   "name": "aws_google_auth/internal.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 3,
+   "type": "regex",
+   "name": "make test",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 4,
+   "type": "word",
+   "name": "httpx",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 1,
+   "type": "path",
+   "name": "core",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 2,
+   "type": "path",
+   "name": "internal.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 3,
+   "type": "regex",
+   "name": "make install",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 4,
+   "type": "word",
+   "name": "selectolax",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  }
+ ],
+ "dist_imports_used": {
+  "requests": [
+   "requests"
+  ],
+  "beautifulsoup4": [
+   "bs4"
+  ],
+  "boto3": [
+   "boto3"
+  ],
+  "lxml": [
+   "lxml"
+  ],
+  "httpx": null,
+  "selectolax": null
+ }
+}

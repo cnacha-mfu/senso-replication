@@ -1,0 +1,1952 @@
+{
+ "repo": "huggingface/sentence-transformers",
+ "snapshot_date": "2025-06-30",
+ "status": "ok",
+ "unmineable": false,
+ "unmineable_reason": null,
+ "replaces": null,
+ "settings": {
+  "dedup": true,
+  "complexity": false,
+  "dataset": "seo_v2",
+  "sensitivity": true
+ },
+ "versions": {
+  "owlready2": "0.51",
+  "pymannkendall": "1.4.3",
+  "lizard": "1.24.1",
+  "numpy": "2.5.3",
+  "scipy": "1.18.1",
+  "python": "3.12.15",
+  "git": "git version 2.53.0"
+ },
+ "measures": {
+  "monthsObserved": 36,
+  "monthsSinceLastCommit": 0,
+  "distinctAuthorsInWindow": 153,
+  "commitMKTau": 0.536508,
+  "commitMKpValue": 4e-06,
+  "activeMonthCount": 34,
+  "activeMonthRatio": 0.944444,
+  "meanMonthlyCommits": 32.888889,
+  "commitsLast3Months": 516,
+  "commitCountCV": 1.552542,
+  "commitCountCVSample": 1.574565,
+  "commitHalfRatio": 6.738562,
+  "commitSecondHalfMean": 57.277778,
+  "churnCV": 1.894182,
+  "linesAddedCV": 1.725118,
+  "mergeMonthRatio": 0.5,
+  "multiAuthorMonthRatio": 0.861111,
+  "bugFixRatioFirstHalf": 0.471194,
+  "bugFixRatioSecondHalf": 0.254699,
+  "bugFixHalfRatio": 0.54054,
+  "locSeriesLength": 36,
+  "locRelSenSlopeAnnual": 0.580251,
+  "locMKTau": 0.874603,
+  "locMKS": 551,
+  "locMKpValue": 0.0,
+  "locSenSlope": 752.05303,
+  "locStart": 13965,
+  "locEnd": 51658,
+  "locDelta": 37693,
+  "locGrowthRate": 2.699105,
+  "locChangePct": 269.910491,
+  "locEndToStartRatio": 3.699105,
+  "locGrowthLast3": 0.356601,
+  "featureCommitsFirstHalf": 1,
+  "featureCommitsSecondHalf": 11,
+  "featureCommitsTotal": 12,
+  "featureSecondToFirstRatio": 11.0,
+  "locDeltaPerFeature": 3141.083333,
+  "recentAgentCommitRatio": 0.0,
+  "featCommitCount": 12,
+  "bugFixCommitCount": 272,
+  "commitCount": 1184,
+  "monthly_series": {
+   "months": [
+    "2021-07",
+    "2021-08",
+    "2021-09",
+    "2021-10",
+    "2021-11",
+    "2021-12",
+    "2022-01",
+    "2022-02",
+    "2022-03",
+    "2022-04",
+    "2022-05",
+    "2022-06",
+    "2022-07",
+    "2022-08",
+    "2022-09",
+    "2022-10",
+    "2022-11",
+    "2022-12",
+    "2023-01",
+    "2023-02",
+    "2023-03",
+    "2023-04",
+    "2023-05",
+    "2023-06",
+    "2023-07",
+    "2023-08",
+    "2023-09",
+    "2023-10",
+    "2023-11",
+    "2023-12",
+    "2024-01",
+    "2024-02",
+    "2024-03",
+    "2024-04",
+    "2024-05",
+    "2024-06",
+    "2024-07",
+    "2024-08",
+    "2024-09",
+    "2024-10",
+    "2024-11",
+    "2024-12",
+    "2025-01",
+    "2025-02",
+    "2025-03",
+    "2025-04",
+    "2025-05",
+    "2025-06"
+   ],
+   "commits": [
+    5,
+    21,
+    38,
+    4,
+    9,
+    12,
+    12,
+    17,
+    13,
+    15,
+    8,
+    46,
+    3,
+    5,
+    17,
+    11,
+    14,
+    3,
+    2,
+    0,
+    1,
+    7,
+    3,
+    1,
+    0,
+    3,
+    7,
+    2,
+    18,
+    56,
+    23,
+    28,
+    14,
+    32,
+    54,
+    61,
+    16,
+    13,
+    20,
+    23,
+    30,
+    12,
+    22,
+    62,
+    105,
+    99,
+    258,
+    159
+   ],
+   "loc": [
+    14306,
+    14362,
+    13837,
+    13853,
+    13874,
+    13932,
+    13877,
+    13889,
+    13889,
+    13889,
+    13889,
+    13963,
+    13965,
+    13965,
+    14025,
+    14039,
+    14041,
+    14041,
+    14041,
+    14041,
+    14041,
+    14041,
+    14041,
+    14041,
+    14041,
+    14041,
+    14041,
+    14041,
+    14041,
+    14304,
+    16802,
+    19078,
+    20220,
+    21096,
+    25755,
+    26094,
+    26584,
+    27093,
+    27673,
+    29027,
+    30470,
+    30602,
+    31197,
+    31248,
+    37595,
+    38079,
+    39250,
+    51658
+   ]
+  }
+ },
+ "window": {
+  "L": 36,
+  "first_month": "2022-07",
+  "last_month": "2025-06",
+  "n_months": 36,
+  "left_truncated": false,
+  "first_commit_month": "2019-07",
+  "mined_months": 48,
+  "commits_in_window": 1184,
+  "commits_in_history": 2323
+ },
+ "loc_instrument": {
+  "instrument": "nonblank-source-lines-v1",
+  "status": "ok",
+  "months": 48,
+  "month_end_commits_distinct": 41,
+  "source_blobs": 1737,
+  "blobs_fetched": 13,
+  "t_ls_tree_s": 0.9344619939802215,
+  "t_fetch_s": 1.037632874038536,
+  "t_read_s": 0.27875398396281525,
+  "series_present": true,
+  "extensions": [
+   ".bash",
+   ".c",
+   ".cc",
+   ".cjs",
+   ".clj",
+   ".cpp",
+   ".cs",
+   ".cxx",
+   ".dart",
+   ".erl",
+   ".ex",
+   ".exs",
+   ".f90",
+   ".go",
+   ".groovy",
+   ".h",
+   ".hh",
+   ".hpp",
+   ".hs",
+   ".java",
+   ".jl",
+   ".js",
+   ".jsx",
+   ".kt",
+   ".kts",
+   ".lua",
+   ".m",
+   ".mjs",
+   ".ml",
+   ".mm",
+   ".nim",
+   ".php",
+   ".pl",
+   ".pm",
+   ".py",
+   ".pyi",
+   ".r",
+   ".rb",
+   ".rs",
+   ".scala",
+   ".sh",
+   ".sql",
+   ".svelte",
+   ".swift",
+   ".ts",
+   ".tsx",
+   ".vue",
+   ".zig"
+  ],
+  "excluded_dirs": [
+   "node_modules",
+   "vendor",
+   "vendored",
+   "third_party",
+   "site-packages",
+   "bower_components"
+  ],
+  "max_blob_bytes": 1000000,
+  "first_parent": true
+ },
+ "mining": {
+  "churn": {
+   "t_churn_raw_s": 0.4118398560094647,
+   "t_churn_fetch_s": 11.824950417969376,
+   "t_churn_numstat_s": 0.9688446139916778,
+   "blobs_fetched_churn": 3837
+  },
+  "timings": {
+   "t_clone": 2.223,
+   "t_mine": 15.588,
+   "t_loc": 2.252,
+   "t_reason_A": 6.12
+  },
+  "cached": false
+ },
+ "stage_a": {
+  "commits": 1384,
+  "reasoned_commits": 1321,
+  "inconsistent_chunks": 0,
+  "chunk_timings": [
+   {
+    "tbox_load_s": 0.0382126159965992,
+    "abox_load_s": 0.1330536669702269,
+    "reason_s": 3.33065085997805,
+    "extract_s": 0.011495254002511501,
+    "total_s": 3.513834521989338,
+    "commits": 1000
+   },
+   {
+    "tbox_load_s": 0.04051435098517686,
+    "abox_load_s": 0.04331207199720666,
+    "reason_s": 2.472118317033164,
+    "extract_s": 0.004523310984950513,
+    "total_s": 2.560844502004329,
+    "commits": 321
+   }
+  ],
+  "tbox_sha256": "da30ed577542b3643ecf06cb6a4649ccc8fce61ab7a0373beabd763e12883e86"
+ },
+ "activity": {
+  "last_commit_date": "2025-06-30T16:54:40+00:00",
+  "months_since_last_commit": 0,
+  "distinct_authors_in_window": 153,
+  "merge_commits_in_window": 145
+ },
+ "agent_adoption_date": "2025-01-23T16:17:54+00:00",
+ "commit_label_counts": {
+  "BugFixCommit": 272,
+  "FeatureCommit": 12,
+  "AgentCommit": 2
+ },
+ "series_months": [
+  {
+   "month": "2022-07",
+   "commit_count": 3,
+   "merge_count": 1,
+   "unique_authors": 3,
+   "lines_added": 3,
+   "lines_deleted": 1,
+   "total_churn": 4,
+   "files_changed": 2,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 13965,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-08",
+   "commit_count": 5,
+   "merge_count": 2,
+   "unique_authors": 3,
+   "lines_added": 1,
+   "lines_deleted": 1,
+   "total_churn": 2,
+   "files_changed": 1,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 13965,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-09",
+   "commit_count": 17,
+   "merge_count": 8,
+   "unique_authors": 8,
+   "lines_added": 18,
+   "lines_deleted": 11,
+   "total_churn": 29,
+   "files_changed": 4,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 14025,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-10",
+   "commit_count": 11,
+   "merge_count": 2,
+   "unique_authors": 3,
+   "lines_added": 34,
+   "lines_deleted": 19,
+   "total_churn": 53,
+   "files_changed": 8,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 14039,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-11",
+   "commit_count": 14,
+   "merge_count": 7,
+   "unique_authors": 6,
+   "lines_added": 7,
+   "lines_deleted": 5,
+   "total_churn": 12,
+   "files_changed": 4,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 14041,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-12",
+   "commit_count": 3,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 76,
+   "lines_deleted": 69,
+   "total_churn": 145,
+   "files_changed": 58,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 14041,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-01",
+   "commit_count": 2,
+   "merge_count": 1,
+   "unique_authors": 2,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 14041,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-02",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 14041,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-03",
+   "commit_count": 1,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 2,
+   "lines_deleted": 2,
+   "total_churn": 4,
+   "files_changed": 1,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 14041,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-04",
+   "commit_count": 7,
+   "merge_count": 3,
+   "unique_authors": 5,
+   "lines_added": 6,
+   "lines_deleted": 6,
+   "total_churn": 12,
+   "files_changed": 3,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 14041,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-05",
+   "commit_count": 3,
+   "merge_count": 0,
+   "unique_authors": 3,
+   "lines_added": 1,
+   "lines_deleted": 16,
+   "total_churn": 17,
+   "files_changed": 2,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 14041,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-06",
+   "commit_count": 1,
+   "merge_count": 1,
+   "unique_authors": 1,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 14041,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-07",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 14041,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-08",
+   "commit_count": 3,
+   "merge_count": 1,
+   "unique_authors": 3,
+   "lines_added": 32,
+   "lines_deleted": 32,
+   "total_churn": 64,
+   "files_changed": 2,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 14041,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-09",
+   "commit_count": 7,
+   "merge_count": 4,
+   "unique_authors": 4,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 14041,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-10",
+   "commit_count": 2,
+   "merge_count": 0,
+   "unique_authors": 2,
+   "lines_added": 21,
+   "lines_deleted": 23,
+   "total_churn": 44,
+   "files_changed": 1,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 14041,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-11",
+   "commit_count": 18,
+   "merge_count": 0,
+   "unique_authors": 5,
+   "lines_added": 91,
+   "lines_deleted": 75,
+   "total_churn": 166,
+   "files_changed": 11,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 14041,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-12",
+   "commit_count": 56,
+   "merge_count": 21,
+   "unique_authors": 12,
+   "lines_added": 782,
+   "lines_deleted": 505,
+   "total_churn": 1287,
+   "files_changed": 46,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 14304,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-01",
+   "commit_count": 23,
+   "merge_count": 0,
+   "unique_authors": 11,
+   "lines_added": 7024,
+   "lines_deleted": 4574,
+   "total_churn": 11598,
+   "files_changed": 214,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 16802,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-02",
+   "commit_count": 28,
+   "merge_count": 0,
+   "unique_authors": 12,
+   "lines_added": 3384,
+   "lines_deleted": 591,
+   "total_churn": 3975,
+   "files_changed": 153,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 19078,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-03",
+   "commit_count": 14,
+   "merge_count": 0,
+   "unique_authors": 6,
+   "lines_added": 1393,
+   "lines_deleted": 59,
+   "total_churn": 1452,
+   "files_changed": 41,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 20220,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-04",
+   "commit_count": 32,
+   "merge_count": 1,
+   "unique_authors": 13,
+   "lines_added": 5063,
+   "lines_deleted": 940,
+   "total_churn": 6003,
+   "files_changed": 147,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 21096,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-05",
+   "commit_count": 54,
+   "merge_count": 5,
+   "unique_authors": 13,
+   "lines_added": 7459,
+   "lines_deleted": 5372,
+   "total_churn": 12831,
+   "files_changed": 390,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 25755,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-06",
+   "commit_count": 61,
+   "merge_count": 19,
+   "unique_authors": 11,
+   "lines_added": 772,
+   "lines_deleted": 392,
+   "total_churn": 1164,
+   "files_changed": 113,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 26094,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-07",
+   "commit_count": 16,
+   "merge_count": 0,
+   "unique_authors": 4,
+   "lines_added": 1802,
+   "lines_deleted": 1095,
+   "total_churn": 2897,
+   "files_changed": 290,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 26584,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-08",
+   "commit_count": 13,
+   "merge_count": 0,
+   "unique_authors": 8,
+   "lines_added": 797,
+   "lines_deleted": 219,
+   "total_churn": 1016,
+   "files_changed": 36,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 27093,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-09",
+   "commit_count": 20,
+   "merge_count": 0,
+   "unique_authors": 7,
+   "lines_added": 1149,
+   "lines_deleted": 471,
+   "total_churn": 1620,
+   "files_changed": 59,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 27673,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-10",
+   "commit_count": 23,
+   "merge_count": 0,
+   "unique_authors": 12,
+   "lines_added": 2071,
+   "lines_deleted": 449,
+   "total_churn": 2520,
+   "files_changed": 51,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 29027,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-11",
+   "commit_count": 30,
+   "merge_count": 0,
+   "unique_authors": 10,
+   "lines_added": 2527,
+   "lines_deleted": 874,
+   "total_churn": 3401,
+   "files_changed": 110,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 30470,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-12",
+   "commit_count": 12,
+   "merge_count": 0,
+   "unique_authors": 7,
+   "lines_added": 263,
+   "lines_deleted": 115,
+   "total_churn": 378,
+   "files_changed": 17,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 30602,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2025-01",
+   "commit_count": 22,
+   "merge_count": 0,
+   "unique_authors": 9,
+   "lines_added": 1013,
+   "lines_deleted": 316,
+   "total_churn": 1329,
+   "files_changed": 54,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 31197,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2025-02",
+   "commit_count": 62,
+   "merge_count": 3,
+   "unique_authors": 8,
+   "lines_added": 7842,
+   "lines_deleted": 2553,
+   "total_churn": 10395,
+   "files_changed": 186,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 31248,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2025-03",
+   "commit_count": 105,
+   "merge_count": 9,
+   "unique_authors": 13,
+   "lines_added": 19858,
+   "lines_deleted": 17671,
+   "total_churn": 37529,
+   "files_changed": 447,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 37595,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2025-04",
+   "commit_count": 99,
+   "merge_count": 0,
+   "unique_authors": 10,
+   "lines_added": 11185,
+   "lines_deleted": 4495,
+   "total_churn": 15680,
+   "files_changed": 377,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 38079,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2025-05",
+   "commit_count": 258,
+   "merge_count": 29,
+   "unique_authors": 10,
+   "lines_added": 15136,
+   "lines_deleted": 7737,
+   "total_churn": 22873,
+   "files_changed": 674,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 39250,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2025-06",
+   "commit_count": 159,
+   "merge_count": 28,
+   "unique_authors": 7,
+   "lines_added": 5417,
+   "lines_deleted": 2694,
+   "total_churn": 8111,
+   "files_changed": 315,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 51658,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  }
+ ],
+ "measures_derived": {
+  "bugFixRatioFirstHalf": 0.471194,
+  "bugFixRatioSecondHalf": 0.254699,
+  "bugFixHalfRatio": 0.54054,
+  "featureCommitsFirstHalf": 1,
+  "featureCommitsSecondHalf": 11,
+  "featureCommitsTotal": 12,
+  "featureSecondToFirstRatio": 11.0,
+  "locDeltaPerFeature": 3141.083333,
+  "recentAgentCommitRatio": 0.0
+ },
+ "inferred": {
+  "a0.05_L36_D12_G0.05_orig": {
+   "classes": [
+    "CopyPasteEvidence",
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIIConformant",
+    "LawIVNonConformant",
+    "LawVConformant",
+    "LawVIConformant",
+    "LawVIIIConformant",
+    "LawVIINonConformant",
+    "LocPerFeatureHigh",
+    "MKApplicable",
+    "MergeActive",
+    "MultiAuthorActive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": "urn:senso:explanations:huggingface/sentence-transformers:79f851de895e",
+   "tbox_sha256": "79f851de895e8301073d1746931d8ac1d34e4ed2e94897358fca050d9d07b63c",
+   "abox_triples": 41,
+   "t_reason_B_s": 1.779
+  },
+  "a0.01_L36_D12_G0.05_orig": {
+   "classes": [
+    "CopyPasteEvidence",
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIIConformant",
+    "LawIVNonConformant",
+    "LawVConformant",
+    "LawVIConformant",
+    "LawVIIIConformant",
+    "LawVIINonConformant",
+    "LocPerFeatureHigh",
+    "MKApplicable",
+    "MergeActive",
+    "MultiAuthorActive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "956579a8859000216eba261c78e4795a2b5042e7edf95419211fd46e9dbeada9",
+   "abox_triples": 41,
+   "t_reason_B_s": 1.809
+  },
+  "a0.1_L36_D12_G0.05_orig": {
+   "classes": [
+    "CopyPasteEvidence",
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIIConformant",
+    "LawIVNonConformant",
+    "LawVConformant",
+    "LawVIConformant",
+    "LawVIIIConformant",
+    "LawVIINonConformant",
+    "LocPerFeatureHigh",
+    "MKApplicable",
+    "MergeActive",
+    "MultiAuthorActive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "56009aa92bf68560113e153a97a62cd0cfdea303607eb909725e8e10a2536494",
+   "abox_triples": 41,
+   "t_reason_B_s": 1.824
+  },
+  "a0.05_L24_D12_G0.05_orig": {
+   "classes": [
+    "CopyPasteEvidence",
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIIConformant",
+    "LawIVConformant",
+    "LawVConformant",
+    "LawVIConformant",
+    "LawVIIIConformant",
+    "LawVIINonConformant",
+    "LocPerFeatureHigh",
+    "MKApplicable",
+    "MergeActive",
+    "MultiAuthorActive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "79f851de895e8301073d1746931d8ac1d34e4ed2e94897358fca050d9d07b63c",
+   "abox_triples": 41,
+   "t_reason_B_s": 1.922
+  },
+  "a0.05_L48_D12_G0.05_orig": {
+   "classes": [
+    "CopyPasteEvidence",
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIINonConformant",
+    "LawIVNonConformant",
+    "LawVIConformant",
+    "LawVIIIConformant",
+    "LawVIINonConformant",
+    "LawVNonConformant",
+    "LocPerFeatureHigh",
+    "MKApplicable",
+    "MergeActive",
+    "MultiAuthorActive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "79f851de895e8301073d1746931d8ac1d34e4ed2e94897358fca050d9d07b63c",
+   "abox_triples": 40,
+   "t_reason_B_s": 1.868
+  },
+  "a0.05_L36_D6_G0.05_orig": {
+   "classes": [
+    "CopyPasteEvidence",
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIIConformant",
+    "LawIVNonConformant",
+    "LawVConformant",
+    "LawVIConformant",
+    "LawVIIIConformant",
+    "LawVIINonConformant",
+    "LocPerFeatureHigh",
+    "MKApplicable",
+    "MergeActive",
+    "MultiAuthorActive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "a19e7e45f521324fec6b19741e2a4f08e5d15efd8e05802851c45a87515a7761",
+   "abox_triples": 41,
+   "t_reason_B_s": 1.867
+  },
+  "a0.05_L36_D18_G0.05_orig": {
+   "classes": [
+    "CopyPasteEvidence",
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIIConformant",
+    "LawIVNonConformant",
+    "LawVConformant",
+    "LawVIConformant",
+    "LawVIIIConformant",
+    "LawVIINonConformant",
+    "LocPerFeatureHigh",
+    "MKApplicable",
+    "MergeActive",
+    "MultiAuthorActive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "f87900e0c68335fbd2cae9848efdc2926406c328fb39da8e6e393bb472a68fdc",
+   "abox_triples": 41,
+   "t_reason_B_s": 1.818
+  },
+  "a0.05_L36_D24_G0.05_orig": {
+   "classes": [
+    "CopyPasteEvidence",
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIIConformant",
+    "LawIVNonConformant",
+    "LawVConformant",
+    "LawVIConformant",
+    "LawVIIIConformant",
+    "LawVIINonConformant",
+    "LocPerFeatureHigh",
+    "MKApplicable",
+    "MergeActive",
+    "MultiAuthorActive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "562211ba220cda59299aec70f3561ba96eadd88adaf45f6f7db3fce71cdcc77b",
+   "abox_triples": 41,
+   "t_reason_B_s": 1.857
+  },
+  "a0.05_L36_D12_G0_orig": {
+   "classes": [
+    "CopyPasteEvidence",
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIIConformant",
+    "LawIVNonConformant",
+    "LawVConformant",
+    "LawVIConformant",
+    "LawVIIIConformant",
+    "LawVIINonConformant",
+    "LocPerFeatureHigh",
+    "MKApplicable",
+    "MergeActive",
+    "MultiAuthorActive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "c0de0e8b2e7424d23b10ed152acd4ff66c2f1a973196b7e54f6598e9d734d0dc",
+   "abox_triples": 41,
+   "t_reason_B_s": 1.813
+  },
+  "a0.05_L36_D12_G0.02_orig": {
+   "classes": [
+    "CopyPasteEvidence",
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIIConformant",
+    "LawIVNonConformant",
+    "LawVConformant",
+    "LawVIConformant",
+    "LawVIIIConformant",
+    "LawVIINonConformant",
+    "LocPerFeatureHigh",
+    "MKApplicable",
+    "MergeActive",
+    "MultiAuthorActive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "2c6613dd6b3e4fa714d92eaa067f02157466a4b3ee0ccf6de289441d860de28d",
+   "abox_triples": 41,
+   "t_reason_B_s": 1.861
+  },
+  "a0.05_L36_D12_G0.1_orig": {
+   "classes": [
+    "CopyPasteEvidence",
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIIConformant",
+    "LawIVNonConformant",
+    "LawVConformant",
+    "LawVIConformant",
+    "LawVIIIConformant",
+    "LawVIINonConformant",
+    "LocPerFeatureHigh",
+    "MKApplicable",
+    "MergeActive",
+    "MultiAuthorActive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "0cfde802b4494fc33a5ad0eb910980aaf152093f62848406bdc37bc099347936",
+   "abox_triples": 41,
+   "t_reason_B_s": 1.831
+  },
+  "a0.05_L36_D12_G0.05_hr": {
+   "classes": [
+    "CopyPasteEvidence",
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIIConformant",
+    "LawIVNonConformant",
+    "LawVConformant",
+    "LawVIConformant",
+    "LawVIIIConformant",
+    "LawVIINonConformant",
+    "LocPerFeatureHigh",
+    "MKApplicable",
+    "MergeActive",
+    "MultiAuthorActive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "79f851de895e8301073d1746931d8ac1d34e4ed2e94897358fca050d9d07b63c",
+   "abox_triples": 41,
+   "t_reason_B_s": 1.875
+  }
+ },
+ "primary_config": "a0.05_L36_D12_G0.05_orig",
+ "project_iri": "http://senso-framework.org/data/huggingface_sentence-transformers",
+ "consistent": true,
+ "inferred_labels": [
+  "CopyPasteEvidence",
+  "GrowthStage",
+  "LawIConformant",
+  "LawIIIConformant",
+  "LawIVNonConformant",
+  "LawVConformant",
+  "LawVIConformant",
+  "LawVIIIConformant",
+  "LawVIINonConformant",
+  "LocPerFeatureHigh",
+  "MKApplicable",
+  "MergeActive",
+  "MultiAuthorActive",
+  "RBActiveDevelopmentStage",
+  "RecentlyActive",
+  "SubstantialLocGrowth"
+ ],
+ "stage_labels": [
+  "GrowthStage",
+  "RBActiveDevelopmentStage"
+ ],
+ "law_labels": {
+  "I": "LawIConformant",
+  "III": "LawIIIConformant",
+  "IV": "LawIVNonConformant",
+  "V": "LawVConformant",
+  "VI": "LawVIConformant",
+  "VII": "LawVIINonConformant",
+  "VIII": "LawVIIIConformant"
+ },
+ "tbox_sha256_stage_b": "79f851de895e8301073d1746931d8ac1d34e4ed2e94897358fca050d9d07b63c",
+ "tbox_sha256_stage_a": "da30ed577542b3643ecf06cb6a4649ccc8fce61ab7a0373beabd763e12883e86",
+ "summary": {
+  "c1": "A",
+  "c2": "A",
+  "cf": "A",
+  "note": "debug summary; run_rq1_v2.py reads `inferred` and recomputes CF itself"
+ },
+ "explanations": {
+  "stage:GrowthStage": {
+   "class": "GrowthStage",
+   "target": "http://senso-framework.org/data/huggingface_sentence-transformers type http://senso-framework.org/ontology/seo#GrowthStage",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_locMKTau_gt_0",
+       "text": "A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKpValue_lt_mk_alpha",
+       "text": "A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]"
+      },
+      {
+       "kind": "definition",
+       "subject": "GrowthStage",
+       "text": "GrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "huggingface_sentence-transformers",
+       "prop": "locMKpValue",
+       "value": 0.0,
+       "raw": "huggingface_sentence-transformers locMKpValue 0.0"
+      },
+      {
+       "subject": "huggingface_sentence-transformers",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "huggingface_sentence-transformers type SoftwareProject"
+      },
+      {
+       "subject": "huggingface_sentence-transformers",
+       "prop": "locMKTau",
+       "value": 0.874603,
+       "raw": "huggingface_sentence-transformers locMKTau 0.874603"
+      },
+      {
+       "subject": "huggingface_sentence-transformers",
+       "prop": "locSeriesLength",
+       "value": 36,
+       "raw": "huggingface_sentence-transformers locSeriesLength 36"
+      }
+     ],
+     "closures": [],
+     "raw": "huggingface_sentence-transformers locMKpValue 0.0\nA_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\nhuggingface_sentence-transformers type SoftwareProject\nA_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\nhuggingface_sentence-transformers locMKTau 0.874603\nGrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject\nhuggingface_sentence-transformers locSeriesLength 36\nA_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\nA_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]"
+    }
+   ],
+   "raw_text": "Axiom: huggingface_sentence-transformers type GrowthStage\n\nExplanation(s): \n1)   huggingface_sentence-transformers locMKpValue 0.0\n     A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\n     huggingface_sentence-transformers type SoftwareProject\n     A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\n     huggingface_sentence-transformers locMKTau 0.874603\n     GrowthStage equivalentTo A_locMKTau_gt_0\n                              and A_locMKpValue_lt_mk_alpha\n                              and MKApplicable\n                              and SoftwareProject\n     huggingface_sentence-transformers locSeriesLength 36\n     A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\n     A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]\n\n\n",
+   "seconds": 2.1086015600012615,
+   "returncode": 0,
+   "error": null
+  },
+  "stage:RBActiveDevelopmentStage": {
+   "class": "RBActiveDevelopmentStage",
+   "target": "http://senso-framework.org/data/huggingface_sentence-transformers type http://senso-framework.org/ontology/seo#RBActiveDevelopmentStage",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "RBActiveDevelopmentStage",
+       "text": "RBActiveDevelopmentStage equivalentTo GrowthStage and RecentlyActive and SoftwareProject and SubstantialLocGrowth"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable"
+      },
+      {
+       "kind": "definition",
+       "subject": "SubstantialLocGrowth",
+       "text": "SubstantialLocGrowth equivalentTo A_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKTau_gt_0",
+       "text": "A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKpValue_lt_mk_alpha",
+       "text": "A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]"
+      },
+      {
+       "kind": "definition",
+       "subject": "GrowthStage",
+       "text": "GrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year",
+       "text": "A_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year equivalentTo locRelSenSlopeAnnual some decimal[>= 0.05]"
+      },
+      {
+       "kind": "definition",
+       "subject": "RecentlyActive",
+       "text": "RecentlyActive equivalentTo A_monthsSinceLastCommit_lt_rb_dormancy_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_monthsSinceLastCommit_lt_rb_dormancy_months",
+       "text": "A_monthsSinceLastCommit_lt_rb_dormancy_months equivalentTo monthsSinceLastCommit some integer[< 12]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "huggingface_sentence-transformers",
+       "prop": "monthsSinceLastCommit",
+       "value": 0,
+       "raw": "huggingface_sentence-transformers monthsSinceLastCommit 0"
+      },
+      {
+       "subject": "huggingface_sentence-transformers",
+       "prop": "locMKpValue",
+       "value": 0.0,
+       "raw": "huggingface_sentence-transformers locMKpValue 0.0"
+      },
+      {
+       "subject": "huggingface_sentence-transformers",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "huggingface_sentence-transformers type SoftwareProject"
+      },
+      {
+       "subject": "huggingface_sentence-transformers",
+       "prop": "locSeriesLength",
+       "value": 36,
+       "raw": "huggingface_sentence-transformers locSeriesLength 36"
+      },
+      {
+       "subject": "huggingface_sentence-transformers",
+       "prop": "locMKTau",
+       "value": 0.874603,
+       "raw": "huggingface_sentence-transformers locMKTau 0.874603"
+      },
+      {
+       "subject": "huggingface_sentence-transformers",
+       "prop": "locRelSenSlopeAnnual",
+       "value": 0.580251,
+       "raw": "huggingface_sentence-transformers locRelSenSlopeAnnual 0.580251"
+      }
+     ],
+     "closures": [],
+     "raw": "huggingface_sentence-transformers monthsSinceLastCommit 0\nhuggingface_sentence-transformers locMKpValue 0.0\nhuggingface_sentence-transformers type SoftwareProject\nRBActiveDevelopmentStage equivalentTo GrowthStage and RecentlyActive and SoftwareProject and SubstantialLocGrowth\nhuggingface_sentence-transformers locSeriesLength 36\nA_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\nSubstantialLocGrowth equivalentTo A_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year and SoftwareProject\nA_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\nA_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\nhuggingface_sentence-transformers locMKTau 0.874603\nGrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject\nA_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year equivalentTo locRelSenSlopeAnnual some decimal[>= 0.05]\nRecentlyActive equivalentTo A_monthsSinceLastCommit_lt_rb_dormancy_months and SoftwareProject\nhuggingface_sentence-transformers locRelSenSlopeAnnual 0.580251\nA_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]\nA_monthsSinceLastCommit_lt_rb_dormancy_months equivalentTo monthsSinceLastCommit some integer[< 12]"
+    }
+   ],
+   "raw_text": "Axiom: huggingface_sentence-transformers type RBActiveDevelopmentStage\n\nExplanation(s): \n1)   huggingface_sentence-transformers monthsSinceLastCommit 0\n     huggingface_sentence-transformers locMKpValue 0.0\n     huggingface_sentence-transformers type SoftwareProject\n     RBActiveDevelopmentStage equivalentTo GrowthStage\n                                           and RecentlyActive\n                                           and SoftwareProject\n                                           and SubstantialLocGrowth\n     huggingface_sentence-transformers locSeriesLength 36\n     A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\n     SubstantialLocGrowth equivalentTo A_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year\n                                       and SoftwareProject\n     A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\n     A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\n     huggingface_sentence-transformers locMKTau 0.874603\n     GrowthStage equivalentTo A_locMKTau_gt_0\n                              and A_locMKpValue_lt_mk_alpha\n                              and MKApplicable\n                              and SoftwareProject\n     A_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year equivalentTo locRelSenSlopeAnnual some decimal[>= 0.05]\n     RecentlyActive equivalentTo A_monthsSinceLastCommit_lt_rb_dormancy_months\n                                 and SoftwareProject\n     huggingface_sentence-transformers locRelSenSlopeAnnual 0.580251\n     A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]\n     A_monthsSinceLastCommit_lt_rb_dormancy_months equivalentTo monthsSinceLastCommit some integer[< 12]\n\n\n",
+   "seconds": 2.154058045009151,
+   "returncode": 0,
+   "error": null
+  },
+  "lawI": {
+   "class": "LawIConformant",
+   "target": "http://senso-framework.org/data/huggingface_sentence-transformers type http://senso-framework.org/ontology/seo#LawIConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law1_min_months",
+       "text": "A_monthsObserved_ge_p_law1_min_months equivalentTo monthsObserved some integer[>= 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawIConformant",
+       "text": "LawIConformant equivalentTo A_activeMonthRatio_ge_p_law1_active_ratio and A_monthsObserved_ge_p_law1_min_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_activeMonthRatio_ge_p_law1_active_ratio",
+       "text": "A_activeMonthRatio_ge_p_law1_active_ratio equivalentTo activeMonthRatio some decimal[>= 0.5]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "huggingface_sentence-transformers",
+       "prop": "activeMonthRatio",
+       "value": 0.944444,
+       "raw": "huggingface_sentence-transformers activeMonthRatio 0.944444"
+      },
+      {
+       "subject": "huggingface_sentence-transformers",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "huggingface_sentence-transformers type SoftwareProject"
+      },
+      {
+       "subject": "huggingface_sentence-transformers",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "huggingface_sentence-transformers monthsObserved 36"
+      }
+     ],
+     "closures": [],
+     "raw": "huggingface_sentence-transformers activeMonthRatio 0.944444\nhuggingface_sentence-transformers type SoftwareProject\nhuggingface_sentence-transformers monthsObserved 36\nA_monthsObserved_ge_p_law1_min_months equivalentTo monthsObserved some integer[>= 2]\nLawIConformant equivalentTo A_activeMonthRatio_ge_p_law1_active_ratio and A_monthsObserved_ge_p_law1_min_months and SoftwareProject\nA_activeMonthRatio_ge_p_law1_active_ratio equivalentTo activeMonthRatio some decimal[>= 0.5]"
+    }
+   ],
+   "raw_text": "Axiom: huggingface_sentence-transformers type LawIConformant\n\nExplanation(s): \n1)   huggingface_sentence-transformers activeMonthRatio 0.944444\n     huggingface_sentence-transformers type SoftwareProject\n     huggingface_sentence-transformers monthsObserved 36\n     A_monthsObserved_ge_p_law1_min_months equivalentTo monthsObserved some integer[>= 2]\n     LawIConformant equivalentTo A_activeMonthRatio_ge_p_law1_active_ratio\n                                 and A_monthsObserved_ge_p_law1_min_months\n                                 and SoftwareProject\n     A_activeMonthRatio_ge_p_law1_active_ratio equivalentTo activeMonthRatio some decimal[>= 0.5]\n\n\n",
+   "seconds": 2.113451613986399,
+   "returncode": 0,
+   "error": null
+  },
+  "lawIII": {
+   "class": "LawIIIConformant",
+   "target": "http://senso-framework.org/data/huggingface_sentence-transformers type http://senso-framework.org/ontology/seo#LawIIIConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law3_min_months",
+       "text": "A_monthsObserved_ge_p_law3_min_months equivalentTo monthsObserved some integer[>= 6]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawIIIConformant",
+       "text": "LawIIIConformant equivalentTo A_churnCV_lt_p_law3_churn_cv and A_monthsObserved_ge_p_law3_min_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_churnCV_lt_p_law3_churn_cv",
+       "text": "A_churnCV_lt_p_law3_churn_cv equivalentTo churnCV some decimal[< 2.0]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "huggingface_sentence-transformers",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "huggingface_sentence-transformers type SoftwareProject"
+      },
+      {
+       "subject": "huggingface_sentence-transformers",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "huggingface_sentence-transformers monthsObserved 36"
+      },
+      {
+       "subject": "huggingface_sentence-transformers",
+       "prop": "churnCV",
+       "value": 1.894182,
+       "raw": "huggingface_sentence-transformers churnCV 1.894182"
+      }
+     ],
+     "closures": [],
+     "raw": "A_monthsObserved_ge_p_law3_min_months equivalentTo monthsObserved some integer[>= 6]\nhuggingface_sentence-transformers type SoftwareProject\nLawIIIConformant equivalentTo A_churnCV_lt_p_law3_churn_cv and A_monthsObserved_ge_p_law3_min_months and SoftwareProject\nhuggingface_sentence-transformers monthsObserved 36\nhuggingface_sentence-transformers churnCV 1.894182\nA_churnCV_lt_p_law3_churn_cv equivalentTo churnCV some decimal[< 2.0]"
+    }
+   ],
+   "raw_text": "Axiom: huggingface_sentence-transformers type LawIIIConformant\n\nExplanation(s): \n1)   A_monthsObserved_ge_p_law3_min_months equivalentTo monthsObserved some integer[>= 6]\n     huggingface_sentence-transformers type SoftwareProject\n     LawIIIConformant equivalentTo A_churnCV_lt_p_law3_churn_cv\n                                   and A_monthsObserved_ge_p_law3_min_months\n                                   and SoftwareProject\n     huggingface_sentence-transformers monthsObserved 36\n     huggingface_sentence-transformers churnCV 1.894182\n     A_churnCV_lt_p_law3_churn_cv equivalentTo churnCV some decimal[< 2.0]\n\n\n",
+   "seconds": 2.12216636701487,
+   "returncode": 0,
+   "error": null
+  },
+  "lawIV": {
+   "class": "LawIVNonConformant",
+   "target": "http://senso-framework.org/data/huggingface_sentence-transformers type http://senso-framework.org/ontology/seo#LawIVNonConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law4_min_months",
+       "text": "A_monthsObserved_ge_p_law4_min_months equivalentTo monthsObserved some integer[>= 6]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawIVNonConformant",
+       "text": "LawIVNonConformant equivalentTo A_commitCountCV_ge_p_law4_commit_cv and A_monthsObserved_ge_p_law4_min_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_commitCountCV_ge_p_law4_commit_cv",
+       "text": "A_commitCountCV_ge_p_law4_commit_cv equivalentTo commitCountCV some decimal[>= 1.5]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "huggingface_sentence-transformers",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "huggingface_sentence-transformers type SoftwareProject"
+      },
+      {
+       "subject": "huggingface_sentence-transformers",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "huggingface_sentence-transformers monthsObserved 36"
+      },
+      {
+       "subject": "huggingface_sentence-transformers",
+       "prop": "commitCountCV",
+       "value": 1.552542,
+       "raw": "huggingface_sentence-transformers commitCountCV 1.552542"
+      }
+     ],
+     "closures": [],
+     "raw": "A_monthsObserved_ge_p_law4_min_months equivalentTo monthsObserved some integer[>= 6]\nLawIVNonConformant equivalentTo A_commitCountCV_ge_p_law4_commit_cv and A_monthsObserved_ge_p_law4_min_months and SoftwareProject\nhuggingface_sentence-transformers type SoftwareProject\nhuggingface_sentence-transformers monthsObserved 36\nA_commitCountCV_ge_p_law4_commit_cv equivalentTo commitCountCV some decimal[>= 1.5]\nhuggingface_sentence-transformers commitCountCV 1.552542"
+    }
+   ],
+   "raw_text": "Axiom: huggingface_sentence-transformers type LawIVNonConformant\n\nExplanation(s): \n1)   A_monthsObserved_ge_p_law4_min_months equivalentTo monthsObserved some integer[>= 6]\n     LawIVNonConformant equivalentTo A_commitCountCV_ge_p_law4_commit_cv\n                                     and A_monthsObserved_ge_p_law4_min_months\n                                     and SoftwareProject\n     huggingface_sentence-transformers type SoftwareProject\n     huggingface_sentence-transformers monthsObserved 36\n     A_commitCountCV_ge_p_law4_commit_cv equivalentTo commitCountCV some decimal[>= 1.5]\n     huggingface_sentence-transformers commitCountCV 1.552542\n\n\n",
+   "seconds": 2.067827694991138,
+   "returncode": 0,
+   "error": null
+  },
+  "lawV": {
+   "class": "LawVConformant",
+   "target": "http://senso-framework.org/data/huggingface_sentence-transformers type http://senso-framework.org/ontology/seo#LawVConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "LawVConformant",
+       "text": "LawVConformant equivalentTo A_linesAddedCV_lt_p_law5_additions_cv and A_monthsObserved_ge_p_law5_min_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_linesAddedCV_lt_p_law5_additions_cv",
+       "text": "A_linesAddedCV_lt_p_law5_additions_cv equivalentTo linesAddedCV some decimal[< 2.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law5_min_months",
+       "text": "A_monthsObserved_ge_p_law5_min_months equivalentTo monthsObserved some integer[>= 4]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "huggingface_sentence-transformers",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "huggingface_sentence-transformers type SoftwareProject"
+      },
+      {
+       "subject": "huggingface_sentence-transformers",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "huggingface_sentence-transformers monthsObserved 36"
+      },
+      {
+       "subject": "huggingface_sentence-transformers",
+       "prop": "linesAddedCV",
+       "value": 1.725118,
+       "raw": "huggingface_sentence-transformers linesAddedCV 1.725118"
+      }
+     ],
+     "closures": [],
+     "raw": "huggingface_sentence-transformers type SoftwareProject\nLawVConformant equivalentTo A_linesAddedCV_lt_p_law5_additions_cv and A_monthsObserved_ge_p_law5_min_months and SoftwareProject\nhuggingface_sentence-transformers monthsObserved 36\nA_linesAddedCV_lt_p_law5_additions_cv equivalentTo linesAddedCV some decimal[< 2.0]\nA_monthsObserved_ge_p_law5_min_months equivalentTo monthsObserved some integer[>= 4]\nhuggingface_sentence-transformers linesAddedCV 1.725118"
+    }
+   ],
+   "raw_text": "Axiom: huggingface_sentence-transformers type LawVConformant\n\nExplanation(s): \n1)   huggingface_sentence-transformers type SoftwareProject\n     LawVConformant equivalentTo A_linesAddedCV_lt_p_law5_additions_cv\n                                 and A_monthsObserved_ge_p_law5_min_months\n                                 and SoftwareProject\n     huggingface_sentence-transformers monthsObserved 36\n     A_linesAddedCV_lt_p_law5_additions_cv equivalentTo linesAddedCV some decimal[< 2.0]\n     A_monthsObserved_ge_p_law5_min_months equivalentTo monthsObserved some integer[>= 4]\n     huggingface_sentence-transformers linesAddedCV 1.725118\n\n\n",
+   "seconds": 2.1520557359908707,
+   "returncode": 0,
+   "error": null
+  },
+  "lawVI": {
+   "class": "LawVIConformant",
+   "target": "http://senso-framework.org/data/huggingface_sentence-transformers type http://senso-framework.org/ontology/seo#LawVIConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "subclass",
+       "subject": "GrowthStage",
+       "text": "GrowthStage subClassOf LawVIConformant"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKTau_gt_0",
+       "text": "A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKpValue_lt_mk_alpha",
+       "text": "A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]"
+      },
+      {
+       "kind": "definition",
+       "subject": "GrowthStage",
+       "text": "GrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "huggingface_sentence-transformers",
+       "prop": "locMKpValue",
+       "value": 0.0,
+       "raw": "huggingface_sentence-transformers locMKpValue 0.0"
+      },
+      {
+       "subject": "huggingface_sentence-transformers",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "huggingface_sentence-transformers type SoftwareProject"
+      },
+      {
+       "subject": "huggingface_sentence-transformers",
+       "prop": "locSeriesLength",
+       "value": 36,
+       "raw": "huggingface_sentence-transformers locSeriesLength 36"
+      },
+      {
+       "subject": "huggingface_sentence-transformers",
+       "prop": "locMKTau",
+       "value": 0.874603,
+       "raw": "huggingface_sentence-transformers locMKTau 0.874603"
+      }
+     ],
+     "closures": [],
+     "raw": "huggingface_sentence-transformers locMKpValue 0.0\nhuggingface_sentence-transformers type SoftwareProject\nGrowthStage subClassOf LawVIConformant\nhuggingface_sentence-transformers locSeriesLength 36\nA_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\nA_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\nA_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\nhuggingface_sentence-transformers locMKTau 0.874603\nGrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject\nA_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]"
+    }
+   ],
+   "raw_text": "Axiom: huggingface_sentence-transformers type LawVIConformant\n\nExplanation(s): \n1)   huggingface_sentence-transformers locMKpValue 0.0\n     huggingface_sentence-transformers type SoftwareProject\n     GrowthStage subClassOf LawVIConformant\n     huggingface_sentence-transformers locSeriesLength 36\n     A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\n     A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\n     A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\n     huggingface_sentence-transformers locMKTau 0.874603\n     GrowthStage equivalentTo A_locMKTau_gt_0\n                              and A_locMKpValue_lt_mk_alpha\n                              and MKApplicable\n                              and SoftwareProject\n     A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]\n\n\n",
+   "seconds": 2.188237864000257,
+   "returncode": 0,
+   "error": null
+  },
+  "lawVII": {
+   "class": "LawVIINonConformant",
+   "target": "http://senso-framework.org/data/huggingface_sentence-transformers type http://senso-framework.org/ontology/seo#LawVIINonConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_bugFixRatioFirstHalf_gt_0",
+       "text": "A_bugFixRatioFirstHalf_gt_0 equivalentTo bugFixRatioFirstHalf some decimal[> 0.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_bugFixHalfRatio_lt_p_law7_tolerance",
+       "text": "A_bugFixHalfRatio_lt_p_law7_tolerance equivalentTo bugFixHalfRatio some decimal[< 0.9]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_activeMonthCount_ge_p_law7_min_active_months",
+       "text": "A_activeMonthCount_ge_p_law7_min_active_months equivalentTo activeMonthCount some integer[>= 4]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawVIINonConformant",
+       "text": "LawVIINonConformant equivalentTo A_activeMonthCount_ge_p_law7_min_active_months and A_bugFixHalfRatio_lt_p_law7_tolerance and A_bugFixRatioFirstHalf_gt_0 and SoftwareProject"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "huggingface_sentence-transformers",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "huggingface_sentence-transformers type SoftwareProject"
+      },
+      {
+       "subject": "huggingface_sentence-transformers",
+       "prop": "bugFixHalfRatio",
+       "value": 0.54054,
+       "raw": "huggingface_sentence-transformers bugFixHalfRatio 0.54054"
+      },
+      {
+       "subject": "huggingface_sentence-transformers",
+       "prop": "bugFixRatioFirstHalf",
+       "value": 0.471194,
+       "raw": "huggingface_sentence-transformers bugFixRatioFirstHalf 0.471194"
+      },
+      {
+       "subject": "huggingface_sentence-transformers",
+       "prop": "activeMonthCount",
+       "value": 34,
+       "raw": "huggingface_sentence-transformers activeMonthCount 34"
+      }
+     ],
+     "closures": [],
+     "raw": "huggingface_sentence-transformers type SoftwareProject\nA_bugFixRatioFirstHalf_gt_0 equivalentTo bugFixRatioFirstHalf some decimal[> 0.0]\nA_bugFixHalfRatio_lt_p_law7_tolerance equivalentTo bugFixHalfRatio some decimal[< 0.9]\nA_activeMonthCount_ge_p_law7_min_active_months equivalentTo activeMonthCount some integer[>= 4]\nLawVIINonConformant equivalentTo A_activeMonthCount_ge_p_law7_min_active_months and A_bugFixHalfRatio_lt_p_law7_tolerance and A_bugFixRatioFirstHalf_gt_0 and SoftwareProject\nhuggingface_sentence-transformers bugFixHalfRatio 0.54054\nhuggingface_sentence-transformers bugFixRatioFirstHalf 0.471194\nhuggingface_sentence-transformers activeMonthCount 34"
+    }
+   ],
+   "raw_text": "Axiom: huggingface_sentence-transformers type LawVIINonConformant\n\nExplanation(s): \n1)   huggingface_sentence-transformers type SoftwareProject\n     A_bugFixRatioFirstHalf_gt_0 equivalentTo bugFixRatioFirstHalf some decimal[> 0.0]\n     A_bugFixHalfRatio_lt_p_law7_tolerance equivalentTo bugFixHalfRatio some decimal[< 0.9]\n     A_activeMonthCount_ge_p_law7_min_active_months equivalentTo activeMonthCount some integer[>= 4]\n     LawVIINonConformant equivalentTo A_activeMonthCount_ge_p_law7_min_active_months\n                                      and A_bugFixHalfRatio_lt_p_law7_tolerance\n                                      and A_bugFixRatioFirstHalf_gt_0\n                                      and SoftwareProject\n     huggingface_sentence-transformers bugFixHalfRatio 0.54054\n     huggingface_sentence-transformers bugFixRatioFirstHalf 0.471194\n     huggingface_sentence-transformers activeMonthCount 34\n\n\n",
+   "seconds": 2.2001363369636238,
+   "returncode": 0,
+   "error": null
+  },
+  "lawVIII": {
+   "class": "LawVIIIConformant",
+   "target": "http://senso-framework.org/data/huggingface_sentence-transformers type http://senso-framework.org/ontology/seo#LawVIIIConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio",
+       "text": "A_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio equivalentTo multiAuthorMonthRatio some decimal[> 0.3]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_mergeMonthRatio_gt_p_law8_merge_ratio",
+       "text": "A_mergeMonthRatio_gt_p_law8_merge_ratio equivalentTo MergeActive"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio",
+       "text": "A_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio equivalentTo MultiAuthorActive"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawVIIIConformant",
+       "text": "LawVIIIConformant equivalentTo A_monthsObserved_ge_p_law8_min_months and MergeActive and MultiAuthorActive and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law8_min_months",
+       "text": "A_monthsObserved_ge_p_law8_min_months equivalentTo monthsObserved some integer[>= 6]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_mergeMonthRatio_gt_p_law8_merge_ratio",
+       "text": "A_mergeMonthRatio_gt_p_law8_merge_ratio equivalentTo mergeMonthRatio some decimal[> 0.3]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "huggingface_sentence-transformers",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "huggingface_sentence-transformers type SoftwareProject"
+      },
+      {
+       "subject": "huggingface_sentence-transformers",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "huggingface_sentence-transformers monthsObserved 36"
+      },
+      {
+       "subject": "huggingface_sentence-transformers",
+       "prop": "mergeMonthRatio",
+       "value": 0.5,
+       "raw": "huggingface_sentence-transformers mergeMonthRatio 0.5"
+      },
+      {
+       "subject": "huggingface_sentence-transformers",
+       "prop": "multiAuthorMonthRatio",
+       "value": 0.861111,
+       "raw": "huggingface_sentence-transformers multiAuthorMonthRatio 0.861111"
+      }
+     ],
+     "closures": [],
+     "raw": "A_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio equivalentTo multiAuthorMonthRatio some decimal[> 0.3]\nhuggingface_sentence-transformers type SoftwareProject\nA_mergeMonthRatio_gt_p_law8_merge_ratio equivalentTo MergeActive\nA_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio equivalentTo MultiAuthorActive\nLawVIIIConformant equivalentTo A_monthsObserved_ge_p_law8_min_months and MergeActive and MultiAuthorActive and SoftwareProject\nhuggingface_sentence-transformers monthsObserved 36\nA_monthsObserved_ge_p_law8_min_months equivalentTo monthsObserved some integer[>= 6]\nA_mergeMonthRatio_gt_p_law8_merge_ratio equivalentTo mergeMonthRatio some decimal[> 0.3]\nhuggingface_sentence-transformers mergeMonthRatio 0.5\nhuggingface_sentence-transformers multiAuthorMonthRatio 0.861111"
+    }
+   ],
+   "raw_text": "Axiom: huggingface_sentence-transformers type LawVIIIConformant\n\nExplanation(s): \n1)   A_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio equivalentTo multiAuthorMonthRatio some decimal[> 0.3]\n     huggingface_sentence-transformers type SoftwareProject\n     A_mergeMonthRatio_gt_p_law8_merge_ratio equivalentTo MergeActive\n     A_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio equivalentTo MultiAuthorActive\n     LawVIIIConformant equivalentTo A_monthsObserved_ge_p_law8_min_months\n                                    and MergeActive\n                                    and MultiAuthorActive\n                                    and SoftwareProject\n     huggingface_sentence-transformers monthsObserved 36\n     A_monthsObserved_ge_p_law8_min_months equivalentTo monthsObserved some integer[>= 6]\n     A_mergeMonthRatio_gt_p_law8_merge_ratio equivalentTo mergeMonthRatio some decimal[> 0.3]\n     huggingface_sentence-transformers mergeMonthRatio 0.5\n     huggingface_sentence-transformers multiAuthorMonthRatio 0.861111\n\n\n",
+   "seconds": 2.31789334397763,
+   "returncode": 0,
+   "error": null
+  }
+ },
+ "fuseki": {
+  "dataset": "seo_v2",
+  "graph_triples": {
+   "urn:senso:abox:huggingface/sentence-transformers": 388,
+   "urn:senso:commits:huggingface/sentence-transformers": 7329,
+   "urn:senso:abox-derived:huggingface/sentence-transformers": 9,
+   "urn:senso:inferred:huggingface/sentence-transformers:79f851de895e": 486,
+   "urn:senso:explanations:huggingface/sentence-transformers:79f851de895e": 181
+  }
+ },
+ "timings": {
+  "t_clone": 2.223,
+  "t_mine": 15.588,
+  "t_loc": 2.252,
+  "t_reason_A": 6.12,
+  "mining_cached": false,
+  "t_reason_B": 22.123,
+  "n_configs": 12,
+  "t_explain": 19.511,
+  "n_explain_calls": 9,
+  "t_writeback": 9.46,
+  "t_total": 75.498
+ }
+}

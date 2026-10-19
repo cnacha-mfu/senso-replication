@@ -1,0 +1,46 @@
+{
+ "repo": "a16z/halmos",
+ "slug": "a16z__halmos",
+ "input_sha": "c42cbada109e6504c50c9585356885731d479dceb18061361fa4104fa6030f4f",
+ "explanations": [
+  {
+   "key": "T3|package_manager|uv",
+   "verdict": "ContradictedClaim",
+   "leaf": "ToolAbsentInEcosystem",
+   "seconds": 4.34,
+   "retried_on_claim_subgraph": false,
+   "error": null,
+   "returncode": 0,
+   "n_justifications": 1,
+   "facts": [
+    {
+     "prop": "extractionVotes",
+     "value": 2
+    },
+    {
+     "prop": "toolEcosystemAnchorCount",
+     "value": 2
+    },
+    {
+     "prop": "toolSignatureHitCount",
+     "value": 0
+    },
+    {
+     "prop": "competingToolSignatureCount",
+     "value": 0
+    }
+   ],
+   "axioms": [
+    "ToolAbsentInEcosystem equivalentTo A_toolEcosystemAnchorCount_ge_1 and A_toolSignatureHitCount_ge_0_le_0 and CheckedClaim and NoCompetingPackageManagerEvidence and ToolUsageClaim",
+    "A_extractionVotes_ge_wp2_consensus_min_votes equivalentTo extractionVotes some integer[>= 2]",
+    "ToolAbsentInEcosystem subClassOf ContradictedClaim",
+    "CheckedClaim equivalentTo A_extractionVotes_ge_wp2_consensus_min_votes and ManifestClaim",
+    "A_toolSignatureHitCount_ge_0_le_0 equivalentTo toolSignatureHitCount some integer[>= 0, <= 0]",
+    "A_competingToolSignatureCount_le_0 equivalentTo competingToolSignatureCount some integer[<= 0]",
+    "A_toolEcosystemAnchorCount_ge_1 equivalentTo toolEcosystemAnchorCount some integer[>= 1]",
+    "A_competingToolSignatureCount_le_0 subClassOf NoCompetingPackageManagerEvidence"
+   ],
+   "closures": []
+  }
+ ]
+}

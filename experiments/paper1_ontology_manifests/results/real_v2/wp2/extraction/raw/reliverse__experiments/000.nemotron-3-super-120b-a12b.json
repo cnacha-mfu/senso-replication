@@ -1,0 +1,21 @@
+{
+ "repo": "reliverse/experiments",
+ "chunk": 0,
+ "n_chunks": 2,
+ "model": "nvidia/nemotron-3-super-120b-a12b",
+ "prompt_sha256": "d0e02ff613417050168d859f2af6230c3712c6758bb5d9c40d60ff55e5ae87ca",
+ "user_sha256": "86ef6c03dd64c9c19d4e337103dca53e1b72b484898da366d89deb2392fad221",
+ "text": "{\n  \"claims\": [\n    {\n      \"type\": \"tool_used\",\n      \"quote\": \"This is an Bun monorepo with TypeScript. The project uses bun workspaces for package management.\",\n      \"line\": 3,\n      \"subject\": \"bun\",\n      \"tool_category\": \"package_manager\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"tool_used\",\n      \"quote\": \"The project uses Turborepo for task local & remote caching.\",\n      \"line\": 4,\n      \"subject\": \"Turborepo\",\n      \"tool_category\": \"build_tool\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"path_exists\",\n      \"quote\": \"- `packages/` - Contains all workspace packages (relico, tsconfig, etc)\",\n      \"line\": 9,\n      \"subject\": \"packages/\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"path_exists\",\n      \"quote\": \"- `apps/` - Application definitions split by service (cli, scripts, etc)\",\n      \"line\": 10,\n      \"subject\": \"apps/\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"tool_used\",\n      \"quote\": \"- This project uses `@reliverse/dler` to manage bun monorepos easily\",\n      \"line\": 14,\n      \"subject\": \"@reliverse/dler\",\n      \"tool_category\": \"package_manager\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"command\",\n      \"quote\": \"- You can check dler's available commands with `dler --help`\",\n      \"line\": 15,\n      \"subject\": \"--help\",\n      \"runner\": \"bun\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"command\",\n      \"quote\": \"- Use `dler update` to update all dependencies in monorepo\",\n      \"line\": 17,\n      \"subject\": \"update\",\n      \"runner\": \"bun\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"command\",\n      \"quote\": \"- **Format code**: `bunx ultracite fix`\",\n      \"line\": 29,\n      \"subject\": \"fix\",\n      \"runner\": \"bun\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"command\",\n      \"quote\": \"- **Check for issues**: `bunx ultracite check`\",\n      \"line\": 30,\n      \"subject\": \"check\",\n      \"runner\": \"bun\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"command\",\n      \"quote\": \"- **Diagnose setup**: `bunx ultracite doctor`\",\n      \"line\": 31,\n      \"subject\": \"doctor\",\n      \"runner\": \"bun\",\n      \"mode\": \"asserts_existing\"\n    }\n  ]\n}",
+ "parse_ok": true,
+ "parse_error": null,
+ "parse_retries": 0,
+ "latency_s": 6.429501259990502,
+ "usage": {
+  "prompt": 3971,
+  "completion": 663
+ },
+ "n_api_calls": 1,
+ "finish_reason": "stop",
+ "error": null,
+ "discarded_attempt_texts": []
+}

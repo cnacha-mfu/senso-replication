@@ -1,0 +1,78 @@
+{
+ "unit_id": "numpy__numpydoc-106__F_I__nemotron-3-ultra-550b-a55b__r2",
+ "task_id": "numpy__numpydoc-106",
+ "repo": "numpy/numpydoc",
+ "stage": "phase_out",
+ "condition": "F_I",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "run": 2,
+ "order": 39,
+ "env_build_s": 38.9,
+ "started": "2026-10-12T13:45:19.060697+00:00",
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 265,
+  "sha256": "d5703b3b37a9c17b1bfc3b9585ecb070320039260c5c7d07fe10133e784bc5f2"
+ },
+ "condition_available": true,
+ "venv_reset_s": 1.81,
+ "retries": 0,
+ "venv_hash_before": "b9945498d9db7be1",
+ "venv_hash_after": "b9945498d9db7be1",
+ "venv_mutated": false,
+ "exit_status": "LimitsExceeded",
+ "error": "",
+ "steps": 40,
+ "wall_s": 383.7,
+ "prompt_tokens": 665669,
+ "completion_tokens": 5101,
+ "format_errors": 0,
+ "length_cutoffs": 0,
+ "api_errors": {
+  "503": 7
+ },
+ "n_queries": 47,
+ "keys_used": {
+  "NVIDIA_API_KEY": 13,
+  "NVIDIA_API_KEY_2": 13,
+  "NVIDIA_API_KEY_4": 10,
+  "NVIDIA_API_KEY_5": 11
+ },
+ "temperature": 0.7,
+ "top_p": 0.95,
+ "model_id_returned": "nvidia/nemotron-3-ultra-550b-a55b",
+ "mini_version": "2.4.6",
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 40,
+   "hit_step_limit": 1,
+   "changed_lines": 2,
+   "gold_changed_lines": 130,
+   "Y1": 0,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": -6.022367813028454
+  },
+  "f2p_pass": 0,
+  "f2p_total": 1,
+  "p2p_pass": 33,
+  "p2p_total": 33,
+  "f2p_all_pass": false,
+  "p2p_all_pass": true,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 1.2
+ },
+ "status": "done",
+ "finished": "2026-10-12T13:51:47.910955+00:00"
+}

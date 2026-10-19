@@ -1,0 +1,317 @@
+{
+ "task_id": "netaddr__netaddr-225",
+ "repo": "netaddr/netaddr",
+ "stage": "phase_out",
+ "rounds": 1,
+ "rejects": {},
+ "flags": [
+  "length_violation_F_I"
+ ],
+ "info": {
+  "slots": {
+   "test_root": "netaddr/tests",
+   "P1": {
+    "replaced": "tutorials",
+    "name": "internal",
+    "F_R": "netaddr/eui/internal",
+    "F_I": "netaddr/contrib/internal"
+   },
+   "P2": {
+    "replaced": "netaddr/strategy/eui48.py",
+    "F_R": "netaddr/ip/intset.py",
+    "F_I": "runtests.py"
+   },
+   "C": {
+    "F_R": "make tests",
+    "F_I": "make install"
+   },
+   "D": {
+    "replaced": null,
+    "F_R": "toolz",
+    "F_I": "boltons"
+   }
+  },
+  "why": {
+   "test_command": [
+    {
+     "root": "netaddr/tests",
+     "T3": "SupportedClaim",
+     "T1": "SupportedClaim",
+     "collect_ok": true
+    }
+   ],
+   "kind1": {
+    "p1_idx": 6,
+    "gold0": "netaddr/eui",
+    "unrelated": "netaddr/contrib",
+    "base_R": "netaddr/eui",
+    "base_I": "netaddr/contrib"
+   },
+   "kind2": {
+    "p2_idx": 2,
+    "n_deleted_py": 121,
+    "found": {
+     "F_R": "netaddr/ip/intset.py",
+     "F_I": "runtests.py"
+    }
+   },
+   "kind3": {
+    "run": "tests",
+    "install": "install",
+    "test_ok": true,
+    "install_ok": true
+   },
+   "kind4": {
+    "deps": [],
+    "d_idx": null,
+    "src_R": "pytest",
+    "src_I": "pytest-cov",
+    "n_decls": 3,
+    "n_dist": 14
+   }
+  },
+  "length": {
+   "T": 353,
+   "F_R": 364,
+   "F_I": 377
+  },
+  "fallbacks": {
+   "F_R": [],
+   "F_I": []
+  },
+  "modes": {
+   "F_R": {
+    "1": "replace",
+    "2": "replace",
+    "3": "replace",
+    "4": "add"
+   },
+   "F_I": {
+    "1": "replace",
+    "2": "replace",
+    "3": "replace",
+    "4": "add"
+   }
+  },
+  "length_diff": {
+   "F_R": 11,
+   "F_I": 24
+  },
+  "n_claims_T": 13,
+  "n_false": {
+   "F_R": 4,
+   "F_I": 4
+  },
+  "pointer_in_issue": false,
+  "gold_dirs": [
+   "netaddr/eui"
+  ],
+  "gold_files": [
+   "netaddr/eui/__init__.py"
+  ]
+ },
+ "tokens": {
+  "F_R": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "netaddr/eui/internal",
+     "internal"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "netaddr/ip/intset.py",
+     "intset.py"
+    ]
+   },
+   {
+    "kind": 3,
+    "type": "regex",
+    "regex": "\\bmake\\b[^|;&\\n]*\\btests\\b",
+    "target": "tests"
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "toolz"
+    ]
+   }
+  ],
+  "F_I": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "netaddr/contrib/internal",
+     "internal"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "runtests.py",
+     "runtests.py"
+    ]
+   },
+   {
+    "kind": 3,
+    "type": "regex",
+    "regex": "\\bmake\\b[^|;&\\n]*\\binstall\\b",
+    "target": "install"
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "boltons"
+    ]
+   }
+  ]
+ },
+ "unresolved_pre_hermit": [],
+ "sha256": {
+  "T": "bd090628d43591ce5031f7e70859e53846b4069a0b05357915f6870f8f266e7a",
+  "F_R": "9af4742a7bea56faceccda801663abd2ea4ffd06d3ca01205a131bbed6b09d3e",
+  "F_I": "0a0c5f27716bf6d28b4f396154cbedda9c7dfd03ac51d8e836607d139ca5776f"
+ },
+ "chars": {
+  "T": 353,
+  "F_R": 364,
+  "F_I": 377
+ },
+ "claims": {
+  "T": [
+   "T1|netaddr",
+   "T1|netaddr/contrib",
+   "T1|netaddr/eui",
+   "T1|netaddr/ip",
+   "T1|netaddr/strategy",
+   "T1|netaddr/tests",
+   "T1|tutorials",
+   "T1|netaddr/ip/__init__.py",
+   "T1|netaddr/ip/sets.py",
+   "T1|netaddr/strategy/eui48.py",
+   "T3|test_framework|pytest",
+   "T1|netaddr/tests",
+   "T1|setup.py"
+  ],
+  "F_R": [
+   "T1|netaddr",
+   "T1|netaddr/contrib",
+   "T1|netaddr/eui",
+   "T1|netaddr/ip",
+   "T1|netaddr/strategy",
+   "T1|netaddr/tests",
+   "T1|netaddr/eui/internal",
+   "T1|netaddr/ip/__init__.py",
+   "T1|netaddr/ip/sets.py",
+   "T1|netaddr/ip/intset.py",
+   "T5|make|tests",
+   "T1|setup.py",
+   "T4|toolz|"
+  ],
+  "F_I": [
+   "T1|netaddr",
+   "T1|netaddr/contrib",
+   "T1|netaddr/eui",
+   "T1|netaddr/ip",
+   "T1|netaddr/strategy",
+   "T1|netaddr/tests",
+   "T1|netaddr/contrib/internal",
+   "T1|netaddr/ip/__init__.py",
+   "T1|netaddr/ip/sets.py",
+   "T1|runtests.py",
+   "T3|test_framework|pytest",
+   "T1|netaddr/tests",
+   "T5|make|install",
+   "T4|boltons|"
+  ]
+ },
+ "python_spec": null,
+ "token_audit": [
+  {
+   "cond": "F_R",
+   "kind": 1,
+   "type": "path",
+   "name": "netaddr/eui/internal",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 2,
+   "type": "path",
+   "name": "netaddr/ip/intset.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 3,
+   "type": "regex",
+   "name": "make tests",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 4,
+   "type": "word",
+   "name": "toolz",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 1,
+   "type": "path",
+   "name": "netaddr/contrib/internal",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 2,
+   "type": "path",
+   "name": "runtests.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 3,
+   "type": "regex",
+   "name": "make install",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 4,
+   "type": "word",
+   "name": "boltons",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  }
+ ],
+ "dist_imports_used": {
+  "toolz": null,
+  "boltons": null
+ }
+}

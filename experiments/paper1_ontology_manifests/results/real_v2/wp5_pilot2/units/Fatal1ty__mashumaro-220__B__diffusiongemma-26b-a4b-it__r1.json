@@ -1,0 +1,70 @@
+{
+ "unit_id": "Fatal1ty__mashumaro-220__B__diffusiongemma-26b-a4b-it__r1",
+ "task_id": "Fatal1ty__mashumaro-220",
+ "repo": "Fatal1ty/mashumaro",
+ "stage": "phase_out",
+ "condition": "B",
+ "model": "google/diffusiongemma-26b-a4b-it",
+ "run": 1,
+ "order": 10,
+ "env_build_s": 25.1,
+ "real_agent_manifest_at_base": [],
+ "started": "2026-10-06T18:32:00.947739+00:00",
+ "condition_meta": {
+  "source": "build_B_direct",
+  "chars": 7964,
+  "sha256": "19b88e8f7e15d9c737ea7eff3e4865326fd70fdf55d8b92cd8976ad2d3e0b562"
+ },
+ "condition_available": true,
+ "retries": 0,
+ "exit_status": "LimitsExceeded",
+ "error": "",
+ "steps": 40,
+ "wall_s": 764.1,
+ "prompt_tokens": 1298390,
+ "completion_tokens": 9814,
+ "format_errors": 4,
+ "length_cutoffs": 0,
+ "api_errors": {
+  "429": 7,
+  "timeout": 1
+ },
+ "n_queries": 48,
+ "temperature": 0.7,
+ "top_p": 0.95,
+ "model_id_returned": "google/diffusiongemma-26b-a4b-it",
+ "mini_version": "2.4.6",
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 40,
+   "hit_step_limit": 1,
+   "changed_lines": 31,
+   "gold_changed_lines": 23,
+   "Y1": 2,
+   "Y2": 2,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": 0.4306343543298623
+  },
+  "f2p_pass": 0,
+  "f2p_total": 1,
+  "p2p_pass": 4,
+  "p2p_total": 4,
+  "f2p_all_pass": false,
+  "p2p_all_pass": true,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 1.5
+ },
+ "status": "done",
+ "finished": "2026-10-06T18:44:47.258766+00:00"
+}

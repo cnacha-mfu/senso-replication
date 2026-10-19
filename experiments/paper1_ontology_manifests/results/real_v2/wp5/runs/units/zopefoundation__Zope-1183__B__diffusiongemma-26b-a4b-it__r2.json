@@ -1,0 +1,75 @@
+{
+ "unit_id": "zopefoundation__Zope-1183__B__diffusiongemma-26b-a4b-it__r2",
+ "task_id": "zopefoundation__Zope-1183",
+ "repo": "zopefoundation/Zope",
+ "stage": "servicing",
+ "condition": "B",
+ "model": "google/diffusiongemma-26b-a4b-it",
+ "run": 2,
+ "order": 1050,
+ "env_build_s": 90.5,
+ "real_agent_manifest_at_base": [],
+ "started": "2026-10-07T16:06:50.480265+00:00",
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 941,
+  "sha256": "967c8d4babf61aa7593b22f249f0e28603a97e533d3f1a4e95cf757531ec27bf"
+ },
+ "condition_available": true,
+ "retries": 0,
+ "exit_status": "Submitted",
+ "error": "",
+ "steps": 19,
+ "wall_s": 27.8,
+ "prompt_tokens": 57609,
+ "completion_tokens": 1780,
+ "format_errors": 1,
+ "length_cutoffs": 0,
+ "api_errors": {
+  "429": 2
+ },
+ "n_queries": 19,
+ "keys_used": {
+  "NVIDIA_API_KEY": 5,
+  "NVIDIA_API_KEY_4": 10,
+  "NVIDIA_API_KEY_2": 2,
+  "NVIDIA_API_KEY_5": 4
+ },
+ "temperature": 0.7,
+ "top_p": 0.95,
+ "model_id_returned": "google/diffusiongemma-26b-a4b-it",
+ "mini_version": "2.4.6",
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 2,
+   "Y6": 19,
+   "hit_step_limit": 0,
+   "changed_lines": 14,
+   "gold_changed_lines": 28,
+   "Y1": 0,
+   "Y2": 0,
+   "Y3": 0.0,
+   "Y3_gold": 0.0,
+   "Y3_excess": 0.0,
+   "Y3w": 0.9814814814814815,
+   "Y4": -1.0
+  },
+  "f2p_pass": 0,
+  "f2p_total": 1,
+  "p2p_pass": 0,
+  "p2p_total": 88,
+  "f2p_all_pass": false,
+  "p2p_all_pass": false,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 2.4
+ },
+ "status": "done",
+ "finished": "2026-10-07T16:07:21.030297+00:00"
+}

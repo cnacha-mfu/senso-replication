@@ -1,0 +1,78 @@
+{
+ "unit_id": "gitpython-developers__GitPython-1838__F_I__diffusiongemma-26b-a4b-it__r1",
+ "task_id": "gitpython-developers__GitPython-1838",
+ "repo": "gitpython-developers/GitPython",
+ "stage": "servicing",
+ "condition": "F_I",
+ "model": "google/diffusiongemma-26b-a4b-it",
+ "run": 1,
+ "order": 1050,
+ "env_build_s": 62.8,
+ "started": "2026-10-10T06:29:12.937134+00:00",
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 376,
+  "sha256": "5cafa51e4b25f1022b5153da7ba13e9d48d03b39d0b3ee079283f698af3fd8e0"
+ },
+ "condition_available": true,
+ "venv_reset_s": 1.47,
+ "retries": 0,
+ "venv_hash_before": "211e1f2d5870e170",
+ "venv_hash_after": "211e1f2d5870e170",
+ "venv_mutated": false,
+ "exit_status": "LimitsExceeded",
+ "error": "",
+ "steps": 40,
+ "wall_s": 168.4,
+ "prompt_tokens": 607006,
+ "completion_tokens": 3758,
+ "format_errors": 1,
+ "length_cutoffs": 0,
+ "api_errors": {
+  "429": 49
+ },
+ "n_queries": 44,
+ "keys_used": {
+  "NVIDIA_API_KEY": 20,
+  "NVIDIA_API_KEY_2": 26,
+  "NVIDIA_API_KEY_5": 21,
+  "NVIDIA_API_KEY_4": 22
+ },
+ "temperature": 0.7,
+ "top_p": 0.95,
+ "model_id_returned": "google/diffusiongemma-26b-a4b-it",
+ "mini_version": "2.4.6",
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 2,
+   "Y6": 40,
+   "hit_step_limit": 1,
+   "changed_lines": 54,
+   "gold_changed_lines": 62,
+   "Y1": 2,
+   "Y2": 1,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": -0.19930880822340666
+  },
+  "f2p_pass": 0,
+  "f2p_total": 10,
+  "p2p_pass": 0,
+  "p2p_total": 94,
+  "f2p_all_pass": false,
+  "p2p_all_pass": false,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 2.5
+ },
+ "status": "done",
+ "finished": "2026-10-10T06:32:07.047799+00:00"
+}

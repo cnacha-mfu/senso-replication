@@ -1,0 +1,292 @@
+{
+ "task_id": "pydicom__pydicom-1988",
+ "repo": "pydicom/pydicom",
+ "stage": "evolution",
+ "rounds": 1,
+ "rejects": {},
+ "flags": [
+  "kind3_dropped",
+  "length_violation_F_R",
+  "length_violation_F_I"
+ ],
+ "info": {
+  "slots": {
+   "test_root": "tests",
+   "P1": {
+    "replaced": "util/scripts",
+    "name": "core",
+    "F_R": "doc/release_notes/core",
+    "F_I": "build_tools/sphinx/core"
+   },
+   "P2": {
+    "replaced": "build_tools/sphinx/github_link.py",
+    "F_R": "src/pydicom/_storage_sopclass_uids.py",
+    "F_I": "examples/input_output/plot_read_dicom_directory.py"
+   },
+   "D": {
+    "replaced": null,
+    "F_R": "boltons",
+    "F_I": "plotly"
+   }
+  },
+  "why": {
+   "test_command": [
+    {
+     "root": "tests",
+     "T3": "SupportedClaim",
+     "T1": "SupportedClaim",
+     "collect_ok": true
+    }
+   ],
+   "kind1": {
+    "p1_idx": 7,
+    "gold0": "doc/release_notes",
+    "unrelated": "build_tools/sphinx",
+    "base_R": "doc/release_notes",
+    "base_I": "build_tools/sphinx"
+   },
+   "kind2": {
+    "p2_idx": 2,
+    "n_deleted_py": 356,
+    "found": {
+     "F_R": "src/pydicom/_storage_sopclass_uids.py",
+     "F_I": "examples/input_output/plot_read_dicom_directory.py"
+    }
+   },
+   "kind3": {
+    "run": null,
+    "install": null,
+    "test_ok": true,
+    "install_ok": true
+   },
+   "kind4": {
+    "deps": [],
+    "d_idx": null,
+    "src_R": "black",
+    "src_I": "matplotlib",
+    "n_decls": 25,
+    "n_dist": 23
+   }
+  },
+  "length": {
+   "T": 446,
+   "F_R": 487,
+   "F_I": 500
+  },
+  "fallbacks": {
+   "F_R": [],
+   "F_I": []
+  },
+  "modes": {
+   "F_R": {
+    "1": "replace",
+    "2": "replace",
+    "4": "add"
+   },
+   "F_I": {
+    "1": "replace",
+    "2": "replace",
+    "4": "add"
+   }
+  },
+  "length_diff": {
+   "F_R": 41,
+   "F_I": 54
+  },
+  "n_claims_T": 15,
+  "n_false": {
+   "F_R": 3,
+   "F_I": 3
+  },
+  "pointer_in_issue": true,
+  "gold_dirs": [
+   "doc/release_notes",
+   "src/pydicom"
+  ],
+  "gold_files": [
+   "doc/release_notes/v3.0.0.rst",
+   "src/pydicom/dataset.py"
+  ]
+ },
+ "tokens": {
+  "F_R": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "doc/release_notes/core",
+     "core"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "src/pydicom/_storage_sopclass_uids.py",
+     "_storage_sopclass_uids.py"
+    ]
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "boltons"
+    ]
+   }
+  ],
+  "F_I": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "build_tools/sphinx/core",
+     "core"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "examples/input_output/plot_read_dicom_directory.py",
+     "plot_read_dicom_directory.py"
+    ]
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "plotly"
+    ]
+   }
+  ]
+ },
+ "unresolved_pre_hermit": [],
+ "sha256": {
+  "T": "93746c8c4a3d68dd4da086926acbe28fe34091fad25342388aeb8ac6fec9aaa5",
+  "F_R": "9cb73b1623eebba4817f782622fae3f418f5d0d03da1ed47939da2e161919ae8",
+  "F_I": "eb4eec855078d136669e2d5dd9557042f4d95861f6d3eaaff52b09a810a635db"
+ },
+ "chars": {
+  "T": 446,
+  "F_R": 487,
+  "F_I": 500
+ },
+ "claims": {
+  "T": [
+   "T1|build_tools/sphinx",
+   "T1|doc/release_notes",
+   "T1|src/pydicom",
+   "T1|tests",
+   "T1|util/generate_cids",
+   "T1|util/generate_dict",
+   "T1|util/generate_uids",
+   "T1|util/scripts",
+   "T1|src/pydicom/sr/_concepts_dict.py",
+   "T1|util/generate_dict/generate_dicom_dict.py",
+   "T1|build_tools/sphinx/github_link.py",
+   "T3|test_framework|pytest",
+   "T1|tests",
+   "T1|pyproject.toml",
+   "T6|python|3010000000@2"
+  ],
+  "F_R": [
+   "T1|build_tools/sphinx",
+   "T1|doc/release_notes",
+   "T1|src/pydicom",
+   "T1|tests",
+   "T1|util/generate_cids",
+   "T1|util/generate_dict",
+   "T1|util/generate_uids",
+   "T1|doc/release_notes/core",
+   "T1|src/pydicom/sr/_concepts_dict.py",
+   "T1|util/generate_dict/generate_dicom_dict.py",
+   "T1|src/pydicom/_storage_sopclass_uids.py",
+   "T3|test_framework|pytest",
+   "T1|tests",
+   "T1|pyproject.toml",
+   "T4|boltons|",
+   "T6|python|3010000000@2"
+  ],
+  "F_I": [
+   "T1|build_tools/sphinx",
+   "T1|doc/release_notes",
+   "T1|src/pydicom",
+   "T1|tests",
+   "T1|util/generate_cids",
+   "T1|util/generate_dict",
+   "T1|util/generate_uids",
+   "T1|build_tools/sphinx/core",
+   "T1|src/pydicom/sr/_concepts_dict.py",
+   "T1|util/generate_dict/generate_dicom_dict.py",
+   "T1|examples/input_output/plot_read_dicom_directory.py",
+   "T3|test_framework|pytest",
+   "T1|tests",
+   "T1|pyproject.toml",
+   "T4|plotly|",
+   "T6|python|3010000000@2"
+  ]
+ },
+ "python_spec": ">=3.10",
+ "token_audit": [
+  {
+   "cond": "F_R",
+   "kind": 1,
+   "type": "path",
+   "name": "doc/release_notes/core",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 2,
+   "type": "path",
+   "name": "src/pydicom/_storage_sopclass_uids.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 4,
+   "type": "word",
+   "name": "boltons",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 1,
+   "type": "path",
+   "name": "build_tools/sphinx/core",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 2,
+   "type": "path",
+   "name": "examples/input_output/plot_read_dicom_directory.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 4,
+   "type": "word",
+   "name": "plotly",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  }
+ ],
+ "dist_imports_used": {
+  "boltons": null,
+  "plotly": null
+ }
+}

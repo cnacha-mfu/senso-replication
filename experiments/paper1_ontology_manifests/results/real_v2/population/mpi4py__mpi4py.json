@@ -1,0 +1,1931 @@
+{
+ "repo": "mpi4py/mpi4py",
+ "snapshot_date": "2025-06-30",
+ "status": "ok",
+ "unmineable": false,
+ "unmineable_reason": null,
+ "replaces": null,
+ "settings": {
+  "dedup": true,
+  "complexity": false,
+  "dataset": "seo_v2",
+  "sensitivity": true
+ },
+ "versions": {
+  "owlready2": "0.51",
+  "pymannkendall": "1.4.3",
+  "lizard": "1.24.1",
+  "numpy": "2.5.3",
+  "scipy": "1.18.1",
+  "python": "3.12.15",
+  "git": "git version 2.53.0"
+ },
+ "measures": {
+  "monthsObserved": 36,
+  "monthsSinceLastCommit": 0,
+  "distinctAuthorsInWindow": 9,
+  "commitMKTau": -0.004762,
+  "commitMKpValue": 0.978243,
+  "activeMonthCount": 35,
+  "activeMonthRatio": 0.972222,
+  "meanMonthlyCommits": 21.388889,
+  "commitsLast3Months": 77,
+  "commitCountCV": 0.483277,
+  "commitCountCVSample": 0.490133,
+  "commitHalfRatio": 0.891892,
+  "commitSecondHalfMean": 20.166667,
+  "churnCV": 1.899321,
+  "linesAddedCV": 1.779338,
+  "mergeMonthRatio": 0.222222,
+  "multiAuthorMonthRatio": 0.388889,
+  "bugFixRatioFirstHalf": 0.282047,
+  "bugFixRatioSecondHalf": 0.197668,
+  "bugFixHalfRatio": 0.700832,
+  "locSeriesLength": 36,
+  "locRelSenSlopeAnnual": 0.092304,
+  "locMKTau": 0.985714,
+  "locMKS": 621,
+  "locMKpValue": 0.0,
+  "locSenSlope": 371.275,
+  "locStart": 41560,
+  "locEnd": 57829,
+  "locDelta": 16269,
+  "locGrowthRate": 0.391458,
+  "locChangePct": 39.145813,
+  "locEndToStartRatio": 1.391458,
+  "locGrowthLast3": 0.023377,
+  "featureCommitsFirstHalf": 3,
+  "featureCommitsSecondHalf": 20,
+  "featureCommitsTotal": 23,
+  "featureSecondToFirstRatio": 6.666667,
+  "locDeltaPerFeature": 707.347826,
+  "recentAgentCommitRatio": 0.0,
+  "featCommitCount": 23,
+  "bugFixCommitCount": 176,
+  "commitCount": 770,
+  "monthly_series": {
+   "months": [
+    "2021-07",
+    "2021-08",
+    "2021-09",
+    "2021-10",
+    "2021-11",
+    "2021-12",
+    "2022-01",
+    "2022-02",
+    "2022-03",
+    "2022-04",
+    "2022-05",
+    "2022-06",
+    "2022-07",
+    "2022-08",
+    "2022-09",
+    "2022-10",
+    "2022-11",
+    "2022-12",
+    "2023-01",
+    "2023-02",
+    "2023-03",
+    "2023-04",
+    "2023-05",
+    "2023-06",
+    "2023-07",
+    "2023-08",
+    "2023-09",
+    "2023-10",
+    "2023-11",
+    "2023-12",
+    "2024-01",
+    "2024-02",
+    "2024-03",
+    "2024-04",
+    "2024-05",
+    "2024-06",
+    "2024-07",
+    "2024-08",
+    "2024-09",
+    "2024-10",
+    "2024-11",
+    "2024-12",
+    "2025-01",
+    "2025-02",
+    "2025-03",
+    "2025-04",
+    "2025-05",
+    "2025-06"
+   ],
+   "commits": [
+    35,
+    34,
+    51,
+    23,
+    33,
+    5,
+    10,
+    33,
+    7,
+    22,
+    43,
+    36,
+    8,
+    20,
+    22,
+    22,
+    21,
+    0,
+    26,
+    31,
+    33,
+    30,
+    23,
+    12,
+    14,
+    15,
+    27,
+    46,
+    42,
+    15,
+    25,
+    19,
+    20,
+    30,
+    34,
+    9,
+    24,
+    15,
+    7,
+    14,
+    11,
+    7,
+    13,
+    24,
+    34,
+    28,
+    13,
+    36
+   ],
+   "loc": [
+    34108,
+    33267,
+    33916,
+    33693,
+    33860,
+    33861,
+    33900,
+    40078,
+    40100,
+    40363,
+    41984,
+    41553,
+    41560,
+    41929,
+    42241,
+    42613,
+    42645,
+    42645,
+    42677,
+    43070,
+    43374,
+    44469,
+    46647,
+    46841,
+    46674,
+    46785,
+    47312,
+    47410,
+    48197,
+    48257,
+    48278,
+    48479,
+    48573,
+    49345,
+    50360,
+    50384,
+    50547,
+    50663,
+    50665,
+    50636,
+    50676,
+    50681,
+    50696,
+    50859,
+    54165,
+    56508,
+    56551,
+    57829
+   ]
+  }
+ },
+ "window": {
+  "L": 36,
+  "first_month": "2022-07",
+  "last_month": "2025-06",
+  "n_months": 36,
+  "left_truncated": false,
+  "first_commit_month": "2008-05",
+  "mined_months": 48,
+  "commits_in_window": 770,
+  "commits_in_history": 3370
+ },
+ "loc_instrument": {
+  "instrument": "nonblank-source-lines-v1",
+  "status": "ok",
+  "months": 48,
+  "month_end_commits_distinct": 47,
+  "source_blobs": 1742,
+  "blobs_fetched": 24,
+  "t_ls_tree_s": 1.9010968139627948,
+  "t_fetch_s": 1.290530676022172,
+  "t_read_s": 0.7253633869695477,
+  "series_present": true,
+  "extensions": [
+   ".bash",
+   ".c",
+   ".cc",
+   ".cjs",
+   ".clj",
+   ".cpp",
+   ".cs",
+   ".cxx",
+   ".dart",
+   ".erl",
+   ".ex",
+   ".exs",
+   ".f90",
+   ".go",
+   ".groovy",
+   ".h",
+   ".hh",
+   ".hpp",
+   ".hs",
+   ".java",
+   ".jl",
+   ".js",
+   ".jsx",
+   ".kt",
+   ".kts",
+   ".lua",
+   ".m",
+   ".mjs",
+   ".ml",
+   ".mm",
+   ".nim",
+   ".php",
+   ".pl",
+   ".pm",
+   ".py",
+   ".pyi",
+   ".r",
+   ".rb",
+   ".rs",
+   ".scala",
+   ".sh",
+   ".sql",
+   ".svelte",
+   ".swift",
+   ".ts",
+   ".tsx",
+   ".vue",
+   ".zig"
+  ],
+  "excluded_dirs": [
+   "node_modules",
+   "vendor",
+   "vendored",
+   "third_party",
+   "site-packages",
+   "bower_components"
+  ],
+  "max_blob_bytes": 1000000,
+  "first_parent": true
+ },
+ "mining": {
+  "churn": {
+   "t_churn_raw_s": 0.6077071729814634,
+   "t_churn_fetch_s": 7.780464032024611,
+   "t_churn_numstat_s": 1.467573490983341,
+   "blobs_fetched_churn": 2413
+  },
+  "timings": {
+   "t_clone": 2.645,
+   "t_mine": 13.669,
+   "t_loc": 3.923,
+   "t_reason_A": 10.445
+  },
+  "cached": false
+ },
+ "stage_a": {
+  "commits": 1102,
+  "reasoned_commits": 1007,
+  "inconsistent_chunks": 0,
+  "chunk_timings": [
+   {
+    "tbox_load_s": 0.054916378983762115,
+    "abox_load_s": 0.17364988999906927,
+    "reason_s": 7.305351304996293,
+    "extract_s": 0.012502570985816419,
+    "total_s": 7.547514710982796,
+    "commits": 1000
+   },
+   {
+    "tbox_load_s": 0.042160801007412374,
+    "abox_load_s": 0.0023688070359639823,
+    "reason_s": 2.8090011890162714,
+    "extract_s": 0.0012683559907600284,
+    "total_s": 2.8550488139735535,
+    "commits": 7
+   }
+  ],
+  "tbox_sha256": "da30ed577542b3643ecf06cb6a4649ccc8fce61ab7a0373beabd763e12883e86"
+ },
+ "activity": {
+  "last_commit_date": "2025-06-28T09:31:29+00:00",
+  "months_since_last_commit": 0,
+  "distinct_authors_in_window": 9,
+  "merge_commits_in_window": 23
+ },
+ "agent_adoption_date": "2023-09-11T02:48:51+00:00",
+ "commit_label_counts": {
+  "BugFixCommit": 176,
+  "FeatureCommit": 23,
+  "AgentCommit": 13
+ },
+ "series_months": [
+  {
+   "month": "2022-07",
+   "commit_count": 8,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 29,
+   "lines_deleted": 19,
+   "total_churn": 48,
+   "files_changed": 6,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 41560,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-08",
+   "commit_count": 20,
+   "merge_count": 2,
+   "unique_authors": 2,
+   "lines_added": 611,
+   "lines_deleted": 146,
+   "total_churn": 757,
+   "files_changed": 18,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 41929,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-09",
+   "commit_count": 22,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 662,
+   "lines_deleted": 224,
+   "total_churn": 886,
+   "files_changed": 47,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 42241,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-10",
+   "commit_count": 22,
+   "merge_count": 0,
+   "unique_authors": 2,
+   "lines_added": 1216,
+   "lines_deleted": 889,
+   "total_churn": 2105,
+   "files_changed": 99,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 42613,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-11",
+   "commit_count": 21,
+   "merge_count": 5,
+   "unique_authors": 1,
+   "lines_added": 20,
+   "lines_deleted": 12,
+   "total_churn": 32,
+   "files_changed": 6,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 42645,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-12",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 42645,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-01",
+   "commit_count": 26,
+   "merge_count": 0,
+   "unique_authors": 2,
+   "lines_added": 1005,
+   "lines_deleted": 766,
+   "total_churn": 1771,
+   "files_changed": 128,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 42677,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-02",
+   "commit_count": 31,
+   "merge_count": 0,
+   "unique_authors": 2,
+   "lines_added": 552,
+   "lines_deleted": 345,
+   "total_churn": 897,
+   "files_changed": 51,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 43070,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-03",
+   "commit_count": 33,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 2112,
+   "lines_deleted": 1743,
+   "total_churn": 3855,
+   "files_changed": 74,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 43374,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-04",
+   "commit_count": 30,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 3004,
+   "lines_deleted": 1661,
+   "total_churn": 4665,
+   "files_changed": 75,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 44469,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-05",
+   "commit_count": 23,
+   "merge_count": 0,
+   "unique_authors": 2,
+   "lines_added": 2774,
+   "lines_deleted": 342,
+   "total_churn": 3116,
+   "files_changed": 87,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 46647,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-06",
+   "commit_count": 12,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 1874,
+   "lines_deleted": 1640,
+   "total_churn": 3514,
+   "files_changed": 32,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 46841,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-07",
+   "commit_count": 14,
+   "merge_count": 0,
+   "unique_authors": 2,
+   "lines_added": 217,
+   "lines_deleted": 405,
+   "total_churn": 622,
+   "files_changed": 21,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 46674,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-08",
+   "commit_count": 15,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 353,
+   "lines_deleted": 230,
+   "total_churn": 583,
+   "files_changed": 19,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 46785,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-09",
+   "commit_count": 27,
+   "merge_count": 0,
+   "unique_authors": 2,
+   "lines_added": 975,
+   "lines_deleted": 391,
+   "total_churn": 1366,
+   "files_changed": 43,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 47312,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-10",
+   "commit_count": 46,
+   "merge_count": 3,
+   "unique_authors": 1,
+   "lines_added": 921,
+   "lines_deleted": 617,
+   "total_churn": 1538,
+   "files_changed": 57,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 47410,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-11",
+   "commit_count": 42,
+   "merge_count": 1,
+   "unique_authors": 1,
+   "lines_added": 1340,
+   "lines_deleted": 459,
+   "total_churn": 1799,
+   "files_changed": 81,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 48197,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-12",
+   "commit_count": 15,
+   "merge_count": 1,
+   "unique_authors": 2,
+   "lines_added": 113,
+   "lines_deleted": 45,
+   "total_churn": 158,
+   "files_changed": 15,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 48257,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-01",
+   "commit_count": 25,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 186,
+   "lines_deleted": 156,
+   "total_churn": 342,
+   "files_changed": 41,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 48278,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-02",
+   "commit_count": 19,
+   "merge_count": 2,
+   "unique_authors": 1,
+   "lines_added": 265,
+   "lines_deleted": 15,
+   "total_churn": 280,
+   "files_changed": 11,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 48479,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-03",
+   "commit_count": 20,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 370,
+   "lines_deleted": 267,
+   "total_churn": 637,
+   "files_changed": 64,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 48573,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-04",
+   "commit_count": 30,
+   "merge_count": 5,
+   "unique_authors": 1,
+   "lines_added": 1108,
+   "lines_deleted": 195,
+   "total_churn": 1303,
+   "files_changed": 44,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 49345,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-05",
+   "commit_count": 34,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 1613,
+   "lines_deleted": 426,
+   "total_churn": 2039,
+   "files_changed": 47,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 50360,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-06",
+   "commit_count": 9,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 45,
+   "lines_deleted": 20,
+   "total_churn": 65,
+   "files_changed": 11,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 50384,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-07",
+   "commit_count": 24,
+   "merge_count": 0,
+   "unique_authors": 2,
+   "lines_added": 429,
+   "lines_deleted": 267,
+   "total_churn": 696,
+   "files_changed": 40,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 50547,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-08",
+   "commit_count": 15,
+   "merge_count": 0,
+   "unique_authors": 4,
+   "lines_added": 159,
+   "lines_deleted": 30,
+   "total_churn": 189,
+   "files_changed": 19,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 50663,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-09",
+   "commit_count": 7,
+   "merge_count": 0,
+   "unique_authors": 2,
+   "lines_added": 19,
+   "lines_deleted": 17,
+   "total_churn": 36,
+   "files_changed": 8,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 50665,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-10",
+   "commit_count": 14,
+   "merge_count": 0,
+   "unique_authors": 2,
+   "lines_added": 18,
+   "lines_deleted": 53,
+   "total_churn": 71,
+   "files_changed": 9,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 50636,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-11",
+   "commit_count": 11,
+   "merge_count": 0,
+   "unique_authors": 2,
+   "lines_added": 55,
+   "lines_deleted": 13,
+   "total_churn": 68,
+   "files_changed": 19,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 50676,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-12",
+   "commit_count": 7,
+   "merge_count": 0,
+   "unique_authors": 2,
+   "lines_added": 8,
+   "lines_deleted": 3,
+   "total_churn": 11,
+   "files_changed": 5,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 50681,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2025-01",
+   "commit_count": 13,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 124,
+   "lines_deleted": 107,
+   "total_churn": 231,
+   "files_changed": 18,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 50696,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2025-02",
+   "commit_count": 24,
+   "merge_count": 4,
+   "unique_authors": 1,
+   "lines_added": 683,
+   "lines_deleted": 495,
+   "total_churn": 1178,
+   "files_changed": 52,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 50859,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2025-03",
+   "commit_count": 34,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 6242,
+   "lines_deleted": 2601,
+   "total_churn": 8843,
+   "files_changed": 162,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 54165,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2025-04",
+   "commit_count": 28,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 11212,
+   "lines_deleted": 8057,
+   "total_churn": 19269,
+   "files_changed": 276,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 56508,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2025-05",
+   "commit_count": 13,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 115,
+   "lines_deleted": 69,
+   "total_churn": 184,
+   "files_changed": 21,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 56551,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2025-06",
+   "commit_count": 36,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 1550,
+   "lines_deleted": 88,
+   "total_churn": 1638,
+   "files_changed": 42,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 57829,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  }
+ ],
+ "measures_derived": {
+  "bugFixRatioFirstHalf": 0.282047,
+  "bugFixRatioSecondHalf": 0.197668,
+  "bugFixHalfRatio": 0.700832,
+  "featureCommitsFirstHalf": 3,
+  "featureCommitsSecondHalf": 20,
+  "featureCommitsTotal": 23,
+  "featureSecondToFirstRatio": 6.666667,
+  "locDeltaPerFeature": 707.347826,
+  "recentAgentCommitRatio": 0.0
+ },
+ "inferred": {
+  "a0.05_L36_D12_G0.05_orig": {
+   "classes": [
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIIConformant",
+    "LawIVConformant",
+    "LawVConformant",
+    "LawVIConformant",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantNoMerge",
+    "LawVIINonConformant",
+    "MKApplicable",
+    "MergeInactive",
+    "MultiAuthorActive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": "urn:senso:explanations:mpi4py/mpi4py:79f851de895e",
+   "tbox_sha256": "79f851de895e8301073d1746931d8ac1d34e4ed2e94897358fca050d9d07b63c",
+   "abox_triples": 41,
+   "t_reason_B_s": 3.311
+  },
+  "a0.01_L36_D12_G0.05_orig": {
+   "classes": [
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIIConformant",
+    "LawIVConformant",
+    "LawVConformant",
+    "LawVIConformant",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantNoMerge",
+    "LawVIINonConformant",
+    "MKApplicable",
+    "MergeInactive",
+    "MultiAuthorActive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "956579a8859000216eba261c78e4795a2b5042e7edf95419211fd46e9dbeada9",
+   "abox_triples": 41,
+   "t_reason_B_s": 3.607
+  },
+  "a0.1_L36_D12_G0.05_orig": {
+   "classes": [
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIIConformant",
+    "LawIVConformant",
+    "LawVConformant",
+    "LawVIConformant",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantNoMerge",
+    "LawVIINonConformant",
+    "MKApplicable",
+    "MergeInactive",
+    "MultiAuthorActive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "56009aa92bf68560113e153a97a62cd0cfdea303607eb909725e8e10a2536494",
+   "abox_triples": 41,
+   "t_reason_B_s": 3.467
+  },
+  "a0.05_L24_D12_G0.05_orig": {
+   "classes": [
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIINonConformant",
+    "LawIVConformant",
+    "LawVIConformant",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantNoMerge",
+    "LawVIINonConformant",
+    "LawVNonConformant",
+    "MKApplicable",
+    "MergeInactive",
+    "MultiAuthorActive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "79f851de895e8301073d1746931d8ac1d34e4ed2e94897358fca050d9d07b63c",
+   "abox_triples": 41,
+   "t_reason_B_s": 3.081
+  },
+  "a0.05_L48_D12_G0.05_orig": {
+   "classes": [
+    "CopyPasteEvidence",
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIIConformant",
+    "LawIVConformant",
+    "LawVConformant",
+    "LawVIConformant",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantNoMerge",
+    "LawVIINonConformant",
+    "LocPerFeatureHigh",
+    "MKApplicable",
+    "MergeInactive",
+    "MultiAuthorActive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "79f851de895e8301073d1746931d8ac1d34e4ed2e94897358fca050d9d07b63c",
+   "abox_triples": 41,
+   "t_reason_B_s": 3.386
+  },
+  "a0.05_L36_D6_G0.05_orig": {
+   "classes": [
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIIConformant",
+    "LawIVConformant",
+    "LawVConformant",
+    "LawVIConformant",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantNoMerge",
+    "LawVIINonConformant",
+    "MKApplicable",
+    "MergeInactive",
+    "MultiAuthorActive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "a19e7e45f521324fec6b19741e2a4f08e5d15efd8e05802851c45a87515a7761",
+   "abox_triples": 41,
+   "t_reason_B_s": 3.101
+  },
+  "a0.05_L36_D18_G0.05_orig": {
+   "classes": [
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIIConformant",
+    "LawIVConformant",
+    "LawVConformant",
+    "LawVIConformant",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantNoMerge",
+    "LawVIINonConformant",
+    "MKApplicable",
+    "MergeInactive",
+    "MultiAuthorActive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "f87900e0c68335fbd2cae9848efdc2926406c328fb39da8e6e393bb472a68fdc",
+   "abox_triples": 41,
+   "t_reason_B_s": 2.946
+  },
+  "a0.05_L36_D24_G0.05_orig": {
+   "classes": [
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIIConformant",
+    "LawIVConformant",
+    "LawVConformant",
+    "LawVIConformant",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantNoMerge",
+    "LawVIINonConformant",
+    "MKApplicable",
+    "MergeInactive",
+    "MultiAuthorActive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "562211ba220cda59299aec70f3561ba96eadd88adaf45f6f7db3fce71cdcc77b",
+   "abox_triples": 41,
+   "t_reason_B_s": 3.109
+  },
+  "a0.05_L36_D12_G0_orig": {
+   "classes": [
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIIConformant",
+    "LawIVConformant",
+    "LawVConformant",
+    "LawVIConformant",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantNoMerge",
+    "LawVIINonConformant",
+    "MKApplicable",
+    "MergeInactive",
+    "MultiAuthorActive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "c0de0e8b2e7424d23b10ed152acd4ff66c2f1a973196b7e54f6598e9d734d0dc",
+   "abox_triples": 41,
+   "t_reason_B_s": 3.163
+  },
+  "a0.05_L36_D12_G0.02_orig": {
+   "classes": [
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIIConformant",
+    "LawIVConformant",
+    "LawVConformant",
+    "LawVIConformant",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantNoMerge",
+    "LawVIINonConformant",
+    "MKApplicable",
+    "MergeInactive",
+    "MultiAuthorActive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "2c6613dd6b3e4fa714d92eaa067f02157466a4b3ee0ccf6de289441d860de28d",
+   "abox_triples": 41,
+   "t_reason_B_s": 2.961
+  },
+  "a0.05_L36_D12_G0.1_orig": {
+   "classes": [
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIIConformant",
+    "LawIVConformant",
+    "LawVConformant",
+    "LawVIConformant",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantNoMerge",
+    "LawVIINonConformant",
+    "MKApplicable",
+    "MergeInactive",
+    "MinorLocGrowth",
+    "MultiAuthorActive",
+    "NonSubstantialChange",
+    "RBServicingStage",
+    "RecentlyActive"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "0cfde802b4494fc33a5ad0eb910980aaf152093f62848406bdc37bc099347936",
+   "abox_triples": 41,
+   "t_reason_B_s": 2.273
+  },
+  "a0.05_L36_D12_G0.05_hr": {
+   "classes": [
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIIConformant",
+    "LawIVConformant",
+    "LawVConformant",
+    "LawVIConformant",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantNoMerge",
+    "LawVIINonConformant",
+    "MKApplicable",
+    "MergeInactive",
+    "MultiAuthorActive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "79f851de895e8301073d1746931d8ac1d34e4ed2e94897358fca050d9d07b63c",
+   "abox_triples": 41,
+   "t_reason_B_s": 2.358
+  }
+ },
+ "primary_config": "a0.05_L36_D12_G0.05_orig",
+ "project_iri": "http://senso-framework.org/data/mpi4py_mpi4py",
+ "consistent": true,
+ "inferred_labels": [
+  "GrowthStage",
+  "LawIConformant",
+  "LawIIIConformant",
+  "LawIVConformant",
+  "LawVConformant",
+  "LawVIConformant",
+  "LawVIIINonConformant",
+  "LawVIIINonConformantNoMerge",
+  "LawVIINonConformant",
+  "MKApplicable",
+  "MergeInactive",
+  "MultiAuthorActive",
+  "RBActiveDevelopmentStage",
+  "RecentlyActive",
+  "SubstantialLocGrowth"
+ ],
+ "stage_labels": [
+  "GrowthStage",
+  "RBActiveDevelopmentStage"
+ ],
+ "law_labels": {
+  "I": "LawIConformant",
+  "III": "LawIIIConformant",
+  "IV": "LawIVConformant",
+  "V": "LawVConformant",
+  "VI": "LawVIConformant",
+  "VII": "LawVIINonConformant",
+  "VIII": "LawVIIINonConformant"
+ },
+ "tbox_sha256_stage_b": "79f851de895e8301073d1746931d8ac1d34e4ed2e94897358fca050d9d07b63c",
+ "tbox_sha256_stage_a": "da30ed577542b3643ecf06cb6a4649ccc8fce61ab7a0373beabd763e12883e86",
+ "summary": {
+  "c1": "A",
+  "c2": "A",
+  "cf": "A",
+  "note": "debug summary; run_rq1_v2.py reads `inferred` and recomputes CF itself"
+ },
+ "explanations": {
+  "stage:GrowthStage": {
+   "class": "GrowthStage",
+   "target": "http://senso-framework.org/data/mpi4py_mpi4py type http://senso-framework.org/ontology/seo#GrowthStage",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKTau_gt_0",
+       "text": "A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKpValue_lt_mk_alpha",
+       "text": "A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]"
+      },
+      {
+       "kind": "definition",
+       "subject": "GrowthStage",
+       "text": "GrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "mpi4py_mpi4py",
+       "prop": "locMKpValue",
+       "value": 0.0,
+       "raw": "mpi4py_mpi4py locMKpValue 0.0"
+      },
+      {
+       "subject": "mpi4py_mpi4py",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "mpi4py_mpi4py type SoftwareProject"
+      },
+      {
+       "subject": "mpi4py_mpi4py",
+       "prop": "locMKTau",
+       "value": 0.985714,
+       "raw": "mpi4py_mpi4py locMKTau 0.985714"
+      },
+      {
+       "subject": "mpi4py_mpi4py",
+       "prop": "locSeriesLength",
+       "value": 36,
+       "raw": "mpi4py_mpi4py locSeriesLength 36"
+      }
+     ],
+     "closures": [],
+     "raw": "mpi4py_mpi4py locMKpValue 0.0\nmpi4py_mpi4py type SoftwareProject\nA_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\nA_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\nmpi4py_mpi4py locMKTau 0.985714\nA_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\nGrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject\nmpi4py_mpi4py locSeriesLength 36\nA_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]"
+    }
+   ],
+   "raw_text": "Axiom: mpi4py_mpi4py type GrowthStage\n\nExplanation(s): \n1)   mpi4py_mpi4py locMKpValue 0.0\n     mpi4py_mpi4py type SoftwareProject\n     A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\n     A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\n     mpi4py_mpi4py locMKTau 0.985714\n     A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\n     GrowthStage equivalentTo A_locMKTau_gt_0\n                              and A_locMKpValue_lt_mk_alpha\n                              and MKApplicable\n                              and SoftwareProject\n     mpi4py_mpi4py locSeriesLength 36\n     A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]\n\n\n",
+   "seconds": 2.8446358049986884,
+   "returncode": 0,
+   "error": null
+  },
+  "stage:RBActiveDevelopmentStage": {
+   "class": "RBActiveDevelopmentStage",
+   "target": "http://senso-framework.org/data/mpi4py_mpi4py type http://senso-framework.org/ontology/seo#RBActiveDevelopmentStage",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable"
+      },
+      {
+       "kind": "definition",
+       "subject": "SubstantialLocGrowth",
+       "text": "SubstantialLocGrowth equivalentTo A_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKTau_gt_0",
+       "text": "A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "GrowthStage",
+       "text": "GrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year",
+       "text": "A_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year equivalentTo locRelSenSlopeAnnual some decimal[>= 0.05]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]"
+      },
+      {
+       "kind": "definition",
+       "subject": "RBActiveDevelopmentStage",
+       "text": "RBActiveDevelopmentStage equivalentTo GrowthStage and RecentlyActive and SoftwareProject and SubstantialLocGrowth"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKpValue_lt_mk_alpha",
+       "text": "A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]"
+      },
+      {
+       "kind": "definition",
+       "subject": "RecentlyActive",
+       "text": "RecentlyActive equivalentTo A_monthsSinceLastCommit_lt_rb_dormancy_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_monthsSinceLastCommit_lt_rb_dormancy_months",
+       "text": "A_monthsSinceLastCommit_lt_rb_dormancy_months equivalentTo monthsSinceLastCommit some integer[< 12]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "mpi4py_mpi4py",
+       "prop": "locRelSenSlopeAnnual",
+       "value": 0.092304,
+       "raw": "mpi4py_mpi4py locRelSenSlopeAnnual 0.092304"
+      },
+      {
+       "subject": "mpi4py_mpi4py",
+       "prop": "locMKpValue",
+       "value": 0.0,
+       "raw": "mpi4py_mpi4py locMKpValue 0.0"
+      },
+      {
+       "subject": "mpi4py_mpi4py",
+       "prop": "monthsSinceLastCommit",
+       "value": 0,
+       "raw": "mpi4py_mpi4py monthsSinceLastCommit 0"
+      },
+      {
+       "subject": "mpi4py_mpi4py",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "mpi4py_mpi4py type SoftwareProject"
+      },
+      {
+       "subject": "mpi4py_mpi4py",
+       "prop": "locMKTau",
+       "value": 0.985714,
+       "raw": "mpi4py_mpi4py locMKTau 0.985714"
+      },
+      {
+       "subject": "mpi4py_mpi4py",
+       "prop": "locSeriesLength",
+       "value": 36,
+       "raw": "mpi4py_mpi4py locSeriesLength 36"
+      }
+     ],
+     "closures": [],
+     "raw": "mpi4py_mpi4py locRelSenSlopeAnnual 0.092304\nmpi4py_mpi4py locMKpValue 0.0\nA_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\nmpi4py_mpi4py monthsSinceLastCommit 0\nSubstantialLocGrowth equivalentTo A_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year and SoftwareProject\nA_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\nGrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject\nA_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year equivalentTo locRelSenSlopeAnnual some decimal[>= 0.05]\nA_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]\nRBActiveDevelopmentStage equivalentTo GrowthStage and RecentlyActive and SoftwareProject and SubstantialLocGrowth\nmpi4py_mpi4py type SoftwareProject\nmpi4py_mpi4py locMKTau 0.985714\nA_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\nRecentlyActive equivalentTo A_monthsSinceLastCommit_lt_rb_dormancy_months and SoftwareProject\nmpi4py_mpi4py locSeriesLength 36\nA_monthsSinceLastCommit_lt_rb_dormancy_months equivalentTo monthsSinceLastCommit some integer[< 12]"
+    }
+   ],
+   "raw_text": "Axiom: mpi4py_mpi4py type RBActiveDevelopmentStage\n\nExplanation(s): \n1)   mpi4py_mpi4py locRelSenSlopeAnnual 0.092304\n     mpi4py_mpi4py locMKpValue 0.0\n     A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\n     mpi4py_mpi4py monthsSinceLastCommit 0\n     SubstantialLocGrowth equivalentTo A_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year\n                                       and SoftwareProject\n     A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\n     GrowthStage equivalentTo A_locMKTau_gt_0\n                              and A_locMKpValue_lt_mk_alpha\n                              and MKApplicable\n                              and SoftwareProject\n     A_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year equivalentTo locRelSenSlopeAnnual some decimal[>= 0.05]\n     A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]\n     RBActiveDevelopmentStage equivalentTo GrowthStage\n                                           and RecentlyActive\n                                           and SoftwareProject\n                                           and SubstantialLocGrowth\n     mpi4py_mpi4py type SoftwareProject\n     mpi4py_mpi4py locMKTau 0.985714\n     A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\n     RecentlyActive equivalentTo A_monthsSinceLastCommit_lt_rb_dormancy_months\n                                 and SoftwareProject\n     mpi4py_mpi4py locSeriesLength 36\n     A_monthsSinceLastCommit_lt_rb_dormancy_months equivalentTo monthsSinceLastCommit some integer[< 12]\n\n\n",
+   "seconds": 3.0013471720158122,
+   "returncode": 0,
+   "error": null
+  },
+  "lawI": {
+   "class": "LawIConformant",
+   "target": "http://senso-framework.org/data/mpi4py_mpi4py type http://senso-framework.org/ontology/seo#LawIConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law1_min_months",
+       "text": "A_monthsObserved_ge_p_law1_min_months equivalentTo monthsObserved some integer[>= 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawIConformant",
+       "text": "LawIConformant equivalentTo A_activeMonthRatio_ge_p_law1_active_ratio and A_monthsObserved_ge_p_law1_min_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_activeMonthRatio_ge_p_law1_active_ratio",
+       "text": "A_activeMonthRatio_ge_p_law1_active_ratio equivalentTo activeMonthRatio some decimal[>= 0.5]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "mpi4py_mpi4py",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "mpi4py_mpi4py type SoftwareProject"
+      },
+      {
+       "subject": "mpi4py_mpi4py",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "mpi4py_mpi4py monthsObserved 36"
+      },
+      {
+       "subject": "mpi4py_mpi4py",
+       "prop": "activeMonthRatio",
+       "value": 0.972222,
+       "raw": "mpi4py_mpi4py activeMonthRatio 0.972222"
+      }
+     ],
+     "closures": [],
+     "raw": "A_monthsObserved_ge_p_law1_min_months equivalentTo monthsObserved some integer[>= 2]\nLawIConformant equivalentTo A_activeMonthRatio_ge_p_law1_active_ratio and A_monthsObserved_ge_p_law1_min_months and SoftwareProject\nmpi4py_mpi4py type SoftwareProject\nA_activeMonthRatio_ge_p_law1_active_ratio equivalentTo activeMonthRatio some decimal[>= 0.5]\nmpi4py_mpi4py monthsObserved 36\nmpi4py_mpi4py activeMonthRatio 0.972222"
+    }
+   ],
+   "raw_text": "Axiom: mpi4py_mpi4py type LawIConformant\n\nExplanation(s): \n1)   A_monthsObserved_ge_p_law1_min_months equivalentTo monthsObserved some integer[>= 2]\n     LawIConformant equivalentTo A_activeMonthRatio_ge_p_law1_active_ratio\n                                 and A_monthsObserved_ge_p_law1_min_months\n                                 and SoftwareProject\n     mpi4py_mpi4py type SoftwareProject\n     A_activeMonthRatio_ge_p_law1_active_ratio equivalentTo activeMonthRatio some decimal[>= 0.5]\n     mpi4py_mpi4py monthsObserved 36\n     mpi4py_mpi4py activeMonthRatio 0.972222\n\n\n",
+   "seconds": 2.6056151020457037,
+   "returncode": 0,
+   "error": null
+  },
+  "lawIII": {
+   "class": "LawIIIConformant",
+   "target": "http://senso-framework.org/data/mpi4py_mpi4py type http://senso-framework.org/ontology/seo#LawIIIConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law3_min_months",
+       "text": "A_monthsObserved_ge_p_law3_min_months equivalentTo monthsObserved some integer[>= 6]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawIIIConformant",
+       "text": "LawIIIConformant equivalentTo A_churnCV_lt_p_law3_churn_cv and A_monthsObserved_ge_p_law3_min_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_churnCV_lt_p_law3_churn_cv",
+       "text": "A_churnCV_lt_p_law3_churn_cv equivalentTo churnCV some decimal[< 2.0]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "mpi4py_mpi4py",
+       "prop": "churnCV",
+       "value": 1.899321,
+       "raw": "mpi4py_mpi4py churnCV 1.899321"
+      },
+      {
+       "subject": "mpi4py_mpi4py",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "mpi4py_mpi4py type SoftwareProject"
+      },
+      {
+       "subject": "mpi4py_mpi4py",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "mpi4py_mpi4py monthsObserved 36"
+      }
+     ],
+     "closures": [],
+     "raw": "A_monthsObserved_ge_p_law3_min_months equivalentTo monthsObserved some integer[>= 6]\nLawIIIConformant equivalentTo A_churnCV_lt_p_law3_churn_cv and A_monthsObserved_ge_p_law3_min_months and SoftwareProject\nA_churnCV_lt_p_law3_churn_cv equivalentTo churnCV some decimal[< 2.0]\nmpi4py_mpi4py churnCV 1.899321\nmpi4py_mpi4py type SoftwareProject\nmpi4py_mpi4py monthsObserved 36"
+    }
+   ],
+   "raw_text": "Axiom: mpi4py_mpi4py type LawIIIConformant\n\nExplanation(s): \n1)   A_monthsObserved_ge_p_law3_min_months equivalentTo monthsObserved some integer[>= 6]\n     LawIIIConformant equivalentTo A_churnCV_lt_p_law3_churn_cv\n                                   and A_monthsObserved_ge_p_law3_min_months\n                                   and SoftwareProject\n     A_churnCV_lt_p_law3_churn_cv equivalentTo churnCV some decimal[< 2.0]\n     mpi4py_mpi4py churnCV 1.899321\n     mpi4py_mpi4py type SoftwareProject\n     mpi4py_mpi4py monthsObserved 36\n\n\n",
+   "seconds": 2.4614259980153292,
+   "returncode": 0,
+   "error": null
+  },
+  "lawIV": {
+   "class": "LawIVConformant",
+   "target": "http://senso-framework.org/data/mpi4py_mpi4py type http://senso-framework.org/ontology/seo#LawIVConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law4_min_months",
+       "text": "A_monthsObserved_ge_p_law4_min_months equivalentTo monthsObserved some integer[>= 6]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawIVConformant",
+       "text": "LawIVConformant equivalentTo A_commitCountCV_lt_p_law4_commit_cv and A_monthsObserved_ge_p_law4_min_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_commitCountCV_lt_p_law4_commit_cv",
+       "text": "A_commitCountCV_lt_p_law4_commit_cv equivalentTo commitCountCV some decimal[< 1.5]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "mpi4py_mpi4py",
+       "prop": "commitCountCV",
+       "value": 0.483277,
+       "raw": "mpi4py_mpi4py commitCountCV 0.483277"
+      },
+      {
+       "subject": "mpi4py_mpi4py",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "mpi4py_mpi4py type SoftwareProject"
+      },
+      {
+       "subject": "mpi4py_mpi4py",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "mpi4py_mpi4py monthsObserved 36"
+      }
+     ],
+     "closures": [],
+     "raw": "A_monthsObserved_ge_p_law4_min_months equivalentTo monthsObserved some integer[>= 6]\nmpi4py_mpi4py commitCountCV 0.483277\nLawIVConformant equivalentTo A_commitCountCV_lt_p_law4_commit_cv and A_monthsObserved_ge_p_law4_min_months and SoftwareProject\nmpi4py_mpi4py type SoftwareProject\nA_commitCountCV_lt_p_law4_commit_cv equivalentTo commitCountCV some decimal[< 1.5]\nmpi4py_mpi4py monthsObserved 36"
+    }
+   ],
+   "raw_text": "Axiom: mpi4py_mpi4py type LawIVConformant\n\nExplanation(s): \n1)   A_monthsObserved_ge_p_law4_min_months equivalentTo monthsObserved some integer[>= 6]\n     mpi4py_mpi4py commitCountCV 0.483277\n     LawIVConformant equivalentTo A_commitCountCV_lt_p_law4_commit_cv\n                                  and A_monthsObserved_ge_p_law4_min_months\n                                  and SoftwareProject\n     mpi4py_mpi4py type SoftwareProject\n     A_commitCountCV_lt_p_law4_commit_cv equivalentTo commitCountCV some decimal[< 1.5]\n     mpi4py_mpi4py monthsObserved 36\n\n\n",
+   "seconds": 2.3947127659921534,
+   "returncode": 0,
+   "error": null
+  },
+  "lawV": {
+   "class": "LawVConformant",
+   "target": "http://senso-framework.org/data/mpi4py_mpi4py type http://senso-framework.org/ontology/seo#LawVConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "LawVConformant",
+       "text": "LawVConformant equivalentTo A_linesAddedCV_lt_p_law5_additions_cv and A_monthsObserved_ge_p_law5_min_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_linesAddedCV_lt_p_law5_additions_cv",
+       "text": "A_linesAddedCV_lt_p_law5_additions_cv equivalentTo linesAddedCV some decimal[< 2.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law5_min_months",
+       "text": "A_monthsObserved_ge_p_law5_min_months equivalentTo monthsObserved some integer[>= 4]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "mpi4py_mpi4py",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "mpi4py_mpi4py type SoftwareProject"
+      },
+      {
+       "subject": "mpi4py_mpi4py",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "mpi4py_mpi4py monthsObserved 36"
+      },
+      {
+       "subject": "mpi4py_mpi4py",
+       "prop": "linesAddedCV",
+       "value": 1.779338,
+       "raw": "mpi4py_mpi4py linesAddedCV 1.779338"
+      }
+     ],
+     "closures": [],
+     "raw": "LawVConformant equivalentTo A_linesAddedCV_lt_p_law5_additions_cv and A_monthsObserved_ge_p_law5_min_months and SoftwareProject\nA_linesAddedCV_lt_p_law5_additions_cv equivalentTo linesAddedCV some decimal[< 2.0]\nA_monthsObserved_ge_p_law5_min_months equivalentTo monthsObserved some integer[>= 4]\nmpi4py_mpi4py type SoftwareProject\nmpi4py_mpi4py monthsObserved 36\nmpi4py_mpi4py linesAddedCV 1.779338"
+    }
+   ],
+   "raw_text": "Axiom: mpi4py_mpi4py type LawVConformant\n\nExplanation(s): \n1)   LawVConformant equivalentTo A_linesAddedCV_lt_p_law5_additions_cv\n                                 and A_monthsObserved_ge_p_law5_min_months\n                                 and SoftwareProject\n     A_linesAddedCV_lt_p_law5_additions_cv equivalentTo linesAddedCV some decimal[< 2.0]\n     A_monthsObserved_ge_p_law5_min_months equivalentTo monthsObserved some integer[>= 4]\n     mpi4py_mpi4py type SoftwareProject\n     mpi4py_mpi4py monthsObserved 36\n     mpi4py_mpi4py linesAddedCV 1.779338\n\n\n",
+   "seconds": 2.217343597963918,
+   "returncode": 0,
+   "error": null
+  },
+  "lawVI": {
+   "class": "LawVIConformant",
+   "target": "http://senso-framework.org/data/mpi4py_mpi4py type http://senso-framework.org/ontology/seo#LawVIConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "subclass",
+       "subject": "GrowthStage",
+       "text": "GrowthStage subClassOf LawVIConformant"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKTau_gt_0",
+       "text": "A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKpValue_lt_mk_alpha",
+       "text": "A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]"
+      },
+      {
+       "kind": "definition",
+       "subject": "GrowthStage",
+       "text": "GrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "mpi4py_mpi4py",
+       "prop": "locMKpValue",
+       "value": 0.0,
+       "raw": "mpi4py_mpi4py locMKpValue 0.0"
+      },
+      {
+       "subject": "mpi4py_mpi4py",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "mpi4py_mpi4py type SoftwareProject"
+      },
+      {
+       "subject": "mpi4py_mpi4py",
+       "prop": "locMKTau",
+       "value": 0.985714,
+       "raw": "mpi4py_mpi4py locMKTau 0.985714"
+      },
+      {
+       "subject": "mpi4py_mpi4py",
+       "prop": "locSeriesLength",
+       "value": 36,
+       "raw": "mpi4py_mpi4py locSeriesLength 36"
+      }
+     ],
+     "closures": [],
+     "raw": "mpi4py_mpi4py locMKpValue 0.0\nGrowthStage subClassOf LawVIConformant\nmpi4py_mpi4py type SoftwareProject\nA_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\nA_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\nmpi4py_mpi4py locMKTau 0.985714\nA_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\nGrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject\nmpi4py_mpi4py locSeriesLength 36\nA_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]"
+    }
+   ],
+   "raw_text": "Axiom: mpi4py_mpi4py type LawVIConformant\n\nExplanation(s): \n1)   mpi4py_mpi4py locMKpValue 0.0\n     GrowthStage subClassOf LawVIConformant\n     mpi4py_mpi4py type SoftwareProject\n     A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\n     A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\n     mpi4py_mpi4py locMKTau 0.985714\n     A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\n     GrowthStage equivalentTo A_locMKTau_gt_0\n                              and A_locMKpValue_lt_mk_alpha\n                              and MKApplicable\n                              and SoftwareProject\n     mpi4py_mpi4py locSeriesLength 36\n     A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]\n\n\n",
+   "seconds": 2.192346711002756,
+   "returncode": 0,
+   "error": null
+  },
+  "lawVII": {
+   "class": "LawVIINonConformant",
+   "target": "http://senso-framework.org/data/mpi4py_mpi4py type http://senso-framework.org/ontology/seo#LawVIINonConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_bugFixRatioFirstHalf_gt_0",
+       "text": "A_bugFixRatioFirstHalf_gt_0 equivalentTo bugFixRatioFirstHalf some decimal[> 0.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_bugFixHalfRatio_lt_p_law7_tolerance",
+       "text": "A_bugFixHalfRatio_lt_p_law7_tolerance equivalentTo bugFixHalfRatio some decimal[< 0.9]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_activeMonthCount_ge_p_law7_min_active_months",
+       "text": "A_activeMonthCount_ge_p_law7_min_active_months equivalentTo activeMonthCount some integer[>= 4]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawVIINonConformant",
+       "text": "LawVIINonConformant equivalentTo A_activeMonthCount_ge_p_law7_min_active_months and A_bugFixHalfRatio_lt_p_law7_tolerance and A_bugFixRatioFirstHalf_gt_0 and SoftwareProject"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "mpi4py_mpi4py",
+       "prop": "bugFixHalfRatio",
+       "value": 0.700832,
+       "raw": "mpi4py_mpi4py bugFixHalfRatio 0.700832"
+      },
+      {
+       "subject": "mpi4py_mpi4py",
+       "prop": "bugFixRatioFirstHalf",
+       "value": 0.282047,
+       "raw": "mpi4py_mpi4py bugFixRatioFirstHalf 0.282047"
+      },
+      {
+       "subject": "mpi4py_mpi4py",
+       "prop": "activeMonthCount",
+       "value": 35,
+       "raw": "mpi4py_mpi4py activeMonthCount 35"
+      },
+      {
+       "subject": "mpi4py_mpi4py",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "mpi4py_mpi4py type SoftwareProject"
+      }
+     ],
+     "closures": [],
+     "raw": "mpi4py_mpi4py bugFixHalfRatio 0.700832\nA_bugFixRatioFirstHalf_gt_0 equivalentTo bugFixRatioFirstHalf some decimal[> 0.0]\nA_bugFixHalfRatio_lt_p_law7_tolerance equivalentTo bugFixHalfRatio some decimal[< 0.9]\nmpi4py_mpi4py bugFixRatioFirstHalf 0.282047\nA_activeMonthCount_ge_p_law7_min_active_months equivalentTo activeMonthCount some integer[>= 4]\nmpi4py_mpi4py activeMonthCount 35\nLawVIINonConformant equivalentTo A_activeMonthCount_ge_p_law7_min_active_months and A_bugFixHalfRatio_lt_p_law7_tolerance and A_bugFixRatioFirstHalf_gt_0 and SoftwareProject\nmpi4py_mpi4py type SoftwareProject"
+    }
+   ],
+   "raw_text": "Axiom: mpi4py_mpi4py type LawVIINonConformant\n\nExplanation(s): \n1)   mpi4py_mpi4py bugFixHalfRatio 0.700832\n     A_bugFixRatioFirstHalf_gt_0 equivalentTo bugFixRatioFirstHalf some decimal[> 0.0]\n     A_bugFixHalfRatio_lt_p_law7_tolerance equivalentTo bugFixHalfRatio some decimal[< 0.9]\n     mpi4py_mpi4py bugFixRatioFirstHalf 0.282047\n     A_activeMonthCount_ge_p_law7_min_active_months equivalentTo activeMonthCount some integer[>= 4]\n     mpi4py_mpi4py activeMonthCount 35\n     LawVIINonConformant equivalentTo A_activeMonthCount_ge_p_law7_min_active_months\n                                      and A_bugFixHalfRatio_lt_p_law7_tolerance\n                                      and A_bugFixRatioFirstHalf_gt_0\n                                      and SoftwareProject\n     mpi4py_mpi4py type SoftwareProject\n\n\n",
+   "seconds": 3.0258652380434796,
+   "returncode": 0,
+   "error": null
+  },
+  "lawVIII": {
+   "class": "LawVIIINonConformant",
+   "target": "http://senso-framework.org/data/mpi4py_mpi4py type http://senso-framework.org/ontology/seo#LawVIIINonConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_mergeMonthRatio_le_p_law8_merge_ratio",
+       "text": "A_mergeMonthRatio_le_p_law8_merge_ratio equivalentTo MergeInactive"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawVIIINonConformantNoMerge",
+       "text": "LawVIIINonConformantNoMerge equivalentTo A_monthsObserved_ge_p_law8_min_months and MergeInactive and SoftwareProject"
+      },
+      {
+       "kind": "subclass",
+       "subject": "LawVIIINonConformantNoMerge",
+       "text": "LawVIIINonConformantNoMerge subClassOf LawVIIINonConformant"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_mergeMonthRatio_le_p_law8_merge_ratio",
+       "text": "A_mergeMonthRatio_le_p_law8_merge_ratio equivalentTo mergeMonthRatio some decimal[<= 0.3]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law8_min_months",
+       "text": "A_monthsObserved_ge_p_law8_min_months equivalentTo monthsObserved some integer[>= 6]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "mpi4py_mpi4py",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "mpi4py_mpi4py type SoftwareProject"
+      },
+      {
+       "subject": "mpi4py_mpi4py",
+       "prop": "mergeMonthRatio",
+       "value": 0.222222,
+       "raw": "mpi4py_mpi4py mergeMonthRatio 0.222222"
+      },
+      {
+       "subject": "mpi4py_mpi4py",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "mpi4py_mpi4py monthsObserved 36"
+      }
+     ],
+     "closures": [],
+     "raw": "A_mergeMonthRatio_le_p_law8_merge_ratio equivalentTo MergeInactive\nLawVIIINonConformantNoMerge equivalentTo A_monthsObserved_ge_p_law8_min_months and MergeInactive and SoftwareProject\nLawVIIINonConformantNoMerge subClassOf LawVIIINonConformant\nmpi4py_mpi4py type SoftwareProject\nA_mergeMonthRatio_le_p_law8_merge_ratio equivalentTo mergeMonthRatio some decimal[<= 0.3]\nmpi4py_mpi4py mergeMonthRatio 0.222222\nA_monthsObserved_ge_p_law8_min_months equivalentTo monthsObserved some integer[>= 6]\nmpi4py_mpi4py monthsObserved 36"
+    }
+   ],
+   "raw_text": "Axiom: mpi4py_mpi4py type LawVIIINonConformant\n\nExplanation(s): \n1)   A_mergeMonthRatio_le_p_law8_merge_ratio equivalentTo MergeInactive\n     LawVIIINonConformantNoMerge equivalentTo A_monthsObserved_ge_p_law8_min_months\n                                              and MergeInactive\n                                              and SoftwareProject\n     LawVIIINonConformantNoMerge subClassOf LawVIIINonConformant\n     mpi4py_mpi4py type SoftwareProject\n     A_mergeMonthRatio_le_p_law8_merge_ratio equivalentTo mergeMonthRatio some decimal[<= 0.3]\n     mpi4py_mpi4py mergeMonthRatio 0.222222\n     A_monthsObserved_ge_p_law8_min_months equivalentTo monthsObserved some integer[>= 6]\n     mpi4py_mpi4py monthsObserved 36\n\n\n",
+   "seconds": 2.194167662994005,
+   "returncode": 0,
+   "error": null
+  }
+ },
+ "fuseki": {
+  "dataset": "seo_v2",
+  "graph_triples": {
+   "urn:senso:abox:mpi4py/mpi4py": 388,
+   "urn:senso:commits:mpi4py/mpi4py": 4633,
+   "urn:senso:abox-derived:mpi4py/mpi4py": 9,
+   "urn:senso:inferred:mpi4py/mpi4py:79f851de895e": 422,
+   "urn:senso:explanations:mpi4py/mpi4py:79f851de895e": 177
+  }
+ },
+ "timings": {
+  "t_clone": 2.645,
+  "t_mine": 13.669,
+  "t_loc": 3.923,
+  "t_reason_A": 10.445,
+  "mining_cached": false,
+  "t_reason_B": 36.763,
+  "n_configs": 12,
+  "t_explain": 23.031,
+  "n_explain_calls": 9,
+  "t_writeback": 7.51,
+  "t_total": 95.77
+ }
+}

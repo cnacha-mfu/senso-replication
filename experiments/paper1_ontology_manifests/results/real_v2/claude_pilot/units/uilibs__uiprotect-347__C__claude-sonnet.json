@@ -1,0 +1,93 @@
+{
+ "unit_id": "uilibs__uiprotect-347__C__claude-sonnet",
+ "task_id": "uilibs__uiprotect-347",
+ "repo": "uilibs/uiprotect",
+ "stage": "phase_out",
+ "condition": "C",
+ "model": "claude-code/sonnet",
+ "run": 1,
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 3837,
+  "sha256": "83b85bc58b156809d4b31a1627f28116895b72d6588fce037f9ad7d1b61ac51a"
+ },
+ "started": "2026-10-18T01:15:06.427512+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 6,
+ "tool_calls": 5,
+ "usage": {
+  "input_tokens": 10,
+  "cache_creation_input_tokens": 9970,
+  "cache_read_input_tokens": 89384,
+  "output_tokens": 1587,
+  "output_tokens_details": {
+   "thinking_tokens": 528
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 9970,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 10,
+   "outputTokens": 1587,
+   "cacheReadInputTokens": 89384,
+   "cacheCreationInputTokens": 9970,
+   "webSearchRequests": 0,
+   "costUSD": 0.0647084,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 528,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.0647084,
+ "result_text": "I changed `Light.set_light` in `src/uiprotect/data/devices.py`, but I haven't run any tests or checked it against a real Floodlight.\n\n**Cause (my diagnosis).** When Protect turns the light on, for example on motion, `is_led_force_on` stays `False`. Calling `set_light(False)` then sets it to `False` again. No difference is detected, so nothing is sent and the light stays on. I didn't confirm this against the linked Home Assistant issue.\n\n**The fix.** If you ask to turn the light off while `is_light_on` is true and `is_led_force_on` is `False`, it first sends an update setting `is_led_force_on` to `True`. The normal update that follows sets it back to `False`, so a real change goes out.\n\nThe catch is that turning the light off in this state now makes two requests to the device instead of one. I couldn't find another way to force the update from the library side.\n\nI didn't touch tests or commit anything.",
+ "wall_s": 23.7,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 6,
+   "hit_step_limit": 0,
+   "changed_lines": 7,
+   "gold_changed_lines": 10,
+   "Y1": 4,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": -0.5145731728297583
+  },
+  "f2p_pass": 0,
+  "f2p_total": 3,
+  "p2p_pass": 59,
+  "p2p_total": 59,
+  "f2p_all_pass": false,
+  "p2p_all_pass": true,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 14.2
+ },
+ "status": "done",
+ "finished": "2026-10-18T01:15:46.748484+00:00"
+}

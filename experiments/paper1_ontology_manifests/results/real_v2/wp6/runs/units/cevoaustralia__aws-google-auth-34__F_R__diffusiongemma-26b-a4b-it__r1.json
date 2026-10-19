@@ -1,0 +1,78 @@
+{
+ "unit_id": "cevoaustralia__aws-google-auth-34__F_R__diffusiongemma-26b-a4b-it__r1",
+ "task_id": "cevoaustralia__aws-google-auth-34",
+ "repo": "cevoaustralia/aws-google-auth",
+ "stage": "initial_development",
+ "condition": "F_R",
+ "model": "google/diffusiongemma-26b-a4b-it",
+ "run": 1,
+ "order": 336,
+ "env_build_s": 33.8,
+ "started": "2026-10-09T11:41:54.765990+00:00",
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 343,
+  "sha256": "bb380977bda513108c7525151d1abf98ce09add65fbaf70102033340e66edf01"
+ },
+ "condition_available": true,
+ "venv_reset_s": 1.72,
+ "retries": 0,
+ "venv_hash_before": "3f4f4fcfce8599ad",
+ "venv_hash_after": "3f4f4fcfce8599ad",
+ "venv_mutated": false,
+ "exit_status": "LimitsExceeded",
+ "error": "",
+ "steps": 40,
+ "wall_s": 230.4,
+ "prompt_tokens": 642777,
+ "completion_tokens": 8386,
+ "format_errors": 6,
+ "length_cutoffs": 1,
+ "api_errors": {
+  "429": 10
+ },
+ "n_queries": 40,
+ "keys_used": {
+  "NVIDIA_API_KEY_4": 15,
+  "NVIDIA_API_KEY": 13,
+  "NVIDIA_API_KEY_5": 12,
+  "NVIDIA_API_KEY_2": 10
+ },
+ "temperature": 0.7,
+ "top_p": 0.95,
+ "model_id_returned": "google/diffusiongemma-26b-a4b-it",
+ "mini_version": "2.4.6",
+ "uptake": {
+  "repo_context": true,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 2,
+   "Y6": 40,
+   "hit_step_limit": 1,
+   "changed_lines": 45,
+   "gold_changed_lines": 10,
+   "Y1": 6,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": 2.169925001442312
+  },
+  "f2p_pass": 0,
+  "f2p_total": 1,
+  "p2p_pass": 1,
+  "p2p_total": 1,
+  "f2p_all_pass": false,
+  "p2p_all_pass": true,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 1.2
+ },
+ "status": "done",
+ "finished": "2026-10-09T11:45:50.249122+00:00"
+}

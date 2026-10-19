@@ -1,0 +1,107 @@
+{
+ "unit_id": "agronholm__sqlacodegen-371__A__claude-sonnet__r1",
+ "task_id": "agronholm__sqlacodegen-371",
+ "repo": "agronholm/sqlacodegen",
+ "stage": "evolution",
+ "condition": "A",
+ "model": "claude-code/sonnet",
+ "run": 1,
+ "condition_meta": {},
+ "started": "2026-10-18T04:57:03.650442+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 4,
+ "tool_calls": 3,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 7604,
+  "cache_read_input_tokens": 61551,
+  "output_tokens": 982,
+  "output_tokens_details": {
+   "thinking_tokens": 152
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 7604,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 8,
+   "outputTokens": 982,
+   "cacheReadInputTokens": 61551,
+   "cacheCreationInputTokens": 7604,
+   "webSearchRequests": 0,
+   "costUSD": 0.0464071,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 152,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.0464071,
+ "result_text": "I changed `src/sqlacodegen/generators.py` so MySQL `DOUBLE(11,2)` should no longer be turned into `Double(11, True)`. I haven't run it against a MySQL `DOUBLE(11,2)` column. The existing test suite passes (94 tests), but I added no test for this case.\n\nThe cause was the Float exception in `get_adapted_type`. It lets a `Float`-family type replace the original even when the two compile differently, because on PostgreSQL `Float` can stand in for both `REAL` and `DOUBLE PRECISION`. It was applied to every dialect. For MySQL `DOUBLE(11,2)`, the generic `Double` it picked took `(11, True)` as `(precision, asdecimal)`. The scale of 2 was lost.\n\nThe exception is now skipped when the original type has a scale. In that case the column keeps its dialect-specific type, so MySQL should render `DOUBLE(11, 2)`.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792309800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0.08,
+    "resetsAt": 1792309800
+   },
+   "seven_day": {
+    "utilization": 0.12,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 67.8,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 4,
+   "hit_step_limit": 0,
+   "changed_lines": 11,
+   "gold_changed_lines": 11,
+   "Y1": 1,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": 0.0
+  },
+  "f2p_pass": 1,
+  "f2p_total": 1,
+  "p2p_pass": 36,
+  "p2p_total": 36,
+  "f2p_all_pass": true,
+  "p2p_all_pass": true,
+  "resolved": true,
+  "reason": "resolved",
+  "test_seconds": 5.5
+ },
+ "status": "done",
+ "finished": "2026-10-18T04:58:18.851039+00:00"
+}

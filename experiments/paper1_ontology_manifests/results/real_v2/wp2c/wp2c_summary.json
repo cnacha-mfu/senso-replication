@@ -1,0 +1,107 @@
+{
+ "n_attempted": 30,
+ "n_completed": 30,
+ "failures": [],
+ "outcome1": {
+  "claims_with_result_total": 553,
+  "by_result_total": {
+   "UnverifiableClaim": 25,
+   "SupportedClaim": 486,
+   "ConflictedClaim": 1,
+   "ContradictedClaim": 41
+  },
+  "claims_with_result_per_manifest": {
+   "median": 15,
+   "min": 0,
+   "max": 65
+  },
+  "manifests_with_contradicted": {
+   "k": 11,
+   "n": 30,
+   "p": 0.3667,
+   "lo": 0.2187,
+   "hi": 0.5449
+  },
+  "mean_wall_seconds_per_repo": 141.6,
+  "max_wall_seconds": 1198.9
+ },
+ "outcome2": {
+  "contradicted_total": 41,
+  "by_type": {
+   "T6": 3,
+   "T1": 38
+  },
+  "by_leaf": {
+   "VersionContradicted": 3,
+   "PathNeverExisted": 33,
+   "PathRemoved": 5
+  },
+  "by_type_leaf": {
+   "T6:VersionContradicted": 3,
+   "T1:PathNeverExisted": 33,
+   "T1:PathRemoved": 5
+  }
+ },
+ "outcome3": {
+  "overall": {
+   "not_confirmed": 1,
+   "confirmed": 40
+  },
+  "by_type": {
+   "T1": {
+    "confirmed": 38
+   },
+   "T6": {
+    "not_confirmed": 1,
+    "confirmed": 2
+   }
+  }
+ },
+ "outcome4": {
+  "overall": {
+   "not_applicable": 3,
+   "passed": 38
+  },
+  "failed_reasons": {},
+  "by_type": {
+   "T1": {
+    "passed": 38
+   },
+   "T6": {
+    "not_applicable": 3
+   }
+  }
+ },
+ "outcome5": {
+  "claims_confirmed_and_context_ok": {
+   "k": 40,
+   "n": 41,
+   "p": 0.9756,
+   "lo": 0.874,
+   "hi": 0.9957
+  },
+  "by_type": {
+   "T1": {
+    "k": 38,
+    "n": 38,
+    "p": 1.0,
+    "lo": 0.9082,
+    "hi": 1.0
+   },
+   "T6": {
+    "k": 2,
+    "n": 3,
+    "p": 0.6667,
+    "lo": 0.2077,
+    "hi": 0.9385
+   }
+  },
+  "manifests_with_confirmed_contradiction": {
+   "k": 10,
+   "n": 30,
+   "p": 0.3333,
+   "lo": 0.1923,
+   "hi": 0.5122
+  }
+ }
+}

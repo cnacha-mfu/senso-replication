@@ -1,0 +1,111 @@
+{
+ "unit_id": "rigetti__pyquil-1564__D__claude-sonnet__r2",
+ "task_id": "rigetti__pyquil-1564",
+ "repo": "rigetti/pyquil",
+ "stage": "evolution",
+ "condition": "D",
+ "model": "claude-code/sonnet",
+ "run": 2,
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 5853,
+  "sha256": "657282ad174ab8ad64fc716b54941407e3b7c8d2efba4cdca49dfc707dde23fa"
+ },
+ "started": "2026-10-18T08:27:08.594044+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 4,
+ "tool_calls": 3,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 3406,
+  "cache_read_input_tokens": 80973,
+  "output_tokens": 1494,
+  "output_tokens_details": {
+   "thinking_tokens": 0
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 3406,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 8,
+   "outputTokens": 1494,
+   "cacheReadInputTokens": 80973,
+   "cacheCreationInputTokens": 3406,
+   "webSearchRequests": 0,
+   "costUSD": 0.036677299999999996,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.036677299999999996,
+ "result_text": "`DefFrame` now supports `CHANNEL-DELAY`.\n\nI ran one check: parsing `DEFFRAME 0 \"rf\":` with `CHANNEL-DELAY: 1e-7` gives a `DefFrame` with `channel_delay=1e-07`, and printing the program writes the attribute back out. I didn't run the test suite.\n\n- **Construction:** `DefFrame` has a new optional `channel_delay` field, which `out()` writes as `CHANNEL-DELAY`. The change is in `pyquil/quilbase.py`.\n- **Parsing:** the grammar accepts `CHANNEL-DELAY` as a frame attribute, and the parser maps it to `channel_delay`. These changes are in `pyquil/_parser/grammar.lark` and `pyquil/_parser/parser.py`.\n- **Reserved word:** I also added `\"CHANNEL-DELAY\"` to the reserved-words list in `quilbase.py`, next to `\"INITIAL-FREQUENCY\"`. I didn't check whether anything else relies on that list.\n\nI didn't commit anything or touch any tests.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792327800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0.03,
+    "resetsAt": 1792327800
+   },
+   "seven_day": {
+    "utilization": 0.13,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 54.4,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 3,
+   "Y6": 4,
+   "hit_step_limit": 0,
+   "changed_lines": 7,
+   "gold_changed_lines": 6,
+   "Y1": 0,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": 0.22239242133644802
+  },
+  "f2p_pass": 1,
+  "f2p_total": 1,
+  "p2p_pass": 39,
+  "p2p_total": 39,
+  "f2p_all_pass": true,
+  "p2p_all_pass": true,
+  "resolved": true,
+  "reason": "resolved",
+  "test_seconds": 3.4
+ },
+ "status": "done",
+ "finished": "2026-10-18T08:28:13.081863+00:00"
+}

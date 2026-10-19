@@ -1,0 +1,73 @@
+{
+ "unit_id": "ttu__ruuvitag-sensor-41__C__diffusiongemma-26b-a4b-it__r1",
+ "task_id": "ttu__ruuvitag-sensor-41",
+ "repo": "ttu/ruuvitag-sensor",
+ "stage": "phase_out",
+ "condition": "C",
+ "model": "google/diffusiongemma-26b-a4b-it",
+ "run": 1,
+ "order": 868,
+ "env_build_s": 24.2,
+ "real_agent_manifest_at_base": [],
+ "started": "2026-10-07T13:34:41.901869+00:00",
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 3871,
+  "sha256": "5d28bba8d33276ae50065dd6da2063fe48a62a521582c3b7f6b4aad9eeff4069"
+ },
+ "condition_available": true,
+ "retries": 0,
+ "exit_status": "Submitted",
+ "error": "",
+ "steps": 15,
+ "wall_s": 131.4,
+ "prompt_tokens": 76494,
+ "completion_tokens": 1727,
+ "format_errors": 4,
+ "length_cutoffs": 1,
+ "api_errors": {},
+ "n_queries": 15,
+ "keys_used": {
+  "NVIDIA_API_KEY_5": 4,
+  "NVIDIA_API_KEY_4": 4,
+  "NVIDIA_API_KEY": 4,
+  "NVIDIA_API_KEY_2": 3
+ },
+ "temperature": 0.7,
+ "top_p": 0.95,
+ "model_id_returned": "google/diffusiongemma-26b-a4b-it",
+ "mini_version": "2.4.6",
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 15,
+   "hit_step_limit": 0,
+   "changed_lines": 17,
+   "gold_changed_lines": 9,
+   "Y1": 0,
+   "Y2": 1,
+   "Y3": null,
+   "Y3_gold": 0.0,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": 0.9175378398080271
+  },
+  "f2p_pass": 0,
+  "f2p_total": 2,
+  "p2p_pass": 13,
+  "p2p_total": 13,
+  "f2p_all_pass": false,
+  "p2p_all_pass": true,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 1.1
+ },
+ "status": "done",
+ "finished": "2026-10-07T13:36:54.516857+00:00"
+}

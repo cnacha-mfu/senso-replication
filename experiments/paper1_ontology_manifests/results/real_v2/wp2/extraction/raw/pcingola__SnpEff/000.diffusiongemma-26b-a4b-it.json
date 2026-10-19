@@ -1,0 +1,21 @@
+{
+ "repo": "pcingola/SnpEff",
+ "chunk": 0,
+ "n_chunks": 2,
+ "model": "google/diffusiongemma-26b-a4b-it",
+ "prompt_sha256": "d0e02ff613417050168d859f2af6230c3712c6758bb5d9c40d60ff55e5ae87ca",
+ "user_sha256": "e14b8af7884ea69fa5f6b48f107c41089378f045e91f7360486e76ea462f16d7",
+ "text": "{\"claims\": [\n  {\"type\": \"path_exists\", \"subject\": \"src/docs/\", \"line\": 8, \"mode\": \"asserts_existing\"},\n  {\"type\": \"tool_used\", \"subject\": \"Maven\", \"tool_category\": \"package_manager\", \"line\": 19, \"mode\": \"asserts_existing\"},\n  {\"type\": \"tool_used\", \"subject\": \"BDS\", \"tool_category\": \"build_tool\", \"line\": 19, \"mode\": \"asserts_existing\"},\n  {\"type\": \"command\", \"subject\": \"clean compile assembly:single-jar\", \"line\": 24, \"runner\": \"maven\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"path_exists\", \"subject\": \"target/SnpEff-5.2-jar-with-dependencies.jar\", \"line\": 27, \"mode\": \"asserts_existing\"},\n  {\"type\": \"path_exists\", \"subject\": \"scripts/snpEff\", \"line\": 36, \"mode\": \"asserts_existing\"},\n  {\"type\": \"command\", \"subject\": \"java -Xms1g -Xmx8g -jar snpEff.jar -c snpEff.config\", \"line\": 39, \"runner\": \"java\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"path_exists\", \"subject\": \"org.snpeff.SnpEff\", \"line\": 42, \"mode\": \"asserts_existing\"},\n  {\"type\": \"tool_used\", \"subject\": \"JUnit Jupiter\", \"tool_category\": \"test_framework\", \"line\": 46, \"mode\": \"asserts_existing\"},\n  {\"type\": \"command\", \"subject\": \"test\", \"line\": 50, \"runner\": \"maven\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"command\", \"subject\": \"test -Dtest=TestCasesVcf\", \"line\": 53, \"runner\": \"maven\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"path_exists\", \"subject\": \"src/bds/integration_test.bds\", \"line\": 56, \"mode\": \"asserts_existing\"},\n  {\"type\": \"path_exists\", \"subject\": \"src/test/java/org/snpeff/snpEffect/testCases/unity/\", \"line\": 60, \"mode\": \"asserts_existing\"},\n  {\"type\": \"path_exists\", \"subject\": \"src/test/java/org/snpeff/snpEffect/testCases/integration/\", \"line\": 61, \"mode\": \"asserts_existing\"},\n  {\"type\": \"path_exists\", \"subject\": \"tests/\", \"line\": 62, \"mode\": \"asserts_existing\"},\n  {\"type\": \"path_exists\", \"subject\": \"org.snpeff\", \"line\": 68, \"mode\": \"asserts_existing\"},\n  {\"type\": \"path_exists\", \"subject\": \"org.snpeff.snpEffect\", \"line\": 69, \"mode\": \"asserts_existing\"},\n  {\"type\": \"path_exists\", \"subject\": \"org.snpeff.interval\", \"line\": 75, \"mode\": \"asserts_existing\"},\n  {\"type\": \"path_exists\", \"subject\": \"org.snpeff.vcf\", \"line\": 79, \"mode\": \"asserts_existing\"},\n  {\"type\": \"path_exists\", \"subject\": \"org.snpeff.fileIterator\", \"line\": 81, \"mode\": \"asserts_existing\"},\n  {\"type\": \"path_exists\", \"subject\": \"org.snpeff.outputFormatter\", \"line\": 82, \"mode\": \"asserts_existing\"},\n  {\"type\": \"path_exists\", \"subject\": \"org.snpeff.commandLine\", \"line\": 85, \"mode\": \"asserts_existing\"},\n  {\"type\": \"path_exists\", \"subject\": \"org.snpeff.snpEffect\", \"line\": 86, \"mode\": \"asserts_existing\"},\n  {\"type\": \"path_exists\", \"subject\": \"config/\", \"line\": 94, \"mode\": \"asserts_existing\"},\n  {\"type\": \"version\", \"subject\": \"java\", \"version\": \"21\", \"line\": 119, \"mode\": \"asserts_existing\"},\n  {\"type\": \"path_exists\", \"subject\": \"src/bds/make.bds\", \"line\": 128, \"mode\": \"asserts_existing\"},\n  {\"type\": \"command\", \"subject\": \"make.bds\", \"line\": 133, \"runner\": \"bds\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"tool_used\", \"subject\": \"mkdocs\", \"tool_category\": \"build_tool\", \"line\": 143, \"mode\": \"asserts_existing\"}\n]}",
+ "parse_ok": true,
+ "parse_error": null,
+ "parse_retries": 0,
+ "latency_s": 10.795146129035857,
+ "usage": {
+  "prompt": 4369,
+  "completion": 1151
+ },
+ "n_api_calls": 1,
+ "finish_reason": "stop",
+ "error": null,
+ "discarded_attempt_texts": []
+}

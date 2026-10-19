@@ -1,0 +1,111 @@
+{
+ "unit_id": "graphistry__pygraphistry-562__C__claude-sonnet__r1",
+ "task_id": "graphistry__pygraphistry-562",
+ "repo": "graphistry/pygraphistry",
+ "stage": "servicing",
+ "condition": "C",
+ "model": "claude-code/sonnet",
+ "run": 1,
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 6585,
+  "sha256": "12a31f8c53e1295645be1850f160990efeddb62336eb4d19826c2c8d031a18ce"
+ },
+ "started": "2026-10-18T06:06:27.238461+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 6,
+ "tool_calls": 5,
+ "usage": {
+  "input_tokens": 12,
+  "cache_creation_input_tokens": 7718,
+  "cache_read_input_tokens": 133778,
+  "output_tokens": 1468,
+  "output_tokens_details": {
+   "thinking_tokens": 79
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 7718,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 12,
+   "outputTokens": 1468,
+   "cacheReadInputTokens": 133778,
+   "cacheCreationInputTokens": 7718,
+   "webSearchRequests": 0,
+   "costUSD": 0.0589538,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 79,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.0589538,
+ "result_text": "`Chain.from_json(chain.to_json())` now works for chains that contain predicates. I checked a chain like the one in the issue, with `is_in` in `edge_match`. The round-trip gives back the same JSON. I didn't run the test suite.\n\nThe cause was in `graphistry/compute/ast.py`. When loading `filter_dict` and `edge_match` values, it called `ASTPredicate.from_json`. `ASTPredicate` is an abstract base class, so that call can't build a predicate. The repo already had a lookup that maps each predicate's `type` name to its class, in `graphistry/compute/predicates/from_json.py`, but `ast.py` wasn't using it.\n\nI imported that function into `ast.py` and used it in `maybe_filter_dict_from_json` (two lines changed). This applies to every place that function is used, including node filters and the source and destination node matches.\n\nI made no test changes and no commits.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792309800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0.13,
+    "resetsAt": 1792309800
+   },
+   "seven_day": {
+    "utilization": 0.13,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 48.6,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 6,
+   "hit_step_limit": 0,
+   "changed_lines": 3,
+   "gold_changed_lines": 10,
+   "Y1": 0,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": -1.7369655941662063
+  },
+  "f2p_pass": 1,
+  "f2p_total": 1,
+  "p2p_pass": 7,
+  "p2p_total": 7,
+  "f2p_all_pass": true,
+  "p2p_all_pass": true,
+  "resolved": true,
+  "reason": "resolved",
+  "test_seconds": 2.6
+ },
+ "status": "done",
+ "finished": "2026-10-18T06:07:27.360629+00:00"
+}

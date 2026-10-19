@@ -1,0 +1,21 @@
+{
+ "repo": "vincent-uden/miro",
+ "chunk": 0,
+ "n_chunks": 1,
+ "model": "nvidia/nemotron-3-super-120b-a12b",
+ "prompt_sha256": "d0e02ff613417050168d859f2af6230c3712c6758bb5d9c40d60ff55e5ae87ca",
+ "user_sha256": "78901801599f1590b06ff6a2b7ec9c8d86655408229f1ea6b7c16b97cbefab60",
+ "text": "{\"claims\": [{\"type\": \"tool_used\", \"quote\": \"- `cargo build` - Build the project\", \"line\": 4, \"subject\": \"cargo\", \"tool_category\": \"package_manager\", \"mode\": \"asserts_existing\"}, {\"type\": \"tool_used\", \"quote\": \"- `cargo run` - Run the application\", \"line\": 5, \"subject\": \"cargo\", \"tool_category\": \"package_manager\", \"mode\": \"asserts_existing\"}, {\"type\": \"tool_used\", \"quote\": \"- `cargo test` - Run all tests\", \"line\": 6, \"subject\": \"cargo\", \"tool_category\": \"package_manager\", \"mode\": \"asserts_existing\"}, {\"type\": \"tool_used\", \"quote\": \"- `cargo test <test_name>` - Run a specific test\", \"line\": 7, \"subject\": \"cargo\", \"tool_category\": \"package_manager\", \"mode\": \"asserts_existing\"}, {\"type\": \"tool_used\", \"quote\": \"- `cargo check` - Check code without building, use this before each build since it is a lot faster\", \"line\": 8, \"subject\": \"cargo\", \"tool_category\": \"package_manager\", \"mode\": \"asserts_existing\"}, {\"type\": \"command\", \"quote\": \"- `cargo build` - Build the project\", \"line\": 4, \"subject\": \"build\", \"runner\": \"cargo\", \"mode\": \"asserts_existing\"}, {\"type\": \"command\", \"quote\": \"- `cargo run` - Run the application\", \"line\": 5, \"subject\": \"run\", \"runner\": \"cargo\", \"mode\": \"asserts_existing\"}, {\"type\": \"command\", \"quote\": \"- `cargo test` - Run all tests\", \"line\": 6, \"subject\": \"test\", \"runner\": \"cargo\", \"mode\": \"asserts_existing\"}, {\"type\": \"command\", \"quote\": \"- `cargo test <test_name>` - Run a specific test\", \"line\": 7, \"subject\": \"test\", \"runner\": \"cargo\", \"mode\": \"asserts_existing\"}, {\"type\": \"command\", \"quote\": \"- `cargo check` - Check code without building, use this before each build since it is a lot faster\", \"line\": 8, \"subject\": \"check\", \"runner\": \"cargo\", \"mode\": \"asserts_existing\"}, {\"type\": \"command\", \"quote\": \"- Don't run the graphical application unless absolutely necessary. Prefer writing tests to answer your questions instead if possible\", \"line\": 28, \"subject\": \"test\", \"runner\": \"cargo\", \"mode\": \"asserts_existing\"}, {\"type\": \"command\", \"quote\": \"- Prefer `cargo check` as a first layer of validating your code\", \"line\": 29, \"subject\": \"check\", \"runner\": \"cargo\", \"mode\": \"asserts_existing\"}, {\"type\": \"command\", \"quote\": \"- Run `cargo test` after you are done with each task to ensure that you haven't introduced any regressions\", \"line\": 30, \"subject\": \"test\", \"runner\": \"cargo\", \"mode\": \"asserts_existing\"}]}",
+ "parse_ok": true,
+ "parse_error": null,
+ "parse_retries": 0,
+ "latency_s": 5.605153971002437,
+ "usage": {
+  "prompt": 2510,
+  "completion": 723
+ },
+ "n_api_calls": 1,
+ "finish_reason": "stop",
+ "error": null,
+ "discarded_attempt_texts": []
+}

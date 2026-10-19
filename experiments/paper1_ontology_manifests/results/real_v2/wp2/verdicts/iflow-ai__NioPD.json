@@ -1,0 +1,56 @@
+{
+ "repo": "iflow-ai/NioPD",
+ "slug": "iflow-ai__NioPD",
+ "engine": "hermit",
+ "tbox_sha256": "8266af98a762ae7567a0deb684fdd394c180f7c6875ac55011cd3e6e6b080b43",
+ "abox_sha256": "a9425cbea823bfed12fcf669041c4ad7c4dc573e886649d9bdd5b1ab15c44738",
+ "consistent": true,
+ "error": null,
+ "timings": {
+  "tbox_load_s": 0.059010559984017164,
+  "abox_load_s": 0.0027614739956334233,
+  "reason_s": 2.701977671997156,
+  "extract_s": 0.017328604008071125,
+  "total_s": 2.7812906070030294
+ },
+ "n_claims": 4,
+ "seconds": 2.78,
+ "abox_triples": 55,
+ "claims": {
+  "T1|agents/niopd": {
+   "leaves": [
+    "PathFoundBySuffix"
+   ],
+   "verdicts": [
+    "SupportedClaim"
+   ],
+   "chained": []
+  },
+  "T1|commands/niopd": {
+   "leaves": [
+    "PathFoundBySuffix"
+   ],
+   "verdicts": [
+    "SupportedClaim"
+   ],
+   "chained": []
+  },
+  "T1|niopd-workspace": {
+   "leaves": [
+    "PathRemoved"
+   ],
+   "verdicts": [
+    "ContradictedClaim"
+   ],
+   "chained": []
+  },
+  "T1|niopd-workspace/initiatives": {
+   "leaves": [],
+   "verdicts": [],
+   "chained": []
+  }
+ },
+ "document": [
+  "ManifestWithContradiction"
+ ]
+}

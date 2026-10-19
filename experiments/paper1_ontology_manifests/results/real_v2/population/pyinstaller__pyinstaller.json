@@ -1,0 +1,1941 @@
+{
+ "repo": "pyinstaller/pyinstaller",
+ "snapshot_date": "2025-06-30",
+ "status": "ok",
+ "unmineable": false,
+ "unmineable_reason": null,
+ "replaces": null,
+ "settings": {
+  "dedup": true,
+  "complexity": false,
+  "dataset": "seo_v2",
+  "sensitivity": true
+ },
+ "versions": {
+  "owlready2": "0.51",
+  "pymannkendall": "1.4.3",
+  "lizard": "1.24.1",
+  "numpy": "2.5.3",
+  "scipy": "1.18.1",
+  "python": "3.12.15",
+  "git": "git version 2.53.0"
+ },
+ "measures": {
+  "monthsObserved": 36,
+  "monthsSinceLastCommit": 0,
+  "distinctAuthorsInWindow": 63,
+  "commitMKTau": -0.04127,
+  "commitMKpValue": 0.733177,
+  "activeMonthCount": 36,
+  "activeMonthRatio": 1.0,
+  "meanMonthlyCommits": 37.416667,
+  "commitsLast3Months": 85,
+  "commitCountCV": 0.463952,
+  "commitCountCVSample": 0.470534,
+  "commitHalfRatio": 0.960699,
+  "commitSecondHalfMean": 36.666667,
+  "churnCV": 1.073405,
+  "linesAddedCV": 0.994555,
+  "mergeMonthRatio": 0.0,
+  "multiAuthorMonthRatio": 1.0,
+  "bugFixRatioFirstHalf": 0.124388,
+  "bugFixRatioSecondHalf": 0.137649,
+  "bugFixHalfRatio": 1.106607,
+  "locSeriesLength": 36,
+  "locRelSenSlopeAnnual": 0.041705,
+  "locMKTau": 0.914286,
+  "locMKS": 576,
+  "locMKpValue": 0.0,
+  "locSenSlope": 297.677083,
+  "locStart": 79705,
+  "locEnd": 90443,
+  "locDelta": 10738,
+  "locGrowthRate": 0.134722,
+  "locChangePct": 13.472179,
+  "locEndToStartRatio": 1.134722,
+  "locGrowthLast3": 0.005079,
+  "featureCommitsFirstHalf": 0,
+  "featureCommitsSecondHalf": 0,
+  "featureCommitsTotal": 0,
+  "locDeltaPerFeature": 10738.0,
+  "recentAgentCommitRatio": 0.0,
+  "featCommitCount": 0,
+  "bugFixCommitCount": 180,
+  "commitCount": 1347,
+  "monthly_series": {
+   "months": [
+    "2021-07",
+    "2021-08",
+    "2021-09",
+    "2021-10",
+    "2021-11",
+    "2021-12",
+    "2022-01",
+    "2022-02",
+    "2022-03",
+    "2022-04",
+    "2022-05",
+    "2022-06",
+    "2022-07",
+    "2022-08",
+    "2022-09",
+    "2022-10",
+    "2022-11",
+    "2022-12",
+    "2023-01",
+    "2023-02",
+    "2023-03",
+    "2023-04",
+    "2023-05",
+    "2023-06",
+    "2023-07",
+    "2023-08",
+    "2023-09",
+    "2023-10",
+    "2023-11",
+    "2023-12",
+    "2024-01",
+    "2024-02",
+    "2024-03",
+    "2024-04",
+    "2024-05",
+    "2024-06",
+    "2024-07",
+    "2024-08",
+    "2024-09",
+    "2024-10",
+    "2024-11",
+    "2024-12",
+    "2025-01",
+    "2025-02",
+    "2025-03",
+    "2025-04",
+    "2025-05",
+    "2025-06"
+   ],
+   "commits": [
+    65,
+    81,
+    50,
+    35,
+    21,
+    22,
+    36,
+    25,
+    26,
+    44,
+    35,
+    28,
+    43,
+    17,
+    31,
+    36,
+    40,
+    46,
+    17,
+    14,
+    23,
+    26,
+    72,
+    54,
+    48,
+    53,
+    47,
+    34,
+    59,
+    27,
+    16,
+    46,
+    44,
+    71,
+    41,
+    45,
+    49,
+    45,
+    22,
+    46,
+    20,
+    77,
+    17,
+    8,
+    28,
+    45,
+    32,
+    8
+   ],
+   "loc": [
+    58276,
+    54910,
+    55598,
+    55833,
+    55968,
+    56173,
+    56315,
+    56428,
+    56498,
+    56766,
+    79301,
+    79587,
+    79705,
+    79863,
+    80955,
+    81137,
+    82809,
+    82797,
+    82834,
+    82937,
+    82733,
+    82885,
+    83529,
+    83084,
+    84301,
+    85745,
+    85495,
+    85625,
+    84966,
+    85116,
+    85515,
+    85680,
+    86204,
+    86262,
+    86731,
+    87071,
+    88033,
+    89511,
+    89375,
+    89388,
+    89643,
+    89230,
+    89494,
+    89524,
+    89876,
+    89986,
+    90417,
+    90443
+   ]
+  }
+ },
+ "window": {
+  "L": 36,
+  "first_month": "2022-07",
+  "last_month": "2025-06",
+  "n_months": 36,
+  "left_truncated": false,
+  "first_commit_month": "2005-09",
+  "mined_months": 48,
+  "commits_in_window": 1347,
+  "commits_in_history": 9775
+ },
+ "loc_instrument": {
+  "instrument": "nonblank-source-lines-v1",
+  "status": "ok",
+  "months": 48,
+  "month_end_commits_distinct": 48,
+  "source_blobs": 3433,
+  "blobs_fetched": 88,
+  "t_ls_tree_s": 1.6603020849870518,
+  "t_fetch_s": 0.9696536249830388,
+  "t_read_s": 0.6295564420288429,
+  "series_present": true,
+  "extensions": [
+   ".bash",
+   ".c",
+   ".cc",
+   ".cjs",
+   ".clj",
+   ".cpp",
+   ".cs",
+   ".cxx",
+   ".dart",
+   ".erl",
+   ".ex",
+   ".exs",
+   ".f90",
+   ".go",
+   ".groovy",
+   ".h",
+   ".hh",
+   ".hpp",
+   ".hs",
+   ".java",
+   ".jl",
+   ".js",
+   ".jsx",
+   ".kt",
+   ".kts",
+   ".lua",
+   ".m",
+   ".mjs",
+   ".ml",
+   ".mm",
+   ".nim",
+   ".php",
+   ".pl",
+   ".pm",
+   ".py",
+   ".pyi",
+   ".r",
+   ".rb",
+   ".rs",
+   ".scala",
+   ".sh",
+   ".sql",
+   ".svelte",
+   ".swift",
+   ".ts",
+   ".tsx",
+   ".vue",
+   ".zig"
+  ],
+  "excluded_dirs": [
+   "node_modules",
+   "vendor",
+   "vendored",
+   "third_party",
+   "site-packages",
+   "bower_components"
+  ],
+  "max_blob_bytes": 1000000,
+  "first_parent": true
+ },
+ "mining": {
+  "churn": {
+   "t_churn_raw_s": 1.1002601439831778,
+   "t_churn_fetch_s": 15.15350001299521,
+   "t_churn_numstat_s": 1.9692998100072145,
+   "blobs_fetched_churn": 4623
+  },
+  "timings": {
+   "t_clone": 5.036,
+   "t_mine": 23.631,
+   "t_loc": 3.266,
+   "t_reason_A": 7.683
+  },
+  "cached": false
+ },
+ "stage_a": {
+  "commits": 1815,
+  "reasoned_commits": 1809,
+  "inconsistent_chunks": 0,
+  "chunk_timings": [
+   {
+    "tbox_load_s": 0.04312735400162637,
+    "abox_load_s": 0.13676169398240745,
+    "reason_s": 3.628132176003419,
+    "extract_s": 0.010051321994978935,
+    "total_s": 3.818535680009518,
+    "commits": 1000
+   },
+   {
+    "tbox_load_s": 0.039481771003920585,
+    "abox_load_s": 0.1079005670035258,
+    "reason_s": 3.654242942982819,
+    "extract_s": 0.008005279989447445,
+    "total_s": 3.8100795409991406,
+    "commits": 809
+   }
+  ],
+  "tbox_sha256": "da30ed577542b3643ecf06cb6a4649ccc8fce61ab7a0373beabd763e12883e86"
+ },
+ "activity": {
+  "last_commit_date": "2025-06-19T11:11:42+00:00",
+  "months_since_last_commit": 0,
+  "distinct_authors_in_window": 63,
+  "merge_commits_in_window": 0
+ },
+ "agent_adoption_date": null,
+ "commit_label_counts": {
+  "BugFixCommit": 180,
+  "FeatureCommit": 0,
+  "AgentCommit": 0
+ },
+ "series_months": [
+  {
+   "month": "2022-07",
+   "commit_count": 43,
+   "merge_count": 0,
+   "unique_authors": 6,
+   "lines_added": 1718,
+   "lines_deleted": 1678,
+   "total_churn": 3396,
+   "files_changed": 85,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 79705,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-08",
+   "commit_count": 17,
+   "merge_count": 0,
+   "unique_authors": 4,
+   "lines_added": 3003,
+   "lines_deleted": 991,
+   "total_churn": 3994,
+   "files_changed": 131,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 79863,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-09",
+   "commit_count": 31,
+   "merge_count": 0,
+   "unique_authors": 8,
+   "lines_added": 1513,
+   "lines_deleted": 308,
+   "total_churn": 1821,
+   "files_changed": 90,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 80955,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-10",
+   "commit_count": 36,
+   "merge_count": 0,
+   "unique_authors": 6,
+   "lines_added": 421,
+   "lines_deleted": 153,
+   "total_churn": 574,
+   "files_changed": 31,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 81137,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-11",
+   "commit_count": 40,
+   "merge_count": 0,
+   "unique_authors": 5,
+   "lines_added": 499,
+   "lines_deleted": 352,
+   "total_churn": 851,
+   "files_changed": 41,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 82809,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-12",
+   "commit_count": 46,
+   "merge_count": 0,
+   "unique_authors": 5,
+   "lines_added": 1272,
+   "lines_deleted": 1682,
+   "total_churn": 2954,
+   "files_changed": 58,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 82797,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-01",
+   "commit_count": 17,
+   "merge_count": 0,
+   "unique_authors": 5,
+   "lines_added": 896,
+   "lines_deleted": 731,
+   "total_churn": 1627,
+   "files_changed": 702,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 82834,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-02",
+   "commit_count": 14,
+   "merge_count": 0,
+   "unique_authors": 6,
+   "lines_added": 53,
+   "lines_deleted": 44,
+   "total_churn": 97,
+   "files_changed": 11,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 82937,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-03",
+   "commit_count": 23,
+   "merge_count": 0,
+   "unique_authors": 5,
+   "lines_added": 850,
+   "lines_deleted": 635,
+   "total_churn": 1485,
+   "files_changed": 30,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 82733,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-04",
+   "commit_count": 26,
+   "merge_count": 0,
+   "unique_authors": 6,
+   "lines_added": 244,
+   "lines_deleted": 62,
+   "total_churn": 306,
+   "files_changed": 26,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 82885,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-05",
+   "commit_count": 72,
+   "merge_count": 0,
+   "unique_authors": 6,
+   "lines_added": 3621,
+   "lines_deleted": 1408,
+   "total_churn": 5029,
+   "files_changed": 121,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 83529,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-06",
+   "commit_count": 54,
+   "merge_count": 0,
+   "unique_authors": 7,
+   "lines_added": 2506,
+   "lines_deleted": 1378,
+   "total_churn": 3884,
+   "files_changed": 107,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 83084,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-07",
+   "commit_count": 48,
+   "merge_count": 0,
+   "unique_authors": 7,
+   "lines_added": 2470,
+   "lines_deleted": 3516,
+   "total_churn": 5986,
+   "files_changed": 95,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 84301,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-08",
+   "commit_count": 53,
+   "merge_count": 0,
+   "unique_authors": 7,
+   "lines_added": 2992,
+   "lines_deleted": 1388,
+   "total_churn": 4380,
+   "files_changed": 108,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 85745,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-09",
+   "commit_count": 47,
+   "merge_count": 0,
+   "unique_authors": 4,
+   "lines_added": 990,
+   "lines_deleted": 1302,
+   "total_churn": 2292,
+   "files_changed": 115,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 85495,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-10",
+   "commit_count": 34,
+   "merge_count": 0,
+   "unique_authors": 5,
+   "lines_added": 288,
+   "lines_deleted": 106,
+   "total_churn": 394,
+   "files_changed": 41,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 85625,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-11",
+   "commit_count": 59,
+   "merge_count": 0,
+   "unique_authors": 4,
+   "lines_added": 1397,
+   "lines_deleted": 1989,
+   "total_churn": 3386,
+   "files_changed": 113,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 84966,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-12",
+   "commit_count": 27,
+   "merge_count": 0,
+   "unique_authors": 4,
+   "lines_added": 367,
+   "lines_deleted": 45,
+   "total_churn": 412,
+   "files_changed": 28,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 85116,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-01",
+   "commit_count": 16,
+   "merge_count": 0,
+   "unique_authors": 3,
+   "lines_added": 178,
+   "lines_deleted": 54,
+   "total_churn": 232,
+   "files_changed": 12,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 85515,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-02",
+   "commit_count": 46,
+   "merge_count": 0,
+   "unique_authors": 8,
+   "lines_added": 1346,
+   "lines_deleted": 831,
+   "total_churn": 2177,
+   "files_changed": 68,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 85680,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-03",
+   "commit_count": 44,
+   "merge_count": 0,
+   "unique_authors": 5,
+   "lines_added": 3283,
+   "lines_deleted": 2779,
+   "total_churn": 6062,
+   "files_changed": 104,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 86204,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-04",
+   "commit_count": 71,
+   "merge_count": 0,
+   "unique_authors": 4,
+   "lines_added": 6731,
+   "lines_deleted": 6307,
+   "total_churn": 13038,
+   "files_changed": 266,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 86262,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-05",
+   "commit_count": 41,
+   "merge_count": 0,
+   "unique_authors": 4,
+   "lines_added": 919,
+   "lines_deleted": 352,
+   "total_churn": 1271,
+   "files_changed": 47,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 86731,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-06",
+   "commit_count": 45,
+   "merge_count": 0,
+   "unique_authors": 5,
+   "lines_added": 978,
+   "lines_deleted": 394,
+   "total_churn": 1372,
+   "files_changed": 52,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 87071,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-07",
+   "commit_count": 49,
+   "merge_count": 0,
+   "unique_authors": 6,
+   "lines_added": 2780,
+   "lines_deleted": 1620,
+   "total_churn": 4400,
+   "files_changed": 110,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 88033,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-08",
+   "commit_count": 45,
+   "merge_count": 0,
+   "unique_authors": 4,
+   "lines_added": 1646,
+   "lines_deleted": 634,
+   "total_churn": 2280,
+   "files_changed": 79,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 89511,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-09",
+   "commit_count": 22,
+   "merge_count": 0,
+   "unique_authors": 3,
+   "lines_added": 158,
+   "lines_deleted": 319,
+   "total_churn": 477,
+   "files_changed": 18,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 89375,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-10",
+   "commit_count": 46,
+   "merge_count": 0,
+   "unique_authors": 5,
+   "lines_added": 444,
+   "lines_deleted": 302,
+   "total_churn": 746,
+   "files_changed": 29,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 89388,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-11",
+   "commit_count": 20,
+   "merge_count": 0,
+   "unique_authors": 3,
+   "lines_added": 264,
+   "lines_deleted": 86,
+   "total_churn": 350,
+   "files_changed": 19,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 89643,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-12",
+   "commit_count": 77,
+   "merge_count": 0,
+   "unique_authors": 5,
+   "lines_added": 3975,
+   "lines_deleted": 4266,
+   "total_churn": 8241,
+   "files_changed": 211,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 89230,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2025-01",
+   "commit_count": 17,
+   "merge_count": 0,
+   "unique_authors": 3,
+   "lines_added": 500,
+   "lines_deleted": 286,
+   "total_churn": 786,
+   "files_changed": 21,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 89494,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2025-02",
+   "commit_count": 8,
+   "merge_count": 0,
+   "unique_authors": 4,
+   "lines_added": 56,
+   "lines_deleted": 22,
+   "total_churn": 78,
+   "files_changed": 4,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 89524,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2025-03",
+   "commit_count": 28,
+   "merge_count": 0,
+   "unique_authors": 4,
+   "lines_added": 541,
+   "lines_deleted": 113,
+   "total_churn": 654,
+   "files_changed": 37,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 89876,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2025-04",
+   "commit_count": 45,
+   "merge_count": 0,
+   "unique_authors": 3,
+   "lines_added": 610,
+   "lines_deleted": 338,
+   "total_churn": 948,
+   "files_changed": 53,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 89986,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2025-05",
+   "commit_count": 32,
+   "merge_count": 0,
+   "unique_authors": 2,
+   "lines_added": 4306,
+   "lines_deleted": 3384,
+   "total_churn": 7690,
+   "files_changed": 88,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 90417,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2025-06",
+   "commit_count": 8,
+   "merge_count": 0,
+   "unique_authors": 5,
+   "lines_added": 206,
+   "lines_deleted": 61,
+   "total_churn": 267,
+   "files_changed": 11,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 90443,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  }
+ ],
+ "measures_derived": {
+  "bugFixRatioFirstHalf": 0.124388,
+  "bugFixRatioSecondHalf": 0.137649,
+  "bugFixHalfRatio": 1.106607,
+  "featureCommitsFirstHalf": 0,
+  "featureCommitsSecondHalf": 0,
+  "featureCommitsTotal": 0,
+  "locDeltaPerFeature": 10738.0,
+  "recentAgentCommitRatio": 0.0
+ },
+ "inferred": {
+  "a0.05_L36_D12_G0.05_orig": {
+   "classes": [
+    "CopyPasteEvidence",
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIIConformant",
+    "LawIVConformant",
+    "LawVConformant",
+    "LawVIConformant",
+    "LawVIIConformant",
+    "LawVIIConformantRatio",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantNoMerge",
+    "LocPerFeatureHigh",
+    "MKApplicable",
+    "MergeInactive",
+    "MinorLocGrowth",
+    "MultiAuthorActive",
+    "NonSubstantialChange",
+    "RBServicingStage",
+    "RecentlyActive"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": "urn:senso:explanations:pyinstaller/pyinstaller:79f851de895e",
+   "tbox_sha256": "79f851de895e8301073d1746931d8ac1d34e4ed2e94897358fca050d9d07b63c",
+   "abox_triples": 40,
+   "t_reason_B_s": 2.107
+  },
+  "a0.01_L36_D12_G0.05_orig": {
+   "classes": [
+    "CopyPasteEvidence",
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIIConformant",
+    "LawIVConformant",
+    "LawVConformant",
+    "LawVIConformant",
+    "LawVIIConformant",
+    "LawVIIConformantRatio",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantNoMerge",
+    "LocPerFeatureHigh",
+    "MKApplicable",
+    "MergeInactive",
+    "MinorLocGrowth",
+    "MultiAuthorActive",
+    "NonSubstantialChange",
+    "RBServicingStage",
+    "RecentlyActive"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "956579a8859000216eba261c78e4795a2b5042e7edf95419211fd46e9dbeada9",
+   "abox_triples": 40,
+   "t_reason_B_s": 2.19
+  },
+  "a0.1_L36_D12_G0.05_orig": {
+   "classes": [
+    "CopyPasteEvidence",
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIIConformant",
+    "LawIVConformant",
+    "LawVConformant",
+    "LawVIConformant",
+    "LawVIIConformant",
+    "LawVIIConformantRatio",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantNoMerge",
+    "LocPerFeatureHigh",
+    "MKApplicable",
+    "MergeInactive",
+    "MinorLocGrowth",
+    "MultiAuthorActive",
+    "NonSubstantialChange",
+    "RBServicingStage",
+    "RecentlyActive"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "56009aa92bf68560113e153a97a62cd0cfdea303607eb909725e8e10a2536494",
+   "abox_triples": 40,
+   "t_reason_B_s": 2.105
+  },
+  "a0.05_L24_D12_G0.05_orig": {
+   "classes": [
+    "CopyPasteEvidence",
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIIConformant",
+    "LawIVConformant",
+    "LawVConformant",
+    "LawVIConformant",
+    "LawVIIConformant",
+    "LawVIIConformantRatio",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantNoMerge",
+    "LocPerFeatureHigh",
+    "MKApplicable",
+    "MergeInactive",
+    "MinorLocGrowth",
+    "MultiAuthorActive",
+    "NonSubstantialChange",
+    "RBServicingStage",
+    "RecentlyActive"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "79f851de895e8301073d1746931d8ac1d34e4ed2e94897358fca050d9d07b63c",
+   "abox_triples": 40,
+   "t_reason_B_s": 2.097
+  },
+  "a0.05_L48_D12_G0.05_orig": {
+   "classes": [
+    "CopyPasteEvidence",
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIIConformant",
+    "LawIVConformant",
+    "LawVConformant",
+    "LawVIConformant",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantNoMerge",
+    "LawVIINonConformant",
+    "LocPerFeatureHigh",
+    "MKApplicable",
+    "MergeInactive",
+    "MultiAuthorActive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "79f851de895e8301073d1746931d8ac1d34e4ed2e94897358fca050d9d07b63c",
+   "abox_triples": 40,
+   "t_reason_B_s": 2.204
+  },
+  "a0.05_L36_D6_G0.05_orig": {
+   "classes": [
+    "CopyPasteEvidence",
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIIConformant",
+    "LawIVConformant",
+    "LawVConformant",
+    "LawVIConformant",
+    "LawVIIConformant",
+    "LawVIIConformantRatio",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantNoMerge",
+    "LocPerFeatureHigh",
+    "MKApplicable",
+    "MergeInactive",
+    "MinorLocGrowth",
+    "MultiAuthorActive",
+    "NonSubstantialChange",
+    "RBServicingStage",
+    "RecentlyActive"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "a19e7e45f521324fec6b19741e2a4f08e5d15efd8e05802851c45a87515a7761",
+   "abox_triples": 40,
+   "t_reason_B_s": 2.149
+  },
+  "a0.05_L36_D18_G0.05_orig": {
+   "classes": [
+    "CopyPasteEvidence",
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIIConformant",
+    "LawIVConformant",
+    "LawVConformant",
+    "LawVIConformant",
+    "LawVIIConformant",
+    "LawVIIConformantRatio",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantNoMerge",
+    "LocPerFeatureHigh",
+    "MKApplicable",
+    "MergeInactive",
+    "MinorLocGrowth",
+    "MultiAuthorActive",
+    "NonSubstantialChange",
+    "RBServicingStage",
+    "RecentlyActive"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "f87900e0c68335fbd2cae9848efdc2926406c328fb39da8e6e393bb472a68fdc",
+   "abox_triples": 40,
+   "t_reason_B_s": 2.259
+  },
+  "a0.05_L36_D24_G0.05_orig": {
+   "classes": [
+    "CopyPasteEvidence",
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIIConformant",
+    "LawIVConformant",
+    "LawVConformant",
+    "LawVIConformant",
+    "LawVIIConformant",
+    "LawVIIConformantRatio",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantNoMerge",
+    "LocPerFeatureHigh",
+    "MKApplicable",
+    "MergeInactive",
+    "MinorLocGrowth",
+    "MultiAuthorActive",
+    "NonSubstantialChange",
+    "RBServicingStage",
+    "RecentlyActive"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "562211ba220cda59299aec70f3561ba96eadd88adaf45f6f7db3fce71cdcc77b",
+   "abox_triples": 40,
+   "t_reason_B_s": 2.047
+  },
+  "a0.05_L36_D12_G0_orig": {
+   "classes": [
+    "CopyPasteEvidence",
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIIConformant",
+    "LawIVConformant",
+    "LawVConformant",
+    "LawVIConformant",
+    "LawVIIConformant",
+    "LawVIIConformantRatio",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantNoMerge",
+    "LocPerFeatureHigh",
+    "MKApplicable",
+    "MergeInactive",
+    "MultiAuthorActive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "c0de0e8b2e7424d23b10ed152acd4ff66c2f1a973196b7e54f6598e9d734d0dc",
+   "abox_triples": 40,
+   "t_reason_B_s": 2.172
+  },
+  "a0.05_L36_D12_G0.02_orig": {
+   "classes": [
+    "CopyPasteEvidence",
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIIConformant",
+    "LawIVConformant",
+    "LawVConformant",
+    "LawVIConformant",
+    "LawVIIConformant",
+    "LawVIIConformantRatio",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantNoMerge",
+    "LocPerFeatureHigh",
+    "MKApplicable",
+    "MergeInactive",
+    "MultiAuthorActive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "2c6613dd6b3e4fa714d92eaa067f02157466a4b3ee0ccf6de289441d860de28d",
+   "abox_triples": 40,
+   "t_reason_B_s": 2.514
+  },
+  "a0.05_L36_D12_G0.1_orig": {
+   "classes": [
+    "CopyPasteEvidence",
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIIConformant",
+    "LawIVConformant",
+    "LawVConformant",
+    "LawVIConformant",
+    "LawVIIConformant",
+    "LawVIIConformantRatio",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantNoMerge",
+    "LocPerFeatureHigh",
+    "MKApplicable",
+    "MergeInactive",
+    "MinorLocGrowth",
+    "MultiAuthorActive",
+    "NonSubstantialChange",
+    "RBServicingStage",
+    "RecentlyActive"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "0cfde802b4494fc33a5ad0eb910980aaf152093f62848406bdc37bc099347936",
+   "abox_triples": 40,
+   "t_reason_B_s": 3.902
+  },
+  "a0.05_L36_D12_G0.05_hr": {
+   "classes": [
+    "CopyPasteEvidence",
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIIConformant",
+    "LawIVConformant",
+    "LawVConformant",
+    "LawVIConformant",
+    "LawVIIConformant",
+    "LawVIIConformantRatio",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantNoMerge",
+    "LocPerFeatureHigh",
+    "MKApplicable",
+    "MergeInactive",
+    "MinorLocGrowth",
+    "MultiAuthorActive",
+    "NonSubstantialChange",
+    "RBServicingStage",
+    "RecentlyActive"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "79f851de895e8301073d1746931d8ac1d34e4ed2e94897358fca050d9d07b63c",
+   "abox_triples": 40,
+   "t_reason_B_s": 4.055
+  }
+ },
+ "primary_config": "a0.05_L36_D12_G0.05_orig",
+ "project_iri": "http://senso-framework.org/data/pyinstaller_pyinstaller",
+ "consistent": true,
+ "inferred_labels": [
+  "CopyPasteEvidence",
+  "GrowthStage",
+  "LawIConformant",
+  "LawIIIConformant",
+  "LawIVConformant",
+  "LawVConformant",
+  "LawVIConformant",
+  "LawVIIConformant",
+  "LawVIIConformantRatio",
+  "LawVIIINonConformant",
+  "LawVIIINonConformantNoMerge",
+  "LocPerFeatureHigh",
+  "MKApplicable",
+  "MergeInactive",
+  "MinorLocGrowth",
+  "MultiAuthorActive",
+  "NonSubstantialChange",
+  "RBServicingStage",
+  "RecentlyActive"
+ ],
+ "stage_labels": [
+  "GrowthStage",
+  "RBServicingStage"
+ ],
+ "law_labels": {
+  "I": "LawIConformant",
+  "III": "LawIIIConformant",
+  "IV": "LawIVConformant",
+  "V": "LawVConformant",
+  "VI": "LawVIConformant",
+  "VII": "LawVIIConformant",
+  "VIII": "LawVIIINonConformant"
+ },
+ "tbox_sha256_stage_b": "79f851de895e8301073d1746931d8ac1d34e4ed2e94897358fca050d9d07b63c",
+ "tbox_sha256_stage_a": "da30ed577542b3643ecf06cb6a4649ccc8fce61ab7a0373beabd763e12883e86",
+ "summary": {
+  "c1": "A",
+  "c2": "S",
+  "cf": "A",
+  "note": "debug summary; run_rq1_v2.py reads `inferred` and recomputes CF itself"
+ },
+ "explanations": {
+  "stage:GrowthStage": {
+   "class": "GrowthStage",
+   "target": "http://senso-framework.org/data/pyinstaller_pyinstaller type http://senso-framework.org/ontology/seo#GrowthStage",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKTau_gt_0",
+       "text": "A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKpValue_lt_mk_alpha",
+       "text": "A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]"
+      },
+      {
+       "kind": "definition",
+       "subject": "GrowthStage",
+       "text": "GrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "pyinstaller_pyinstaller",
+       "prop": "locMKpValue",
+       "value": 0.0,
+       "raw": "pyinstaller_pyinstaller locMKpValue 0.0"
+      },
+      {
+       "subject": "pyinstaller_pyinstaller",
+       "prop": "locMKTau",
+       "value": 0.914286,
+       "raw": "pyinstaller_pyinstaller locMKTau 0.914286"
+      },
+      {
+       "subject": "pyinstaller_pyinstaller",
+       "prop": "locSeriesLength",
+       "value": 36,
+       "raw": "pyinstaller_pyinstaller locSeriesLength 36"
+      },
+      {
+       "subject": "pyinstaller_pyinstaller",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "pyinstaller_pyinstaller type SoftwareProject"
+      }
+     ],
+     "closures": [],
+     "raw": "pyinstaller_pyinstaller locMKpValue 0.0\npyinstaller_pyinstaller locMKTau 0.914286\nA_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\nA_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\npyinstaller_pyinstaller locSeriesLength 36\nA_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\npyinstaller_pyinstaller type SoftwareProject\nGrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject\nA_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]"
+    }
+   ],
+   "raw_text": "Axiom: pyinstaller_pyinstaller type GrowthStage\n\nExplanation(s): \n1)   pyinstaller_pyinstaller locMKpValue 0.0\n     pyinstaller_pyinstaller locMKTau 0.914286\n     A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\n     A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\n     pyinstaller_pyinstaller locSeriesLength 36\n     A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\n     pyinstaller_pyinstaller type SoftwareProject\n     GrowthStage equivalentTo A_locMKTau_gt_0\n                              and A_locMKpValue_lt_mk_alpha\n                              and MKApplicable\n                              and SoftwareProject\n     A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]\n\n\n",
+   "seconds": 4.405630270019174,
+   "returncode": 0,
+   "error": null
+  },
+  "stage:RBServicingStage": {
+   "class": "RBServicingStage",
+   "target": "http://senso-framework.org/data/pyinstaller_pyinstaller type http://senso-framework.org/ontology/seo#RBServicingStage",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "subclass",
+       "subject": "MinorLocGrowth",
+       "text": "MinorLocGrowth subClassOf NonSubstantialChange"
+      },
+      {
+       "kind": "definition",
+       "subject": "RBServicingStage",
+       "text": "RBServicingStage equivalentTo NonSubstantialChange and RecentlyActive and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "RecentlyActive",
+       "text": "RecentlyActive equivalentTo A_monthsSinceLastCommit_lt_rb_dormancy_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locRelSenSlopeAnnual_lt_rb_min_rel_loc_growth_per_year",
+       "text": "A_locRelSenSlopeAnnual_lt_rb_min_rel_loc_growth_per_year equivalentTo locRelSenSlopeAnnual some decimal[< 0.05]"
+      },
+      {
+       "kind": "definition",
+       "subject": "MinorLocGrowth",
+       "text": "MinorLocGrowth equivalentTo A_locRelSenSlopeAnnual_lt_rb_min_rel_loc_growth_per_year and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_monthsSinceLastCommit_lt_rb_dormancy_months",
+       "text": "A_monthsSinceLastCommit_lt_rb_dormancy_months equivalentTo monthsSinceLastCommit some integer[< 12]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "pyinstaller_pyinstaller",
+       "prop": "monthsSinceLastCommit",
+       "value": 0,
+       "raw": "pyinstaller_pyinstaller monthsSinceLastCommit 0"
+      },
+      {
+       "subject": "pyinstaller_pyinstaller",
+       "prop": "locRelSenSlopeAnnual",
+       "value": 0.041705,
+       "raw": "pyinstaller_pyinstaller locRelSenSlopeAnnual 0.041705"
+      },
+      {
+       "subject": "pyinstaller_pyinstaller",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "pyinstaller_pyinstaller type SoftwareProject"
+      }
+     ],
+     "closures": [],
+     "raw": "pyinstaller_pyinstaller monthsSinceLastCommit 0\npyinstaller_pyinstaller locRelSenSlopeAnnual 0.041705\nMinorLocGrowth subClassOf NonSubstantialChange\npyinstaller_pyinstaller type SoftwareProject\nRBServicingStage equivalentTo NonSubstantialChange and RecentlyActive and SoftwareProject\nRecentlyActive equivalentTo A_monthsSinceLastCommit_lt_rb_dormancy_months and SoftwareProject\nA_locRelSenSlopeAnnual_lt_rb_min_rel_loc_growth_per_year equivalentTo locRelSenSlopeAnnual some decimal[< 0.05]\nMinorLocGrowth equivalentTo A_locRelSenSlopeAnnual_lt_rb_min_rel_loc_growth_per_year and SoftwareProject\nA_monthsSinceLastCommit_lt_rb_dormancy_months equivalentTo monthsSinceLastCommit some integer[< 12]"
+    }
+   ],
+   "raw_text": "Axiom: pyinstaller_pyinstaller type RBServicingStage\n\nExplanation(s): \n1)   pyinstaller_pyinstaller monthsSinceLastCommit 0\n     pyinstaller_pyinstaller locRelSenSlopeAnnual 0.041705\n     MinorLocGrowth subClassOf NonSubstantialChange\n     pyinstaller_pyinstaller type SoftwareProject\n     RBServicingStage equivalentTo NonSubstantialChange\n                                   and RecentlyActive\n                                   and SoftwareProject\n     RecentlyActive equivalentTo A_monthsSinceLastCommit_lt_rb_dormancy_months\n                                 and SoftwareProject\n     A_locRelSenSlopeAnnual_lt_rb_min_rel_loc_growth_per_year equivalentTo locRelSenSlopeAnnual some decimal[< 0.05]\n     MinorLocGrowth equivalentTo A_locRelSenSlopeAnnual_lt_rb_min_rel_loc_growth_per_year\n                                 and SoftwareProject\n     A_monthsSinceLastCommit_lt_rb_dormancy_months equivalentTo monthsSinceLastCommit some integer[< 12]\n\n\n",
+   "seconds": 2.516214247967582,
+   "returncode": 0,
+   "error": null
+  },
+  "lawI": {
+   "class": "LawIConformant",
+   "target": "http://senso-framework.org/data/pyinstaller_pyinstaller type http://senso-framework.org/ontology/seo#LawIConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law1_min_months",
+       "text": "A_monthsObserved_ge_p_law1_min_months equivalentTo monthsObserved some integer[>= 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawIConformant",
+       "text": "LawIConformant equivalentTo A_activeMonthRatio_ge_p_law1_active_ratio and A_monthsObserved_ge_p_law1_min_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_activeMonthRatio_ge_p_law1_active_ratio",
+       "text": "A_activeMonthRatio_ge_p_law1_active_ratio equivalentTo activeMonthRatio some decimal[>= 0.5]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "pyinstaller_pyinstaller",
+       "prop": "activeMonthRatio",
+       "value": 1.0,
+       "raw": "pyinstaller_pyinstaller activeMonthRatio 1.0"
+      },
+      {
+       "subject": "pyinstaller_pyinstaller",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "pyinstaller_pyinstaller monthsObserved 36"
+      },
+      {
+       "subject": "pyinstaller_pyinstaller",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "pyinstaller_pyinstaller type SoftwareProject"
+      }
+     ],
+     "closures": [],
+     "raw": "pyinstaller_pyinstaller activeMonthRatio 1.0\npyinstaller_pyinstaller monthsObserved 36\nA_monthsObserved_ge_p_law1_min_months equivalentTo monthsObserved some integer[>= 2]\npyinstaller_pyinstaller type SoftwareProject\nLawIConformant equivalentTo A_activeMonthRatio_ge_p_law1_active_ratio and A_monthsObserved_ge_p_law1_min_months and SoftwareProject\nA_activeMonthRatio_ge_p_law1_active_ratio equivalentTo activeMonthRatio some decimal[>= 0.5]"
+    }
+   ],
+   "raw_text": "Axiom: pyinstaller_pyinstaller type LawIConformant\n\nExplanation(s): \n1)   pyinstaller_pyinstaller activeMonthRatio 1.0\n     pyinstaller_pyinstaller monthsObserved 36\n     A_monthsObserved_ge_p_law1_min_months equivalentTo monthsObserved some integer[>= 2]\n     pyinstaller_pyinstaller type SoftwareProject\n     LawIConformant equivalentTo A_activeMonthRatio_ge_p_law1_active_ratio\n                                 and A_monthsObserved_ge_p_law1_min_months\n                                 and SoftwareProject\n     A_activeMonthRatio_ge_p_law1_active_ratio equivalentTo activeMonthRatio some decimal[>= 0.5]\n\n\n",
+   "seconds": 2.804003797005862,
+   "returncode": 0,
+   "error": null
+  },
+  "lawIII": {
+   "class": "LawIIIConformant",
+   "target": "http://senso-framework.org/data/pyinstaller_pyinstaller type http://senso-framework.org/ontology/seo#LawIIIConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law3_min_months",
+       "text": "A_monthsObserved_ge_p_law3_min_months equivalentTo monthsObserved some integer[>= 6]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawIIIConformant",
+       "text": "LawIIIConformant equivalentTo A_churnCV_lt_p_law3_churn_cv and A_monthsObserved_ge_p_law3_min_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_churnCV_lt_p_law3_churn_cv",
+       "text": "A_churnCV_lt_p_law3_churn_cv equivalentTo churnCV some decimal[< 2.0]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "pyinstaller_pyinstaller",
+       "prop": "churnCV",
+       "value": 1.073405,
+       "raw": "pyinstaller_pyinstaller churnCV 1.073405"
+      },
+      {
+       "subject": "pyinstaller_pyinstaller",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "pyinstaller_pyinstaller monthsObserved 36"
+      },
+      {
+       "subject": "pyinstaller_pyinstaller",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "pyinstaller_pyinstaller type SoftwareProject"
+      }
+     ],
+     "closures": [],
+     "raw": "A_monthsObserved_ge_p_law3_min_months equivalentTo monthsObserved some integer[>= 6]\npyinstaller_pyinstaller churnCV 1.073405\npyinstaller_pyinstaller monthsObserved 36\nLawIIIConformant equivalentTo A_churnCV_lt_p_law3_churn_cv and A_monthsObserved_ge_p_law3_min_months and SoftwareProject\nA_churnCV_lt_p_law3_churn_cv equivalentTo churnCV some decimal[< 2.0]\npyinstaller_pyinstaller type SoftwareProject"
+    }
+   ],
+   "raw_text": "Axiom: pyinstaller_pyinstaller type LawIIIConformant\n\nExplanation(s): \n1)   A_monthsObserved_ge_p_law3_min_months equivalentTo monthsObserved some integer[>= 6]\n     pyinstaller_pyinstaller churnCV 1.073405\n     pyinstaller_pyinstaller monthsObserved 36\n     LawIIIConformant equivalentTo A_churnCV_lt_p_law3_churn_cv\n                                   and A_monthsObserved_ge_p_law3_min_months\n                                   and SoftwareProject\n     A_churnCV_lt_p_law3_churn_cv equivalentTo churnCV some decimal[< 2.0]\n     pyinstaller_pyinstaller type SoftwareProject\n\n\n",
+   "seconds": 2.8445990240434185,
+   "returncode": 0,
+   "error": null
+  },
+  "lawIV": {
+   "class": "LawIVConformant",
+   "target": "http://senso-framework.org/data/pyinstaller_pyinstaller type http://senso-framework.org/ontology/seo#LawIVConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law4_min_months",
+       "text": "A_monthsObserved_ge_p_law4_min_months equivalentTo monthsObserved some integer[>= 6]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawIVConformant",
+       "text": "LawIVConformant equivalentTo A_commitCountCV_lt_p_law4_commit_cv and A_monthsObserved_ge_p_law4_min_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_commitCountCV_lt_p_law4_commit_cv",
+       "text": "A_commitCountCV_lt_p_law4_commit_cv equivalentTo commitCountCV some decimal[< 1.5]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "pyinstaller_pyinstaller",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "pyinstaller_pyinstaller monthsObserved 36"
+      },
+      {
+       "subject": "pyinstaller_pyinstaller",
+       "prop": "commitCountCV",
+       "value": 0.463952,
+       "raw": "pyinstaller_pyinstaller commitCountCV 0.463952"
+      },
+      {
+       "subject": "pyinstaller_pyinstaller",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "pyinstaller_pyinstaller type SoftwareProject"
+      }
+     ],
+     "closures": [],
+     "raw": "A_monthsObserved_ge_p_law4_min_months equivalentTo monthsObserved some integer[>= 6]\npyinstaller_pyinstaller monthsObserved 36\npyinstaller_pyinstaller commitCountCV 0.463952\nLawIVConformant equivalentTo A_commitCountCV_lt_p_law4_commit_cv and A_monthsObserved_ge_p_law4_min_months and SoftwareProject\npyinstaller_pyinstaller type SoftwareProject\nA_commitCountCV_lt_p_law4_commit_cv equivalentTo commitCountCV some decimal[< 1.5]"
+    }
+   ],
+   "raw_text": "Axiom: pyinstaller_pyinstaller type LawIVConformant\n\nExplanation(s): \n1)   A_monthsObserved_ge_p_law4_min_months equivalentTo monthsObserved some integer[>= 6]\n     pyinstaller_pyinstaller monthsObserved 36\n     pyinstaller_pyinstaller commitCountCV 0.463952\n     LawIVConformant equivalentTo A_commitCountCV_lt_p_law4_commit_cv\n                                  and A_monthsObserved_ge_p_law4_min_months\n                                  and SoftwareProject\n     pyinstaller_pyinstaller type SoftwareProject\n     A_commitCountCV_lt_p_law4_commit_cv equivalentTo commitCountCV some decimal[< 1.5]\n\n\n",
+   "seconds": 2.6469966339645907,
+   "returncode": 0,
+   "error": null
+  },
+  "lawV": {
+   "class": "LawVConformant",
+   "target": "http://senso-framework.org/data/pyinstaller_pyinstaller type http://senso-framework.org/ontology/seo#LawVConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "LawVConformant",
+       "text": "LawVConformant equivalentTo A_linesAddedCV_lt_p_law5_additions_cv and A_monthsObserved_ge_p_law5_min_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_linesAddedCV_lt_p_law5_additions_cv",
+       "text": "A_linesAddedCV_lt_p_law5_additions_cv equivalentTo linesAddedCV some decimal[< 2.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law5_min_months",
+       "text": "A_monthsObserved_ge_p_law5_min_months equivalentTo monthsObserved some integer[>= 4]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "pyinstaller_pyinstaller",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "pyinstaller_pyinstaller monthsObserved 36"
+      },
+      {
+       "subject": "pyinstaller_pyinstaller",
+       "prop": "linesAddedCV",
+       "value": 0.994555,
+       "raw": "pyinstaller_pyinstaller linesAddedCV 0.994555"
+      },
+      {
+       "subject": "pyinstaller_pyinstaller",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "pyinstaller_pyinstaller type SoftwareProject"
+      }
+     ],
+     "closures": [],
+     "raw": "pyinstaller_pyinstaller monthsObserved 36\npyinstaller_pyinstaller linesAddedCV 0.994555\nLawVConformant equivalentTo A_linesAddedCV_lt_p_law5_additions_cv and A_monthsObserved_ge_p_law5_min_months and SoftwareProject\nA_linesAddedCV_lt_p_law5_additions_cv equivalentTo linesAddedCV some decimal[< 2.0]\npyinstaller_pyinstaller type SoftwareProject\nA_monthsObserved_ge_p_law5_min_months equivalentTo monthsObserved some integer[>= 4]"
+    }
+   ],
+   "raw_text": "Axiom: pyinstaller_pyinstaller type LawVConformant\n\nExplanation(s): \n1)   pyinstaller_pyinstaller monthsObserved 36\n     pyinstaller_pyinstaller linesAddedCV 0.994555\n     LawVConformant equivalentTo A_linesAddedCV_lt_p_law5_additions_cv\n                                 and A_monthsObserved_ge_p_law5_min_months\n                                 and SoftwareProject\n     A_linesAddedCV_lt_p_law5_additions_cv equivalentTo linesAddedCV some decimal[< 2.0]\n     pyinstaller_pyinstaller type SoftwareProject\n     A_monthsObserved_ge_p_law5_min_months equivalentTo monthsObserved some integer[>= 4]\n\n\n",
+   "seconds": 2.4874050400103442,
+   "returncode": 0,
+   "error": null
+  },
+  "lawVI": {
+   "class": "LawVIConformant",
+   "target": "http://senso-framework.org/data/pyinstaller_pyinstaller type http://senso-framework.org/ontology/seo#LawVIConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "subclass",
+       "subject": "GrowthStage",
+       "text": "GrowthStage subClassOf LawVIConformant"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKTau_gt_0",
+       "text": "A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKpValue_lt_mk_alpha",
+       "text": "A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]"
+      },
+      {
+       "kind": "definition",
+       "subject": "GrowthStage",
+       "text": "GrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "pyinstaller_pyinstaller",
+       "prop": "locMKpValue",
+       "value": 0.0,
+       "raw": "pyinstaller_pyinstaller locMKpValue 0.0"
+      },
+      {
+       "subject": "pyinstaller_pyinstaller",
+       "prop": "locMKTau",
+       "value": 0.914286,
+       "raw": "pyinstaller_pyinstaller locMKTau 0.914286"
+      },
+      {
+       "subject": "pyinstaller_pyinstaller",
+       "prop": "locSeriesLength",
+       "value": 36,
+       "raw": "pyinstaller_pyinstaller locSeriesLength 36"
+      },
+      {
+       "subject": "pyinstaller_pyinstaller",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "pyinstaller_pyinstaller type SoftwareProject"
+      }
+     ],
+     "closures": [],
+     "raw": "pyinstaller_pyinstaller locMKpValue 0.0\npyinstaller_pyinstaller locMKTau 0.914286\nGrowthStage subClassOf LawVIConformant\nA_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\nA_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\npyinstaller_pyinstaller locSeriesLength 36\nA_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\npyinstaller_pyinstaller type SoftwareProject\nGrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject\nA_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]"
+    }
+   ],
+   "raw_text": "Axiom: pyinstaller_pyinstaller type LawVIConformant\n\nExplanation(s): \n1)   pyinstaller_pyinstaller locMKpValue 0.0\n     pyinstaller_pyinstaller locMKTau 0.914286\n     GrowthStage subClassOf LawVIConformant\n     A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\n     A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\n     pyinstaller_pyinstaller locSeriesLength 36\n     A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\n     pyinstaller_pyinstaller type SoftwareProject\n     GrowthStage equivalentTo A_locMKTau_gt_0\n                              and A_locMKpValue_lt_mk_alpha\n                              and MKApplicable\n                              and SoftwareProject\n     A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]\n\n\n",
+   "seconds": 3.8765522880130447,
+   "returncode": 0,
+   "error": null
+  },
+  "lawVII": {
+   "class": "LawVIIConformant",
+   "target": "http://senso-framework.org/data/pyinstaller_pyinstaller type http://senso-framework.org/ontology/seo#LawVIIConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_bugFixHalfRatio_ge_p_law7_tolerance",
+       "text": "A_bugFixHalfRatio_ge_p_law7_tolerance equivalentTo bugFixHalfRatio some decimal[>= 0.9]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawVIIConformantRatio",
+       "text": "LawVIIConformantRatio equivalentTo A_activeMonthCount_ge_p_law7_min_active_months and A_bugFixHalfRatio_ge_p_law7_tolerance and A_bugFixRatioFirstHalf_gt_0 and SoftwareProject"
+      },
+      {
+       "kind": "subclass",
+       "subject": "LawVIIConformantRatio",
+       "text": "LawVIIConformantRatio subClassOf LawVIIConformant"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_bugFixRatioFirstHalf_gt_0",
+       "text": "A_bugFixRatioFirstHalf_gt_0 equivalentTo bugFixRatioFirstHalf some decimal[> 0.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_activeMonthCount_ge_p_law7_min_active_months",
+       "text": "A_activeMonthCount_ge_p_law7_min_active_months equivalentTo activeMonthCount some integer[>= 4]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "pyinstaller_pyinstaller",
+       "prop": "bugFixHalfRatio",
+       "value": 1.106607,
+       "raw": "pyinstaller_pyinstaller bugFixHalfRatio 1.106607"
+      },
+      {
+       "subject": "pyinstaller_pyinstaller",
+       "prop": "activeMonthCount",
+       "value": 36,
+       "raw": "pyinstaller_pyinstaller activeMonthCount 36"
+      },
+      {
+       "subject": "pyinstaller_pyinstaller",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "pyinstaller_pyinstaller type SoftwareProject"
+      },
+      {
+       "subject": "pyinstaller_pyinstaller",
+       "prop": "bugFixRatioFirstHalf",
+       "value": 0.124388,
+       "raw": "pyinstaller_pyinstaller bugFixRatioFirstHalf 0.124388"
+      }
+     ],
+     "closures": [],
+     "raw": "A_bugFixHalfRatio_ge_p_law7_tolerance equivalentTo bugFixHalfRatio some decimal[>= 0.9]\nLawVIIConformantRatio equivalentTo A_activeMonthCount_ge_p_law7_min_active_months and A_bugFixHalfRatio_ge_p_law7_tolerance and A_bugFixRatioFirstHalf_gt_0 and SoftwareProject\npyinstaller_pyinstaller bugFixHalfRatio 1.106607\nLawVIIConformantRatio subClassOf LawVIIConformant\npyinstaller_pyinstaller activeMonthCount 36\nA_bugFixRatioFirstHalf_gt_0 equivalentTo bugFixRatioFirstHalf some decimal[> 0.0]\nA_activeMonthCount_ge_p_law7_min_active_months equivalentTo activeMonthCount some integer[>= 4]\npyinstaller_pyinstaller type SoftwareProject\npyinstaller_pyinstaller bugFixRatioFirstHalf 0.124388"
+    }
+   ],
+   "raw_text": "Axiom: pyinstaller_pyinstaller type LawVIIConformant\n\nExplanation(s): \n1)   A_bugFixHalfRatio_ge_p_law7_tolerance equivalentTo bugFixHalfRatio some decimal[>= 0.9]\n     LawVIIConformantRatio equivalentTo A_activeMonthCount_ge_p_law7_min_active_months\n                                        and A_bugFixHalfRatio_ge_p_law7_tolerance\n                                        and A_bugFixRatioFirstHalf_gt_0\n                                        and SoftwareProject\n     pyinstaller_pyinstaller bugFixHalfRatio 1.106607\n     LawVIIConformantRatio subClassOf LawVIIConformant\n     pyinstaller_pyinstaller activeMonthCount 36\n     A_bugFixRatioFirstHalf_gt_0 equivalentTo bugFixRatioFirstHalf some decimal[> 0.0]\n     A_activeMonthCount_ge_p_law7_min_active_months equivalentTo activeMonthCount some integer[>= 4]\n     pyinstaller_pyinstaller type SoftwareProject\n     pyinstaller_pyinstaller bugFixRatioFirstHalf 0.124388\n\n\n",
+   "seconds": 2.925855266978033,
+   "returncode": 0,
+   "error": null
+  },
+  "lawVIII": {
+   "class": "LawVIIINonConformant",
+   "target": "http://senso-framework.org/data/pyinstaller_pyinstaller type http://senso-framework.org/ontology/seo#LawVIIINonConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_mergeMonthRatio_le_p_law8_merge_ratio",
+       "text": "A_mergeMonthRatio_le_p_law8_merge_ratio equivalentTo MergeInactive"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawVIIINonConformantNoMerge",
+       "text": "LawVIIINonConformantNoMerge equivalentTo A_monthsObserved_ge_p_law8_min_months and MergeInactive and SoftwareProject"
+      },
+      {
+       "kind": "subclass",
+       "subject": "LawVIIINonConformantNoMerge",
+       "text": "LawVIIINonConformantNoMerge subClassOf LawVIIINonConformant"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_mergeMonthRatio_le_p_law8_merge_ratio",
+       "text": "A_mergeMonthRatio_le_p_law8_merge_ratio equivalentTo mergeMonthRatio some decimal[<= 0.3]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law8_min_months",
+       "text": "A_monthsObserved_ge_p_law8_min_months equivalentTo monthsObserved some integer[>= 6]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "pyinstaller_pyinstaller",
+       "prop": "mergeMonthRatio",
+       "value": 0.0,
+       "raw": "pyinstaller_pyinstaller mergeMonthRatio 0.0"
+      },
+      {
+       "subject": "pyinstaller_pyinstaller",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "pyinstaller_pyinstaller monthsObserved 36"
+      },
+      {
+       "subject": "pyinstaller_pyinstaller",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "pyinstaller_pyinstaller type SoftwareProject"
+      }
+     ],
+     "closures": [],
+     "raw": "A_mergeMonthRatio_le_p_law8_merge_ratio equivalentTo MergeInactive\npyinstaller_pyinstaller mergeMonthRatio 0.0\nLawVIIINonConformantNoMerge equivalentTo A_monthsObserved_ge_p_law8_min_months and MergeInactive and SoftwareProject\nLawVIIINonConformantNoMerge subClassOf LawVIIINonConformant\nA_mergeMonthRatio_le_p_law8_merge_ratio equivalentTo mergeMonthRatio some decimal[<= 0.3]\npyinstaller_pyinstaller monthsObserved 36\npyinstaller_pyinstaller type SoftwareProject\nA_monthsObserved_ge_p_law8_min_months equivalentTo monthsObserved some integer[>= 6]"
+    }
+   ],
+   "raw_text": "Axiom: pyinstaller_pyinstaller type LawVIIINonConformant\n\nExplanation(s): \n1)   A_mergeMonthRatio_le_p_law8_merge_ratio equivalentTo MergeInactive\n     pyinstaller_pyinstaller mergeMonthRatio 0.0\n     LawVIIINonConformantNoMerge equivalentTo A_monthsObserved_ge_p_law8_min_months\n                                              and MergeInactive\n                                              and SoftwareProject\n     LawVIIINonConformantNoMerge subClassOf LawVIIINonConformant\n     A_mergeMonthRatio_le_p_law8_merge_ratio equivalentTo mergeMonthRatio some decimal[<= 0.3]\n     pyinstaller_pyinstaller monthsObserved 36\n     pyinstaller_pyinstaller type SoftwareProject\n     A_monthsObserved_ge_p_law8_min_months equivalentTo monthsObserved some integer[>= 6]\n\n\n",
+   "seconds": 3.830419780977536,
+   "returncode": 0,
+   "error": null
+  }
+ },
+ "fuseki": {
+  "dataset": "seo_v2",
+  "graph_triples": {
+   "urn:senso:abox:pyinstaller/pyinstaller": 388,
+   "urn:senso:commits:pyinstaller/pyinstaller": 8089,
+   "urn:senso:abox-derived:pyinstaller/pyinstaller": 8,
+   "urn:senso:inferred:pyinstaller/pyinstaller:79f851de895e": 386,
+   "urn:senso:explanations:pyinstaller/pyinstaller:79f851de895e": 165
+  }
+ },
+ "timings": {
+  "t_clone": 5.036,
+  "t_mine": 23.631,
+  "t_loc": 3.266,
+  "t_reason_A": 7.683,
+  "mining_cached": false,
+  "t_reason_B": 29.803,
+  "n_configs": 12,
+  "t_explain": 28.467,
+  "n_explain_calls": 9,
+  "t_writeback": 7.335,
+  "t_total": 100.73
+ }
+}

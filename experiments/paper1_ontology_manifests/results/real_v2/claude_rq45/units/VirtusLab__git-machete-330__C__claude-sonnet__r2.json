@@ -1,0 +1,111 @@
+{
+ "unit_id": "VirtusLab__git-machete-330__C__claude-sonnet__r2",
+ "task_id": "VirtusLab__git-machete-330",
+ "repo": "VirtusLab/git-machete",
+ "stage": "phase_out",
+ "condition": "C",
+ "model": "claude-code/sonnet",
+ "run": 2,
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 3964,
+  "sha256": "763d27a5909e43a77757072d3d04bf9efe9e53faca8cb7a83527e54a3ae7ca3d"
+ },
+ "started": "2026-10-18T03:45:38.125689+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 5,
+ "tool_calls": 4,
+ "usage": {
+  "input_tokens": 10,
+  "cache_creation_input_tokens": 13426,
+  "cache_read_input_tokens": 94883,
+  "output_tokens": 1252,
+  "output_tokens_details": {
+   "thinking_tokens": 64
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 13426,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 10,
+   "outputTokens": 1252,
+   "cacheReadInputTokens": 94883,
+   "cacheCreationInputTokens": 13426,
+   "webSearchRequests": 0,
+   "costUSD": 0.0757323,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 64,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.0757323,
+ "result_text": "I fixed the crash in `git_machete/cli.py`, in `update_cli_opts_using_parsed_args`. I haven't run `git machete add foo/bar`, any tests or mypy; `mypy` isn't installed in this environment.\n\n**Cause:** The code stored the raw `str` from argparse in `opt_branch`. Later code calls `.full_name` on it, which only the typed branch classes have, hence the `AttributeError`. `CommandLineOptions` declares `opt_branch` as `LocalBranchShortName`, but mypy didn't catch it. `argparse.Namespace` attributes are typed `Any`, so assigning `arg` to a typed field passes the check.\n\n**Change:** The assignments now convert `arg` with the matching type's `.of()`:\n- `opt_branch` and `opt_onto` use `LocalBranchShortName.of(arg)`.\n- `opt_fork_point` and `opt_down_fork_point` use `AnyRevision.of(arg)`.\n- `opt_roots` maps `LocalBranchShortName.of` over the comma-split list.\n\nI did not add a regression test, since you asked for source changes only. I also did not add a systematic guard against this kind of error. One option is to have the option-parsing code cast each value explicitly, as above, instead of passing `Any` through. Another is a test that runs each command with a real branch argument.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792309800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0.04,
+    "resetsAt": 1792309800
+   },
+   "seven_day": {
+    "utilization": 0.12,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 22.1,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 5,
+   "hit_step_limit": 0,
+   "changed_lines": 10,
+   "gold_changed_lines": 20,
+   "Y1": 0,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": -1.0
+  },
+  "f2p_pass": 1,
+  "f2p_total": 1,
+  "p2p_pass": 44,
+  "p2p_total": 44,
+  "f2p_all_pass": true,
+  "p2p_all_pass": true,
+  "resolved": true,
+  "reason": "resolved",
+  "test_seconds": 66.2
+ },
+ "status": "done",
+ "finished": "2026-10-18T03:47:07.449219+00:00"
+}

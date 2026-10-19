@@ -1,0 +1,21 @@
+{
+ "repo": "vinhnx/VT.ai",
+ "chunk": 0,
+ "n_chunks": 1,
+ "model": "nvidia/nemotron-3-super-120b-a12b",
+ "prompt_sha256": "d0e02ff613417050168d859f2af6230c3712c6758bb5d9c40d60ff55e5ae87ca",
+ "user_sha256": "2d6a49ebfef25976d069f0d85e324219c6619358d441bb4b26702b9bdcf647cb",
+ "text": "{\n  \"claims\": [\n    {\n      \"type\": \"tool_used\",\n      \"quote\": \"- Use `pytest` for writing and running unit and integration tests.\",\n      \"line\": 21,\n      \"subject\": \"pytest\",\n      \"tool_category\": \"test_framework\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"path_exists\",\n      \"quote\": \"- Place tests in the `tests/` directory, mirroring the structure of the `src/` directory.\",\n      \"line\": 22,\n      \"subject\": \"tests/\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"path_exists\",\n      \"quote\": \"- `src/`: Contains the main application source code.\",\n      \"line\": 32,\n      \"subject\": \"src/\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"path_exists\",\n      \"quote\": \"  - `vt_ai/`: Main package directory.\",\n      \"line\": 33,\n      \"subject\": \"vt_ai/\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"path_exists\",\n      \"quote\": \"- `tests/`: Contains all test files.\",\n      \"line\": 34,\n      \"subject\": \"tests/\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"path_exists\",\n      \"quote\": \"- `scripts/`: Utility scripts for development or deployment.\",\n      \"line\": 35,\n      \"subject\": \"scripts/\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"path_exists\",\n      \"quote\": \"- `docs/`: Project documentation.\",\n      \"line\": 36,\n      \"subject\": \"docs/\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"path_exists\",\n      \"quote\": \"- `pyproject.toml`: Project metadata and dependencies.\",\n      \"line\": 37,\n      \"subject\": \"pyproject.toml\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"path_exists\",\n      \"quote\": \"- `.github/`: GitHub specific files like workflows and issue templates.\",\n      \"line\": 38,\n      \"subject\": \".github/\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"dependency\",\n      \"quote\": \"- Key dependencies include Python 3.x and potentially libraries like `litellm`, `requests`, etc. Manage dependencies using `pyproject.toml` and `uv`.\",\n      \"line\": 27,\n      \"subject\": \"litellm\",\n      \"ecosystem_hint\": \"pypi\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"dependency\",\n      \"quote\": \"- Key dependencies include Python 3.x and potentially libraries like `litellm`, `requests`, etc. Manage dependencies using `pyproject.toml` and `uv`.\",\n      \"line\": 27,\n      \"subject\": \"requests\",\n      \"ecosystem_hint\": \"pypi\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"tool_used\",\n      \"quote\": \"- Key dependencies include Python 3.x and potentially libraries like `litellm`, `requests`, etc. Manage dependencies using `pyproject.toml` and `uv`.\",\n      \"line\": 27,\n      \"subject\": \"uv\",\n      \"tool_category\": \"package_manager\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"version\",\n      \"quote\": \"- Key dependencies include Python 3.x and potentially libraries like `litellm`, `requests`, etc. Manage dependencies using `pyproject.toml` and `uv`.\",\n      \"line\": 27,\n      \"subject\": \"python\",\n      \"version\": \"3.x\",\n      \"qualifier\": \"min\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"command\",\n      \"quote\": \"Every pip command should be run with uv prefix, example: `uv pip install -U litellm`. In short, use uv or uvx\",\n      \"line\": 70,\n      \"subject\": \"pip install -U litellm\",\n      \"runner\": \"uv\",\n      \"mode\": \"asserts_existing\"\n    }\n  ]\n}",
+ "parse_ok": true,
+ "parse_error": null,
+ "parse_retries": 0,
+ "latency_s": 5.7294024099828675,
+ "usage": {
+  "prompt": 2887,
+  "completion": 961
+ },
+ "n_api_calls": 1,
+ "finish_reason": "stop",
+ "error": null,
+ "discarded_attempt_texts": []
+}

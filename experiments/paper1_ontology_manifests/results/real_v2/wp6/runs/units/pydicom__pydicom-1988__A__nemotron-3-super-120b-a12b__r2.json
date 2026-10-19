@@ -1,0 +1,68 @@
+{
+ "unit_id": "pydicom__pydicom-1988__A__nemotron-3-super-120b-a12b__r2",
+ "task_id": "pydicom__pydicom-1988",
+ "repo": "pydicom/pydicom",
+ "stage": "evolution",
+ "condition": "A",
+ "model": "nvidia/nemotron-3-super-120b-a12b",
+ "run": 2,
+ "order": 960,
+ "env_build_s": 38.1,
+ "started": "2026-10-10T04:02:29.281050+00:00",
+ "condition_meta": {},
+ "condition_available": true,
+ "venv_reset_s": 1.23,
+ "retries": 0,
+ "venv_hash_before": "22258927f3ae79be",
+ "venv_hash_after": "22258927f3ae79be",
+ "venv_mutated": false,
+ "exit_status": "LimitsExceeded",
+ "error": "",
+ "steps": 40,
+ "wall_s": 465.8,
+ "prompt_tokens": 429583,
+ "completion_tokens": 9956,
+ "format_errors": 1,
+ "length_cutoffs": 0,
+ "api_errors": {
+  "429": 80,
+  "timeout": 1
+ },
+ "n_queries": 52,
+ "keys_used": {
+  "NVIDIA_API_KEY_4": 29,
+  "NVIDIA_API_KEY_5": 31,
+  "NVIDIA_API_KEY_2": 33,
+  "NVIDIA_API_KEY": 28
+ },
+ "temperature": 0.7,
+ "top_p": 0.95,
+ "model_id_returned": "nvidia/nemotron-3-super-120b-a12b",
+ "mini_version": "2.4.6",
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "resolved": false,
+  "reason": "empty_patch",
+  "outcomes": {
+   "Y0": 0,
+   "Y5": 0,
+   "Y6": 40,
+   "hit_step_limit": 1,
+   "changed_lines": 0,
+   "gold_changed_lines": 42,
+   "Y1": null,
+   "Y2": null,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": null
+  }
+ },
+ "status": "done",
+ "finished": "2026-10-10T04:10:18.194201+00:00"
+}

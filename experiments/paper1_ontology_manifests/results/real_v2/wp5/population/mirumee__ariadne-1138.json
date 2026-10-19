@@ -1,0 +1,3304 @@
+{
+ "repo": "mirumee/ariadne",
+ "snapshot_date": "2023-10-31",
+ "status": "ok",
+ "unmineable": false,
+ "unmineable_reason": null,
+ "replaces": null,
+ "settings": {
+  "dedup": true,
+  "complexity": false,
+  "dataset": null,
+  "sensitivity": false,
+  "snapshot_commit": "64f43cf0698476efb4990ac340c1bb5b95c710c9",
+  "mode": "wp5_snapshot_commit",
+  "test_patch_files": [
+   "tests/test_enums.py",
+   "tests/test_graphql_enum_fixes.py"
+  ],
+  "package_roots": [
+   "ariadne"
+  ]
+ },
+ "versions": {
+  "owlready2": "0.51",
+  "pymannkendall": "1.4.3",
+  "lizard": "1.24.1",
+  "numpy": "2.5.3",
+  "scipy": "1.18.1",
+  "python": "3.12.15",
+  "git": "git version 2.53.0"
+ },
+ "task_id": "mirumee__ariadne-1138",
+ "base_commit": "64f43cf0698476efb4990ac340c1bb5b95c710c9",
+ "measures": {
+  "monthsObserved": 36,
+  "monthsSinceLastCommit": 0,
+  "distinctAuthorsInWindow": 49,
+  "commitMKTau": -0.122222,
+  "commitMKpValue": 0.299548,
+  "activeMonthCount": 32,
+  "activeMonthRatio": 0.888889,
+  "meanMonthlyCommits": 19.222222,
+  "commitsLast3Months": 10,
+  "commitCountCV": 0.942267,
+  "commitCountCVSample": 0.955634,
+  "commitHalfRatio": 0.4946,
+  "commitSecondHalfMean": 12.722222,
+  "churnCV": 1.685788,
+  "linesAddedCV": 1.554613,
+  "mergeMonthRatio": 0.527778,
+  "multiAuthorMonthRatio": 0.805556,
+  "bugFixRatioFirstHalf": 0.1815,
+  "bugFixRatioSecondHalf": 0.131044,
+  "bugFixHalfRatio": 0.722003,
+  "locSeriesLength": 36,
+  "locRelSenSlopeAnnual": 0.35912,
+  "locMKTau": 0.955556,
+  "locMKS": 602,
+  "locMKpValue": 0.0,
+  "locSenSlope": 299.416667,
+  "locStart": 8969,
+  "locEnd": 19259,
+  "locDelta": 10290,
+  "locGrowthRate": 1.147285,
+  "locChangePct": 114.728509,
+  "locEndToStartRatio": 2.147285,
+  "locGrowthLast3": 0.004381,
+  "featureCommitsFirstHalf": 1,
+  "featureCommitsSecondHalf": 1,
+  "featureCommitsTotal": 2,
+  "featureSecondToFirstRatio": 1.0,
+  "locDeltaPerFeature": 5145.0,
+  "recentAgentCommitRatio": 0.0,
+  "featCommitCount": 2,
+  "bugFixCommitCount": 105,
+  "commitCount": 692,
+  "monthly_series": {
+   "months": [
+    "2019-11",
+    "2019-12",
+    "2020-01",
+    "2020-02",
+    "2020-03",
+    "2020-04",
+    "2020-05",
+    "2020-06",
+    "2020-07",
+    "2020-08",
+    "2020-09",
+    "2020-10",
+    "2020-11",
+    "2020-12",
+    "2021-01",
+    "2021-02",
+    "2021-03",
+    "2021-04",
+    "2021-05",
+    "2021-06",
+    "2021-07",
+    "2021-08",
+    "2021-09",
+    "2021-10",
+    "2021-11",
+    "2021-12",
+    "2022-01",
+    "2022-02",
+    "2022-03",
+    "2022-04",
+    "2022-05",
+    "2022-06",
+    "2022-07",
+    "2022-08",
+    "2022-09",
+    "2022-10",
+    "2022-11",
+    "2022-12",
+    "2023-01",
+    "2023-02",
+    "2023-03",
+    "2023-04",
+    "2023-05",
+    "2023-06",
+    "2023-07",
+    "2023-08",
+    "2023-09",
+    "2023-10"
+   ],
+   "commits": [
+    23,
+    28,
+    23,
+    15,
+    28,
+    24,
+    0,
+    38,
+    0,
+    18,
+    15,
+    4,
+    17,
+    10,
+    6,
+    1,
+    49,
+    34,
+    1,
+    10,
+    18,
+    20,
+    23,
+    24,
+    17,
+    17,
+    44,
+    73,
+    58,
+    41,
+    9,
+    0,
+    15,
+    8,
+    10,
+    3,
+    22,
+    5,
+    6,
+    16,
+    13,
+    27,
+    28,
+    57,
+    0,
+    0,
+    0,
+    10
+   ],
+   "loc": [
+    7862,
+    7862,
+    9018,
+    9018,
+    9052,
+    9923,
+    9923,
+    9909,
+    9909,
+    8937,
+    8937,
+    8969,
+    8969,
+    9046,
+    9116,
+    9116,
+    9304,
+    9439,
+    9441,
+    9441,
+    9441,
+    9527,
+    9601,
+    9398,
+    9457,
+    9671,
+    9672,
+    9702,
+    9712,
+    9977,
+    10033,
+    10033,
+    11471,
+    11473,
+    11506,
+    12631,
+    13112,
+    13241,
+    13898,
+    17099,
+    17623,
+    18535,
+    18535,
+    19175,
+    19175,
+    19175,
+    19175,
+    19259
+   ]
+  }
+ },
+ "window": {
+  "L": 36,
+  "first_month": "2020-11",
+  "last_month": "2023-10",
+  "n_months": 36,
+  "left_truncated": false,
+  "first_commit_month": "2018-07",
+  "mined_months": 48,
+  "commits_in_window": 692,
+  "commits_in_history": 1689
+ },
+ "loc_instrument": {
+  "instrument": "nonblank-source-lines-v1",
+  "status": "ok",
+  "months": 48,
+  "month_end_commits_distinct": 41,
+  "source_blobs": 515,
+  "blobs_fetched": 19,
+  "t_ls_tree_s": 1.0053268509800546,
+  "t_fetch_s": 0.8828988580498844,
+  "t_read_s": 0.0972690109629184,
+  "series_present": true,
+  "extensions": [
+   ".bash",
+   ".c",
+   ".cc",
+   ".cjs",
+   ".clj",
+   ".cpp",
+   ".cs",
+   ".cxx",
+   ".dart",
+   ".erl",
+   ".ex",
+   ".exs",
+   ".f90",
+   ".go",
+   ".groovy",
+   ".h",
+   ".hh",
+   ".hpp",
+   ".hs",
+   ".java",
+   ".jl",
+   ".js",
+   ".jsx",
+   ".kt",
+   ".kts",
+   ".lua",
+   ".m",
+   ".mjs",
+   ".ml",
+   ".mm",
+   ".nim",
+   ".php",
+   ".pl",
+   ".pm",
+   ".py",
+   ".pyi",
+   ".r",
+   ".rb",
+   ".rs",
+   ".scala",
+   ".sh",
+   ".sql",
+   ".svelte",
+   ".swift",
+   ".ts",
+   ".tsx",
+   ".vue",
+   ".zig"
+  ],
+  "excluded_dirs": [
+   "node_modules",
+   "vendor",
+   "vendored",
+   "third_party",
+   "site-packages",
+   "bower_components"
+  ],
+  "max_blob_bytes": 1000000,
+  "first_parent": true
+ },
+ "mining": {
+  "churn": {
+   "t_churn_raw_s": 0.1807476130197756,
+   "t_churn_fetch_s": 3.3515400430187583,
+   "t_churn_numstat_s": 0.3346666289726272,
+   "blobs_fetched_churn": 1058
+  },
+  "timings": {
+   "t_clone": 0.004,
+   "t_mine": 3.969,
+   "t_loc": 1.986,
+   "t_reason_A": 6.36
+  },
+  "cached": false
+ },
+ "stage_a": {
+  "commits": 908,
+  "reasoned_commits": 780,
+  "inconsistent_chunks": 0,
+  "chunk_timings": [
+   {
+    "tbox_load_s": 0.059732802968937904,
+    "abox_load_s": 0.12913945002947003,
+    "reason_s": 6.1052583060227334,
+    "extract_s": 0.01240281097125262,
+    "total_s": 6.307482808013447,
+    "commits": 780
+   }
+  ],
+  "tbox_sha256": "f5ba00eaa76dc3582415cdf566fbd7abc1d3f2797ca928f41dad106dc1c0bdb5"
+ },
+ "activity": {
+  "last_commit_date": "2023-10-25T15:32:40+00:00",
+  "months_since_last_commit": 0,
+  "distinct_authors_in_window": 49,
+  "merge_commits_in_window": 134
+ },
+ "agent_adoption_date": "2020-11-02T05:06:59+00:00",
+ "commit_label_counts": {
+  "BugFixCommit": 105,
+  "FeatureCommit": 2,
+  "AgentCommit": 107
+ },
+ "series_months": [
+  {
+   "month": "2020-11",
+   "commit_count": 17,
+   "merge_count": 7,
+   "unique_authors": 4,
+   "lines_added": 92,
+   "lines_deleted": 28,
+   "total_churn": 120,
+   "files_changed": 12,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 8969,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2020-12",
+   "commit_count": 10,
+   "merge_count": 6,
+   "unique_authors": 5,
+   "lines_added": 395,
+   "lines_deleted": 378,
+   "total_churn": 773,
+   "files_changed": 12,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 9046,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2021-01",
+   "commit_count": 6,
+   "merge_count": 2,
+   "unique_authors": 4,
+   "lines_added": 31,
+   "lines_deleted": 22,
+   "total_churn": 53,
+   "files_changed": 10,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 9116,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2021-02",
+   "commit_count": 1,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 9116,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2021-03",
+   "commit_count": 49,
+   "merge_count": 20,
+   "unique_authors": 3,
+   "lines_added": 338,
+   "lines_deleted": 102,
+   "total_churn": 440,
+   "files_changed": 12,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 9304,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2021-04",
+   "commit_count": 34,
+   "merge_count": 6,
+   "unique_authors": 5,
+   "lines_added": 1244,
+   "lines_deleted": 503,
+   "total_churn": 1747,
+   "files_changed": 51,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 9439,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2021-05",
+   "commit_count": 1,
+   "merge_count": 1,
+   "unique_authors": 1,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 9441,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2021-06",
+   "commit_count": 10,
+   "merge_count": 2,
+   "unique_authors": 3,
+   "lines_added": 20,
+   "lines_deleted": 10,
+   "total_churn": 30,
+   "files_changed": 4,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 9441,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2021-07",
+   "commit_count": 18,
+   "merge_count": 6,
+   "unique_authors": 4,
+   "lines_added": 9,
+   "lines_deleted": 10,
+   "total_churn": 19,
+   "files_changed": 4,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 9441,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2021-08",
+   "commit_count": 20,
+   "merge_count": 5,
+   "unique_authors": 6,
+   "lines_added": 477,
+   "lines_deleted": 247,
+   "total_churn": 724,
+   "files_changed": 16,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 9527,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2021-09",
+   "commit_count": 23,
+   "merge_count": 7,
+   "unique_authors": 5,
+   "lines_added": 720,
+   "lines_deleted": 563,
+   "total_churn": 1283,
+   "files_changed": 25,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 9601,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2021-10",
+   "commit_count": 24,
+   "merge_count": 11,
+   "unique_authors": 4,
+   "lines_added": 45,
+   "lines_deleted": 793,
+   "total_churn": 838,
+   "files_changed": 19,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 9398,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2021-11",
+   "commit_count": 17,
+   "merge_count": 6,
+   "unique_authors": 2,
+   "lines_added": 94,
+   "lines_deleted": 21,
+   "total_churn": 115,
+   "files_changed": 7,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 9457,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2021-12",
+   "commit_count": 17,
+   "merge_count": 7,
+   "unique_authors": 3,
+   "lines_added": 377,
+   "lines_deleted": 413,
+   "total_churn": 790,
+   "files_changed": 20,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 9671,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-01",
+   "commit_count": 44,
+   "merge_count": 15,
+   "unique_authors": 6,
+   "lines_added": 87,
+   "lines_deleted": 40,
+   "total_churn": 127,
+   "files_changed": 19,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 9672,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-02",
+   "commit_count": 73,
+   "merge_count": 13,
+   "unique_authors": 4,
+   "lines_added": 3966,
+   "lines_deleted": 1080,
+   "total_churn": 5046,
+   "files_changed": 165,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 9702,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-03",
+   "commit_count": 58,
+   "merge_count": 5,
+   "unique_authors": 6,
+   "lines_added": 3425,
+   "lines_deleted": 6287,
+   "total_churn": 9712,
+   "files_changed": 199,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 9712,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-04",
+   "commit_count": 41,
+   "merge_count": 13,
+   "unique_authors": 5,
+   "lines_added": 435,
+   "lines_deleted": 151,
+   "total_churn": 586,
+   "files_changed": 25,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 9977,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-05",
+   "commit_count": 9,
+   "merge_count": 0,
+   "unique_authors": 2,
+   "lines_added": 72,
+   "lines_deleted": 7,
+   "total_churn": 79,
+   "files_changed": 3,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 10033,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-06",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 10033,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-07",
+   "commit_count": 15,
+   "merge_count": 1,
+   "unique_authors": 4,
+   "lines_added": 2733,
+   "lines_deleted": 1065,
+   "total_churn": 3798,
+   "files_changed": 25,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 11471,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-08",
+   "commit_count": 8,
+   "merge_count": 0,
+   "unique_authors": 3,
+   "lines_added": 24,
+   "lines_deleted": 21,
+   "total_churn": 45,
+   "files_changed": 12,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 11473,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-09",
+   "commit_count": 10,
+   "merge_count": 0,
+   "unique_authors": 4,
+   "lines_added": 80,
+   "lines_deleted": 46,
+   "total_churn": 126,
+   "files_changed": 5,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 11506,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-10",
+   "commit_count": 3,
+   "merge_count": 0,
+   "unique_authors": 2,
+   "lines_added": 2168,
+   "lines_deleted": 794,
+   "total_churn": 2962,
+   "files_changed": 45,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 12631,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-11",
+   "commit_count": 22,
+   "merge_count": 0,
+   "unique_authors": 5,
+   "lines_added": 815,
+   "lines_deleted": 235,
+   "total_churn": 1050,
+   "files_changed": 75,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 13112,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-12",
+   "commit_count": 5,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 173,
+   "lines_deleted": 18,
+   "total_churn": 191,
+   "files_changed": 14,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 13241,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-01",
+   "commit_count": 6,
+   "merge_count": 0,
+   "unique_authors": 2,
+   "lines_added": 895,
+   "lines_deleted": 58,
+   "total_churn": 953,
+   "files_changed": 25,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 13898,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-02",
+   "commit_count": 16,
+   "merge_count": 0,
+   "unique_authors": 3,
+   "lines_added": 4628,
+   "lines_deleted": 191,
+   "total_churn": 4819,
+   "files_changed": 51,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 17099,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-03",
+   "commit_count": 13,
+   "merge_count": 1,
+   "unique_authors": 4,
+   "lines_added": 736,
+   "lines_deleted": 81,
+   "total_churn": 817,
+   "files_changed": 19,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 17623,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-04",
+   "commit_count": 27,
+   "merge_count": 0,
+   "unique_authors": 5,
+   "lines_added": 1657,
+   "lines_deleted": 558,
+   "total_churn": 2215,
+   "files_changed": 33,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 18535,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-05",
+   "commit_count": 28,
+   "merge_count": 0,
+   "unique_authors": 3,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 18535,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-06",
+   "commit_count": 57,
+   "merge_count": 0,
+   "unique_authors": 5,
+   "lines_added": 1479,
+   "lines_deleted": 703,
+   "total_churn": 2182,
+   "files_changed": 35,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 19175,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-07",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 19175,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-08",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 19175,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-09",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 19175,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-10",
+   "commit_count": 10,
+   "merge_count": 0,
+   "unique_authors": 3,
+   "lines_added": 130,
+   "lines_deleted": 19,
+   "total_churn": 149,
+   "files_changed": 11,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 19259,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  }
+ ],
+ "measures_derived": {
+  "bugFixRatioFirstHalf": 0.1815,
+  "bugFixRatioSecondHalf": 0.131044,
+  "bugFixHalfRatio": 0.722003,
+  "featureCommitsFirstHalf": 1,
+  "featureCommitsSecondHalf": 1,
+  "featureCommitsTotal": 2,
+  "featureSecondToFirstRatio": 1.0,
+  "locDeltaPerFeature": 5145.0,
+  "recentAgentCommitRatio": 0.0
+ },
+ "modules_meta": {
+  "anchor_S": "2023-11-08T15:31:19+00:00",
+  "window_months": 12,
+  "package_roots": [
+   "ariadne"
+  ],
+  "n_modules": 30,
+  "n_source_files": 64,
+  "n_window_commits": 47,
+  "cached": false,
+  "timings": {
+   "t_tree_loc": 0.041,
+   "t_history": 0.144,
+   "t_numstat": 1.209
+  },
+  "module_loc_instrument": "nonblank-source-lines-v1",
+  "label_counts": {
+   "StableModule": 3,
+   "ActiveModule": 27,
+   "undetermined": 0
+  },
+  "thresholds": {
+   "mod_window_months": 12,
+   "mod_stable_max_rel_churn": 0.1,
+   "mod_stable_max_change_months": 2
+  }
+ },
+ "inferred": {
+  "a0.05_L36_D12_G0.05_orig": {
+   "classes": [
+    "CopyPasteEvidence",
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIIConformant",
+    "LawIVConformant",
+    "LawVConformant",
+    "LawVIConformant",
+    "LawVIIIConformant",
+    "LawVIINonConformant",
+    "LocPerFeatureHigh",
+    "MKApplicable",
+    "MergeActive",
+    "MultiAuthorActive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": "urn:senso:explanations:mirumee__ariadne-1138:d20298612d99",
+   "tbox_sha256": "d20298612d99fa8f5c1a63c70eaab0195a3e82e2d6780de3bd1fd3ced72d6e5d",
+   "abox_triples": 341,
+   "t_reason_B_s": 4.981
+  }
+ },
+ "primary_config": "a0.05_L36_D12_G0.05_orig",
+ "project_iri": "http://senso-framework.org/data/mirumee__ariadne-1138",
+ "consistent": true,
+ "inferred_labels": [
+  "CopyPasteEvidence",
+  "GrowthStage",
+  "LawIConformant",
+  "LawIIIConformant",
+  "LawIVConformant",
+  "LawVConformant",
+  "LawVIConformant",
+  "LawVIIIConformant",
+  "LawVIINonConformant",
+  "LocPerFeatureHigh",
+  "MKApplicable",
+  "MergeActive",
+  "MultiAuthorActive",
+  "RBActiveDevelopmentStage",
+  "RecentlyActive",
+  "SubstantialLocGrowth"
+ ],
+ "stage_labels": [
+  "GrowthStage",
+  "RBActiveDevelopmentStage"
+ ],
+ "law_labels": {
+  "I": "LawIConformant",
+  "III": "LawIIIConformant",
+  "IV": "LawIVConformant",
+  "V": "LawVConformant",
+  "VI": "LawVIConformant",
+  "VII": "LawVIINonConformant",
+  "VIII": "LawVIIIConformant"
+ },
+ "tbox_sha256_stage_b": "d20298612d99fa8f5c1a63c70eaab0195a3e82e2d6780de3bd1fd3ced72d6e5d",
+ "tbox_sha256_stage_a": "f5ba00eaa76dc3582415cdf566fbd7abc1d3f2797ca928f41dad106dc1c0bdb5",
+ "summary": {
+  "c1": "A",
+  "c2": "A",
+  "cf": "A",
+  "note": "debug summary; run_rq1_v2.py reads `inferred` and recomputes CF itself"
+ },
+ "modules": {
+  "ariadne/__init__.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "ariadne/__init__.py",
+    "moduleLoc": 80,
+    "moduleCommitsInWindow": 4,
+    "moduleChangeMonthsInWindow": 4,
+    "moduleLinesChangedInWindow": 14,
+    "moduleRelChurnInWindow": 0.175,
+    "moduleMonthsSinceLastChange": 5
+   },
+   "iri": "http://senso-framework.org/data/mirumee__ariadne-1138/module/ariadne___init__.py-df2f4b",
+   "abox_asserted": true
+  },
+  "ariadne/asgi": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "ariadne/asgi",
+    "moduleLoc": 1448,
+    "moduleCommitsInWindow": 13,
+    "moduleChangeMonthsInWindow": 6,
+    "moduleLinesChangedInWindow": 1053,
+    "moduleRelChurnInWindow": 0.72721,
+    "moduleMonthsSinceLastChange": 1
+   },
+   "iri": "http://senso-framework.org/data/mirumee__ariadne-1138/module/ariadne_asgi-635f51",
+   "abox_asserted": true
+  },
+  "ariadne/constants.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "ariadne/constants.py",
+    "moduleLoc": 8,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 13
+   },
+   "iri": "http://senso-framework.org/data/mirumee__ariadne-1138/module/ariadne_constants.py-670a76",
+   "abox_asserted": true
+  },
+  "ariadne/contrib": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "ariadne/contrib",
+    "moduleLoc": 747,
+    "moduleCommitsInWindow": 8,
+    "moduleChangeMonthsInWindow": 4,
+    "moduleLinesChangedInWindow": 585,
+    "moduleRelChurnInWindow": 0.783133,
+    "moduleMonthsSinceLastChange": 5
+   },
+   "iri": "http://senso-framework.org/data/mirumee__ariadne-1138/module/ariadne_contrib-2913a6",
+   "abox_asserted": true
+  },
+  "ariadne/enums.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "ariadne/enums.py",
+    "moduleLoc": 285,
+    "moduleCommitsInWindow": 5,
+    "moduleChangeMonthsInWindow": 3,
+    "moduleLinesChangedInWindow": 148,
+    "moduleRelChurnInWindow": 0.519298,
+    "moduleMonthsSinceLastChange": 5
+   },
+   "iri": "http://senso-framework.org/data/mirumee__ariadne-1138/module/ariadne_enums.py-ce94f4",
+   "abox_asserted": true
+  },
+  "ariadne/exceptions.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "ariadne/exceptions.py",
+    "moduleLoc": 50,
+    "moduleCommitsInWindow": 3,
+    "moduleChangeMonthsInWindow": 3,
+    "moduleLinesChangedInWindow": 63,
+    "moduleRelChurnInWindow": 1.26,
+    "moduleMonthsSinceLastChange": 1
+   },
+   "iri": "http://senso-framework.org/data/mirumee__ariadne-1138/module/ariadne_exceptions.py-46e4d7",
+   "abox_asserted": true
+  },
+  "ariadne/executable_schema.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "ariadne/executable_schema.py",
+    "moduleLoc": 323,
+    "moduleCommitsInWindow": 5,
+    "moduleChangeMonthsInWindow": 3,
+    "moduleLinesChangedInWindow": 365,
+    "moduleRelChurnInWindow": 1.130031,
+    "moduleMonthsSinceLastChange": 8
+   },
+   "iri": "http://senso-framework.org/data/mirumee__ariadne-1138/module/ariadne_executable_schema.py-d014af",
+   "abox_asserted": true
+  },
+  "ariadne/explorer": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "RarelyChangedModule"
+   ],
+   "measures": {
+    "modulePath": "ariadne/explorer",
+    "moduleLoc": 451,
+    "moduleCommitsInWindow": 2,
+    "moduleChangeMonthsInWindow": 2,
+    "moduleLinesChangedInWindow": 71,
+    "moduleRelChurnInWindow": 0.157428,
+    "moduleMonthsSinceLastChange": 1
+   },
+   "iri": "http://senso-framework.org/data/mirumee__ariadne-1138/module/ariadne_explorer-0897ba",
+   "abox_asserted": true
+  },
+  "ariadne/extensions.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "ariadne/extensions.py",
+    "moduleLoc": 78,
+    "moduleCommitsInWindow": 4,
+    "moduleChangeMonthsInWindow": 3,
+    "moduleLinesChangedInWindow": 77,
+    "moduleRelChurnInWindow": 0.987179,
+    "moduleMonthsSinceLastChange": 9
+   },
+   "iri": "http://senso-framework.org/data/mirumee__ariadne-1138/module/ariadne_extensions.py-6afabb",
+   "abox_asserted": true
+  },
+  "ariadne/file_uploads.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "RarelyChangedModule"
+   ],
+   "measures": {
+    "modulePath": "ariadne/file_uploads.py",
+    "moduleLoc": 147,
+    "moduleCommitsInWindow": 1,
+    "moduleChangeMonthsInWindow": 1,
+    "moduleLinesChangedInWindow": 87,
+    "moduleRelChurnInWindow": 0.591837,
+    "moduleMonthsSinceLastChange": 9
+   },
+   "iri": "http://senso-framework.org/data/mirumee__ariadne-1138/module/ariadne_file_uploads.py-923c9f",
+   "abox_asserted": true
+  },
+  "ariadne/format_error.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "RarelyChangedModule"
+   ],
+   "measures": {
+    "modulePath": "ariadne/format_error.py",
+    "moduleLoc": 65,
+    "moduleCommitsInWindow": 1,
+    "moduleChangeMonthsInWindow": 1,
+    "moduleLinesChangedInWindow": 50,
+    "moduleRelChurnInWindow": 0.769231,
+    "moduleMonthsSinceLastChange": 9
+   },
+   "iri": "http://senso-framework.org/data/mirumee__ariadne-1138/module/ariadne_format_error.py-2c611f",
+   "abox_asserted": true
+  },
+  "ariadne/graphql.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "ariadne/graphql.py",
+    "moduleLoc": 523,
+    "moduleCommitsInWindow": 10,
+    "moduleChangeMonthsInWindow": 5,
+    "moduleLinesChangedInWindow": 380,
+    "moduleRelChurnInWindow": 0.726577,
+    "moduleMonthsSinceLastChange": 7
+   },
+   "iri": "http://senso-framework.org/data/mirumee__ariadne-1138/module/ariadne_graphql.py-e659f3",
+   "abox_asserted": true
+  },
+  "ariadne/inputs.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "RarelyChangedModule"
+   ],
+   "measures": {
+    "modulePath": "ariadne/inputs.py",
+    "moduleLoc": 162,
+    "moduleCommitsInWindow": 1,
+    "moduleChangeMonthsInWindow": 1,
+    "moduleLinesChangedInWindow": 204,
+    "moduleRelChurnInWindow": 1.259259,
+    "moduleMonthsSinceLastChange": 8
+   },
+   "iri": "http://senso-framework.org/data/mirumee__ariadne-1138/module/ariadne_inputs.py-5d95c0",
+   "abox_asserted": true
+  },
+  "ariadne/interfaces.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "RarelyChangedModule"
+   ],
+   "measures": {
+    "modulePath": "ariadne/interfaces.py",
+    "moduleLoc": 159,
+    "moduleCommitsInWindow": 1,
+    "moduleChangeMonthsInWindow": 1,
+    "moduleLinesChangedInWindow": 164,
+    "moduleRelChurnInWindow": 1.031447,
+    "moduleMonthsSinceLastChange": 9
+   },
+   "iri": "http://senso-framework.org/data/mirumee__ariadne-1138/module/ariadne_interfaces.py-e68cab",
+   "abox_asserted": true
+  },
+  "ariadne/load_schema.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "RarelyChangedModule"
+   ],
+   "measures": {
+    "modulePath": "ariadne/load_schema.py",
+    "moduleLoc": 36,
+    "moduleCommitsInWindow": 2,
+    "moduleChangeMonthsInWindow": 2,
+    "moduleLinesChangedInWindow": 26,
+    "moduleRelChurnInWindow": 0.722222,
+    "moduleMonthsSinceLastChange": 9
+   },
+   "iri": "http://senso-framework.org/data/mirumee__ariadne-1138/module/ariadne_load_schema.py-cf5176",
+   "abox_asserted": true
+  },
+  "ariadne/logger.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "ariadne/logger.py",
+    "moduleLoc": 16,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 12
+   },
+   "iri": "http://senso-framework.org/data/mirumee__ariadne-1138/module/ariadne_logger.py-75eaa8",
+   "abox_asserted": true
+  },
+  "ariadne/objects.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "RarelyChangedModule"
+   ],
+   "measures": {
+    "modulePath": "ariadne/objects.py",
+    "moduleLoc": 222,
+    "moduleCommitsInWindow": 1,
+    "moduleChangeMonthsInWindow": 1,
+    "moduleLinesChangedInWindow": 228,
+    "moduleRelChurnInWindow": 1.027027,
+    "moduleMonthsSinceLastChange": 9
+   },
+   "iri": "http://senso-framework.org/data/mirumee__ariadne-1138/module/ariadne_objects.py-ac2b99",
+   "abox_asserted": true
+  },
+  "ariadne/resolvers.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "RarelyChangedModule"
+   ],
+   "measures": {
+    "modulePath": "ariadne/resolvers.py",
+    "moduleLoc": 97,
+    "moduleCommitsInWindow": 2,
+    "moduleChangeMonthsInWindow": 2,
+    "moduleLinesChangedInWindow": 76,
+    "moduleRelChurnInWindow": 0.783505,
+    "moduleMonthsSinceLastChange": 9
+   },
+   "iri": "http://senso-framework.org/data/mirumee__ariadne-1138/module/ariadne_resolvers.py-6e56b2",
+   "abox_asserted": true
+  },
+  "ariadne/scalars.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "RarelyChangedModule"
+   ],
+   "measures": {
+    "modulePath": "ariadne/scalars.py",
+    "moduleLoc": 249,
+    "moduleCommitsInWindow": 1,
+    "moduleChangeMonthsInWindow": 1,
+    "moduleLinesChangedInWindow": 249,
+    "moduleRelChurnInWindow": 1.0,
+    "moduleMonthsSinceLastChange": 9
+   },
+   "iri": "http://senso-framework.org/data/mirumee__ariadne-1138/module/ariadne_scalars.py-628331",
+   "abox_asserted": true
+  },
+  "ariadne/schema_names.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "RarelyChangedModule"
+   ],
+   "measures": {
+    "modulePath": "ariadne/schema_names.py",
+    "moduleLoc": 105,
+    "moduleCommitsInWindow": 2,
+    "moduleChangeMonthsInWindow": 2,
+    "moduleLinesChangedInWindow": 138,
+    "moduleRelChurnInWindow": 1.314286,
+    "moduleMonthsSinceLastChange": 9
+   },
+   "iri": "http://senso-framework.org/data/mirumee__ariadne-1138/module/ariadne_schema_names.py-1a3788",
+   "abox_asserted": true
+  },
+  "ariadne/schema_visitor.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "RarelyChangedModule"
+   ],
+   "measures": {
+    "modulePath": "ariadne/schema_visitor.py",
+    "moduleLoc": 569,
+    "moduleCommitsInWindow": 3,
+    "moduleChangeMonthsInWindow": 2,
+    "moduleLinesChangedInWindow": 158,
+    "moduleRelChurnInWindow": 0.27768,
+    "moduleMonthsSinceLastChange": 9
+   },
+   "iri": "http://senso-framework.org/data/mirumee__ariadne-1138/module/ariadne_schema_visitor.py-42e63d",
+   "abox_asserted": true
+  },
+  "ariadne/subscriptions.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "RarelyChangedModule"
+   ],
+   "measures": {
+    "modulePath": "ariadne/subscriptions.py",
+    "moduleLoc": 137,
+    "moduleCommitsInWindow": 1,
+    "moduleChangeMonthsInWindow": 1,
+    "moduleLinesChangedInWindow": 137,
+    "moduleRelChurnInWindow": 1.0,
+    "moduleMonthsSinceLastChange": 9
+   },
+   "iri": "http://senso-framework.org/data/mirumee__ariadne-1138/module/ariadne_subscriptions.py-42323b",
+   "abox_asserted": true
+  },
+  "ariadne/types.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "ariadne/types.py",
+    "moduleLoc": 495,
+    "moduleCommitsInWindow": 14,
+    "moduleChangeMonthsInWindow": 7,
+    "moduleLinesChangedInWindow": 708,
+    "moduleRelChurnInWindow": 1.430303,
+    "moduleMonthsSinceLastChange": 1
+   },
+   "iri": "http://senso-framework.org/data/mirumee__ariadne-1138/module/ariadne_types.py-965339",
+   "abox_asserted": true
+  },
+  "ariadne/unions.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "RarelyChangedModule"
+   ],
+   "measures": {
+    "modulePath": "ariadne/unions.py",
+    "moduleLoc": 138,
+    "moduleCommitsInWindow": 1,
+    "moduleChangeMonthsInWindow": 1,
+    "moduleLinesChangedInWindow": 152,
+    "moduleRelChurnInWindow": 1.101449,
+    "moduleMonthsSinceLastChange": 9
+   },
+   "iri": "http://senso-framework.org/data/mirumee__ariadne-1138/module/ariadne_unions.py-b9954f",
+   "abox_asserted": true
+  },
+  "ariadne/utils.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "RarelyChangedModule"
+   ],
+   "measures": {
+    "modulePath": "ariadne/utils.py",
+    "moduleLoc": 190,
+    "moduleCommitsInWindow": 2,
+    "moduleChangeMonthsInWindow": 1,
+    "moduleLinesChangedInWindow": 150,
+    "moduleRelChurnInWindow": 0.789474,
+    "moduleMonthsSinceLastChange": 9
+   },
+   "iri": "http://senso-framework.org/data/mirumee__ariadne-1138/module/ariadne_utils.py-e85c65",
+   "abox_asserted": true
+  },
+  "ariadne/validation": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "ariadne/validation",
+    "moduleLoc": 351,
+    "moduleCommitsInWindow": 2,
+    "moduleChangeMonthsInWindow": 2,
+    "moduleLinesChangedInWindow": 14,
+    "moduleRelChurnInWindow": 0.039886,
+    "moduleMonthsSinceLastChange": 7
+   },
+   "iri": "http://senso-framework.org/data/mirumee__ariadne-1138/module/ariadne_validation-9ffd8b",
+   "abox_asserted": true
+  },
+  "ariadne/wsgi.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "ariadne/wsgi.py",
+    "moduleLoc": 514,
+    "moduleCommitsInWindow": 9,
+    "moduleChangeMonthsInWindow": 5,
+    "moduleLinesChangedInWindow": 444,
+    "moduleRelChurnInWindow": 0.863813,
+    "moduleMonthsSinceLastChange": 7
+   },
+   "iri": "http://senso-framework.org/data/mirumee__ariadne-1138/module/ariadne_wsgi.py-0fda4a",
+   "abox_asserted": true
+  },
+  "benchmark": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "RarelyChangedModule"
+   ],
+   "measures": {
+    "modulePath": "benchmark",
+    "moduleLoc": 514,
+    "moduleCommitsInWindow": 2,
+    "moduleChangeMonthsInWindow": 1,
+    "moduleLinesChangedInWindow": 705,
+    "moduleRelChurnInWindow": 1.371595,
+    "moduleMonthsSinceLastChange": 7
+   },
+   "iri": "http://senso-framework.org/data/mirumee__ariadne-1138/module/benchmark-fc38e4",
+   "abox_asserted": true
+  },
+  "generate_reference.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "generate_reference.py",
+    "moduleLoc": 615,
+    "moduleCommitsInWindow": 5,
+    "moduleChangeMonthsInWindow": 3,
+    "moduleLinesChangedInWindow": 841,
+    "moduleRelChurnInWindow": 1.36748,
+    "moduleMonthsSinceLastChange": 5
+   },
+   "iri": "http://senso-framework.org/data/mirumee__ariadne-1138/module/generate_reference.py-39d82b",
+   "abox_asserted": true
+  },
+  "tests_mypy": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "tests_mypy",
+    "moduleLoc": 68,
+    "moduleCommitsInWindow": 4,
+    "moduleChangeMonthsInWindow": 3,
+    "moduleLinesChangedInWindow": 98,
+    "moduleRelChurnInWindow": 1.441176,
+    "moduleMonthsSinceLastChange": 8
+   },
+   "iri": "http://senso-framework.org/data/mirumee__ariadne-1138/module/tests_mypy-106807",
+   "abox_asserted": true
+  }
+ },
+ "explanations": {
+  "stage:GrowthStage": {
+   "class": "GrowthStage",
+   "individual": "http://senso-framework.org/data/mirumee__ariadne-1138",
+   "attempts": 3,
+   "target": "http://senso-framework.org/data/mirumee__ariadne-1138 type http://senso-framework.org/ontology/seo#GrowthStage",
+   "justifications": [],
+   "raw_text": "",
+   "seconds": 4.541289456014056,
+   "returncode": 1,
+   "error": "Exception in thread \"main\" org.mindswap.pellet.exceptions.InternalReasonerException: Adding type to a pruned node \"anon(19)\" restrictedDatatype(http://www.w3.org/2001/XMLSchema#decimal,[facet(http://www.w3.org/2001/XMLSchema#minExclusive,literal(0.15,(),http://www.w3.org/2001/XMLSchema#decimal))])\n\tat org.mindswap.pellet.Node.addType(Node.java:448)\n\tat org.mindswap.pellet.Literal.addType(Literal.java:257)\n\tat org.mindswap.pellet.tableau.completion.CompletionStrategy.addType(CompletionStrategy.java:438)\n\tat org.mindswap.pellet.tableau.completion.rule.SomeValuesRule.applySomeValuesRule(SomeValuesRule.java:180)\n\tat org.mindswap.pellet.tableau.completion.rule.SomeValuesRule.apply(SomeValuesRule.java:64)\n\tat org.mindswap.pellet.tableau.completion.rule.AbstractTableauRule.apply(AbstractTableauRule.java:64)\n\tat org.mindswap.pellet.tableau.completion.SROIQStrategy.complete(SROIQStrategy.java:157)\n\tat org.mindswap.pellet.ABox.isConsistent(ABox.java:1423)\n\tat org.mindswap.pellet.ABox.isSatisfiab"
+  },
+  "stage:RBActiveDevelopmentStage": {
+   "class": "RBActiveDevelopmentStage",
+   "individual": "http://senso-framework.org/data/mirumee__ariadne-1138",
+   "attempts": 3,
+   "target": "http://senso-framework.org/data/mirumee__ariadne-1138 type http://senso-framework.org/ontology/seo#RBActiveDevelopmentStage",
+   "justifications": [],
+   "raw_text": "",
+   "seconds": 2.521879853971768,
+   "returncode": 1,
+   "error": "Exception in thread \"main\" org.mindswap.pellet.exceptions.InternalReasonerException: Adding type to a pruned node \"anon(19)\" restrictedDatatype(http://www.w3.org/2001/XMLSchema#decimal,[facet(http://www.w3.org/2001/XMLSchema#minExclusive,literal(0.15,(),http://www.w3.org/2001/XMLSchema#decimal))])\n\tat org.mindswap.pellet.Node.addType(Node.java:448)\n\tat org.mindswap.pellet.Literal.addType(Literal.java:257)\n\tat org.mindswap.pellet.tableau.completion.CompletionStrategy.addType(CompletionStrategy.java:438)\n\tat org.mindswap.pellet.tableau.completion.rule.SomeValuesRule.applySomeValuesRule(SomeValuesRule.java:180)\n\tat org.mindswap.pellet.tableau.completion.rule.SomeValuesRule.apply(SomeValuesRule.java:64)\n\tat org.mindswap.pellet.tableau.completion.rule.AbstractTableauRule.apply(AbstractTableauRule.java:64)\n\tat org.mindswap.pellet.tableau.completion.SROIQStrategy.complete(SROIQStrategy.java:157)\n\tat org.mindswap.pellet.ABox.isConsistent(ABox.java:1423)\n\tat org.mindswap.pellet.ABox.isSatisfiab"
+  },
+  "lawI": {
+   "class": "LawIConformant",
+   "individual": "http://senso-framework.org/data/mirumee__ariadne-1138",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/mirumee__ariadne-1138 type http://senso-framework.org/ontology/seo#LawIConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law1_min_months",
+       "text": "A_monthsObserved_ge_p_law1_min_months equivalentTo monthsObserved some integer[>= 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawIConformant",
+       "text": "LawIConformant equivalentTo A_activeMonthRatio_ge_p_law1_active_ratio and A_monthsObserved_ge_p_law1_min_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_activeMonthRatio_ge_p_law1_active_ratio",
+       "text": "A_activeMonthRatio_ge_p_law1_active_ratio equivalentTo activeMonthRatio some decimal[>= 0.5]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "mirumee__ariadne-1138",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "mirumee__ariadne-1138 type SoftwareProject"
+      },
+      {
+       "subject": "mirumee__ariadne-1138",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "mirumee__ariadne-1138 monthsObserved 36"
+      },
+      {
+       "subject": "mirumee__ariadne-1138",
+       "prop": "activeMonthRatio",
+       "value": 0.888889,
+       "raw": "mirumee__ariadne-1138 activeMonthRatio 0.888889"
+      }
+     ],
+     "closures": [],
+     "raw": "mirumee__ariadne-1138 type SoftwareProject\nmirumee__ariadne-1138 monthsObserved 36\nmirumee__ariadne-1138 activeMonthRatio 0.888889\nA_monthsObserved_ge_p_law1_min_months equivalentTo monthsObserved some integer[>= 2]\nLawIConformant equivalentTo A_activeMonthRatio_ge_p_law1_active_ratio and A_monthsObserved_ge_p_law1_min_months and SoftwareProject\nA_activeMonthRatio_ge_p_law1_active_ratio equivalentTo activeMonthRatio some decimal[>= 0.5]"
+    }
+   ],
+   "raw_text": "Axiom: mirumee__ariadne-1138 type LawIConformant\n\nExplanation(s): \n1)   mirumee__ariadne-1138 type SoftwareProject\n     mirumee__ariadne-1138 monthsObserved 36\n     mirumee__ariadne-1138 activeMonthRatio 0.888889\n     A_monthsObserved_ge_p_law1_min_months equivalentTo monthsObserved some integer[>= 2]\n     LawIConformant equivalentTo A_activeMonthRatio_ge_p_law1_active_ratio\n                                 and A_monthsObserved_ge_p_law1_min_months\n                                 and SoftwareProject\n     A_activeMonthRatio_ge_p_law1_active_ratio equivalentTo activeMonthRatio some decimal[>= 0.5]\n\n\n",
+   "seconds": 2.7467181959655136,
+   "returncode": 0,
+   "error": null
+  },
+  "lawIII": {
+   "class": "LawIIIConformant",
+   "individual": "http://senso-framework.org/data/mirumee__ariadne-1138",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/mirumee__ariadne-1138 type http://senso-framework.org/ontology/seo#LawIIIConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law3_min_months",
+       "text": "A_monthsObserved_ge_p_law3_min_months equivalentTo monthsObserved some integer[>= 6]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawIIIConformant",
+       "text": "LawIIIConformant equivalentTo A_churnCV_lt_p_law3_churn_cv and A_monthsObserved_ge_p_law3_min_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_churnCV_lt_p_law3_churn_cv",
+       "text": "A_churnCV_lt_p_law3_churn_cv equivalentTo churnCV some decimal[< 2.0]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "mirumee__ariadne-1138",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "mirumee__ariadne-1138 type SoftwareProject"
+      },
+      {
+       "subject": "mirumee__ariadne-1138",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "mirumee__ariadne-1138 monthsObserved 36"
+      },
+      {
+       "subject": "mirumee__ariadne-1138",
+       "prop": "churnCV",
+       "value": 1.685788,
+       "raw": "mirumee__ariadne-1138 churnCV 1.685788"
+      }
+     ],
+     "closures": [],
+     "raw": "mirumee__ariadne-1138 type SoftwareProject\nmirumee__ariadne-1138 monthsObserved 36\nA_monthsObserved_ge_p_law3_min_months equivalentTo monthsObserved some integer[>= 6]\nLawIIIConformant equivalentTo A_churnCV_lt_p_law3_churn_cv and A_monthsObserved_ge_p_law3_min_months and SoftwareProject\nmirumee__ariadne-1138 churnCV 1.685788\nA_churnCV_lt_p_law3_churn_cv equivalentTo churnCV some decimal[< 2.0]"
+    }
+   ],
+   "raw_text": "Axiom: mirumee__ariadne-1138 type LawIIIConformant\n\nExplanation(s): \n1)   mirumee__ariadne-1138 type SoftwareProject\n     mirumee__ariadne-1138 monthsObserved 36\n     A_monthsObserved_ge_p_law3_min_months equivalentTo monthsObserved some integer[>= 6]\n     LawIIIConformant equivalentTo A_churnCV_lt_p_law3_churn_cv\n                                   and A_monthsObserved_ge_p_law3_min_months\n                                   and SoftwareProject\n     mirumee__ariadne-1138 churnCV 1.685788\n     A_churnCV_lt_p_law3_churn_cv equivalentTo churnCV some decimal[< 2.0]\n\n\n",
+   "seconds": 2.662016323010903,
+   "returncode": 0,
+   "error": null
+  },
+  "lawIV": {
+   "class": "LawIVConformant",
+   "individual": "http://senso-framework.org/data/mirumee__ariadne-1138",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/mirumee__ariadne-1138 type http://senso-framework.org/ontology/seo#LawIVConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law4_min_months",
+       "text": "A_monthsObserved_ge_p_law4_min_months equivalentTo monthsObserved some integer[>= 6]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawIVConformant",
+       "text": "LawIVConformant equivalentTo A_commitCountCV_lt_p_law4_commit_cv and A_monthsObserved_ge_p_law4_min_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_commitCountCV_lt_p_law4_commit_cv",
+       "text": "A_commitCountCV_lt_p_law4_commit_cv equivalentTo commitCountCV some decimal[< 1.5]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "mirumee__ariadne-1138",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "mirumee__ariadne-1138 type SoftwareProject"
+      },
+      {
+       "subject": "mirumee__ariadne-1138",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "mirumee__ariadne-1138 monthsObserved 36"
+      },
+      {
+       "subject": "mirumee__ariadne-1138",
+       "prop": "commitCountCV",
+       "value": 0.942267,
+       "raw": "mirumee__ariadne-1138 commitCountCV 0.942267"
+      }
+     ],
+     "closures": [],
+     "raw": "A_monthsObserved_ge_p_law4_min_months equivalentTo monthsObserved some integer[>= 6]\nmirumee__ariadne-1138 type SoftwareProject\nmirumee__ariadne-1138 monthsObserved 36\nmirumee__ariadne-1138 commitCountCV 0.942267\nLawIVConformant equivalentTo A_commitCountCV_lt_p_law4_commit_cv and A_monthsObserved_ge_p_law4_min_months and SoftwareProject\nA_commitCountCV_lt_p_law4_commit_cv equivalentTo commitCountCV some decimal[< 1.5]"
+    }
+   ],
+   "raw_text": "Axiom: mirumee__ariadne-1138 type LawIVConformant\n\nExplanation(s): \n1)   A_monthsObserved_ge_p_law4_min_months equivalentTo monthsObserved some integer[>= 6]\n     mirumee__ariadne-1138 type SoftwareProject\n     mirumee__ariadne-1138 monthsObserved 36\n     mirumee__ariadne-1138 commitCountCV 0.942267\n     LawIVConformant equivalentTo A_commitCountCV_lt_p_law4_commit_cv\n                                  and A_monthsObserved_ge_p_law4_min_months\n                                  and SoftwareProject\n     A_commitCountCV_lt_p_law4_commit_cv equivalentTo commitCountCV some decimal[< 1.5]\n\n\n",
+   "seconds": 2.616074315039441,
+   "returncode": 0,
+   "error": null
+  },
+  "lawV": {
+   "class": "LawVConformant",
+   "individual": "http://senso-framework.org/data/mirumee__ariadne-1138",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/mirumee__ariadne-1138 type http://senso-framework.org/ontology/seo#LawVConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "LawVConformant",
+       "text": "LawVConformant equivalentTo A_linesAddedCV_lt_p_law5_additions_cv and A_monthsObserved_ge_p_law5_min_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_linesAddedCV_lt_p_law5_additions_cv",
+       "text": "A_linesAddedCV_lt_p_law5_additions_cv equivalentTo linesAddedCV some decimal[< 2.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law5_min_months",
+       "text": "A_monthsObserved_ge_p_law5_min_months equivalentTo monthsObserved some integer[>= 4]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "mirumee__ariadne-1138",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "mirumee__ariadne-1138 type SoftwareProject"
+      },
+      {
+       "subject": "mirumee__ariadne-1138",
+       "prop": "linesAddedCV",
+       "value": 1.554613,
+       "raw": "mirumee__ariadne-1138 linesAddedCV 1.554613"
+      },
+      {
+       "subject": "mirumee__ariadne-1138",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "mirumee__ariadne-1138 monthsObserved 36"
+      }
+     ],
+     "closures": [],
+     "raw": "mirumee__ariadne-1138 type SoftwareProject\nmirumee__ariadne-1138 linesAddedCV 1.554613\nmirumee__ariadne-1138 monthsObserved 36\nLawVConformant equivalentTo A_linesAddedCV_lt_p_law5_additions_cv and A_monthsObserved_ge_p_law5_min_months and SoftwareProject\nA_linesAddedCV_lt_p_law5_additions_cv equivalentTo linesAddedCV some decimal[< 2.0]\nA_monthsObserved_ge_p_law5_min_months equivalentTo monthsObserved some integer[>= 4]"
+    }
+   ],
+   "raw_text": "Axiom: mirumee__ariadne-1138 type LawVConformant\n\nExplanation(s): \n1)   mirumee__ariadne-1138 type SoftwareProject\n     mirumee__ariadne-1138 linesAddedCV 1.554613\n     mirumee__ariadne-1138 monthsObserved 36\n     LawVConformant equivalentTo A_linesAddedCV_lt_p_law5_additions_cv\n                                 and A_monthsObserved_ge_p_law5_min_months\n                                 and SoftwareProject\n     A_linesAddedCV_lt_p_law5_additions_cv equivalentTo linesAddedCV some decimal[< 2.0]\n     A_monthsObserved_ge_p_law5_min_months equivalentTo monthsObserved some integer[>= 4]\n\n\n",
+   "seconds": 2.5813853109721094,
+   "returncode": 0,
+   "error": null
+  },
+  "lawVI": {
+   "class": "LawVIConformant",
+   "individual": "http://senso-framework.org/data/mirumee__ariadne-1138",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/mirumee__ariadne-1138 type http://senso-framework.org/ontology/seo#LawVIConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "subclass",
+       "subject": "GrowthStage",
+       "text": "GrowthStage subClassOf LawVIConformant"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKTau_gt_0",
+       "text": "A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKpValue_lt_mk_alpha",
+       "text": "A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]"
+      },
+      {
+       "kind": "definition",
+       "subject": "GrowthStage",
+       "text": "GrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "mirumee__ariadne-1138",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "mirumee__ariadne-1138 type SoftwareProject"
+      },
+      {
+       "subject": "mirumee__ariadne-1138",
+       "prop": "locMKpValue",
+       "value": 0.0,
+       "raw": "mirumee__ariadne-1138 locMKpValue 0.0"
+      },
+      {
+       "subject": "mirumee__ariadne-1138",
+       "prop": "locMKTau",
+       "value": 0.955556,
+       "raw": "mirumee__ariadne-1138 locMKTau 0.955556"
+      },
+      {
+       "subject": "mirumee__ariadne-1138",
+       "prop": "locSeriesLength",
+       "value": 36,
+       "raw": "mirumee__ariadne-1138 locSeriesLength 36"
+      }
+     ],
+     "closures": [],
+     "raw": "mirumee__ariadne-1138 type SoftwareProject\nmirumee__ariadne-1138 locMKpValue 0.0\nGrowthStage subClassOf LawVIConformant\nA_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\nA_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\nmirumee__ariadne-1138 locMKTau 0.955556\nA_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\nmirumee__ariadne-1138 locSeriesLength 36\nGrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject\nA_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]"
+    }
+   ],
+   "raw_text": "Axiom: mirumee__ariadne-1138 type LawVIConformant\n\nExplanation(s): \n1)   mirumee__ariadne-1138 type SoftwareProject\n     mirumee__ariadne-1138 locMKpValue 0.0\n     GrowthStage subClassOf LawVIConformant\n     A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\n     A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\n     mirumee__ariadne-1138 locMKTau 0.955556\n     A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\n     mirumee__ariadne-1138 locSeriesLength 36\n     GrowthStage equivalentTo A_locMKTau_gt_0\n                              and A_locMKpValue_lt_mk_alpha\n                              and MKApplicable\n                              and SoftwareProject\n     A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]\n\n\n",
+   "seconds": 2.8359471570001915,
+   "returncode": 0,
+   "error": null
+  },
+  "lawVII": {
+   "class": "LawVIINonConformant",
+   "individual": "http://senso-framework.org/data/mirumee__ariadne-1138",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/mirumee__ariadne-1138 type http://senso-framework.org/ontology/seo#LawVIINonConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_bugFixRatioFirstHalf_gt_0",
+       "text": "A_bugFixRatioFirstHalf_gt_0 equivalentTo bugFixRatioFirstHalf some decimal[> 0.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_bugFixHalfRatio_lt_p_law7_tolerance",
+       "text": "A_bugFixHalfRatio_lt_p_law7_tolerance equivalentTo bugFixHalfRatio some decimal[< 0.9]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_activeMonthCount_ge_p_law7_min_active_months",
+       "text": "A_activeMonthCount_ge_p_law7_min_active_months equivalentTo activeMonthCount some integer[>= 4]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawVIINonConformant",
+       "text": "LawVIINonConformant equivalentTo A_activeMonthCount_ge_p_law7_min_active_months and A_bugFixHalfRatio_lt_p_law7_tolerance and A_bugFixRatioFirstHalf_gt_0 and SoftwareProject"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "mirumee__ariadne-1138",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "mirumee__ariadne-1138 type SoftwareProject"
+      },
+      {
+       "subject": "mirumee__ariadne-1138",
+       "prop": "activeMonthCount",
+       "value": 32,
+       "raw": "mirumee__ariadne-1138 activeMonthCount 32"
+      },
+      {
+       "subject": "mirumee__ariadne-1138",
+       "prop": "bugFixHalfRatio",
+       "value": 0.722003,
+       "raw": "mirumee__ariadne-1138 bugFixHalfRatio 0.722003"
+      },
+      {
+       "subject": "mirumee__ariadne-1138",
+       "prop": "bugFixRatioFirstHalf",
+       "value": 0.1815,
+       "raw": "mirumee__ariadne-1138 bugFixRatioFirstHalf 0.1815"
+      }
+     ],
+     "closures": [],
+     "raw": "mirumee__ariadne-1138 type SoftwareProject\nmirumee__ariadne-1138 activeMonthCount 32\nA_bugFixRatioFirstHalf_gt_0 equivalentTo bugFixRatioFirstHalf some decimal[> 0.0]\nmirumee__ariadne-1138 bugFixHalfRatio 0.722003\nA_bugFixHalfRatio_lt_p_law7_tolerance equivalentTo bugFixHalfRatio some decimal[< 0.9]\nA_activeMonthCount_ge_p_law7_min_active_months equivalentTo activeMonthCount some integer[>= 4]\nLawVIINonConformant equivalentTo A_activeMonthCount_ge_p_law7_min_active_months and A_bugFixHalfRatio_lt_p_law7_tolerance and A_bugFixRatioFirstHalf_gt_0 and SoftwareProject\nmirumee__ariadne-1138 bugFixRatioFirstHalf 0.1815"
+    }
+   ],
+   "raw_text": "Axiom: mirumee__ariadne-1138 type LawVIINonConformant\n\nExplanation(s): \n1)   mirumee__ariadne-1138 type SoftwareProject\n     mirumee__ariadne-1138 activeMonthCount 32\n     A_bugFixRatioFirstHalf_gt_0 equivalentTo bugFixRatioFirstHalf some decimal[> 0.0]\n     mirumee__ariadne-1138 bugFixHalfRatio 0.722003\n     A_bugFixHalfRatio_lt_p_law7_tolerance equivalentTo bugFixHalfRatio some decimal[< 0.9]\n     A_activeMonthCount_ge_p_law7_min_active_months equivalentTo activeMonthCount some integer[>= 4]\n     LawVIINonConformant equivalentTo A_activeMonthCount_ge_p_law7_min_active_months\n                                      and A_bugFixHalfRatio_lt_p_law7_tolerance\n                                      and A_bugFixRatioFirstHalf_gt_0\n                                      and SoftwareProject\n     mirumee__ariadne-1138 bugFixRatioFirstHalf 0.1815\n\n\n",
+   "seconds": 2.756880422006361,
+   "returncode": 0,
+   "error": null
+  },
+  "lawVIII": {
+   "class": "LawVIIIConformant",
+   "individual": "http://senso-framework.org/data/mirumee__ariadne-1138",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/mirumee__ariadne-1138 type http://senso-framework.org/ontology/seo#LawVIIIConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio",
+       "text": "A_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio equivalentTo multiAuthorMonthRatio some decimal[> 0.3]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_mergeMonthRatio_gt_p_law8_merge_ratio",
+       "text": "A_mergeMonthRatio_gt_p_law8_merge_ratio equivalentTo MergeActive"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio",
+       "text": "A_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio equivalentTo MultiAuthorActive"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawVIIIConformant",
+       "text": "LawVIIIConformant equivalentTo A_monthsObserved_ge_p_law8_min_months and MergeActive and MultiAuthorActive and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law8_min_months",
+       "text": "A_monthsObserved_ge_p_law8_min_months equivalentTo monthsObserved some integer[>= 6]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_mergeMonthRatio_gt_p_law8_merge_ratio",
+       "text": "A_mergeMonthRatio_gt_p_law8_merge_ratio equivalentTo mergeMonthRatio some decimal[> 0.3]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "mirumee__ariadne-1138",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "mirumee__ariadne-1138 type SoftwareProject"
+      },
+      {
+       "subject": "mirumee__ariadne-1138",
+       "prop": "multiAuthorMonthRatio",
+       "value": 0.805556,
+       "raw": "mirumee__ariadne-1138 multiAuthorMonthRatio 0.805556"
+      },
+      {
+       "subject": "mirumee__ariadne-1138",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "mirumee__ariadne-1138 monthsObserved 36"
+      },
+      {
+       "subject": "mirumee__ariadne-1138",
+       "prop": "mergeMonthRatio",
+       "value": 0.527778,
+       "raw": "mirumee__ariadne-1138 mergeMonthRatio 0.527778"
+      }
+     ],
+     "closures": [],
+     "raw": "mirumee__ariadne-1138 type SoftwareProject\nA_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio equivalentTo multiAuthorMonthRatio some decimal[> 0.3]\nA_mergeMonthRatio_gt_p_law8_merge_ratio equivalentTo MergeActive\nmirumee__ariadne-1138 multiAuthorMonthRatio 0.805556\nA_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio equivalentTo MultiAuthorActive\nLawVIIIConformant equivalentTo A_monthsObserved_ge_p_law8_min_months and MergeActive and MultiAuthorActive and SoftwareProject\nmirumee__ariadne-1138 monthsObserved 36\nmirumee__ariadne-1138 mergeMonthRatio 0.527778\nA_monthsObserved_ge_p_law8_min_months equivalentTo monthsObserved some integer[>= 6]\nA_mergeMonthRatio_gt_p_law8_merge_ratio equivalentTo mergeMonthRatio some decimal[> 0.3]"
+    }
+   ],
+   "raw_text": "Axiom: mirumee__ariadne-1138 type LawVIIIConformant\n\nExplanation(s): \n1)   mirumee__ariadne-1138 type SoftwareProject\n     A_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio equivalentTo multiAuthorMonthRatio some decimal[> 0.3]\n     A_mergeMonthRatio_gt_p_law8_merge_ratio equivalentTo MergeActive\n     mirumee__ariadne-1138 multiAuthorMonthRatio 0.805556\n     A_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio equivalentTo MultiAuthorActive\n     LawVIIIConformant equivalentTo A_monthsObserved_ge_p_law8_min_months\n                                    and MergeActive\n                                    and MultiAuthorActive\n                                    and SoftwareProject\n     mirumee__ariadne-1138 monthsObserved 36\n     mirumee__ariadne-1138 mergeMonthRatio 0.527778\n     A_monthsObserved_ge_p_law8_min_months equivalentTo monthsObserved some integer[>= 6]\n     A_mergeMonthRatio_gt_p_law8_merge_ratio equivalentTo mergeMonthRatio some decimal[> 0.3]\n\n\n",
+   "seconds": 2.702225857996382,
+   "returncode": 0,
+   "error": null
+  },
+  "module:ariadne/asgi": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/mirumee__ariadne-1138/module/ariadne_asgi-635f51",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/mirumee__ariadne-1138/module/ariadne_asgi-635f51 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "ariadne_asgi-635f51",
+       "prop": "type",
+       "value": "Module",
+       "raw": "ariadne_asgi-635f51 type Module"
+      },
+      {
+       "subject": "ariadne_asgi-635f51",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 6,
+       "raw": "ariadne_asgi-635f51 moduleChangeMonthsInWindow 6"
+      }
+     ],
+     "closures": [],
+     "raw": "ariadne_asgi-635f51 type Module\nA_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\nariadne_asgi-635f51 moduleChangeMonthsInWindow 6\nOftenChangedModule subClassOf ActiveModule"
+    }
+   ],
+   "raw_text": "Axiom: ariadne_asgi-635f51 type ActiveModule\n\nExplanation(s): \n1)   ariadne_asgi-635f51 type Module\n     A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     ariadne_asgi-635f51 moduleChangeMonthsInWindow 6\n     OftenChangedModule subClassOf ActiveModule\n\n\n",
+   "seconds": 2.586178077966906,
+   "returncode": 0,
+   "error": null
+  },
+  "module:ariadne/contrib": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/mirumee__ariadne-1138/module/ariadne_contrib-2913a6",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/mirumee__ariadne-1138/module/ariadne_contrib-2913a6 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "ariadne_contrib-2913a6",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 4,
+       "raw": "ariadne_contrib-2913a6 moduleChangeMonthsInWindow 4"
+      },
+      {
+       "subject": "ariadne_contrib-2913a6",
+       "prop": "type",
+       "value": "Module",
+       "raw": "ariadne_contrib-2913a6 type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\nariadne_contrib-2913a6 moduleChangeMonthsInWindow 4\nariadne_contrib-2913a6 type Module\nOftenChangedModule subClassOf ActiveModule"
+    }
+   ],
+   "raw_text": "Axiom: ariadne_contrib-2913a6 type ActiveModule\n\nExplanation(s): \n1)   A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     ariadne_contrib-2913a6 moduleChangeMonthsInWindow 4\n     ariadne_contrib-2913a6 type Module\n     OftenChangedModule subClassOf ActiveModule\n\n\n",
+   "seconds": 2.7107322679948993,
+   "returncode": 0,
+   "error": null
+  },
+  "module:generate_reference.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/mirumee__ariadne-1138/module/generate_reference.py-39d82b",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/mirumee__ariadne-1138/module/generate_reference.py-39d82b type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "generate_reference.py-39d82b",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 3,
+       "raw": "generate_reference.py-39d82b moduleChangeMonthsInWindow 3"
+      },
+      {
+       "subject": "generate_reference.py-39d82b",
+       "prop": "type",
+       "value": "Module",
+       "raw": "generate_reference.py-39d82b type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "generate_reference.py-39d82b moduleChangeMonthsInWindow 3\nA_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\ngenerate_reference.py-39d82b type Module\nOftenChangedModule subClassOf ActiveModule"
+    }
+   ],
+   "raw_text": "Axiom: generate_reference.py-39d82b type ActiveModule\n\nExplanation(s): \n1)   generate_reference.py-39d82b moduleChangeMonthsInWindow 3\n     A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     generate_reference.py-39d82b type Module\n     OftenChangedModule subClassOf ActiveModule\n\n\n",
+   "seconds": 2.8194549219915643,
+   "returncode": 0,
+   "error": null
+  },
+  "module:ariadne/schema_visitor.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/mirumee__ariadne-1138/module/ariadne_schema_visitor.py-42e63d",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/mirumee__ariadne-1138/module/ariadne_schema_visitor.py-42e63d type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule subClassOf ActiveModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "ariadne_schema_visitor.py-42e63d",
+       "prop": "type",
+       "value": "Module",
+       "raw": "ariadne_schema_visitor.py-42e63d type Module"
+      },
+      {
+       "subject": "ariadne_schema_visitor.py-42e63d",
+       "prop": "moduleRelChurnInWindow",
+       "value": 0.27768,
+       "raw": "ariadne_schema_visitor.py-42e63d moduleRelChurnInWindow 0.27768"
+      }
+     ],
+     "closures": [],
+     "raw": "ariadne_schema_visitor.py-42e63d type Module\nHighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module\nHighRelChurnModule subClassOf ActiveModule\nA_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\nariadne_schema_visitor.py-42e63d moduleRelChurnInWindow 0.27768"
+    }
+   ],
+   "raw_text": "Axiom: ariadne_schema_visitor.py-42e63d type ActiveModule\n\nExplanation(s): \n1)   ariadne_schema_visitor.py-42e63d type Module\n     HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn\n                                     and Module\n     HighRelChurnModule subClassOf ActiveModule\n     A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\n     ariadne_schema_visitor.py-42e63d moduleRelChurnInWindow 0.27768\n\n\n",
+   "seconds": 2.6623183360206895,
+   "returncode": 0,
+   "error": null
+  },
+  "module:ariadne/graphql.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/mirumee__ariadne-1138/module/ariadne_graphql.py-e659f3",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/mirumee__ariadne-1138/module/ariadne_graphql.py-e659f3 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "ariadne_graphql.py-e659f3",
+       "prop": "type",
+       "value": "Module",
+       "raw": "ariadne_graphql.py-e659f3 type Module"
+      },
+      {
+       "subject": "ariadne_graphql.py-e659f3",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 5,
+       "raw": "ariadne_graphql.py-e659f3 moduleChangeMonthsInWindow 5"
+      }
+     ],
+     "closures": [],
+     "raw": "ariadne_graphql.py-e659f3 type Module\nA_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\nariadne_graphql.py-e659f3 moduleChangeMonthsInWindow 5\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\nOftenChangedModule subClassOf ActiveModule"
+    }
+   ],
+   "raw_text": "Axiom: ariadne_graphql.py-e659f3 type ActiveModule\n\nExplanation(s): \n1)   ariadne_graphql.py-e659f3 type Module\n     A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     ariadne_graphql.py-e659f3 moduleChangeMonthsInWindow 5\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     OftenChangedModule subClassOf ActiveModule\n\n\n",
+   "seconds": 2.6594314510002732,
+   "returncode": 0,
+   "error": null
+  },
+  "module:ariadne/wsgi.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/mirumee__ariadne-1138/module/ariadne_wsgi.py-0fda4a",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/mirumee__ariadne-1138/module/ariadne_wsgi.py-0fda4a type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "ariadne_wsgi.py-0fda4a",
+       "prop": "type",
+       "value": "Module",
+       "raw": "ariadne_wsgi.py-0fda4a type Module"
+      },
+      {
+       "subject": "ariadne_wsgi.py-0fda4a",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 5,
+       "raw": "ariadne_wsgi.py-0fda4a moduleChangeMonthsInWindow 5"
+      }
+     ],
+     "closures": [],
+     "raw": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\nariadne_wsgi.py-0fda4a type Module\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\nariadne_wsgi.py-0fda4a moduleChangeMonthsInWindow 5\nOftenChangedModule subClassOf ActiveModule"
+    }
+   ],
+   "raw_text": "Axiom: ariadne_wsgi.py-0fda4a type ActiveModule\n\nExplanation(s): \n1)   A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     ariadne_wsgi.py-0fda4a type Module\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     ariadne_wsgi.py-0fda4a moduleChangeMonthsInWindow 5\n     OftenChangedModule subClassOf ActiveModule\n\n\n",
+   "seconds": 2.6079177939682268,
+   "returncode": 0,
+   "error": null
+  },
+  "module:benchmark": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/mirumee__ariadne-1138/module/benchmark-fc38e4",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/mirumee__ariadne-1138/module/benchmark-fc38e4 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule subClassOf ActiveModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "benchmark-fc38e4",
+       "prop": "type",
+       "value": "Module",
+       "raw": "benchmark-fc38e4 type Module"
+      },
+      {
+       "subject": "benchmark-fc38e4",
+       "prop": "moduleRelChurnInWindow",
+       "value": 1.371595,
+       "raw": "benchmark-fc38e4 moduleRelChurnInWindow 1.371595"
+      }
+     ],
+     "closures": [],
+     "raw": "benchmark-fc38e4 type Module\nHighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module\nHighRelChurnModule subClassOf ActiveModule\nbenchmark-fc38e4 moduleRelChurnInWindow 1.371595\nA_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+    }
+   ],
+   "raw_text": "Axiom: benchmark-fc38e4 type ActiveModule\n\nExplanation(s): \n1)   benchmark-fc38e4 type Module\n     HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn\n                                     and Module\n     HighRelChurnModule subClassOf ActiveModule\n     benchmark-fc38e4 moduleRelChurnInWindow 1.371595\n     A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\n\n\n",
+   "seconds": 2.7012256879825145,
+   "returncode": 0,
+   "error": null
+  },
+  "module:ariadne/types.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/mirumee__ariadne-1138/module/ariadne_types.py-965339",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/mirumee__ariadne-1138/module/ariadne_types.py-965339 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "ariadne_types.py-965339",
+       "prop": "type",
+       "value": "Module",
+       "raw": "ariadne_types.py-965339 type Module"
+      },
+      {
+       "subject": "ariadne_types.py-965339",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 7,
+       "raw": "ariadne_types.py-965339 moduleChangeMonthsInWindow 7"
+      }
+     ],
+     "closures": [],
+     "raw": "ariadne_types.py-965339 type Module\nA_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\nariadne_types.py-965339 moduleChangeMonthsInWindow 7\nOftenChangedModule subClassOf ActiveModule"
+    }
+   ],
+   "raw_text": "Axiom: ariadne_types.py-965339 type ActiveModule\n\nExplanation(s): \n1)   ariadne_types.py-965339 type Module\n     A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     ariadne_types.py-965339 moduleChangeMonthsInWindow 7\n     OftenChangedModule subClassOf ActiveModule\n\n\n",
+   "seconds": 2.5946929439669475,
+   "returncode": 0,
+   "error": null
+  },
+  "module:ariadne/explorer": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/mirumee__ariadne-1138/module/ariadne_explorer-0897ba",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/mirumee__ariadne-1138/module/ariadne_explorer-0897ba type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule subClassOf ActiveModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "ariadne_explorer-0897ba",
+       "prop": "moduleRelChurnInWindow",
+       "value": 0.157428,
+       "raw": "ariadne_explorer-0897ba moduleRelChurnInWindow 0.157428"
+      },
+      {
+       "subject": "ariadne_explorer-0897ba",
+       "prop": "type",
+       "value": "Module",
+       "raw": "ariadne_explorer-0897ba type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "ariadne_explorer-0897ba moduleRelChurnInWindow 0.157428\nHighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module\nHighRelChurnModule subClassOf ActiveModule\nariadne_explorer-0897ba type Module\nA_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+    }
+   ],
+   "raw_text": "Axiom: ariadne_explorer-0897ba type ActiveModule\n\nExplanation(s): \n1)   ariadne_explorer-0897ba moduleRelChurnInWindow 0.157428\n     HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn\n                                     and Module\n     HighRelChurnModule subClassOf ActiveModule\n     ariadne_explorer-0897ba type Module\n     A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\n\n\n",
+   "seconds": 2.4719065509852953,
+   "returncode": 0,
+   "error": null
+  },
+  "module:ariadne/validation": {
+   "class": "StableModule",
+   "individual": "http://senso-framework.org/data/mirumee__ariadne-1138/module/ariadne_validation-9ffd8b",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/mirumee__ariadne-1138/module/ariadne_validation-9ffd8b type http://senso-framework.org/ontology/seo#StableModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "StableModule",
+       "text": "StableModule equivalentTo LowRelChurnModule and RarelyChangedModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "LowRelChurnModule",
+       "text": "LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "definition",
+       "subject": "RarelyChangedModule",
+       "text": "RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "ariadne_validation-9ffd8b",
+       "prop": "type",
+       "value": "Module",
+       "raw": "ariadne_validation-9ffd8b type Module"
+      },
+      {
+       "subject": "ariadne_validation-9ffd8b",
+       "prop": "moduleRelChurnInWindow",
+       "value": 0.039886,
+       "raw": "ariadne_validation-9ffd8b moduleRelChurnInWindow 0.039886"
+      },
+      {
+       "subject": "ariadne_validation-9ffd8b",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 2,
+       "raw": "ariadne_validation-9ffd8b moduleChangeMonthsInWindow 2"
+      }
+     ],
+     "closures": [],
+     "raw": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\nA_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\nariadne_validation-9ffd8b type Module\nariadne_validation-9ffd8b moduleRelChurnInWindow 0.039886\nStableModule equivalentTo LowRelChurnModule and RarelyChangedModule\nariadne_validation-9ffd8b moduleChangeMonthsInWindow 2\nLowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module\nRarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module"
+    }
+   ],
+   "raw_text": "Axiom: ariadne_validation-9ffd8b type StableModule\n\nExplanation(s): \n1)   A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\n     A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\n     ariadne_validation-9ffd8b type Module\n     ariadne_validation-9ffd8b moduleRelChurnInWindow 0.039886\n     StableModule equivalentTo LowRelChurnModule\n                               and RarelyChangedModule\n     ariadne_validation-9ffd8b moduleChangeMonthsInWindow 2\n     LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn\n                                    and Module\n     RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months\n                                      and Module\n\n\n",
+   "seconds": 2.710958642011974,
+   "returncode": 0,
+   "error": null
+  },
+  "module:ariadne/executable_schema.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/mirumee__ariadne-1138/module/ariadne_executable_schema.py-d014af",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/mirumee__ariadne-1138/module/ariadne_executable_schema.py-d014af type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "ariadne_executable_schema.py-d014af",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 3,
+       "raw": "ariadne_executable_schema.py-d014af moduleChangeMonthsInWindow 3"
+      },
+      {
+       "subject": "ariadne_executable_schema.py-d014af",
+       "prop": "type",
+       "value": "Module",
+       "raw": "ariadne_executable_schema.py-d014af type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\nariadne_executable_schema.py-d014af moduleChangeMonthsInWindow 3\nariadne_executable_schema.py-d014af type Module\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\nOftenChangedModule subClassOf ActiveModule"
+    }
+   ],
+   "raw_text": "Axiom: ariadne_executable_schema.py-d014af type ActiveModule\n\nExplanation(s): \n1)   A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     ariadne_executable_schema.py-d014af moduleChangeMonthsInWindow 3\n     ariadne_executable_schema.py-d014af type Module\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     OftenChangedModule subClassOf ActiveModule\n\n\n",
+   "seconds": 2.679114317987114,
+   "returncode": 0,
+   "error": null
+  },
+  "module:ariadne/enums.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/mirumee__ariadne-1138/module/ariadne_enums.py-ce94f4",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/mirumee__ariadne-1138/module/ariadne_enums.py-ce94f4 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "ariadne_enums.py-ce94f4",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 3,
+       "raw": "ariadne_enums.py-ce94f4 moduleChangeMonthsInWindow 3"
+      },
+      {
+       "subject": "ariadne_enums.py-ce94f4",
+       "prop": "type",
+       "value": "Module",
+       "raw": "ariadne_enums.py-ce94f4 type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\nariadne_enums.py-ce94f4 moduleChangeMonthsInWindow 3\nariadne_enums.py-ce94f4 type Module\nOftenChangedModule subClassOf ActiveModule"
+    }
+   ],
+   "raw_text": "Axiom: ariadne_enums.py-ce94f4 type ActiveModule\n\nExplanation(s): \n1)   A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     ariadne_enums.py-ce94f4 moduleChangeMonthsInWindow 3\n     ariadne_enums.py-ce94f4 type Module\n     OftenChangedModule subClassOf ActiveModule\n\n\n",
+   "seconds": 2.475229509989731,
+   "returncode": 0,
+   "error": null
+  },
+  "module:ariadne/scalars.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/mirumee__ariadne-1138/module/ariadne_scalars.py-628331",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/mirumee__ariadne-1138/module/ariadne_scalars.py-628331 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule subClassOf ActiveModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "ariadne_scalars.py-628331",
+       "prop": "moduleRelChurnInWindow",
+       "value": 1.0,
+       "raw": "ariadne_scalars.py-628331 moduleRelChurnInWindow 1.0"
+      },
+      {
+       "subject": "ariadne_scalars.py-628331",
+       "prop": "type",
+       "value": "Module",
+       "raw": "ariadne_scalars.py-628331 type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module\nHighRelChurnModule subClassOf ActiveModule\nariadne_scalars.py-628331 moduleRelChurnInWindow 1.0\nA_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\nariadne_scalars.py-628331 type Module"
+    }
+   ],
+   "raw_text": "Axiom: ariadne_scalars.py-628331 type ActiveModule\n\nExplanation(s): \n1)   HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn\n                                     and Module\n     HighRelChurnModule subClassOf ActiveModule\n     ariadne_scalars.py-628331 moduleRelChurnInWindow 1.0\n     A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\n     ariadne_scalars.py-628331 type Module\n\n\n",
+   "seconds": 3.3368026980315335,
+   "returncode": 0,
+   "error": null
+  },
+  "module:ariadne/objects.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/mirumee__ariadne-1138/module/ariadne_objects.py-ac2b99",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/mirumee__ariadne-1138/module/ariadne_objects.py-ac2b99 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule subClassOf ActiveModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "ariadne_objects.py-ac2b99",
+       "prop": "type",
+       "value": "Module",
+       "raw": "ariadne_objects.py-ac2b99 type Module"
+      },
+      {
+       "subject": "ariadne_objects.py-ac2b99",
+       "prop": "moduleRelChurnInWindow",
+       "value": 1.027027,
+       "raw": "ariadne_objects.py-ac2b99 moduleRelChurnInWindow 1.027027"
+      }
+     ],
+     "closures": [],
+     "raw": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module\nariadne_objects.py-ac2b99 type Module\nHighRelChurnModule subClassOf ActiveModule\nariadne_objects.py-ac2b99 moduleRelChurnInWindow 1.027027\nA_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+    }
+   ],
+   "raw_text": "Axiom: ariadne_objects.py-ac2b99 type ActiveModule\n\nExplanation(s): \n1)   HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn\n                                     and Module\n     ariadne_objects.py-ac2b99 type Module\n     HighRelChurnModule subClassOf ActiveModule\n     ariadne_objects.py-ac2b99 moduleRelChurnInWindow 1.027027\n     A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\n\n\n",
+   "seconds": 6.379245546995662,
+   "returncode": 0,
+   "error": null
+  },
+  "module:ariadne/utils.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/mirumee__ariadne-1138/module/ariadne_utils.py-e85c65",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/mirumee__ariadne-1138/module/ariadne_utils.py-e85c65 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule subClassOf ActiveModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "ariadne_utils.py-e85c65",
+       "prop": "moduleRelChurnInWindow",
+       "value": 0.789474,
+       "raw": "ariadne_utils.py-e85c65 moduleRelChurnInWindow 0.789474"
+      },
+      {
+       "subject": "ariadne_utils.py-e85c65",
+       "prop": "type",
+       "value": "Module",
+       "raw": "ariadne_utils.py-e85c65 type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "ariadne_utils.py-e85c65 moduleRelChurnInWindow 0.789474\nHighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module\nHighRelChurnModule subClassOf ActiveModule\nariadne_utils.py-e85c65 type Module\nA_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+    }
+   ],
+   "raw_text": "Axiom: ariadne_utils.py-e85c65 type ActiveModule\n\nExplanation(s): \n1)   ariadne_utils.py-e85c65 moduleRelChurnInWindow 0.789474\n     HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn\n                                     and Module\n     HighRelChurnModule subClassOf ActiveModule\n     ariadne_utils.py-e85c65 type Module\n     A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\n\n\n",
+   "seconds": 5.446729318995494,
+   "returncode": 0,
+   "error": null
+  },
+  "module:ariadne/inputs.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/mirumee__ariadne-1138/module/ariadne_inputs.py-5d95c0",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/mirumee__ariadne-1138/module/ariadne_inputs.py-5d95c0 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule subClassOf ActiveModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "ariadne_inputs.py-5d95c0",
+       "prop": "type",
+       "value": "Module",
+       "raw": "ariadne_inputs.py-5d95c0 type Module"
+      },
+      {
+       "subject": "ariadne_inputs.py-5d95c0",
+       "prop": "moduleRelChurnInWindow",
+       "value": 1.259259,
+       "raw": "ariadne_inputs.py-5d95c0 moduleRelChurnInWindow 1.259259"
+      }
+     ],
+     "closures": [],
+     "raw": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module\nHighRelChurnModule subClassOf ActiveModule\nA_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\nariadne_inputs.py-5d95c0 type Module\nariadne_inputs.py-5d95c0 moduleRelChurnInWindow 1.259259"
+    }
+   ],
+   "raw_text": "Axiom: ariadne_inputs.py-5d95c0 type ActiveModule\n\nExplanation(s): \n1)   HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn\n                                     and Module\n     HighRelChurnModule subClassOf ActiveModule\n     A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\n     ariadne_inputs.py-5d95c0 type Module\n     ariadne_inputs.py-5d95c0 moduleRelChurnInWindow 1.259259\n\n\n",
+   "seconds": 5.0172775000100955,
+   "returncode": 0,
+   "error": null
+  },
+  "module:ariadne/interfaces.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/mirumee__ariadne-1138/module/ariadne_interfaces.py-e68cab",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/mirumee__ariadne-1138/module/ariadne_interfaces.py-e68cab type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule subClassOf ActiveModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "ariadne_interfaces.py-e68cab",
+       "prop": "moduleRelChurnInWindow",
+       "value": 1.031447,
+       "raw": "ariadne_interfaces.py-e68cab moduleRelChurnInWindow 1.031447"
+      },
+      {
+       "subject": "ariadne_interfaces.py-e68cab",
+       "prop": "type",
+       "value": "Module",
+       "raw": "ariadne_interfaces.py-e68cab type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module\nariadne_interfaces.py-e68cab moduleRelChurnInWindow 1.031447\nHighRelChurnModule subClassOf ActiveModule\nariadne_interfaces.py-e68cab type Module\nA_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+    }
+   ],
+   "raw_text": "Axiom: ariadne_interfaces.py-e68cab type ActiveModule\n\nExplanation(s): \n1)   HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn\n                                     and Module\n     ariadne_interfaces.py-e68cab moduleRelChurnInWindow 1.031447\n     HighRelChurnModule subClassOf ActiveModule\n     ariadne_interfaces.py-e68cab type Module\n     A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\n\n\n",
+   "seconds": 4.980195377022028,
+   "returncode": 0,
+   "error": null
+  },
+  "module:ariadne/file_uploads.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/mirumee__ariadne-1138/module/ariadne_file_uploads.py-923c9f",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/mirumee__ariadne-1138/module/ariadne_file_uploads.py-923c9f type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule subClassOf ActiveModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "ariadne_file_uploads.py-923c9f",
+       "prop": "moduleRelChurnInWindow",
+       "value": 0.591837,
+       "raw": "ariadne_file_uploads.py-923c9f moduleRelChurnInWindow 0.591837"
+      },
+      {
+       "subject": "ariadne_file_uploads.py-923c9f",
+       "prop": "type",
+       "value": "Module",
+       "raw": "ariadne_file_uploads.py-923c9f type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "ariadne_file_uploads.py-923c9f moduleRelChurnInWindow 0.591837\nHighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module\nHighRelChurnModule subClassOf ActiveModule\nariadne_file_uploads.py-923c9f type Module\nA_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+    }
+   ],
+   "raw_text": "Axiom: ariadne_file_uploads.py-923c9f type ActiveModule\n\nExplanation(s): \n1)   ariadne_file_uploads.py-923c9f moduleRelChurnInWindow 0.591837\n     HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn\n                                     and Module\n     HighRelChurnModule subClassOf ActiveModule\n     ariadne_file_uploads.py-923c9f type Module\n     A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\n\n\n",
+   "seconds": 5.024353502958547,
+   "returncode": 0,
+   "error": null
+  },
+  "module:ariadne/unions.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/mirumee__ariadne-1138/module/ariadne_unions.py-b9954f",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/mirumee__ariadne-1138/module/ariadne_unions.py-b9954f type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule subClassOf ActiveModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "ariadne_unions.py-b9954f",
+       "prop": "moduleRelChurnInWindow",
+       "value": 1.101449,
+       "raw": "ariadne_unions.py-b9954f moduleRelChurnInWindow 1.101449"
+      },
+      {
+       "subject": "ariadne_unions.py-b9954f",
+       "prop": "type",
+       "value": "Module",
+       "raw": "ariadne_unions.py-b9954f type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module\nariadne_unions.py-b9954f moduleRelChurnInWindow 1.101449\nHighRelChurnModule subClassOf ActiveModule\nariadne_unions.py-b9954f type Module\nA_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+    }
+   ],
+   "raw_text": "Axiom: ariadne_unions.py-b9954f type ActiveModule\n\nExplanation(s): \n1)   HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn\n                                     and Module\n     ariadne_unions.py-b9954f moduleRelChurnInWindow 1.101449\n     HighRelChurnModule subClassOf ActiveModule\n     ariadne_unions.py-b9954f type Module\n     A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\n\n\n",
+   "seconds": 5.336490534013137,
+   "returncode": 0,
+   "error": null
+  },
+  "module:ariadne/subscriptions.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/mirumee__ariadne-1138/module/ariadne_subscriptions.py-42323b",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/mirumee__ariadne-1138/module/ariadne_subscriptions.py-42323b type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule subClassOf ActiveModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "ariadne_subscriptions.py-42323b",
+       "prop": "type",
+       "value": "Module",
+       "raw": "ariadne_subscriptions.py-42323b type Module"
+      },
+      {
+       "subject": "ariadne_subscriptions.py-42323b",
+       "prop": "moduleRelChurnInWindow",
+       "value": 1.0,
+       "raw": "ariadne_subscriptions.py-42323b moduleRelChurnInWindow 1.0"
+      }
+     ],
+     "closures": [],
+     "raw": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module\nHighRelChurnModule subClassOf ActiveModule\nA_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\nariadne_subscriptions.py-42323b type Module\nariadne_subscriptions.py-42323b moduleRelChurnInWindow 1.0"
+    }
+   ],
+   "raw_text": "Axiom: ariadne_subscriptions.py-42323b type ActiveModule\n\nExplanation(s): \n1)   HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn\n                                     and Module\n     HighRelChurnModule subClassOf ActiveModule\n     A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\n     ariadne_subscriptions.py-42323b type Module\n     ariadne_subscriptions.py-42323b moduleRelChurnInWindow 1.0\n\n\n",
+   "seconds": 2.923117263999302,
+   "returncode": 0,
+   "error": null
+  },
+  "module:ariadne/schema_names.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/mirumee__ariadne-1138/module/ariadne_schema_names.py-1a3788",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/mirumee__ariadne-1138/module/ariadne_schema_names.py-1a3788 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule subClassOf ActiveModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "ariadne_schema_names.py-1a3788",
+       "prop": "moduleRelChurnInWindow",
+       "value": 1.314286,
+       "raw": "ariadne_schema_names.py-1a3788 moduleRelChurnInWindow 1.314286"
+      },
+      {
+       "subject": "ariadne_schema_names.py-1a3788",
+       "prop": "type",
+       "value": "Module",
+       "raw": "ariadne_schema_names.py-1a3788 type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "ariadne_schema_names.py-1a3788 moduleRelChurnInWindow 1.314286\nHighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module\nariadne_schema_names.py-1a3788 type Module\nHighRelChurnModule subClassOf ActiveModule\nA_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+    }
+   ],
+   "raw_text": "Axiom: ariadne_schema_names.py-1a3788 type ActiveModule\n\nExplanation(s): \n1)   ariadne_schema_names.py-1a3788 moduleRelChurnInWindow 1.314286\n     HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn\n                                     and Module\n     ariadne_schema_names.py-1a3788 type Module\n     HighRelChurnModule subClassOf ActiveModule\n     A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\n\n\n",
+   "seconds": 2.6505720369750634,
+   "returncode": 0,
+   "error": null
+  },
+  "module:ariadne/resolvers.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/mirumee__ariadne-1138/module/ariadne_resolvers.py-6e56b2",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/mirumee__ariadne-1138/module/ariadne_resolvers.py-6e56b2 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule subClassOf ActiveModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "ariadne_resolvers.py-6e56b2",
+       "prop": "moduleRelChurnInWindow",
+       "value": 0.783505,
+       "raw": "ariadne_resolvers.py-6e56b2 moduleRelChurnInWindow 0.783505"
+      },
+      {
+       "subject": "ariadne_resolvers.py-6e56b2",
+       "prop": "type",
+       "value": "Module",
+       "raw": "ariadne_resolvers.py-6e56b2 type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "ariadne_resolvers.py-6e56b2 moduleRelChurnInWindow 0.783505\nHighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module\nHighRelChurnModule subClassOf ActiveModule\nA_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\nariadne_resolvers.py-6e56b2 type Module"
+    }
+   ],
+   "raw_text": "Axiom: ariadne_resolvers.py-6e56b2 type ActiveModule\n\nExplanation(s): \n1)   ariadne_resolvers.py-6e56b2 moduleRelChurnInWindow 0.783505\n     HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn\n                                     and Module\n     HighRelChurnModule subClassOf ActiveModule\n     A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\n     ariadne_resolvers.py-6e56b2 type Module\n\n\n",
+   "seconds": 2.658764285966754,
+   "returncode": 0,
+   "error": null
+  },
+  "module:ariadne/__init__.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/mirumee__ariadne-1138/module/ariadne___init__.py-df2f4b",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/mirumee__ariadne-1138/module/ariadne___init__.py-df2f4b type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "ariadne___init__.py-df2f4b",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 4,
+       "raw": "ariadne___init__.py-df2f4b moduleChangeMonthsInWindow 4"
+      },
+      {
+       "subject": "ariadne___init__.py-df2f4b",
+       "prop": "type",
+       "value": "Module",
+       "raw": "ariadne___init__.py-df2f4b type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "ariadne___init__.py-df2f4b moduleChangeMonthsInWindow 4\nA_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\nariadne___init__.py-df2f4b type Module\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\nOftenChangedModule subClassOf ActiveModule"
+    }
+   ],
+   "raw_text": "Axiom: ariadne___init__.py-df2f4b type ActiveModule\n\nExplanation(s): \n1)   ariadne___init__.py-df2f4b moduleChangeMonthsInWindow 4\n     A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     ariadne___init__.py-df2f4b type Module\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     OftenChangedModule subClassOf ActiveModule\n\n\n",
+   "seconds": 2.625564371002838,
+   "returncode": 0,
+   "error": null
+  },
+  "module:ariadne/extensions.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/mirumee__ariadne-1138/module/ariadne_extensions.py-6afabb",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/mirumee__ariadne-1138/module/ariadne_extensions.py-6afabb type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "ariadne_extensions.py-6afabb",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 3,
+       "raw": "ariadne_extensions.py-6afabb moduleChangeMonthsInWindow 3"
+      },
+      {
+       "subject": "ariadne_extensions.py-6afabb",
+       "prop": "type",
+       "value": "Module",
+       "raw": "ariadne_extensions.py-6afabb type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "ariadne_extensions.py-6afabb moduleChangeMonthsInWindow 3\nA_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\nariadne_extensions.py-6afabb type Module\nOftenChangedModule subClassOf ActiveModule"
+    }
+   ],
+   "raw_text": "Axiom: ariadne_extensions.py-6afabb type ActiveModule\n\nExplanation(s): \n1)   ariadne_extensions.py-6afabb moduleChangeMonthsInWindow 3\n     A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     ariadne_extensions.py-6afabb type Module\n     OftenChangedModule subClassOf ActiveModule\n\n\n",
+   "seconds": 2.6398601310211234,
+   "returncode": 0,
+   "error": null
+  },
+  "module:tests_mypy": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/mirumee__ariadne-1138/module/tests_mypy-106807",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/mirumee__ariadne-1138/module/tests_mypy-106807 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "tests_mypy-106807",
+       "prop": "type",
+       "value": "Module",
+       "raw": "tests_mypy-106807 type Module"
+      },
+      {
+       "subject": "tests_mypy-106807",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 3,
+       "raw": "tests_mypy-106807 moduleChangeMonthsInWindow 3"
+      }
+     ],
+     "closures": [],
+     "raw": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\ntests_mypy-106807 type Module\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\nOftenChangedModule subClassOf ActiveModule\ntests_mypy-106807 moduleChangeMonthsInWindow 3"
+    }
+   ],
+   "raw_text": "Axiom: tests_mypy-106807 type ActiveModule\n\nExplanation(s): \n1)   A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     tests_mypy-106807 type Module\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     OftenChangedModule subClassOf ActiveModule\n     tests_mypy-106807 moduleChangeMonthsInWindow 3\n\n\n",
+   "seconds": 2.609349456964992,
+   "returncode": 0,
+   "error": null
+  }
+ },
+ "timings": {
+  "t_clone": 0.004,
+  "t_mine": 3.969,
+  "t_loc": 1.986,
+  "t_reason_A": 6.36,
+  "mining_cached": false,
+  "t_modules": 1.573,
+  "t_reason_B": 4.981,
+  "n_configs": 1,
+  "t_explain": 125.235,
+  "n_explain_calls": 34,
+  "t_writeback": 0.0,
+  "t_total": 146.201
+ }
+}

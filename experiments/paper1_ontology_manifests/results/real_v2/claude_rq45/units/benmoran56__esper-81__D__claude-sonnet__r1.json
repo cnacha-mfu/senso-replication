@@ -1,0 +1,111 @@
+{
+ "unit_id": "benmoran56__esper-81__D__claude-sonnet__r1",
+ "task_id": "benmoran56__esper-81",
+ "repo": "benmoran56/esper",
+ "stage": "evolution",
+ "condition": "D",
+ "model": "claude-code/sonnet",
+ "run": 1,
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 3274,
+  "sha256": "bf39791881263f8fee0db428dfa2256893a707db7f3ab46efab5fa1aa391e1a8"
+ },
+ "started": "2026-10-18T05:05:50.069723+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 3,
+ "tool_calls": 2,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 10761,
+  "cache_read_input_tokens": 48851,
+  "output_tokens": 927,
+  "output_tokens_details": {
+   "thinking_tokens": 226
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 10761,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 927,
+   "cacheReadInputTokens": 48851,
+   "cacheCreationInputTokens": 10761,
+   "webSearchRequests": 0,
+   "costUSD": 0.0572111,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 226,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.0572111,
+ "result_text": "`create_entity()` now registers the entity even when you pass no components, so `world.entity_exists(entity)` is `True` for an empty entity. The change is in `esper/__init__.py`: the `if entity not in self._entities` check now runs once before the component loop, not inside it.\n\nTwo existing tests fail now: `test_delete_entity` and `test_entity_exists`. The other 28 pass. Both tests assume an entity created with no components doesn't exist, which is the behavior the issue calls a bug. They will need updating, and I left them alone as instructed.\n\nI did not touch the other point in the issue. `add_component()` still creates a missing entity instead of raising `KeyError`. Changing that would break existing callers that rely on it, so I kept this fix to the reported bug.\n\n`remove_component()` also still deletes an entity once its last component is removed. That's inconsistent with empty entities now being valid. Say if you want either of those changed too.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792309800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0.09,
+    "resetsAt": 1792309800
+   },
+   "seven_day": {
+    "utilization": 0.12,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 62.8,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 3,
+   "hit_step_limit": 0,
+   "changed_lines": 6,
+   "gold_changed_lines": 9,
+   "Y1": 0,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": -0.5849625007211563
+  },
+  "f2p_pass": 2,
+  "f2p_total": 3,
+  "p2p_pass": 31,
+  "p2p_total": 31,
+  "f2p_all_pass": false,
+  "p2p_all_pass": true,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 0.9
+ },
+ "status": "done",
+ "finished": "2026-10-18T05:06:54.527807+00:00"
+}

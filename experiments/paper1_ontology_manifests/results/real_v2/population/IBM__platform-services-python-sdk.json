@@ -1,0 +1,1962 @@
+{
+ "repo": "IBM/platform-services-python-sdk",
+ "snapshot_date": "2025-06-30",
+ "status": "ok",
+ "unmineable": false,
+ "unmineable_reason": null,
+ "replaces": null,
+ "settings": {
+  "dedup": true,
+  "complexity": false,
+  "dataset": "seo_v2",
+  "sensitivity": true
+ },
+ "versions": {
+  "owlready2": "0.51",
+  "pymannkendall": "1.4.3",
+  "lizard": "1.24.1",
+  "numpy": "2.5.3",
+  "scipy": "1.18.1",
+  "python": "3.12.15",
+  "git": "git version 2.53.0"
+ },
+ "measures": {
+  "monthsObserved": 36,
+  "monthsSinceLastCommit": 0,
+  "distinctAuthorsInWindow": 28,
+  "commitMKTau": -0.087302,
+  "commitMKpValue": 0.458453,
+  "activeMonthCount": 34,
+  "activeMonthRatio": 0.944444,
+  "meanMonthlyCommits": 8.0,
+  "commitsLast3Months": 15,
+  "commitCountCV": 0.652852,
+  "commitCountCVSample": 0.662112,
+  "commitHalfRatio": 0.882353,
+  "commitSecondHalfMean": 7.5,
+  "churnCV": 1.462601,
+  "linesAddedCV": 1.502423,
+  "mergeMonthRatio": 0.0,
+  "multiAuthorMonthRatio": 0.888889,
+  "bugFixRatioFirstHalf": 0.142402,
+  "bugFixRatioSecondHalf": 0.156148,
+  "bugFixHalfRatio": 1.096529,
+  "locSeriesLength": 36,
+  "locRelSenSlopeAnnual": 0.143445,
+  "locMKTau": 0.861905,
+  "locMKS": 543,
+  "locMKpValue": 0.0,
+  "locSenSlope": 1592.291667,
+  "locStart": 104291,
+  "locEnd": 153629,
+  "locDelta": 49338,
+  "locGrowthRate": 0.47308,
+  "locChangePct": 47.308013,
+  "locEndToStartRatio": 1.47308,
+  "locGrowthLast3": 0.035808,
+  "featureCommitsFirstHalf": 23,
+  "featureCommitsSecondHalf": 18,
+  "featureCommitsTotal": 41,
+  "featureSecondToFirstRatio": 0.782609,
+  "locDeltaPerFeature": 1203.365854,
+  "recentAgentCommitRatio": 0.0,
+  "featCommitCount": 41,
+  "bugFixCommitCount": 50,
+  "commitCount": 288,
+  "monthly_series": {
+   "months": [
+    "2021-07",
+    "2021-08",
+    "2021-09",
+    "2021-10",
+    "2021-11",
+    "2021-12",
+    "2022-01",
+    "2022-02",
+    "2022-03",
+    "2022-04",
+    "2022-05",
+    "2022-06",
+    "2022-07",
+    "2022-08",
+    "2022-09",
+    "2022-10",
+    "2022-11",
+    "2022-12",
+    "2023-01",
+    "2023-02",
+    "2023-03",
+    "2023-04",
+    "2023-05",
+    "2023-06",
+    "2023-07",
+    "2023-08",
+    "2023-09",
+    "2023-10",
+    "2023-11",
+    "2023-12",
+    "2024-01",
+    "2024-02",
+    "2024-03",
+    "2024-04",
+    "2024-05",
+    "2024-06",
+    "2024-07",
+    "2024-08",
+    "2024-09",
+    "2024-10",
+    "2024-11",
+    "2024-12",
+    "2025-01",
+    "2025-02",
+    "2025-03",
+    "2025-04",
+    "2025-05",
+    "2025-06"
+   ],
+   "commits": [
+    4,
+    6,
+    10,
+    14,
+    11,
+    6,
+    1,
+    7,
+    3,
+    10,
+    3,
+    5,
+    3,
+    5,
+    0,
+    17,
+    13,
+    9,
+    7,
+    3,
+    8,
+    16,
+    3,
+    6,
+    6,
+    10,
+    19,
+    10,
+    12,
+    6,
+    12,
+    11,
+    10,
+    19,
+    3,
+    6,
+    16,
+    6,
+    6,
+    9,
+    1,
+    0,
+    6,
+    1,
+    14,
+    3,
+    9,
+    3
+   ],
+   "loc": [
+    89916,
+    89916,
+    93679,
+    99319,
+    99477,
+    102772,
+    102772,
+    102777,
+    102777,
+    104175,
+    104175,
+    104152,
+    104291,
+    105150,
+    105150,
+    98749,
+    96288,
+    96913,
+    100659,
+    102040,
+    102424,
+    103298,
+    103298,
+    105520,
+    106505,
+    123254,
+    132045,
+    132609,
+    132745,
+    133077,
+    133332,
+    137506,
+    137397,
+    141351,
+    141374,
+    141587,
+    142038,
+    143978,
+    144061,
+    143458,
+    143458,
+    143458,
+    143458,
+    143458,
+    148223,
+    148318,
+    153629,
+    153629
+   ]
+  }
+ },
+ "window": {
+  "L": 36,
+  "first_month": "2022-07",
+  "last_month": "2025-06",
+  "n_months": 36,
+  "left_truncated": false,
+  "first_commit_month": "2020-03",
+  "mined_months": 48,
+  "commits_in_window": 288,
+  "commits_in_history": 663
+ },
+ "loc_instrument": {
+  "instrument": "nonblank-source-lines-v1",
+  "status": "ok",
+  "months": 48,
+  "month_end_commits_distinct": 45,
+  "source_blobs": 627,
+  "blobs_fetched": 1,
+  "t_ls_tree_s": 0.4971092459745705,
+  "t_fetch_s": 0.9336956610204652,
+  "t_read_s": 0.662816587020643,
+  "series_present": true,
+  "extensions": [
+   ".bash",
+   ".c",
+   ".cc",
+   ".cjs",
+   ".clj",
+   ".cpp",
+   ".cs",
+   ".cxx",
+   ".dart",
+   ".erl",
+   ".ex",
+   ".exs",
+   ".f90",
+   ".go",
+   ".groovy",
+   ".h",
+   ".hh",
+   ".hpp",
+   ".hs",
+   ".java",
+   ".jl",
+   ".js",
+   ".jsx",
+   ".kt",
+   ".kts",
+   ".lua",
+   ".m",
+   ".mjs",
+   ".ml",
+   ".mm",
+   ".nim",
+   ".php",
+   ".pl",
+   ".pm",
+   ".py",
+   ".pyi",
+   ".r",
+   ".rb",
+   ".rs",
+   ".scala",
+   ".sh",
+   ".sql",
+   ".svelte",
+   ".swift",
+   ".ts",
+   ".tsx",
+   ".vue",
+   ".zig"
+  ],
+  "excluded_dirs": [
+   "node_modules",
+   "vendor",
+   "vendored",
+   "third_party",
+   "site-packages",
+   "bower_components"
+  ],
+  "max_blob_bytes": 1000000,
+  "first_parent": true
+ },
+ "mining": {
+  "churn": {
+   "t_churn_raw_s": 0.12358003202825785,
+   "t_churn_fetch_s": 5.1029079929576255,
+   "t_churn_numstat_s": 0.7038231660262682,
+   "blobs_fetched_churn": 812
+  },
+  "timings": {
+   "t_clone": 1.691,
+   "t_mine": 7.665,
+   "t_loc": 2.094,
+   "t_reason_A": 2.63
+  },
+  "cached": false
+ },
+ "stage_a": {
+  "commits": 368,
+  "reasoned_commits": 368,
+  "inconsistent_chunks": 0,
+  "chunk_timings": [
+   {
+    "tbox_load_s": 0.03646758000832051,
+    "abox_load_s": 0.048643038026057184,
+    "reason_s": 2.5296037329826504,
+    "extract_s": 0.004946621018461883,
+    "total_s": 2.6199674530071206,
+    "commits": 368
+   }
+  ],
+  "tbox_sha256": "da30ed577542b3643ecf06cb6a4649ccc8fce61ab7a0373beabd763e12883e86"
+ },
+ "activity": {
+  "last_commit_date": "2025-06-12T16:20:52+00:00",
+  "months_since_last_commit": 0,
+  "distinct_authors_in_window": 28,
+  "merge_commits_in_window": 0
+ },
+ "agent_adoption_date": null,
+ "commit_label_counts": {
+  "BugFixCommit": 50,
+  "FeatureCommit": 41,
+  "AgentCommit": 0
+ },
+ "series_months": [
+  {
+   "month": "2022-07",
+   "commit_count": 3,
+   "merge_count": 0,
+   "unique_authors": 2,
+   "lines_added": 162,
+   "lines_deleted": 4,
+   "total_churn": 166,
+   "files_changed": 6,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 104291,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-08",
+   "commit_count": 5,
+   "merge_count": 0,
+   "unique_authors": 4,
+   "lines_added": 1074,
+   "lines_deleted": 30,
+   "total_churn": 1104,
+   "files_changed": 7,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 105150,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-09",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 105150,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-10",
+   "commit_count": 17,
+   "merge_count": 0,
+   "unique_authors": 4,
+   "lines_added": 1687,
+   "lines_deleted": 9354,
+   "total_churn": 11041,
+   "files_changed": 64,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 98749,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-11",
+   "commit_count": 13,
+   "merge_count": 0,
+   "unique_authors": 4,
+   "lines_added": 15528,
+   "lines_deleted": 17142,
+   "total_churn": 32670,
+   "files_changed": 106,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 96288,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-12",
+   "commit_count": 9,
+   "merge_count": 0,
+   "unique_authors": 3,
+   "lines_added": 5094,
+   "lines_deleted": 4394,
+   "total_churn": 9488,
+   "files_changed": 16,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 96913,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-01",
+   "commit_count": 7,
+   "merge_count": 0,
+   "unique_authors": 4,
+   "lines_added": 5244,
+   "lines_deleted": 758,
+   "total_churn": 6002,
+   "files_changed": 12,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 100659,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-02",
+   "commit_count": 3,
+   "merge_count": 0,
+   "unique_authors": 2,
+   "lines_added": 1755,
+   "lines_deleted": 99,
+   "total_churn": 1854,
+   "files_changed": 6,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 102040,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-03",
+   "commit_count": 8,
+   "merge_count": 0,
+   "unique_authors": 4,
+   "lines_added": 877,
+   "lines_deleted": 523,
+   "total_churn": 1400,
+   "files_changed": 47,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 102424,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-04",
+   "commit_count": 16,
+   "merge_count": 0,
+   "unique_authors": 6,
+   "lines_added": 1815,
+   "lines_deleted": 864,
+   "total_churn": 2679,
+   "files_changed": 30,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 103298,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-05",
+   "commit_count": 3,
+   "merge_count": 0,
+   "unique_authors": 2,
+   "lines_added": 2,
+   "lines_deleted": 2,
+   "total_churn": 4,
+   "files_changed": 2,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 103298,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-06",
+   "commit_count": 6,
+   "merge_count": 0,
+   "unique_authors": 3,
+   "lines_added": 2705,
+   "lines_deleted": 282,
+   "total_churn": 2987,
+   "files_changed": 10,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 105520,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-07",
+   "commit_count": 6,
+   "merge_count": 0,
+   "unique_authors": 4,
+   "lines_added": 1309,
+   "lines_deleted": 329,
+   "total_churn": 1638,
+   "files_changed": 7,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 106505,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-08",
+   "commit_count": 10,
+   "merge_count": 0,
+   "unique_authors": 4,
+   "lines_added": 23419,
+   "lines_deleted": 4002,
+   "total_churn": 27421,
+   "files_changed": 15,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 123254,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-09",
+   "commit_count": 19,
+   "merge_count": 0,
+   "unique_authors": 8,
+   "lines_added": 12978,
+   "lines_deleted": 2859,
+   "total_churn": 15837,
+   "files_changed": 36,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 132045,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-10",
+   "commit_count": 10,
+   "merge_count": 0,
+   "unique_authors": 4,
+   "lines_added": 1450,
+   "lines_deleted": 852,
+   "total_churn": 2302,
+   "files_changed": 35,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 132609,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-11",
+   "commit_count": 12,
+   "merge_count": 0,
+   "unique_authors": 5,
+   "lines_added": 742,
+   "lines_deleted": 576,
+   "total_churn": 1318,
+   "files_changed": 22,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 132745,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-12",
+   "commit_count": 6,
+   "merge_count": 0,
+   "unique_authors": 3,
+   "lines_added": 391,
+   "lines_deleted": 8,
+   "total_churn": 399,
+   "files_changed": 8,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 133077,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-01",
+   "commit_count": 12,
+   "merge_count": 0,
+   "unique_authors": 4,
+   "lines_added": 507,
+   "lines_deleted": 223,
+   "total_churn": 730,
+   "files_changed": 22,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 133332,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-02",
+   "commit_count": 11,
+   "merge_count": 0,
+   "unique_authors": 4,
+   "lines_added": 5464,
+   "lines_deleted": 591,
+   "total_churn": 6055,
+   "files_changed": 18,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 137506,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-03",
+   "commit_count": 10,
+   "merge_count": 0,
+   "unique_authors": 5,
+   "lines_added": 2899,
+   "lines_deleted": 2985,
+   "total_churn": 5884,
+   "files_changed": 39,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 137397,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-04",
+   "commit_count": 19,
+   "merge_count": 0,
+   "unique_authors": 6,
+   "lines_added": 8205,
+   "lines_deleted": 3717,
+   "total_churn": 11922,
+   "files_changed": 29,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 141351,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-05",
+   "commit_count": 3,
+   "merge_count": 0,
+   "unique_authors": 2,
+   "lines_added": 27,
+   "lines_deleted": 2,
+   "total_churn": 29,
+   "files_changed": 4,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 141374,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-06",
+   "commit_count": 6,
+   "merge_count": 0,
+   "unique_authors": 3,
+   "lines_added": 390,
+   "lines_deleted": 149,
+   "total_churn": 539,
+   "files_changed": 10,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 141587,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-07",
+   "commit_count": 16,
+   "merge_count": 0,
+   "unique_authors": 5,
+   "lines_added": 2069,
+   "lines_deleted": 1730,
+   "total_churn": 3799,
+   "files_changed": 17,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 142038,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-08",
+   "commit_count": 6,
+   "merge_count": 0,
+   "unique_authors": 3,
+   "lines_added": 2614,
+   "lines_deleted": 390,
+   "total_churn": 3004,
+   "files_changed": 13,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 143978,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-09",
+   "commit_count": 6,
+   "merge_count": 0,
+   "unique_authors": 3,
+   "lines_added": 186,
+   "lines_deleted": 83,
+   "total_churn": 269,
+   "files_changed": 3,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 144061,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-10",
+   "commit_count": 9,
+   "merge_count": 0,
+   "unique_authors": 4,
+   "lines_added": 4101,
+   "lines_deleted": 4849,
+   "total_churn": 8950,
+   "files_changed": 18,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 143458,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-11",
+   "commit_count": 1,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 143458,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-12",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 143458,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2025-01",
+   "commit_count": 6,
+   "merge_count": 0,
+   "unique_authors": 2,
+   "lines_added": 1,
+   "lines_deleted": 1,
+   "total_churn": 2,
+   "files_changed": 1,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 143458,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2025-02",
+   "commit_count": 1,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 927,
+   "lines_deleted": 920,
+   "total_churn": 1847,
+   "files_changed": 3,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 143458,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2025-03",
+   "commit_count": 14,
+   "merge_count": 0,
+   "unique_authors": 5,
+   "lines_added": 9909,
+   "lines_deleted": 4513,
+   "total_churn": 14422,
+   "files_changed": 19,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 148223,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2025-04",
+   "commit_count": 3,
+   "merge_count": 0,
+   "unique_authors": 2,
+   "lines_added": 125,
+   "lines_deleted": 17,
+   "total_churn": 142,
+   "files_changed": 5,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 148318,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2025-05",
+   "commit_count": 9,
+   "merge_count": 0,
+   "unique_authors": 4,
+   "lines_added": 6887,
+   "lines_deleted": 762,
+   "total_churn": 7649,
+   "files_changed": 11,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 153629,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2025-06",
+   "commit_count": 3,
+   "merge_count": 0,
+   "unique_authors": 2,
+   "lines_added": 8,
+   "lines_deleted": 8,
+   "total_churn": 16,
+   "files_changed": 8,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 153629,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  }
+ ],
+ "measures_derived": {
+  "bugFixRatioFirstHalf": 0.142402,
+  "bugFixRatioSecondHalf": 0.156148,
+  "bugFixHalfRatio": 1.096529,
+  "featureCommitsFirstHalf": 23,
+  "featureCommitsSecondHalf": 18,
+  "featureCommitsTotal": 41,
+  "featureSecondToFirstRatio": 0.782609,
+  "locDeltaPerFeature": 1203.365854,
+  "recentAgentCommitRatio": 0.0
+ },
+ "inferred": {
+  "a0.05_L36_D12_G0.05_orig": {
+   "classes": [
+    "CopyPasteEvidence",
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIIConformant",
+    "LawIVConformant",
+    "LawVConformant",
+    "LawVIConformant",
+    "LawVIIConformant",
+    "LawVIIConformantRatio",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantNoMerge",
+    "LocPerFeatureHigh",
+    "MKApplicable",
+    "MergeInactive",
+    "MultiAuthorActive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": "urn:senso:explanations:IBM/platform-services-python-sdk:79f851de895e",
+   "tbox_sha256": "79f851de895e8301073d1746931d8ac1d34e4ed2e94897358fca050d9d07b63c",
+   "abox_triples": 41,
+   "t_reason_B_s": 1.943
+  },
+  "a0.01_L36_D12_G0.05_orig": {
+   "classes": [
+    "CopyPasteEvidence",
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIIConformant",
+    "LawIVConformant",
+    "LawVConformant",
+    "LawVIConformant",
+    "LawVIIConformant",
+    "LawVIIConformantRatio",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantNoMerge",
+    "LocPerFeatureHigh",
+    "MKApplicable",
+    "MergeInactive",
+    "MultiAuthorActive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "956579a8859000216eba261c78e4795a2b5042e7edf95419211fd46e9dbeada9",
+   "abox_triples": 41,
+   "t_reason_B_s": 1.821
+  },
+  "a0.1_L36_D12_G0.05_orig": {
+   "classes": [
+    "CopyPasteEvidence",
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIIConformant",
+    "LawIVConformant",
+    "LawVConformant",
+    "LawVIConformant",
+    "LawVIIConformant",
+    "LawVIIConformantRatio",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantNoMerge",
+    "LocPerFeatureHigh",
+    "MKApplicable",
+    "MergeInactive",
+    "MultiAuthorActive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "56009aa92bf68560113e153a97a62cd0cfdea303607eb909725e8e10a2536494",
+   "abox_triples": 41,
+   "t_reason_B_s": 1.903
+  },
+  "a0.05_L24_D12_G0.05_orig": {
+   "classes": [
+    "CopyPasteEvidence",
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIIConformant",
+    "LawIVConformant",
+    "LawVConformant",
+    "LawVIConformant",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantNoMerge",
+    "LawVIINonConformant",
+    "LocPerFeatureHigh",
+    "MKApplicable",
+    "MergeInactive",
+    "MultiAuthorActive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "79f851de895e8301073d1746931d8ac1d34e4ed2e94897358fca050d9d07b63c",
+   "abox_triples": 41,
+   "t_reason_B_s": 1.838
+  },
+  "a0.05_L48_D12_G0.05_orig": {
+   "classes": [
+    "CopyPasteEvidence",
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIIConformant",
+    "LawIVConformant",
+    "LawVConformant",
+    "LawVIConformant",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantNoMerge",
+    "LawVIINonConformant",
+    "LocPerFeatureHigh",
+    "MKApplicable",
+    "MergeInactive",
+    "MultiAuthorActive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "79f851de895e8301073d1746931d8ac1d34e4ed2e94897358fca050d9d07b63c",
+   "abox_triples": 41,
+   "t_reason_B_s": 1.842
+  },
+  "a0.05_L36_D6_G0.05_orig": {
+   "classes": [
+    "CopyPasteEvidence",
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIIConformant",
+    "LawIVConformant",
+    "LawVConformant",
+    "LawVIConformant",
+    "LawVIIConformant",
+    "LawVIIConformantRatio",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantNoMerge",
+    "LocPerFeatureHigh",
+    "MKApplicable",
+    "MergeInactive",
+    "MultiAuthorActive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "a19e7e45f521324fec6b19741e2a4f08e5d15efd8e05802851c45a87515a7761",
+   "abox_triples": 41,
+   "t_reason_B_s": 2.018
+  },
+  "a0.05_L36_D18_G0.05_orig": {
+   "classes": [
+    "CopyPasteEvidence",
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIIConformant",
+    "LawIVConformant",
+    "LawVConformant",
+    "LawVIConformant",
+    "LawVIIConformant",
+    "LawVIIConformantRatio",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantNoMerge",
+    "LocPerFeatureHigh",
+    "MKApplicable",
+    "MergeInactive",
+    "MultiAuthorActive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "f87900e0c68335fbd2cae9848efdc2926406c328fb39da8e6e393bb472a68fdc",
+   "abox_triples": 41,
+   "t_reason_B_s": 2.207
+  },
+  "a0.05_L36_D24_G0.05_orig": {
+   "classes": [
+    "CopyPasteEvidence",
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIIConformant",
+    "LawIVConformant",
+    "LawVConformant",
+    "LawVIConformant",
+    "LawVIIConformant",
+    "LawVIIConformantRatio",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantNoMerge",
+    "LocPerFeatureHigh",
+    "MKApplicable",
+    "MergeInactive",
+    "MultiAuthorActive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "562211ba220cda59299aec70f3561ba96eadd88adaf45f6f7db3fce71cdcc77b",
+   "abox_triples": 41,
+   "t_reason_B_s": 2.245
+  },
+  "a0.05_L36_D12_G0_orig": {
+   "classes": [
+    "CopyPasteEvidence",
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIIConformant",
+    "LawIVConformant",
+    "LawVConformant",
+    "LawVIConformant",
+    "LawVIIConformant",
+    "LawVIIConformantRatio",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantNoMerge",
+    "LocPerFeatureHigh",
+    "MKApplicable",
+    "MergeInactive",
+    "MultiAuthorActive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "c0de0e8b2e7424d23b10ed152acd4ff66c2f1a973196b7e54f6598e9d734d0dc",
+   "abox_triples": 41,
+   "t_reason_B_s": 2.026
+  },
+  "a0.05_L36_D12_G0.02_orig": {
+   "classes": [
+    "CopyPasteEvidence",
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIIConformant",
+    "LawIVConformant",
+    "LawVConformant",
+    "LawVIConformant",
+    "LawVIIConformant",
+    "LawVIIConformantRatio",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantNoMerge",
+    "LocPerFeatureHigh",
+    "MKApplicable",
+    "MergeInactive",
+    "MultiAuthorActive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "2c6613dd6b3e4fa714d92eaa067f02157466a4b3ee0ccf6de289441d860de28d",
+   "abox_triples": 41,
+   "t_reason_B_s": 2.319
+  },
+  "a0.05_L36_D12_G0.1_orig": {
+   "classes": [
+    "CopyPasteEvidence",
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIIConformant",
+    "LawIVConformant",
+    "LawVConformant",
+    "LawVIConformant",
+    "LawVIIConformant",
+    "LawVIIConformantRatio",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantNoMerge",
+    "LocPerFeatureHigh",
+    "MKApplicable",
+    "MergeInactive",
+    "MultiAuthorActive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "0cfde802b4494fc33a5ad0eb910980aaf152093f62848406bdc37bc099347936",
+   "abox_triples": 41,
+   "t_reason_B_s": 2.098
+  },
+  "a0.05_L36_D12_G0.05_hr": {
+   "classes": [
+    "CopyPasteEvidence",
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIIConformant",
+    "LawIVConformant",
+    "LawVConformant",
+    "LawVIConformant",
+    "LawVIIConformant",
+    "LawVIIConformantRatio",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantNoMerge",
+    "LocPerFeatureHigh",
+    "MKApplicable",
+    "MergeInactive",
+    "MultiAuthorActive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "79f851de895e8301073d1746931d8ac1d34e4ed2e94897358fca050d9d07b63c",
+   "abox_triples": 41,
+   "t_reason_B_s": 2.416
+  }
+ },
+ "primary_config": "a0.05_L36_D12_G0.05_orig",
+ "project_iri": "http://senso-framework.org/data/IBM_platform-services-python-sdk",
+ "consistent": true,
+ "inferred_labels": [
+  "CopyPasteEvidence",
+  "GrowthStage",
+  "LawIConformant",
+  "LawIIIConformant",
+  "LawIVConformant",
+  "LawVConformant",
+  "LawVIConformant",
+  "LawVIIConformant",
+  "LawVIIConformantRatio",
+  "LawVIIINonConformant",
+  "LawVIIINonConformantNoMerge",
+  "LocPerFeatureHigh",
+  "MKApplicable",
+  "MergeInactive",
+  "MultiAuthorActive",
+  "RBActiveDevelopmentStage",
+  "RecentlyActive",
+  "SubstantialLocGrowth"
+ ],
+ "stage_labels": [
+  "GrowthStage",
+  "RBActiveDevelopmentStage"
+ ],
+ "law_labels": {
+  "I": "LawIConformant",
+  "III": "LawIIIConformant",
+  "IV": "LawIVConformant",
+  "V": "LawVConformant",
+  "VI": "LawVIConformant",
+  "VII": "LawVIIConformant",
+  "VIII": "LawVIIINonConformant"
+ },
+ "tbox_sha256_stage_b": "79f851de895e8301073d1746931d8ac1d34e4ed2e94897358fca050d9d07b63c",
+ "tbox_sha256_stage_a": "da30ed577542b3643ecf06cb6a4649ccc8fce61ab7a0373beabd763e12883e86",
+ "summary": {
+  "c1": "A",
+  "c2": "A",
+  "cf": "A",
+  "note": "debug summary; run_rq1_v2.py reads `inferred` and recomputes CF itself"
+ },
+ "explanations": {
+  "stage:GrowthStage": {
+   "class": "GrowthStage",
+   "target": "http://senso-framework.org/data/IBM_platform-services-python-sdk type http://senso-framework.org/ontology/seo#GrowthStage",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKTau_gt_0",
+       "text": "A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKpValue_lt_mk_alpha",
+       "text": "A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]"
+      },
+      {
+       "kind": "definition",
+       "subject": "GrowthStage",
+       "text": "GrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "IBM_platform-services-python-sdk",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "IBM_platform-services-python-sdk type SoftwareProject"
+      },
+      {
+       "subject": "IBM_platform-services-python-sdk",
+       "prop": "locMKTau",
+       "value": 0.861905,
+       "raw": "IBM_platform-services-python-sdk locMKTau 0.861905"
+      },
+      {
+       "subject": "IBM_platform-services-python-sdk",
+       "prop": "locSeriesLength",
+       "value": 36,
+       "raw": "IBM_platform-services-python-sdk locSeriesLength 36"
+      },
+      {
+       "subject": "IBM_platform-services-python-sdk",
+       "prop": "locMKpValue",
+       "value": 0.0,
+       "raw": "IBM_platform-services-python-sdk locMKpValue 0.0"
+      }
+     ],
+     "closures": [],
+     "raw": "IBM_platform-services-python-sdk type SoftwareProject\nIBM_platform-services-python-sdk locMKTau 0.861905\nA_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\nIBM_platform-services-python-sdk locSeriesLength 36\nA_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\nA_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\nGrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject\nIBM_platform-services-python-sdk locMKpValue 0.0\nA_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]"
+    }
+   ],
+   "raw_text": "Axiom: IBM_platform-services-python-sdk type GrowthStage\n\nExplanation(s): \n1)   IBM_platform-services-python-sdk type SoftwareProject\n     IBM_platform-services-python-sdk locMKTau 0.861905\n     A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\n     IBM_platform-services-python-sdk locSeriesLength 36\n     A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\n     A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\n     GrowthStage equivalentTo A_locMKTau_gt_0\n                              and A_locMKpValue_lt_mk_alpha\n                              and MKApplicable\n                              and SoftwareProject\n     IBM_platform-services-python-sdk locMKpValue 0.0\n     A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]\n\n\n",
+   "seconds": 2.458086694998201,
+   "returncode": 0,
+   "error": null
+  },
+  "stage:RBActiveDevelopmentStage": {
+   "class": "RBActiveDevelopmentStage",
+   "target": "http://senso-framework.org/data/IBM_platform-services-python-sdk type http://senso-framework.org/ontology/seo#RBActiveDevelopmentStage",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable"
+      },
+      {
+       "kind": "definition",
+       "subject": "SubstantialLocGrowth",
+       "text": "SubstantialLocGrowth equivalentTo A_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKTau_gt_0",
+       "text": "A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "GrowthStage",
+       "text": "GrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year",
+       "text": "A_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year equivalentTo locRelSenSlopeAnnual some decimal[>= 0.05]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]"
+      },
+      {
+       "kind": "definition",
+       "subject": "RBActiveDevelopmentStage",
+       "text": "RBActiveDevelopmentStage equivalentTo GrowthStage and RecentlyActive and SoftwareProject and SubstantialLocGrowth"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKpValue_lt_mk_alpha",
+       "text": "A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]"
+      },
+      {
+       "kind": "definition",
+       "subject": "RecentlyActive",
+       "text": "RecentlyActive equivalentTo A_monthsSinceLastCommit_lt_rb_dormancy_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_monthsSinceLastCommit_lt_rb_dormancy_months",
+       "text": "A_monthsSinceLastCommit_lt_rb_dormancy_months equivalentTo monthsSinceLastCommit some integer[< 12]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "IBM_platform-services-python-sdk",
+       "prop": "locMKTau",
+       "value": 0.861905,
+       "raw": "IBM_platform-services-python-sdk locMKTau 0.861905"
+      },
+      {
+       "subject": "IBM_platform-services-python-sdk",
+       "prop": "locSeriesLength",
+       "value": 36,
+       "raw": "IBM_platform-services-python-sdk locSeriesLength 36"
+      },
+      {
+       "subject": "IBM_platform-services-python-sdk",
+       "prop": "monthsSinceLastCommit",
+       "value": 0,
+       "raw": "IBM_platform-services-python-sdk monthsSinceLastCommit 0"
+      },
+      {
+       "subject": "IBM_platform-services-python-sdk",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "IBM_platform-services-python-sdk type SoftwareProject"
+      },
+      {
+       "subject": "IBM_platform-services-python-sdk",
+       "prop": "locRelSenSlopeAnnual",
+       "value": 0.143445,
+       "raw": "IBM_platform-services-python-sdk locRelSenSlopeAnnual 0.143445"
+      },
+      {
+       "subject": "IBM_platform-services-python-sdk",
+       "prop": "locMKpValue",
+       "value": 0.0,
+       "raw": "IBM_platform-services-python-sdk locMKpValue 0.0"
+      }
+     ],
+     "closures": [],
+     "raw": "IBM_platform-services-python-sdk locMKTau 0.861905\nA_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\nIBM_platform-services-python-sdk locSeriesLength 36\nSubstantialLocGrowth equivalentTo A_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year and SoftwareProject\nA_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\nIBM_platform-services-python-sdk monthsSinceLastCommit 0\nGrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject\nA_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year equivalentTo locRelSenSlopeAnnual some decimal[>= 0.05]\nA_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]\nIBM_platform-services-python-sdk type SoftwareProject\nIBM_platform-services-python-sdk locRelSenSlopeAnnual 0.143445\nRBActiveDevelopmentStage equivalentTo GrowthStage and RecentlyActive and SoftwareProject and SubstantialLocGrowth\nA_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\nIBM_platform-services-python-sdk locMKpValue 0.0\nRecentlyActive equivalentTo A_monthsSinceLastCommit_lt_rb_dormancy_months and SoftwareProject\nA_monthsSinceLastCommit_lt_rb_dormancy_months equivalentTo monthsSinceLastCommit some integer[< 12]"
+    }
+   ],
+   "raw_text": "Axiom: IBM_platform-services-python-sdk type RBActiveDevelopmentStage\n\nExplanation(s): \n1)   IBM_platform-services-python-sdk locMKTau 0.861905\n     A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\n     IBM_platform-services-python-sdk locSeriesLength 36\n     SubstantialLocGrowth equivalentTo A_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year\n                                       and SoftwareProject\n     A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\n     IBM_platform-services-python-sdk monthsSinceLastCommit 0\n     GrowthStage equivalentTo A_locMKTau_gt_0\n                              and A_locMKpValue_lt_mk_alpha\n                              and MKApplicable\n                              and SoftwareProject\n     A_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year equivalentTo locRelSenSlopeAnnual some decimal[>= 0.05]\n     A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]\n     IBM_platform-services-python-sdk type SoftwareProject\n     IBM_platform-services-python-sdk locRelSenSlopeAnnual 0.143445\n     RBActiveDevelopmentStage equivalentTo GrowthStage\n                                           and RecentlyActive\n                                           and SoftwareProject\n                                           and SubstantialLocGrowth\n     A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\n     IBM_platform-services-python-sdk locMKpValue 0.0\n     RecentlyActive equivalentTo A_monthsSinceLastCommit_lt_rb_dormancy_months\n                                 and SoftwareProject\n     A_monthsSinceLastCommit_lt_rb_dormancy_months equivalentTo monthsSinceLastCommit some integer[< 12]\n\n\n",
+   "seconds": 2.3750944120110944,
+   "returncode": 0,
+   "error": null
+  },
+  "lawI": {
+   "class": "LawIConformant",
+   "target": "http://senso-framework.org/data/IBM_platform-services-python-sdk type http://senso-framework.org/ontology/seo#LawIConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law1_min_months",
+       "text": "A_monthsObserved_ge_p_law1_min_months equivalentTo monthsObserved some integer[>= 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawIConformant",
+       "text": "LawIConformant equivalentTo A_activeMonthRatio_ge_p_law1_active_ratio and A_monthsObserved_ge_p_law1_min_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_activeMonthRatio_ge_p_law1_active_ratio",
+       "text": "A_activeMonthRatio_ge_p_law1_active_ratio equivalentTo activeMonthRatio some decimal[>= 0.5]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "IBM_platform-services-python-sdk",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "IBM_platform-services-python-sdk type SoftwareProject"
+      },
+      {
+       "subject": "IBM_platform-services-python-sdk",
+       "prop": "activeMonthRatio",
+       "value": 0.944444,
+       "raw": "IBM_platform-services-python-sdk activeMonthRatio 0.944444"
+      },
+      {
+       "subject": "IBM_platform-services-python-sdk",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "IBM_platform-services-python-sdk monthsObserved 36"
+      }
+     ],
+     "closures": [],
+     "raw": "IBM_platform-services-python-sdk type SoftwareProject\nA_monthsObserved_ge_p_law1_min_months equivalentTo monthsObserved some integer[>= 2]\nIBM_platform-services-python-sdk activeMonthRatio 0.944444\nLawIConformant equivalentTo A_activeMonthRatio_ge_p_law1_active_ratio and A_monthsObserved_ge_p_law1_min_months and SoftwareProject\nIBM_platform-services-python-sdk monthsObserved 36\nA_activeMonthRatio_ge_p_law1_active_ratio equivalentTo activeMonthRatio some decimal[>= 0.5]"
+    }
+   ],
+   "raw_text": "Axiom: IBM_platform-services-python-sdk type LawIConformant\n\nExplanation(s): \n1)   IBM_platform-services-python-sdk type SoftwareProject\n     A_monthsObserved_ge_p_law1_min_months equivalentTo monthsObserved some integer[>= 2]\n     IBM_platform-services-python-sdk activeMonthRatio 0.944444\n     LawIConformant equivalentTo A_activeMonthRatio_ge_p_law1_active_ratio\n                                 and A_monthsObserved_ge_p_law1_min_months\n                                 and SoftwareProject\n     IBM_platform-services-python-sdk monthsObserved 36\n     A_activeMonthRatio_ge_p_law1_active_ratio equivalentTo activeMonthRatio some decimal[>= 0.5]\n\n\n",
+   "seconds": 2.4023254679632373,
+   "returncode": 0,
+   "error": null
+  },
+  "lawIII": {
+   "class": "LawIIIConformant",
+   "target": "http://senso-framework.org/data/IBM_platform-services-python-sdk type http://senso-framework.org/ontology/seo#LawIIIConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law3_min_months",
+       "text": "A_monthsObserved_ge_p_law3_min_months equivalentTo monthsObserved some integer[>= 6]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawIIIConformant",
+       "text": "LawIIIConformant equivalentTo A_churnCV_lt_p_law3_churn_cv and A_monthsObserved_ge_p_law3_min_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_churnCV_lt_p_law3_churn_cv",
+       "text": "A_churnCV_lt_p_law3_churn_cv equivalentTo churnCV some decimal[< 2.0]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "IBM_platform-services-python-sdk",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "IBM_platform-services-python-sdk type SoftwareProject"
+      },
+      {
+       "subject": "IBM_platform-services-python-sdk",
+       "prop": "churnCV",
+       "value": 1.462601,
+       "raw": "IBM_platform-services-python-sdk churnCV 1.462601"
+      },
+      {
+       "subject": "IBM_platform-services-python-sdk",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "IBM_platform-services-python-sdk monthsObserved 36"
+      }
+     ],
+     "closures": [],
+     "raw": "IBM_platform-services-python-sdk type SoftwareProject\nA_monthsObserved_ge_p_law3_min_months equivalentTo monthsObserved some integer[>= 6]\nLawIIIConformant equivalentTo A_churnCV_lt_p_law3_churn_cv and A_monthsObserved_ge_p_law3_min_months and SoftwareProject\nA_churnCV_lt_p_law3_churn_cv equivalentTo churnCV some decimal[< 2.0]\nIBM_platform-services-python-sdk churnCV 1.462601\nIBM_platform-services-python-sdk monthsObserved 36"
+    }
+   ],
+   "raw_text": "Axiom: IBM_platform-services-python-sdk type LawIIIConformant\n\nExplanation(s): \n1)   IBM_platform-services-python-sdk type SoftwareProject\n     A_monthsObserved_ge_p_law3_min_months equivalentTo monthsObserved some integer[>= 6]\n     LawIIIConformant equivalentTo A_churnCV_lt_p_law3_churn_cv\n                                   and A_monthsObserved_ge_p_law3_min_months\n                                   and SoftwareProject\n     A_churnCV_lt_p_law3_churn_cv equivalentTo churnCV some decimal[< 2.0]\n     IBM_platform-services-python-sdk churnCV 1.462601\n     IBM_platform-services-python-sdk monthsObserved 36\n\n\n",
+   "seconds": 2.4215432389755733,
+   "returncode": 0,
+   "error": null
+  },
+  "lawIV": {
+   "class": "LawIVConformant",
+   "target": "http://senso-framework.org/data/IBM_platform-services-python-sdk type http://senso-framework.org/ontology/seo#LawIVConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law4_min_months",
+       "text": "A_monthsObserved_ge_p_law4_min_months equivalentTo monthsObserved some integer[>= 6]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawIVConformant",
+       "text": "LawIVConformant equivalentTo A_commitCountCV_lt_p_law4_commit_cv and A_monthsObserved_ge_p_law4_min_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_commitCountCV_lt_p_law4_commit_cv",
+       "text": "A_commitCountCV_lt_p_law4_commit_cv equivalentTo commitCountCV some decimal[< 1.5]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "IBM_platform-services-python-sdk",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "IBM_platform-services-python-sdk type SoftwareProject"
+      },
+      {
+       "subject": "IBM_platform-services-python-sdk",
+       "prop": "commitCountCV",
+       "value": 0.652852,
+       "raw": "IBM_platform-services-python-sdk commitCountCV 0.652852"
+      },
+      {
+       "subject": "IBM_platform-services-python-sdk",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "IBM_platform-services-python-sdk monthsObserved 36"
+      }
+     ],
+     "closures": [],
+     "raw": "A_monthsObserved_ge_p_law4_min_months equivalentTo monthsObserved some integer[>= 6]\nIBM_platform-services-python-sdk type SoftwareProject\nLawIVConformant equivalentTo A_commitCountCV_lt_p_law4_commit_cv and A_monthsObserved_ge_p_law4_min_months and SoftwareProject\nIBM_platform-services-python-sdk commitCountCV 0.652852\nIBM_platform-services-python-sdk monthsObserved 36\nA_commitCountCV_lt_p_law4_commit_cv equivalentTo commitCountCV some decimal[< 1.5]"
+    }
+   ],
+   "raw_text": "Axiom: IBM_platform-services-python-sdk type LawIVConformant\n\nExplanation(s): \n1)   A_monthsObserved_ge_p_law4_min_months equivalentTo monthsObserved some integer[>= 6]\n     IBM_platform-services-python-sdk type SoftwareProject\n     LawIVConformant equivalentTo A_commitCountCV_lt_p_law4_commit_cv\n                                  and A_monthsObserved_ge_p_law4_min_months\n                                  and SoftwareProject\n     IBM_platform-services-python-sdk commitCountCV 0.652852\n     IBM_platform-services-python-sdk monthsObserved 36\n     A_commitCountCV_lt_p_law4_commit_cv equivalentTo commitCountCV some decimal[< 1.5]\n\n\n",
+   "seconds": 2.4044166990206577,
+   "returncode": 0,
+   "error": null
+  },
+  "lawV": {
+   "class": "LawVConformant",
+   "target": "http://senso-framework.org/data/IBM_platform-services-python-sdk type http://senso-framework.org/ontology/seo#LawVConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "LawVConformant",
+       "text": "LawVConformant equivalentTo A_linesAddedCV_lt_p_law5_additions_cv and A_monthsObserved_ge_p_law5_min_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_linesAddedCV_lt_p_law5_additions_cv",
+       "text": "A_linesAddedCV_lt_p_law5_additions_cv equivalentTo linesAddedCV some decimal[< 2.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law5_min_months",
+       "text": "A_monthsObserved_ge_p_law5_min_months equivalentTo monthsObserved some integer[>= 4]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "IBM_platform-services-python-sdk",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "IBM_platform-services-python-sdk type SoftwareProject"
+      },
+      {
+       "subject": "IBM_platform-services-python-sdk",
+       "prop": "linesAddedCV",
+       "value": 1.502423,
+       "raw": "IBM_platform-services-python-sdk linesAddedCV 1.502423"
+      },
+      {
+       "subject": "IBM_platform-services-python-sdk",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "IBM_platform-services-python-sdk monthsObserved 36"
+      }
+     ],
+     "closures": [],
+     "raw": "IBM_platform-services-python-sdk type SoftwareProject\nIBM_platform-services-python-sdk linesAddedCV 1.502423\nLawVConformant equivalentTo A_linesAddedCV_lt_p_law5_additions_cv and A_monthsObserved_ge_p_law5_min_months and SoftwareProject\nA_linesAddedCV_lt_p_law5_additions_cv equivalentTo linesAddedCV some decimal[< 2.0]\nA_monthsObserved_ge_p_law5_min_months equivalentTo monthsObserved some integer[>= 4]\nIBM_platform-services-python-sdk monthsObserved 36"
+    }
+   ],
+   "raw_text": "Axiom: IBM_platform-services-python-sdk type LawVConformant\n\nExplanation(s): \n1)   IBM_platform-services-python-sdk type SoftwareProject\n     IBM_platform-services-python-sdk linesAddedCV 1.502423\n     LawVConformant equivalentTo A_linesAddedCV_lt_p_law5_additions_cv\n                                 and A_monthsObserved_ge_p_law5_min_months\n                                 and SoftwareProject\n     A_linesAddedCV_lt_p_law5_additions_cv equivalentTo linesAddedCV some decimal[< 2.0]\n     A_monthsObserved_ge_p_law5_min_months equivalentTo monthsObserved some integer[>= 4]\n     IBM_platform-services-python-sdk monthsObserved 36\n\n\n",
+   "seconds": 2.3374602659605443,
+   "returncode": 0,
+   "error": null
+  },
+  "lawVI": {
+   "class": "LawVIConformant",
+   "target": "http://senso-framework.org/data/IBM_platform-services-python-sdk type http://senso-framework.org/ontology/seo#LawVIConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "subclass",
+       "subject": "GrowthStage",
+       "text": "GrowthStage subClassOf LawVIConformant"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKTau_gt_0",
+       "text": "A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKpValue_lt_mk_alpha",
+       "text": "A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]"
+      },
+      {
+       "kind": "definition",
+       "subject": "GrowthStage",
+       "text": "GrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "IBM_platform-services-python-sdk",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "IBM_platform-services-python-sdk type SoftwareProject"
+      },
+      {
+       "subject": "IBM_platform-services-python-sdk",
+       "prop": "locMKTau",
+       "value": 0.861905,
+       "raw": "IBM_platform-services-python-sdk locMKTau 0.861905"
+      },
+      {
+       "subject": "IBM_platform-services-python-sdk",
+       "prop": "locSeriesLength",
+       "value": 36,
+       "raw": "IBM_platform-services-python-sdk locSeriesLength 36"
+      },
+      {
+       "subject": "IBM_platform-services-python-sdk",
+       "prop": "locMKpValue",
+       "value": 0.0,
+       "raw": "IBM_platform-services-python-sdk locMKpValue 0.0"
+      }
+     ],
+     "closures": [],
+     "raw": "IBM_platform-services-python-sdk type SoftwareProject\nIBM_platform-services-python-sdk locMKTau 0.861905\nGrowthStage subClassOf LawVIConformant\nA_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\nIBM_platform-services-python-sdk locSeriesLength 36\nA_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\nA_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\nGrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject\nIBM_platform-services-python-sdk locMKpValue 0.0\nA_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]"
+    }
+   ],
+   "raw_text": "Axiom: IBM_platform-services-python-sdk type LawVIConformant\n\nExplanation(s): \n1)   IBM_platform-services-python-sdk type SoftwareProject\n     IBM_platform-services-python-sdk locMKTau 0.861905\n     GrowthStage subClassOf LawVIConformant\n     A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\n     IBM_platform-services-python-sdk locSeriesLength 36\n     A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\n     A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\n     GrowthStage equivalentTo A_locMKTau_gt_0\n                              and A_locMKpValue_lt_mk_alpha\n                              and MKApplicable\n                              and SoftwareProject\n     IBM_platform-services-python-sdk locMKpValue 0.0\n     A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]\n\n\n",
+   "seconds": 2.3052568639977835,
+   "returncode": 0,
+   "error": null
+  },
+  "lawVII": {
+   "class": "LawVIIConformant",
+   "target": "http://senso-framework.org/data/IBM_platform-services-python-sdk type http://senso-framework.org/ontology/seo#LawVIIConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_bugFixHalfRatio_ge_p_law7_tolerance",
+       "text": "A_bugFixHalfRatio_ge_p_law7_tolerance equivalentTo bugFixHalfRatio some decimal[>= 0.9]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawVIIConformantRatio",
+       "text": "LawVIIConformantRatio equivalentTo A_activeMonthCount_ge_p_law7_min_active_months and A_bugFixHalfRatio_ge_p_law7_tolerance and A_bugFixRatioFirstHalf_gt_0 and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_bugFixRatioFirstHalf_gt_0",
+       "text": "A_bugFixRatioFirstHalf_gt_0 equivalentTo bugFixRatioFirstHalf some decimal[> 0.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_activeMonthCount_ge_p_law7_min_active_months",
+       "text": "A_activeMonthCount_ge_p_law7_min_active_months equivalentTo activeMonthCount some integer[>= 4]"
+      },
+      {
+       "kind": "subclass",
+       "subject": "LawVIIConformantRatio",
+       "text": "LawVIIConformantRatio subClassOf LawVIIConformant"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "IBM_platform-services-python-sdk",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "IBM_platform-services-python-sdk type SoftwareProject"
+      },
+      {
+       "subject": "IBM_platform-services-python-sdk",
+       "prop": "bugFixRatioFirstHalf",
+       "value": 0.142402,
+       "raw": "IBM_platform-services-python-sdk bugFixRatioFirstHalf 0.142402"
+      },
+      {
+       "subject": "IBM_platform-services-python-sdk",
+       "prop": "activeMonthCount",
+       "value": 34,
+       "raw": "IBM_platform-services-python-sdk activeMonthCount 34"
+      },
+      {
+       "subject": "IBM_platform-services-python-sdk",
+       "prop": "bugFixHalfRatio",
+       "value": 1.096529,
+       "raw": "IBM_platform-services-python-sdk bugFixHalfRatio 1.096529"
+      }
+     ],
+     "closures": [],
+     "raw": "A_bugFixHalfRatio_ge_p_law7_tolerance equivalentTo bugFixHalfRatio some decimal[>= 0.9]\nIBM_platform-services-python-sdk type SoftwareProject\nIBM_platform-services-python-sdk bugFixRatioFirstHalf 0.142402\nLawVIIConformantRatio equivalentTo A_activeMonthCount_ge_p_law7_min_active_months and A_bugFixHalfRatio_ge_p_law7_tolerance and A_bugFixRatioFirstHalf_gt_0 and SoftwareProject\nIBM_platform-services-python-sdk activeMonthCount 34\nA_bugFixRatioFirstHalf_gt_0 equivalentTo bugFixRatioFirstHalf some decimal[> 0.0]\nA_activeMonthCount_ge_p_law7_min_active_months equivalentTo activeMonthCount some integer[>= 4]\nIBM_platform-services-python-sdk bugFixHalfRatio 1.096529\nLawVIIConformantRatio subClassOf LawVIIConformant"
+    }
+   ],
+   "raw_text": "Axiom: IBM_platform-services-python-sdk type LawVIIConformant\n\nExplanation(s): \n1)   A_bugFixHalfRatio_ge_p_law7_tolerance equivalentTo bugFixHalfRatio some decimal[>= 0.9]\n     IBM_platform-services-python-sdk type SoftwareProject\n     IBM_platform-services-python-sdk bugFixRatioFirstHalf 0.142402\n     LawVIIConformantRatio equivalentTo A_activeMonthCount_ge_p_law7_min_active_months\n                                        and A_bugFixHalfRatio_ge_p_law7_tolerance\n                                        and A_bugFixRatioFirstHalf_gt_0\n                                        and SoftwareProject\n     IBM_platform-services-python-sdk activeMonthCount 34\n     A_bugFixRatioFirstHalf_gt_0 equivalentTo bugFixRatioFirstHalf some decimal[> 0.0]\n     A_activeMonthCount_ge_p_law7_min_active_months equivalentTo activeMonthCount some integer[>= 4]\n     IBM_platform-services-python-sdk bugFixHalfRatio 1.096529\n     LawVIIConformantRatio subClassOf LawVIIConformant\n\n\n",
+   "seconds": 2.3050069420132786,
+   "returncode": 0,
+   "error": null
+  },
+  "lawVIII": {
+   "class": "LawVIIINonConformant",
+   "target": "http://senso-framework.org/data/IBM_platform-services-python-sdk type http://senso-framework.org/ontology/seo#LawVIIINonConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_mergeMonthRatio_le_p_law8_merge_ratio",
+       "text": "A_mergeMonthRatio_le_p_law8_merge_ratio equivalentTo MergeInactive"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawVIIINonConformantNoMerge",
+       "text": "LawVIIINonConformantNoMerge equivalentTo A_monthsObserved_ge_p_law8_min_months and MergeInactive and SoftwareProject"
+      },
+      {
+       "kind": "subclass",
+       "subject": "LawVIIINonConformantNoMerge",
+       "text": "LawVIIINonConformantNoMerge subClassOf LawVIIINonConformant"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_mergeMonthRatio_le_p_law8_merge_ratio",
+       "text": "A_mergeMonthRatio_le_p_law8_merge_ratio equivalentTo mergeMonthRatio some decimal[<= 0.3]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law8_min_months",
+       "text": "A_monthsObserved_ge_p_law8_min_months equivalentTo monthsObserved some integer[>= 6]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "IBM_platform-services-python-sdk",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "IBM_platform-services-python-sdk type SoftwareProject"
+      },
+      {
+       "subject": "IBM_platform-services-python-sdk",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "IBM_platform-services-python-sdk monthsObserved 36"
+      },
+      {
+       "subject": "IBM_platform-services-python-sdk",
+       "prop": "mergeMonthRatio",
+       "value": 0.0,
+       "raw": "IBM_platform-services-python-sdk mergeMonthRatio 0.0"
+      }
+     ],
+     "closures": [],
+     "raw": "A_mergeMonthRatio_le_p_law8_merge_ratio equivalentTo MergeInactive\nIBM_platform-services-python-sdk type SoftwareProject\nLawVIIINonConformantNoMerge equivalentTo A_monthsObserved_ge_p_law8_min_months and MergeInactive and SoftwareProject\nLawVIIINonConformantNoMerge subClassOf LawVIIINonConformant\nIBM_platform-services-python-sdk monthsObserved 36\nA_mergeMonthRatio_le_p_law8_merge_ratio equivalentTo mergeMonthRatio some decimal[<= 0.3]\nA_monthsObserved_ge_p_law8_min_months equivalentTo monthsObserved some integer[>= 6]\nIBM_platform-services-python-sdk mergeMonthRatio 0.0"
+    }
+   ],
+   "raw_text": "Axiom: IBM_platform-services-python-sdk type LawVIIINonConformant\n\nExplanation(s): \n1)   A_mergeMonthRatio_le_p_law8_merge_ratio equivalentTo MergeInactive\n     IBM_platform-services-python-sdk type SoftwareProject\n     LawVIIINonConformantNoMerge equivalentTo A_monthsObserved_ge_p_law8_min_months\n                                              and MergeInactive\n                                              and SoftwareProject\n     LawVIIINonConformantNoMerge subClassOf LawVIIINonConformant\n     IBM_platform-services-python-sdk monthsObserved 36\n     A_mergeMonthRatio_le_p_law8_merge_ratio equivalentTo mergeMonthRatio some decimal[<= 0.3]\n     A_monthsObserved_ge_p_law8_min_months equivalentTo monthsObserved some integer[>= 6]\n     IBM_platform-services-python-sdk mergeMonthRatio 0.0\n\n\n",
+   "seconds": 2.4215805509593338,
+   "returncode": 0,
+   "error": null
+  }
+ },
+ "fuseki": {
+  "dataset": "seo_v2",
+  "graph_triples": {
+   "urn:senso:abox:IBM/platform-services-python-sdk": 388,
+   "urn:senso:commits:IBM/platform-services-python-sdk": 1730,
+   "urn:senso:abox-derived:IBM/platform-services-python-sdk": 9,
+   "urn:senso:inferred:IBM/platform-services-python-sdk:79f851de895e": 293,
+   "urn:senso:explanations:IBM/platform-services-python-sdk:79f851de895e": 178
+  }
+ },
+ "timings": {
+  "t_clone": 1.691,
+  "t_mine": 7.665,
+  "t_loc": 2.094,
+  "t_reason_A": 2.63,
+  "mining_cached": false,
+  "t_reason_B": 24.675,
+  "n_configs": 12,
+  "t_explain": 21.527,
+  "n_explain_calls": 9,
+  "t_writeback": 7.489,
+  "t_total": 66.36
+ }
+}

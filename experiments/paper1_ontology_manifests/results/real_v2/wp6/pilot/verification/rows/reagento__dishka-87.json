@@ -1,0 +1,439 @@
+{
+ "task_id": "reagento__dishka-87",
+ "claims": {
+  "T1|src/dishka": {
+   "claim": {
+    "key_str": "T1|src/dishka",
+    "tcode": "T1",
+    "attrs": {
+     "path": "src/dishka",
+     "is_dir": true,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "src/dishka/",
+    "role": "true",
+    "slot": "layout",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "exists",
+     "path": "src/dishka"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "PathFoundExact"
+   },
+   "probe": {
+    "ok": true,
+    "type": "exists"
+   },
+   "measure_error": null
+  },
+  "T1|tests": {
+   "claim": {
+    "key_str": "T1|tests",
+    "tcode": "T1",
+    "attrs": {
+     "path": "tests",
+     "is_dir": true,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "tests/",
+    "role": "true",
+    "slot": "layout",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "exists",
+     "path": "tests"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "PathFoundExact"
+   },
+   "probe": {
+    "ok": true,
+    "type": "exists"
+   },
+   "measure_error": null
+  },
+  "T1|src/dishka/_adaptix/type_tools/normalize_type.py": {
+   "claim": {
+    "key_str": "T1|src/dishka/_adaptix/type_tools/normalize_type.py",
+    "tcode": "T1",
+    "attrs": {
+     "path": "src/dishka/_adaptix/type_tools/normalize_type.py",
+     "is_dir": false,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "src/dishka/_adaptix/type_tools/normalize_type.py",
+    "role": "true",
+    "slot": "key_file",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "exists",
+     "path": "src/dishka/_adaptix/type_tools/normalize_type.py"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "PathFoundExact"
+   },
+   "probe": {
+    "ok": true,
+    "type": "exists"
+   },
+   "measure_error": null
+  },
+  "T3|test_framework|pytest": {
+   "claim": {
+    "key_str": "T3|test_framework|pytest",
+    "tcode": "T3",
+    "attrs": {
+     "tool": "pytest",
+     "category": "test_framework"
+    },
+    "quote": "python -m pytest tests",
+    "role": "true",
+    "slot": "test_cmd",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "pytest",
+     "root": "tests"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "ToolSignatureFound"
+   },
+   "probe": {
+    "ok": true,
+    "type": "pytest"
+   },
+   "measure_error": null
+  },
+  "T1|pyproject.toml": {
+   "claim": {
+    "key_str": "T1|pyproject.toml",
+    "tcode": "T1",
+    "attrs": {
+     "path": "pyproject.toml",
+     "is_dir": false,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "pyproject.toml",
+    "role": "true",
+    "slot": "install_cmd",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "exists",
+     "path": "pyproject.toml"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "PathFoundExact"
+   },
+   "probe": {
+    "ok": true,
+    "type": "exists"
+   },
+   "measure_error": null
+  },
+  "T4|exceptiongroup|": {
+   "claim": {
+    "key_str": "T4|exceptiongroup|",
+    "tcode": "T4",
+    "attrs": {
+     "name": "exceptiongroup",
+     "major": null,
+     "ecosystem_hint": "pypi"
+    },
+    "quote": "`exceptiongroup>=1.1.3`",
+    "role": "true",
+    "slot": "dep",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "import_ok",
+     "modules": [
+      "exceptiongroup"
+     ]
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "DependencyConfirmed"
+   },
+   "probe": {
+    "ok": true,
+    "type": "import_ok"
+   },
+   "measure_error": null
+  },
+  "T6|python|3010000000@2": {
+   "claim": {
+    "key_str": "T6|python|3010000000@2",
+    "tcode": "T6",
+    "attrs": {
+     "subject_type": "python",
+     "version": "3.10",
+     "code": 3010000000,
+     "precision": 2,
+     "qualifier": "min"
+    },
+    "quote": "Python: >=3.10",
+    "role": "true",
+    "slot": "python",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": null,
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "VersionConfirmed"
+   },
+   "probe": {
+    "ok": true,
+    "type": "none"
+   },
+   "measure_error": null
+  },
+  "T1|src/dishka/core": {
+   "claim": {
+    "key_str": "T1|src/dishka/core",
+    "tcode": "T1",
+    "attrs": {
+     "path": "src/dishka/core",
+     "is_dir": true,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "src/dishka/core/",
+    "role": "false",
+    "slot": "P1",
+    "kind": 1,
+    "expect_verdict": "ContradictedClaim",
+    "expect_leaves": [
+     "PathNeverExisted"
+    ],
+    "probe": {
+     "type": "absent",
+     "path": "src/dishka/core",
+     "history": "none"
+    },
+    "mode": "add"
+   },
+   "recheck": {
+    "verdict": "ContradictedClaim",
+    "leaf": "PathNeverExisted"
+   },
+   "probe": {
+    "ok": true,
+    "type": "absent",
+    "log_count": 0
+   },
+   "measure_error": null
+  },
+  "T1|src/dishka/integrations/asgi.py": {
+   "claim": {
+    "key_str": "T1|src/dishka/integrations/asgi.py",
+    "tcode": "T1",
+    "attrs": {
+     "path": "src/dishka/integrations/asgi.py",
+     "is_dir": false,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "src/dishka/integrations/asgi.py",
+    "role": "false",
+    "slot": "P2",
+    "kind": 2,
+    "expect_verdict": "ContradictedClaim",
+    "expect_leaves": [
+     "PathRemoved"
+    ],
+    "probe": {
+     "type": "absent",
+     "path": "src/dishka/integrations/asgi.py",
+     "history": "some"
+    },
+    "mode": "add"
+   },
+   "recheck": {
+    "verdict": "ContradictedClaim",
+    "leaf": "PathRemoved"
+   },
+   "probe": {
+    "ok": true,
+    "type": "absent",
+    "log_count": 4
+   },
+   "measure_error": null
+  },
+  "T4|boltons|": {
+   "claim": {
+    "key_str": "T4|boltons|",
+    "tcode": "T4",
+    "attrs": {
+     "name": "boltons",
+     "major": null,
+     "ecosystem_hint": "pypi"
+    },
+    "quote": "`boltons`",
+    "role": "false",
+    "slot": "D",
+    "kind": 4,
+    "expect_verdict": "ContradictedClaim",
+    "expect_leaves": [
+     "DependencyUndeclared"
+    ],
+    "probe": {
+     "type": "import_fail",
+     "modules": [
+      "boltons"
+     ]
+    },
+    "mode": "replace"
+   },
+   "recheck": {
+    "verdict": "ContradictedClaim",
+    "leaf": "DependencyUndeclared"
+   },
+   "probe": {
+    "ok": true,
+    "type": "import_fail"
+   },
+   "measure_error": null
+  },
+  "T1|docs/core": {
+   "claim": {
+    "key_str": "T1|docs/core",
+    "tcode": "T1",
+    "attrs": {
+     "path": "docs/core",
+     "is_dir": true,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "docs/core/",
+    "role": "false",
+    "slot": "P1",
+    "kind": 1,
+    "expect_verdict": "ContradictedClaim",
+    "expect_leaves": [
+     "PathNeverExisted"
+    ],
+    "probe": {
+     "type": "absent",
+     "path": "docs/core",
+     "history": "none"
+    },
+    "mode": "add"
+   },
+   "recheck": {
+    "verdict": "ContradictedClaim",
+    "leaf": "PathNeverExisted"
+   },
+   "probe": {
+    "ok": true,
+    "type": "absent",
+    "log_count": 0
+   },
+   "measure_error": null
+  },
+  "T1|tests/test_privider.py": {
+   "claim": {
+    "key_str": "T1|tests/test_privider.py",
+    "tcode": "T1",
+    "attrs": {
+     "path": "tests/test_privider.py",
+     "is_dir": false,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "tests/test_privider.py",
+    "role": "false",
+    "slot": "P2",
+    "kind": 2,
+    "expect_verdict": "ContradictedClaim",
+    "expect_leaves": [
+     "PathRemoved"
+    ],
+    "probe": {
+     "type": "absent",
+     "path": "tests/test_privider.py",
+     "history": "some"
+    },
+    "mode": "add"
+   },
+   "recheck": {
+    "verdict": "ContradictedClaim",
+    "leaf": "PathRemoved"
+   },
+   "probe": {
+    "ok": true,
+    "type": "absent",
+    "log_count": 6
+   },
+   "measure_error": null
+  }
+ },
+ "probe_log": {
+  "pytest:tests": {
+   "rc": 2,
+   "tail": "l\n=========================== short test summary info ============================\nERROR tests/integrations/faststream/test_faststream.py\n!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n===================== 72 tests collected, 1 error in 1.23s =====================\n"
+  },
+  "import:exceptiongroup": {
+   "rc": 0,
+   "tail": ""
+  },
+  "make:test": {
+   "rc": 0,
+   "tail": "sphinx-build -M test \"docs\" \"docs-build\"  \n"
+  },
+  "make:check": {
+   "rc": 0,
+   "tail": "sphinx-build -M check \"docs\" \"docs-build\"  \n"
+  },
+  "make:install": {
+   "rc": 0,
+   "tail": "sphinx-build -M install \"docs\" \"docs-build\"  \n"
+  },
+  "make:dev": {
+   "rc": 0,
+   "tail": "sphinx-build -M dev \"docs\" \"docs-build\"  \n"
+  },
+  "make:develop": {
+   "rc": 0,
+   "tail": "sphinx-build -M develop \"docs\" \"docs-build\"  \n"
+  },
+  "import:boltons": {
+   "rc": 1,
+   "tail": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\nModuleNotFoundError: No module named 'boltons'\n"
+  }
+ }
+}

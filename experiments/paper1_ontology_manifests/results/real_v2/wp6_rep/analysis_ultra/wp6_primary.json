@@ -1,0 +1,169 @@
+{
+ "family": "Holm across H1..H4, familywise alpha 0.05 (holm_adjusted_p)",
+ "hypotheses": [
+  {
+   "est": 26.785456645460343,
+   "se": 1608.5824687984227,
+   "p": 0.9867698153834273,
+   "ci": [
+    -3190.8585522223466,
+    3244.429465513267
+   ],
+   "df": 60,
+   "fallback": "independence",
+   "ratio": 429314954189.02106,
+   "ratio_ci": [
+    9.85967654375977e-305,
+    1.0142320547350045e+304
+   ],
+   "n_obs": 640,
+   "n_clusters": 61,
+   "family": "poisson",
+   "outcome": "Y1",
+   "contrast": "F_R_vs_T",
+   "wilcoxon": {
+    "p": 1.9005538908707498e-10,
+    "stat": 0.0,
+    "n_tasks": 80,
+    "median_diff": 0.5,
+    "mean_diff": 0.475,
+    "p_holm": 7.602215563482999e-10
+   },
+   "bootstrap_task_diff": {
+    "estimate": 0.475,
+    "ci": [
+     0.35625,
+     0.6
+    ],
+    "n_tasks": 80
+   },
+   "id": "H1",
+   "p_holm": 0.9867698153834273,
+   "reject": false,
+   "estimator_sensitive": true
+  },
+  {
+   "est": 1.222984166287755,
+   "se": 0.2887872169851101,
+   "p": 7.975997955702373e-05,
+   "ci": [
+    0.6453237251268795,
+    1.8006446074486304
+   ],
+   "df": 60,
+   "fallback": null,
+   "ratio": 3.3973107619539054,
+   "ratio_ci": [
+    1.9066041450473565,
+    6.053548369371216
+   ],
+   "n_obs": 640,
+   "n_clusters": 61,
+   "family": "poisson",
+   "outcome": "Y2",
+   "contrast": "F_R_vs_T",
+   "wilcoxon": {
+    "p": 4.684489010475982e-08,
+    "stat": 308.0,
+    "n_tasks": 80,
+    "median_diff": 0.5,
+    "mean_diff": 0.51875,
+    "p_holm": 1.4053467031427945e-07
+   },
+   "bootstrap_task_diff": {
+    "estimate": 0.51875,
+    "ci": [
+     0.34375,
+     0.7
+    ],
+    "n_tasks": 80
+   },
+   "id": "H2",
+   "p_holm": 0.0003190399182280949,
+   "reject": true,
+   "estimator_sensitive": false
+  },
+  {
+   "est": 1.152679509938384,
+   "se": 0.27292781739108124,
+   "p": 8.296211625775024e-05,
+   "ci": [
+    0.6067425912438984,
+    1.6986164286328695
+   ],
+   "df": 60,
+   "fallback": "independence",
+   "ratio": 3.166666666666662,
+   "ratio_ci": [
+    1.8344461149785183,
+    5.466379031741237
+   ],
+   "n_obs": 640,
+   "n_clusters": 61,
+   "family": "poisson",
+   "outcome": "Y1",
+   "contrast": "F_R_vs_F_I",
+   "wilcoxon": {
+    "p": 1.4112141075873288e-06,
+    "stat": 226.5,
+    "n_tasks": 80,
+    "median_diff": 0.0,
+    "mean_diff": 0.325,
+    "p_holm": 2.8224282151746576e-06
+   },
+   "bootstrap_task_diff": {
+    "estimate": 0.325,
+    "ci": [
+     0.20625,
+     0.45
+    ],
+    "n_tasks": 80
+   },
+   "id": "H3",
+   "p_holm": 0.0003190399182280949,
+   "reject": true,
+   "estimator_sensitive": false
+  },
+  {
+   "est": 0.25741252249198915,
+   "se": 0.13245319094111163,
+   "p": 0.05666022109515965,
+   "ci": [
+    -0.007533306866355394,
+    0.5223583518503336
+   ],
+   "df": 60,
+   "fallback": null,
+   "ratio": 1.2935786469942812,
+   "ratio_ci": [
+    0.9924949973703857,
+    1.6859991439685669
+   ],
+   "n_obs": 640,
+   "n_clusters": 61,
+   "family": "binomial",
+   "outcome": "resolved",
+   "contrast": "F_R_vs_T",
+   "wilcoxon": {
+    "p": 0.1521342950088653,
+    "stat": 426.0,
+    "n_tasks": 80,
+    "median_diff": 0.0,
+    "mean_diff": 0.05,
+    "p_holm": 0.1521342950088653
+   },
+   "bootstrap_task_diff": {
+    "estimate": 0.05,
+    "ci": [
+     -0.0125,
+     0.11875
+    ],
+    "n_tasks": 80
+   },
+   "id": "H4",
+   "p_holm": 0.1133204421903193,
+   "reject": false,
+   "estimator_sensitive": false
+  }
+ ]
+}

@@ -1,0 +1,47 @@
+{
+ "generated_at": "2026-10-07T00:33:23.410262+00:00",
+ "harness_commit": "0a5ade9b6be9d321937e03ef04fde968608bbc60",
+ "plan_commit": "fd75b6b216479bb35f86a7e712adb6d210c1e456",
+ "tags": {
+  "wp5-generator-freeze": "d26c36765f55781c70378d290642e9cc698d13e8",
+  "wp5-run-freeze": "5fb37ab768abbde1a71f79fb1916c9e743022161"
+ },
+ "hashes": {
+  "tasks": "6e8a0d0e1e09941f2ee7a59d2e51701723cce897d6a79699f846d8c0a4cd48bd",
+  "manifests_index": "cff7466a5719ecb0fefbbd92531e5d2b59338347ff1630958d8f4fbca9e89a8c",
+  "analysis_config": "206ec96c90a330afffd4d39c1f91d9d223a3accf2b8e3025447886e95d816a88",
+  "harness_config": "02b9b36a8494d498eeaa99fd360e947009a88ca7f178c9bab8ff2cd5ebc00a0e",
+  "prompt_template": "e6163de3ff57a49bca25612c81b8937e9b789ce0457ca7c6bc7b1e1a7268690c"
+ },
+ "agent": {
+  "mini_swe_agent": "2.4.6",
+  "step_limit": 40,
+  "wall_time_limit_seconds": 1800,
+  "temperature": 0.7,
+  "top_p": 0.95,
+  "max_tokens": 4096,
+  "models": [
+   "nvidia/nemotron-3-super-120b-a12b",
+   "google/diffusiongemma-26b-a4b-it"
+  ]
+ },
+ "seeds": {
+  "global": 20261006
+ },
+ "python": "3.12.15",
+ "full_run": {
+  "finished_utc": "2026-10-07",
+  "scheduled_units": 1108,
+  "skipped_no_B_units": 172,
+  "harness_commit_at_run_start_of_resume": "c76a95c05a08f699f30066216ca976fdba2857ea",
+  "harness_config_sha256_final": "5461ddfe8bec423b36db65495ce6a227ca55729c59af8532c980ec8b3c9514cb",
+  "ledger_sha256": {
+   "wp5_runs.jsonl": "3056a5fab47c2a8756f372c36ab29e6ebfd7fb40f3782418b5fa78f755738012",
+   "wp5_outcomes.jsonl": "392a68653f7d5df3fe013e28b09cac0cfcb847c2b435e918f596989262d0ac4f",
+   "wp5_gold_drift.json": "3afb2adb5fb6d3bf2c406f48a41326a60a923b2881145557eabf645591390c3f",
+   "wp5_outcomes_sa9.jsonl": "53fc3e96cf08534b6843013ff222a87d6668f5d3c43af515f5d64eab1b1df3f8"
+  },
+  "infra_rerun": "deviation 11 (3 runs); superseded artefacts in /home/adtgrade/research/data/wp5_superseded_infra/",
+  "note": "hashes.harness_config is the freeze-time value; it differs from harness_config_sha256_final because of deviation 10"
+ }
+}

@@ -1,0 +1,170 @@
+{
+ "repo": "managedcode/Storage",
+ "slug": "managedcode__Storage",
+ "S": "710b8bb1f1b4aab92fe2d6fc1d54f05061ca1c5a",
+ "manifest_path": "CLAUDE.md",
+ "input_sha": "cecae701896b20bbfd336cf75d4ab9dd7ce61c89ecaa293744e0b190456274f0",
+ "n_claims": 5,
+ "n_tree_files": 516,
+ "n_dep_manifests_parsed": 19,
+ "seconds": 0.1,
+ "claims": [
+  {
+   "key_str": "T1|Integraions",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "Integraions",
+   "quote": "- **Integrations** (in `Integraions/` directory):",
+   "line": 37,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "Integraions",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 55,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|Storages",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "Storages",
+   "quote": "- **Storage Providers** (in `Storages/` directory):",
+   "line": 30,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "Storages",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 98,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|Tests/ManagedCode.Storage.Tests",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "Tests/ManagedCode.Storage.Tests",
+   "quote": "Test projects follow pattern: `Tests/ManagedCode.Storage.Tests/`",
+   "line": 62,
+   "votes": 2,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "Tests/ManagedCode.Storage.Tests",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 106,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|Tests/ManagedCode.Storage.Tests/ManagedCode.Storage.Tests.csproj",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "Tests/ManagedCode.Storage.Tests/ManagedCode.Storage.Tests.csproj",
+   "quote": "- **Run single test project**: `dotnet test Tests/ManagedCode.Storage.Tests/ManagedCode.Storage.Tests.csproj`",
+   "line": 14,
+   "votes": 2,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "attrs": {
+    "path": "Tests/ManagedCode.Storage.Tests/ManagedCode.Storage.Tests.csproj",
+    "is_dir": false,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 1,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T3|test_framework|xunit",
+   "tcode": "T3",
+   "types": [
+    "ToolUsageClaim",
+    "NonPackageManagerToolClaim"
+   ],
+   "headline": true,
+   "subject": "xunit",
+   "quote": "- Uses xUnit with Shouldly",
+   "line": 60,
+   "votes": 2,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "attrs": {
+    "tool": "xunit",
+    "category": "test_framework"
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "toolSignatureHitCount": 4,
+     "toolEcosystemAnchorCount": 19,
+     "competingToolSignatureCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  }
+ ]
+}

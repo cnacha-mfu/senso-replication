@@ -1,0 +1,359 @@
+{
+ "task_id": "zopefoundation__DocumentTemplate-55",
+ "repo": "zopefoundation/DocumentTemplate",
+ "stage": "servicing",
+ "rounds": 1,
+ "rejects": {},
+ "flags": [
+  "length_violation_F_I"
+ ],
+ "info": {
+  "slots": {
+   "test_root": "src/DocumentTemplate/tests",
+   "P1": {
+    "replaced": "src/TreeDisplay",
+    "name": "core",
+    "F_R": "src/DocumentTemplate/core",
+    "F_I": "src/TreeDisplay/core"
+   },
+   "P2": {
+    "replaced": null,
+    "F_R": "src/DocumentTemplate/DTtestExpr.py",
+    "F_I": "src/TreeDisplay/internal.py"
+   },
+   "C": {
+    "F_R": "make test",
+    "F_I": "make install"
+   },
+   "D": {
+    "replaced": "zexceptions",
+    "F_R": "pasteurize",
+    "F_I": "boltons"
+   }
+  },
+  "why": {
+   "test_command": [
+    {
+     "root": "src/DocumentTemplate/tests",
+     "T3": "SupportedClaim",
+     "T1": "SupportedClaim",
+     "collect_ok": true
+    }
+   ],
+   "kind1": {
+    "p1_idx": 2,
+    "gold0": "src/DocumentTemplate",
+    "unrelated": "src/TreeDisplay",
+    "base_R": "src/DocumentTemplate",
+    "base_I": "src/TreeDisplay"
+   },
+   "kind2": {
+    "p2_idx": null,
+    "n_deleted_py": 2,
+    "found": {
+     "F_R": "src/DocumentTemplate/DTtestExpr.py",
+     "F_I": "src/TreeDisplay/internal.py"
+    }
+   },
+   "kind3": {
+    "run": "test",
+    "install": "install",
+    "test_ok": true,
+    "install_ok": true
+   },
+   "kind4": {
+    "deps": [
+     [
+      "six",
+      true
+     ],
+     [
+      "zope-sequencesort",
+      true
+     ],
+     [
+      "zope-structuredtext",
+      true
+     ],
+     [
+      "accesscontrol",
+      true
+     ],
+     [
+      "zexceptions",
+      false
+     ]
+    ],
+    "d_idx": 4,
+    "src_R": "six",
+    "src_I": "zexceptions",
+    "n_decls": 9,
+    "n_dist": 53
+   }
+  },
+  "length": {
+   "T": 435,
+   "F_R": 449,
+   "F_I": 464
+  },
+  "fallbacks": {
+   "F_R": [],
+   "F_I": [
+    "kind2_never_existed_fallback"
+   ]
+  },
+  "modes": {
+   "F_R": {
+    "1": "replace",
+    "2": "add",
+    "3": "replace",
+    "4": "replace"
+   },
+   "F_I": {
+    "1": "replace",
+    "2": "add",
+    "3": "replace",
+    "4": "replace"
+   }
+  },
+  "length_diff": {
+   "F_R": 14,
+   "F_I": 29
+  },
+  "n_claims_T": 14,
+  "n_false": {
+   "F_R": 4,
+   "F_I": 4
+  },
+  "pointer_in_issue": true,
+  "gold_dirs": [
+   "src/DocumentTemplate"
+  ],
+  "gold_files": [
+   "CHANGES.rst",
+   "src/DocumentTemplate/DT_Var.py"
+  ]
+ },
+ "tokens": {
+  "F_R": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "src/DocumentTemplate/core",
+     "core"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "src/DocumentTemplate/DTtestExpr.py",
+     "DTtestExpr.py"
+    ]
+   },
+   {
+    "kind": 3,
+    "type": "regex",
+    "regex": "\\bmake\\b[^|;&\\n]*\\btest\\b",
+    "target": "test"
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "pasteurize"
+    ]
+   }
+  ],
+  "F_I": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "src/TreeDisplay/core",
+     "core"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "src/TreeDisplay/internal.py",
+     "internal.py"
+    ]
+   },
+   {
+    "kind": 3,
+    "type": "regex",
+    "regex": "\\bmake\\b[^|;&\\n]*\\binstall\\b",
+    "target": "install"
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "boltons"
+    ]
+   }
+  ]
+ },
+ "unresolved_pre_hermit": [],
+ "sha256": {
+  "T": "6ffd8c3245dccf2e47f606bf3ccc30041123bdef509d8b8b9f885d09e58ebdaf",
+  "F_R": "c41110eb086fb3155aa1ef8f9538f0baee1777164b94269f7ea836115c1eca88",
+  "F_I": "c6c103459ac2074d191ba8acc5b3f74873fb4a01956be215d89c939fa6d28879"
+ },
+ "chars": {
+  "T": 435,
+  "F_R": 449,
+  "F_I": 464
+ },
+ "claims": {
+  "T": [
+   "T1|src/DocumentTemplate",
+   "T1|src/DocumentTemplate/tests",
+   "T1|src/TreeDisplay",
+   "T1|src/DocumentTemplate/DT_In.py",
+   "T1|src/TreeDisplay/TreeTag.py",
+   "T3|test_framework|pytest",
+   "T1|src/DocumentTemplate/tests",
+   "T1|setup.py",
+   "T4|six|",
+   "T4|zope-sequencesort|",
+   "T4|zope-structuredtext|",
+   "T4|accesscontrol|",
+   "T4|zexceptions|",
+   "T6|python|2007000000@2"
+  ],
+  "F_R": [
+   "T1|src/DocumentTemplate",
+   "T1|src/DocumentTemplate/tests",
+   "T1|src/DocumentTemplate/core",
+   "T1|src/DocumentTemplate/DT_In.py",
+   "T1|src/TreeDisplay/TreeTag.py",
+   "T1|src/DocumentTemplate/DTtestExpr.py",
+   "T5|make|test",
+   "T1|setup.py",
+   "T4|six|",
+   "T4|zope-sequencesort|",
+   "T4|zope-structuredtext|",
+   "T4|accesscontrol|",
+   "T4|pasteurize|",
+   "T6|python|2007000000@2"
+  ],
+  "F_I": [
+   "T1|src/DocumentTemplate",
+   "T1|src/DocumentTemplate/tests",
+   "T1|src/TreeDisplay/core",
+   "T1|src/DocumentTemplate/DT_In.py",
+   "T1|src/TreeDisplay/TreeTag.py",
+   "T1|src/TreeDisplay/internal.py",
+   "T3|test_framework|pytest",
+   "T1|src/DocumentTemplate/tests",
+   "T5|make|install",
+   "T4|six|",
+   "T4|zope-sequencesort|",
+   "T4|zope-structuredtext|",
+   "T4|accesscontrol|",
+   "T4|boltons|",
+   "T6|python|2007000000@2"
+  ]
+ },
+ "python_spec": ">=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*",
+ "token_audit": [
+  {
+   "cond": "F_R",
+   "kind": 1,
+   "type": "path",
+   "name": "src/DocumentTemplate/core",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 2,
+   "type": "path",
+   "name": "src/DocumentTemplate/DTtestExpr.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 3,
+   "type": "regex",
+   "name": "make test",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 4,
+   "type": "word",
+   "name": "pasteurize",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 1,
+   "type": "path",
+   "name": "src/TreeDisplay/core",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 2,
+   "type": "path",
+   "name": "src/TreeDisplay/internal.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 3,
+   "type": "regex",
+   "name": "make install",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 4,
+   "type": "word",
+   "name": "boltons",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  }
+ ],
+ "dist_imports_used": {
+  "six": [
+   "six"
+  ],
+  "zope-sequencesort": [
+   "zope"
+  ],
+  "zope-structuredtext": [
+   "zope"
+  ],
+  "accesscontrol": [
+   "AccessControl"
+  ],
+  "zexceptions": [
+   "zExceptions"
+  ],
+  "pasteurize": null,
+  "boltons": null
+ }
+}

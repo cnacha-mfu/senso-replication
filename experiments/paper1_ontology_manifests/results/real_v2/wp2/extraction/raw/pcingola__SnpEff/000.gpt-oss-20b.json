@@ -1,0 +1,21 @@
+{
+ "repo": "pcingola/SnpEff",
+ "chunk": 0,
+ "n_chunks": 2,
+ "model": "openai/gpt-oss-20b",
+ "prompt_sha256": "d0e02ff613417050168d859f2af6230c3712c6758bb5d9c40d60ff55e5ae87ca",
+ "user_sha256": "e14b8af7884ea69fa5f6b48f107c41089378f045e91f7360486e76ea462f16d7",
+ "text": "{\"claims\":[{\"type\":\"path_exists\",\"quote\":\"All user-facing documentation (how the program works, command-line options, file formats, examples, etc.) belongs EXCLUSIVELY in `src/docs/`, which is the source for the user's manual published at https://pcingola.github.io/SnpEff/.\",\"line\":8,\"subject\":\"src/docs/\",\"mode\":\"asserts_existing\"},{\"type\":\"path_exists\",\"quote\":\"Test files are located in: - `src/test/java/org/snpeff/snpEffect/testCases/unity/` - Unit tests\",\"line\":59,\"subject\":\"src/test/java/org/snpeff/snpEffect/testCases/unity/\",\"mode\":\"asserts_existing\"},{\"type\":\"path_exists\",\"quote\":\"Test files are located in: - `src/test/java/org/snpeff/snpEffect/testCases/integration/` - Integration tests\",\"line\":60,\"subject\":\"src/test/java/org/snpeff/snpEffect/testCases/integration/\",\"mode\":\"asserts_existing\"},{\"type\":\"path_exists\",\"quote\":\"Test files are located in: - `tests/` - Test data files (VCF, FASTA, etc.)\",\"line\":61,\"subject\":\"tests/\",\"mode\":\"asserts_existing\"},{\"type\":\"path_exists\",\"quote\":\"The file `src/bds/make.bds` is the main entry point for development tasks: building, testing, downloading genomes, building databases, creating distribution packages, and uploading releases.\",\"line\":12,\"subject\":\"src/bds/make.bds\",\"mode\":\"asserts_existing\"},{\"type\":\"tool_used\",\"quote\":\"The project uses Maven for building and BDS (BigDataScript) for automation tasks.\",\"line\":17,\"subject\":\"Maven\",\"tool_category\":\"package_manager\",\"mode\":\"asserts_existing\"},{\"type\":\"command\",\"quote\":\"mvn clean compile assembly:single jar:jar\",\"line\":24,\"subject\":\"clean compile assembly:single jar:jar\",\"runner\":\"mvn\",\"mode\":\"asserts_existing\"},{\"type\":\"command\",\"quote\":\"mvn test\",\"line\":49,\"subject\":\"test\",\"runner\":\"mvn\",\"mode\":\"asserts_existing\"},{\"type\":\"command\",\"quote\":\"mvn test -Dtest=TestCasesVcf\",\"line\":52,\"subject\":\"test -Dtest=TestCasesVcf\",\"runner\":\"mvn\",\"mode\":\"asserts_existing\"},{\"type\":\"command\",\"quote\":\"./src/bds/integration_test.bds\",\"line\":56,\"subject\":\"integration_test.bds\",\"runner\":\"make\",\"mode\":\"asserts_existing\"},{\"type\":\"command\",\"quote\":\"./scripts/snpEff [options]\",\"line\":36,\"subject\":\"snpEff\",\"runner\":\"make\",\"mode\":\"asserts_existing\"},{\"type\":\"command\",\"quote\":\"java -jar snpEff.jar build -v <genome_name>\",\"line\":107,\"subject\":\"build -v <genome_name>\",\"runner\":\"make\",\"mode\":\"asserts_existing\"},{\"type\":\"command\",\"quote\":\"java -jar snpEff.jar download <genome_name>\",\"line\":109,\"subject\":\"download <genome_name>\",\"runner\":\"make\",\"mode\":\"asserts_existing\"},{\"type\":\"command\",\"quote\":\"~/snpEff/make.bds [options]\",\"line\":132,\"subject\":\"make.bds\",\"runner\":\"make\",\"mode\":\"asserts_existing\"},{\"type\":\"version\",\"quote\":\"The project requires Java 21 (specified in pom.xml compiler configuration).\",\"line\":117,\"subject\":\"java\",\"version\":\"21\",\"qualifier\":\"exact\",\"mode\":\"asserts_existing\"}]}",
+ "parse_ok": true,
+ "parse_error": null,
+ "parse_retries": 0,
+ "latency_s": 69.82841913599987,
+ "usage": {
+  "prompt": 3842,
+  "completion": 2820
+ },
+ "n_api_calls": 1,
+ "finish_reason": "stop",
+ "error": null,
+ "discarded_attempt_texts": []
+}

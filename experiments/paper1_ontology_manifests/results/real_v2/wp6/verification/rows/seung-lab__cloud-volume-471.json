@@ -1,0 +1,858 @@
+{
+ "task_id": "seung-lab__cloud-volume-471",
+ "claims": {
+  "T1|cloudvolume": {
+   "claim": {
+    "key_str": "T1|cloudvolume",
+    "tcode": "T1",
+    "attrs": {
+     "path": "cloudvolume",
+     "is_dir": true,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "cloudvolume/",
+    "role": "true",
+    "slot": "layout",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "exists",
+     "path": "cloudvolume"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "PathFoundExact"
+   },
+   "probe": {
+    "ok": true,
+    "type": "exists"
+   },
+   "measure_error": null
+  },
+  "T1|cloudvolume/datasource": {
+   "claim": {
+    "key_str": "T1|cloudvolume/datasource",
+    "tcode": "T1",
+    "attrs": {
+     "path": "cloudvolume/datasource",
+     "is_dir": true,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "cloudvolume/datasource/",
+    "role": "true",
+    "slot": "layout",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "exists",
+     "path": "cloudvolume/datasource"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "PathFoundExact"
+   },
+   "probe": {
+    "ok": true,
+    "type": "exists"
+   },
+   "measure_error": null
+  },
+  "T1|cloudvolume/frontends": {
+   "claim": {
+    "key_str": "T1|cloudvolume/frontends",
+    "tcode": "T1",
+    "attrs": {
+     "path": "cloudvolume/frontends",
+     "is_dir": true,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "cloudvolume/frontends/",
+    "role": "true",
+    "slot": "layout",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "exists",
+     "path": "cloudvolume/frontends"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "PathFoundExact"
+   },
+   "probe": {
+    "ok": true,
+    "type": "exists"
+   },
+   "measure_error": null
+  },
+  "T1|cloudvolume/microviewer": {
+   "claim": {
+    "key_str": "T1|cloudvolume/microviewer",
+    "tcode": "T1",
+    "attrs": {
+     "path": "cloudvolume/microviewer",
+     "is_dir": true,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "cloudvolume/microviewer/",
+    "role": "true",
+    "slot": "layout",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "exists",
+     "path": "cloudvolume/microviewer"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "PathFoundExact"
+   },
+   "probe": {
+    "ok": true,
+    "type": "exists"
+   },
+   "measure_error": null
+  },
+  "T1|cloudvolume/storage": {
+   "claim": {
+    "key_str": "T1|cloudvolume/storage",
+    "tcode": "T1",
+    "attrs": {
+     "path": "cloudvolume/storage",
+     "is_dir": true,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "cloudvolume/storage/",
+    "role": "true",
+    "slot": "layout",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "exists",
+     "path": "cloudvolume/storage"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "PathFoundExact"
+   },
+   "probe": {
+    "ok": true,
+    "type": "exists"
+   },
+   "measure_error": null
+  },
+  "T1|test": {
+   "claim": {
+    "key_str": "T1|test",
+    "tcode": "T1",
+    "attrs": {
+     "path": "test",
+     "is_dir": true,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "test/",
+    "role": "true",
+    "slot": "layout",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "exists",
+     "path": "test"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "PathFoundExact"
+   },
+   "probe": {
+    "ok": true,
+    "type": "exists"
+   },
+   "measure_error": null
+  },
+  "T1|cloudvolume/skeleton.py": {
+   "claim": {
+    "key_str": "T1|cloudvolume/skeleton.py",
+    "tcode": "T1",
+    "attrs": {
+     "path": "cloudvolume/skeleton.py",
+     "is_dir": false,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "cloudvolume/skeleton.py",
+    "role": "true",
+    "slot": "key_file",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "exists",
+     "path": "cloudvolume/skeleton.py"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "PathFoundExact"
+   },
+   "probe": {
+    "ok": true,
+    "type": "exists"
+   },
+   "measure_error": null
+  },
+  "T1|cloudvolume/datasource/precomputed/sharding.py": {
+   "claim": {
+    "key_str": "T1|cloudvolume/datasource/precomputed/sharding.py",
+    "tcode": "T1",
+    "attrs": {
+     "path": "cloudvolume/datasource/precomputed/sharding.py",
+     "is_dir": false,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "cloudvolume/datasource/precomputed/sharding.py",
+    "role": "true",
+    "slot": "key_file",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "exists",
+     "path": "cloudvolume/datasource/precomputed/sharding.py"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "PathFoundExact"
+   },
+   "probe": {
+    "ok": true,
+    "type": "exists"
+   },
+   "measure_error": null
+  },
+  "T1|cloudvolume/frontends/precomputed.py": {
+   "claim": {
+    "key_str": "T1|cloudvolume/frontends/precomputed.py",
+    "tcode": "T1",
+    "attrs": {
+     "path": "cloudvolume/frontends/precomputed.py",
+     "is_dir": false,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "cloudvolume/frontends/precomputed.py",
+    "role": "true",
+    "slot": "key_file",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "exists",
+     "path": "cloudvolume/frontends/precomputed.py"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "PathFoundExact"
+   },
+   "probe": {
+    "ok": true,
+    "type": "exists"
+   },
+   "measure_error": null
+  },
+  "T3|test_framework|pytest": {
+   "claim": {
+    "key_str": "T3|test_framework|pytest",
+    "tcode": "T3",
+    "attrs": {
+     "tool": "pytest",
+     "category": "test_framework"
+    },
+    "quote": "python -m pytest test",
+    "role": "true",
+    "slot": "test_cmd",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "pytest",
+     "root": "test"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "ToolSignatureFound"
+   },
+   "probe": {
+    "ok": true,
+    "type": "pytest"
+   },
+   "measure_error": null
+  },
+  "T1|setup.py": {
+   "claim": {
+    "key_str": "T1|setup.py",
+    "tcode": "T1",
+    "attrs": {
+     "path": "setup.py",
+     "is_dir": false,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "setup.py",
+    "role": "true",
+    "slot": "install_cmd",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "exists",
+     "path": "setup.py"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "PathFoundExact"
+   },
+   "probe": {
+    "ok": true,
+    "type": "exists"
+   },
+   "measure_error": null
+  },
+  "T4|numpy|": {
+   "claim": {
+    "key_str": "T4|numpy|",
+    "tcode": "T4",
+    "attrs": {
+     "name": "numpy",
+     "major": null,
+     "ecosystem_hint": "pypi"
+    },
+    "quote": "`numpy>=1.13.3`",
+    "role": "true",
+    "slot": "dep",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "import_ok",
+     "modules": [
+      "numpy",
+      "numpy.libs"
+     ]
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "DependencyConfirmed"
+   },
+   "probe": {
+    "ok": true,
+    "type": "import_ok"
+   },
+   "measure_error": null
+  },
+  "T4|six|": {
+   "claim": {
+    "key_str": "T4|six|",
+    "tcode": "T4",
+    "attrs": {
+     "name": "six",
+     "major": null,
+     "ecosystem_hint": "pypi"
+    },
+    "quote": "`six>=1.10.0`",
+    "role": "true",
+    "slot": "dep",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "import_ok",
+     "modules": [
+      "six"
+     ]
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "DependencyConfirmed"
+   },
+   "probe": {
+    "ok": true,
+    "type": "import_ok"
+   },
+   "measure_error": null
+  },
+  "T4|tqdm|": {
+   "claim": {
+    "key_str": "T4|tqdm|",
+    "tcode": "T4",
+    "attrs": {
+     "name": "tqdm",
+     "major": null,
+     "ecosystem_hint": "pypi"
+    },
+    "quote": "`tqdm`",
+    "role": "true",
+    "slot": "dep",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "import_ok",
+     "modules": [
+      "tqdm"
+     ]
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "DependencyConfirmed"
+   },
+   "probe": {
+    "ok": true,
+    "type": "import_ok"
+   },
+   "measure_error": null
+  },
+  "T4|cloud-files|": {
+   "claim": {
+    "key_str": "T4|cloud-files|",
+    "tcode": "T4",
+    "attrs": {
+     "name": "cloud-files",
+     "major": null,
+     "ecosystem_hint": "pypi"
+    },
+    "quote": "`cloud-files>=1.23.1`",
+    "role": "true",
+    "slot": "dep",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "import_ok",
+     "modules": [
+      "cloudfiles",
+      "cloudfiles_cli"
+     ]
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "DependencyConfirmed"
+   },
+   "probe": {
+    "ok": true,
+    "type": "import_ok"
+   },
+   "measure_error": null
+  },
+  "T4|requests|": {
+   "claim": {
+    "key_str": "T4|requests|",
+    "tcode": "T4",
+    "attrs": {
+     "name": "requests",
+     "major": null,
+     "ecosystem_hint": "pypi"
+    },
+    "quote": "`requests>=2.22.0`",
+    "role": "true",
+    "slot": "dep",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "import_ok",
+     "modules": [
+      "requests"
+     ]
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "DependencyConfirmed"
+   },
+   "probe": {
+    "ok": true,
+    "type": "import_ok"
+   },
+   "measure_error": null
+  },
+  "T1|cloudvolume/frontends/core": {
+   "claim": {
+    "key_str": "T1|cloudvolume/frontends/core",
+    "tcode": "T1",
+    "attrs": {
+     "path": "cloudvolume/frontends/core",
+     "is_dir": true,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "cloudvolume/frontends/core/",
+    "role": "false",
+    "slot": "P1",
+    "kind": 1,
+    "expect_verdict": "ContradictedClaim",
+    "expect_leaves": [
+     "PathNeverExisted"
+    ],
+    "probe": {
+     "type": "absent",
+     "path": "cloudvolume/frontends/core",
+     "history": "none"
+    },
+    "mode": "replace"
+   },
+   "recheck": {
+    "verdict": "ContradictedClaim",
+    "leaf": "PathNeverExisted"
+   },
+   "probe": {
+    "ok": true,
+    "type": "absent",
+    "log_count": 0
+   },
+   "measure_error": null
+  },
+  "T1|cloudvolume/meshservice.py": {
+   "claim": {
+    "key_str": "T1|cloudvolume/meshservice.py",
+    "tcode": "T1",
+    "attrs": {
+     "path": "cloudvolume/meshservice.py",
+     "is_dir": false,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "cloudvolume/meshservice.py",
+    "role": "false",
+    "slot": "P2",
+    "kind": 2,
+    "expect_verdict": "ContradictedClaim",
+    "expect_leaves": [
+     "PathRemoved"
+    ],
+    "probe": {
+     "type": "absent",
+     "path": "cloudvolume/meshservice.py",
+     "history": "some"
+    },
+    "mode": "replace"
+   },
+   "recheck": {
+    "verdict": "ContradictedClaim",
+    "leaf": "PathRemoved"
+   },
+   "probe": {
+    "ok": true,
+    "type": "absent",
+    "log_count": 10
+   },
+   "measure_error": null
+  },
+  "T5|make|tests": {
+   "claim": {
+    "key_str": "T5|make|tests",
+    "tcode": "T5",
+    "attrs": {
+     "runner": "make",
+     "kind": "make",
+     "target": "tests"
+    },
+    "quote": "make tests",
+    "role": "false",
+    "slot": "C_R",
+    "kind": 3,
+    "expect_verdict": "ContradictedClaim",
+    "expect_leaves": [
+     "ScriptUndefined",
+     "ScriptHostMissing"
+    ],
+    "probe": {
+     "type": "make_fail",
+     "target": "tests"
+    },
+    "mode": "replace"
+   },
+   "recheck": {
+    "verdict": "ContradictedClaim",
+    "leaf": "ScriptHostMissing"
+   },
+   "probe": {
+    "ok": true,
+    "type": "make_fail",
+    "result": {
+     "rc": 2,
+     "tail": "make: *** No rule to make target 'tests'.  Stop.\n"
+    }
+   },
+   "measure_error": null
+  },
+  "T4|jax|": {
+   "claim": {
+    "key_str": "T4|jax|",
+    "tcode": "T4",
+    "attrs": {
+     "name": "jax",
+     "major": null,
+     "ecosystem_hint": "pypi"
+    },
+    "quote": "`jax`",
+    "role": "false",
+    "slot": "D",
+    "kind": 4,
+    "expect_verdict": "ContradictedClaim",
+    "expect_leaves": [
+     "DependencyUndeclared"
+    ],
+    "probe": {
+     "type": "import_fail",
+     "modules": [
+      "jax"
+     ]
+    },
+    "mode": "replace"
+   },
+   "recheck": {
+    "verdict": "ContradictedClaim",
+    "leaf": "DependencyUndeclared"
+   },
+   "probe": {
+    "ok": true,
+    "type": "import_fail"
+   },
+   "measure_error": null
+  },
+  "T1|cloudvolume/datasource/core": {
+   "claim": {
+    "key_str": "T1|cloudvolume/datasource/core",
+    "tcode": "T1",
+    "attrs": {
+     "path": "cloudvolume/datasource/core",
+     "is_dir": true,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "cloudvolume/datasource/core/",
+    "role": "false",
+    "slot": "P1",
+    "kind": 1,
+    "expect_verdict": "ContradictedClaim",
+    "expect_leaves": [
+     "PathNeverExisted"
+    ],
+    "probe": {
+     "type": "absent",
+     "path": "cloudvolume/datasource/core",
+     "history": "none"
+    },
+    "mode": "replace"
+   },
+   "recheck": {
+    "verdict": "ContradictedClaim",
+    "leaf": "PathNeverExisted"
+   },
+   "probe": {
+    "ok": true,
+    "type": "absent",
+    "log_count": 0
+   },
+   "measure_error": null
+  },
+  "T1|test/test_compression.py": {
+   "claim": {
+    "key_str": "T1|test/test_compression.py",
+    "tcode": "T1",
+    "attrs": {
+     "path": "test/test_compression.py",
+     "is_dir": false,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "test/test_compression.py",
+    "role": "false",
+    "slot": "P2",
+    "kind": 2,
+    "expect_verdict": "ContradictedClaim",
+    "expect_leaves": [
+     "PathRemoved"
+    ],
+    "probe": {
+     "type": "absent",
+     "path": "test/test_compression.py",
+     "history": "some"
+    },
+    "mode": "replace"
+   },
+   "recheck": {
+    "verdict": "ContradictedClaim",
+    "leaf": "PathRemoved"
+   },
+   "probe": {
+    "ok": true,
+    "type": "absent",
+    "log_count": 5
+   },
+   "measure_error": null
+  },
+  "T5|make|install": {
+   "claim": {
+    "key_str": "T5|make|install",
+    "tcode": "T5",
+    "attrs": {
+     "runner": "make",
+     "kind": "make",
+     "target": "install"
+    },
+    "quote": "make install",
+    "role": "false",
+    "slot": "C_I",
+    "kind": 3,
+    "expect_verdict": "ContradictedClaim",
+    "expect_leaves": [
+     "ScriptUndefined",
+     "ScriptHostMissing"
+    ],
+    "probe": {
+     "type": "make_fail",
+     "target": "install"
+    },
+    "mode": "replace"
+   },
+   "recheck": {
+    "verdict": "ContradictedClaim",
+    "leaf": "ScriptHostMissing"
+   },
+   "probe": {
+    "ok": true,
+    "type": "make_fail",
+    "result": {
+     "rc": 2,
+     "tail": "make: *** No rule to make target 'install'.  Stop.\n"
+    }
+   },
+   "measure_error": null
+  },
+  "T4|boltons|": {
+   "claim": {
+    "key_str": "T4|boltons|",
+    "tcode": "T4",
+    "attrs": {
+     "name": "boltons",
+     "major": null,
+     "ecosystem_hint": "pypi"
+    },
+    "quote": "`boltons`",
+    "role": "false",
+    "slot": "D",
+    "kind": 4,
+    "expect_verdict": "ContradictedClaim",
+    "expect_leaves": [
+     "DependencyUndeclared"
+    ],
+    "probe": {
+     "type": "import_fail",
+     "modules": [
+      "boltons"
+     ]
+    },
+    "mode": "replace"
+   },
+   "recheck": {
+    "verdict": "ContradictedClaim",
+    "leaf": "DependencyUndeclared"
+   },
+   "probe": {
+    "ok": true,
+    "type": "import_fail"
+   },
+   "measure_error": null
+  }
+ },
+ "probe_log": {
+  "pytest:test": {
+   "rc": 0,
+   "tail": "/lib/python3.9/site-packages/python_jsonschema_objects/__init__.py:112: UserWarning: Schema id not specified. Defaulting to 'self'\n    warnings.warn(\"Schema id not specified. Defaulting to 'self'\")\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n145 tests collected in 2.15s\n"
+  },
+  "import:numpy": {
+   "rc": 0,
+   "tail": ""
+  },
+  "import:six": {
+   "rc": 0,
+   "tail": ""
+  },
+  "import:tqdm": {
+   "rc": 0,
+   "tail": ""
+  },
+  "import:cloudfiles": {
+   "rc": 0,
+   "tail": "dates to google.api_core supporting this Python version. Please upgrade to the latest Python version, or at least Python 3.11, and then update google.api_core.\n  warnings.warn(message, FutureWarning)\n"
+  },
+  "import:requests": {
+   "rc": 0,
+   "tail": ""
+  },
+  "make:test": {
+   "rc": 0,
+   "tail": "make: Nothing to be done for 'test'.\n"
+  },
+  "make:tests": {
+   "rc": 2,
+   "tail": "make: *** No rule to make target 'tests'.  Stop.\n"
+  },
+  "make:install": {
+   "rc": 2,
+   "tail": "make: *** No rule to make target 'install'.  Stop.\n"
+  },
+  "import:boltons": {
+   "rc": 1,
+   "tail": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\nModuleNotFoundError: No module named 'boltons'\n"
+  },
+  "import:jax": {
+   "rc": 1,
+   "tail": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\nModuleNotFoundError: No module named 'jax'\n"
+  }
+ }
+}

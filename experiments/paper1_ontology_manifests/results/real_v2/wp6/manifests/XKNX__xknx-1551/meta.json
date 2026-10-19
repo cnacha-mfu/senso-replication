@@ -1,0 +1,368 @@
+{
+ "task_id": "XKNX__xknx-1551",
+ "repo": "XKNX/xknx",
+ "stage": "evolution",
+ "rounds": 1,
+ "rejects": {},
+ "flags": [
+  "kind4_R_used_I_competitor",
+  "length_violation_F_I"
+ ],
+ "info": {
+  "slots": {
+   "test_root": "test",
+   "P1": {
+    "replaced": "xknx/remote_value",
+    "name": "internal",
+    "F_R": "docs/internal",
+    "F_I": "xknx/devices/internal"
+   },
+   "P2": {
+    "replaced": "xknx/dpt/dpt_14.py",
+    "F_R": "xknx/dpt/dpt_1byte_signed.py",
+    "F_I": "test/remote_value_tests/remote_value_control_test.py"
+   },
+   "C": {
+    "F_R": "make tests",
+    "F_I": "make dev"
+   },
+   "D": {
+    "replaced": "typing-extensions",
+    "F_R": "typing-inspect",
+    "F_I": "typing-inspect"
+   }
+  },
+  "why": {
+   "test_command": [
+    {
+     "root": "test",
+     "T3": "SupportedClaim",
+     "T1": "SupportedClaim",
+     "collect_ok": true
+    }
+   ],
+   "kind1": {
+    "p1_idx": 7,
+    "gold0": "docs",
+    "unrelated": "xknx/devices",
+    "base_R": "docs",
+    "base_I": "xknx/devices"
+   },
+   "kind2": {
+    "p2_idx": 2,
+    "n_deleted_py": 425,
+    "found": {
+     "F_R": "xknx/dpt/dpt_1byte_signed.py",
+     "F_I": "test/remote_value_tests/remote_value_control_test.py"
+    }
+   },
+   "kind3": {
+    "run": "tests",
+    "install": "dev",
+    "test_ok": true,
+    "install_ok": true
+   },
+   "kind4": {
+    "deps": [
+     [
+      "cryptography",
+      false
+     ],
+     [
+      "async-timeout",
+      false
+     ],
+     [
+      "ifaddr",
+      false
+     ],
+     [
+      "typing-extensions",
+      false
+     ]
+    ],
+    "d_idx": 3,
+    "src_R": "typing-extensions",
+    "src_I": "typing-extensions",
+    "n_decls": 21,
+    "n_dist": 50
+   }
+  },
+  "length": {
+   "T": 451,
+   "F_R": 443,
+   "F_I": 478
+  },
+  "fallbacks": {
+   "F_R": [
+    "kind4_I_competitor"
+   ],
+   "F_I": []
+  },
+  "modes": {
+   "F_R": {
+    "1": "replace",
+    "2": "replace",
+    "3": "replace",
+    "4": "replace"
+   },
+   "F_I": {
+    "1": "replace",
+    "2": "replace",
+    "3": "replace",
+    "4": "replace"
+   }
+  },
+  "length_diff": {
+   "F_R": -8,
+   "F_I": 27
+  },
+  "n_claims_T": 19,
+  "n_false": {
+   "F_R": 4,
+   "F_I": 4
+  },
+  "pointer_in_issue": false,
+  "gold_dirs": [
+   "docs",
+   "xknx/dpt"
+  ],
+  "gold_files": [
+   "docs/changelog.md",
+   "xknx/dpt/dpt_20.py"
+  ]
+ },
+ "tokens": {
+  "F_R": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "docs/internal",
+     "internal"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "xknx/dpt/dpt_1byte_signed.py",
+     "dpt_1byte_signed.py"
+    ]
+   },
+   {
+    "kind": 3,
+    "type": "regex",
+    "regex": "\\bmake\\b[^|;&\\n]*\\btests\\b",
+    "target": "tests"
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "typing-inspect",
+     "typing_inspect"
+    ]
+   }
+  ],
+  "F_I": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "xknx/devices/internal",
+     "internal"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "test/remote_value_tests/remote_value_control_test.py",
+     "remote_value_control_test.py"
+    ]
+   },
+   {
+    "kind": 3,
+    "type": "regex",
+    "regex": "\\bmake\\b[^|;&\\n]*\\bdev\\b",
+    "target": "dev"
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "typing-inspect",
+     "typing_inspect"
+    ]
+   }
+  ]
+ },
+ "unresolved_pre_hermit": [],
+ "sha256": {
+  "T": "618a19a4009b93da1ea140d2a24896cbd047487e2fd162124501fe9363dac522",
+  "F_R": "bd0378a5dc1c028b4197bb936c48eaae013b116735185f67055649b0b33ca47e",
+  "F_I": "47ab94ed0762334251034131d4babd5e4257ffe22a7895db1592f7537c5f8793"
+ },
+ "chars": {
+  "T": 451,
+  "F_R": 443,
+  "F_I": 478
+ },
+ "claims": {
+  "T": [
+   "T1|docs",
+   "T1|test",
+   "T1|xknx",
+   "T1|xknx/devices",
+   "T1|xknx/dpt",
+   "T1|xknx/io",
+   "T1|xknx/knxip",
+   "T1|xknx/remote_value",
+   "T1|xknx/telegram/apci.py",
+   "T1|xknx/knxip/dib.py",
+   "T1|xknx/dpt/dpt_14.py",
+   "T3|test_framework|pytest",
+   "T1|test",
+   "T1|pyproject.toml",
+   "T4|cryptography|",
+   "T4|async-timeout|",
+   "T4|ifaddr|",
+   "T4|typing-extensions|",
+   "T6|python|3010000000@3"
+  ],
+  "F_R": [
+   "T1|docs",
+   "T1|test",
+   "T1|xknx",
+   "T1|xknx/devices",
+   "T1|xknx/dpt",
+   "T1|xknx/io",
+   "T1|xknx/knxip",
+   "T1|docs/internal",
+   "T1|xknx/telegram/apci.py",
+   "T1|xknx/knxip/dib.py",
+   "T1|xknx/dpt/dpt_1byte_signed.py",
+   "T5|make|tests",
+   "T1|pyproject.toml",
+   "T4|cryptography|",
+   "T4|async-timeout|",
+   "T4|ifaddr|",
+   "T4|typing-inspect|",
+   "T6|python|3010000000@3"
+  ],
+  "F_I": [
+   "T1|docs",
+   "T1|test",
+   "T1|xknx",
+   "T1|xknx/devices",
+   "T1|xknx/dpt",
+   "T1|xknx/io",
+   "T1|xknx/knxip",
+   "T1|xknx/devices/internal",
+   "T1|xknx/telegram/apci.py",
+   "T1|xknx/knxip/dib.py",
+   "T1|test/remote_value_tests/remote_value_control_test.py",
+   "T3|test_framework|pytest",
+   "T1|test",
+   "T5|make|dev",
+   "T4|cryptography|",
+   "T4|async-timeout|",
+   "T4|ifaddr|",
+   "T4|typing-inspect|",
+   "T6|python|3010000000@3"
+  ]
+ },
+ "python_spec": ">=3.10.0",
+ "token_audit": [
+  {
+   "cond": "F_R",
+   "kind": 1,
+   "type": "path",
+   "name": "docs/internal",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 2,
+   "type": "path",
+   "name": "xknx/dpt/dpt_1byte_signed.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 3,
+   "type": "regex",
+   "name": "make tests",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 4,
+   "type": "word",
+   "name": "typing-inspect",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 1,
+   "type": "path",
+   "name": "xknx/devices/internal",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 2,
+   "type": "path",
+   "name": "test/remote_value_tests/remote_value_control_test.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 3,
+   "type": "regex",
+   "name": "make dev",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 4,
+   "type": "word",
+   "name": "typing-inspect",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  }
+ ],
+ "dist_imports_used": {
+  "cryptography": [
+   "cryptography"
+  ],
+  "async-timeout": [
+   "async_timeout"
+  ],
+  "ifaddr": [
+   "ifaddr"
+  ],
+  "typing-extensions": [
+   "typing_extensions"
+  ],
+  "typing-inspect": null
+ }
+}

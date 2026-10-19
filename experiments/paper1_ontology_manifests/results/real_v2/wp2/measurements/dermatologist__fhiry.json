@@ -1,0 +1,1090 @@
+{
+ "repo": "dermatologist/fhiry",
+ "slug": "dermatologist__fhiry",
+ "S": "01ccb59cb33c0d3929d4e20de81fda954bce1d98",
+ "manifest_path": "AGENTS.md",
+ "input_sha": "859e42762a2e6d4caa984e79ee425111a93a0b743ed6d46a7966d181b57e120e",
+ "n_claims": 33,
+ "n_tree_files": 88,
+ "n_dep_manifests_parsed": 2,
+ "seconds": 0.1,
+ "claims": [
+  {
+   "key_str": "T1|.pre-commit-config.yaml",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": ".pre-commit-config.yaml",
+   "quote": "- `.pre-commit-config.yaml`: Formatting and linting configuration",
+   "line": 137,
+   "votes": 1,
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "attrs": {
+    "path": ".pre-commit-config.yaml",
+    "is_dir": false,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 1,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|CONTRIBUTING.md",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "CONTRIBUTING.md",
+   "quote": "- `CONTRIBUTING.md`: Contribution guidelines",
+   "line": 138,
+   "votes": 2,
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "CONTRIBUTING.md",
+    "is_dir": false,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 1,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|Makefile",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "Makefile",
+   "quote": "- `Makefile`: Build, test, and development commands",
+   "line": 136,
+   "votes": 2,
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "Makefile",
+    "is_dir": false,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 1,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|README.md",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "README.md",
+   "quote": "- `README.md`: Public API and usage examples",
+   "line": 139,
+   "votes": 2,
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "README.md",
+    "is_dir": false,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 1,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|docs",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "docs",
+   "quote": "docs/                # MkDocs documentation",
+   "line": 30,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "docs",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false,
+    "tree": true,
+    "alt_path": null
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 5,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|pyproject.toml",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "pyproject.toml",
+   "quote": "- `pyproject.toml`: Dependencies, tool configuration, project metadata",
+   "line": 135,
+   "votes": 2,
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "pyproject.toml",
+    "is_dir": false,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 1,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|src/fhiry",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "src/fhiry",
+   "quote": "src/fhiry/           # Main source code",
+   "line": 19,
+   "votes": 2,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "attrs": {
+    "path": "src/fhiry",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false,
+    "tree": true,
+    "alt_path": null
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 9,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|src/fhiry/base_fhiry.py",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "src/fhiry/base_fhiry.py",
+   "quote": "├── base_fhiry.py    # Base class for FHIR processors",
+   "line": 26,
+   "votes": 2,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "attrs": {
+    "path": "src/fhiry/base_fhiry.py",
+    "is_dir": false,
+    "glob": false,
+    "bracket": false,
+    "tree": true,
+    "alt_path": null
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 1,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|src/fhiry/bqsearch.py",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "src/fhiry/bqsearch.py",
+   "quote": "├── bqsearch.py      # BigQuery FHIR dataset queries",
+   "line": 23,
+   "votes": 2,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "attrs": {
+    "path": "src/fhiry/bqsearch.py",
+    "is_dir": false,
+    "glob": false,
+    "bracket": false,
+    "tree": true,
+    "alt_path": null
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 1,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|src/fhiry/fhirndjson.py",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "src/fhiry/fhirndjson.py",
+   "quote": "├── fhirndjson.py    # NDJSON file processor",
+   "line": 21,
+   "votes": 2,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "attrs": {
+    "path": "src/fhiry/fhirndjson.py",
+    "is_dir": false,
+    "glob": false,
+    "bracket": false,
+    "tree": true,
+    "alt_path": null
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 1,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|src/fhiry/fhirsearch.py",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "src/fhiry/fhirsearch.py",
+   "quote": "├── fhirsearch.py    # FHIR server search API integration",
+   "line": 22,
+   "votes": 2,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "attrs": {
+    "path": "src/fhiry/fhirsearch.py",
+    "is_dir": false,
+    "glob": false,
+    "bracket": false,
+    "tree": true,
+    "alt_path": null
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 1,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|src/fhiry/fhiry.py",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "src/fhiry/fhiry.py",
+   "quote": "├── fhiry.py         # Core FHIR Bundle processor",
+   "line": 20,
+   "votes": 2,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "attrs": {
+    "path": "src/fhiry/fhiry.py",
+    "is_dir": false,
+    "glob": false,
+    "bracket": false,
+    "tree": true,
+    "alt_path": null
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 1,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|src/fhiry/flattenfhir.py",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "src/fhiry/flattenfhir.py",
+   "quote": "├── flattenfhir.py   # FHIR resource flattening logic",
+   "line": 24,
+   "votes": 2,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "attrs": {
+    "path": "src/fhiry/flattenfhir.py",
+    "is_dir": false,
+    "glob": false,
+    "bracket": false,
+    "tree": true,
+    "alt_path": null
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 1,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|src/fhiry/main.py",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "src/fhiry/main.py",
+   "quote": "└── main.py          # CLI entry point",
+   "line": 27,
+   "votes": 2,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "attrs": {
+    "path": "src/fhiry/main.py",
+    "is_dir": false,
+    "glob": false,
+    "bracket": false,
+    "tree": true,
+    "alt_path": null
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 1,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|src/fhiry/parallel.py",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "src/fhiry/parallel.py",
+   "quote": "├── parallel.py      # Parallel processing utilities",
+   "line": 25,
+   "votes": 2,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "attrs": {
+    "path": "src/fhiry/parallel.py",
+    "is_dir": false,
+    "glob": false,
+    "bracket": false,
+    "tree": true,
+    "alt_path": null
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 1,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|tests",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "tests",
+   "quote": "tests/               # Test suite with pytest",
+   "line": 29,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "tests",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false,
+    "tree": true,
+    "alt_path": null
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 28,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|tests/resources",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "tests/resources",
+   "quote": "- **Test Resources**: Sample FHIR bundles in `tests/resources/`",
+   "line": 57,
+   "votes": 1,
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "attrs": {
+    "path": "tests/resources",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 20,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T3|linter_formatter|mypy",
+   "tcode": "T3",
+   "types": [
+    "ToolUsageClaim",
+    "NonPackageManagerToolClaim"
+   ],
+   "headline": true,
+   "subject": "mypy",
+   "quote": "- **Type Hints**: Required for all function signatures (enforced by mypy)",
+   "line": 39,
+   "votes": 2,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "attrs": {
+    "tool": "mypy",
+    "category": "linter_formatter"
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "toolSignatureHitCount": 2,
+     "toolEcosystemAnchorCount": 3,
+     "competingToolSignatureCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T3|linter_formatter|ruff",
+   "tcode": "T3",
+   "types": [
+    "ToolUsageClaim",
+    "NonPackageManagerToolClaim"
+   ],
+   "headline": true,
+   "subject": "ruff",
+   "quote": "- **Formatter**: Ruff (enforced via pre-commit hooks)",
+   "line": 37,
+   "votes": 2,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "attrs": {
+    "tool": "ruff",
+    "category": "linter_formatter"
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "toolSignatureHitCount": 2,
+     "toolEcosystemAnchorCount": 3,
+     "competingToolSignatureCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T3|package_manager|uv",
+   "tcode": "T3",
+   "types": [
+    "ToolUsageClaim",
+    "PackageManagerClaim"
+   ],
+   "headline": true,
+   "subject": "uv",
+   "quote": "2. **Package Manager**: Uses `uv` for fast, reliable dependency management",
+   "line": 10,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "tool": "uv",
+    "category": "package_manager"
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "toolSignatureHitCount": 3,
+     "toolEcosystemAnchorCount": 3,
+     "competingToolSignatureCount": 1
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T3|test_framework|pytest",
+   "tcode": "T3",
+   "types": [
+    "ToolUsageClaim",
+    "NonPackageManagerToolClaim"
+   ],
+   "headline": true,
+   "subject": "pytest",
+   "quote": "- **Framework**: pytest with coverage reporting",
+   "line": 54,
+   "votes": 2,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "attrs": {
+    "tool": "pytest",
+    "category": "test_framework"
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "toolSignatureHitCount": 6,
+     "toolEcosystemAnchorCount": 3,
+     "competingToolSignatureCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T4|click|",
+   "tcode": "T4",
+   "types": [
+    "DependencyClaim",
+    "UnversionedDependencyClaim"
+   ],
+   "headline": true,
+   "subject": "click",
+   "quote": "- `click`: CLI framework",
+   "line": 99,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "name": "click",
+    "major": null,
+    "ecosystem_hint": "pypi"
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "dependencyExactMatchCount": 1,
+     "dependencySuffixMatchCount": 0,
+     "dependencyManifestParsedCount": 2
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T4|google-cloud-bigquery|",
+   "tcode": "T4",
+   "types": [
+    "DependencyClaim",
+    "UnversionedDependencyClaim"
+   ],
+   "headline": true,
+   "subject": "google-cloud-bigquery",
+   "quote": "- `google-cloud-bigquery`: BigQuery integration",
+   "line": 97,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "name": "google-cloud-bigquery",
+    "major": null,
+    "ecosystem_hint": "pypi"
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "dependencyExactMatchCount": 1,
+     "dependencySuffixMatchCount": 0,
+     "dependencyManifestParsedCount": 2
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T4|llm|",
+   "tcode": "T4",
+   "types": [
+    "DependencyClaim",
+    "UnversionedDependencyClaim"
+   ],
+   "headline": true,
+   "subject": "llm",
+   "quote": "- `llm` extra: Adds llama-index, langchain for LLM-based queries",
+   "line": 107,
+   "votes": 2,
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "name": "llm",
+    "major": null,
+    "ecosystem_hint": "pypi"
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "dependencyExactMatchCount": 0,
+     "dependencySuffixMatchCount": 0,
+     "dependencyManifestParsedCount": 2
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T4|numpy|",
+   "tcode": "T4",
+   "types": [
+    "DependencyClaim",
+    "UnversionedDependencyClaim"
+   ],
+   "headline": true,
+   "subject": "numpy",
+   "quote": "- `numpy`: Numerical operations support",
+   "line": 100,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "name": "numpy",
+    "major": null,
+    "ecosystem_hint": "pypi"
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "dependencyExactMatchCount": 1,
+     "dependencySuffixMatchCount": 0,
+     "dependencyManifestParsedCount": 2
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T4|openpyxl|",
+   "tcode": "T4",
+   "types": [
+    "DependencyClaim",
+    "UnversionedDependencyClaim"
+   ],
+   "headline": true,
+   "subject": "openpyxl",
+   "quote": "- `openpyxl`: Excel file support",
+   "line": 104,
+   "votes": 2,
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "name": "openpyxl",
+    "major": null,
+    "ecosystem_hint": "pypi"
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "dependencyExactMatchCount": 1,
+     "dependencySuffixMatchCount": 0,
+     "dependencyManifestParsedCount": 2
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T4|pandas|",
+   "tcode": "T4",
+   "types": [
+    "DependencyClaim",
+    "UnversionedDependencyClaim"
+   ],
+   "headline": true,
+   "subject": "pandas",
+   "quote": "- `pandas`: DataFrame operations",
+   "line": 96,
+   "votes": 2,
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "name": "pandas",
+    "major": null,
+    "ecosystem_hint": "pypi"
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "dependencyExactMatchCount": 2,
+     "dependencySuffixMatchCount": 0,
+     "dependencyManifestParsedCount": 2
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T4|prodict|",
+   "tcode": "T4",
+   "types": [
+    "DependencyClaim",
+    "UnversionedDependencyClaim"
+   ],
+   "headline": true,
+   "subject": "prodict",
+   "quote": "- `prodict`: Dictionary to object conversion",
+   "line": 102,
+   "votes": 2,
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "name": "prodict",
+    "major": null,
+    "ecosystem_hint": "pypi"
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "dependencyExactMatchCount": 1,
+     "dependencySuffixMatchCount": 0,
+     "dependencyManifestParsedCount": 2
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T4|responses|",
+   "tcode": "T4",
+   "types": [
+    "DependencyClaim",
+    "UnversionedDependencyClaim"
+   ],
+   "headline": true,
+   "subject": "responses",
+   "quote": "- `responses`: HTTP request mocking for tests",
+   "line": 103,
+   "votes": 2,
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "name": "responses",
+    "major": null,
+    "ecosystem_hint": "pypi"
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "dependencyExactMatchCount": 1,
+     "dependencySuffixMatchCount": 0,
+     "dependencyManifestParsedCount": 2
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T4|timeago|",
+   "tcode": "T4",
+   "types": [
+    "DependencyClaim",
+    "UnversionedDependencyClaim"
+   ],
+   "headline": true,
+   "subject": "timeago",
+   "quote": "- `timeago`: Timestamp formatting",
+   "line": 101,
+   "votes": 2,
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "name": "timeago",
+    "major": null,
+    "ecosystem_hint": "pypi"
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "dependencyExactMatchCount": 1,
+     "dependencySuffixMatchCount": 0,
+     "dependencyManifestParsedCount": 2
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T4|tqdm|",
+   "tcode": "T4",
+   "types": [
+    "DependencyClaim",
+    "UnversionedDependencyClaim"
+   ],
+   "headline": true,
+   "subject": "tqdm",
+   "quote": "- `tqdm`: Progress bars for long operations",
+   "line": 98,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "name": "tqdm",
+    "major": null,
+    "ecosystem_hint": "pypi"
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "dependencyExactMatchCount": 1,
+     "dependencySuffixMatchCount": 0,
+     "dependencyManifestParsedCount": 2
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T5|make|check",
+   "tcode": "T5",
+   "types": [
+    "CommandClaim"
+   ],
+   "headline": true,
+   "subject": "check",
+   "quote": "- Check for obsolete deps with `make check` (uses deptry)",
+   "line": 112,
+   "votes": 2,
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "runner": "make",
+    "kind": "make",
+    "target": "check"
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "scriptDefinedRootCount": 1,
+     "scriptDefinedAnyCount": 1,
+     "scriptHostFileCount": 1,
+     "dynamicTargetRuleCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T6|python|3010000000@2",
+   "tcode": "T6",
+   "types": [
+    "VersionClaim",
+    "MinVersionClaim"
+   ],
+   "headline": true,
+   "subject": "python",
+   "quote": "1. **Python Version**: Requires Python 3.10 or higher (tested on 3.10, 3.11, and 3.12)",
+   "line": 9,
+   "votes": 2,
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "subject_type": "python",
+    "version": "3.10",
+    "code": 3010000000,
+    "precision": 2,
+    "qualifier": "min"
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "versionSourceCount": 2
+    },
+    "evidences": [
+     {
+      "versionSourcePath": "pyproject.toml",
+      "versionSourceRaw": ">=3.10,<4.0",
+      "versionLowerDelta": 0,
+      "versionUpperDelta": 989000000,
+      "versionUpperUnboundedCount": 0
+     },
+     {
+      "versionSourcePath": "notes/pyproject.toml",
+      "versionSourceRaw": "^3.8",
+      "versionLowerDelta": -2000000,
+      "versionUpperDelta": 0,
+      "versionUpperUnboundedCount": 0
+     }
+    ],
+    "meta": {}
+   }
+  }
+ ]
+}

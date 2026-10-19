@@ -1,0 +1,111 @@
+{
+ "unit_id": "zopefoundation__DateTime-42__C__claude-sonnet__r2",
+ "task_id": "zopefoundation__DateTime-42",
+ "repo": "zopefoundation/DateTime",
+ "stage": "servicing",
+ "condition": "C",
+ "model": "claude-code/sonnet",
+ "run": 2,
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 2936,
+  "sha256": "125ae0212af08916d9da85d9b5c3d215779c0b3d263a3049e6cc7637dad1bb8a"
+ },
+ "started": "2026-10-18T09:38:14.062140+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 12,
+ "tool_calls": 11,
+ "usage": {
+  "input_tokens": 22,
+  "cache_creation_input_tokens": 13564,
+  "cache_read_input_tokens": 229280,
+  "output_tokens": 2581,
+  "output_tokens_details": {
+   "thinking_tokens": 349
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 13564,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 22,
+   "outputTokens": 2581,
+   "cacheReadInputTokens": 229280,
+   "cacheCreationInputTokens": 13564,
+   "webSearchRequests": 0,
+   "costUSD": 0.10303799999999999,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 349,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.10303799999999999,
+ "result_text": "I fixed the failure in `src/DateTime/DateTime.py`; the 47 existing unit tests still pass.\n\n**Cause:** microseconds were computed with `floor(t * 1000000.0)`. Once `t` is large, which is the case around 2038, that product is slightly below the true integer. The floor then drops a whole microsecond. That is why `DateTime(float(dt))` didn't match `dt`, and why the repeated add/subtract in the issue's tests drifted.\n\n**Fix:** I replaced `floor` with `round` in three places in `src/DateTime/DateTime.py`:\n- where `_micros` is computed from a float time (line 867);\n- in `__setstate__` (lines 463 and 471).\n\n**Checks:**\n- **Reproduction:** I ran a script with random timestamps in the 2038 range (about 2.148 billion seconds since the epoch), comparing `DateTime(float(dt))` with `dt`, and checking the add/subtract round trip. Before the fix, 7158 of 20000 samples failed. After it, none do.\n- **Real test run:** I haven't run the actual three failing tests under a faked 2038 clock. My two attempts to fake the clock didn't trigger the bug, so I used the random-timestamp script instead.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792327800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0.09,
+    "resetsAt": 1792327800
+   },
+   "seven_day": {
+    "utilization": 0.14,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 170.2,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 12,
+   "hit_step_limit": 0,
+   "changed_lines": 6,
+   "gold_changed_lines": 9,
+   "Y1": 0,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": -0.5849625007211563
+  },
+  "f2p_pass": 1,
+  "f2p_total": 1,
+  "p2p_pass": 48,
+  "p2p_total": 48,
+  "f2p_all_pass": true,
+  "p2p_all_pass": true,
+  "resolved": true,
+  "reason": "resolved",
+  "test_seconds": 0.8
+ },
+ "status": "done",
+ "finished": "2026-10-18T09:41:06.192710+00:00"
+}

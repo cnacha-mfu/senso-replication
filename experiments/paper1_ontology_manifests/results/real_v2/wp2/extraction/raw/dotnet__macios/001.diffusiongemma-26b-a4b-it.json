@@ -1,0 +1,24 @@
+{
+ "repo": "dotnet/macios",
+ "chunk": 1,
+ "n_chunks": 2,
+ "model": "google/diffusiongemma-26b-a4b-it",
+ "prompt_sha256": "d0e02ff613417050168d859f2af6230c3712c6758bb5d9c40d60ff55e5ae87ca",
+ "user_sha256": "0f33270a950263a304c86509e4f33dcacc0f748bc1106f20f1b3a70334ef6dce",
+ "text": "{\"claims\": [\n  {\"type\": \"version\", \"quote\": \"- `main` - .NET 9 development\", \"line\": 275, \"subject\": \"dotnet\", \"version\": \"9\", \"qualifier\": \"exact\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"version\", \"quote\": \"- `net10.0` - .NET 10 development\", \"line\": 276, \"subject\": \"dotnet\", \"version\": \"10.0\", \"qualifier\": \"exact\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"version\", \"quote\": \"- `net11.0` - .NET 11 development\", \"line\": 277, \"subject\": \"dotnet\", \"version\": \"11.0\", \"qualifier\": \"exact\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"path_exists\", \"quote\": \"`release/` branches for specific releases\", \"line\": 278, \"subject\": \"release/\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"path_exists\", \"quote\": \"NuGet versions managed in `Make.versions`\", \"line\": 283, \"subject\": \"Make.versions\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"command\", \"quote\": \"Check `check-system` for missing\", \"line\": 291, \"subject\": \"check-system\", \"runner\": \"make\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"command\", \"quote\": \"Enable verbose logging with `V=1 make`\", \"line\": 300, \"subject\": \"V=1\", \"runner\": \"make\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"path_exists\", \"quote\": \"Mono-formatting style defined in `.editorconfig`\", \"line\": 304, \"subject\": \".editorconfig\", \"mode\": \"asserts_existing\"}\n]}",
+ "parse_ok": true,
+ "parse_error": null,
+ "parse_retries": 2,
+ "latency_s": 4.3087316900491714,
+ "usage": {
+  "prompt": 12458,
+  "completion": 980
+ },
+ "n_api_calls": 3,
+ "finish_reason": "stop",
+ "error": null,
+ "discarded_attempt_texts": [
+  "```json\n{\"claims\": [\n  {\"type\": \"version\", \"subject\": \"dotnet\", \"version\": \"9\", \"qualifier\": \"min\", \"line\": 0177, \"mode\": \"asserts_existing\"},\n  {\"type\": \"version\", \"subject\": \"dotnet\", \"version\": \"10.0\", \"qualifier\": \"min\", \"line\": 0276, \"mode\": \"asserts_existing\"},\n  {\"type\": \"version\", \"subject\": \"dotnet\", \"version\": \"11.0\", \"qualifier\": \"min\", \"line\": 0277, \"mode\": \"asserts_existing\"},\n  {\"type\": \"path_exists\", \"subject\": \"Make.versions\", \"line\": 0283, \"mode\": \"asserts_existing\"},\n  {\"type\": \"command\", \"subject\": \"check-system\", \"runner\": \"make\", \"line\": 0291, \"mode\": \"asserts_existing\"},\n  {\"type\": \"command\", \"subject\": \"make\", \"runner\": \"make\", \"line\": 0300, \"mode\": \"asserts_existing\"},\n  {\"type\": \"path_exists\", \"subject\": \".editorconfig\", \"line\": 0304, \"mode\": \"asserts_existing\"}\n]}\n```",
+  "{\"claims\": [\n  {\"type\": \"version\", \"subject\": \"dotnet\", version: \"9\", \"qualifier\": \"exact\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"version\", \"subject\": \"dotnet\", version: \"10.0\", \"qualifier\": \"exact\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"version\", \"subject\": \"dotnet\", version: \"11.0\", \"qualifier\": \"exact\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"path_exists\", \"subject\": \"Make.versions\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"command\", \"subject\": \"check-system\", runner: \"make\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"command\", \"subject\": \"V=1 make\", runner: \"make\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"path_exists\", \"subject\": \".editorconfig\", \"mode\": \"asserts_existing\"}\n]"
+ ]
+}

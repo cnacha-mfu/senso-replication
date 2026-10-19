@@ -1,0 +1,111 @@
+{
+ "unit_id": "Fatal1ty__mashumaro-178__D__claude-sonnet__r1",
+ "task_id": "Fatal1ty__mashumaro-178",
+ "repo": "Fatal1ty/mashumaro",
+ "stage": "phase_out",
+ "condition": "D",
+ "model": "claude-code/sonnet",
+ "run": 1,
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 3852,
+  "sha256": "d06200aebfeba3df623683683616c6e9a7934a0a87ce75354048b86a16fa43d3"
+ },
+ "started": "2026-10-18T01:42:11.131934+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 2,
+ "tool_calls": 11,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 1539,
+  "cache_read_input_tokens": 56638,
+  "output_tokens": 458,
+  "output_tokens_details": {
+   "thinking_tokens": 54
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 1539,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 28,
+   "outputTokens": 3062,
+   "cacheReadInputTokens": 300146,
+   "cacheCreationInputTokens": 18803,
+   "webSearchRequests": 0,
+   "costUSD": 0.1359026,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 512,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.1359026,
+ "result_text": "The full test run finished with 25,958 passed, 13 skipped and 1 failed. The failure is `tests/test_pep_646.py::test_type_name_for_unpacks_py_less_than_311`.\n\nI didn't run that test without my change. It's a check for Python versions before 3.11, and this environment is on 3.11, so I think it fails regardless of my change. It also covers type-name formatting for unpacks, which my annotation-resolution change doesn't touch.\n\nThe fix is in `mashumaro/core/meta/helpers.py`. It makes string annotations from `from __future__ import annotations` resolve properly, so the issue's `dict[str, T]` example now works.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792291800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0.11,
+    "resetsAt": 1792291800
+   },
+   "seven_day": {
+    "utilization": 0.11,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 246.5,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 2,
+   "hit_step_limit": 0,
+   "changed_lines": 15,
+   "gold_changed_lines": 56,
+   "Y1": 4,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": -1.9004643264490857
+  },
+  "f2p_pass": 2,
+  "f2p_total": 2,
+  "p2p_pass": 0,
+  "p2p_total": 0,
+  "f2p_all_pass": true,
+  "p2p_all_pass": true,
+  "resolved": true,
+  "reason": "resolved",
+  "test_seconds": 0.9
+ },
+ "status": "done",
+ "finished": "2026-10-18T01:46:20.914208+00:00"
+}

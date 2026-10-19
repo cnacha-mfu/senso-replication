@@ -1,0 +1,81 @@
+{
+ "unit_id": "maxhumber__gif-17__F_I__nemotron-3-ultra-550b-a55b__r1",
+ "task_id": "maxhumber__gif-17",
+ "repo": "maxhumber/gif",
+ "stage": "phase_out",
+ "condition": "F_I",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "run": 1,
+ "order": 543,
+ "env_build_s": 68.1,
+ "started": "2026-10-14T17:32:00.514979+00:00",
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 212,
+  "sha256": "bcebd7e43a0a94d7e3dbcacfd79cee699288ab0135cb26a6e942bd8032692061"
+ },
+ "condition_available": true,
+ "venv_reset_s": 5.58,
+ "stray_procs_killed": 0,
+ "retries": 0,
+ "venv_hash_before": "768947be828f8861",
+ "venv_hash_after": "768947be828f8861",
+ "venv_mutated": false,
+ "exit_status": "Submitted",
+ "error": "",
+ "steps": 40,
+ "wall_s": 981.5,
+ "prompt_tokens": 495155,
+ "completion_tokens": 12399,
+ "format_errors": 0,
+ "length_cutoffs": 0,
+ "api_errors": {
+  "429": 8,
+  "503": 9,
+  "timeout": 1
+ },
+ "n_queries": 50,
+ "keys_used": {
+  "NVIDIA_API_KEY_2": 16,
+  "NVIDIA_API_KEY_5": 15,
+  "NVIDIA_API_KEY": 12,
+  "NVIDIA_API_KEY_4": 15
+ },
+ "temperature": 0.7,
+ "top_p": 0.95,
+ "model_id_returned": "nvidia/nemotron-3-ultra-550b-a55b",
+ "mini_version": "2.4.6",
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 4,
+   "Y6": 40,
+   "hit_step_limit": 0,
+   "changed_lines": 281,
+   "gold_changed_lines": 32,
+   "Y1": 22,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": 3.134426320220926
+  },
+  "f2p_pass": 0,
+  "f2p_total": 1,
+  "p2p_pass": 4,
+  "p2p_total": 4,
+  "f2p_all_pass": false,
+  "p2p_all_pass": true,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 4.1
+ },
+ "status": "done",
+ "finished": "2026-10-14T17:48:37.609623+00:00"
+}

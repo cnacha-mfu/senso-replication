@@ -1,0 +1,35 @@
+{
+ "repo": "lerna/lerna",
+ "slug": "lerna__lerna",
+ "input_sha": "a5084cecb271ef305d5b70cba8e6962ef4b1e61f6a9a89850952149054cc41c2",
+ "explanations": [
+  {
+   "key": "T3|build_tool|esbuild",
+   "verdict": "SupportedClaim",
+   "leaf": "ToolSignatureFound",
+   "seconds": 3.98,
+   "retried_on_claim_subgraph": false,
+   "error": null,
+   "returncode": 0,
+   "n_justifications": 1,
+   "facts": [
+    {
+     "prop": "toolSignatureHitCount",
+     "value": 1
+    },
+    {
+     "prop": "extractionVotes",
+     "value": 2
+    }
+   ],
+   "axioms": [
+    "A_extractionVotes_ge_wp2_consensus_min_votes equivalentTo extractionVotes some integer[>= 2]",
+    "ToolSignatureFound equivalentTo A_toolSignatureHitCount_ge_1 and CheckedClaim and ToolUsageClaim",
+    "CheckedClaim equivalentTo A_extractionVotes_ge_wp2_consensus_min_votes and ManifestClaim",
+    "ToolSignatureFound subClassOf SupportedClaim",
+    "A_toolSignatureHitCount_ge_1 equivalentTo toolSignatureHitCount some integer[>= 1]"
+   ],
+   "closures": []
+  }
+ ]
+}

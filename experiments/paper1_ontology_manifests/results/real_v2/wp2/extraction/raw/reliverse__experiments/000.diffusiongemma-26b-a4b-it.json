@@ -1,0 +1,21 @@
+{
+ "repo": "reliverse/experiments",
+ "chunk": 0,
+ "n_chunks": 2,
+ "model": "google/diffusiongemma-26b-a4b-it",
+ "prompt_sha256": "d0e02ff613417050168d859f2af6230c3712c6758bb5d9c40d60ff55e5ae87ca",
+ "user_sha256": "86ef6c03dd64c9c19d4e337103dca53e1b72b484898da366d89deb2392fad221",
+ "text": "{\"claims\": [\n  {\"type\": \"tool_used\", \"quote\": \"The project uses bun workspaces for package management.\", \"subject\": \"bun\", \"tool_category\": \"package_manager\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"tool_used\", \"quote\": \"The project uses Turborepo for task local & remote caching.\", \"subject\": \"Turborepo\", \"tool_category\": \"build_tool\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"path_exists\", \"quote\": \"- packages/ - Contains all workspace packages (relico, tsconfig, etc)\", \"subject\": \"packages/\", \"path_components\": [\"packages/\"], \"mode\": \"asserts_existing\"},\n  {\"type\": \"path_exists\", \"quote\": \"- apps/ - Application definitions split by service (cli, scripts, etc)\", \"subject\": \"apps/\", \"path_components\": [\"apps/\"], \"mode\": \"asserts_existing\"},\n  {\"type\": \"dependency\", \"quote\": \"- This project uses @reliverse/dler to manage bun monorepos easily\", \"subject\": \"@reliverse/dler\", \"ecosystem_hint\": \"npm\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"command\", \"quote\": \"You can check dler's available commands with dler --help\", \"subject\": \"--help\", \"runner\": \"dler\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"command\", \"quote\": \"Use dler update to update all dependencies in monorepo\", \"subject\": \"update\", \"runner\": \"dler\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"tool_used\", \"quote\": \"This project uses Ultracite, a zero-config preset that enforces strict code quality standards through automated formatting and linting.\", \"subject\": \"Ultracite\", \"tool_category\": \"linter_formatter\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"command\", \"quote\": \"- Format code: bunx ultracite fix\", \"subject\": \"fix\", \"runner\": \"bun\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"command\", \"quote\": \"- Check for issues: bunx ultracite check\", \"subject\": \"check\", \"runner\": \"bun\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"command\", \"quote\": \"- Diagnose setup: bunx ultracite doctor\", \"subject\": \"doctor\", \"runner\": \"bun\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"tool_used\", \"quote\": \"Biome (the underlying engine) provides robust linting and formatting.\", \"subject\": \"Biome\", \"tool_category\": \"linter_formatter\", \"mode\": \"asserts_existing\"}\n]}",
+ "parse_ok": true,
+ "parse_error": null,
+ "parse_retries": 0,
+ "latency_s": 3.9328120489954017,
+ "usage": {
+  "prompt": 4059,
+  "completion": 615
+ },
+ "n_api_calls": 1,
+ "finish_reason": "stop",
+ "error": null,
+ "discarded_attempt_texts": []
+}

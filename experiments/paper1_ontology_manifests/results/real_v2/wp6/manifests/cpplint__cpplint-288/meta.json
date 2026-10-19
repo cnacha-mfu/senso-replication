@@ -1,0 +1,284 @@
+{
+ "task_id": "cpplint__cpplint-288",
+ "repo": "cpplint/cpplint",
+ "stage": "evolution",
+ "rounds": 1,
+ "rejects": {},
+ "flags": [
+  "no_gold_dir",
+  "no_test_root",
+  "no_test_command",
+  "length_violation_F_R",
+  "length_violation_F_I"
+ ],
+ "info": {
+  "slots": {
+   "P1": {
+    "replaced": null,
+    "name": "core",
+    "F_R": "core",
+    "F_I": "samples/core"
+   },
+   "P2": {
+    "replaced": null,
+    "F_R": "internal.py",
+    "F_I": "samples/internal.py"
+   },
+   "C": {
+    "F_R": "make test",
+    "F_I": "make install"
+   },
+   "D": {
+    "replaced": null,
+    "F_R": "boltons",
+    "F_I": "boltons"
+   }
+  },
+  "why": {
+   "kind1": {
+    "p1_idx": null,
+    "gold0": null,
+    "unrelated": null,
+    "base_R": "",
+    "base_I": "samples"
+   },
+   "kind2": {
+    "p2_idx": null,
+    "n_deleted_py": 3,
+    "found": {
+     "F_R": "internal.py",
+     "F_I": "samples/internal.py"
+    }
+   },
+   "kind3": {
+    "run": "test",
+    "install": "install",
+    "test_ok": false,
+    "install_ok": true
+   },
+   "kind4": {
+    "deps": [],
+    "d_idx": null,
+    "src_R": null,
+    "src_I": null,
+    "n_decls": 2,
+    "n_dist": 38
+   }
+  },
+  "length": {
+   "T": 79,
+   "F_R": 182,
+   "F_I": 165
+  },
+  "fallbacks": {
+   "F_R": [
+    "kind2_never_existed_fallback"
+   ],
+   "F_I": [
+    "kind2_never_existed_fallback"
+   ]
+  },
+  "modes": {
+   "F_R": {
+    "1": "add",
+    "2": "add",
+    "3": "add",
+    "4": "add"
+   },
+   "F_I": {
+    "1": "add",
+    "2": "add",
+    "3": "replace",
+    "4": "add"
+   }
+  },
+  "length_diff": {
+   "F_R": 103,
+   "F_I": 86
+  },
+  "n_claims_T": 1,
+  "n_false": {
+   "F_R": 4,
+   "F_I": 4
+  },
+  "pointer_in_issue": false,
+  "gold_dirs": [],
+  "gold_files": [
+   "CHANGELOG.rst",
+   "cpplint.py"
+  ]
+ },
+ "tokens": {
+  "F_R": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "core",
+     "core"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "internal.py",
+     "internal.py"
+    ]
+   },
+   {
+    "kind": 3,
+    "type": "regex",
+    "regex": "\\bmake\\b[^|;&\\n]*\\btest\\b",
+    "target": "test"
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "boltons"
+    ]
+   }
+  ],
+  "F_I": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "samples/core",
+     "core"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "samples/internal.py",
+     "internal.py"
+    ]
+   },
+   {
+    "kind": 3,
+    "type": "regex",
+    "regex": "\\bmake\\b[^|;&\\n]*\\binstall\\b",
+    "target": "install"
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "boltons"
+    ]
+   }
+  ]
+ },
+ "unresolved_pre_hermit": [],
+ "sha256": {
+  "T": "e8ca9e7466030beee93d2c2a2f6a0d557ebe8a4ce15930571f3368e413d74094",
+  "F_R": "31f66f884e5aa656482895a778779883f4610c5e26c7042e3ebc2040a63ecf59",
+  "F_I": "d778e2b8558cac69e2ce19389fbc3e1c24a4997f40eb0786abc53dc2adaa8284"
+ },
+ "chars": {
+  "T": 79,
+  "F_R": 182,
+  "F_I": 165
+ },
+ "claims": {
+  "T": [
+   "T1|pyproject.toml"
+  ],
+  "F_R": [
+   "T1|core",
+   "T1|internal.py",
+   "T1|pyproject.toml",
+   "T5|make|test",
+   "T4|boltons|"
+  ],
+  "F_I": [
+   "T1|samples/core",
+   "T1|samples/internal.py",
+   "T5|make|install",
+   "T4|boltons|"
+  ]
+ },
+ "python_spec": null,
+ "token_audit": [
+  {
+   "cond": "F_R",
+   "kind": 1,
+   "type": "path",
+   "name": "core",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 2,
+   "type": "path",
+   "name": "internal.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 3,
+   "type": "regex",
+   "name": "make test",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 4,
+   "type": "word",
+   "name": "boltons",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 1,
+   "type": "path",
+   "name": "samples/core",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 2,
+   "type": "path",
+   "name": "samples/internal.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 3,
+   "type": "regex",
+   "name": "make install",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 4,
+   "type": "word",
+   "name": "boltons",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  }
+ ],
+ "dist_imports_used": {
+  "boltons": null
+ }
+}

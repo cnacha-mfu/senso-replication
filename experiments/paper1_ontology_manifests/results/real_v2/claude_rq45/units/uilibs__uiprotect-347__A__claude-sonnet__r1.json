@@ -1,0 +1,107 @@
+{
+ "unit_id": "uilibs__uiprotect-347__A__claude-sonnet__r1",
+ "task_id": "uilibs__uiprotect-347",
+ "repo": "uilibs/uiprotect",
+ "stage": "phase_out",
+ "condition": "A",
+ "model": "claude-code/sonnet",
+ "run": 1,
+ "condition_meta": {},
+ "started": "2026-10-18T09:28:15.455295+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 7,
+ "tool_calls": 6,
+ "usage": {
+  "input_tokens": 12,
+  "cache_creation_input_tokens": 7395,
+  "cache_read_input_tokens": 112617,
+  "output_tokens": 1929,
+  "output_tokens_details": {
+   "thinking_tokens": 622
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 7395,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 12,
+   "outputTokens": 1929,
+   "cacheReadInputTokens": 112617,
+   "cacheCreationInputTokens": 7395,
+   "webSearchRequests": 0,
+   "costUSD": 0.0601557,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 622,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.0601557,
+ "result_text": "I changed `Light.set_light` in `src/uiprotect/data/devices.py` so it always sends the force-on state to the controller. I haven't run any tests or tried it against a real floodlight.\n\nThe cause, as far as I can tell: when Protect itself turns the floodlight on (for example on motion), the library's `is_led_force_on` is still `False`. Calling `set_light(False)` then changed nothing, so no diff was computed and no request went out. The light stayed on.\n\n`set_light` now takes the update lock and applies the change. It then adds `lightOnSettings.isLedForceOn` to the update even when the value didn't change, so the request is always sent. This is the same locking pattern `set_paired_camera` uses.\n\nThis no longer goes through `queue_update`, so `set_light` calls are no longer batched with other updates in a single PATCH. I haven't checked the existing tests, so any that assert on that batching may need a look.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792327800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0.08,
+    "resetsAt": 1792327800
+   },
+   "seven_day": {
+    "utilization": 0.14,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 29.7,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 7,
+   "hit_step_limit": 0,
+   "changed_lines": 12,
+   "gold_changed_lines": 10,
+   "Y1": -1,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": 0.2630344058337938
+  },
+  "f2p_pass": 0,
+  "f2p_total": 3,
+  "p2p_pass": 59,
+  "p2p_total": 59,
+  "f2p_all_pass": false,
+  "p2p_all_pass": true,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 14.0
+ },
+ "status": "done",
+ "finished": "2026-10-18T09:29:01.444030+00:00"
+}

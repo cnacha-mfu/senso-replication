@@ -1,0 +1,60 @@
+{
+ "repo": "chmouel/nextmeeting",
+ "slug": "chmouel__nextmeeting",
+ "input_sha": "0d0a2fede8f407d5988ec53a1b03e19e911e03568cc2e1533670658452023d34",
+ "explanations": [
+  {
+   "key": "T6|python|3009000000@2",
+   "verdict": "ConflictedClaim",
+   "leaf": "VersionSourcesConflict",
+   "seconds": 4.23,
+   "retried_on_claim_subgraph": false,
+   "error": null,
+   "returncode": 0,
+   "n_justifications": 1,
+   "facts": [
+    {
+     "prop": "evidenceFor",
+     "value": "e7ee7f0e3220"
+    },
+    {
+     "prop": "hasEvidence",
+     "value": "ev1"
+    },
+    {
+     "prop": "versionLowerDelta",
+     "value": 0
+    },
+    {
+     "prop": "evidenceFor",
+     "value": "e7ee7f0e3220"
+    },
+    {
+     "prop": "extractionVotes",
+     "value": 2
+    },
+    {
+     "prop": "hasEvidence",
+     "value": "ev0"
+    },
+    {
+     "prop": "versionLowerDelta",
+     "value": 3000000
+    }
+   ],
+   "axioms": [
+    "MinVersionAgreement subClassOf AgreeingVersionEvidence",
+    "A_extractionVotes_ge_wp2_consensus_min_votes equivalentTo extractionVotes some integer[>= 2]",
+    "VersionSourcesConflict subClassOf ConflictedClaim",
+    "A_versionLowerDelta_ge_0_le_0 equivalentTo versionLowerDelta some integer[>= 0, <= 0]",
+    "CheckedClaim equivalentTo A_extractionVotes_ge_wp2_consensus_min_votes and ManifestClaim",
+    "VersionSourcesConflict equivalentTo CheckedClaim and VersionClaim and hasEvidence some AgreeingVersionEvidence and hasEvidence some DisagreeingVersionEvidence",
+    "MinVersionHigherThanClaimed subClassOf DisagreeingVersionEvidence",
+    "A_versionLowerDelta_gt_0 equivalentTo versionLowerDelta some integer[> 0]",
+    "MinVersionHigherThanClaimed equivalentTo A_versionLowerDelta_gt_0 and VersionEvidence and evidenceFor some MinVersionClaim",
+    "MinVersionAgreement equivalentTo A_versionLowerDelta_ge_0_le_0 and VersionEvidence and evidenceFor some MinVersionClaim"
+   ],
+   "closures": []
+  }
+ ]
+}

@@ -1,0 +1,102 @@
+{
+ "repo": "jaxen-xpath/jaxen",
+ "slug": "jaxen-xpath__jaxen",
+ "input_sha": "e7bf02dde3a4d198588d1b387700611550a4e972d5763f2a7ff21704172c3a96",
+ "explanations": [
+  {
+   "key": "T6|java|8000000000@1",
+   "verdict": "ContradictedClaim",
+   "leaf": "VersionContradicted",
+   "seconds": 4.42,
+   "retried_on_claim_subgraph": false,
+   "error": null,
+   "returncode": 0,
+   "n_justifications": 1,
+   "facts": [
+    {
+     "prop": "versionUpperDelta",
+     "value": -3000000000
+    },
+    {
+     "prop": "hasEvidence",
+     "value": "ev0"
+    },
+    {
+     "prop": "extractionVotes",
+     "value": 2
+    },
+    {
+     "prop": "evidenceFor",
+     "value": "a3110471256d"
+    }
+   ],
+   "axioms": [
+    "ExactVersionAboveRange subClassOf DisagreeingVersionEvidence",
+    "A_extractionVotes_ge_wp2_consensus_min_votes equivalentTo extractionVotes some integer[>= 2]",
+    "ExactVersionAboveRange equivalentTo A_versionUpperDelta_lt_0 and VersionEvidence and evidenceFor some ExactVersionClaim",
+    "DisagreeingVersionEvidence subClassOf NonAgreeingVersionEvidence",
+    "CheckedClaim equivalentTo A_extractionVotes_ge_wp2_consensus_min_votes and ManifestClaim",
+    "VersionContradicted subClassOf ContradictedClaim",
+    "A_versionUpperDelta_lt_0 equivalentTo versionUpperDelta some integer[< 0]",
+    "VersionContradicted equivalentTo CheckedClaim and VersionClaim and hasEvidence only NonAgreeingVersionEvidence and hasEvidence some DisagreeingVersionEvidence"
+   ],
+   "closures": []
+  },
+  {
+   "key": "T1|.circleci/config.yml",
+   "verdict": "SupportedClaim",
+   "leaf": "PathFoundExact",
+   "seconds": 3.73,
+   "retried_on_claim_subgraph": false,
+   "error": null,
+   "returncode": 0,
+   "n_justifications": 1,
+   "facts": [
+    {
+     "prop": "pathExactMatchCount",
+     "value": 1
+    },
+    {
+     "prop": "extractionVotes",
+     "value": 3
+    }
+   ],
+   "axioms": [
+    "PathFoundExact equivalentTo A_pathExactMatchCount_ge_1 and CheckedClaim and PathExistenceClaim",
+    "A_extractionVotes_ge_wp2_consensus_min_votes equivalentTo extractionVotes some integer[>= 2]",
+    "A_pathExactMatchCount_ge_1 equivalentTo pathExactMatchCount some integer[>= 1]",
+    "CheckedClaim equivalentTo A_extractionVotes_ge_wp2_consensus_min_votes and ManifestClaim",
+    "PathFoundExact subClassOf SupportedClaim"
+   ],
+   "closures": []
+  },
+  {
+   "key": "T1|core/src/java/main/org/jaxen/Navigator.java",
+   "verdict": "SupportedClaim",
+   "leaf": "PathFoundExact",
+   "seconds": 3.82,
+   "retried_on_claim_subgraph": false,
+   "error": null,
+   "returncode": 0,
+   "n_justifications": 1,
+   "facts": [
+    {
+     "prop": "extractionVotes",
+     "value": 3
+    },
+    {
+     "prop": "pathExactMatchCount",
+     "value": 1
+    }
+   ],
+   "axioms": [
+    "PathFoundExact equivalentTo A_pathExactMatchCount_ge_1 and CheckedClaim and PathExistenceClaim",
+    "A_extractionVotes_ge_wp2_consensus_min_votes equivalentTo extractionVotes some integer[>= 2]",
+    "A_pathExactMatchCount_ge_1 equivalentTo pathExactMatchCount some integer[>= 1]",
+    "CheckedClaim equivalentTo A_extractionVotes_ge_wp2_consensus_min_votes and ManifestClaim",
+    "PathFoundExact subClassOf SupportedClaim"
+   ],
+   "closures": []
+  }
+ ]
+}

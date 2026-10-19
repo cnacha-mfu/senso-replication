@@ -1,0 +1,326 @@
+{
+ "task_id": "boto__botocore-1996",
+ "repo": "boto/botocore",
+ "stage": "phase_out",
+ "rounds": 1,
+ "rejects": {},
+ "flags": [
+  "kind4_R_used_I_competitor"
+ ],
+ "info": {
+  "slots": {
+   "test_root": "tests",
+   "P1": {
+    "replaced": "botocore/vendored",
+    "name": "core",
+    "F_R": ".changes/next-release/core",
+    "F_I": "botocore/docs/core"
+   },
+   "P2": {
+    "replaced": "botocore/retries/standard.py",
+    "F_R": "botocore/vendored/requests/adapters.py",
+    "F_I": "tests/unit/test_config.py"
+   },
+   "C": {
+    "F_R": "make test",
+    "F_I": "make install"
+   },
+   "D": {
+    "replaced": "docutils",
+    "F_R": "boltons",
+    "F_I": "boltons"
+   }
+  },
+  "why": {
+   "test_command": [
+    {
+     "root": "tests",
+     "T3": "SupportedClaim",
+     "T1": "SupportedClaim",
+     "collect_ok": true
+    }
+   ],
+   "kind1": {
+    "p1_idx": 4,
+    "gold0": ".changes/next-release",
+    "unrelated": "botocore/docs",
+    "base_R": ".changes/next-release",
+    "base_I": "botocore/docs"
+   },
+   "kind2": {
+    "p2_idx": 2,
+    "n_deleted_py": 159,
+    "found": {
+     "F_R": "botocore/vendored/requests/adapters.py",
+     "F_I": "tests/unit/test_config.py"
+    }
+   },
+   "kind3": {
+    "run": "test",
+    "install": "install",
+    "test_ok": true,
+    "install_ok": true
+   },
+   "kind4": {
+    "deps": [
+     [
+      "docutils",
+      false
+     ]
+    ],
+    "d_idx": 0,
+    "src_R": "docutils",
+    "src_I": "docutils",
+    "n_decls": 10,
+    "n_dist": 36
+   }
+  },
+  "length": {
+   "T": 397,
+   "F_R": 390,
+   "F_I": 378
+  },
+  "fallbacks": {
+   "F_R": [
+    "kind4_I_competitor"
+   ],
+   "F_I": []
+  },
+  "modes": {
+   "F_R": {
+    "1": "replace",
+    "2": "replace",
+    "3": "replace",
+    "4": "replace"
+   },
+   "F_I": {
+    "1": "replace",
+    "2": "replace",
+    "3": "replace",
+    "4": "replace"
+   }
+  },
+  "length_diff": {
+   "F_R": -7,
+   "F_I": -19
+  },
+  "n_claims_T": 13,
+  "n_false": {
+   "F_R": 4,
+   "F_I": 4
+  },
+  "pointer_in_issue": true,
+  "gold_dirs": [
+   ".changes/next-release",
+   "botocore"
+  ],
+  "gold_files": [
+   ".changes/next-release/bugfix-Stubber-96340.json",
+   "botocore/handlers.py"
+  ]
+ },
+ "tokens": {
+  "F_R": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     ".changes/next-release/core",
+     "core"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "botocore/vendored/requests/adapters.py",
+     "adapters.py"
+    ]
+   },
+   {
+    "kind": 3,
+    "type": "regex",
+    "regex": "\\bmake\\b[^|;&\\n]*\\btest\\b",
+    "target": "test"
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "boltons"
+    ]
+   }
+  ],
+  "F_I": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "botocore/docs/core",
+     "core"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "tests/unit/test_config.py",
+     "test_config.py"
+    ]
+   },
+   {
+    "kind": 3,
+    "type": "regex",
+    "regex": "\\bmake\\b[^|;&\\n]*\\binstall\\b",
+    "target": "install"
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "boltons"
+    ]
+   }
+  ]
+ },
+ "unresolved_pre_hermit": [],
+ "sha256": {
+  "T": "0e54f856efa23276ddb8b8e8bd4b8e4a3d9be4834363cc20fe0eb768455d1425",
+  "F_R": "f6e43c4f8a7cd2112da58914f022c76a936da635ec84fa304f24029601198d01",
+  "F_I": "5c21144e7f0b802af12ae17e843c498c138bcecc9e43fa8bf5ed3ee36d100d9d"
+ },
+ "chars": {
+  "T": 397,
+  "F_R": 390,
+  "F_I": 378
+ },
+ "claims": {
+  "T": [
+   "T1|.changes/next-release",
+   "T1|botocore",
+   "T1|botocore/docs",
+   "T1|botocore/retries",
+   "T1|botocore/vendored",
+   "T1|tests",
+   "T1|botocore/credentials.py",
+   "T1|botocore/docs/bcdoc/textwriter.py",
+   "T1|botocore/retries/standard.py",
+   "T3|test_framework|pytest",
+   "T1|tests",
+   "T1|setup.py",
+   "T4|docutils|"
+  ],
+  "F_R": [
+   "T1|.changes/next-release",
+   "T1|botocore",
+   "T1|botocore/docs",
+   "T1|botocore/retries",
+   "T1|.changes/next-release/core",
+   "T1|tests",
+   "T1|botocore/credentials.py",
+   "T1|botocore/docs/bcdoc/textwriter.py",
+   "T1|botocore/vendored/requests/adapters.py",
+   "T5|make|test",
+   "T1|setup.py",
+   "T4|boltons|"
+  ],
+  "F_I": [
+   "T1|.changes/next-release",
+   "T1|botocore",
+   "T1|botocore/docs",
+   "T1|botocore/retries",
+   "T1|botocore/docs/core",
+   "T1|tests",
+   "T1|botocore/credentials.py",
+   "T1|botocore/docs/bcdoc/textwriter.py",
+   "T1|tests/unit/test_config.py",
+   "T3|test_framework|pytest",
+   "T1|tests",
+   "T5|make|install",
+   "T4|boltons|"
+  ]
+ },
+ "python_spec": null,
+ "token_audit": [
+  {
+   "cond": "F_R",
+   "kind": 1,
+   "type": "path",
+   "name": ".changes/next-release/core",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 2,
+   "type": "path",
+   "name": "botocore/vendored/requests/adapters.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 3,
+   "type": "regex",
+   "name": "make test",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 4,
+   "type": "word",
+   "name": "boltons",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 1,
+   "type": "path",
+   "name": "botocore/docs/core",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 2,
+   "type": "path",
+   "name": "tests/unit/test_config.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 3,
+   "type": "regex",
+   "name": "make install",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 4,
+   "type": "word",
+   "name": "boltons",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  }
+ ],
+ "dist_imports_used": {
+  "docutils": [
+   "docutils"
+  ],
+  "boltons": null
+ }
+}

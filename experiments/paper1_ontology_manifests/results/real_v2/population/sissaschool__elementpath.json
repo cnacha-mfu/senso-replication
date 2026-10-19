@@ -1,0 +1,1975 @@
+{
+ "repo": "sissaschool/elementpath",
+ "snapshot_date": "2025-06-30",
+ "status": "ok",
+ "unmineable": false,
+ "unmineable_reason": null,
+ "replaces": null,
+ "settings": {
+  "dedup": true,
+  "complexity": false,
+  "dataset": "seo_v2",
+  "sensitivity": true
+ },
+ "versions": {
+  "owlready2": "0.51",
+  "pymannkendall": "1.4.3",
+  "lizard": "1.24.1",
+  "numpy": "2.5.3",
+  "scipy": "1.18.1",
+  "python": "3.12.15",
+  "git": "git version 2.53.0"
+ },
+ "measures": {
+  "monthsObserved": 36,
+  "monthsSinceLastCommit": 0,
+  "distinctAuthorsInWindow": 8,
+  "commitMKTau": -0.196825,
+  "commitMKpValue": 0.09073,
+  "activeMonthCount": 27,
+  "activeMonthRatio": 0.75,
+  "meanMonthlyCommits": 12.361111,
+  "commitsLast3Months": 36,
+  "commitCountCV": 0.925567,
+  "commitCountCVSample": 0.938696,
+  "commitHalfRatio": 0.751969,
+  "commitSecondHalfMean": 10.611111,
+  "churnCV": 1.196801,
+  "linesAddedCV": 1.117198,
+  "mergeMonthRatio": 0.166667,
+  "multiAuthorMonthRatio": 0.138889,
+  "bugFixRatioFirstHalf": 0.302768,
+  "bugFixRatioSecondHalf": 0.277215,
+  "bugFixHalfRatio": 0.915602,
+  "locSeriesLength": 36,
+  "locRelSenSlopeAnnual": 0.083984,
+  "locMKTau": 0.952381,
+  "locMKS": 600,
+  "locMKpValue": 0.0,
+  "locSenSlope": 241.136364,
+  "locStart": 28358,
+  "locEnd": 38880,
+  "locDelta": 10522,
+  "locGrowthRate": 0.371042,
+  "locChangePct": 37.104168,
+  "locEndToStartRatio": 1.371042,
+  "locGrowthLast3": 0.010474,
+  "featureCommitsFirstHalf": 0,
+  "featureCommitsSecondHalf": 0,
+  "featureCommitsTotal": 0,
+  "locDeltaPerFeature": 10522.0,
+  "recentAgentCommitRatio": 0.0,
+  "featCommitCount": 0,
+  "bugFixCommitCount": 140,
+  "commitCount": 445,
+  "monthly_series": {
+   "months": [
+    "2021-07",
+    "2021-08",
+    "2021-09",
+    "2021-10",
+    "2021-11",
+    "2021-12",
+    "2022-01",
+    "2022-02",
+    "2022-03",
+    "2022-04",
+    "2022-05",
+    "2022-06",
+    "2022-07",
+    "2022-08",
+    "2022-09",
+    "2022-10",
+    "2022-11",
+    "2022-12",
+    "2023-01",
+    "2023-02",
+    "2023-03",
+    "2023-04",
+    "2023-05",
+    "2023-06",
+    "2023-07",
+    "2023-08",
+    "2023-09",
+    "2023-10",
+    "2023-11",
+    "2023-12",
+    "2024-01",
+    "2024-02",
+    "2024-03",
+    "2024-04",
+    "2024-05",
+    "2024-06",
+    "2024-07",
+    "2024-08",
+    "2024-09",
+    "2024-10",
+    "2024-11",
+    "2024-12",
+    "2025-01",
+    "2025-02",
+    "2025-03",
+    "2025-04",
+    "2025-05",
+    "2025-06"
+   ],
+   "commits": [
+    4,
+    20,
+    44,
+    6,
+    25,
+    10,
+    34,
+    45,
+    16,
+    15,
+    22,
+    50,
+    38,
+    19,
+    21,
+    10,
+    27,
+    19,
+    42,
+    26,
+    22,
+    13,
+    1,
+    11,
+    5,
+    0,
+    0,
+    0,
+    0,
+    0,
+    10,
+    27,
+    10,
+    0,
+    1,
+    0,
+    0,
+    15,
+    25,
+    21,
+    0,
+    9,
+    2,
+    26,
+    9,
+    17,
+    8,
+    11
+   ],
+   "loc": [
+    24336,
+    24423,
+    24504,
+    24613,
+    25056,
+    25721,
+    26476,
+    27161,
+    27184,
+    27175,
+    27220,
+    27220,
+    28358,
+    28861,
+    29556,
+    29983,
+    30582,
+    31082,
+    32045,
+    32809,
+    33759,
+    34277,
+    34272,
+    34390,
+    34420,
+    34420,
+    34420,
+    34420,
+    34420,
+    34420,
+    34489,
+    35165,
+    35361,
+    35361,
+    35361,
+    35361,
+    35361,
+    35676,
+    37074,
+    37629,
+    37629,
+    37780,
+    37813,
+    38108,
+    38012,
+    38477,
+    38704,
+    38880
+   ]
+  }
+ },
+ "window": {
+  "L": 36,
+  "first_month": "2022-07",
+  "last_month": "2025-06",
+  "n_months": 36,
+  "left_truncated": false,
+  "first_commit_month": "2018-02",
+  "mined_months": 48,
+  "commits_in_window": 445,
+  "commits_in_history": 1883
+ },
+ "loc_instrument": {
+  "instrument": "nonblank-source-lines-v1",
+  "status": "ok",
+  "months": 48,
+  "month_end_commits_distinct": 38,
+  "source_blobs": 1068,
+  "blobs_fetched": 3,
+  "t_ls_tree_s": 0.793624775018543,
+  "t_fetch_s": 0.8575441089924425,
+  "t_read_s": 0.5344000139739364,
+  "series_present": true,
+  "extensions": [
+   ".bash",
+   ".c",
+   ".cc",
+   ".cjs",
+   ".clj",
+   ".cpp",
+   ".cs",
+   ".cxx",
+   ".dart",
+   ".erl",
+   ".ex",
+   ".exs",
+   ".f90",
+   ".go",
+   ".groovy",
+   ".h",
+   ".hh",
+   ".hpp",
+   ".hs",
+   ".java",
+   ".jl",
+   ".js",
+   ".jsx",
+   ".kt",
+   ".kts",
+   ".lua",
+   ".m",
+   ".mjs",
+   ".ml",
+   ".mm",
+   ".nim",
+   ".php",
+   ".pl",
+   ".pm",
+   ".py",
+   ".pyi",
+   ".r",
+   ".rb",
+   ".rs",
+   ".scala",
+   ".sh",
+   ".sql",
+   ".svelte",
+   ".swift",
+   ".ts",
+   ".tsx",
+   ".vue",
+   ".zig"
+  ],
+  "excluded_dirs": [
+   "node_modules",
+   "vendor",
+   "vendored",
+   "third_party",
+   "site-packages",
+   "bower_components"
+  ],
+  "max_blob_bytes": 1000000,
+  "first_parent": true
+ },
+ "mining": {
+  "churn": {
+   "t_churn_raw_s": 0.29103205003775656,
+   "t_churn_fetch_s": 11.716682848986238,
+   "t_churn_numstat_s": 1.6439032169873826,
+   "blobs_fetched_churn": 2775
+  },
+  "timings": {
+   "t_clone": 2.105,
+   "t_mine": 15.877,
+   "t_loc": 2.186,
+   "t_reason_A": 5.546
+  },
+  "cached": false
+ },
+ "stage_a": {
+  "commits": 736,
+  "reasoned_commits": 673,
+  "inconsistent_chunks": 0,
+  "chunk_timings": [
+   {
+    "tbox_load_s": 0.050707554968539625,
+    "abox_load_s": 0.09694086498348042,
+    "reason_s": 5.36279885697877,
+    "extract_s": 0.010755039984360337,
+    "total_s": 5.521686502033845,
+    "commits": 673
+   }
+  ],
+  "tbox_sha256": "da30ed577542b3643ecf06cb6a4649ccc8fce61ab7a0373beabd763e12883e86"
+ },
+ "activity": {
+  "last_commit_date": "2025-06-28T07:07:04+00:00",
+  "months_since_last_commit": 0,
+  "distinct_authors_in_window": 8,
+  "merge_commits_in_window": 9
+ },
+ "agent_adoption_date": null,
+ "commit_label_counts": {
+  "BugFixCommit": 140,
+  "FeatureCommit": 0,
+  "AgentCommit": 0
+ },
+ "series_months": [
+  {
+   "month": "2022-07",
+   "commit_count": 38,
+   "merge_count": 2,
+   "unique_authors": 2,
+   "lines_added": 1966,
+   "lines_deleted": 1299,
+   "total_churn": 3265,
+   "files_changed": 125,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 28358,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-08",
+   "commit_count": 19,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 938,
+   "lines_deleted": 302,
+   "total_churn": 1240,
+   "files_changed": 73,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 28861,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-09",
+   "commit_count": 21,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 1246,
+   "lines_deleted": 387,
+   "total_churn": 1633,
+   "files_changed": 76,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 29556,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-10",
+   "commit_count": 10,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 708,
+   "lines_deleted": 185,
+   "total_churn": 893,
+   "files_changed": 29,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 29983,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-11",
+   "commit_count": 27,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 1678,
+   "lines_deleted": 925,
+   "total_churn": 2603,
+   "files_changed": 95,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 30582,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-12",
+   "commit_count": 19,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 3076,
+   "lines_deleted": 2491,
+   "total_churn": 5567,
+   "files_changed": 79,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 31082,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-01",
+   "commit_count": 42,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 2956,
+   "lines_deleted": 1737,
+   "total_churn": 4693,
+   "files_changed": 156,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 32045,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-02",
+   "commit_count": 26,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 2125,
+   "lines_deleted": 1242,
+   "total_churn": 3367,
+   "files_changed": 83,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 32809,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-03",
+   "commit_count": 22,
+   "merge_count": 2,
+   "unique_authors": 2,
+   "lines_added": 1436,
+   "lines_deleted": 278,
+   "total_churn": 1714,
+   "files_changed": 72,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 33759,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-04",
+   "commit_count": 13,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 853,
+   "lines_deleted": 198,
+   "total_churn": 1051,
+   "files_changed": 30,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 34277,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-05",
+   "commit_count": 1,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 16,
+   "lines_deleted": 23,
+   "total_churn": 39,
+   "files_changed": 1,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 34272,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-06",
+   "commit_count": 11,
+   "merge_count": 2,
+   "unique_authors": 3,
+   "lines_added": 171,
+   "lines_deleted": 38,
+   "total_churn": 209,
+   "files_changed": 16,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 34390,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-07",
+   "commit_count": 5,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 41,
+   "lines_deleted": 6,
+   "total_churn": 47,
+   "files_changed": 6,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 34420,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-08",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 34420,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-09",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 34420,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-10",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 34420,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-11",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 34420,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-12",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 34420,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-01",
+   "commit_count": 10,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 658,
+   "lines_deleted": 556,
+   "total_churn": 1214,
+   "files_changed": 46,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 34489,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-02",
+   "commit_count": 27,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 1344,
+   "lines_deleted": 527,
+   "total_churn": 1871,
+   "files_changed": 75,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 35165,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-03",
+   "commit_count": 10,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 576,
+   "lines_deleted": 345,
+   "total_churn": 921,
+   "files_changed": 47,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 35361,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-04",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 35361,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-05",
+   "commit_count": 1,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 37,
+   "lines_deleted": 22,
+   "total_churn": 59,
+   "files_changed": 3,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 35361,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-06",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 35361,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-07",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 35361,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-08",
+   "commit_count": 15,
+   "merge_count": 1,
+   "unique_authors": 2,
+   "lines_added": 1631,
+   "lines_deleted": 1244,
+   "total_churn": 2875,
+   "files_changed": 83,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 35676,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-09",
+   "commit_count": 25,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 3280,
+   "lines_deleted": 1753,
+   "total_churn": 5033,
+   "files_changed": 185,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 37074,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-10",
+   "commit_count": 21,
+   "merge_count": 1,
+   "unique_authors": 1,
+   "lines_added": 2423,
+   "lines_deleted": 1723,
+   "total_churn": 4146,
+   "files_changed": 83,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 37629,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-11",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 37629,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-12",
+   "commit_count": 9,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 402,
+   "lines_deleted": 230,
+   "total_churn": 632,
+   "files_changed": 25,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 37780,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2025-01",
+   "commit_count": 2,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 110,
+   "lines_deleted": 73,
+   "total_churn": 183,
+   "files_changed": 12,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 37813,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2025-02",
+   "commit_count": 26,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 4259,
+   "lines_deleted": 3866,
+   "total_churn": 8125,
+   "files_changed": 196,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 38108,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2025-03",
+   "commit_count": 9,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 1136,
+   "lines_deleted": 1244,
+   "total_churn": 2380,
+   "files_changed": 83,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 38012,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2025-04",
+   "commit_count": 17,
+   "merge_count": 1,
+   "unique_authors": 3,
+   "lines_added": 2736,
+   "lines_deleted": 2155,
+   "total_churn": 4891,
+   "files_changed": 49,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 38477,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2025-05",
+   "commit_count": 8,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 690,
+   "lines_deleted": 420,
+   "total_churn": 1110,
+   "files_changed": 28,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 38704,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2025-06",
+   "commit_count": 11,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 334,
+   "lines_deleted": 118,
+   "total_churn": 452,
+   "files_changed": 38,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 38880,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  }
+ ],
+ "measures_derived": {
+  "bugFixRatioFirstHalf": 0.302768,
+  "bugFixRatioSecondHalf": 0.277215,
+  "bugFixHalfRatio": 0.915602,
+  "featureCommitsFirstHalf": 0,
+  "featureCommitsSecondHalf": 0,
+  "featureCommitsTotal": 0,
+  "locDeltaPerFeature": 10522.0,
+  "recentAgentCommitRatio": 0.0
+ },
+ "inferred": {
+  "a0.05_L36_D12_G0.05_orig": {
+   "classes": [
+    "CopyPasteEvidence",
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIIConformant",
+    "LawIVConformant",
+    "LawVConformant",
+    "LawVIConformant",
+    "LawVIIConformant",
+    "LawVIIConformantRatio",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantNoMerge",
+    "LawVIIINonConformantSingleAuthor",
+    "LocPerFeatureHigh",
+    "MKApplicable",
+    "MergeInactive",
+    "MultiAuthorInactive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": "urn:senso:explanations:sissaschool/elementpath:79f851de895e",
+   "tbox_sha256": "79f851de895e8301073d1746931d8ac1d34e4ed2e94897358fca050d9d07b63c",
+   "abox_triples": 40,
+   "t_reason_B_s": 3.42
+  },
+  "a0.01_L36_D12_G0.05_orig": {
+   "classes": [
+    "CopyPasteEvidence",
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIIConformant",
+    "LawIVConformant",
+    "LawVConformant",
+    "LawVIConformant",
+    "LawVIIConformant",
+    "LawVIIConformantRatio",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantNoMerge",
+    "LawVIIINonConformantSingleAuthor",
+    "LocPerFeatureHigh",
+    "MKApplicable",
+    "MergeInactive",
+    "MultiAuthorInactive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "956579a8859000216eba261c78e4795a2b5042e7edf95419211fd46e9dbeada9",
+   "abox_triples": 40,
+   "t_reason_B_s": 2.93
+  },
+  "a0.1_L36_D12_G0.05_orig": {
+   "classes": [
+    "CopyPasteEvidence",
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIIConformant",
+    "LawIVConformant",
+    "LawVConformant",
+    "LawVIConformant",
+    "LawVIIConformant",
+    "LawVIIConformantRatio",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantNoMerge",
+    "LawVIIINonConformantSingleAuthor",
+    "LocPerFeatureHigh",
+    "MKApplicable",
+    "MergeInactive",
+    "MultiAuthorInactive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "56009aa92bf68560113e153a97a62cd0cfdea303607eb909725e8e10a2536494",
+   "abox_triples": 40,
+   "t_reason_B_s": 3.602
+  },
+  "a0.05_L24_D12_G0.05_orig": {
+   "classes": [
+    "CopyPasteEvidence",
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIIConformant",
+    "LawIVConformant",
+    "LawVConformant",
+    "LawVIConformant",
+    "LawVIIConformant",
+    "LawVIIConformantRatio",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantNoMerge",
+    "LawVIIINonConformantSingleAuthor",
+    "LocPerFeatureHigh",
+    "MKApplicable",
+    "MergeInactive",
+    "MultiAuthorInactive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "79f851de895e8301073d1746931d8ac1d34e4ed2e94897358fca050d9d07b63c",
+   "abox_triples": 40,
+   "t_reason_B_s": 2.778
+  },
+  "a0.05_L48_D12_G0.05_orig": {
+   "classes": [
+    "CopyPasteEvidence",
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIIConformant",
+    "LawIVConformant",
+    "LawVConformant",
+    "LawVIConformant",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantNoMerge",
+    "LawVIIINonConformantSingleAuthor",
+    "LawVIINonConformant",
+    "LocPerFeatureHigh",
+    "MKApplicable",
+    "MergeInactive",
+    "MultiAuthorInactive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "79f851de895e8301073d1746931d8ac1d34e4ed2e94897358fca050d9d07b63c",
+   "abox_triples": 40,
+   "t_reason_B_s": 3.457
+  },
+  "a0.05_L36_D6_G0.05_orig": {
+   "classes": [
+    "CopyPasteEvidence",
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIIConformant",
+    "LawIVConformant",
+    "LawVConformant",
+    "LawVIConformant",
+    "LawVIIConformant",
+    "LawVIIConformantRatio",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantNoMerge",
+    "LawVIIINonConformantSingleAuthor",
+    "LocPerFeatureHigh",
+    "MKApplicable",
+    "MergeInactive",
+    "MultiAuthorInactive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "a19e7e45f521324fec6b19741e2a4f08e5d15efd8e05802851c45a87515a7761",
+   "abox_triples": 40,
+   "t_reason_B_s": 3.148
+  },
+  "a0.05_L36_D18_G0.05_orig": {
+   "classes": [
+    "CopyPasteEvidence",
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIIConformant",
+    "LawIVConformant",
+    "LawVConformant",
+    "LawVIConformant",
+    "LawVIIConformant",
+    "LawVIIConformantRatio",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantNoMerge",
+    "LawVIIINonConformantSingleAuthor",
+    "LocPerFeatureHigh",
+    "MKApplicable",
+    "MergeInactive",
+    "MultiAuthorInactive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "f87900e0c68335fbd2cae9848efdc2926406c328fb39da8e6e393bb472a68fdc",
+   "abox_triples": 40,
+   "t_reason_B_s": 3.995
+  },
+  "a0.05_L36_D24_G0.05_orig": {
+   "classes": [
+    "CopyPasteEvidence",
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIIConformant",
+    "LawIVConformant",
+    "LawVConformant",
+    "LawVIConformant",
+    "LawVIIConformant",
+    "LawVIIConformantRatio",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantNoMerge",
+    "LawVIIINonConformantSingleAuthor",
+    "LocPerFeatureHigh",
+    "MKApplicable",
+    "MergeInactive",
+    "MultiAuthorInactive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "562211ba220cda59299aec70f3561ba96eadd88adaf45f6f7db3fce71cdcc77b",
+   "abox_triples": 40,
+   "t_reason_B_s": 3.808
+  },
+  "a0.05_L36_D12_G0_orig": {
+   "classes": [
+    "CopyPasteEvidence",
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIIConformant",
+    "LawIVConformant",
+    "LawVConformant",
+    "LawVIConformant",
+    "LawVIIConformant",
+    "LawVIIConformantRatio",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantNoMerge",
+    "LawVIIINonConformantSingleAuthor",
+    "LocPerFeatureHigh",
+    "MKApplicable",
+    "MergeInactive",
+    "MultiAuthorInactive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "c0de0e8b2e7424d23b10ed152acd4ff66c2f1a973196b7e54f6598e9d734d0dc",
+   "abox_triples": 40,
+   "t_reason_B_s": 4.055
+  },
+  "a0.05_L36_D12_G0.02_orig": {
+   "classes": [
+    "CopyPasteEvidence",
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIIConformant",
+    "LawIVConformant",
+    "LawVConformant",
+    "LawVIConformant",
+    "LawVIIConformant",
+    "LawVIIConformantRatio",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantNoMerge",
+    "LawVIIINonConformantSingleAuthor",
+    "LocPerFeatureHigh",
+    "MKApplicable",
+    "MergeInactive",
+    "MultiAuthorInactive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "2c6613dd6b3e4fa714d92eaa067f02157466a4b3ee0ccf6de289441d860de28d",
+   "abox_triples": 40,
+   "t_reason_B_s": 4.051
+  },
+  "a0.05_L36_D12_G0.1_orig": {
+   "classes": [
+    "CopyPasteEvidence",
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIIConformant",
+    "LawIVConformant",
+    "LawVConformant",
+    "LawVIConformant",
+    "LawVIIConformant",
+    "LawVIIConformantRatio",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantNoMerge",
+    "LawVIIINonConformantSingleAuthor",
+    "LocPerFeatureHigh",
+    "MKApplicable",
+    "MergeInactive",
+    "MinorLocGrowth",
+    "MultiAuthorInactive",
+    "NonSubstantialChange",
+    "RBServicingStage",
+    "RecentlyActive"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "0cfde802b4494fc33a5ad0eb910980aaf152093f62848406bdc37bc099347936",
+   "abox_triples": 40,
+   "t_reason_B_s": 3.612
+  },
+  "a0.05_L36_D12_G0.05_hr": {
+   "classes": [
+    "CopyPasteEvidence",
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIIConformant",
+    "LawIVConformant",
+    "LawVConformant",
+    "LawVIConformant",
+    "LawVIIConformant",
+    "LawVIIConformantRatio",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantNoMerge",
+    "LawVIIINonConformantSingleAuthor",
+    "LocPerFeatureHigh",
+    "MKApplicable",
+    "MergeInactive",
+    "MultiAuthorInactive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "79f851de895e8301073d1746931d8ac1d34e4ed2e94897358fca050d9d07b63c",
+   "abox_triples": 40,
+   "t_reason_B_s": 5.404
+  }
+ },
+ "primary_config": "a0.05_L36_D12_G0.05_orig",
+ "project_iri": "http://senso-framework.org/data/sissaschool_elementpath",
+ "consistent": true,
+ "inferred_labels": [
+  "CopyPasteEvidence",
+  "GrowthStage",
+  "LawIConformant",
+  "LawIIIConformant",
+  "LawIVConformant",
+  "LawVConformant",
+  "LawVIConformant",
+  "LawVIIConformant",
+  "LawVIIConformantRatio",
+  "LawVIIINonConformant",
+  "LawVIIINonConformantNoMerge",
+  "LawVIIINonConformantSingleAuthor",
+  "LocPerFeatureHigh",
+  "MKApplicable",
+  "MergeInactive",
+  "MultiAuthorInactive",
+  "RBActiveDevelopmentStage",
+  "RecentlyActive",
+  "SubstantialLocGrowth"
+ ],
+ "stage_labels": [
+  "GrowthStage",
+  "RBActiveDevelopmentStage"
+ ],
+ "law_labels": {
+  "I": "LawIConformant",
+  "III": "LawIIIConformant",
+  "IV": "LawIVConformant",
+  "V": "LawVConformant",
+  "VI": "LawVIConformant",
+  "VII": "LawVIIConformant",
+  "VIII": "LawVIIINonConformant"
+ },
+ "tbox_sha256_stage_b": "79f851de895e8301073d1746931d8ac1d34e4ed2e94897358fca050d9d07b63c",
+ "tbox_sha256_stage_a": "da30ed577542b3643ecf06cb6a4649ccc8fce61ab7a0373beabd763e12883e86",
+ "summary": {
+  "c1": "A",
+  "c2": "A",
+  "cf": "A",
+  "note": "debug summary; run_rq1_v2.py reads `inferred` and recomputes CF itself"
+ },
+ "explanations": {
+  "stage:GrowthStage": {
+   "class": "GrowthStage",
+   "target": "http://senso-framework.org/data/sissaschool_elementpath type http://senso-framework.org/ontology/seo#GrowthStage",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKTau_gt_0",
+       "text": "A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKpValue_lt_mk_alpha",
+       "text": "A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]"
+      },
+      {
+       "kind": "definition",
+       "subject": "GrowthStage",
+       "text": "GrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "sissaschool_elementpath",
+       "prop": "locMKpValue",
+       "value": 0.0,
+       "raw": "sissaschool_elementpath locMKpValue 0.0"
+      },
+      {
+       "subject": "sissaschool_elementpath",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "sissaschool_elementpath type SoftwareProject"
+      },
+      {
+       "subject": "sissaschool_elementpath",
+       "prop": "locMKTau",
+       "value": 0.952381,
+       "raw": "sissaschool_elementpath locMKTau 0.952381"
+      },
+      {
+       "subject": "sissaschool_elementpath",
+       "prop": "locSeriesLength",
+       "value": 36,
+       "raw": "sissaschool_elementpath locSeriesLength 36"
+      }
+     ],
+     "closures": [],
+     "raw": "A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\nsissaschool_elementpath locMKpValue 0.0\nA_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\nsissaschool_elementpath type SoftwareProject\nA_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\nsissaschool_elementpath locMKTau 0.952381\nGrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject\nsissaschool_elementpath locSeriesLength 36\nA_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]"
+    }
+   ],
+   "raw_text": "Axiom: sissaschool_elementpath type GrowthStage\n\nExplanation(s): \n1)   A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\n     sissaschool_elementpath locMKpValue 0.0\n     A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\n     sissaschool_elementpath type SoftwareProject\n     A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\n     sissaschool_elementpath locMKTau 0.952381\n     GrowthStage equivalentTo A_locMKTau_gt_0\n                              and A_locMKpValue_lt_mk_alpha\n                              and MKApplicable\n                              and SoftwareProject\n     sissaschool_elementpath locSeriesLength 36\n     A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]\n\n\n",
+   "seconds": 7.553131635009777,
+   "returncode": 0,
+   "error": null
+  },
+  "stage:RBActiveDevelopmentStage": {
+   "class": "RBActiveDevelopmentStage",
+   "target": "http://senso-framework.org/data/sissaschool_elementpath type http://senso-framework.org/ontology/seo#RBActiveDevelopmentStage",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable"
+      },
+      {
+       "kind": "definition",
+       "subject": "SubstantialLocGrowth",
+       "text": "SubstantialLocGrowth equivalentTo A_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKTau_gt_0",
+       "text": "A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "GrowthStage",
+       "text": "GrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year",
+       "text": "A_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year equivalentTo locRelSenSlopeAnnual some decimal[>= 0.05]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]"
+      },
+      {
+       "kind": "definition",
+       "subject": "RBActiveDevelopmentStage",
+       "text": "RBActiveDevelopmentStage equivalentTo GrowthStage and RecentlyActive and SoftwareProject and SubstantialLocGrowth"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKpValue_lt_mk_alpha",
+       "text": "A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]"
+      },
+      {
+       "kind": "definition",
+       "subject": "RecentlyActive",
+       "text": "RecentlyActive equivalentTo A_monthsSinceLastCommit_lt_rb_dormancy_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_monthsSinceLastCommit_lt_rb_dormancy_months",
+       "text": "A_monthsSinceLastCommit_lt_rb_dormancy_months equivalentTo monthsSinceLastCommit some integer[< 12]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "sissaschool_elementpath",
+       "prop": "locRelSenSlopeAnnual",
+       "value": 0.083984,
+       "raw": "sissaschool_elementpath locRelSenSlopeAnnual 0.083984"
+      },
+      {
+       "subject": "sissaschool_elementpath",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "sissaschool_elementpath type SoftwareProject"
+      },
+      {
+       "subject": "sissaschool_elementpath",
+       "prop": "locMKTau",
+       "value": 0.952381,
+       "raw": "sissaschool_elementpath locMKTau 0.952381"
+      },
+      {
+       "subject": "sissaschool_elementpath",
+       "prop": "locSeriesLength",
+       "value": 36,
+       "raw": "sissaschool_elementpath locSeriesLength 36"
+      },
+      {
+       "subject": "sissaschool_elementpath",
+       "prop": "monthsSinceLastCommit",
+       "value": 0,
+       "raw": "sissaschool_elementpath monthsSinceLastCommit 0"
+      },
+      {
+       "subject": "sissaschool_elementpath",
+       "prop": "locMKpValue",
+       "value": 0.0,
+       "raw": "sissaschool_elementpath locMKpValue 0.0"
+      }
+     ],
+     "closures": [],
+     "raw": "sissaschool_elementpath locRelSenSlopeAnnual 0.083984\nA_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\nSubstantialLocGrowth equivalentTo A_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year and SoftwareProject\nA_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\nsissaschool_elementpath type SoftwareProject\nsissaschool_elementpath locMKTau 0.952381\nGrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject\nA_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year equivalentTo locRelSenSlopeAnnual some decimal[>= 0.05]\nsissaschool_elementpath locSeriesLength 36\nA_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]\nsissaschool_elementpath monthsSinceLastCommit 0\nRBActiveDevelopmentStage equivalentTo GrowthStage and RecentlyActive and SoftwareProject and SubstantialLocGrowth\nsissaschool_elementpath locMKpValue 0.0\nA_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\nRecentlyActive equivalentTo A_monthsSinceLastCommit_lt_rb_dormancy_months and SoftwareProject\nA_monthsSinceLastCommit_lt_rb_dormancy_months equivalentTo monthsSinceLastCommit some integer[< 12]"
+    }
+   ],
+   "raw_text": "Axiom: sissaschool_elementpath type RBActiveDevelopmentStage\n\nExplanation(s): \n1)   sissaschool_elementpath locRelSenSlopeAnnual 0.083984\n     A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\n     SubstantialLocGrowth equivalentTo A_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year\n                                       and SoftwareProject\n     A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\n     sissaschool_elementpath type SoftwareProject\n     sissaschool_elementpath locMKTau 0.952381\n     GrowthStage equivalentTo A_locMKTau_gt_0\n                              and A_locMKpValue_lt_mk_alpha\n                              and MKApplicable\n                              and SoftwareProject\n     A_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year equivalentTo locRelSenSlopeAnnual some decimal[>= 0.05]\n     sissaschool_elementpath locSeriesLength 36\n     A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]\n     sissaschool_elementpath monthsSinceLastCommit 0\n     RBActiveDevelopmentStage equivalentTo GrowthStage\n                                           and RecentlyActive\n                                           and SoftwareProject\n                                           and SubstantialLocGrowth\n     sissaschool_elementpath locMKpValue 0.0\n     A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\n     RecentlyActive equivalentTo A_monthsSinceLastCommit_lt_rb_dormancy_months\n                                 and SoftwareProject\n     A_monthsSinceLastCommit_lt_rb_dormancy_months equivalentTo monthsSinceLastCommit some integer[< 12]\n\n\n",
+   "seconds": 4.321223119040951,
+   "returncode": 0,
+   "error": null
+  },
+  "lawI": {
+   "class": "LawIConformant",
+   "target": "http://senso-framework.org/data/sissaschool_elementpath type http://senso-framework.org/ontology/seo#LawIConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law1_min_months",
+       "text": "A_monthsObserved_ge_p_law1_min_months equivalentTo monthsObserved some integer[>= 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawIConformant",
+       "text": "LawIConformant equivalentTo A_activeMonthRatio_ge_p_law1_active_ratio and A_monthsObserved_ge_p_law1_min_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_activeMonthRatio_ge_p_law1_active_ratio",
+       "text": "A_activeMonthRatio_ge_p_law1_active_ratio equivalentTo activeMonthRatio some decimal[>= 0.5]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "sissaschool_elementpath",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "sissaschool_elementpath monthsObserved 36"
+      },
+      {
+       "subject": "sissaschool_elementpath",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "sissaschool_elementpath type SoftwareProject"
+      },
+      {
+       "subject": "sissaschool_elementpath",
+       "prop": "activeMonthRatio",
+       "value": 0.75,
+       "raw": "sissaschool_elementpath activeMonthRatio 0.75"
+      }
+     ],
+     "closures": [],
+     "raw": "sissaschool_elementpath monthsObserved 36\nsissaschool_elementpath type SoftwareProject\nA_monthsObserved_ge_p_law1_min_months equivalentTo monthsObserved some integer[>= 2]\nLawIConformant equivalentTo A_activeMonthRatio_ge_p_law1_active_ratio and A_monthsObserved_ge_p_law1_min_months and SoftwareProject\nsissaschool_elementpath activeMonthRatio 0.75\nA_activeMonthRatio_ge_p_law1_active_ratio equivalentTo activeMonthRatio some decimal[>= 0.5]"
+    }
+   ],
+   "raw_text": "Axiom: sissaschool_elementpath type LawIConformant\n\nExplanation(s): \n1)   sissaschool_elementpath monthsObserved 36\n     sissaschool_elementpath type SoftwareProject\n     A_monthsObserved_ge_p_law1_min_months equivalentTo monthsObserved some integer[>= 2]\n     LawIConformant equivalentTo A_activeMonthRatio_ge_p_law1_active_ratio\n                                 and A_monthsObserved_ge_p_law1_min_months\n                                 and SoftwareProject\n     sissaschool_elementpath activeMonthRatio 0.75\n     A_activeMonthRatio_ge_p_law1_active_ratio equivalentTo activeMonthRatio some decimal[>= 0.5]\n\n\n",
+   "seconds": 4.601012056984473,
+   "returncode": 0,
+   "error": null
+  },
+  "lawIII": {
+   "class": "LawIIIConformant",
+   "target": "http://senso-framework.org/data/sissaschool_elementpath type http://senso-framework.org/ontology/seo#LawIIIConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law3_min_months",
+       "text": "A_monthsObserved_ge_p_law3_min_months equivalentTo monthsObserved some integer[>= 6]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawIIIConformant",
+       "text": "LawIIIConformant equivalentTo A_churnCV_lt_p_law3_churn_cv and A_monthsObserved_ge_p_law3_min_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_churnCV_lt_p_law3_churn_cv",
+       "text": "A_churnCV_lt_p_law3_churn_cv equivalentTo churnCV some decimal[< 2.0]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "sissaschool_elementpath",
+       "prop": "churnCV",
+       "value": 1.196801,
+       "raw": "sissaschool_elementpath churnCV 1.196801"
+      },
+      {
+       "subject": "sissaschool_elementpath",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "sissaschool_elementpath monthsObserved 36"
+      },
+      {
+       "subject": "sissaschool_elementpath",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "sissaschool_elementpath type SoftwareProject"
+      }
+     ],
+     "closures": [],
+     "raw": "sissaschool_elementpath churnCV 1.196801\nA_monthsObserved_ge_p_law3_min_months equivalentTo monthsObserved some integer[>= 6]\nsissaschool_elementpath monthsObserved 36\nsissaschool_elementpath type SoftwareProject\nLawIIIConformant equivalentTo A_churnCV_lt_p_law3_churn_cv and A_monthsObserved_ge_p_law3_min_months and SoftwareProject\nA_churnCV_lt_p_law3_churn_cv equivalentTo churnCV some decimal[< 2.0]"
+    }
+   ],
+   "raw_text": "Axiom: sissaschool_elementpath type LawIIIConformant\n\nExplanation(s): \n1)   sissaschool_elementpath churnCV 1.196801\n     A_monthsObserved_ge_p_law3_min_months equivalentTo monthsObserved some integer[>= 6]\n     sissaschool_elementpath monthsObserved 36\n     sissaschool_elementpath type SoftwareProject\n     LawIIIConformant equivalentTo A_churnCV_lt_p_law3_churn_cv\n                                   and A_monthsObserved_ge_p_law3_min_months\n                                   and SoftwareProject\n     A_churnCV_lt_p_law3_churn_cv equivalentTo churnCV some decimal[< 2.0]\n\n\n",
+   "seconds": 4.671897716994863,
+   "returncode": 0,
+   "error": null
+  },
+  "lawIV": {
+   "class": "LawIVConformant",
+   "target": "http://senso-framework.org/data/sissaschool_elementpath type http://senso-framework.org/ontology/seo#LawIVConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law4_min_months",
+       "text": "A_monthsObserved_ge_p_law4_min_months equivalentTo monthsObserved some integer[>= 6]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawIVConformant",
+       "text": "LawIVConformant equivalentTo A_commitCountCV_lt_p_law4_commit_cv and A_monthsObserved_ge_p_law4_min_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_commitCountCV_lt_p_law4_commit_cv",
+       "text": "A_commitCountCV_lt_p_law4_commit_cv equivalentTo commitCountCV some decimal[< 1.5]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "sissaschool_elementpath",
+       "prop": "commitCountCV",
+       "value": 0.925567,
+       "raw": "sissaschool_elementpath commitCountCV 0.925567"
+      },
+      {
+       "subject": "sissaschool_elementpath",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "sissaschool_elementpath monthsObserved 36"
+      },
+      {
+       "subject": "sissaschool_elementpath",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "sissaschool_elementpath type SoftwareProject"
+      }
+     ],
+     "closures": [],
+     "raw": "A_monthsObserved_ge_p_law4_min_months equivalentTo monthsObserved some integer[>= 6]\nsissaschool_elementpath commitCountCV 0.925567\nsissaschool_elementpath monthsObserved 36\nsissaschool_elementpath type SoftwareProject\nLawIVConformant equivalentTo A_commitCountCV_lt_p_law4_commit_cv and A_monthsObserved_ge_p_law4_min_months and SoftwareProject\nA_commitCountCV_lt_p_law4_commit_cv equivalentTo commitCountCV some decimal[< 1.5]"
+    }
+   ],
+   "raw_text": "Axiom: sissaschool_elementpath type LawIVConformant\n\nExplanation(s): \n1)   A_monthsObserved_ge_p_law4_min_months equivalentTo monthsObserved some integer[>= 6]\n     sissaschool_elementpath commitCountCV 0.925567\n     sissaschool_elementpath monthsObserved 36\n     sissaschool_elementpath type SoftwareProject\n     LawIVConformant equivalentTo A_commitCountCV_lt_p_law4_commit_cv\n                                  and A_monthsObserved_ge_p_law4_min_months\n                                  and SoftwareProject\n     A_commitCountCV_lt_p_law4_commit_cv equivalentTo commitCountCV some decimal[< 1.5]\n\n\n",
+   "seconds": 4.085057294985745,
+   "returncode": 0,
+   "error": null
+  },
+  "lawV": {
+   "class": "LawVConformant",
+   "target": "http://senso-framework.org/data/sissaschool_elementpath type http://senso-framework.org/ontology/seo#LawVConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "LawVConformant",
+       "text": "LawVConformant equivalentTo A_linesAddedCV_lt_p_law5_additions_cv and A_monthsObserved_ge_p_law5_min_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_linesAddedCV_lt_p_law5_additions_cv",
+       "text": "A_linesAddedCV_lt_p_law5_additions_cv equivalentTo linesAddedCV some decimal[< 2.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law5_min_months",
+       "text": "A_monthsObserved_ge_p_law5_min_months equivalentTo monthsObserved some integer[>= 4]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "sissaschool_elementpath",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "sissaschool_elementpath monthsObserved 36"
+      },
+      {
+       "subject": "sissaschool_elementpath",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "sissaschool_elementpath type SoftwareProject"
+      },
+      {
+       "subject": "sissaschool_elementpath",
+       "prop": "linesAddedCV",
+       "value": 1.117198,
+       "raw": "sissaschool_elementpath linesAddedCV 1.117198"
+      }
+     ],
+     "closures": [],
+     "raw": "sissaschool_elementpath monthsObserved 36\nsissaschool_elementpath type SoftwareProject\nLawVConformant equivalentTo A_linesAddedCV_lt_p_law5_additions_cv and A_monthsObserved_ge_p_law5_min_months and SoftwareProject\nA_linesAddedCV_lt_p_law5_additions_cv equivalentTo linesAddedCV some decimal[< 2.0]\nA_monthsObserved_ge_p_law5_min_months equivalentTo monthsObserved some integer[>= 4]\nsissaschool_elementpath linesAddedCV 1.117198"
+    }
+   ],
+   "raw_text": "Axiom: sissaschool_elementpath type LawVConformant\n\nExplanation(s): \n1)   sissaschool_elementpath monthsObserved 36\n     sissaschool_elementpath type SoftwareProject\n     LawVConformant equivalentTo A_linesAddedCV_lt_p_law5_additions_cv\n                                 and A_monthsObserved_ge_p_law5_min_months\n                                 and SoftwareProject\n     A_linesAddedCV_lt_p_law5_additions_cv equivalentTo linesAddedCV some decimal[< 2.0]\n     A_monthsObserved_ge_p_law5_min_months equivalentTo monthsObserved some integer[>= 4]\n     sissaschool_elementpath linesAddedCV 1.117198\n\n\n",
+   "seconds": 3.949245971045457,
+   "returncode": 0,
+   "error": null
+  },
+  "lawVI": {
+   "class": "LawVIConformant",
+   "target": "http://senso-framework.org/data/sissaschool_elementpath type http://senso-framework.org/ontology/seo#LawVIConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "subclass",
+       "subject": "GrowthStage",
+       "text": "GrowthStage subClassOf LawVIConformant"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKTau_gt_0",
+       "text": "A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKpValue_lt_mk_alpha",
+       "text": "A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]"
+      },
+      {
+       "kind": "definition",
+       "subject": "GrowthStage",
+       "text": "GrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "sissaschool_elementpath",
+       "prop": "locMKpValue",
+       "value": 0.0,
+       "raw": "sissaschool_elementpath locMKpValue 0.0"
+      },
+      {
+       "subject": "sissaschool_elementpath",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "sissaschool_elementpath type SoftwareProject"
+      },
+      {
+       "subject": "sissaschool_elementpath",
+       "prop": "locMKTau",
+       "value": 0.952381,
+       "raw": "sissaschool_elementpath locMKTau 0.952381"
+      },
+      {
+       "subject": "sissaschool_elementpath",
+       "prop": "locSeriesLength",
+       "value": 36,
+       "raw": "sissaschool_elementpath locSeriesLength 36"
+      }
+     ],
+     "closures": [],
+     "raw": "GrowthStage subClassOf LawVIConformant\nA_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\nsissaschool_elementpath locMKpValue 0.0\nA_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\nsissaschool_elementpath type SoftwareProject\nA_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\nsissaschool_elementpath locMKTau 0.952381\nGrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject\nsissaschool_elementpath locSeriesLength 36\nA_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]"
+    }
+   ],
+   "raw_text": "Axiom: sissaschool_elementpath type LawVIConformant\n\nExplanation(s): \n1)   GrowthStage subClassOf LawVIConformant\n     A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\n     sissaschool_elementpath locMKpValue 0.0\n     A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\n     sissaschool_elementpath type SoftwareProject\n     A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\n     sissaschool_elementpath locMKTau 0.952381\n     GrowthStage equivalentTo A_locMKTau_gt_0\n                              and A_locMKpValue_lt_mk_alpha\n                              and MKApplicable\n                              and SoftwareProject\n     sissaschool_elementpath locSeriesLength 36\n     A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]\n\n\n",
+   "seconds": 4.081718409026507,
+   "returncode": 0,
+   "error": null
+  },
+  "lawVII": {
+   "class": "LawVIIConformant",
+   "target": "http://senso-framework.org/data/sissaschool_elementpath type http://senso-framework.org/ontology/seo#LawVIIConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_bugFixHalfRatio_ge_p_law7_tolerance",
+       "text": "A_bugFixHalfRatio_ge_p_law7_tolerance equivalentTo bugFixHalfRatio some decimal[>= 0.9]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawVIIConformantRatio",
+       "text": "LawVIIConformantRatio equivalentTo A_activeMonthCount_ge_p_law7_min_active_months and A_bugFixHalfRatio_ge_p_law7_tolerance and A_bugFixRatioFirstHalf_gt_0 and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_bugFixRatioFirstHalf_gt_0",
+       "text": "A_bugFixRatioFirstHalf_gt_0 equivalentTo bugFixRatioFirstHalf some decimal[> 0.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_activeMonthCount_ge_p_law7_min_active_months",
+       "text": "A_activeMonthCount_ge_p_law7_min_active_months equivalentTo activeMonthCount some integer[>= 4]"
+      },
+      {
+       "kind": "subclass",
+       "subject": "LawVIIConformantRatio",
+       "text": "LawVIIConformantRatio subClassOf LawVIIConformant"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "sissaschool_elementpath",
+       "prop": "activeMonthCount",
+       "value": 27,
+       "raw": "sissaschool_elementpath activeMonthCount 27"
+      },
+      {
+       "subject": "sissaschool_elementpath",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "sissaschool_elementpath type SoftwareProject"
+      },
+      {
+       "subject": "sissaschool_elementpath",
+       "prop": "bugFixRatioFirstHalf",
+       "value": 0.302768,
+       "raw": "sissaschool_elementpath bugFixRatioFirstHalf 0.302768"
+      },
+      {
+       "subject": "sissaschool_elementpath",
+       "prop": "bugFixHalfRatio",
+       "value": 0.915602,
+       "raw": "sissaschool_elementpath bugFixHalfRatio 0.915602"
+      }
+     ],
+     "closures": [],
+     "raw": "A_bugFixHalfRatio_ge_p_law7_tolerance equivalentTo bugFixHalfRatio some decimal[>= 0.9]\nLawVIIConformantRatio equivalentTo A_activeMonthCount_ge_p_law7_min_active_months and A_bugFixHalfRatio_ge_p_law7_tolerance and A_bugFixRatioFirstHalf_gt_0 and SoftwareProject\nsissaschool_elementpath activeMonthCount 27\nsissaschool_elementpath type SoftwareProject\nA_bugFixRatioFirstHalf_gt_0 equivalentTo bugFixRatioFirstHalf some decimal[> 0.0]\nA_activeMonthCount_ge_p_law7_min_active_months equivalentTo activeMonthCount some integer[>= 4]\nsissaschool_elementpath bugFixRatioFirstHalf 0.302768\nsissaschool_elementpath bugFixHalfRatio 0.915602\nLawVIIConformantRatio subClassOf LawVIIConformant"
+    }
+   ],
+   "raw_text": "Axiom: sissaschool_elementpath type LawVIIConformant\n\nExplanation(s): \n1)   A_bugFixHalfRatio_ge_p_law7_tolerance equivalentTo bugFixHalfRatio some decimal[>= 0.9]\n     LawVIIConformantRatio equivalentTo A_activeMonthCount_ge_p_law7_min_active_months\n                                        and A_bugFixHalfRatio_ge_p_law7_tolerance\n                                        and A_bugFixRatioFirstHalf_gt_0\n                                        and SoftwareProject\n     sissaschool_elementpath activeMonthCount 27\n     sissaschool_elementpath type SoftwareProject\n     A_bugFixRatioFirstHalf_gt_0 equivalentTo bugFixRatioFirstHalf some decimal[> 0.0]\n     A_activeMonthCount_ge_p_law7_min_active_months equivalentTo activeMonthCount some integer[>= 4]\n     sissaschool_elementpath bugFixRatioFirstHalf 0.302768\n     sissaschool_elementpath bugFixHalfRatio 0.915602\n     LawVIIConformantRatio subClassOf LawVIIConformant\n\n\n",
+   "seconds": 3.710873960983008,
+   "returncode": 0,
+   "error": null
+  },
+  "lawVIII": {
+   "class": "LawVIIINonConformant",
+   "target": "http://senso-framework.org/data/sissaschool_elementpath type http://senso-framework.org/ontology/seo#LawVIIINonConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_multiAuthorMonthRatio_le_p_law8_multiauthor_ratio",
+       "text": "A_multiAuthorMonthRatio_le_p_law8_multiauthor_ratio equivalentTo MultiAuthorInactive"
+      },
+      {
+       "kind": "subclass",
+       "subject": "LawVIIINonConformantSingleAuthor",
+       "text": "LawVIIINonConformantSingleAuthor subClassOf LawVIIINonConformant"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_multiAuthorMonthRatio_le_p_law8_multiauthor_ratio",
+       "text": "A_multiAuthorMonthRatio_le_p_law8_multiauthor_ratio equivalentTo multiAuthorMonthRatio some decimal[<= 0.3]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law8_min_months",
+       "text": "A_monthsObserved_ge_p_law8_min_months equivalentTo monthsObserved some integer[>= 6]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawVIIINonConformantSingleAuthor",
+       "text": "LawVIIINonConformantSingleAuthor equivalentTo A_monthsObserved_ge_p_law8_min_months and MultiAuthorInactive and SoftwareProject"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "sissaschool_elementpath",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "sissaschool_elementpath monthsObserved 36"
+      },
+      {
+       "subject": "sissaschool_elementpath",
+       "prop": "multiAuthorMonthRatio",
+       "value": 0.138889,
+       "raw": "sissaschool_elementpath multiAuthorMonthRatio 0.138889"
+      },
+      {
+       "subject": "sissaschool_elementpath",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "sissaschool_elementpath type SoftwareProject"
+      }
+     ],
+     "closures": [],
+     "raw": "sissaschool_elementpath monthsObserved 36\nA_multiAuthorMonthRatio_le_p_law8_multiauthor_ratio equivalentTo MultiAuthorInactive\nsissaschool_elementpath multiAuthorMonthRatio 0.138889\nLawVIIINonConformantSingleAuthor subClassOf LawVIIINonConformant\nA_multiAuthorMonthRatio_le_p_law8_multiauthor_ratio equivalentTo multiAuthorMonthRatio some decimal[<= 0.3]\nsissaschool_elementpath type SoftwareProject\nA_monthsObserved_ge_p_law8_min_months equivalentTo monthsObserved some integer[>= 6]\nLawVIIINonConformantSingleAuthor equivalentTo A_monthsObserved_ge_p_law8_min_months and MultiAuthorInactive and SoftwareProject"
+    }
+   ],
+   "raw_text": "Axiom: sissaschool_elementpath type LawVIIINonConformant\n\nExplanation(s): \n1)   sissaschool_elementpath monthsObserved 36\n     A_multiAuthorMonthRatio_le_p_law8_multiauthor_ratio equivalentTo MultiAuthorInactive\n     sissaschool_elementpath multiAuthorMonthRatio 0.138889\n     LawVIIINonConformantSingleAuthor subClassOf LawVIIINonConformant\n     A_multiAuthorMonthRatio_le_p_law8_multiauthor_ratio equivalentTo multiAuthorMonthRatio some decimal[<= 0.3]\n     sissaschool_elementpath type SoftwareProject\n     A_monthsObserved_ge_p_law8_min_months equivalentTo monthsObserved some integer[>= 6]\n     LawVIIINonConformantSingleAuthor equivalentTo A_monthsObserved_ge_p_law8_min_months\n                                                   and MultiAuthorInactive\n                                                   and SoftwareProject\n\n\n",
+   "seconds": 3.796893134014681,
+   "returncode": 0,
+   "error": null
+  }
+ },
+ "fuseki": {
+  "dataset": "seo_v2",
+  "graph_triples": {
+   "urn:senso:abox:sissaschool/elementpath": 388,
+   "urn:senso:commits:sissaschool/elementpath": 2670,
+   "urn:senso:abox-derived:sissaschool/elementpath": 8,
+   "urn:senso:inferred:sissaschool/elementpath:79f851de895e": 342,
+   "urn:senso:explanations:sissaschool/elementpath:79f851de895e": 178
+  }
+ },
+ "timings": {
+  "t_clone": 2.105,
+  "t_mine": 15.877,
+  "t_loc": 2.186,
+  "t_reason_A": 5.546,
+  "mining_cached": false,
+  "t_reason_B": 44.258,
+  "n_configs": 12,
+  "t_explain": 40.91,
+  "n_explain_calls": 9,
+  "t_writeback": 8.372,
+  "t_total": 117.561
+ }
+}

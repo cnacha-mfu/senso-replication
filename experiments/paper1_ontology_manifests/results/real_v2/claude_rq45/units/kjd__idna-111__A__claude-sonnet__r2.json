@@ -1,0 +1,107 @@
+{
+ "unit_id": "kjd__idna-111__A__claude-sonnet__r2",
+ "task_id": "kjd__idna-111",
+ "repo": "kjd/idna",
+ "stage": "phase_out",
+ "condition": "A",
+ "model": "claude-code/sonnet",
+ "run": 2,
+ "condition_meta": {},
+ "started": "2026-10-18T06:14:33.924537+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 3,
+ "tool_calls": 2,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 7691,
+  "cache_read_input_tokens": 44039,
+  "output_tokens": 1024,
+  "output_tokens_details": {
+   "thinking_tokens": 54
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 7691,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 1024,
+   "cacheReadInputTokens": 44039,
+   "cacheCreationInputTokens": 7691,
+   "webSearchRequests": 0,
+   "costUSD": 0.0454199,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 54,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.0454199,
+ "result_text": "`idna.decode(b'\\x8d\\xd2')` now raises `IDNAError` instead of `UnicodeDecodeError`. I ran that input and a second one, `b'xn--a\\x8d'`, and both raise `IDNAError('Invalid ASCII in A-label')`. I didn't run the test suite or add tests. The changes are in `idna/core.py`:\n\n- **ASCII decoding in `encode` and `decode`:** non-ASCII bytes are caught and re-raised as `IDNAError`. `encode` had the same flaw, so I fixed both.\n- **Punycode decoding in `ulabel`:** a bad Punycode label now raises `IDNAError` instead of a raw `UnicodeError`. I didn't trigger this path with an input.\n- **Trailing-hyphen check in `ulabel`:** it now looks at the last byte directly instead of decoding it to ASCII first, so it can't raise a decode error.\n\nThe message \"Invalid ASCII in A-label\" is slightly off for the top-level `encode`/`decode` case, where the bad bytes are in the whole domain rather than one label. I kept one message for both; say if you want it reworded.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792309800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0.14,
+    "resetsAt": 1792309800
+   },
+   "seven_day": {
+    "utilization": 0.13,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 16.5,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 3,
+   "hit_step_limit": 0,
+   "changed_lines": 17,
+   "gold_changed_lines": 7,
+   "Y1": 3,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": 1.2801079191927351
+  },
+  "f2p_pass": 1,
+  "f2p_total": 1,
+  "p2p_pass": 9,
+  "p2p_total": 9,
+  "f2p_all_pass": true,
+  "p2p_all_pass": true,
+  "resolved": true,
+  "reason": "resolved",
+  "test_seconds": 0.6
+ },
+ "status": "done",
+ "finished": "2026-10-18T06:14:51.742164+00:00"
+}

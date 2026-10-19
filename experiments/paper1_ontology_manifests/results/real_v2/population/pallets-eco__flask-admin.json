@@ -1,0 +1,1908 @@
+{
+ "repo": "pallets-eco/flask-admin",
+ "snapshot_date": "2025-06-30",
+ "status": "ok",
+ "unmineable": false,
+ "unmineable_reason": null,
+ "replaces": null,
+ "settings": {
+  "dedup": true,
+  "complexity": false,
+  "dataset": "seo_v2",
+  "sensitivity": true
+ },
+ "versions": {
+  "owlready2": "0.51",
+  "pymannkendall": "1.4.3",
+  "lizard": "1.24.1",
+  "numpy": "2.5.3",
+  "scipy": "1.18.1",
+  "python": "3.12.15",
+  "git": "git version 2.53.0"
+ },
+ "measures": {
+  "monthsObserved": 36,
+  "monthsSinceLastCommit": 0,
+  "distinctAuthorsInWindow": 41,
+  "commitMKTau": 0.166667,
+  "commitMKpValue": 0.150867,
+  "activeMonthCount": 26,
+  "activeMonthRatio": 0.722222,
+  "meanMonthlyCommits": 14.222222,
+  "commitsLast3Months": 74,
+  "commitCountCV": 1.673043,
+  "commitCountCVSample": 1.696775,
+  "commitHalfRatio": 3.413793,
+  "commitSecondHalfMean": 22.0,
+  "churnCV": 2.530729,
+  "linesAddedCV": 2.790836,
+  "mergeMonthRatio": 0.472222,
+  "multiAuthorMonthRatio": 0.555556,
+  "bugFixRatioFirstHalf": 0.258423,
+  "bugFixRatioSecondHalf": 0.32272,
+  "bugFixHalfRatio": 1.248805,
+  "locSeriesLength": 36,
+  "locRelSenSlopeAnnual": -0.002815,
+  "locMKTau": -0.293651,
+  "locMKS": -185,
+  "locMKpValue": 0.011321,
+  "locSenSlope": -8.285714,
+  "locStart": 35248,
+  "locEnd": 33572,
+  "locDelta": -1676,
+  "locGrowthRate": -0.047549,
+  "locChangePct": -4.75488,
+  "locEndToStartRatio": 0.952451,
+  "locGrowthLast3": 0.046443,
+  "featureCommitsFirstHalf": 0,
+  "featureCommitsSecondHalf": 0,
+  "featureCommitsTotal": 0,
+  "locDeltaPerFeature": -1676.0,
+  "recentAgentCommitRatio": 0.0,
+  "featCommitCount": 0,
+  "bugFixCommitCount": 131,
+  "commitCount": 512,
+  "monthly_series": {
+   "months": [
+    "2021-07",
+    "2021-08",
+    "2021-09",
+    "2021-10",
+    "2021-11",
+    "2021-12",
+    "2022-01",
+    "2022-02",
+    "2022-03",
+    "2022-04",
+    "2022-05",
+    "2022-06",
+    "2022-07",
+    "2022-08",
+    "2022-09",
+    "2022-10",
+    "2022-11",
+    "2022-12",
+    "2023-01",
+    "2023-02",
+    "2023-03",
+    "2023-04",
+    "2023-05",
+    "2023-06",
+    "2023-07",
+    "2023-08",
+    "2023-09",
+    "2023-10",
+    "2023-11",
+    "2023-12",
+    "2024-01",
+    "2024-02",
+    "2024-03",
+    "2024-04",
+    "2024-05",
+    "2024-06",
+    "2024-07",
+    "2024-08",
+    "2024-09",
+    "2024-10",
+    "2024-11",
+    "2024-12",
+    "2025-01",
+    "2025-02",
+    "2025-03",
+    "2025-04",
+    "2025-05",
+    "2025-06"
+   ],
+   "commits": [
+    7,
+    9,
+    2,
+    46,
+    20,
+    17,
+    6,
+    3,
+    2,
+    0,
+    0,
+    20,
+    11,
+    1,
+    6,
+    0,
+    13,
+    1,
+    40,
+    12,
+    0,
+    2,
+    1,
+    0,
+    0,
+    2,
+    3,
+    24,
+    0,
+    0,
+    1,
+    0,
+    1,
+    0,
+    0,
+    3,
+    113,
+    36,
+    34,
+    41,
+    57,
+    10,
+    12,
+    14,
+    0,
+    6,
+    2,
+    66
+   ],
+   "loc": [
+    35098,
+    35147,
+    35147,
+    35112,
+    35092,
+    35090,
+    35229,
+    35229,
+    35229,
+    35229,
+    35229,
+    35245,
+    35248,
+    35248,
+    35271,
+    35271,
+    35271,
+    35271,
+    35435,
+    35425,
+    35425,
+    35431,
+    35431,
+    35431,
+    35431,
+    35431,
+    35431,
+    35373,
+    35373,
+    35373,
+    35373,
+    35373,
+    35373,
+    35373,
+    35373,
+    35374,
+    32019,
+    29807,
+    29843,
+    32022,
+    32032,
+    32032,
+    32032,
+    32082,
+    32082,
+    32082,
+    33550,
+    33572
+   ]
+  }
+ },
+ "window": {
+  "L": 36,
+  "first_month": "2022-07",
+  "last_month": "2025-06",
+  "n_months": 36,
+  "left_truncated": false,
+  "first_commit_month": "2012-03",
+  "mined_months": 48,
+  "commits_in_window": 512,
+  "commits_in_history": 3495
+ },
+ "loc_instrument": {
+  "instrument": "nonblank-source-lines-v1",
+  "status": "ok",
+  "months": 48,
+  "month_end_commits_distinct": 24,
+  "source_blobs": 582,
+  "blobs_fetched": 40,
+  "t_ls_tree_s": 0.7327842880040407,
+  "t_fetch_s": 0.9887730600312352,
+  "t_read_s": 0.11684206896461546,
+  "series_present": true,
+  "extensions": [
+   ".bash",
+   ".c",
+   ".cc",
+   ".cjs",
+   ".clj",
+   ".cpp",
+   ".cs",
+   ".cxx",
+   ".dart",
+   ".erl",
+   ".ex",
+   ".exs",
+   ".f90",
+   ".go",
+   ".groovy",
+   ".h",
+   ".hh",
+   ".hpp",
+   ".hs",
+   ".java",
+   ".jl",
+   ".js",
+   ".jsx",
+   ".kt",
+   ".kts",
+   ".lua",
+   ".m",
+   ".mjs",
+   ".ml",
+   ".mm",
+   ".nim",
+   ".php",
+   ".pl",
+   ".pm",
+   ".py",
+   ".pyi",
+   ".r",
+   ".rb",
+   ".rs",
+   ".scala",
+   ".sh",
+   ".sql",
+   ".svelte",
+   ".swift",
+   ".ts",
+   ".tsx",
+   ".vue",
+   ".zig"
+  ],
+  "excluded_dirs": [
+   "node_modules",
+   "vendor",
+   "vendored",
+   "third_party",
+   "site-packages",
+   "bower_components"
+  ],
+  "max_blob_bytes": 1000000,
+  "first_parent": true
+ },
+ "mining": {
+  "churn": {
+   "t_churn_raw_s": 0.17273524403572083,
+   "t_churn_fetch_s": 3.7868651039898396,
+   "t_churn_numstat_s": 0.31236562598496675,
+   "blobs_fetched_churn": 1007
+  },
+  "timings": {
+   "t_clone": 2.229,
+   "t_mine": 6.644,
+   "t_loc": 1.839,
+   "t_reason_A": 3.221
+  },
+  "cached": false
+ },
+ "stage_a": {
+  "commits": 644,
+  "reasoned_commits": 607,
+  "inconsistent_chunks": 0,
+  "chunk_timings": [
+   {
+    "tbox_load_s": 0.03828827303368598,
+    "abox_load_s": 0.08341377496253699,
+    "reason_s": 3.071661437046714,
+    "extract_s": 0.0075225799810141325,
+    "total_s": 3.201340089959558,
+    "commits": 607
+   }
+  ],
+  "tbox_sha256": "da30ed577542b3643ecf06cb6a4649ccc8fce61ab7a0373beabd763e12883e86"
+ },
+ "activity": {
+  "last_commit_date": "2025-06-30T18:17:03+00:00",
+  "months_since_last_commit": 0,
+  "distinct_authors_in_window": 41,
+  "merge_commits_in_window": 153
+ },
+ "agent_adoption_date": "2022-07-08T19:09:07+00:00",
+ "commit_label_counts": {
+  "BugFixCommit": 131,
+  "FeatureCommit": 0,
+  "AgentCommit": 11
+ },
+ "series_months": [
+  {
+   "month": "2022-07",
+   "commit_count": 11,
+   "merge_count": 4,
+   "unique_authors": 4,
+   "lines_added": 93,
+   "lines_deleted": 21,
+   "total_churn": 114,
+   "files_changed": 6,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 35248,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-08",
+   "commit_count": 1,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 2,
+   "lines_deleted": 5,
+   "total_churn": 7,
+   "files_changed": 1,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 35248,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-09",
+   "commit_count": 6,
+   "merge_count": 4,
+   "unique_authors": 2,
+   "lines_added": 14,
+   "lines_deleted": 2,
+   "total_churn": 16,
+   "files_changed": 2,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 35271,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-10",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 35271,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-11",
+   "commit_count": 13,
+   "merge_count": 0,
+   "unique_authors": 4,
+   "lines_added": 70,
+   "lines_deleted": 24,
+   "total_churn": 94,
+   "files_changed": 16,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 35271,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-12",
+   "commit_count": 1,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 23,
+   "lines_deleted": 27,
+   "total_churn": 50,
+   "files_changed": 1,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 35271,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-01",
+   "commit_count": 40,
+   "merge_count": 11,
+   "unique_authors": 7,
+   "lines_added": 2796,
+   "lines_deleted": 2635,
+   "total_churn": 5431,
+   "files_changed": 24,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 35435,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-02",
+   "commit_count": 12,
+   "merge_count": 3,
+   "unique_authors": 3,
+   "lines_added": 71,
+   "lines_deleted": 163,
+   "total_churn": 234,
+   "files_changed": 22,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 35425,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-03",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 35425,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-04",
+   "commit_count": 2,
+   "merge_count": 1,
+   "unique_authors": 2,
+   "lines_added": 2,
+   "lines_deleted": 0,
+   "total_churn": 2,
+   "files_changed": 1,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 35431,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-05",
+   "commit_count": 1,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 2,
+   "lines_deleted": 2,
+   "total_churn": 4,
+   "files_changed": 1,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 35431,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-06",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 35431,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-07",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 35431,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-08",
+   "commit_count": 2,
+   "merge_count": 0,
+   "unique_authors": 2,
+   "lines_added": 22,
+   "lines_deleted": 7,
+   "total_churn": 29,
+   "files_changed": 2,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 35431,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-09",
+   "commit_count": 3,
+   "merge_count": 0,
+   "unique_authors": 2,
+   "lines_added": 5,
+   "lines_deleted": 6,
+   "total_churn": 11,
+   "files_changed": 3,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 35431,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-10",
+   "commit_count": 24,
+   "merge_count": 17,
+   "unique_authors": 4,
+   "lines_added": 14,
+   "lines_deleted": 36,
+   "total_churn": 50,
+   "files_changed": 8,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 35373,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-11",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 35373,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-12",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 35373,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-01",
+   "commit_count": 1,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 2,
+   "lines_deleted": 1,
+   "total_churn": 3,
+   "files_changed": 1,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 35373,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-02",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 35373,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-03",
+   "commit_count": 1,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 35373,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-04",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 35373,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-05",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 35373,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-06",
+   "commit_count": 3,
+   "merge_count": 1,
+   "unique_authors": 2,
+   "lines_added": 2,
+   "lines_deleted": 1,
+   "total_churn": 3,
+   "files_changed": 1,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 35374,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-07",
+   "commit_count": 113,
+   "merge_count": 34,
+   "unique_authors": 8,
+   "lines_added": 2019,
+   "lines_deleted": 6476,
+   "total_churn": 8495,
+   "files_changed": 206,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 32019,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-08",
+   "commit_count": 36,
+   "merge_count": 14,
+   "unique_authors": 5,
+   "lines_added": 309,
+   "lines_deleted": 3316,
+   "total_churn": 3625,
+   "files_changed": 45,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 29807,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-09",
+   "commit_count": 34,
+   "merge_count": 11,
+   "unique_authors": 5,
+   "lines_added": 64,
+   "lines_deleted": 16,
+   "total_churn": 80,
+   "files_changed": 12,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 29843,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-10",
+   "commit_count": 41,
+   "merge_count": 14,
+   "unique_authors": 6,
+   "lines_added": 10997,
+   "lines_deleted": 8292,
+   "total_churn": 19289,
+   "files_changed": 251,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 32022,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-11",
+   "commit_count": 57,
+   "merge_count": 11,
+   "unique_authors": 7,
+   "lines_added": 239,
+   "lines_deleted": 197,
+   "total_churn": 436,
+   "files_changed": 32,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 32032,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-12",
+   "commit_count": 10,
+   "merge_count": 4,
+   "unique_authors": 5,
+   "lines_added": 188,
+   "lines_deleted": 33,
+   "total_churn": 221,
+   "files_changed": 5,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 32032,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2025-01",
+   "commit_count": 12,
+   "merge_count": 5,
+   "unique_authors": 3,
+   "lines_added": 27,
+   "lines_deleted": 10,
+   "total_churn": 37,
+   "files_changed": 5,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 32032,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2025-02",
+   "commit_count": 14,
+   "merge_count": 4,
+   "unique_authors": 4,
+   "lines_added": 19,
+   "lines_deleted": 15,
+   "total_churn": 34,
+   "files_changed": 5,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 32082,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2025-03",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 32082,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2025-04",
+   "commit_count": 6,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 2113,
+   "lines_deleted": 558,
+   "total_churn": 2671,
+   "files_changed": 32,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 32082,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2025-05",
+   "commit_count": 2,
+   "merge_count": 1,
+   "unique_authors": 2,
+   "lines_added": 3037,
+   "lines_deleted": 1530,
+   "total_churn": 4567,
+   "files_changed": 48,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 33550,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2025-06",
+   "commit_count": 66,
+   "merge_count": 14,
+   "unique_authors": 8,
+   "lines_added": 3256,
+   "lines_deleted": 3390,
+   "total_churn": 6646,
+   "files_changed": 159,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 33572,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  }
+ ],
+ "measures_derived": {
+  "bugFixRatioFirstHalf": 0.258423,
+  "bugFixRatioSecondHalf": 0.32272,
+  "bugFixHalfRatio": 1.248805,
+  "featureCommitsFirstHalf": 0,
+  "featureCommitsSecondHalf": 0,
+  "featureCommitsTotal": 0,
+  "locDeltaPerFeature": -1676.0,
+  "recentAgentCommitRatio": 0.0
+ },
+ "inferred": {
+  "a0.05_L36_D12_G0.05_orig": {
+   "classes": [
+    "DeclineStage",
+    "LawIConformant",
+    "LawIIINonConformant",
+    "LawIVNonConformant",
+    "LawVIIConformant",
+    "LawVIIConformantRatio",
+    "LawVIIIConformant",
+    "LawVINonConformant",
+    "LawVNonConformant",
+    "MKApplicable",
+    "MergeActive",
+    "MinorLocGrowth",
+    "MultiAuthorActive",
+    "NonSubstantialChange",
+    "RBServicingStage",
+    "RecentlyActive"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": "urn:senso:explanations:pallets-eco/flask-admin:79f851de895e",
+   "tbox_sha256": "79f851de895e8301073d1746931d8ac1d34e4ed2e94897358fca050d9d07b63c",
+   "abox_triples": 40,
+   "t_reason_B_s": 1.994
+  },
+  "a0.01_L36_D12_G0.05_orig": {
+   "classes": [
+    "LawIConformant",
+    "LawIIINonConformant",
+    "LawIVNonConformant",
+    "LawVIConformant",
+    "LawVIIConformant",
+    "LawVIIConformantRatio",
+    "LawVIIIConformant",
+    "LawVNonConformant",
+    "MKApplicable",
+    "MergeActive",
+    "MinorLocGrowth",
+    "MultiAuthorActive",
+    "NonSubstantialChange",
+    "RBServicingStage",
+    "RecentlyActive",
+    "StabilizationStage"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "956579a8859000216eba261c78e4795a2b5042e7edf95419211fd46e9dbeada9",
+   "abox_triples": 40,
+   "t_reason_B_s": 1.942
+  },
+  "a0.1_L36_D12_G0.05_orig": {
+   "classes": [
+    "DeclineStage",
+    "LawIConformant",
+    "LawIIINonConformant",
+    "LawIVNonConformant",
+    "LawVIIConformant",
+    "LawVIIConformantRatio",
+    "LawVIIIConformant",
+    "LawVINonConformant",
+    "LawVNonConformant",
+    "MKApplicable",
+    "MergeActive",
+    "MinorLocGrowth",
+    "MultiAuthorActive",
+    "NonSubstantialChange",
+    "RBServicingStage",
+    "RecentlyActive"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "56009aa92bf68560113e153a97a62cd0cfdea303607eb909725e8e10a2536494",
+   "abox_triples": 40,
+   "t_reason_B_s": 2.128
+  },
+  "a0.05_L24_D12_G0.05_orig": {
+   "classes": [
+    "DeclineStage",
+    "LawIConformant",
+    "LawIIINonConformant",
+    "LawIVNonConformant",
+    "LawVIIConformant",
+    "LawVIIConformantRatio",
+    "LawVIIIConformant",
+    "LawVINonConformant",
+    "LawVNonConformant",
+    "MKApplicable",
+    "MergeActive",
+    "MinorLocGrowth",
+    "MultiAuthorActive",
+    "NonSubstantialChange",
+    "RBServicingStage",
+    "RecentlyActive"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "79f851de895e8301073d1746931d8ac1d34e4ed2e94897358fca050d9d07b63c",
+   "abox_triples": 40,
+   "t_reason_B_s": 2.09
+  },
+  "a0.05_L48_D12_G0.05_orig": {
+   "classes": [
+    "LawIConformant",
+    "LawIIINonConformant",
+    "LawIVNonConformant",
+    "LawVIConformant",
+    "LawVIIIConformant",
+    "LawVIINonConformant",
+    "LawVNonConformant",
+    "MKApplicable",
+    "MergeActive",
+    "MinorLocGrowth",
+    "MultiAuthorActive",
+    "NonSubstantialChange",
+    "RBServicingStage",
+    "RecentlyActive",
+    "StabilizationStage"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "79f851de895e8301073d1746931d8ac1d34e4ed2e94897358fca050d9d07b63c",
+   "abox_triples": 40,
+   "t_reason_B_s": 1.863
+  },
+  "a0.05_L36_D6_G0.05_orig": {
+   "classes": [
+    "DeclineStage",
+    "LawIConformant",
+    "LawIIINonConformant",
+    "LawIVNonConformant",
+    "LawVIIConformant",
+    "LawVIIConformantRatio",
+    "LawVIIIConformant",
+    "LawVINonConformant",
+    "LawVNonConformant",
+    "MKApplicable",
+    "MergeActive",
+    "MinorLocGrowth",
+    "MultiAuthorActive",
+    "NonSubstantialChange",
+    "RBServicingStage",
+    "RecentlyActive"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "a19e7e45f521324fec6b19741e2a4f08e5d15efd8e05802851c45a87515a7761",
+   "abox_triples": 40,
+   "t_reason_B_s": 2.119
+  },
+  "a0.05_L36_D18_G0.05_orig": {
+   "classes": [
+    "DeclineStage",
+    "LawIConformant",
+    "LawIIINonConformant",
+    "LawIVNonConformant",
+    "LawVIIConformant",
+    "LawVIIConformantRatio",
+    "LawVIIIConformant",
+    "LawVINonConformant",
+    "LawVNonConformant",
+    "MKApplicable",
+    "MergeActive",
+    "MinorLocGrowth",
+    "MultiAuthorActive",
+    "NonSubstantialChange",
+    "RBServicingStage",
+    "RecentlyActive"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "f87900e0c68335fbd2cae9848efdc2926406c328fb39da8e6e393bb472a68fdc",
+   "abox_triples": 40,
+   "t_reason_B_s": 1.936
+  },
+  "a0.05_L36_D24_G0.05_orig": {
+   "classes": [
+    "DeclineStage",
+    "LawIConformant",
+    "LawIIINonConformant",
+    "LawIVNonConformant",
+    "LawVIIConformant",
+    "LawVIIConformantRatio",
+    "LawVIIIConformant",
+    "LawVINonConformant",
+    "LawVNonConformant",
+    "MKApplicable",
+    "MergeActive",
+    "MinorLocGrowth",
+    "MultiAuthorActive",
+    "NonSubstantialChange",
+    "RBServicingStage",
+    "RecentlyActive"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "562211ba220cda59299aec70f3561ba96eadd88adaf45f6f7db3fce71cdcc77b",
+   "abox_triples": 40,
+   "t_reason_B_s": 1.995
+  },
+  "a0.05_L36_D12_G0_orig": {
+   "classes": [
+    "DeclineStage",
+    "LawIConformant",
+    "LawIIINonConformant",
+    "LawIVNonConformant",
+    "LawVIIConformant",
+    "LawVIIConformantRatio",
+    "LawVIIIConformant",
+    "LawVINonConformant",
+    "LawVNonConformant",
+    "MKApplicable",
+    "MergeActive",
+    "MinorLocGrowth",
+    "MultiAuthorActive",
+    "NonSubstantialChange",
+    "RBServicingStage",
+    "RecentlyActive"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "c0de0e8b2e7424d23b10ed152acd4ff66c2f1a973196b7e54f6598e9d734d0dc",
+   "abox_triples": 40,
+   "t_reason_B_s": 1.996
+  },
+  "a0.05_L36_D12_G0.02_orig": {
+   "classes": [
+    "DeclineStage",
+    "LawIConformant",
+    "LawIIINonConformant",
+    "LawIVNonConformant",
+    "LawVIIConformant",
+    "LawVIIConformantRatio",
+    "LawVIIIConformant",
+    "LawVINonConformant",
+    "LawVNonConformant",
+    "MKApplicable",
+    "MergeActive",
+    "MinorLocGrowth",
+    "MultiAuthorActive",
+    "NonSubstantialChange",
+    "RBServicingStage",
+    "RecentlyActive"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "2c6613dd6b3e4fa714d92eaa067f02157466a4b3ee0ccf6de289441d860de28d",
+   "abox_triples": 40,
+   "t_reason_B_s": 1.89
+  },
+  "a0.05_L36_D12_G0.1_orig": {
+   "classes": [
+    "DeclineStage",
+    "LawIConformant",
+    "LawIIINonConformant",
+    "LawIVNonConformant",
+    "LawVIIConformant",
+    "LawVIIConformantRatio",
+    "LawVIIIConformant",
+    "LawVINonConformant",
+    "LawVNonConformant",
+    "MKApplicable",
+    "MergeActive",
+    "MinorLocGrowth",
+    "MultiAuthorActive",
+    "NonSubstantialChange",
+    "RBServicingStage",
+    "RecentlyActive"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "0cfde802b4494fc33a5ad0eb910980aaf152093f62848406bdc37bc099347936",
+   "abox_triples": 40,
+   "t_reason_B_s": 1.874
+  },
+  "a0.05_L36_D12_G0.05_hr": {
+   "classes": [
+    "LawIConformant",
+    "LawIIINonConformant",
+    "LawIVNonConformant",
+    "LawVIConformant",
+    "LawVIIConformant",
+    "LawVIIConformantRatio",
+    "LawVIIIConformant",
+    "LawVNonConformant",
+    "MKApplicable",
+    "MergeActive",
+    "MinorLocGrowth",
+    "MultiAuthorActive",
+    "NonSubstantialChange",
+    "RBServicingStage",
+    "RecentlyActive",
+    "StabilizationStage"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "79f851de895e8301073d1746931d8ac1d34e4ed2e94897358fca050d9d07b63c",
+   "abox_triples": 40,
+   "t_reason_B_s": 1.882
+  }
+ },
+ "primary_config": "a0.05_L36_D12_G0.05_orig",
+ "project_iri": "http://senso-framework.org/data/pallets-eco_flask-admin",
+ "consistent": true,
+ "inferred_labels": [
+  "DeclineStage",
+  "LawIConformant",
+  "LawIIINonConformant",
+  "LawIVNonConformant",
+  "LawVIIConformant",
+  "LawVIIConformantRatio",
+  "LawVIIIConformant",
+  "LawVINonConformant",
+  "LawVNonConformant",
+  "MKApplicable",
+  "MergeActive",
+  "MinorLocGrowth",
+  "MultiAuthorActive",
+  "NonSubstantialChange",
+  "RBServicingStage",
+  "RecentlyActive"
+ ],
+ "stage_labels": [
+  "DeclineStage",
+  "RBServicingStage"
+ ],
+ "law_labels": {
+  "I": "LawIConformant",
+  "III": "LawIIINonConformant",
+  "IV": "LawIVNonConformant",
+  "V": "LawVNonConformant",
+  "VI": "LawVINonConformant",
+  "VII": "LawVIIConformant",
+  "VIII": "LawVIIIConformant"
+ },
+ "tbox_sha256_stage_b": "79f851de895e8301073d1746931d8ac1d34e4ed2e94897358fca050d9d07b63c",
+ "tbox_sha256_stage_a": "da30ed577542b3643ecf06cb6a4649ccc8fce61ab7a0373beabd763e12883e86",
+ "summary": {
+  "c1": "P",
+  "c2": "S",
+  "cf": "A",
+  "note": "debug summary; run_rq1_v2.py reads `inferred` and recomputes CF itself"
+ },
+ "explanations": {
+  "stage:DeclineStage": {
+   "class": "DeclineStage",
+   "target": "http://senso-framework.org/data/pallets-eco_flask-admin type http://senso-framework.org/ontology/seo#DeclineStage",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKpValue_lt_mk_alpha",
+       "text": "A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]"
+      },
+      {
+       "kind": "definition",
+       "subject": "DeclineStage",
+       "text": "DeclineStage equivalentTo A_locMKTau_lt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKTau_lt_0",
+       "text": "A_locMKTau_lt_0 equivalentTo locMKTau some decimal[< 0.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "pallets-eco_flask-admin",
+       "prop": "locMKTau",
+       "value": -0.293651,
+       "raw": "pallets-eco_flask-admin locMKTau -0.293651"
+      },
+      {
+       "subject": "pallets-eco_flask-admin",
+       "prop": "locSeriesLength",
+       "value": 36,
+       "raw": "pallets-eco_flask-admin locSeriesLength 36"
+      },
+      {
+       "subject": "pallets-eco_flask-admin",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "pallets-eco_flask-admin type SoftwareProject"
+      },
+      {
+       "subject": "pallets-eco_flask-admin",
+       "prop": "locMKpValue",
+       "value": 0.011321,
+       "raw": "pallets-eco_flask-admin locMKpValue 0.011321"
+      }
+     ],
+     "closures": [],
+     "raw": "pallets-eco_flask-admin locMKTau -0.293651\nA_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\npallets-eco_flask-admin locSeriesLength 36\npallets-eco_flask-admin type SoftwareProject\nA_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\npallets-eco_flask-admin locMKpValue 0.011321\nDeclineStage equivalentTo A_locMKTau_lt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject\nA_locMKTau_lt_0 equivalentTo locMKTau some decimal[< 0.0]\nA_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]"
+    }
+   ],
+   "raw_text": "Axiom: pallets-eco_flask-admin type DeclineStage\n\nExplanation(s): \n1)   pallets-eco_flask-admin locMKTau -0.293651\n     A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\n     pallets-eco_flask-admin locSeriesLength 36\n     pallets-eco_flask-admin type SoftwareProject\n     A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\n     pallets-eco_flask-admin locMKpValue 0.011321\n     DeclineStage equivalentTo A_locMKTau_lt_0\n                               and A_locMKpValue_lt_mk_alpha\n                               and MKApplicable\n                               and SoftwareProject\n     A_locMKTau_lt_0 equivalentTo locMKTau some decimal[< 0.0]\n     A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]\n\n\n",
+   "seconds": 2.2824482489959337,
+   "returncode": 0,
+   "error": null
+  },
+  "stage:RBServicingStage": {
+   "class": "RBServicingStage",
+   "target": "http://senso-framework.org/data/pallets-eco_flask-admin type http://senso-framework.org/ontology/seo#RBServicingStage",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "subclass",
+       "subject": "MinorLocGrowth",
+       "text": "MinorLocGrowth subClassOf NonSubstantialChange"
+      },
+      {
+       "kind": "definition",
+       "subject": "RBServicingStage",
+       "text": "RBServicingStage equivalentTo NonSubstantialChange and RecentlyActive and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "RecentlyActive",
+       "text": "RecentlyActive equivalentTo A_monthsSinceLastCommit_lt_rb_dormancy_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locRelSenSlopeAnnual_lt_rb_min_rel_loc_growth_per_year",
+       "text": "A_locRelSenSlopeAnnual_lt_rb_min_rel_loc_growth_per_year equivalentTo locRelSenSlopeAnnual some decimal[< 0.05]"
+      },
+      {
+       "kind": "definition",
+       "subject": "MinorLocGrowth",
+       "text": "MinorLocGrowth equivalentTo A_locRelSenSlopeAnnual_lt_rb_min_rel_loc_growth_per_year and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_monthsSinceLastCommit_lt_rb_dormancy_months",
+       "text": "A_monthsSinceLastCommit_lt_rb_dormancy_months equivalentTo monthsSinceLastCommit some integer[< 12]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "pallets-eco_flask-admin",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "pallets-eco_flask-admin type SoftwareProject"
+      },
+      {
+       "subject": "pallets-eco_flask-admin",
+       "prop": "monthsSinceLastCommit",
+       "value": 0,
+       "raw": "pallets-eco_flask-admin monthsSinceLastCommit 0"
+      },
+      {
+       "subject": "pallets-eco_flask-admin",
+       "prop": "locRelSenSlopeAnnual",
+       "value": -0.002815,
+       "raw": "pallets-eco_flask-admin locRelSenSlopeAnnual -0.002815"
+      }
+     ],
+     "closures": [],
+     "raw": "pallets-eco_flask-admin type SoftwareProject\npallets-eco_flask-admin monthsSinceLastCommit 0\npallets-eco_flask-admin locRelSenSlopeAnnual -0.002815\nMinorLocGrowth subClassOf NonSubstantialChange\nRBServicingStage equivalentTo NonSubstantialChange and RecentlyActive and SoftwareProject\nRecentlyActive equivalentTo A_monthsSinceLastCommit_lt_rb_dormancy_months and SoftwareProject\nA_locRelSenSlopeAnnual_lt_rb_min_rel_loc_growth_per_year equivalentTo locRelSenSlopeAnnual some decimal[< 0.05]\nMinorLocGrowth equivalentTo A_locRelSenSlopeAnnual_lt_rb_min_rel_loc_growth_per_year and SoftwareProject\nA_monthsSinceLastCommit_lt_rb_dormancy_months equivalentTo monthsSinceLastCommit some integer[< 12]"
+    }
+   ],
+   "raw_text": "Axiom: pallets-eco_flask-admin type RBServicingStage\n\nExplanation(s): \n1)   pallets-eco_flask-admin type SoftwareProject\n     pallets-eco_flask-admin monthsSinceLastCommit 0\n     pallets-eco_flask-admin locRelSenSlopeAnnual -0.002815\n     MinorLocGrowth subClassOf NonSubstantialChange\n     RBServicingStage equivalentTo NonSubstantialChange\n                                   and RecentlyActive\n                                   and SoftwareProject\n     RecentlyActive equivalentTo A_monthsSinceLastCommit_lt_rb_dormancy_months\n                                 and SoftwareProject\n     A_locRelSenSlopeAnnual_lt_rb_min_rel_loc_growth_per_year equivalentTo locRelSenSlopeAnnual some decimal[< 0.05]\n     MinorLocGrowth equivalentTo A_locRelSenSlopeAnnual_lt_rb_min_rel_loc_growth_per_year\n                                 and SoftwareProject\n     A_monthsSinceLastCommit_lt_rb_dormancy_months equivalentTo monthsSinceLastCommit some integer[< 12]\n\n\n",
+   "seconds": 3.670454895007424,
+   "returncode": 0,
+   "error": null
+  },
+  "lawI": {
+   "class": "LawIConformant",
+   "target": "http://senso-framework.org/data/pallets-eco_flask-admin type http://senso-framework.org/ontology/seo#LawIConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law1_min_months",
+       "text": "A_monthsObserved_ge_p_law1_min_months equivalentTo monthsObserved some integer[>= 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawIConformant",
+       "text": "LawIConformant equivalentTo A_activeMonthRatio_ge_p_law1_active_ratio and A_monthsObserved_ge_p_law1_min_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_activeMonthRatio_ge_p_law1_active_ratio",
+       "text": "A_activeMonthRatio_ge_p_law1_active_ratio equivalentTo activeMonthRatio some decimal[>= 0.5]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "pallets-eco_flask-admin",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "pallets-eco_flask-admin type SoftwareProject"
+      },
+      {
+       "subject": "pallets-eco_flask-admin",
+       "prop": "activeMonthRatio",
+       "value": 0.722222,
+       "raw": "pallets-eco_flask-admin activeMonthRatio 0.722222"
+      },
+      {
+       "subject": "pallets-eco_flask-admin",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "pallets-eco_flask-admin monthsObserved 36"
+      }
+     ],
+     "closures": [],
+     "raw": "pallets-eco_flask-admin type SoftwareProject\npallets-eco_flask-admin activeMonthRatio 0.722222\nA_monthsObserved_ge_p_law1_min_months equivalentTo monthsObserved some integer[>= 2]\npallets-eco_flask-admin monthsObserved 36\nLawIConformant equivalentTo A_activeMonthRatio_ge_p_law1_active_ratio and A_monthsObserved_ge_p_law1_min_months and SoftwareProject\nA_activeMonthRatio_ge_p_law1_active_ratio equivalentTo activeMonthRatio some decimal[>= 0.5]"
+    }
+   ],
+   "raw_text": "Axiom: pallets-eco_flask-admin type LawIConformant\n\nExplanation(s): \n1)   pallets-eco_flask-admin type SoftwareProject\n     pallets-eco_flask-admin activeMonthRatio 0.722222\n     A_monthsObserved_ge_p_law1_min_months equivalentTo monthsObserved some integer[>= 2]\n     pallets-eco_flask-admin monthsObserved 36\n     LawIConformant equivalentTo A_activeMonthRatio_ge_p_law1_active_ratio\n                                 and A_monthsObserved_ge_p_law1_min_months\n                                 and SoftwareProject\n     A_activeMonthRatio_ge_p_law1_active_ratio equivalentTo activeMonthRatio some decimal[>= 0.5]\n\n\n",
+   "seconds": 2.2123643600498326,
+   "returncode": 0,
+   "error": null
+  },
+  "lawIII": {
+   "class": "LawIIINonConformant",
+   "target": "http://senso-framework.org/data/pallets-eco_flask-admin type http://senso-framework.org/ontology/seo#LawIIINonConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_churnCV_ge_p_law3_churn_cv",
+       "text": "A_churnCV_ge_p_law3_churn_cv equivalentTo churnCV some decimal[>= 2.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law3_min_months",
+       "text": "A_monthsObserved_ge_p_law3_min_months equivalentTo monthsObserved some integer[>= 6]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawIIINonConformant",
+       "text": "LawIIINonConformant equivalentTo A_churnCV_ge_p_law3_churn_cv and A_monthsObserved_ge_p_law3_min_months and SoftwareProject"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "pallets-eco_flask-admin",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "pallets-eco_flask-admin type SoftwareProject"
+      },
+      {
+       "subject": "pallets-eco_flask-admin",
+       "prop": "churnCV",
+       "value": 2.530729,
+       "raw": "pallets-eco_flask-admin churnCV 2.530729"
+      },
+      {
+       "subject": "pallets-eco_flask-admin",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "pallets-eco_flask-admin monthsObserved 36"
+      }
+     ],
+     "closures": [],
+     "raw": "A_churnCV_ge_p_law3_churn_cv equivalentTo churnCV some decimal[>= 2.0]\nA_monthsObserved_ge_p_law3_min_months equivalentTo monthsObserved some integer[>= 6]\npallets-eco_flask-admin type SoftwareProject\npallets-eco_flask-admin churnCV 2.530729\npallets-eco_flask-admin monthsObserved 36\nLawIIINonConformant equivalentTo A_churnCV_ge_p_law3_churn_cv and A_monthsObserved_ge_p_law3_min_months and SoftwareProject"
+    }
+   ],
+   "raw_text": "Axiom: pallets-eco_flask-admin type LawIIINonConformant\n\nExplanation(s): \n1)   A_churnCV_ge_p_law3_churn_cv equivalentTo churnCV some decimal[>= 2.0]\n     A_monthsObserved_ge_p_law3_min_months equivalentTo monthsObserved some integer[>= 6]\n     pallets-eco_flask-admin type SoftwareProject\n     pallets-eco_flask-admin churnCV 2.530729\n     pallets-eco_flask-admin monthsObserved 36\n     LawIIINonConformant equivalentTo A_churnCV_ge_p_law3_churn_cv\n                                      and A_monthsObserved_ge_p_law3_min_months\n                                      and SoftwareProject\n\n\n",
+   "seconds": 2.2141858710092492,
+   "returncode": 0,
+   "error": null
+  },
+  "lawIV": {
+   "class": "LawIVNonConformant",
+   "target": "http://senso-framework.org/data/pallets-eco_flask-admin type http://senso-framework.org/ontology/seo#LawIVNonConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law4_min_months",
+       "text": "A_monthsObserved_ge_p_law4_min_months equivalentTo monthsObserved some integer[>= 6]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawIVNonConformant",
+       "text": "LawIVNonConformant equivalentTo A_commitCountCV_ge_p_law4_commit_cv and A_monthsObserved_ge_p_law4_min_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_commitCountCV_ge_p_law4_commit_cv",
+       "text": "A_commitCountCV_ge_p_law4_commit_cv equivalentTo commitCountCV some decimal[>= 1.5]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "pallets-eco_flask-admin",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "pallets-eco_flask-admin type SoftwareProject"
+      },
+      {
+       "subject": "pallets-eco_flask-admin",
+       "prop": "commitCountCV",
+       "value": 1.673043,
+       "raw": "pallets-eco_flask-admin commitCountCV 1.673043"
+      },
+      {
+       "subject": "pallets-eco_flask-admin",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "pallets-eco_flask-admin monthsObserved 36"
+      }
+     ],
+     "closures": [],
+     "raw": "A_monthsObserved_ge_p_law4_min_months equivalentTo monthsObserved some integer[>= 6]\nLawIVNonConformant equivalentTo A_commitCountCV_ge_p_law4_commit_cv and A_monthsObserved_ge_p_law4_min_months and SoftwareProject\npallets-eco_flask-admin type SoftwareProject\npallets-eco_flask-admin commitCountCV 1.673043\nA_commitCountCV_ge_p_law4_commit_cv equivalentTo commitCountCV some decimal[>= 1.5]\npallets-eco_flask-admin monthsObserved 36"
+    }
+   ],
+   "raw_text": "Axiom: pallets-eco_flask-admin type LawIVNonConformant\n\nExplanation(s): \n1)   A_monthsObserved_ge_p_law4_min_months equivalentTo monthsObserved some integer[>= 6]\n     LawIVNonConformant equivalentTo A_commitCountCV_ge_p_law4_commit_cv\n                                     and A_monthsObserved_ge_p_law4_min_months\n                                     and SoftwareProject\n     pallets-eco_flask-admin type SoftwareProject\n     pallets-eco_flask-admin commitCountCV 1.673043\n     A_commitCountCV_ge_p_law4_commit_cv equivalentTo commitCountCV some decimal[>= 1.5]\n     pallets-eco_flask-admin monthsObserved 36\n\n\n",
+   "seconds": 5.121949670021422,
+   "returncode": 0,
+   "error": null
+  },
+  "lawV": {
+   "class": "LawVNonConformant",
+   "target": "http://senso-framework.org/data/pallets-eco_flask-admin type http://senso-framework.org/ontology/seo#LawVNonConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_linesAddedCV_ge_p_law5_additions_cv",
+       "text": "A_linesAddedCV_ge_p_law5_additions_cv equivalentTo linesAddedCV some decimal[>= 2.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawVNonConformant",
+       "text": "LawVNonConformant equivalentTo A_linesAddedCV_ge_p_law5_additions_cv and A_monthsObserved_ge_p_law5_min_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law5_min_months",
+       "text": "A_monthsObserved_ge_p_law5_min_months equivalentTo monthsObserved some integer[>= 4]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "pallets-eco_flask-admin",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "pallets-eco_flask-admin type SoftwareProject"
+      },
+      {
+       "subject": "pallets-eco_flask-admin",
+       "prop": "linesAddedCV",
+       "value": 2.790836,
+       "raw": "pallets-eco_flask-admin linesAddedCV 2.790836"
+      },
+      {
+       "subject": "pallets-eco_flask-admin",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "pallets-eco_flask-admin monthsObserved 36"
+      }
+     ],
+     "closures": [],
+     "raw": "A_linesAddedCV_ge_p_law5_additions_cv equivalentTo linesAddedCV some decimal[>= 2.0]\npallets-eco_flask-admin type SoftwareProject\npallets-eco_flask-admin linesAddedCV 2.790836\nLawVNonConformant equivalentTo A_linesAddedCV_ge_p_law5_additions_cv and A_monthsObserved_ge_p_law5_min_months and SoftwareProject\nA_monthsObserved_ge_p_law5_min_months equivalentTo monthsObserved some integer[>= 4]\npallets-eco_flask-admin monthsObserved 36"
+    }
+   ],
+   "raw_text": "Axiom: pallets-eco_flask-admin type LawVNonConformant\n\nExplanation(s): \n1)   A_linesAddedCV_ge_p_law5_additions_cv equivalentTo linesAddedCV some decimal[>= 2.0]\n     pallets-eco_flask-admin type SoftwareProject\n     pallets-eco_flask-admin linesAddedCV 2.790836\n     LawVNonConformant equivalentTo A_linesAddedCV_ge_p_law5_additions_cv\n                                    and A_monthsObserved_ge_p_law5_min_months\n                                    and SoftwareProject\n     A_monthsObserved_ge_p_law5_min_months equivalentTo monthsObserved some integer[>= 4]\n     pallets-eco_flask-admin monthsObserved 36\n\n\n",
+   "seconds": 2.380934275977779,
+   "returncode": 0,
+   "error": null
+  },
+  "lawVI": {
+   "class": "LawVINonConformant",
+   "target": "http://senso-framework.org/data/pallets-eco_flask-admin type http://senso-framework.org/ontology/seo#LawVINonConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKpValue_lt_mk_alpha",
+       "text": "A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]"
+      },
+      {
+       "kind": "definition",
+       "subject": "DeclineStage",
+       "text": "DeclineStage equivalentTo LawVINonConformant"
+      },
+      {
+       "kind": "definition",
+       "subject": "DeclineStage",
+       "text": "DeclineStage equivalentTo A_locMKTau_lt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKTau_lt_0",
+       "text": "A_locMKTau_lt_0 equivalentTo locMKTau some decimal[< 0.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "pallets-eco_flask-admin",
+       "prop": "locMKTau",
+       "value": -0.293651,
+       "raw": "pallets-eco_flask-admin locMKTau -0.293651"
+      },
+      {
+       "subject": "pallets-eco_flask-admin",
+       "prop": "locSeriesLength",
+       "value": 36,
+       "raw": "pallets-eco_flask-admin locSeriesLength 36"
+      },
+      {
+       "subject": "pallets-eco_flask-admin",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "pallets-eco_flask-admin type SoftwareProject"
+      },
+      {
+       "subject": "pallets-eco_flask-admin",
+       "prop": "locMKpValue",
+       "value": 0.011321,
+       "raw": "pallets-eco_flask-admin locMKpValue 0.011321"
+      }
+     ],
+     "closures": [],
+     "raw": "pallets-eco_flask-admin locMKTau -0.293651\nA_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\npallets-eco_flask-admin locSeriesLength 36\npallets-eco_flask-admin type SoftwareProject\nA_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\nDeclineStage equivalentTo LawVINonConformant\npallets-eco_flask-admin locMKpValue 0.011321\nDeclineStage equivalentTo A_locMKTau_lt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject\nA_locMKTau_lt_0 equivalentTo locMKTau some decimal[< 0.0]\nA_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]"
+    }
+   ],
+   "raw_text": "Axiom: pallets-eco_flask-admin type LawVINonConformant\n\nExplanation(s): \n1)   pallets-eco_flask-admin locMKTau -0.293651\n     A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\n     pallets-eco_flask-admin locSeriesLength 36\n     pallets-eco_flask-admin type SoftwareProject\n     A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\n     DeclineStage equivalentTo LawVINonConformant\n     pallets-eco_flask-admin locMKpValue 0.011321\n     DeclineStage equivalentTo A_locMKTau_lt_0\n                               and A_locMKpValue_lt_mk_alpha\n                               and MKApplicable\n                               and SoftwareProject\n     A_locMKTau_lt_0 equivalentTo locMKTau some decimal[< 0.0]\n     A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]\n\n\n",
+   "seconds": 2.267702763027046,
+   "returncode": 0,
+   "error": null
+  },
+  "lawVII": {
+   "class": "LawVIIConformant",
+   "target": "http://senso-framework.org/data/pallets-eco_flask-admin type http://senso-framework.org/ontology/seo#LawVIIConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_bugFixHalfRatio_ge_p_law7_tolerance",
+       "text": "A_bugFixHalfRatio_ge_p_law7_tolerance equivalentTo bugFixHalfRatio some decimal[>= 0.9]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawVIIConformantRatio",
+       "text": "LawVIIConformantRatio equivalentTo A_activeMonthCount_ge_p_law7_min_active_months and A_bugFixHalfRatio_ge_p_law7_tolerance and A_bugFixRatioFirstHalf_gt_0 and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_bugFixRatioFirstHalf_gt_0",
+       "text": "A_bugFixRatioFirstHalf_gt_0 equivalentTo bugFixRatioFirstHalf some decimal[> 0.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_activeMonthCount_ge_p_law7_min_active_months",
+       "text": "A_activeMonthCount_ge_p_law7_min_active_months equivalentTo activeMonthCount some integer[>= 4]"
+      },
+      {
+       "kind": "subclass",
+       "subject": "LawVIIConformantRatio",
+       "text": "LawVIIConformantRatio subClassOf LawVIIConformant"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "pallets-eco_flask-admin",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "pallets-eco_flask-admin type SoftwareProject"
+      },
+      {
+       "subject": "pallets-eco_flask-admin",
+       "prop": "activeMonthCount",
+       "value": 26,
+       "raw": "pallets-eco_flask-admin activeMonthCount 26"
+      },
+      {
+       "subject": "pallets-eco_flask-admin",
+       "prop": "bugFixRatioFirstHalf",
+       "value": 0.258423,
+       "raw": "pallets-eco_flask-admin bugFixRatioFirstHalf 0.258423"
+      },
+      {
+       "subject": "pallets-eco_flask-admin",
+       "prop": "bugFixHalfRatio",
+       "value": 1.248805,
+       "raw": "pallets-eco_flask-admin bugFixHalfRatio 1.248805"
+      }
+     ],
+     "closures": [],
+     "raw": "A_bugFixHalfRatio_ge_p_law7_tolerance equivalentTo bugFixHalfRatio some decimal[>= 0.9]\nLawVIIConformantRatio equivalentTo A_activeMonthCount_ge_p_law7_min_active_months and A_bugFixHalfRatio_ge_p_law7_tolerance and A_bugFixRatioFirstHalf_gt_0 and SoftwareProject\npallets-eco_flask-admin type SoftwareProject\npallets-eco_flask-admin activeMonthCount 26\nA_bugFixRatioFirstHalf_gt_0 equivalentTo bugFixRatioFirstHalf some decimal[> 0.0]\nA_activeMonthCount_ge_p_law7_min_active_months equivalentTo activeMonthCount some integer[>= 4]\npallets-eco_flask-admin bugFixRatioFirstHalf 0.258423\npallets-eco_flask-admin bugFixHalfRatio 1.248805\nLawVIIConformantRatio subClassOf LawVIIConformant"
+    }
+   ],
+   "raw_text": "Axiom: pallets-eco_flask-admin type LawVIIConformant\n\nExplanation(s): \n1)   A_bugFixHalfRatio_ge_p_law7_tolerance equivalentTo bugFixHalfRatio some decimal[>= 0.9]\n     LawVIIConformantRatio equivalentTo A_activeMonthCount_ge_p_law7_min_active_months\n                                        and A_bugFixHalfRatio_ge_p_law7_tolerance\n                                        and A_bugFixRatioFirstHalf_gt_0\n                                        and SoftwareProject\n     pallets-eco_flask-admin type SoftwareProject\n     pallets-eco_flask-admin activeMonthCount 26\n     A_bugFixRatioFirstHalf_gt_0 equivalentTo bugFixRatioFirstHalf some decimal[> 0.0]\n     A_activeMonthCount_ge_p_law7_min_active_months equivalentTo activeMonthCount some integer[>= 4]\n     pallets-eco_flask-admin bugFixRatioFirstHalf 0.258423\n     pallets-eco_flask-admin bugFixHalfRatio 1.248805\n     LawVIIConformantRatio subClassOf LawVIIConformant\n\n\n",
+   "seconds": 2.527483857003972,
+   "returncode": 0,
+   "error": null
+  },
+  "lawVIII": {
+   "class": "LawVIIIConformant",
+   "target": "http://senso-framework.org/data/pallets-eco_flask-admin type http://senso-framework.org/ontology/seo#LawVIIIConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio",
+       "text": "A_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio equivalentTo multiAuthorMonthRatio some decimal[> 0.3]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_mergeMonthRatio_gt_p_law8_merge_ratio",
+       "text": "A_mergeMonthRatio_gt_p_law8_merge_ratio equivalentTo MergeActive"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio",
+       "text": "A_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio equivalentTo MultiAuthorActive"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawVIIIConformant",
+       "text": "LawVIIIConformant equivalentTo A_monthsObserved_ge_p_law8_min_months and MergeActive and MultiAuthorActive and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law8_min_months",
+       "text": "A_monthsObserved_ge_p_law8_min_months equivalentTo monthsObserved some integer[>= 6]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_mergeMonthRatio_gt_p_law8_merge_ratio",
+       "text": "A_mergeMonthRatio_gt_p_law8_merge_ratio equivalentTo mergeMonthRatio some decimal[> 0.3]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "pallets-eco_flask-admin",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "pallets-eco_flask-admin monthsObserved 36"
+      },
+      {
+       "subject": "pallets-eco_flask-admin",
+       "prop": "mergeMonthRatio",
+       "value": 0.472222,
+       "raw": "pallets-eco_flask-admin mergeMonthRatio 0.472222"
+      },
+      {
+       "subject": "pallets-eco_flask-admin",
+       "prop": "multiAuthorMonthRatio",
+       "value": 0.555556,
+       "raw": "pallets-eco_flask-admin multiAuthorMonthRatio 0.555556"
+      },
+      {
+       "subject": "pallets-eco_flask-admin",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "pallets-eco_flask-admin type SoftwareProject"
+      }
+     ],
+     "closures": [],
+     "raw": "A_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio equivalentTo multiAuthorMonthRatio some decimal[> 0.3]\nA_mergeMonthRatio_gt_p_law8_merge_ratio equivalentTo MergeActive\nA_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio equivalentTo MultiAuthorActive\npallets-eco_flask-admin monthsObserved 36\nLawVIIIConformant equivalentTo A_monthsObserved_ge_p_law8_min_months and MergeActive and MultiAuthorActive and SoftwareProject\npallets-eco_flask-admin mergeMonthRatio 0.472222\npallets-eco_flask-admin multiAuthorMonthRatio 0.555556\npallets-eco_flask-admin type SoftwareProject\nA_monthsObserved_ge_p_law8_min_months equivalentTo monthsObserved some integer[>= 6]\nA_mergeMonthRatio_gt_p_law8_merge_ratio equivalentTo mergeMonthRatio some decimal[> 0.3]"
+    }
+   ],
+   "raw_text": "Axiom: pallets-eco_flask-admin type LawVIIIConformant\n\nExplanation(s): \n1)   A_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio equivalentTo multiAuthorMonthRatio some decimal[> 0.3]\n     A_mergeMonthRatio_gt_p_law8_merge_ratio equivalentTo MergeActive\n     A_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio equivalentTo MultiAuthorActive\n     pallets-eco_flask-admin monthsObserved 36\n     LawVIIIConformant equivalentTo A_monthsObserved_ge_p_law8_min_months\n                                    and MergeActive\n                                    and MultiAuthorActive\n                                    and SoftwareProject\n     pallets-eco_flask-admin mergeMonthRatio 0.472222\n     pallets-eco_flask-admin multiAuthorMonthRatio 0.555556\n     pallets-eco_flask-admin type SoftwareProject\n     A_monthsObserved_ge_p_law8_min_months equivalentTo monthsObserved some integer[>= 6]\n     A_mergeMonthRatio_gt_p_law8_merge_ratio equivalentTo mergeMonthRatio some decimal[> 0.3]\n\n\n",
+   "seconds": 2.7282237720210105,
+   "returncode": 0,
+   "error": null
+  }
+ },
+ "fuseki": {
+  "dataset": "seo_v2",
+  "graph_triples": {
+   "urn:senso:abox:pallets-eco/flask-admin": 388,
+   "urn:senso:commits:pallets-eco/flask-admin": 3076,
+   "urn:senso:abox-derived:pallets-eco/flask-admin": 8,
+   "urn:senso:inferred:pallets-eco/flask-admin:79f851de895e": 356,
+   "urn:senso:explanations:pallets-eco/flask-admin:79f851de895e": 169
+  }
+ },
+ "timings": {
+  "t_clone": 2.229,
+  "t_mine": 6.644,
+  "t_loc": 1.839,
+  "t_reason_A": 3.221,
+  "mining_cached": false,
+  "t_reason_B": 23.71,
+  "n_configs": 12,
+  "t_explain": 25.495,
+  "n_explain_calls": 9,
+  "t_writeback": 9.75,
+  "t_total": 70.964
+ }
+}

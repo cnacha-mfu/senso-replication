@@ -1,0 +1,111 @@
+{
+ "unit_id": "zopefoundation__DocumentTemplate-55__C__claude-sonnet__r2",
+ "task_id": "zopefoundation__DocumentTemplate-55",
+ "repo": "zopefoundation/DocumentTemplate",
+ "stage": "servicing",
+ "condition": "C",
+ "model": "claude-code/sonnet",
+ "run": 2,
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 6849,
+  "sha256": "d5ed47f4a551582f77be1a09c19284a0c9591c4fa1aed37cf1c2ce2d0fc05d5a"
+ },
+ "started": "2026-10-18T09:43:16.537438+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 4,
+ "tool_calls": 3,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 8813,
+  "cache_read_input_tokens": 71736,
+  "output_tokens": 684,
+  "output_tokens_details": {
+   "thinking_tokens": 0
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 8813,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 8,
+   "outputTokens": 684,
+   "cacheReadInputTokens": 71736,
+   "cacheCreationInputTokens": 8813,
+   "webSearchRequests": 0,
+   "costUSD": 0.049281599999999995,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.049281599999999995,
+ "result_text": "`bytes_sql_quote()` in `src/DocumentTemplate/DT_Var.py` now returns text instead of bytes on Python 3. The quoted value can therefore be concatenated with the rest of the SQL query string, which is what `<dtml-sqlvar xy type=\"string\">` needs. I haven't run the tests or tried it with a real template.\n\nIt decodes the quoted bytes as UTF-8, as in the patch from the issue. Bytes that aren't valid UTF-8 will now raise a `UnicodeDecodeError`.\n\nOn Python 2 it still returns the quoted value unchanged. There `bytes` is `str`, so decoding would turn it into `unicode`, which I assumed you didn't want.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792327800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0.09,
+    "resetsAt": 1792327800
+   },
+   "seven_day": {
+    "utilization": 0.14,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 17.3,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 4,
+   "hit_step_limit": 0,
+   "changed_lines": 6,
+   "gold_changed_lines": 50,
+   "Y1": 1,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": -3.0588936890535687
+  },
+  "f2p_pass": 3,
+  "f2p_total": 3,
+  "p2p_pass": 49,
+  "p2p_total": 49,
+  "f2p_all_pass": true,
+  "p2p_all_pass": true,
+  "resolved": true,
+  "reason": "resolved",
+  "test_seconds": 1.2
+ },
+ "status": "done",
+ "finished": "2026-10-18T09:43:36.496785+00:00"
+}

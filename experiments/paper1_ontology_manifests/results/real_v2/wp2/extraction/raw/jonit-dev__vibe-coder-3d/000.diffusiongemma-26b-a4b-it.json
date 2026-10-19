@@ -1,0 +1,21 @@
+{
+ "repo": "jonit-dev/vibe-coder-3d",
+ "chunk": 0,
+ "n_chunks": 2,
+ "model": "google/diffusiongemma-26b-a4b-it",
+ "prompt_sha256": "d0e02ff613417050168d859f2af6230c3712c6758bb5d9c40d60ff55e5ae87ca",
+ "user_sha256": "c6f0395ce6d35bd0127ec3c05280f13cf5b0841b48b5516e1a7ba9adf05f41f7",
+ "text": "```json\n{\"claims\": [\n  {\"type\": \"tool_used\", \"subject\": \"yarn\", \"tool_category\": \"package_manager\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"tool_used\", \"subject\": \"vite\", \"tool_category\": \"build_tool\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"dependency\", \"subject\": \"tailwind\", \"ecosystem_hint\": \"npm\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"dependency\", \"subject\": \"zustand\", \"ecosystem_hint\": \"npm\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"dependency\", \"subject\": \"zod\", \"ecosystem_hint\": \"npm\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"command\", \"subject\": \"dev\", \"runner\": \"yarn\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"path_exists\", \"subject\": \"src/game/scenes/*.tsx\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"path_exists\", \"subject\": \"src/plugins/\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"path_exists\", \"subject\": \"@core/lib/logger\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"path_exists\", \"subject\": \"CLAUDE.md\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"import_rule\", \"subject\": \"relative\", \"mode\": \"negated\"}\n]}\n```",
+ "parse_ok": true,
+ "parse_error": null,
+ "parse_retries": 0,
+ "latency_s": 2.832088041002862,
+ "usage": {
+  "prompt": 4512,
+  "completion": 348
+ },
+ "n_api_calls": 1,
+ "finish_reason": "stop",
+ "error": null,
+ "discarded_attempt_texts": []
+}

@@ -1,0 +1,18 @@
+{
+ "repo": "vincent-uden/miro",
+ "slug": "vincent-uden__miro",
+ "engine": "pellet",
+ "tbox_sha256": "8266af98a762ae7567a0deb684fdd394c180f7c6875ac55011cd3e6e6b080b43",
+ "abox_sha256": "20d9839cf787c93c00d232e2665be8d18b4cb8b5e82242bd6bf968d267d4e753",
+ "consistent": false,
+ "error": "java error: Java error message is:\nClassifying 152 elements\n\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\rException in thread \"main\" org.mindswap.pellet.exceptions.InternalReasonerException: Adding type to a pruned node \"anon(2)\" restrictedDatatype(http://www.w3.org/2001/XMLSchema#integer,[facet(http://www.w3.org/2001/XMLSchema#minInclusive,literal(1,(),http://www.w3.org/2001/XMLSchema#integer))])\n\tat org.mindswap.pellet.Node.addType(Node.java:448)\n\tat org.mindswap.pellet.Literal.addType(Literal.java:257)\n\tat org.mindswap.pellet.tableau.completion.CompletionStrategy.addType(CompletionStrategy.java:438)\n\tat org.mindswap.pellet.tableau.completion.rule.SomeValuesRule.applySomeValuesRule(SomeValuesRule.java:180)\n\tat org.mindswap.pellet.tableau.completion.rule.SomeValuesRule.apply(SomeValuesRule.java:64)\n\tat org.mindswap.pellet.tableau.completion.EmptySRIQStrategy.expand(EmptySRIQStrategy.java:303)\n\tat org.mindswap.pellet.tableau.completion.EmptySRIQStrategy.complete(EmptySRIQStrategy.java:162)\n\tat org.mindswap.pellet.ABox.isConsistent(ABox.java:1423)\n\tat org.mindswap.pellet.ABox.isSatisfiable(ABox.java:595)\n\tat org.mindswap.pellet.taxonomy.CDOptimizedTaxonomyBuilder.checkSatisfiability(CDOptimizedTaxonomyBuilder.java:763)\n\tat org.mindswap.pellet.taxonomy.CDOptimizedTaxonomyBuilder.classify(CDOptimizedTaxonomyBuilder.java:814)\n\tat org.mindswap.pellet.taxonomy.CDOptimizedTaxonomyBuilder.classify(CDOptimizedTaxonomyBuilder.java:265)\n\tat org.mindswap.pellet.taxonomy.CDOptimizedTaxonomyBuilder.classify(CDOptimizedTaxonomyBuilder.java:218)\n\tat org.mindswap.pellet.KnowledgeBase.classify(KnowledgeBase.java:2095)\n\tat pellet.PelletRealize.run(PelletRealize.java:77)\n\tat pellet.Pellet.run(Pellet.java:105)\n\tat pellet.Pellet.main(Pellet.java:59)\n",
+ "timings": {
+  "tbox_load_s": 0.06710441003087908,
+  "abox_load_s": 0.00645954703213647,
+  "reason_s": 4.727171912032645,
+  "total_s": 4.801401406992227
+ },
+ "n_claims": 3,
+ "seconds": 4.81,
+ "abox_triples": 43
+}

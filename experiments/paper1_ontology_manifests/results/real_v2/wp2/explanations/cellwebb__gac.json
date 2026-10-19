@@ -1,0 +1,35 @@
+{
+ "repo": "cellwebb/gac",
+ "slug": "cellwebb__gac",
+ "input_sha": "f83ef2efd77dbfe217ba5af90b6ccd7e739140672aee96140a070b5c8a0a9132",
+ "explanations": [
+  {
+   "key": "T5|make|test-cov",
+   "verdict": "SupportedClaim",
+   "leaf": "ScriptDefinedRoot",
+   "seconds": 4.07,
+   "retried_on_claim_subgraph": false,
+   "error": null,
+   "returncode": 0,
+   "n_justifications": 1,
+   "facts": [
+    {
+     "prop": "scriptDefinedRootCount",
+     "value": 1
+    },
+    {
+     "prop": "extractionVotes",
+     "value": 2
+    }
+   ],
+   "axioms": [
+    "A_extractionVotes_ge_wp2_consensus_min_votes equivalentTo extractionVotes some integer[>= 2]",
+    "ScriptDefinedRoot subClassOf SupportedClaim",
+    "CheckedClaim equivalentTo A_extractionVotes_ge_wp2_consensus_min_votes and ManifestClaim",
+    "ScriptDefinedRoot equivalentTo A_scriptDefinedRootCount_ge_1 and CheckedClaim and CommandClaim",
+    "A_scriptDefinedRootCount_ge_1 equivalentTo scriptDefinedRootCount some integer[>= 1]"
+   ],
+   "closures": []
+  }
+ ]
+}

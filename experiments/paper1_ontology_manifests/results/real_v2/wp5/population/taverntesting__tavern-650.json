@@ -1,0 +1,2301 @@
+{
+ "repo": "taverntesting/tavern",
+ "snapshot_date": "2021-01-31",
+ "status": "ok",
+ "unmineable": false,
+ "unmineable_reason": null,
+ "replaces": null,
+ "settings": {
+  "dedup": true,
+  "complexity": false,
+  "dataset": null,
+  "sensitivity": false,
+  "snapshot_commit": "db6f35dc2ba03362192730355f44439f32d3c3de",
+  "mode": "wp5_snapshot_commit",
+  "test_patch_files": [
+   "tavern/testutils/helpers.py",
+   "tests/integration/test_regex.tavern.yaml",
+   "tests/unit/test_helpers.py"
+  ],
+  "package_roots": [
+   "tavern"
+  ]
+ },
+ "versions": {
+  "owlready2": "0.51",
+  "pymannkendall": "1.4.3",
+  "lizard": "1.24.1",
+  "numpy": "2.5.3",
+  "scipy": "1.18.1",
+  "python": "3.12.15",
+  "git": "git version 2.53.0"
+ },
+ "task_id": "taverntesting__tavern-650",
+ "base_commit": "db6f35dc2ba03362192730355f44439f32d3c3de",
+ "measures": {
+  "monthsObserved": 36,
+  "monthsSinceLastCommit": 0,
+  "distinctAuthorsInWindow": 42,
+  "commitMKTau": -0.433333,
+  "commitMKpValue": 0.000206,
+  "activeMonthCount": 33,
+  "activeMonthRatio": 0.916667,
+  "meanMonthlyCommits": 23.666667,
+  "commitsLast3Months": 21,
+  "commitCountCV": 1.442132,
+  "commitCountCVSample": 1.462589,
+  "commitHalfRatio": 0.327103,
+  "commitSecondHalfMean": 11.666667,
+  "churnCV": 1.647181,
+  "linesAddedCV": 1.594702,
+  "mergeMonthRatio": 0.166667,
+  "multiAuthorMonthRatio": 0.75,
+  "bugFixRatioFirstHalf": 0.273742,
+  "bugFixRatioSecondHalf": 0.275589,
+  "bugFixHalfRatio": 1.006746,
+  "locSeriesLength": 36,
+  "locRelSenSlopeAnnual": 0.19051,
+  "locMKTau": 0.960317,
+  "locMKS": 605,
+  "locMKpValue": 0.0,
+  "locSenSlope": 107.392344,
+  "locStart": 3250,
+  "locEnd": 7865,
+  "locDelta": 4615,
+  "locGrowthRate": 1.42,
+  "locChangePct": 142.0,
+  "locEndToStartRatio": 2.42,
+  "locGrowthLast3": 0.022358,
+  "featureCommitsFirstHalf": 0,
+  "featureCommitsSecondHalf": 0,
+  "featureCommitsTotal": 0,
+  "locDeltaPerFeature": 4615.0,
+  "recentAgentCommitRatio": 0.0,
+  "featCommitCount": 0,
+  "bugFixCommitCount": 242,
+  "commitCount": 852,
+  "monthly_series": {
+   "months": [
+    "2017-11",
+    "2017-12",
+    "2018-01",
+    "2018-02",
+    "2018-03",
+    "2018-04",
+    "2018-05",
+    "2018-06",
+    "2018-07",
+    "2018-08",
+    "2018-09",
+    "2018-10",
+    "2018-11",
+    "2018-12",
+    "2019-01",
+    "2019-02",
+    "2019-03",
+    "2019-04",
+    "2019-05",
+    "2019-06",
+    "2019-07",
+    "2019-08",
+    "2019-09",
+    "2019-10",
+    "2019-11",
+    "2019-12",
+    "2020-01",
+    "2020-02",
+    "2020-03",
+    "2020-04",
+    "2020-05",
+    "2020-06",
+    "2020-07",
+    "2020-08",
+    "2020-09",
+    "2020-10",
+    "2020-11",
+    "2020-12",
+    "2021-01"
+   ],
+   "commits": [
+    17,
+    18,
+    11,
+    147,
+    97,
+    36,
+    35,
+    111,
+    50,
+    41,
+    7,
+    16,
+    5,
+    13,
+    1,
+    25,
+    34,
+    8,
+    9,
+    6,
+    1,
+    86,
+    11,
+    1,
+    28,
+    5,
+    2,
+    0,
+    0,
+    4,
+    28,
+    1,
+    0,
+    17,
+    2,
+    4,
+    9,
+    7,
+    5
+   ],
+   "loc": [
+    1780,
+    1806,
+    1860,
+    3250,
+    3614,
+    3800,
+    4189,
+    4828,
+    5195,
+    5461,
+    5487,
+    5566,
+    5567,
+    5815,
+    5815,
+    6206,
+    6401,
+    6438,
+    6438,
+    6438,
+    6438,
+    7091,
+    7160,
+    7160,
+    7379,
+    7446,
+    7446,
+    7446,
+    7446,
+    7528,
+    7608,
+    7619,
+    7619,
+    7639,
+    7590,
+    7638,
+    7693,
+    7732,
+    7865
+   ]
+  }
+ },
+ "window": {
+  "L": 36,
+  "first_month": "2018-02",
+  "last_month": "2021-01",
+  "n_months": 36,
+  "left_truncated": false,
+  "first_commit_month": "2017-11",
+  "mined_months": 39,
+  "commits_in_window": 852,
+  "commits_in_history": 898
+ },
+ "loc_instrument": {
+  "instrument": "nonblank-source-lines-v1",
+  "status": "ok",
+  "months": 39,
+  "month_end_commits_distinct": 34,
+  "source_blobs": 546,
+  "blobs_fetched": 0,
+  "t_ls_tree_s": 0.7199630149989389,
+  "t_fetch_s": 0.022111237049102783,
+  "t_read_s": 0.1070982709643431,
+  "series_present": true,
+  "extensions": [
+   ".bash",
+   ".c",
+   ".cc",
+   ".cjs",
+   ".clj",
+   ".cpp",
+   ".cs",
+   ".cxx",
+   ".dart",
+   ".erl",
+   ".ex",
+   ".exs",
+   ".f90",
+   ".go",
+   ".groovy",
+   ".h",
+   ".hh",
+   ".hpp",
+   ".hs",
+   ".java",
+   ".jl",
+   ".js",
+   ".jsx",
+   ".kt",
+   ".kts",
+   ".lua",
+   ".m",
+   ".mjs",
+   ".ml",
+   ".mm",
+   ".nim",
+   ".php",
+   ".pl",
+   ".pm",
+   ".py",
+   ".pyi",
+   ".r",
+   ".rb",
+   ".rs",
+   ".scala",
+   ".sh",
+   ".sql",
+   ".svelte",
+   ".swift",
+   ".ts",
+   ".tsx",
+   ".vue",
+   ".zig"
+  ],
+  "excluded_dirs": [
+   "node_modules",
+   "vendor",
+   "vendored",
+   "third_party",
+   "site-packages",
+   "bower_components"
+  ],
+  "max_blob_bytes": 1000000,
+  "first_parent": true
+ },
+ "mining": {
+  "churn": {
+   "t_churn_raw_s": 0.2695286890375428,
+   "t_churn_fetch_s": 3.7774604110163637,
+   "t_churn_numstat_s": 0.37468061898835003,
+   "blobs_fetched_churn": 1377
+  },
+  "timings": {
+   "t_clone": 0.009,
+   "t_mine": 4.514,
+   "t_loc": 0.849,
+   "t_reason_A": 6.757
+  },
+  "cached": false
+ },
+ "stage_a": {
+  "commits": 898,
+  "reasoned_commits": 857,
+  "inconsistent_chunks": 0,
+  "chunk_timings": [
+   {
+    "tbox_load_s": 0.055581427994184196,
+    "abox_load_s": 0.1433786940178834,
+    "reason_s": 6.499554331996478,
+    "extract_s": 0.011313021008390933,
+    "total_s": 6.7110762289958075,
+    "commits": 857
+   }
+  ],
+  "tbox_sha256": "f5ba00eaa76dc3582415cdf566fbd7abc1d3f2797ca928f41dad106dc1c0bdb5"
+ },
+ "activity": {
+  "last_commit_date": "2021-01-30T16:08:34+00:00",
+  "months_since_last_commit": 0,
+  "distinct_authors_in_window": 42,
+  "merge_commits_in_window": 34
+ },
+ "agent_adoption_date": null,
+ "commit_label_counts": {
+  "BugFixCommit": 242,
+  "FeatureCommit": 0,
+  "AgentCommit": 0
+ },
+ "series_months": [
+  {
+   "month": "2018-02",
+   "commit_count": 147,
+   "merge_count": 7,
+   "unique_authors": 4,
+   "lines_added": 3215,
+   "lines_deleted": 1325,
+   "total_churn": 4540,
+   "files_changed": 211,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 3250,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2018-03",
+   "commit_count": 97,
+   "merge_count": 10,
+   "unique_authors": 7,
+   "lines_added": 2288,
+   "lines_deleted": 1709,
+   "total_churn": 3997,
+   "files_changed": 119,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 3614,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2018-04",
+   "commit_count": 36,
+   "merge_count": 3,
+   "unique_authors": 6,
+   "lines_added": 399,
+   "lines_deleted": 218,
+   "total_churn": 617,
+   "files_changed": 45,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 3800,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2018-05",
+   "commit_count": 35,
+   "merge_count": 0,
+   "unique_authors": 5,
+   "lines_added": 1893,
+   "lines_deleted": 1262,
+   "total_churn": 3155,
+   "files_changed": 87,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 4189,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2018-06",
+   "commit_count": 111,
+   "merge_count": 11,
+   "unique_authors": 6,
+   "lines_added": 1171,
+   "lines_deleted": 474,
+   "total_churn": 1645,
+   "files_changed": 120,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 4828,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2018-07",
+   "commit_count": 50,
+   "merge_count": 0,
+   "unique_authors": 8,
+   "lines_added": 626,
+   "lines_deleted": 158,
+   "total_churn": 784,
+   "files_changed": 67,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 5195,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2018-08",
+   "commit_count": 41,
+   "merge_count": 2,
+   "unique_authors": 3,
+   "lines_added": 390,
+   "lines_deleted": 57,
+   "total_churn": 447,
+   "files_changed": 34,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 5461,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2018-09",
+   "commit_count": 7,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 44,
+   "lines_deleted": 11,
+   "total_churn": 55,
+   "files_changed": 9,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 5487,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2018-10",
+   "commit_count": 16,
+   "merge_count": 0,
+   "unique_authors": 2,
+   "lines_added": 155,
+   "lines_deleted": 42,
+   "total_churn": 197,
+   "files_changed": 19,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 5566,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2018-11",
+   "commit_count": 5,
+   "merge_count": 0,
+   "unique_authors": 3,
+   "lines_added": 6,
+   "lines_deleted": 5,
+   "total_churn": 11,
+   "files_changed": 4,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 5567,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2018-12",
+   "commit_count": 13,
+   "merge_count": 0,
+   "unique_authors": 2,
+   "lines_added": 451,
+   "lines_deleted": 132,
+   "total_churn": 583,
+   "files_changed": 22,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 5815,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2019-01",
+   "commit_count": 1,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 5815,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2019-02",
+   "commit_count": 25,
+   "merge_count": 0,
+   "unique_authors": 7,
+   "lines_added": 2499,
+   "lines_deleted": 1983,
+   "total_churn": 4482,
+   "files_changed": 95,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 6206,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2019-03",
+   "commit_count": 34,
+   "merge_count": 0,
+   "unique_authors": 4,
+   "lines_added": 661,
+   "lines_deleted": 213,
+   "total_churn": 874,
+   "files_changed": 52,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 6401,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2019-04",
+   "commit_count": 8,
+   "merge_count": 0,
+   "unique_authors": 3,
+   "lines_added": 7,
+   "lines_deleted": 24,
+   "total_churn": 31,
+   "files_changed": 5,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 6438,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2019-05",
+   "commit_count": 9,
+   "merge_count": 0,
+   "unique_authors": 2,
+   "lines_added": 41,
+   "lines_deleted": 28,
+   "total_churn": 69,
+   "files_changed": 9,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 6438,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2019-06",
+   "commit_count": 6,
+   "merge_count": 0,
+   "unique_authors": 3,
+   "lines_added": 51,
+   "lines_deleted": 12,
+   "total_churn": 63,
+   "files_changed": 7,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 6438,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2019-07",
+   "commit_count": 1,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 6438,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2019-08",
+   "commit_count": 86,
+   "merge_count": 0,
+   "unique_authors": 5,
+   "lines_added": 1567,
+   "lines_deleted": 746,
+   "total_churn": 2313,
+   "files_changed": 118,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 7091,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2019-09",
+   "commit_count": 11,
+   "merge_count": 0,
+   "unique_authors": 2,
+   "lines_added": 55,
+   "lines_deleted": 23,
+   "total_churn": 78,
+   "files_changed": 12,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 7160,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2019-10",
+   "commit_count": 1,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 7160,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2019-11",
+   "commit_count": 28,
+   "merge_count": 1,
+   "unique_authors": 2,
+   "lines_added": 514,
+   "lines_deleted": 184,
+   "total_churn": 698,
+   "files_changed": 64,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 7379,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2019-12",
+   "commit_count": 5,
+   "merge_count": 0,
+   "unique_authors": 2,
+   "lines_added": 6,
+   "lines_deleted": 7,
+   "total_churn": 13,
+   "files_changed": 4,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 7446,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2020-01",
+   "commit_count": 2,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 7446,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2020-02",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 7446,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2020-03",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 7446,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2020-04",
+   "commit_count": 4,
+   "merge_count": 0,
+   "unique_authors": 2,
+   "lines_added": 821,
+   "lines_deleted": 680,
+   "total_churn": 1501,
+   "files_changed": 42,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 7528,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2020-05",
+   "commit_count": 28,
+   "merge_count": 0,
+   "unique_authors": 3,
+   "lines_added": 187,
+   "lines_deleted": 82,
+   "total_churn": 269,
+   "files_changed": 39,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 7608,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2020-06",
+   "commit_count": 1,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 16,
+   "lines_deleted": 4,
+   "total_churn": 20,
+   "files_changed": 1,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 7619,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2020-07",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 7619,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2020-08",
+   "commit_count": 17,
+   "merge_count": 0,
+   "unique_authors": 3,
+   "lines_added": 148,
+   "lines_deleted": 125,
+   "total_churn": 273,
+   "files_changed": 42,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 7639,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2020-09",
+   "commit_count": 2,
+   "merge_count": 0,
+   "unique_authors": 2,
+   "lines_added": 76,
+   "lines_deleted": 125,
+   "total_churn": 201,
+   "files_changed": 19,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 7590,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2020-10",
+   "commit_count": 4,
+   "merge_count": 0,
+   "unique_authors": 3,
+   "lines_added": 125,
+   "lines_deleted": 65,
+   "total_churn": 190,
+   "files_changed": 7,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 7638,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2020-11",
+   "commit_count": 9,
+   "merge_count": 0,
+   "unique_authors": 3,
+   "lines_added": 200,
+   "lines_deleted": 128,
+   "total_churn": 328,
+   "files_changed": 16,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 7693,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2020-12",
+   "commit_count": 7,
+   "merge_count": 0,
+   "unique_authors": 3,
+   "lines_added": 92,
+   "lines_deleted": 41,
+   "total_churn": 133,
+   "files_changed": 12,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 7732,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2021-01",
+   "commit_count": 5,
+   "merge_count": 0,
+   "unique_authors": 2,
+   "lines_added": 252,
+   "lines_deleted": 72,
+   "total_churn": 324,
+   "files_changed": 36,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 7865,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  }
+ ],
+ "measures_derived": {
+  "bugFixRatioFirstHalf": 0.273742,
+  "bugFixRatioSecondHalf": 0.275589,
+  "bugFixHalfRatio": 1.006746,
+  "featureCommitsFirstHalf": 0,
+  "featureCommitsSecondHalf": 0,
+  "featureCommitsTotal": 0,
+  "locDeltaPerFeature": 4615.0,
+  "recentAgentCommitRatio": 0.0
+ },
+ "modules_meta": {
+  "anchor_S": "2021-02-20T11:39:48+00:00",
+  "window_months": 12,
+  "package_roots": [
+   "tavern"
+  ],
+  "n_modules": 12,
+  "n_source_files": 56,
+  "n_window_commits": 58,
+  "cached": false,
+  "timings": {
+   "t_tree_loc": 0.866,
+   "t_history": 0.102,
+   "t_numstat": 0.108
+  },
+  "module_loc_instrument": "nonblank-source-lines-v1",
+  "label_counts": {
+   "StableModule": 3,
+   "ActiveModule": 9,
+   "undetermined": 0
+  },
+  "thresholds": {
+   "mod_window_months": 12,
+   "mod_stable_max_rel_churn": 0.1,
+   "mod_stable_max_change_months": 2
+  }
+ },
+ "inferred": {
+  "a0.05_L36_D12_G0.05_orig": {
+   "classes": [
+    "CopyPasteEvidence",
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIIConformant",
+    "LawIVConformant",
+    "LawVConformant",
+    "LawVIConformant",
+    "LawVIIConformant",
+    "LawVIIConformantRatio",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantNoMerge",
+    "LocPerFeatureHigh",
+    "MKApplicable",
+    "MergeInactive",
+    "MultiAuthorActive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": "urn:senso:explanations:taverntesting__tavern-650:d20298612d99",
+   "tbox_sha256": "d20298612d99fa8f5c1a63c70eaab0195a3e82e2d6780de3bd1fd3ced72d6e5d",
+   "abox_triples": 160,
+   "t_reason_B_s": 3.139
+  }
+ },
+ "primary_config": "a0.05_L36_D12_G0.05_orig",
+ "project_iri": "http://senso-framework.org/data/taverntesting__tavern-650",
+ "consistent": true,
+ "inferred_labels": [
+  "CopyPasteEvidence",
+  "GrowthStage",
+  "LawIConformant",
+  "LawIIIConformant",
+  "LawIVConformant",
+  "LawVConformant",
+  "LawVIConformant",
+  "LawVIIConformant",
+  "LawVIIConformantRatio",
+  "LawVIIINonConformant",
+  "LawVIIINonConformantNoMerge",
+  "LocPerFeatureHigh",
+  "MKApplicable",
+  "MergeInactive",
+  "MultiAuthorActive",
+  "RBActiveDevelopmentStage",
+  "RecentlyActive",
+  "SubstantialLocGrowth"
+ ],
+ "stage_labels": [
+  "GrowthStage",
+  "RBActiveDevelopmentStage"
+ ],
+ "law_labels": {
+  "I": "LawIConformant",
+  "III": "LawIIIConformant",
+  "IV": "LawIVConformant",
+  "V": "LawVConformant",
+  "VI": "LawVIConformant",
+  "VII": "LawVIIConformant",
+  "VIII": "LawVIIINonConformant"
+ },
+ "tbox_sha256_stage_b": "d20298612d99fa8f5c1a63c70eaab0195a3e82e2d6780de3bd1fd3ced72d6e5d",
+ "tbox_sha256_stage_a": "f5ba00eaa76dc3582415cdf566fbd7abc1d3f2797ca928f41dad106dc1c0bdb5",
+ "summary": {
+  "c1": "A",
+  "c2": "A",
+  "cf": "S",
+  "note": "debug summary; run_rq1_v2.py reads `inferred` and recomputes CF itself"
+ },
+ "modules": {
+  "docs": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "docs",
+    "moduleLoc": 153,
+    "moduleCommitsInWindow": 31,
+    "moduleChangeMonthsInWindow": 8,
+    "moduleLinesChangedInWindow": 64,
+    "moduleRelChurnInWindow": 0.418301,
+    "moduleMonthsSinceLastChange": 0
+   },
+   "iri": "http://senso-framework.org/data/taverntesting__tavern-650/module/docs-71ab8b",
+   "abox_asserted": true
+  },
+  "example": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "example",
+    "moduleLoc": 629,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 18
+   },
+   "iri": "http://senso-framework.org/data/taverntesting__tavern-650/module/example-c3499c",
+   "abox_asserted": true
+  },
+  "tavern/__init__.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "tavern/__init__.py",
+    "moduleLoc": 2,
+    "moduleCommitsInWindow": 31,
+    "moduleChangeMonthsInWindow": 8,
+    "moduleLinesChangedInWindow": 62,
+    "moduleRelChurnInWindow": 31.0,
+    "moduleMonthsSinceLastChange": 0
+   },
+   "iri": "http://senso-framework.org/data/taverntesting__tavern-650/module/tavern___init__.py-ff7342",
+   "abox_asserted": true
+  },
+  "tavern/_plugins": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "tavern/_plugins",
+    "moduleLoc": 1128,
+    "moduleCommitsInWindow": 14,
+    "moduleChangeMonthsInWindow": 8,
+    "moduleLinesChangedInWindow": 302,
+    "moduleRelChurnInWindow": 0.26773,
+    "moduleMonthsSinceLastChange": 0
+   },
+   "iri": "http://senso-framework.org/data/taverntesting__tavern-650/module/tavern__plugins-38d910",
+   "abox_asserted": true
+  },
+  "tavern/core.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "tavern/core.py",
+    "moduleLoc": 271,
+    "moduleCommitsInWindow": 5,
+    "moduleChangeMonthsInWindow": 4,
+    "moduleLinesChangedInWindow": 216,
+    "moduleRelChurnInWindow": 0.797048,
+    "moduleMonthsSinceLastChange": 1
+   },
+   "iri": "http://senso-framework.org/data/taverntesting__tavern-650/module/tavern_core.py-3587a0",
+   "abox_asserted": true
+  },
+  "tavern/entry.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "tavern/entry.py",
+    "moduleLoc": 76,
+    "moduleCommitsInWindow": 1,
+    "moduleChangeMonthsInWindow": 1,
+    "moduleLinesChangedInWindow": 2,
+    "moduleRelChurnInWindow": 0.026316,
+    "moduleMonthsSinceLastChange": 1
+   },
+   "iri": "http://senso-framework.org/data/taverntesting__tavern-650/module/tavern_entry.py-abfe8c",
+   "abox_asserted": true
+  },
+  "tavern/plugins.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "tavern/plugins.py",
+    "moduleLoc": 204,
+    "moduleCommitsInWindow": 2,
+    "moduleChangeMonthsInWindow": 2,
+    "moduleLinesChangedInWindow": 6,
+    "moduleRelChurnInWindow": 0.029412,
+    "moduleMonthsSinceLastChange": 5
+   },
+   "iri": "http://senso-framework.org/data/taverntesting__tavern-650/module/tavern_plugins.py-610a1c",
+   "abox_asserted": true
+  },
+  "tavern/request": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "RarelyChangedModule"
+   ],
+   "measures": {
+    "modulePath": "tavern/request",
+    "moduleLoc": 18,
+    "moduleCommitsInWindow": 1,
+    "moduleChangeMonthsInWindow": 1,
+    "moduleLinesChangedInWindow": 15,
+    "moduleRelChurnInWindow": 0.833333,
+    "moduleMonthsSinceLastChange": 2
+   },
+   "iri": "http://senso-framework.org/data/taverntesting__tavern-650/module/tavern_request-44eab5",
+   "abox_asserted": true
+  },
+  "tavern/response": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "tavern/response",
+    "moduleLoc": 187,
+    "moduleCommitsInWindow": 3,
+    "moduleChangeMonthsInWindow": 3,
+    "moduleLinesChangedInWindow": 75,
+    "moduleRelChurnInWindow": 0.40107,
+    "moduleMonthsSinceLastChange": 3
+   },
+   "iri": "http://senso-framework.org/data/taverntesting__tavern-650/module/tavern_response-780454",
+   "abox_asserted": true
+  },
+  "tavern/schemas": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "tavern/schemas",
+    "moduleLoc": 426,
+    "moduleCommitsInWindow": 8,
+    "moduleChangeMonthsInWindow": 6,
+    "moduleLinesChangedInWindow": 199,
+    "moduleRelChurnInWindow": 0.467136,
+    "moduleMonthsSinceLastChange": 1
+   },
+   "iri": "http://senso-framework.org/data/taverntesting__tavern-650/module/tavern_schemas-97e7d6",
+   "abox_asserted": true
+  },
+  "tavern/testutils": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "tavern/testutils",
+    "moduleLoc": 921,
+    "moduleCommitsInWindow": 14,
+    "moduleChangeMonthsInWindow": 9,
+    "moduleLinesChangedInWindow": 547,
+    "moduleRelChurnInWindow": 0.59392,
+    "moduleMonthsSinceLastChange": 1
+   },
+   "iri": "http://senso-framework.org/data/taverntesting__tavern-650/module/tavern_testutils-4bee1c",
+   "abox_asserted": true
+  },
+  "tavern/util": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "tavern/util",
+    "moduleLoc": 1235,
+    "moduleCommitsInWindow": 12,
+    "moduleChangeMonthsInWindow": 8,
+    "moduleLinesChangedInWindow": 920,
+    "moduleRelChurnInWindow": 0.744939,
+    "moduleMonthsSinceLastChange": 1
+   },
+   "iri": "http://senso-framework.org/data/taverntesting__tavern-650/module/tavern_util-1cf074",
+   "abox_asserted": true
+  }
+ },
+ "explanations": {
+  "stage:GrowthStage": {
+   "class": "GrowthStage",
+   "individual": "http://senso-framework.org/data/taverntesting__tavern-650",
+   "attempts": 3,
+   "target": "http://senso-framework.org/data/taverntesting__tavern-650 type http://senso-framework.org/ontology/seo#GrowthStage",
+   "justifications": [],
+   "raw_text": "",
+   "seconds": 2.594903921999503,
+   "returncode": 1,
+   "error": "Exception in thread \"main\" org.mindswap.pellet.exceptions.InternalReasonerException: Adding type to a pruned node \"anon(21)\" restrictedDatatype(http://www.w3.org/2001/XMLSchema#decimal,[facet(http://www.w3.org/2001/XMLSchema#minExclusive,literal(0.15,(),http://www.w3.org/2001/XMLSchema#decimal))])\n\tat org.mindswap.pellet.Node.addType(Node.java:448)\n\tat org.mindswap.pellet.Literal.addType(Literal.java:257)\n\tat org.mindswap.pellet.tableau.completion.CompletionStrategy.addType(CompletionStrategy.java:438)\n\tat org.mindswap.pellet.tableau.completion.rule.SomeValuesRule.applySomeValuesRule(SomeValuesRule.java:180)\n\tat org.mindswap.pellet.tableau.completion.rule.SomeValuesRule.apply(SomeValuesRule.java:64)\n\tat org.mindswap.pellet.tableau.completion.rule.AbstractTableauRule.apply(AbstractTableauRule.java:64)\n\tat org.mindswap.pellet.tableau.completion.SROIQStrategy.complete(SROIQStrategy.java:157)\n\tat org.mindswap.pellet.ABox.isConsistent(ABox.java:1423)\n\tat org.mindswap.pellet.ABox.isSatisfiab"
+  },
+  "stage:RBActiveDevelopmentStage": {
+   "class": "RBActiveDevelopmentStage",
+   "individual": "http://senso-framework.org/data/taverntesting__tavern-650",
+   "attempts": 3,
+   "target": "http://senso-framework.org/data/taverntesting__tavern-650 type http://senso-framework.org/ontology/seo#RBActiveDevelopmentStage",
+   "justifications": [],
+   "raw_text": "",
+   "seconds": 2.531844209996052,
+   "returncode": 1,
+   "error": "Exception in thread \"main\" org.mindswap.pellet.exceptions.InternalReasonerException: Adding type to a pruned node \"anon(21)\" restrictedDatatype(http://www.w3.org/2001/XMLSchema#decimal,[facet(http://www.w3.org/2001/XMLSchema#minExclusive,literal(0.15,(),http://www.w3.org/2001/XMLSchema#decimal))])\n\tat org.mindswap.pellet.Node.addType(Node.java:448)\n\tat org.mindswap.pellet.Literal.addType(Literal.java:257)\n\tat org.mindswap.pellet.tableau.completion.CompletionStrategy.addType(CompletionStrategy.java:438)\n\tat org.mindswap.pellet.tableau.completion.rule.SomeValuesRule.applySomeValuesRule(SomeValuesRule.java:180)\n\tat org.mindswap.pellet.tableau.completion.rule.SomeValuesRule.apply(SomeValuesRule.java:64)\n\tat org.mindswap.pellet.tableau.completion.rule.AbstractTableauRule.apply(AbstractTableauRule.java:64)\n\tat org.mindswap.pellet.tableau.completion.SROIQStrategy.complete(SROIQStrategy.java:157)\n\tat org.mindswap.pellet.ABox.isConsistent(ABox.java:1423)\n\tat org.mindswap.pellet.ABox.isSatisfiab"
+  },
+  "lawI": {
+   "class": "LawIConformant",
+   "individual": "http://senso-framework.org/data/taverntesting__tavern-650",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/taverntesting__tavern-650 type http://senso-framework.org/ontology/seo#LawIConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law1_min_months",
+       "text": "A_monthsObserved_ge_p_law1_min_months equivalentTo monthsObserved some integer[>= 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawIConformant",
+       "text": "LawIConformant equivalentTo A_activeMonthRatio_ge_p_law1_active_ratio and A_monthsObserved_ge_p_law1_min_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_activeMonthRatio_ge_p_law1_active_ratio",
+       "text": "A_activeMonthRatio_ge_p_law1_active_ratio equivalentTo activeMonthRatio some decimal[>= 0.5]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "taverntesting__tavern-650",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "taverntesting__tavern-650 type SoftwareProject"
+      },
+      {
+       "subject": "taverntesting__tavern-650",
+       "prop": "activeMonthRatio",
+       "value": 0.916667,
+       "raw": "taverntesting__tavern-650 activeMonthRatio 0.916667"
+      },
+      {
+       "subject": "taverntesting__tavern-650",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "taverntesting__tavern-650 monthsObserved 36"
+      }
+     ],
+     "closures": [],
+     "raw": "taverntesting__tavern-650 type SoftwareProject\ntaverntesting__tavern-650 activeMonthRatio 0.916667\nA_monthsObserved_ge_p_law1_min_months equivalentTo monthsObserved some integer[>= 2]\nLawIConformant equivalentTo A_activeMonthRatio_ge_p_law1_active_ratio and A_monthsObserved_ge_p_law1_min_months and SoftwareProject\nA_activeMonthRatio_ge_p_law1_active_ratio equivalentTo activeMonthRatio some decimal[>= 0.5]\ntaverntesting__tavern-650 monthsObserved 36"
+    }
+   ],
+   "raw_text": "Axiom: taverntesting__tavern-650 type LawIConformant\n\nExplanation(s): \n1)   taverntesting__tavern-650 type SoftwareProject\n     taverntesting__tavern-650 activeMonthRatio 0.916667\n     A_monthsObserved_ge_p_law1_min_months equivalentTo monthsObserved some integer[>= 2]\n     LawIConformant equivalentTo A_activeMonthRatio_ge_p_law1_active_ratio\n                                 and A_monthsObserved_ge_p_law1_min_months\n                                 and SoftwareProject\n     A_activeMonthRatio_ge_p_law1_active_ratio equivalentTo activeMonthRatio some decimal[>= 0.5]\n     taverntesting__tavern-650 monthsObserved 36\n\n\n",
+   "seconds": 2.6904889189754613,
+   "returncode": 0,
+   "error": null
+  },
+  "lawIII": {
+   "class": "LawIIIConformant",
+   "individual": "http://senso-framework.org/data/taverntesting__tavern-650",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/taverntesting__tavern-650 type http://senso-framework.org/ontology/seo#LawIIIConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law3_min_months",
+       "text": "A_monthsObserved_ge_p_law3_min_months equivalentTo monthsObserved some integer[>= 6]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawIIIConformant",
+       "text": "LawIIIConformant equivalentTo A_churnCV_lt_p_law3_churn_cv and A_monthsObserved_ge_p_law3_min_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_churnCV_lt_p_law3_churn_cv",
+       "text": "A_churnCV_lt_p_law3_churn_cv equivalentTo churnCV some decimal[< 2.0]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "taverntesting__tavern-650",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "taverntesting__tavern-650 type SoftwareProject"
+      },
+      {
+       "subject": "taverntesting__tavern-650",
+       "prop": "churnCV",
+       "value": 1.647181,
+       "raw": "taverntesting__tavern-650 churnCV 1.647181"
+      },
+      {
+       "subject": "taverntesting__tavern-650",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "taverntesting__tavern-650 monthsObserved 36"
+      }
+     ],
+     "closures": [],
+     "raw": "taverntesting__tavern-650 type SoftwareProject\nA_monthsObserved_ge_p_law3_min_months equivalentTo monthsObserved some integer[>= 6]\nLawIIIConformant equivalentTo A_churnCV_lt_p_law3_churn_cv and A_monthsObserved_ge_p_law3_min_months and SoftwareProject\nA_churnCV_lt_p_law3_churn_cv equivalentTo churnCV some decimal[< 2.0]\ntaverntesting__tavern-650 churnCV 1.647181\ntaverntesting__tavern-650 monthsObserved 36"
+    }
+   ],
+   "raw_text": "Axiom: taverntesting__tavern-650 type LawIIIConformant\n\nExplanation(s): \n1)   taverntesting__tavern-650 type SoftwareProject\n     A_monthsObserved_ge_p_law3_min_months equivalentTo monthsObserved some integer[>= 6]\n     LawIIIConformant equivalentTo A_churnCV_lt_p_law3_churn_cv\n                                   and A_monthsObserved_ge_p_law3_min_months\n                                   and SoftwareProject\n     A_churnCV_lt_p_law3_churn_cv equivalentTo churnCV some decimal[< 2.0]\n     taverntesting__tavern-650 churnCV 1.647181\n     taverntesting__tavern-650 monthsObserved 36\n\n\n",
+   "seconds": 2.6380922779790126,
+   "returncode": 0,
+   "error": null
+  },
+  "lawIV": {
+   "class": "LawIVConformant",
+   "individual": "http://senso-framework.org/data/taverntesting__tavern-650",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/taverntesting__tavern-650 type http://senso-framework.org/ontology/seo#LawIVConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law4_min_months",
+       "text": "A_monthsObserved_ge_p_law4_min_months equivalentTo monthsObserved some integer[>= 6]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawIVConformant",
+       "text": "LawIVConformant equivalentTo A_commitCountCV_lt_p_law4_commit_cv and A_monthsObserved_ge_p_law4_min_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_commitCountCV_lt_p_law4_commit_cv",
+       "text": "A_commitCountCV_lt_p_law4_commit_cv equivalentTo commitCountCV some decimal[< 1.5]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "taverntesting__tavern-650",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "taverntesting__tavern-650 type SoftwareProject"
+      },
+      {
+       "subject": "taverntesting__tavern-650",
+       "prop": "commitCountCV",
+       "value": 1.442132,
+       "raw": "taverntesting__tavern-650 commitCountCV 1.442132"
+      },
+      {
+       "subject": "taverntesting__tavern-650",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "taverntesting__tavern-650 monthsObserved 36"
+      }
+     ],
+     "closures": [],
+     "raw": "A_monthsObserved_ge_p_law4_min_months equivalentTo monthsObserved some integer[>= 6]\ntaverntesting__tavern-650 type SoftwareProject\ntaverntesting__tavern-650 commitCountCV 1.442132\nLawIVConformant equivalentTo A_commitCountCV_lt_p_law4_commit_cv and A_monthsObserved_ge_p_law4_min_months and SoftwareProject\nA_commitCountCV_lt_p_law4_commit_cv equivalentTo commitCountCV some decimal[< 1.5]\ntaverntesting__tavern-650 monthsObserved 36"
+    }
+   ],
+   "raw_text": "Axiom: taverntesting__tavern-650 type LawIVConformant\n\nExplanation(s): \n1)   A_monthsObserved_ge_p_law4_min_months equivalentTo monthsObserved some integer[>= 6]\n     taverntesting__tavern-650 type SoftwareProject\n     taverntesting__tavern-650 commitCountCV 1.442132\n     LawIVConformant equivalentTo A_commitCountCV_lt_p_law4_commit_cv\n                                  and A_monthsObserved_ge_p_law4_min_months\n                                  and SoftwareProject\n     A_commitCountCV_lt_p_law4_commit_cv equivalentTo commitCountCV some decimal[< 1.5]\n     taverntesting__tavern-650 monthsObserved 36\n\n\n",
+   "seconds": 2.473864302970469,
+   "returncode": 0,
+   "error": null
+  },
+  "lawV": {
+   "class": "LawVConformant",
+   "individual": "http://senso-framework.org/data/taverntesting__tavern-650",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/taverntesting__tavern-650 type http://senso-framework.org/ontology/seo#LawVConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "LawVConformant",
+       "text": "LawVConformant equivalentTo A_linesAddedCV_lt_p_law5_additions_cv and A_monthsObserved_ge_p_law5_min_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_linesAddedCV_lt_p_law5_additions_cv",
+       "text": "A_linesAddedCV_lt_p_law5_additions_cv equivalentTo linesAddedCV some decimal[< 2.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law5_min_months",
+       "text": "A_monthsObserved_ge_p_law5_min_months equivalentTo monthsObserved some integer[>= 4]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "taverntesting__tavern-650",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "taverntesting__tavern-650 type SoftwareProject"
+      },
+      {
+       "subject": "taverntesting__tavern-650",
+       "prop": "linesAddedCV",
+       "value": 1.594702,
+       "raw": "taverntesting__tavern-650 linesAddedCV 1.594702"
+      },
+      {
+       "subject": "taverntesting__tavern-650",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "taverntesting__tavern-650 monthsObserved 36"
+      }
+     ],
+     "closures": [],
+     "raw": "taverntesting__tavern-650 type SoftwareProject\nLawVConformant equivalentTo A_linesAddedCV_lt_p_law5_additions_cv and A_monthsObserved_ge_p_law5_min_months and SoftwareProject\nA_linesAddedCV_lt_p_law5_additions_cv equivalentTo linesAddedCV some decimal[< 2.0]\nA_monthsObserved_ge_p_law5_min_months equivalentTo monthsObserved some integer[>= 4]\ntaverntesting__tavern-650 linesAddedCV 1.594702\ntaverntesting__tavern-650 monthsObserved 36"
+    }
+   ],
+   "raw_text": "Axiom: taverntesting__tavern-650 type LawVConformant\n\nExplanation(s): \n1)   taverntesting__tavern-650 type SoftwareProject\n     LawVConformant equivalentTo A_linesAddedCV_lt_p_law5_additions_cv\n                                 and A_monthsObserved_ge_p_law5_min_months\n                                 and SoftwareProject\n     A_linesAddedCV_lt_p_law5_additions_cv equivalentTo linesAddedCV some decimal[< 2.0]\n     A_monthsObserved_ge_p_law5_min_months equivalentTo monthsObserved some integer[>= 4]\n     taverntesting__tavern-650 linesAddedCV 1.594702\n     taverntesting__tavern-650 monthsObserved 36\n\n\n",
+   "seconds": 2.4903227839968167,
+   "returncode": 0,
+   "error": null
+  },
+  "lawVI": {
+   "class": "LawVIConformant",
+   "individual": "http://senso-framework.org/data/taverntesting__tavern-650",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/taverntesting__tavern-650 type http://senso-framework.org/ontology/seo#LawVIConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "subclass",
+       "subject": "GrowthStage",
+       "text": "GrowthStage subClassOf LawVIConformant"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKTau_gt_0",
+       "text": "A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKpValue_lt_mk_alpha",
+       "text": "A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]"
+      },
+      {
+       "kind": "definition",
+       "subject": "GrowthStage",
+       "text": "GrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "taverntesting__tavern-650",
+       "prop": "locMKpValue",
+       "value": 0.0,
+       "raw": "taverntesting__tavern-650 locMKpValue 0.0"
+      },
+      {
+       "subject": "taverntesting__tavern-650",
+       "prop": "locMKTau",
+       "value": 0.960317,
+       "raw": "taverntesting__tavern-650 locMKTau 0.960317"
+      },
+      {
+       "subject": "taverntesting__tavern-650",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "taverntesting__tavern-650 type SoftwareProject"
+      },
+      {
+       "subject": "taverntesting__tavern-650",
+       "prop": "locSeriesLength",
+       "value": 36,
+       "raw": "taverntesting__tavern-650 locSeriesLength 36"
+      }
+     ],
+     "closures": [],
+     "raw": "taverntesting__tavern-650 locMKpValue 0.0\nGrowthStage subClassOf LawVIConformant\ntaverntesting__tavern-650 locMKTau 0.960317\nA_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\ntaverntesting__tavern-650 type SoftwareProject\nA_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\nA_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\nGrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject\ntaverntesting__tavern-650 locSeriesLength 36\nA_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]"
+    }
+   ],
+   "raw_text": "Axiom: taverntesting__tavern-650 type LawVIConformant\n\nExplanation(s): \n1)   taverntesting__tavern-650 locMKpValue 0.0\n     GrowthStage subClassOf LawVIConformant\n     taverntesting__tavern-650 locMKTau 0.960317\n     A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\n     taverntesting__tavern-650 type SoftwareProject\n     A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\n     A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\n     GrowthStage equivalentTo A_locMKTau_gt_0\n                              and A_locMKpValue_lt_mk_alpha\n                              and MKApplicable\n                              and SoftwareProject\n     taverntesting__tavern-650 locSeriesLength 36\n     A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]\n\n\n",
+   "seconds": 2.7705175220035017,
+   "returncode": 0,
+   "error": null
+  },
+  "lawVII": {
+   "class": "LawVIIConformant",
+   "individual": "http://senso-framework.org/data/taverntesting__tavern-650",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/taverntesting__tavern-650 type http://senso-framework.org/ontology/seo#LawVIIConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_bugFixHalfRatio_ge_p_law7_tolerance",
+       "text": "A_bugFixHalfRatio_ge_p_law7_tolerance equivalentTo bugFixHalfRatio some decimal[>= 0.9]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawVIIConformantRatio",
+       "text": "LawVIIConformantRatio equivalentTo A_activeMonthCount_ge_p_law7_min_active_months and A_bugFixHalfRatio_ge_p_law7_tolerance and A_bugFixRatioFirstHalf_gt_0 and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_bugFixRatioFirstHalf_gt_0",
+       "text": "A_bugFixRatioFirstHalf_gt_0 equivalentTo bugFixRatioFirstHalf some decimal[> 0.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_activeMonthCount_ge_p_law7_min_active_months",
+       "text": "A_activeMonthCount_ge_p_law7_min_active_months equivalentTo activeMonthCount some integer[>= 4]"
+      },
+      {
+       "kind": "subclass",
+       "subject": "LawVIIConformantRatio",
+       "text": "LawVIIConformantRatio subClassOf LawVIIConformant"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "taverntesting__tavern-650",
+       "prop": "bugFixRatioFirstHalf",
+       "value": 0.273742,
+       "raw": "taverntesting__tavern-650 bugFixRatioFirstHalf 0.273742"
+      },
+      {
+       "subject": "taverntesting__tavern-650",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "taverntesting__tavern-650 type SoftwareProject"
+      },
+      {
+       "subject": "taverntesting__tavern-650",
+       "prop": "activeMonthCount",
+       "value": 33,
+       "raw": "taverntesting__tavern-650 activeMonthCount 33"
+      },
+      {
+       "subject": "taverntesting__tavern-650",
+       "prop": "bugFixHalfRatio",
+       "value": 1.006746,
+       "raw": "taverntesting__tavern-650 bugFixHalfRatio 1.006746"
+      }
+     ],
+     "closures": [],
+     "raw": "taverntesting__tavern-650 bugFixRatioFirstHalf 0.273742\nA_bugFixHalfRatio_ge_p_law7_tolerance equivalentTo bugFixHalfRatio some decimal[>= 0.9]\ntaverntesting__tavern-650 type SoftwareProject\nLawVIIConformantRatio equivalentTo A_activeMonthCount_ge_p_law7_min_active_months and A_bugFixHalfRatio_ge_p_law7_tolerance and A_bugFixRatioFirstHalf_gt_0 and SoftwareProject\ntaverntesting__tavern-650 activeMonthCount 33\nA_bugFixRatioFirstHalf_gt_0 equivalentTo bugFixRatioFirstHalf some decimal[> 0.0]\nA_activeMonthCount_ge_p_law7_min_active_months equivalentTo activeMonthCount some integer[>= 4]\ntaverntesting__tavern-650 bugFixHalfRatio 1.006746\nLawVIIConformantRatio subClassOf LawVIIConformant"
+    }
+   ],
+   "raw_text": "Axiom: taverntesting__tavern-650 type LawVIIConformant\n\nExplanation(s): \n1)   taverntesting__tavern-650 bugFixRatioFirstHalf 0.273742\n     A_bugFixHalfRatio_ge_p_law7_tolerance equivalentTo bugFixHalfRatio some decimal[>= 0.9]\n     taverntesting__tavern-650 type SoftwareProject\n     LawVIIConformantRatio equivalentTo A_activeMonthCount_ge_p_law7_min_active_months\n                                        and A_bugFixHalfRatio_ge_p_law7_tolerance\n                                        and A_bugFixRatioFirstHalf_gt_0\n                                        and SoftwareProject\n     taverntesting__tavern-650 activeMonthCount 33\n     A_bugFixRatioFirstHalf_gt_0 equivalentTo bugFixRatioFirstHalf some decimal[> 0.0]\n     A_activeMonthCount_ge_p_law7_min_active_months equivalentTo activeMonthCount some integer[>= 4]\n     taverntesting__tavern-650 bugFixHalfRatio 1.006746\n     LawVIIConformantRatio subClassOf LawVIIConformant\n\n\n",
+   "seconds": 2.4510076920269057,
+   "returncode": 0,
+   "error": null
+  },
+  "lawVIII": {
+   "class": "LawVIIINonConformant",
+   "individual": "http://senso-framework.org/data/taverntesting__tavern-650",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/taverntesting__tavern-650 type http://senso-framework.org/ontology/seo#LawVIIINonConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_mergeMonthRatio_le_p_law8_merge_ratio",
+       "text": "A_mergeMonthRatio_le_p_law8_merge_ratio equivalentTo MergeInactive"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawVIIINonConformantNoMerge",
+       "text": "LawVIIINonConformantNoMerge equivalentTo A_monthsObserved_ge_p_law8_min_months and MergeInactive and SoftwareProject"
+      },
+      {
+       "kind": "subclass",
+       "subject": "LawVIIINonConformantNoMerge",
+       "text": "LawVIIINonConformantNoMerge subClassOf LawVIIINonConformant"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_mergeMonthRatio_le_p_law8_merge_ratio",
+       "text": "A_mergeMonthRatio_le_p_law8_merge_ratio equivalentTo mergeMonthRatio some decimal[<= 0.3]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law8_min_months",
+       "text": "A_monthsObserved_ge_p_law8_min_months equivalentTo monthsObserved some integer[>= 6]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "taverntesting__tavern-650",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "taverntesting__tavern-650 type SoftwareProject"
+      },
+      {
+       "subject": "taverntesting__tavern-650",
+       "prop": "mergeMonthRatio",
+       "value": 0.166667,
+       "raw": "taverntesting__tavern-650 mergeMonthRatio 0.166667"
+      },
+      {
+       "subject": "taverntesting__tavern-650",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "taverntesting__tavern-650 monthsObserved 36"
+      }
+     ],
+     "closures": [],
+     "raw": "A_mergeMonthRatio_le_p_law8_merge_ratio equivalentTo MergeInactive\nLawVIIINonConformantNoMerge equivalentTo A_monthsObserved_ge_p_law8_min_months and MergeInactive and SoftwareProject\nLawVIIINonConformantNoMerge subClassOf LawVIIINonConformant\ntaverntesting__tavern-650 type SoftwareProject\ntaverntesting__tavern-650 mergeMonthRatio 0.166667\nA_mergeMonthRatio_le_p_law8_merge_ratio equivalentTo mergeMonthRatio some decimal[<= 0.3]\nA_monthsObserved_ge_p_law8_min_months equivalentTo monthsObserved some integer[>= 6]\ntaverntesting__tavern-650 monthsObserved 36"
+    }
+   ],
+   "raw_text": "Axiom: taverntesting__tavern-650 type LawVIIINonConformant\n\nExplanation(s): \n1)   A_mergeMonthRatio_le_p_law8_merge_ratio equivalentTo MergeInactive\n     LawVIIINonConformantNoMerge equivalentTo A_monthsObserved_ge_p_law8_min_months\n                                              and MergeInactive\n                                              and SoftwareProject\n     LawVIIINonConformantNoMerge subClassOf LawVIIINonConformant\n     taverntesting__tavern-650 type SoftwareProject\n     taverntesting__tavern-650 mergeMonthRatio 0.166667\n     A_mergeMonthRatio_le_p_law8_merge_ratio equivalentTo mergeMonthRatio some decimal[<= 0.3]\n     A_monthsObserved_ge_p_law8_min_months equivalentTo monthsObserved some integer[>= 6]\n     taverntesting__tavern-650 monthsObserved 36\n\n\n",
+   "seconds": 2.7171151789953,
+   "returncode": 0,
+   "error": null
+  },
+  "module:tavern/util": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/taverntesting__tavern-650/module/tavern_util-1cf074",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/taverntesting__tavern-650/module/tavern_util-1cf074 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "tavern_util-1cf074",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 8,
+       "raw": "tavern_util-1cf074 moduleChangeMonthsInWindow 8"
+      },
+      {
+       "subject": "tavern_util-1cf074",
+       "prop": "type",
+       "value": "Module",
+       "raw": "tavern_util-1cf074 type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\ntavern_util-1cf074 moduleChangeMonthsInWindow 8\nOftenChangedModule subClassOf ActiveModule\ntavern_util-1cf074 type Module"
+    }
+   ],
+   "raw_text": "Axiom: tavern_util-1cf074 type ActiveModule\n\nExplanation(s): \n1)   A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     tavern_util-1cf074 moduleChangeMonthsInWindow 8\n     OftenChangedModule subClassOf ActiveModule\n     tavern_util-1cf074 type Module\n\n\n",
+   "seconds": 2.5391513019567356,
+   "returncode": 0,
+   "error": null
+  },
+  "module:tavern/_plugins": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/taverntesting__tavern-650/module/tavern__plugins-38d910",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/taverntesting__tavern-650/module/tavern__plugins-38d910 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "tavern__plugins-38d910",
+       "prop": "type",
+       "value": "Module",
+       "raw": "tavern__plugins-38d910 type Module"
+      },
+      {
+       "subject": "tavern__plugins-38d910",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 8,
+       "raw": "tavern__plugins-38d910 moduleChangeMonthsInWindow 8"
+      }
+     ],
+     "closures": [],
+     "raw": "tavern__plugins-38d910 type Module\nA_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\ntavern__plugins-38d910 moduleChangeMonthsInWindow 8\nOftenChangedModule subClassOf ActiveModule"
+    }
+   ],
+   "raw_text": "Axiom: tavern__plugins-38d910 type ActiveModule\n\nExplanation(s): \n1)   tavern__plugins-38d910 type Module\n     A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     tavern__plugins-38d910 moduleChangeMonthsInWindow 8\n     OftenChangedModule subClassOf ActiveModule\n\n\n",
+   "seconds": 2.52152450295398,
+   "returncode": 0,
+   "error": null
+  },
+  "module:tavern/testutils": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/taverntesting__tavern-650/module/tavern_testutils-4bee1c",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/taverntesting__tavern-650/module/tavern_testutils-4bee1c type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "tavern_testutils-4bee1c",
+       "prop": "type",
+       "value": "Module",
+       "raw": "tavern_testutils-4bee1c type Module"
+      },
+      {
+       "subject": "tavern_testutils-4bee1c",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 9,
+       "raw": "tavern_testutils-4bee1c moduleChangeMonthsInWindow 9"
+      }
+     ],
+     "closures": [],
+     "raw": "tavern_testutils-4bee1c type Module\nA_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\ntavern_testutils-4bee1c moduleChangeMonthsInWindow 9\nOftenChangedModule subClassOf ActiveModule"
+    }
+   ],
+   "raw_text": "Axiom: tavern_testutils-4bee1c type ActiveModule\n\nExplanation(s): \n1)   tavern_testutils-4bee1c type Module\n     A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     tavern_testutils-4bee1c moduleChangeMonthsInWindow 9\n     OftenChangedModule subClassOf ActiveModule\n\n\n",
+   "seconds": 2.661216268024873,
+   "returncode": 0,
+   "error": null
+  },
+  "module:example": {
+   "class": "StableModule",
+   "individual": "http://senso-framework.org/data/taverntesting__tavern-650/module/example-c3499c",
+   "attempts": 3,
+   "target": "http://senso-framework.org/data/taverntesting__tavern-650/module/example-c3499c type http://senso-framework.org/ontology/seo#StableModule",
+   "justifications": [],
+   "raw_text": "",
+   "seconds": 2.507060333970003,
+   "returncode": 1,
+   "error": "Exception in thread \"main\" org.mindswap.pellet.exceptions.InternalReasonerException: Adding type to a pruned node \"anon(21)\" restrictedDatatype(http://www.w3.org/2001/XMLSchema#decimal,[facet(http://www.w3.org/2001/XMLSchema#minExclusive,literal(0.15,(),http://www.w3.org/2001/XMLSchema#decimal))])\n\tat org.mindswap.pellet.Node.addType(Node.java:448)\n\tat org.mindswap.pellet.Literal.addType(Literal.java:257)\n\tat org.mindswap.pellet.tableau.completion.CompletionStrategy.addType(CompletionStrategy.java:438)\n\tat org.mindswap.pellet.tableau.completion.rule.SomeValuesRule.applySomeValuesRule(SomeValuesRule.java:180)\n\tat org.mindswap.pellet.tableau.completion.rule.SomeValuesRule.apply(SomeValuesRule.java:64)\n\tat org.mindswap.pellet.tableau.completion.rule.AbstractTableauRule.apply(AbstractTableauRule.java:64)\n\tat org.mindswap.pellet.tableau.completion.SROIQStrategy.complete(SROIQStrategy.java:157)\n\tat org.mindswap.pellet.ABox.isConsistent(ABox.java:1423)\n\tat org.mindswap.pellet.ABox.isSatisfiab"
+  },
+  "module:tavern/schemas": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/taverntesting__tavern-650/module/tavern_schemas-97e7d6",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/taverntesting__tavern-650/module/tavern_schemas-97e7d6 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "tavern_schemas-97e7d6",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 6,
+       "raw": "tavern_schemas-97e7d6 moduleChangeMonthsInWindow 6"
+      },
+      {
+       "subject": "tavern_schemas-97e7d6",
+       "prop": "type",
+       "value": "Module",
+       "raw": "tavern_schemas-97e7d6 type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\ntavern_schemas-97e7d6 moduleChangeMonthsInWindow 6\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\ntavern_schemas-97e7d6 type Module\nOftenChangedModule subClassOf ActiveModule"
+    }
+   ],
+   "raw_text": "Axiom: tavern_schemas-97e7d6 type ActiveModule\n\nExplanation(s): \n1)   A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     tavern_schemas-97e7d6 moduleChangeMonthsInWindow 6\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     tavern_schemas-97e7d6 type Module\n     OftenChangedModule subClassOf ActiveModule\n\n\n",
+   "seconds": 2.6692142150131986,
+   "returncode": 0,
+   "error": null
+  },
+  "module:tavern/core.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/taverntesting__tavern-650/module/tavern_core.py-3587a0",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/taverntesting__tavern-650/module/tavern_core.py-3587a0 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "tavern_core.py-3587a0",
+       "prop": "type",
+       "value": "Module",
+       "raw": "tavern_core.py-3587a0 type Module"
+      },
+      {
+       "subject": "tavern_core.py-3587a0",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 4,
+       "raw": "tavern_core.py-3587a0 moduleChangeMonthsInWindow 4"
+      }
+     ],
+     "closures": [],
+     "raw": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\ntavern_core.py-3587a0 type Module\nOftenChangedModule subClassOf ActiveModule\ntavern_core.py-3587a0 moduleChangeMonthsInWindow 4"
+    }
+   ],
+   "raw_text": "Axiom: tavern_core.py-3587a0 type ActiveModule\n\nExplanation(s): \n1)   A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     tavern_core.py-3587a0 type Module\n     OftenChangedModule subClassOf ActiveModule\n     tavern_core.py-3587a0 moduleChangeMonthsInWindow 4\n\n\n",
+   "seconds": 2.5762303110095672,
+   "returncode": 0,
+   "error": null
+  },
+  "module:tavern/plugins.py": {
+   "class": "StableModule",
+   "individual": "http://senso-framework.org/data/taverntesting__tavern-650/module/tavern_plugins.py-610a1c",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/taverntesting__tavern-650/module/tavern_plugins.py-610a1c type http://senso-framework.org/ontology/seo#StableModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]"
+      },
+      {
+       "kind": "definition",
+       "subject": "StableModule",
+       "text": "StableModule equivalentTo LowRelChurnModule and RarelyChangedModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LowRelChurnModule",
+       "text": "LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "definition",
+       "subject": "RarelyChangedModule",
+       "text": "RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "tavern_plugins.py-610a1c",
+       "prop": "type",
+       "value": "Module",
+       "raw": "tavern_plugins.py-610a1c type Module"
+      },
+      {
+       "subject": "tavern_plugins.py-610a1c",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 2,
+       "raw": "tavern_plugins.py-610a1c moduleChangeMonthsInWindow 2"
+      },
+      {
+       "subject": "tavern_plugins.py-610a1c",
+       "prop": "moduleRelChurnInWindow",
+       "value": 0.029412,
+       "raw": "tavern_plugins.py-610a1c moduleRelChurnInWindow 0.029412"
+      }
+     ],
+     "closures": [],
+     "raw": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\nStableModule equivalentTo LowRelChurnModule and RarelyChangedModule\ntavern_plugins.py-610a1c type Module\nA_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\nLowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module\nRarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module\ntavern_plugins.py-610a1c moduleChangeMonthsInWindow 2\ntavern_plugins.py-610a1c moduleRelChurnInWindow 0.029412"
+    }
+   ],
+   "raw_text": "Axiom: tavern_plugins.py-610a1c type StableModule\n\nExplanation(s): \n1)   A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\n     StableModule equivalentTo LowRelChurnModule\n                               and RarelyChangedModule\n     tavern_plugins.py-610a1c type Module\n     A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\n     LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn\n                                    and Module\n     RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months\n                                      and Module\n     tavern_plugins.py-610a1c moduleChangeMonthsInWindow 2\n     tavern_plugins.py-610a1c moduleRelChurnInWindow 0.029412\n\n\n",
+   "seconds": 2.468650394002907,
+   "returncode": 0,
+   "error": null
+  },
+  "module:tavern/response": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/taverntesting__tavern-650/module/tavern_response-780454",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/taverntesting__tavern-650/module/tavern_response-780454 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "tavern_response-780454",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 3,
+       "raw": "tavern_response-780454 moduleChangeMonthsInWindow 3"
+      },
+      {
+       "subject": "tavern_response-780454",
+       "prop": "type",
+       "value": "Module",
+       "raw": "tavern_response-780454 type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "tavern_response-780454 moduleChangeMonthsInWindow 3\nA_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\ntavern_response-780454 type Module\nOftenChangedModule subClassOf ActiveModule"
+    }
+   ],
+   "raw_text": "Axiom: tavern_response-780454 type ActiveModule\n\nExplanation(s): \n1)   tavern_response-780454 moduleChangeMonthsInWindow 3\n     A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     tavern_response-780454 type Module\n     OftenChangedModule subClassOf ActiveModule\n\n\n",
+   "seconds": 2.494345123996027,
+   "returncode": 0,
+   "error": null
+  },
+  "module:docs": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/taverntesting__tavern-650/module/docs-71ab8b",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/taverntesting__tavern-650/module/docs-71ab8b type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "docs-71ab8b",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 8,
+       "raw": "docs-71ab8b moduleChangeMonthsInWindow 8"
+      },
+      {
+       "subject": "docs-71ab8b",
+       "prop": "type",
+       "value": "Module",
+       "raw": "docs-71ab8b type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\ndocs-71ab8b moduleChangeMonthsInWindow 8\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\ndocs-71ab8b type Module\nOftenChangedModule subClassOf ActiveModule"
+    }
+   ],
+   "raw_text": "Axiom: docs-71ab8b type ActiveModule\n\nExplanation(s): \n1)   A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     docs-71ab8b moduleChangeMonthsInWindow 8\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     docs-71ab8b type Module\n     OftenChangedModule subClassOf ActiveModule\n\n\n",
+   "seconds": 2.469980452035088,
+   "returncode": 0,
+   "error": null
+  },
+  "module:tavern/entry.py": {
+   "class": "StableModule",
+   "individual": "http://senso-framework.org/data/taverntesting__tavern-650/module/tavern_entry.py-abfe8c",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/taverntesting__tavern-650/module/tavern_entry.py-abfe8c type http://senso-framework.org/ontology/seo#StableModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "StableModule",
+       "text": "StableModule equivalentTo LowRelChurnModule and RarelyChangedModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "LowRelChurnModule",
+       "text": "LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "definition",
+       "subject": "RarelyChangedModule",
+       "text": "RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "tavern_entry.py-abfe8c",
+       "prop": "type",
+       "value": "Module",
+       "raw": "tavern_entry.py-abfe8c type Module"
+      },
+      {
+       "subject": "tavern_entry.py-abfe8c",
+       "prop": "moduleRelChurnInWindow",
+       "value": 0.026316,
+       "raw": "tavern_entry.py-abfe8c moduleRelChurnInWindow 0.026316"
+      },
+      {
+       "subject": "tavern_entry.py-abfe8c",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 1,
+       "raw": "tavern_entry.py-abfe8c moduleChangeMonthsInWindow 1"
+      }
+     ],
+     "closures": [],
+     "raw": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\ntavern_entry.py-abfe8c type Module\nA_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\nStableModule equivalentTo LowRelChurnModule and RarelyChangedModule\ntavern_entry.py-abfe8c moduleRelChurnInWindow 0.026316\ntavern_entry.py-abfe8c moduleChangeMonthsInWindow 1\nLowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module\nRarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module"
+    }
+   ],
+   "raw_text": "Axiom: tavern_entry.py-abfe8c type StableModule\n\nExplanation(s): \n1)   A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\n     tavern_entry.py-abfe8c type Module\n     A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\n     StableModule equivalentTo LowRelChurnModule\n                               and RarelyChangedModule\n     tavern_entry.py-abfe8c moduleRelChurnInWindow 0.026316\n     tavern_entry.py-abfe8c moduleChangeMonthsInWindow 1\n     LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn\n                                    and Module\n     RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months\n                                      and Module\n\n\n",
+   "seconds": 3.8176785679534078,
+   "returncode": 0,
+   "error": null
+  },
+  "module:tavern/request": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/taverntesting__tavern-650/module/tavern_request-44eab5",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/taverntesting__tavern-650/module/tavern_request-44eab5 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule subClassOf ActiveModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "tavern_request-44eab5",
+       "prop": "moduleRelChurnInWindow",
+       "value": 0.833333,
+       "raw": "tavern_request-44eab5 moduleRelChurnInWindow 0.833333"
+      },
+      {
+       "subject": "tavern_request-44eab5",
+       "prop": "type",
+       "value": "Module",
+       "raw": "tavern_request-44eab5 type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "tavern_request-44eab5 moduleRelChurnInWindow 0.833333\nHighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module\ntavern_request-44eab5 type Module\nHighRelChurnModule subClassOf ActiveModule\nA_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+    }
+   ],
+   "raw_text": "Axiom: tavern_request-44eab5 type ActiveModule\n\nExplanation(s): \n1)   tavern_request-44eab5 moduleRelChurnInWindow 0.833333\n     HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn\n                                     and Module\n     tavern_request-44eab5 type Module\n     HighRelChurnModule subClassOf ActiveModule\n     A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\n\n\n",
+   "seconds": 5.047650335996877,
+   "returncode": 0,
+   "error": null
+  },
+  "module:tavern/__init__.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/taverntesting__tavern-650/module/tavern___init__.py-ff7342",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/taverntesting__tavern-650/module/tavern___init__.py-ff7342 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "tavern___init__.py-ff7342",
+       "prop": "type",
+       "value": "Module",
+       "raw": "tavern___init__.py-ff7342 type Module"
+      },
+      {
+       "subject": "tavern___init__.py-ff7342",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 8,
+       "raw": "tavern___init__.py-ff7342 moduleChangeMonthsInWindow 8"
+      }
+     ],
+     "closures": [],
+     "raw": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\ntavern___init__.py-ff7342 type Module\ntavern___init__.py-ff7342 moduleChangeMonthsInWindow 8\nOftenChangedModule subClassOf ActiveModule"
+    }
+   ],
+   "raw_text": "Axiom: tavern___init__.py-ff7342 type ActiveModule\n\nExplanation(s): \n1)   A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     tavern___init__.py-ff7342 type Module\n     tavern___init__.py-ff7342 moduleChangeMonthsInWindow 8\n     OftenChangedModule subClassOf ActiveModule\n\n\n",
+   "seconds": 4.896758321963716,
+   "returncode": 0,
+   "error": null
+  }
+ },
+ "timings": {
+  "t_clone": 0.009,
+  "t_mine": 4.514,
+  "t_loc": 0.849,
+  "t_reason_A": 6.757,
+  "mining_cached": false,
+  "t_modules": 1.218,
+  "t_reason_B": 3.139,
+  "n_configs": 1,
+  "t_explain": 75.098,
+  "n_explain_calls": 21,
+  "t_writeback": 0.0,
+  "t_total": 93.678
+ }
+}

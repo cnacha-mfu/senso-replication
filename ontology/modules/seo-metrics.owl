@@ -1,0 +1,862 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://senso-framework.org/ontology/seo/seo-metrics"
+         xmlns="http://senso-framework.org/ontology/seo/seo-metrics#"
+         xmlns:seo="http://senso-framework.org/ontology/seo#">
+
+<owl:Ontology rdf:about="http://senso-framework.org/ontology/seo/seo-metrics">
+  <owl:imports rdf:resource="http://senso-framework.org/ontology/seo/seo-entities"/>
+  <owl:imports rdf:resource="http://senso-framework.org/ontology/seo/seo-processes"/>
+</owl:Ontology>
+
+<owl:ObjectProperty rdf:about="http://senso-framework.org/ontology/seo#hasComplexity">
+  <rdfs:domain>
+    <owl:Class>
+      <owl:unionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#Module"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#File"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#Function"/>
+      </owl:unionOf>
+    </owl:Class>
+  </rdfs:domain>
+  <rdfs:range rdf:resource="http://senso-framework.org/ontology/seo#ComplexityMetric"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://senso-framework.org/ontology/seo#hasSize">
+  <rdfs:domain>
+    <owl:Class>
+      <owl:unionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#Module"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#File"/>
+      </owl:unionOf>
+    </owl:Class>
+  </rdfs:domain>
+  <rdfs:range rdf:resource="http://senso-framework.org/ontology/seo#SizeMetric"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://senso-framework.org/ontology/seo#hasCoupling">
+  <rdfs:domain>
+    <owl:Class>
+      <owl:unionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#Module"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#File"/>
+      </owl:unionOf>
+    </owl:Class>
+  </rdfs:domain>
+  <rdfs:range rdf:resource="http://senso-framework.org/ontology/seo#CouplingMetric"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://senso-framework.org/ontology/seo#hasCohesion">
+  <rdfs:domain>
+    <owl:Class>
+      <owl:unionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#Module"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#File"/>
+      </owl:unionOf>
+    </owl:Class>
+  </rdfs:domain>
+  <rdfs:range rdf:resource="http://senso-framework.org/ontology/seo#CohesionMetric"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://senso-framework.org/ontology/seo#hasActivity">
+  <rdfs:domain>
+    <owl:Class>
+      <owl:unionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+        <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#Module"/>
+      </owl:unionOf>
+    </owl:Class>
+  </rdfs:domain>
+  <rdfs:range rdf:resource="http://senso-framework.org/ontology/seo#ActivityMetric"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://senso-framework.org/ontology/seo#measuredAt">
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#Metric"/>
+  <rdfs:range rdf:resource="http://senso-framework.org/ontology/seo#Version"/>
+</owl:ObjectProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#metricValue">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#Metric"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#monthsObserved">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Months in the zero-filled lookback window. Unit: months. Computed by: measures.series_summary.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">measures.series_summary</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">months</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#activeMonthCount">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Months with at least one commit. Unit: months. Computed by: measures.series_summary.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">measures.series_summary</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">months</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#activeMonthRatio">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">activeMonthCount / monthsObserved. Unit: ratio [0,1]. Computed by: measures.series_summary.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">measures.series_summary</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ratio [0,1]</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#meanMonthlyCommits">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Mean commits per month over the window. Unit: commits/month. Computed by: measures.series_summary.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">measures.series_summary</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">commits/month</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#commitsLast3Months">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Commits in the last three months. Unit: commits. Computed by: measures.series_summary.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">measures.series_summary</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">commits</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#commitCountCV">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Population SD of monthly commits / max(mean, 1). Unit: unitless. Computed by: measures.cv.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">measures.cv</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unitless</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#commitCountCVSample">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Sample SD of monthly commits / max(mean, 1) (paper-table variant). Unit: unitless. Computed by: measures.cv.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">measures.cv</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unitless</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#churnCV">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Population SD of monthly churn / max(mean, 1). Unit: unitless. Computed by: measures.cv.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">measures.cv</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unitless</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#linesAddedCV">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Population SD of monthly lines added / max(mean, 1). Unit: unitless. Computed by: measures.cv.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">measures.cv</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unitless</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#complexityMonthCount">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Months with mean complexity &gt; 0. Unit: months. Computed by: measures.series_summary.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">measures.series_summary</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">months</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#complexityHalfMeanFirst">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Mean complexity of the first half of the months that have complexity. Unit: CCN. Computed by: measures.half_means.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">measures.half_means</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CCN</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#complexityHalfMeanSecond">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Mean complexity of the second half of the months that have complexity. Unit: CCN. Computed by: measures.half_means.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">measures.half_means</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CCN</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#complexityFirst">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Complexity of the first month. Unit: CCN. Computed by: measures.series_summary.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">measures.series_summary</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CCN</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#complexityLast">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Complexity of the last month. Unit: CCN. Computed by: measures.series_summary.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">measures.series_summary</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CCN</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#complexityGrowthRate">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">(complexityLast - complexityFirst) / max(complexityFirst, 1). Unit: ratio. Computed by: measures.series_summary.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">measures.series_summary</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ratio</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#monthlyComplexityGrowth">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">(last - first) / max(n-1, 1) / max(first, 1) of complexity. Unit: ratio/month. Computed by: measures.series_summary.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">measures.series_summary</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ratio/month</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#complexityChange">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">complexityLast - complexityFirst (difference of two measurements). Unit: CCN. Computed by: measures.series_summary.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">measures.series_summary</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CCN</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#complexityToLocGrowthRatio">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">complexityGrowthRate / locGrowthRate; asserted only where locGrowthRate is not 0. Unit: ratio. Computed by: measures.series_summary.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">measures.series_summary</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ratio</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#locEndToStartRatio">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">locEnd / locStart; asserted only where locStart &gt; 0. Unit: ratio. Computed by: measures.loc_endpoints.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">measures.loc_endpoints</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ratio</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#featureSecondToFirstRatio">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">featureCommitsSecondHalf / featureCommitsFirstHalf; asserted only where the first half has feature commits. Unit: ratio. Computed by: measures.feature_commit_counts.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">measures.feature_commit_counts</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ratio</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#correctiveToRisingRatio">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">correctiveMonthCount / risingMonthCount; asserted only where risingMonthCount &gt; 0. Unit: ratio. Computed by: post stage M aggregate.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">post stage M aggregate</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ratio</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#complexityHalfMeanChange">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">complexityHalfMeanSecond - complexityHalfMeanFirst (difference of two measurements). Unit: CCN. Computed by: measures.half_means.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">measures.half_means</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CCN</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#bugFixHalfRatio">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">bugFixRatioSecondHalf / bugFixRatioFirstHalf; asserted only where the first-half ratio is positive. Unit: ratio. Computed by: measures.half_means (post stage A aggregate).</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">measures.half_means (post stage A aggregate)</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ratio</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#locToComplexityGrowthRatio">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">locGrowthRate / complexityGrowthRate; asserted only where complexityGrowthRate is not 0. Unit: ratio. Computed by: measures.series_summary.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">measures.series_summary</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ratio</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#locDeltaPerFeature">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">locDelta / max(featureCommitsTotal, 1). Unit: LOC/commit. Computed by: measures.feature_commit_counts.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">measures.feature_commit_counts</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LOC/commit</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#bugFixRatioFirstHalf">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Mean bug-fix ratio of the first half of active months; needs inferred BugFixCommit (D8). Unit: ratio [0,1]. Computed by: measures.half_means (post stage A aggregate).</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">measures.half_means (post stage A aggregate)</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ratio [0,1]</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#bugFixRatioSecondHalf">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Mean bug-fix ratio of the second half of active months. Unit: ratio [0,1]. Computed by: measures.half_means (post stage A aggregate).</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">measures.half_means (post stage A aggregate)</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ratio [0,1]</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#mergeMonthRatio">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Months with a merge commit / monthsObserved. Unit: ratio [0,1]. Computed by: measures.series_summary.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">measures.series_summary</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ratio [0,1]</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#multiAuthorMonthRatio">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Months with more than one author / monthsObserved. Unit: ratio [0,1]. Computed by: measures.series_summary.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">measures.series_summary</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ratio [0,1]</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#locSeriesLength">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Length of the LOC series given to the Mann-Kendall test. Unit: months. Computed by: measures.mann_kendall.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">measures.mann_kendall</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">months</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#locMKTau">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Kendall tau of the monthly LOC series (S / (n(n-1)/2)). Unit: tau. Computed by: measures.mann_kendall.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">measures.mann_kendall</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tau</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#locMKS">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Mann-Kendall S statistic. Unit: count. Computed by: measures.mann_kendall.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">measures.mann_kendall</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">count</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#locMKpValue">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Two-sided Mann-Kendall p-value (pymannkendall.original_test). Unit: probability. Computed by: measures.mann_kendall.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">measures.mann_kendall</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">probability</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#locSenSlope">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Theil-Sen slope of monthly LOC. Unit: LOC/month. Computed by: measures.mann_kendall.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">measures.mann_kendall</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LOC/month</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#monthsSinceLastCommit">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Whole months between the snapshot month and the month of the latest commit (full history; 0 if a commit falls in the snapshot month). RQ1 C2. Unit: months. Computed by: measures.months_since_last_commit.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">measures.months_since_last_commit</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">months</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#locRelSenSlopeAnnual">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">12 * locSenSlope / max(median monthly LOC, 1). RQ1 C2. Unit: fraction/year. Computed by: measures.rel_sen_slope_annual.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">measures.rel_sen_slope_annual</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fraction/year</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#distinctAuthorsInWindow">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Distinct author e-mails over the whole window (descriptive; not used by a rule). Unit: authors. Computed by: measures.distinct_authors.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">measures.distinct_authors</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">authors</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#commitMKTau">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Kendall tau of the zero-filled monthly commit-count series (LOC-free comparator input; not used by a rule). Unit: tau. Computed by: measures.mann_kendall.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">measures.mann_kendall</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tau</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#commitMKpValue">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Mann-Kendall p-value of the monthly commit-count series (comparator input; not used by a rule). Unit: probability. Computed by: measures.mann_kendall.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">measures.mann_kendall</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">probability</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#locStart">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">LOC in the first month. Unit: LOC. Computed by: measures.loc_endpoints.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">measures.loc_endpoints</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LOC</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#locEnd">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">LOC in the last month. Unit: LOC. Computed by: measures.loc_endpoints.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">measures.loc_endpoints</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LOC</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#locDelta">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">locEnd - locStart. Unit: LOC. Computed by: measures.loc_endpoints.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">measures.loc_endpoints</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LOC</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#locGrowthRate">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">(locEnd - locStart) / max(locStart, 1). Unit: ratio. Computed by: measures.loc_endpoints.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">measures.loc_endpoints</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ratio</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#locChangePct">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">locGrowthRate * 100 (legacy ensemble unit). Unit: percent. Computed by: measures.loc_endpoints.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">measures.loc_endpoints</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">percent</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#locGrowthLast3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">(l3 - l1) / max(l1, 1) over the last three months. Unit: ratio. Computed by: measures.loc_endpoints.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">measures.loc_endpoints</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ratio</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#commitHalfRatio">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Second-half mean commits / max(first-half mean, 1). Unit: ratio. Computed by: measures.half_commit_stats.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">measures.half_commit_stats</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ratio</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#commitSecondHalfMean">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Mean commits per month in the second half. Unit: commits/month. Computed by: measures.half_commit_stats.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">measures.half_commit_stats</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">commits/month</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#featureCommitsFirstHalf">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Conventional-Commit feat: commits in the first half (D9). Unit: commits. Computed by: measures.feature_commit_counts.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">measures.feature_commit_counts</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">commits</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#featureCommitsSecondHalf">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Conventional-Commit feat: commits in the second half (D9). Unit: commits. Computed by: measures.feature_commit_counts.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">measures.feature_commit_counts</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">commits</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#featureCommitsTotal">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Total feat: commits. Unit: commits. Computed by: measures.feature_commit_counts.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">measures.feature_commit_counts</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">commits</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#refactoringCommits">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Refactoring commits; no data in real repos. Unit: commits. Computed by: NEW MINING (not mined).</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NEW MINING (not mined)</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">commits</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#refactoringRatio">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">refactoringCommits / max(commits, 1). Unit: ratio. Computed by: measures.series_summary.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">measures.series_summary</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ratio</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#dependencyCountStart">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Dependencies at the first snapshot; no data. Unit: dependencies. Computed by: NEW MINING (not mined, D9).</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NEW MINING (not mined, D9)</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dependencies</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#dependencyCountEnd">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Dependencies at the last snapshot; no data. Unit: dependencies. Computed by: NEW MINING (not mined, D9).</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NEW MINING (not mined, D9)</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dependencies</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#dependencyGrowthRate">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">(end - start) / max(start, 1). Unit: ratio. Computed by: measures.series_summary.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">measures.series_summary</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ratio</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#recentAgentCommitRatio">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Mean of the last three monthly agent-commit ratios. Unit: ratio [0,1]. Computed by: measures.recent_ratio (post stage A aggregate).</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">measures.recent_ratio (post stage A aggregate)</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ratio [0,1]</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#risingMonthCount">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Count of inferred RisingMonth (paper-table Law VIII). Unit: months. Computed by: post stage M aggregate.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">post stage M aggregate</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">months</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#correctiveMonthCount">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Count of inferred CorrectiveMonth5. Unit: months. Computed by: post stage M aggregate.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">post stage M aggregate</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">months</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#responsiveMonthCount">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Count of inferred ResponsiveRisingMonth. Unit: months. Computed by: post stage M aggregate.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">post stage M aggregate</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">months</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#correctiveLast2Months">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Refactorings + bug fixes in the last two months. Unit: commits. Computed by: measures.month_snapshots.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#SoftwareProject"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">measures.month_snapshots</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">commits</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#monthIndex">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">0-based index of the month from the start of the window. Unit: months. Computed by: measures.month_snapshots.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#MonthSnapshot"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">measures.month_snapshots</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">months</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#monthIndexFromEnd">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">0 for the last month, 1 for the one before, ... Unit: months. Computed by: measures.month_snapshots.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#MonthSnapshot"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">measures.month_snapshots</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">months</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#commitCount">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Commits in the month. Unit: commits. Computed by: measures.month_snapshots.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#MonthSnapshot"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">measures.month_snapshots</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">commits</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#commitDeltaFromPrev">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">commitCount minus the previous month's (absent for the first month). Unit: commits. Computed by: measures.month_snapshots.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#MonthSnapshot"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">measures.month_snapshots</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">commits</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#locDeltaFromPrev">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">LOC minus the previous month's (absent for the first month). Unit: LOC. Computed by: measures.month_snapshots.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#MonthSnapshot"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">measures.month_snapshots</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LOC</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#locChangeRatio">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">|LOC - previous LOC| / max(previous LOC, 1). Unit: ratio. Computed by: measures.month_snapshots.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#MonthSnapshot"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">measures.month_snapshots</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ratio</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#complexityDelta">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Complexity minus the previous month's. Unit: CCN. Computed by: measures.month_snapshots.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#MonthSnapshot"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">measures.month_snapshots</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CCN</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#correctiveCount">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Refactorings + bug fixes in the month. Unit: commits. Computed by: measures.month_snapshots.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#MonthSnapshot"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">measures.month_snapshots</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">commits</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#authorName">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Commit author name. Unit: text. Computed by: measures.extract_commit_evidence.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#Commit"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">measures.extract_commit_evidence</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#authorEmail">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Commit author email. Unit: text. Computed by: measures.extract_commit_evidence.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#Commit"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">measures.extract_commit_evidence</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#commitSubject">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">First line of the commit message. Unit: text. Computed by: measures.extract_commit_evidence.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#Commit"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">measures.extract_commit_evidence</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#coAuthorTrailer">
+  <rdfs:comment xml:lang="en">Raw Co-authored-by trailer lines (multi-valued). Unit: text. Computed by: measures.extract_commit_evidence.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#Commit"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">measures.extract_commit_evidence</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#branchName">
+  <rdfs:comment xml:lang="en">Pull-request head branch names; no data. Unit: text. Computed by: NEW MINING (not mined, D9).</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#Commit"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NEW MINING (not mined, D9)</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">text</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#authorDate">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Author date. Unit: xsd:dateTime. Computed by: measures.extract_commit_evidence.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#Commit"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">measures.extract_commit_evidence</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">xsd:dateTime</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#modulePath">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Module id of the WP5 partition (package, subpackage or module file). Unit: path. Computed by: measures.module_of.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#Module"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">measures.module_of</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">path</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#moduleLoc">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Non-blank lines of the module's .py files at the base tree (LOC_INSTRUMENT). Unit: LOC. Computed by: populate_v2.mine_modules.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#Module"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">populate_v2.mine_modules</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LOC</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#moduleCommitsInWindow">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Non-merge ancestor commits with author date in (S - W, S] that touch the module. Unit: commits. Computed by: measures.module_measurements.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#Module"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">measures.module_measurements</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">commits</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#moduleChangeMonthsInWindow">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Distinct UTC calendar months among those commits. Unit: months. Computed by: measures.module_measurements.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#Module"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">measures.module_measurements</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">months</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#moduleLinesChangedInWindow">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Sum of insertions and deletions (numstat, no renames) on the module's files in the window. Unit: lines. Computed by: measures.module_measurements.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#Module"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">measures.module_measurements</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lines</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#moduleRelChurnInWindow">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">moduleLinesChangedInWindow / moduleLoc; asserted only where moduleLoc &gt; 0. Unit: ratio. Computed by: measures.module_measurements.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#Module"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">measures.module_measurements</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ratio</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="http://senso-framework.org/ontology/seo#moduleMonthsSinceLastChange">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:comment xml:lang="en">Months from the month of S back to the month of the last commit touching the module (full history; descriptive, used by no rule). Unit: months. Computed by: measures.module_measurements.</rdfs:comment>
+  <rdfs:domain rdf:resource="http://senso-framework.org/ontology/seo#Module"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  <seo:computedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">measures.module_measurements</seo:computedBy>
+  <seo:measurementUnit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">months</seo:measurementUnit>
+</owl:DatatypeProperty>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#Metric">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#ComplexityMetric">
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#Metric"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#SizeMetric">
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#Metric"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#CouplingMetric">
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#Metric"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#CohesionMetric">
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#Metric"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#ActivityMetric">
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#Metric"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#AgentContributionRatio">
+  <rdfs:comment xml:lang="en">Paper 1 — key metric for agent adoption.</rdfs:comment>
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#Metric"/>
+</owl:Class>
+
+<owl:Class rdf:about="http://senso-framework.org/ontology/seo#AgentChurnRatio">
+  <rdfs:subClassOf rdf:resource="http://senso-framework.org/ontology/seo#Metric"/>
+</owl:Class>
+
+<owl:AllDisjointClasses>
+  <owl:members rdf:parseType="Collection">
+    <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#ComplexityMetric"/>
+    <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#SizeMetric"/>
+    <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#CouplingMetric"/>
+    <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#CohesionMetric"/>
+    <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#ActivityMetric"/>
+    <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#AgentContributionRatio"/>
+    <rdf:Description rdf:about="http://senso-framework.org/ontology/seo#AgentChurnRatio"/>
+  </owl:members>
+</owl:AllDisjointClasses>
+
+
+</rdf:RDF>

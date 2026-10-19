@@ -1,0 +1,107 @@
+{
+ "unit_id": "PyCQA__flake8-bugbear-12__A__claude-sonnet__r2",
+ "task_id": "PyCQA__flake8-bugbear-12",
+ "repo": "PyCQA/flake8-bugbear",
+ "stage": "initial_development",
+ "condition": "A",
+ "model": "claude-code/sonnet",
+ "run": 2,
+ "condition_meta": {},
+ "started": "2026-10-18T03:20:19.190784+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 8,
+ "tool_calls": 7,
+ "usage": {
+  "input_tokens": 14,
+  "cache_creation_input_tokens": 2484,
+  "cache_read_input_tokens": 126227,
+  "output_tokens": 2057,
+  "output_tokens_details": {
+   "thinking_tokens": 157
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 2484,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 14,
+   "outputTokens": 2057,
+   "cacheReadInputTokens": 126227,
+   "cacheCreationInputTokens": 2484,
+   "webSearchRequests": 0,
+   "costUSD": 0.043156700000000006,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 157,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.043156700000000006,
+ "result_text": "B902 no longer flags `cls` as the first parameter of instance methods in metaclasses, so `def __init__(cls, name, bases, d)` in your `StorageMeta` passes. I didn't add tests, as instructed, and I didn't run your example, `test_bugbear.py` or flake8 on a metaclass sample.\n\n`test_selfclean_bugbear` was already failing before my change. The two remaining W504 hits, at `bugbear.py:177` and `bugbear.py:324`, aren't lines I wrote. My first version added two more, which I removed. The other 14 tests pass.\n\nThe change is in `check_for_b902` in `bugbear.py`:\n\n- **Detection:** a class counts as a metaclass if any base is named `type` or ends in `Meta` (for example `ABCMeta` or `abc.ABCMeta`). A metaclass that inherits from some other base, such as a project-specific class not named `*Meta`, won't be detected.\n- **Instance methods:** in a metaclass these accept `cls`.\n- **Class methods and `__new__`:** in a metaclass these accept `metacls`, `metaclass`, `typ`, `mcs` or `mcls`.\n\nI chose the accepted names myself, so adjust them if you prefer a different set.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792309800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0.02,
+    "resetsAt": 1792309800
+   },
+   "seven_day": {
+    "utilization": 0.12,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 33.4,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 8,
+   "hit_step_limit": 0,
+   "changed_lines": 12,
+   "gold_changed_lines": 11,
+   "Y1": 6,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": 0.12553088208385882
+  },
+  "f2p_pass": 0,
+  "f2p_total": 1,
+  "p2p_pass": 13,
+  "p2p_total": 13,
+  "f2p_all_pass": false,
+  "p2p_all_pass": true,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 1.7
+ },
+ "status": "done",
+ "finished": "2026-10-18T03:20:55.047096+00:00"
+}

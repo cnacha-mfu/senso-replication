@@ -1,0 +1,111 @@
+{
+ "unit_id": "XKNX__xknx-1551__D__claude-sonnet__r1",
+ "task_id": "XKNX__xknx-1551",
+ "repo": "XKNX/xknx",
+ "stage": "evolution",
+ "condition": "D",
+ "model": "claude-code/sonnet",
+ "run": 1,
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 4754,
+  "sha256": "5bf1c2153bae6675b0f489cdfd0dc634c0c0902687676e280ee55f860847b3fd"
+ },
+ "started": "2026-10-18T04:44:28.612883+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 11,
+ "tool_calls": 10,
+ "usage": {
+  "input_tokens": 22,
+  "cache_creation_input_tokens": 31801,
+  "cache_read_input_tokens": 295069,
+  "output_tokens": 4885,
+  "output_tokens_details": {
+   "thinking_tokens": 2471
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 31801,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 22,
+   "outputTokens": 4885,
+   "cacheReadInputTokens": 295069,
+   "cacheCreationInputTokens": 31801,
+   "webSearchRequests": 0,
+   "costUSD": 0.20560489999999998,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 2471,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.20560489999999998,
+ "result_text": "I fixed the bug in `xknx/dpt/dpt_20.py`. I haven't run the test suite, and the existing HVAC status tests still use the old bit layout, so they will fail until they are updated. I was told not to touch tests, so I left them alone.\n\n**Cause:** the `0x21` your controller sends on `controller_status_state_address` is being decoded with the wrong bit layout. The recent refactor (`8a9312f`, \"Refactor ClimateMode and add DPTHVACStatus\") changed the parsing to an Eberle-style layout in which the operation mode sits in the top bits. Under that layout `0x21` reads as Economy with a frost alarm. Home Assistant shows Economy as \"Sleep\", which matches what you saw.\n\nBefore that refactor, `0x21` was Comfort, `0x22` Standby, `0x24` Night and `0x28` Frost Protection. That is the encoding your Jung controller uses.\n\n**Change:** `DPTHVACStatus` now reads and writes the mode in the low bits, as before:\n\n| Bit | Meaning |\n|---|---|\n| 0 | Comfort |\n| 1 | Standby |\n| 2 | Economy (Night) |\n| 3 | Building Protection (Frost Protection) |\n\nThe other flags moved up to bits 4 to 7. I assigned those four flag positions myself, without a spec to check them against. The one position I can partly support is bit 5 as \"heat\": the old encoding always set `0x20`, and that bit's meaning there was never documented. I checked with a quick run that `0x21` now decodes as Comfort with heat mode.\n\n**Left to you:** please confirm the flag positions against your controller's documentation or the AN097 spec. Your 0x21 and the old 0x22/0x24/0x28 mapping don't pin down the dew point, inactive and frost alarm bits. Once you've confirmed them, the HVAC status tests need updating to the new layout.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792309800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0.08,
+    "resetsAt": 1792309800
+   },
+   "seven_day": {
+    "utilization": 0.12,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 56.6,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 11,
+   "hit_step_limit": 0,
+   "changed_lines": 32,
+   "gold_changed_lines": 36,
+   "Y1": 0,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": -0.16992500144231246
+  },
+  "f2p_pass": 5,
+  "f2p_total": 5,
+  "p2p_pass": 84,
+  "p2p_total": 84,
+  "f2p_all_pass": true,
+  "p2p_all_pass": true,
+  "resolved": true,
+  "reason": "resolved",
+  "test_seconds": 2.4
+ },
+ "status": "done",
+ "finished": "2026-10-18T04:45:29.643756+00:00"
+}

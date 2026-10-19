@@ -1,0 +1,1927 @@
+{
+ "repo": "tmux-python/libtmux",
+ "snapshot_date": "2025-06-30",
+ "status": "ok",
+ "unmineable": false,
+ "unmineable_reason": null,
+ "replaces": null,
+ "settings": {
+  "dedup": true,
+  "complexity": false,
+  "dataset": "seo_v2",
+  "sensitivity": true
+ },
+ "versions": {
+  "owlready2": "0.51",
+  "pymannkendall": "1.4.3",
+  "lizard": "1.24.1",
+  "numpy": "2.5.3",
+  "scipy": "1.18.1",
+  "python": "3.12.15",
+  "git": "git version 2.53.0"
+ },
+ "measures": {
+  "monthsObserved": 36,
+  "monthsSinceLastCommit": 0,
+  "distinctAuthorsInWindow": 14,
+  "commitMKTau": -0.149206,
+  "commitMKpValue": 0.204799,
+  "activeMonthCount": 36,
+  "activeMonthRatio": 1.0,
+  "meanMonthlyCommits": 37.361111,
+  "commitsLast3Months": 54,
+  "commitCountCV": 1.151727,
+  "commitCountCVSample": 1.168064,
+  "commitHalfRatio": 0.907801,
+  "commitSecondHalfMean": 35.555556,
+  "churnCV": 2.327232,
+  "linesAddedCV": 2.273159,
+  "mergeMonthRatio": 0.527778,
+  "multiAuthorMonthRatio": 0.333333,
+  "bugFixRatioFirstHalf": 0.174312,
+  "bugFixRatioSecondHalf": 0.134792,
+  "bugFixHalfRatio": 0.773284,
+  "locSeriesLength": 36,
+  "locRelSenSlopeAnnual": 0.284056,
+  "locMKTau": 0.919048,
+  "locMKS": 579,
+  "locMKpValue": 0.0,
+  "locSenSlope": 167.545455,
+  "locStart": 3483,
+  "locEnd": 10924,
+  "locDelta": 7441,
+  "locGrowthRate": 2.136377,
+  "locChangePct": 213.637669,
+  "locEndToStartRatio": 3.136377,
+  "locGrowthLast3": 0.03722,
+  "featureCommitsFirstHalf": 18,
+  "featureCommitsSecondHalf": 40,
+  "featureCommitsTotal": 58,
+  "featureSecondToFirstRatio": 2.222222,
+  "locDeltaPerFeature": 128.293103,
+  "recentAgentCommitRatio": 0.0,
+  "featCommitCount": 58,
+  "bugFixCommitCount": 279,
+  "commitCount": 1345,
+  "monthly_series": {
+   "months": [
+    "2021-07",
+    "2021-08",
+    "2021-09",
+    "2021-10",
+    "2021-11",
+    "2021-12",
+    "2022-01",
+    "2022-02",
+    "2022-03",
+    "2022-04",
+    "2022-05",
+    "2022-06",
+    "2022-07",
+    "2022-08",
+    "2022-09",
+    "2022-10",
+    "2022-11",
+    "2022-12",
+    "2023-01",
+    "2023-02",
+    "2023-03",
+    "2023-04",
+    "2023-05",
+    "2023-06",
+    "2023-07",
+    "2023-08",
+    "2023-09",
+    "2023-10",
+    "2023-11",
+    "2023-12",
+    "2024-01",
+    "2024-02",
+    "2024-03",
+    "2024-04",
+    "2024-05",
+    "2024-06",
+    "2024-07",
+    "2024-08",
+    "2024-09",
+    "2024-10",
+    "2024-11",
+    "2024-12",
+    "2025-01",
+    "2025-02",
+    "2025-03",
+    "2025-04",
+    "2025-05",
+    "2025-06"
+   ],
+   "commits": [
+    3,
+    0,
+    1,
+    15,
+    0,
+    0,
+    29,
+    26,
+    81,
+    24,
+    41,
+    15,
+    57,
+    101,
+    139,
+    34,
+    23,
+    77,
+    34,
+    5,
+    3,
+    10,
+    17,
+    14,
+    12,
+    34,
+    27,
+    15,
+    88,
+    15,
+    5,
+    182,
+    80,
+    25,
+    9,
+    23,
+    10,
+    4,
+    8,
+    8,
+    21,
+    25,
+    26,
+    142,
+    18,
+    11,
+    32,
+    11
+   ],
+   "loc": [
+    3341,
+    3341,
+    3341,
+    3340,
+    3340,
+    3340,
+    3285,
+    3299,
+    3323,
+    3333,
+    3444,
+    3444,
+    3483,
+    3742,
+    3927,
+    3943,
+    4066,
+    6722,
+    6855,
+    6855,
+    6855,
+    6858,
+    6866,
+    6869,
+    6864,
+    6910,
+    6909,
+    6878,
+    7066,
+    7078,
+    7078,
+    8401,
+    8946,
+    8908,
+    8908,
+    8909,
+    8909,
+    8909,
+    8909,
+    8909,
+    8909,
+    8921,
+    8985,
+    10532,
+    10532,
+    10532,
+    10912,
+    10924
+   ]
+  }
+ },
+ "window": {
+  "L": 36,
+  "first_month": "2022-07",
+  "last_month": "2025-06",
+  "n_months": 36,
+  "left_truncated": false,
+  "first_commit_month": "2016-05",
+  "mined_months": 48,
+  "commits_in_window": 1345,
+  "commits_in_history": 2215
+ },
+ "loc_instrument": {
+  "instrument": "nonblank-source-lines-v1",
+  "status": "ok",
+  "months": 48,
+  "month_end_commits_distinct": 44,
+  "source_blobs": 447,
+  "blobs_fetched": 0,
+  "t_ls_tree_s": 0.9869469759869389,
+  "t_fetch_s": 0.013783677015453577,
+  "t_read_s": 0.09435278497403488,
+  "series_present": true,
+  "extensions": [
+   ".bash",
+   ".c",
+   ".cc",
+   ".cjs",
+   ".clj",
+   ".cpp",
+   ".cs",
+   ".cxx",
+   ".dart",
+   ".erl",
+   ".ex",
+   ".exs",
+   ".f90",
+   ".go",
+   ".groovy",
+   ".h",
+   ".hh",
+   ".hpp",
+   ".hs",
+   ".java",
+   ".jl",
+   ".js",
+   ".jsx",
+   ".kt",
+   ".kts",
+   ".lua",
+   ".m",
+   ".mjs",
+   ".ml",
+   ".mm",
+   ".nim",
+   ".php",
+   ".pl",
+   ".pm",
+   ".py",
+   ".pyi",
+   ".r",
+   ".rb",
+   ".rs",
+   ".scala",
+   ".sh",
+   ".sql",
+   ".svelte",
+   ".swift",
+   ".ts",
+   ".tsx",
+   ".vue",
+   ".zig"
+  ],
+  "excluded_dirs": [
+   "node_modules",
+   "vendor",
+   "vendored",
+   "third_party",
+   "site-packages",
+   "bower_components"
+  ],
+  "max_blob_bytes": 1000000,
+  "first_parent": true
+ },
+ "mining": {
+  "churn": {
+   "t_churn_raw_s": 0.44985257502412423,
+   "t_churn_fetch_s": 4.401981587987393,
+   "t_churn_numstat_s": 0.6449342429987155,
+   "blobs_fetched_churn": 1197
+  },
+  "timings": {
+   "t_clone": 2.767,
+   "t_mine": 8.646,
+   "t_loc": 1.095,
+   "t_reason_A": 8.744
+  },
+  "cached": false
+ },
+ "stage_a": {
+  "commits": 1580,
+  "reasoned_commits": 1393,
+  "inconsistent_chunks": 0,
+  "chunk_timings": [
+   {
+    "tbox_load_s": 0.038477055029943585,
+    "abox_load_s": 0.13958162599010393,
+    "reason_s": 4.464509017008822,
+    "extract_s": 0.011733592953532934,
+    "total_s": 4.654731077956967,
+    "commits": 1000
+   },
+   {
+    "tbox_load_s": 0.03743682603817433,
+    "abox_load_s": 0.053000592975877225,
+    "reason_s": 3.9517733159591444,
+    "extract_s": 0.004659000958781689,
+    "total_s": 4.047332160000224,
+    "commits": 393
+   }
+  ],
+  "tbox_sha256": "da30ed577542b3643ecf06cb6a4649ccc8fce61ab7a0373beabd763e12883e86"
+ },
+ "activity": {
+  "last_commit_date": "2025-06-28T11:53:24+00:00",
+  "months_since_last_commit": 0,
+  "distinct_authors_in_window": 14,
+  "merge_commits_in_window": 94
+ },
+ "agent_adoption_date": null,
+ "commit_label_counts": {
+  "BugFixCommit": 279,
+  "FeatureCommit": 58,
+  "AgentCommit": 0
+ },
+ "series_months": [
+  {
+   "month": "2022-07",
+   "commit_count": 57,
+   "merge_count": 4,
+   "unique_authors": 1,
+   "lines_added": 851,
+   "lines_deleted": 536,
+   "total_churn": 1387,
+   "files_changed": 55,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 3483,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-08",
+   "commit_count": 101,
+   "merge_count": 12,
+   "unique_authors": 2,
+   "lines_added": 456,
+   "lines_deleted": 398,
+   "total_churn": 854,
+   "files_changed": 61,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 3742,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-09",
+   "commit_count": 139,
+   "merge_count": 13,
+   "unique_authors": 2,
+   "lines_added": 6846,
+   "lines_deleted": 5013,
+   "total_churn": 11859,
+   "files_changed": 110,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 3927,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-10",
+   "commit_count": 34,
+   "merge_count": 3,
+   "unique_authors": 1,
+   "lines_added": 107,
+   "lines_deleted": 18,
+   "total_churn": 125,
+   "files_changed": 7,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 3943,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-11",
+   "commit_count": 23,
+   "merge_count": 3,
+   "unique_authors": 2,
+   "lines_added": 147,
+   "lines_deleted": 7,
+   "total_churn": 154,
+   "files_changed": 11,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 4066,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-12",
+   "commit_count": 77,
+   "merge_count": 6,
+   "unique_authors": 1,
+   "lines_added": 2333,
+   "lines_deleted": 731,
+   "total_churn": 3064,
+   "files_changed": 55,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 6722,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-01",
+   "commit_count": 34,
+   "merge_count": 7,
+   "unique_authors": 2,
+   "lines_added": 194,
+   "lines_deleted": 40,
+   "total_churn": 234,
+   "files_changed": 19,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 6855,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-02",
+   "commit_count": 5,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 6855,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-03",
+   "commit_count": 3,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 6855,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-04",
+   "commit_count": 10,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 6,
+   "lines_deleted": 2,
+   "total_churn": 8,
+   "files_changed": 2,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 6858,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-05",
+   "commit_count": 17,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 22,
+   "lines_deleted": 10,
+   "total_churn": 32,
+   "files_changed": 4,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 6866,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-06",
+   "commit_count": 14,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 7,
+   "lines_deleted": 4,
+   "total_churn": 11,
+   "files_changed": 3,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 6869,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-07",
+   "commit_count": 12,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 93,
+   "lines_deleted": 132,
+   "total_churn": 225,
+   "files_changed": 20,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 6864,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-08",
+   "commit_count": 34,
+   "merge_count": 2,
+   "unique_authors": 1,
+   "lines_added": 299,
+   "lines_deleted": 176,
+   "total_churn": 475,
+   "files_changed": 43,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 6910,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-09",
+   "commit_count": 27,
+   "merge_count": 1,
+   "unique_authors": 1,
+   "lines_added": 89,
+   "lines_deleted": 93,
+   "total_churn": 182,
+   "files_changed": 17,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 6909,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-10",
+   "commit_count": 15,
+   "merge_count": 1,
+   "unique_authors": 2,
+   "lines_added": 2,
+   "lines_deleted": 36,
+   "total_churn": 38,
+   "files_changed": 3,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 6878,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-11",
+   "commit_count": 88,
+   "merge_count": 5,
+   "unique_authors": 1,
+   "lines_added": 494,
+   "lines_deleted": 278,
+   "total_churn": 772,
+   "files_changed": 82,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 7066,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-12",
+   "commit_count": 15,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 22,
+   "lines_deleted": 8,
+   "total_churn": 30,
+   "files_changed": 4,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 7078,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-01",
+   "commit_count": 5,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 7078,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-02",
+   "commit_count": 182,
+   "merge_count": 10,
+   "unique_authors": 2,
+   "lines_added": 5421,
+   "lines_deleted": 1120,
+   "total_churn": 6541,
+   "files_changed": 224,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 8401,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-03",
+   "commit_count": 80,
+   "merge_count": 6,
+   "unique_authors": 3,
+   "lines_added": 1257,
+   "lines_deleted": 585,
+   "total_churn": 1842,
+   "files_changed": 125,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 8946,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-04",
+   "commit_count": 25,
+   "merge_count": 2,
+   "unique_authors": 1,
+   "lines_added": 59,
+   "lines_deleted": 128,
+   "total_churn": 187,
+   "files_changed": 14,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 8908,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-05",
+   "commit_count": 9,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 11,
+   "lines_deleted": 11,
+   "total_churn": 22,
+   "files_changed": 7,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 8908,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-06",
+   "commit_count": 23,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 67,
+   "lines_deleted": 10,
+   "total_churn": 77,
+   "files_changed": 5,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 8909,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-07",
+   "commit_count": 10,
+   "merge_count": 0,
+   "unique_authors": 2,
+   "lines_added": 2,
+   "lines_deleted": 2,
+   "total_churn": 4,
+   "files_changed": 2,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 8909,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-08",
+   "commit_count": 4,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 8909,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-09",
+   "commit_count": 8,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 8909,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-10",
+   "commit_count": 8,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 8909,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-11",
+   "commit_count": 21,
+   "merge_count": 2,
+   "unique_authors": 1,
+   "lines_added": 10,
+   "lines_deleted": 10,
+   "total_churn": 20,
+   "files_changed": 7,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 8909,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-12",
+   "commit_count": 25,
+   "merge_count": 2,
+   "unique_authors": 2,
+   "lines_added": 237,
+   "lines_deleted": 221,
+   "total_churn": 458,
+   "files_changed": 30,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 8921,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2025-01",
+   "commit_count": 26,
+   "merge_count": 1,
+   "unique_authors": 1,
+   "lines_added": 666,
+   "lines_deleted": 545,
+   "total_churn": 1211,
+   "files_changed": 70,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 8985,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2025-02",
+   "commit_count": 142,
+   "merge_count": 12,
+   "unique_authors": 4,
+   "lines_added": 3470,
+   "lines_deleted": 1393,
+   "total_churn": 4863,
+   "files_changed": 111,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 10532,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2025-03",
+   "commit_count": 18,
+   "merge_count": 0,
+   "unique_authors": 2,
+   "lines_added": 4,
+   "lines_deleted": 4,
+   "total_churn": 8,
+   "files_changed": 4,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 10532,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2025-04",
+   "commit_count": 11,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 10532,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2025-05",
+   "commit_count": 32,
+   "merge_count": 2,
+   "unique_authors": 2,
+   "lines_added": 647,
+   "lines_deleted": 192,
+   "total_churn": 839,
+   "files_changed": 21,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 10912,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2025-06",
+   "commit_count": 11,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 50,
+   "lines_deleted": 33,
+   "total_churn": 83,
+   "files_changed": 12,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 10924,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  }
+ ],
+ "measures_derived": {
+  "bugFixRatioFirstHalf": 0.174312,
+  "bugFixRatioSecondHalf": 0.134792,
+  "bugFixHalfRatio": 0.773284,
+  "featureCommitsFirstHalf": 18,
+  "featureCommitsSecondHalf": 40,
+  "featureCommitsTotal": 58,
+  "featureSecondToFirstRatio": 2.222222,
+  "locDeltaPerFeature": 128.293103,
+  "recentAgentCommitRatio": 0.0
+ },
+ "inferred": {
+  "a0.05_L36_D12_G0.05_orig": {
+   "classes": [
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIINonConformant",
+    "LawIVConformant",
+    "LawVIConformant",
+    "LawVIIIConformant",
+    "LawVIINonConformant",
+    "LawVNonConformant",
+    "MKApplicable",
+    "MergeActive",
+    "MultiAuthorActive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": "urn:senso:explanations:tmux-python/libtmux:79f851de895e",
+   "tbox_sha256": "79f851de895e8301073d1746931d8ac1d34e4ed2e94897358fca050d9d07b63c",
+   "abox_triples": 41,
+   "t_reason_B_s": 2.18
+  },
+  "a0.01_L36_D12_G0.05_orig": {
+   "classes": [
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIINonConformant",
+    "LawIVConformant",
+    "LawVIConformant",
+    "LawVIIIConformant",
+    "LawVIINonConformant",
+    "LawVNonConformant",
+    "MKApplicable",
+    "MergeActive",
+    "MultiAuthorActive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "956579a8859000216eba261c78e4795a2b5042e7edf95419211fd46e9dbeada9",
+   "abox_triples": 41,
+   "t_reason_B_s": 2.152
+  },
+  "a0.1_L36_D12_G0.05_orig": {
+   "classes": [
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIINonConformant",
+    "LawIVConformant",
+    "LawVIConformant",
+    "LawVIIIConformant",
+    "LawVIINonConformant",
+    "LawVNonConformant",
+    "MKApplicable",
+    "MergeActive",
+    "MultiAuthorActive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "56009aa92bf68560113e153a97a62cd0cfdea303607eb909725e8e10a2536494",
+   "abox_triples": 41,
+   "t_reason_B_s": 2.239
+  },
+  "a0.05_L24_D12_G0.05_orig": {
+   "classes": [
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIINonConformant",
+    "LawIVConformant",
+    "LawVIConformant",
+    "LawVIIIConformant",
+    "LawVIINonConformant",
+    "LawVNonConformant",
+    "MKApplicable",
+    "MergeActive",
+    "MultiAuthorActive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "79f851de895e8301073d1746931d8ac1d34e4ed2e94897358fca050d9d07b63c",
+   "abox_triples": 41,
+   "t_reason_B_s": 2.216
+  },
+  "a0.05_L48_D12_G0.05_orig": {
+   "classes": [
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIINonConformant",
+    "LawIVConformant",
+    "LawVIConformant",
+    "LawVIIConformant",
+    "LawVIIConformantRatio",
+    "LawVIIIConformant",
+    "LawVNonConformant",
+    "MKApplicable",
+    "MergeActive",
+    "MultiAuthorActive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "79f851de895e8301073d1746931d8ac1d34e4ed2e94897358fca050d9d07b63c",
+   "abox_triples": 41,
+   "t_reason_B_s": 2.149
+  },
+  "a0.05_L36_D6_G0.05_orig": {
+   "classes": [
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIINonConformant",
+    "LawIVConformant",
+    "LawVIConformant",
+    "LawVIIIConformant",
+    "LawVIINonConformant",
+    "LawVNonConformant",
+    "MKApplicable",
+    "MergeActive",
+    "MultiAuthorActive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "a19e7e45f521324fec6b19741e2a4f08e5d15efd8e05802851c45a87515a7761",
+   "abox_triples": 41,
+   "t_reason_B_s": 2.258
+  },
+  "a0.05_L36_D18_G0.05_orig": {
+   "classes": [
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIINonConformant",
+    "LawIVConformant",
+    "LawVIConformant",
+    "LawVIIIConformant",
+    "LawVIINonConformant",
+    "LawVNonConformant",
+    "MKApplicable",
+    "MergeActive",
+    "MultiAuthorActive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "f87900e0c68335fbd2cae9848efdc2926406c328fb39da8e6e393bb472a68fdc",
+   "abox_triples": 41,
+   "t_reason_B_s": 2.146
+  },
+  "a0.05_L36_D24_G0.05_orig": {
+   "classes": [
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIINonConformant",
+    "LawIVConformant",
+    "LawVIConformant",
+    "LawVIIIConformant",
+    "LawVIINonConformant",
+    "LawVNonConformant",
+    "MKApplicable",
+    "MergeActive",
+    "MultiAuthorActive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "562211ba220cda59299aec70f3561ba96eadd88adaf45f6f7db3fce71cdcc77b",
+   "abox_triples": 41,
+   "t_reason_B_s": 2.018
+  },
+  "a0.05_L36_D12_G0_orig": {
+   "classes": [
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIINonConformant",
+    "LawIVConformant",
+    "LawVIConformant",
+    "LawVIIIConformant",
+    "LawVIINonConformant",
+    "LawVNonConformant",
+    "MKApplicable",
+    "MergeActive",
+    "MultiAuthorActive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "c0de0e8b2e7424d23b10ed152acd4ff66c2f1a973196b7e54f6598e9d734d0dc",
+   "abox_triples": 41,
+   "t_reason_B_s": 2.291
+  },
+  "a0.05_L36_D12_G0.02_orig": {
+   "classes": [
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIINonConformant",
+    "LawIVConformant",
+    "LawVIConformant",
+    "LawVIIIConformant",
+    "LawVIINonConformant",
+    "LawVNonConformant",
+    "MKApplicable",
+    "MergeActive",
+    "MultiAuthorActive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "2c6613dd6b3e4fa714d92eaa067f02157466a4b3ee0ccf6de289441d860de28d",
+   "abox_triples": 41,
+   "t_reason_B_s": 2.146
+  },
+  "a0.05_L36_D12_G0.1_orig": {
+   "classes": [
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIINonConformant",
+    "LawIVConformant",
+    "LawVIConformant",
+    "LawVIIIConformant",
+    "LawVIINonConformant",
+    "LawVNonConformant",
+    "MKApplicable",
+    "MergeActive",
+    "MultiAuthorActive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "0cfde802b4494fc33a5ad0eb910980aaf152093f62848406bdc37bc099347936",
+   "abox_triples": 41,
+   "t_reason_B_s": 2.182
+  },
+  "a0.05_L36_D12_G0.05_hr": {
+   "classes": [
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIINonConformant",
+    "LawIVConformant",
+    "LawVIConformant",
+    "LawVIIIConformant",
+    "LawVIINonConformant",
+    "LawVNonConformant",
+    "MKApplicable",
+    "MergeActive",
+    "MultiAuthorActive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "79f851de895e8301073d1746931d8ac1d34e4ed2e94897358fca050d9d07b63c",
+   "abox_triples": 41,
+   "t_reason_B_s": 2.159
+  }
+ },
+ "primary_config": "a0.05_L36_D12_G0.05_orig",
+ "project_iri": "http://senso-framework.org/data/tmux-python_libtmux",
+ "consistent": true,
+ "inferred_labels": [
+  "GrowthStage",
+  "LawIConformant",
+  "LawIIINonConformant",
+  "LawIVConformant",
+  "LawVIConformant",
+  "LawVIIIConformant",
+  "LawVIINonConformant",
+  "LawVNonConformant",
+  "MKApplicable",
+  "MergeActive",
+  "MultiAuthorActive",
+  "RBActiveDevelopmentStage",
+  "RecentlyActive",
+  "SubstantialLocGrowth"
+ ],
+ "stage_labels": [
+  "GrowthStage",
+  "RBActiveDevelopmentStage"
+ ],
+ "law_labels": {
+  "I": "LawIConformant",
+  "III": "LawIIINonConformant",
+  "IV": "LawIVConformant",
+  "V": "LawVNonConformant",
+  "VI": "LawVIConformant",
+  "VII": "LawVIINonConformant",
+  "VIII": "LawVIIIConformant"
+ },
+ "tbox_sha256_stage_b": "79f851de895e8301073d1746931d8ac1d34e4ed2e94897358fca050d9d07b63c",
+ "tbox_sha256_stage_a": "da30ed577542b3643ecf06cb6a4649ccc8fce61ab7a0373beabd763e12883e86",
+ "summary": {
+  "c1": "A",
+  "c2": "A",
+  "cf": "A",
+  "note": "debug summary; run_rq1_v2.py reads `inferred` and recomputes CF itself"
+ },
+ "explanations": {
+  "stage:GrowthStage": {
+   "class": "GrowthStage",
+   "target": "http://senso-framework.org/data/tmux-python_libtmux type http://senso-framework.org/ontology/seo#GrowthStage",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKTau_gt_0",
+       "text": "A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKpValue_lt_mk_alpha",
+       "text": "A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]"
+      },
+      {
+       "kind": "definition",
+       "subject": "GrowthStage",
+       "text": "GrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "tmux-python_libtmux",
+       "prop": "locMKTau",
+       "value": 0.919048,
+       "raw": "tmux-python_libtmux locMKTau 0.919048"
+      },
+      {
+       "subject": "tmux-python_libtmux",
+       "prop": "locMKpValue",
+       "value": 0.0,
+       "raw": "tmux-python_libtmux locMKpValue 0.0"
+      },
+      {
+       "subject": "tmux-python_libtmux",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "tmux-python_libtmux type SoftwareProject"
+      },
+      {
+       "subject": "tmux-python_libtmux",
+       "prop": "locSeriesLength",
+       "value": 36,
+       "raw": "tmux-python_libtmux locSeriesLength 36"
+      }
+     ],
+     "closures": [],
+     "raw": "tmux-python_libtmux locMKTau 0.919048\ntmux-python_libtmux locMKpValue 0.0\nA_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\ntmux-python_libtmux type SoftwareProject\nA_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\ntmux-python_libtmux locSeriesLength 36\nA_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\nGrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject\nA_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]"
+    }
+   ],
+   "raw_text": "Axiom: tmux-python_libtmux type GrowthStage\n\nExplanation(s): \n1)   tmux-python_libtmux locMKTau 0.919048\n     tmux-python_libtmux locMKpValue 0.0\n     A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\n     tmux-python_libtmux type SoftwareProject\n     A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\n     tmux-python_libtmux locSeriesLength 36\n     A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\n     GrowthStage equivalentTo A_locMKTau_gt_0\n                              and A_locMKpValue_lt_mk_alpha\n                              and MKApplicable\n                              and SoftwareProject\n     A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]\n\n\n",
+   "seconds": 2.383887334028259,
+   "returncode": 0,
+   "error": null
+  },
+  "stage:RBActiveDevelopmentStage": {
+   "class": "RBActiveDevelopmentStage",
+   "target": "http://senso-framework.org/data/tmux-python_libtmux type http://senso-framework.org/ontology/seo#RBActiveDevelopmentStage",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable"
+      },
+      {
+       "kind": "definition",
+       "subject": "SubstantialLocGrowth",
+       "text": "SubstantialLocGrowth equivalentTo A_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKTau_gt_0",
+       "text": "A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "GrowthStage",
+       "text": "GrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year",
+       "text": "A_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year equivalentTo locRelSenSlopeAnnual some decimal[>= 0.05]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]"
+      },
+      {
+       "kind": "definition",
+       "subject": "RBActiveDevelopmentStage",
+       "text": "RBActiveDevelopmentStage equivalentTo GrowthStage and RecentlyActive and SoftwareProject and SubstantialLocGrowth"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKpValue_lt_mk_alpha",
+       "text": "A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]"
+      },
+      {
+       "kind": "definition",
+       "subject": "RecentlyActive",
+       "text": "RecentlyActive equivalentTo A_monthsSinceLastCommit_lt_rb_dormancy_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_monthsSinceLastCommit_lt_rb_dormancy_months",
+       "text": "A_monthsSinceLastCommit_lt_rb_dormancy_months equivalentTo monthsSinceLastCommit some integer[< 12]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "tmux-python_libtmux",
+       "prop": "locMKTau",
+       "value": 0.919048,
+       "raw": "tmux-python_libtmux locMKTau 0.919048"
+      },
+      {
+       "subject": "tmux-python_libtmux",
+       "prop": "locMKpValue",
+       "value": 0.0,
+       "raw": "tmux-python_libtmux locMKpValue 0.0"
+      },
+      {
+       "subject": "tmux-python_libtmux",
+       "prop": "monthsSinceLastCommit",
+       "value": 0,
+       "raw": "tmux-python_libtmux monthsSinceLastCommit 0"
+      },
+      {
+       "subject": "tmux-python_libtmux",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "tmux-python_libtmux type SoftwareProject"
+      },
+      {
+       "subject": "tmux-python_libtmux",
+       "prop": "locSeriesLength",
+       "value": 36,
+       "raw": "tmux-python_libtmux locSeriesLength 36"
+      },
+      {
+       "subject": "tmux-python_libtmux",
+       "prop": "locRelSenSlopeAnnual",
+       "value": 0.284056,
+       "raw": "tmux-python_libtmux locRelSenSlopeAnnual 0.284056"
+      }
+     ],
+     "closures": [],
+     "raw": "tmux-python_libtmux locMKTau 0.919048\ntmux-python_libtmux locMKpValue 0.0\ntmux-python_libtmux monthsSinceLastCommit 0\nA_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\nSubstantialLocGrowth equivalentTo A_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year and SoftwareProject\ntmux-python_libtmux type SoftwareProject\nA_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\ntmux-python_libtmux locSeriesLength 36\ntmux-python_libtmux locRelSenSlopeAnnual 0.284056\nGrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject\nA_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year equivalentTo locRelSenSlopeAnnual some decimal[>= 0.05]\nA_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]\nRBActiveDevelopmentStage equivalentTo GrowthStage and RecentlyActive and SoftwareProject and SubstantialLocGrowth\nA_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\nRecentlyActive equivalentTo A_monthsSinceLastCommit_lt_rb_dormancy_months and SoftwareProject\nA_monthsSinceLastCommit_lt_rb_dormancy_months equivalentTo monthsSinceLastCommit some integer[< 12]"
+    }
+   ],
+   "raw_text": "Axiom: tmux-python_libtmux type RBActiveDevelopmentStage\n\nExplanation(s): \n1)   tmux-python_libtmux locMKTau 0.919048\n     tmux-python_libtmux locMKpValue 0.0\n     tmux-python_libtmux monthsSinceLastCommit 0\n     A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\n     SubstantialLocGrowth equivalentTo A_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year\n                                       and SoftwareProject\n     tmux-python_libtmux type SoftwareProject\n     A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\n     tmux-python_libtmux locSeriesLength 36\n     tmux-python_libtmux locRelSenSlopeAnnual 0.284056\n     GrowthStage equivalentTo A_locMKTau_gt_0\n                              and A_locMKpValue_lt_mk_alpha\n                              and MKApplicable\n                              and SoftwareProject\n     A_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year equivalentTo locRelSenSlopeAnnual some decimal[>= 0.05]\n     A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]\n     RBActiveDevelopmentStage equivalentTo GrowthStage\n                                           and RecentlyActive\n                                           and SoftwareProject\n                                           and SubstantialLocGrowth\n     A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\n     RecentlyActive equivalentTo A_monthsSinceLastCommit_lt_rb_dormancy_months\n                                 and SoftwareProject\n     A_monthsSinceLastCommit_lt_rb_dormancy_months equivalentTo monthsSinceLastCommit some integer[< 12]\n\n\n",
+   "seconds": 2.598007504013367,
+   "returncode": 0,
+   "error": null
+  },
+  "lawI": {
+   "class": "LawIConformant",
+   "target": "http://senso-framework.org/data/tmux-python_libtmux type http://senso-framework.org/ontology/seo#LawIConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law1_min_months",
+       "text": "A_monthsObserved_ge_p_law1_min_months equivalentTo monthsObserved some integer[>= 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawIConformant",
+       "text": "LawIConformant equivalentTo A_activeMonthRatio_ge_p_law1_active_ratio and A_monthsObserved_ge_p_law1_min_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_activeMonthRatio_ge_p_law1_active_ratio",
+       "text": "A_activeMonthRatio_ge_p_law1_active_ratio equivalentTo activeMonthRatio some decimal[>= 0.5]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "tmux-python_libtmux",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "tmux-python_libtmux type SoftwareProject"
+      },
+      {
+       "subject": "tmux-python_libtmux",
+       "prop": "activeMonthRatio",
+       "value": 1.0,
+       "raw": "tmux-python_libtmux activeMonthRatio 1.0"
+      },
+      {
+       "subject": "tmux-python_libtmux",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "tmux-python_libtmux monthsObserved 36"
+      }
+     ],
+     "closures": [],
+     "raw": "tmux-python_libtmux type SoftwareProject\ntmux-python_libtmux activeMonthRatio 1.0\ntmux-python_libtmux monthsObserved 36\nA_monthsObserved_ge_p_law1_min_months equivalentTo monthsObserved some integer[>= 2]\nLawIConformant equivalentTo A_activeMonthRatio_ge_p_law1_active_ratio and A_monthsObserved_ge_p_law1_min_months and SoftwareProject\nA_activeMonthRatio_ge_p_law1_active_ratio equivalentTo activeMonthRatio some decimal[>= 0.5]"
+    }
+   ],
+   "raw_text": "Axiom: tmux-python_libtmux type LawIConformant\n\nExplanation(s): \n1)   tmux-python_libtmux type SoftwareProject\n     tmux-python_libtmux activeMonthRatio 1.0\n     tmux-python_libtmux monthsObserved 36\n     A_monthsObserved_ge_p_law1_min_months equivalentTo monthsObserved some integer[>= 2]\n     LawIConformant equivalentTo A_activeMonthRatio_ge_p_law1_active_ratio\n                                 and A_monthsObserved_ge_p_law1_min_months\n                                 and SoftwareProject\n     A_activeMonthRatio_ge_p_law1_active_ratio equivalentTo activeMonthRatio some decimal[>= 0.5]\n\n\n",
+   "seconds": 2.3201679520425387,
+   "returncode": 0,
+   "error": null
+  },
+  "lawIII": {
+   "class": "LawIIINonConformant",
+   "target": "http://senso-framework.org/data/tmux-python_libtmux type http://senso-framework.org/ontology/seo#LawIIINonConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_churnCV_ge_p_law3_churn_cv",
+       "text": "A_churnCV_ge_p_law3_churn_cv equivalentTo churnCV some decimal[>= 2.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law3_min_months",
+       "text": "A_monthsObserved_ge_p_law3_min_months equivalentTo monthsObserved some integer[>= 6]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawIIINonConformant",
+       "text": "LawIIINonConformant equivalentTo A_churnCV_ge_p_law3_churn_cv and A_monthsObserved_ge_p_law3_min_months and SoftwareProject"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "tmux-python_libtmux",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "tmux-python_libtmux type SoftwareProject"
+      },
+      {
+       "subject": "tmux-python_libtmux",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "tmux-python_libtmux monthsObserved 36"
+      },
+      {
+       "subject": "tmux-python_libtmux",
+       "prop": "churnCV",
+       "value": 2.327232,
+       "raw": "tmux-python_libtmux churnCV 2.327232"
+      }
+     ],
+     "closures": [],
+     "raw": "tmux-python_libtmux type SoftwareProject\nA_churnCV_ge_p_law3_churn_cv equivalentTo churnCV some decimal[>= 2.0]\nA_monthsObserved_ge_p_law3_min_months equivalentTo monthsObserved some integer[>= 6]\ntmux-python_libtmux monthsObserved 36\ntmux-python_libtmux churnCV 2.327232\nLawIIINonConformant equivalentTo A_churnCV_ge_p_law3_churn_cv and A_monthsObserved_ge_p_law3_min_months and SoftwareProject"
+    }
+   ],
+   "raw_text": "Axiom: tmux-python_libtmux type LawIIINonConformant\n\nExplanation(s): \n1)   tmux-python_libtmux type SoftwareProject\n     A_churnCV_ge_p_law3_churn_cv equivalentTo churnCV some decimal[>= 2.0]\n     A_monthsObserved_ge_p_law3_min_months equivalentTo monthsObserved some integer[>= 6]\n     tmux-python_libtmux monthsObserved 36\n     tmux-python_libtmux churnCV 2.327232\n     LawIIINonConformant equivalentTo A_churnCV_ge_p_law3_churn_cv\n                                      and A_monthsObserved_ge_p_law3_min_months\n                                      and SoftwareProject\n\n\n",
+   "seconds": 2.453168489970267,
+   "returncode": 0,
+   "error": null
+  },
+  "lawIV": {
+   "class": "LawIVConformant",
+   "target": "http://senso-framework.org/data/tmux-python_libtmux type http://senso-framework.org/ontology/seo#LawIVConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law4_min_months",
+       "text": "A_monthsObserved_ge_p_law4_min_months equivalentTo monthsObserved some integer[>= 6]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawIVConformant",
+       "text": "LawIVConformant equivalentTo A_commitCountCV_lt_p_law4_commit_cv and A_monthsObserved_ge_p_law4_min_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_commitCountCV_lt_p_law4_commit_cv",
+       "text": "A_commitCountCV_lt_p_law4_commit_cv equivalentTo commitCountCV some decimal[< 1.5]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "tmux-python_libtmux",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "tmux-python_libtmux type SoftwareProject"
+      },
+      {
+       "subject": "tmux-python_libtmux",
+       "prop": "commitCountCV",
+       "value": 1.151727,
+       "raw": "tmux-python_libtmux commitCountCV 1.151727"
+      },
+      {
+       "subject": "tmux-python_libtmux",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "tmux-python_libtmux monthsObserved 36"
+      }
+     ],
+     "closures": [],
+     "raw": "A_monthsObserved_ge_p_law4_min_months equivalentTo monthsObserved some integer[>= 6]\ntmux-python_libtmux type SoftwareProject\ntmux-python_libtmux commitCountCV 1.151727\ntmux-python_libtmux monthsObserved 36\nLawIVConformant equivalentTo A_commitCountCV_lt_p_law4_commit_cv and A_monthsObserved_ge_p_law4_min_months and SoftwareProject\nA_commitCountCV_lt_p_law4_commit_cv equivalentTo commitCountCV some decimal[< 1.5]"
+    }
+   ],
+   "raw_text": "Axiom: tmux-python_libtmux type LawIVConformant\n\nExplanation(s): \n1)   A_monthsObserved_ge_p_law4_min_months equivalentTo monthsObserved some integer[>= 6]\n     tmux-python_libtmux type SoftwareProject\n     tmux-python_libtmux commitCountCV 1.151727\n     tmux-python_libtmux monthsObserved 36\n     LawIVConformant equivalentTo A_commitCountCV_lt_p_law4_commit_cv\n                                  and A_monthsObserved_ge_p_law4_min_months\n                                  and SoftwareProject\n     A_commitCountCV_lt_p_law4_commit_cv equivalentTo commitCountCV some decimal[< 1.5]\n\n\n",
+   "seconds": 2.292874733975623,
+   "returncode": 0,
+   "error": null
+  },
+  "lawV": {
+   "class": "LawVNonConformant",
+   "target": "http://senso-framework.org/data/tmux-python_libtmux type http://senso-framework.org/ontology/seo#LawVNonConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_linesAddedCV_ge_p_law5_additions_cv",
+       "text": "A_linesAddedCV_ge_p_law5_additions_cv equivalentTo linesAddedCV some decimal[>= 2.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawVNonConformant",
+       "text": "LawVNonConformant equivalentTo A_linesAddedCV_ge_p_law5_additions_cv and A_monthsObserved_ge_p_law5_min_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law5_min_months",
+       "text": "A_monthsObserved_ge_p_law5_min_months equivalentTo monthsObserved some integer[>= 4]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "tmux-python_libtmux",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "tmux-python_libtmux type SoftwareProject"
+      },
+      {
+       "subject": "tmux-python_libtmux",
+       "prop": "linesAddedCV",
+       "value": 2.273159,
+       "raw": "tmux-python_libtmux linesAddedCV 2.273159"
+      },
+      {
+       "subject": "tmux-python_libtmux",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "tmux-python_libtmux monthsObserved 36"
+      }
+     ],
+     "closures": [],
+     "raw": "tmux-python_libtmux type SoftwareProject\ntmux-python_libtmux linesAddedCV 2.273159\nA_linesAddedCV_ge_p_law5_additions_cv equivalentTo linesAddedCV some decimal[>= 2.0]\nLawVNonConformant equivalentTo A_linesAddedCV_ge_p_law5_additions_cv and A_monthsObserved_ge_p_law5_min_months and SoftwareProject\ntmux-python_libtmux monthsObserved 36\nA_monthsObserved_ge_p_law5_min_months equivalentTo monthsObserved some integer[>= 4]"
+    }
+   ],
+   "raw_text": "Axiom: tmux-python_libtmux type LawVNonConformant\n\nExplanation(s): \n1)   tmux-python_libtmux type SoftwareProject\n     tmux-python_libtmux linesAddedCV 2.273159\n     A_linesAddedCV_ge_p_law5_additions_cv equivalentTo linesAddedCV some decimal[>= 2.0]\n     LawVNonConformant equivalentTo A_linesAddedCV_ge_p_law5_additions_cv\n                                    and A_monthsObserved_ge_p_law5_min_months\n                                    and SoftwareProject\n     tmux-python_libtmux monthsObserved 36\n     A_monthsObserved_ge_p_law5_min_months equivalentTo monthsObserved some integer[>= 4]\n\n\n",
+   "seconds": 2.2198575760121457,
+   "returncode": 0,
+   "error": null
+  },
+  "lawVI": {
+   "class": "LawVIConformant",
+   "target": "http://senso-framework.org/data/tmux-python_libtmux type http://senso-framework.org/ontology/seo#LawVIConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "subclass",
+       "subject": "GrowthStage",
+       "text": "GrowthStage subClassOf LawVIConformant"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKTau_gt_0",
+       "text": "A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKpValue_lt_mk_alpha",
+       "text": "A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]"
+      },
+      {
+       "kind": "definition",
+       "subject": "GrowthStage",
+       "text": "GrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "tmux-python_libtmux",
+       "prop": "locMKTau",
+       "value": 0.919048,
+       "raw": "tmux-python_libtmux locMKTau 0.919048"
+      },
+      {
+       "subject": "tmux-python_libtmux",
+       "prop": "locMKpValue",
+       "value": 0.0,
+       "raw": "tmux-python_libtmux locMKpValue 0.0"
+      },
+      {
+       "subject": "tmux-python_libtmux",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "tmux-python_libtmux type SoftwareProject"
+      },
+      {
+       "subject": "tmux-python_libtmux",
+       "prop": "locSeriesLength",
+       "value": 36,
+       "raw": "tmux-python_libtmux locSeriesLength 36"
+      }
+     ],
+     "closures": [],
+     "raw": "tmux-python_libtmux locMKTau 0.919048\ntmux-python_libtmux locMKpValue 0.0\nGrowthStage subClassOf LawVIConformant\nA_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\ntmux-python_libtmux type SoftwareProject\nA_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\ntmux-python_libtmux locSeriesLength 36\nA_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\nGrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject\nA_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]"
+    }
+   ],
+   "raw_text": "Axiom: tmux-python_libtmux type LawVIConformant\n\nExplanation(s): \n1)   tmux-python_libtmux locMKTau 0.919048\n     tmux-python_libtmux locMKpValue 0.0\n     GrowthStage subClassOf LawVIConformant\n     A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\n     tmux-python_libtmux type SoftwareProject\n     A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\n     tmux-python_libtmux locSeriesLength 36\n     A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\n     GrowthStage equivalentTo A_locMKTau_gt_0\n                              and A_locMKpValue_lt_mk_alpha\n                              and MKApplicable\n                              and SoftwareProject\n     A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]\n\n\n",
+   "seconds": 2.2501451110001653,
+   "returncode": 0,
+   "error": null
+  },
+  "lawVII": {
+   "class": "LawVIINonConformant",
+   "target": "http://senso-framework.org/data/tmux-python_libtmux type http://senso-framework.org/ontology/seo#LawVIINonConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_bugFixRatioFirstHalf_gt_0",
+       "text": "A_bugFixRatioFirstHalf_gt_0 equivalentTo bugFixRatioFirstHalf some decimal[> 0.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_bugFixHalfRatio_lt_p_law7_tolerance",
+       "text": "A_bugFixHalfRatio_lt_p_law7_tolerance equivalentTo bugFixHalfRatio some decimal[< 0.9]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_activeMonthCount_ge_p_law7_min_active_months",
+       "text": "A_activeMonthCount_ge_p_law7_min_active_months equivalentTo activeMonthCount some integer[>= 4]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawVIINonConformant",
+       "text": "LawVIINonConformant equivalentTo A_activeMonthCount_ge_p_law7_min_active_months and A_bugFixHalfRatio_lt_p_law7_tolerance and A_bugFixRatioFirstHalf_gt_0 and SoftwareProject"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "tmux-python_libtmux",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "tmux-python_libtmux type SoftwareProject"
+      },
+      {
+       "subject": "tmux-python_libtmux",
+       "prop": "bugFixHalfRatio",
+       "value": 0.773284,
+       "raw": "tmux-python_libtmux bugFixHalfRatio 0.773284"
+      },
+      {
+       "subject": "tmux-python_libtmux",
+       "prop": "bugFixRatioFirstHalf",
+       "value": 0.174312,
+       "raw": "tmux-python_libtmux bugFixRatioFirstHalf 0.174312"
+      },
+      {
+       "subject": "tmux-python_libtmux",
+       "prop": "activeMonthCount",
+       "value": 36,
+       "raw": "tmux-python_libtmux activeMonthCount 36"
+      }
+     ],
+     "closures": [],
+     "raw": "tmux-python_libtmux type SoftwareProject\ntmux-python_libtmux bugFixHalfRatio 0.773284\ntmux-python_libtmux bugFixRatioFirstHalf 0.174312\nA_bugFixRatioFirstHalf_gt_0 equivalentTo bugFixRatioFirstHalf some decimal[> 0.0]\nA_bugFixHalfRatio_lt_p_law7_tolerance equivalentTo bugFixHalfRatio some decimal[< 0.9]\nA_activeMonthCount_ge_p_law7_min_active_months equivalentTo activeMonthCount some integer[>= 4]\nLawVIINonConformant equivalentTo A_activeMonthCount_ge_p_law7_min_active_months and A_bugFixHalfRatio_lt_p_law7_tolerance and A_bugFixRatioFirstHalf_gt_0 and SoftwareProject\ntmux-python_libtmux activeMonthCount 36"
+    }
+   ],
+   "raw_text": "Axiom: tmux-python_libtmux type LawVIINonConformant\n\nExplanation(s): \n1)   tmux-python_libtmux type SoftwareProject\n     tmux-python_libtmux bugFixHalfRatio 0.773284\n     tmux-python_libtmux bugFixRatioFirstHalf 0.174312\n     A_bugFixRatioFirstHalf_gt_0 equivalentTo bugFixRatioFirstHalf some decimal[> 0.0]\n     A_bugFixHalfRatio_lt_p_law7_tolerance equivalentTo bugFixHalfRatio some decimal[< 0.9]\n     A_activeMonthCount_ge_p_law7_min_active_months equivalentTo activeMonthCount some integer[>= 4]\n     LawVIINonConformant equivalentTo A_activeMonthCount_ge_p_law7_min_active_months\n                                      and A_bugFixHalfRatio_lt_p_law7_tolerance\n                                      and A_bugFixRatioFirstHalf_gt_0\n                                      and SoftwareProject\n     tmux-python_libtmux activeMonthCount 36\n\n\n",
+   "seconds": 2.215607132995501,
+   "returncode": 0,
+   "error": null
+  },
+  "lawVIII": {
+   "class": "LawVIIIConformant",
+   "target": "http://senso-framework.org/data/tmux-python_libtmux type http://senso-framework.org/ontology/seo#LawVIIIConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio",
+       "text": "A_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio equivalentTo multiAuthorMonthRatio some decimal[> 0.3]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_mergeMonthRatio_gt_p_law8_merge_ratio",
+       "text": "A_mergeMonthRatio_gt_p_law8_merge_ratio equivalentTo MergeActive"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio",
+       "text": "A_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio equivalentTo MultiAuthorActive"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawVIIIConformant",
+       "text": "LawVIIIConformant equivalentTo A_monthsObserved_ge_p_law8_min_months and MergeActive and MultiAuthorActive and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law8_min_months",
+       "text": "A_monthsObserved_ge_p_law8_min_months equivalentTo monthsObserved some integer[>= 6]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_mergeMonthRatio_gt_p_law8_merge_ratio",
+       "text": "A_mergeMonthRatio_gt_p_law8_merge_ratio equivalentTo mergeMonthRatio some decimal[> 0.3]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "tmux-python_libtmux",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "tmux-python_libtmux type SoftwareProject"
+      },
+      {
+       "subject": "tmux-python_libtmux",
+       "prop": "mergeMonthRatio",
+       "value": 0.527778,
+       "raw": "tmux-python_libtmux mergeMonthRatio 0.527778"
+      },
+      {
+       "subject": "tmux-python_libtmux",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "tmux-python_libtmux monthsObserved 36"
+      },
+      {
+       "subject": "tmux-python_libtmux",
+       "prop": "multiAuthorMonthRatio",
+       "value": 0.333333,
+       "raw": "tmux-python_libtmux multiAuthorMonthRatio 0.333333"
+      }
+     ],
+     "closures": [],
+     "raw": "A_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio equivalentTo multiAuthorMonthRatio some decimal[> 0.3]\nA_mergeMonthRatio_gt_p_law8_merge_ratio equivalentTo MergeActive\nA_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio equivalentTo MultiAuthorActive\nLawVIIIConformant equivalentTo A_monthsObserved_ge_p_law8_min_months and MergeActive and MultiAuthorActive and SoftwareProject\ntmux-python_libtmux type SoftwareProject\ntmux-python_libtmux mergeMonthRatio 0.527778\ntmux-python_libtmux monthsObserved 36\nA_monthsObserved_ge_p_law8_min_months equivalentTo monthsObserved some integer[>= 6]\ntmux-python_libtmux multiAuthorMonthRatio 0.333333\nA_mergeMonthRatio_gt_p_law8_merge_ratio equivalentTo mergeMonthRatio some decimal[> 0.3]"
+    }
+   ],
+   "raw_text": "Axiom: tmux-python_libtmux type LawVIIIConformant\n\nExplanation(s): \n1)   A_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio equivalentTo multiAuthorMonthRatio some decimal[> 0.3]\n     A_mergeMonthRatio_gt_p_law8_merge_ratio equivalentTo MergeActive\n     A_multiAuthorMonthRatio_gt_p_law8_multiauthor_ratio equivalentTo MultiAuthorActive\n     LawVIIIConformant equivalentTo A_monthsObserved_ge_p_law8_min_months\n                                    and MergeActive\n                                    and MultiAuthorActive\n                                    and SoftwareProject\n     tmux-python_libtmux type SoftwareProject\n     tmux-python_libtmux mergeMonthRatio 0.527778\n     tmux-python_libtmux monthsObserved 36\n     A_monthsObserved_ge_p_law8_min_months equivalentTo monthsObserved some integer[>= 6]\n     tmux-python_libtmux multiAuthorMonthRatio 0.333333\n     A_mergeMonthRatio_gt_p_law8_merge_ratio equivalentTo mergeMonthRatio some decimal[> 0.3]\n\n\n",
+   "seconds": 2.2087959370110184,
+   "returncode": 0,
+   "error": null
+  }
+ },
+ "fuseki": {
+  "dataset": "seo_v2",
+  "graph_triples": {
+   "urn:senso:abox:tmux-python/libtmux": 388,
+   "urn:senso:commits:tmux-python/libtmux": 8071,
+   "urn:senso:abox-derived:tmux-python/libtmux": 9,
+   "urn:senso:inferred:tmux-python/libtmux:79f851de895e": 531,
+   "urn:senso:explanations:tmux-python/libtmux:79f851de895e": 181
+  }
+ },
+ "timings": {
+  "t_clone": 2.767,
+  "t_mine": 8.646,
+  "t_loc": 1.095,
+  "t_reason_A": 8.744,
+  "mining_cached": false,
+  "t_reason_B": 26.137,
+  "n_configs": 12,
+  "t_explain": 21.032,
+  "n_explain_calls": 9,
+  "t_writeback": 13.116,
+  "t_total": 79.257
+ }
+}

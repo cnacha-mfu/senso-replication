@@ -1,0 +1,23 @@
+{
+ "repo": "daohainam/microservice-patterns",
+ "chunk": 0,
+ "n_chunks": 1,
+ "model": "google/diffusiongemma-26b-a4b-it",
+ "prompt_sha256": "d0e02ff613417050168d859f2af6230c3712c6758bb5d9c40d60ff55e5ae87ca",
+ "user_sha256": "e271c34c047633135a6ee80938004ff8c1eea3f0b176c3dfbc45a96ef5d8eaf0",
+ "text": "{\"claims\": [{\"type\": \"version\", \"quote\": \"Always use the latest version C#, currently C# 13 features.\", \"line\": 4, \"subject\": \"C#\", \"version\": \"13\", \"qualifier\": \"exact\", \"mode\": \"asserts_existing\"}, {\"type\": \"tool_used\", \"quote\": \"We use xUnit SDK v3 for tests.\", \"line\": 23, \"subject\": \"xUnit\", \"tool_category\": \"test_framework\", \"mode\": \"asserts_existing\"}, {\"type\": \"dependency\", \"quote\": \"Use Moq for mocking in tests.\", \"line\": 25, \"subject\": \"Moq\", \"mode\": \"asserts_existing\"}]}",
+ "parse_ok": true,
+ "parse_error": null,
+ "parse_retries": 1,
+ "latency_s": 7.6974035580060445,
+ "usage": {
+  "prompt": 4963,
+  "completion": 335
+ },
+ "n_api_calls": 2,
+ "finish_reason": "stop",
+ "error": null,
+ "discarded_attempt_texts": [
+  "```json\n{\"claims\": [\n  {\"type\": \"version\", \"quote\": \"Always use the latest version C#, currently C# 13 features.\", \"line\": 4, \"subject\": \"c#\", \"version\": \"13\", \"qualifier\": \"exact\", \"mode\": \"assert_existing\"},\n  {\"type\": \"dependency\", \"quote\": \"We use xUnit SDK v3 for tests.\", \"line\": 23, \"subject\": \"xUnit SDK\", \"version\": \"3\", \"ecosystem_hint\", \"mode\": \"assert_existing\"},\n  {\"type\": \"dependency\", \"quote\": \"Use Moq for mocking in tests.\", \"line\": 25, \"subject\": \"Moq\", \"mode\": \"assert_existing\"}\n]}\n```"
+ ]
+}

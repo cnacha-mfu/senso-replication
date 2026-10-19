@@ -1,0 +1,21 @@
+{
+ "repo": "simstudioai/sim",
+ "chunk": 2,
+ "n_chunks": 3,
+ "model": "nvidia/nemotron-3-super-120b-a12b",
+ "prompt_sha256": "d0e02ff613417050168d859f2af6230c3712c6758bb5d9c40d60ff55e5ae87ca",
+ "user_sha256": "60bdc7e60056e2f3862acaa9d713a39b3b819a30d2dcf3853bf9f8cdfe22ba19",
+ "text": "{\"claims\": [{\"type\": \"path_exists\", \"quote\": \"Register in `blocks/registry.ts` (alphabetically).\", \"line\": 314, \"subject\": \"blocks/registry.ts\", \"mode\": \"asserts_existing\"}, {\"type\": \"path_exists\", \"quote\": \"Register in `triggers/registry.ts`.\", \"line\": 371, \"subject\": \"triggers/registry.ts\", \"mode\": \"asserts_existing\"}, {\"type\": \"path_exists\", \"quote\": \"Create `tools/{service}/` with types and tools\", \"line\": 376, \"subject\": \"tools/{service}/\", \"mode\": \"to_be_created\"}, {\"type\": \"path_exists\", \"quote\": \"Register tools in `tools/registry.ts`\", \"line\": 377, \"subject\": \"tools/registry.ts\", \"mode\": \"to_be_created\"}, {\"type\": \"path_exists\", \"quote\": \"Add icon to `components/icons.tsx`\", \"line\": 378, \"subject\": \"components/icons.tsx\", \"mode\": \"to_be_created\"}, {\"type\": \"path_exists\", \"quote\": \"Create block in `blocks/blocks/{service}.ts`\", \"line\": 379, \"subject\": \"blocks/blocks/{service}.ts\", \"mode\": \"to_be_created\"}, {\"type\": \"path_exists\", \"quote\": \"Register block in `blocks/registry.ts`\", \"line\": 380, \"subject\": \"blocks/registry.ts\", \"mode\": \"to_be_created\"}, {\"type\": \"path_exists\", \"quote\": \"(Optional) Create and register triggers\", \"line\": 381, \"subject\": \"triggers/{service}/\", \"mode\": \"to_be_created\"}, {\"type\": \"path_exists\", \"quote\": \"(If file uploads) Create internal API route with `downloadFileFromStorage`\", \"line\": 382, \"subject\": \"/api/tools/{service}/upload\", \"mode\": \"to_be_created\"}, {\"type\": \"path_exists\", \"quote\": \"(If file uploads) Use `normalizeFileInput` in block config\", \"line\": 383, \"subject\": \"@/blocks/utils\", \"mode\": \"to_be_created\"}, {\"type\": \"path_exists\", \"quote\": \"```typescript\\nimport { normalizeFileInput } from '@/blocks/utils'\\nconst file = normalizeFileInput(params.uploadFile || params.fileRef, { single: true })\\nif (file) params.file = file\\n```\", \"line\": 345, \"subject\": \"@/blocks/utils\", \"mode\": \"asserts_existing\"}, {\"type\": \"path_exists\", \"quote\": \"For file uploads, create an internal API route (`/api/tools/{service}/upload`) that uses `downloadFileFromStorage` to get file content from `UserFile` objects.\", \"line\": 352, \"subject\": \"/api/tools/{service}/upload\", \"mode\": \"to_be_created\"}, {\"type\": \"path_exists\", \"quote\": \"```typescript\\ntriggers/{service}/\\n├── index.ts      # Barrel export\\n├── webhook.ts    # Webhook handler\\n└── {event}.ts    # Event-specific handlers\\n```\", \"line\": 364, \"subject\": \"triggers/{service}/\", \"path_components\": [\"triggers/{service}/\", \"index.ts\", \"webhook.ts\", \"{event}.ts\"], \"mode\": \"to_be_created\"}]}",
+ "parse_ok": true,
+ "parse_error": null,
+ "parse_retries": 0,
+ "latency_s": 7.262737849028781,
+ "usage": {
+  "prompt": 3281,
+  "completion": 755
+ },
+ "n_api_calls": 1,
+ "finish_reason": "stop",
+ "error": null,
+ "discarded_attempt_texts": []
+}

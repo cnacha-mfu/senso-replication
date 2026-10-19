@@ -1,0 +1,21 @@
+{
+ "repo": "a16z/halmos",
+ "chunk": 0,
+ "n_chunks": 1,
+ "model": "openai/gpt-oss-20b",
+ "prompt_sha256": "d0e02ff613417050168d859f2af6230c3712c6758bb5d9c40d60ff55e5ae87ca",
+ "user_sha256": "308388f78f3379af335988eb440f9aa6d29d2c228f9914cd1839805fae63c6f9",
+ "text": "{\"claims\":[{\"type\":\"path_exists\",\"quote\":\"ruff check src/\",\"line\":10,\"subject\":\"src/\",\"mode\":\"asserts_existing\"},{\"type\":\"path_exists\",\"quote\":\"ruff format src/\",\"line\":13,\"subject\":\"src/\",\"mode\":\"asserts_existing\"},{\"type\":\"tool_used\",\"quote\":\"ruff check src/\",\"line\":10,\"subject\":\"ruff\",\"tool_category\":\"linter_formatter\",\"mode\":\"asserts_existing\"},{\"type\":\"tool_used\",\"quote\":\"ruff format src/\",\"line\":13,\"subject\":\"ruff\",\"tool_category\":\"linter_formatter\",\"mode\":\"asserts_existing\"},{\"type\":\"test_framework\",\"quote\":\"uv run pytest -vv -k \\\"not long and not ffi and not regression\\\"\",\"line\":16,\"subject\":\"pytest\",\"mode\":\"asserts_existing\"},{\"type\":\"version\",\"quote\":\"Use Python ≥ 3.11\",\"line\":25,\"subject\":\"python\",\"version\":\"3.11\",\"qualifier\":\"min\",\"mode\":\"asserts_existing\"},{\"type\":\"command\",\"quote\":\"ruff check src/\",\"line\":10,\"subject\":\"check\",\"runner\":\"ruff\",\"mode\":\"asserts_existing\"},{\"type\":\"command\",\"quote\":\"ruff format src/\",\"line\":13,\"subject\":\"format\",\"runner\":\"ruff\",\"mode\":\"asserts_existing\"}]}",
+ "parse_ok": true,
+ "parse_error": null,
+ "parse_retries": 0,
+ "latency_s": 9.936919693020172,
+ "usage": {
+  "prompt": 3167,
+  "completion": 427
+ },
+ "n_api_calls": 1,
+ "finish_reason": "stop",
+ "error": null,
+ "discarded_attempt_texts": []
+}

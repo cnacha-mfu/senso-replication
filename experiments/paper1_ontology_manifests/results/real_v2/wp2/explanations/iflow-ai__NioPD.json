@@ -1,0 +1,55 @@
+{
+ "repo": "iflow-ai/NioPD",
+ "slug": "iflow-ai__NioPD",
+ "input_sha": "78349491f1bee75268e369321bdcbd23549ceb3269d978a21b2a46b8458fb3ba",
+ "explanations": [
+  {
+   "key": "T1|niopd-workspace",
+   "verdict": "ContradictedClaim",
+   "leaf": "PathRemoved",
+   "seconds": 3.59,
+   "retried_on_claim_subgraph": false,
+   "error": null,
+   "returncode": 0,
+   "n_justifications": 1,
+   "facts": [
+    {
+     "prop": "pathEverTrackedCount",
+     "value": 2
+    },
+    {
+     "prop": "pathSubmoduleCount",
+     "value": 0
+    },
+    {
+     "prop": "pathIgnoredCount",
+     "value": 0
+    },
+    {
+     "prop": "pathSuffixMatchCount",
+     "value": 0
+    },
+    {
+     "prop": "pathExactMatchCount",
+     "value": 0
+    },
+    {
+     "prop": "extractionVotes",
+     "value": 3
+    }
+   ],
+   "axioms": [
+    "A_pathExactMatchCount_ge_0_le_0 equivalentTo pathExactMatchCount some integer[>= 0, <= 0]",
+    "A_extractionVotes_ge_wp2_consensus_min_votes equivalentTo extractionVotes some integer[>= 2]",
+    "CheckedClaim equivalentTo A_extractionVotes_ge_wp2_consensus_min_votes and ManifestClaim",
+    "PathRemoved subClassOf ContradictedClaim",
+    "A_pathSubmoduleCount_ge_0_le_0 equivalentTo pathSubmoduleCount some integer[>= 0, <= 0]",
+    "A_pathEverTrackedCount_ge_1 equivalentTo pathEverTrackedCount some integer[>= 1]",
+    "A_pathSuffixMatchCount_ge_0_le_0 equivalentTo pathSuffixMatchCount some integer[>= 0, <= 0]",
+    "PathRemoved equivalentTo A_pathEverTrackedCount_ge_1 and A_pathExactMatchCount_ge_0_le_0 and A_pathIgnoredCount_ge_0_le_0 and A_pathSubmoduleCount_ge_0_le_0 and A_pathSuffixMatchCount_ge_0_le_0 and CheckedClaim and PathExistenceClaim",
+    "A_pathIgnoredCount_ge_0_le_0 equivalentTo pathIgnoredCount some integer[>= 0, <= 0]"
+   ],
+   "closures": []
+  }
+ ]
+}

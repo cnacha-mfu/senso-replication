@@ -1,0 +1,132 @@
+{
+ "repo": "vinhnx/VT.ai",
+ "slug": "vinhnx__VT.ai",
+ "engine": "hermit",
+ "tbox_sha256": "8266af98a762ae7567a0deb684fdd394c180f7c6875ac55011cd3e6e6b080b43",
+ "abox_sha256": "b8989228d1bd9f93098caaa4e91ffe220430f6c3b2eed6d24df510773da21fce",
+ "consistent": true,
+ "error": null,
+ "timings": {
+  "tbox_load_s": 0.3203766020014882,
+  "abox_load_s": 0.01728027901845053,
+  "reason_s": 5.219568389991764,
+  "extract_s": 0.014217137999366969,
+  "total_s": 5.571767438028473
+ },
+ "n_claims": 12,
+ "seconds": 5.57,
+ "abox_triples": 178,
+ "claims": {
+  "T1|.github": {
+   "leaves": [
+    "PathFoundExact"
+   ],
+   "verdicts": [
+    "SupportedClaim"
+   ],
+   "chained": []
+  },
+  "T1|docs": {
+   "leaves": [
+    "PathFoundExact"
+   ],
+   "verdicts": [
+    "SupportedClaim"
+   ],
+   "chained": []
+  },
+  "T1|pyproject.toml": {
+   "leaves": [
+    "PathFoundExact"
+   ],
+   "verdicts": [
+    "SupportedClaim"
+   ],
+   "chained": []
+  },
+  "T1|scripts": {
+   "leaves": [
+    "PathFoundExact"
+   ],
+   "verdicts": [
+    "SupportedClaim"
+   ],
+   "chained": []
+  },
+  "T1|src": {
+   "leaves": [
+    "PathRemoved"
+   ],
+   "verdicts": [
+    "ContradictedClaim"
+   ],
+   "chained": []
+  },
+  "T1|tests": {
+   "leaves": [
+    "PathFoundExact"
+   ],
+   "verdicts": [
+    "SupportedClaim"
+   ],
+   "chained": []
+  },
+  "T1|vt_ai": {
+   "leaves": [
+    "PathNeverExisted"
+   ],
+   "verdicts": [
+    "ContradictedClaim"
+   ],
+   "chained": []
+  },
+  "T3|package_manager|uv": {
+   "leaves": [
+    "ToolSignatureFound"
+   ],
+   "verdicts": [
+    "SupportedClaim"
+   ],
+   "chained": []
+  },
+  "T3|test_framework|pytest": {
+   "leaves": [
+    "ToolSignatureFound"
+   ],
+   "verdicts": [
+    "SupportedClaim"
+   ],
+   "chained": []
+  },
+  "T4|litellm|": {
+   "leaves": [
+    "DependencyConfirmed"
+   ],
+   "verdicts": [
+    "SupportedClaim"
+   ],
+   "chained": []
+  },
+  "T4|requests|": {
+   "leaves": [
+    "DependencyUndeclared"
+   ],
+   "verdicts": [
+    "ContradictedClaim"
+   ],
+   "chained": []
+  },
+  "T6|python|3000000000@1": {
+   "leaves": [
+    "VersionConfirmed"
+   ],
+   "verdicts": [
+    "SupportedClaim"
+   ],
+   "chained": []
+  }
+ },
+ "document": [
+  "ManifestWithContradiction"
+ ]
+}

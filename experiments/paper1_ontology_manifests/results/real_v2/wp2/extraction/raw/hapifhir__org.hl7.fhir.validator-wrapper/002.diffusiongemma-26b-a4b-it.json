@@ -1,0 +1,23 @@
+{
+ "repo": "hapifhir/org.hl7.fhir.validator-wrapper",
+ "chunk": 2,
+ "n_chunks": 4,
+ "model": "google/diffusiongemma-26b-a4b-it",
+ "prompt_sha256": "d0e02ff613417050168d859f2af6230c3712c6758bb5d9c40d60ff55e5ae87ca",
+ "user_sha256": "039bcd5ff40b2c9d8e4bb49881d4d512ec00162078ecc1f046f87a41bb57fe12",
+ "text": "{\"claims\": [\n  {\"type\": \"path_exists\", \"subject\": \"src/commonMain\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"path_exists\", \"subject\": \"src/jvmMain\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"path_exists\", \"subject\": \"src/jsMain\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"dependency\", \"subject\": \"org.hl7.fhir.validation\", \"ecosystem_hint\": \"maven\"},\n  {\"type\": \"version\", \"subject\": \"kotlin\", \"version\": \"1.8.21\", \"qualifier\": \"exact\"},\n  {\"type\": \"version\", \"subject\": \"kotlinxHtml\", \"version\": \"0.8.0\", \"qualifier\": \"exact\"},\n  {\"type\": \"version\", \"subject\": \"kotlinxCoroutines\", \"version\": \"1.7.1\", \"qualifier\": \"exact\"},\n  {\"type\": \"version\", \"subject\": \"kotlinxSerialization\", \"version\": \"1.5.1\", \"qualifier\": \"exact\"},\n  {\"type\": \"version\", \"subject\": \"ktor\", \"version\": \"2.3.0\", \"qualifier\": \"exact\"},\n  {\"type\": \"version\", \"subject\": \"jackson\", \"version\": \"2.15.0\", \"qualifier\": \"exact\"},\n  {\"type\": \"version\", \"subject\": \"koin\", \"version\": \"3.4.0\", \"qualifier\": \"exact\"},\n  {\"type\": \"path_exists\", \"subject\": \"gradle.properties\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"path_exists\", \"subject\": \"Main.kt\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"path_exists\", \"subject\": \"application.conf\", \"mode\": \"asserts_existing\"}\n]}",
+ "parse_ok": true,
+ "parse_error": null,
+ "parse_retries": 1,
+ "latency_s": 5.715547332947608,
+ "usage": {
+  "prompt": 7690,
+  "completion": 1011
+ },
+ "n_api_calls": 2,
+ "finish_reason": "stop",
+ "error": null,
+ "discarded_attempt_texts": [
+  "```json\n\"claims\": [\n  {\"type\": \"path_exists\", \"subject\": \"src/commonMain\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"path_exists\", \"subject\": \"src/jvmMain\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"path_exists\", \"subject\": \"src/jsMain\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"dependency\", \"subject\": \"org.hl7.fhir.validation.ValidationContext\", \"ecosystem_hint\": \"maven\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"dependency\", \"subject\": \"redux\", \"ecosystem_hint\": \"npm\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"dependency\", \"subject\": \"redux-thunk\", \"ecosystem_hint\": \"npm\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"dependency\", \"subject\": \"react-redux\", \"ecosystem_hint\": \"npm\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"version\", \"subject\": \"kotlin\", \"version\": \"1.8.21\", \"qualifier\": \"exact\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"version\", \"subject\": \"kotlinxHtml\", \"version\": \"0.8.0\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"version\", \"subject\": \"kotlinxCoroutines\", \"version\": \"1.7.1\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"version\", \"subject\": \"kotlinxSerialization\", \"version\": \"1.5.1\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"version\", \"subject\": \"kotlinWrappers\", \"version\": \"1.0.0-pre.561\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"version\", \"subject\": \"ktor\", \"version\": \"2.3.0\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"version\", \"subject\": \"jackson\", \"version\": \"2.15.0\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"version\", \"subject\": \"koin\", \"version\": \"3.4.0\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"path_exists\", \"subject\": \"gradle.properties\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"path_exists\", \"subject\": \"Main.kt\", \"mode\": \"asserts_existing\"}\n]\n```"
+ ]
+}

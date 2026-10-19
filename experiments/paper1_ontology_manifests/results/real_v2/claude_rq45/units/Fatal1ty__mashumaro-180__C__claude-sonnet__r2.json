@@ -1,0 +1,111 @@
+{
+ "unit_id": "Fatal1ty__mashumaro-180__C__claude-sonnet__r2",
+ "task_id": "Fatal1ty__mashumaro-180",
+ "repo": "Fatal1ty/mashumaro",
+ "stage": "phase_out",
+ "condition": "C",
+ "model": "claude-code/sonnet",
+ "run": 2,
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 4014,
+  "sha256": "55aaca5f487d4c93c8a6149a4f006fa54a6960dd3b07b8328ded72062edadcb1"
+ },
+ "started": "2026-10-18T02:39:28.474564+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 16,
+ "tool_calls": 15,
+ "usage": {
+  "input_tokens": 30,
+  "cache_creation_input_tokens": 16670,
+  "cache_read_input_tokens": 411018,
+  "output_tokens": 4986,
+  "output_tokens_details": {
+   "thinking_tokens": 1414
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 16670,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 30,
+   "outputTokens": 4986,
+   "cacheReadInputTokens": 411018,
+   "cacheCreationInputTokens": 16670,
+   "webSearchRequests": 0,
+   "costUSD": 0.15770179999999998,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 1414,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.15770179999999998,
+ "result_text": "Types defined inside a function now work in generated code. Your `foobar()` example, extended with `List[Optional[Foo]]`, round-trips through `from_dict` and `to_dict`. A missing field raises `MissingField` as expected.\n\nI ran the full suite. 26243 passed and 1 failed: `tests/test_pep_646.py::test_type_name_for_unpacks_py_less_than_311`. It fails the same way with my changes stashed, so my changes didn't cause it.\n\nI didn't use your suggested wrapper as written. `type_name` builds nested names like `List[Optional[Foo]]` as one string, so a wrapper that only checks the final string can't recover the inner class objects to register. Instead:\n\n- **`mashumaro/core/meta/helpers.py`:** `type_name` can now record any type whose name contains `<locals>`. It replaces the name with a cleaned identifier like `__main___foobar__locals__Foo`. It only does this inside a new `collect_local_types()` context, so error messages and other callers still get the readable name.\n- **`mashumaro/core/meta/code/builder.py`:** `CodeBuilder.type_name()` runs `type_name` inside that context. It registers each recorded type in the generated code's globals under its cleaned name.\n- **Call sites:** I switched the call sites that build generated code in `builder.py`, `types/pack.py` and `types/unpack.py` to the new method. I left `print` and error-message call sites alone.\n\nI didn't add a test for the function-local case, since you asked for source changes only.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792291800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0.13,
+    "resetsAt": 1792291800
+   },
+   "seven_day": {
+    "utilization": 0.12,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 296.9,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 4,
+   "Y6": 16,
+   "hit_step_limit": 0,
+   "changed_lines": 102,
+   "gold_changed_lines": 93,
+   "Y1": 6,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": 0.1332665308634641
+  },
+  "f2p_pass": 1,
+  "f2p_total": 1,
+  "p2p_pass": 7,
+  "p2p_total": 7,
+  "f2p_all_pass": true,
+  "p2p_all_pass": true,
+  "resolved": true,
+  "reason": "resolved",
+  "test_seconds": 1.1
+ },
+ "status": "done",
+ "finished": "2026-10-18T02:44:29.642995+00:00"
+}

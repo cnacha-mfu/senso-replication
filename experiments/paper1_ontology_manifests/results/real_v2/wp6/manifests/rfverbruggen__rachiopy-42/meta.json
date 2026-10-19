@@ -1,0 +1,283 @@
+{
+ "task_id": "rfverbruggen__rachiopy-42",
+ "repo": "rfverbruggen/rachiopy",
+ "stage": "initial_development",
+ "rounds": 1,
+ "rejects": {},
+ "flags": [
+  "kind3_dropped",
+  "length_violation_F_R",
+  "length_violation_F_I"
+ ],
+ "info": {
+  "slots": {
+   "test_root": "tests",
+   "P1": {
+    "replaced": null,
+    "name": "core",
+    "F_R": "rachiopy/core",
+    "F_I": "docs/core"
+   },
+   "P2": {
+    "replaced": null,
+    "F_R": "tests/data.py",
+    "F_I": "docs/engine.py"
+   },
+   "D": {
+    "replaced": null,
+    "F_R": "httpx",
+    "F_I": "boltons"
+   }
+  },
+  "why": {
+   "test_command": [
+    {
+     "root": "tests",
+     "T3": "SupportedClaim",
+     "T1": "SupportedClaim",
+     "collect_ok": true
+    }
+   ],
+   "kind1": {
+    "p1_idx": null,
+    "gold0": "rachiopy",
+    "unrelated": null,
+    "base_R": "rachiopy",
+    "base_I": "docs"
+   },
+   "kind2": {
+    "p2_idx": null,
+    "n_deleted_py": 1,
+    "found": {
+     "F_R": "tests/data.py",
+     "F_I": "docs/engine.py"
+    }
+   },
+   "kind3": {
+    "run": null,
+    "install": null,
+    "test_ok": true,
+    "install_ok": true
+   },
+   "kind4": {
+    "deps": [
+     [
+      "requests",
+      true
+     ]
+    ],
+    "d_idx": null,
+    "src_R": "requests",
+    "src_I": "coverage",
+    "n_decls": 7,
+    "n_dist": 17
+   }
+  },
+  "length": {
+   "T": 218,
+   "F_R": 265,
+   "F_I": 264
+  },
+  "fallbacks": {
+   "F_R": [],
+   "F_I": [
+    "kind2_never_existed_fallback"
+   ]
+  },
+  "modes": {
+   "F_R": {
+    "1": "add",
+    "2": "add",
+    "4": "add"
+   },
+   "F_I": {
+    "1": "add",
+    "2": "add",
+    "4": "add"
+   }
+  },
+  "length_diff": {
+   "F_R": 47,
+   "F_I": 46
+  },
+  "n_claims_T": 7,
+  "n_false": {
+   "F_R": 3,
+   "F_I": 3
+  },
+  "pointer_in_issue": true,
+  "gold_dirs": [
+   "rachiopy"
+  ],
+  "gold_files": [
+   ".hound.yml",
+   ".pylintrc",
+   "rachiopy/rachioobject.py",
+   "setup.py"
+  ]
+ },
+ "tokens": {
+  "F_R": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "rachiopy/core",
+     "core"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "tests/data.py",
+     "data.py"
+    ]
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "httpx"
+    ]
+   }
+  ],
+  "F_I": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "docs/core",
+     "core"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "docs/engine.py",
+     "engine.py"
+    ]
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "boltons"
+    ]
+   }
+  ]
+ },
+ "unresolved_pre_hermit": [],
+ "sha256": {
+  "T": "af1b2ebd36d26f0d84258d85b6093ec9d90e1b54234b90bdd344d2d4fda711a0",
+  "F_R": "23a29864b5b59c06e9ccbf526797b40b7b3e2f2afd0dc2ea8a51c5dccaaa1031",
+  "F_I": "a40c0d79f016586bc3cfbe48b2223cfa8e0201b616f9ee6012b01dd209650e6a"
+ },
+ "chars": {
+  "T": 218,
+  "F_R": 265,
+  "F_I": 264
+ },
+ "claims": {
+  "T": [
+   "T1|rachiopy",
+   "T1|tests",
+   "T1|rachiopy/device.py",
+   "T3|test_framework|pytest",
+   "T1|tests",
+   "T1|setup.py",
+   "T4|requests|"
+  ],
+  "F_R": [
+   "T1|rachiopy",
+   "T1|tests",
+   "T1|rachiopy/core",
+   "T1|rachiopy/device.py",
+   "T1|tests/data.py",
+   "T3|test_framework|pytest",
+   "T1|tests",
+   "T1|setup.py",
+   "T4|requests|",
+   "T4|httpx|"
+  ],
+  "F_I": [
+   "T1|rachiopy",
+   "T1|tests",
+   "T1|docs/core",
+   "T1|rachiopy/device.py",
+   "T1|docs/engine.py",
+   "T3|test_framework|pytest",
+   "T1|tests",
+   "T1|setup.py",
+   "T4|requests|",
+   "T4|boltons|"
+  ]
+ },
+ "python_spec": null,
+ "token_audit": [
+  {
+   "cond": "F_R",
+   "kind": 1,
+   "type": "path",
+   "name": "rachiopy/core",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 2,
+   "type": "path",
+   "name": "tests/data.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 4,
+   "type": "word",
+   "name": "httpx",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 1,
+   "type": "path",
+   "name": "docs/core",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 2,
+   "type": "path",
+   "name": "docs/engine.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 4,
+   "type": "word",
+   "name": "boltons",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  }
+ ],
+ "dist_imports_used": {
+  "requests": [
+   "requests"
+  ],
+  "httpx": null,
+  "boltons": null
+ }
+}

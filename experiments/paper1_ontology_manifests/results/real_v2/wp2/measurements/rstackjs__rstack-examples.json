@@ -1,0 +1,797 @@
+{
+ "repo": "rstackjs/rstack-examples",
+ "slug": "rstackjs__rstack-examples",
+ "S": "fc9c94807a5eba113b7a24052bc306a37267f735",
+ "manifest_path": "AGENTS.md",
+ "input_sha": "cf28c816e7061110d6bf9407de91511830e678d9d6cd2777cd782396d84d9909",
+ "n_claims": 25,
+ "n_tree_files": 1368,
+ "n_dep_manifests_parsed": 173,
+ "seconds": 0.2,
+ "claims": [
+  {
+   "key_str": "T1|biome.json",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "biome.json",
+   "quote": "- Formatting and linting: `Biome` is used (see `biome.json`).",
+   "line": 68,
+   "votes": 1,
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "attrs": {
+    "path": "biome.json",
+    "is_dir": false,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 1,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|pnpm-workspace.yaml",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "pnpm-workspace.yaml",
+   "quote": "- Workspace layout: `pnpm-workspace.yaml` includes `rspack/**`, `rsbuild/**`, `rslib/**`, `rspress/**`, `rsdoctor/**`, `rstest/**`.",
+   "line": 9,
+   "votes": 2,
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "pnpm-workspace.yaml",
+    "is_dir": false,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 1,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|rsbuild",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "rsbuild",
+   "quote": "- `rsbuild/`: Rsbuild examples (often package name prefix `rsbuild-*`).",
+   "line": 61,
+   "votes": 2,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "attrs": {
+    "path": "rsbuild",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 332,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|rsbuild/**",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "rsbuild/**",
+   "quote": "- Workspace layout: `pnpm-workspace.yaml` includes `rspack/**`, `rsbuild/**`, `rslib/**`, `rspress/**`, `rsdoctor/**`, `rstest/**`.",
+   "line": 9,
+   "votes": 2,
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "rsbuild/**",
+    "is_dir": false,
+    "glob": true,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 332,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|rsdoctor",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "rsdoctor",
+   "quote": "- `rsdoctor/`: Rsdoctor examples (often package name prefix `rsdoctor-*`).",
+   "line": 63,
+   "votes": 2,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "attrs": {
+    "path": "rsdoctor",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 21,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|rsdoctor/**",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "rsdoctor/**",
+   "quote": "- Workspace layout: `pnpm-workspace.yaml` includes `rspack/**`, `rsbuild/**`, `rslib/**`, `rspress/**`, `rsdoctor/**`, `rstest/**`.",
+   "line": 9,
+   "votes": 2,
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "rsdoctor/**",
+    "is_dir": false,
+    "glob": true,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 21,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|rslib",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "rslib",
+   "quote": "- `rslib/`: Rslib examples (often package name prefix `rslib-*`).",
+   "line": 64,
+   "votes": 2,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "attrs": {
+    "path": "rslib",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 227,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|rslib/**",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "rslib/**",
+   "quote": "- Workspace layout: `pnpm-workspace.yaml` includes `rspack/**`, `rsbuild/**`, `rslib/**`, `rspress/**`, `rsdoctor/**`, `rstest/**`.",
+   "line": 9,
+   "votes": 2,
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "rslib/**",
+    "is_dir": false,
+    "glob": true,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 227,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|rspack",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "rspack",
+   "quote": "- `rspack/`: Rspack examples (often package name prefix `example-*`).",
+   "line": 60,
+   "votes": 2,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "attrs": {
+    "path": "rspack",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 648,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|rspack/**",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "rspack/**",
+   "quote": "- Workspace layout: `pnpm-workspace.yaml` includes `rspack/**`, `rsbuild/**`, `rslib/**`, `rspress/**`, `rsdoctor/**`, `rstest/**`.",
+   "line": 9,
+   "votes": 2,
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "rspack/**",
+    "is_dir": false,
+    "glob": true,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 648,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|rspress",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "rspress",
+   "quote": "- `rspress/`: Rspress examples (often package name prefix `rspress-*`).",
+   "line": 62,
+   "votes": 2,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "attrs": {
+    "path": "rspress",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 19,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|rspress/**",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "rspress/**",
+   "quote": "- Workspace layout: `pnpm-workspace.yaml` includes `rspack/**`, `rsbuild/**`, `rslib/**`, `rspress/**`, `rsdoctor/**`, `rstest/**`.",
+   "line": 9,
+   "votes": 2,
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "rspress/**",
+    "is_dir": false,
+    "glob": true,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 19,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|rstest",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "rstest",
+   "quote": "- Workspace layout: `pnpm-workspace.yaml` includes `rspack/**`, `rsbuild/**`, `rslib/**`, `rspress/**`, `rsdoctor/**`, `rstest/**`.",
+   "line": 9,
+   "votes": 1,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it"
+   ],
+   "attrs": {
+    "path": "rstest",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 104,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|rstest/**",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "rstest/**",
+   "quote": "- Workspace layout: `pnpm-workspace.yaml` includes `rspack/**`, `rsbuild/**`, `rslib/**`, `rspress/**`, `rsdoctor/**`, `rstest/**`.",
+   "line": 9,
+   "votes": 2,
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "rstest/**",
+    "is_dir": false,
+    "glob": true,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 104,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T3|linter_formatter|biome",
+   "tcode": "T3",
+   "types": [
+    "ToolUsageClaim",
+    "NonPackageManagerToolClaim"
+   ],
+   "headline": true,
+   "subject": "biome",
+   "quote": "- Formatting and linting: `Biome` is used (see `biome.json`).",
+   "line": 68,
+   "votes": 2,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "attrs": {
+    "tool": "biome",
+    "category": "linter_formatter"
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "toolSignatureHitCount": 2,
+     "toolEcosystemAnchorCount": 173,
+     "competingToolSignatureCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T3|package_manager|pnpm",
+   "tcode": "T3",
+   "types": [
+    "ToolUsageClaim",
+    "PackageManagerClaim"
+   ],
+   "headline": true,
+   "subject": "pnpm",
+   "quote": "- Package manager: `pnpm` (see `package.json#packageManager`).",
+   "line": 8,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "tool": "pnpm",
+    "category": "package_manager"
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "toolSignatureHitCount": 3,
+     "toolEcosystemAnchorCount": 173,
+     "competingToolSignatureCount": 1
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T5|script|build",
+   "tcode": "T5",
+   "types": [
+    "CommandClaim"
+   ],
+   "headline": true,
+   "subject": "build",
+   "quote": "- Build everything: `pnpm run build`",
+   "line": 43,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "runner": "pnpm",
+    "kind": "script",
+    "target": "build"
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "scriptDefinedRootCount": 1,
+     "scriptDefinedAnyCount": 165,
+     "scriptHostFileCount": 173,
+     "dynamicTargetRuleCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T5|script|build:rsbuild",
+   "tcode": "T5",
+   "types": [
+    "CommandClaim"
+   ],
+   "headline": true,
+   "subject": "build:rsbuild",
+   "quote": "- Build a group:\n  - Rspack examples: `pnpm run build:rspack`\n  - Rsbuild examples: `pnpm run build:rsbuild`\n  - Rspress examples: `pnpm run build:rspress`\n  - Rsdoctor examples: `pnpm run build:rsdoc",
+   "line": 45,
+   "votes": 2,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "attrs": {
+    "runner": "pnpm",
+    "kind": "script",
+    "target": "build:rsbuild"
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "scriptDefinedRootCount": 1,
+     "scriptDefinedAnyCount": 1,
+     "scriptHostFileCount": 173,
+     "dynamicTargetRuleCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T5|script|build:rsdoctor",
+   "tcode": "T5",
+   "types": [
+    "CommandClaim"
+   ],
+   "headline": true,
+   "subject": "build:rsdoctor",
+   "quote": "- Rsdoctor examples: `pnpm run build:rsdoctor`",
+   "line": 48,
+   "votes": 1,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it"
+   ],
+   "attrs": {
+    "runner": "pnpm",
+    "kind": "script",
+    "target": "build:rsdoctor"
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "scriptDefinedRootCount": 1,
+     "scriptDefinedAnyCount": 1,
+     "scriptHostFileCount": 173,
+     "dynamicTargetRuleCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T5|script|build:rslib",
+   "tcode": "T5",
+   "types": [
+    "CommandClaim"
+   ],
+   "headline": true,
+   "subject": "build:rslib",
+   "quote": "- Rslib examples: `pnpm run build:rslib`",
+   "line": 49,
+   "votes": 1,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it"
+   ],
+   "attrs": {
+    "runner": "pnpm",
+    "kind": "script",
+    "target": "build:rslib"
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "scriptDefinedRootCount": 1,
+     "scriptDefinedAnyCount": 1,
+     "scriptHostFileCount": 173,
+     "dynamicTargetRuleCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T5|script|build:rspack",
+   "tcode": "T5",
+   "types": [
+    "CommandClaim"
+   ],
+   "headline": true,
+   "subject": "build:rspack",
+   "quote": "- Build a group:\n  - Rspack examples: `pnpm run build:rspack`\n  - Rsbuild examples: `pnpm run build:rsbuild`\n  - Rspress examples: `pnpm run build:rspress`\n  - Rsdoctor examples: `pnpm run build:rsdoc",
+   "line": 44,
+   "votes": 2,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "attrs": {
+    "runner": "pnpm",
+    "kind": "script",
+    "target": "build:rspack"
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "scriptDefinedRootCount": 1,
+     "scriptDefinedAnyCount": 1,
+     "scriptHostFileCount": 173,
+     "dynamicTargetRuleCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T5|script|build:rspress",
+   "tcode": "T5",
+   "types": [
+    "CommandClaim"
+   ],
+   "headline": true,
+   "subject": "build:rspress",
+   "quote": "- Build a group:\n  - Rspack examples: `pnpm run build:rspack`\n  - Rsbuild examples: `pnpm run build:rsbuild`\n  - Rspress examples: `pnpm run build:rspress`\n  - Rsdoctor examples: `pnpm run build:rsdoc",
+   "line": 46,
+   "votes": 2,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "attrs": {
+    "runner": "pnpm",
+    "kind": "script",
+    "target": "build:rspress"
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "scriptDefinedRootCount": 1,
+     "scriptDefinedAnyCount": 1,
+     "scriptHostFileCount": 173,
+     "dynamicTargetRuleCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T5|script|dev",
+   "tcode": "T5",
+   "types": [
+    "CommandClaim"
+   ],
+   "headline": true,
+   "subject": "dev",
+   "quote": "- `pnpm run dev` / `pnpm run build` / `pnpm run test` (depends on the example)",
+   "line": 55,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "runner": "pnpm",
+    "kind": "script",
+    "target": "dev"
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "scriptDefinedRootCount": 0,
+     "scriptDefinedAnyCount": 151,
+     "scriptHostFileCount": 173,
+     "dynamicTargetRuleCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T5|script|test",
+   "tcode": "T5",
+   "types": [
+    "CommandClaim"
+   ],
+   "headline": true,
+   "subject": "test",
+   "quote": "- `pnpm run dev` / `pnpm run build` / `pnpm run test` (depends on the example)",
+   "line": 55,
+   "votes": 2,
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "runner": "pnpm",
+    "kind": "script",
+    "target": "test"
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "scriptDefinedRootCount": 0,
+     "scriptDefinedAnyCount": 17,
+     "scriptHostFileCount": 173,
+     "dynamicTargetRuleCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T5|script|test:rspack",
+   "tcode": "T5",
+   "types": [
+    "CommandClaim"
+   ],
+   "headline": true,
+   "subject": "test:rspack",
+   "quote": "- Test Rspack examples: `pnpm run test:rspack`",
+   "line": 50,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "runner": "pnpm",
+    "kind": "script",
+    "target": "test:rspack"
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "scriptDefinedRootCount": 1,
+     "scriptDefinedAnyCount": 1,
+     "scriptHostFileCount": 173,
+     "dynamicTargetRuleCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  }
+ ]
+}

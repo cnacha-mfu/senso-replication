@@ -1,0 +1,343 @@
+{
+ "task_id": "rigetti__pyquil-1564",
+ "repo": "rigetti/pyquil",
+ "stage": "evolution",
+ "rounds": 1,
+ "rejects": {},
+ "flags": [
+  "kind3_dropped",
+  "length_violation_F_R",
+  "length_violation_F_I"
+ ],
+ "info": {
+  "slots": {
+   "test_root": "test",
+   "P1": {
+    "replaced": "pyquil/quantum_processor",
+    "name": "core",
+    "F_R": "pyquil/core",
+    "F_I": "pyquil/api/core"
+   },
+   "P2": {
+    "replaced": "pyquil/quantum_processor/transformers/qcs_isa_to_compiler_isa.py",
+    "F_R": "pyquil/external/contextvars.py",
+    "F_I": "setup.py"
+   },
+   "D": {
+    "replaced": "importlib-metadata",
+    "F_R": "cupy",
+    "F_I": "boltons"
+   }
+  },
+  "why": {
+   "test_command": [
+    {
+     "root": "test",
+     "T3": "SupportedClaim",
+     "T1": "SupportedClaim",
+     "collect_ok": true
+    }
+   ],
+   "kind1": {
+    "p1_idx": 6,
+    "gold0": "pyquil",
+    "unrelated": "pyquil/api",
+    "base_R": "pyquil",
+    "base_I": "pyquil/api"
+   },
+   "kind2": {
+    "p2_idx": 2,
+    "n_deleted_py": 148,
+    "found": {
+     "F_R": "pyquil/external/contextvars.py",
+     "F_I": "setup.py"
+    }
+   },
+   "kind3": {
+    "run": null,
+    "install": null,
+    "test_ok": true,
+    "install_ok": true
+   },
+   "kind4": {
+    "deps": [
+     [
+      "numpy",
+      true
+     ],
+     [
+      "qcs-api-client",
+      false
+     ],
+     [
+      "rpcq",
+      false
+     ],
+     [
+      "networkx",
+      false
+     ],
+     [
+      "importlib-metadata",
+      false
+     ]
+    ],
+    "d_idx": 4,
+    "src_R": "numpy",
+    "src_I": "importlib-metadata",
+    "n_decls": 27,
+    "n_dist": 103
+   }
+  },
+  "length": {
+   "T": 568,
+   "F_R": 497,
+   "F_I": 482
+  },
+  "fallbacks": {
+   "F_R": [],
+   "F_I": []
+  },
+  "modes": {
+   "F_R": {
+    "1": "replace",
+    "2": "replace",
+    "4": "replace"
+   },
+   "F_I": {
+    "1": "replace",
+    "2": "replace",
+    "4": "replace"
+   }
+  },
+  "length_diff": {
+   "F_R": -71,
+   "F_I": -86
+  },
+  "n_claims_T": 20,
+  "n_false": {
+   "F_R": 3,
+   "F_I": 3
+  },
+  "pointer_in_issue": true,
+  "gold_dirs": [
+   "pyquil",
+   "pyquil/_parser"
+  ],
+  "gold_files": [
+   "pyquil/_parser/grammar.lark",
+   "pyquil/_parser/parser.py",
+   "pyquil/quilbase.py"
+  ]
+ },
+ "tokens": {
+  "F_R": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "pyquil/core",
+     "core"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "pyquil/external/contextvars.py",
+     "contextvars.py"
+    ]
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "cupy"
+    ]
+   }
+  ],
+  "F_I": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "pyquil/api/core",
+     "core"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "setup.py",
+     "setup.py"
+    ]
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "boltons"
+    ]
+   }
+  ]
+ },
+ "unresolved_pre_hermit": [],
+ "sha256": {
+  "T": "d573a777d768e6557b21ee9f1abcebf22137420af5ad70a61622907e5f2e9cef",
+  "F_R": "ac7e865dd8b16e893a9e1e77003f7b7ef81472d84dd806f5ef6e9e0d2300eae1",
+  "F_I": "a513b50b39043db8b87bf8d243173d6599095da70d6ddd08f80a70805a3c8d82"
+ },
+ "chars": {
+  "T": 568,
+  "F_R": 497,
+  "F_I": 482
+ },
+ "claims": {
+  "T": [
+   "T1|pyquil",
+   "T1|pyquil/_parser",
+   "T1|pyquil/api",
+   "T1|pyquil/compatibility",
+   "T1|pyquil/experiment",
+   "T1|pyquil/latex",
+   "T1|pyquil/quantum_processor",
+   "T1|test",
+   "T1|pyquil/quil.py",
+   "T1|pyquil/api/_quantum_computer.py",
+   "T1|pyquil/quantum_processor/transformers/qcs_isa_to_compiler_isa.py",
+   "T3|test_framework|pytest",
+   "T1|test",
+   "T1|pyproject.toml",
+   "T4|numpy|",
+   "T4|qcs-api-client|",
+   "T4|rpcq|",
+   "T4|networkx|",
+   "T4|importlib-metadata|",
+   "T6|python|3007000000@2"
+  ],
+  "F_R": [
+   "T1|pyquil",
+   "T1|pyquil/_parser",
+   "T1|pyquil/api",
+   "T1|pyquil/compatibility",
+   "T1|pyquil/experiment",
+   "T1|pyquil/latex",
+   "T1|pyquil/core",
+   "T1|test",
+   "T1|pyquil/quil.py",
+   "T1|pyquil/api/_quantum_computer.py",
+   "T1|pyquil/external/contextvars.py",
+   "T3|test_framework|pytest",
+   "T1|test",
+   "T1|pyproject.toml",
+   "T4|numpy|",
+   "T4|qcs-api-client|",
+   "T4|rpcq|",
+   "T4|networkx|",
+   "T4|cupy|",
+   "T6|python|3007000000@2"
+  ],
+  "F_I": [
+   "T1|pyquil",
+   "T1|pyquil/_parser",
+   "T1|pyquil/api",
+   "T1|pyquil/compatibility",
+   "T1|pyquil/experiment",
+   "T1|pyquil/latex",
+   "T1|pyquil/api/core",
+   "T1|test",
+   "T1|pyquil/quil.py",
+   "T1|pyquil/api/_quantum_computer.py",
+   "T1|setup.py",
+   "T3|test_framework|pytest",
+   "T1|test",
+   "T1|pyproject.toml",
+   "T4|numpy|",
+   "T4|qcs-api-client|",
+   "T4|rpcq|",
+   "T4|networkx|",
+   "T4|boltons|",
+   "T6|python|3007000000@2"
+  ]
+ },
+ "python_spec": "^3.7",
+ "token_audit": [
+  {
+   "cond": "F_R",
+   "kind": 1,
+   "type": "path",
+   "name": "pyquil/core",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 2,
+   "type": "path",
+   "name": "pyquil/external/contextvars.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 4,
+   "type": "word",
+   "name": "cupy",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 1,
+   "type": "path",
+   "name": "pyquil/api/core",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 2,
+   "type": "path",
+   "name": "setup.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 4,
+   "type": "word",
+   "name": "boltons",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  }
+ ],
+ "dist_imports_used": {
+  "numpy": [
+   "numpy",
+   "numpy.libs"
+  ],
+  "qcs-api-client": [
+   "qcs_api_client"
+  ],
+  "rpcq": [
+   "rpcq"
+  ],
+  "networkx": [
+   "networkx"
+  ],
+  "importlib-metadata": [
+   "importlib_metadata"
+  ],
+  "cupy": null,
+  "boltons": null
+ }
+}

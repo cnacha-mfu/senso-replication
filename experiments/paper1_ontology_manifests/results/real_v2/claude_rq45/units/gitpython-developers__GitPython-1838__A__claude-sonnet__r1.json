@@ -1,0 +1,107 @@
+{
+ "unit_id": "gitpython-developers__GitPython-1838__A__claude-sonnet__r1",
+ "task_id": "gitpython-developers__GitPython-1838",
+ "repo": "gitpython-developers/GitPython",
+ "stage": "servicing",
+ "condition": "A",
+ "model": "claude-code/sonnet",
+ "run": 1,
+ "condition_meta": {},
+ "started": "2026-10-18T05:55:51.077811+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 5,
+ "tool_calls": 4,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 8641,
+  "cache_read_input_tokens": 65892,
+  "output_tokens": 1580,
+  "output_tokens_details": {
+   "thinking_tokens": 260
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 8641,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 8,
+   "outputTokens": 1580,
+   "cacheReadInputTokens": 65892,
+   "cacheCreationInputTokens": 8641,
+   "webSearchRequests": 0,
+   "costUSD": 0.056969200000000005,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 260,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.056969200000000005,
+ "result_text": "`Git.refresh` (and so `git.refresh`) now invalidates the cached `version_info` on every `Git` instance. I didn't add or run a test of the stale case.\n\nI only ran a quick check: it reads `version_info`, calls `git.refresh()`, then reads it again. That check can't show the fix working, because both reads return `(2, 47, 3)`. The issue's two-git scenario needs a second git binary on the machine, and I didn't try it.\n\n`Git.refresh` in `git/cmd.py` now sets a new class-level marker each time it runs. Each instance records the marker value when it computes `version_info`. The property drops the cached value and recomputes it if the marker has changed. I updated the docstring to say the cache is per-instance but cleared by a refresh. The new per-instance attribute is excluded from pickling, like `_version_info`.\n\nThe marker also changes when `refresh` is called with a bad path and then reverts to the old executable. Instances then re-read their version once more, which gives the same answer.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792309800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0.13,
+    "resetsAt": 1792309800
+   },
+   "seven_day": {
+    "utilization": 0.13,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 24.7,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 5,
+   "hit_step_limit": 0,
+   "changed_lines": 17,
+   "gold_changed_lines": 62,
+   "Y1": 2,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": -1.8667334691365358
+  },
+  "f2p_pass": 7,
+  "f2p_total": 10,
+  "p2p_pass": 92,
+  "p2p_total": 94,
+  "f2p_all_pass": false,
+  "p2p_all_pass": false,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 12.2
+ },
+ "status": "done",
+ "finished": "2026-10-18T05:56:29.682224+00:00"
+}

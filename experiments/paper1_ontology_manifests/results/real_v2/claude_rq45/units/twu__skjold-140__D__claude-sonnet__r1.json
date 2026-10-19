@@ -1,0 +1,111 @@
+{
+ "unit_id": "twu__skjold-140__D__claude-sonnet__r1",
+ "task_id": "twu__skjold-140",
+ "repo": "twu/skjold",
+ "stage": "initial_development",
+ "condition": "D",
+ "model": "claude-code/sonnet",
+ "run": 1,
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 3682,
+  "sha256": "61b6bb9efc35d48fac6f5fa9c9e082a5d92ce671dc380750b12a3c1b0e22fc42"
+ },
+ "started": "2026-10-18T09:00:11.373470+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 4,
+ "tool_calls": 3,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 2180,
+  "cache_read_input_tokens": 73414,
+  "output_tokens": 568,
+  "output_tokens_details": {
+   "thinking_tokens": 0
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 2180,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 8,
+   "outputTokens": 568,
+   "cacheReadInputTokens": 73414,
+   "cacheCreationInputTokens": 2180,
+   "webSearchRequests": 0,
+   "costUSD": 0.0217574,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.0217574,
+ "result_text": "The PyUp advisory link now uses the advisory's `more_info_path` field, so your example becomes `https://pyup.io/vulnerabilities/CVE-2021-41581/51159/`. I haven't run the tests or checked it against real pyup data.\n\nThe change is in the `url` property in `src/skjold/sources/pyup.py`. If an advisory has no `more_info_path`, it falls back to the old `https://pyup.io/<id>` form.\n\nI didn't add or change any tests, and nothing is committed.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792327800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0.06,
+    "resetsAt": 1792327800
+   },
+   "seven_day": {
+    "utilization": 0.14,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 18.2,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 4,
+   "hit_step_limit": 0,
+   "changed_lines": 3,
+   "gold_changed_lines": 5,
+   "Y1": 1,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": -0.7369655941662062
+  },
+  "f2p_pass": 1,
+  "f2p_total": 2,
+  "p2p_pass": 24,
+  "p2p_total": 24,
+  "f2p_all_pass": false,
+  "p2p_all_pass": true,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 4.6
+ },
+ "status": "done",
+ "finished": "2026-10-18T09:00:35.173971+00:00"
+}

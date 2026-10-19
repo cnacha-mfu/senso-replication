@@ -1,0 +1,612 @@
+{
+ "task_id": "EltonChou__EorzeaEnv-15",
+ "claims": {
+  "T1|EorzeaEnv": {
+   "claim": {
+    "key_str": "T1|EorzeaEnv",
+    "tcode": "T1",
+    "attrs": {
+     "path": "EorzeaEnv",
+     "is_dir": true,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "EorzeaEnv/",
+    "role": "true",
+    "slot": "layout",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "exists",
+     "path": "EorzeaEnv"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "PathFoundExact"
+   },
+   "probe": {
+    "ok": true,
+    "type": "exists"
+   },
+   "measure_error": null
+  },
+  "T1|EorzeaEnv/Data": {
+   "claim": {
+    "key_str": "T1|EorzeaEnv/Data",
+    "tcode": "T1",
+    "attrs": {
+     "path": "EorzeaEnv/Data",
+     "is_dir": true,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "EorzeaEnv/Data/",
+    "role": "true",
+    "slot": "layout",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "exists",
+     "path": "EorzeaEnv/Data"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "PathFoundExact"
+   },
+   "probe": {
+    "ok": true,
+    "type": "exists"
+   },
+   "measure_error": null
+  },
+  "T1|test": {
+   "claim": {
+    "key_str": "T1|test",
+    "tcode": "T1",
+    "attrs": {
+     "path": "test",
+     "is_dir": true,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "test/",
+    "role": "true",
+    "slot": "layout",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "exists",
+     "path": "test"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "PathFoundExact"
+   },
+   "probe": {
+    "ok": true,
+    "type": "exists"
+   },
+   "measure_error": null
+  },
+  "T1|EorzeaEnv/Data/PlaceName.py": {
+   "claim": {
+    "key_str": "T1|EorzeaEnv/Data/PlaceName.py",
+    "tcode": "T1",
+    "attrs": {
+     "path": "EorzeaEnv/Data/PlaceName.py",
+     "is_dir": false,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "EorzeaEnv/Data/PlaceName.py",
+    "role": "true",
+    "slot": "key_file",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "exists",
+     "path": "EorzeaEnv/Data/PlaceName.py"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "PathFoundExact"
+   },
+   "probe": {
+    "ok": true,
+    "type": "exists"
+   },
+   "measure_error": null
+  },
+  "T1|EorzeaEnv/Data/Weather.py": {
+   "claim": {
+    "key_str": "T1|EorzeaEnv/Data/Weather.py",
+    "tcode": "T1",
+    "attrs": {
+     "path": "EorzeaEnv/Data/Weather.py",
+     "is_dir": false,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "EorzeaEnv/Data/Weather.py",
+    "role": "true",
+    "slot": "key_file",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "exists",
+     "path": "EorzeaEnv/Data/Weather.py"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "PathFoundExact"
+   },
+   "probe": {
+    "ok": true,
+    "type": "exists"
+   },
+   "measure_error": null
+  },
+  "T3|test_framework|pytest": {
+   "claim": {
+    "key_str": "T3|test_framework|pytest",
+    "tcode": "T3",
+    "attrs": {
+     "tool": "pytest",
+     "category": "test_framework"
+    },
+    "quote": "python -m pytest test",
+    "role": "true",
+    "slot": "test_cmd",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "pytest",
+     "root": "test"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "ToolSignatureFound"
+   },
+   "probe": {
+    "ok": true,
+    "type": "pytest"
+   },
+   "measure_error": null
+  },
+  "T1|pyproject.toml": {
+   "claim": {
+    "key_str": "T1|pyproject.toml",
+    "tcode": "T1",
+    "attrs": {
+     "path": "pyproject.toml",
+     "is_dir": false,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "pyproject.toml",
+    "role": "true",
+    "slot": "install_cmd",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "exists",
+     "path": "pyproject.toml"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "PathFoundExact"
+   },
+   "probe": {
+    "ok": true,
+    "type": "exists"
+   },
+   "measure_error": null
+  },
+  "T4|numpy|": {
+   "claim": {
+    "key_str": "T4|numpy|",
+    "tcode": "T4",
+    "attrs": {
+     "name": "numpy",
+     "major": null,
+     "ecosystem_hint": "pypi"
+    },
+    "quote": "`numpy`",
+    "role": "true",
+    "slot": "dep",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "import_ok",
+     "modules": [
+      "numpy"
+     ]
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "DependencyConfirmed"
+   },
+   "probe": {
+    "ok": true,
+    "type": "import_ok"
+   },
+   "measure_error": null
+  },
+  "T4|rapidfuzz|": {
+   "claim": {
+    "key_str": "T4|rapidfuzz|",
+    "tcode": "T4",
+    "attrs": {
+     "name": "rapidfuzz",
+     "major": null,
+     "ecosystem_hint": "pypi"
+    },
+    "quote": "`rapidfuzz^2.0.11`",
+    "role": "true",
+    "slot": "dep",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "import_ok",
+     "modules": [
+      "rapidfuzz"
+     ]
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "DependencyConfirmed"
+   },
+   "probe": {
+    "ok": true,
+    "type": "import_ok"
+   },
+   "measure_error": null
+  },
+  "T6|python|3008000000@2": {
+   "claim": {
+    "key_str": "T6|python|3008000000@2",
+    "tcode": "T6",
+    "attrs": {
+     "subject_type": "python",
+     "version": "3.8",
+     "code": 3008000000,
+     "precision": 2,
+     "qualifier": "min"
+    },
+    "quote": "Python: >=3.8",
+    "role": "true",
+    "slot": "python",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": null,
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "VersionConfirmed"
+   },
+   "probe": {
+    "ok": true,
+    "type": "none"
+   },
+   "measure_error": null
+  },
+  "T1|EorzeaEnv/core": {
+   "claim": {
+    "key_str": "T1|EorzeaEnv/core",
+    "tcode": "T1",
+    "attrs": {
+     "path": "EorzeaEnv/core",
+     "is_dir": true,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "EorzeaEnv/core/",
+    "role": "false",
+    "slot": "P1",
+    "kind": 1,
+    "expect_verdict": "ContradictedClaim",
+    "expect_leaves": [
+     "PathNeverExisted"
+    ],
+    "probe": {
+     "type": "absent",
+     "path": "EorzeaEnv/core",
+     "history": "none"
+    },
+    "mode": "replace"
+   },
+   "recheck": {
+    "verdict": "ContradictedClaim",
+    "leaf": "PathNeverExisted"
+   },
+   "probe": {
+    "ok": true,
+    "type": "absent",
+    "log_count": 0
+   },
+   "measure_error": null
+  },
+  "T1|EorzeaEnv/Data/FuzzyTerritoryWeather.py": {
+   "claim": {
+    "key_str": "T1|EorzeaEnv/Data/FuzzyTerritoryWeather.py",
+    "tcode": "T1",
+    "attrs": {
+     "path": "EorzeaEnv/Data/FuzzyTerritoryWeather.py",
+     "is_dir": false,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "EorzeaEnv/Data/FuzzyTerritoryWeather.py",
+    "role": "false",
+    "slot": "P2",
+    "kind": 2,
+    "expect_verdict": "ContradictedClaim",
+    "expect_leaves": [
+     "PathRemoved"
+    ],
+    "probe": {
+     "type": "absent",
+     "path": "EorzeaEnv/Data/FuzzyTerritoryWeather.py",
+     "history": "some"
+    },
+    "mode": "add"
+   },
+   "recheck": {
+    "verdict": "ContradictedClaim",
+    "leaf": "PathRemoved"
+   },
+   "probe": {
+    "ok": true,
+    "type": "absent",
+    "log_count": 3
+   },
+   "measure_error": null
+  },
+  "T5|make|tests": {
+   "claim": {
+    "key_str": "T5|make|tests",
+    "tcode": "T5",
+    "attrs": {
+     "runner": "make",
+     "kind": "make",
+     "target": "tests"
+    },
+    "quote": "make tests",
+    "role": "false",
+    "slot": "C_R",
+    "kind": 3,
+    "expect_verdict": "ContradictedClaim",
+    "expect_leaves": [
+     "ScriptUndefined",
+     "ScriptHostMissing"
+    ],
+    "probe": {
+     "type": "make_fail",
+     "target": "tests"
+    },
+    "mode": "replace"
+   },
+   "recheck": {
+    "verdict": "ContradictedClaim",
+    "leaf": "ScriptUndefined"
+   },
+   "probe": {
+    "ok": true,
+    "type": "make_fail",
+    "result": {
+     "rc": 2,
+     "tail": "make: *** No rule to make target 'tests'.  Stop.\n"
+    }
+   },
+   "measure_error": null
+  },
+  "T4|boltons|": {
+   "claim": {
+    "key_str": "T4|boltons|",
+    "tcode": "T4",
+    "attrs": {
+     "name": "boltons",
+     "major": null,
+     "ecosystem_hint": "pypi"
+    },
+    "quote": "`boltons`",
+    "role": "false",
+    "slot": "D",
+    "kind": 4,
+    "expect_verdict": "ContradictedClaim",
+    "expect_leaves": [
+     "DependencyUndeclared"
+    ],
+    "probe": {
+     "type": "import_fail",
+     "modules": [
+      "boltons"
+     ]
+    },
+    "mode": "replace"
+   },
+   "recheck": {
+    "verdict": "ContradictedClaim",
+    "leaf": "DependencyUndeclared"
+   },
+   "probe": {
+    "ok": true,
+    "type": "import_fail"
+   },
+   "measure_error": null
+  },
+  "T1|EorzeaEnv/Data/core": {
+   "claim": {
+    "key_str": "T1|EorzeaEnv/Data/core",
+    "tcode": "T1",
+    "attrs": {
+     "path": "EorzeaEnv/Data/core",
+     "is_dir": true,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "EorzeaEnv/Data/core/",
+    "role": "false",
+    "slot": "P1",
+    "kind": 1,
+    "expect_verdict": "ContradictedClaim",
+    "expect_leaves": [
+     "PathNeverExisted"
+    ],
+    "probe": {
+     "type": "absent",
+     "path": "EorzeaEnv/Data/core",
+     "history": "none"
+    },
+    "mode": "replace"
+   },
+   "recheck": {
+    "verdict": "ContradictedClaim",
+    "leaf": "PathNeverExisted"
+   },
+   "probe": {
+    "ok": true,
+    "type": "absent",
+    "log_count": 0
+   },
+   "measure_error": null
+  },
+  "T1|setup.py": {
+   "claim": {
+    "key_str": "T1|setup.py",
+    "tcode": "T1",
+    "attrs": {
+     "path": "setup.py",
+     "is_dir": false,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "setup.py",
+    "role": "false",
+    "slot": "P2",
+    "kind": 2,
+    "expect_verdict": "ContradictedClaim",
+    "expect_leaves": [
+     "PathRemoved"
+    ],
+    "probe": {
+     "type": "absent",
+     "path": "setup.py",
+     "history": "some"
+    },
+    "mode": "add"
+   },
+   "recheck": {
+    "verdict": "ContradictedClaim",
+    "leaf": "PathRemoved"
+   },
+   "probe": {
+    "ok": true,
+    "type": "absent",
+    "log_count": 26
+   },
+   "measure_error": null
+  },
+  "T5|make|dev": {
+   "claim": {
+    "key_str": "T5|make|dev",
+    "tcode": "T5",
+    "attrs": {
+     "runner": "make",
+     "kind": "make",
+     "target": "dev"
+    },
+    "quote": "make dev",
+    "role": "false",
+    "slot": "C_I",
+    "kind": 3,
+    "expect_verdict": "ContradictedClaim",
+    "expect_leaves": [
+     "ScriptUndefined",
+     "ScriptHostMissing"
+    ],
+    "probe": {
+     "type": "make_fail",
+     "target": "dev"
+    },
+    "mode": "replace"
+   },
+   "recheck": {
+    "verdict": "ContradictedClaim",
+    "leaf": "ScriptUndefined"
+   },
+   "probe": {
+    "ok": true,
+    "type": "make_fail",
+    "result": {
+     "rc": 2,
+     "tail": "make: *** No rule to make target 'dev'.  Stop.\n"
+    }
+   },
+   "measure_error": null
+  }
+ },
+ "probe_log": {
+  "pytest:test": {
+   "rc": 0,
+   "tail": "test/test_data.py: 1\ntest/test_forecast.py: 8\ntest/test_place_name.py: 10\ntest/test_rainbow.py: 2\ntest/test_time.py: 5\n\n"
+  },
+  "import:numpy": {
+   "rc": 0,
+   "tail": ""
+  },
+  "import:rapidfuzz": {
+   "rc": 0,
+   "tail": ""
+  },
+  "make:test": {
+   "rc": 0,
+   "tail": ""
+  },
+  "make:tests": {
+   "rc": 2,
+   "tail": "make: *** No rule to make target 'tests'.  Stop.\n"
+  },
+  "make:install": {
+   "rc": 0,
+   "tail": "poetry install\n"
+  },
+  "make:dev": {
+   "rc": 2,
+   "tail": "make: *** No rule to make target 'dev'.  Stop.\n"
+  },
+  "import:boltons": {
+   "rc": 1,
+   "tail": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\nModuleNotFoundError: No module named 'boltons'\n"
+  }
+ }
+}

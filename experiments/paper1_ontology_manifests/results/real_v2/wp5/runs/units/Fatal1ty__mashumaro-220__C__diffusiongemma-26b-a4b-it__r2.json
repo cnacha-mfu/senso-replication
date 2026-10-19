@@ -1,0 +1,75 @@
+{
+ "unit_id": "Fatal1ty__mashumaro-220__C__diffusiongemma-26b-a4b-it__r2",
+ "task_id": "Fatal1ty__mashumaro-220",
+ "repo": "Fatal1ty/mashumaro",
+ "stage": "phase_out",
+ "condition": "C",
+ "model": "google/diffusiongemma-26b-a4b-it",
+ "run": 2,
+ "order": 230,
+ "env_build_s": 24.7,
+ "real_agent_manifest_at_base": [],
+ "started": "2026-10-07T05:10:52.851169+00:00",
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 4134,
+  "sha256": "b1f09cf0f74c32c0fc2baaa471dbbf58a669c05c291e6df97a12d8b96468aa23"
+ },
+ "condition_available": true,
+ "retries": 0,
+ "exit_status": "LimitsExceeded",
+ "error": "",
+ "steps": 40,
+ "wall_s": 470.6,
+ "prompt_tokens": 729176,
+ "completion_tokens": 6457,
+ "format_errors": 5,
+ "length_cutoffs": 0,
+ "api_errors": {
+  "timeout": 1
+ },
+ "n_queries": 41,
+ "keys_used": {
+  "NVIDIA_API_KEY": 11,
+  "NVIDIA_API_KEY_2": 10,
+  "NVIDIA_API_KEY_4": 10,
+  "NVIDIA_API_KEY_5": 10
+ },
+ "temperature": 0.7,
+ "top_p": 0.95,
+ "model_id_returned": "google/diffusiongemma-26b-a4b-it",
+ "mini_version": "2.4.6",
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 40,
+   "hit_step_limit": 1,
+   "changed_lines": 25,
+   "gold_changed_lines": 23,
+   "Y1": 2,
+   "Y2": 2,
+   "Y3": null,
+   "Y3_gold": 0.0,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": 0.12029423371771175
+  },
+  "f2p_pass": 0,
+  "f2p_total": 1,
+  "p2p_pass": 4,
+  "p2p_total": 4,
+  "f2p_all_pass": false,
+  "p2p_all_pass": true,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 1.5
+ },
+ "status": "done",
+ "finished": "2026-10-07T05:18:45.049316+00:00"
+}

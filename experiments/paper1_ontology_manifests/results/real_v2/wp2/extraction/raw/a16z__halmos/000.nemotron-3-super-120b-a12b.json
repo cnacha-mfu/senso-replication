@@ -1,0 +1,21 @@
+{
+ "repo": "a16z/halmos",
+ "chunk": 0,
+ "n_chunks": 1,
+ "model": "nvidia/nemotron-3-super-120b-a12b",
+ "prompt_sha256": "d0e02ff613417050168d859f2af6230c3712c6758bb5d9c40d60ff55e5ae87ca",
+ "user_sha256": "308388f78f3379af335988eb440f9aa6d29d2c228f9914cd1839805fae63c6f9",
+ "text": "{\n  \"claims\": [\n    {\n      \"type\": \"path_exists\",\n      \"quote\": \"ruff check src/\",\n      \"line\": 11,\n      \"subject\": \"src/\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"path_exists\",\n      \"quote\": \"ruff format src/\",\n      \"line\": 14,\n      \"subject\": \"src/\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"tool_used\",\n      \"quote\": \"ruff check src/\",\n      \"line\": 11,\n      \"subject\": \"ruff\",\n      \"tool_category\": \"linter_formatter\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"tool_used\",\n      \"quote\": \"ruff format src/\",\n      \"line\": 14,\n      \"subject\": \"ruff\",\n      \"tool_category\": \"linter_formatter\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"tool_used\",\n      \"quote\": \"uv run pytest -vv -k \\\"not long and not ffi and not regression\\\"\",\n      \"line\": 17,\n      \"subject\": \"uv\",\n      \"tool_category\": \"package_manager\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"tool_used\",\n      \"quote\": \"uv run pytest -vv -k \\\"not long and not ffi and not regression\\\"\",\n      \"line\": 17,\n      \"subject\": \"pytest\",\n      \"tool_category\": \"test_framework\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"tool_used\",\n      \"quote\": \"uv run pytest -vv -k \\\"not long and not ffi\\\"\",\n      \"line\": 20,\n      \"subject\": \"uv\",\n      \"tool_category\": \"package_manager\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"tool_used\",\n      \"quote\": \"uv run pytest -vv -k \\\"not long and not ffi\\\"\",\n      \"line\": 20,\n      \"subject\": \"pytest\",\n      \"tool_category\": \"test_framework\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"version\",\n      \"quote\": \"Use modern language features when they improve clarity or safety, but ensure every file runs on 3.11, the oldest supported target.\",\n      \"line\": 27,\n      \"subject\": \"python\",\n      \"version\": \"3.11\",\n      \"qualifier\": \"min\",\n      \"mode\": \"asserts_existing\"\n    }\n  ]\n}",
+ "parse_ok": true,
+ "parse_error": null,
+ "parse_retries": 0,
+ "latency_s": 7.389160333957989,
+ "usage": {
+  "prompt": 3475,
+  "completion": 584
+ },
+ "n_api_calls": 1,
+ "finish_reason": "stop",
+ "error": null,
+ "discarded_attempt_texts": []
+}

@@ -1,0 +1,107 @@
+{
+ "unit_id": "XKNX__xknx-1551__A__claude-sonnet__r1",
+ "task_id": "XKNX__xknx-1551",
+ "repo": "XKNX/xknx",
+ "stage": "evolution",
+ "condition": "A",
+ "model": "claude-code/sonnet",
+ "run": 1,
+ "condition_meta": {},
+ "started": "2026-10-18T04:42:19.656657+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 9,
+ "tool_calls": 8,
+ "usage": {
+  "input_tokens": 18,
+  "cache_creation_input_tokens": 13506,
+  "cache_read_input_tokens": 173567,
+  "output_tokens": 2141,
+  "output_tokens_details": {
+   "thinking_tokens": 753
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 13506,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 18,
+   "outputTokens": 2141,
+   "cacheReadInputTokens": 173567,
+   "cacheCreationInputTokens": 13506,
+   "webSearchRequests": 0,
+   "costUSD": 0.0928267,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 753,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.0928267,
+ "result_text": "I made a change in `xknx/devices/climate_mode.py`, but I'm not sure it fixes your case. I couldn't reproduce the \"Sleep\" mode, and I never found where it comes from.\n\nThe `0x21` your controller reports is binary `00100001`: the economy bit and the frost-alarm bit. xknx reads that as Economy, which Home Assistant shows as \"Night\". That reading looks correct, so it doesn't explain \"Sleep\".\n\nI did find one real flaw. If a controller status byte has none of the four mode bits set (Comfort, Standby, Economy, Protection), xknx treats the mode as `AUTO` and overwrites the current operation mode with it. `ClimateMode._set_internal_modes_from_status` now ignores `AUTO` from the status and leaves the operation mode unchanged. The heat/cool part of the status is still applied.\n\nI only ran the existing climate tests (88 pass). I added no test for the new behaviour, since you asked me not to touch tests.\n\nI can't tell from the issue whether your controller sends a status byte with no mode bits on startup. After restarting Home Assistant, check the climate entity's mode against the status value in the log.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792309800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0.07,
+    "resetsAt": 1792309800
+   },
+   "seven_day": {
+    "utilization": 0.12,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 41.8,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 9,
+   "hit_step_limit": 0,
+   "changed_lines": 5,
+   "gold_changed_lines": 36,
+   "Y1": 1,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": -2.84799690655495
+  },
+  "f2p_pass": 0,
+  "f2p_total": 5,
+  "p2p_pass": 84,
+  "p2p_total": 84,
+  "f2p_all_pass": false,
+  "p2p_all_pass": true,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 2.5
+ },
+ "status": "done",
+ "finished": "2026-10-18T04:43:05.881693+00:00"
+}

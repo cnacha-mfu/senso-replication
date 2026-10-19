@@ -1,0 +1,79 @@
+{
+ "unit_id": "rigetti__pyquil-1564__F_I__nemotron-3-ultra-550b-a55b__r1",
+ "task_id": "rigetti__pyquil-1564",
+ "repo": "rigetti/pyquil",
+ "stage": "evolution",
+ "condition": "F_I",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "run": 1,
+ "order": 292,
+ "env_build_s": 116.3,
+ "started": "2026-10-13T16:09:08.182217+00:00",
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 482,
+  "sha256": "a513b50b39043db8b87bf8d243173d6599095da70d6ddd08f80a70805a3c8d82"
+ },
+ "condition_available": true,
+ "venv_reset_s": 5.15,
+ "retries": 0,
+ "venv_hash_before": "6cd04344ad30bd98",
+ "venv_hash_after": "6cd04344ad30bd98",
+ "venv_mutated": false,
+ "exit_status": "LimitsExceeded",
+ "error": "",
+ "steps": 40,
+ "wall_s": 480.6,
+ "prompt_tokens": 481490,
+ "completion_tokens": 3514,
+ "format_errors": 0,
+ "length_cutoffs": 0,
+ "api_errors": {
+  "429": 122,
+  "503": 9
+ },
+ "n_queries": 68,
+ "keys_used": {
+  "NVIDIA_API_KEY": 48,
+  "NVIDIA_API_KEY_5": 41,
+  "NVIDIA_API_KEY_4": 43,
+  "NVIDIA_API_KEY_2": 39
+ },
+ "temperature": 0.7,
+ "top_p": 0.95,
+ "model_id_returned": "nvidia/nemotron-3-ultra-550b-a55b",
+ "mini_version": "2.4.6",
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 3,
+   "Y6": 40,
+   "hit_step_limit": 1,
+   "changed_lines": 6,
+   "gold_changed_lines": 6,
+   "Y1": 0,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": 0.0
+  },
+  "f2p_pass": 1,
+  "f2p_total": 1,
+  "p2p_pass": 39,
+  "p2p_total": 39,
+  "f2p_all_pass": true,
+  "p2p_all_pass": true,
+  "resolved": true,
+  "reason": "resolved",
+  "test_seconds": 3.8
+ },
+ "status": "done",
+ "finished": "2026-10-13T16:17:23.918018+00:00"
+}

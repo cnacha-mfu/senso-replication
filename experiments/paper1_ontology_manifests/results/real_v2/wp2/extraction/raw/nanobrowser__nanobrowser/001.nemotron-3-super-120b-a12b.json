@@ -1,0 +1,21 @@
+{
+ "repo": "nanobrowser/nanobrowser",
+ "chunk": 1,
+ "n_chunks": 3,
+ "model": "nvidia/nemotron-3-super-120b-a12b",
+ "prompt_sha256": "d0e02ff613417050168d859f2af6230c3712c6758bb5d9c40d60ff55e5ae87ca",
+ "user_sha256": "3988e7373f3bbccb53b4ba711d31aa9e63cb993fddedc8d0722f29ec70d3f336",
+ "text": "{\n  \"claims\": [\n    {\n      \"type\": \"path_exists\",\n      \"quote\": \"Do not edit generated files under `packages/i18n/lib/**`.\",\n      \"line\": 213,\n      \"subject\": \"packages/i18n/lib/**\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"path_exists\",\n      \"quote\": \"The generator `packages/i18n/genenrate-i18n.mjs` runs via the `@extension/i18n`\",\n      \"line\": 214,\n      \"subject\": \"packages/i18n/genenrate-i18n.mjs\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"path_exists\",\n      \"quote\": \"Edit source locale JSON in `packages/i18n/locales/**` instead.\",\n      \"line\": 216,\n      \"subject\": \"packages/i18n/locales/**\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"tool_used\",\n      \"quote\": \"Formatting via Prettier (2 spaces, semicolons, single quotes,\",\n      \"line\": 237,\n      \"subject\": \"Prettier\",\n      \"tool_category\": \"linter_formatter\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"tool_used\",\n      \"quote\": \"ESLint rules include React/Hooks/Import/A11y + TypeScript\",\n      \"line\": 239,\n      \"subject\": \"ESLint\",\n      \"tool_category\": \"linter_formatter\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"tool_used\",\n      \"quote\": \"Run `pnpm type-check` before committing to catch TypeScript errors\",\n      \"line\": 247,\n      \"subject\": \"type-check\",\n      \"runner\": \"pnpm\",\n      \"mode\": \"asserts_existing\",\n      \"type\": \"command\"\n    },\n    {\n      \"type\": \"tool_used\",\n      \"quote\": \"Use `pnpm lint` to maintain code style consistency\",\n      \"line\": 248,\n      \"subject\": \"lint\",\n      \"runner\": \"pnpm\",\n      \"mode\": \"asserts_existing\",\n      \"type\": \"command\"\n    }\n  ]\n}",
+ "parse_ok": true,
+ "parse_error": null,
+ "parse_retries": 0,
+ "latency_s": 4.349280243972316,
+ "usage": {
+  "prompt": 3713,
+  "completion": 523
+ },
+ "n_api_calls": 1,
+ "finish_reason": "stop",
+ "error": null,
+ "discarded_attempt_texts": []
+}

@@ -1,0 +1,80 @@
+{
+ "unit_id": "PyCQA__flake8-bugbear-12__D__nemotron-3-ultra-550b-a55b__r2",
+ "task_id": "PyCQA__flake8-bugbear-12",
+ "repo": "PyCQA/flake8-bugbear",
+ "stage": "initial_development",
+ "condition": "D",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "run": 2,
+ "order": 251,
+ "env_build_s": 22.8,
+ "started": "2026-10-15T13:11:32.041330+00:00",
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 2655,
+  "sha256": "d2eb5c2441bb5871c094509739c643ff409f0022d93c02afedfba01bee7470a9"
+ },
+ "condition_available": true,
+ "venv_reset_s": 0.61,
+ "stray_procs_killed": 0,
+ "retries": 0,
+ "venv_hash_before": "03544e91bf14e5c8",
+ "venv_hash_after": "03544e91bf14e5c8",
+ "venv_mutated": false,
+ "exit_status": "LimitsExceeded",
+ "error": "",
+ "steps": 40,
+ "wall_s": 335.4,
+ "prompt_tokens": 361349,
+ "completion_tokens": 3857,
+ "format_errors": 0,
+ "length_cutoffs": 0,
+ "api_errors": {
+  "503": 30,
+  "429": 7
+ },
+ "n_queries": 70,
+ "keys_used": {
+  "NVIDIA_API_KEY_2": 24,
+  "NVIDIA_API_KEY": 26,
+  "NVIDIA_API_KEY_5": 14,
+  "NVIDIA_API_KEY_4": 13
+ },
+ "temperature": 0.7,
+ "top_p": 0.95,
+ "model_id_returned": "nvidia/nemotron-3-ultra-550b-a55b",
+ "mini_version": "2.4.6",
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 5,
+   "Y6": 40,
+   "hit_step_limit": 1,
+   "changed_lines": 589,
+   "gold_changed_lines": 11,
+   "Y1": 5,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": 5.742692205193164
+  },
+  "f2p_pass": 0,
+  "f2p_total": 1,
+  "p2p_pass": 13,
+  "p2p_total": 13,
+  "f2p_all_pass": false,
+  "p2p_all_pass": true,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 1.7
+ },
+ "status": "done",
+ "finished": "2026-10-15T13:17:10.691890+00:00"
+}

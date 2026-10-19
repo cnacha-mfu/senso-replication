@@ -1,0 +1,23 @@
+{
+ "source": "WP5 trajectories (results/real_v2/wp5/runs/trajectories), executed actions parsed with wp6/trajparse.py",
+ "pattern": "(?<![\\w-])(?:pip3?|uv\\s+pip|python3?\\s+-m\\s+pip)\\s+install\\b",
+ "n_trajectories": 1108,
+ "runs_with_pip_install_attempt": 12,
+ "runs_with_successful_pip_install_rc0": 9,
+ "runs_whose_successful_install_was_not_only_the_editable_self_install": 6,
+ "share_of_runs_with_successful_install": 0.0081,
+ "tasks_with_a_run_with_successful_install": 9,
+ "n_tasks": 80,
+ "runs_that_started_after_an_earlier_successful_install_in_the_same_task": 49,
+ "runs_that_started_after_an_earlier_non_self_install_in_the_same_task": 38,
+ "note": "A pip install inside the shared per-task venv persisted for all later runs of that task (WP5 deviation 14). 'started after' uses the unit timestamps; the run order within a task was seeded random, not aligned with condition.",
+ "by_condition_attempted": {
+  "A": 7,
+  "B": 3,
+  "D": 2
+ },
+ "by_model_attempted": {
+  "google/diffusiongemma-26b-a4b-it": 1,
+  "nvidia/nemotron-3-super-120b-a12b": 11
+ }
+}

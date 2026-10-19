@@ -1,0 +1,111 @@
+{
+ "unit_id": "VirtusLab__git-machete-534__D__claude-sonnet__r1",
+ "task_id": "VirtusLab__git-machete-534",
+ "repo": "VirtusLab/git-machete",
+ "stage": "phase_out",
+ "condition": "D",
+ "model": "claude-code/sonnet",
+ "run": 1,
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 3746,
+  "sha256": "d874322315b140c19f116987018249da9faea54cff72419f8d1a9900ae4327ec"
+ },
+ "started": "2026-10-18T04:28:42.828559+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 5,
+ "tool_calls": 4,
+ "usage": {
+  "input_tokens": 10,
+  "cache_creation_input_tokens": 10435,
+  "cache_read_input_tokens": 92545,
+  "output_tokens": 1644,
+  "output_tokens_details": {
+   "thinking_tokens": 64
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 10435,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 10,
+   "outputTokens": 1644,
+   "cacheReadInputTokens": 92545,
+   "cacheCreationInputTokens": 10435,
+   "webSearchRequests": 0,
+   "costUSD": 0.0674545,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 64,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.0674545,
+ "result_text": "`create-pr` fails without a token because creating a PR is a `POST` to `/pulls`, and GitHub requires authentication for that. Reading `/pulls` in a browser is a `GET`, which works for public repos without a token. For an unauthenticated `POST`, GitHub answers 404 instead of 401, which is why the old error looked so odd. I haven't run the tests or tried the new message against the real API.\n\nThe fix is a better error message for 404 responses in `git_machete/github.py`:\n\n- **No token found:** the message now says the request got a 404, that authentication may be needed, and lists where a token can be provided (`GITHUB_TOKEN`, `~/.github-token`, `gh`, `hub`). It also links to the page for generating one.\n- **Token present:** the message says the endpoint may not exist or the token (possibly expired or lacking `repo` access) may not allow access.\n\nI left the unauthenticated `GET` behaviour alone, since public repos already work for those.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792309800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0.07,
+    "resetsAt": 1792309800
+   },
+   "seven_day": {
+    "utilization": 0.12,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 21.3,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 5,
+   "hit_step_limit": 0,
+   "changed_lines": 14,
+   "gold_changed_lines": 7,
+   "Y1": 1,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": 1.0
+  },
+  "f2p_pass": 0,
+  "f2p_total": 1,
+  "p2p_pass": 7,
+  "p2p_total": 7,
+  "f2p_all_pass": false,
+  "p2p_all_pass": true,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 19.1
+ },
+ "status": "done",
+ "finished": "2026-10-18T04:29:23.957261+00:00"
+}

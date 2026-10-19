@@ -1,0 +1,89 @@
+{
+ "unit_id": "stravalib__stravalib-446__A__claude-sonnet",
+ "task_id": "stravalib__stravalib-446",
+ "repo": "stravalib/stravalib",
+ "stage": "evolution",
+ "condition": "A",
+ "model": "claude-code/sonnet",
+ "run": 1,
+ "condition_meta": {},
+ "started": "2026-10-18T01:09:42.174535+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 5,
+ "tool_calls": 4,
+ "usage": {
+  "input_tokens": 10,
+  "cache_creation_input_tokens": 19148,
+  "cache_read_input_tokens": 106880,
+  "output_tokens": 4513,
+  "output_tokens_details": {
+   "thinking_tokens": 798
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 19148,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 10,
+   "outputTokens": 4513,
+   "cacheReadInputTokens": 106880,
+   "cacheCreationInputTokens": 19148,
+   "webSearchRequests": 0,
+   "costUSD": 0.13243,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 798,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.13243,
+ "result_text": "Pydantic 1.10 requires typing_extensions, so the import is safe.\n\nThe rate limiters now read Strava's new read-rate-limit headers and apply them per request method. I only ran the existing unit tests, which pass. I added no tests for the new behavior and didn't run the functional rate-limiter tests.\n\n- **Headers:** `get_rates_from_response_headers` in `util/limiter.py` now also parses `X-ReadRateLimit-Usage` and `X-ReadRateLimit-Limit`. The four new `RequestRate` fields (`read_short_usage`, `read_long_usage`, `read_short_limit`, `read_long_limit`) default to 0 when those headers are absent.\n- **Method-aware limiters:** `RateLimiter` and its rules now take the HTTP method as a second argument, defaulting to `\"GET\"`. `protocol.py` passes the request method through.\n- **`XRateLimitRule`:** It adds `read_short` and `read_long` limits once the read headers appear, and checks them only for GET requests.\n- **`SleepingRateLimitRule`:** For GET requests it uses the read usage in place of the overall usage whenever the read limit has less headroom.\n- **Breaking change:** `rate_limiter` callables passed to `Client` or `Protocol` must now accept `(headers, method)`. The built-in limiters already do. A custom one that takes only `headers` will fail.\n- **Typing:** I switched `TypedDict` to the `typing_extensions` import so the new read limits can be optional. It's already installed through pydantic, but `pyproject.toml` doesn't list it directly.\n\nI couldn't confirm the new header names against Strava's docs. I took them from my recollection of the developer program announcement, so check them before relying on this.",
+ "wall_s": 58.3,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 2,
+   "Y6": 5,
+   "hit_step_limit": 0,
+   "changed_lines": 111,
+   "gold_changed_lines": 388,
+   "Y1": 12,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": -1.8054969758370218
+  },
+  "f2p_pass": 0,
+  "f2p_total": 15,
+  "p2p_pass": 7,
+  "p2p_total": 7,
+  "f2p_all_pass": false,
+  "p2p_all_pass": true,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 2.5
+ },
+ "status": "done",
+ "finished": "2026-10-18T01:10:49.316559+00:00"
+}

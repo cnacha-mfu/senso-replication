@@ -1,0 +1,21 @@
+{
+ "repo": "jaxen-xpath/jaxen",
+ "chunk": 0,
+ "n_chunks": 2,
+ "model": "google/diffusiongemma-26b-a4b-it",
+ "prompt_sha256": "d0e02ff613417050168d859f2af6230c3712c6758bb5d9c40d60ff55e5ae87ca",
+ "user_sha256": "ba5014e798f2543e255a044e471aa07989ff505a7f98a0f8df179faa68b60556",
+ "text": "```json\n{\n  \"claims\": [\n    {\"type\": \"tool_used\", \"subject\": \"maven\", \"tool_category\": \"build_tool\"},\n    {\"type\": \"version\", \"subject\": \"java\", \"version\": \"1.5\", \"qualifier\": \"min\"},\n    {\"type\": \"tool_used\", \"subject\": \"maven\", \"tool_category\": \"build_tool\"},\n    {\"type\": \"version\", \"subject\": \"java\", \"version\": \"8\", \"qualifier\": \"min\"},\n    {\"type\": \"command\", \"subject\": \"compile\", \"runner\": \"maven\"},\n    {\"type\": \"command\", \"subject\": \"test\", \"runner\": \"maven\"},\n    {\"type\": \"command\", \"subject\": \"package -Dmaven.javadoc.skip=true\", \"runner\": \"maven\"},\n    {\"type\": \"command\", \"subject\": \"package\", \"runner\": \"maven\"},\n    {\"type\": \"path_exists\", \"subject\": \"jaxen/\", \"path_components\": [\"jaxen/\", \".circleci/config.yml\", \".github/\", \"core/\", \"src/java/main/\", \"org/jaxen/\", \"src/java/test/\", \"src/java/samples/\", \"integration-tests/\", \"src/java/test/\", \"xml/\", \"pom.xml\", \"README.md\", \"RELEASING.md\"]},\n    {\"type\": \"command\", \"subject\": \"clean test\", \"runner\": \"maven\"},\n    {\"type\": \"command\", \"subject\": \"package -Dmaven.javadoc.skip=true\", \"runner\": \"maven\"},\n    {\"type\": \"tool_used\", \"subject\": \"junit\", \"tool_category\": \"test_framework\"}\n  ]\n}\n```",
+ "parse_ok": true,
+ "parse_error": null,
+ "parse_retries": 0,
+ "latency_s": 2.677522728976328,
+ "usage": {
+  "prompt": 4414,
+  "completion": 393
+ },
+ "n_api_calls": 1,
+ "finish_reason": "stop",
+ "error": null,
+ "discarded_attempt_texts": []
+}

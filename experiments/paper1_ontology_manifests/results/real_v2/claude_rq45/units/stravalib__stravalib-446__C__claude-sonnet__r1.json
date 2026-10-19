@@ -1,0 +1,111 @@
+{
+ "unit_id": "stravalib__stravalib-446__C__claude-sonnet__r1",
+ "task_id": "stravalib__stravalib-446",
+ "repo": "stravalib/stravalib",
+ "stage": "evolution",
+ "condition": "C",
+ "model": "claude-code/sonnet",
+ "run": 1,
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 4226,
+  "sha256": "74dc52a7b4855ec238538c813758fbb19871cefac10facc7be91114e542ed9b7"
+ },
+ "started": "2026-10-18T08:36:36.285276+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 5,
+ "tool_calls": 4,
+ "usage": {
+  "input_tokens": 10,
+  "cache_creation_input_tokens": 9726,
+  "cache_read_input_tokens": 112643,
+  "output_tokens": 2881,
+  "output_tokens_details": {
+   "thinking_tokens": 456
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 9726,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 10,
+   "outputTokens": 2881,
+   "cacheReadInputTokens": 112643,
+   "cacheCreationInputTokens": 9726,
+   "webSearchRequests": 0,
+   "costUSD": 0.0789983,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 456,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.0789983,
+ "result_text": "The rate limiters now read Strava's new read-rate-limit headers for GET requests. The full suite gives 38 failed and 189 passed, and that is identical with my changes stashed, so nothing new broke. I didn't add a test for the read-limit path.\n\n- **Headers:** for GET requests, `get_rates_from_response_headers` in `src/stravalib/util/limiter.py` uses `X-ReadRateLimit-Usage` and `X-ReadRateLimit-Limit` when both are present. Otherwise, and for POST, PUT and DELETE, it uses the existing `X-RateLimit-*` headers.\n- **Per-endpoint behavior:** `protocol.py` now passes the HTTP method to the rate limiter on every request. `RateLimiter` and each rule (`XRateLimitRule`, `SleepingRateLimitRule` and `RateLimitRule`) accept an optional `method` argument that defaults to `\"GET\"`. So custom limiters written with the old one-argument signature will fail when `protocol.py` calls them with the method.\n- **Limits are not kept separately per call type:** each rule still holds one usage/limit pair, which now gets overwritten by whichever header set applies to the latest request. If Strava starts enforcing the read limit and the overall limit at the same time, a mix of GET and non-GET calls would swap those values back and forth. A full per-endpoint redesign would track the two separately; I didn't do that.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792327800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0.04,
+    "resetsAt": 1792327800
+   },
+   "seven_day": {
+    "utilization": 0.13,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 58.8,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 2,
+   "Y6": 5,
+   "hit_step_limit": 0,
+   "changed_lines": 55,
+   "gold_changed_lines": 388,
+   "Y1": 3,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": -2.8185531286624683
+  },
+  "f2p_pass": 6,
+  "f2p_total": 15,
+  "p2p_pass": 7,
+  "p2p_total": 7,
+  "f2p_all_pass": false,
+  "p2p_all_pass": true,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 2.1
+ },
+ "status": "done",
+ "finished": "2026-10-18T08:37:42.909891+00:00"
+}

@@ -1,0 +1,148 @@
+{
+ "repo": "agentjido/jido_ai",
+ "slug": "agentjido__jido_ai",
+ "S": "b77f337479529eafe30cfa4f61dda3cbc45e5ce2",
+ "manifest_path": "AGENTS.md",
+ "input_sha": "b8b656ffc5aa645a74652e90a156540df157b9e9f728b2f8c956d673c38754a1",
+ "n_claims": 4,
+ "n_tree_files": 391,
+ "n_dep_manifests_parsed": null,
+ "seconds": 0.1,
+ "claims": [
+  {
+   "key_str": "T1|README.md",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "README.md",
+   "quote": "- `README.md`",
+   "line": 42,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "README.md",
+    "is_dir": false,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 1,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|guides",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "guides",
+   "quote": "- `guides/`",
+   "line": 44,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "guides",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 27,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|usage-rules.md",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "usage-rules.md",
+   "quote": "- `usage-rules.md`",
+   "line": 43,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "usage-rules.md",
+    "is_dir": false,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 1,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T6|project_self|2000000000@3",
+   "tcode": "T6",
+   "types": [
+    "VersionClaim",
+    "ExactVersionClaim"
+   ],
+   "headline": true,
+   "subject": "project_self",
+   "quote": "Keep semver ranges stable (~> 2.0 ecosystem peers; package currently 2.0.0-rc.0)",
+   "line": 36,
+   "votes": 1,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it"
+   ],
+   "attrs": {
+    "subject_type": "project_self",
+    "version": "2.0.0-rc.0",
+    "code": 2000000000,
+    "precision": 3,
+    "qualifier": "exact"
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "versionSourceCount": 1
+    },
+    "evidences": [
+     {
+      "versionSourcePath": "<git-tag>",
+      "versionSourceRaw": "v2.0.0",
+      "versionLowerDelta": 0,
+      "versionUpperDelta": 0,
+      "versionUpperUnboundedCount": 0
+     }
+    ],
+    "meta": {}
+   }
+  }
+ ]
+}

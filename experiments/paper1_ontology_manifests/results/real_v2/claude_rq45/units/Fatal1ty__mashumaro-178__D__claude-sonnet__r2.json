@@ -1,0 +1,111 @@
+{
+ "unit_id": "Fatal1ty__mashumaro-178__D__claude-sonnet__r2",
+ "task_id": "Fatal1ty__mashumaro-178",
+ "repo": "Fatal1ty/mashumaro",
+ "stage": "phase_out",
+ "condition": "D",
+ "model": "claude-code/sonnet",
+ "run": 2,
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 3852,
+  "sha256": "d06200aebfeba3df623683683616c6e9a7934a0a87ce75354048b86a16fa43d3"
+ },
+ "started": "2026-10-18T01:46:23.143217+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 3,
+ "tool_calls": 11,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 1802,
+  "cache_read_input_tokens": 80799,
+  "output_tokens": 577,
+  "output_tokens_details": {
+   "thinking_tokens": 29
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 1802,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 28,
+   "outputTokens": 2915,
+   "cacheReadInputTokens": 300049,
+   "cacheCreationInputTokens": 9743,
+   "webSearchRequests": 0,
+   "costUSD": 0.09818289999999999,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 385,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.09818289999999999,
+ "result_text": "The issue is fixed. The example now serializes to `{'x': {'a': 1}}` and `Bar.from_dict` works too.\n\nThe full suite finished with 25958 passed and 1 failed. The failure is `tests/test_pep_646.py::test_type_name_for_unpacks_py_less_than_311`. It fails the same way with my change stashed, so it was already failing before this fix.\n\nThe cause was `from __future__ import annotations`, which turns annotations into strings. `get_function_arg_annotation` and `get_function_return_annotation` returned them unresolved, so `T` in `dict[str, T]` was never replaced with `int`. Both helpers in `mashumaro/core/meta/helpers.py` now resolve annotations with `get_type_hints` first. If that fails, they fall back to the raw annotation.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792291800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0.11,
+    "resetsAt": 1792291800
+   },
+   "seven_day": {
+    "utilization": 0.11,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 232.8,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 3,
+   "hit_step_limit": 0,
+   "changed_lines": 13,
+   "gold_changed_lines": 56,
+   "Y1": 3,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": -2.106915203916512
+  },
+  "f2p_pass": 2,
+  "f2p_total": 2,
+  "p2p_pass": 0,
+  "p2p_total": 0,
+  "f2p_all_pass": true,
+  "p2p_all_pass": true,
+  "resolved": true,
+  "reason": "resolved",
+  "test_seconds": 0.9
+ },
+ "status": "done",
+ "finished": "2026-10-18T01:50:19.333607+00:00"
+}

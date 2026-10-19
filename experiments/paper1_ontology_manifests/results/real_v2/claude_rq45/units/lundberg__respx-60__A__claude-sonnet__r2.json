@@ -1,0 +1,107 @@
+{
+ "unit_id": "lundberg__respx-60__A__claude-sonnet__r2",
+ "task_id": "lundberg__respx-60",
+ "repo": "lundberg/respx",
+ "stage": "evolution",
+ "condition": "A",
+ "model": "claude-code/sonnet",
+ "run": 2,
+ "condition_meta": {},
+ "started": "2026-10-18T06:28:39.769786+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 8,
+ "tool_calls": 7,
+ "usage": {
+  "input_tokens": 14,
+  "cache_creation_input_tokens": 11598,
+  "cache_read_input_tokens": 124242,
+  "output_tokens": 1530,
+  "output_tokens_details": {
+   "thinking_tokens": 159
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 11598,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 14,
+   "outputTokens": 1530,
+   "cacheReadInputTokens": 124242,
+   "cacheCreationInputTokens": 11598,
+   "webSearchRequests": 0,
+   "costUSD": 0.0741442,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 159,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.0741442,
+ "result_text": "I added `pop(alias, default=...)` to the mock transport. It removes the pattern from both `aliases` and `patterns` and returns it. I ran a quick check and it behaved as expected, but I didn't run the test suite or add tests.\n\n- **Missing alias:** it raises `KeyError`, unless you pass a default, in which case it returns that default.\n- **Module level:** I also added a module-level `respx.pop(...)`, exported from `respx/__init__.py` like `respx.clear` and `respx.reset`.\n\nYour fixture example can now be written like this:\n\n```python\nrequest_mock = mock_services.pop(\"endpoint a\")\nmock_services.post(request_mock.url, status_code=HTTP_500_INTERNAL_SERVER_ERROR)\n```\n\nThe changes are in `respx/transports.py`, `respx/api.py` and `respx/__init__.py`. Nothing is committed.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792309800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0.15,
+    "resetsAt": 1792309800
+   },
+   "seven_day": {
+    "utilization": 0.13,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 27.4,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 3,
+   "Y6": 8,
+   "hit_step_limit": 0,
+   "changed_lines": 23,
+   "gold_changed_lines": 68,
+   "Y1": 4,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": -1.5639008851933265
+  },
+  "f2p_pass": 1,
+  "f2p_total": 1,
+  "p2p_pass": 4,
+  "p2p_total": 4,
+  "f2p_all_pass": true,
+  "p2p_all_pass": true,
+  "resolved": true,
+  "reason": "resolved",
+  "test_seconds": 2.1
+ },
+ "status": "done",
+ "finished": "2026-10-18T06:29:10.082749+00:00"
+}

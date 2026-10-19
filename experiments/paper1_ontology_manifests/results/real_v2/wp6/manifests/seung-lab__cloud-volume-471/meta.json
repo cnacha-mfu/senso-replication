@@ -1,0 +1,365 @@
+{
+ "task_id": "seung-lab__cloud-volume-471",
+ "repo": "seung-lab/cloud-volume",
+ "stage": "phase_out",
+ "rounds": 1,
+ "rejects": {},
+ "flags": [
+  "length_violation_F_R"
+ ],
+ "info": {
+  "slots": {
+   "test_root": "test",
+   "P1": {
+    "replaced": "cloudvolume/storage",
+    "name": "core",
+    "F_R": "cloudvolume/frontends/core",
+    "F_I": "cloudvolume/datasource/core"
+   },
+   "P2": {
+    "replaced": "cloudvolume/frontends/precomputed.py",
+    "F_R": "cloudvolume/meshservice.py",
+    "F_I": "test/test_compression.py"
+   },
+   "C": {
+    "F_R": "make tests",
+    "F_I": "make install"
+   },
+   "D": {
+    "replaced": "cloud-files",
+    "F_R": "jax",
+    "F_I": "boltons"
+   }
+  },
+  "why": {
+   "test_command": [
+    {
+     "root": "test",
+     "T3": "SupportedClaim",
+     "T1": "SupportedClaim",
+     "collect_ok": true
+    }
+   ],
+   "kind1": {
+    "p1_idx": 4,
+    "gold0": "cloudvolume/frontends",
+    "unrelated": "cloudvolume/datasource",
+    "base_R": "cloudvolume/frontends",
+    "base_I": "cloudvolume/datasource"
+   },
+   "kind2": {
+    "p2_idx": 2,
+    "n_deleted_py": 16,
+    "found": {
+     "F_R": "cloudvolume/meshservice.py",
+     "F_I": "test/test_compression.py"
+    }
+   },
+   "kind3": {
+    "run": "tests",
+    "install": "install",
+    "test_ok": true,
+    "install_ok": true
+   },
+   "kind4": {
+    "deps": [
+     [
+      "numpy",
+      true
+     ],
+     [
+      "six",
+      false
+     ],
+     [
+      "tqdm",
+      true
+     ],
+     [
+      "cloud-files",
+      false
+     ],
+     [
+      "requests",
+      true
+     ]
+    ],
+    "d_idx": 3,
+    "src_R": "numpy",
+    "src_I": "cloud-files",
+    "n_decls": 24,
+    "n_dist": 96
+   }
+  },
+  "length": {
+   "T": 500,
+   "F_R": 470,
+   "F_I": 480
+  },
+  "fallbacks": {
+   "F_R": [],
+   "F_I": []
+  },
+  "modes": {
+   "F_R": {
+    "1": "replace",
+    "2": "replace",
+    "3": "replace",
+    "4": "replace"
+   },
+   "F_I": {
+    "1": "replace",
+    "2": "replace",
+    "3": "replace",
+    "4": "replace"
+   }
+  },
+  "length_diff": {
+   "F_R": -30,
+   "F_I": -20
+  },
+  "n_claims_T": 17,
+  "n_false": {
+   "F_R": 4,
+   "F_I": 4
+  },
+  "pointer_in_issue": false,
+  "gold_dirs": [
+   "cloudvolume/frontends"
+  ],
+  "gold_files": [
+   "cloudvolume/frontends/graphene.py"
+  ]
+ },
+ "tokens": {
+  "F_R": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "cloudvolume/frontends/core",
+     "core"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "cloudvolume/meshservice.py",
+     "meshservice.py"
+    ]
+   },
+   {
+    "kind": 3,
+    "type": "regex",
+    "regex": "\\bmake\\b[^|;&\\n]*\\btests\\b",
+    "target": "tests"
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "jax"
+    ]
+   }
+  ],
+  "F_I": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "cloudvolume/datasource/core",
+     "core"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "test/test_compression.py",
+     "test_compression.py"
+    ]
+   },
+   {
+    "kind": 3,
+    "type": "regex",
+    "regex": "\\bmake\\b[^|;&\\n]*\\binstall\\b",
+    "target": "install"
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "boltons"
+    ]
+   }
+  ]
+ },
+ "unresolved_pre_hermit": [],
+ "sha256": {
+  "T": "8dcf73446559a0c8c38a2ad147354c9946f36a72a07ab84c55b90811fb6418c0",
+  "F_R": "05a0951d198239b1dd64ea20952806cf70ced4f0bf25d78e5ef22b743493e43d",
+  "F_I": "15512f167a968a5c3d288d2d590fe83e229cccc4e5cb261fe8b5eb85b931ac8f"
+ },
+ "chars": {
+  "T": 500,
+  "F_R": 470,
+  "F_I": 480
+ },
+ "claims": {
+  "T": [
+   "T1|cloudvolume",
+   "T1|cloudvolume/datasource",
+   "T1|cloudvolume/frontends",
+   "T1|cloudvolume/microviewer",
+   "T1|cloudvolume/storage",
+   "T1|test",
+   "T1|cloudvolume/skeleton.py",
+   "T1|cloudvolume/datasource/precomputed/sharding.py",
+   "T1|cloudvolume/frontends/precomputed.py",
+   "T3|test_framework|pytest",
+   "T1|test",
+   "T1|setup.py",
+   "T4|numpy|",
+   "T4|six|",
+   "T4|tqdm|",
+   "T4|cloud-files|",
+   "T4|requests|"
+  ],
+  "F_R": [
+   "T1|cloudvolume",
+   "T1|cloudvolume/datasource",
+   "T1|cloudvolume/frontends",
+   "T1|cloudvolume/microviewer",
+   "T1|cloudvolume/frontends/core",
+   "T1|test",
+   "T1|cloudvolume/skeleton.py",
+   "T1|cloudvolume/datasource/precomputed/sharding.py",
+   "T1|cloudvolume/meshservice.py",
+   "T5|make|tests",
+   "T1|setup.py",
+   "T4|numpy|",
+   "T4|six|",
+   "T4|tqdm|",
+   "T4|jax|",
+   "T4|requests|"
+  ],
+  "F_I": [
+   "T1|cloudvolume",
+   "T1|cloudvolume/datasource",
+   "T1|cloudvolume/frontends",
+   "T1|cloudvolume/microviewer",
+   "T1|cloudvolume/datasource/core",
+   "T1|test",
+   "T1|cloudvolume/skeleton.py",
+   "T1|cloudvolume/datasource/precomputed/sharding.py",
+   "T1|test/test_compression.py",
+   "T3|test_framework|pytest",
+   "T1|test",
+   "T5|make|install",
+   "T4|numpy|",
+   "T4|six|",
+   "T4|tqdm|",
+   "T4|boltons|",
+   "T4|requests|"
+  ]
+ },
+ "python_spec": "~=3.6",
+ "token_audit": [
+  {
+   "cond": "F_R",
+   "kind": 1,
+   "type": "path",
+   "name": "cloudvolume/frontends/core",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 2,
+   "type": "path",
+   "name": "cloudvolume/meshservice.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 3,
+   "type": "regex",
+   "name": "make tests",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 4,
+   "type": "word",
+   "name": "jax",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 1,
+   "type": "path",
+   "name": "cloudvolume/datasource/core",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 2,
+   "type": "path",
+   "name": "test/test_compression.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 3,
+   "type": "regex",
+   "name": "make install",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 4,
+   "type": "word",
+   "name": "boltons",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  }
+ ],
+ "dist_imports_used": {
+  "numpy": [
+   "numpy",
+   "numpy.libs"
+  ],
+  "six": [
+   "six"
+  ],
+  "tqdm": [
+   "tqdm"
+  ],
+  "cloud-files": [
+   "cloudfiles",
+   "cloudfiles_cli"
+  ],
+  "requests": [
+   "requests"
+  ],
+  "jax": null,
+  "boltons": null
+ }
+}

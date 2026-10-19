@@ -1,0 +1,21 @@
+{
+ "repo": "openai/openai-agents-js",
+ "chunk": 1,
+ "n_chunks": 3,
+ "model": "openai/gpt-oss-20b",
+ "prompt_sha256": "d0e02ff613417050168d859f2af6230c3712c6758bb5d9c40d60ff55e5ae87ca",
+ "user_sha256": "d3d84395d33bde2e40140e523b40c263e24f5f798b0eb1604c60cdf7109c62df",
+ "text": "{\"claims\":[{\"type\":\"path_exists\",\"quote\":\"- `packages/agents-core/src/run.ts` is the runtime entrypoint; keep it small and focused on orchestration.\",\"line\":78,\"subject\":\"packages/agents-core/src/run.ts\",\"mode\":\"asserts_existing\"},{\"type\":\"path_exists\",\"quote\":\"- Add new runtime logic under `packages/agents-core/src/runner/`, organized by responsibility, then import into `run.ts`.\",\"line\":79,\"subject\":\"packages/agents-core/src/runner/\",\"mode\":\"asserts_existing\"},{\"type\":\"path_exists\",\"quote\":\"- Keep `packages/agents-core/src/agent.ts` focused on the Agent class and its type definitions; move helper logic into dedicated modules (for example, `agentToolInput.ts`).\",\"line\":81,\"subject\":\"packages/agents-core/src/agent.ts\",\"mode\":\"asserts_existing\"},{\"type\":\"path_exists\",\"quote\":\"- Keep `packages/agents-core/src/agent.ts` focused on the Agent class and its type definitions; move helper logic into dedicated modules (for example, `agentToolInput.ts`).\",\"line\":81,\"subject\":\"agentToolInput.ts\",\"mode\":\"asserts_existing\"},{\"type\":\"path_exists\",\"quote\":\"- Make changes and add/update unit tests in `packages/<pkg>/test` unless doing so is truly infeasible.\",\"line\":103,\"subject\":\"packages/<pkg>/test\",\"mode\":\"asserts_existing\"},{\"type\":\"tool_used\",\"quote\":\"- pnpm 10+ (`corepack enable` is recommended to manage versions).\",\"line\":93,\"subject\":\"pnpm\",\"tool_category\":\"package_manager\",\"mode\":\"asserts_existing\"},{\"type\":\"command\",\"quote\":\"- Always run the full build first to validate the latest build outputs:\\n  ```bash\\n  pnpm build\\n  ```\",\"line\":120,\"subject\":\"build\",\"runner\":\"pnpm\",\"mode\":\"asserts_existing\"},{\"type\":\"command\",\"quote\":\"- Run this early to catch TypeScript errors in packages, tests, and examples:\\n  ```bash\\n  pnpm -r build-check\\n  ```\",\"line\":125,\"subject\":\"build-check\",\"runner\":\"pnpm\",\"mode\":\"asserts_existing\"},{\"type\":\"command\",\"quote\":\"- Run the full test suite:\\n  ```bash\\n  CI=1 pnpm test\\n  ```\",\"line\":132,\"subject\":\"test\",\"runner\":\"pnpm\",\"mode\":\"asserts_existing\"},{\"type\":\"command\",\"quote\":\"- To run locally only if needed:\\n  ```bash\\n  pnpm local-npm:start   # starts Verdaccio on :4873\\n  pnpm local-npm:publish # public pacakges to the local repo\\n  pnpm test:integration  # runs integration tests\\n  ```\",\"line\":142,\"subject\":\"local-npm:start\",\"runner\":\"pnpm\",\"mode\":\"asserts_existing\"},{\"type\":\"command\",\"quote\":\"- Generate coverage report:\\n  ```bash\\n  pnpm test:coverage\\n  ```\",\"line\":153,\"subject\":\"test:coverage\",\"runner\":\"pnpm\",\"mode\":\"asserts_existing\"},{\"type\":\"command\",\"quote\":\"- Run ESLint:\\n  ```bash\\n  pnpm lint\\n  ```\",\"line\":161,\"subject\":\"lint\",\"runner\":\"pnpm\",\"mode\":\"asserts_existing\"},{\"type\":\"version\",\"quote\":\"- Node.js 22+ recommended.\",\"line\":92,\"subject\":\"node\",\"version\":\"22\",\"qualifier\":\"min\",\"mode\":\"asserts_existing\"}]}",
+ "parse_ok": true,
+ "parse_error": null,
+ "parse_retries": 0,
+ "latency_s": 30.768052391009405,
+ "usage": {
+  "prompt": 3375,
+  "completion": 3851
+ },
+ "n_api_calls": 1,
+ "finish_reason": "stop",
+ "error": null,
+ "discarded_attempt_texts": []
+}

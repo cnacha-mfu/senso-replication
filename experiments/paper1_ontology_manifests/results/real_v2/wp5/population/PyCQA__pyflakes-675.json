@@ -1,0 +1,2035 @@
+{
+ "repo": "PyCQA/pyflakes",
+ "snapshot_date": "2021-11-30",
+ "status": "ok",
+ "unmineable": false,
+ "unmineable_reason": null,
+ "replaces": null,
+ "settings": {
+  "dedup": true,
+  "complexity": false,
+  "dataset": null,
+  "sensitivity": false,
+  "snapshot_commit": "dbb18432165bdc567e015511b3f3284f0f14cf05",
+  "mode": "wp5_snapshot_commit",
+  "test_patch_files": [
+   "pyflakes/test/test_imports.py"
+  ],
+  "package_roots": [
+   "pyflakes"
+  ]
+ },
+ "versions": {
+  "owlready2": "0.51",
+  "pymannkendall": "1.4.3",
+  "lizard": "1.24.1",
+  "numpy": "2.5.3",
+  "scipy": "1.18.1",
+  "python": "3.12.15",
+  "git": "git version 2.53.0"
+ },
+ "task_id": "PyCQA__pyflakes-675",
+ "base_commit": "dbb18432165bdc567e015511b3f3284f0f14cf05",
+ "measures": {
+  "monthsObserved": 36,
+  "monthsSinceLastCommit": 0,
+  "distinctAuthorsInWindow": 33,
+  "commitMKTau": -0.204762,
+  "commitMKpValue": 0.071773,
+  "activeMonthCount": 23,
+  "activeMonthRatio": 0.638889,
+  "meanMonthlyCommits": 2.25,
+  "commitsLast3Months": 4,
+  "commitCountCV": 1.241155,
+  "commitCountCVSample": 1.258761,
+  "commitHalfRatio": 0.472727,
+  "commitSecondHalfMean": 1.444444,
+  "churnCV": 2.443288,
+  "linesAddedCV": 2.363953,
+  "mergeMonthRatio": 0.027778,
+  "multiAuthorMonthRatio": 0.388889,
+  "bugFixRatioFirstHalf": 0.318881,
+  "bugFixRatioSecondHalf": 0.325694,
+  "bugFixHalfRatio": 1.021366,
+  "locSeriesLength": 36,
+  "locRelSenSlopeAnnual": 0.049949,
+  "locMKTau": 0.944444,
+  "locMKS": 595,
+  "locMKpValue": 0.0,
+  "locSenSlope": 35.443137,
+  "locStart": 6910,
+  "locEnd": 8861,
+  "locDelta": 1951,
+  "locGrowthRate": 0.282344,
+  "locChangePct": 28.234443,
+  "locEndToStartRatio": 1.282344,
+  "locGrowthLast3": 0.00957,
+  "featureCommitsFirstHalf": 0,
+  "featureCommitsSecondHalf": 0,
+  "featureCommitsTotal": 0,
+  "locDeltaPerFeature": 1951.0,
+  "recentAgentCommitRatio": 0.0,
+  "featCommitCount": 0,
+  "bugFixCommitCount": 26,
+  "commitCount": 81,
+  "monthly_series": {
+   "months": [
+    "2017-12",
+    "2018-01",
+    "2018-02",
+    "2018-03",
+    "2018-04",
+    "2018-05",
+    "2018-06",
+    "2018-07",
+    "2018-08",
+    "2018-09",
+    "2018-10",
+    "2018-11",
+    "2018-12",
+    "2019-01",
+    "2019-02",
+    "2019-03",
+    "2019-04",
+    "2019-05",
+    "2019-06",
+    "2019-07",
+    "2019-08",
+    "2019-09",
+    "2019-10",
+    "2019-11",
+    "2019-12",
+    "2020-01",
+    "2020-02",
+    "2020-03",
+    "2020-04",
+    "2020-05",
+    "2020-06",
+    "2020-07",
+    "2020-08",
+    "2020-09",
+    "2020-10",
+    "2020-11",
+    "2020-12",
+    "2021-01",
+    "2021-02",
+    "2021-03",
+    "2021-04",
+    "2021-05",
+    "2021-06",
+    "2021-07",
+    "2021-08",
+    "2021-09",
+    "2021-10",
+    "2021-11"
+   ],
+   "commits": [
+    1,
+    3,
+    1,
+    4,
+    0,
+    1,
+    5,
+    1,
+    3,
+    0,
+    4,
+    2,
+    6,
+    13,
+    3,
+    1,
+    0,
+    1,
+    0,
+    6,
+    5,
+    3,
+    1,
+    1,
+    0,
+    1,
+    3,
+    8,
+    2,
+    1,
+    0,
+    0,
+    0,
+    4,
+    4,
+    0,
+    2,
+    3,
+    0,
+    5,
+    0,
+    4,
+    0,
+    0,
+    0,
+    0,
+    3,
+    1
+   ],
+   "loc": [
+    6459,
+    6479,
+    6510,
+    6478,
+    6478,
+    6478,
+    6478,
+    6674,
+    6774,
+    6774,
+    6831,
+    6862,
+    6910,
+    7498,
+    7509,
+    7544,
+    7544,
+    7538,
+    7538,
+    8065,
+    8111,
+    8163,
+    8163,
+    8166,
+    8166,
+    8176,
+    8350,
+    8477,
+    8514,
+    8515,
+    8515,
+    8515,
+    8515,
+    8632,
+    8644,
+    8644,
+    8644,
+    8682,
+    8682,
+    8771,
+    8771,
+    8777,
+    8777,
+    8777,
+    8777,
+    8777,
+    8879,
+    8861
+   ]
+  }
+ },
+ "window": {
+  "L": 36,
+  "first_month": "2018-12",
+  "last_month": "2021-11",
+  "n_months": 36,
+  "left_truncated": false,
+  "first_commit_month": "2005-10",
+  "mined_months": 48,
+  "commits_in_window": 81,
+  "commits_in_history": 517
+ },
+ "loc_instrument": {
+  "instrument": "nonblank-source-lines-v1",
+  "status": "ok",
+  "months": 48,
+  "month_end_commits_distinct": 33,
+  "source_blobs": 130,
+  "blobs_fetched": 3,
+  "t_ls_tree_s": 0.2826131740002893,
+  "t_fetch_s": 0.8106107719941065,
+  "t_read_s": 0.04935583099722862,
+  "series_present": true,
+  "extensions": [
+   ".bash",
+   ".c",
+   ".cc",
+   ".cjs",
+   ".clj",
+   ".cpp",
+   ".cs",
+   ".cxx",
+   ".dart",
+   ".erl",
+   ".ex",
+   ".exs",
+   ".f90",
+   ".go",
+   ".groovy",
+   ".h",
+   ".hh",
+   ".hpp",
+   ".hs",
+   ".java",
+   ".jl",
+   ".js",
+   ".jsx",
+   ".kt",
+   ".kts",
+   ".lua",
+   ".m",
+   ".mjs",
+   ".ml",
+   ".mm",
+   ".nim",
+   ".php",
+   ".pl",
+   ".pm",
+   ".py",
+   ".pyi",
+   ".r",
+   ".rb",
+   ".rs",
+   ".scala",
+   ".sh",
+   ".sql",
+   ".svelte",
+   ".swift",
+   ".ts",
+   ".tsx",
+   ".vue",
+   ".zig"
+  ],
+  "excluded_dirs": [
+   "node_modules",
+   "vendor",
+   "vendored",
+   "third_party",
+   "site-packages",
+   "bower_components"
+  ],
+  "max_blob_bytes": 1000000,
+  "first_parent": true
+ },
+ "mining": {
+  "churn": {
+   "t_churn_raw_s": 0.02436899399617687,
+   "t_churn_fetch_s": 1.0661751520237885,
+   "t_churn_numstat_s": 0.09260158095275983,
+   "blobs_fetched_churn": 192
+  },
+  "timings": {
+   "t_clone": 0.003,
+   "t_mine": 1.21,
+   "t_loc": 1.143,
+   "t_reason_A": 2.327
+  },
+  "cached": false
+ },
+ "stage_a": {
+  "commits": 106,
+  "reasoned_commits": 106,
+  "inconsistent_chunks": 0,
+  "chunk_timings": [
+   {
+    "tbox_load_s": 0.03707568399840966,
+    "abox_load_s": 0.01582457299809903,
+    "reason_s": 2.267010472016409,
+    "extract_s": 0.002293312980327755,
+    "total_s": 2.322457173955627,
+    "commits": 106
+   }
+  ],
+  "tbox_sha256": "f5ba00eaa76dc3582415cdf566fbd7abc1d3f2797ca928f41dad106dc1c0bdb5"
+ },
+ "activity": {
+  "last_commit_date": "2021-11-21T13:51:51+00:00",
+  "months_since_last_commit": 0,
+  "distinct_authors_in_window": 33,
+  "merge_commits_in_window": 1
+ },
+ "agent_adoption_date": null,
+ "commit_label_counts": {
+  "BugFixCommit": 26,
+  "FeatureCommit": 0,
+  "AgentCommit": 0
+ },
+ "series_months": [
+  {
+   "month": "2018-12",
+   "commit_count": 6,
+   "merge_count": 0,
+   "unique_authors": 5,
+   "lines_added": 81,
+   "lines_deleted": 23,
+   "total_churn": 104,
+   "files_changed": 8,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 6910,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2019-01",
+   "commit_count": 13,
+   "merge_count": 0,
+   "unique_authors": 4,
+   "lines_added": 1017,
+   "lines_deleted": 328,
+   "total_churn": 1345,
+   "files_changed": 29,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 7498,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2019-02",
+   "commit_count": 3,
+   "merge_count": 0,
+   "unique_authors": 3,
+   "lines_added": 18,
+   "lines_deleted": 4,
+   "total_churn": 22,
+   "files_changed": 4,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 7509,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2019-03",
+   "commit_count": 1,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 52,
+   "lines_deleted": 8,
+   "total_churn": 60,
+   "files_changed": 2,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 7544,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2019-04",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 7544,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2019-05",
+   "commit_count": 1,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 6,
+   "lines_deleted": 14,
+   "total_churn": 20,
+   "files_changed": 1,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 7538,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2019-06",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 7538,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2019-07",
+   "commit_count": 6,
+   "merge_count": 1,
+   "unique_authors": 5,
+   "lines_added": 653,
+   "lines_deleted": 23,
+   "total_churn": 676,
+   "files_changed": 8,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 8065,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2019-08",
+   "commit_count": 5,
+   "merge_count": 0,
+   "unique_authors": 5,
+   "lines_added": 69,
+   "lines_deleted": 12,
+   "total_churn": 81,
+   "files_changed": 8,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 8111,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2019-09",
+   "commit_count": 3,
+   "merge_count": 0,
+   "unique_authors": 2,
+   "lines_added": 82,
+   "lines_deleted": 21,
+   "total_churn": 103,
+   "files_changed": 6,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 8163,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2019-10",
+   "commit_count": 1,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 1,
+   "lines_deleted": 1,
+   "total_churn": 2,
+   "files_changed": 1,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 8163,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2019-11",
+   "commit_count": 1,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 4,
+   "lines_deleted": 1,
+   "total_churn": 5,
+   "files_changed": 2,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 8166,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2019-12",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 8166,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2020-01",
+   "commit_count": 1,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 12,
+   "lines_deleted": 0,
+   "total_churn": 12,
+   "files_changed": 2,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 8176,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2020-02",
+   "commit_count": 3,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 237,
+   "lines_deleted": 27,
+   "total_churn": 264,
+   "files_changed": 6,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 8350,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2020-03",
+   "commit_count": 8,
+   "merge_count": 0,
+   "unique_authors": 3,
+   "lines_added": 185,
+   "lines_deleted": 26,
+   "total_churn": 211,
+   "files_changed": 13,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 8477,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2020-04",
+   "commit_count": 2,
+   "merge_count": 0,
+   "unique_authors": 2,
+   "lines_added": 46,
+   "lines_deleted": 0,
+   "total_churn": 46,
+   "files_changed": 2,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 8514,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2020-05",
+   "commit_count": 1,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 1,
+   "lines_deleted": 0,
+   "total_churn": 1,
+   "files_changed": 1,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 8515,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2020-06",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 8515,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2020-07",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 8515,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2020-08",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 8515,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2020-09",
+   "commit_count": 4,
+   "merge_count": 0,
+   "unique_authors": 4,
+   "lines_added": 169,
+   "lines_deleted": 27,
+   "total_churn": 196,
+   "files_changed": 6,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 8632,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2020-10",
+   "commit_count": 4,
+   "merge_count": 0,
+   "unique_authors": 3,
+   "lines_added": 37,
+   "lines_deleted": 25,
+   "total_churn": 62,
+   "files_changed": 5,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 8644,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2020-11",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 8644,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2020-12",
+   "commit_count": 2,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 8644,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2021-01",
+   "commit_count": 3,
+   "merge_count": 0,
+   "unique_authors": 2,
+   "lines_added": 49,
+   "lines_deleted": 2,
+   "total_churn": 51,
+   "files_changed": 5,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 8682,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2021-02",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 8682,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2021-03",
+   "commit_count": 5,
+   "merge_count": 0,
+   "unique_authors": 3,
+   "lines_added": 118,
+   "lines_deleted": 14,
+   "total_churn": 132,
+   "files_changed": 6,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 8771,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2021-04",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 8771,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2021-05",
+   "commit_count": 4,
+   "merge_count": 0,
+   "unique_authors": 4,
+   "lines_added": 29,
+   "lines_deleted": 21,
+   "total_churn": 50,
+   "files_changed": 3,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 8777,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2021-06",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 8777,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2021-07",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 8777,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2021-08",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 8777,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2021-09",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 8777,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2021-10",
+   "commit_count": 3,
+   "merge_count": 0,
+   "unique_authors": 2,
+   "lines_added": 125,
+   "lines_deleted": 3,
+   "total_churn": 128,
+   "files_changed": 5,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 8879,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2021-11",
+   "commit_count": 1,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 0,
+   "lines_deleted": 20,
+   "total_churn": 20,
+   "files_changed": 3,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 8861,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  }
+ ],
+ "measures_derived": {
+  "bugFixRatioFirstHalf": 0.318881,
+  "bugFixRatioSecondHalf": 0.325694,
+  "bugFixHalfRatio": 1.021366,
+  "featureCommitsFirstHalf": 0,
+  "featureCommitsSecondHalf": 0,
+  "featureCommitsTotal": 0,
+  "locDeltaPerFeature": 1951.0,
+  "recentAgentCommitRatio": 0.0
+ },
+ "modules_meta": {
+  "anchor_S": "2021-12-24T21:39:26+00:00",
+  "window_months": 12,
+  "package_roots": [
+   "pyflakes"
+  ],
+  "n_modules": 7,
+  "n_source_files": 9,
+  "n_window_commits": 15,
+  "cached": false,
+  "timings": {
+   "t_tree_loc": 0.823,
+   "t_history": 0.039,
+   "t_numstat": 0.038
+  },
+  "module_loc_instrument": "nonblank-source-lines-v1",
+  "label_counts": {
+   "StableModule": 5,
+   "ActiveModule": 2,
+   "undetermined": 0
+  },
+  "thresholds": {
+   "mod_window_months": 12,
+   "mod_stable_max_rel_churn": 0.1,
+   "mod_stable_max_change_months": 2
+  }
+ },
+ "inferred": {
+  "a0.05_L36_D12_G0.05_orig": {
+   "classes": [
+    "CopyPasteEvidence",
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIINonConformant",
+    "LawIVConformant",
+    "LawVIConformant",
+    "LawVIIConformant",
+    "LawVIIConformantRatio",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantNoMerge",
+    "LawVNonConformant",
+    "LocPerFeatureHigh",
+    "MKApplicable",
+    "MergeInactive",
+    "MinorLocGrowth",
+    "MultiAuthorActive",
+    "NonSubstantialChange",
+    "RBServicingStage",
+    "RecentlyActive"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": "urn:senso:explanations:PyCQA__pyflakes-675:d20298612d99",
+   "tbox_sha256": "d20298612d99fa8f5c1a63c70eaab0195a3e82e2d6780de3bd1fd3ced72d6e5d",
+   "abox_triples": 110,
+   "t_reason_B_s": 2.178
+  }
+ },
+ "primary_config": "a0.05_L36_D12_G0.05_orig",
+ "project_iri": "http://senso-framework.org/data/PyCQA__pyflakes-675",
+ "consistent": true,
+ "inferred_labels": [
+  "CopyPasteEvidence",
+  "GrowthStage",
+  "LawIConformant",
+  "LawIIINonConformant",
+  "LawIVConformant",
+  "LawVIConformant",
+  "LawVIIConformant",
+  "LawVIIConformantRatio",
+  "LawVIIINonConformant",
+  "LawVIIINonConformantNoMerge",
+  "LawVNonConformant",
+  "LocPerFeatureHigh",
+  "MKApplicable",
+  "MergeInactive",
+  "MinorLocGrowth",
+  "MultiAuthorActive",
+  "NonSubstantialChange",
+  "RBServicingStage",
+  "RecentlyActive"
+ ],
+ "stage_labels": [
+  "GrowthStage",
+  "RBServicingStage"
+ ],
+ "law_labels": {
+  "I": "LawIConformant",
+  "III": "LawIIINonConformant",
+  "IV": "LawIVConformant",
+  "V": "LawVNonConformant",
+  "VI": "LawVIConformant",
+  "VII": "LawVIIConformant",
+  "VIII": "LawVIIINonConformant"
+ },
+ "tbox_sha256_stage_b": "d20298612d99fa8f5c1a63c70eaab0195a3e82e2d6780de3bd1fd3ced72d6e5d",
+ "tbox_sha256_stage_a": "f5ba00eaa76dc3582415cdf566fbd7abc1d3f2797ca928f41dad106dc1c0bdb5",
+ "summary": {
+  "c1": "A",
+  "c2": "S",
+  "cf": "A",
+  "note": "debug summary; run_rq1_v2.py reads `inferred` and recomputes CF itself"
+ },
+ "modules": {
+  "pyflakes/__init__.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "RarelyChangedModule"
+   ],
+   "measures": {
+    "modulePath": "pyflakes/__init__.py",
+    "moduleLoc": 1,
+    "moduleCommitsInWindow": 3,
+    "moduleChangeMonthsInWindow": 2,
+    "moduleLinesChangedInWindow": 6,
+    "moduleRelChurnInWindow": 6.0,
+    "moduleMonthsSinceLastChange": 2
+   },
+   "iri": "http://senso-framework.org/data/PyCQA__pyflakes-675/module/pyflakes___init__.py-ecba4e",
+   "abox_asserted": true
+  },
+  "pyflakes/__main__.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "pyflakes/__main__.py",
+    "moduleLoc": 4,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 45
+   },
+   "iri": "http://senso-framework.org/data/PyCQA__pyflakes-675/module/pyflakes___main__.py-47e142",
+   "abox_asserted": true
+  },
+  "pyflakes/api.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "pyflakes/api.py",
+    "moduleLoc": 171,
+    "moduleCommitsInWindow": 1,
+    "moduleChangeMonthsInWindow": 1,
+    "moduleLinesChangedInWindow": 2,
+    "moduleRelChurnInWindow": 0.011696,
+    "moduleMonthsSinceLastChange": 1
+   },
+   "iri": "http://senso-framework.org/data/PyCQA__pyflakes-675/module/pyflakes_api.py-10637f",
+   "abox_asserted": true
+  },
+  "pyflakes/checker.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "LowRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "pyflakes/checker.py",
+    "moduleLoc": 1989,
+    "moduleCommitsInWindow": 8,
+    "moduleChangeMonthsInWindow": 4,
+    "moduleLinesChangedInWindow": 133,
+    "moduleRelChurnInWindow": 0.066868,
+    "moduleMonthsSinceLastChange": 2
+   },
+   "iri": "http://senso-framework.org/data/PyCQA__pyflakes-675/module/pyflakes_checker.py-f5ddaa",
+   "abox_asserted": true
+  },
+  "pyflakes/messages.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "pyflakes/messages.py",
+    "moduleLoc": 242,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 21
+   },
+   "iri": "http://senso-framework.org/data/PyCQA__pyflakes-675/module/pyflakes_messages.py-842fe9",
+   "abox_asserted": true
+  },
+  "pyflakes/reporter.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "pyflakes/reporter.py",
+    "moduleLoc": 69,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 36
+   },
+   "iri": "http://senso-framework.org/data/PyCQA__pyflakes-675/module/pyflakes_reporter.py-8bbe26",
+   "abox_asserted": true
+  },
+  "pyflakes/scripts": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "pyflakes/scripts",
+    "moduleLoc": 7,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 92
+   },
+   "iri": "http://senso-framework.org/data/PyCQA__pyflakes-675/module/pyflakes_scripts-976cae",
+   "abox_asserted": true
+  }
+ },
+ "explanations": {
+  "stage:GrowthStage": {
+   "class": "GrowthStage",
+   "individual": "http://senso-framework.org/data/PyCQA__pyflakes-675",
+   "attempts": 3,
+   "target": "http://senso-framework.org/data/PyCQA__pyflakes-675 type http://senso-framework.org/ontology/seo#GrowthStage",
+   "justifications": [],
+   "raw_text": "",
+   "seconds": 2.3468265520059504,
+   "returncode": 1,
+   "error": "Exception in thread \"main\" org.mindswap.pellet.exceptions.InternalReasonerException: Adding type to a pruned node \"anon(11)\" restrictedDatatype(http://www.w3.org/2001/XMLSchema#decimal,[facet(http://www.w3.org/2001/XMLSchema#minExclusive,literal(0.15,(),http://www.w3.org/2001/XMLSchema#decimal))])\n\tat org.mindswap.pellet.Node.addType(Node.java:448)\n\tat org.mindswap.pellet.Literal.addType(Literal.java:257)\n\tat org.mindswap.pellet.tableau.completion.CompletionStrategy.addType(CompletionStrategy.java:438)\n\tat org.mindswap.pellet.tableau.completion.rule.SomeValuesRule.applySomeValuesRule(SomeValuesRule.java:180)\n\tat org.mindswap.pellet.tableau.completion.rule.SomeValuesRule.apply(SomeValuesRule.java:64)\n\tat org.mindswap.pellet.tableau.completion.rule.AbstractTableauRule.apply(AbstractTableauRule.java:64)\n\tat org.mindswap.pellet.tableau.completion.SROIQStrategy.complete(SROIQStrategy.java:157)\n\tat org.mindswap.pellet.ABox.isConsistent(ABox.java:1423)\n\tat org.mindswap.pellet.ABox.isSatisfiab"
+  },
+  "stage:RBServicingStage": {
+   "class": "RBServicingStage",
+   "individual": "http://senso-framework.org/data/PyCQA__pyflakes-675",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/PyCQA__pyflakes-675 type http://senso-framework.org/ontology/seo#RBServicingStage",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "subclass",
+       "subject": "MinorLocGrowth",
+       "text": "MinorLocGrowth subClassOf NonSubstantialChange"
+      },
+      {
+       "kind": "definition",
+       "subject": "RBServicingStage",
+       "text": "RBServicingStage equivalentTo NonSubstantialChange and RecentlyActive and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "RecentlyActive",
+       "text": "RecentlyActive equivalentTo A_monthsSinceLastCommit_lt_rb_dormancy_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locRelSenSlopeAnnual_lt_rb_min_rel_loc_growth_per_year",
+       "text": "A_locRelSenSlopeAnnual_lt_rb_min_rel_loc_growth_per_year equivalentTo locRelSenSlopeAnnual some decimal[< 0.05]"
+      },
+      {
+       "kind": "definition",
+       "subject": "MinorLocGrowth",
+       "text": "MinorLocGrowth equivalentTo A_locRelSenSlopeAnnual_lt_rb_min_rel_loc_growth_per_year and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_monthsSinceLastCommit_lt_rb_dormancy_months",
+       "text": "A_monthsSinceLastCommit_lt_rb_dormancy_months equivalentTo monthsSinceLastCommit some integer[< 12]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "PyCQA__pyflakes-675",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "PyCQA__pyflakes-675 type SoftwareProject"
+      },
+      {
+       "subject": "PyCQA__pyflakes-675",
+       "prop": "monthsSinceLastCommit",
+       "value": 0,
+       "raw": "PyCQA__pyflakes-675 monthsSinceLastCommit 0"
+      },
+      {
+       "subject": "PyCQA__pyflakes-675",
+       "prop": "locRelSenSlopeAnnual",
+       "value": 0.049949,
+       "raw": "PyCQA__pyflakes-675 locRelSenSlopeAnnual 0.049949"
+      }
+     ],
+     "closures": [],
+     "raw": "PyCQA__pyflakes-675 type SoftwareProject\nMinorLocGrowth subClassOf NonSubstantialChange\nRBServicingStage equivalentTo NonSubstantialChange and RecentlyActive and SoftwareProject\nRecentlyActive equivalentTo A_monthsSinceLastCommit_lt_rb_dormancy_months and SoftwareProject\nA_locRelSenSlopeAnnual_lt_rb_min_rel_loc_growth_per_year equivalentTo locRelSenSlopeAnnual some decimal[< 0.05]\nMinorLocGrowth equivalentTo A_locRelSenSlopeAnnual_lt_rb_min_rel_loc_growth_per_year and SoftwareProject\nPyCQA__pyflakes-675 monthsSinceLastCommit 0\nPyCQA__pyflakes-675 locRelSenSlopeAnnual 0.049949\nA_monthsSinceLastCommit_lt_rb_dormancy_months equivalentTo monthsSinceLastCommit some integer[< 12]"
+    }
+   ],
+   "raw_text": "Axiom: PyCQA__pyflakes-675 type RBServicingStage\n\nExplanation(s): \n1)   PyCQA__pyflakes-675 type SoftwareProject\n     MinorLocGrowth subClassOf NonSubstantialChange\n     RBServicingStage equivalentTo NonSubstantialChange\n                                   and RecentlyActive\n                                   and SoftwareProject\n     RecentlyActive equivalentTo A_monthsSinceLastCommit_lt_rb_dormancy_months\n                                 and SoftwareProject\n     A_locRelSenSlopeAnnual_lt_rb_min_rel_loc_growth_per_year equivalentTo locRelSenSlopeAnnual some decimal[< 0.05]\n     MinorLocGrowth equivalentTo A_locRelSenSlopeAnnual_lt_rb_min_rel_loc_growth_per_year\n                                 and SoftwareProject\n     PyCQA__pyflakes-675 monthsSinceLastCommit 0\n     PyCQA__pyflakes-675 locRelSenSlopeAnnual 0.049949\n     A_monthsSinceLastCommit_lt_rb_dormancy_months equivalentTo monthsSinceLastCommit some integer[< 12]\n\n\n",
+   "seconds": 4.456999853020534,
+   "returncode": 0,
+   "error": null
+  },
+  "lawI": {
+   "class": "LawIConformant",
+   "individual": "http://senso-framework.org/data/PyCQA__pyflakes-675",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/PyCQA__pyflakes-675 type http://senso-framework.org/ontology/seo#LawIConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law1_min_months",
+       "text": "A_monthsObserved_ge_p_law1_min_months equivalentTo monthsObserved some integer[>= 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawIConformant",
+       "text": "LawIConformant equivalentTo A_activeMonthRatio_ge_p_law1_active_ratio and A_monthsObserved_ge_p_law1_min_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_activeMonthRatio_ge_p_law1_active_ratio",
+       "text": "A_activeMonthRatio_ge_p_law1_active_ratio equivalentTo activeMonthRatio some decimal[>= 0.5]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "PyCQA__pyflakes-675",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "PyCQA__pyflakes-675 type SoftwareProject"
+      },
+      {
+       "subject": "PyCQA__pyflakes-675",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "PyCQA__pyflakes-675 monthsObserved 36"
+      },
+      {
+       "subject": "PyCQA__pyflakes-675",
+       "prop": "activeMonthRatio",
+       "value": 0.638889,
+       "raw": "PyCQA__pyflakes-675 activeMonthRatio 0.638889"
+      }
+     ],
+     "closures": [],
+     "raw": "PyCQA__pyflakes-675 type SoftwareProject\nA_monthsObserved_ge_p_law1_min_months equivalentTo monthsObserved some integer[>= 2]\nPyCQA__pyflakes-675 monthsObserved 36\nLawIConformant equivalentTo A_activeMonthRatio_ge_p_law1_active_ratio and A_monthsObserved_ge_p_law1_min_months and SoftwareProject\nA_activeMonthRatio_ge_p_law1_active_ratio equivalentTo activeMonthRatio some decimal[>= 0.5]\nPyCQA__pyflakes-675 activeMonthRatio 0.638889"
+    }
+   ],
+   "raw_text": "Axiom: PyCQA__pyflakes-675 type LawIConformant\n\nExplanation(s): \n1)   PyCQA__pyflakes-675 type SoftwareProject\n     A_monthsObserved_ge_p_law1_min_months equivalentTo monthsObserved some integer[>= 2]\n     PyCQA__pyflakes-675 monthsObserved 36\n     LawIConformant equivalentTo A_activeMonthRatio_ge_p_law1_active_ratio\n                                 and A_monthsObserved_ge_p_law1_min_months\n                                 and SoftwareProject\n     A_activeMonthRatio_ge_p_law1_active_ratio equivalentTo activeMonthRatio some decimal[>= 0.5]\n     PyCQA__pyflakes-675 activeMonthRatio 0.638889\n\n\n",
+   "seconds": 4.772006147017237,
+   "returncode": 0,
+   "error": null
+  },
+  "lawIII": {
+   "class": "LawIIINonConformant",
+   "individual": "http://senso-framework.org/data/PyCQA__pyflakes-675",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/PyCQA__pyflakes-675 type http://senso-framework.org/ontology/seo#LawIIINonConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_churnCV_ge_p_law3_churn_cv",
+       "text": "A_churnCV_ge_p_law3_churn_cv equivalentTo churnCV some decimal[>= 2.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law3_min_months",
+       "text": "A_monthsObserved_ge_p_law3_min_months equivalentTo monthsObserved some integer[>= 6]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawIIINonConformant",
+       "text": "LawIIINonConformant equivalentTo A_churnCV_ge_p_law3_churn_cv and A_monthsObserved_ge_p_law3_min_months and SoftwareProject"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "PyCQA__pyflakes-675",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "PyCQA__pyflakes-675 type SoftwareProject"
+      },
+      {
+       "subject": "PyCQA__pyflakes-675",
+       "prop": "churnCV",
+       "value": 2.443288,
+       "raw": "PyCQA__pyflakes-675 churnCV 2.443288"
+      },
+      {
+       "subject": "PyCQA__pyflakes-675",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "PyCQA__pyflakes-675 monthsObserved 36"
+      }
+     ],
+     "closures": [],
+     "raw": "A_churnCV_ge_p_law3_churn_cv equivalentTo churnCV some decimal[>= 2.0]\nA_monthsObserved_ge_p_law3_min_months equivalentTo monthsObserved some integer[>= 6]\nPyCQA__pyflakes-675 type SoftwareProject\nPyCQA__pyflakes-675 churnCV 2.443288\nPyCQA__pyflakes-675 monthsObserved 36\nLawIIINonConformant equivalentTo A_churnCV_ge_p_law3_churn_cv and A_monthsObserved_ge_p_law3_min_months and SoftwareProject"
+    }
+   ],
+   "raw_text": "Axiom: PyCQA__pyflakes-675 type LawIIINonConformant\n\nExplanation(s): \n1)   A_churnCV_ge_p_law3_churn_cv equivalentTo churnCV some decimal[>= 2.0]\n     A_monthsObserved_ge_p_law3_min_months equivalentTo monthsObserved some integer[>= 6]\n     PyCQA__pyflakes-675 type SoftwareProject\n     PyCQA__pyflakes-675 churnCV 2.443288\n     PyCQA__pyflakes-675 monthsObserved 36\n     LawIIINonConformant equivalentTo A_churnCV_ge_p_law3_churn_cv\n                                      and A_monthsObserved_ge_p_law3_min_months\n                                      and SoftwareProject\n\n\n",
+   "seconds": 4.530884356005117,
+   "returncode": 0,
+   "error": null
+  },
+  "lawIV": {
+   "class": "LawIVConformant",
+   "individual": "http://senso-framework.org/data/PyCQA__pyflakes-675",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/PyCQA__pyflakes-675 type http://senso-framework.org/ontology/seo#LawIVConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law4_min_months",
+       "text": "A_monthsObserved_ge_p_law4_min_months equivalentTo monthsObserved some integer[>= 6]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawIVConformant",
+       "text": "LawIVConformant equivalentTo A_commitCountCV_lt_p_law4_commit_cv and A_monthsObserved_ge_p_law4_min_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_commitCountCV_lt_p_law4_commit_cv",
+       "text": "A_commitCountCV_lt_p_law4_commit_cv equivalentTo commitCountCV some decimal[< 1.5]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "PyCQA__pyflakes-675",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "PyCQA__pyflakes-675 type SoftwareProject"
+      },
+      {
+       "subject": "PyCQA__pyflakes-675",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "PyCQA__pyflakes-675 monthsObserved 36"
+      },
+      {
+       "subject": "PyCQA__pyflakes-675",
+       "prop": "commitCountCV",
+       "value": 1.241155,
+       "raw": "PyCQA__pyflakes-675 commitCountCV 1.241155"
+      }
+     ],
+     "closures": [],
+     "raw": "A_monthsObserved_ge_p_law4_min_months equivalentTo monthsObserved some integer[>= 6]\nPyCQA__pyflakes-675 type SoftwareProject\nLawIVConformant equivalentTo A_commitCountCV_lt_p_law4_commit_cv and A_monthsObserved_ge_p_law4_min_months and SoftwareProject\nPyCQA__pyflakes-675 monthsObserved 36\nPyCQA__pyflakes-675 commitCountCV 1.241155\nA_commitCountCV_lt_p_law4_commit_cv equivalentTo commitCountCV some decimal[< 1.5]"
+    }
+   ],
+   "raw_text": "Axiom: PyCQA__pyflakes-675 type LawIVConformant\n\nExplanation(s): \n1)   A_monthsObserved_ge_p_law4_min_months equivalentTo monthsObserved some integer[>= 6]\n     PyCQA__pyflakes-675 type SoftwareProject\n     LawIVConformant equivalentTo A_commitCountCV_lt_p_law4_commit_cv\n                                  and A_monthsObserved_ge_p_law4_min_months\n                                  and SoftwareProject\n     PyCQA__pyflakes-675 monthsObserved 36\n     PyCQA__pyflakes-675 commitCountCV 1.241155\n     A_commitCountCV_lt_p_law4_commit_cv equivalentTo commitCountCV some decimal[< 1.5]\n\n\n",
+   "seconds": 4.717170135001652,
+   "returncode": 0,
+   "error": null
+  },
+  "lawV": {
+   "class": "LawVNonConformant",
+   "individual": "http://senso-framework.org/data/PyCQA__pyflakes-675",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/PyCQA__pyflakes-675 type http://senso-framework.org/ontology/seo#LawVNonConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_linesAddedCV_ge_p_law5_additions_cv",
+       "text": "A_linesAddedCV_ge_p_law5_additions_cv equivalentTo linesAddedCV some decimal[>= 2.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawVNonConformant",
+       "text": "LawVNonConformant equivalentTo A_linesAddedCV_ge_p_law5_additions_cv and A_monthsObserved_ge_p_law5_min_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law5_min_months",
+       "text": "A_monthsObserved_ge_p_law5_min_months equivalentTo monthsObserved some integer[>= 4]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "PyCQA__pyflakes-675",
+       "prop": "linesAddedCV",
+       "value": 2.363953,
+       "raw": "PyCQA__pyflakes-675 linesAddedCV 2.363953"
+      },
+      {
+       "subject": "PyCQA__pyflakes-675",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "PyCQA__pyflakes-675 type SoftwareProject"
+      },
+      {
+       "subject": "PyCQA__pyflakes-675",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "PyCQA__pyflakes-675 monthsObserved 36"
+      }
+     ],
+     "closures": [],
+     "raw": "PyCQA__pyflakes-675 linesAddedCV 2.363953\nA_linesAddedCV_ge_p_law5_additions_cv equivalentTo linesAddedCV some decimal[>= 2.0]\nPyCQA__pyflakes-675 type SoftwareProject\nLawVNonConformant equivalentTo A_linesAddedCV_ge_p_law5_additions_cv and A_monthsObserved_ge_p_law5_min_months and SoftwareProject\nA_monthsObserved_ge_p_law5_min_months equivalentTo monthsObserved some integer[>= 4]\nPyCQA__pyflakes-675 monthsObserved 36"
+    }
+   ],
+   "raw_text": "Axiom: PyCQA__pyflakes-675 type LawVNonConformant\n\nExplanation(s): \n1)   PyCQA__pyflakes-675 linesAddedCV 2.363953\n     A_linesAddedCV_ge_p_law5_additions_cv equivalentTo linesAddedCV some decimal[>= 2.0]\n     PyCQA__pyflakes-675 type SoftwareProject\n     LawVNonConformant equivalentTo A_linesAddedCV_ge_p_law5_additions_cv\n                                    and A_monthsObserved_ge_p_law5_min_months\n                                    and SoftwareProject\n     A_monthsObserved_ge_p_law5_min_months equivalentTo monthsObserved some integer[>= 4]\n     PyCQA__pyflakes-675 monthsObserved 36\n\n\n",
+   "seconds": 4.642504618968815,
+   "returncode": 0,
+   "error": null
+  },
+  "lawVI": {
+   "class": "LawVIConformant",
+   "individual": "http://senso-framework.org/data/PyCQA__pyflakes-675",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/PyCQA__pyflakes-675 type http://senso-framework.org/ontology/seo#LawVIConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "subclass",
+       "subject": "GrowthStage",
+       "text": "GrowthStage subClassOf LawVIConformant"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKTau_gt_0",
+       "text": "A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "GrowthStage",
+       "text": "GrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKpValue_lt_mk_alpha",
+       "text": "A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "PyCQA__pyflakes-675",
+       "prop": "locMKTau",
+       "value": 0.944444,
+       "raw": "PyCQA__pyflakes-675 locMKTau 0.944444"
+      },
+      {
+       "subject": "PyCQA__pyflakes-675",
+       "prop": "locSeriesLength",
+       "value": 36,
+       "raw": "PyCQA__pyflakes-675 locSeriesLength 36"
+      },
+      {
+       "subject": "PyCQA__pyflakes-675",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "PyCQA__pyflakes-675 type SoftwareProject"
+      },
+      {
+       "subject": "PyCQA__pyflakes-675",
+       "prop": "locMKpValue",
+       "value": 0.0,
+       "raw": "PyCQA__pyflakes-675 locMKpValue 0.0"
+      }
+     ],
+     "closures": [],
+     "raw": "PyCQA__pyflakes-675 locMKTau 0.944444\nGrowthStage subClassOf LawVIConformant\nA_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\nPyCQA__pyflakes-675 locSeriesLength 36\nA_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\nGrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject\nA_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]\nPyCQA__pyflakes-675 type SoftwareProject\nA_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\nPyCQA__pyflakes-675 locMKpValue 0.0"
+    }
+   ],
+   "raw_text": "Axiom: PyCQA__pyflakes-675 type LawVIConformant\n\nExplanation(s): \n1)   PyCQA__pyflakes-675 locMKTau 0.944444\n     GrowthStage subClassOf LawVIConformant\n     A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\n     PyCQA__pyflakes-675 locSeriesLength 36\n     A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\n     GrowthStage equivalentTo A_locMKTau_gt_0\n                              and A_locMKpValue_lt_mk_alpha\n                              and MKApplicable\n                              and SoftwareProject\n     A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]\n     PyCQA__pyflakes-675 type SoftwareProject\n     A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\n     PyCQA__pyflakes-675 locMKpValue 0.0\n\n\n",
+   "seconds": 4.696486892004032,
+   "returncode": 0,
+   "error": null
+  },
+  "lawVII": {
+   "class": "LawVIIConformant",
+   "individual": "http://senso-framework.org/data/PyCQA__pyflakes-675",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/PyCQA__pyflakes-675 type http://senso-framework.org/ontology/seo#LawVIIConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_bugFixHalfRatio_ge_p_law7_tolerance",
+       "text": "A_bugFixHalfRatio_ge_p_law7_tolerance equivalentTo bugFixHalfRatio some decimal[>= 0.9]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawVIIConformantRatio",
+       "text": "LawVIIConformantRatio equivalentTo A_activeMonthCount_ge_p_law7_min_active_months and A_bugFixHalfRatio_ge_p_law7_tolerance and A_bugFixRatioFirstHalf_gt_0 and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_bugFixRatioFirstHalf_gt_0",
+       "text": "A_bugFixRatioFirstHalf_gt_0 equivalentTo bugFixRatioFirstHalf some decimal[> 0.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_activeMonthCount_ge_p_law7_min_active_months",
+       "text": "A_activeMonthCount_ge_p_law7_min_active_months equivalentTo activeMonthCount some integer[>= 4]"
+      },
+      {
+       "kind": "subclass",
+       "subject": "LawVIIConformantRatio",
+       "text": "LawVIIConformantRatio subClassOf LawVIIConformant"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "PyCQA__pyflakes-675",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "PyCQA__pyflakes-675 type SoftwareProject"
+      },
+      {
+       "subject": "PyCQA__pyflakes-675",
+       "prop": "bugFixRatioFirstHalf",
+       "value": 0.318881,
+       "raw": "PyCQA__pyflakes-675 bugFixRatioFirstHalf 0.318881"
+      },
+      {
+       "subject": "PyCQA__pyflakes-675",
+       "prop": "bugFixHalfRatio",
+       "value": 1.021366,
+       "raw": "PyCQA__pyflakes-675 bugFixHalfRatio 1.021366"
+      },
+      {
+       "subject": "PyCQA__pyflakes-675",
+       "prop": "activeMonthCount",
+       "value": 23,
+       "raw": "PyCQA__pyflakes-675 activeMonthCount 23"
+      }
+     ],
+     "closures": [],
+     "raw": "A_bugFixHalfRatio_ge_p_law7_tolerance equivalentTo bugFixHalfRatio some decimal[>= 0.9]\nLawVIIConformantRatio equivalentTo A_activeMonthCount_ge_p_law7_min_active_months and A_bugFixHalfRatio_ge_p_law7_tolerance and A_bugFixRatioFirstHalf_gt_0 and SoftwareProject\nPyCQA__pyflakes-675 type SoftwareProject\nPyCQA__pyflakes-675 bugFixRatioFirstHalf 0.318881\nPyCQA__pyflakes-675 bugFixHalfRatio 1.021366\nPyCQA__pyflakes-675 activeMonthCount 23\nA_bugFixRatioFirstHalf_gt_0 equivalentTo bugFixRatioFirstHalf some decimal[> 0.0]\nA_activeMonthCount_ge_p_law7_min_active_months equivalentTo activeMonthCount some integer[>= 4]\nLawVIIConformantRatio subClassOf LawVIIConformant"
+    }
+   ],
+   "raw_text": "Axiom: PyCQA__pyflakes-675 type LawVIIConformant\n\nExplanation(s): \n1)   A_bugFixHalfRatio_ge_p_law7_tolerance equivalentTo bugFixHalfRatio some decimal[>= 0.9]\n     LawVIIConformantRatio equivalentTo A_activeMonthCount_ge_p_law7_min_active_months\n                                        and A_bugFixHalfRatio_ge_p_law7_tolerance\n                                        and A_bugFixRatioFirstHalf_gt_0\n                                        and SoftwareProject\n     PyCQA__pyflakes-675 type SoftwareProject\n     PyCQA__pyflakes-675 bugFixRatioFirstHalf 0.318881\n     PyCQA__pyflakes-675 bugFixHalfRatio 1.021366\n     PyCQA__pyflakes-675 activeMonthCount 23\n     A_bugFixRatioFirstHalf_gt_0 equivalentTo bugFixRatioFirstHalf some decimal[> 0.0]\n     A_activeMonthCount_ge_p_law7_min_active_months equivalentTo activeMonthCount some integer[>= 4]\n     LawVIIConformantRatio subClassOf LawVIIConformant\n\n\n",
+   "seconds": 2.4292261660448276,
+   "returncode": 0,
+   "error": null
+  },
+  "lawVIII": {
+   "class": "LawVIIINonConformant",
+   "individual": "http://senso-framework.org/data/PyCQA__pyflakes-675",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/PyCQA__pyflakes-675 type http://senso-framework.org/ontology/seo#LawVIIINonConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_mergeMonthRatio_le_p_law8_merge_ratio",
+       "text": "A_mergeMonthRatio_le_p_law8_merge_ratio equivalentTo MergeInactive"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawVIIINonConformantNoMerge",
+       "text": "LawVIIINonConformantNoMerge equivalentTo A_monthsObserved_ge_p_law8_min_months and MergeInactive and SoftwareProject"
+      },
+      {
+       "kind": "subclass",
+       "subject": "LawVIIINonConformantNoMerge",
+       "text": "LawVIIINonConformantNoMerge subClassOf LawVIIINonConformant"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_mergeMonthRatio_le_p_law8_merge_ratio",
+       "text": "A_mergeMonthRatio_le_p_law8_merge_ratio equivalentTo mergeMonthRatio some decimal[<= 0.3]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law8_min_months",
+       "text": "A_monthsObserved_ge_p_law8_min_months equivalentTo monthsObserved some integer[>= 6]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "PyCQA__pyflakes-675",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "PyCQA__pyflakes-675 monthsObserved 36"
+      },
+      {
+       "subject": "PyCQA__pyflakes-675",
+       "prop": "mergeMonthRatio",
+       "value": 0.027778,
+       "raw": "PyCQA__pyflakes-675 mergeMonthRatio 0.027778"
+      },
+      {
+       "subject": "PyCQA__pyflakes-675",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "PyCQA__pyflakes-675 type SoftwareProject"
+      }
+     ],
+     "closures": [],
+     "raw": "A_mergeMonthRatio_le_p_law8_merge_ratio equivalentTo MergeInactive\nLawVIIINonConformantNoMerge equivalentTo A_monthsObserved_ge_p_law8_min_months and MergeInactive and SoftwareProject\nLawVIIINonConformantNoMerge subClassOf LawVIIINonConformant\nPyCQA__pyflakes-675 monthsObserved 36\nPyCQA__pyflakes-675 mergeMonthRatio 0.027778\nA_mergeMonthRatio_le_p_law8_merge_ratio equivalentTo mergeMonthRatio some decimal[<= 0.3]\nPyCQA__pyflakes-675 type SoftwareProject\nA_monthsObserved_ge_p_law8_min_months equivalentTo monthsObserved some integer[>= 6]"
+    }
+   ],
+   "raw_text": "Axiom: PyCQA__pyflakes-675 type LawVIIINonConformant\n\nExplanation(s): \n1)   A_mergeMonthRatio_le_p_law8_merge_ratio equivalentTo MergeInactive\n     LawVIIINonConformantNoMerge equivalentTo A_monthsObserved_ge_p_law8_min_months\n                                              and MergeInactive\n                                              and SoftwareProject\n     LawVIIINonConformantNoMerge subClassOf LawVIIINonConformant\n     PyCQA__pyflakes-675 monthsObserved 36\n     PyCQA__pyflakes-675 mergeMonthRatio 0.027778\n     A_mergeMonthRatio_le_p_law8_merge_ratio equivalentTo mergeMonthRatio some decimal[<= 0.3]\n     PyCQA__pyflakes-675 type SoftwareProject\n     A_monthsObserved_ge_p_law8_min_months equivalentTo monthsObserved some integer[>= 6]\n\n\n",
+   "seconds": 2.4307763350079767,
+   "returncode": 0,
+   "error": null
+  },
+  "module:pyflakes/checker.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/PyCQA__pyflakes-675/module/pyflakes_checker.py-f5ddaa",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/PyCQA__pyflakes-675/module/pyflakes_checker.py-f5ddaa type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "pyflakes_checker.py-f5ddaa",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 4,
+       "raw": "pyflakes_checker.py-f5ddaa moduleChangeMonthsInWindow 4"
+      },
+      {
+       "subject": "pyflakes_checker.py-f5ddaa",
+       "prop": "type",
+       "value": "Module",
+       "raw": "pyflakes_checker.py-f5ddaa type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "pyflakes_checker.py-f5ddaa moduleChangeMonthsInWindow 4\nA_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\npyflakes_checker.py-f5ddaa type Module\nOftenChangedModule subClassOf ActiveModule"
+    }
+   ],
+   "raw_text": "Axiom: pyflakes_checker.py-f5ddaa type ActiveModule\n\nExplanation(s): \n1)   pyflakes_checker.py-f5ddaa moduleChangeMonthsInWindow 4\n     A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     pyflakes_checker.py-f5ddaa type Module\n     OftenChangedModule subClassOf ActiveModule\n\n\n",
+   "seconds": 2.4666473629768007,
+   "returncode": 0,
+   "error": null
+  },
+  "module:pyflakes/messages.py": {
+   "class": "StableModule",
+   "individual": "http://senso-framework.org/data/PyCQA__pyflakes-675/module/pyflakes_messages.py-842fe9",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/PyCQA__pyflakes-675/module/pyflakes_messages.py-842fe9 type http://senso-framework.org/ontology/seo#StableModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "StableModule",
+       "text": "StableModule equivalentTo LowRelChurnModule and RarelyChangedModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "LowRelChurnModule",
+       "text": "LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "definition",
+       "subject": "RarelyChangedModule",
+       "text": "RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "pyflakes_messages.py-842fe9",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 0,
+       "raw": "pyflakes_messages.py-842fe9 moduleChangeMonthsInWindow 0"
+      },
+      {
+       "subject": "pyflakes_messages.py-842fe9",
+       "prop": "moduleRelChurnInWindow",
+       "value": 0.0,
+       "raw": "pyflakes_messages.py-842fe9 moduleRelChurnInWindow 0.0"
+      },
+      {
+       "subject": "pyflakes_messages.py-842fe9",
+       "prop": "type",
+       "value": "Module",
+       "raw": "pyflakes_messages.py-842fe9 type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\npyflakes_messages.py-842fe9 moduleChangeMonthsInWindow 0\npyflakes_messages.py-842fe9 moduleRelChurnInWindow 0.0\nA_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\nStableModule equivalentTo LowRelChurnModule and RarelyChangedModule\npyflakes_messages.py-842fe9 type Module\nLowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module\nRarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module"
+    }
+   ],
+   "raw_text": "Axiom: pyflakes_messages.py-842fe9 type StableModule\n\nExplanation(s): \n1)   A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\n     pyflakes_messages.py-842fe9 moduleChangeMonthsInWindow 0\n     pyflakes_messages.py-842fe9 moduleRelChurnInWindow 0.0\n     A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\n     StableModule equivalentTo LowRelChurnModule\n                               and RarelyChangedModule\n     pyflakes_messages.py-842fe9 type Module\n     LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn\n                                    and Module\n     RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months\n                                      and Module\n\n\n",
+   "seconds": 2.4620780569966882,
+   "returncode": 0,
+   "error": null
+  },
+  "module:pyflakes/api.py": {
+   "class": "StableModule",
+   "individual": "http://senso-framework.org/data/PyCQA__pyflakes-675/module/pyflakes_api.py-10637f",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/PyCQA__pyflakes-675/module/pyflakes_api.py-10637f type http://senso-framework.org/ontology/seo#StableModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "StableModule",
+       "text": "StableModule equivalentTo LowRelChurnModule and RarelyChangedModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "LowRelChurnModule",
+       "text": "LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "definition",
+       "subject": "RarelyChangedModule",
+       "text": "RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "pyflakes_api.py-10637f",
+       "prop": "moduleRelChurnInWindow",
+       "value": 0.011696,
+       "raw": "pyflakes_api.py-10637f moduleRelChurnInWindow 0.011696"
+      },
+      {
+       "subject": "pyflakes_api.py-10637f",
+       "prop": "type",
+       "value": "Module",
+       "raw": "pyflakes_api.py-10637f type Module"
+      },
+      {
+       "subject": "pyflakes_api.py-10637f",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 1,
+       "raw": "pyflakes_api.py-10637f moduleChangeMonthsInWindow 1"
+      }
+     ],
+     "closures": [],
+     "raw": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\nA_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\npyflakes_api.py-10637f moduleRelChurnInWindow 0.011696\nStableModule equivalentTo LowRelChurnModule and RarelyChangedModule\nLowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module\nRarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module\npyflakes_api.py-10637f type Module\npyflakes_api.py-10637f moduleChangeMonthsInWindow 1"
+    }
+   ],
+   "raw_text": "Axiom: pyflakes_api.py-10637f type StableModule\n\nExplanation(s): \n1)   A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\n     A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\n     pyflakes_api.py-10637f moduleRelChurnInWindow 0.011696\n     StableModule equivalentTo LowRelChurnModule\n                               and RarelyChangedModule\n     LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn\n                                    and Module\n     RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months\n                                      and Module\n     pyflakes_api.py-10637f type Module\n     pyflakes_api.py-10637f moduleChangeMonthsInWindow 1\n\n\n",
+   "seconds": 2.4192663339781575,
+   "returncode": 0,
+   "error": null
+  },
+  "module:pyflakes/reporter.py": {
+   "class": "StableModule",
+   "individual": "http://senso-framework.org/data/PyCQA__pyflakes-675/module/pyflakes_reporter.py-8bbe26",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/PyCQA__pyflakes-675/module/pyflakes_reporter.py-8bbe26 type http://senso-framework.org/ontology/seo#StableModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "StableModule",
+       "text": "StableModule equivalentTo LowRelChurnModule and RarelyChangedModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "LowRelChurnModule",
+       "text": "LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "definition",
+       "subject": "RarelyChangedModule",
+       "text": "RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "pyflakes_reporter.py-8bbe26",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 0,
+       "raw": "pyflakes_reporter.py-8bbe26 moduleChangeMonthsInWindow 0"
+      },
+      {
+       "subject": "pyflakes_reporter.py-8bbe26",
+       "prop": "moduleRelChurnInWindow",
+       "value": 0.0,
+       "raw": "pyflakes_reporter.py-8bbe26 moduleRelChurnInWindow 0.0"
+      },
+      {
+       "subject": "pyflakes_reporter.py-8bbe26",
+       "prop": "type",
+       "value": "Module",
+       "raw": "pyflakes_reporter.py-8bbe26 type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\nA_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\npyflakes_reporter.py-8bbe26 moduleChangeMonthsInWindow 0\npyflakes_reporter.py-8bbe26 moduleRelChurnInWindow 0.0\npyflakes_reporter.py-8bbe26 type Module\nStableModule equivalentTo LowRelChurnModule and RarelyChangedModule\nLowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module\nRarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module"
+    }
+   ],
+   "raw_text": "Axiom: pyflakes_reporter.py-8bbe26 type StableModule\n\nExplanation(s): \n1)   A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\n     A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\n     pyflakes_reporter.py-8bbe26 moduleChangeMonthsInWindow 0\n     pyflakes_reporter.py-8bbe26 moduleRelChurnInWindow 0.0\n     pyflakes_reporter.py-8bbe26 type Module\n     StableModule equivalentTo LowRelChurnModule\n                               and RarelyChangedModule\n     LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn\n                                    and Module\n     RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months\n                                      and Module\n\n\n",
+   "seconds": 2.4280113570275716,
+   "returncode": 0,
+   "error": null
+  },
+  "module:pyflakes/scripts": {
+   "class": "StableModule",
+   "individual": "http://senso-framework.org/data/PyCQA__pyflakes-675/module/pyflakes_scripts-976cae",
+   "attempts": 3,
+   "target": "http://senso-framework.org/data/PyCQA__pyflakes-675/module/pyflakes_scripts-976cae type http://senso-framework.org/ontology/seo#StableModule",
+   "justifications": [],
+   "raw_text": "",
+   "seconds": 2.366581705980934,
+   "returncode": 1,
+   "error": "Exception in thread \"main\" org.mindswap.pellet.exceptions.InternalReasonerException: Adding type to a pruned node \"anon(10)\" restrictedDatatype(http://www.w3.org/2001/XMLSchema#decimal,[facet(http://www.w3.org/2001/XMLSchema#minExclusive,literal(0.15,(),http://www.w3.org/2001/XMLSchema#decimal))])\n\tat org.mindswap.pellet.Node.addType(Node.java:448)\n\tat org.mindswap.pellet.Literal.addType(Literal.java:257)\n\tat org.mindswap.pellet.tableau.completion.CompletionStrategy.addType(CompletionStrategy.java:438)\n\tat org.mindswap.pellet.tableau.completion.rule.SomeValuesRule.applySomeValuesRule(SomeValuesRule.java:180)\n\tat org.mindswap.pellet.tableau.completion.rule.SomeValuesRule.apply(SomeValuesRule.java:64)\n\tat org.mindswap.pellet.tableau.completion.rule.AbstractTableauRule.apply(AbstractTableauRule.java:64)\n\tat org.mindswap.pellet.tableau.completion.SROIQStrategy.complete(SROIQStrategy.java:157)\n\tat org.mindswap.pellet.ABox.isConsistent(ABox.java:1423)\n\tat org.mindswap.pellet.ABox.isSatisfiab"
+  },
+  "module:pyflakes/__main__.py": {
+   "class": "StableModule",
+   "individual": "http://senso-framework.org/data/PyCQA__pyflakes-675/module/pyflakes___main__.py-47e142",
+   "attempts": 3,
+   "target": "http://senso-framework.org/data/PyCQA__pyflakes-675/module/pyflakes___main__.py-47e142 type http://senso-framework.org/ontology/seo#StableModule",
+   "justifications": [],
+   "raw_text": "",
+   "seconds": 2.4304255980532616,
+   "returncode": 1,
+   "error": "Exception in thread \"main\" org.mindswap.pellet.exceptions.InternalReasonerException: Adding type to a pruned node \"anon(10)\" restrictedDatatype(http://www.w3.org/2001/XMLSchema#decimal,[facet(http://www.w3.org/2001/XMLSchema#minExclusive,literal(0.15,(),http://www.w3.org/2001/XMLSchema#decimal))])\n\tat org.mindswap.pellet.Node.addType(Node.java:448)\n\tat org.mindswap.pellet.Literal.addType(Literal.java:257)\n\tat org.mindswap.pellet.tableau.completion.CompletionStrategy.addType(CompletionStrategy.java:438)\n\tat org.mindswap.pellet.tableau.completion.rule.SomeValuesRule.applySomeValuesRule(SomeValuesRule.java:180)\n\tat org.mindswap.pellet.tableau.completion.rule.SomeValuesRule.apply(SomeValuesRule.java:64)\n\tat org.mindswap.pellet.tableau.completion.rule.AbstractTableauRule.apply(AbstractTableauRule.java:64)\n\tat org.mindswap.pellet.tableau.completion.SROIQStrategy.complete(SROIQStrategy.java:157)\n\tat org.mindswap.pellet.ABox.isConsistent(ABox.java:1423)\n\tat org.mindswap.pellet.ABox.isSatisfiab"
+  },
+  "module:pyflakes/__init__.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/PyCQA__pyflakes-675/module/pyflakes___init__.py-ecba4e",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/PyCQA__pyflakes-675/module/pyflakes___init__.py-ecba4e type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule subClassOf ActiveModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "pyflakes___init__.py-ecba4e",
+       "prop": "moduleRelChurnInWindow",
+       "value": 6.0,
+       "raw": "pyflakes___init__.py-ecba4e moduleRelChurnInWindow 6.0"
+      },
+      {
+       "subject": "pyflakes___init__.py-ecba4e",
+       "prop": "type",
+       "value": "Module",
+       "raw": "pyflakes___init__.py-ecba4e type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "pyflakes___init__.py-ecba4e moduleRelChurnInWindow 6.0\nHighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module\nHighRelChurnModule subClassOf ActiveModule\nA_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\npyflakes___init__.py-ecba4e type Module"
+    }
+   ],
+   "raw_text": "Axiom: pyflakes___init__.py-ecba4e type ActiveModule\n\nExplanation(s): \n1)   pyflakes___init__.py-ecba4e moduleRelChurnInWindow 6.0\n     HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn\n                                     and Module\n     HighRelChurnModule subClassOf ActiveModule\n     A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\n     pyflakes___init__.py-ecba4e type Module\n\n\n",
+   "seconds": 2.4921279050176963,
+   "returncode": 0,
+   "error": null
+  }
+ },
+ "timings": {
+  "t_clone": 0.003,
+  "t_mine": 1.21,
+  "t_loc": 1.143,
+  "t_reason_A": 2.327,
+  "mining_cached": false,
+  "t_modules": 1.015,
+  "t_reason_B": 2.178,
+  "n_configs": 1,
+  "t_explain": 67.058,
+  "n_explain_calls": 16,
+  "t_writeback": 0.0,
+  "t_total": 76.483
+ }
+}

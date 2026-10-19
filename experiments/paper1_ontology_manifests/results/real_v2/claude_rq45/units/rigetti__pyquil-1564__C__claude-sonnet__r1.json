@@ -1,0 +1,111 @@
+{
+ "unit_id": "rigetti__pyquil-1564__C__claude-sonnet__r1",
+ "task_id": "rigetti__pyquil-1564",
+ "repo": "rigetti/pyquil",
+ "stage": "evolution",
+ "condition": "C",
+ "model": "claude-code/sonnet",
+ "run": 1,
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 6482,
+  "sha256": "a786984fd2fc5f61cc189250a2c5490665d71a17233609f73027af07e47584d2"
+ },
+ "started": "2026-10-18T08:24:30.184339+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 5,
+ "tool_calls": 4,
+ "usage": {
+  "input_tokens": 10,
+  "cache_creation_input_tokens": 12113,
+  "cache_read_input_tokens": 92399,
+  "output_tokens": 1285,
+  "output_tokens_details": {
+   "thinking_tokens": 27
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 12113,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 10,
+   "outputTokens": 1285,
+   "cacheReadInputTokens": 92399,
+   "cacheCreationInputTokens": 12113,
+   "webSearchRequests": 0,
+   "costUSD": 0.07056190000000001,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 27,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.07056190000000001,
+ "result_text": "`DefFrame` now supports `CHANNEL-DELAY`. I ran one check, parsing a program with a `DEFFRAME` that sets `CHANNEL-DELAY: 1e-7`. The attribute appeared on the resulting `DefFrame` and printed back out as `CHANNEL-DELAY: 1e-07`. I didn't run the test suite or add tests.\n\nThe changes are:\n- **Grammar:** `pyquil/_parser/grammar.lark` accepts `CHANNEL-DELAY` as a frame attribute.\n- **Parser:** `pyquil/_parser/parser.py` maps it to a new `channel_delay` field.\n- **`DefFrame`:** `pyquil/quilbase.py` gets an optional `channel_delay` float, so you can construct a `DefFrame` with it, and `out()` includes it when set.\n\nI didn't add `CHANNEL-DELAY` to the reserved-word list in `quilbase.py` (the one that includes `INITIAL-FREQUENCY` and `SAMPLE-RATE`). `CENTER-FREQUENCY` and `ENABLE-RAW-CAPTURE` aren't in that list either, so I left it alone.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792327800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0.02,
+    "resetsAt": 1792327800
+   },
+   "seven_day": {
+    "utilization": 0.13,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 45.0,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 3,
+   "Y6": 5,
+   "hit_step_limit": 0,
+   "changed_lines": 6,
+   "gold_changed_lines": 6,
+   "Y1": 0,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": 0.0
+  },
+  "f2p_pass": 1,
+  "f2p_total": 1,
+  "p2p_pass": 39,
+  "p2p_total": 39,
+  "f2p_all_pass": true,
+  "p2p_all_pass": true,
+  "resolved": true,
+  "reason": "resolved",
+  "test_seconds": 3.5
+ },
+ "status": "done",
+ "finished": "2026-10-18T08:25:24.264867+00:00"
+}

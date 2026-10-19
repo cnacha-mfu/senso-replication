@@ -1,0 +1,306 @@
+{
+ "task_id": "VirtusLab__git-machete-179",
+ "repo": "VirtusLab/git-machete",
+ "stage": "phase_out",
+ "rounds": 1,
+ "rejects": {},
+ "flags": [
+  "length_violation_F_R",
+  "length_violation_F_I"
+ ],
+ "info": {
+  "slots": {
+   "test_root": "git_machete/tests",
+   "P1": {
+    "replaced": null,
+    "name": "core",
+    "F_R": "git_machete/core",
+    "F_I": "ci/core"
+   },
+   "P2": {
+    "replaced": null,
+    "F_R": "git_machete/tests/unit/test_unit.py",
+    "F_I": "ci/internal.py"
+   },
+   "C": {
+    "F_R": "make test",
+    "F_I": "make dev"
+   },
+   "D": {
+    "replaced": null,
+    "F_R": "toolz",
+    "F_I": "boltons"
+   }
+  },
+  "why": {
+   "test_command": [
+    {
+     "root": "git_machete/tests",
+     "T3": "SupportedClaim",
+     "T1": "SupportedClaim",
+     "collect_ok": true
+    }
+   ],
+   "kind1": {
+    "p1_idx": null,
+    "gold0": "git_machete",
+    "unrelated": null,
+    "base_R": "git_machete",
+    "base_I": "ci"
+   },
+   "kind2": {
+    "p2_idx": null,
+    "n_deleted_py": 3,
+    "found": {
+     "F_R": "git_machete/tests/unit/test_unit.py",
+     "F_I": "ci/internal.py"
+    }
+   },
+   "kind3": {
+    "run": "test",
+    "install": "dev",
+    "test_ok": true,
+    "install_ok": true
+   },
+   "kind4": {
+    "deps": [],
+    "d_idx": null,
+    "src_R": "mypy",
+    "src_I": "stestr",
+    "n_decls": 2,
+    "n_dist": 19
+   }
+  },
+  "length": {
+   "T": 234,
+   "F_R": 296,
+   "F_I": 285
+  },
+  "fallbacks": {
+   "F_R": [],
+   "F_I": [
+    "kind2_never_existed_fallback"
+   ]
+  },
+  "modes": {
+   "F_R": {
+    "1": "add",
+    "2": "add",
+    "3": "replace",
+    "4": "add"
+   },
+   "F_I": {
+    "1": "add",
+    "2": "add",
+    "3": "replace",
+    "4": "add"
+   }
+  },
+  "length_diff": {
+   "F_R": 62,
+   "F_I": 51
+  },
+  "n_claims_T": 7,
+  "n_false": {
+   "F_R": 4,
+   "F_I": 4
+  },
+  "pointer_in_issue": false,
+  "gold_dirs": [
+   "git_machete"
+  ],
+  "gold_files": [
+   "git_machete/cmd.py"
+  ]
+ },
+ "tokens": {
+  "F_R": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "git_machete/core",
+     "core"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "git_machete/tests/unit/test_unit.py",
+     "test_unit.py"
+    ]
+   },
+   {
+    "kind": 3,
+    "type": "regex",
+    "regex": "\\bmake\\b[^|;&\\n]*\\btest\\b",
+    "target": "test"
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "toolz"
+    ]
+   }
+  ],
+  "F_I": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "ci/core",
+     "core"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "ci/internal.py",
+     "internal.py"
+    ]
+   },
+   {
+    "kind": 3,
+    "type": "regex",
+    "regex": "\\bmake\\b[^|;&\\n]*\\bdev\\b",
+    "target": "dev"
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "boltons"
+    ]
+   }
+  ]
+ },
+ "unresolved_pre_hermit": [],
+ "sha256": {
+  "T": "52740750e2f2db626259e9e6c8181ef2f84d04e84f74212462d20e65377dd0d9",
+  "F_R": "41c51e6ea4ece0fc40a46ab8d6396a5a1bda70fe75f492194926a5ba427ec280",
+  "F_I": "c51d5fbd8faa4b6e6250f5ad48732759a896d4d8d2b198cb02a72955fe829ac0"
+ },
+ "chars": {
+  "T": 234,
+  "F_R": 296,
+  "F_I": 285
+ },
+ "claims": {
+  "T": [
+   "T1|git_machete",
+   "T1|git_machete/tests",
+   "T1|git_machete/cmd.py",
+   "T3|test_framework|pytest",
+   "T1|git_machete/tests",
+   "T1|setup.py",
+   "T6|python|3006000000@2"
+  ],
+  "F_R": [
+   "T1|git_machete",
+   "T1|git_machete/tests",
+   "T1|git_machete/core",
+   "T1|git_machete/cmd.py",
+   "T1|git_machete/tests/unit/test_unit.py",
+   "T5|make|test",
+   "T1|setup.py",
+   "T4|toolz|",
+   "T6|python|3006000000@2"
+  ],
+  "F_I": [
+   "T1|git_machete",
+   "T1|git_machete/tests",
+   "T1|ci/core",
+   "T1|git_machete/cmd.py",
+   "T1|ci/internal.py",
+   "T3|test_framework|pytest",
+   "T1|git_machete/tests",
+   "T5|make|dev",
+   "T4|boltons|",
+   "T6|python|3006000000@2"
+  ]
+ },
+ "python_spec": ">=3.6, <4",
+ "token_audit": [
+  {
+   "cond": "F_R",
+   "kind": 1,
+   "type": "path",
+   "name": "git_machete/core",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 2,
+   "type": "path",
+   "name": "git_machete/tests/unit/test_unit.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 3,
+   "type": "regex",
+   "name": "make test",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 4,
+   "type": "word",
+   "name": "toolz",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 1,
+   "type": "path",
+   "name": "ci/core",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 2,
+   "type": "path",
+   "name": "ci/internal.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 3,
+   "type": "regex",
+   "name": "make dev",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 4,
+   "type": "word",
+   "name": "boltons",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  }
+ ],
+ "dist_imports_used": {
+  "toolz": null,
+  "boltons": null
+ }
+}

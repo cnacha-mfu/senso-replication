@@ -1,0 +1,285 @@
+{
+ "task_id": "learningequality__ricecooker-394",
+ "repo": "learningequality/ricecooker",
+ "stage": "evolution",
+ "rounds": 1,
+ "rejects": {},
+ "flags": [
+  "kind3_dropped",
+  "length_violation_F_R",
+  "length_violation_F_I"
+ ],
+ "info": {
+  "slots": {
+   "test_root": "tests",
+   "P1": {
+    "replaced": "ricecooker/utils",
+    "name": "core",
+    "F_R": "ricecooker/classes/core",
+    "F_I": "ricecooker/managers/core"
+   },
+   "P2": {
+    "replaced": "ricecooker/classes/files.py",
+    "F_R": "ricecooker/sushi_bar_client.py",
+    "F_I": "travis_pypi_setup.py"
+   },
+   "D": {
+    "replaced": null,
+    "F_R": "toolz",
+    "F_I": "boltons"
+   }
+  },
+  "why": {
+   "test_command": [
+    {
+     "root": "tests",
+     "T3": "SupportedClaim",
+     "T1": "SupportedClaim",
+     "collect_ok": true
+    }
+   ],
+   "kind1": {
+    "p1_idx": 4,
+    "gold0": "ricecooker/classes",
+    "unrelated": "ricecooker/managers",
+    "base_R": "ricecooker/classes",
+    "base_I": "ricecooker/managers"
+   },
+   "kind2": {
+    "p2_idx": 2,
+    "n_deleted_py": 26,
+    "found": {
+     "F_R": "ricecooker/sushi_bar_client.py",
+     "F_I": "travis_pypi_setup.py"
+    }
+   },
+   "kind3": {
+    "run": null,
+    "install": "dev",
+    "test_ok": true,
+    "install_ok": true
+   },
+   "kind4": {
+    "deps": [],
+    "d_idx": null,
+    "src_R": "pycountry",
+    "src_I": "pytest",
+    "n_decls": 11,
+    "n_dist": 56
+   }
+  },
+  "length": {
+   "T": 389,
+   "F_R": 424,
+   "F_I": 417
+  },
+  "fallbacks": {
+   "F_R": [],
+   "F_I": []
+  },
+  "modes": {
+   "F_R": {
+    "1": "replace",
+    "2": "replace",
+    "4": "add"
+   },
+   "F_I": {
+    "1": "replace",
+    "2": "replace",
+    "4": "add"
+   }
+  },
+  "length_diff": {
+   "F_R": 35,
+   "F_I": 28
+  },
+  "n_claims_T": 13,
+  "n_false": {
+   "F_R": 3,
+   "F_I": 3
+  },
+  "pointer_in_issue": true,
+  "gold_dirs": [
+   "ricecooker/classes"
+  ],
+  "gold_files": [
+   "Makefile",
+   "ricecooker/classes/nodes.py"
+  ]
+ },
+ "tokens": {
+  "F_R": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "ricecooker/classes/core",
+     "core"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "ricecooker/sushi_bar_client.py",
+     "sushi_bar_client.py"
+    ]
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "toolz"
+    ]
+   }
+  ],
+  "F_I": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "ricecooker/managers/core",
+     "core"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "travis_pypi_setup.py",
+     "travis_pypi_setup.py"
+    ]
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "boltons"
+    ]
+   }
+  ]
+ },
+ "unresolved_pre_hermit": [],
+ "sha256": {
+  "T": "93baa13c0f4cdc7e8875e4b05d7ef18a9824516f92902f0d58b6b5b7e0e4e98f",
+  "F_R": "b4c3a0da8b91afa5b945296d149ff4c5b2ba135c86d062d6b47ae16f70f6f7a8",
+  "F_I": "18d6b558ab3e92b45409d10a288e4781d3b0392ed49b98baa25c25d689c3835b"
+ },
+ "chars": {
+  "T": 389,
+  "F_R": 424,
+  "F_I": 417
+ },
+ "claims": {
+  "T": [
+   "T1|ricecooker",
+   "T1|ricecooker/classes",
+   "T1|ricecooker/managers",
+   "T1|ricecooker/templates",
+   "T1|ricecooker/utils",
+   "T1|tests",
+   "T1|ricecooker/classes/nodes.py",
+   "T1|ricecooker/utils/metadata_provider.py",
+   "T1|ricecooker/classes/files.py",
+   "T3|test_framework|pytest",
+   "T1|tests",
+   "T1|setup.py",
+   "T6|python|3006000000@2"
+  ],
+  "F_R": [
+   "T1|ricecooker",
+   "T1|ricecooker/classes",
+   "T1|ricecooker/managers",
+   "T1|ricecooker/templates",
+   "T1|ricecooker/classes/core",
+   "T1|tests",
+   "T1|ricecooker/classes/nodes.py",
+   "T1|ricecooker/utils/metadata_provider.py",
+   "T1|ricecooker/sushi_bar_client.py",
+   "T3|test_framework|pytest",
+   "T1|tests",
+   "T1|setup.py",
+   "T4|toolz|",
+   "T6|python|3006000000@2"
+  ],
+  "F_I": [
+   "T1|ricecooker",
+   "T1|ricecooker/classes",
+   "T1|ricecooker/managers",
+   "T1|ricecooker/templates",
+   "T1|ricecooker/managers/core",
+   "T1|tests",
+   "T1|ricecooker/classes/nodes.py",
+   "T1|ricecooker/utils/metadata_provider.py",
+   "T1|travis_pypi_setup.py",
+   "T3|test_framework|pytest",
+   "T1|tests",
+   "T1|setup.py",
+   "T4|boltons|",
+   "T6|python|3006000000@2"
+  ]
+ },
+ "python_spec": ">=3.6, <3.11",
+ "token_audit": [
+  {
+   "cond": "F_R",
+   "kind": 1,
+   "type": "path",
+   "name": "ricecooker/classes/core",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 2,
+   "type": "path",
+   "name": "ricecooker/sushi_bar_client.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 4,
+   "type": "word",
+   "name": "toolz",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 1,
+   "type": "path",
+   "name": "ricecooker/managers/core",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 2,
+   "type": "path",
+   "name": "travis_pypi_setup.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 4,
+   "type": "word",
+   "name": "boltons",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  }
+ ],
+ "dist_imports_used": {
+  "toolz": null,
+  "boltons": null
+ }
+}

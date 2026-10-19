@@ -1,0 +1,111 @@
+{
+ "unit_id": "VirtusLab__git-machete-483__C__claude-sonnet__r1",
+ "task_id": "VirtusLab__git-machete-483",
+ "repo": "VirtusLab/git-machete",
+ "stage": "phase_out",
+ "condition": "C",
+ "model": "claude-code/sonnet",
+ "run": 1,
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 3935,
+  "sha256": "8006ffadbefc8c43b316f65a30f917d572949e67e270b8a122b584148d85d10f"
+ },
+ "started": "2026-10-18T04:16:13.451890+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 7,
+ "tool_calls": 6,
+ "usage": {
+  "input_tokens": 12,
+  "cache_creation_input_tokens": 13993,
+  "cache_read_input_tokens": 118312,
+  "output_tokens": 1517,
+  "output_tokens_details": {
+   "thinking_tokens": 301
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 13993,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 12,
+   "outputTokens": 1517,
+   "cacheReadInputTokens": 118312,
+   "cacheCreationInputTokens": 13993,
+   "webSearchRequests": 0,
+   "costUSD": 0.0829972,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 301,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.0829972,
+ "result_text": "`github checkout-prs` now leaves HEAD where it started whenever it checks out more than one PR. I haven't run it or any tests, and I didn't add regression tests, so those are still to do.\n\nThe repeated switching came from `add()`, which creates each missing local branch with `git checkout -b`. In `checkout_github_prs` (`git_machete/client.py`) I now record the current branch before the loop. If the command didn't end up on exactly one PR's head branch, it checks the original branch out again at the end.\n\nWith several PRs you will still see git's \"Switched to a new branch\" lines during the run, but you end up back on your original branch. Avoiding those lines would mean changing `add()` and `create_branch()` so they don't check anything out; say if you want that. When HEAD is detached there is no branch to go back to, so the code doesn't try.\n\nI changed the docs wording to \"If only one PR has been checked out, then switch the local repository's HEAD to its head branch\" in `docs/source/cli_help/github.rst` and `git_machete/docs.py`.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792309800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0.06,
+    "resetsAt": 1792309800
+   },
+   "seven_day": {
+    "utilization": 0.12,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 26.1,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 3,
+   "Y6": 7,
+   "hit_step_limit": 0,
+   "changed_lines": 7,
+   "gold_changed_lines": 36,
+   "Y1": 2,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": -2.3625700793847084
+  },
+  "f2p_pass": 1,
+  "f2p_total": 2,
+  "p2p_pass": 46,
+  "p2p_total": 46,
+  "f2p_all_pass": false,
+  "p2p_all_pass": true,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 68.7
+ },
+ "status": "done",
+ "finished": "2026-10-18T04:17:49.333683+00:00"
+}

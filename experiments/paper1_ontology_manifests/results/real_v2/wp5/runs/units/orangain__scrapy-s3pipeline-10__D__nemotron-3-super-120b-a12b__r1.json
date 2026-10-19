@@ -1,0 +1,75 @@
+{
+ "unit_id": "orangain__scrapy-s3pipeline-10__D__nemotron-3-super-120b-a12b__r1",
+ "task_id": "orangain__scrapy-s3pipeline-10",
+ "repo": "orangain/scrapy-s3pipeline",
+ "stage": "initial_development",
+ "condition": "D",
+ "model": "nvidia/nemotron-3-super-120b-a12b",
+ "run": 1,
+ "order": 670,
+ "env_build_s": 57.0,
+ "real_agent_manifest_at_base": [],
+ "started": "2026-10-07T12:12:56.099917+00:00",
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 3330,
+  "sha256": "3fee73faad7876437ed5c2f9af892e8c40769eb2ca2329a6046e91fa719ad102"
+ },
+ "condition_available": true,
+ "retries": 0,
+ "exit_status": "Submitted",
+ "error": "",
+ "steps": 32,
+ "wall_s": 114.5,
+ "prompt_tokens": 250954,
+ "completion_tokens": 5922,
+ "format_errors": 1,
+ "length_cutoffs": 0,
+ "api_errors": {
+  "429": 2
+ },
+ "n_queries": 32,
+ "keys_used": {
+  "NVIDIA_API_KEY_5": 10,
+  "NVIDIA_API_KEY_4": 9,
+  "NVIDIA_API_KEY_2": 5,
+  "NVIDIA_API_KEY": 10
+ },
+ "temperature": 0.7,
+ "top_p": 0.95,
+ "model_id_returned": "nvidia/nemotron-3-super-120b-a12b",
+ "mini_version": "2.4.6",
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 2,
+   "Y6": 32,
+   "hit_step_limit": 0,
+   "changed_lines": 151,
+   "gold_changed_lines": 15,
+   "Y1": 1,
+   "Y2": 0,
+   "Y3": 0.0,
+   "Y3_gold": 0.0,
+   "Y3_excess": 0.0,
+   "Y3w": 0.75,
+   "Y4": 3.3315141437165603
+  },
+  "f2p_pass": 0,
+  "f2p_total": 3,
+  "p2p_pass": 4,
+  "p2p_total": 4,
+  "f2p_all_pass": false,
+  "p2p_all_pass": true,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 29.1
+ },
+ "status": "done",
+ "finished": "2026-10-07T12:15:19.839263+00:00"
+}

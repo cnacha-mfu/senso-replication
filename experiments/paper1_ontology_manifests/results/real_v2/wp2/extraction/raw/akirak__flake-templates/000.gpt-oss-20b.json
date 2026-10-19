@@ -1,0 +1,21 @@
+{
+ "repo": "akirak/flake-templates",
+ "chunk": 0,
+ "n_chunks": 1,
+ "model": "openai/gpt-oss-20b",
+ "prompt_sha256": "d0e02ff613417050168d859f2af6230c3712c6758bb5d9c40d60ff55e5ae87ca",
+ "user_sha256": "a314aed88a8002624970506c65c7057d524288e94428bd5c082968621aa6bda9",
+ "text": "{\"claims\":[{\"type\":\"path_exists\",\"quote\":\"Documentation site: Located in `/doc`, built with Astro and Starlight\",\"line\":13,\"subject\":\"/doc\",\"mode\":\"asserts_existing\"},{\"type\":\"path_exists\",\"quote\":\"Development utilities: Located in `/dev`, contains maintenance tools\",\"line\":14,\"subject\":\"/dev\",\"mode\":\"asserts_existing\"},{\"type\":\"path_exists\",\"quote\":\"Root flake.nix: Defines all available templates with their paths and descriptions\",\"line\":11,\"subject\":\"flake.nix\",\"mode\":\"asserts_existing\"},{\"type\":\"path_exists\",\"quote\":\"Template directories: Each subdirectory contains a complete flake.nix for a specific use case\",\"line\":12,\"subject\":\"<subdirectory>\",\"mode\":\"asserts_existing\"},{\"type\":\"tool_used\",\"quote\":\"pnpm install\",\"line\":30,\"subject\":\"pnpm\",\"tool_category\":\"package_manager\",\"mode\":\"asserts_existing\"},{\"type\":\"tool_used\",\"quote\":\"pnpm dev\",\"line\":33,\"subject\":\"pnpm\",\"tool_category\":\"package_manager\",\"mode\":\"asserts_existing\"},{\"type\":\"tool_used\",\"quote\":\"pnpm build\",\"line\":36,\"subject\":\"pnpm\",\"tool_category\":\"package_manager\",\"mode\":\"asserts_existing\"},{\"type\":\"tool_used\",\"quote\":\"astro check\",\"line\":39,\"subject\":\"astro\",\"tool_category\":\"build_tool\",\"mode\":\"asserts_existing\"},{\"type\":\"tool_used\",\"quote\":\"nix fmt\",\"line\":45,\"subject\":\"nix\",\"tool_category\":\"build_tool\",\"mode\":\"asserts_existing\"},{\"type\":\"tool_used\",\"quote\":\"treefmt\",\"line\":48,\"subject\":\"treefmt\",\"tool_category\":\"build_tool\",\"mode\":\"asserts_existing\"},{\"type\":\"tool_used\",\"quote\":\"nix flake check\",\"line\":53,\"subject\":\"nix\",\"tool_category\":\"build_tool\",\"mode\":\"asserts_existing\"},{\"type\":\"tool_used\",\"quote\":\"nix flake init -t github:akirak/flake-templates#<template-name>\",\"line\":56,\"subject\":\"nix\",\"tool_category\":\"build_tool\",\"mode\":\"asserts_existing\"},{\"type\":\"tool_used\",\"quote\":\"nix flake show\",\"line\":59,\"subject\":\"nix\",\"tool_category\":\"build_tool\",\"mode\":\"asserts_existing\"},{\"type\":\"tool_used\",\"quote\":\"nix develop\",\"line\":66,\"subject\":\"nix\",\"tool_category\":\"build_tool\",\"mode\":\"asserts_existing\"},{\"type\":\"command\",\"quote\":\"pnpm install\",\"line\":30,\"subject\":\"install\",\"runner\":\"pnpm\",\"mode\":\"asserts_existing\"},{\"type\":\"command\",\"quote\":\"pnpm dev\",\"line\":33,\"subject\":\"dev\",\"runner\":\"pnpm\",\"mode\":\"asserts_existing\"},{\"type\":\"command\",\"quote\":\"pnpm build\",\"line\":36,\"subject\":\"build\",\"runner\":\"pnpm\",\"mode\":\"asserts_existing\"},{\"type\":\"command\",\"quote\":\"astro check\",\"line\":39,\"subject\":\"check\",\"runner\":\"astro\",\"mode\":\"asserts_existing\"},{\"type\":\"command\",\"quote\":\"nix fmt\",\"line\":45,\"subject\":\"fmt\",\"runner\":\"nix\",\"mode\":\"asserts_existing\"},{\"type\":\"command\",\"quote\":\"treefmt\",\"line\":48,\"subject\":\"treefmt\",\"runner\":\"treefmt\",\"mode\":\"asserts_existing\"},{\"type\":\"command\",\"quote\":\"nix flake check\",\"line\":53,\"subject\":\"flake check\",\"runner\":\"nix\",\"mode\":\"asserts_existing\"},{\"type\":\"command\",\"quote\":\"nix flake init -t github:akirak/flake-templates#<template-name>\",\"line\":56,\"subject\":\"flake init\",\"runner\":\"nix\",\"mode\":\"asserts_existing\"},{\"type\":\"command\",\"quote\":\"nix flake show\",\"line\":59,\"subject\":\"flake show\",\"runner\":\"nix\",\"mode\":\"asserts_existing\"},{\"type\":\"command\",\"quote\":\"nix develop\",\"line\":66,\"subject\":\"develop\",\"runner\":\"nix\",\"mode\":\"asserts_existing\"}]}",
+ "parse_ok": true,
+ "parse_error": null,
+ "parse_retries": 0,
+ "latency_s": 17.31748394103488,
+ "usage": {
+  "prompt": 3045,
+  "completion": 884
+ },
+ "n_api_calls": 1,
+ "finish_reason": "stop",
+ "error": null,
+ "discarded_attempt_texts": []
+}

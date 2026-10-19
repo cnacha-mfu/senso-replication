@@ -1,0 +1,76 @@
+{
+ "unit_id": "uilibs__uiprotect-275__D__diffusiongemma-26b-a4b-it__r1",
+ "task_id": "uilibs__uiprotect-275",
+ "repo": "uilibs/uiprotect",
+ "stage": "phase_out",
+ "condition": "D",
+ "model": "google/diffusiongemma-26b-a4b-it",
+ "run": 1,
+ "order": 1125,
+ "env_build_s": 78.8,
+ "real_agent_manifest_at_base": [],
+ "started": "2026-10-07T16:46:34.462138+00:00",
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 3484,
+  "sha256": "051505c7e65b5407774ebe3859e495bb10c0d88a39b344b14ac770674c9106fe"
+ },
+ "condition_available": true,
+ "retries": 0,
+ "exit_status": "LimitsExceeded",
+ "error": "",
+ "steps": 40,
+ "wall_s": 565.2,
+ "prompt_tokens": 712107,
+ "completion_tokens": 4069,
+ "format_errors": 2,
+ "length_cutoffs": 0,
+ "api_errors": {
+  "429": 4,
+  "timeout": 1
+ },
+ "n_queries": 41,
+ "keys_used": {
+  "NVIDIA_API_KEY_2": 10,
+  "NVIDIA_API_KEY": 13,
+  "NVIDIA_API_KEY_5": 12,
+  "NVIDIA_API_KEY_4": 10
+ },
+ "temperature": 0.7,
+ "top_p": 0.95,
+ "model_id_returned": "google/diffusiongemma-26b-a4b-it",
+ "mini_version": "2.4.6",
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 3,
+   "Y6": 40,
+   "hit_step_limit": 1,
+   "changed_lines": 21,
+   "gold_changed_lines": 70,
+   "Y1": 0,
+   "Y2": 0,
+   "Y3": 0.0,
+   "Y3_gold": 0.0,
+   "Y3_excess": 0.0,
+   "Y3w": 0.7261904761904762,
+   "Y4": -1.7369655941662063
+  },
+  "f2p_pass": 0,
+  "f2p_total": 9,
+  "p2p_pass": 0,
+  "p2p_total": 51,
+  "f2p_all_pass": false,
+  "p2p_all_pass": false,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 2.0
+ },
+ "status": "done",
+ "finished": "2026-10-07T16:56:02.093015+00:00"
+}

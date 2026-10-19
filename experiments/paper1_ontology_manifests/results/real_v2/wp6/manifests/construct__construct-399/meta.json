@@ -1,0 +1,308 @@
+{
+ "task_id": "construct__construct-399",
+ "repo": "construct/construct",
+ "stage": "phase_out",
+ "rounds": 1,
+ "rejects": {},
+ "flags": [
+  "length_violation_F_R",
+  "length_violation_F_I"
+ ],
+ "info": {
+  "slots": {
+   "test_root": "tests",
+   "P1": {
+    "replaced": "construct/lib",
+    "name": "internal",
+    "F_R": "construct/internal",
+    "F_I": "construct/examples/internal"
+   },
+   "P2": {
+    "replaced": "construct/lib/container.py",
+    "F_R": "construct/examples/protocols/application/dns.py",
+    "F_I": "tests/deprecated_csvtest.py"
+   },
+   "C": {
+    "F_R": "make test",
+    "F_I": "make install"
+   },
+   "D": {
+    "replaced": null,
+    "F_R": "boltons",
+    "F_I": "boltons"
+   }
+  },
+  "why": {
+   "test_command": [
+    {
+     "root": "tests",
+     "T3": "SupportedClaim",
+     "T1": "SupportedClaim",
+     "collect_ok": true
+    }
+   ],
+   "kind1": {
+    "p1_idx": 2,
+    "gold0": "construct",
+    "unrelated": "construct/examples",
+    "base_R": "construct",
+    "base_I": "construct/examples"
+   },
+   "kind2": {
+    "p2_idx": 2,
+    "n_deleted_py": 258,
+    "found": {
+     "F_R": "construct/examples/protocols/application/dns.py",
+     "F_I": "tests/deprecated_csvtest.py"
+    }
+   },
+   "kind3": {
+    "run": "test",
+    "install": "install",
+    "test_ok": true,
+    "install_ok": true
+   },
+   "kind4": {
+    "deps": [],
+    "d_idx": null,
+    "src_R": null,
+    "src_I": null,
+    "n_decls": 0,
+    "n_dist": 15
+   }
+  },
+  "length": {
+   "T": 308,
+   "F_R": 348,
+   "F_I": 346
+  },
+  "fallbacks": {
+   "F_R": [],
+   "F_I": []
+  },
+  "modes": {
+   "F_R": {
+    "1": "replace",
+    "2": "replace",
+    "3": "replace",
+    "4": "add"
+   },
+   "F_I": {
+    "1": "replace",
+    "2": "replace",
+    "3": "replace",
+    "4": "add"
+   }
+  },
+  "length_diff": {
+   "F_R": 40,
+   "F_I": 38
+  },
+  "n_claims_T": 10,
+  "n_false": {
+   "F_R": 4,
+   "F_I": 4
+  },
+  "pointer_in_issue": true,
+  "gold_dirs": [
+   "construct"
+  ],
+  "gold_files": [
+   "construct/core.py"
+  ]
+ },
+ "tokens": {
+  "F_R": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "construct/internal",
+     "internal"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "construct/examples/protocols/application/dns.py",
+     "dns.py"
+    ]
+   },
+   {
+    "kind": 3,
+    "type": "regex",
+    "regex": "\\bmake\\b[^|;&\\n]*\\btest\\b",
+    "target": "test"
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "boltons"
+    ]
+   }
+  ],
+  "F_I": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "construct/examples/internal",
+     "internal"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "tests/deprecated_csvtest.py",
+     "deprecated_csvtest.py"
+    ]
+   },
+   {
+    "kind": 3,
+    "type": "regex",
+    "regex": "\\bmake\\b[^|;&\\n]*\\binstall\\b",
+    "target": "install"
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "boltons"
+    ]
+   }
+  ]
+ },
+ "unresolved_pre_hermit": [],
+ "sha256": {
+  "T": "fa3a3fd9d99417005c4310378cdeab3ed78c549fa9a29dc1f49ee1db795eb08b",
+  "F_R": "349f2dd4cd24bf29460970ff1854597a869935f3a07a6b5f19a03d3a9b29d2e7",
+  "F_I": "5246d28d9aa7699da24f519c042d86f5a7e9adde9f4cd22f5d95e48e1162f1ee"
+ },
+ "chars": {
+  "T": 308,
+  "F_R": 348,
+  "F_I": 346
+ },
+ "claims": {
+  "T": [
+   "T1|construct",
+   "T1|construct/examples",
+   "T1|construct/lib",
+   "T1|tests",
+   "T1|construct/core.py",
+   "T1|construct/examples/protocols/ipstack.py",
+   "T1|construct/lib/container.py",
+   "T3|test_framework|pytest",
+   "T1|tests",
+   "T1|setup.py"
+  ],
+  "F_R": [
+   "T1|construct",
+   "T1|construct/examples",
+   "T1|construct/internal",
+   "T1|tests",
+   "T1|construct/core.py",
+   "T1|construct/examples/protocols/ipstack.py",
+   "T1|construct/examples/protocols/application/dns.py",
+   "T5|make|test",
+   "T1|setup.py",
+   "T4|boltons|"
+  ],
+  "F_I": [
+   "T1|construct",
+   "T1|construct/examples",
+   "T1|construct/examples/internal",
+   "T1|tests",
+   "T1|construct/core.py",
+   "T1|construct/examples/protocols/ipstack.py",
+   "T1|tests/deprecated_csvtest.py",
+   "T3|test_framework|pytest",
+   "T1|tests",
+   "T5|make|install",
+   "T4|boltons|"
+  ]
+ },
+ "python_spec": null,
+ "token_audit": [
+  {
+   "cond": "F_R",
+   "kind": 1,
+   "type": "path",
+   "name": "construct/internal",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 2,
+   "type": "path",
+   "name": "construct/examples/protocols/application/dns.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 3,
+   "type": "regex",
+   "name": "make test",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 4,
+   "type": "word",
+   "name": "boltons",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 1,
+   "type": "path",
+   "name": "construct/examples/internal",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 2,
+   "type": "path",
+   "name": "tests/deprecated_csvtest.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 3,
+   "type": "regex",
+   "name": "make install",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 4,
+   "type": "word",
+   "name": "boltons",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  }
+ ],
+ "dist_imports_used": {
+  "boltons": null
+ }
+}

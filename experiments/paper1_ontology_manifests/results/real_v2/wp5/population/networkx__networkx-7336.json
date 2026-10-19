@@ -1,0 +1,2802 @@
+{
+ "repo": "networkx/networkx",
+ "snapshot_date": "2024-02-29",
+ "status": "ok",
+ "unmineable": false,
+ "unmineable_reason": null,
+ "replaces": null,
+ "settings": {
+  "dedup": true,
+  "complexity": false,
+  "dataset": null,
+  "sensitivity": false,
+  "snapshot_commit": "d71ce117bd4d13c3aa15425b732eb59029f46737",
+  "mode": "wp5_snapshot_commit",
+  "test_patch_files": [
+   "networkx/algorithms/approximation/tests/test_steinertree.py",
+   "networkx/algorithms/community/tests/test_louvain.py"
+  ],
+  "package_roots": [
+   "networkx"
+  ]
+ },
+ "versions": {
+  "owlready2": "0.51",
+  "pymannkendall": "1.4.3",
+  "lizard": "1.24.1",
+  "numpy": "2.5.3",
+  "scipy": "1.18.1",
+  "python": "3.12.15",
+  "git": "git version 2.53.0"
+ },
+ "task_id": "networkx__networkx-7336",
+ "base_commit": "d71ce117bd4d13c3aa15425b732eb59029f46737",
+ "measures": {
+  "monthsObserved": 36,
+  "monthsSinceLastCommit": 0,
+  "distinctAuthorsInWindow": 231,
+  "commitMKTau": 0.198413,
+  "commitMKpValue": 0.090611,
+  "activeMonthCount": 36,
+  "activeMonthRatio": 1.0,
+  "meanMonthlyCommits": 32.833333,
+  "commitsLast3Months": 95,
+  "commitCountCV": 0.541532,
+  "commitCountCVSample": 0.549214,
+  "commitHalfRatio": 1.0,
+  "commitSecondHalfMean": 32.833333,
+  "churnCV": 0.986662,
+  "linesAddedCV": 0.901812,
+  "mergeMonthRatio": 0.0,
+  "multiAuthorMonthRatio": 1.0,
+  "bugFixRatioFirstHalf": 0.236508,
+  "bugFixRatioSecondHalf": 0.214703,
+  "bugFixHalfRatio": 0.907805,
+  "locSeriesLength": 36,
+  "locRelSenSlopeAnnual": 0.074373,
+  "locMKTau": 0.965079,
+  "locMKS": 608,
+  "locMKpValue": 0.0,
+  "locSenSlope": 841.982843,
+  "locStart": 122814,
+  "locEnd": 154392,
+  "locDelta": 31578,
+  "locGrowthRate": 0.257121,
+  "locChangePct": 25.712052,
+  "locEndToStartRatio": 1.257121,
+  "locGrowthLast3": 0.012765,
+  "featureCommitsFirstHalf": 0,
+  "featureCommitsSecondHalf": 0,
+  "featureCommitsTotal": 0,
+  "locDeltaPerFeature": 31578.0,
+  "recentAgentCommitRatio": 0.020221,
+  "featCommitCount": 0,
+  "bugFixCommitCount": 251,
+  "commitCount": 1182,
+  "monthly_series": {
+   "months": [
+    "2020-03",
+    "2020-04",
+    "2020-05",
+    "2020-06",
+    "2020-07",
+    "2020-08",
+    "2020-09",
+    "2020-10",
+    "2020-11",
+    "2020-12",
+    "2021-01",
+    "2021-02",
+    "2021-03",
+    "2021-04",
+    "2021-05",
+    "2021-06",
+    "2021-07",
+    "2021-08",
+    "2021-09",
+    "2021-10",
+    "2021-11",
+    "2021-12",
+    "2022-01",
+    "2022-02",
+    "2022-03",
+    "2022-04",
+    "2022-05",
+    "2022-06",
+    "2022-07",
+    "2022-08",
+    "2022-09",
+    "2022-10",
+    "2022-11",
+    "2022-12",
+    "2023-01",
+    "2023-02",
+    "2023-03",
+    "2023-04",
+    "2023-05",
+    "2023-06",
+    "2023-07",
+    "2023-08",
+    "2023-09",
+    "2023-10",
+    "2023-11",
+    "2023-12",
+    "2024-01",
+    "2024-02"
+   ],
+   "commits": [
+    5,
+    13,
+    15,
+    16,
+    74,
+    41,
+    20,
+    44,
+    60,
+    48,
+    44,
+    24,
+    17,
+    12,
+    49,
+    31,
+    20,
+    23,
+    18,
+    28,
+    17,
+    19,
+    18,
+    44,
+    37,
+    44,
+    45,
+    113,
+    33,
+    23,
+    16,
+    45,
+    32,
+    23,
+    37,
+    28,
+    38,
+    27,
+    38,
+    15,
+    28,
+    28,
+    40,
+    68,
+    33,
+    29,
+    34,
+    32
+   ],
+   "loc": [
+    110362,
+    110448,
+    110657,
+    111129,
+    117270,
+    118545,
+    118537,
+    118862,
+    120753,
+    121783,
+    122026,
+    122780,
+    122814,
+    122895,
+    126120,
+    127406,
+    127426,
+    129978,
+    131161,
+    131195,
+    131356,
+    131518,
+    132435,
+    133105,
+    133630,
+    134094,
+    134499,
+    132209,
+    132974,
+    133635,
+    137207,
+    138809,
+    139526,
+    139954,
+    142507,
+    142678,
+    143997,
+    144177,
+    144604,
+    144738,
+    147707,
+    148254,
+    149622,
+    150441,
+    150871,
+    152446,
+    153525,
+    154392
+   ]
+  }
+ },
+ "window": {
+  "L": 36,
+  "first_month": "2021-03",
+  "last_month": "2024-02",
+  "n_months": 36,
+  "left_truncated": false,
+  "first_commit_month": "2005-07",
+  "mined_months": 48,
+  "commits_in_window": 1182,
+  "commits_in_history": 7611
+ },
+ "loc_instrument": {
+  "instrument": "nonblank-source-lines-v1",
+  "status": "ok",
+  "months": 48,
+  "month_end_commits_distinct": 48,
+  "source_blobs": 4764,
+  "blobs_fetched": 13,
+  "t_ls_tree_s": 1.1989405479980633,
+  "t_fetch_s": 0.9586236090399325,
+  "t_read_s": 1.1266169209848158,
+  "series_present": true,
+  "extensions": [
+   ".bash",
+   ".c",
+   ".cc",
+   ".cjs",
+   ".clj",
+   ".cpp",
+   ".cs",
+   ".cxx",
+   ".dart",
+   ".erl",
+   ".ex",
+   ".exs",
+   ".f90",
+   ".go",
+   ".groovy",
+   ".h",
+   ".hh",
+   ".hpp",
+   ".hs",
+   ".java",
+   ".jl",
+   ".js",
+   ".jsx",
+   ".kt",
+   ".kts",
+   ".lua",
+   ".m",
+   ".mjs",
+   ".ml",
+   ".mm",
+   ".nim",
+   ".php",
+   ".pl",
+   ".pm",
+   ".py",
+   ".pyi",
+   ".r",
+   ".rb",
+   ".rs",
+   ".scala",
+   ".sh",
+   ".sql",
+   ".svelte",
+   ".swift",
+   ".ts",
+   ".tsx",
+   ".vue",
+   ".zig"
+  ],
+  "excluded_dirs": [
+   "node_modules",
+   "vendor",
+   "vendored",
+   "third_party",
+   "site-packages",
+   "bower_components"
+  ],
+  "max_blob_bytes": 1000000,
+  "first_parent": true
+ },
+ "mining": {
+  "churn": {
+   "t_churn_raw_s": 0.9330699699930847,
+   "t_churn_fetch_s": 18.291572848975193,
+   "t_churn_numstat_s": 2.172460245026741,
+   "blobs_fetched_churn": 5750
+  },
+  "timings": {
+   "t_clone": 0.004,
+   "t_mine": 21.679,
+   "t_loc": 3.287,
+   "t_reason_A": 7.604
+  },
+  "cached": false
+ },
+ "stage_a": {
+  "commits": 1586,
+  "reasoned_commits": 1546,
+  "inconsistent_chunks": 0,
+  "chunk_timings": [
+   {
+    "tbox_load_s": 0.040631743031553924,
+    "abox_load_s": 0.13261656102258712,
+    "reason_s": 3.907506428018678,
+    "extract_s": 0.01034598599653691,
+    "total_s": 4.0914811080438085,
+    "commits": 1000
+   },
+   {
+    "tbox_load_s": 0.037611284002196044,
+    "abox_load_s": 0.0739034140133299,
+    "reason_s": 3.3417028469848447,
+    "extract_s": 0.006383309024386108,
+    "total_s": 3.4600089389714412,
+    "commits": 546
+   }
+  ],
+  "tbox_sha256": "f5ba00eaa76dc3582415cdf566fbd7abc1d3f2797ca928f41dad106dc1c0bdb5"
+ },
+ "activity": {
+  "last_commit_date": "2024-02-28T20:03:49+00:00",
+  "months_since_last_commit": 0,
+  "distinct_authors_in_window": 231,
+  "merge_commits_in_window": 0
+ },
+ "agent_adoption_date": "2023-07-20T17:53:06+00:00",
+ "commit_label_counts": {
+  "BugFixCommit": 251,
+  "FeatureCommit": 0,
+  "AgentCommit": 5
+ },
+ "series_months": [
+  {
+   "month": "2021-03",
+   "commit_count": 17,
+   "merge_count": 0,
+   "unique_authors": 13,
+   "lines_added": 1596,
+   "lines_deleted": 1522,
+   "total_churn": 3118,
+   "files_changed": 39,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 122814,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2021-04",
+   "commit_count": 12,
+   "merge_count": 0,
+   "unique_authors": 7,
+   "lines_added": 151,
+   "lines_deleted": 54,
+   "total_churn": 205,
+   "files_changed": 14,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 122895,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2021-05",
+   "commit_count": 49,
+   "merge_count": 0,
+   "unique_authors": 17,
+   "lines_added": 6241,
+   "lines_deleted": 2471,
+   "total_churn": 8712,
+   "files_changed": 205,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 126120,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2021-06",
+   "commit_count": 31,
+   "merge_count": 0,
+   "unique_authors": 17,
+   "lines_added": 2072,
+   "lines_deleted": 520,
+   "total_churn": 2592,
+   "files_changed": 92,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 127406,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2021-07",
+   "commit_count": 20,
+   "merge_count": 0,
+   "unique_authors": 4,
+   "lines_added": 109,
+   "lines_deleted": 90,
+   "total_churn": 199,
+   "files_changed": 20,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 127426,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2021-08",
+   "commit_count": 23,
+   "merge_count": 0,
+   "unique_authors": 15,
+   "lines_added": 3421,
+   "lines_deleted": 382,
+   "total_churn": 3803,
+   "files_changed": 67,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 129978,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2021-09",
+   "commit_count": 18,
+   "merge_count": 0,
+   "unique_authors": 10,
+   "lines_added": 2019,
+   "lines_deleted": 581,
+   "total_churn": 2600,
+   "files_changed": 31,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 131161,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2021-10",
+   "commit_count": 28,
+   "merge_count": 0,
+   "unique_authors": 11,
+   "lines_added": 1207,
+   "lines_deleted": 1136,
+   "total_churn": 2343,
+   "files_changed": 118,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 131195,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2021-11",
+   "commit_count": 17,
+   "merge_count": 0,
+   "unique_authors": 6,
+   "lines_added": 803,
+   "lines_deleted": 610,
+   "total_churn": 1413,
+   "files_changed": 44,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 131356,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2021-12",
+   "commit_count": 19,
+   "merge_count": 0,
+   "unique_authors": 9,
+   "lines_added": 463,
+   "lines_deleted": 272,
+   "total_churn": 735,
+   "files_changed": 30,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 131518,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-01",
+   "commit_count": 18,
+   "merge_count": 0,
+   "unique_authors": 11,
+   "lines_added": 1760,
+   "lines_deleted": 614,
+   "total_churn": 2374,
+   "files_changed": 47,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 132435,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-02",
+   "commit_count": 44,
+   "merge_count": 0,
+   "unique_authors": 7,
+   "lines_added": 1388,
+   "lines_deleted": 600,
+   "total_churn": 1988,
+   "files_changed": 74,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 133105,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-03",
+   "commit_count": 37,
+   "merge_count": 0,
+   "unique_authors": 13,
+   "lines_added": 1038,
+   "lines_deleted": 401,
+   "total_churn": 1439,
+   "files_changed": 75,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 133630,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-04",
+   "commit_count": 44,
+   "merge_count": 0,
+   "unique_authors": 18,
+   "lines_added": 746,
+   "lines_deleted": 192,
+   "total_churn": 938,
+   "files_changed": 48,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 134094,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-05",
+   "commit_count": 45,
+   "merge_count": 0,
+   "unique_authors": 14,
+   "lines_added": 966,
+   "lines_deleted": 460,
+   "total_churn": 1426,
+   "files_changed": 100,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 134499,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-06",
+   "commit_count": 113,
+   "merge_count": 0,
+   "unique_authors": 21,
+   "lines_added": 3052,
+   "lines_deleted": 5700,
+   "total_churn": 8752,
+   "files_changed": 545,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 132209,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-07",
+   "commit_count": 33,
+   "merge_count": 0,
+   "unique_authors": 16,
+   "lines_added": 1960,
+   "lines_deleted": 1046,
+   "total_churn": 3006,
+   "files_changed": 85,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 132974,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-08",
+   "commit_count": 23,
+   "merge_count": 0,
+   "unique_authors": 11,
+   "lines_added": 1466,
+   "lines_deleted": 643,
+   "total_churn": 2109,
+   "files_changed": 39,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 133635,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-09",
+   "commit_count": 16,
+   "merge_count": 0,
+   "unique_authors": 8,
+   "lines_added": 4337,
+   "lines_deleted": 146,
+   "total_churn": 4483,
+   "files_changed": 30,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 137207,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-10",
+   "commit_count": 45,
+   "merge_count": 0,
+   "unique_authors": 16,
+   "lines_added": 2461,
+   "lines_deleted": 628,
+   "total_churn": 3089,
+   "files_changed": 79,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 138809,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-11",
+   "commit_count": 32,
+   "merge_count": 0,
+   "unique_authors": 16,
+   "lines_added": 902,
+   "lines_deleted": 74,
+   "total_churn": 976,
+   "files_changed": 79,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 139526,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-12",
+   "commit_count": 23,
+   "merge_count": 0,
+   "unique_authors": 8,
+   "lines_added": 841,
+   "lines_deleted": 354,
+   "total_churn": 1195,
+   "files_changed": 32,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 139954,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-01",
+   "commit_count": 37,
+   "merge_count": 0,
+   "unique_authors": 14,
+   "lines_added": 8953,
+   "lines_deleted": 6105,
+   "total_churn": 15058,
+   "files_changed": 101,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 142507,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-02",
+   "commit_count": 28,
+   "merge_count": 0,
+   "unique_authors": 12,
+   "lines_added": 916,
+   "lines_deleted": 754,
+   "total_churn": 1670,
+   "files_changed": 205,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 142678,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-03",
+   "commit_count": 38,
+   "merge_count": 0,
+   "unique_authors": 15,
+   "lines_added": 1892,
+   "lines_deleted": 277,
+   "total_churn": 2169,
+   "files_changed": 77,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 143997,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-04",
+   "commit_count": 27,
+   "merge_count": 0,
+   "unique_authors": 12,
+   "lines_added": 349,
+   "lines_deleted": 140,
+   "total_churn": 489,
+   "files_changed": 54,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 144177,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-05",
+   "commit_count": 38,
+   "merge_count": 0,
+   "unique_authors": 16,
+   "lines_added": 700,
+   "lines_deleted": 194,
+   "total_churn": 894,
+   "files_changed": 71,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 144604,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-06",
+   "commit_count": 15,
+   "merge_count": 0,
+   "unique_authors": 9,
+   "lines_added": 303,
+   "lines_deleted": 122,
+   "total_churn": 425,
+   "files_changed": 12,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 144738,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-07",
+   "commit_count": 28,
+   "merge_count": 0,
+   "unique_authors": 18,
+   "lines_added": 4965,
+   "lines_deleted": 1615,
+   "total_churn": 6580,
+   "files_changed": 229,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 147707,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-08",
+   "commit_count": 28,
+   "merge_count": 0,
+   "unique_authors": 16,
+   "lines_added": 1282,
+   "lines_deleted": 627,
+   "total_churn": 1909,
+   "files_changed": 132,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 148254,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-09",
+   "commit_count": 40,
+   "merge_count": 0,
+   "unique_authors": 18,
+   "lines_added": 2222,
+   "lines_deleted": 608,
+   "total_churn": 2830,
+   "files_changed": 93,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 149622,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-10",
+   "commit_count": 68,
+   "merge_count": 0,
+   "unique_authors": 22,
+   "lines_added": 1996,
+   "lines_deleted": 1087,
+   "total_churn": 3083,
+   "files_changed": 160,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 150441,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-11",
+   "commit_count": 33,
+   "merge_count": 0,
+   "unique_authors": 17,
+   "lines_added": 796,
+   "lines_deleted": 259,
+   "total_churn": 1055,
+   "files_changed": 50,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 150871,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-12",
+   "commit_count": 29,
+   "merge_count": 0,
+   "unique_authors": 15,
+   "lines_added": 2635,
+   "lines_deleted": 651,
+   "total_churn": 3286,
+   "files_changed": 97,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 152446,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-01",
+   "commit_count": 34,
+   "merge_count": 0,
+   "unique_authors": 17,
+   "lines_added": 2844,
+   "lines_deleted": 1530,
+   "total_churn": 4374,
+   "files_changed": 295,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 153525,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-02",
+   "commit_count": 32,
+   "merge_count": 0,
+   "unique_authors": 13,
+   "lines_added": 2173,
+   "lines_deleted": 1169,
+   "total_churn": 3342,
+   "files_changed": 201,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 154392,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  }
+ ],
+ "measures_derived": {
+  "bugFixRatioFirstHalf": 0.236508,
+  "bugFixRatioSecondHalf": 0.214703,
+  "bugFixHalfRatio": 0.907805,
+  "featureCommitsFirstHalf": 0,
+  "featureCommitsSecondHalf": 0,
+  "featureCommitsTotal": 0,
+  "locDeltaPerFeature": 31578.0,
+  "recentAgentCommitRatio": 0.020221
+ },
+ "modules_meta": {
+  "anchor_S": "2024-03-07T07:05:26+00:00",
+  "window_months": 12,
+  "package_roots": [
+   "networkx"
+  ],
+  "n_modules": 17,
+  "n_source_files": 371,
+  "n_window_commits": 332,
+  "cached": false,
+  "timings": {
+   "t_tree_loc": 1.22,
+   "t_history": 1.039,
+   "t_numstat": 1.759
+  },
+  "module_loc_instrument": "nonblank-source-lines-v1",
+  "label_counts": {
+   "StableModule": 2,
+   "ActiveModule": 15,
+   "undetermined": 0
+  },
+  "thresholds": {
+   "mod_window_months": 12,
+   "mod_stable_max_rel_churn": 0.1,
+   "mod_stable_max_change_months": 2
+  }
+ },
+ "inferred": {
+  "a0.05_L36_D12_G0.05_orig": {
+   "classes": [
+    "CopyPasteEvidence",
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIIConformant",
+    "LawIVConformant",
+    "LawVConformant",
+    "LawVIConformant",
+    "LawVIIConformant",
+    "LawVIIConformantRatio",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantNoMerge",
+    "LocPerFeatureHigh",
+    "MKApplicable",
+    "MergeInactive",
+    "MultiAuthorActive",
+    "RBActiveDevelopmentStage",
+    "RecentlyActive",
+    "SubstantialLocGrowth"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": "urn:senso:explanations:networkx__networkx-7336:d20298612d99",
+   "tbox_sha256": "d20298612d99fa8f5c1a63c70eaab0195a3e82e2d6780de3bd1fd3ced72d6e5d",
+   "abox_triples": 210,
+   "t_reason_B_s": 2.451
+  }
+ },
+ "primary_config": "a0.05_L36_D12_G0.05_orig",
+ "project_iri": "http://senso-framework.org/data/networkx__networkx-7336",
+ "consistent": true,
+ "inferred_labels": [
+  "CopyPasteEvidence",
+  "GrowthStage",
+  "LawIConformant",
+  "LawIIIConformant",
+  "LawIVConformant",
+  "LawVConformant",
+  "LawVIConformant",
+  "LawVIIConformant",
+  "LawVIIConformantRatio",
+  "LawVIIINonConformant",
+  "LawVIIINonConformantNoMerge",
+  "LocPerFeatureHigh",
+  "MKApplicable",
+  "MergeInactive",
+  "MultiAuthorActive",
+  "RBActiveDevelopmentStage",
+  "RecentlyActive",
+  "SubstantialLocGrowth"
+ ],
+ "stage_labels": [
+  "GrowthStage",
+  "RBActiveDevelopmentStage"
+ ],
+ "law_labels": {
+  "I": "LawIConformant",
+  "III": "LawIIIConformant",
+  "IV": "LawIVConformant",
+  "V": "LawVConformant",
+  "VI": "LawVIConformant",
+  "VII": "LawVIIConformant",
+  "VIII": "LawVIIINonConformant"
+ },
+ "tbox_sha256_stage_b": "d20298612d99fa8f5c1a63c70eaab0195a3e82e2d6780de3bd1fd3ced72d6e5d",
+ "tbox_sha256_stage_a": "f5ba00eaa76dc3582415cdf566fbd7abc1d3f2797ca928f41dad106dc1c0bdb5",
+ "summary": {
+  "c1": "A",
+  "c2": "A",
+  "cf": "A",
+  "note": "debug summary; run_rq1_v2.py reads `inferred` and recomputes CF itself"
+ },
+ "modules": {
+  "benchmarks": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "RarelyChangedModule"
+   ],
+   "measures": {
+    "modulePath": "benchmarks",
+    "moduleLoc": 116,
+    "moduleCommitsInWindow": 2,
+    "moduleChangeMonthsInWindow": 2,
+    "moduleLinesChangedInWindow": 161,
+    "moduleRelChurnInWindow": 1.387931,
+    "moduleMonthsSinceLastChange": 1
+   },
+   "iri": "http://senso-framework.org/data/networkx__networkx-7336/module/benchmarks-ac00a9",
+   "abox_asserted": true
+  },
+  "doc": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "doc",
+    "moduleLoc": 350,
+    "moduleCommitsInWindow": 14,
+    "moduleChangeMonthsInWindow": 8,
+    "moduleLinesChangedInWindow": 103,
+    "moduleRelChurnInWindow": 0.294286,
+    "moduleMonthsSinceLastChange": 0
+   },
+   "iri": "http://senso-framework.org/data/networkx__networkx-7336/module/doc-f7f029",
+   "abox_asserted": true
+  },
+  "examples": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "examples",
+    "moduleLoc": 4221,
+    "moduleCommitsInWindow": 26,
+    "moduleChangeMonthsInWindow": 12,
+    "moduleLinesChangedInWindow": 2059,
+    "moduleRelChurnInWindow": 0.487799,
+    "moduleMonthsSinceLastChange": 0
+   },
+   "iri": "http://senso-framework.org/data/networkx__networkx-7336/module/examples-99345c",
+   "abox_asserted": true
+  },
+  "networkx/__init__.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "networkx/__init__.py",
+    "moduleLoc": 33,
+    "moduleCommitsInWindow": 10,
+    "moduleChangeMonthsInWindow": 5,
+    "moduleLinesChangedInWindow": 20,
+    "moduleRelChurnInWindow": 0.606061,
+    "moduleMonthsSinceLastChange": 2
+   },
+   "iri": "http://senso-framework.org/data/networkx__networkx-7336/module/networkx___init__.py-37394a",
+   "abox_asserted": true
+  },
+  "networkx/algorithms": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "networkx/algorithms",
+    "moduleLoc": 55389,
+    "moduleCommitsInWindow": 187,
+    "moduleChangeMonthsInWindow": 13,
+    "moduleLinesChangedInWindow": 11258,
+    "moduleRelChurnInWindow": 0.203253,
+    "moduleMonthsSinceLastChange": 0
+   },
+   "iri": "http://senso-framework.org/data/networkx__networkx-7336/module/networkx_algorithms-8ed965",
+   "abox_asserted": true
+  },
+  "networkx/classes": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "networkx/classes",
+    "moduleLoc": 7441,
+    "moduleCommitsInWindow": 21,
+    "moduleChangeMonthsInWindow": 10,
+    "moduleLinesChangedInWindow": 816,
+    "moduleRelChurnInWindow": 0.109663,
+    "moduleMonthsSinceLastChange": 1
+   },
+   "iri": "http://senso-framework.org/data/networkx__networkx-7336/module/networkx_classes-fa53f0",
+   "abox_asserted": true
+  },
+  "networkx/convert.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "networkx/convert.py",
+    "moduleLoc": 409,
+    "moduleCommitsInWindow": 6,
+    "moduleChangeMonthsInWindow": 4,
+    "moduleLinesChangedInWindow": 41,
+    "moduleRelChurnInWindow": 0.100244,
+    "moduleMonthsSinceLastChange": 1
+   },
+   "iri": "http://senso-framework.org/data/networkx__networkx-7336/module/networkx_convert.py-297c07",
+   "abox_asserted": true
+  },
+  "networkx/convert_matrix.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "networkx/convert_matrix.py",
+    "moduleLoc": 1004,
+    "moduleCommitsInWindow": 14,
+    "moduleChangeMonthsInWindow": 7,
+    "moduleLinesChangedInWindow": 176,
+    "moduleRelChurnInWindow": 0.175299,
+    "moduleMonthsSinceLastChange": 0
+   },
+   "iri": "http://senso-framework.org/data/networkx__networkx-7336/module/networkx_convert_matrix.py-ceeb3c",
+   "abox_asserted": true
+  },
+  "networkx/drawing": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "networkx/drawing",
+    "moduleLoc": 3850,
+    "moduleCommitsInWindow": 21,
+    "moduleChangeMonthsInWindow": 10,
+    "moduleLinesChangedInWindow": 1029,
+    "moduleRelChurnInWindow": 0.267273,
+    "moduleMonthsSinceLastChange": 1
+   },
+   "iri": "http://senso-framework.org/data/networkx__networkx-7336/module/networkx_drawing-e1f7fd",
+   "abox_asserted": true
+  },
+  "networkx/exception.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "networkx/exception.py",
+    "moduleLoc": 84,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 50
+   },
+   "iri": "http://senso-framework.org/data/networkx__networkx-7336/module/networkx_exception.py-d7d051",
+   "abox_asserted": true
+  },
+  "networkx/generators": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "networkx/generators",
+    "moduleLoc": 10648,
+    "moduleCommitsInWindow": 44,
+    "moduleChangeMonthsInWindow": 12,
+    "moduleLinesChangedInWindow": 2720,
+    "moduleRelChurnInWindow": 0.255447,
+    "moduleMonthsSinceLastChange": 0
+   },
+   "iri": "http://senso-framework.org/data/networkx__networkx-7336/module/networkx_generators-902916",
+   "abox_asserted": true
+  },
+  "networkx/lazy_imports.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "networkx/lazy_imports.py",
+    "moduleLoc": 143,
+    "moduleCommitsInWindow": 2,
+    "moduleChangeMonthsInWindow": 2,
+    "moduleLinesChangedInWindow": 10,
+    "moduleRelChurnInWindow": 0.06993,
+    "moduleMonthsSinceLastChange": 1
+   },
+   "iri": "http://senso-framework.org/data/networkx__networkx-7336/module/networkx_lazy_imports.py-b19222",
+   "abox_asserted": true
+  },
+  "networkx/linalg": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "networkx/linalg",
+    "moduleLoc": 1871,
+    "moduleCommitsInWindow": 16,
+    "moduleChangeMonthsInWindow": 10,
+    "moduleLinesChangedInWindow": 410,
+    "moduleRelChurnInWindow": 0.219134,
+    "moduleMonthsSinceLastChange": 0
+   },
+   "iri": "http://senso-framework.org/data/networkx__networkx-7336/module/networkx_linalg-53f6a0",
+   "abox_asserted": true
+  },
+  "networkx/readwrite": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "networkx/readwrite",
+    "moduleLoc": 6127,
+    "moduleCommitsInWindow": 22,
+    "moduleChangeMonthsInWindow": 11,
+    "moduleLinesChangedInWindow": 873,
+    "moduleRelChurnInWindow": 0.142484,
+    "moduleMonthsSinceLastChange": 0
+   },
+   "iri": "http://senso-framework.org/data/networkx__networkx-7336/module/networkx_readwrite-313a35",
+   "abox_asserted": true
+  },
+  "networkx/relabel.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "networkx/relabel.py",
+    "moduleLoc": 244,
+    "moduleCommitsInWindow": 6,
+    "moduleChangeMonthsInWindow": 4,
+    "moduleLinesChangedInWindow": 32,
+    "moduleRelChurnInWindow": 0.131148,
+    "moduleMonthsSinceLastChange": 1
+   },
+   "iri": "http://senso-framework.org/data/networkx__networkx-7336/module/networkx_relabel.py-0d16c2",
+   "abox_asserted": true
+  },
+  "networkx/utils": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "networkx/utils",
+    "moduleLoc": 3505,
+    "moduleCommitsInWindow": 26,
+    "moduleChangeMonthsInWindow": 8,
+    "moduleLinesChangedInWindow": 2875,
+    "moduleRelChurnInWindow": 0.820257,
+    "moduleMonthsSinceLastChange": 0
+   },
+   "iri": "http://senso-framework.org/data/networkx__networkx-7336/module/networkx_utils-830dee",
+   "abox_asserted": true
+  },
+  "tools": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "tools",
+    "moduleLoc": 103,
+    "moduleCommitsInWindow": 3,
+    "moduleChangeMonthsInWindow": 3,
+    "moduleLinesChangedInWindow": 159,
+    "moduleRelChurnInWindow": 1.543689,
+    "moduleMonthsSinceLastChange": 5
+   },
+   "iri": "http://senso-framework.org/data/networkx__networkx-7336/module/tools-0284c6",
+   "abox_asserted": true
+  }
+ },
+ "explanations": {
+  "stage:GrowthStage": {
+   "class": "GrowthStage",
+   "individual": "http://senso-framework.org/data/networkx__networkx-7336",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/networkx__networkx-7336 type http://senso-framework.org/ontology/seo#GrowthStage",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKTau_gt_0",
+       "text": "A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "GrowthStage",
+       "text": "GrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKpValue_lt_mk_alpha",
+       "text": "A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "networkx__networkx-7336",
+       "prop": "locMKTau",
+       "value": 0.965079,
+       "raw": "networkx__networkx-7336 locMKTau 0.965079"
+      },
+      {
+       "subject": "networkx__networkx-7336",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "networkx__networkx-7336 type SoftwareProject"
+      },
+      {
+       "subject": "networkx__networkx-7336",
+       "prop": "locSeriesLength",
+       "value": 36,
+       "raw": "networkx__networkx-7336 locSeriesLength 36"
+      },
+      {
+       "subject": "networkx__networkx-7336",
+       "prop": "locMKpValue",
+       "value": 0.0,
+       "raw": "networkx__networkx-7336 locMKpValue 0.0"
+      }
+     ],
+     "closures": [],
+     "raw": "A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\nA_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\nGrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject\nnetworkx__networkx-7336 locMKTau 0.965079\nA_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]\nnetworkx__networkx-7336 type SoftwareProject\nnetworkx__networkx-7336 locSeriesLength 36\nnetworkx__networkx-7336 locMKpValue 0.0\nA_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]"
+    }
+   ],
+   "raw_text": "Axiom: networkx__networkx-7336 type GrowthStage\n\nExplanation(s): \n1)   A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\n     A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\n     GrowthStage equivalentTo A_locMKTau_gt_0\n                              and A_locMKpValue_lt_mk_alpha\n                              and MKApplicable\n                              and SoftwareProject\n     networkx__networkx-7336 locMKTau 0.965079\n     A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]\n     networkx__networkx-7336 type SoftwareProject\n     networkx__networkx-7336 locSeriesLength 36\n     networkx__networkx-7336 locMKpValue 0.0\n     A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\n\n\n",
+   "seconds": 2.7937437819782645,
+   "returncode": 0,
+   "error": null
+  },
+  "stage:RBActiveDevelopmentStage": {
+   "class": "RBActiveDevelopmentStage",
+   "individual": "http://senso-framework.org/data/networkx__networkx-7336",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/networkx__networkx-7336 type http://senso-framework.org/ontology/seo#RBActiveDevelopmentStage",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable"
+      },
+      {
+       "kind": "definition",
+       "subject": "SubstantialLocGrowth",
+       "text": "SubstantialLocGrowth equivalentTo A_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKTau_gt_0",
+       "text": "A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "GrowthStage",
+       "text": "GrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year",
+       "text": "A_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year equivalentTo locRelSenSlopeAnnual some decimal[>= 0.05]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]"
+      },
+      {
+       "kind": "definition",
+       "subject": "RBActiveDevelopmentStage",
+       "text": "RBActiveDevelopmentStage equivalentTo GrowthStage and RecentlyActive and SoftwareProject and SubstantialLocGrowth"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKpValue_lt_mk_alpha",
+       "text": "A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]"
+      },
+      {
+       "kind": "definition",
+       "subject": "RecentlyActive",
+       "text": "RecentlyActive equivalentTo A_monthsSinceLastCommit_lt_rb_dormancy_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_monthsSinceLastCommit_lt_rb_dormancy_months",
+       "text": "A_monthsSinceLastCommit_lt_rb_dormancy_months equivalentTo monthsSinceLastCommit some integer[< 12]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "networkx__networkx-7336",
+       "prop": "locRelSenSlopeAnnual",
+       "value": 0.074373,
+       "raw": "networkx__networkx-7336 locRelSenSlopeAnnual 0.074373"
+      },
+      {
+       "subject": "networkx__networkx-7336",
+       "prop": "locMKTau",
+       "value": 0.965079,
+       "raw": "networkx__networkx-7336 locMKTau 0.965079"
+      },
+      {
+       "subject": "networkx__networkx-7336",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "networkx__networkx-7336 type SoftwareProject"
+      },
+      {
+       "subject": "networkx__networkx-7336",
+       "prop": "locSeriesLength",
+       "value": 36,
+       "raw": "networkx__networkx-7336 locSeriesLength 36"
+      },
+      {
+       "subject": "networkx__networkx-7336",
+       "prop": "monthsSinceLastCommit",
+       "value": 0,
+       "raw": "networkx__networkx-7336 monthsSinceLastCommit 0"
+      },
+      {
+       "subject": "networkx__networkx-7336",
+       "prop": "locMKpValue",
+       "value": 0.0,
+       "raw": "networkx__networkx-7336 locMKpValue 0.0"
+      }
+     ],
+     "closures": [],
+     "raw": "A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\nSubstantialLocGrowth equivalentTo A_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year and SoftwareProject\nA_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\nnetworkx__networkx-7336 locRelSenSlopeAnnual 0.074373\nGrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject\nA_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year equivalentTo locRelSenSlopeAnnual some decimal[>= 0.05]\nnetworkx__networkx-7336 locMKTau 0.965079\nA_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]\nnetworkx__networkx-7336 type SoftwareProject\nnetworkx__networkx-7336 locSeriesLength 36\nnetworkx__networkx-7336 monthsSinceLastCommit 0\nnetworkx__networkx-7336 locMKpValue 0.0\nRBActiveDevelopmentStage equivalentTo GrowthStage and RecentlyActive and SoftwareProject and SubstantialLocGrowth\nA_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\nRecentlyActive equivalentTo A_monthsSinceLastCommit_lt_rb_dormancy_months and SoftwareProject\nA_monthsSinceLastCommit_lt_rb_dormancy_months equivalentTo monthsSinceLastCommit some integer[< 12]"
+    }
+   ],
+   "raw_text": "Axiom: networkx__networkx-7336 type RBActiveDevelopmentStage\n\nExplanation(s): \n1)   A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\n     SubstantialLocGrowth equivalentTo A_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year\n                                       and SoftwareProject\n     A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\n     networkx__networkx-7336 locRelSenSlopeAnnual 0.074373\n     GrowthStage equivalentTo A_locMKTau_gt_0\n                              and A_locMKpValue_lt_mk_alpha\n                              and MKApplicable\n                              and SoftwareProject\n     A_locRelSenSlopeAnnual_ge_rb_min_rel_loc_growth_per_year equivalentTo locRelSenSlopeAnnual some decimal[>= 0.05]\n     networkx__networkx-7336 locMKTau 0.965079\n     A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]\n     networkx__networkx-7336 type SoftwareProject\n     networkx__networkx-7336 locSeriesLength 36\n     networkx__networkx-7336 monthsSinceLastCommit 0\n     networkx__networkx-7336 locMKpValue 0.0\n     RBActiveDevelopmentStage equivalentTo GrowthStage\n                                           and RecentlyActive\n                                           and SoftwareProject\n                                           and SubstantialLocGrowth\n     A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\n     RecentlyActive equivalentTo A_monthsSinceLastCommit_lt_rb_dormancy_months\n                                 and SoftwareProject\n     A_monthsSinceLastCommit_lt_rb_dormancy_months equivalentTo monthsSinceLastCommit some integer[< 12]\n\n\n",
+   "seconds": 2.739310045959428,
+   "returncode": 0,
+   "error": null
+  },
+  "lawI": {
+   "class": "LawIConformant",
+   "individual": "http://senso-framework.org/data/networkx__networkx-7336",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/networkx__networkx-7336 type http://senso-framework.org/ontology/seo#LawIConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law1_min_months",
+       "text": "A_monthsObserved_ge_p_law1_min_months equivalentTo monthsObserved some integer[>= 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawIConformant",
+       "text": "LawIConformant equivalentTo A_activeMonthRatio_ge_p_law1_active_ratio and A_monthsObserved_ge_p_law1_min_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_activeMonthRatio_ge_p_law1_active_ratio",
+       "text": "A_activeMonthRatio_ge_p_law1_active_ratio equivalentTo activeMonthRatio some decimal[>= 0.5]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "networkx__networkx-7336",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "networkx__networkx-7336 monthsObserved 36"
+      },
+      {
+       "subject": "networkx__networkx-7336",
+       "prop": "activeMonthRatio",
+       "value": 1.0,
+       "raw": "networkx__networkx-7336 activeMonthRatio 1.0"
+      },
+      {
+       "subject": "networkx__networkx-7336",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "networkx__networkx-7336 type SoftwareProject"
+      }
+     ],
+     "closures": [],
+     "raw": "networkx__networkx-7336 monthsObserved 36\nnetworkx__networkx-7336 activeMonthRatio 1.0\nnetworkx__networkx-7336 type SoftwareProject\nA_monthsObserved_ge_p_law1_min_months equivalentTo monthsObserved some integer[>= 2]\nLawIConformant equivalentTo A_activeMonthRatio_ge_p_law1_active_ratio and A_monthsObserved_ge_p_law1_min_months and SoftwareProject\nA_activeMonthRatio_ge_p_law1_active_ratio equivalentTo activeMonthRatio some decimal[>= 0.5]"
+    }
+   ],
+   "raw_text": "Axiom: networkx__networkx-7336 type LawIConformant\n\nExplanation(s): \n1)   networkx__networkx-7336 monthsObserved 36\n     networkx__networkx-7336 activeMonthRatio 1.0\n     networkx__networkx-7336 type SoftwareProject\n     A_monthsObserved_ge_p_law1_min_months equivalentTo monthsObserved some integer[>= 2]\n     LawIConformant equivalentTo A_activeMonthRatio_ge_p_law1_active_ratio\n                                 and A_monthsObserved_ge_p_law1_min_months\n                                 and SoftwareProject\n     A_activeMonthRatio_ge_p_law1_active_ratio equivalentTo activeMonthRatio some decimal[>= 0.5]\n\n\n",
+   "seconds": 2.4624619189999066,
+   "returncode": 0,
+   "error": null
+  },
+  "lawIII": {
+   "class": "LawIIIConformant",
+   "individual": "http://senso-framework.org/data/networkx__networkx-7336",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/networkx__networkx-7336 type http://senso-framework.org/ontology/seo#LawIIIConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law3_min_months",
+       "text": "A_monthsObserved_ge_p_law3_min_months equivalentTo monthsObserved some integer[>= 6]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawIIIConformant",
+       "text": "LawIIIConformant equivalentTo A_churnCV_lt_p_law3_churn_cv and A_monthsObserved_ge_p_law3_min_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_churnCV_lt_p_law3_churn_cv",
+       "text": "A_churnCV_lt_p_law3_churn_cv equivalentTo churnCV some decimal[< 2.0]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "networkx__networkx-7336",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "networkx__networkx-7336 monthsObserved 36"
+      },
+      {
+       "subject": "networkx__networkx-7336",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "networkx__networkx-7336 type SoftwareProject"
+      },
+      {
+       "subject": "networkx__networkx-7336",
+       "prop": "churnCV",
+       "value": 0.986662,
+       "raw": "networkx__networkx-7336 churnCV 0.986662"
+      }
+     ],
+     "closures": [],
+     "raw": "A_monthsObserved_ge_p_law3_min_months equivalentTo monthsObserved some integer[>= 6]\nnetworkx__networkx-7336 monthsObserved 36\nLawIIIConformant equivalentTo A_churnCV_lt_p_law3_churn_cv and A_monthsObserved_ge_p_law3_min_months and SoftwareProject\nnetworkx__networkx-7336 type SoftwareProject\nA_churnCV_lt_p_law3_churn_cv equivalentTo churnCV some decimal[< 2.0]\nnetworkx__networkx-7336 churnCV 0.986662"
+    }
+   ],
+   "raw_text": "Axiom: networkx__networkx-7336 type LawIIIConformant\n\nExplanation(s): \n1)   A_monthsObserved_ge_p_law3_min_months equivalentTo monthsObserved some integer[>= 6]\n     networkx__networkx-7336 monthsObserved 36\n     LawIIIConformant equivalentTo A_churnCV_lt_p_law3_churn_cv\n                                   and A_monthsObserved_ge_p_law3_min_months\n                                   and SoftwareProject\n     networkx__networkx-7336 type SoftwareProject\n     A_churnCV_lt_p_law3_churn_cv equivalentTo churnCV some decimal[< 2.0]\n     networkx__networkx-7336 churnCV 0.986662\n\n\n",
+   "seconds": 2.576004723960068,
+   "returncode": 0,
+   "error": null
+  },
+  "lawIV": {
+   "class": "LawIVConformant",
+   "individual": "http://senso-framework.org/data/networkx__networkx-7336",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/networkx__networkx-7336 type http://senso-framework.org/ontology/seo#LawIVConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law4_min_months",
+       "text": "A_monthsObserved_ge_p_law4_min_months equivalentTo monthsObserved some integer[>= 6]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawIVConformant",
+       "text": "LawIVConformant equivalentTo A_commitCountCV_lt_p_law4_commit_cv and A_monthsObserved_ge_p_law4_min_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_commitCountCV_lt_p_law4_commit_cv",
+       "text": "A_commitCountCV_lt_p_law4_commit_cv equivalentTo commitCountCV some decimal[< 1.5]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "networkx__networkx-7336",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "networkx__networkx-7336 monthsObserved 36"
+      },
+      {
+       "subject": "networkx__networkx-7336",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "networkx__networkx-7336 type SoftwareProject"
+      },
+      {
+       "subject": "networkx__networkx-7336",
+       "prop": "commitCountCV",
+       "value": 0.541532,
+       "raw": "networkx__networkx-7336 commitCountCV 0.541532"
+      }
+     ],
+     "closures": [],
+     "raw": "A_monthsObserved_ge_p_law4_min_months equivalentTo monthsObserved some integer[>= 6]\nnetworkx__networkx-7336 monthsObserved 36\nnetworkx__networkx-7336 type SoftwareProject\nLawIVConformant equivalentTo A_commitCountCV_lt_p_law4_commit_cv and A_monthsObserved_ge_p_law4_min_months and SoftwareProject\nnetworkx__networkx-7336 commitCountCV 0.541532\nA_commitCountCV_lt_p_law4_commit_cv equivalentTo commitCountCV some decimal[< 1.5]"
+    }
+   ],
+   "raw_text": "Axiom: networkx__networkx-7336 type LawIVConformant\n\nExplanation(s): \n1)   A_monthsObserved_ge_p_law4_min_months equivalentTo monthsObserved some integer[>= 6]\n     networkx__networkx-7336 monthsObserved 36\n     networkx__networkx-7336 type SoftwareProject\n     LawIVConformant equivalentTo A_commitCountCV_lt_p_law4_commit_cv\n                                  and A_monthsObserved_ge_p_law4_min_months\n                                  and SoftwareProject\n     networkx__networkx-7336 commitCountCV 0.541532\n     A_commitCountCV_lt_p_law4_commit_cv equivalentTo commitCountCV some decimal[< 1.5]\n\n\n",
+   "seconds": 2.641136068967171,
+   "returncode": 0,
+   "error": null
+  },
+  "lawV": {
+   "class": "LawVConformant",
+   "individual": "http://senso-framework.org/data/networkx__networkx-7336",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/networkx__networkx-7336 type http://senso-framework.org/ontology/seo#LawVConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "LawVConformant",
+       "text": "LawVConformant equivalentTo A_linesAddedCV_lt_p_law5_additions_cv and A_monthsObserved_ge_p_law5_min_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_linesAddedCV_lt_p_law5_additions_cv",
+       "text": "A_linesAddedCV_lt_p_law5_additions_cv equivalentTo linesAddedCV some decimal[< 2.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law5_min_months",
+       "text": "A_monthsObserved_ge_p_law5_min_months equivalentTo monthsObserved some integer[>= 4]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "networkx__networkx-7336",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "networkx__networkx-7336 monthsObserved 36"
+      },
+      {
+       "subject": "networkx__networkx-7336",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "networkx__networkx-7336 type SoftwareProject"
+      },
+      {
+       "subject": "networkx__networkx-7336",
+       "prop": "linesAddedCV",
+       "value": 0.901812,
+       "raw": "networkx__networkx-7336 linesAddedCV 0.901812"
+      }
+     ],
+     "closures": [],
+     "raw": "networkx__networkx-7336 monthsObserved 36\nLawVConformant equivalentTo A_linesAddedCV_lt_p_law5_additions_cv and A_monthsObserved_ge_p_law5_min_months and SoftwareProject\nA_linesAddedCV_lt_p_law5_additions_cv equivalentTo linesAddedCV some decimal[< 2.0]\nnetworkx__networkx-7336 type SoftwareProject\nA_monthsObserved_ge_p_law5_min_months equivalentTo monthsObserved some integer[>= 4]\nnetworkx__networkx-7336 linesAddedCV 0.901812"
+    }
+   ],
+   "raw_text": "Axiom: networkx__networkx-7336 type LawVConformant\n\nExplanation(s): \n1)   networkx__networkx-7336 monthsObserved 36\n     LawVConformant equivalentTo A_linesAddedCV_lt_p_law5_additions_cv\n                                 and A_monthsObserved_ge_p_law5_min_months\n                                 and SoftwareProject\n     A_linesAddedCV_lt_p_law5_additions_cv equivalentTo linesAddedCV some decimal[< 2.0]\n     networkx__networkx-7336 type SoftwareProject\n     A_monthsObserved_ge_p_law5_min_months equivalentTo monthsObserved some integer[>= 4]\n     networkx__networkx-7336 linesAddedCV 0.901812\n\n\n",
+   "seconds": 2.4708784699905664,
+   "returncode": 0,
+   "error": null
+  },
+  "lawVI": {
+   "class": "LawVIConformant",
+   "individual": "http://senso-framework.org/data/networkx__networkx-7336",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/networkx__networkx-7336 type http://senso-framework.org/ontology/seo#LawVIConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "subclass",
+       "subject": "GrowthStage",
+       "text": "GrowthStage subClassOf LawVIConformant"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKTau_gt_0",
+       "text": "A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKpValue_lt_mk_alpha",
+       "text": "A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]"
+      },
+      {
+       "kind": "definition",
+       "subject": "GrowthStage",
+       "text": "GrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "networkx__networkx-7336",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "networkx__networkx-7336 type SoftwareProject"
+      },
+      {
+       "subject": "networkx__networkx-7336",
+       "prop": "locSeriesLength",
+       "value": 36,
+       "raw": "networkx__networkx-7336 locSeriesLength 36"
+      },
+      {
+       "subject": "networkx__networkx-7336",
+       "prop": "locMKpValue",
+       "value": 0.0,
+       "raw": "networkx__networkx-7336 locMKpValue 0.0"
+      },
+      {
+       "subject": "networkx__networkx-7336",
+       "prop": "locMKTau",
+       "value": 0.965079,
+       "raw": "networkx__networkx-7336 locMKTau 0.965079"
+      }
+     ],
+     "closures": [],
+     "raw": "networkx__networkx-7336 type SoftwareProject\nnetworkx__networkx-7336 locSeriesLength 36\nnetworkx__networkx-7336 locMKpValue 0.0\nGrowthStage subClassOf LawVIConformant\nA_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\nA_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\nA_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\nGrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject\nnetworkx__networkx-7336 locMKTau 0.965079\nA_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]"
+    }
+   ],
+   "raw_text": "Axiom: networkx__networkx-7336 type LawVIConformant\n\nExplanation(s): \n1)   networkx__networkx-7336 type SoftwareProject\n     networkx__networkx-7336 locSeriesLength 36\n     networkx__networkx-7336 locMKpValue 0.0\n     GrowthStage subClassOf LawVIConformant\n     A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\n     A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\n     A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\n     GrowthStage equivalentTo A_locMKTau_gt_0\n                              and A_locMKpValue_lt_mk_alpha\n                              and MKApplicable\n                              and SoftwareProject\n     networkx__networkx-7336 locMKTau 0.965079\n     A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]\n\n\n",
+   "seconds": 2.680977121985052,
+   "returncode": 0,
+   "error": null
+  },
+  "lawVII": {
+   "class": "LawVIIConformant",
+   "individual": "http://senso-framework.org/data/networkx__networkx-7336",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/networkx__networkx-7336 type http://senso-framework.org/ontology/seo#LawVIIConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_bugFixHalfRatio_ge_p_law7_tolerance",
+       "text": "A_bugFixHalfRatio_ge_p_law7_tolerance equivalentTo bugFixHalfRatio some decimal[>= 0.9]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawVIIConformantRatio",
+       "text": "LawVIIConformantRatio equivalentTo A_activeMonthCount_ge_p_law7_min_active_months and A_bugFixHalfRatio_ge_p_law7_tolerance and A_bugFixRatioFirstHalf_gt_0 and SoftwareProject"
+      },
+      {
+       "kind": "subclass",
+       "subject": "LawVIIConformantRatio",
+       "text": "LawVIIConformantRatio subClassOf LawVIIConformant"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_bugFixRatioFirstHalf_gt_0",
+       "text": "A_bugFixRatioFirstHalf_gt_0 equivalentTo bugFixRatioFirstHalf some decimal[> 0.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_activeMonthCount_ge_p_law7_min_active_months",
+       "text": "A_activeMonthCount_ge_p_law7_min_active_months equivalentTo activeMonthCount some integer[>= 4]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "networkx__networkx-7336",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "networkx__networkx-7336 type SoftwareProject"
+      },
+      {
+       "subject": "networkx__networkx-7336",
+       "prop": "bugFixRatioFirstHalf",
+       "value": 0.236508,
+       "raw": "networkx__networkx-7336 bugFixRatioFirstHalf 0.236508"
+      },
+      {
+       "subject": "networkx__networkx-7336",
+       "prop": "bugFixHalfRatio",
+       "value": 0.907805,
+       "raw": "networkx__networkx-7336 bugFixHalfRatio 0.907805"
+      },
+      {
+       "subject": "networkx__networkx-7336",
+       "prop": "activeMonthCount",
+       "value": 36,
+       "raw": "networkx__networkx-7336 activeMonthCount 36"
+      }
+     ],
+     "closures": [],
+     "raw": "A_bugFixHalfRatio_ge_p_law7_tolerance equivalentTo bugFixHalfRatio some decimal[>= 0.9]\nLawVIIConformantRatio equivalentTo A_activeMonthCount_ge_p_law7_min_active_months and A_bugFixHalfRatio_ge_p_law7_tolerance and A_bugFixRatioFirstHalf_gt_0 and SoftwareProject\nnetworkx__networkx-7336 type SoftwareProject\nLawVIIConformantRatio subClassOf LawVIIConformant\nA_bugFixRatioFirstHalf_gt_0 equivalentTo bugFixRatioFirstHalf some decimal[> 0.0]\nA_activeMonthCount_ge_p_law7_min_active_months equivalentTo activeMonthCount some integer[>= 4]\nnetworkx__networkx-7336 bugFixRatioFirstHalf 0.236508\nnetworkx__networkx-7336 bugFixHalfRatio 0.907805\nnetworkx__networkx-7336 activeMonthCount 36"
+    }
+   ],
+   "raw_text": "Axiom: networkx__networkx-7336 type LawVIIConformant\n\nExplanation(s): \n1)   A_bugFixHalfRatio_ge_p_law7_tolerance equivalentTo bugFixHalfRatio some decimal[>= 0.9]\n     LawVIIConformantRatio equivalentTo A_activeMonthCount_ge_p_law7_min_active_months\n                                        and A_bugFixHalfRatio_ge_p_law7_tolerance\n                                        and A_bugFixRatioFirstHalf_gt_0\n                                        and SoftwareProject\n     networkx__networkx-7336 type SoftwareProject\n     LawVIIConformantRatio subClassOf LawVIIConformant\n     A_bugFixRatioFirstHalf_gt_0 equivalentTo bugFixRatioFirstHalf some decimal[> 0.0]\n     A_activeMonthCount_ge_p_law7_min_active_months equivalentTo activeMonthCount some integer[>= 4]\n     networkx__networkx-7336 bugFixRatioFirstHalf 0.236508\n     networkx__networkx-7336 bugFixHalfRatio 0.907805\n     networkx__networkx-7336 activeMonthCount 36\n\n\n",
+   "seconds": 3.476856323017273,
+   "returncode": 0,
+   "error": null
+  },
+  "lawVIII": {
+   "class": "LawVIIINonConformant",
+   "individual": "http://senso-framework.org/data/networkx__networkx-7336",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/networkx__networkx-7336 type http://senso-framework.org/ontology/seo#LawVIIINonConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_mergeMonthRatio_le_p_law8_merge_ratio",
+       "text": "A_mergeMonthRatio_le_p_law8_merge_ratio equivalentTo MergeInactive"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_mergeMonthRatio_le_p_law8_merge_ratio",
+       "text": "A_mergeMonthRatio_le_p_law8_merge_ratio equivalentTo mergeMonthRatio some decimal[<= 0.3]"
+      },
+      {
+       "kind": "subclass",
+       "subject": "LawVIIINonConformantNoMerge",
+       "text": "LawVIIINonConformantNoMerge subClassOf LawVIIINonConformant"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawVIIINonConformantNoMerge",
+       "text": "LawVIIINonConformantNoMerge equivalentTo A_monthsObserved_ge_p_law8_min_months and MergeInactive and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law8_min_months",
+       "text": "A_monthsObserved_ge_p_law8_min_months equivalentTo monthsObserved some integer[>= 6]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "networkx__networkx-7336",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "networkx__networkx-7336 monthsObserved 36"
+      },
+      {
+       "subject": "networkx__networkx-7336",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "networkx__networkx-7336 type SoftwareProject"
+      },
+      {
+       "subject": "networkx__networkx-7336",
+       "prop": "mergeMonthRatio",
+       "value": 0.0,
+       "raw": "networkx__networkx-7336 mergeMonthRatio 0.0"
+      }
+     ],
+     "closures": [],
+     "raw": "A_mergeMonthRatio_le_p_law8_merge_ratio equivalentTo MergeInactive\nA_mergeMonthRatio_le_p_law8_merge_ratio equivalentTo mergeMonthRatio some decimal[<= 0.3]\nnetworkx__networkx-7336 monthsObserved 36\nnetworkx__networkx-7336 type SoftwareProject\nLawVIIINonConformantNoMerge subClassOf LawVIIINonConformant\nLawVIIINonConformantNoMerge equivalentTo A_monthsObserved_ge_p_law8_min_months and MergeInactive and SoftwareProject\nA_monthsObserved_ge_p_law8_min_months equivalentTo monthsObserved some integer[>= 6]\nnetworkx__networkx-7336 mergeMonthRatio 0.0"
+    }
+   ],
+   "raw_text": "Axiom: networkx__networkx-7336 type LawVIIINonConformant\n\nExplanation(s): \n1)   A_mergeMonthRatio_le_p_law8_merge_ratio equivalentTo MergeInactive\n     A_mergeMonthRatio_le_p_law8_merge_ratio equivalentTo mergeMonthRatio some decimal[<= 0.3]\n     networkx__networkx-7336 monthsObserved 36\n     networkx__networkx-7336 type SoftwareProject\n     LawVIIINonConformantNoMerge subClassOf LawVIIINonConformant\n     LawVIIINonConformantNoMerge equivalentTo A_monthsObserved_ge_p_law8_min_months\n                                              and MergeInactive\n                                              and SoftwareProject\n     A_monthsObserved_ge_p_law8_min_months equivalentTo monthsObserved some integer[>= 6]\n     networkx__networkx-7336 mergeMonthRatio 0.0\n\n\n",
+   "seconds": 5.001866143022198,
+   "returncode": 0,
+   "error": null
+  },
+  "module:networkx/algorithms": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/networkx__networkx-7336/module/networkx_algorithms-8ed965",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/networkx__networkx-7336/module/networkx_algorithms-8ed965 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule subClassOf ActiveModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "networkx_algorithms-8ed965",
+       "prop": "moduleRelChurnInWindow",
+       "value": 0.203253,
+       "raw": "networkx_algorithms-8ed965 moduleRelChurnInWindow 0.203253"
+      },
+      {
+       "subject": "networkx_algorithms-8ed965",
+       "prop": "type",
+       "value": "Module",
+       "raw": "networkx_algorithms-8ed965 type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module\nHighRelChurnModule subClassOf ActiveModule\nA_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\nnetworkx_algorithms-8ed965 moduleRelChurnInWindow 0.203253\nnetworkx_algorithms-8ed965 type Module"
+    }
+   ],
+   "raw_text": "Axiom: networkx_algorithms-8ed965 type ActiveModule\n\nExplanation(s): \n1)   HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn\n                                     and Module\n     HighRelChurnModule subClassOf ActiveModule\n     A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\n     networkx_algorithms-8ed965 moduleRelChurnInWindow 0.203253\n     networkx_algorithms-8ed965 type Module\n\n\n",
+   "seconds": 5.107491242000833,
+   "returncode": 0,
+   "error": null
+  },
+  "module:networkx/generators": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/networkx__networkx-7336/module/networkx_generators-902916",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/networkx__networkx-7336/module/networkx_generators-902916 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "networkx_generators-902916",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 12,
+       "raw": "networkx_generators-902916 moduleChangeMonthsInWindow 12"
+      },
+      {
+       "subject": "networkx_generators-902916",
+       "prop": "type",
+       "value": "Module",
+       "raw": "networkx_generators-902916 type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "networkx_generators-902916 moduleChangeMonthsInWindow 12\nA_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\nOftenChangedModule subClassOf ActiveModule\nnetworkx_generators-902916 type Module"
+    }
+   ],
+   "raw_text": "Axiom: networkx_generators-902916 type ActiveModule\n\nExplanation(s): \n1)   networkx_generators-902916 moduleChangeMonthsInWindow 12\n     A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     OftenChangedModule subClassOf ActiveModule\n     networkx_generators-902916 type Module\n\n\n",
+   "seconds": 6.130864879000001,
+   "returncode": 0,
+   "error": null
+  },
+  "module:networkx/classes": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/networkx__networkx-7336/module/networkx_classes-fa53f0",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/networkx__networkx-7336/module/networkx_classes-fa53f0 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "networkx_classes-fa53f0",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 10,
+       "raw": "networkx_classes-fa53f0 moduleChangeMonthsInWindow 10"
+      },
+      {
+       "subject": "networkx_classes-fa53f0",
+       "prop": "type",
+       "value": "Module",
+       "raw": "networkx_classes-fa53f0 type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\nnetworkx_classes-fa53f0 moduleChangeMonthsInWindow 10\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\nnetworkx_classes-fa53f0 type Module\nOftenChangedModule subClassOf ActiveModule"
+    }
+   ],
+   "raw_text": "Axiom: networkx_classes-fa53f0 type ActiveModule\n\nExplanation(s): \n1)   A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     networkx_classes-fa53f0 moduleChangeMonthsInWindow 10\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     networkx_classes-fa53f0 type Module\n     OftenChangedModule subClassOf ActiveModule\n\n\n",
+   "seconds": 5.154565965989605,
+   "returncode": 0,
+   "error": null
+  },
+  "module:networkx/readwrite": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/networkx__networkx-7336/module/networkx_readwrite-313a35",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/networkx__networkx-7336/module/networkx_readwrite-313a35 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "networkx_readwrite-313a35",
+       "prop": "type",
+       "value": "Module",
+       "raw": "networkx_readwrite-313a35 type Module"
+      },
+      {
+       "subject": "networkx_readwrite-313a35",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 11,
+       "raw": "networkx_readwrite-313a35 moduleChangeMonthsInWindow 11"
+      }
+     ],
+     "closures": [],
+     "raw": "networkx_readwrite-313a35 type Module\nA_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\nnetworkx_readwrite-313a35 moduleChangeMonthsInWindow 11\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\nOftenChangedModule subClassOf ActiveModule"
+    }
+   ],
+   "raw_text": "Axiom: networkx_readwrite-313a35 type ActiveModule\n\nExplanation(s): \n1)   networkx_readwrite-313a35 type Module\n     A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     networkx_readwrite-313a35 moduleChangeMonthsInWindow 11\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     OftenChangedModule subClassOf ActiveModule\n\n\n",
+   "seconds": 4.874005849007517,
+   "returncode": 0,
+   "error": null
+  },
+  "module:examples": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/networkx__networkx-7336/module/examples-99345c",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/networkx__networkx-7336/module/examples-99345c type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "examples-99345c",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 12,
+       "raw": "examples-99345c moduleChangeMonthsInWindow 12"
+      },
+      {
+       "subject": "examples-99345c",
+       "prop": "type",
+       "value": "Module",
+       "raw": "examples-99345c type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\nexamples-99345c moduleChangeMonthsInWindow 12\nexamples-99345c type Module\nOftenChangedModule subClassOf ActiveModule"
+    }
+   ],
+   "raw_text": "Axiom: examples-99345c type ActiveModule\n\nExplanation(s): \n1)   A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     examples-99345c moduleChangeMonthsInWindow 12\n     examples-99345c type Module\n     OftenChangedModule subClassOf ActiveModule\n\n\n",
+   "seconds": 4.841551601013634,
+   "returncode": 0,
+   "error": null
+  },
+  "module:networkx/drawing": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/networkx__networkx-7336/module/networkx_drawing-e1f7fd",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/networkx__networkx-7336/module/networkx_drawing-e1f7fd type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "networkx_drawing-e1f7fd",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 10,
+       "raw": "networkx_drawing-e1f7fd moduleChangeMonthsInWindow 10"
+      },
+      {
+       "subject": "networkx_drawing-e1f7fd",
+       "prop": "type",
+       "value": "Module",
+       "raw": "networkx_drawing-e1f7fd type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "networkx_drawing-e1f7fd moduleChangeMonthsInWindow 10\nA_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\nnetworkx_drawing-e1f7fd type Module\nOftenChangedModule subClassOf ActiveModule"
+    }
+   ],
+   "raw_text": "Axiom: networkx_drawing-e1f7fd type ActiveModule\n\nExplanation(s): \n1)   networkx_drawing-e1f7fd moduleChangeMonthsInWindow 10\n     A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     networkx_drawing-e1f7fd type Module\n     OftenChangedModule subClassOf ActiveModule\n\n\n",
+   "seconds": 3.416378870024346,
+   "returncode": 0,
+   "error": null
+  },
+  "module:networkx/utils": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/networkx__networkx-7336/module/networkx_utils-830dee",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/networkx__networkx-7336/module/networkx_utils-830dee type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "networkx_utils-830dee",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 8,
+       "raw": "networkx_utils-830dee moduleChangeMonthsInWindow 8"
+      },
+      {
+       "subject": "networkx_utils-830dee",
+       "prop": "type",
+       "value": "Module",
+       "raw": "networkx_utils-830dee type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\nnetworkx_utils-830dee moduleChangeMonthsInWindow 8\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\nnetworkx_utils-830dee type Module\nOftenChangedModule subClassOf ActiveModule"
+    }
+   ],
+   "raw_text": "Axiom: networkx_utils-830dee type ActiveModule\n\nExplanation(s): \n1)   A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     networkx_utils-830dee moduleChangeMonthsInWindow 8\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     networkx_utils-830dee type Module\n     OftenChangedModule subClassOf ActiveModule\n\n\n",
+   "seconds": 2.4706594760064036,
+   "returncode": 0,
+   "error": null
+  },
+  "module:networkx/linalg": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/networkx__networkx-7336/module/networkx_linalg-53f6a0",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/networkx__networkx-7336/module/networkx_linalg-53f6a0 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "networkx_linalg-53f6a0",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 10,
+       "raw": "networkx_linalg-53f6a0 moduleChangeMonthsInWindow 10"
+      },
+      {
+       "subject": "networkx_linalg-53f6a0",
+       "prop": "type",
+       "value": "Module",
+       "raw": "networkx_linalg-53f6a0 type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "networkx_linalg-53f6a0 moduleChangeMonthsInWindow 10\nA_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\nnetworkx_linalg-53f6a0 type Module\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\nOftenChangedModule subClassOf ActiveModule"
+    }
+   ],
+   "raw_text": "Axiom: networkx_linalg-53f6a0 type ActiveModule\n\nExplanation(s): \n1)   networkx_linalg-53f6a0 moduleChangeMonthsInWindow 10\n     A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     networkx_linalg-53f6a0 type Module\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     OftenChangedModule subClassOf ActiveModule\n\n\n",
+   "seconds": 2.46407609799644,
+   "returncode": 0,
+   "error": null
+  },
+  "module:networkx/convert_matrix.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/networkx__networkx-7336/module/networkx_convert_matrix.py-ceeb3c",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/networkx__networkx-7336/module/networkx_convert_matrix.py-ceeb3c type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule subClassOf ActiveModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "networkx_convert_matrix.py-ceeb3c",
+       "prop": "moduleRelChurnInWindow",
+       "value": 0.175299,
+       "raw": "networkx_convert_matrix.py-ceeb3c moduleRelChurnInWindow 0.175299"
+      },
+      {
+       "subject": "networkx_convert_matrix.py-ceeb3c",
+       "prop": "type",
+       "value": "Module",
+       "raw": "networkx_convert_matrix.py-ceeb3c type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "networkx_convert_matrix.py-ceeb3c moduleRelChurnInWindow 0.175299\nHighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module\nnetworkx_convert_matrix.py-ceeb3c type Module\nHighRelChurnModule subClassOf ActiveModule\nA_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+    }
+   ],
+   "raw_text": "Axiom: networkx_convert_matrix.py-ceeb3c type ActiveModule\n\nExplanation(s): \n1)   networkx_convert_matrix.py-ceeb3c moduleRelChurnInWindow 0.175299\n     HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn\n                                     and Module\n     networkx_convert_matrix.py-ceeb3c type Module\n     HighRelChurnModule subClassOf ActiveModule\n     A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\n\n\n",
+   "seconds": 2.604064524988644,
+   "returncode": 0,
+   "error": null
+  },
+  "module:networkx/convert.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/networkx__networkx-7336/module/networkx_convert.py-297c07",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/networkx__networkx-7336/module/networkx_convert.py-297c07 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "networkx_convert.py-297c07",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 4,
+       "raw": "networkx_convert.py-297c07 moduleChangeMonthsInWindow 4"
+      },
+      {
+       "subject": "networkx_convert.py-297c07",
+       "prop": "type",
+       "value": "Module",
+       "raw": "networkx_convert.py-297c07 type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\nnetworkx_convert.py-297c07 moduleChangeMonthsInWindow 4\nnetworkx_convert.py-297c07 type Module\nOftenChangedModule subClassOf ActiveModule"
+    }
+   ],
+   "raw_text": "Axiom: networkx_convert.py-297c07 type ActiveModule\n\nExplanation(s): \n1)   A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     networkx_convert.py-297c07 moduleChangeMonthsInWindow 4\n     networkx_convert.py-297c07 type Module\n     OftenChangedModule subClassOf ActiveModule\n\n\n",
+   "seconds": 2.4710492080193944,
+   "returncode": 0,
+   "error": null
+  },
+  "module:doc": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/networkx__networkx-7336/module/doc-f7f029",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/networkx__networkx-7336/module/doc-f7f029 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "doc-f7f029",
+       "prop": "type",
+       "value": "Module",
+       "raw": "doc-f7f029 type Module"
+      },
+      {
+       "subject": "doc-f7f029",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 8,
+       "raw": "doc-f7f029 moduleChangeMonthsInWindow 8"
+      }
+     ],
+     "closures": [],
+     "raw": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\ndoc-f7f029 type Module\ndoc-f7f029 moduleChangeMonthsInWindow 8\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\nOftenChangedModule subClassOf ActiveModule"
+    }
+   ],
+   "raw_text": "Axiom: doc-f7f029 type ActiveModule\n\nExplanation(s): \n1)   A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     doc-f7f029 type Module\n     doc-f7f029 moduleChangeMonthsInWindow 8\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     OftenChangedModule subClassOf ActiveModule\n\n\n",
+   "seconds": 2.490370886051096,
+   "returncode": 0,
+   "error": null
+  },
+  "module:networkx/relabel.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/networkx__networkx-7336/module/networkx_relabel.py-0d16c2",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/networkx__networkx-7336/module/networkx_relabel.py-0d16c2 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "networkx_relabel.py-0d16c2",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 4,
+       "raw": "networkx_relabel.py-0d16c2 moduleChangeMonthsInWindow 4"
+      },
+      {
+       "subject": "networkx_relabel.py-0d16c2",
+       "prop": "type",
+       "value": "Module",
+       "raw": "networkx_relabel.py-0d16c2 type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\nnetworkx_relabel.py-0d16c2 moduleChangeMonthsInWindow 4\nnetworkx_relabel.py-0d16c2 type Module\nOftenChangedModule subClassOf ActiveModule"
+    }
+   ],
+   "raw_text": "Axiom: networkx_relabel.py-0d16c2 type ActiveModule\n\nExplanation(s): \n1)   A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     networkx_relabel.py-0d16c2 moduleChangeMonthsInWindow 4\n     networkx_relabel.py-0d16c2 type Module\n     OftenChangedModule subClassOf ActiveModule\n\n\n",
+   "seconds": 2.5602533469791524,
+   "returncode": 0,
+   "error": null
+  },
+  "module:networkx/lazy_imports.py": {
+   "class": "StableModule",
+   "individual": "http://senso-framework.org/data/networkx__networkx-7336/module/networkx_lazy_imports.py-b19222",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/networkx__networkx-7336/module/networkx_lazy_imports.py-b19222 type http://senso-framework.org/ontology/seo#StableModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "StableModule",
+       "text": "StableModule equivalentTo LowRelChurnModule and RarelyChangedModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "LowRelChurnModule",
+       "text": "LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "definition",
+       "subject": "RarelyChangedModule",
+       "text": "RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "networkx_lazy_imports.py-b19222",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 2,
+       "raw": "networkx_lazy_imports.py-b19222 moduleChangeMonthsInWindow 2"
+      },
+      {
+       "subject": "networkx_lazy_imports.py-b19222",
+       "prop": "type",
+       "value": "Module",
+       "raw": "networkx_lazy_imports.py-b19222 type Module"
+      },
+      {
+       "subject": "networkx_lazy_imports.py-b19222",
+       "prop": "moduleRelChurnInWindow",
+       "value": 0.06993,
+       "raw": "networkx_lazy_imports.py-b19222 moduleRelChurnInWindow 0.06993"
+      }
+     ],
+     "closures": [],
+     "raw": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\nnetworkx_lazy_imports.py-b19222 moduleChangeMonthsInWindow 2\nA_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\nnetworkx_lazy_imports.py-b19222 type Module\nStableModule equivalentTo LowRelChurnModule and RarelyChangedModule\nnetworkx_lazy_imports.py-b19222 moduleRelChurnInWindow 0.06993\nLowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module\nRarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module"
+    }
+   ],
+   "raw_text": "Axiom: networkx_lazy_imports.py-b19222 type StableModule\n\nExplanation(s): \n1)   A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\n     networkx_lazy_imports.py-b19222 moduleChangeMonthsInWindow 2\n     A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\n     networkx_lazy_imports.py-b19222 type Module\n     StableModule equivalentTo LowRelChurnModule\n                               and RarelyChangedModule\n     networkx_lazy_imports.py-b19222 moduleRelChurnInWindow 0.06993\n     LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn\n                                    and Module\n     RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months\n                                      and Module\n\n\n",
+   "seconds": 2.696939779969398,
+   "returncode": 0,
+   "error": null
+  },
+  "module:benchmarks": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/networkx__networkx-7336/module/benchmarks-ac00a9",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/networkx__networkx-7336/module/benchmarks-ac00a9 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule subClassOf ActiveModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "benchmarks-ac00a9",
+       "prop": "type",
+       "value": "Module",
+       "raw": "benchmarks-ac00a9 type Module"
+      },
+      {
+       "subject": "benchmarks-ac00a9",
+       "prop": "moduleRelChurnInWindow",
+       "value": 1.387931,
+       "raw": "benchmarks-ac00a9 moduleRelChurnInWindow 1.387931"
+      }
+     ],
+     "closures": [],
+     "raw": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module\nHighRelChurnModule subClassOf ActiveModule\nA_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\nbenchmarks-ac00a9 type Module\nbenchmarks-ac00a9 moduleRelChurnInWindow 1.387931"
+    }
+   ],
+   "raw_text": "Axiom: benchmarks-ac00a9 type ActiveModule\n\nExplanation(s): \n1)   HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn\n                                     and Module\n     HighRelChurnModule subClassOf ActiveModule\n     A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\n     benchmarks-ac00a9 type Module\n     benchmarks-ac00a9 moduleRelChurnInWindow 1.387931\n\n\n",
+   "seconds": 2.5010677670361474,
+   "returncode": 0,
+   "error": null
+  },
+  "module:tools": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/networkx__networkx-7336/module/tools-0284c6",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/networkx__networkx-7336/module/tools-0284c6 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule subClassOf ActiveModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "tools-0284c6",
+       "prop": "moduleRelChurnInWindow",
+       "value": 1.543689,
+       "raw": "tools-0284c6 moduleRelChurnInWindow 1.543689"
+      },
+      {
+       "subject": "tools-0284c6",
+       "prop": "type",
+       "value": "Module",
+       "raw": "tools-0284c6 type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module\ntools-0284c6 moduleRelChurnInWindow 1.543689\nHighRelChurnModule subClassOf ActiveModule\nA_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\ntools-0284c6 type Module"
+    }
+   ],
+   "raw_text": "Axiom: tools-0284c6 type ActiveModule\n\nExplanation(s): \n1)   HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn\n                                     and Module\n     tools-0284c6 moduleRelChurnInWindow 1.543689\n     HighRelChurnModule subClassOf ActiveModule\n     A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\n     tools-0284c6 type Module\n\n\n",
+   "seconds": 2.5048749790294096,
+   "returncode": 0,
+   "error": null
+  },
+  "module:networkx/exception.py": {
+   "class": "StableModule",
+   "individual": "http://senso-framework.org/data/networkx__networkx-7336/module/networkx_exception.py-d7d051",
+   "attempts": 3,
+   "target": "http://senso-framework.org/data/networkx__networkx-7336/module/networkx_exception.py-d7d051 type http://senso-framework.org/ontology/seo#StableModule",
+   "justifications": [],
+   "raw_text": "",
+   "seconds": 2.567631067999173,
+   "returncode": 1,
+   "error": "Exception in thread \"main\" org.mindswap.pellet.exceptions.InternalReasonerException: Adding type to a pruned node \"anon(14)\" restrictedDatatype(http://www.w3.org/2001/XMLSchema#decimal,[facet(http://www.w3.org/2001/XMLSchema#minExclusive,literal(0.15,(),http://www.w3.org/2001/XMLSchema#decimal))])\n\tat org.mindswap.pellet.Node.addType(Node.java:448)\n\tat org.mindswap.pellet.Literal.addType(Literal.java:257)\n\tat org.mindswap.pellet.tableau.completion.CompletionStrategy.addType(CompletionStrategy.java:438)\n\tat org.mindswap.pellet.tableau.completion.rule.SomeValuesRule.applySomeValuesRule(SomeValuesRule.java:180)\n\tat org.mindswap.pellet.tableau.completion.rule.SomeValuesRule.apply(SomeValuesRule.java:64)\n\tat org.mindswap.pellet.tableau.completion.rule.AbstractTableauRule.apply(AbstractTableauRule.java:64)\n\tat org.mindswap.pellet.tableau.completion.SROIQStrategy.complete(SROIQStrategy.java:157)\n\tat org.mindswap.pellet.ABox.isConsistent(ABox.java:1423)\n\tat org.mindswap.pellet.ABox.isSatisfiab"
+  },
+  "module:networkx/__init__.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/networkx__networkx-7336/module/networkx___init__.py-37394a",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/networkx__networkx-7336/module/networkx___init__.py-37394a type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "networkx___init__.py-37394a",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 5,
+       "raw": "networkx___init__.py-37394a moduleChangeMonthsInWindow 5"
+      },
+      {
+       "subject": "networkx___init__.py-37394a",
+       "prop": "type",
+       "value": "Module",
+       "raw": "networkx___init__.py-37394a type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\nnetworkx___init__.py-37394a moduleChangeMonthsInWindow 5\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\nnetworkx___init__.py-37394a type Module\nOftenChangedModule subClassOf ActiveModule"
+    }
+   ],
+   "raw_text": "Axiom: networkx___init__.py-37394a type ActiveModule\n\nExplanation(s): \n1)   A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     networkx___init__.py-37394a moduleChangeMonthsInWindow 5\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     networkx___init__.py-37394a type Module\n     OftenChangedModule subClassOf ActiveModule\n\n\n",
+   "seconds": 2.520266673003789,
+   "returncode": 0,
+   "error": null
+  }
+ },
+ "timings": {
+  "t_clone": 0.004,
+  "t_mine": 21.679,
+  "t_loc": 3.287,
+  "t_reason_A": 7.604,
+  "mining_cached": false,
+  "t_modules": 4.178,
+  "t_reason_B": 2.451,
+  "n_configs": 1,
+  "t_explain": 89.297,
+  "n_explain_calls": 26,
+  "t_writeback": 0.0,
+  "t_total": 130.186
+ }
+}

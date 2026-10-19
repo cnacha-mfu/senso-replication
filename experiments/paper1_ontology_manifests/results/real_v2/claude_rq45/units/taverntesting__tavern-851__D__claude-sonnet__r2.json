@@ -1,0 +1,111 @@
+{
+ "unit_id": "taverntesting__tavern-851__D__claude-sonnet__r2",
+ "task_id": "taverntesting__tavern-851",
+ "repo": "taverntesting/tavern",
+ "stage": "phase_out",
+ "condition": "D",
+ "model": "claude-code/sonnet",
+ "run": 2,
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 3771,
+  "sha256": "8902406f9429c3740d8e22a9d620c4581d8efe7a56898ea0e175ac2b72a16fbb"
+ },
+ "started": "2026-10-18T08:50:25.297002+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 3,
+ "tool_calls": 2,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 1979,
+  "cache_read_input_tokens": 55931,
+  "output_tokens": 660,
+  "output_tokens_details": {
+   "thinking_tokens": 88
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 1979,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 660,
+   "cacheReadInputTokens": 55931,
+   "cacheCreationInputTokens": 1979,
+   "webSearchRequests": 0,
+   "costUSD": 0.0201211,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 88,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.0201211,
+ "result_text": "`$ext` in an MQTT `json` block should now be evaluated before the payload is sent. I haven't run it or any tests.\n\nThe cause was ordering. In `tavern/_plugins/mqtt/request.py`, `get_publish_args` serialised `json` into a string `payload` first. The later `update_from_ext(publish_args, [\"json\"])` call therefore found no `json` key. That's also why the `payload` string stopped it working even with the `[\"payload\"]` change you tried.\n\nI moved the call into `get_publish_args`, so it runs on the `json` dict before `json.dumps`. The result of your function is merged with the remaining keys, such as `thing_1: abc`. I removed the old call from `MQTTRequest.__init__`.\n\nYour request config looks correct for this. Nothing was committed.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792327800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0.05,
+    "resetsAt": 1792327800
+   },
+   "seven_day": {
+    "utilization": 0.14,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 20.5,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 3,
+   "hit_step_limit": 0,
+   "changed_lines": 2,
+   "gold_changed_lines": 52,
+   "Y1": 0,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": -4.700439718141092
+  },
+  "f2p_pass": 0,
+  "f2p_total": 2,
+  "p2p_pass": 18,
+  "p2p_total": 18,
+  "f2p_all_pass": false,
+  "p2p_all_pass": true,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 8.8
+ },
+ "status": "done",
+ "finished": "2026-10-18T08:50:58.349807+00:00"
+}

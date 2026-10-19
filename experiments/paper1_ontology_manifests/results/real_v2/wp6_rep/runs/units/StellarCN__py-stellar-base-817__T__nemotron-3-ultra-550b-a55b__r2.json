@@ -1,0 +1,79 @@
+{
+ "unit_id": "StellarCN__py-stellar-base-817__T__nemotron-3-ultra-550b-a55b__r2",
+ "task_id": "StellarCN__py-stellar-base-817",
+ "repo": "StellarCN/py-stellar-base",
+ "stage": "initial_development",
+ "condition": "T",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "run": 2,
+ "order": 335,
+ "env_build_s": 30.0,
+ "started": "2026-10-13T18:54:34.059693+00:00",
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 544,
+  "sha256": "29348735e35ca2cf7c02dc737e2d8ab2f8e32d773cd0ad9b2ff0de7fac46e595"
+ },
+ "condition_available": true,
+ "venv_reset_s": 0.75,
+ "retries": 0,
+ "venv_hash_before": "d8787ce37a19db9e",
+ "venv_hash_after": "d8787ce37a19db9e",
+ "venv_mutated": false,
+ "exit_status": "LimitsExceeded",
+ "error": "",
+ "steps": 40,
+ "wall_s": 475.8,
+ "prompt_tokens": 780022,
+ "completion_tokens": 9908,
+ "format_errors": 0,
+ "length_cutoffs": 0,
+ "api_errors": {
+  "503": 5,
+  "429": 35
+ },
+ "n_queries": 47,
+ "keys_used": {
+  "NVIDIA_API_KEY_5": 26,
+  "NVIDIA_API_KEY": 17,
+  "NVIDIA_API_KEY_2": 13,
+  "NVIDIA_API_KEY_4": 24
+ },
+ "temperature": 0.7,
+ "top_p": 0.95,
+ "model_id_returned": "nvidia/nemotron-3-ultra-550b-a55b",
+ "mini_version": "2.4.6",
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 7,
+   "Y6": 40,
+   "hit_step_limit": 1,
+   "changed_lines": 204,
+   "gold_changed_lines": 5,
+   "Y1": 0,
+   "Y2": 17,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": 5.350497247084133
+  },
+  "f2p_pass": 0,
+  "f2p_total": 1,
+  "p2p_pass": 70,
+  "p2p_total": 70,
+  "f2p_all_pass": false,
+  "p2p_all_pass": true,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 2.0
+ },
+ "status": "done",
+ "finished": "2026-10-13T19:02:33.705812+00:00"
+}

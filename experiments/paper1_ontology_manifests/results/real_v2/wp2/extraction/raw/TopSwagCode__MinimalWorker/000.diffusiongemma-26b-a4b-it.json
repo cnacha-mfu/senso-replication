@@ -1,0 +1,23 @@
+{
+ "repo": "TopSwagCode/MinimalWorker",
+ "chunk": 0,
+ "n_chunks": 1,
+ "model": "google/diffusiongemma-26b-a4b-it",
+ "prompt_sha256": "d0e02ff613417050168d859f2af6230c3712c6758bb5d9c40d60ff55e5ae87ca",
+ "user_sha256": "a06da445fe366f1666f2083fb36437b112866ffe22cf1585bef83a2d000bf798",
+ "text": "{\"claims\": [{\"type\": \"path_exists\", \"subject\": \"MinimalWorker.sln\", \"mode\": \"asserts_existing\"}, {\"type\": \"command\", \"subject\": \"build\", \"runner\": \"dotnet\"}, {\"type\": \"command\", \"subject\": \"test\", \"runner\": \"dotnet\"}, {\"type\": \"command\", \"subject\": \"test -f net10.0\", \"runner\": \"dotnet\"}, {\"type\": \"command\", \"subject\": \"test --filter \\\"FullyQualifiedName~PeriodicWorkerTests.PeriodicWorker_Should_Execute_Multiple_Times\\\"\", \"runner\": \"dotnet\"}, {\"type\": \"command\", \"subject\": \"run --project samples/MinimalWorker.Console.Sample\", \"runner\": \"dotnet\"}, {\"type\": \"command\", \"subject\": \"pack src/MinimalWorker --configuration Release --output ./nupkgs\", \"runner\": \"dotnet\"}, {\"type\": \"path_exists\", \"subject\": \"src/MinimalWorker/BackgroundWorkerExtensions.cs\", \"mode\": \"asserts_existing\"}, {\"type\": \"path_exists\", \"subject\": \"src/MinimalWorker.Generators/\", \"mode\": \"asserts_existing\"}, {\"type\": \"path_exists\", \"subject\": \"src/MinimalWorker.Generators/WorkerGenerator.cs\", \"mode\": \"asserts_existing\"}, {\"type\": \"path_exists\", \"subject\": \"src/MinimalWorker.Generators/WorkerEmitter.cs\", \"mode\": \"asserts_existing\"}, {\"type\": \"dependency\", \"subject\": \"Microsoft.Extensions.TimeProvider.Testing\", \"ecosystem_hint\": \"nuget\", \"mode\": \"asserts_existing\"}]}",
+ "parse_ok": true,
+ "parse_error": null,
+ "parse_retries": 1,
+ "latency_s": 1.8840198279940523,
+ "usage": {
+  "prompt": 7165,
+  "completion": 721
+ },
+ "n_api_calls": 2,
+ "finish_reason": "stop",
+ "error": null,
+ "discarded_attempt_texts": [
+  "json\n[\n  {\"type\": \"command\", \"subject\": \"build MinimalWorker.sln\", \"runner\": \"dotnet\"},\n  {\"type\": \"command\", \"subject\": \"test MinimalWorker.sln\", \"runner\": \"dotnet\"},\n  {\"type\": \"command\", \"subject\": \"test MinimalWorker.sln -f net10.0\", \"runner\": \"dotnet\"},\n  {\"type\": \"command\", \"subject\": \"test MinimalWorker.sln --filter \\\"FullyQualifiedName~PeriodicWorkerTests.PeriodicWorker_Should_Execute_Multiple_Times\\\"\", \"runner\": \"dotnet\"},\n  {\"type\": \"command\", \"subject\": \"run --project samples/MinimalWorker.Console.Sample\", \"runner\": \"dotnet\"},\n  {\"type\": \"command\", \"subject\": \"pack src/MinimalWorker --configuration Release --output ./nupkgs\", \"runner\": \"dotnet\"},\n  {\"type\": \"path_exists\", \"subject\": \"src/MinimalWorker/BackgroundWorkerExtensions.cs\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"path_exists\", \"subject\": \"src/MinimalWorker.Generators/\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"path_exists\", \"subject\": \"src/MinimalWorker.Generators/WorkerGenerator.cs\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"path_exists\", \"subject\": \"src/MinimalWorker.Generators/WorkerEmitter.cs\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"dependency\", \"subject\": \"Microsoft.Extensions.TimeProvider.Testing\", \"ecosystem_hint\": \"nuget\"}\n]"
+ ]
+}

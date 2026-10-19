@@ -1,0 +1,111 @@
+{
+ "unit_id": "PyCQA__pyflakes-675__C__claude-sonnet__r2",
+ "task_id": "PyCQA__pyflakes-675",
+ "repo": "PyCQA/pyflakes",
+ "stage": "servicing",
+ "condition": "C",
+ "model": "claude-code/sonnet",
+ "run": 2,
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 3593,
+  "sha256": "be4dcfb7b4c78a9721ca0ec18165b89c31203850fd2f43dbb9ee133430bf0239"
+ },
+ "started": "2026-10-18T03:28:20.955772+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 4,
+ "tool_calls": 3,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 7634,
+  "cache_read_input_tokens": 67625,
+  "output_tokens": 865,
+  "output_tokens_details": {
+   "thinking_tokens": 168
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 7634,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 8,
+   "outputTokens": 865,
+   "cacheReadInputTokens": 67625,
+   "cacheCreationInputTokens": 7634,
+   "webSearchRequests": 0,
+   "costUSD": 0.045964500000000005,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 168,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.045964500000000005,
+ "result_text": "`__all__, = (...)` no longer crashes pyflakes. Running it on the issue's example now exits cleanly with no output, and the existing test suite passes (714 passed, 44 skipped). I didn't add a test, as instructed.\n\n`ExportBinding` was being built for any `__all__` binding at module level, including tuple unpacking. Its source was then the `Tuple` rather than an assignment, which has no `.value`. I changed `handleNodeStore` in `pyflakes/checker.py` so `ExportBinding` is only built when the name's direct parent is an `Assign`, `AugAssign` or `AnnAssign`. Other forms, such as `__all__, = ...`, now get an ordinary binding.\n\nI did not add the \"mark this as invalid\" warning the issue suggests. The unpacking form is treated as a normal binding, so its names aren't checked as exports.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792309800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0.03,
+    "resetsAt": 1792309800
+   },
+   "seven_day": {
+    "utilization": 0.12,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 21.4,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 4,
+   "hit_step_limit": 0,
+   "changed_lines": 9,
+   "gold_changed_lines": 9,
+   "Y1": 1,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": 0.0
+  },
+  "f2p_pass": 1,
+  "f2p_total": 1,
+  "p2p_pass": 131,
+  "p2p_total": 131,
+  "f2p_all_pass": true,
+  "p2p_all_pass": true,
+  "resolved": true,
+  "reason": "resolved",
+  "test_seconds": 1.1
+ },
+ "status": "done",
+ "finished": "2026-10-18T03:28:44.349389+00:00"
+}

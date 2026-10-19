@@ -1,0 +1,58 @@
+{
+ "sessions": [
+  {
+   "start": "2026-10-09T07:00:57.250310+00:00",
+   "workers": 4,
+   "conditions": [
+    "A",
+    "T",
+    "F_R",
+    "F_I"
+   ],
+   "runs": 2,
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b",
+    "google/diffusiongemma-26b-a4b-it"
+   ],
+   "n_tasks": 80,
+   "temperature": 0.7,
+   "top_p": 0.95,
+   "step_limit": 40,
+   "key_pool_env_names": [
+    "NVIDIA_API_KEY",
+    "NVIDIA_API_KEY_2",
+    "NVIDIA_API_KEY_4",
+    "NVIDIA_API_KEY_5"
+   ],
+   "seed": 20261009,
+   "end": "2026-10-10T09:32:49.056208+00:00"
+  },
+  {
+   "start": "2026-10-11T11:04:54.738033+00:00",
+   "workers": 3,
+   "conditions": [
+    "A",
+    "T",
+    "F_R",
+    "F_I"
+   ],
+   "runs": 2,
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b",
+    "google/diffusiongemma-26b-a4b-it"
+   ],
+   "n_tasks": 3,
+   "temperature": 0.7,
+   "top_p": 0.95,
+   "step_limit": 40,
+   "key_pool_env_names": [
+    "NVIDIA_API_KEY",
+    "NVIDIA_API_KEY_2",
+    "NVIDIA_API_KEY_4",
+    "NVIDIA_API_KEY_5"
+   ],
+   "seed": 20261009,
+   "end": "2026-10-11T11:40:18.975478+00:00"
+  }
+ ]
+}

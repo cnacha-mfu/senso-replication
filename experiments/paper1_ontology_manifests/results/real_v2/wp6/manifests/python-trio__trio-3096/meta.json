@@ -1,0 +1,338 @@
+{
+ "task_id": "python-trio__trio-3096",
+ "repo": "python-trio/trio",
+ "stage": "initial_development",
+ "rounds": 1,
+ "rejects": {},
+ "flags": [
+  "kind3_dropped",
+  "kind4_R_used_I_competitor",
+  "length_violation_F_R",
+  "length_violation_F_I"
+ ],
+ "info": {
+  "slots": {
+   "test_root": "src",
+   "P1": {
+    "replaced": "notes-to-self/ssl-handshake",
+    "name": "core",
+    "F_R": "newsfragments/core",
+    "F_I": "notes-to-self/core"
+   },
+   "P2": {
+    "replaced": "notes-to-self/ssl-close-notify/ssl-close-notify.py",
+    "F_R": "src/trio/_core/_multierror.py",
+    "F_I": "trio/_core/_multierror.py"
+   },
+   "D": {
+    "replaced": "sniffio",
+    "F_R": "boltons",
+    "F_I": "boltons"
+   }
+  },
+  "why": {
+   "test_command": [
+    {
+     "root": "src",
+     "T3": "SupportedClaim",
+     "T1": "SupportedClaim",
+     "collect_ok": true
+    }
+   ],
+   "kind1": {
+    "p1_idx": 3,
+    "gold0": "newsfragments",
+    "unrelated": "notes-to-self",
+    "base_R": "newsfragments",
+    "base_I": "notes-to-self"
+   },
+   "kind2": {
+    "p2_idx": 2,
+    "n_deleted_py": 316,
+    "found": {
+     "F_R": "src/trio/_core/_multierror.py",
+     "F_I": "trio/_core/_multierror.py"
+    }
+   },
+   "kind3": {
+    "run": null,
+    "install": null,
+    "test_ok": true,
+    "install_ok": true
+   },
+   "kind4": {
+    "deps": [
+     [
+      "attrs",
+      false
+     ],
+     [
+      "outcome",
+      false
+     ],
+     [
+      "cffi",
+      false
+     ],
+     [
+      "exceptiongroup",
+      false
+     ],
+     [
+      "sniffio",
+      false
+     ]
+    ],
+    "d_idx": 4,
+    "src_R": "sniffio",
+    "src_I": "sniffio",
+    "n_decls": 115,
+    "n_dist": 68
+   }
+  },
+  "length": {
+   "T": 518,
+   "F_R": 481,
+   "F_I": 477
+  },
+  "fallbacks": {
+   "F_R": [
+    "kind4_I_competitor"
+   ],
+   "F_I": []
+  },
+  "modes": {
+   "F_R": {
+    "1": "replace",
+    "2": "replace",
+    "4": "replace"
+   },
+   "F_I": {
+    "1": "replace",
+    "2": "replace",
+    "4": "replace"
+   }
+  },
+  "length_diff": {
+   "F_R": -37,
+   "F_I": -41
+  },
+  "n_claims_T": 18,
+  "n_false": {
+   "F_R": 3,
+   "F_I": 3
+  },
+  "pointer_in_issue": true,
+  "gold_dirs": [
+   "newsfragments",
+   "src/trio"
+  ],
+  "gold_files": [
+   "newsfragments/3095.bugfix.rst",
+   "src/trio/_timeouts.py"
+  ]
+ },
+ "tokens": {
+  "F_R": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "newsfragments/core",
+     "core"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "src/trio/_core/_multierror.py",
+     "_multierror.py"
+    ]
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "boltons"
+    ]
+   }
+  ],
+  "F_I": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "notes-to-self/core",
+     "core"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "trio/_core/_multierror.py",
+     "_multierror.py"
+    ]
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "boltons"
+    ]
+   }
+  ]
+ },
+ "unresolved_pre_hermit": [],
+ "sha256": {
+  "T": "12d70eb39140b201872ad5b966c3b493c150fed63183508a8132a279b594c997",
+  "F_R": "1836cad7ce93a3938234267eab172d8257be4ff1684b83b66269853ce0a54b40",
+  "F_I": "1b0dad3473679a98888887f21be45a6fc375b23930d3da48cce86b776c7baee2"
+ },
+ "chars": {
+  "T": 518,
+  "F_R": 481,
+  "F_I": 477
+ },
+ "claims": {
+  "T": [
+   "T1|newsfragments",
+   "T1|notes-to-self",
+   "T1|notes-to-self/ssl-close-notify",
+   "T1|notes-to-self/ssl-handshake",
+   "T1|src",
+   "T1|src/trio",
+   "T1|src/trio/_core/_run.py",
+   "T1|notes-to-self/afd-lab.py",
+   "T1|notes-to-self/ssl-close-notify/ssl-close-notify.py",
+   "T3|test_framework|pytest",
+   "T1|src",
+   "T1|pyproject.toml",
+   "T4|attrs|",
+   "T4|outcome|",
+   "T4|cffi|",
+   "T4|exceptiongroup|",
+   "T4|sniffio|",
+   "T6|python|3008000000@2"
+  ],
+  "F_R": [
+   "T1|newsfragments",
+   "T1|notes-to-self",
+   "T1|notes-to-self/ssl-close-notify",
+   "T1|newsfragments/core",
+   "T1|src",
+   "T1|src/trio",
+   "T1|src/trio/_core/_run.py",
+   "T1|notes-to-self/afd-lab.py",
+   "T1|src/trio/_core/_multierror.py",
+   "T3|test_framework|pytest",
+   "T1|src",
+   "T1|pyproject.toml",
+   "T4|attrs|",
+   "T4|outcome|",
+   "T4|cffi|",
+   "T4|exceptiongroup|",
+   "T4|boltons|",
+   "T6|python|3008000000@2"
+  ],
+  "F_I": [
+   "T1|newsfragments",
+   "T1|notes-to-self",
+   "T1|notes-to-self/ssl-close-notify",
+   "T1|notes-to-self/core",
+   "T1|src",
+   "T1|src/trio",
+   "T1|src/trio/_core/_run.py",
+   "T1|notes-to-self/afd-lab.py",
+   "T1|trio/_core/_multierror.py",
+   "T3|test_framework|pytest",
+   "T1|src",
+   "T1|pyproject.toml",
+   "T4|attrs|",
+   "T4|outcome|",
+   "T4|cffi|",
+   "T4|exceptiongroup|",
+   "T4|boltons|",
+   "T6|python|3008000000@2"
+  ]
+ },
+ "python_spec": ">=3.8",
+ "token_audit": [
+  {
+   "cond": "F_R",
+   "kind": 1,
+   "type": "path",
+   "name": "newsfragments/core",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 2,
+   "type": "path",
+   "name": "src/trio/_core/_multierror.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 4,
+   "type": "word",
+   "name": "boltons",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 1,
+   "type": "path",
+   "name": "notes-to-self/core",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 2,
+   "type": "path",
+   "name": "trio/_core/_multierror.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 4,
+   "type": "word",
+   "name": "boltons",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  }
+ ],
+ "dist_imports_used": {
+  "attrs": [
+   "attr",
+   "attrs"
+  ],
+  "outcome": [
+   "outcome"
+  ],
+  "cffi": [
+   "cffi"
+  ],
+  "exceptiongroup": [
+   "exceptiongroup"
+  ],
+  "sniffio": [
+   "sniffio"
+  ],
+  "boltons": null
+ }
+}

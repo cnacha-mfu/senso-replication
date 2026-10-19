@@ -1,0 +1,93 @@
+{
+ "unit_id": "VirtusLab__git-machete-463__C__claude-sonnet",
+ "task_id": "VirtusLab__git-machete-463",
+ "repo": "VirtusLab/git-machete",
+ "stage": "phase_out",
+ "condition": "C",
+ "model": "claude-code/sonnet",
+ "run": 1,
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 3950,
+  "sha256": "8d30d0ef9ab1a64dd4344d2b6ffbaac0474f3241a21a6496a685b74661ca5135"
+ },
+ "started": "2026-10-18T00:59:19.845398+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 4,
+ "tool_calls": 3,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 10469,
+  "cache_read_input_tokens": 67467,
+  "output_tokens": 1074,
+  "output_tokens_details": {
+   "thinking_tokens": 183
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 10469,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 8,
+   "outputTokens": 1074,
+   "cacheReadInputTokens": 67467,
+   "cacheCreationInputTokens": 10469,
+   "webSearchRequests": 0,
+   "costUSD": 0.05937869999999999,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 183,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.05937869999999999,
+ "result_text": "`checkout_github_prs()` now prints a warning and returns without doing anything when no PRs match `--all`, `--mine` or `--by`. I haven't run the tests or exercised it against GitHub.\n\nThe change is in `git_machete/client.py`. `__get_valid_pull_requests` used to raise `MacheteException` in these three cases:\n- there are no open PRs in the repo,\n- the current user has no open PRs,\n- the given `--by` user has no open PRs.\n\nIt now calls `warn(...)` with the same message and returns an empty list. `checkout_github_prs()` returns right after that, so it skips the remote fetch and the checkout.\n\nI left the explicit PR-number path alone. Asking for specific PR numbers that don't exist (a single missing PR, or all of several missing) still raises an error. The issue talks about \"criteria\", which I read as the filter options. If you want missing explicit numbers to warn instead, that's a small follow-up.",
+ "wall_s": 19.6,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 4,
+   "hit_step_limit": 0,
+   "changed_lines": 12,
+   "gold_changed_lines": 15,
+   "Y1": 1,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": -0.3219280948873623
+  },
+  "f2p_pass": 0,
+  "f2p_total": 1,
+  "p2p_pass": 45,
+  "p2p_total": 45,
+  "f2p_all_pass": false,
+  "p2p_all_pass": true,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 64.7
+ },
+ "status": "done",
+ "finished": "2026-10-18T01:00:45.166156+00:00"
+}

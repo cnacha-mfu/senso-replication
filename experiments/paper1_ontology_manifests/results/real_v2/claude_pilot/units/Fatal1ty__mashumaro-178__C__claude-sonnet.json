@@ -1,0 +1,93 @@
+{
+ "unit_id": "Fatal1ty__mashumaro-178__C__claude-sonnet",
+ "task_id": "Fatal1ty__mashumaro-178",
+ "repo": "Fatal1ty/mashumaro",
+ "stage": "phase_out",
+ "condition": "C",
+ "model": "claude-code/sonnet",
+ "run": 1,
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 4178,
+  "sha256": "8011a1298718ac61b0d0601b0810327b280a47cd0caa37483dd709e818515acf"
+ },
+ "started": "2026-10-18T00:54:22.626296+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 8,
+ "tool_calls": 7,
+ "usage": {
+  "input_tokens": 16,
+  "cache_creation_input_tokens": 12921,
+  "cache_read_input_tokens": 159439,
+  "output_tokens": 1921,
+  "output_tokens_details": {
+   "thinking_tokens": 195
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 12921,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 16,
+   "outputTokens": 1921,
+   "cacheReadInputTokens": 159439,
+   "cacheCreationInputTokens": 12921,
+   "webSearchRequests": 0,
+   "costUSD": 0.08686990000000001,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 195,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.08686990000000001,
+ "result_text": "The example from the issue now works. `Bar(Foo(1)).to_dict()` returns `{'x': {'a': 1}}`, and `Bar.from_dict({'x': {'a': 1}})` builds a `Bar` with a `Foo`. I only ran that script. I didn't run the repo's test suite.\n\nThe cause was `from __future__ import annotations` in the issue's example. It turns the `_serialize` and `_deserialize` annotations into strings like `\"dict[str, T]\"`. With `use_annotations=True`, mashumaro read them as raw strings, so the `T` couldn't be substituted with `int`, and you got the \"not supported\" error.\n\nThe fix is in `mashumaro/core/meta/helpers.py`. `get_function_arg_annotation` and `get_function_return_annotation` now resolve string annotations with `typing.get_type_hints`. If that lookup fails, they return the original string, as before.\n\nThe system notice said `helpers.py` changed on disk after I read it. It's probably just my edit, and I didn't look at it further.",
+ "wall_s": 37.0,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 8,
+   "hit_step_limit": 0,
+   "changed_lines": 11,
+   "gold_changed_lines": 56,
+   "Y1": 4,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": -2.347923303420307
+  },
+  "f2p_pass": 2,
+  "f2p_total": 2,
+  "p2p_pass": 0,
+  "p2p_total": 0,
+  "f2p_all_pass": true,
+  "p2p_all_pass": true,
+  "resolved": true,
+  "reason": "resolved",
+  "test_seconds": 1.0
+ },
+ "status": "done",
+ "finished": "2026-10-18T00:55:04.048683+00:00"
+}

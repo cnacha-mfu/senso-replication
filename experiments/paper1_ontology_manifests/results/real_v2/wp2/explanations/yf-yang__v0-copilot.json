@@ -1,0 +1,35 @@
+{
+ "repo": "yf-yang/v0-copilot",
+ "slug": "yf-yang__v0-copilot",
+ "input_sha": "b2885b39296282ca2fde71d4d6167b631ef30f81b899babc74ac799ad3c2b9cb",
+ "explanations": [
+  {
+   "key": "T1|docs",
+   "verdict": "SupportedClaim",
+   "leaf": "PathFoundExact",
+   "seconds": 3.77,
+   "retried_on_claim_subgraph": false,
+   "error": null,
+   "returncode": 0,
+   "n_justifications": 1,
+   "facts": [
+    {
+     "prop": "extractionVotes",
+     "value": 3
+    },
+    {
+     "prop": "pathExactMatchCount",
+     "value": 51
+    }
+   ],
+   "axioms": [
+    "PathFoundExact equivalentTo A_pathExactMatchCount_ge_1 and CheckedClaim and PathExistenceClaim",
+    "A_extractionVotes_ge_wp2_consensus_min_votes equivalentTo extractionVotes some integer[>= 2]",
+    "A_pathExactMatchCount_ge_1 equivalentTo pathExactMatchCount some integer[>= 1]",
+    "CheckedClaim equivalentTo A_extractionVotes_ge_wp2_consensus_min_votes and ManifestClaim",
+    "PathFoundExact subClassOf SupportedClaim"
+   ],
+   "closures": []
+  }
+ ]
+}

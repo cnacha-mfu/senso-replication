@@ -1,0 +1,80 @@
+{
+ "unit_id": "lundberg__respx-60__D__nemotron-3-ultra-550b-a55b__r1",
+ "task_id": "lundberg__respx-60",
+ "repo": "lundberg/respx",
+ "stage": "evolution",
+ "condition": "D",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "run": 1,
+ "order": 315,
+ "env_build_s": 27.5,
+ "started": "2026-10-15T17:54:39.288269+00:00",
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 3466,
+  "sha256": "52cdf11ed83f30e6ded9afb75891259ff62b64a80525e66f40e75c7ea2a940a3"
+ },
+ "condition_available": true,
+ "venv_reset_s": 0.67,
+ "stray_procs_killed": 0,
+ "retries": 0,
+ "venv_hash_before": "d0d94b9716359554",
+ "venv_hash_after": "d0d94b9716359554",
+ "venv_mutated": false,
+ "exit_status": "Submitted",
+ "error": "",
+ "steps": 31,
+ "wall_s": 356.7,
+ "prompt_tokens": 716495,
+ "completion_tokens": 9155,
+ "format_errors": 0,
+ "length_cutoffs": 0,
+ "api_errors": {
+  "503": 6,
+  "429": 1
+ },
+ "n_queries": 37,
+ "keys_used": {
+  "NVIDIA_API_KEY": 10,
+  "NVIDIA_API_KEY_2": 11,
+  "NVIDIA_API_KEY_4": 9,
+  "NVIDIA_API_KEY_5": 8
+ },
+ "temperature": 0.7,
+ "top_p": 0.95,
+ "model_id_returned": "nvidia/nemotron-3-ultra-550b-a55b",
+ "mini_version": "2.4.6",
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 31,
+   "hit_step_limit": 0,
+   "changed_lines": 42,
+   "gold_changed_lines": 68,
+   "Y1": 2,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": -0.6951454184715791
+  },
+  "f2p_pass": 0,
+  "f2p_total": 1,
+  "p2p_pass": 4,
+  "p2p_total": 4,
+  "f2p_all_pass": false,
+  "p2p_all_pass": true,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 2.1
+ },
+ "status": "done",
+ "finished": "2026-10-15T18:00:39.786030+00:00"
+}

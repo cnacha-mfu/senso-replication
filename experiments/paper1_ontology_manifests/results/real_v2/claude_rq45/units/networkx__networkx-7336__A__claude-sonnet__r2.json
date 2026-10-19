@@ -1,0 +1,107 @@
+{
+ "unit_id": "networkx__networkx-7336__A__claude-sonnet__r2",
+ "task_id": "networkx__networkx-7336",
+ "repo": "networkx/networkx",
+ "stage": "evolution",
+ "condition": "A",
+ "model": "claude-code/sonnet",
+ "run": 2,
+ "condition_meta": {},
+ "started": "2026-10-18T07:06:08.809212+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 5,
+ "tool_calls": 4,
+ "usage": {
+  "input_tokens": 10,
+  "cache_creation_input_tokens": 3113,
+  "cache_read_input_tokens": 89739,
+  "output_tokens": 1586,
+  "output_tokens_details": {
+   "thinking_tokens": 781
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 3113,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 10,
+   "outputTokens": 1586,
+   "cacheReadInputTokens": 89739,
+   "cacheCreationInputTokens": 3113,
+   "webSearchRequests": 0,
+   "costUSD": 0.0373059,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 781,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.0373059,
+ "result_text": "I didn't fix the issue itself, because it's about the test, and you asked me to leave tests alone.\n\nThe issue is that `test_threshold` asserts `mod1 < mod2`. A higher `threshold` can stop Louvain earlier, so on other graphs the two modularities can come out equal. The right fix is changing that assertion to `<=`. I didn't change the algorithm, because the stopping check in `louvain_partitions` already uses `<=` and behaves as intended.\n\nThe only source change is a docstring clarification for `threshold` in `louvain_communities`, in `networkx/algorithms/community/louvain.py`. It now says the algorithm stops when the gain is less than *or equal to* the threshold. It also notes that a larger threshold gives a partition with modularity no higher than the default, but possibly equal. I didn't run anything, and nothing is committed.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792309800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0.18,
+    "resetsAt": 1792309800
+   },
+   "seven_day": {
+    "utilization": 0.13,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 37.9,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 5,
+   "hit_step_limit": 0,
+   "changed_lines": 6,
+   "gold_changed_lines": 127,
+   "Y1": 0,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": -4.403722186051009
+  },
+  "f2p_pass": 0,
+  "f2p_total": 2,
+  "p2p_pass": 20,
+  "p2p_total": 20,
+  "f2p_all_pass": false,
+  "p2p_all_pass": true,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 4.3
+ },
+ "status": "done",
+ "finished": "2026-10-18T07:06:55.890691+00:00"
+}

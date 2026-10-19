@@ -1,0 +1,111 @@
+{
+ "unit_id": "Fatal1ty__mashumaro-180__D__claude-sonnet__r1",
+ "task_id": "Fatal1ty__mashumaro-180",
+ "repo": "Fatal1ty/mashumaro",
+ "stage": "phase_out",
+ "condition": "D",
+ "model": "claude-code/sonnet",
+ "run": 1,
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 3706,
+  "sha256": "ccb677af1ea010ce3d72bc5824dd15fce3dc3b67de7a7479701ebbeb6c24b307"
+ },
+ "started": "2026-10-18T02:50:57.411668+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 2,
+ "tool_calls": 11,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 1503,
+  "cache_read_input_tokens": 52523,
+  "output_tokens": 340,
+  "output_tokens_details": {
+   "thinking_tokens": 72
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 1503,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 28,
+   "outputTokens": 3392,
+   "cacheReadInputTokens": 301458,
+   "cacheCreationInputTokens": 9094,
+   "webSearchRequests": 0,
+   "costUSD": 0.10049780000000001,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 516,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.10049780000000001,
+ "result_text": "The background run of the full test suite has finished, but its output doesn't settle whether the suite passes. The log stops at 54% progress with no summary line and no failures shown. The pipeline's exit code of 0 comes from `tail`, so it says nothing about pytest. I still can't say the suite passes.\n\nThe repro from the issue works. A function-local dataclass, including inside `List[Foo]`, now serializes, deserializes and raises `MissingField` correctly.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792309800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0,
+    "resetsAt": 1792309800
+   },
+   "seven_day": {
+    "utilization": 0.12,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 581.3,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 3,
+   "Y6": 2,
+   "hit_step_limit": 0,
+   "changed_lines": 15,
+   "gold_changed_lines": 93,
+   "Y1": 2,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": -2.6322682154995127
+  },
+  "f2p_pass": 1,
+  "f2p_total": 1,
+  "p2p_pass": 7,
+  "p2p_total": 7,
+  "f2p_all_pass": true,
+  "p2p_all_pass": true,
+  "resolved": true,
+  "reason": "resolved",
+  "test_seconds": 1.1
+ },
+ "status": "done",
+ "finished": "2026-10-18T03:00:42.705619+00:00"
+}

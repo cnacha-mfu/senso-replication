@@ -1,0 +1,118 @@
+# WP5 manifest generator settings (papers/paper1/wp5-analysis-plan.md 3.3-3.7), frozen with the tag wp5-generator-freeze.
+# Read by manifests/generator/wp5_manifests.py. Phi (the fixed set of repository measurements shown in D1),
+# the neutral display names and definitions live here (plan 3.4: "frozen in configs/wp5.yaml"; kept in
+# a file of its own so that the harness config stays separate). Every display name and definition is
+# checked against the D lint at start-up.
+version: 1
+
+length:
+  cap: 8000          # characters, B, C and D (3.5 item 1)
+  k_start: 25        # modules listed in C4 and D2
+  k_step: 5
+  k_min: 10
+  lower: 0.90        # D must reach this fraction of L_C (3.5 item 3)
+  upper: 1.10
+  tolerance: 0.10    # |L_C - L_D| <= tolerance * L_C (3.5 item 4)
+
+# Case-insensitive substrings D must not contain (3.6), identifiers (repository and module names) masked first.
+d_lint_words: [stable, stabil, active, dormant, stage, phase, servic, declin, growth, conform, law, lehman,
+  regular, significan, threshold, consistent, risk, should, must, avoid, recommend, warning]
+# Words C must not contain (3.6), plus the words 3.3 forbids in C2.
+c_lint_words: [should, must, avoid, "do not", "don't", never, recommend, violation, conform]
+
+# kind: int (as is), p (3 decimals or "< 0.001"), dec (2 decimals), pct (whole-number percent).
+phi:
+  - {property: monthsObserved, kind: int, display: "Months in the observation window",
+     definition: "Calendar months covered by the repository-level figures."}
+  - {property: locSeriesLength, kind: int, display: "Months with a LOC measurement",
+     definition: "Month ends at which the lines of code were counted."}
+  - {property: locStart, kind: int, display: "LOC in the first month",
+     definition: "Non-blank source lines at the end of the first month."}
+  - {property: locEnd, kind: int, display: "LOC in the last month",
+     definition: "Non-blank source lines at the end of the last month."}
+  - {property: locMKTau, kind: dec, display: "Kendall tau of the monthly LOC series",
+     definition: "Rank correlation of month index and LOC (Mann-Kendall S over n(n-1)/2)."}
+  - {property: locMKpValue, kind: p, display: "Mann-Kendall p-value of the monthly LOC series",
+     definition: "Two-sided p-value of the Mann-Kendall test on monthly LOC."}
+  - {property: locRelSenSlopeAnnual, kind: dec, display: "Sen slope of monthly LOC relative to median LOC, per year",
+     definition: "12 times the Theil-Sen slope of monthly LOC, divided by the median monthly LOC."}
+  - {property: monthsSinceLastCommit, kind: int, display: "Months since the last commit",
+     definition: "Whole months from the last commit to the end of the last window month (full history)."}
+  - {property: commitsLast3Months, kind: int, display: "Commits in the last 3 months",
+     definition: "Commits with author date in the last three window months."}
+  - {property: activeMonthCount, kind: int, display: "Months with at least one commit",
+     definition: "Window months with one or more commits."}
+  - {property: activeMonthRatio, kind: dec, display: "Share of months with at least one commit",
+     definition: "Months with a commit divided by months in the window."}
+  - {property: churnCV, kind: dec, display: "Variation of monthly lines changed",
+     definition: "Standard deviation of monthly lines added plus deleted divided by max(mean, 1)."}
+  - {property: commitCountCV, kind: dec, display: "Variation of monthly commit counts",
+     definition: "Standard deviation of monthly commits divided by max(mean, 1)."}
+  - {property: linesAddedCV, kind: dec, display: "Variation of monthly lines added",
+     definition: "Standard deviation of monthly lines added divided by max(mean, 1)."}
+  - {property: complexityHalfMeanFirst, kind: dec, display: "Mean cyclomatic complexity, first half of the months",
+     definition: "Mean of the monthly mean complexity over the first half of the months that have it."}
+  - {property: complexityHalfMeanSecond, kind: dec, display: "Mean cyclomatic complexity, second half of the months",
+     definition: "Mean of the monthly mean complexity over the second half of the months that have it."}
+  - {property: bugFixRatioFirstHalf, kind: dec, display: "Share of bug-fix commits, first half of the months",
+     definition: "Mean monthly share of commits whose subject names a fix, over the first half of the months with commits."}
+  - {property: bugFixRatioSecondHalf, kind: dec, display: "Share of bug-fix commits, second half of the months",
+     definition: "Mean monthly share of commits whose subject names a fix, over the second half of the months with commits."}
+  - {property: mergeMonthRatio, kind: dec, display: "Share of months with a merge commit",
+     definition: "Months with at least one merge commit divided by months in the window."}
+  - {property: multiAuthorMonthRatio, kind: dec, display: "Share of months with more than one author",
+     definition: "Months with two or more distinct author e-mails divided by months in the window."}
+  - {property: recentAgentCommitRatio, kind: dec, display: "Share of agent-attributed commits, last 3 months",
+     definition: "Mean over the last three months of the share of commits with an AI-agent co-author or bot author."}
+  - {property: complexityGrowthRate, kind: dec, display: "Relative change of mean complexity, first to last month",
+     definition: "(last - first) / max(first, 1) of the monthly mean complexity."}
+  - {property: locGrowthRate, kind: dec, display: "Relative change of LOC, first to last month",
+     definition: "(LOC last - LOC first) / max(LOC first, 1)."}
+  - {property: dependencyGrowthRate, kind: dec, display: "Relative change of the dependency count",
+     definition: "(last - first) / max(first, 1) of the number of dependencies."}
+  - {property: refactoringRatio, kind: dec, display: "Share of refactoring commits",
+     definition: "Refactoring commits divided by commits in the window."}
+  - {property: locDeltaPerFeature, kind: dec, display: "LOC change per feature commit",
+     definition: "Net LOC change divided by max(feature commits, 1)."}
+
+# Properties of a module row (D2 columns, in order) and their formats.
+module_columns:
+  - {property: moduleLoc, kind: int, header: "LOC"}
+  - {property: moduleCommitsInWindow, kind: int, header: "Commits"}
+  - {property: moduleChangeMonthsInWindow, kind: int, header: "Months with changes"}
+  - {property: moduleLinesChangedInWindow, kind: int, header: "Lines changed"}
+  - {property: moduleRelChurnInWindow, kind: pct, header: "Lines changed / LOC"}
+  - {property: moduleMonthsSinceLastChange, kind: int, header: "Months since last change"}
+
+# D3 columns: raw per-month counts of the same commit set as the repository figures. Widened from
+# commits and LOC by deviation 1 of papers/paper1/wp5-deviations-log.md.
+monthly_columns:
+  - {key: commit_count, header: "Commits"}
+  - {key: loc, header: "LOC"}
+  - {key: unique_authors, header: "Distinct authors"}
+  - {key: lines_added, header: "Lines added"}
+  - {key: lines_deleted, header: "Lines deleted"}
+
+# Measurements a law needs; when none is asserted the law reads "not determined (<reason>)" (3.3 C2).
+law_required:
+  I: [activeMonthRatio]
+  II: [complexityHalfMeanChange]
+  III: [churnCV]
+  IV: [commitCountCV]
+  VI: [locMKTau]
+  VII: [bugFixHalfRatio, bugFixRatioFirstHalf]
+  VIII: [mergeMonthRatio]
+law_not_measured:
+  I: "commit counts are not available"
+  II: "complexity is not measured"
+  III: "monthly line counts are not available"
+  IV: "commit counts are not available"
+  VI: "the LOC trend is not available"
+  VII: "bug-fix ratios could not be computed"
+  VIII: "merge and author counts are not available"
+law_guard_not_met: "the rule's minimum amount of data is not reached"
+undetermined_reason_text:
+  reasoner_inconsistent: "the reasoner found the measurements inconsistent"
+  loc_instrument_failed: "lines of code could not be measured"
+  loc_series_too_short_for_mk: "the LOC series is too short for a trend test"
+  no_stage_class_inferred: "no stage rule applied"

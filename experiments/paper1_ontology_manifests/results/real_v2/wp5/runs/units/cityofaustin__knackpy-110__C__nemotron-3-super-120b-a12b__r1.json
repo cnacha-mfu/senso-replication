@@ -1,0 +1,75 @@
+{
+ "unit_id": "cityofaustin__knackpy-110__C__nemotron-3-super-120b-a12b__r1",
+ "task_id": "cityofaustin__knackpy-110",
+ "repo": "cityofaustin/knackpy",
+ "stage": "initial_development",
+ "condition": "C",
+ "model": "nvidia/nemotron-3-super-120b-a12b",
+ "run": 1,
+ "order": 401,
+ "env_build_s": 58.4,
+ "real_agent_manifest_at_base": [],
+ "started": "2026-10-07T08:06:23.287169+00:00",
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 3938,
+  "sha256": "a4886838ba20a8f65e15a78f1de07172d6c826e7e13777c55dbba7b244d5c4e1"
+ },
+ "condition_available": true,
+ "retries": 0,
+ "exit_status": "Submitted",
+ "error": "",
+ "steps": 20,
+ "wall_s": 69.4,
+ "prompt_tokens": 181274,
+ "completion_tokens": 3348,
+ "format_errors": 0,
+ "length_cutoffs": 0,
+ "api_errors": {
+  "429": 2
+ },
+ "n_queries": 20,
+ "keys_used": {
+  "NVIDIA_API_KEY": 7,
+  "NVIDIA_API_KEY_2": 4,
+  "NVIDIA_API_KEY_5": 6,
+  "NVIDIA_API_KEY_4": 5
+ },
+ "temperature": 0.7,
+ "top_p": 0.95,
+ "model_id_returned": "nvidia/nemotron-3-super-120b-a12b",
+ "mini_version": "2.4.6",
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 2,
+   "Y6": 20,
+   "hit_step_limit": 0,
+   "changed_lines": 15,
+   "gold_changed_lines": 7,
+   "Y1": 1,
+   "Y2": 0,
+   "Y3": 0.06666666666666667,
+   "Y3_gold": 1.0,
+   "Y3_excess": -0.9333333333333333,
+   "Y3w": 0.9666666666666667,
+   "Y4": 1.0995356735509143
+  },
+  "f2p_pass": 1,
+  "f2p_total": 1,
+  "p2p_pass": 12,
+  "p2p_total": 12,
+  "f2p_all_pass": true,
+  "p2p_all_pass": true,
+  "resolved": true,
+  "reason": "resolved",
+  "test_seconds": 1.5
+ },
+ "status": "done",
+ "finished": "2026-10-07T08:07:34.316803+00:00"
+}

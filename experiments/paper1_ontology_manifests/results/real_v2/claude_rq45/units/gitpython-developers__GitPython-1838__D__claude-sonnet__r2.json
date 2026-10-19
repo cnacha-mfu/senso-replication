@@ -1,0 +1,111 @@
+{
+ "unit_id": "gitpython-developers__GitPython-1838__D__claude-sonnet__r2",
+ "task_id": "gitpython-developers__GitPython-1838",
+ "repo": "gitpython-developers/GitPython",
+ "stage": "servicing",
+ "condition": "D",
+ "model": "claude-code/sonnet",
+ "run": 2,
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 4119,
+  "sha256": "cb4750ce0a23038bb6aab5f20282d6db9a8e391ed6db4cc5920221c1ab56c17f"
+ },
+ "started": "2026-10-18T05:57:12.636775+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 5,
+ "tool_calls": 4,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 5415,
+  "cache_read_input_tokens": 80846,
+  "output_tokens": 1895,
+  "output_tokens_details": {
+   "thinking_tokens": 374
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 5415,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 8,
+   "outputTokens": 1895,
+   "cacheReadInputTokens": 80846,
+   "cacheCreationInputTokens": 5415,
+   "webSearchRequests": 0,
+   "costUSD": 0.04871060000000001,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 374,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.04871060000000001,
+ "result_text": "`Git.version_info` now recomputes after a refresh, so `git.refresh` and `Git.refresh` no longer leave old instances with stale values. The change is in `git/cmd.py`.\n\nI only ran a quick check, and it doesn't exercise the issue's scenario, because this machine has just one git. After `git.refresh()`, a `Git` instance that had already read `version_info` returned `(2, 47, 3)` again, without errors. I didn't run the test suite. I haven't confirmed that the cache is dropped, or that switching `git` executables gives the right result, as in your CentOS 7 example.\n\n**How it works:**\n- **Token:** `Git.refresh` replaces a class-level `_refresh_token` each time it runs. It does this both when the new path is set and when a bad path is reverted.\n- **Check:** each instance remembers the token that was current when it cached `version_info`. When the property is read, a stale token makes it drop the cached value and run `git version` again.\n- **Docstring:** the `version_info` docstring now says the per-instance cache is invalidated on refresh.\n- **Pickling:** the new `_version_info_token` slot is excluded from pickling, the same as `_version_info`.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792309800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0.13,
+    "resetsAt": 1792309800
+   },
+   "seven_day": {
+    "utilization": 0.13,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 36.9,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 5,
+   "hit_step_limit": 0,
+   "changed_lines": 18,
+   "gold_changed_lines": 62,
+   "Y1": 2,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": -1.7842713089445628
+  },
+  "f2p_pass": 7,
+  "f2p_total": 10,
+  "p2p_pass": 92,
+  "p2p_total": 94,
+  "f2p_all_pass": false,
+  "p2p_all_pass": false,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 12.3
+ },
+ "status": "done",
+ "finished": "2026-10-18T05:58:03.939229+00:00"
+}

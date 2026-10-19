@@ -1,0 +1,764 @@
+{
+ "task_id": "zopefoundation__Products.ZSQLMethods-35",
+ "claims": {
+  "T1|src/Products": {
+   "claim": {
+    "key_str": "T1|src/Products",
+    "tcode": "T1",
+    "attrs": {
+     "path": "src/Products",
+     "is_dir": true,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "src/Products/",
+    "role": "true",
+    "slot": "layout",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "exists",
+     "path": "src/Products"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "PathFoundExact"
+   },
+   "probe": {
+    "ok": true,
+    "type": "exists"
+   },
+   "measure_error": null
+  },
+  "T1|src/Shared": {
+   "claim": {
+    "key_str": "T1|src/Shared",
+    "tcode": "T1",
+    "attrs": {
+     "path": "src/Shared",
+     "is_dir": true,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "src/Shared/",
+    "role": "true",
+    "slot": "layout",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "exists",
+     "path": "src/Shared"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "PathFoundExact"
+   },
+   "probe": {
+    "ok": true,
+    "type": "exists"
+   },
+   "measure_error": null
+  },
+  "T1|src/Shared/DC/ZRDB/tests": {
+   "claim": {
+    "key_str": "T1|src/Shared/DC/ZRDB/tests",
+    "tcode": "T1",
+    "attrs": {
+     "path": "src/Shared/DC/ZRDB/tests",
+     "is_dir": true,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "src/Shared/DC/ZRDB/tests/",
+    "role": "true",
+    "slot": "layout",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "exists",
+     "path": "src/Shared/DC/ZRDB/tests"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "PathFoundExact"
+   },
+   "probe": {
+    "ok": true,
+    "type": "exists"
+   },
+   "measure_error": null
+  },
+  "T1|src/Shared/DC/ZRDB/DA.py": {
+   "claim": {
+    "key_str": "T1|src/Shared/DC/ZRDB/DA.py",
+    "tcode": "T1",
+    "attrs": {
+     "path": "src/Shared/DC/ZRDB/DA.py",
+     "is_dir": false,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "src/Shared/DC/ZRDB/DA.py",
+    "role": "true",
+    "slot": "key_file",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "exists",
+     "path": "src/Shared/DC/ZRDB/DA.py"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "PathFoundExact"
+   },
+   "probe": {
+    "ok": true,
+    "type": "exists"
+   },
+   "measure_error": null
+  },
+  "T1|src/Products/ZSQLMethods/SQL.py": {
+   "claim": {
+    "key_str": "T1|src/Products/ZSQLMethods/SQL.py",
+    "tcode": "T1",
+    "attrs": {
+     "path": "src/Products/ZSQLMethods/SQL.py",
+     "is_dir": false,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "src/Products/ZSQLMethods/SQL.py",
+    "role": "true",
+    "slot": "key_file",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "exists",
+     "path": "src/Products/ZSQLMethods/SQL.py"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "PathFoundExact"
+   },
+   "probe": {
+    "ok": true,
+    "type": "exists"
+   },
+   "measure_error": null
+  },
+  "T3|test_framework|pytest": {
+   "claim": {
+    "key_str": "T3|test_framework|pytest",
+    "tcode": "T3",
+    "attrs": {
+     "tool": "pytest",
+     "category": "test_framework"
+    },
+    "quote": "python -m pytest src/Shared/DC/ZRDB/tests",
+    "role": "true",
+    "slot": "test_cmd",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "pytest",
+     "root": "src/Shared/DC/ZRDB/tests"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "ToolSignatureFound"
+   },
+   "probe": {
+    "ok": true,
+    "type": "pytest"
+   },
+   "measure_error": null
+  },
+  "T1|setup.py": {
+   "claim": {
+    "key_str": "T1|setup.py",
+    "tcode": "T1",
+    "attrs": {
+     "path": "setup.py",
+     "is_dir": false,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "setup.py",
+    "role": "true",
+    "slot": "install_cmd",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "exists",
+     "path": "setup.py"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "PathFoundExact"
+   },
+   "probe": {
+    "ok": true,
+    "type": "exists"
+   },
+   "measure_error": null
+  },
+  "T4|six|": {
+   "claim": {
+    "key_str": "T4|six|",
+    "tcode": "T4",
+    "attrs": {
+     "name": "six",
+     "major": null,
+     "ecosystem_hint": "pypi"
+    },
+    "quote": "`six`",
+    "role": "true",
+    "slot": "dep",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "import_ok",
+     "modules": [
+      "six"
+     ]
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "DependencyConfirmed"
+   },
+   "probe": {
+    "ok": true,
+    "type": "import_ok"
+   },
+   "measure_error": null
+  },
+  "T4|documenttemplate|": {
+   "claim": {
+    "key_str": "T4|documenttemplate|",
+    "tcode": "T4",
+    "attrs": {
+     "name": "documenttemplate",
+     "major": null,
+     "ecosystem_hint": "pypi"
+    },
+    "quote": "`documenttemplate>= 3.2.2`",
+    "role": "true",
+    "slot": "dep",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "import_ok",
+     "modules": [
+      "DocumentTemplate",
+      "TreeDisplay"
+     ]
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "DependencyConfirmed"
+   },
+   "probe": {
+    "ok": true,
+    "type": "import_ok"
+   },
+   "measure_error": null
+  },
+  "T4|zope|": {
+   "claim": {
+    "key_str": "T4|zope|",
+    "tcode": "T4",
+    "attrs": {
+     "name": "zope",
+     "major": null,
+     "ecosystem_hint": "pypi"
+    },
+    "quote": "`zope>= 4.2.1`",
+    "role": "true",
+    "slot": "dep",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "import_ok",
+     "modules": [
+      "App",
+      "OFS",
+      "Products",
+      "Shared",
+      "Testing",
+      "ZPublisher",
+      "ZTUtils",
+      "Zope2",
+      "webdav",
+      "zmi"
+     ]
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "DependencyConfirmed"
+   },
+   "probe": {
+    "ok": true,
+    "type": "import_ok"
+   },
+   "measure_error": null
+  },
+  "T4|record|": {
+   "claim": {
+    "key_str": "T4|record|",
+    "tcode": "T4",
+    "attrs": {
+     "name": "record",
+     "major": null,
+     "ecosystem_hint": "pypi"
+    },
+    "quote": "`record`",
+    "role": "true",
+    "slot": "dep",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "import_ok",
+     "modules": [
+      "Record"
+     ]
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "DependencyConfirmed"
+   },
+   "probe": {
+    "ok": true,
+    "type": "import_ok"
+   },
+   "measure_error": null
+  },
+  "T4|missing|": {
+   "claim": {
+    "key_str": "T4|missing|",
+    "tcode": "T4",
+    "attrs": {
+     "name": "missing",
+     "major": null,
+     "ecosystem_hint": "pypi"
+    },
+    "quote": "`missing`",
+    "role": "true",
+    "slot": "dep",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "import_ok",
+     "modules": [
+      "Missing"
+     ]
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "DependencyConfirmed"
+   },
+   "probe": {
+    "ok": true,
+    "type": "import_ok"
+   },
+   "measure_error": null
+  },
+  "T6|python|2007000000@2": {
+   "claim": {
+    "key_str": "T6|python|2007000000@2",
+    "tcode": "T6",
+    "attrs": {
+     "subject_type": "python",
+     "version": "2.7",
+     "code": 2007000000,
+     "precision": 2,
+     "qualifier": "min"
+    },
+    "quote": "Python: >=2.7",
+    "role": "true",
+    "slot": "python",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": null,
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "VersionConfirmed"
+   },
+   "probe": {
+    "ok": true,
+    "type": "none"
+   },
+   "measure_error": null
+  },
+  "T1|src/Shared/core": {
+   "claim": {
+    "key_str": "T1|src/Shared/core",
+    "tcode": "T1",
+    "attrs": {
+     "path": "src/Shared/core",
+     "is_dir": true,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "src/Shared/core/",
+    "role": "false",
+    "slot": "P1",
+    "kind": 1,
+    "expect_verdict": "ContradictedClaim",
+    "expect_leaves": [
+     "PathNeverExisted"
+    ],
+    "probe": {
+     "type": "absent",
+     "path": "src/Shared/core",
+     "history": "none"
+    },
+    "mode": "replace"
+   },
+   "recheck": {
+    "verdict": "ContradictedClaim",
+    "leaf": "PathNeverExisted"
+   },
+   "probe": {
+    "ok": true,
+    "type": "absent",
+    "log_count": 0
+   },
+   "measure_error": null
+  },
+  "T1|src/Products/ZSQLMethods/help/ZSQLMethod.py": {
+   "claim": {
+    "key_str": "T1|src/Products/ZSQLMethods/help/ZSQLMethod.py",
+    "tcode": "T1",
+    "attrs": {
+     "path": "src/Products/ZSQLMethods/help/ZSQLMethod.py",
+     "is_dir": false,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "src/Products/ZSQLMethods/help/ZSQLMethod.py",
+    "role": "false",
+    "slot": "P2",
+    "kind": 2,
+    "expect_verdict": "ContradictedClaim",
+    "expect_leaves": [
+     "PathRemoved"
+    ],
+    "probe": {
+     "type": "absent",
+     "path": "src/Products/ZSQLMethods/help/ZSQLMethod.py",
+     "history": "some"
+    },
+    "mode": "add"
+   },
+   "recheck": {
+    "verdict": "ContradictedClaim",
+    "leaf": "PathRemoved"
+   },
+   "probe": {
+    "ok": true,
+    "type": "absent",
+    "log_count": 3
+   },
+   "measure_error": null
+  },
+  "T5|make|test": {
+   "claim": {
+    "key_str": "T5|make|test",
+    "tcode": "T5",
+    "attrs": {
+     "runner": "make",
+     "kind": "make",
+     "target": "test"
+    },
+    "quote": "make test",
+    "role": "false",
+    "slot": "C_R",
+    "kind": 3,
+    "expect_verdict": "ContradictedClaim",
+    "expect_leaves": [
+     "ScriptUndefined",
+     "ScriptHostMissing"
+    ],
+    "probe": {
+     "type": "make_fail",
+     "target": "test"
+    },
+    "mode": "replace"
+   },
+   "recheck": {
+    "verdict": "ContradictedClaim",
+    "leaf": "ScriptHostMissing"
+   },
+   "probe": {
+    "ok": true,
+    "type": "make_fail",
+    "result": {
+     "rc": 2,
+     "tail": "make: *** No rule to make target 'test'.  Stop.\n"
+    }
+   },
+   "measure_error": null
+  },
+  "T4|toolz|": {
+   "claim": {
+    "key_str": "T4|toolz|",
+    "tcode": "T4",
+    "attrs": {
+     "name": "toolz",
+     "major": null,
+     "ecosystem_hint": "pypi"
+    },
+    "quote": "`toolz`",
+    "role": "false",
+    "slot": "D",
+    "kind": 4,
+    "expect_verdict": "ContradictedClaim",
+    "expect_leaves": [
+     "DependencyUndeclared"
+    ],
+    "probe": {
+     "type": "import_fail",
+     "modules": [
+      "toolz"
+     ]
+    },
+    "mode": "replace"
+   },
+   "recheck": {
+    "verdict": "ContradictedClaim",
+    "leaf": "DependencyUndeclared"
+   },
+   "probe": {
+    "ok": true,
+    "type": "import_fail"
+   },
+   "measure_error": null
+  },
+  "T1|src/Products/core": {
+   "claim": {
+    "key_str": "T1|src/Products/core",
+    "tcode": "T1",
+    "attrs": {
+     "path": "src/Products/core",
+     "is_dir": true,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "src/Products/core/",
+    "role": "false",
+    "slot": "P1",
+    "kind": 1,
+    "expect_verdict": "ContradictedClaim",
+    "expect_leaves": [
+     "PathNeverExisted"
+    ],
+    "probe": {
+     "type": "absent",
+     "path": "src/Products/core",
+     "history": "none"
+    },
+    "mode": "replace"
+   },
+   "recheck": {
+    "verdict": "ContradictedClaim",
+    "leaf": "PathNeverExisted"
+   },
+   "probe": {
+    "ok": true,
+    "type": "absent",
+    "log_count": 0
+   },
+   "measure_error": null
+  },
+  "T1|bootstrap.py": {
+   "claim": {
+    "key_str": "T1|bootstrap.py",
+    "tcode": "T1",
+    "attrs": {
+     "path": "bootstrap.py",
+     "is_dir": false,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "bootstrap.py",
+    "role": "false",
+    "slot": "P2",
+    "kind": 2,
+    "expect_verdict": "ContradictedClaim",
+    "expect_leaves": [
+     "PathRemoved"
+    ],
+    "probe": {
+     "type": "absent",
+     "path": "bootstrap.py",
+     "history": "some"
+    },
+    "mode": "add"
+   },
+   "recheck": {
+    "verdict": "ContradictedClaim",
+    "leaf": "PathRemoved"
+   },
+   "probe": {
+    "ok": true,
+    "type": "absent",
+    "log_count": 6
+   },
+   "measure_error": null
+  },
+  "T5|make|install": {
+   "claim": {
+    "key_str": "T5|make|install",
+    "tcode": "T5",
+    "attrs": {
+     "runner": "make",
+     "kind": "make",
+     "target": "install"
+    },
+    "quote": "make install",
+    "role": "false",
+    "slot": "C_I",
+    "kind": 3,
+    "expect_verdict": "ContradictedClaim",
+    "expect_leaves": [
+     "ScriptUndefined",
+     "ScriptHostMissing"
+    ],
+    "probe": {
+     "type": "make_fail",
+     "target": "install"
+    },
+    "mode": "replace"
+   },
+   "recheck": {
+    "verdict": "ContradictedClaim",
+    "leaf": "ScriptHostMissing"
+   },
+   "probe": {
+    "ok": true,
+    "type": "make_fail",
+    "result": {
+     "rc": 2,
+     "tail": "make: *** No rule to make target 'install'.  Stop.\n"
+    }
+   },
+   "measure_error": null
+  },
+  "T4|boltons|": {
+   "claim": {
+    "key_str": "T4|boltons|",
+    "tcode": "T4",
+    "attrs": {
+     "name": "boltons",
+     "major": null,
+     "ecosystem_hint": "pypi"
+    },
+    "quote": "`boltons`",
+    "role": "false",
+    "slot": "D",
+    "kind": 4,
+    "expect_verdict": "ContradictedClaim",
+    "expect_leaves": [
+     "DependencyUndeclared"
+    ],
+    "probe": {
+     "type": "import_fail",
+     "modules": [
+      "boltons"
+     ]
+    },
+    "mode": "replace"
+   },
+   "recheck": {
+    "verdict": "ContradictedClaim",
+    "leaf": "DependencyUndeclared"
+   },
+   "probe": {
+    "ok": true,
+    "type": "import_fail"
+   },
+   "measure_error": null
+  }
+ },
+ "probe_log": {
+  "pytest:src/Shared/DC/ZRDB/tests": {
+   "rc": 0,
+   "tail": "suite.py:92: PytestCollectionWarning: cannot collect test class 'TestSuite' because it has a __init__ constructor (from: src/Shared/DC/ZRDB/tests/test_caching.py)\n    class TestSuite(BaseTestSuite):\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n91 tests collected in 0.09s\n"
+  },
+  "import:six": {
+   "rc": 0,
+   "tail": ""
+  },
+  "import:DocumentTemplate": {
+   "rc": 0,
+   "tail": ""
+  },
+  "import:App": {
+   "rc": 0,
+   "tail": ""
+  },
+  "import:Record": {
+   "rc": 0,
+   "tail": ""
+  },
+  "import:Missing": {
+   "rc": 0,
+   "tail": ""
+  },
+  "make:test": {
+   "rc": 2,
+   "tail": "make: *** No rule to make target 'test'.  Stop.\n"
+  },
+  "make:install": {
+   "rc": 2,
+   "tail": "make: *** No rule to make target 'install'.  Stop.\n"
+  },
+  "import:boltons": {
+   "rc": 1,
+   "tail": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\nModuleNotFoundError: No module named 'boltons'\n"
+  },
+  "import:toolz": {
+   "rc": 1,
+   "tail": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\nModuleNotFoundError: No module named 'toolz'\n"
+  }
+ }
+}

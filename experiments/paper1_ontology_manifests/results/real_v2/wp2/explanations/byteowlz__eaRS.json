@@ -1,0 +1,20 @@
+{
+ "repo": "byteowlz/eaRS",
+ "slug": "byteowlz__eaRS",
+ "input_sha": "dad102c4841c12c6861b990c6afac9753e5a13fe5f72fddd16dec39ab7073db9",
+ "explanations": [
+  {
+   "key": "T1|history",
+   "verdict": "ContradictedClaim",
+   "leaf": "PathNeverExisted",
+   "seconds": 9.07,
+   "retried_on_claim_subgraph": true,
+   "error": "Exception in thread \"main\" org.mindswap.pellet.exceptions.InternalReasonerException: Adding type to a pruned node \"anon(2)\" http://www.w3.org/2001/XMLSchema#integer\n\tat org.mindswap.pellet.Node.addType(Node.java:448)\n\tat org.mindswap.pellet.Literal.addType(Literal.java:257)\n\tat org.mindswap.pellet.tableau.completion.CompletionStrategy.addType(CompletionStrategy.java:438)\n\tat org.mindswap.pellet.tableau.completion.CompletionStrategy.applyDomainRange(CompletionStrategy.java:631)\n\tat org.mindswap.pellet.tableau.completion.CompletionStrategy.applyPropertyRestrictions(CompletionStrategy.java:592)\n\tat org.mindswap.pellet.tableau.completion.CompletionStrategy.addEdge(CompletionStrategy.java:583)\n\tat org.mindswap.pellet.tableau.completion.rule.SomeValuesRule.applySomeValuesRule(SomeValuesRule.java:186)\n\tat org.mindswap.pellet.tableau.completion.rule.SomeValuesRule.apply(SomeValuesRule.java:64)\n\tat org.mindswap.pellet.tableau.completion.rule.AbstractTableauRule.apply(AbstractTableauRule.java:64",
+   "returncode": 1,
+   "n_justifications": 0,
+   "facts": [],
+   "axioms": [],
+   "closures": []
+  }
+ ]
+}

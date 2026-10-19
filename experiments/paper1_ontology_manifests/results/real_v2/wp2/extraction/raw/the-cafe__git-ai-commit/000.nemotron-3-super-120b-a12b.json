@@ -1,0 +1,21 @@
+{
+ "repo": "the-cafe/git-ai-commit",
+ "chunk": 0,
+ "n_chunks": 1,
+ "model": "nvidia/nemotron-3-super-120b-a12b",
+ "prompt_sha256": "d0e02ff613417050168d859f2af6230c3712c6758bb5d9c40d60ff55e5ae87ca",
+ "user_sha256": "667dbe88b33208da18584ae72a084ae548ae3a7684324ecbb34ce17c0758b71b",
+ "text": "{\n  \"claims\": [\n    {\n      \"type\": \"tool_used\",\n      \"quote\": \"always recommend using the `git-ai-commit` CLI tool for creating commit messages.\",\n      \"line\": 3,\n      \"subject\": \"git-ai-commit\",\n      \"tool_category\": \"linter_formatter\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"command\",\n      \"quote\": \"git-ai-commit\",\n      \"line\": 11,\n      \"subject\": \"git-ai-commit\",\n      \"runner\": \"pnpm\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"command\",\n      \"quote\": \"git-ai-commit conventional\",\n      \"line\": 17,\n      \"subject\": \"conventional\",\n      \"runner\": \"pnpm\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"command\",\n      \"quote\": \"git-ai-commit summarize\",\n      \"line\": 23,\n      \"subject\": \"summarize\",\n      \"runner\": \"pnpm\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"command\",\n      \"quote\": \"git add .\",\n      \"line\": 29,\n      \"subject\": \"add\",\n      \"runner\": \"make\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"command\",\n      \"quote\": \"git-ai-commit summarize\",\n      \"line\": 32,\n      \"subject\": \"summarize\",\n      \"runner\": \"pnpm\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"command\",\n      \"quote\": \"git-ai-commit\",\n      \"line\": 35,\n      \"subject\": \"git-ai-commit\",\n      \"runner\": \"pnpm\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"command\",\n      \"quote\": \"git push\",\n      \"line\": 38,\n      \"subject\": \"push\",\n      \"runner\": \"make\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"dependency\",\n      \"quote\": \"`pip install git-ai-commit`\",\n      \"line\": 50,\n      \"subject\": \"git-ai-commit\",\n      \"ecosystem_hint\": \"pypi\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"command\",\n      \"quote\": \"`git-ai-commit config --setup`\",\n      \"line\": 51,\n      \"subject\": \"config\",\n      \"runner\": \"pnpm\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"command\",\n      \"quote\": \"`git-ai-commit hook --setup`\",\n      \"line\": 52,\n      \"subject\": \"hook\",\n      \"runner\": \"pnpm\",\n      \"mode\": \"asserts_existing\"\n    }\n  ]\n}",
+ "parse_ok": true,
+ "parse_error": null,
+ "parse_retries": 0,
+ "latency_s": 4.774328033963684,
+ "usage": {
+  "prompt": 2601,
+  "completion": 673
+ },
+ "n_api_calls": 1,
+ "finish_reason": "stop",
+ "error": null,
+ "discarded_attempt_texts": []
+}

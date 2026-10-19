@@ -1,0 +1,1907 @@
+{
+ "repo": "zopefoundation/transaction",
+ "snapshot_date": "2025-06-30",
+ "status": "ok",
+ "unmineable": false,
+ "unmineable_reason": null,
+ "replaces": null,
+ "settings": {
+  "dedup": true,
+  "complexity": false,
+  "dataset": "seo_v2",
+  "sensitivity": true
+ },
+ "versions": {
+  "owlready2": "0.51",
+  "pymannkendall": "1.4.3",
+  "lizard": "1.24.1",
+  "numpy": "2.5.3",
+  "scipy": "1.18.1",
+  "python": "3.12.15",
+  "git": "git version 2.53.0"
+ },
+ "measures": {
+  "monthsObserved": 36,
+  "monthsSinceLastCommit": 9,
+  "distinctAuthorsInWindow": 7,
+  "commitMKTau": -0.093651,
+  "commitMKpValue": 0.274602,
+  "activeMonthCount": 8,
+  "activeMonthRatio": 0.222222,
+  "meanMonthlyCommits": 0.555556,
+  "commitsLast3Months": 0,
+  "commitCountCV": 1.321709,
+  "commitCountCVSample": 1.340457,
+  "commitHalfRatio": 0.388889,
+  "commitSecondHalfMean": 0.388889,
+  "churnCV": 3.504624,
+  "linesAddedCV": 3.384546,
+  "mergeMonthRatio": 0.027778,
+  "multiAuthorMonthRatio": 0.083333,
+  "bugFixRatioFirstHalf": 0.583333,
+  "bugFixRatioSecondHalf": 0.25,
+  "bugFixHalfRatio": 0.428571,
+  "locSeriesLength": 36,
+  "locRelSenSlopeAnnual": -0.000256,
+  "locMKTau": -0.22381,
+  "locMKS": -141,
+  "locMKpValue": 0.049643,
+  "locSenSlope": -0.095455,
+  "locStart": 4527,
+  "locEnd": 4468,
+  "locDelta": -59,
+  "locGrowthRate": -0.013033,
+  "locChangePct": -1.303291,
+  "locEndToStartRatio": 0.986967,
+  "locGrowthLast3": 0.0,
+  "featureCommitsFirstHalf": 0,
+  "featureCommitsSecondHalf": 0,
+  "featureCommitsTotal": 0,
+  "locDeltaPerFeature": -59.0,
+  "recentAgentCommitRatio": 0.0,
+  "featCommitCount": 0,
+  "bugFixCommitCount": 4,
+  "commitCount": 20,
+  "monthly_series": {
+   "months": [
+    "2021-07",
+    "2021-08",
+    "2021-09",
+    "2021-10",
+    "2021-11",
+    "2021-12",
+    "2022-01",
+    "2022-02",
+    "2022-03",
+    "2022-04",
+    "2022-05",
+    "2022-06",
+    "2022-07",
+    "2022-08",
+    "2022-09",
+    "2022-10",
+    "2022-11",
+    "2022-12",
+    "2023-01",
+    "2023-02",
+    "2023-03",
+    "2023-04",
+    "2023-05",
+    "2023-06",
+    "2023-07",
+    "2023-08",
+    "2023-09",
+    "2023-10",
+    "2023-11",
+    "2023-12",
+    "2024-01",
+    "2024-02",
+    "2024-03",
+    "2024-04",
+    "2024-05",
+    "2024-06",
+    "2024-07",
+    "2024-08",
+    "2024-09",
+    "2024-10",
+    "2024-11",
+    "2024-12",
+    "2025-01",
+    "2025-02",
+    "2025-03",
+    "2025-04",
+    "2025-05",
+    "2025-06"
+   ],
+   "commits": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    3,
+    0,
+    0,
+    3,
+    0,
+    0,
+    1,
+    0,
+    4,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    6,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "loc": [
+    4526,
+    4526,
+    4526,
+    4526,
+    4526,
+    4526,
+    4526,
+    4526,
+    4526,
+    4527,
+    4527,
+    4527,
+    4527,
+    4531,
+    4531,
+    4531,
+    4531,
+    4532,
+    4532,
+    4532,
+    4532,
+    4532,
+    4532,
+    4467,
+    4467,
+    4467,
+    4467,
+    4467,
+    4466,
+    4466,
+    4466,
+    4466,
+    4466,
+    4466,
+    4466,
+    4466,
+    4466,
+    4466,
+    4468,
+    4468,
+    4468,
+    4468,
+    4468,
+    4468,
+    4468,
+    4468,
+    4468,
+    4468
+   ]
+  }
+ },
+ "window": {
+  "L": 36,
+  "first_month": "2022-07",
+  "last_month": "2025-06",
+  "n_months": 36,
+  "left_truncated": false,
+  "first_commit_month": "2007-11",
+  "mined_months": 48,
+  "commits_in_window": 20,
+  "commits_in_history": 403
+ },
+ "loc_instrument": {
+  "instrument": "nonblank-source-lines-v1",
+  "status": "ok",
+  "months": 48,
+  "month_end_commits_distinct": 10,
+  "source_blobs": 53,
+  "blobs_fetched": 1,
+  "t_ls_tree_s": 0.2919467660249211,
+  "t_fetch_s": 0.841805760981515,
+  "t_read_s": 0.020695117011200637,
+  "series_present": true,
+  "extensions": [
+   ".bash",
+   ".c",
+   ".cc",
+   ".cjs",
+   ".clj",
+   ".cpp",
+   ".cs",
+   ".cxx",
+   ".dart",
+   ".erl",
+   ".ex",
+   ".exs",
+   ".f90",
+   ".go",
+   ".groovy",
+   ".h",
+   ".hh",
+   ".hpp",
+   ".hs",
+   ".java",
+   ".jl",
+   ".js",
+   ".jsx",
+   ".kt",
+   ".kts",
+   ".lua",
+   ".m",
+   ".mjs",
+   ".ml",
+   ".mm",
+   ".nim",
+   ".php",
+   ".pl",
+   ".pm",
+   ".py",
+   ".pyi",
+   ".r",
+   ".rb",
+   ".rs",
+   ".scala",
+   ".sh",
+   ".sql",
+   ".svelte",
+   ".swift",
+   ".ts",
+   ".tsx",
+   ".vue",
+   ".zig"
+  ],
+  "excluded_dirs": [
+   "node_modules",
+   "vendor",
+   "vendored",
+   "third_party",
+   "site-packages",
+   "bower_components"
+  ],
+  "max_blob_bytes": 1000000,
+  "first_parent": true
+ },
+ "mining": {
+  "churn": {
+   "t_churn_raw_s": 0.00998147000791505,
+   "t_churn_fetch_s": 1.9803861289983615,
+   "t_churn_numstat_s": 0.022522798972204328,
+   "blobs_fetched_churn": 61
+  },
+  "timings": {
+   "t_clone": 1.865,
+   "t_mine": 3.916,
+   "t_loc": 1.155,
+   "t_reason_A": 2.738
+  },
+  "cached": false
+ },
+ "stage_a": {
+  "commits": 21,
+  "reasoned_commits": 21,
+  "inconsistent_chunks": 0,
+  "chunk_timings": [
+   {
+    "tbox_load_s": 0.04131321900058538,
+    "abox_load_s": 0.004897012026049197,
+    "reason_s": 2.6879197279922664,
+    "extract_s": 0.0014249139931052923,
+    "total_s": 2.7358125079772435,
+    "commits": 21
+   }
+  ],
+  "tbox_sha256": "da30ed577542b3643ecf06cb6a4649ccc8fce61ab7a0373beabd763e12883e86"
+ },
+ "activity": {
+  "last_commit_date": "2024-09-18T07:25:34+00:00",
+  "months_since_last_commit": 9,
+  "distinct_authors_in_window": 7,
+  "merge_commits_in_window": 1
+ },
+ "agent_adoption_date": null,
+ "commit_label_counts": {
+  "BugFixCommit": 4,
+  "FeatureCommit": 0,
+  "AgentCommit": 0
+ },
+ "series_months": [
+  {
+   "month": "2022-07",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 4527,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-08",
+   "commit_count": 1,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 75,
+   "lines_deleted": 51,
+   "total_churn": 126,
+   "files_changed": 11,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 4531,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-09",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 4531,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-10",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 4531,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-11",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 4531,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-12",
+   "commit_count": 1,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 1,
+   "lines_deleted": 0,
+   "total_churn": 1,
+   "files_changed": 1,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 4532,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-01",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 4532,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-02",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 4532,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-03",
+   "commit_count": 3,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 2,
+   "lines_deleted": 2,
+   "total_churn": 4,
+   "files_changed": 2,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 4532,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-04",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 4532,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-05",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 4532,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-06",
+   "commit_count": 3,
+   "merge_count": 0,
+   "unique_authors": 2,
+   "lines_added": 153,
+   "lines_deleted": 232,
+   "total_churn": 385,
+   "files_changed": 13,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 4467,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-07",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 4467,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-08",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 4467,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-09",
+   "commit_count": 1,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 4467,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-10",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 4467,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-11",
+   "commit_count": 4,
+   "merge_count": 0,
+   "unique_authors": 2,
+   "lines_added": 4,
+   "lines_deleted": 6,
+   "total_churn": 10,
+   "files_changed": 4,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 4466,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-12",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 4466,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-01",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 4466,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-02",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 4466,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-03",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 4466,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-04",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 4466,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-05",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 4466,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-06",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 4466,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-07",
+   "commit_count": 1,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 2,
+   "lines_deleted": 2,
+   "total_churn": 4,
+   "files_changed": 1,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 4466,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-08",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 4466,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-09",
+   "commit_count": 6,
+   "merge_count": 1,
+   "unique_authors": 2,
+   "lines_added": 157,
+   "lines_deleted": 154,
+   "total_churn": 311,
+   "files_changed": 14,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 4468,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-10",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 4468,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-11",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 4468,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2024-12",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 4468,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2025-01",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 4468,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2025-02",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 4468,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2025-03",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 4468,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2025-04",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 4468,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2025-05",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 4468,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2025-06",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 4468,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  }
+ ],
+ "measures_derived": {
+  "bugFixRatioFirstHalf": 0.583333,
+  "bugFixRatioSecondHalf": 0.25,
+  "bugFixHalfRatio": 0.428571,
+  "featureCommitsFirstHalf": 0,
+  "featureCommitsSecondHalf": 0,
+  "featureCommitsTotal": 0,
+  "locDeltaPerFeature": -59.0,
+  "recentAgentCommitRatio": 0.0
+ },
+ "inferred": {
+  "a0.05_L36_D12_G0.05_orig": {
+   "classes": [
+    "DeclineStage",
+    "LawIIINonConformant",
+    "LawINonConformant",
+    "LawIVConformant",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantNoMerge",
+    "LawVIIINonConformantSingleAuthor",
+    "LawVIINonConformant",
+    "LawVINonConformant",
+    "LawVNonConformant",
+    "MKApplicable",
+    "MergeInactive",
+    "MinorLocGrowth",
+    "MultiAuthorInactive",
+    "NonSubstantialChange",
+    "RBServicingStage",
+    "RecentlyActive"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": "urn:senso:explanations:zopefoundation/transaction:79f851de895e",
+   "tbox_sha256": "79f851de895e8301073d1746931d8ac1d34e4ed2e94897358fca050d9d07b63c",
+   "abox_triples": 40,
+   "t_reason_B_s": 2.511
+  },
+  "a0.01_L36_D12_G0.05_orig": {
+   "classes": [
+    "LawIIINonConformant",
+    "LawINonConformant",
+    "LawIVConformant",
+    "LawVIConformant",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantNoMerge",
+    "LawVIIINonConformantSingleAuthor",
+    "LawVIINonConformant",
+    "LawVNonConformant",
+    "MKApplicable",
+    "MergeInactive",
+    "MinorLocGrowth",
+    "MultiAuthorInactive",
+    "NonSubstantialChange",
+    "RBServicingStage",
+    "RecentlyActive",
+    "StabilizationStage"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "956579a8859000216eba261c78e4795a2b5042e7edf95419211fd46e9dbeada9",
+   "abox_triples": 40,
+   "t_reason_B_s": 2.483
+  },
+  "a0.1_L36_D12_G0.05_orig": {
+   "classes": [
+    "DeclineStage",
+    "LawIIINonConformant",
+    "LawINonConformant",
+    "LawIVConformant",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantNoMerge",
+    "LawVIIINonConformantSingleAuthor",
+    "LawVIINonConformant",
+    "LawVINonConformant",
+    "LawVNonConformant",
+    "MKApplicable",
+    "MergeInactive",
+    "MinorLocGrowth",
+    "MultiAuthorInactive",
+    "NonSubstantialChange",
+    "RBServicingStage",
+    "RecentlyActive"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "56009aa92bf68560113e153a97a62cd0cfdea303607eb909725e8e10a2536494",
+   "abox_triples": 40,
+   "t_reason_B_s": 2.832
+  },
+  "a0.05_L24_D12_G0.05_orig": {
+   "classes": [
+    "GrowthStage",
+    "LawIIINonConformant",
+    "LawINonConformant",
+    "LawIVConformant",
+    "LawVIConformant",
+    "LawVIIConformant",
+    "LawVIIConformantNoFixesBefore",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantNoMerge",
+    "LawVIIINonConformantSingleAuthor",
+    "LawVNonConformant",
+    "MKApplicable",
+    "MergeInactive",
+    "MinorLocGrowth",
+    "MultiAuthorInactive",
+    "NonSubstantialChange",
+    "RBServicingStage",
+    "RecentlyActive"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "79f851de895e8301073d1746931d8ac1d34e4ed2e94897358fca050d9d07b63c",
+   "abox_triples": 39,
+   "t_reason_B_s": 4.872
+  },
+  "a0.05_L48_D12_G0.05_orig": {
+   "classes": [
+    "DeclineStage",
+    "LawIIINonConformant",
+    "LawINonConformant",
+    "LawIVConformant",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantNoMerge",
+    "LawVIIINonConformantSingleAuthor",
+    "LawVIINonConformant",
+    "LawVINonConformant",
+    "LawVNonConformant",
+    "MKApplicable",
+    "MergeInactive",
+    "MinorLocGrowth",
+    "MultiAuthorInactive",
+    "NonSubstantialChange",
+    "RBServicingStage",
+    "RecentlyActive"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "79f851de895e8301073d1746931d8ac1d34e4ed2e94897358fca050d9d07b63c",
+   "abox_triples": 40,
+   "t_reason_B_s": 4.304
+  },
+  "a0.05_L36_D6_G0.05_orig": {
+   "classes": [
+    "DeclineStage",
+    "Dormant",
+    "LawIIINonConformant",
+    "LawINonConformant",
+    "LawIVConformant",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantNoMerge",
+    "LawVIIINonConformantSingleAuthor",
+    "LawVIINonConformant",
+    "LawVINonConformant",
+    "LawVNonConformant",
+    "MKApplicable",
+    "MergeInactive",
+    "MinorLocGrowth",
+    "MultiAuthorInactive",
+    "NonSubstantialChange",
+    "RBPhaseOutStage"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "a19e7e45f521324fec6b19741e2a4f08e5d15efd8e05802851c45a87515a7761",
+   "abox_triples": 40,
+   "t_reason_B_s": 4.115
+  },
+  "a0.05_L36_D18_G0.05_orig": {
+   "classes": [
+    "DeclineStage",
+    "LawIIINonConformant",
+    "LawINonConformant",
+    "LawIVConformant",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantNoMerge",
+    "LawVIIINonConformantSingleAuthor",
+    "LawVIINonConformant",
+    "LawVINonConformant",
+    "LawVNonConformant",
+    "MKApplicable",
+    "MergeInactive",
+    "MinorLocGrowth",
+    "MultiAuthorInactive",
+    "NonSubstantialChange",
+    "RBServicingStage",
+    "RecentlyActive"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "f87900e0c68335fbd2cae9848efdc2926406c328fb39da8e6e393bb472a68fdc",
+   "abox_triples": 40,
+   "t_reason_B_s": 2.639
+  },
+  "a0.05_L36_D24_G0.05_orig": {
+   "classes": [
+    "DeclineStage",
+    "LawIIINonConformant",
+    "LawINonConformant",
+    "LawIVConformant",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantNoMerge",
+    "LawVIIINonConformantSingleAuthor",
+    "LawVIINonConformant",
+    "LawVINonConformant",
+    "LawVNonConformant",
+    "MKApplicable",
+    "MergeInactive",
+    "MinorLocGrowth",
+    "MultiAuthorInactive",
+    "NonSubstantialChange",
+    "RBServicingStage",
+    "RecentlyActive"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "562211ba220cda59299aec70f3561ba96eadd88adaf45f6f7db3fce71cdcc77b",
+   "abox_triples": 40,
+   "t_reason_B_s": 2.653
+  },
+  "a0.05_L36_D12_G0_orig": {
+   "classes": [
+    "DeclineStage",
+    "LawIIINonConformant",
+    "LawINonConformant",
+    "LawIVConformant",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantNoMerge",
+    "LawVIIINonConformantSingleAuthor",
+    "LawVIINonConformant",
+    "LawVINonConformant",
+    "LawVNonConformant",
+    "MKApplicable",
+    "MergeInactive",
+    "MinorLocGrowth",
+    "MultiAuthorInactive",
+    "NonSubstantialChange",
+    "RBServicingStage",
+    "RecentlyActive"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "c0de0e8b2e7424d23b10ed152acd4ff66c2f1a973196b7e54f6598e9d734d0dc",
+   "abox_triples": 40,
+   "t_reason_B_s": 2.562
+  },
+  "a0.05_L36_D12_G0.02_orig": {
+   "classes": [
+    "DeclineStage",
+    "LawIIINonConformant",
+    "LawINonConformant",
+    "LawIVConformant",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantNoMerge",
+    "LawVIIINonConformantSingleAuthor",
+    "LawVIINonConformant",
+    "LawVINonConformant",
+    "LawVNonConformant",
+    "MKApplicable",
+    "MergeInactive",
+    "MinorLocGrowth",
+    "MultiAuthorInactive",
+    "NonSubstantialChange",
+    "RBServicingStage",
+    "RecentlyActive"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "2c6613dd6b3e4fa714d92eaa067f02157466a4b3ee0ccf6de289441d860de28d",
+   "abox_triples": 40,
+   "t_reason_B_s": 2.93
+  },
+  "a0.05_L36_D12_G0.1_orig": {
+   "classes": [
+    "DeclineStage",
+    "LawIIINonConformant",
+    "LawINonConformant",
+    "LawIVConformant",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantNoMerge",
+    "LawVIIINonConformantSingleAuthor",
+    "LawVIINonConformant",
+    "LawVINonConformant",
+    "LawVNonConformant",
+    "MKApplicable",
+    "MergeInactive",
+    "MinorLocGrowth",
+    "MultiAuthorInactive",
+    "NonSubstantialChange",
+    "RBServicingStage",
+    "RecentlyActive"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "0cfde802b4494fc33a5ad0eb910980aaf152093f62848406bdc37bc099347936",
+   "abox_triples": 40,
+   "t_reason_B_s": 2.85
+  },
+  "a0.05_L36_D12_G0.05_hr": {
+   "classes": [
+    "LawIIINonConformant",
+    "LawINonConformant",
+    "LawIVConformant",
+    "LawVIConformant",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantNoMerge",
+    "LawVIIINonConformantSingleAuthor",
+    "LawVIINonConformant",
+    "LawVNonConformant",
+    "MKApplicable",
+    "MergeInactive",
+    "MinorLocGrowth",
+    "MultiAuthorInactive",
+    "NonSubstantialChange",
+    "RBServicingStage",
+    "RecentlyActive",
+    "StabilizationStage"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": null,
+   "tbox_sha256": "79f851de895e8301073d1746931d8ac1d34e4ed2e94897358fca050d9d07b63c",
+   "abox_triples": 40,
+   "t_reason_B_s": 2.689
+  }
+ },
+ "primary_config": "a0.05_L36_D12_G0.05_orig",
+ "project_iri": "http://senso-framework.org/data/zopefoundation_transaction",
+ "consistent": true,
+ "inferred_labels": [
+  "DeclineStage",
+  "LawIIINonConformant",
+  "LawINonConformant",
+  "LawIVConformant",
+  "LawVIIINonConformant",
+  "LawVIIINonConformantNoMerge",
+  "LawVIIINonConformantSingleAuthor",
+  "LawVIINonConformant",
+  "LawVINonConformant",
+  "LawVNonConformant",
+  "MKApplicable",
+  "MergeInactive",
+  "MinorLocGrowth",
+  "MultiAuthorInactive",
+  "NonSubstantialChange",
+  "RBServicingStage",
+  "RecentlyActive"
+ ],
+ "stage_labels": [
+  "DeclineStage",
+  "RBServicingStage"
+ ],
+ "law_labels": {
+  "I": "LawINonConformant",
+  "III": "LawIIINonConformant",
+  "IV": "LawIVConformant",
+  "V": "LawVNonConformant",
+  "VI": "LawVINonConformant",
+  "VII": "LawVIINonConformant",
+  "VIII": "LawVIIINonConformant"
+ },
+ "tbox_sha256_stage_b": "79f851de895e8301073d1746931d8ac1d34e4ed2e94897358fca050d9d07b63c",
+ "tbox_sha256_stage_a": "da30ed577542b3643ecf06cb6a4649ccc8fce61ab7a0373beabd763e12883e86",
+ "summary": {
+  "c1": "P",
+  "c2": "S",
+  "cf": "A",
+  "note": "debug summary; run_rq1_v2.py reads `inferred` and recomputes CF itself"
+ },
+ "explanations": {
+  "stage:DeclineStage": {
+   "class": "DeclineStage",
+   "target": "http://senso-framework.org/data/zopefoundation_transaction type http://senso-framework.org/ontology/seo#DeclineStage",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKpValue_lt_mk_alpha",
+       "text": "A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]"
+      },
+      {
+       "kind": "definition",
+       "subject": "DeclineStage",
+       "text": "DeclineStage equivalentTo A_locMKTau_lt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKTau_lt_0",
+       "text": "A_locMKTau_lt_0 equivalentTo locMKTau some decimal[< 0.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "zopefoundation_transaction",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "zopefoundation_transaction type SoftwareProject"
+      },
+      {
+       "subject": "zopefoundation_transaction",
+       "prop": "locSeriesLength",
+       "value": 36,
+       "raw": "zopefoundation_transaction locSeriesLength 36"
+      },
+      {
+       "subject": "zopefoundation_transaction",
+       "prop": "locMKTau",
+       "value": -0.22381,
+       "raw": "zopefoundation_transaction locMKTau -0.22381"
+      },
+      {
+       "subject": "zopefoundation_transaction",
+       "prop": "locMKpValue",
+       "value": 0.049643,
+       "raw": "zopefoundation_transaction locMKpValue 0.049643"
+      }
+     ],
+     "closures": [],
+     "raw": "zopefoundation_transaction type SoftwareProject\nzopefoundation_transaction locSeriesLength 36\nA_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\nzopefoundation_transaction locMKTau -0.22381\nzopefoundation_transaction locMKpValue 0.049643\nA_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\nDeclineStage equivalentTo A_locMKTau_lt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject\nA_locMKTau_lt_0 equivalentTo locMKTau some decimal[< 0.0]\nA_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]"
+    }
+   ],
+   "raw_text": "Axiom: zopefoundation_transaction type DeclineStage\n\nExplanation(s): \n1)   zopefoundation_transaction type SoftwareProject\n     zopefoundation_transaction locSeriesLength 36\n     A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\n     zopefoundation_transaction locMKTau -0.22381\n     zopefoundation_transaction locMKpValue 0.049643\n     A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\n     DeclineStage equivalentTo A_locMKTau_lt_0\n                               and A_locMKpValue_lt_mk_alpha\n                               and MKApplicable\n                               and SoftwareProject\n     A_locMKTau_lt_0 equivalentTo locMKTau some decimal[< 0.0]\n     A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]\n\n\n",
+   "seconds": 2.8946478010038845,
+   "returncode": 0,
+   "error": null
+  },
+  "stage:RBServicingStage": {
+   "class": "RBServicingStage",
+   "target": "http://senso-framework.org/data/zopefoundation_transaction type http://senso-framework.org/ontology/seo#RBServicingStage",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "subclass",
+       "subject": "MinorLocGrowth",
+       "text": "MinorLocGrowth subClassOf NonSubstantialChange"
+      },
+      {
+       "kind": "definition",
+       "subject": "RBServicingStage",
+       "text": "RBServicingStage equivalentTo NonSubstantialChange and RecentlyActive and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "RecentlyActive",
+       "text": "RecentlyActive equivalentTo A_monthsSinceLastCommit_lt_rb_dormancy_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locRelSenSlopeAnnual_lt_rb_min_rel_loc_growth_per_year",
+       "text": "A_locRelSenSlopeAnnual_lt_rb_min_rel_loc_growth_per_year equivalentTo locRelSenSlopeAnnual some decimal[< 0.05]"
+      },
+      {
+       "kind": "definition",
+       "subject": "MinorLocGrowth",
+       "text": "MinorLocGrowth equivalentTo A_locRelSenSlopeAnnual_lt_rb_min_rel_loc_growth_per_year and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_monthsSinceLastCommit_lt_rb_dormancy_months",
+       "text": "A_monthsSinceLastCommit_lt_rb_dormancy_months equivalentTo monthsSinceLastCommit some integer[< 12]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "zopefoundation_transaction",
+       "prop": "locRelSenSlopeAnnual",
+       "value": -0.000256,
+       "raw": "zopefoundation_transaction locRelSenSlopeAnnual -0.000256"
+      },
+      {
+       "subject": "zopefoundation_transaction",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "zopefoundation_transaction type SoftwareProject"
+      },
+      {
+       "subject": "zopefoundation_transaction",
+       "prop": "monthsSinceLastCommit",
+       "value": 9,
+       "raw": "zopefoundation_transaction monthsSinceLastCommit 9"
+      }
+     ],
+     "closures": [],
+     "raw": "zopefoundation_transaction locRelSenSlopeAnnual -0.000256\nzopefoundation_transaction type SoftwareProject\nMinorLocGrowth subClassOf NonSubstantialChange\nRBServicingStage equivalentTo NonSubstantialChange and RecentlyActive and SoftwareProject\nRecentlyActive equivalentTo A_monthsSinceLastCommit_lt_rb_dormancy_months and SoftwareProject\nA_locRelSenSlopeAnnual_lt_rb_min_rel_loc_growth_per_year equivalentTo locRelSenSlopeAnnual some decimal[< 0.05]\nzopefoundation_transaction monthsSinceLastCommit 9\nMinorLocGrowth equivalentTo A_locRelSenSlopeAnnual_lt_rb_min_rel_loc_growth_per_year and SoftwareProject\nA_monthsSinceLastCommit_lt_rb_dormancy_months equivalentTo monthsSinceLastCommit some integer[< 12]"
+    }
+   ],
+   "raw_text": "Axiom: zopefoundation_transaction type RBServicingStage\n\nExplanation(s): \n1)   zopefoundation_transaction locRelSenSlopeAnnual -0.000256\n     zopefoundation_transaction type SoftwareProject\n     MinorLocGrowth subClassOf NonSubstantialChange\n     RBServicingStage equivalentTo NonSubstantialChange\n                                   and RecentlyActive\n                                   and SoftwareProject\n     RecentlyActive equivalentTo A_monthsSinceLastCommit_lt_rb_dormancy_months\n                                 and SoftwareProject\n     A_locRelSenSlopeAnnual_lt_rb_min_rel_loc_growth_per_year equivalentTo locRelSenSlopeAnnual some decimal[< 0.05]\n     zopefoundation_transaction monthsSinceLastCommit 9\n     MinorLocGrowth equivalentTo A_locRelSenSlopeAnnual_lt_rb_min_rel_loc_growth_per_year\n                                 and SoftwareProject\n     A_monthsSinceLastCommit_lt_rb_dormancy_months equivalentTo monthsSinceLastCommit some integer[< 12]\n\n\n",
+   "seconds": 3.1484110959572718,
+   "returncode": 0,
+   "error": null
+  },
+  "lawI": {
+   "class": "LawINonConformant",
+   "target": "http://senso-framework.org/data/zopefoundation_transaction type http://senso-framework.org/ontology/seo#LawINonConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_activeMonthRatio_lt_p_law1_active_ratio",
+       "text": "A_activeMonthRatio_lt_p_law1_active_ratio equivalentTo activeMonthRatio some decimal[< 0.5]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law1_min_months",
+       "text": "A_monthsObserved_ge_p_law1_min_months equivalentTo monthsObserved some integer[>= 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawINonConformant",
+       "text": "LawINonConformant equivalentTo A_activeMonthRatio_lt_p_law1_active_ratio and A_monthsObserved_ge_p_law1_min_months and SoftwareProject"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "zopefoundation_transaction",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "zopefoundation_transaction type SoftwareProject"
+      },
+      {
+       "subject": "zopefoundation_transaction",
+       "prop": "activeMonthRatio",
+       "value": 0.222222,
+       "raw": "zopefoundation_transaction activeMonthRatio 0.222222"
+      },
+      {
+       "subject": "zopefoundation_transaction",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "zopefoundation_transaction monthsObserved 36"
+      }
+     ],
+     "closures": [],
+     "raw": "zopefoundation_transaction type SoftwareProject\nA_activeMonthRatio_lt_p_law1_active_ratio equivalentTo activeMonthRatio some decimal[< 0.5]\nzopefoundation_transaction activeMonthRatio 0.222222\nA_monthsObserved_ge_p_law1_min_months equivalentTo monthsObserved some integer[>= 2]\nLawINonConformant equivalentTo A_activeMonthRatio_lt_p_law1_active_ratio and A_monthsObserved_ge_p_law1_min_months and SoftwareProject\nzopefoundation_transaction monthsObserved 36"
+    }
+   ],
+   "raw_text": "Axiom: zopefoundation_transaction type LawINonConformant\n\nExplanation(s): \n1)   zopefoundation_transaction type SoftwareProject\n     A_activeMonthRatio_lt_p_law1_active_ratio equivalentTo activeMonthRatio some decimal[< 0.5]\n     zopefoundation_transaction activeMonthRatio 0.222222\n     A_monthsObserved_ge_p_law1_min_months equivalentTo monthsObserved some integer[>= 2]\n     LawINonConformant equivalentTo A_activeMonthRatio_lt_p_law1_active_ratio\n                                    and A_monthsObserved_ge_p_law1_min_months\n                                    and SoftwareProject\n     zopefoundation_transaction monthsObserved 36\n\n\n",
+   "seconds": 3.036677230033092,
+   "returncode": 0,
+   "error": null
+  },
+  "lawIII": {
+   "class": "LawIIINonConformant",
+   "target": "http://senso-framework.org/data/zopefoundation_transaction type http://senso-framework.org/ontology/seo#LawIIINonConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_churnCV_ge_p_law3_churn_cv",
+       "text": "A_churnCV_ge_p_law3_churn_cv equivalentTo churnCV some decimal[>= 2.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law3_min_months",
+       "text": "A_monthsObserved_ge_p_law3_min_months equivalentTo monthsObserved some integer[>= 6]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawIIINonConformant",
+       "text": "LawIIINonConformant equivalentTo A_churnCV_ge_p_law3_churn_cv and A_monthsObserved_ge_p_law3_min_months and SoftwareProject"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "zopefoundation_transaction",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "zopefoundation_transaction type SoftwareProject"
+      },
+      {
+       "subject": "zopefoundation_transaction",
+       "prop": "churnCV",
+       "value": 3.504624,
+       "raw": "zopefoundation_transaction churnCV 3.504624"
+      },
+      {
+       "subject": "zopefoundation_transaction",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "zopefoundation_transaction monthsObserved 36"
+      }
+     ],
+     "closures": [],
+     "raw": "A_churnCV_ge_p_law3_churn_cv equivalentTo churnCV some decimal[>= 2.0]\nA_monthsObserved_ge_p_law3_min_months equivalentTo monthsObserved some integer[>= 6]\nzopefoundation_transaction type SoftwareProject\nzopefoundation_transaction churnCV 3.504624\nLawIIINonConformant equivalentTo A_churnCV_ge_p_law3_churn_cv and A_monthsObserved_ge_p_law3_min_months and SoftwareProject\nzopefoundation_transaction monthsObserved 36"
+    }
+   ],
+   "raw_text": "Axiom: zopefoundation_transaction type LawIIINonConformant\n\nExplanation(s): \n1)   A_churnCV_ge_p_law3_churn_cv equivalentTo churnCV some decimal[>= 2.0]\n     A_monthsObserved_ge_p_law3_min_months equivalentTo monthsObserved some integer[>= 6]\n     zopefoundation_transaction type SoftwareProject\n     zopefoundation_transaction churnCV 3.504624\n     LawIIINonConformant equivalentTo A_churnCV_ge_p_law3_churn_cv\n                                      and A_monthsObserved_ge_p_law3_min_months\n                                      and SoftwareProject\n     zopefoundation_transaction monthsObserved 36\n\n\n",
+   "seconds": 2.740559148020111,
+   "returncode": 0,
+   "error": null
+  },
+  "lawIV": {
+   "class": "LawIVConformant",
+   "target": "http://senso-framework.org/data/zopefoundation_transaction type http://senso-framework.org/ontology/seo#LawIVConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law4_min_months",
+       "text": "A_monthsObserved_ge_p_law4_min_months equivalentTo monthsObserved some integer[>= 6]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawIVConformant",
+       "text": "LawIVConformant equivalentTo A_commitCountCV_lt_p_law4_commit_cv and A_monthsObserved_ge_p_law4_min_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_commitCountCV_lt_p_law4_commit_cv",
+       "text": "A_commitCountCV_lt_p_law4_commit_cv equivalentTo commitCountCV some decimal[< 1.5]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "zopefoundation_transaction",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "zopefoundation_transaction type SoftwareProject"
+      },
+      {
+       "subject": "zopefoundation_transaction",
+       "prop": "commitCountCV",
+       "value": 1.321709,
+       "raw": "zopefoundation_transaction commitCountCV 1.321709"
+      },
+      {
+       "subject": "zopefoundation_transaction",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "zopefoundation_transaction monthsObserved 36"
+      }
+     ],
+     "closures": [],
+     "raw": "A_monthsObserved_ge_p_law4_min_months equivalentTo monthsObserved some integer[>= 6]\nzopefoundation_transaction type SoftwareProject\nzopefoundation_transaction commitCountCV 1.321709\nLawIVConformant equivalentTo A_commitCountCV_lt_p_law4_commit_cv and A_monthsObserved_ge_p_law4_min_months and SoftwareProject\nA_commitCountCV_lt_p_law4_commit_cv equivalentTo commitCountCV some decimal[< 1.5]\nzopefoundation_transaction monthsObserved 36"
+    }
+   ],
+   "raw_text": "Axiom: zopefoundation_transaction type LawIVConformant\n\nExplanation(s): \n1)   A_monthsObserved_ge_p_law4_min_months equivalentTo monthsObserved some integer[>= 6]\n     zopefoundation_transaction type SoftwareProject\n     zopefoundation_transaction commitCountCV 1.321709\n     LawIVConformant equivalentTo A_commitCountCV_lt_p_law4_commit_cv\n                                  and A_monthsObserved_ge_p_law4_min_months\n                                  and SoftwareProject\n     A_commitCountCV_lt_p_law4_commit_cv equivalentTo commitCountCV some decimal[< 1.5]\n     zopefoundation_transaction monthsObserved 36\n\n\n",
+   "seconds": 2.8609136539744213,
+   "returncode": 0,
+   "error": null
+  },
+  "lawV": {
+   "class": "LawVNonConformant",
+   "target": "http://senso-framework.org/data/zopefoundation_transaction type http://senso-framework.org/ontology/seo#LawVNonConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_linesAddedCV_ge_p_law5_additions_cv",
+       "text": "A_linesAddedCV_ge_p_law5_additions_cv equivalentTo linesAddedCV some decimal[>= 2.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawVNonConformant",
+       "text": "LawVNonConformant equivalentTo A_linesAddedCV_ge_p_law5_additions_cv and A_monthsObserved_ge_p_law5_min_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law5_min_months",
+       "text": "A_monthsObserved_ge_p_law5_min_months equivalentTo monthsObserved some integer[>= 4]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "zopefoundation_transaction",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "zopefoundation_transaction type SoftwareProject"
+      },
+      {
+       "subject": "zopefoundation_transaction",
+       "prop": "linesAddedCV",
+       "value": 3.384546,
+       "raw": "zopefoundation_transaction linesAddedCV 3.384546"
+      },
+      {
+       "subject": "zopefoundation_transaction",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "zopefoundation_transaction monthsObserved 36"
+      }
+     ],
+     "closures": [],
+     "raw": "A_linesAddedCV_ge_p_law5_additions_cv equivalentTo linesAddedCV some decimal[>= 2.0]\nzopefoundation_transaction type SoftwareProject\nLawVNonConformant equivalentTo A_linesAddedCV_ge_p_law5_additions_cv and A_monthsObserved_ge_p_law5_min_months and SoftwareProject\nA_monthsObserved_ge_p_law5_min_months equivalentTo monthsObserved some integer[>= 4]\nzopefoundation_transaction linesAddedCV 3.384546\nzopefoundation_transaction monthsObserved 36"
+    }
+   ],
+   "raw_text": "Axiom: zopefoundation_transaction type LawVNonConformant\n\nExplanation(s): \n1)   A_linesAddedCV_ge_p_law5_additions_cv equivalentTo linesAddedCV some decimal[>= 2.0]\n     zopefoundation_transaction type SoftwareProject\n     LawVNonConformant equivalentTo A_linesAddedCV_ge_p_law5_additions_cv\n                                    and A_monthsObserved_ge_p_law5_min_months\n                                    and SoftwareProject\n     A_monthsObserved_ge_p_law5_min_months equivalentTo monthsObserved some integer[>= 4]\n     zopefoundation_transaction linesAddedCV 3.384546\n     zopefoundation_transaction monthsObserved 36\n\n\n",
+   "seconds": 3.250455851026345,
+   "returncode": 0,
+   "error": null
+  },
+  "lawVI": {
+   "class": "LawVINonConformant",
+   "target": "http://senso-framework.org/data/zopefoundation_transaction type http://senso-framework.org/ontology/seo#LawVINonConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKpValue_lt_mk_alpha",
+       "text": "A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]"
+      },
+      {
+       "kind": "definition",
+       "subject": "DeclineStage",
+       "text": "DeclineStage equivalentTo LawVINonConformant"
+      },
+      {
+       "kind": "definition",
+       "subject": "DeclineStage",
+       "text": "DeclineStage equivalentTo A_locMKTau_lt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKTau_lt_0",
+       "text": "A_locMKTau_lt_0 equivalentTo locMKTau some decimal[< 0.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "zopefoundation_transaction",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "zopefoundation_transaction type SoftwareProject"
+      },
+      {
+       "subject": "zopefoundation_transaction",
+       "prop": "locSeriesLength",
+       "value": 36,
+       "raw": "zopefoundation_transaction locSeriesLength 36"
+      },
+      {
+       "subject": "zopefoundation_transaction",
+       "prop": "locMKTau",
+       "value": -0.22381,
+       "raw": "zopefoundation_transaction locMKTau -0.22381"
+      },
+      {
+       "subject": "zopefoundation_transaction",
+       "prop": "locMKpValue",
+       "value": 0.049643,
+       "raw": "zopefoundation_transaction locMKpValue 0.049643"
+      }
+     ],
+     "closures": [],
+     "raw": "zopefoundation_transaction type SoftwareProject\nzopefoundation_transaction locSeriesLength 36\nA_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\nzopefoundation_transaction locMKTau -0.22381\nzopefoundation_transaction locMKpValue 0.049643\nA_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\nDeclineStage equivalentTo LawVINonConformant\nDeclineStage equivalentTo A_locMKTau_lt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject\nA_locMKTau_lt_0 equivalentTo locMKTau some decimal[< 0.0]\nA_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]"
+    }
+   ],
+   "raw_text": "Axiom: zopefoundation_transaction type LawVINonConformant\n\nExplanation(s): \n1)   zopefoundation_transaction type SoftwareProject\n     zopefoundation_transaction locSeriesLength 36\n     A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\n     zopefoundation_transaction locMKTau -0.22381\n     zopefoundation_transaction locMKpValue 0.049643\n     A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\n     DeclineStage equivalentTo LawVINonConformant\n     DeclineStage equivalentTo A_locMKTau_lt_0\n                               and A_locMKpValue_lt_mk_alpha\n                               and MKApplicable\n                               and SoftwareProject\n     A_locMKTau_lt_0 equivalentTo locMKTau some decimal[< 0.0]\n     A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]\n\n\n",
+   "seconds": 2.404877994034905,
+   "returncode": 0,
+   "error": null
+  },
+  "lawVII": {
+   "class": "LawVIINonConformant",
+   "target": "http://senso-framework.org/data/zopefoundation_transaction type http://senso-framework.org/ontology/seo#LawVIINonConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_bugFixRatioFirstHalf_gt_0",
+       "text": "A_bugFixRatioFirstHalf_gt_0 equivalentTo bugFixRatioFirstHalf some decimal[> 0.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_bugFixHalfRatio_lt_p_law7_tolerance",
+       "text": "A_bugFixHalfRatio_lt_p_law7_tolerance equivalentTo bugFixHalfRatio some decimal[< 0.9]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_activeMonthCount_ge_p_law7_min_active_months",
+       "text": "A_activeMonthCount_ge_p_law7_min_active_months equivalentTo activeMonthCount some integer[>= 4]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawVIINonConformant",
+       "text": "LawVIINonConformant equivalentTo A_activeMonthCount_ge_p_law7_min_active_months and A_bugFixHalfRatio_lt_p_law7_tolerance and A_bugFixRatioFirstHalf_gt_0 and SoftwareProject"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "zopefoundation_transaction",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "zopefoundation_transaction type SoftwareProject"
+      },
+      {
+       "subject": "zopefoundation_transaction",
+       "prop": "activeMonthCount",
+       "value": 8,
+       "raw": "zopefoundation_transaction activeMonthCount 8"
+      },
+      {
+       "subject": "zopefoundation_transaction",
+       "prop": "bugFixHalfRatio",
+       "value": 0.428571,
+       "raw": "zopefoundation_transaction bugFixHalfRatio 0.428571"
+      },
+      {
+       "subject": "zopefoundation_transaction",
+       "prop": "bugFixRatioFirstHalf",
+       "value": 0.583333,
+       "raw": "zopefoundation_transaction bugFixRatioFirstHalf 0.583333"
+      }
+     ],
+     "closures": [],
+     "raw": "zopefoundation_transaction type SoftwareProject\nA_bugFixRatioFirstHalf_gt_0 equivalentTo bugFixRatioFirstHalf some decimal[> 0.0]\nA_bugFixHalfRatio_lt_p_law7_tolerance equivalentTo bugFixHalfRatio some decimal[< 0.9]\nA_activeMonthCount_ge_p_law7_min_active_months equivalentTo activeMonthCount some integer[>= 4]\nzopefoundation_transaction activeMonthCount 8\nLawVIINonConformant equivalentTo A_activeMonthCount_ge_p_law7_min_active_months and A_bugFixHalfRatio_lt_p_law7_tolerance and A_bugFixRatioFirstHalf_gt_0 and SoftwareProject\nzopefoundation_transaction bugFixHalfRatio 0.428571\nzopefoundation_transaction bugFixRatioFirstHalf 0.583333"
+    }
+   ],
+   "raw_text": "Axiom: zopefoundation_transaction type LawVIINonConformant\n\nExplanation(s): \n1)   zopefoundation_transaction type SoftwareProject\n     A_bugFixRatioFirstHalf_gt_0 equivalentTo bugFixRatioFirstHalf some decimal[> 0.0]\n     A_bugFixHalfRatio_lt_p_law7_tolerance equivalentTo bugFixHalfRatio some decimal[< 0.9]\n     A_activeMonthCount_ge_p_law7_min_active_months equivalentTo activeMonthCount some integer[>= 4]\n     zopefoundation_transaction activeMonthCount 8\n     LawVIINonConformant equivalentTo A_activeMonthCount_ge_p_law7_min_active_months\n                                      and A_bugFixHalfRatio_lt_p_law7_tolerance\n                                      and A_bugFixRatioFirstHalf_gt_0\n                                      and SoftwareProject\n     zopefoundation_transaction bugFixHalfRatio 0.428571\n     zopefoundation_transaction bugFixRatioFirstHalf 0.583333\n\n\n",
+   "seconds": 2.5204595460090786,
+   "returncode": 0,
+   "error": null
+  },
+  "lawVIII": {
+   "class": "LawVIIINonConformant",
+   "target": "http://senso-framework.org/data/zopefoundation_transaction type http://senso-framework.org/ontology/seo#LawVIIINonConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_mergeMonthRatio_le_p_law8_merge_ratio",
+       "text": "A_mergeMonthRatio_le_p_law8_merge_ratio equivalentTo MergeInactive"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawVIIINonConformantNoMerge",
+       "text": "LawVIIINonConformantNoMerge equivalentTo A_monthsObserved_ge_p_law8_min_months and MergeInactive and SoftwareProject"
+      },
+      {
+       "kind": "subclass",
+       "subject": "LawVIIINonConformantNoMerge",
+       "text": "LawVIIINonConformantNoMerge subClassOf LawVIIINonConformant"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_mergeMonthRatio_le_p_law8_merge_ratio",
+       "text": "A_mergeMonthRatio_le_p_law8_merge_ratio equivalentTo mergeMonthRatio some decimal[<= 0.3]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law8_min_months",
+       "text": "A_monthsObserved_ge_p_law8_min_months equivalentTo monthsObserved some integer[>= 6]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "zopefoundation_transaction",
+       "prop": "mergeMonthRatio",
+       "value": 0.027778,
+       "raw": "zopefoundation_transaction mergeMonthRatio 0.027778"
+      },
+      {
+       "subject": "zopefoundation_transaction",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "zopefoundation_transaction type SoftwareProject"
+      },
+      {
+       "subject": "zopefoundation_transaction",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "zopefoundation_transaction monthsObserved 36"
+      }
+     ],
+     "closures": [],
+     "raw": "A_mergeMonthRatio_le_p_law8_merge_ratio equivalentTo MergeInactive\nzopefoundation_transaction mergeMonthRatio 0.027778\nzopefoundation_transaction type SoftwareProject\nLawVIIINonConformantNoMerge equivalentTo A_monthsObserved_ge_p_law8_min_months and MergeInactive and SoftwareProject\nLawVIIINonConformantNoMerge subClassOf LawVIIINonConformant\nzopefoundation_transaction monthsObserved 36\nA_mergeMonthRatio_le_p_law8_merge_ratio equivalentTo mergeMonthRatio some decimal[<= 0.3]\nA_monthsObserved_ge_p_law8_min_months equivalentTo monthsObserved some integer[>= 6]"
+    }
+   ],
+   "raw_text": "Axiom: zopefoundation_transaction type LawVIIINonConformant\n\nExplanation(s): \n1)   A_mergeMonthRatio_le_p_law8_merge_ratio equivalentTo MergeInactive\n     zopefoundation_transaction mergeMonthRatio 0.027778\n     zopefoundation_transaction type SoftwareProject\n     LawVIIINonConformantNoMerge equivalentTo A_monthsObserved_ge_p_law8_min_months\n                                              and MergeInactive\n                                              and SoftwareProject\n     LawVIIINonConformantNoMerge subClassOf LawVIIINonConformant\n     zopefoundation_transaction monthsObserved 36\n     A_mergeMonthRatio_le_p_law8_merge_ratio equivalentTo mergeMonthRatio some decimal[<= 0.3]\n     A_monthsObserved_ge_p_law8_min_months equivalentTo monthsObserved some integer[>= 6]\n\n\n",
+   "seconds": 2.54175310395658,
+   "returncode": 0,
+   "error": null
+  }
+ },
+ "fuseki": {
+  "dataset": "seo_v2",
+  "graph_triples": {
+   "urn:senso:abox:zopefoundation/transaction": 388,
+   "urn:senso:commits:zopefoundation/transaction": 121,
+   "urn:senso:abox-derived:zopefoundation/transaction": 8,
+   "urn:senso:inferred:zopefoundation/transaction:79f851de895e": 209,
+   "urn:senso:explanations:zopefoundation/transaction:79f851de895e": 164
+  }
+ },
+ "timings": {
+  "t_clone": 1.865,
+  "t_mine": 3.916,
+  "t_loc": 1.155,
+  "t_reason_A": 2.738,
+  "mining_cached": false,
+  "t_reason_B": 37.44,
+  "n_configs": 12,
+  "t_explain": 25.494,
+  "n_explain_calls": 9,
+  "t_writeback": 7.636,
+  "t_total": 79.661
+ }
+}

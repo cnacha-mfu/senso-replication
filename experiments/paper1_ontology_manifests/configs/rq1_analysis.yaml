@@ -1,0 +1,139 @@
+# RQ1 analysis configuration (Paper 1 rebuild). Read by run_rq1_v2.py.
+# Everything here is fixed by papers/paper1/rq1-preregistration.md (PRE-REGISTERED);
+# it must not be edited after the first RQ1 repository is mined. Paths are
+# relative to the project root.
+
+prereg: papers/paper1/rq1-preregistration.md
+output_dir: experiments/paper1_ontology_manifests/results/real_v2/rq1
+
+# §0 frozen inputs
+ground_truth:
+  path: experiments/paper1_ontology_manifests/results/real_v2/wp3/ground_truth_sample.json
+  sha256: ef5f098d6e5418b72407a3d469dcbf91c1d7f7a7ff227f6f423e7ba066d6e74a
+  config_path: experiments/paper1_ontology_manifests/configs/wp3_ground_truth.yaml
+  candidates_path: experiments/paper1_ontology_manifests/results/real_v2/wp3/candidates_raw.json
+snapshot_date: "2025-06-30"          # S = 2025-06-30T23:59:59Z
+snapshot_month: "2025-06"
+
+# Where git must be clean before running (§0). The RQ1 output directory is
+# excluded so a second invocation (holdout) is not blocked by the first one's outputs.
+clean_tree_paths:
+  - ontology
+  - experiments/paper1_ontology_manifests
+freeze_tag: rq1-freeze
+
+# §6.3 bootstrap
+bootstrap:
+  n_boot: 10000
+  seed: 20261006
+  levels: [0.95, 0.975]
+  primary_level: 0.975               # Bonferroni split over {C1, C2}
+  holdout_level: 0.95                # single test on the holdout
+
+# §3, §6.1 primary configuration
+primary:
+  alpha: 0.05
+  lookback_months: 36
+  dormancy_months: 12                # D
+  min_rel_loc_growth_per_year: 0.05  # G
+  mk_variant: original
+  mk_min_months: 4
+
+# §6.4 verdict cut-offs
+verdict:
+  kappa_pass: 0.60
+  lb_pass: 0.40
+  recall_pass: 0.50
+  max_undetermined: 0.10
+  per_class_claim_recall_lb: 0.50    # §6.6 (95% lower bound)
+
+# Stage collapse (§1.1, §2.1)
+strata: [initial_development, evolution, servicing, phase_out]
+collapse:
+  initial_development: A
+  evolution: A
+  servicing: S
+  phase_out: P
+c1_mapping:                           # §2.1
+  GrowthStage: A
+  StabilizationStage: S
+  DeclineStage: P
+c1_mapping_s6:                        # S6
+  GrowthStage: A
+  StabilizationStage: S
+  DeclineStage: S
+c2_mapping:                           # §2.2 (identity)
+  RBActiveDevelopmentStage: A
+  RBServicingStage: S
+  RBPhaseOutStage: P
+
+# §6.2 exploratory population weights (clean eligible counts, wp3 summary.json)
+population_counts:
+  initial_development: 1053
+  evolution: 2060
+  servicing: 76
+  phase_out: 399
+
+# §8 one-at-a-time sensitivity
+sensitivity:
+  S1: {factor: alpha, values: [0.01, 0.10], applies_to: [C1, C2, CF]}
+  S2: {factor: lookback_months, values: [24, 48], applies_to: [C1, C2, CF]}
+  S3: {factor: dormancy_months, values: [6, 18, 24], applies_to: [C2, CF]}
+  S4: {factor: min_rel_loc_growth_per_year, values: [0.0, 0.02, 0.10], applies_to: [C2]}
+  S5: {factor: mk_variant, values: [hamed_rao], applies_to: [C1, C2]}
+  S6: {factor: c1_mapping, values: [decline_to_servicing], applies_to: [C1]}
+  not_independent_value: {factor: dormancy_months, value: 24}   # excluded from the robustness statement
+
+# §8 full factorial (288 configurations for C2)
+grid:
+  alpha: [0.01, 0.05, 0.10]
+  lookback_months: [24, 36, 48]
+  dormancy_months: [6, 12, 18, 24]
+  min_rel_loc_growth_per_year: [0.0, 0.02, 0.05, 0.10]
+  mk_variant: [original, hamed_rao]
+
+# §8.1 noise subsets
+noise:
+  window_start: "2024-06-30"          # exclusive; window is (window_start, snapshot]
+  min_stratum_n: 10
+classifier_stage_map:                 # Development Status -> 4-class stage (wp3 config, frozen)
+  "1": initial_development
+  "2": initial_development
+  "3": initial_development
+  "4": initial_development
+  "5": evolution
+  "6": servicing
+  "7": phase_out
+
+# §7.4 descriptives and directional contrasts (Holm family E1-E6)
+descriptive:
+  measures: [meanMonthlyCommits, activeMonthRatio, monthsSinceLastCommit, distinctAuthorsInWindow,
+             multiAuthorMonthRatio, featureCommitShare, bugFixRatio, locMKTau,
+             locRelSenSlopeAnnual, commitMKTau]
+  holm_alpha: 0.05
+  directional:
+    E1: {measure: activeMonthRatio, greater: A, than: S}
+    E2: {measure: activeMonthRatio, greater: S, than: P}
+    E3: {measure: locRelSenSlopeAnnual, greater: A, than: S}
+    E4: {measure: bugFixRatio, greater: S, than: A}
+    E5: {measure: featureCommitShare, greater: A, than: S}
+    E6: {measure: commitMKTau, greater: A, than: S}
+  exploratory:
+    X1: {measure: locRelSenSlopeAnnual, a: initial_development, b: evolution}
+    X2: {measure: activeMonthRatio, a: initial_development, b: evolution}
+
+files:
+  manifest: rq1_run_manifest.json
+  labels: rq1_labels.json
+  labels_hash: rq1_labels.sha256
+  primary: rq1_primary.json
+  secondary: rq1_secondary.json
+  convergent: rq1_convergent.json
+  sensitivity: rq1_sensitivity.json
+  grid: rq1_sensitivity_grid.json
+  noise: rq1_noise_subsets.json
+  descriptive: rq1_descriptive.json
+  holdout_labels: rq1_holdout_labels.json
+  holdout_primary: rq1_holdout_primary.json
+  deviations: rq1_deviations.json
+  differential_failure: rq1_differential_failure.json

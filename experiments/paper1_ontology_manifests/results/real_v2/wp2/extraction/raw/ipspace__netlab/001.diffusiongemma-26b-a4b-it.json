@@ -1,0 +1,21 @@
+{
+ "repo": "ipspace/netlab",
+ "chunk": 1,
+ "n_chunks": 2,
+ "model": "google/diffusiongemma-26b-a4b-it",
+ "prompt_sha256": "d0e02ff613417050168d859f2af6230c3712c6758bb5d9c40d60ff55e5ae87ca",
+ "user_sha256": "d54470052b0a9a082ea226180c8863b6fa511984d8b681384a626e3da0b812c5",
+ "text": "```json\n{\"claims\": [\n  {\"type\": \"path_exists\", \"quote\": \"* The documentation files must be in `docs/dev/config`\", \"line\": 164, \"subject\": \"docs/dev/config\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"path_exists\", \"quote\": \"* The new files have to be included in ToC in `docs/dev/config/index.md`\", \"line\": 165, \"subject\": \"docs/dev/config/index.md\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"path_exists\", \"quote\": \"* Find the relevant tests in the `tests/integration` directory tree and mention them\", \"line\": 170, \"subject\": \"tests/integration\", \"path_components\": [\"tests\", \"integration\"], \"mode\": \"asserts_existing\"},\n  {\"type\": \"dependency\", \"quote\": \"* Do not use `jinja2` syntax highlighter; it does not work.\", \"line\": 171, \"subject\": \"jinja2\", \"mode\": \"asserts_existing\"}\n]}\n```",
+ "parse_ok": true,
+ "parse_error": null,
+ "parse_retries": 0,
+ "latency_s": 0.5815397029509768,
+ "usage": {
+  "prompt": 2327,
+  "completion": 255
+ },
+ "n_api_calls": 1,
+ "finish_reason": "stop",
+ "error": null,
+ "discarded_attempt_texts": []
+}

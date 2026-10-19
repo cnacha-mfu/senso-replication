@@ -1,0 +1,63 @@
+{
+ "repo": "getsentry/sentry-docs",
+ "slug": "getsentry__sentry-docs",
+ "input_sha": "09225483dfc3b0f5e7ca994d327e1ea84af6ca5eef6623eff73983437629c3af",
+ "explanations": [
+  {
+   "key": "T3|linter_formatter|eslint",
+   "verdict": "SupportedClaim",
+   "leaf": "ToolSignatureFound",
+   "seconds": 4.03,
+   "retried_on_claim_subgraph": false,
+   "error": null,
+   "returncode": 0,
+   "n_justifications": 1,
+   "facts": [
+    {
+     "prop": "toolSignatureHitCount",
+     "value": 2
+    },
+    {
+     "prop": "extractionVotes",
+     "value": 3
+    }
+   ],
+   "axioms": [
+    "A_extractionVotes_ge_wp2_consensus_min_votes equivalentTo extractionVotes some integer[>= 2]",
+    "ToolSignatureFound equivalentTo A_toolSignatureHitCount_ge_1 and CheckedClaim and ToolUsageClaim",
+    "CheckedClaim equivalentTo A_extractionVotes_ge_wp2_consensus_min_votes and ManifestClaim",
+    "A_toolSignatureHitCount_ge_1 equivalentTo toolSignatureHitCount some integer[>= 1]",
+    "ToolSignatureFound subClassOf SupportedClaim"
+   ],
+   "closures": []
+  },
+  {
+   "key": "T5|make|test",
+   "verdict": "SupportedClaim",
+   "leaf": "ScriptDefinedRoot",
+   "seconds": 4.64,
+   "retried_on_claim_subgraph": false,
+   "error": null,
+   "returncode": 0,
+   "n_justifications": 1,
+   "facts": [
+    {
+     "prop": "scriptDefinedRootCount",
+     "value": 1
+    },
+    {
+     "prop": "extractionVotes",
+     "value": 2
+    }
+   ],
+   "axioms": [
+    "ScriptDefinedRoot equivalentTo A_scriptDefinedRootCount_ge_1 and CheckedClaim and CommandClaim",
+    "A_extractionVotes_ge_wp2_consensus_min_votes equivalentTo extractionVotes some integer[>= 2]",
+    "ScriptDefinedRoot subClassOf SupportedClaim",
+    "CheckedClaim equivalentTo A_extractionVotes_ge_wp2_consensus_min_votes and ManifestClaim",
+    "A_scriptDefinedRootCount_ge_1 equivalentTo scriptDefinedRootCount some integer[>= 1]"
+   ],
+   "closures": []
+  }
+ ]
+}

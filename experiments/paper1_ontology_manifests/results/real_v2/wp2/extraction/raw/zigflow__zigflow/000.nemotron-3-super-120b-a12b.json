@@ -1,0 +1,21 @@
+{
+ "repo": "zigflow/zigflow",
+ "chunk": 0,
+ "n_chunks": 2,
+ "model": "nvidia/nemotron-3-super-120b-a12b",
+ "prompt_sha256": "d0e02ff613417050168d859f2af6230c3712c6758bb5d9c40d60ff55e5ae87ca",
+ "user_sha256": "4e02120a22e40a3d0a72c6b0bab00dbbaab4a7a9b13b9a41248495e7e3fc22d7",
+ "text": "{\n  \"claims\": [\n    {\n      \"type\": \"tool_used\",\n      \"quote\": \"Always run pre-commit tests after making changes: `pre-commit run`\",\n      \"line\": 147,\n      \"subject\": \"pre-commit\",\n      \"tool_category\": \"linter_formatter\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"command\",\n      \"quote\": \"Always run pre-commit tests after making changes: `pre-commit run`\",\n      \"line\": 147,\n      \"subject\": \"run\",\n      \"runner\": \"pre-commit\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"command\",\n      \"quote\": \"Always run unit tests after making changes: `go test ./...`\",\n      \"line\": 148,\n      \"subject\": \"test\",\n      \"runner\": \"go\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"command\",\n      \"quote\": \"Always run end-to-end tests after making changes: `task e2e`\",\n      \"line\": 149,\n      \"subject\": \"e2e\",\n      \"runner\": \"task\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"tool_used\",\n      \"quote\": \"Key tests that will run include: - `golangci-lint` for Go code quality\",\n      \"line\": 154,\n      \"subject\": \"golangci-lint\",\n      \"tool_category\": \"linter_formatter\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"tool_used\",\n      \"quote\": \"Key tests that will run include: - `go vet` for Go correctness\",\n      \"line\": 155,\n      \"subject\": \"go vet\",\n      \"tool_category\": \"linter_formatter\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"tool_used\",\n      \"quote\": \"Key tests that will run include: - `gofumpt` for Go formatting\",\n      \"line\": 156,\n      \"subject\": \"gofumpt\",\n      \"tool_category\": \"linter_formatter\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"tool_used\",\n      \"quote\": \"Key tests that will run include: - `go-err-check` for error handling\",\n      \"line\": 157,\n      \"subject\": \"go-err-check\",\n      \"tool_category\": \"linter_formatter\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"tool_used\",\n      \"quote\": \"Key tests that will run include: - `go-static-check` for static analysis\",\n      \"line\": 158,\n      \"subject\": \"go-static-check\",\n      \"tool_category\": \"linter_formatter\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"command\",\n      \"quote\": \"If pre-commit is not installed, run: `pip install pre-commit && pre-commit install`\",\n      \"line\": 164,\n      \"subject\": \"install\",\n      \"runner\": \"pip\",\n      \"mode\": \"asserts_existing\"\n    }\n  ]\n}",
+ "parse_ok": true,
+ "parse_error": null,
+ "parse_retries": 0,
+ "latency_s": 5.3147720690467395,
+ "usage": {
+  "prompt": 4474,
+  "completion": 732
+ },
+ "n_api_calls": 1,
+ "finish_reason": "stop",
+ "error": null,
+ "discarded_attempt_texts": []
+}

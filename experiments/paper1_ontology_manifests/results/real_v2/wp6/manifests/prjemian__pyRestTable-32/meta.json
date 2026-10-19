@@ -1,0 +1,273 @@
+{
+ "task_id": "prjemian__pyRestTable-32",
+ "repo": "prjemian/pyRestTable",
+ "stage": "servicing",
+ "rounds": 1,
+ "rejects": {},
+ "flags": [
+  "no_test_command",
+  "kind3_dropped",
+  "kind4_R_used_I_competitor",
+  "length_violation_F_R",
+  "length_violation_F_I"
+ ],
+ "info": {
+  "slots": {
+   "P1": {
+    "replaced": null,
+    "name": "core",
+    "F_R": "src/pyRestTable/core",
+    "F_I": "conda-recipe/core"
+   },
+   "P2": {
+    "replaced": null,
+    "F_R": "src/qa_qc/test_unittest.py",
+    "F_I": "tests/_version_test.py"
+   },
+   "D": {
+    "replaced": "lxml",
+    "F_R": "selectolax",
+    "F_I": "selectolax"
+   }
+  },
+  "why": {
+   "test_command": [
+    {
+     "root": "tests",
+     "T3": "ContradictedClaim",
+     "T1": "SupportedClaim",
+     "collect_ok": null
+    }
+   ],
+   "kind1": {
+    "p1_idx": null,
+    "gold0": "src/pyRestTable",
+    "unrelated": null,
+    "base_R": "src/pyRestTable",
+    "base_I": "conda-recipe"
+   },
+   "kind2": {
+    "p2_idx": null,
+    "n_deleted_py": 5,
+    "found": {
+     "F_R": "src/qa_qc/test_unittest.py",
+     "F_I": "tests/_version_test.py"
+    }
+   },
+   "kind3": {
+    "run": null,
+    "install": null,
+    "test_ok": false,
+    "install_ok": true
+   },
+   "kind4": {
+    "deps": [
+     [
+      "lxml",
+      false
+     ]
+    ],
+    "d_idx": 0,
+    "src_R": "lxml",
+    "src_I": "lxml",
+    "n_decls": 4,
+    "n_dist": 21
+   }
+  },
+  "length": {
+   "T": 188,
+   "F_R": 251,
+   "F_I": 244
+  },
+  "fallbacks": {
+   "F_R": [
+    "kind4_I_competitor"
+   ],
+   "F_I": []
+  },
+  "modes": {
+   "F_R": {
+    "1": "add",
+    "2": "add",
+    "4": "replace"
+   },
+   "F_I": {
+    "1": "add",
+    "2": "add",
+    "4": "replace"
+   }
+  },
+  "length_diff": {
+   "F_R": 63,
+   "F_I": 56
+  },
+  "n_claims_T": 5,
+  "n_false": {
+   "F_R": 3,
+   "F_I": 3
+  },
+  "pointer_in_issue": true,
+  "gold_dirs": [
+   "src/pyRestTable"
+  ],
+  "gold_files": [
+   "CHANGES.rst",
+   "src/pyRestTable/rest_table.py"
+  ]
+ },
+ "tokens": {
+  "F_R": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "src/pyRestTable/core",
+     "core"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "src/qa_qc/test_unittest.py",
+     "test_unittest.py"
+    ]
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "selectolax"
+    ]
+   }
+  ],
+  "F_I": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "conda-recipe/core",
+     "core"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "tests/_version_test.py",
+     "_version_test.py"
+    ]
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "selectolax"
+    ]
+   }
+  ]
+ },
+ "unresolved_pre_hermit": [],
+ "sha256": {
+  "T": "76e8abea7903add72b10cbb30def000005f11037de4b32e796037bd0b785f1c1",
+  "F_R": "1d396c2ed1339187ff271cef8ab25afbb14fa28b8113ab723fa16107d02eed4d",
+  "F_I": "49867663c6f57af8ef52a7287e23e48bd97453aefbf1ad599d6f28f90712302a"
+ },
+ "chars": {
+  "T": 188,
+  "F_R": 251,
+  "F_I": 244
+ },
+ "claims": {
+  "T": [
+   "T1|src/pyRestTable",
+   "T1|tests",
+   "T1|src/pyRestTable/_version.py",
+   "T1|setup.py",
+   "T4|lxml|"
+  ],
+  "F_R": [
+   "T1|src/pyRestTable",
+   "T1|tests",
+   "T1|src/pyRestTable/core",
+   "T1|src/pyRestTable/_version.py",
+   "T1|src/qa_qc/test_unittest.py",
+   "T1|setup.py",
+   "T4|selectolax|"
+  ],
+  "F_I": [
+   "T1|src/pyRestTable",
+   "T1|tests",
+   "T1|conda-recipe/core",
+   "T1|src/pyRestTable/_version.py",
+   "T1|tests/_version_test.py",
+   "T1|setup.py",
+   "T4|selectolax|"
+  ]
+ },
+ "python_spec": null,
+ "token_audit": [
+  {
+   "cond": "F_R",
+   "kind": 1,
+   "type": "path",
+   "name": "src/pyRestTable/core",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 2,
+   "type": "path",
+   "name": "src/qa_qc/test_unittest.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 4,
+   "type": "word",
+   "name": "selectolax",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 1,
+   "type": "path",
+   "name": "conda-recipe/core",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 2,
+   "type": "path",
+   "name": "tests/_version_test.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 4,
+   "type": "word",
+   "name": "selectolax",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  }
+ ],
+ "dist_imports_used": {
+  "lxml": [
+   "lxml"
+  ],
+  "selectolax": null
+ }
+}

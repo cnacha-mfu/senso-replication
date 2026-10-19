@@ -1,0 +1,21 @@
+{
+ "repo": "simstudioai/sim",
+ "chunk": 0,
+ "n_chunks": 3,
+ "model": "google/diffusiongemma-26b-a4b-it",
+ "prompt_sha256": "d0e02ff613417050168d859f2af6230c3712c6758bb5d9c40d60ff55e5ae87ca",
+ "user_sha256": "78dcd2e02a1b66313e5c2d2e0c02b7d64bc5b2ce2145eb359633d7eb1bb056ea",
+ "text": "```json\n{\n  \"claims\": [\n    {\n      \"type\": \"dependency\",\n      \"quote\": \"Import `createLogger` from `@sim/logger`.\",\n      \"line\": 7,\n      \"subject\": \"@sim/logger\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"tool_used\",\n      \"quote\": \"Package Manager: Use `bun` and `bunx`, not `npm` and `npx`\",\n      \"line\": 10,\n      \"subject\": \"bun\",\n      \"tool_category\": \"package_manager\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"tool_used\",\n      \"quote\": \"Package Manager: Use `bun` and `bunx`, not `npm` and `npx`\",\n      \"line\": 10,\n      \"subject\": \"npm\",\n      \"tool_category\": \"package_manager\",\n      \"mode\": \"negated\"\n    },\n    {\n      \"type\": \"path_exists\",\n      \"quote\": \"apps/sim/\",\n      \"line\": 22,\n      \"subject\": \"apps/sim/\",\n      \"path_components\": [\n        \"apps/sim/\",\n        \"app\",\n        \"blocks\",\n        \"components\",\n        \"executor\",\n        \"hooks\",\n        \"lib\",\n        \"providers\",\n        \"stores\",\n        \"tools\",\n        \"triggers\"\n      ],\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"dependency\",\n      \"quote\": \"Predictable State: Zustand for global state, useState for UI-only concerns\",\n      \"line\": 18,\n      \"subject\": \"zustand\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"import_rule\",\n      \"quote\": \"Always use absolute imports. Never relative imports.\",\n      \"line\": 45,\n      \"subject\": \"relative\",\n      \"scope\": \"apps/sim/\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"dependency\",\n      \"quote\": \"Stores live in `stores/`. Complex stores split into `store.ts` + `types.ts`.\",\n      \"line\": 113,\n      \"subject\": \"stores/\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"path_exists\",\n      \"quote\": \"All React Query hooks live in `hooks/queries/`\",\n      \"line\": 137,\n      \"subject\": \"hooks/queries/\",\n      \"mode\": \"asserts_existing\"\n    }\n  ]\n}\n```",
+ "parse_ok": true,
+ "parse_error": null,
+ "parse_retries": 0,
+ "latency_s": 4.0279566389508545,
+ "usage": {
+  "prompt": 4373,
+  "completion": 641
+ },
+ "n_api_calls": 1,
+ "finish_reason": "stop",
+ "error": null,
+ "discarded_attempt_texts": []
+}

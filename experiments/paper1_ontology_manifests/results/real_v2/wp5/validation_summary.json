@@ -1,0 +1,79 @@
+{
+ "generated_at": "2026-10-06T18:05:40.325696+00:00",
+ "pool_stage_counts_before_validation": {
+  "initial_development": 1434,
+  "evolution": 1732,
+  "servicing": 91,
+  "phase_out": 35
+ },
+ "attempted_per_stage": {
+  "initial_development": 40,
+  "evolution": 36,
+  "servicing": 29,
+  "phase_out": 35
+ },
+ "validated_per_stage": {
+  "initial_development": 26,
+  "evolution": 25,
+  "servicing": 25,
+  "phase_out": 31
+ },
+ "validated_repos_per_stage": {
+  "initial_development": 26,
+  "evolution": 25,
+  "servicing": 21,
+  "phase_out": 13
+ },
+ "validation_rate": {
+  "initial_development": 0.65,
+  "evolution": 0.694,
+  "servicing": 0.862,
+  "phase_out": 0.886
+ },
+ "failures_by_reason": {
+  "f2p_fail_after_gold": 14,
+  "base_tests_no_output": 4,
+  "p2p_unstable_env": 4,
+  "env:requirements_install_failed": 3,
+  "env:install_failed": 7,
+  "repo_skipped": 1,
+  "base_tests_timeout": 1,
+  "env:pip_packages_install_failed": 1
+ },
+ "failures_by_reason_per_stage": {
+  "initial_development": {
+   "f2p_fail_after_gold": 7,
+   "base_tests_no_output": 3,
+   "p2p_unstable_env": 1,
+   "env:requirements_install_failed": 2,
+   "env:install_failed": 1
+  },
+  "evolution": {
+   "p2p_unstable_env": 2,
+   "repo_skipped": 1,
+   "f2p_fail_after_gold": 3,
+   "env:install_failed": 3,
+   "env:requirements_install_failed": 1,
+   "base_tests_no_output": 1
+  },
+  "servicing": {
+   "f2p_fail_after_gold": 2,
+   "env:install_failed": 2
+  },
+  "phase_out": {
+   "base_tests_timeout": 1,
+   "f2p_fail_after_gold": 1,
+   "p2p_unstable_env": 1,
+   "env:pip_packages_install_failed": 1
+  }
+ },
+ "env_build_seconds": {
+  "median": 45.9,
+  "max": 388.1,
+  "n": 147
+ },
+ "venv_mb_median": 84.8,
+ "mean_total_s_per_task": 91.2,
+ "n_validated": 113,
+ "n_attempted": 148
+}

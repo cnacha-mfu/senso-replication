@@ -1,0 +1,336 @@
+{
+ "task_id": "StellarCN__py-stellar-base-817",
+ "repo": "StellarCN/py-stellar-base",
+ "stage": "initial_development",
+ "rounds": 1,
+ "rejects": {},
+ "flags": [
+  "kind3_dropped",
+  "kind4_R_used_I_competitor"
+ ],
+ "info": {
+  "slots": {
+   "test_root": "tests",
+   "P1": {
+    "replaced": "stellar_sdk/xdr",
+    "name": "internal",
+    "F_R": "stellar_sdk/internal",
+    "F_I": "stellar_sdk/call_builder/internal"
+   },
+   "P2": {
+    "replaced": "stellar_sdk/call_builder/base/base_call_builder.py",
+    "F_R": "stellar_sdk/operation/bump_footprint_expiration.py",
+    "F_I": "examples/soroban_bump_footprint_expiration.py"
+   },
+   "D": {
+    "replaced": "pynacl",
+    "F_R": "boltons",
+    "F_I": "boltons"
+   }
+  },
+  "why": {
+   "test_command": [
+    {
+     "root": "tests",
+     "T3": "SupportedClaim",
+     "T1": "SupportedClaim",
+     "collect_ok": true
+    }
+   ],
+   "kind1": {
+    "p1_idx": 5,
+    "gold0": "stellar_sdk",
+    "unrelated": "stellar_sdk/call_builder",
+    "base_R": "stellar_sdk",
+    "base_I": "stellar_sdk/call_builder"
+   },
+   "kind2": {
+    "p2_idx": 2,
+    "n_deleted_py": 280,
+    "found": {
+     "F_R": "stellar_sdk/operation/bump_footprint_expiration.py",
+     "F_I": "examples/soroban_bump_footprint_expiration.py"
+    }
+   },
+   "kind3": {
+    "run": null,
+    "install": null,
+    "test_ok": true,
+    "install_ok": true
+   },
+   "kind4": {
+    "deps": [
+     [
+      "xdrlib3",
+      false
+     ],
+     [
+      "requests",
+      false
+     ],
+     [
+      "mnemonic",
+      false
+     ],
+     [
+      "pydantic",
+      false
+     ],
+     [
+      "pynacl",
+      false
+     ]
+    ],
+    "d_idx": 4,
+    "src_R": "pynacl",
+    "src_I": "pynacl",
+    "n_decls": 27,
+    "n_dist": 27
+   }
+  },
+  "length": {
+   "T": 544,
+   "F_R": 544,
+   "F_I": 552
+  },
+  "fallbacks": {
+   "F_R": [
+    "kind4_I_competitor"
+   ],
+   "F_I": []
+  },
+  "modes": {
+   "F_R": {
+    "1": "replace",
+    "2": "replace",
+    "4": "replace"
+   },
+   "F_I": {
+    "1": "replace",
+    "2": "replace",
+    "4": "replace"
+   }
+  },
+  "length_diff": {
+   "F_R": 0,
+   "F_I": 8
+  },
+  "n_claims_T": 19,
+  "n_false": {
+   "F_R": 3,
+   "F_I": 3
+  },
+  "pointer_in_issue": true,
+  "gold_dirs": [
+   "stellar_sdk"
+  ],
+  "gold_files": [
+   "stellar_sdk/scval.py"
+  ]
+ },
+ "tokens": {
+  "F_R": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "stellar_sdk/internal",
+     "internal"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "stellar_sdk/operation/bump_footprint_expiration.py",
+     "bump_footprint_expiration.py"
+    ]
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "boltons"
+    ]
+   }
+  ],
+  "F_I": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "stellar_sdk/call_builder/internal",
+     "internal"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "examples/soroban_bump_footprint_expiration.py",
+     "soroban_bump_footprint_expiration.py"
+    ]
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "boltons"
+    ]
+   }
+  ]
+ },
+ "unresolved_pre_hermit": [],
+ "sha256": {
+  "T": "29348735e35ca2cf7c02dc737e2d8ab2f8e32d773cd0ad9b2ff0de7fac46e595",
+  "F_R": "eff8f91cc57da3c48c51c4d8d136aa85d7d482afcae083a3883dda15bc3624be",
+  "F_I": "320d1afaccc564c4c68cd2a5d64dc40b8358c6fe3137ed4584af6ac2ba2d266e"
+ },
+ "chars": {
+  "T": 544,
+  "F_R": 544,
+  "F_I": 552
+ },
+ "claims": {
+  "T": [
+   "T1|stellar_sdk",
+   "T1|stellar_sdk/call_builder",
+   "T1|stellar_sdk/client",
+   "T1|stellar_sdk/operation",
+   "T1|stellar_sdk/sep",
+   "T1|stellar_sdk/xdr",
+   "T1|tests",
+   "T1|stellar_sdk/sep/txrep.py",
+   "T1|stellar_sdk/xdr/operation_result_tr.py",
+   "T1|stellar_sdk/call_builder/base/base_call_builder.py",
+   "T3|test_framework|pytest",
+   "T1|tests",
+   "T1|pyproject.toml",
+   "T4|xdrlib3|",
+   "T4|requests|",
+   "T4|mnemonic|",
+   "T4|pydantic|",
+   "T4|pynacl|",
+   "T6|python|3008000000@2"
+  ],
+  "F_R": [
+   "T1|stellar_sdk",
+   "T1|stellar_sdk/call_builder",
+   "T1|stellar_sdk/client",
+   "T1|stellar_sdk/operation",
+   "T1|stellar_sdk/sep",
+   "T1|stellar_sdk/internal",
+   "T1|tests",
+   "T1|stellar_sdk/sep/txrep.py",
+   "T1|stellar_sdk/xdr/operation_result_tr.py",
+   "T1|stellar_sdk/operation/bump_footprint_expiration.py",
+   "T3|test_framework|pytest",
+   "T1|tests",
+   "T1|pyproject.toml",
+   "T4|xdrlib3|",
+   "T4|requests|",
+   "T4|mnemonic|",
+   "T4|pydantic|",
+   "T4|boltons|",
+   "T6|python|3008000000@2"
+  ],
+  "F_I": [
+   "T1|stellar_sdk",
+   "T1|stellar_sdk/call_builder",
+   "T1|stellar_sdk/client",
+   "T1|stellar_sdk/operation",
+   "T1|stellar_sdk/sep",
+   "T1|stellar_sdk/call_builder/internal",
+   "T1|tests",
+   "T1|stellar_sdk/sep/txrep.py",
+   "T1|stellar_sdk/xdr/operation_result_tr.py",
+   "T1|examples/soroban_bump_footprint_expiration.py",
+   "T3|test_framework|pytest",
+   "T1|tests",
+   "T1|pyproject.toml",
+   "T4|xdrlib3|",
+   "T4|requests|",
+   "T4|mnemonic|",
+   "T4|pydantic|",
+   "T4|boltons|",
+   "T6|python|3008000000@2"
+  ]
+ },
+ "python_spec": ">=3.8,<4.0",
+ "token_audit": [
+  {
+   "cond": "F_R",
+   "kind": 1,
+   "type": "path",
+   "name": "stellar_sdk/internal",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 2,
+   "type": "path",
+   "name": "stellar_sdk/operation/bump_footprint_expiration.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 4,
+   "type": "word",
+   "name": "boltons",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 1,
+   "type": "path",
+   "name": "stellar_sdk/call_builder/internal",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 2,
+   "type": "path",
+   "name": "examples/soroban_bump_footprint_expiration.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 4,
+   "type": "word",
+   "name": "boltons",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  }
+ ],
+ "dist_imports_used": {
+  "xdrlib3": [
+   "xdrlib3"
+  ],
+  "requests": [
+   "requests"
+  ],
+  "mnemonic": [
+   "mnemonic"
+  ],
+  "pydantic": [
+   "pydantic"
+  ],
+  "pynacl": [
+   "nacl"
+  ],
+  "boltons": null
+ }
+}

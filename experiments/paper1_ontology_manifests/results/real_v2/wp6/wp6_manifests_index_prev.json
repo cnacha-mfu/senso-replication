@@ -1,0 +1,6663 @@
+{
+ "tasks": {
+  "BlueBrain__NeuroM-1001": {
+   "repo": "BlueBrain/NeuroM",
+   "stage": "servicing",
+   "sha256": {
+    "T": "d16e72e6375c6e9428e0945951cf9eb53dc301deff30aebcc4d27b07dbcd2f30",
+    "F_R": "bfc08d3e7f16630c2437bfe2b4980ee56733d94ecbbd07a9000ae58c472751da",
+    "F_I": "39794d949a09922603c6710f063890b04f28dbbd03b45fad9b0ba320ea7b1388"
+   },
+   "chars": {
+    "T": 447,
+    "F_R": 458,
+    "F_I": 463
+   },
+   "flags": [
+    "no_test_command",
+    "kind3_dropped"
+   ],
+   "tokens": {
+    "F_R": [
+     {
+      "kind": 1,
+      "type": "path",
+      "values": [
+       "neurom/features/internal",
+       "internal"
+      ]
+     },
+     {
+      "kind": 2,
+      "type": "path",
+      "values": [
+       "neurom/features/neuritefunc.py",
+       "neuritefunc.py"
+      ]
+     },
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "jax"
+      ]
+     }
+    ],
+    "F_I": [
+     {
+      "kind": 1,
+      "type": "path",
+      "values": [
+       "neurom/apps/internal",
+       "internal"
+      ]
+     },
+     {
+      "kind": 2,
+      "type": "path",
+      "values": [
+       "examples/neuron_iteration_analysis.py",
+       "neuron_iteration_analysis.py"
+      ]
+     },
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "typer"
+      ]
+     }
+    ]
+   },
+   "rejects": {},
+   "rounds": 1,
+   "python_spec": ">=3.7",
+   "slots": {
+    "P1": {
+     "replaced": "neurom/view",
+     "name": "internal",
+     "F_R": "neurom/features/internal",
+     "F_I": "neurom/apps/internal"
+    },
+    "P2": {
+     "replaced": "neurom/core/morphology.py",
+     "F_R": "neurom/features/neuritefunc.py",
+     "F_I": "examples/neuron_iteration_analysis.py"
+    },
+    "D": {
+     "replaced": "click",
+     "F_R": "jax",
+     "F_I": "typer"
+    }
+   },
+   "fallbacks": {
+    "F_R": [],
+    "F_I": []
+   },
+   "n_claims_T": 18,
+   "n_false": {
+    "F_R": 3,
+    "F_I": 3
+   },
+   "pointer_in_issue": true,
+   "gold_dirs": [
+    "neurom/features"
+   ],
+   "manifest_all_ok": {
+    "T": true,
+    "F_R": true,
+    "F_I": true
+   }
+  },
+  "CleanCut__green-256": {
+   "repo": "CleanCut/green",
+   "stage": "servicing",
+   "sha256": {
+    "T": "7b27978321a4d96614aafb2dada63cff1c198634d3d4f73c10d080ec54b69f08",
+    "F_R": "d7eda1f6baff4a4e315bdceba05c4576a236232dda0dea23a2e17df8ff461666",
+    "F_I": "d7eda1f6baff4a4e315bdceba05c4576a236232dda0dea23a2e17df8ff461666"
+   },
+   "chars": {
+    "T": 234,
+    "F_R": 232,
+    "F_I": 232
+   },
+   "flags": [
+    "no_test_command",
+    "kind1_dropped",
+    "kind2_dropped",
+    "kind3_dropped",
+    "kind4_R_used_I_competitor"
+   ],
+   "tokens": {
+    "F_R": [
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "boltons"
+      ]
+     }
+    ],
+    "F_I": [
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "boltons"
+      ]
+     }
+    ]
+   },
+   "rejects": {},
+   "rounds": 1,
+   "python_spec": null,
+   "slots": {
+    "D": {
+     "replaced": "unidecode",
+     "F_R": "boltons",
+     "F_I": "boltons"
+    }
+   },
+   "fallbacks": {
+    "F_R": [
+     "kind4_I_competitor"
+    ],
+    "F_I": []
+   },
+   "n_claims_T": 9,
+   "n_false": {
+    "F_R": 1,
+    "F_I": 1
+   },
+   "pointer_in_issue": true,
+   "gold_dirs": [
+    ".github/workflows",
+    "green"
+   ],
+   "manifest_all_ok": {
+    "T": true,
+    "F_R": true,
+    "F_I": true
+   }
+  },
+  "EltonChou__EorzeaEnv-15": {
+   "repo": "EltonChou/EorzeaEnv",
+   "stage": "evolution",
+   "sha256": {
+    "T": "7f836b0f21e6a95e88461e23b65b2f71330b872a91628836becb6aad8c3e2b43",
+    "F_R": "42b8fa657bc34bc20a241dbd2e5d892842c36f05219cdcf5f556b8d899a787f5",
+    "F_I": "2af4cf47534ff85be4bc552fe12214073ac71b489ccf46e39009e7b71bd51cdd"
+   },
+   "chars": {
+    "T": 311,
+    "F_R": 291,
+    "F_I": 299
+   },
+   "flags": [
+    "kind2_dropped",
+    "kind4_R_used_I_competitor",
+    "length_violation_F_R"
+   ],
+   "tokens": {
+    "F_R": [
+     {
+      "kind": 1,
+      "type": "path",
+      "values": [
+       "EorzeaEnv/core",
+       "core"
+      ]
+     },
+     {
+      "kind": 3,
+      "type": "regex",
+      "regex": "\\bmake\\b[^|;&\\n]*\\btests\\b",
+      "target": "tests"
+     },
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "boltons"
+      ]
+     }
+    ],
+    "F_I": [
+     {
+      "kind": 1,
+      "type": "path",
+      "values": [
+       "EorzeaEnv/Data/core",
+       "core"
+      ]
+     },
+     {
+      "kind": 3,
+      "type": "regex",
+      "regex": "\\bmake\\b[^|;&\\n]*\\bdev\\b",
+      "target": "dev"
+     },
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "boltons"
+      ]
+     }
+    ]
+   },
+   "rejects": {},
+   "rounds": 1,
+   "python_spec": ">=3.8,<=3.13",
+   "slots": {
+    "test_root": "test",
+    "P1": {
+     "replaced": "EorzeaEnv/Data",
+     "name": "core",
+     "F_R": "EorzeaEnv/core",
+     "F_I": "EorzeaEnv/Data/core"
+    },
+    "C": {
+     "F_R": "make tests",
+     "F_I": "make dev"
+    },
+    "D": {
+     "replaced": "rapidfuzz",
+     "F_R": "boltons",
+     "F_I": "boltons"
+    }
+   },
+   "fallbacks": {
+    "F_R": [
+     "kind4_I_competitor"
+    ],
+    "F_I": []
+   },
+   "n_claims_T": 11,
+   "n_false": {
+    "F_R": 3,
+    "F_I": 3
+   },
+   "pointer_in_issue": true,
+   "gold_dirs": [
+    "EorzeaEnv"
+   ],
+   "manifest_all_ok": {
+    "T": true,
+    "F_R": true,
+    "F_I": true
+   }
+  },
+  "Fatal1ty__mashumaro-178": {
+   "repo": "Fatal1ty/mashumaro",
+   "stage": "phase_out",
+   "sha256": {
+    "T": "302fe7cc11143234cb417e36d1974e34814b9bf25370db1d241d6857f4b2984d",
+    "F_R": "f391f43ad6e84272fb634afade9b7043923532c93859ae02f9b778bac3568e95",
+    "F_I": "a3f83845147aacb189d154058bab593440603ff2e247777de0bb697f09306710"
+   },
+   "chars": {
+    "T": 483,
+    "F_R": 473,
+    "F_I": 478
+   },
+   "flags": [],
+   "tokens": {
+    "F_R": [
+     {
+      "kind": 1,
+      "type": "path",
+      "values": [
+       "mashumaro/core/internal",
+       "internal"
+      ]
+     },
+     {
+      "kind": 2,
+      "type": "path",
+      "values": [
+       "mashumaro/core/meta/patch.py",
+       "patch.py"
+      ]
+     },
+     {
+      "kind": 3,
+      "type": "regex",
+      "regex": "\\bmake\\b[^|;&\\n]*\\btest\\b",
+      "target": "test"
+     },
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "toolz"
+      ]
+     }
+    ],
+    "F_I": [
+     {
+      "kind": 1,
+      "type": "path",
+      "values": [
+       "mashumaro/jsonschema/internal",
+       "internal"
+      ]
+     },
+     {
+      "kind": 2,
+      "type": "path",
+      "values": [
+       "benchmark/run.py",
+       "run.py"
+      ]
+     },
+     {
+      "kind": 3,
+      "type": "regex",
+      "regex": "\\bmake\\b[^|;&\\n]*\\binstall\\b",
+      "target": "install"
+     },
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "boltons"
+      ]
+     }
+    ]
+   },
+   "rejects": {},
+   "rounds": 1,
+   "python_spec": ">=3.8",
+   "slots": {
+    "test_root": "tests",
+    "P1": {
+     "replaced": "mashumaro/mixins",
+     "name": "internal",
+     "F_R": "mashumaro/core/internal",
+     "F_I": "mashumaro/jsonschema/internal"
+    },
+    "P2": {
+     "replaced": "mashumaro/mixins/dict.py",
+     "F_R": "mashumaro/core/meta/patch.py",
+     "F_I": "benchmark/run.py"
+    },
+    "C": {
+     "F_R": "make test",
+     "F_I": "make install"
+    },
+    "D": {
+     "replaced": "orjson",
+     "F_R": "toolz",
+     "F_I": "boltons"
+    }
+   },
+   "fallbacks": {
+    "F_R": [],
+    "F_I": []
+   },
+   "n_claims_T": 17,
+   "n_false": {
+    "F_R": 4,
+    "F_I": 4
+   },
+   "pointer_in_issue": false,
+   "gold_dirs": [
+    "mashumaro/core"
+   ],
+   "manifest_all_ok": {
+    "T": true,
+    "F_R": true,
+    "F_I": true
+   }
+  },
+  "Fatal1ty__mashumaro-180": {
+   "repo": "Fatal1ty/mashumaro",
+   "stage": "phase_out",
+   "sha256": {
+    "T": "22a7f4a9bdf141a8b168739fcdde3d4cbdb921e8ce97b2c41ee5a321adde2c4d",
+    "F_R": "1fc70b440ab8e118e94ccfcb03aa44cec26402f2883b9ba9abc4592b567b03eb",
+    "F_I": "ea1b60e64b99b4435d603fddac71b9986a754f10e7d7df07b16a9a38f3903b17"
+   },
+   "chars": {
+    "T": 503,
+    "F_R": 492,
+    "F_I": 501
+   },
+   "flags": [],
+   "tokens": {
+    "F_R": [
+     {
+      "kind": 1,
+      "type": "path",
+      "values": [
+       "mashumaro/core/internal",
+       "internal"
+      ]
+     },
+     {
+      "kind": 2,
+      "type": "path",
+      "values": [
+       "mashumaro/core/meta/patch.py",
+       "patch.py"
+      ]
+     },
+     {
+      "kind": 3,
+      "type": "regex",
+      "regex": "\\bmake\\b[^|;&\\n]*\\btest\\b",
+      "target": "test"
+     },
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "boltons"
+      ]
+     }
+    ],
+    "F_I": [
+     {
+      "kind": 1,
+      "type": "path",
+      "values": [
+       "mashumaro/codecs/internal",
+       "internal"
+      ]
+     },
+     {
+      "kind": 2,
+      "type": "path",
+      "values": [
+       "examples/json_remapping.py",
+       "json_remapping.py"
+      ]
+     },
+     {
+      "kind": 3,
+      "type": "regex",
+      "regex": "\\bmake\\b[^|;&\\n]*\\binstall\\b",
+      "target": "install"
+     },
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "tomlkit"
+      ]
+     }
+    ]
+   },
+   "rejects": {},
+   "rounds": 1,
+   "python_spec": ">=3.8",
+   "slots": {
+    "test_root": "tests",
+    "P1": {
+     "replaced": "mashumaro/mixins",
+     "name": "internal",
+     "F_R": "mashumaro/core/internal",
+     "F_I": "mashumaro/codecs/internal"
+    },
+    "P2": {
+     "replaced": "mashumaro/codecs/_builder.py",
+     "F_R": "mashumaro/core/meta/patch.py",
+     "F_I": "examples/json_remapping.py"
+    },
+    "C": {
+     "F_R": "make test",
+     "F_I": "make install"
+    },
+    "D": {
+     "replaced": "tomli",
+     "F_R": "boltons",
+     "F_I": "tomlkit"
+    }
+   },
+   "fallbacks": {
+    "F_R": [],
+    "F_I": []
+   },
+   "n_claims_T": 18,
+   "n_false": {
+    "F_R": 4,
+    "F_I": 4
+   },
+   "pointer_in_issue": false,
+   "gold_dirs": [
+    "mashumaro/core"
+   ],
+   "manifest_all_ok": {
+    "T": true,
+    "F_R": true,
+    "F_I": true
+   }
+  },
+  "Fatal1ty__mashumaro-185": {
+   "repo": "Fatal1ty/mashumaro",
+   "stage": "phase_out",
+   "sha256": {
+    "T": "8369c1a579310839d8d086c8a6549c899bcfbd070fb756bb832b71cfb00a6b6e",
+    "F_R": "83362332254399ec04229e75697afac2eb2c4b4d8cc7f4684bc6cf77863a2d59",
+    "F_I": "65328cb54bf5834b294cfd5edab6b831011bf3d8e049588923d25bb0748c958a"
+   },
+   "chars": {
+    "T": 407,
+    "F_R": 416,
+    "F_I": 409
+   },
+   "flags": [
+    "no_test_command",
+    "kind3_dropped"
+   ],
+   "tokens": {
+    "F_R": [
+     {
+      "kind": 1,
+      "type": "path",
+      "values": [
+       "mashumaro/core/internal",
+       "internal"
+      ]
+     },
+     {
+      "kind": 2,
+      "type": "path",
+      "values": [
+       "mashumaro/core/meta/patch.py",
+       "patch.py"
+      ]
+     },
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "typing-inspect",
+       "typing_inspect"
+      ]
+     }
+    ],
+    "F_I": [
+     {
+      "kind": 1,
+      "type": "path",
+      "values": [
+       "mashumaro/codecs/internal",
+       "internal"
+      ]
+     },
+     {
+      "kind": 2,
+      "type": "path",
+      "values": [
+       "examples/json_remapping.py",
+       "json_remapping.py"
+      ]
+     },
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "tomlkit"
+      ]
+     }
+    ]
+   },
+   "rejects": {},
+   "rounds": 1,
+   "python_spec": ">=3.8",
+   "slots": {
+    "P1": {
+     "replaced": "mashumaro/mixins",
+     "name": "internal",
+     "F_R": "mashumaro/core/internal",
+     "F_I": "mashumaro/codecs/internal"
+    },
+    "P2": {
+     "replaced": "mashumaro/codecs/_builder.py",
+     "F_R": "mashumaro/core/meta/patch.py",
+     "F_I": "examples/json_remapping.py"
+    },
+    "D": {
+     "replaced": "tomli",
+     "F_R": "typing-inspect",
+     "F_I": "tomlkit"
+    }
+   },
+   "fallbacks": {
+    "F_R": [],
+    "F_I": []
+   },
+   "n_claims_T": 13,
+   "n_false": {
+    "F_R": 3,
+    "F_I": 3
+   },
+   "pointer_in_issue": false,
+   "gold_dirs": [
+    "mashumaro/core"
+   ],
+   "manifest_all_ok": {
+    "T": true,
+    "F_R": true,
+    "F_I": true
+   }
+  },
+  "Fatal1ty__mashumaro-189": {
+   "repo": "Fatal1ty/mashumaro",
+   "stage": "phase_out",
+   "sha256": {
+    "T": "8369c1a579310839d8d086c8a6549c899bcfbd070fb756bb832b71cfb00a6b6e",
+    "F_R": "83362332254399ec04229e75697afac2eb2c4b4d8cc7f4684bc6cf77863a2d59",
+    "F_I": "65328cb54bf5834b294cfd5edab6b831011bf3d8e049588923d25bb0748c958a"
+   },
+   "chars": {
+    "T": 407,
+    "F_R": 416,
+    "F_I": 409
+   },
+   "flags": [
+    "no_test_command",
+    "kind3_dropped"
+   ],
+   "tokens": {
+    "F_R": [
+     {
+      "kind": 1,
+      "type": "path",
+      "values": [
+       "mashumaro/core/internal",
+       "internal"
+      ]
+     },
+     {
+      "kind": 2,
+      "type": "path",
+      "values": [
+       "mashumaro/core/meta/patch.py",
+       "patch.py"
+      ]
+     },
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "typing-inspect",
+       "typing_inspect"
+      ]
+     }
+    ],
+    "F_I": [
+     {
+      "kind": 1,
+      "type": "path",
+      "values": [
+       "mashumaro/codecs/internal",
+       "internal"
+      ]
+     },
+     {
+      "kind": 2,
+      "type": "path",
+      "values": [
+       "examples/json_remapping.py",
+       "json_remapping.py"
+      ]
+     },
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "tomlkit"
+      ]
+     }
+    ]
+   },
+   "rejects": {},
+   "rounds": 1,
+   "python_spec": ">=3.8",
+   "slots": {
+    "P1": {
+     "replaced": "mashumaro/mixins",
+     "name": "internal",
+     "F_R": "mashumaro/core/internal",
+     "F_I": "mashumaro/codecs/internal"
+    },
+    "P2": {
+     "replaced": "mashumaro/codecs/_builder.py",
+     "F_R": "mashumaro/core/meta/patch.py",
+     "F_I": "examples/json_remapping.py"
+    },
+    "D": {
+     "replaced": "tomli",
+     "F_R": "typing-inspect",
+     "F_I": "tomlkit"
+    }
+   },
+   "fallbacks": {
+    "F_R": [],
+    "F_I": []
+   },
+   "n_claims_T": 13,
+   "n_false": {
+    "F_R": 3,
+    "F_I": 3
+   },
+   "pointer_in_issue": false,
+   "gold_dirs": [
+    "mashumaro/core"
+   ],
+   "manifest_all_ok": {
+    "T": true,
+    "F_R": true,
+    "F_I": true
+   }
+  },
+  "Fatal1ty__mashumaro-220": {
+   "repo": "Fatal1ty/mashumaro",
+   "stage": "phase_out",
+   "sha256": {
+    "T": "8369c1a579310839d8d086c8a6549c899bcfbd070fb756bb832b71cfb00a6b6e",
+    "F_R": "83362332254399ec04229e75697afac2eb2c4b4d8cc7f4684bc6cf77863a2d59",
+    "F_I": "65328cb54bf5834b294cfd5edab6b831011bf3d8e049588923d25bb0748c958a"
+   },
+   "chars": {
+    "T": 407,
+    "F_R": 416,
+    "F_I": 409
+   },
+   "flags": [
+    "no_test_command",
+    "kind3_dropped"
+   ],
+   "tokens": {
+    "F_R": [
+     {
+      "kind": 1,
+      "type": "path",
+      "values": [
+       "mashumaro/core/internal",
+       "internal"
+      ]
+     },
+     {
+      "kind": 2,
+      "type": "path",
+      "values": [
+       "mashumaro/core/meta/patch.py",
+       "patch.py"
+      ]
+     },
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "typing-inspect",
+       "typing_inspect"
+      ]
+     }
+    ],
+    "F_I": [
+     {
+      "kind": 1,
+      "type": "path",
+      "values": [
+       "mashumaro/codecs/internal",
+       "internal"
+      ]
+     },
+     {
+      "kind": 2,
+      "type": "path",
+      "values": [
+       "examples/json_remapping.py",
+       "json_remapping.py"
+      ]
+     },
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "tomlkit"
+      ]
+     }
+    ]
+   },
+   "rejects": {},
+   "rounds": 1,
+   "python_spec": ">=3.8",
+   "slots": {
+    "P1": {
+     "replaced": "mashumaro/mixins",
+     "name": "internal",
+     "F_R": "mashumaro/core/internal",
+     "F_I": "mashumaro/codecs/internal"
+    },
+    "P2": {
+     "replaced": "mashumaro/codecs/_builder.py",
+     "F_R": "mashumaro/core/meta/patch.py",
+     "F_I": "examples/json_remapping.py"
+    },
+    "D": {
+     "replaced": "tomli",
+     "F_R": "typing-inspect",
+     "F_I": "tomlkit"
+    }
+   },
+   "fallbacks": {
+    "F_R": [],
+    "F_I": []
+   },
+   "n_claims_T": 13,
+   "n_false": {
+    "F_R": 3,
+    "F_I": 3
+   },
+   "pointer_in_issue": false,
+   "gold_dirs": [
+    "mashumaro/core"
+   ],
+   "manifest_all_ok": {
+    "T": true,
+    "F_R": true,
+    "F_I": true
+   }
+  },
+  "NTNU-IHB__PythonFMU-158": {
+   "repo": "NTNU-IHB/PythonFMU",
+   "stage": "initial_development",
+   "sha256": {
+    "T": "73468dae9284aa44d5b87ee05069cd6f08bcf5d6a0b69b8accb5ed4c65fe7a17",
+    "F_R": "f3e97dd15677195e1a3b2c3c3f2dde53261404a705c5074c90703892e0e430c8",
+    "F_I": "999eedc57b8074e29d87edaf18dea95472dced0c3de80210b1a8077029987e24"
+   },
+   "chars": {
+    "T": 215,
+    "F_R": 192,
+    "F_I": 211
+   },
+   "flags": [
+    "kind1_dropped",
+    "kind2_dropped",
+    "kind4_dropped",
+    "length_violation_F_R"
+   ],
+   "tokens": {
+    "F_R": [
+     {
+      "kind": 3,
+      "type": "regex",
+      "regex": "\\bmake\\b[^|;&\\n]*\\btest\\b",
+      "target": "test"
+     }
+    ],
+    "F_I": [
+     {
+      "kind": 3,
+      "type": "regex",
+      "regex": "\\bmake\\b[^|;&\\n]*\\binstall\\b",
+      "target": "install"
+     }
+    ]
+   },
+   "rejects": {},
+   "rounds": 1,
+   "python_spec": null,
+   "slots": {
+    "test_root": "pythonfmu/tests",
+    "C": {
+     "F_R": "make test",
+     "F_I": "make install"
+    }
+   },
+   "fallbacks": {
+    "F_R": [],
+    "F_I": []
+   },
+   "n_claims_T": 6,
+   "n_false": {
+    "F_R": 1,
+    "F_I": 1
+   },
+   "pointer_in_issue": true,
+   "gold_dirs": [
+    "pythonfmu"
+   ],
+   "manifest_all_ok": {
+    "T": true,
+    "F_R": true,
+    "F_I": true
+   }
+  },
+  "PyCQA__flake8-bugbear-12": {
+   "repo": "PyCQA/flake8-bugbear",
+   "stage": "initial_development",
+   "sha256": {
+    "T": "b7b7484da856a60930f3e362854e471eacf6d8686a06f416c870c84490af8522",
+    "F_R": "b7b7484da856a60930f3e362854e471eacf6d8686a06f416c870c84490af8522",
+    "F_I": "b7b7484da856a60930f3e362854e471eacf6d8686a06f416c870c84490af8522"
+   },
+   "chars": {
+    "T": 99,
+    "F_R": 99,
+    "F_I": 99
+   },
+   "flags": [
+    "no_gold_dir",
+    "no_test_command",
+    "kind1_dropped",
+    "kind2_dropped",
+    "kind3_dropped",
+    "kind4_dropped"
+   ],
+   "tokens": {
+    "F_R": [],
+    "F_I": []
+   },
+   "rejects": {},
+   "rounds": 1,
+   "python_spec": null,
+   "slots": {},
+   "fallbacks": {
+    "F_R": [],
+    "F_I": []
+   },
+   "n_claims_T": 2,
+   "n_false": {
+    "F_R": 0,
+    "F_I": 0
+   },
+   "pointer_in_issue": false,
+   "gold_dirs": [],
+   "manifest_all_ok": {
+    "T": true,
+    "F_R": true,
+    "F_I": true
+   }
+  },
+  "PyCQA__isort-2283": {
+   "repo": "PyCQA/isort",
+   "stage": "servicing",
+   "sha256": {
+    "T": "68ffa7a55031488530212d9affb61b4c9eeb028bc1e0c4baa20a794423e1cec2",
+    "F_R": "ccc5ab49626e9950c2fc82315ca0ef41ab50ef49f188acc2af1187c248c788cc",
+    "F_I": "c2588be4271166d8c67d3fff49f43d19e10b47a0d834a1472602d32c8a996a58"
+   },
+   "chars": {
+    "T": 344,
+    "F_R": 347,
+    "F_I": 369
+   },
+   "flags": [
+    "no_test_command",
+    "kind3_dropped",
+    "kind4_dropped",
+    "length_violation_F_I"
+   ],
+   "tokens": {
+    "F_R": [
+     {
+      "kind": 1,
+      "type": "path",
+      "values": [
+       "isort/internal",
+       "internal"
+      ]
+     },
+     {
+      "kind": 2,
+      "type": "path",
+      "values": [
+       "isort/_future/_dataclasses.py",
+       "_dataclasses.py"
+      ]
+     }
+    ],
+    "F_I": [
+     {
+      "kind": 1,
+      "type": "path",
+      "values": [
+       "example_isort_formatting_plugin/internal",
+       "internal"
+      ]
+     },
+     {
+      "kind": 2,
+      "type": "path",
+      "values": [
+       "tests/test_integration.py",
+       "test_integration.py"
+      ]
+     }
+    ]
+   },
+   "rejects": {},
+   "rounds": 1,
+   "python_spec": ">=3.8.0",
+   "slots": {
+    "P1": {
+     "replaced": "isort/stdlibs",
+     "name": "internal",
+     "F_R": "isort/internal",
+     "F_I": "example_isort_formatting_plugin/internal"
+    },
+    "P2": {
+     "replaced": "isort/deprecated/finders.py",
+     "F_R": "isort/_future/_dataclasses.py",
+     "F_I": "tests/test_integration.py"
+    }
+   },
+   "fallbacks": {
+    "F_R": [],
+    "F_I": []
+   },
+   "n_claims_T": 11,
+   "n_false": {
+    "F_R": 2,
+    "F_I": 2
+   },
+   "pointer_in_issue": true,
+   "gold_dirs": [
+    "isort"
+   ],
+   "manifest_all_ok": {
+    "T": true,
+    "F_R": true,
+    "F_I": true
+   }
+  },
+  "PyCQA__pyflakes-675": {
+   "repo": "PyCQA/pyflakes",
+   "stage": "servicing",
+   "sha256": {
+    "T": "e0ab7adef42f36c9f97e00c9b08263dc359913df00c26483c8606bbf5432a265",
+    "F_R": "b072128a54be17a25b75dbe9870d9a5ba2a9fd5b78fca7a28d59e1ed496a6f12",
+    "F_I": "8a217137f6b5e4b6c48270fd36c5fdef9bbbdcecb86cb8ace4a2bfeb3c9b0b60"
+   },
+   "chars": {
+    "T": 279,
+    "F_R": 255,
+    "F_I": 280
+   },
+   "flags": [
+    "kind2_dropped",
+    "kind4_dropped",
+    "length_violation_F_R"
+   ],
+   "tokens": {
+    "F_R": [
+     {
+      "kind": 1,
+      "type": "path",
+      "values": [
+       "pyflakes/core",
+       "core"
+      ]
+     },
+     {
+      "kind": 3,
+      "type": "regex",
+      "regex": "\\bmake\\b[^|;&\\n]*\\btest\\b",
+      "target": "test"
+     }
+    ],
+    "F_I": [
+     {
+      "kind": 1,
+      "type": "path",
+      "values": [
+       "pyflakes/scripts/core",
+       "core"
+      ]
+     },
+     {
+      "kind": 3,
+      "type": "regex",
+      "regex": "\\bmake\\b[^|;&\\n]*\\binstall\\b",
+      "target": "install"
+     }
+    ]
+   },
+   "rejects": {},
+   "rounds": 1,
+   "python_spec": ">=3.6",
+   "slots": {
+    "test_root": "pyflakes/test",
+    "P1": {
+     "replaced": "pyflakes/scripts",
+     "name": "core",
+     "F_R": "pyflakes/core",
+     "F_I": "pyflakes/scripts/core"
+    },
+    "C": {
+     "F_R": "make test",
+     "F_I": "make install"
+    }
+   },
+   "fallbacks": {
+    "F_R": [],
+    "F_I": []
+   },
+   "n_claims_T": 9,
+   "n_false": {
+    "F_R": 2,
+    "F_I": 2
+   },
+   "pointer_in_issue": true,
+   "gold_dirs": [
+    "pyflakes"
+   ],
+   "manifest_all_ok": {
+    "T": true,
+    "F_R": true,
+    "F_I": true
+   }
+  },
+  "StellarCN__py-stellar-base-817": {
+   "repo": "StellarCN/py-stellar-base",
+   "stage": "initial_development",
+   "sha256": {
+    "T": "2f2a420d3bc1fc09ecb516c12d72e231311d029fd8a0ad23fe729d96b7ff6422",
+    "F_R": "37c741528e2ba8ba573dce0102a9806460cf0e7c6ced2d28b33fd4ea2495afdc",
+    "F_I": "0a840c759c40ac3c59de1698e95196ec3ea0484536be9f769dd1d74ea509726d"
+   },
+   "chars": {
+    "T": 502,
+    "F_R": 502,
+    "F_I": 510
+   },
+   "flags": [
+    "no_test_command",
+    "kind3_dropped",
+    "kind4_R_used_I_competitor"
+   ],
+   "tokens": {
+    "F_R": [
+     {
+      "kind": 1,
+      "type": "path",
+      "values": [
+       "stellar_sdk/internal",
+       "internal"
+      ]
+     },
+     {
+      "kind": 2,
+      "type": "path",
+      "values": [
+       "stellar_sdk/operation/bump_footprint_expiration.py",
+       "bump_footprint_expiration.py"
+      ]
+     },
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "boltons"
+      ]
+     }
+    ],
+    "F_I": [
+     {
+      "kind": 1,
+      "type": "path",
+      "values": [
+       "stellar_sdk/call_builder/internal",
+       "internal"
+      ]
+     },
+     {
+      "kind": 2,
+      "type": "path",
+      "values": [
+       "examples/soroban_bump_footprint_expiration.py",
+       "soroban_bump_footprint_expiration.py"
+      ]
+     },
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "boltons"
+      ]
+     }
+    ]
+   },
+   "rejects": {},
+   "rounds": 1,
+   "python_spec": ">=3.8,<4.0",
+   "slots": {
+    "P1": {
+     "replaced": "stellar_sdk/xdr",
+     "name": "internal",
+     "F_R": "stellar_sdk/internal",
+     "F_I": "stellar_sdk/call_builder/internal"
+    },
+    "P2": {
+     "replaced": "stellar_sdk/call_builder/base/base_call_builder.py",
+     "F_R": "stellar_sdk/operation/bump_footprint_expiration.py",
+     "F_I": "examples/soroban_bump_footprint_expiration.py"
+    },
+    "D": {
+     "replaced": "pynacl",
+     "F_R": "boltons",
+     "F_I": "boltons"
+    }
+   },
+   "fallbacks": {
+    "F_R": [
+     "kind4_I_competitor"
+    ],
+    "F_I": []
+   },
+   "n_claims_T": 17,
+   "n_false": {
+    "F_R": 3,
+    "F_I": 3
+   },
+   "pointer_in_issue": true,
+   "gold_dirs": [
+    "stellar_sdk"
+   ],
+   "manifest_all_ok": {
+    "T": true,
+    "F_R": true,
+    "F_I": true
+   }
+  },
+  "VirtusLab__git-machete-179": {
+   "repo": "VirtusLab/git-machete",
+   "stage": "phase_out",
+   "sha256": {
+    "T": "52740750e2f2db626259e9e6c8181ef2f84d04e84f74212462d20e65377dd0d9",
+    "F_R": "5eb133971f5a7be9ff1e35372b41bdf3df0aad6b9049ecf4c89d6ccdf3be0451",
+    "F_I": "9eda36a188feb915677860b02b3177a9763b8b9bf09b8a33cd55a36bf6894d1b"
+   },
+   "chars": {
+    "T": 234,
+    "F_R": 209,
+    "F_I": 226
+   },
+   "flags": [
+    "kind1_dropped",
+    "kind2_dropped",
+    "kind4_dropped",
+    "length_violation_F_R"
+   ],
+   "tokens": {
+    "F_R": [
+     {
+      "kind": 3,
+      "type": "regex",
+      "regex": "\\bmake\\b[^|;&\\n]*\\btest\\b",
+      "target": "test"
+     }
+    ],
+    "F_I": [
+     {
+      "kind": 3,
+      "type": "regex",
+      "regex": "\\bmake\\b[^|;&\\n]*\\bdev\\b",
+      "target": "dev"
+     }
+    ]
+   },
+   "rejects": {},
+   "rounds": 1,
+   "python_spec": ">=3.6, <4",
+   "slots": {
+    "test_root": "git_machete/tests",
+    "C": {
+     "F_R": "make test",
+     "F_I": "make dev"
+    }
+   },
+   "fallbacks": {
+    "F_R": [],
+    "F_I": []
+   },
+   "n_claims_T": 7,
+   "n_false": {
+    "F_R": 1,
+    "F_I": 1
+   },
+   "pointer_in_issue": false,
+   "gold_dirs": [
+    "git_machete"
+   ],
+   "manifest_all_ok": {
+    "T": true,
+    "F_R": true,
+    "F_I": true
+   }
+  },
+  "VirtusLab__git-machete-248": {
+   "repo": "VirtusLab/git-machete",
+   "stage": "phase_out",
+   "sha256": {
+    "T": "b4a2ce8dcf5767d1fb1e1644b173c65a43a6e2b22d78750b661da687a8ff0a06",
+    "F_R": "b06ed583f176d97ce0ed4f5ec76c34cf139ad255bd76730ab7ed235813ad0d88",
+    "F_I": "9c9bfad8297f937d868b3d1dcd8557b6f85d12bc43df682b74b63a5099a03ed0"
+   },
+   "chars": {
+    "T": 237,
+    "F_R": 212,
+    "F_I": 229
+   },
+   "flags": [
+    "kind1_dropped",
+    "kind2_dropped",
+    "kind4_dropped",
+    "length_violation_F_R"
+   ],
+   "tokens": {
+    "F_R": [
+     {
+      "kind": 3,
+      "type": "regex",
+      "regex": "\\bmake\\b[^|;&\\n]*\\btest\\b",
+      "target": "test"
+     }
+    ],
+    "F_I": [
+     {
+      "kind": 3,
+      "type": "regex",
+      "regex": "\\bmake\\b[^|;&\\n]*\\bdev\\b",
+      "target": "dev"
+     }
+    ]
+   },
+   "rejects": {},
+   "rounds": 1,
+   "python_spec": ">=3.6, <4",
+   "slots": {
+    "test_root": "git_machete/tests",
+    "C": {
+     "F_R": "make test",
+     "F_I": "make dev"
+    }
+   },
+   "fallbacks": {
+    "F_R": [],
+    "F_I": []
+   },
+   "n_claims_T": 7,
+   "n_false": {
+    "F_R": 1,
+    "F_I": 1
+   },
+   "pointer_in_issue": false,
+   "gold_dirs": [
+    "git_machete"
+   ],
+   "manifest_all_ok": {
+    "T": true,
+    "F_R": true,
+    "F_I": true
+   }
+  },
+  "VirtusLab__git-machete-330": {
+   "repo": "VirtusLab/git-machete",
+   "stage": "phase_out",
+   "sha256": {
+    "T": "b4a2ce8dcf5767d1fb1e1644b173c65a43a6e2b22d78750b661da687a8ff0a06",
+    "F_R": "b06ed583f176d97ce0ed4f5ec76c34cf139ad255bd76730ab7ed235813ad0d88",
+    "F_I": "9c9bfad8297f937d868b3d1dcd8557b6f85d12bc43df682b74b63a5099a03ed0"
+   },
+   "chars": {
+    "T": 237,
+    "F_R": 212,
+    "F_I": 229
+   },
+   "flags": [
+    "kind1_dropped",
+    "kind2_dropped",
+    "kind4_dropped",
+    "length_violation_F_R"
+   ],
+   "tokens": {
+    "F_R": [
+     {
+      "kind": 3,
+      "type": "regex",
+      "regex": "\\bmake\\b[^|;&\\n]*\\btest\\b",
+      "target": "test"
+     }
+    ],
+    "F_I": [
+     {
+      "kind": 3,
+      "type": "regex",
+      "regex": "\\bmake\\b[^|;&\\n]*\\bdev\\b",
+      "target": "dev"
+     }
+    ]
+   },
+   "rejects": {},
+   "rounds": 1,
+   "python_spec": ">=3.6, <4",
+   "slots": {
+    "test_root": "git_machete/tests",
+    "C": {
+     "F_R": "make test",
+     "F_I": "make dev"
+    }
+   },
+   "fallbacks": {
+    "F_R": [],
+    "F_I": []
+   },
+   "n_claims_T": 7,
+   "n_false": {
+    "F_R": 1,
+    "F_I": 1
+   },
+   "pointer_in_issue": true,
+   "gold_dirs": [
+    "git_machete"
+   ],
+   "manifest_all_ok": {
+    "T": true,
+    "F_R": true,
+    "F_I": true
+   }
+  },
+  "VirtusLab__git-machete-350": {
+   "repo": "VirtusLab/git-machete",
+   "stage": "phase_out",
+   "sha256": {
+    "T": "b4a2ce8dcf5767d1fb1e1644b173c65a43a6e2b22d78750b661da687a8ff0a06",
+    "F_R": "b06ed583f176d97ce0ed4f5ec76c34cf139ad255bd76730ab7ed235813ad0d88",
+    "F_I": "9c9bfad8297f937d868b3d1dcd8557b6f85d12bc43df682b74b63a5099a03ed0"
+   },
+   "chars": {
+    "T": 237,
+    "F_R": 212,
+    "F_I": 229
+   },
+   "flags": [
+    "kind1_dropped",
+    "kind2_dropped",
+    "kind4_dropped",
+    "length_violation_F_R"
+   ],
+   "tokens": {
+    "F_R": [
+     {
+      "kind": 3,
+      "type": "regex",
+      "regex": "\\bmake\\b[^|;&\\n]*\\btest\\b",
+      "target": "test"
+     }
+    ],
+    "F_I": [
+     {
+      "kind": 3,
+      "type": "regex",
+      "regex": "\\bmake\\b[^|;&\\n]*\\bdev\\b",
+      "target": "dev"
+     }
+    ]
+   },
+   "rejects": {},
+   "rounds": 1,
+   "python_spec": ">=3.6, <4",
+   "slots": {
+    "test_root": "git_machete/tests",
+    "C": {
+     "F_R": "make test",
+     "F_I": "make dev"
+    }
+   },
+   "fallbacks": {
+    "F_R": [],
+    "F_I": []
+   },
+   "n_claims_T": 7,
+   "n_false": {
+    "F_R": 1,
+    "F_I": 1
+   },
+   "pointer_in_issue": true,
+   "gold_dirs": [
+    "git_machete"
+   ],
+   "manifest_all_ok": {
+    "T": true,
+    "F_R": true,
+    "F_I": true
+   }
+  },
+  "VirtusLab__git-machete-353": {
+   "repo": "VirtusLab/git-machete",
+   "stage": "phase_out",
+   "sha256": {
+    "T": "444969a625dd9ffbdf4cc54c7faff509e097d708a89d7475848537ba66e56a9b",
+    "F_R": "a9bb2ee394020c276e246068a6db9979b99002e8f211659f79fea2f7baa237f0",
+    "F_I": "e2f54a00d680a0fcc0d0b218e2c6a2a6aa9d814eb53c8353b192bef0e9834ed3"
+   },
+   "chars": {
+    "T": 254,
+    "F_R": 229,
+    "F_I": 246
+   },
+   "flags": [
+    "kind1_dropped",
+    "kind2_dropped",
+    "kind4_dropped",
+    "length_violation_F_R"
+   ],
+   "tokens": {
+    "F_R": [
+     {
+      "kind": 3,
+      "type": "regex",
+      "regex": "\\bmake\\b[^|;&\\n]*\\btest\\b",
+      "target": "test"
+     }
+    ],
+    "F_I": [
+     {
+      "kind": 3,
+      "type": "regex",
+      "regex": "\\bmake\\b[^|;&\\n]*\\bdev\\b",
+      "target": "dev"
+     }
+    ]
+   },
+   "rejects": {},
+   "rounds": 1,
+   "python_spec": ">=3.6, <4",
+   "slots": {
+    "test_root": "git_machete/tests",
+    "C": {
+     "F_R": "make test",
+     "F_I": "make dev"
+    }
+   },
+   "fallbacks": {
+    "F_R": [],
+    "F_I": []
+   },
+   "n_claims_T": 8,
+   "n_false": {
+    "F_R": 1,
+    "F_I": 1
+   },
+   "pointer_in_issue": false,
+   "gold_dirs": [
+    "docs/source",
+    "git_machete"
+   ],
+   "manifest_all_ok": {
+    "T": true,
+    "F_R": true,
+    "F_I": true
+   }
+  },
+  "VirtusLab__git-machete-463": {
+   "repo": "VirtusLab/git-machete",
+   "stage": "phase_out",
+   "sha256": {
+    "T": "b4a2ce8dcf5767d1fb1e1644b173c65a43a6e2b22d78750b661da687a8ff0a06",
+    "F_R": "b06ed583f176d97ce0ed4f5ec76c34cf139ad255bd76730ab7ed235813ad0d88",
+    "F_I": "9c9bfad8297f937d868b3d1dcd8557b6f85d12bc43df682b74b63a5099a03ed0"
+   },
+   "chars": {
+    "T": 237,
+    "F_R": 212,
+    "F_I": 229
+   },
+   "flags": [
+    "kind1_dropped",
+    "kind2_dropped",
+    "kind4_dropped",
+    "length_violation_F_R"
+   ],
+   "tokens": {
+    "F_R": [
+     {
+      "kind": 3,
+      "type": "regex",
+      "regex": "\\bmake\\b[^|;&\\n]*\\btest\\b",
+      "target": "test"
+     }
+    ],
+    "F_I": [
+     {
+      "kind": 3,
+      "type": "regex",
+      "regex": "\\bmake\\b[^|;&\\n]*\\bdev\\b",
+      "target": "dev"
+     }
+    ]
+   },
+   "rejects": {},
+   "rounds": 1,
+   "python_spec": ">=3.6, <4",
+   "slots": {
+    "test_root": "git_machete/tests",
+    "C": {
+     "F_R": "make test",
+     "F_I": "make dev"
+    }
+   },
+   "fallbacks": {
+    "F_R": [],
+    "F_I": []
+   },
+   "n_claims_T": 7,
+   "n_false": {
+    "F_R": 1,
+    "F_I": 1
+   },
+   "pointer_in_issue": false,
+   "gold_dirs": [
+    "git_machete"
+   ],
+   "manifest_all_ok": {
+    "T": true,
+    "F_R": true,
+    "F_I": true
+   }
+  },
+  "VirtusLab__git-machete-483": {
+   "repo": "VirtusLab/git-machete",
+   "stage": "phase_out",
+   "sha256": {
+    "T": "444969a625dd9ffbdf4cc54c7faff509e097d708a89d7475848537ba66e56a9b",
+    "F_R": "a9bb2ee394020c276e246068a6db9979b99002e8f211659f79fea2f7baa237f0",
+    "F_I": "e2f54a00d680a0fcc0d0b218e2c6a2a6aa9d814eb53c8353b192bef0e9834ed3"
+   },
+   "chars": {
+    "T": 254,
+    "F_R": 229,
+    "F_I": 246
+   },
+   "flags": [
+    "kind1_dropped",
+    "kind2_dropped",
+    "kind4_dropped",
+    "length_violation_F_R"
+   ],
+   "tokens": {
+    "F_R": [
+     {
+      "kind": 3,
+      "type": "regex",
+      "regex": "\\bmake\\b[^|;&\\n]*\\btest\\b",
+      "target": "test"
+     }
+    ],
+    "F_I": [
+     {
+      "kind": 3,
+      "type": "regex",
+      "regex": "\\bmake\\b[^|;&\\n]*\\bdev\\b",
+      "target": "dev"
+     }
+    ]
+   },
+   "rejects": {},
+   "rounds": 1,
+   "python_spec": ">=3.6, <4",
+   "slots": {
+    "test_root": "git_machete/tests",
+    "C": {
+     "F_R": "make test",
+     "F_I": "make dev"
+    }
+   },
+   "fallbacks": {
+    "F_R": [],
+    "F_I": []
+   },
+   "n_claims_T": 8,
+   "n_false": {
+    "F_R": 1,
+    "F_I": 1
+   },
+   "pointer_in_issue": true,
+   "gold_dirs": [
+    "docs/source",
+    "git_machete"
+   ],
+   "manifest_all_ok": {
+    "T": true,
+    "F_R": true,
+    "F_I": true
+   }
+  },
+  "VirtusLab__git-machete-534": {
+   "repo": "VirtusLab/git-machete",
+   "stage": "phase_out",
+   "sha256": {
+    "T": "9cfed00a4a3857d62c331a134fb0b7ba4276fb60fd9ba823b605fe420d95ceff",
+    "F_R": "1b69ad0fddfdc1c92aecfd588293e825eb687a5b261f57a94dadca6ec26b1b4e",
+    "F_I": "084bf0c50b288a9165d2a8cc8901b2dffd20314da8fa9739b4c97feb2d79568f"
+   },
+   "chars": {
+    "T": 213,
+    "F_R": 200,
+    "F_I": 205
+   },
+   "flags": [
+    "kind1_dropped",
+    "kind2_dropped",
+    "kind4_dropped",
+    "length_violation_F_R"
+   ],
+   "tokens": {
+    "F_R": [
+     {
+      "kind": 3,
+      "type": "regex",
+      "regex": "\\bmake\\b[^|;&\\n]*\\btest\\b",
+      "target": "test"
+     }
+    ],
+    "F_I": [
+     {
+      "kind": 3,
+      "type": "regex",
+      "regex": "\\bmake\\b[^|;&\\n]*\\bdev\\b",
+      "target": "dev"
+     }
+    ]
+   },
+   "rejects": {},
+   "rounds": 1,
+   "python_spec": ">=3.6, <4",
+   "slots": {
+    "test_root": "tests",
+    "C": {
+     "F_R": "make test",
+     "F_I": "make dev"
+    }
+   },
+   "fallbacks": {
+    "F_R": [],
+    "F_I": []
+   },
+   "n_claims_T": 7,
+   "n_false": {
+    "F_R": 1,
+    "F_I": 1
+   },
+   "pointer_in_issue": false,
+   "gold_dirs": [
+    "git_machete"
+   ],
+   "manifest_all_ok": {
+    "T": true,
+    "F_R": true,
+    "F_I": true
+   }
+  },
+  "XKNX__xknx-1551": {
+   "repo": "XKNX/xknx",
+   "stage": "evolution",
+   "sha256": {
+    "T": "618a19a4009b93da1ea140d2a24896cbd047487e2fd162124501fe9363dac522",
+    "F_R": "bd0378a5dc1c028b4197bb936c48eaae013b116735185f67055649b0b33ca47e",
+    "F_I": "47ab94ed0762334251034131d4babd5e4257ffe22a7895db1592f7537c5f8793"
+   },
+   "chars": {
+    "T": 451,
+    "F_R": 443,
+    "F_I": 478
+   },
+   "flags": [
+    "kind4_R_used_I_competitor",
+    "length_violation_F_I"
+   ],
+   "tokens": {
+    "F_R": [
+     {
+      "kind": 1,
+      "type": "path",
+      "values": [
+       "docs/internal",
+       "internal"
+      ]
+     },
+     {
+      "kind": 2,
+      "type": "path",
+      "values": [
+       "xknx/dpt/dpt_1byte_signed.py",
+       "dpt_1byte_signed.py"
+      ]
+     },
+     {
+      "kind": 3,
+      "type": "regex",
+      "regex": "\\bmake\\b[^|;&\\n]*\\btests\\b",
+      "target": "tests"
+     },
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "typing-inspect",
+       "typing_inspect"
+      ]
+     }
+    ],
+    "F_I": [
+     {
+      "kind": 1,
+      "type": "path",
+      "values": [
+       "xknx/devices/internal",
+       "internal"
+      ]
+     },
+     {
+      "kind": 2,
+      "type": "path",
+      "values": [
+       "test/remote_value_tests/remote_value_control_test.py",
+       "remote_value_control_test.py"
+      ]
+     },
+     {
+      "kind": 3,
+      "type": "regex",
+      "regex": "\\bmake\\b[^|;&\\n]*\\bdev\\b",
+      "target": "dev"
+     },
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "typing-inspect",
+       "typing_inspect"
+      ]
+     }
+    ]
+   },
+   "rejects": {},
+   "rounds": 1,
+   "python_spec": ">=3.10.0",
+   "slots": {
+    "test_root": "test",
+    "P1": {
+     "replaced": "xknx/remote_value",
+     "name": "internal",
+     "F_R": "docs/internal",
+     "F_I": "xknx/devices/internal"
+    },
+    "P2": {
+     "replaced": "xknx/dpt/dpt_14.py",
+     "F_R": "xknx/dpt/dpt_1byte_signed.py",
+     "F_I": "test/remote_value_tests/remote_value_control_test.py"
+    },
+    "C": {
+     "F_R": "make tests",
+     "F_I": "make dev"
+    },
+    "D": {
+     "replaced": "typing-extensions",
+     "F_R": "typing-inspect",
+     "F_I": "typing-inspect"
+    }
+   },
+   "fallbacks": {
+    "F_R": [
+     "kind4_I_competitor"
+    ],
+    "F_I": []
+   },
+   "n_claims_T": 19,
+   "n_false": {
+    "F_R": 4,
+    "F_I": 4
+   },
+   "pointer_in_issue": false,
+   "gold_dirs": [
+    "docs",
+    "xknx/dpt"
+   ],
+   "manifest_all_ok": {
+    "T": true,
+    "F_R": true,
+    "F_I": true
+   }
+  },
+  "agronholm__sqlacodegen-371": {
+   "repo": "agronholm/sqlacodegen",
+   "stage": "evolution",
+   "sha256": {
+    "T": "f147b22f54fe4ddd313ca90ecb7dcb475093cb29f0c8716cb20da60d54532c6d",
+    "F_R": "4598191293159098b6992349fd10832d2aa513fab2943b8109588c49c806949d",
+    "F_I": "b5af36d8108bda9654429549a8e50d014bf0dfe1a10e2069ca1eec649f20cc91"
+   },
+   "chars": {
+    "T": 328,
+    "F_R": 305,
+    "F_I": 315
+   },
+   "flags": [
+    "kind1_dropped",
+    "kind2_dropped",
+    "length_violation_F_R"
+   ],
+   "tokens": {
+    "F_R": [
+     {
+      "kind": 3,
+      "type": "regex",
+      "regex": "\\bmake\\b[^|;&\\n]*\\btest\\b",
+      "target": "test"
+     },
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "peewee"
+      ]
+     }
+    ],
+    "F_I": [
+     {
+      "kind": 3,
+      "type": "regex",
+      "regex": "\\bmake\\b[^|;&\\n]*\\binstall\\b",
+      "target": "install"
+     },
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "boltons"
+      ]
+     }
+    ]
+   },
+   "rejects": {},
+   "rounds": 1,
+   "python_spec": ">=3.9",
+   "slots": {
+    "test_root": "tests",
+    "C": {
+     "F_R": "make test",
+     "F_I": "make install"
+    },
+    "D": {
+     "replaced": "pgvector",
+     "F_R": "peewee",
+     "F_I": "boltons"
+    }
+   },
+   "fallbacks": {
+    "F_R": [],
+    "F_I": []
+   },
+   "n_claims_T": 11,
+   "n_false": {
+    "F_R": 2,
+    "F_I": 2
+   },
+   "pointer_in_issue": true,
+   "gold_dirs": [
+    "src/sqlacodegen"
+   ],
+   "manifest_all_ok": {
+    "T": true,
+    "F_R": true,
+    "F_I": true
+   }
+  },
+  "benmoran56__esper-81": {
+   "repo": "benmoran56/esper",
+   "stage": "evolution",
+   "sha256": {
+    "T": "4b1e2a7c13a7539f1412db17e55837595a6fc1e5d98a64e2804d382cd6f8c623",
+    "F_R": "4b1e2a7c13a7539f1412db17e55837595a6fc1e5d98a64e2804d382cd6f8c623",
+    "F_I": "4b1e2a7c13a7539f1412db17e55837595a6fc1e5d98a64e2804d382cd6f8c623"
+   },
+   "chars": {
+    "T": 144,
+    "F_R": 144,
+    "F_I": 144
+   },
+   "flags": [
+    "no_test_command",
+    "kind1_dropped",
+    "kind2_dropped",
+    "kind3_dropped",
+    "kind4_dropped"
+   ],
+   "tokens": {
+    "F_R": [],
+    "F_I": []
+   },
+   "rejects": {},
+   "rounds": 1,
+   "python_spec": null,
+   "slots": {},
+   "fallbacks": {
+    "F_R": [],
+    "F_I": []
+   },
+   "n_claims_T": 4,
+   "n_false": {
+    "F_R": 0,
+    "F_I": 0
+   },
+   "pointer_in_issue": true,
+   "gold_dirs": [
+    "esper"
+   ],
+   "manifest_all_ok": {
+    "T": true,
+    "F_R": true,
+    "F_I": true
+   }
+  },
+  "boto__botocore-1996": {
+   "repo": "boto/botocore",
+   "stage": "phase_out",
+   "sha256": {
+    "T": "0e54f856efa23276ddb8b8e8bd4b8e4a3d9be4834363cc20fe0eb768455d1425",
+    "F_R": "f6e43c4f8a7cd2112da58914f022c76a936da635ec84fa304f24029601198d01",
+    "F_I": "5c21144e7f0b802af12ae17e843c498c138bcecc9e43fa8bf5ed3ee36d100d9d"
+   },
+   "chars": {
+    "T": 397,
+    "F_R": 390,
+    "F_I": 378
+   },
+   "flags": [
+    "kind4_R_used_I_competitor"
+   ],
+   "tokens": {
+    "F_R": [
+     {
+      "kind": 1,
+      "type": "path",
+      "values": [
+       ".changes/next-release/core",
+       "core"
+      ]
+     },
+     {
+      "kind": 2,
+      "type": "path",
+      "values": [
+       "botocore/vendored/requests/adapters.py",
+       "adapters.py"
+      ]
+     },
+     {
+      "kind": 3,
+      "type": "regex",
+      "regex": "\\bmake\\b[^|;&\\n]*\\btest\\b",
+      "target": "test"
+     },
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "boltons"
+      ]
+     }
+    ],
+    "F_I": [
+     {
+      "kind": 1,
+      "type": "path",
+      "values": [
+       "botocore/docs/core",
+       "core"
+      ]
+     },
+     {
+      "kind": 2,
+      "type": "path",
+      "values": [
+       "tests/unit/test_config.py",
+       "test_config.py"
+      ]
+     },
+     {
+      "kind": 3,
+      "type": "regex",
+      "regex": "\\bmake\\b[^|;&\\n]*\\binstall\\b",
+      "target": "install"
+     },
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "boltons"
+      ]
+     }
+    ]
+   },
+   "rejects": {},
+   "rounds": 1,
+   "python_spec": null,
+   "slots": {
+    "test_root": "tests",
+    "P1": {
+     "replaced": "botocore/vendored",
+     "name": "core",
+     "F_R": ".changes/next-release/core",
+     "F_I": "botocore/docs/core"
+    },
+    "P2": {
+     "replaced": "botocore/retries/standard.py",
+     "F_R": "botocore/vendored/requests/adapters.py",
+     "F_I": "tests/unit/test_config.py"
+    },
+    "C": {
+     "F_R": "make test",
+     "F_I": "make install"
+    },
+    "D": {
+     "replaced": "docutils",
+     "F_R": "boltons",
+     "F_I": "boltons"
+    }
+   },
+   "fallbacks": {
+    "F_R": [
+     "kind4_I_competitor"
+    ],
+    "F_I": []
+   },
+   "n_claims_T": 13,
+   "n_false": {
+    "F_R": 4,
+    "F_I": 4
+   },
+   "pointer_in_issue": true,
+   "gold_dirs": [
+    ".changes/next-release",
+    "botocore"
+   ],
+   "manifest_all_ok": {
+    "T": true,
+    "F_R": true,
+    "F_I": true
+   }
+  },
+  "cevoaustralia__aws-google-auth-34": {
+   "repo": "cevoaustralia/aws-google-auth",
+   "stage": "initial_development",
+   "sha256": {
+    "T": "123f0df62d86d1ce5e69d49900a3d0714bc98da871bf38e868937f976e80162c",
+    "F_R": "123f0df62d86d1ce5e69d49900a3d0714bc98da871bf38e868937f976e80162c",
+    "F_I": "123f0df62d86d1ce5e69d49900a3d0714bc98da871bf38e868937f976e80162c"
+   },
+   "chars": {
+    "T": 246,
+    "F_R": 246,
+    "F_I": 246
+   },
+   "flags": [
+    "no_test_command",
+    "kind1_dropped",
+    "kind2_dropped",
+    "kind3_dropped",
+    "kind4_dropped"
+   ],
+   "tokens": {
+    "F_R": [],
+    "F_I": []
+   },
+   "rejects": {},
+   "rounds": 1,
+   "python_spec": null,
+   "slots": {},
+   "fallbacks": {
+    "F_R": [],
+    "F_I": []
+   },
+   "n_claims_T": 8,
+   "n_false": {
+    "F_R": 0,
+    "F_I": 0
+   },
+   "pointer_in_issue": false,
+   "gold_dirs": [
+    "aws_google_auth"
+   ],
+   "manifest_all_ok": {
+    "T": true,
+    "F_R": true,
+    "F_I": true
+   }
+  },
+  "cityofaustin__knackpy-110": {
+   "repo": "cityofaustin/knackpy",
+   "stage": "initial_development",
+   "sha256": {
+    "T": "f38a4f88bce638f293e593815b64ffbe1d108d595166595ec2b5bdf3860aee92",
+    "F_R": "4cf03b813448d52bf496af712c811de726a17a02c3226935e1c9cc78944f9f99",
+    "F_I": "4cf03b813448d52bf496af712c811de726a17a02c3226935e1c9cc78944f9f99"
+   },
+   "chars": {
+    "T": 180,
+    "F_R": 183,
+    "F_I": 183
+   },
+   "flags": [
+    "no_test_command",
+    "kind1_dropped",
+    "kind2_dropped",
+    "kind3_dropped",
+    "kind4_R_used_I_competitor"
+   ],
+   "tokens": {
+    "F_R": [
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "tzlocal"
+      ]
+     }
+    ],
+    "F_I": [
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "tzlocal"
+      ]
+     }
+    ]
+   },
+   "rejects": {},
+   "rounds": 1,
+   "python_spec": null,
+   "slots": {
+    "D": {
+     "replaced": "pytz",
+     "F_R": "tzlocal",
+     "F_I": "tzlocal"
+    }
+   },
+   "fallbacks": {
+    "F_R": [
+     "kind4_I_competitor"
+    ],
+    "F_I": []
+   },
+   "n_claims_T": 6,
+   "n_false": {
+    "F_R": 1,
+    "F_I": 1
+   },
+   "pointer_in_issue": true,
+   "gold_dirs": [
+    "knackpy"
+   ],
+   "manifest_all_ok": {
+    "T": true,
+    "F_R": true,
+    "F_I": true
+   }
+  },
+  "construct__construct-399": {
+   "repo": "construct/construct",
+   "stage": "phase_out",
+   "sha256": {
+    "T": "cfebfb6b2850d8f25e38a0835cdfb79d436c9a5075de6ec55dbd9b2eea974b35",
+    "F_R": "cc3277ba26fc3a3b7e6651a72c0b6f829af5fade8e7fa03f72bba1b8015a2b10",
+    "F_I": "875e069e3554ee2a39691cd43b510de08099a5137cdd3c01475cc0804740609a"
+   },
+   "chars": {
+    "T": 266,
+    "F_R": 292,
+    "F_I": 281
+   },
+   "flags": [
+    "no_test_command",
+    "kind3_dropped",
+    "kind4_dropped",
+    "length_violation_F_R",
+    "length_violation_F_I"
+   ],
+   "tokens": {
+    "F_R": [
+     {
+      "kind": 1,
+      "type": "path",
+      "values": [
+       "construct/internal",
+       "internal"
+      ]
+     },
+     {
+      "kind": 2,
+      "type": "path",
+      "values": [
+       "construct/examples/protocols/application/dns.py",
+       "dns.py"
+      ]
+     }
+    ],
+    "F_I": [
+     {
+      "kind": 1,
+      "type": "path",
+      "values": [
+       "construct/examples/internal",
+       "internal"
+      ]
+     },
+     {
+      "kind": 2,
+      "type": "path",
+      "values": [
+       "tests/deprecated_csvtest.py",
+       "deprecated_csvtest.py"
+      ]
+     }
+    ]
+   },
+   "rejects": {},
+   "rounds": 1,
+   "python_spec": null,
+   "slots": {
+    "P1": {
+     "replaced": "construct/lib",
+     "name": "internal",
+     "F_R": "construct/internal",
+     "F_I": "construct/examples/internal"
+    },
+    "P2": {
+     "replaced": "construct/lib/container.py",
+     "F_R": "construct/examples/protocols/application/dns.py",
+     "F_I": "tests/deprecated_csvtest.py"
+    }
+   },
+   "fallbacks": {
+    "F_R": [],
+    "F_I": []
+   },
+   "n_claims_T": 8,
+   "n_false": {
+    "F_R": 2,
+    "F_I": 2
+   },
+   "pointer_in_issue": true,
+   "gold_dirs": [
+    "construct"
+   ],
+   "manifest_all_ok": {
+    "T": true,
+    "F_R": true,
+    "F_I": true
+   }
+  },
+  "cpplint__cpplint-288": {
+   "repo": "cpplint/cpplint",
+   "stage": "evolution",
+   "sha256": {
+    "T": "e8ca9e7466030beee93d2c2a2f6a0d557ebe8a4ce15930571f3368e413d74094",
+    "F_R": "e8ca9e7466030beee93d2c2a2f6a0d557ebe8a4ce15930571f3368e413d74094",
+    "F_I": "e8ca9e7466030beee93d2c2a2f6a0d557ebe8a4ce15930571f3368e413d74094"
+   },
+   "chars": {
+    "T": 79,
+    "F_R": 79,
+    "F_I": 79
+   },
+   "flags": [
+    "no_gold_dir",
+    "no_test_root",
+    "no_test_command",
+    "kind1_dropped",
+    "kind2_dropped",
+    "kind3_dropped",
+    "kind4_dropped"
+   ],
+   "tokens": {
+    "F_R": [],
+    "F_I": []
+   },
+   "rejects": {},
+   "rounds": 1,
+   "python_spec": null,
+   "slots": {},
+   "fallbacks": {
+    "F_R": [],
+    "F_I": []
+   },
+   "n_claims_T": 1,
+   "n_false": {
+    "F_R": 0,
+    "F_I": 0
+   },
+   "pointer_in_issue": false,
+   "gold_dirs": [],
+   "manifest_all_ok": {
+    "T": true,
+    "F_R": true,
+    "F_I": true
+   }
+  },
+  "devrimcavusoglu__pybboxes-10": {
+   "repo": "devrimcavusoglu/pybboxes",
+   "stage": "evolution",
+   "sha256": {
+    "T": "148e8be3b081503de27a42ce6173cddcc83c80ac6c8d15db2bed2d970817ac97",
+    "F_R": "f6aefe553a26266965ccb648a4fa8907f332c72a65ad1d071e316e559955ecb9",
+    "F_I": "d854b8518af44b325336356cdd64d54311e75ee9ba1c7b1245b116a080a704d3"
+   },
+   "chars": {
+    "T": 306,
+    "F_R": 293,
+    "F_I": 302
+   },
+   "flags": [
+    "kind1_dropped",
+    "kind2_dropped",
+    "kind4_dropped"
+   ],
+   "tokens": {
+    "F_R": [
+     {
+      "kind": 3,
+      "type": "regex",
+      "regex": "\\bmake\\b[^|;&\\n]*\\btest\\b",
+      "target": "test"
+     }
+    ],
+    "F_I": [
+     {
+      "kind": 3,
+      "type": "regex",
+      "regex": "\\bmake\\b[^|;&\\n]*\\binstall\\b",
+      "target": "install"
+     }
+    ]
+   },
+   "rejects": {},
+   "rounds": 1,
+   "python_spec": ">=3.7",
+   "slots": {
+    "test_root": "tests",
+    "C": {
+     "F_R": "make test",
+     "F_I": "make install"
+    }
+   },
+   "fallbacks": {
+    "F_R": [],
+    "F_I": []
+   },
+   "n_claims_T": 11,
+   "n_false": {
+    "F_R": 1,
+    "F_I": 1
+   },
+   "pointer_in_issue": true,
+   "gold_dirs": [
+    ".github/workflows",
+    "pybboxes",
+    "pybboxes/boxes"
+   ],
+   "manifest_all_ok": {
+    "T": true,
+    "F_R": true,
+    "F_I": true
+   }
+  },
+  "dssg__argcmdr-30": {
+   "repo": "dssg/argcmdr",
+   "stage": "servicing",
+   "sha256": {
+    "T": "37b5d6f34efd3aa7413477d991e71e6a07676ea7d10db21c580be1fc087a002e",
+    "F_R": "e4ce3b2baee71f77f69ae581cb7545986deaca0c51e9b00bf6673f525705f67d",
+    "F_I": "40d4d16cd5f1d748be30f9218b8d6186af5da5aeabc085f71b86a4ef85b3a409"
+   },
+   "chars": {
+    "T": 272,
+    "F_R": 261,
+    "F_I": 268
+   },
+   "flags": [
+    "kind1_dropped",
+    "kind2_dropped",
+    "kind4_dropped"
+   ],
+   "tokens": {
+    "F_R": [
+     {
+      "kind": 3,
+      "type": "regex",
+      "regex": "\\bmake\\b[^|;&\\n]*\\btests\\b",
+      "target": "tests"
+     }
+    ],
+    "F_I": [
+     {
+      "kind": 3,
+      "type": "regex",
+      "regex": "\\bmake\\b[^|;&\\n]*\\binstall\\b",
+      "target": "install"
+     }
+    ]
+   },
+   "rejects": {},
+   "rounds": 1,
+   "python_spec": ">=3.6",
+   "slots": {
+    "test_root": "test",
+    "C": {
+     "F_R": "make tests",
+     "F_I": "make install"
+    }
+   },
+   "fallbacks": {
+    "F_R": [],
+    "F_I": []
+   },
+   "n_claims_T": 10,
+   "n_false": {
+    "F_R": 1,
+    "F_I": 1
+   },
+   "pointer_in_issue": false,
+   "gold_dirs": [
+    "src"
+   ],
+   "manifest_all_ok": {
+    "T": true,
+    "F_R": true,
+    "F_I": true
+   }
+  },
+  "facelessuser__wcmatch-206": {
+   "repo": "facelessuser/wcmatch",
+   "stage": "evolution",
+   "sha256": {
+    "T": "37f407d7e2bf82b7a5a21e9cdf58e20de6fd605e814792d8d17714a7b6e1f46c",
+    "F_R": "dfc1bae0f56d9599d41709f66818d9803f50a12547d6286ffced09b84bc76c0e",
+    "F_I": "4aeb009f991e3d759d38fb53babb65c244c1ac4812ae71b0fb5c0841750b38df"
+   },
+   "chars": {
+    "T": 221,
+    "F_R": 208,
+    "F_I": 217
+   },
+   "flags": [
+    "kind1_dropped",
+    "kind2_dropped",
+    "kind4_dropped",
+    "length_violation_F_R"
+   ],
+   "tokens": {
+    "F_R": [
+     {
+      "kind": 3,
+      "type": "regex",
+      "regex": "\\bmake\\b[^|;&\\n]*\\btest\\b",
+      "target": "test"
+     }
+    ],
+    "F_I": [
+     {
+      "kind": 3,
+      "type": "regex",
+      "regex": "\\bmake\\b[^|;&\\n]*\\binstall\\b",
+      "target": "install"
+     }
+    ]
+   },
+   "rejects": {},
+   "rounds": 1,
+   "python_spec": ">=3.7",
+   "slots": {
+    "test_root": "tests",
+    "C": {
+     "F_R": "make test",
+     "F_I": "make install"
+    }
+   },
+   "fallbacks": {
+    "F_R": [],
+    "F_I": []
+   },
+   "n_claims_T": 8,
+   "n_false": {
+    "F_R": 1,
+    "F_I": 1
+   },
+   "pointer_in_issue": true,
+   "gold_dirs": [
+    "docs/src",
+    "wcmatch"
+   ],
+   "manifest_all_ok": {
+    "T": true,
+    "F_R": true,
+    "F_I": true
+   }
+  },
+  "fair-software__howfairis-307": {
+   "repo": "fair-software/howfairis",
+   "stage": "initial_development",
+   "sha256": {
+    "T": "cee77a6c8d593a8ca8ecdb24e8b498e554c8e67a2e87f606eda940c191301cad",
+    "F_R": "4991e94aa8bab05ed7cf5c34a6e14343dfea894887f5727aec7cf9aaac8a23ee",
+    "F_I": "cc9efc7e3d6c938b4d67d08078294a05da1154a4da51c0281c1771f813e7bff7"
+   },
+   "chars": {
+    "T": 505,
+    "F_R": 485,
+    "F_I": 530
+   },
+   "flags": [
+    "kind3_dropped",
+    "kind4_R_used_I_competitor"
+   ],
+   "tokens": {
+    "F_R": [
+     {
+      "kind": 1,
+      "type": "path",
+      "values": [
+       "howfairis/core",
+       "core"
+      ]
+     },
+     {
+      "kind": 2,
+      "type": "path",
+      "values": [
+       "howfairis/config.py",
+       "config.py"
+      ]
+     },
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "boltons"
+      ]
+     }
+    ],
+    "F_I": [
+     {
+      "kind": 1,
+      "type": "path",
+      "values": [
+       "howfairis/cli/core",
+       "core"
+      ]
+     },
+     {
+      "kind": 2,
+      "type": "path",
+      "values": [
+       "tests/github/repo1/test_checker_with_noreason_user_config.py",
+       "test_checker_with_noreason_user_config.py"
+      ]
+     },
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "boltons"
+      ]
+     }
+    ]
+   },
+   "rejects": {},
+   "rounds": 1,
+   "python_spec": null,
+   "slots": {
+    "test_root": "tests",
+    "P1": {
+     "replaced": "howfairis/workarounds",
+     "name": "core",
+     "F_R": "howfairis/core",
+     "F_I": "howfairis/cli/core"
+    },
+    "P2": {
+     "replaced": "howfairis/cli/cli.py",
+     "F_R": "howfairis/config.py",
+     "F_I": "tests/github/repo1/test_checker_with_noreason_user_config.py"
+    },
+    "D": {
+     "replaced": "voluptuous",
+     "F_R": "boltons",
+     "F_I": "boltons"
+    }
+   },
+   "fallbacks": {
+    "F_R": [
+     "kind4_I_competitor"
+    ],
+    "F_I": []
+   },
+   "n_claims_T": 18,
+   "n_false": {
+    "F_R": 3,
+    "F_I": 3
+   },
+   "pointer_in_issue": true,
+   "gold_dirs": [
+    "howfairis"
+   ],
+   "manifest_all_ok": {
+    "T": true,
+    "F_R": true,
+    "F_I": true
+   }
+  },
+  "getsentry__sentry-python-3247": {
+   "repo": "getsentry/sentry-python",
+   "stage": "servicing",
+   "sha256": {
+    "T": "e94d55aae2ddcc9993e3c28d2cda19da4c0072269708b48a15d92687cb72e33d",
+    "F_R": "c67b2909c9ea13eb68a047914ecc11cff7c6f464ef37cc0592f781a0cbe7020a",
+    "F_I": "a180fcc17623785b5ac9e81d20712c4b461f576391e936adf018acf8add4e76f"
+   },
+   "chars": {
+    "T": 506,
+    "F_R": 500,
+    "F_I": 496
+   },
+   "flags": [
+    "kind3_dropped"
+   ],
+   "tokens": {
+    "F_R": [
+     {
+      "kind": 1,
+      "type": "path",
+      "values": [
+       "sentry_sdk/core",
+       "core"
+      ]
+     },
+     {
+      "kind": 2,
+      "type": "path",
+      "values": [
+       "sentry_sdk/tracing_utils_py2.py",
+       "tracing_utils_py2.py"
+      ]
+     },
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "toolz"
+      ]
+     }
+    ],
+    "F_I": [
+     {
+      "kind": 1,
+      "type": "path",
+      "values": [
+       "sentry_sdk/ai/core",
+       "core"
+      ]
+     },
+     {
+      "kind": 2,
+      "type": "path",
+      "values": [
+       "tests/test_profiler.py",
+       "test_profiler.py"
+      ]
+     },
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "boltons"
+      ]
+     }
+    ]
+   },
+   "rejects": {},
+   "rounds": 1,
+   "python_spec": ">=3.6",
+   "slots": {
+    "test_root": "tests",
+    "P1": {
+     "replaced": "sentry_sdk/profiler",
+     "name": "core",
+     "F_R": "sentry_sdk/core",
+     "F_I": "sentry_sdk/ai/core"
+    },
+    "P2": {
+     "replaced": "sentry_sdk/crons/decorator.py",
+     "F_R": "sentry_sdk/tracing_utils_py2.py",
+     "F_I": "tests/test_profiler.py"
+    },
+    "D": {
+     "replaced": "asttokens",
+     "F_R": "toolz",
+     "F_I": "boltons"
+    }
+   },
+   "fallbacks": {
+    "F_R": [],
+    "F_I": []
+   },
+   "n_claims_T": 19,
+   "n_false": {
+    "F_R": 3,
+    "F_I": 3
+   },
+   "pointer_in_issue": true,
+   "gold_dirs": [
+    "sentry_sdk"
+   ],
+   "manifest_all_ok": {
+    "T": true,
+    "F_R": true,
+    "F_I": true
+   }
+  },
+  "gitpython-developers__GitPython-1838": {
+   "repo": "gitpython-developers/GitPython",
+   "stage": "servicing",
+   "sha256": {
+    "T": "10bcf7dcf133f882c1600aa1e9785be23ad7b53c3f97817c4bc76a1abffbd1ad",
+    "F_R": "2d753b93364c877915f140d0ff814a25971608f58299c924aba4015905286d20",
+    "F_I": "5cafa51e4b25f1022b5153da7ba13e9d48d03b39d0b3ee079283f698af3fd8e0"
+   },
+   "chars": {
+    "T": 388,
+    "F_R": 365,
+    "F_I": 376
+   },
+   "flags": [
+    "kind4_R_used_I_competitor",
+    "length_violation_F_R"
+   ],
+   "tokens": {
+    "F_R": [
+     {
+      "kind": 1,
+      "type": "path",
+      "values": [
+       "git/core",
+       "core"
+      ]
+     },
+     {
+      "kind": 2,
+      "type": "path",
+      "values": [
+       "git/compat/typing.py",
+       "typing.py"
+      ]
+     },
+     {
+      "kind": 3,
+      "type": "regex",
+      "regex": "\\bmake\\b[^|;&\\n]*\\btests\\b",
+      "target": "tests"
+     },
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "typing-inspect",
+       "typing_inspect"
+      ]
+     }
+    ],
+    "F_I": [
+     {
+      "kind": 1,
+      "type": "path",
+      "values": [
+       "git/index/core",
+       "core"
+      ]
+     },
+     {
+      "kind": 2,
+      "type": "path",
+      "values": [
+       "test/testrunner.py",
+       "testrunner.py"
+      ]
+     },
+     {
+      "kind": 3,
+      "type": "regex",
+      "regex": "\\bmake\\b[^|;&\\n]*\\binstall\\b",
+      "target": "install"
+     },
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "typing-inspect",
+       "typing_inspect"
+      ]
+     }
+    ]
+   },
+   "rejects": {},
+   "rounds": 1,
+   "python_spec": ">=3.7",
+   "slots": {
+    "test_root": "test",
+    "P1": {
+     "replaced": "git/repo",
+     "name": "core",
+     "F_R": "git/core",
+     "F_I": "git/index/core"
+    },
+    "P2": {
+     "replaced": "git/refs/symbolic.py",
+     "F_R": "git/compat/typing.py",
+     "F_I": "test/testrunner.py"
+    },
+    "C": {
+     "F_R": "make tests",
+     "F_I": "make install"
+    },
+    "D": {
+     "replaced": "typing-extensions",
+     "F_R": "typing-inspect",
+     "F_I": "typing-inspect"
+    }
+   },
+   "fallbacks": {
+    "F_R": [
+     "kind4_I_competitor"
+    ],
+    "F_I": []
+   },
+   "n_claims_T": 15,
+   "n_false": {
+    "F_R": 4,
+    "F_I": 4
+   },
+   "pointer_in_issue": true,
+   "gold_dirs": [
+    "git"
+   ],
+   "manifest_all_ok": {
+    "T": true,
+    "F_R": true,
+    "F_I": true
+   }
+  },
+  "graphistry__pygraphistry-562": {
+   "repo": "graphistry/pygraphistry",
+   "stage": "servicing",
+   "sha256": {
+    "T": "0923b3621d896c873d81cda84724e4feabf5bcdeae7de9e731afc0d9124be552",
+    "F_R": "60a27f7ec7f3a556d71ddb09431bec4df29fcf881f81d57c3fe4996ca0d41461",
+    "F_I": "4f0df1e33b99057ced394354ec63c303ccd5ca40a58db7d0353d04a5f964c0f2"
+   },
+   "chars": {
+    "T": 472,
+    "F_R": 476,
+    "F_I": 459
+   },
+   "flags": [
+    "kind3_dropped",
+    "kind4_dropped"
+   ],
+   "tokens": {
+    "F_R": [
+     {
+      "kind": 1,
+      "type": "path",
+      "values": [
+       "graphistry/compute/core",
+       "core"
+      ]
+     },
+     {
+      "kind": 2,
+      "type": "path",
+      "values": [
+       "graphistry/graph_vector_pb2.py",
+       "graph_vector_pb2.py"
+      ]
+     }
+    ],
+    "F_I": [
+     {
+      "kind": 1,
+      "type": "path",
+      "values": [
+       "graphistry/layout/core",
+       "core"
+      ]
+     },
+     {
+      "kind": 2,
+      "type": "path",
+      "values": [
+       "graphistry2.py",
+       "graphistry2.py"
+      ]
+     }
+    ]
+   },
+   "rejects": {},
+   "rounds": 1,
+   "python_spec": ">=3.7",
+   "slots": {
+    "test_root": "graphistry/tests",
+    "P1": {
+     "replaced": "graphistry/validate",
+     "name": "core",
+     "F_R": "graphistry/compute/core",
+     "F_I": "graphistry/layout/core"
+    },
+    "P2": {
+     "replaced": "graphistry/compute/collapse.py",
+     "F_R": "graphistry/graph_vector_pb2.py",
+     "F_I": "graphistry2.py"
+    }
+   },
+   "fallbacks": {
+    "F_R": [],
+    "F_I": []
+   },
+   "n_claims_T": 15,
+   "n_false": {
+    "F_R": 2,
+    "F_I": 2
+   },
+   "pointer_in_issue": false,
+   "gold_dirs": [
+    "graphistry/compute"
+   ],
+   "manifest_all_ok": {
+    "T": true,
+    "F_R": true,
+    "F_I": true
+   }
+  },
+  "juju__python-libjuju-1054": {
+   "repo": "juju/python-libjuju",
+   "stage": "initial_development",
+   "sha256": {
+    "T": "24e3f3af0d979d9f2688425ee65369dbd65aac140d1ffae39b12849b3c732b69",
+    "F_R": "55a14dac265c521a975e9fc92505367d2141a906bf4b925eca932ff6eb0f4fd4",
+    "F_I": "e9b6034c1638f0c6ed358e101aea141acd7298a28355845f4a6b3931a5e13f6c"
+   },
+   "chars": {
+    "T": 327,
+    "F_R": 318,
+    "F_I": 325
+   },
+   "flags": [
+    "no_test_command",
+    "kind2_dropped",
+    "kind3_dropped",
+    "kind4_R_used_I_competitor"
+   ],
+   "tokens": {
+    "F_R": [
+     {
+      "kind": 1,
+      "type": "path",
+      "values": [
+       "juju/internal",
+       "internal"
+      ]
+     },
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "boltons"
+      ]
+     }
+    ],
+    "F_I": [
+     {
+      "kind": 1,
+      "type": "path",
+      "values": [
+       "juju/client/internal",
+       "internal"
+      ]
+     },
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "boltons"
+      ]
+     }
+    ]
+   },
+   "rejects": {},
+   "rounds": 1,
+   "python_spec": null,
+   "slots": {
+    "P1": {
+     "replaced": "juju/client",
+     "name": "internal",
+     "F_R": "juju/internal",
+     "F_I": "juju/client/internal"
+    },
+    "D": {
+     "replaced": "kubernetes",
+     "F_R": "boltons",
+     "F_I": "boltons"
+    }
+   },
+   "fallbacks": {
+    "F_R": [
+     "kind4_I_competitor"
+    ],
+    "F_I": []
+   },
+   "n_claims_T": 11,
+   "n_false": {
+    "F_R": 2,
+    "F_I": 2
+   },
+   "pointer_in_issue": true,
+   "gold_dirs": [
+    "juju"
+   ],
+   "manifest_all_ok": {
+    "T": true,
+    "F_R": true,
+    "F_I": true
+   }
+  },
+  "kjd__idna-111": {
+   "repo": "kjd/idna",
+   "stage": "phase_out",
+   "sha256": {
+    "T": "abef9991d7223126ea290055d5e3e7796c9f4e8ad5fcbd26a2113d15d6f51bce",
+    "F_R": "abef9991d7223126ea290055d5e3e7796c9f4e8ad5fcbd26a2113d15d6f51bce",
+    "F_I": "abef9991d7223126ea290055d5e3e7796c9f4e8ad5fcbd26a2113d15d6f51bce"
+   },
+   "chars": {
+    "T": 143,
+    "F_R": 143,
+    "F_I": 143
+   },
+   "flags": [
+    "no_test_command",
+    "kind1_dropped",
+    "kind2_dropped",
+    "kind3_dropped",
+    "kind4_dropped"
+   ],
+   "tokens": {
+    "F_R": [],
+    "F_I": []
+   },
+   "rejects": {},
+   "rounds": 1,
+   "python_spec": null,
+   "slots": {},
+   "fallbacks": {
+    "F_R": [],
+    "F_I": []
+   },
+   "n_claims_T": 4,
+   "n_false": {
+    "F_R": 0,
+    "F_I": 0
+   },
+   "pointer_in_issue": true,
+   "gold_dirs": [
+    "idna"
+   ],
+   "manifest_all_ok": {
+    "T": true,
+    "F_R": true,
+    "F_I": true
+   }
+  },
+  "kjd__idna-112": {
+   "repo": "kjd/idna",
+   "stage": "phase_out",
+   "sha256": {
+    "T": "abef9991d7223126ea290055d5e3e7796c9f4e8ad5fcbd26a2113d15d6f51bce",
+    "F_R": "abef9991d7223126ea290055d5e3e7796c9f4e8ad5fcbd26a2113d15d6f51bce",
+    "F_I": "abef9991d7223126ea290055d5e3e7796c9f4e8ad5fcbd26a2113d15d6f51bce"
+   },
+   "chars": {
+    "T": 143,
+    "F_R": 143,
+    "F_I": 143
+   },
+   "flags": [
+    "no_test_command",
+    "kind1_dropped",
+    "kind2_dropped",
+    "kind3_dropped",
+    "kind4_dropped"
+   ],
+   "tokens": {
+    "F_R": [],
+    "F_I": []
+   },
+   "rejects": {},
+   "rounds": 1,
+   "python_spec": null,
+   "slots": {},
+   "fallbacks": {
+    "F_R": [],
+    "F_I": []
+   },
+   "n_claims_T": 4,
+   "n_false": {
+    "F_R": 0,
+    "F_I": 0
+   },
+   "pointer_in_issue": true,
+   "gold_dirs": [
+    "idna"
+   ],
+   "manifest_all_ok": {
+    "T": true,
+    "F_R": true,
+    "F_I": true
+   }
+  },
+  "kjd__idna-83": {
+   "repo": "kjd/idna",
+   "stage": "phase_out",
+   "sha256": {
+    "T": "abef9991d7223126ea290055d5e3e7796c9f4e8ad5fcbd26a2113d15d6f51bce",
+    "F_R": "abef9991d7223126ea290055d5e3e7796c9f4e8ad5fcbd26a2113d15d6f51bce",
+    "F_I": "abef9991d7223126ea290055d5e3e7796c9f4e8ad5fcbd26a2113d15d6f51bce"
+   },
+   "chars": {
+    "T": 143,
+    "F_R": 143,
+    "F_I": 143
+   },
+   "flags": [
+    "no_test_command",
+    "kind1_dropped",
+    "kind2_dropped",
+    "kind3_dropped",
+    "kind4_dropped"
+   ],
+   "tokens": {
+    "F_R": [],
+    "F_I": []
+   },
+   "rejects": {},
+   "rounds": 1,
+   "python_spec": null,
+   "slots": {},
+   "fallbacks": {
+    "F_R": [],
+    "F_I": []
+   },
+   "n_claims_T": 4,
+   "n_false": {
+    "F_R": 0,
+    "F_I": 0
+   },
+   "pointer_in_issue": true,
+   "gold_dirs": [
+    "idna"
+   ],
+   "manifest_all_ok": {
+    "T": true,
+    "F_R": true,
+    "F_I": true
+   }
+  },
+  "learningequality__ricecooker-394": {
+   "repo": "learningequality/ricecooker",
+   "stage": "evolution",
+   "sha256": {
+    "T": "b2fa860ab96969dbf8465b7b64166cd186187482f51958855c7b8b3b4abadbaa",
+    "F_R": "96a56a6d6c697b22c8cb249be0d0c994049fec596be031df26564cca56c565d8",
+    "F_I": "ce5cd2525cf0be1bca79bf81231e9de35221fc20826164a93b584e69e187b4dd"
+   },
+   "chars": {
+    "T": 347,
+    "F_R": 357,
+    "F_I": 348
+   },
+   "flags": [
+    "no_test_command",
+    "kind3_dropped",
+    "kind4_dropped"
+   ],
+   "tokens": {
+    "F_R": [
+     {
+      "kind": 1,
+      "type": "path",
+      "values": [
+       "ricecooker/classes/core",
+       "core"
+      ]
+     },
+     {
+      "kind": 2,
+      "type": "path",
+      "values": [
+       "ricecooker/sushi_bar_client.py",
+       "sushi_bar_client.py"
+      ]
+     }
+    ],
+    "F_I": [
+     {
+      "kind": 1,
+      "type": "path",
+      "values": [
+       "ricecooker/managers/core",
+       "core"
+      ]
+     },
+     {
+      "kind": 2,
+      "type": "path",
+      "values": [
+       "travis_pypi_setup.py",
+       "travis_pypi_setup.py"
+      ]
+     }
+    ]
+   },
+   "rejects": {},
+   "rounds": 1,
+   "python_spec": ">=3.6, <3.11",
+   "slots": {
+    "P1": {
+     "replaced": "ricecooker/utils",
+     "name": "core",
+     "F_R": "ricecooker/classes/core",
+     "F_I": "ricecooker/managers/core"
+    },
+    "P2": {
+     "replaced": "ricecooker/classes/files.py",
+     "F_R": "ricecooker/sushi_bar_client.py",
+     "F_I": "travis_pypi_setup.py"
+    }
+   },
+   "fallbacks": {
+    "F_R": [],
+    "F_I": []
+   },
+   "n_claims_T": 11,
+   "n_false": {
+    "F_R": 2,
+    "F_I": 2
+   },
+   "pointer_in_issue": true,
+   "gold_dirs": [
+    "ricecooker/classes"
+   ],
+   "manifest_all_ok": {
+    "T": true,
+    "F_R": true,
+    "F_I": true
+   }
+  },
+  "lundberg__respx-60": {
+   "repo": "lundberg/respx",
+   "stage": "evolution",
+   "sha256": {
+    "T": "71478d8ccc84a66abf8e09b085e203c6cf80b7201a82ad24c5a58e9431e4ca31",
+    "F_R": "9d47b5a1baf25c8b04e2139d5f5d8e0269783f1f8814cd32e7bad6443f0eba1a",
+    "F_I": "060af2506a9fb122eb8d1a5aa9cce0275ccf78418ebc88b9035dc340141ef7c3"
+   },
+   "chars": {
+    "T": 266,
+    "F_R": 244,
+    "F_I": 252
+   },
+   "flags": [
+    "kind1_dropped",
+    "kind2_dropped",
+    "length_violation_F_R",
+    "length_violation_F_I"
+   ],
+   "tokens": {
+    "F_R": [
+     {
+      "kind": 3,
+      "type": "regex",
+      "regex": "\\bmake\\b[^|;&\\n]*\\bcheck\\b",
+      "target": "check"
+     },
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "boltons"
+      ]
+     }
+    ],
+    "F_I": [
+     {
+      "kind": 3,
+      "type": "regex",
+      "regex": "\\bmake\\b[^|;&\\n]*\\binstall\\b",
+      "target": "install"
+     },
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "aiohttp"
+      ]
+     }
+    ]
+   },
+   "rejects": {},
+   "rounds": 1,
+   "python_spec": ">=3.6",
+   "slots": {
+    "test_root": "tests",
+    "C": {
+     "F_R": "make check",
+     "F_I": "make install"
+    },
+    "D": {
+     "replaced": "httpx",
+     "F_R": "boltons",
+     "F_I": "aiohttp"
+    }
+   },
+   "fallbacks": {
+    "F_R": [],
+    "F_I": []
+   },
+   "n_claims_T": 10,
+   "n_false": {
+    "F_R": 2,
+    "F_I": 2
+   },
+   "pointer_in_issue": true,
+   "gold_dirs": [
+    "docs",
+    "respx"
+   ],
+   "manifest_all_ok": {
+    "T": true,
+    "F_R": true,
+    "F_I": true
+   }
+  },
+  "maxhumber__gif-17": {
+   "repo": "maxhumber/gif",
+   "stage": "phase_out",
+   "sha256": {
+    "T": "234849d47656f541e06c198e2fab0d4b93484617e2c71482899807b5a0c3592f",
+    "F_R": "234849d47656f541e06c198e2fab0d4b93484617e2c71482899807b5a0c3592f",
+    "F_I": "234849d47656f541e06c198e2fab0d4b93484617e2c71482899807b5a0c3592f"
+   },
+   "chars": {
+    "T": 130,
+    "F_R": 130,
+    "F_I": 130
+   },
+   "flags": [
+    "no_test_command",
+    "kind1_dropped",
+    "kind2_dropped",
+    "kind3_dropped",
+    "kind4_dropped"
+   ],
+   "tokens": {
+    "F_R": [],
+    "F_I": []
+   },
+   "rejects": {
+    "drop": [
+     "test_cmd"
+    ]
+   },
+   "rounds": 1,
+   "python_spec": ">=3.9",
+   "slots": {},
+   "fallbacks": {
+    "F_R": [],
+    "F_I": []
+   },
+   "n_claims_T": 4,
+   "n_false": {
+    "F_R": 0,
+    "F_I": 0
+   },
+   "pointer_in_issue": false,
+   "gold_dirs": [
+    "examples"
+   ],
+   "manifest_all_ok": {
+    "T": true,
+    "F_R": true,
+    "F_I": true
+   }
+  },
+  "mirumee__ariadne-1138": {
+   "repo": "mirumee/ariadne",
+   "stage": "initial_development",
+   "sha256": {
+    "T": "e278055558c59ada08e626ac1eaaaa9eddbc4dada5dfa95fe2de21c55f402033",
+    "F_R": "29bd478ce7f5badcda87a5726f6cb7e3b0057bebddd1cd2d32d3ac76844c70fe",
+    "F_I": "d74f88c638d0cf47a46f9ed842e78185eda86960516b34fbf6ce1db45f1d9805"
+   },
+   "chars": {
+    "T": 539,
+    "F_R": 505,
+    "F_I": 533
+   },
+   "flags": [
+    "length_violation_F_R"
+   ],
+   "tokens": {
+    "F_R": [
+     {
+      "kind": 1,
+      "type": "path",
+      "values": [
+       "ariadne/internal",
+       "internal"
+      ]
+     },
+     {
+      "kind": 2,
+      "type": "path",
+      "values": [
+       "ariadne/contrib/django/apps.py",
+       "apps.py"
+      ]
+     },
+     {
+      "kind": 3,
+      "type": "regex",
+      "regex": "\\bmake\\b[^|;&\\n]*\\btest\\b",
+      "target": "test"
+     },
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "toolz"
+      ]
+     }
+    ],
+    "F_I": [
+     {
+      "kind": 1,
+      "type": "path",
+      "values": [
+       "ariadne/asgi/internal",
+       "internal"
+      ]
+     },
+     {
+      "kind": 2,
+      "type": "path",
+      "values": [
+       "tests/asgi/snapshots/snap_test_explorer.py",
+       "snap_test_explorer.py"
+      ]
+     },
+     {
+      "kind": 3,
+      "type": "regex",
+      "regex": "\\bmake\\b[^|;&\\n]*\\binstall\\b",
+      "target": "install"
+     },
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "boltons"
+      ]
+     }
+    ]
+   },
+   "rejects": {},
+   "rounds": 1,
+   "python_spec": null,
+   "slots": {
+    "test_root": "tests",
+    "P1": {
+     "replaced": "tests_mypy",
+     "name": "internal",
+     "F_R": "ariadne/internal",
+     "F_I": "ariadne/asgi/internal"
+    },
+    "P2": {
+     "replaced": "ariadne/asgi/handlers/graphql_transport_ws.py",
+     "F_R": "ariadne/contrib/django/apps.py",
+     "F_I": "tests/asgi/snapshots/snap_test_explorer.py"
+    },
+    "C": {
+     "F_R": "make test",
+     "F_I": "make install"
+    },
+    "D": {
+     "replaced": "opentelemetry-api",
+     "F_R": "toolz",
+     "F_I": "boltons"
+    }
+   },
+   "fallbacks": {
+    "F_R": [],
+    "F_I": []
+   },
+   "n_claims_T": 18,
+   "n_false": {
+    "F_R": 4,
+    "F_I": 4
+   },
+   "pointer_in_issue": true,
+   "gold_dirs": [
+    "ariadne"
+   ],
+   "manifest_all_ok": {
+    "T": true,
+    "F_R": true,
+    "F_I": true
+   }
+  },
+  "myusuf3__delorean-103": {
+   "repo": "myusuf3/delorean",
+   "stage": "initial_development",
+   "sha256": {
+    "T": "92a39e97428d511d2828fe7a5510e0ffa50638770c164200d8db1709fac94858",
+    "F_R": "90c0ec594693faf27e443b977fce1fbcf6b42de789d343219c5c91fc09a901b3",
+    "F_I": "8f0c77cbcdb6fcc2a464aee70b97c02ec44b158805082d983c426a7807e8d901"
+   },
+   "chars": {
+    "T": 260,
+    "F_R": 253,
+    "F_I": 252
+   },
+   "flags": [
+    "no_test_command",
+    "kind1_dropped",
+    "kind2_dropped",
+    "kind3_dropped"
+   ],
+   "tokens": {
+    "F_R": [
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "pendulum"
+      ]
+     }
+    ],
+    "F_I": [
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "boltons"
+      ]
+     }
+    ]
+   },
+   "rejects": {},
+   "rounds": 1,
+   "python_spec": null,
+   "slots": {
+    "D": {
+     "replaced": "humanize",
+     "F_R": "pendulum",
+     "F_I": "boltons"
+    }
+   },
+   "fallbacks": {
+    "F_R": [],
+    "F_I": []
+   },
+   "n_claims_T": 9,
+   "n_false": {
+    "F_R": 1,
+    "F_I": 1
+   },
+   "pointer_in_issue": true,
+   "gold_dirs": [
+    "delorean"
+   ],
+   "manifest_all_ok": {
+    "T": true,
+    "F_R": true,
+    "F_I": true
+   }
+  },
+  "ncclient__ncclient-452": {
+   "repo": "ncclient/ncclient",
+   "stage": "evolution",
+   "sha256": {
+    "T": "6cec0594c0934d83bd0da0ca47c73ce20a8b7319318611c86b43ac2d81825686",
+    "F_R": "08aab6de885786d5c2fd123cdbc4cb2da87cf32aa3126709ee8a96643ca8bc34",
+    "F_I": "32e9450925bcace3c78980545c67612729fec75aca6f120188e294f0ce83cac2"
+   },
+   "chars": {
+    "T": 365,
+    "F_R": 350,
+    "F_I": 351
+   },
+   "flags": [
+    "no_test_command",
+    "kind3_dropped"
+   ],
+   "tokens": {
+    "F_R": [
+     {
+      "kind": 1,
+      "type": "path",
+      "values": [
+       "ncclient/core",
+       "core"
+      ]
+     },
+     {
+      "kind": 2,
+      "type": "path",
+      "values": [
+       "ncclient/ElementTree.py",
+       "ElementTree.py"
+      ]
+     },
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "selectolax"
+      ]
+     }
+    ],
+    "F_I": [
+     {
+      "kind": 1,
+      "type": "path",
+      "values": [
+       "ncclient/transport/core",
+       "core"
+      ]
+     },
+     {
+      "kind": 2,
+      "type": "path",
+      "values": [
+       "examples/misc.py",
+       "misc.py"
+      ]
+     },
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "asyncssh"
+      ]
+     }
+    ]
+   },
+   "rejects": {},
+   "rounds": 1,
+   "python_spec": ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*",
+   "slots": {
+    "P1": {
+     "replaced": "ncclient/transport",
+     "name": "core",
+     "F_R": "ncclient/core",
+     "F_I": "ncclient/transport/core"
+    },
+    "P2": {
+     "replaced": "ncclient/devices/default.py",
+     "F_R": "ncclient/ElementTree.py",
+     "F_I": "examples/misc.py"
+    },
+    "D": {
+     "replaced": "paramiko",
+     "F_R": "selectolax",
+     "F_I": "asyncssh"
+    }
+   },
+   "fallbacks": {
+    "F_R": [],
+    "F_I": []
+   },
+   "n_claims_T": 13,
+   "n_false": {
+    "F_R": 3,
+    "F_I": 3
+   },
+   "pointer_in_issue": true,
+   "gold_dirs": [
+    "ncclient",
+    "ncclient/devices",
+    "ncclient/operations"
+   ],
+   "manifest_all_ok": {
+    "T": true,
+    "F_R": true,
+    "F_I": true
+   }
+  },
+  "nephila__python-taiga-193": {
+   "repo": "nephila/python-taiga",
+   "stage": "evolution",
+   "sha256": {
+    "T": "c06519165202de30b614782c2c8a19797cdeb30193596f158d9eab1fba42be28",
+    "F_R": "c06519165202de30b614782c2c8a19797cdeb30193596f158d9eab1fba42be28",
+    "F_I": "c06519165202de30b614782c2c8a19797cdeb30193596f158d9eab1fba42be28"
+   },
+   "chars": {
+    "T": 264,
+    "F_R": 264,
+    "F_I": 264
+   },
+   "flags": [
+    "kind1_dropped",
+    "kind2_dropped",
+    "kind3_dropped",
+    "kind4_dropped"
+   ],
+   "tokens": {
+    "F_R": [],
+    "F_I": []
+   },
+   "rejects": {},
+   "rounds": 1,
+   "python_spec": ">=3.7",
+   "slots": {
+    "test_root": "tests"
+   },
+   "fallbacks": {
+    "F_R": [],
+    "F_I": []
+   },
+   "n_claims_T": 10,
+   "n_false": {
+    "F_R": 0,
+    "F_I": 0
+   },
+   "pointer_in_issue": false,
+   "gold_dirs": [
+    "changes",
+    "taiga/models"
+   ],
+   "manifest_all_ok": {
+    "T": true,
+    "F_R": true,
+    "F_I": true
+   }
+  },
+  "netaddr__netaddr-225": {
+   "repo": "netaddr/netaddr",
+   "stage": "phase_out",
+   "sha256": {
+    "T": "bd090628d43591ce5031f7e70859e53846b4069a0b05357915f6870f8f266e7a",
+    "F_R": "04453311437de677e45f62cd351028c00266e688a86a97d47a272ccaed013ad9",
+    "F_I": "dd43d12df66a331b8ef362f5e6df6991537727d65b73d14954bff3fbd4397314"
+   },
+   "chars": {
+    "T": 353,
+    "F_R": 339,
+    "F_I": 350
+   },
+   "flags": [
+    "kind4_dropped"
+   ],
+   "tokens": {
+    "F_R": [
+     {
+      "kind": 1,
+      "type": "path",
+      "values": [
+       "netaddr/eui/internal",
+       "internal"
+      ]
+     },
+     {
+      "kind": 2,
+      "type": "path",
+      "values": [
+       "netaddr/ip/intset.py",
+       "intset.py"
+      ]
+     },
+     {
+      "kind": 3,
+      "type": "regex",
+      "regex": "\\bmake\\b[^|;&\\n]*\\btests\\b",
+      "target": "tests"
+     }
+    ],
+    "F_I": [
+     {
+      "kind": 1,
+      "type": "path",
+      "values": [
+       "netaddr/contrib/internal",
+       "internal"
+      ]
+     },
+     {
+      "kind": 2,
+      "type": "path",
+      "values": [
+       "runtests.py",
+       "runtests.py"
+      ]
+     },
+     {
+      "kind": 3,
+      "type": "regex",
+      "regex": "\\bmake\\b[^|;&\\n]*\\binstall\\b",
+      "target": "install"
+     }
+    ]
+   },
+   "rejects": {},
+   "rounds": 1,
+   "python_spec": null,
+   "slots": {
+    "test_root": "netaddr/tests",
+    "P1": {
+     "replaced": "tutorials",
+     "name": "internal",
+     "F_R": "netaddr/eui/internal",
+     "F_I": "netaddr/contrib/internal"
+    },
+    "P2": {
+     "replaced": "netaddr/strategy/eui48.py",
+     "F_R": "netaddr/ip/intset.py",
+     "F_I": "runtests.py"
+    },
+    "C": {
+     "F_R": "make tests",
+     "F_I": "make install"
+    }
+   },
+   "fallbacks": {
+    "F_R": [],
+    "F_I": []
+   },
+   "n_claims_T": 13,
+   "n_false": {
+    "F_R": 3,
+    "F_I": 3
+   },
+   "pointer_in_issue": false,
+   "gold_dirs": [
+    "netaddr/eui"
+   ],
+   "manifest_all_ok": {
+    "T": true,
+    "F_R": true,
+    "F_I": true
+   }
+  },
+  "networkx__networkx-7336": {
+   "repo": "networkx/networkx",
+   "stage": "evolution",
+   "sha256": {
+    "T": "4371349b1aeb9d41dbf59b693596e08d4a60106ca7843b5d0d6a000a1b32319a",
+    "F_R": "7c968b9a048d51d5ed5b58257ce57bf7783cfcc4ddb7c336b8730c2411cbefc4",
+    "F_I": "ea225ea1b5e054dcad804122321faac98072a4cc80baf12528cc1c89246fe1d5"
+   },
+   "chars": {
+    "T": 608,
+    "F_R": 610,
+    "F_I": 599
+   },
+   "flags": [
+    "kind4_R_used_I_competitor"
+   ],
+   "tokens": {
+    "F_R": [
+     {
+      "kind": 1,
+      "type": "path",
+      "values": [
+       "networkx/algorithms/internal",
+       "internal"
+      ]
+     },
+     {
+      "kind": 2,
+      "type": "path",
+      "values": [
+       "networkx/algorithms/isomorphism/tests/vf2pp/test_Ti_computing.py",
+       "test_Ti_computing.py"
+      ]
+     },
+     {
+      "kind": 3,
+      "type": "regex",
+      "regex": "\\bmake\\b[^|;&\\n]*\\btest\\b",
+      "target": "test"
+     },
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "wand"
+      ]
+     }
+    ],
+    "F_I": [
+     {
+      "kind": 1,
+      "type": "path",
+      "values": [
+       "networkx/classes/internal",
+       "internal"
+      ]
+     },
+     {
+      "kind": 2,
+      "type": "path",
+      "values": [
+       "examples/geospatial/delaunay.py",
+       "delaunay.py"
+      ]
+     },
+     {
+      "kind": 3,
+      "type": "regex",
+      "regex": "\\bmake\\b[^|;&\\n]*\\bdev\\b",
+      "target": "dev"
+     },
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "wand"
+      ]
+     }
+    ]
+   },
+   "rejects": {},
+   "rounds": 1,
+   "python_spec": ">=3.10",
+   "slots": {
+    "test_root": "networkx/algorithms/tests",
+    "P1": {
+     "replaced": "networkx/utils",
+     "name": "internal",
+     "F_R": "networkx/algorithms/internal",
+     "F_I": "networkx/classes/internal"
+    },
+    "P2": {
+     "replaced": "networkx/generators/random_graphs.py",
+     "F_R": "networkx/algorithms/isomorphism/tests/vf2pp/test_Ti_computing.py",
+     "F_I": "examples/geospatial/delaunay.py"
+    },
+    "C": {
+     "F_R": "make test",
+     "F_I": "make dev"
+    },
+    "D": {
+     "replaced": "pillow",
+     "F_R": "wand",
+     "F_I": "wand"
+    }
+   },
+   "fallbacks": {
+    "F_R": [
+     "kind4_I_competitor"
+    ],
+    "F_I": []
+   },
+   "n_claims_T": 20,
+   "n_false": {
+    "F_R": 4,
+    "F_I": 4
+   },
+   "pointer_in_issue": false,
+   "gold_dirs": [
+    "networkx/algorithms",
+    "networkx/generators"
+   ],
+   "manifest_all_ok": {
+    "T": true,
+    "F_R": true,
+    "F_I": true
+   }
+  },
+  "nhairs__python-json-logger-26": {
+   "repo": "nhairs/python-json-logger",
+   "stage": "servicing",
+   "sha256": {
+    "T": "52ede59cdb8606472afa2a43e660b4fdb7877f3c7b5ee6d565c90d8c848f7f95",
+    "F_R": "3ab29079b7525e5d504810c66f1b9c5a39bc6b49f9cfcdb95f8fa2e2728a4b02",
+    "F_I": "d7fba7ba39290e1b7cbbe514619e95562659819fc61ac16648c0f1b83f8b8981"
+   },
+   "chars": {
+    "T": 299,
+    "F_R": 294,
+    "F_I": 296
+   },
+   "flags": [
+    "kind1_dropped",
+    "kind2_dropped"
+   ],
+   "tokens": {
+    "F_R": [
+     {
+      "kind": 3,
+      "type": "regex",
+      "regex": "\\bmake\\b[^|;&\\n]*\\btest\\b",
+      "target": "test"
+     },
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "typing-inspect",
+       "typing_inspect"
+      ]
+     }
+    ],
+    "F_I": [
+     {
+      "kind": 3,
+      "type": "regex",
+      "regex": "\\bmake\\b[^|;&\\n]*\\binstall\\b",
+      "target": "install"
+     },
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "boltons"
+      ]
+     }
+    ]
+   },
+   "rejects": {},
+   "rounds": 1,
+   "python_spec": ">=3.8",
+   "slots": {
+    "test_root": "tests",
+    "C": {
+     "F_R": "make test",
+     "F_I": "make install"
+    },
+    "D": {
+     "replaced": "orjson",
+     "F_R": "typing-inspect",
+     "F_I": "boltons"
+    }
+   },
+   "fallbacks": {
+    "F_R": [],
+    "F_I": []
+   },
+   "n_claims_T": 11,
+   "n_false": {
+    "F_R": 2,
+    "F_I": 2
+   },
+   "pointer_in_issue": false,
+   "gold_dirs": [
+    "docs",
+    "src/pythonjsonlogger"
+   ],
+   "manifest_all_ok": {
+    "T": true,
+    "F_R": true,
+    "F_I": true
+   }
+  },
+  "nose-devs__nose2-268": {
+   "repo": "nose-devs/nose2",
+   "stage": "phase_out",
+   "sha256": {
+    "T": "2e8d73e6cef9bb78ec816b77ac5dea370bc67f601c9971a678c4da8d26918b15",
+    "F_R": "ea1a7fdc861dd80af79cc03a813bab9847036f15b0c2719af83a7ca53649f609",
+    "F_I": "d4c6ee77c1058fd1533a5e5519ea1f79daf2614f9a8f92d85b284cc95b55f74b"
+   },
+   "chars": {
+    "T": 300,
+    "F_R": 291,
+    "F_I": 310
+   },
+   "flags": [
+    "no_test_command",
+    "kind3_dropped",
+    "kind4_R_used_I_competitor"
+   ],
+   "tokens": {
+    "F_R": [
+     {
+      "kind": 1,
+      "type": "path",
+      "values": [
+       "nose2/core",
+       "core"
+      ]
+     },
+     {
+      "kind": 2,
+      "type": "path",
+      "values": [
+       "nose2/_xml_util.py",
+       "_xml_util.py"
+      ]
+     },
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "boltons"
+      ]
+     }
+    ],
+    "F_I": [
+     {
+      "kind": 1,
+      "type": "path",
+      "values": [
+       "nose2/backports/core",
+       "core"
+      ]
+     },
+     {
+      "kind": 2,
+      "type": "path",
+      "values": [
+       "nose2/backports/internal.py",
+       "internal.py"
+      ]
+     },
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "boltons"
+      ]
+     }
+    ]
+   },
+   "rejects": {},
+   "rounds": 1,
+   "python_spec": null,
+   "slots": {
+    "P1": {
+     "replaced": "nose2/tools",
+     "name": "core",
+     "F_R": "nose2/core",
+     "F_I": "nose2/backports/core"
+    },
+    "P2": {
+     "replaced": "nose2/tools/such.py",
+     "F_R": "nose2/_xml_util.py",
+     "F_I": "nose2/backports/internal.py"
+    },
+    "D": {
+     "replaced": "cov-core",
+     "F_R": "boltons",
+     "F_I": "boltons"
+    }
+   },
+   "fallbacks": {
+    "F_R": [
+     "kind4_I_competitor"
+    ],
+    "F_I": [
+     "kind2_never_existed_fallback"
+    ]
+   },
+   "n_claims_T": 11,
+   "n_false": {
+    "F_R": 3,
+    "F_I": 3
+   },
+   "pointer_in_issue": false,
+   "gold_dirs": [
+    "nose2"
+   ],
+   "manifest_all_ok": {
+    "T": true,
+    "F_R": true,
+    "F_I": true
+   }
+  },
+  "nose-devs__nose2-615": {
+   "repo": "nose-devs/nose2",
+   "stage": "phase_out",
+   "sha256": {
+    "T": "24c2faf040cef59b27ec52493307a51640a0cecff5739fb3bd0d6e20fc4a5a7e",
+    "F_R": "ec1035295542d6a189fcde9e23f47b0869c45aafd2ca628b6e2e6fb49a2c8896",
+    "F_I": "bd2d53ffee4f603f76e1da4417b86b2b6cc0f58bdb1b5b43abf396261a5da81f"
+   },
+   "chars": {
+    "T": 287,
+    "F_R": 285,
+    "F_I": 292
+   },
+   "flags": [
+    "no_test_command",
+    "kind3_dropped",
+    "kind4_R_used_I_competitor"
+   ],
+   "tokens": {
+    "F_R": [
+     {
+      "kind": 1,
+      "type": "path",
+      "values": [
+       "docs/core",
+       "core"
+      ]
+     },
+     {
+      "kind": 2,
+      "type": "path",
+      "values": [
+       "nose2/_vendor/six.py",
+       "six.py"
+      ]
+     },
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "boltons"
+      ]
+     }
+    ],
+    "F_I": [
+     {
+      "kind": 1,
+      "type": "path",
+      "values": [
+       "nose2/plugins/core",
+       "core"
+      ]
+     },
+     {
+      "kind": 2,
+      "type": "path",
+      "values": [
+       "unit_workaround.py",
+       "unit_workaround.py"
+      ]
+     },
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "boltons"
+      ]
+     }
+    ]
+   },
+   "rejects": {},
+   "rounds": 1,
+   "python_spec": ">=3.8",
+   "slots": {
+    "P1": {
+     "replaced": "nose2/tools",
+     "name": "core",
+     "F_R": "docs/core",
+     "F_I": "nose2/plugins/core"
+    },
+    "P2": {
+     "replaced": "nose2/tools/such.py",
+     "F_R": "nose2/_vendor/six.py",
+     "F_I": "unit_workaround.py"
+    },
+    "D": {
+     "replaced": "coverage",
+     "F_R": "boltons",
+     "F_I": "boltons"
+    }
+   },
+   "fallbacks": {
+    "F_R": [
+     "kind4_I_competitor"
+    ],
+    "F_I": []
+   },
+   "n_claims_T": 11,
+   "n_false": {
+    "F_R": 3,
+    "F_I": 3
+   },
+   "pointer_in_issue": true,
+   "gold_dirs": [
+    "docs",
+    "nose2"
+   ],
+   "manifest_all_ok": {
+    "T": true,
+    "F_R": true,
+    "F_I": true
+   }
+  },
+  "numpy__numpydoc-106": {
+   "repo": "numpy/numpydoc",
+   "stage": "phase_out",
+   "sha256": {
+    "T": "601ae5aa5c5eb8fe5eb716610eb63a6597d4a1e3e119807f068325d37e9d9eaf",
+    "F_R": "601ae5aa5c5eb8fe5eb716610eb63a6597d4a1e3e119807f068325d37e9d9eaf",
+    "F_I": "601ae5aa5c5eb8fe5eb716610eb63a6597d4a1e3e119807f068325d37e9d9eaf"
+   },
+   "chars": {
+    "T": 210,
+    "F_R": 210,
+    "F_I": 210
+   },
+   "flags": [
+    "no_test_command",
+    "kind1_dropped",
+    "kind2_dropped",
+    "kind3_dropped",
+    "kind4_dropped"
+   ],
+   "tokens": {
+    "F_R": [],
+    "F_I": []
+   },
+   "rejects": {},
+   "rounds": 1,
+   "python_spec": null,
+   "slots": {},
+   "fallbacks": {
+    "F_R": [],
+    "F_I": []
+   },
+   "n_claims_T": 6,
+   "n_false": {
+    "F_R": 0,
+    "F_I": 0
+   },
+   "pointer_in_issue": true,
+   "gold_dirs": [
+    "numpydoc"
+   ],
+   "manifest_all_ok": {
+    "T": true,
+    "F_R": true,
+    "F_I": true
+   }
+  },
+  "ohsu-comp-bio__py-tes-52": {
+   "repo": "ohsu-comp-bio/py-tes",
+   "stage": "initial_development",
+   "sha256": {
+    "T": "547cfe821b3cb097bd3a2aeeea5fd7643c02bc87ecc81d6f80bb71ab4861f7fe",
+    "F_R": "8e19a0e25a8b818728baca5fdc765494a5681d7a86a0f4b174a55149a574dd50",
+    "F_I": "bde747f7f201fb930cb04e7254f32092bd4aaf08b2880e7d1408eed6cca2d363"
+   },
+   "chars": {
+    "T": 278,
+    "F_R": 265,
+    "F_I": 274
+   },
+   "flags": [
+    "kind1_dropped",
+    "kind2_dropped",
+    "kind4_dropped"
+   ],
+   "tokens": {
+    "F_R": [
+     {
+      "kind": 3,
+      "type": "regex",
+      "regex": "\\bmake\\b[^|;&\\n]*\\btest\\b",
+      "target": "test"
+     }
+    ],
+    "F_I": [
+     {
+      "kind": 3,
+      "type": "regex",
+      "regex": "\\bmake\\b[^|;&\\n]*\\binstall\\b",
+      "target": "install"
+     }
+    ]
+   },
+   "rejects": {},
+   "rounds": 1,
+   "python_spec": ">=3.7, <4",
+   "slots": {
+    "test_root": "tests",
+    "C": {
+     "F_R": "make test",
+     "F_I": "make install"
+    }
+   },
+   "fallbacks": {
+    "F_R": [],
+    "F_I": []
+   },
+   "n_claims_T": 10,
+   "n_false": {
+    "F_R": 1,
+    "F_I": 1
+   },
+   "pointer_in_issue": true,
+   "gold_dirs": [
+    "tes"
+   ],
+   "manifest_all_ok": {
+    "T": true,
+    "F_R": true,
+    "F_I": true
+   }
+  },
+  "orangain__scrapy-s3pipeline-10": {
+   "repo": "orangain/scrapy-s3pipeline",
+   "stage": "initial_development",
+   "sha256": {
+    "T": "146dad2ed128ce12deddae6850314280f5c47697d7168bc76e35d1017d2d9501",
+    "F_R": "6e780325c17a81c97b7bd7823c7e0b558057e7305d530fb6efb295b38b5a317f",
+    "F_I": "6381468a6b2dc0cf267d28b792c96e530c17a97a4754b2ef1da9f52ac616b3fe"
+   },
+   "chars": {
+    "T": 246,
+    "F_R": 240,
+    "F_I": 251
+   },
+   "flags": [
+    "no_test_command",
+    "kind2_dropped",
+    "kind3_dropped",
+    "kind4_dropped"
+   ],
+   "tokens": {
+    "F_R": [
+     {
+      "kind": 1,
+      "type": "path",
+      "values": [
+       "s3pipeline/core",
+       "core"
+      ]
+     }
+    ],
+    "F_I": [
+     {
+      "kind": 1,
+      "type": "path",
+      "values": [
+       "s3pipeline/strategies/core",
+       "core"
+      ]
+     }
+    ]
+   },
+   "rejects": {},
+   "rounds": 1,
+   "python_spec": null,
+   "slots": {
+    "P1": {
+     "replaced": "s3pipeline/strategies",
+     "name": "core",
+     "F_R": "s3pipeline/core",
+     "F_I": "s3pipeline/strategies/core"
+    }
+   },
+   "fallbacks": {
+    "F_R": [],
+    "F_I": []
+   },
+   "n_claims_T": 7,
+   "n_false": {
+    "F_R": 1,
+    "F_I": 1
+   },
+   "pointer_in_issue": true,
+   "gold_dirs": [
+    "s3pipeline"
+   ],
+   "manifest_all_ok": {
+    "T": true,
+    "F_R": true,
+    "F_I": true
+   }
+  },
+  "pahaz__sshtunnel-216": {
+   "repo": "pahaz/sshtunnel",
+   "stage": "initial_development",
+   "sha256": {
+    "T": "73643acb57bec86e5545539998394bf4121b0d42fe96f1dcce4c158f04e259e7",
+    "F_R": "73643acb57bec86e5545539998394bf4121b0d42fe96f1dcce4c158f04e259e7",
+    "F_I": "73643acb57bec86e5545539998394bf4121b0d42fe96f1dcce4c158f04e259e7"
+   },
+   "chars": {
+    "T": 141,
+    "F_R": 141,
+    "F_I": 141
+   },
+   "flags": [
+    "no_gold_dir",
+    "kind1_dropped",
+    "kind2_dropped",
+    "kind3_dropped",
+    "kind4_dropped"
+   ],
+   "tokens": {
+    "F_R": [],
+    "F_I": []
+   },
+   "rejects": {},
+   "rounds": 1,
+   "python_spec": null,
+   "slots": {
+    "test_root": "tests"
+   },
+   "fallbacks": {
+    "F_R": [],
+    "F_I": []
+   },
+   "n_claims_T": 4,
+   "n_false": {
+    "F_R": 0,
+    "F_I": 0
+   },
+   "pointer_in_issue": true,
+   "gold_dirs": [],
+   "manifest_all_ok": {
+    "T": true,
+    "F_R": true,
+    "F_I": true
+   }
+  },
+  "prjemian__pyRestTable-32": {
+   "repo": "prjemian/pyRestTable",
+   "stage": "servicing",
+   "sha256": {
+    "T": "76e8abea7903add72b10cbb30def000005f11037de4b32e796037bd0b785f1c1",
+    "F_R": "f52b3589d48b346b43dfa9ab153a95ac811b14dfc60e15aa18dc2fdae191a4e6",
+    "F_I": "f52b3589d48b346b43dfa9ab153a95ac811b14dfc60e15aa18dc2fdae191a4e6"
+   },
+   "chars": {
+    "T": 188,
+    "F_R": 194,
+    "F_I": 194
+   },
+   "flags": [
+    "no_test_command",
+    "kind1_dropped",
+    "kind2_dropped",
+    "kind3_dropped",
+    "kind4_R_used_I_competitor"
+   ],
+   "tokens": {
+    "F_R": [
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "selectolax"
+      ]
+     }
+    ],
+    "F_I": [
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "selectolax"
+      ]
+     }
+    ]
+   },
+   "rejects": {},
+   "rounds": 1,
+   "python_spec": null,
+   "slots": {
+    "D": {
+     "replaced": "lxml",
+     "F_R": "selectolax",
+     "F_I": "selectolax"
+    }
+   },
+   "fallbacks": {
+    "F_R": [
+     "kind4_I_competitor"
+    ],
+    "F_I": []
+   },
+   "n_claims_T": 5,
+   "n_false": {
+    "F_R": 1,
+    "F_I": 1
+   },
+   "pointer_in_issue": true,
+   "gold_dirs": [
+    "src/pyRestTable"
+   ],
+   "manifest_all_ok": {
+    "T": true,
+    "F_R": true,
+    "F_I": true
+   }
+  },
+  "pydicom__pydicom-1988": {
+   "repo": "pydicom/pydicom",
+   "stage": "evolution",
+   "sha256": {
+    "T": "93746c8c4a3d68dd4da086926acbe28fe34091fad25342388aeb8ac6fec9aaa5",
+    "F_R": "ab6ae7752f029b0f8c8d291a827f16085153b71bd7c2f29eb6dcc4c35ce79966",
+    "F_I": "ea9747dd7a1d7b203d5602dbbc7e38069e1c08f33e5fc37caf38647dcecc524d"
+   },
+   "chars": {
+    "T": 446,
+    "F_R": 460,
+    "F_I": 474
+   },
+   "flags": [
+    "kind3_dropped",
+    "kind4_dropped",
+    "length_violation_F_I"
+   ],
+   "tokens": {
+    "F_R": [
+     {
+      "kind": 1,
+      "type": "path",
+      "values": [
+       "doc/release_notes/core",
+       "core"
+      ]
+     },
+     {
+      "kind": 2,
+      "type": "path",
+      "values": [
+       "src/pydicom/_storage_sopclass_uids.py",
+       "_storage_sopclass_uids.py"
+      ]
+     }
+    ],
+    "F_I": [
+     {
+      "kind": 1,
+      "type": "path",
+      "values": [
+       "build_tools/sphinx/core",
+       "core"
+      ]
+     },
+     {
+      "kind": 2,
+      "type": "path",
+      "values": [
+       "examples/input_output/plot_read_dicom_directory.py",
+       "plot_read_dicom_directory.py"
+      ]
+     }
+    ]
+   },
+   "rejects": {},
+   "rounds": 1,
+   "python_spec": ">=3.10",
+   "slots": {
+    "test_root": "tests",
+    "P1": {
+     "replaced": "util/scripts",
+     "name": "core",
+     "F_R": "doc/release_notes/core",
+     "F_I": "build_tools/sphinx/core"
+    },
+    "P2": {
+     "replaced": "build_tools/sphinx/github_link.py",
+     "F_R": "src/pydicom/_storage_sopclass_uids.py",
+     "F_I": "examples/input_output/plot_read_dicom_directory.py"
+    }
+   },
+   "fallbacks": {
+    "F_R": [],
+    "F_I": []
+   },
+   "n_claims_T": 15,
+   "n_false": {
+    "F_R": 2,
+    "F_I": 2
+   },
+   "pointer_in_issue": true,
+   "gold_dirs": [
+    "doc/release_notes",
+    "src/pydicom"
+   ],
+   "manifest_all_ok": {
+    "T": true,
+    "F_R": true,
+    "F_I": true
+   }
+  },
+  "python-trio__trio-3096": {
+   "repo": "python-trio/trio",
+   "stage": "initial_development",
+   "sha256": {
+    "T": "12d70eb39140b201872ad5b966c3b493c150fed63183508a8132a279b594c997",
+    "F_R": "1836cad7ce93a3938234267eab172d8257be4ff1684b83b66269853ce0a54b40",
+    "F_I": "1b0dad3473679a98888887f21be45a6fc375b23930d3da48cce86b776c7baee2"
+   },
+   "chars": {
+    "T": 518,
+    "F_R": 481,
+    "F_I": 477
+   },
+   "flags": [
+    "kind3_dropped",
+    "kind4_R_used_I_competitor",
+    "length_violation_F_R",
+    "length_violation_F_I"
+   ],
+   "tokens": {
+    "F_R": [
+     {
+      "kind": 1,
+      "type": "path",
+      "values": [
+       "newsfragments/core",
+       "core"
+      ]
+     },
+     {
+      "kind": 2,
+      "type": "path",
+      "values": [
+       "src/trio/_core/_multierror.py",
+       "_multierror.py"
+      ]
+     },
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "boltons"
+      ]
+     }
+    ],
+    "F_I": [
+     {
+      "kind": 1,
+      "type": "path",
+      "values": [
+       "notes-to-self/core",
+       "core"
+      ]
+     },
+     {
+      "kind": 2,
+      "type": "path",
+      "values": [
+       "trio/_core/_multierror.py",
+       "_multierror.py"
+      ]
+     },
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "boltons"
+      ]
+     }
+    ]
+   },
+   "rejects": {},
+   "rounds": 1,
+   "python_spec": ">=3.8",
+   "slots": {
+    "test_root": "src",
+    "P1": {
+     "replaced": "notes-to-self/ssl-handshake",
+     "name": "core",
+     "F_R": "newsfragments/core",
+     "F_I": "notes-to-self/core"
+    },
+    "P2": {
+     "replaced": "notes-to-self/ssl-close-notify/ssl-close-notify.py",
+     "F_R": "src/trio/_core/_multierror.py",
+     "F_I": "trio/_core/_multierror.py"
+    },
+    "D": {
+     "replaced": "sniffio",
+     "F_R": "boltons",
+     "F_I": "boltons"
+    }
+   },
+   "fallbacks": {
+    "F_R": [
+     "kind4_I_competitor"
+    ],
+    "F_I": []
+   },
+   "n_claims_T": 18,
+   "n_false": {
+    "F_R": 3,
+    "F_I": 3
+   },
+   "pointer_in_issue": true,
+   "gold_dirs": [
+    "newsfragments",
+    "src/trio"
+   ],
+   "manifest_all_ok": {
+    "T": true,
+    "F_R": true,
+    "F_I": true
+   }
+  },
+  "rfverbruggen__rachiopy-42": {
+   "repo": "rfverbruggen/rachiopy",
+   "stage": "initial_development",
+   "sha256": {
+    "T": "af1b2ebd36d26f0d84258d85b6093ec9d90e1b54234b90bdd344d2d4fda711a0",
+    "F_R": "af1b2ebd36d26f0d84258d85b6093ec9d90e1b54234b90bdd344d2d4fda711a0",
+    "F_I": "af1b2ebd36d26f0d84258d85b6093ec9d90e1b54234b90bdd344d2d4fda711a0"
+   },
+   "chars": {
+    "T": 218,
+    "F_R": 218,
+    "F_I": 218
+   },
+   "flags": [
+    "kind1_dropped",
+    "kind2_dropped",
+    "kind3_dropped",
+    "kind4_dropped"
+   ],
+   "tokens": {
+    "F_R": [],
+    "F_I": []
+   },
+   "rejects": {},
+   "rounds": 1,
+   "python_spec": null,
+   "slots": {
+    "test_root": "tests"
+   },
+   "fallbacks": {
+    "F_R": [],
+    "F_I": []
+   },
+   "n_claims_T": 7,
+   "n_false": {
+    "F_R": 0,
+    "F_I": 0
+   },
+   "pointer_in_issue": true,
+   "gold_dirs": [
+    "rachiopy"
+   ],
+   "manifest_all_ok": {
+    "T": true,
+    "F_R": true,
+    "F_I": true
+   }
+  },
+  "rigetti__pyquil-1564": {
+   "repo": "rigetti/pyquil",
+   "stage": "evolution",
+   "sha256": {
+    "T": "f4a63ca847430efd54a5172962e9bff041d33aab81fe7ada51a8bf738f12595b",
+    "F_R": "1cb972fbc58ad58fd6cf01426a6aedec53417f7dd591d1a5db784dddc16aa044",
+    "F_I": "e5819cf5c76c20150a79563909a0e8c72fbc023fb83fe18bbdcaa119efed3079"
+   },
+   "chars": {
+    "T": 527,
+    "F_R": 456,
+    "F_I": 441
+   },
+   "flags": [
+    "no_test_command",
+    "kind3_dropped",
+    "length_violation_F_R",
+    "length_violation_F_I"
+   ],
+   "tokens": {
+    "F_R": [
+     {
+      "kind": 1,
+      "type": "path",
+      "values": [
+       "pyquil/core",
+       "core"
+      ]
+     },
+     {
+      "kind": 2,
+      "type": "path",
+      "values": [
+       "pyquil/external/contextvars.py",
+       "contextvars.py"
+      ]
+     },
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "cupy"
+      ]
+     }
+    ],
+    "F_I": [
+     {
+      "kind": 1,
+      "type": "path",
+      "values": [
+       "pyquil/api/core",
+       "core"
+      ]
+     },
+     {
+      "kind": 2,
+      "type": "path",
+      "values": [
+       "setup.py",
+       "setup.py"
+      ]
+     },
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "boltons"
+      ]
+     }
+    ]
+   },
+   "rejects": {},
+   "rounds": 1,
+   "python_spec": "^3.7",
+   "slots": {
+    "P1": {
+     "replaced": "pyquil/quantum_processor",
+     "name": "core",
+     "F_R": "pyquil/core",
+     "F_I": "pyquil/api/core"
+    },
+    "P2": {
+     "replaced": "pyquil/quantum_processor/transformers/qcs_isa_to_compiler_isa.py",
+     "F_R": "pyquil/external/contextvars.py",
+     "F_I": "setup.py"
+    },
+    "D": {
+     "replaced": "importlib-metadata",
+     "F_R": "cupy",
+     "F_I": "boltons"
+    }
+   },
+   "fallbacks": {
+    "F_R": [],
+    "F_I": []
+   },
+   "n_claims_T": 18,
+   "n_false": {
+    "F_R": 3,
+    "F_I": 3
+   },
+   "pointer_in_issue": true,
+   "gold_dirs": [
+    "pyquil",
+    "pyquil/_parser"
+   ],
+   "manifest_all_ok": {
+    "T": true,
+    "F_R": true,
+    "F_I": true
+   }
+  },
+  "seung-lab__cloud-volume-471": {
+   "repo": "seung-lab/cloud-volume",
+   "stage": "phase_out",
+   "sha256": {
+    "T": "8dcf73446559a0c8c38a2ad147354c9946f36a72a07ab84c55b90811fb6418c0",
+    "F_R": "05a0951d198239b1dd64ea20952806cf70ced4f0bf25d78e5ef22b743493e43d",
+    "F_I": "15512f167a968a5c3d288d2d590fe83e229cccc4e5cb261fe8b5eb85b931ac8f"
+   },
+   "chars": {
+    "T": 500,
+    "F_R": 470,
+    "F_I": 480
+   },
+   "flags": [
+    "length_violation_F_R"
+   ],
+   "tokens": {
+    "F_R": [
+     {
+      "kind": 1,
+      "type": "path",
+      "values": [
+       "cloudvolume/frontends/core",
+       "core"
+      ]
+     },
+     {
+      "kind": 2,
+      "type": "path",
+      "values": [
+       "cloudvolume/meshservice.py",
+       "meshservice.py"
+      ]
+     },
+     {
+      "kind": 3,
+      "type": "regex",
+      "regex": "\\bmake\\b[^|;&\\n]*\\btests\\b",
+      "target": "tests"
+     },
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "jax"
+      ]
+     }
+    ],
+    "F_I": [
+     {
+      "kind": 1,
+      "type": "path",
+      "values": [
+       "cloudvolume/datasource/core",
+       "core"
+      ]
+     },
+     {
+      "kind": 2,
+      "type": "path",
+      "values": [
+       "test/test_compression.py",
+       "test_compression.py"
+      ]
+     },
+     {
+      "kind": 3,
+      "type": "regex",
+      "regex": "\\bmake\\b[^|;&\\n]*\\binstall\\b",
+      "target": "install"
+     },
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "boltons"
+      ]
+     }
+    ]
+   },
+   "rejects": {},
+   "rounds": 1,
+   "python_spec": "~=3.6",
+   "slots": {
+    "test_root": "test",
+    "P1": {
+     "replaced": "cloudvolume/storage",
+     "name": "core",
+     "F_R": "cloudvolume/frontends/core",
+     "F_I": "cloudvolume/datasource/core"
+    },
+    "P2": {
+     "replaced": "cloudvolume/frontends/precomputed.py",
+     "F_R": "cloudvolume/meshservice.py",
+     "F_I": "test/test_compression.py"
+    },
+    "C": {
+     "F_R": "make tests",
+     "F_I": "make install"
+    },
+    "D": {
+     "replaced": "cloud-files",
+     "F_R": "jax",
+     "F_I": "boltons"
+    }
+   },
+   "fallbacks": {
+    "F_R": [],
+    "F_I": []
+   },
+   "n_claims_T": 17,
+   "n_false": {
+    "F_R": 4,
+    "F_I": 4
+   },
+   "pointer_in_issue": false,
+   "gold_dirs": [
+    "cloudvolume/frontends"
+   ],
+   "manifest_all_ok": {
+    "T": true,
+    "F_R": true,
+    "F_I": true
+   }
+  },
+  "stravalib__stravalib-446": {
+   "repo": "stravalib/stravalib",
+   "stage": "evolution",
+   "sha256": {
+    "T": "6a9158b51729705147db84e0c58d47a237366c72d5c9b312308242981d1945e8",
+    "F_R": "b17553080b8d2f5ae2af50bff20e473786495aad15993dfe0207eeb6cf3dd812",
+    "F_I": "3f5c27f22126599b5a62b327bf62c20245b1d46536d97579794b9d28686393e6"
+   },
+   "chars": {
+    "T": 364,
+    "F_R": 339,
+    "F_I": 363
+   },
+   "flags": [
+    "kind1_dropped",
+    "kind2_dropped",
+    "length_violation_F_R"
+   ],
+   "tokens": {
+    "F_R": [
+     {
+      "kind": 3,
+      "type": "regex",
+      "regex": "\\bmake\\b[^|;&\\n]*\\btests\\b",
+      "target": "tests"
+     },
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "httpx"
+      ]
+     }
+    ],
+    "F_I": [
+     {
+      "kind": 3,
+      "type": "regex",
+      "regex": "\\bmake\\b[^|;&\\n]*\\binstall\\b",
+      "target": "install"
+     },
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "tzlocal"
+      ]
+     }
+    ]
+   },
+   "rejects": {},
+   "rounds": 1,
+   "python_spec": ">=3.9",
+   "slots": {
+    "test_root": "src/stravalib/tests",
+    "C": {
+     "F_R": "make tests",
+     "F_I": "make install"
+    },
+    "D": {
+     "replaced": "pytz",
+     "F_R": "httpx",
+     "F_I": "tzlocal"
+    }
+   },
+   "fallbacks": {
+    "F_R": [],
+    "F_I": []
+   },
+   "n_claims_T": 14,
+   "n_false": {
+    "F_R": 2,
+    "F_I": 2
+   },
+   "pointer_in_issue": false,
+   "gold_dirs": [
+    "docs/get-started",
+    "docs/reference",
+    "src/stravalib"
+   ],
+   "manifest_all_ok": {
+    "T": true,
+    "F_R": true,
+    "F_I": true
+   }
+  },
+  "taverntesting__tavern-650": {
+   "repo": "taverntesting/tavern",
+   "stage": "phase_out",
+   "sha256": {
+    "T": "0f3e6627bb6ab3ae6fc3a594e98243e415ec6c484cd6008101abb87a06df55bd",
+    "F_R": "31d80e524cbef12d58ba23834af2c09819b15abbf0304164d0e40f3211b0902c",
+    "F_I": "d5f2a8198b882d9da565b25448aeb72eb8f208346f123e83a058f3f16c128c5e"
+   },
+   "chars": {
+    "T": 367,
+    "F_R": 363,
+    "F_I": 361
+   },
+   "flags": [
+    "no_test_command",
+    "kind3_dropped",
+    "kind4_R_used_I_competitor"
+   ],
+   "tokens": {
+    "F_R": [
+     {
+      "kind": 1,
+      "type": "path",
+      "values": [
+       "docs/source/internal",
+       "internal"
+      ]
+     },
+     {
+      "kind": 2,
+      "type": "path",
+      "values": [
+       "tavern/util/python_2_util.py",
+       "python_2_util.py"
+      ]
+     },
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "ruamel-yaml",
+       "ruamel_yaml"
+      ]
+     }
+    ],
+    "F_I": [
+     {
+      "kind": 1,
+      "type": "path",
+      "values": [
+       "tavern/_plugins/internal",
+       "internal"
+      ]
+     },
+     {
+      "kind": 2,
+      "type": "path",
+      "values": [
+       "tests/test_response.py",
+       "test_response.py"
+      ]
+     },
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "ruamel-yaml",
+       "ruamel_yaml"
+      ]
+     }
+    ]
+   },
+   "rejects": {},
+   "rounds": 1,
+   "python_spec": null,
+   "slots": {
+    "P1": {
+     "replaced": "tavern/testutils",
+     "name": "internal",
+     "F_R": "docs/source/internal",
+     "F_I": "tavern/_plugins/internal"
+    },
+    "P2": {
+     "replaced": "tavern/_plugins/rest/request.py",
+     "F_R": "tavern/util/python_2_util.py",
+     "F_I": "tests/test_response.py"
+    },
+    "D": {
+     "replaced": "pyyaml",
+     "F_R": "ruamel-yaml",
+     "F_I": "ruamel-yaml"
+    }
+   },
+   "fallbacks": {
+    "F_R": [
+     "kind4_I_competitor"
+    ],
+    "F_I": []
+   },
+   "n_claims_T": 13,
+   "n_false": {
+    "F_R": 3,
+    "F_I": 3
+   },
+   "pointer_in_issue": false,
+   "gold_dirs": [
+    "docs/source",
+    "tavern/util"
+   ],
+   "manifest_all_ok": {
+    "T": true,
+    "F_R": true,
+    "F_I": true
+   }
+  },
+  "taverntesting__tavern-851": {
+   "repo": "taverntesting/tavern",
+   "stage": "phase_out",
+   "sha256": {
+    "T": "b7f77db7b60c5dd71d4d9fd9049526151ad3f3e7bec692587d6ee3dee1cfc02c",
+    "F_R": "cc9c498b01a97e7bd0836432431f086b46d36d0769a4b69dc7bf7081a414cdce",
+    "F_I": "b807e28dba3c8cc661bef65d9294a1f34900654bc81c21707656b483c2c0112e"
+   },
+   "chars": {
+    "T": 400,
+    "F_R": 382,
+    "F_I": 370
+   },
+   "flags": [
+    "no_test_command",
+    "kind1_dropped",
+    "kind3_dropped",
+    "length_violation_F_I"
+   ],
+   "tokens": {
+    "F_R": [
+     {
+      "kind": 2,
+      "type": "path",
+      "values": [
+       "tavern/request/base.py",
+       "base.py"
+      ]
+     },
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "toolz"
+      ]
+     }
+    ],
+    "F_I": [
+     {
+      "kind": 2,
+      "type": "path",
+      "values": [
+       "setup.py",
+       "setup.py"
+      ]
+     },
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "boltons"
+      ]
+     }
+    ]
+   },
+   "rejects": {},
+   "rounds": 1,
+   "python_spec": ">=3.8",
+   "slots": {
+    "P2": {
+     "replaced": "tavern/_plugins/rest/request.py",
+     "F_R": "tavern/request/base.py",
+     "F_I": "setup.py"
+    },
+    "D": {
+     "replaced": "jmespath",
+     "F_R": "toolz",
+     "F_I": "boltons"
+    }
+   },
+   "fallbacks": {
+    "F_R": [],
+    "F_I": []
+   },
+   "n_claims_T": 14,
+   "n_false": {
+    "F_R": 2,
+    "F_I": 2
+   },
+   "pointer_in_issue": true,
+   "gold_dirs": [
+    "tavern",
+    "tavern/_core",
+    "tavern/_plugins"
+   ],
+   "manifest_all_ok": {
+    "T": true,
+    "F_R": true,
+    "F_I": true
+   }
+  },
+  "tkarabela__pysubs2-77": {
+   "repo": "tkarabela/pysubs2",
+   "stage": "evolution",
+   "sha256": {
+    "T": "079e5850f04308467b8ac6268902f2f26375aafeb00d2b8ff0e3ebfe9737fd0b",
+    "F_R": "079e5850f04308467b8ac6268902f2f26375aafeb00d2b8ff0e3ebfe9737fd0b",
+    "F_I": "079e5850f04308467b8ac6268902f2f26375aafeb00d2b8ff0e3ebfe9737fd0b"
+   },
+   "chars": {
+    "T": 206,
+    "F_R": 206,
+    "F_I": 206
+   },
+   "flags": [
+    "kind1_dropped",
+    "kind2_dropped",
+    "kind3_dropped",
+    "kind4_dropped"
+   ],
+   "tokens": {
+    "F_R": [],
+    "F_I": []
+   },
+   "rejects": {},
+   "rounds": 1,
+   "python_spec": ">=3.8",
+   "slots": {
+    "test_root": "tests"
+   },
+   "fallbacks": {
+    "F_R": [],
+    "F_I": []
+   },
+   "n_claims_T": 7,
+   "n_false": {
+    "F_R": 0,
+    "F_I": 0
+   },
+   "pointer_in_issue": true,
+   "gold_dirs": [
+    "pysubs2"
+   ],
+   "manifest_all_ok": {
+    "T": true,
+    "F_R": true,
+    "F_I": true
+   }
+  },
+  "ttu__ruuvitag-sensor-41": {
+   "repo": "ttu/ruuvitag-sensor",
+   "stage": "phase_out",
+   "sha256": {
+    "T": "a9b157d9a07c59844c82f3c2d0c05ce52a6882f17059fac1d1b75e4f664d5426",
+    "F_R": "365e612e20d2cdbf2b234362f0cad182b16f108dd12c2a4274a3eef45dd547fc",
+    "F_I": "365e612e20d2cdbf2b234362f0cad182b16f108dd12c2a4274a3eef45dd547fc"
+   },
+   "chars": {
+    "T": 183,
+    "F_R": 188,
+    "F_I": 188
+   },
+   "flags": [
+    "no_test_command",
+    "kind1_dropped",
+    "kind2_dropped",
+    "kind3_dropped",
+    "kind4_R_used_I_competitor"
+   ],
+   "tokens": {
+    "F_R": [
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "boltons"
+      ]
+     }
+    ],
+    "F_I": [
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "boltons"
+      ]
+     }
+    ]
+   },
+   "rejects": {},
+   "rounds": 1,
+   "python_spec": null,
+   "slots": {
+    "D": {
+     "replaced": "rx",
+     "F_R": "boltons",
+     "F_I": "boltons"
+    }
+   },
+   "fallbacks": {
+    "F_R": [
+     "kind4_I_competitor"
+    ],
+    "F_I": []
+   },
+   "n_claims_T": 5,
+   "n_false": {
+    "F_R": 1,
+    "F_I": 1
+   },
+   "pointer_in_issue": false,
+   "gold_dirs": [
+    "ruuvitag_sensor"
+   ],
+   "manifest_all_ok": {
+    "T": true,
+    "F_R": true,
+    "F_I": true
+   }
+  },
+  "twu__skjold-140": {
+   "repo": "twu/skjold",
+   "stage": "initial_development",
+   "sha256": {
+    "T": "cdc6f06d9af9074b425ce2190f7b42d3a1ba462886fa5443c825d85899ef296e",
+    "F_R": "6f67cdca34a758f8e6a5a9bb63e5dca83cc6fc3c7895dd35aaf4401f4f3fc1f8",
+    "F_I": "aed9c2173818e94c7fce135f779b18f5c181056202ef0cadacb535dbf3bbb8e8"
+   },
+   "chars": {
+    "T": 292,
+    "F_R": 283,
+    "F_I": 281
+   },
+   "flags": [
+    "kind1_dropped",
+    "kind2_dropped"
+   ],
+   "tokens": {
+    "F_R": [
+     {
+      "kind": 3,
+      "type": "regex",
+      "regex": "\\bmake\\b[^|;&\\n]*\\btest\\b",
+      "target": "test"
+     },
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "semantic-version",
+       "semantic_version"
+      ]
+     }
+    ],
+    "F_I": [
+     {
+      "kind": 3,
+      "type": "regex",
+      "regex": "\\bmake\\b[^|;&\\n]*\\binstall\\b",
+      "target": "install"
+     },
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "rtoml"
+      ]
+     }
+    ]
+   },
+   "rejects": {},
+   "rounds": 1,
+   "python_spec": "^3.7",
+   "slots": {
+    "test_root": "tests",
+    "C": {
+     "F_R": "make test",
+     "F_I": "make install"
+    },
+    "D": {
+     "replaced": "toml",
+     "F_R": "semantic-version",
+     "F_I": "rtoml"
+    }
+   },
+   "fallbacks": {
+    "F_R": [],
+    "F_I": []
+   },
+   "n_claims_T": 11,
+   "n_false": {
+    "F_R": 2,
+    "F_I": 2
+   },
+   "pointer_in_issue": true,
+   "gold_dirs": [
+    "src/skjold"
+   ],
+   "manifest_all_ok": {
+    "T": true,
+    "F_R": true,
+    "F_I": true
+   }
+  },
+  "ucfopen__canvasapi-271": {
+   "repo": "ucfopen/canvasapi",
+   "stage": "initial_development",
+   "sha256": {
+    "T": "e941df715cec7d54e81375e5ad626d2a87cb5c766fd565abed76a08d8e4427af",
+    "F_R": "eff735a252466b0a6f77a2f2d82c43bf8e5fe66e9492daa38ac04bb337700c5c",
+    "F_I": "991c90ab651699a981e651fface3bedc686532cdd66e2a521fb41ba7862ce60a"
+   },
+   "chars": {
+    "T": 195,
+    "F_R": 197,
+    "F_I": 192
+   },
+   "flags": [
+    "no_test_command",
+    "kind1_dropped",
+    "kind2_dropped",
+    "kind3_dropped"
+   ],
+   "tokens": {
+    "F_R": [
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "pasteurize"
+      ]
+     }
+    ],
+    "F_I": [
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "httpx"
+      ]
+     }
+    ]
+   },
+   "rejects": {},
+   "rounds": 1,
+   "python_spec": null,
+   "slots": {
+    "D": {
+     "replaced": "requests",
+     "F_R": "pasteurize",
+     "F_I": "httpx"
+    }
+   },
+   "fallbacks": {
+    "F_R": [],
+    "F_I": []
+   },
+   "n_claims_T": 7,
+   "n_false": {
+    "F_R": 1,
+    "F_I": 1
+   },
+   "pointer_in_issue": true,
+   "gold_dirs": [
+    "canvasapi"
+   ],
+   "manifest_all_ok": {
+    "T": true,
+    "F_R": true,
+    "F_I": true
+   }
+  },
+  "uilibs__uiprotect-275": {
+   "repo": "uilibs/uiprotect",
+   "stage": "phase_out",
+   "sha256": {
+    "T": "b512bfc864bbed93aae190d82ab3b615253c566c3eb3f3f6e0b6b402a7ba8632",
+    "F_R": "5489e03553ca41cbc579b13f2f38959d00dee385a9f3f190e172a666788a4683",
+    "F_I": "6a1e8b5d088118c6f2d334ca3d922635a438fc7411e3fa88d3d10953a89912cd"
+   },
+   "chars": {
+    "T": 352,
+    "F_R": 350,
+    "F_I": 345
+   },
+   "flags": [
+    "kind1_dropped",
+    "kind2_dropped",
+    "kind3_dropped"
+   ],
+   "tokens": {
+    "F_R": [
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "marshmallow"
+      ]
+     }
+    ],
+    "F_I": [
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "docopt"
+      ]
+     }
+    ]
+   },
+   "rejects": {},
+   "rounds": 1,
+   "python_spec": ">=3.10",
+   "slots": {
+    "test_root": "tests",
+    "D": {
+     "replaced": "typer",
+     "F_R": "marshmallow",
+     "F_I": "docopt"
+    }
+   },
+   "fallbacks": {
+    "F_R": [],
+    "F_I": []
+   },
+   "n_claims_T": 12,
+   "n_false": {
+    "F_R": 1,
+    "F_I": 1
+   },
+   "pointer_in_issue": true,
+   "gold_dirs": [
+    "src/uiprotect"
+   ],
+   "manifest_all_ok": {
+    "T": true,
+    "F_R": true,
+    "F_I": true
+   }
+  },
+  "uilibs__uiprotect-283": {
+   "repo": "uilibs/uiprotect",
+   "stage": "phase_out",
+   "sha256": {
+    "T": "b512bfc864bbed93aae190d82ab3b615253c566c3eb3f3f6e0b6b402a7ba8632",
+    "F_R": "f06fc8b23df664db6f7e20ef98f59503ec4d6c67f7403ed6a7ca71a728b33a82",
+    "F_I": "869812844321bbdb4fff3f9e33aeb475afc8e3cadbee4731dc77add6a20341ee"
+   },
+   "chars": {
+    "T": 352,
+    "F_R": 348,
+    "F_I": 344
+   },
+   "flags": [
+    "kind1_dropped",
+    "kind2_dropped",
+    "kind3_dropped"
+   ],
+   "tokens": {
+    "F_R": [
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "marshmallow"
+      ]
+     }
+    ],
+    "F_I": [
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "boltons"
+      ]
+     }
+    ]
+   },
+   "rejects": {},
+   "rounds": 1,
+   "python_spec": ">=3.10",
+   "slots": {
+    "test_root": "tests",
+    "D": {
+     "replaced": "aiohttp",
+     "F_R": "marshmallow",
+     "F_I": "boltons"
+    }
+   },
+   "fallbacks": {
+    "F_R": [],
+    "F_I": []
+   },
+   "n_claims_T": 12,
+   "n_false": {
+    "F_R": 1,
+    "F_I": 1
+   },
+   "pointer_in_issue": false,
+   "gold_dirs": [
+    "src/uiprotect"
+   ],
+   "manifest_all_ok": {
+    "T": true,
+    "F_R": true,
+    "F_I": true
+   }
+  },
+  "uilibs__uiprotect-346": {
+   "repo": "uilibs/uiprotect",
+   "stage": "phase_out",
+   "sha256": {
+    "T": "1b51d05ebcf402462443561c49f10adfac7d1932d39a80a1c2712bc56b3a9af8",
+    "F_R": "8fe69cab1a7b96c952ad2bae9b042c69648ab6ac95401e453ba2d813050079dc",
+    "F_I": "d0091cda2d5c0111a4999b23c55e2087e749feb4ebea1f05b9c8e9e2a3b41f0a"
+   },
+   "chars": {
+    "T": 343,
+    "F_R": 341,
+    "F_I": 336
+   },
+   "flags": [
+    "kind1_dropped",
+    "kind2_dropped",
+    "kind3_dropped"
+   ],
+   "tokens": {
+    "F_R": [
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "marshmallow"
+      ]
+     }
+    ],
+    "F_I": [
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "docopt"
+      ]
+     }
+    ]
+   },
+   "rejects": {},
+   "rounds": 1,
+   "python_spec": ">=3.10",
+   "slots": {
+    "test_root": "tests",
+    "D": {
+     "replaced": "typer",
+     "F_R": "marshmallow",
+     "F_I": "docopt"
+    }
+   },
+   "fallbacks": {
+    "F_R": [],
+    "F_I": []
+   },
+   "n_claims_T": 12,
+   "n_false": {
+    "F_R": 1,
+    "F_I": 1
+   },
+   "pointer_in_issue": false,
+   "gold_dirs": [
+    "src/uiprotect"
+   ],
+   "manifest_all_ok": {
+    "T": true,
+    "F_R": true,
+    "F_I": true
+   }
+  },
+  "uilibs__uiprotect-347": {
+   "repo": "uilibs/uiprotect",
+   "stage": "phase_out",
+   "sha256": {
+    "T": "1b51d05ebcf402462443561c49f10adfac7d1932d39a80a1c2712bc56b3a9af8",
+    "F_R": "53754ac7181770c51c0820495e82135297158d8f417ee65fdf987dbd9501da87",
+    "F_I": "777f2258b53ab94bf2c23e06edf2c9064ff8cbaea343c4d736336a481282f2d6"
+   },
+   "chars": {
+    "T": 343,
+    "F_R": 327,
+    "F_I": 329
+   },
+   "flags": [
+    "kind1_dropped",
+    "kind2_dropped",
+    "kind3_dropped"
+   ],
+   "tokens": {
+    "F_R": [
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "toolz"
+      ]
+     }
+    ],
+    "F_I": [
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "boltons"
+      ]
+     }
+    ]
+   },
+   "rejects": {},
+   "rounds": 1,
+   "python_spec": ">=3.10",
+   "slots": {
+    "test_root": "tests",
+    "D": {
+     "replaced": "convertertools",
+     "F_R": "toolz",
+     "F_I": "boltons"
+    }
+   },
+   "fallbacks": {
+    "F_R": [],
+    "F_I": []
+   },
+   "n_claims_T": 12,
+   "n_false": {
+    "F_R": 1,
+    "F_I": 1
+   },
+   "pointer_in_issue": false,
+   "gold_dirs": [
+    "src/uiprotect"
+   ],
+   "manifest_all_ok": {
+    "T": true,
+    "F_R": true,
+    "F_I": true
+   }
+  },
+  "zopefoundation__DateTime-37": {
+   "repo": "zopefoundation/DateTime",
+   "stage": "servicing",
+   "sha256": {
+    "T": "19c905242ff63cf262f2e1aba35cb3a3f0aaddcd3edafc73c10d8c7d14bf6f93",
+    "F_R": "7409f9a2d2ebd0908217df6b12e3749d64f69492b52de3abd8c27ddc4fc9e5ba",
+    "F_I": "591d2d31413e481bd4919411adf14894fca96d37dead1de2e8a97ef55c3c9845"
+   },
+   "chars": {
+    "T": 269,
+    "F_R": 246,
+    "F_I": 268
+   },
+   "flags": [
+    "kind1_dropped",
+    "kind2_dropped",
+    "length_violation_F_R"
+   ],
+   "tokens": {
+    "F_R": [
+     {
+      "kind": 3,
+      "type": "regex",
+      "regex": "\\bmake\\b[^|;&\\n]*\\btest\\b",
+      "target": "test"
+     },
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "boltons"
+      ]
+     }
+    ],
+    "F_I": [
+     {
+      "kind": 3,
+      "type": "regex",
+      "regex": "\\bmake\\b[^|;&\\n]*\\binstall\\b",
+      "target": "install"
+     },
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "tzlocal"
+      ]
+     }
+    ]
+   },
+   "rejects": {},
+   "rounds": 1,
+   "python_spec": null,
+   "slots": {
+    "test_root": "src/DateTime/tests",
+    "C": {
+     "F_R": "make test",
+     "F_I": "make install"
+    },
+    "D": {
+     "replaced": "pytz",
+     "F_R": "boltons",
+     "F_I": "tzlocal"
+    }
+   },
+   "fallbacks": {
+    "F_R": [],
+    "F_I": []
+   },
+   "n_claims_T": 8,
+   "n_false": {
+    "F_R": 2,
+    "F_I": 2
+   },
+   "pointer_in_issue": true,
+   "gold_dirs": [
+    "src/DateTime"
+   ],
+   "manifest_all_ok": {
+    "T": true,
+    "F_R": true,
+    "F_I": true
+   }
+  },
+  "zopefoundation__DateTime-42": {
+   "repo": "zopefoundation/DateTime",
+   "stage": "servicing",
+   "sha256": {
+    "T": "19c905242ff63cf262f2e1aba35cb3a3f0aaddcd3edafc73c10d8c7d14bf6f93",
+    "F_R": "7409f9a2d2ebd0908217df6b12e3749d64f69492b52de3abd8c27ddc4fc9e5ba",
+    "F_I": "591d2d31413e481bd4919411adf14894fca96d37dead1de2e8a97ef55c3c9845"
+   },
+   "chars": {
+    "T": 269,
+    "F_R": 246,
+    "F_I": 268
+   },
+   "flags": [
+    "kind1_dropped",
+    "kind2_dropped",
+    "length_violation_F_R"
+   ],
+   "tokens": {
+    "F_R": [
+     {
+      "kind": 3,
+      "type": "regex",
+      "regex": "\\bmake\\b[^|;&\\n]*\\btest\\b",
+      "target": "test"
+     },
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "boltons"
+      ]
+     }
+    ],
+    "F_I": [
+     {
+      "kind": 3,
+      "type": "regex",
+      "regex": "\\bmake\\b[^|;&\\n]*\\binstall\\b",
+      "target": "install"
+     },
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "tzlocal"
+      ]
+     }
+    ]
+   },
+   "rejects": {},
+   "rounds": 1,
+   "python_spec": null,
+   "slots": {
+    "test_root": "src/DateTime/tests",
+    "C": {
+     "F_R": "make test",
+     "F_I": "make install"
+    },
+    "D": {
+     "replaced": "pytz",
+     "F_R": "boltons",
+     "F_I": "tzlocal"
+    }
+   },
+   "fallbacks": {
+    "F_R": [],
+    "F_I": []
+   },
+   "n_claims_T": 8,
+   "n_false": {
+    "F_R": 2,
+    "F_I": 2
+   },
+   "pointer_in_issue": true,
+   "gold_dirs": [
+    "src/DateTime"
+   ],
+   "manifest_all_ok": {
+    "T": true,
+    "F_R": true,
+    "F_I": true
+   }
+  },
+  "zopefoundation__DocumentTemplate-55": {
+   "repo": "zopefoundation/DocumentTemplate",
+   "stage": "servicing",
+   "sha256": {
+    "T": "6ffd8c3245dccf2e47f606bf3ccc30041123bdef509d8b8b9f885d09e58ebdaf",
+    "F_R": "8868ed276d675291ae33f6ed7372e309346cbe5f3c8e6812b8f97cc3539247e8",
+    "F_I": "48892cf712fa7d8155777f498db0b5e23a7f3f7142e09c48d0b0c0535bf5e590"
+   },
+   "chars": {
+    "T": 435,
+    "F_R": 410,
+    "F_I": 432
+   },
+   "flags": [
+    "kind2_dropped",
+    "length_violation_F_R"
+   ],
+   "tokens": {
+    "F_R": [
+     {
+      "kind": 1,
+      "type": "path",
+      "values": [
+       "src/DocumentTemplate/core",
+       "core"
+      ]
+     },
+     {
+      "kind": 3,
+      "type": "regex",
+      "regex": "\\bmake\\b[^|;&\\n]*\\btest\\b",
+      "target": "test"
+     },
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "pasteurize"
+      ]
+     }
+    ],
+    "F_I": [
+     {
+      "kind": 1,
+      "type": "path",
+      "values": [
+       "src/TreeDisplay/core",
+       "core"
+      ]
+     },
+     {
+      "kind": 3,
+      "type": "regex",
+      "regex": "\\bmake\\b[^|;&\\n]*\\binstall\\b",
+      "target": "install"
+     },
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "boltons"
+      ]
+     }
+    ]
+   },
+   "rejects": {},
+   "rounds": 1,
+   "python_spec": ">=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*",
+   "slots": {
+    "test_root": "src/DocumentTemplate/tests",
+    "P1": {
+     "replaced": "src/TreeDisplay",
+     "name": "core",
+     "F_R": "src/DocumentTemplate/core",
+     "F_I": "src/TreeDisplay/core"
+    },
+    "C": {
+     "F_R": "make test",
+     "F_I": "make install"
+    },
+    "D": {
+     "replaced": "zexceptions",
+     "F_R": "pasteurize",
+     "F_I": "boltons"
+    }
+   },
+   "fallbacks": {
+    "F_R": [],
+    "F_I": []
+   },
+   "n_claims_T": 14,
+   "n_false": {
+    "F_R": 3,
+    "F_I": 3
+   },
+   "pointer_in_issue": true,
+   "gold_dirs": [
+    "src/DocumentTemplate"
+   ],
+   "manifest_all_ok": {
+    "T": true,
+    "F_R": true,
+    "F_I": true
+   }
+  },
+  "zopefoundation__Products.BTreeFolder2-13": {
+   "repo": "zopefoundation/Products.BTreeFolder2",
+   "stage": "servicing",
+   "sha256": {
+    "T": "63d46e2b559e687416d3794ea8bc82547f6ac821d47e777816418e216248330e",
+    "F_R": "63d46e2b559e687416d3794ea8bc82547f6ac821d47e777816418e216248330e",
+    "F_I": "63d46e2b559e687416d3794ea8bc82547f6ac821d47e777816418e216248330e"
+   },
+   "chars": {
+    "T": 302,
+    "F_R": 302,
+    "F_I": 302
+   },
+   "flags": [
+    "no_test_command",
+    "kind1_dropped",
+    "kind2_dropped",
+    "kind3_dropped",
+    "kind4_dropped"
+   ],
+   "tokens": {
+    "F_R": [],
+    "F_I": []
+   },
+   "rejects": {},
+   "rounds": 1,
+   "python_spec": ">=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*",
+   "slots": {},
+   "fallbacks": {
+    "F_R": [],
+    "F_I": []
+   },
+   "n_claims_T": 10,
+   "n_false": {
+    "F_R": 0,
+    "F_I": 0
+   },
+   "pointer_in_issue": false,
+   "gold_dirs": [
+    "src/Products"
+   ],
+   "manifest_all_ok": {
+    "T": true,
+    "F_R": true,
+    "F_I": true
+   }
+  },
+  "zopefoundation__Products.ZSQLMethods-35": {
+   "repo": "zopefoundation/Products.ZSQLMethods",
+   "stage": "servicing",
+   "sha256": {
+    "T": "a70a065a77a87053f9e87cd5ae0f83ff2a9fefdc7b9fd6440533cad7ec609ff2",
+    "F_R": "70a7bbe010ef3d37c77975fdd011f55df26fd3f58ef97b698bed5a5aa1f1aa61",
+    "F_I": "11237185bc32852b198ca4d62561fd517dfa4733fa06223a5c77bd9623a8fb53"
+   },
+   "chars": {
+    "T": 399,
+    "F_R": 368,
+    "F_I": 400
+   },
+   "flags": [
+    "kind2_dropped",
+    "length_violation_F_R"
+   ],
+   "tokens": {
+    "F_R": [
+     {
+      "kind": 1,
+      "type": "path",
+      "values": [
+       "src/Shared/core",
+       "core"
+      ]
+     },
+     {
+      "kind": 3,
+      "type": "regex",
+      "regex": "\\bmake\\b[^|;&\\n]*\\btest\\b",
+      "target": "test"
+     },
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "toolz"
+      ]
+     }
+    ],
+    "F_I": [
+     {
+      "kind": 1,
+      "type": "path",
+      "values": [
+       "src/Products/core",
+       "core"
+      ]
+     },
+     {
+      "kind": 3,
+      "type": "regex",
+      "regex": "\\bmake\\b[^|;&\\n]*\\binstall\\b",
+      "target": "install"
+     },
+     {
+      "kind": 4,
+      "type": "word",
+      "values": [
+       "boltons"
+      ]
+     }
+    ]
+   },
+   "rejects": {},
+   "rounds": 1,
+   "python_spec": ">=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*",
+   "slots": {
+    "test_root": "src/Shared/DC/ZRDB/tests",
+    "P1": {
+     "replaced": "src/Products",
+     "name": "core",
+     "F_R": "src/Shared/core",
+     "F_I": "src/Products/core"
+    },
+    "C": {
+     "F_R": "make test",
+     "F_I": "make install"
+    },
+    "D": {
+     "replaced": "missing",
+     "F_R": "toolz",
+     "F_I": "boltons"
+    }
+   },
+   "fallbacks": {
+    "F_R": [],
+    "F_I": []
+   },
+   "n_claims_T": 14,
+   "n_false": {
+    "F_R": 3,
+    "F_I": 3
+   },
+   "pointer_in_issue": true,
+   "gold_dirs": [
+    "src/Shared"
+   ],
+   "manifest_all_ok": {
+    "T": true,
+    "F_R": true,
+    "F_I": true
+   }
+  },
+  "zopefoundation__Zope-1183": {
+   "repo": "zopefoundation/Zope",
+   "stage": "servicing",
+   "sha256": {
+    "T": "cfe5a680dfc4287187e4c42f6cf4a6f67e8b1d674aaf775e50cf62289d98297c",
+    "F_R": "7fcbb413d2ab03773e7c5459887b2da549100e5563f52bc34c57a648dba84ef7",
+    "F_I": "3050b6ba9a5413ab6cd390a22392c578c34d675b57948fbdf4ffb6e034038861"
+   },
+   "chars": {
+    "T": 511,
+    "F_R": 532,
+    "F_I": 509
+   },
+   "flags": [
+    "no_test_command",
+    "kind3_dropped",
+    "kind4_dropped"
+   ],
+   "tokens": {
+    "F_R": [
+     {
+      "kind": 1,
+      "type": "path",
+      "values": [
+       "src/ZPublisher/core",
+       "core"
+      ]
+     },
+     {
+      "kind": 2,
+      "type": "path",
+      "values": [
+       "src/ZPublisher/maybe_lock.py",
+       "maybe_lock.py"
+      ]
+     }
+    ],
+    "F_I": [
+     {
+      "kind": 1,
+      "type": "path",
+      "values": [
+       "src/App/core",
+       "core"
+      ]
+     },
+     {
+      "kind": 2,
+      "type": "path",
+      "values": [
+       "bootstrap.py",
+       "bootstrap.py"
+      ]
+     }
+    ]
+   },
+   "rejects": {},
+   "rounds": 1,
+   "python_spec": ">= 3.7",
+   "slots": {
+    "P1": {
+     "replaced": "src/webdav",
+     "name": "core",
+     "F_R": "src/ZPublisher/core",
+     "F_I": "src/App/core"
+    },
+    "P2": {
+     "replaced": "src/OFS/Image.py",
+     "F_R": "src/ZPublisher/maybe_lock.py",
+     "F_I": "bootstrap.py"
+    }
+   },
+   "fallbacks": {
+    "F_R": [],
+    "F_I": []
+   },
+   "n_claims_T": 18,
+   "n_false": {
+    "F_R": 2,
+    "F_I": 2
+   },
+   "pointer_in_issue": true,
+   "gold_dirs": [
+    "src/ZPublisher"
+   ],
+   "manifest_all_ok": {
+    "T": true,
+    "F_R": true,
+    "F_I": true
+   }
+  },
+  "zopefoundation__transaction-24": {
+   "repo": "zopefoundation/transaction",
+   "stage": "servicing",
+   "sha256": {
+    "T": "79bc441d853882135d7361a55442beb6a25347cf42ffa195a4ee33d8bf5db5fe",
+    "F_R": "e6e8dca89b5aaa9c5e2bd78b9469b741754def56eddb0522beee48f182b2ad84",
+    "F_I": "423a51bc8099de2f81913b6d6f98449631e90c0af7a0dcb17b441ceda9f62323"
+   },
+   "chars": {
+    "T": 270,
+    "F_R": 245,
+    "F_I": 266
+   },
+   "flags": [
+    "kind1_dropped",
+    "kind2_dropped",
+    "kind4_dropped",
+    "length_violation_F_R"
+   ],
+   "tokens": {
+    "F_R": [
+     {
+      "kind": 3,
+      "type": "regex",
+      "regex": "\\bmake\\b[^|;&\\n]*\\btest\\b",
+      "target": "test"
+     }
+    ],
+    "F_I": [
+     {
+      "kind": 3,
+      "type": "regex",
+      "regex": "\\bmake\\b[^|;&\\n]*\\binstall\\b",
+      "target": "install"
+     }
+    ]
+   },
+   "rejects": {},
+   "rounds": 1,
+   "python_spec": null,
+   "slots": {
+    "test_root": "transaction/tests",
+    "C": {
+     "F_R": "make test",
+     "F_I": "make install"
+    }
+   },
+   "fallbacks": {
+    "F_R": [],
+    "F_I": []
+   },
+   "n_claims_T": 8,
+   "n_false": {
+    "F_R": 1,
+    "F_I": 1
+   },
+   "pointer_in_issue": true,
+   "gold_dirs": [
+    "docs",
+    "transaction"
+   ],
+   "manifest_all_ok": {
+    "T": true,
+    "F_R": true,
+    "F_I": true
+   }
+  }
+ }
+}

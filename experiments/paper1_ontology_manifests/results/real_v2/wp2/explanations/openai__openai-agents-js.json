@@ -1,0 +1,63 @@
+{
+ "repo": "openai/openai-agents-js",
+ "slug": "openai__openai-agents-js",
+ "input_sha": "6f0ff83bfe138a2ec84de3cdbea8a135214de1dbc8b2e001c908615f831c3828",
+ "explanations": [
+  {
+   "key": "T5|script|examples:tools-shell",
+   "verdict": "SupportedClaim",
+   "leaf": "ScriptDefinedRoot",
+   "seconds": 4.57,
+   "retried_on_claim_subgraph": false,
+   "error": null,
+   "returncode": 0,
+   "n_justifications": 1,
+   "facts": [
+    {
+     "prop": "extractionVotes",
+     "value": 3
+    },
+    {
+     "prop": "scriptDefinedRootCount",
+     "value": 1
+    }
+   ],
+   "axioms": [
+    "A_extractionVotes_ge_wp2_consensus_min_votes equivalentTo extractionVotes some integer[>= 2]",
+    "ScriptDefinedRoot subClassOf SupportedClaim",
+    "CheckedClaim equivalentTo A_extractionVotes_ge_wp2_consensus_min_votes and ManifestClaim",
+    "ScriptDefinedRoot equivalentTo A_scriptDefinedRootCount_ge_1 and CheckedClaim and CommandClaim",
+    "A_scriptDefinedRootCount_ge_1 equivalentTo scriptDefinedRootCount some integer[>= 1]"
+   ],
+   "closures": []
+  },
+  {
+   "key": "T1|docs/src/content/docs",
+   "verdict": "SupportedClaim",
+   "leaf": "PathFoundExact",
+   "seconds": 8.08,
+   "retried_on_claim_subgraph": true,
+   "error": null,
+   "returncode": 0,
+   "n_justifications": 1,
+   "facts": [
+    {
+     "prop": "pathExactMatchCount",
+     "value": 104
+    },
+    {
+     "prop": "extractionVotes",
+     "value": 2
+    }
+   ],
+   "axioms": [
+    "PathFoundExact equivalentTo A_pathExactMatchCount_ge_1 and CheckedClaim and PathExistenceClaim",
+    "A_extractionVotes_ge_wp2_consensus_min_votes equivalentTo extractionVotes some integer[>= 2]",
+    "A_pathExactMatchCount_ge_1 equivalentTo pathExactMatchCount some integer[>= 1]",
+    "CheckedClaim equivalentTo A_extractionVotes_ge_wp2_consensus_min_votes and ManifestClaim",
+    "PathFoundExact subClassOf SupportedClaim"
+   ],
+   "closures": []
+  }
+ ]
+}

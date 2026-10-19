@@ -1,0 +1,111 @@
+{
+ "unit_id": "VirtusLab__git-machete-483__D__claude-sonnet__r1",
+ "task_id": "VirtusLab__git-machete-483",
+ "repo": "VirtusLab/git-machete",
+ "stage": "phase_out",
+ "condition": "D",
+ "model": "claude-code/sonnet",
+ "run": 1,
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 3741,
+  "sha256": "6790f362a8bb0a33232647abfe874f12ad3429dfc2cc3f030a1bf3713e08d10c"
+ },
+ "started": "2026-10-18T04:24:06.975203+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 7,
+ "tool_calls": 6,
+ "usage": {
+  "input_tokens": 12,
+  "cache_creation_input_tokens": 5095,
+  "cache_read_input_tokens": 123841,
+  "output_tokens": 1426,
+  "output_tokens_details": {
+   "thinking_tokens": 168
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 5095,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 12,
+   "outputTokens": 1426,
+   "cacheReadInputTokens": 123841,
+   "cacheCreationInputTokens": 5095,
+   "webSearchRequests": 0,
+   "costUSD": 0.0470481,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 168,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.0470481,
+ "result_text": "I changed `github checkout-prs` so it no longer leaves HEAD on the last branch it processed. I haven't run it or the test suite.\n\nThe cause was that `add` creates each missing local branch with `git checkout -b`. So every PR branch it set up moved HEAD, and nothing moved it back.\n\nThe fix is in `checkout_github_prs` in `git_machete/client.py`. It now remembers the branch you started on. If exactly one PR was checked out, it switches to that PR's branch, as before. Otherwise, it switches back to your original branch. If you started on a detached HEAD, there is no branch to return to, so it doesn't switch back.\n\nI also changed the docs to say \"If only one PR has been checked out, then switch\u2026\" in `docs/source/cli_help/github.rst` and `git_machete/docs.py`.\n\nI didn't add regression tests, because you told me not to touch tests; the issue's request for them is still open.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792309800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0.06,
+    "resetsAt": 1792309800
+   },
+   "seven_day": {
+    "utilization": 0.12,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 22.4,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 3,
+   "Y6": 7,
+   "hit_step_limit": 0,
+   "changed_lines": 7,
+   "gold_changed_lines": 36,
+   "Y1": 2,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": -2.3625700793847084
+  },
+  "f2p_pass": 1,
+  "f2p_total": 2,
+  "p2p_pass": 46,
+  "p2p_total": 46,
+  "f2p_all_pass": false,
+  "p2p_all_pass": true,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 68.0
+ },
+ "status": "done",
+ "finished": "2026-10-18T04:25:38.504140+00:00"
+}

@@ -1,0 +1,82 @@
+# Phase 3 — LLM-as-Judge Manifest Comparator configuration (Paper 1)
+#
+# Usage:
+#   python manifests/comparator/compare.py --config experiments/paper1_ontology_manifests/configs/comparison.yaml
+#
+# CLI flags override values set here.
+
+# Directories (relative paths resolved from project root)
+human_dir: manifests/collected/
+generated_dir: manifests/generated/
+
+# Output directory for results
+output: experiments/paper1_ontology_manifests/results/
+
+# Number of independent scoring passes per model per item (Paper 0 uses 5)
+passes: 5
+
+# Models — leave empty or omit to use all 5 available NIM models.
+# Uncomment to restrict to a subset:
+# models:
+#   - meta/llama-3.3-70b-instruct
+#   - nvidia/llama-3.1-nemotron-70b-instruct
+#   - mistralai/mistral-large-latest
+#   - google/gemma-2-27b-it
+#   - qwen/qwen2.5-72b-instruct
+
+# Rubric dimensions (4-point scale each)
+# These are hard-coded in compare.py; listed here for documentation only.
+rubric_dimensions:
+  - name: evolution_coverage
+    description: >
+      How much evolution context (phases, trends, history) does the manifest contain?
+    anchors:
+      1: No evolution info
+      2: Mentions some history
+      3: Covers phases and trends
+      4: Comprehensive evolution context with quantitative data
+
+  - name: architectural_specificity
+    description: >
+      How specific is the architectural guidance?
+    anchors:
+      1: Generic/no architecture info
+      2: Mentions components
+      3: Describes relationships and risks
+      4: Detailed coupling, cohesion, dependency analysis
+
+  - name: actionability
+    description: >
+      How actionable are the recommendations?
+    anchors:
+      1: No recommendations
+      2: Vague guidance
+      3: Specific recommendations
+      4: Concrete, context-aware recommendations with rationale
+
+  - name: phase_awareness
+    description: >
+      Does the manifest show awareness of the project's current evolution phase?
+    anchors:
+      1: No phase awareness
+      2: Implicit phase hints
+      3: Explicit phase identification
+      4: Phase-aware recommendations that adapt to current state
+
+# NIM model registry (for reference; keys loaded from .env)
+nim_models:
+  - env_var: NVIDIA_API_KEY
+    model: meta/llama-3.3-70b-instruct
+    org: Meta
+  - env_var: NVIDIA_API_KEY_2
+    model: nvidia/llama-3.1-nemotron-70b-instruct
+    org: NVIDIA
+  - env_var: NVIDIA_API_KEY_3
+    model: mistralai/mistral-large-latest
+    org: Mistral AI
+  - env_var: NVIDIA_API_KEY_4
+    model: google/gemma-2-27b-it
+    org: Google
+  - env_var: NVIDIA_API_KEY_5
+    model: qwen/qwen2.5-72b-instruct
+    org: Alibaba

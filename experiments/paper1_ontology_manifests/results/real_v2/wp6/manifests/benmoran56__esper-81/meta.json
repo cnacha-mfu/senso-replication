@@ -1,0 +1,217 @@
+{
+ "task_id": "benmoran56__esper-81",
+ "repo": "benmoran56/esper",
+ "stage": "evolution",
+ "rounds": 1,
+ "rejects": {},
+ "flags": [
+  "no_test_command",
+  "kind3_dropped",
+  "kind4_dropped",
+  "length_violation_F_R",
+  "length_violation_F_I"
+ ],
+ "info": {
+  "slots": {
+   "P1": {
+    "replaced": null,
+    "name": "core",
+    "F_R": "esper/core",
+    "F_I": "docs/core"
+   },
+   "P2": {
+    "replaced": null,
+    "F_R": "esper/meta.py",
+    "F_I": "tests/test_cached_world.py"
+   }
+  },
+  "why": {
+   "test_command": [
+    {
+     "root": "tests",
+     "T3": "ContradictedClaim",
+     "T1": "SupportedClaim",
+     "collect_ok": null
+    }
+   ],
+   "kind1": {
+    "p1_idx": null,
+    "gold0": "esper",
+    "unrelated": null,
+    "base_R": "esper",
+    "base_I": "docs"
+   },
+   "kind2": {
+    "p2_idx": null,
+    "n_deleted_py": 13,
+    "found": {
+     "F_R": "esper/meta.py",
+     "F_I": "tests/test_cached_world.py"
+    }
+   },
+   "kind3": {
+    "run": null,
+    "install": null,
+    "test_ok": false,
+    "install_ok": true
+   },
+   "kind4": {
+    "deps": [],
+    "d_idx": null,
+    "src_R": null,
+    "src_I": null,
+    "n_decls": 0,
+    "n_dist": 12,
+    "no_parsed_manifest": true
+   }
+  },
+  "length": {
+   "T": 144,
+   "F_R": 178,
+   "F_I": 190
+  },
+  "fallbacks": {
+   "F_R": [],
+   "F_I": []
+  },
+  "modes": {
+   "F_R": {
+    "1": "add",
+    "2": "add"
+   },
+   "F_I": {
+    "1": "add",
+    "2": "add"
+   }
+  },
+  "length_diff": {
+   "F_R": 34,
+   "F_I": 46
+  },
+  "n_claims_T": 4,
+  "n_false": {
+   "F_R": 2,
+   "F_I": 2
+  },
+  "pointer_in_issue": true,
+  "gold_dirs": [
+   "esper"
+  ],
+  "gold_files": [
+   "esper/__init__.py"
+  ]
+ },
+ "tokens": {
+  "F_R": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "esper/core",
+     "core"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "esper/meta.py",
+     "meta.py"
+    ]
+   }
+  ],
+  "F_I": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "docs/core",
+     "core"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "tests/test_cached_world.py",
+     "test_cached_world.py"
+    ]
+   }
+  ]
+ },
+ "unresolved_pre_hermit": [],
+ "sha256": {
+  "T": "4b1e2a7c13a7539f1412db17e55837595a6fc1e5d98a64e2804d382cd6f8c623",
+  "F_R": "0b8dee2dac045a9c42c5d0e1c5380587301eb34d0713c4d42114d4696369e60c",
+  "F_I": "3c917ea85c6ae8f526a84a4ccbc996f105b3791cd37f8d26109490c469cf1cdc"
+ },
+ "chars": {
+  "T": 144,
+  "F_R": 178,
+  "F_I": 190
+ },
+ "claims": {
+  "T": [
+   "T1|esper",
+   "T1|tests",
+   "T1|esper/__init__.py",
+   "T1|setup.py"
+  ],
+  "F_R": [
+   "T1|esper",
+   "T1|tests",
+   "T1|esper/core",
+   "T1|esper/__init__.py",
+   "T1|esper/meta.py",
+   "T1|setup.py"
+  ],
+  "F_I": [
+   "T1|esper",
+   "T1|tests",
+   "T1|docs/core",
+   "T1|esper/__init__.py",
+   "T1|tests/test_cached_world.py",
+   "T1|setup.py"
+  ]
+ },
+ "python_spec": null,
+ "token_audit": [
+  {
+   "cond": "F_R",
+   "kind": 1,
+   "type": "path",
+   "name": "esper/core",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 2,
+   "type": "path",
+   "name": "esper/meta.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 1,
+   "type": "path",
+   "name": "docs/core",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 2,
+   "type": "path",
+   "name": "tests/test_cached_world.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  }
+ ],
+ "dist_imports_used": {}
+}

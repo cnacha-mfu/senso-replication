@@ -1,0 +1,533 @@
+{
+ "label": "authors' inspection of all contradicted claims (WP2c deviation 2026-10-19); descriptive",
+ "kinds": {
+  "real_missing": {
+   "real": true,
+   "description": "file or folder never in the repository"
+  },
+  "real_removed": {
+   "real": true,
+   "description": "file or folder removed from the repository"
+  },
+  "real_version": {
+   "real": true,
+   "description": "version contradicted by the version file"
+  },
+  "false_slash_alternation": {
+   "real": false,
+   "description": "two files written as one (src/elf.c/h)"
+  },
+  "false_go_package": {
+   "real": false,
+   "description": "Go import or package path read as a file path"
+  },
+  "false_outside_repo": {
+   "real": false,
+   "description": "path outside the repository"
+  },
+  "false_placeholder": {
+   "real": false,
+   "description": "naming template (NNNN-short-name.md)"
+  },
+  "false_build_output": {
+   "real": false,
+   "description": "file produced by the build"
+  },
+  "false_tree_root": {
+   "real": false,
+   "description": "name of the repository itself, as the root of a tree diagram"
+  },
+  "false_other_version": {
+   "real": false,
+   "description": "version of another tool read as the project's"
+  }
+ },
+ "n_contradicted": 41,
+ "n_real": 14,
+ "n_false_alarm": 27,
+ "by_kind": {
+  "false_slash_alternation": 17,
+  "real_missing": 7,
+  "false_go_package": 5,
+  "real_removed": 5,
+  "real_version": 2,
+  "false_other_version": 1,
+  "false_placeholder": 1,
+  "false_tree_root": 1,
+  "false_outside_repo": 1,
+  "false_build_output": 1
+ },
+ "real_by_type": {
+  "T1": 12,
+  "T6": 2
+ },
+ "automatic_confirmed_but_false": 26,
+ "manifests_with_real_error": [
+  "FastEndpoints/Documentation",
+  "Johnny520/wcx",
+  "Weaverse/.agents",
+  "ckotzbauer/vulnerability-operator",
+  "qoli/localclash-luci"
+ ],
+ "manifests_with_false_alarm_only": [
+  "URML-MARS/URML",
+  "gogpu/gg",
+  "northword/zotero-format-metadata",
+  "obot-platform/obot",
+  "pro-vi/cc-stretch",
+  "zw3rk/hyper-linux"
+ ],
+ "claims": [
+  {
+   "repo": "pro-vi/cc-stretch",
+   "line": 31,
+   "type": "T6",
+   "leaf": "VersionContradicted",
+   "subject": "project_self",
+   "automatic_confirmed": false,
+   "kind": "false_other_version",
+   "real": false,
+   "evidence": "'Claude Code 2.1.302' is the version of Claude Code, not of the project"
+  },
+  {
+   "repo": "URML-MARS/URML",
+   "line": 139,
+   "type": "T1",
+   "leaf": "PathNeverExisted",
+   "subject": "docs/rfcs/NNNN-short-name.md",
+   "automatic_confirmed": true,
+   "kind": "false_placeholder",
+   "real": false,
+   "evidence": "docs/rfcs/ holds 0000-template.md, 0001-rfc-process.md, ...; NNNN is a template"
+  },
+  {
+   "repo": "obot-platform/obot",
+   "line": 158,
+   "type": "T1",
+   "leaf": "PathNeverExisted",
+   "subject": "github.com/obot-platform/obot/apiclient",
+   "automatic_confirmed": true,
+   "kind": "false_go_package",
+   "real": false,
+   "evidence": "Go import path; the manifest maps it to ./apiclient"
+  },
+  {
+   "repo": "obot-platform/obot",
+   "line": 159,
+   "type": "T1",
+   "leaf": "PathNeverExisted",
+   "subject": "github.com/obot-platform/obot/logger",
+   "automatic_confirmed": true,
+   "kind": "false_go_package",
+   "real": false,
+   "evidence": "Go import path; the manifest maps it to ./logger"
+  },
+  {
+   "repo": "FastEndpoints/Documentation",
+   "line": 32,
+   "type": "T1",
+   "leaf": "PathNeverExisted",
+   "subject": "OKF/conventions.md",
+   "automatic_confirmed": true,
+   "kind": "real_missing",
+   "real": true,
+   "evidence": "no OKF/ folder; the file is .okf/conventions.md"
+  },
+  {
+   "repo": "Johnny520/wcx",
+   "line": 21,
+   "type": "T1",
+   "leaf": "PathNeverExisted",
+   "subject": "libs/common/libxposed-api",
+   "automatic_confirmed": true,
+   "kind": "real_missing",
+   "real": true,
+   "evidence": "libs/common holds annotation-scanner, bsh, reflekt, stubs; no submodule libxposed-api"
+  },
+  {
+   "repo": "ckotzbauer/vulnerability-operator",
+   "line": 36,
+   "type": "T1",
+   "leaf": "PathNeverExisted",
+   "subject": "vulnerability-operator",
+   "automatic_confirmed": true,
+   "kind": "false_tree_root",
+   "real": false,
+   "evidence": "tree diagram root 'vulnerability-operator/' is the repository"
+  },
+  {
+   "repo": "ckotzbauer/vulnerability-operator",
+   "line": 88,
+   "type": "T1",
+   "leaf": "PathRemoved",
+   "subject": "vulnerability-operator/.github/workflows/label-issues.yml",
+   "automatic_confirmed": true,
+   "kind": "real_removed",
+   "real": true,
+   "evidence": "label-issues.yml deleted in f61b264"
+  },
+  {
+   "repo": "ckotzbauer/vulnerability-operator",
+   "line": 89,
+   "type": "T1",
+   "leaf": "PathRemoved",
+   "subject": "vulnerability-operator/.github/workflows/size-label.yml",
+   "automatic_confirmed": true,
+   "kind": "real_removed",
+   "real": true,
+   "evidence": "size-label.yml deleted in f61b264"
+  },
+  {
+   "repo": "ckotzbauer/vulnerability-operator",
+   "line": 86,
+   "type": "T1",
+   "leaf": "PathRemoved",
+   "subject": "vulnerability-operator/.github/workflows/stale.yml",
+   "automatic_confirmed": true,
+   "kind": "real_removed",
+   "real": true,
+   "evidence": "stale.yml deleted in f61b264 (2026-03-13)"
+  },
+  {
+   "repo": "ckotzbauer/vulnerability-operator",
+   "line": 87,
+   "type": "T1",
+   "leaf": "PathRemoved",
+   "subject": "vulnerability-operator/.github/workflows/update-snyk.yml",
+   "automatic_confirmed": true,
+   "kind": "real_removed",
+   "real": true,
+   "evidence": "update-snyk.yml replaced by scan-grype.yml in bd5cc68"
+  },
+  {
+   "repo": "ckotzbauer/vulnerability-operator",
+   "line": 42,
+   "type": "T1",
+   "leaf": "PathNeverExisted",
+   "subject": "vulnerability-operator/config.yaml",
+   "automatic_confirmed": true,
+   "kind": "real_missing",
+   "real": true,
+   "evidence": "no config.yaml anywhere in the tree"
+  },
+  {
+   "repo": "ckotzbauer/vulnerability-operator",
+   "line": 49,
+   "type": "T1",
+   "leaf": "PathNeverExisted",
+   "subject": "vulnerability-operator/reports",
+   "automatic_confirmed": true,
+   "kind": "real_missing",
+   "real": true,
+   "evidence": "no reports/ folder"
+  },
+  {
+   "repo": "ckotzbauer/vulnerability-operator",
+   "line": 50,
+   "type": "T1",
+   "leaf": "PathNeverExisted",
+   "subject": "vulnerability-operator/reports/report.json",
+   "automatic_confirmed": true,
+   "kind": "real_missing",
+   "real": true,
+   "evidence": "no reports/report.json"
+  },
+  {
+   "repo": "ckotzbauer/vulnerability-operator",
+   "line": 44,
+   "type": "T1",
+   "leaf": "PathNeverExisted",
+   "subject": "vulnerability-operator/run.sh",
+   "automatic_confirmed": true,
+   "kind": "real_missing",
+   "real": true,
+   "evidence": "no run.sh anywhere in the tree"
+  },
+  {
+   "repo": "ckotzbauer/vulnerability-operator",
+   "line": 150,
+   "type": "T6",
+   "leaf": "VersionContradicted",
+   "subject": "go",
+   "automatic_confirmed": true,
+   "kind": "real_version",
+   "real": true,
+   "evidence": "go.mod says go 1.26.8, the manifest Go 1.25+"
+  },
+  {
+   "repo": "ckotzbauer/vulnerability-operator",
+   "line": 15,
+   "type": "T6",
+   "leaf": "VersionContradicted",
+   "subject": "go",
+   "automatic_confirmed": true,
+   "kind": "real_version",
+   "real": true,
+   "evidence": "go.mod says go 1.26.8, the manifest 1.25.0"
+  },
+  {
+   "repo": "zw3rk/hyper-linux",
+   "line": 236,
+   "type": "T1",
+   "leaf": "PathNeverExisted",
+   "subject": "Library/Apple/usr/libexec/oah/RosettaLinux/rosetta",
+   "automatic_confirmed": true,
+   "kind": "false_outside_repo",
+   "real": false,
+   "evidence": "macOS system path /Library/Apple/..., not a repository path"
+  },
+  {
+   "repo": "zw3rk/hyper-linux",
+   "line": 17,
+   "type": "T1",
+   "leaf": "PathNeverExisted",
+   "subject": "src/audio.c/h",
+   "automatic_confirmed": true,
+   "kind": "false_slash_alternation",
+   "real": false,
+   "evidence": "src/x.c and src/x.h exist; 'src/x.c/h' names both"
+  },
+  {
+   "repo": "zw3rk/hyper-linux",
+   "line": 31,
+   "type": "T1",
+   "leaf": "PathNeverExisted",
+   "subject": "src/crash_report.c/h",
+   "automatic_confirmed": true,
+   "kind": "false_slash_alternation",
+   "real": false,
+   "evidence": "src/x.c and src/x.h exist; 'src/x.c/h' names both"
+  },
+  {
+   "repo": "zw3rk/hyper-linux",
+   "line": 16,
+   "type": "T1",
+   "leaf": "PathNeverExisted",
+   "subject": "src/device.c/h",
+   "automatic_confirmed": true,
+   "kind": "false_slash_alternation",
+   "real": false,
+   "evidence": "src/x.c and src/x.h exist; 'src/x.c/h' names both"
+  },
+  {
+   "repo": "zw3rk/hyper-linux",
+   "line": 11,
+   "type": "T1",
+   "leaf": "PathNeverExisted",
+   "subject": "src/elf.c/h",
+   "automatic_confirmed": true,
+   "kind": "false_slash_alternation",
+   "real": false,
+   "evidence": "src/x.c and src/x.h exist; 'src/x.c/h' names both"
+  },
+  {
+   "repo": "zw3rk/hyper-linux",
+   "line": 29,
+   "type": "T1",
+   "leaf": "PathNeverExisted",
+   "subject": "src/fork_ipc.c/h",
+   "automatic_confirmed": true,
+   "kind": "false_slash_alternation",
+   "real": false,
+   "evidence": "src/x.c and src/x.h exist; 'src/x.c/h' names both"
+  },
+  {
+   "repo": "zw3rk/hyper-linux",
+   "line": 10,
+   "type": "T1",
+   "leaf": "PathNeverExisted",
+   "subject": "src/guest.c/h",
+   "automatic_confirmed": true,
+   "kind": "false_slash_alternation",
+   "real": false,
+   "evidence": "src/x.c and src/x.h exist; 'src/x.c/h' names both"
+  },
+  {
+   "repo": "zw3rk/hyper-linux",
+   "line": 27,
+   "type": "T1",
+   "leaf": "PathNeverExisted",
+   "subject": "src/proc_emulation.c/h",
+   "automatic_confirmed": true,
+   "kind": "false_slash_alternation",
+   "real": false,
+   "evidence": "src/x.c and src/x.h exist; 'src/x.c/h' names both"
+  },
+  {
+   "repo": "zw3rk/hyper-linux",
+   "line": 28,
+   "type": "T1",
+   "leaf": "PathNeverExisted",
+   "subject": "src/syscall_exec.c/h",
+   "automatic_confirmed": true,
+   "kind": "false_slash_alternation",
+   "real": false,
+   "evidence": "src/x.c and src/x.h exist; 'src/x.c/h' names both"
+  },
+  {
+   "repo": "zw3rk/hyper-linux",
+   "line": 19,
+   "type": "T1",
+   "leaf": "PathNeverExisted",
+   "subject": "src/syscall_fs.c/h",
+   "automatic_confirmed": true,
+   "kind": "false_slash_alternation",
+   "real": false,
+   "evidence": "src/x.c and src/x.h exist; 'src/x.c/h' names both"
+  },
+  {
+   "repo": "zw3rk/hyper-linux",
+   "line": 21,
+   "type": "T1",
+   "leaf": "PathNeverExisted",
+   "subject": "src/syscall_inotify.c/h",
+   "automatic_confirmed": true,
+   "kind": "false_slash_alternation",
+   "real": false,
+   "evidence": "src/x.c and src/x.h exist; 'src/x.c/h' names both"
+  },
+  {
+   "repo": "zw3rk/hyper-linux",
+   "line": 20,
+   "type": "T1",
+   "leaf": "PathNeverExisted",
+   "subject": "src/syscall_io.c/h",
+   "automatic_confirmed": true,
+   "kind": "false_slash_alternation",
+   "real": false,
+   "evidence": "src/x.c and src/x.h exist; 'src/x.c/h' names both"
+  },
+  {
+   "repo": "zw3rk/hyper-linux",
+   "line": 26,
+   "type": "T1",
+   "leaf": "PathNeverExisted",
+   "subject": "src/syscall_proc.c/h",
+   "automatic_confirmed": true,
+   "kind": "false_slash_alternation",
+   "real": false,
+   "evidence": "src/x.c and src/x.h exist; 'src/x.c/h' names both"
+  },
+  {
+   "repo": "zw3rk/hyper-linux",
+   "line": 24,
+   "type": "T1",
+   "leaf": "PathNeverExisted",
+   "subject": "src/syscall_signal.c/h",
+   "automatic_confirmed": true,
+   "kind": "false_slash_alternation",
+   "real": false,
+   "evidence": "src/x.c and src/x.h exist; 'src/x.c/h' names both"
+  },
+  {
+   "repo": "zw3rk/hyper-linux",
+   "line": 23,
+   "type": "T1",
+   "leaf": "PathNeverExisted",
+   "subject": "src/syscall_sys.c/h",
+   "automatic_confirmed": true,
+   "kind": "false_slash_alternation",
+   "real": false,
+   "evidence": "src/x.c and src/x.h exist; 'src/x.c/h' names both"
+  },
+  {
+   "repo": "zw3rk/hyper-linux",
+   "line": 22,
+   "type": "T1",
+   "leaf": "PathNeverExisted",
+   "subject": "src/syscall_time.c/h",
+   "automatic_confirmed": true,
+   "kind": "false_slash_alternation",
+   "real": false,
+   "evidence": "src/x.c and src/x.h exist; 'src/x.c/h' names both"
+  },
+  {
+   "repo": "zw3rk/hyper-linux",
+   "line": 18,
+   "type": "T1",
+   "leaf": "PathNeverExisted",
+   "subject": "src/trace.c/h",
+   "automatic_confirmed": true,
+   "kind": "false_slash_alternation",
+   "real": false,
+   "evidence": "src/x.c and src/x.h exist; 'src/x.c/h' names both"
+  },
+  {
+   "repo": "zw3rk/hyper-linux",
+   "line": 15,
+   "type": "T1",
+   "leaf": "PathNeverExisted",
+   "subject": "src/vfs.c/h",
+   "automatic_confirmed": true,
+   "kind": "false_slash_alternation",
+   "real": false,
+   "evidence": "src/x.c and src/x.h exist; 'src/x.c/h' names both"
+  },
+  {
+   "repo": "Weaverse/.agents",
+   "line": 8,
+   "type": "T1",
+   "leaf": "PathRemoved",
+   "subject": "agents",
+   "automatic_confirmed": true,
+   "kind": "real_removed",
+   "real": true,
+   "evidence": "agents/ emptied by 78cab76 (deprecated agent docs removed)"
+  },
+  {
+   "repo": "qoli/localclash-luci",
+   "line": 39,
+   "type": "T1",
+   "leaf": "PathNeverExisted",
+   "subject": "docs/istoreos-test-features.md",
+   "automatic_confirmed": true,
+   "kind": "real_missing",
+   "real": true,
+   "evidence": "no file named istoreos-test-features.md in history"
+  },
+  {
+   "repo": "gogpu/gg",
+   "line": 16,
+   "type": "T1",
+   "leaf": "PathNeverExisted",
+   "subject": "gg/gpu",
+   "automatic_confirmed": true,
+   "kind": "false_go_package",
+   "real": false,
+   "evidence": "Go package gg/gpu of module github.com/gogpu/gg is the folder gpu/"
+  },
+  {
+   "repo": "gogpu/gg",
+   "line": 37,
+   "type": "T1",
+   "leaf": "PathNeverExisted",
+   "subject": "gg/integration/ggcanvas",
+   "automatic_confirmed": true,
+   "kind": "false_go_package",
+   "real": false,
+   "evidence": "Go package path; the folder is integration/ggcanvas"
+  },
+  {
+   "repo": "gogpu/gg",
+   "line": 65,
+   "type": "T1",
+   "leaf": "PathNeverExisted",
+   "subject": "gg/scene",
+   "automatic_confirmed": true,
+   "kind": "false_go_package",
+   "real": false,
+   "evidence": "Go package path; the folder is scene/"
+  },
+  {
+   "repo": "northword/zotero-format-metadata",
+   "line": 44,
+   "type": "T1",
+   "leaf": "PathNeverExisted",
+   "subject": "content/scripts/linter.js",
+   "automatic_confirmed": true,
+   "kind": "false_build_output",
+   "real": false,
+   "evidence": "'bundled script' written by the build, not tracked"
+  }
+ ]
+}

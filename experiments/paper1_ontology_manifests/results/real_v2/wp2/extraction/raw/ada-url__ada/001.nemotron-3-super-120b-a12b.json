@@ -1,0 +1,21 @@
+{
+ "repo": "ada-url/ada",
+ "chunk": 1,
+ "n_chunks": 2,
+ "model": "nvidia/nemotron-3-super-120b-a12b",
+ "prompt_sha256": "d0e02ff613417050168d859f2af6230c3712c6758bb5d9c40d60ff55e5ae87ca",
+ "user_sha256": "e1958dba8f82ae61d79413ab6a22585ca87421a8a91440266e6ede28ba37a5c0",
+ "text": "{\n  \"claims\": [\n    {\n      \"type\": \"path_exists\",\n      \"quote\": \"clang-tidy -p build src/ada.cpp\",\n      \"line\": 259,\n      \"subject\": \"src/ada.cpp\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"path_exists\",\n      \"quote\": \"clang-tidy -p build src/ada_idna.cpp\",\n      \"line\": 260,\n      \"subject\": \"src/ada_idna.cpp\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"path_exists\",\n      \"quote\": \"ls build/benchmarks/\",\n      \"line\": 313,\n      \"subject\": \"build/benchmarks/\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"path_exists\",\n      \"quote\": \"- **README.md**: General project overview and API usage\",\n      \"line\": 318,\n      \"subject\": \"README.md\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"path_exists\",\n      \"quote\": \"- **docs/cli.md**: Command-line interface documentation\",\n      \"line\": 319,\n      \"subject\": \"docs/cli.md\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"path_exists\",\n      \"quote\": \"- **benchmarks/**: Benchmark source code\",\n      \"line\": 320,\n      \"subject\": \"benchmarks/\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"path_exists\",\n      \"quote\": \"- **tests/**: Test source code\",\n      \"line\": 321,\n      \"subject\": \"tests/\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"path_exists\",\n      \"quote\": \"- **include/ada/**: Library headers\",\n      \"line\": 322,\n      \"subject\": \"include/ada/\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"tool_used\",\n      \"quote\": \"cmake -B build -DADA_TESTING=ON \\\\\\n  -DCMAKE_CXX_COMPILER=clang++ \\\\\\n  -DCMAKE_CXX_CLANG_TIDY=clang-tidy \\\\\\n  -DCMAKE_EXPORT_COMPILE_COMMANDS=ON\",\n      \"line\": 236,\n      \"subject\": \"clang-tidy\",\n      \"tool_category\": \"linter_formatter\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"tool_used\",\n      \"quote\": \"clang-tidy -p build src/ada.cpp\",\n      \"line\": 259,\n      \"subject\": \"clang-tidy\",\n      \"tool_category\": \"linter_formatter\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"tool_used\",\n      \"quote\": \"clang-tidy -p build src/ada_idna.cpp\",\n      \"line\": 260,\n      \"subject\": \"clang-tidy\",\n      \"tool_category\": \"linter_formatter\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"command\",\n      \"quote\": \"cmake -B build && cmake --build build\",\n      \"line\": 328,\n      \"subject\": \"build\",\n      \"runner\": \"make\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"command\",\n      \"quote\": \"cmake -B build -DADA_TESTING=ON && cmake --build build\",\n      \"line\": 329,\n      \"subject\": \"build\",\n      \"runner\": \"make\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"command\",\n      \"quote\": \"cmake -B build -DADA_BENCHMARKS=ON -DCMAKE_BUILD_TYPE=Release && cmake --build build\",\n      \"line\": 330,\n      \"subject\": \"build\",\n      \"runner\": \"make\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"command\",\n      \"quote\": \"cmake -B build -DADA_TESTING=ON -DCMAKE_BUILD_TYPE=Debug && cmake --build build\",\n      \"line\": 331,\n      \"subject\": \"build\",\n      \"runner\": \"make\",\n      \"mode\": \"asserts_existing\"\n    }\n  ]\n}",
+ "parse_ok": true,
+ "parse_error": null,
+ "parse_retries": 0,
+ "latency_s": 10.061652804957703,
+ "usage": {
+  "prompt": 3584,
+  "completion": 1004
+ },
+ "n_api_calls": 1,
+ "finish_reason": "stop",
+ "error": null,
+ "discarded_attempt_texts": []
+}

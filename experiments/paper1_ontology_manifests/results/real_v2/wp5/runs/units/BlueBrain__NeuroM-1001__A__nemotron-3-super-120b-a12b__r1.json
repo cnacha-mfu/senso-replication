@@ -1,0 +1,71 @@
+{
+ "unit_id": "BlueBrain__NeuroM-1001__A__nemotron-3-super-120b-a12b__r1",
+ "task_id": "BlueBrain__NeuroM-1001",
+ "repo": "BlueBrain/NeuroM",
+ "stage": "servicing",
+ "condition": "A",
+ "model": "nvidia/nemotron-3-super-120b-a12b",
+ "run": 1,
+ "order": 511,
+ "env_build_s": 80.0,
+ "real_agent_manifest_at_base": [],
+ "started": "2026-10-07T10:20:29.588180+00:00",
+ "condition_meta": {},
+ "condition_available": true,
+ "retries": 0,
+ "exit_status": "Submitted",
+ "error": "",
+ "steps": 29,
+ "wall_s": 196.2,
+ "prompt_tokens": 252836,
+ "completion_tokens": 8827,
+ "format_errors": 0,
+ "length_cutoffs": 0,
+ "api_errors": {
+  "429": 2
+ },
+ "n_queries": 29,
+ "keys_used": {
+  "NVIDIA_API_KEY_2": 8,
+  "NVIDIA_API_KEY": 12,
+  "NVIDIA_API_KEY_5": 3,
+  "NVIDIA_API_KEY_4": 8
+ },
+ "temperature": 0.7,
+ "top_p": 0.95,
+ "model_id_returned": "nvidia/nemotron-3-super-120b-a12b",
+ "mini_version": "2.4.6",
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 3,
+   "Y6": 29,
+   "hit_step_limit": 0,
+   "changed_lines": 104,
+   "gold_changed_lines": 22,
+   "Y1": 12,
+   "Y2": 4,
+   "Y3": 0.0,
+   "Y3_gold": 0.0,
+   "Y3_excess": 0.0,
+   "Y3w": 0.8666666666666668,
+   "Y4": 2.241008099503795
+  },
+  "f2p_pass": 0,
+  "f2p_total": 1,
+  "p2p_pass": 5,
+  "p2p_total": 5,
+  "f2p_all_pass": false,
+  "p2p_all_pass": true,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 1.6
+ },
+ "status": "done",
+ "finished": "2026-10-07T10:23:47.520628+00:00"
+}

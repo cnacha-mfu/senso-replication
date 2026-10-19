@@ -1,0 +1,48 @@
+{
+ "repo": "tobymao/sqlglot",
+ "slug": "tobymao__sqlglot",
+ "input_sha": "9874733b117ecab143e9da44abdb84621bbb6925fe51a6e1a5cb7c4c3e06662c",
+ "explanations": [
+  {
+   "key": "T1|expressions.py",
+   "verdict": "ContradictedClaim",
+   "leaf": "PathNeverExisted",
+   "seconds": 9.38,
+   "retried_on_claim_subgraph": true,
+   "error": "Exception in thread \"main\" org.mindswap.pellet.exceptions.InternalReasonerException: Adding type to a pruned node \"anon(3)\" http://www.w3.org/2001/XMLSchema#integer\n\tat org.mindswap.pellet.Node.addType(Node.java:448)\n\tat org.mindswap.pellet.Literal.addType(Literal.java:257)\n\tat org.mindswap.pellet.tableau.completion.CompletionStrategy.addType(CompletionStrategy.java:438)\n\tat org.mindswap.pellet.tableau.completion.CompletionStrategy.applyDomainRange(CompletionStrategy.java:631)\n\tat org.mindswap.pellet.tableau.completion.CompletionStrategy.applyPropertyRestrictions(CompletionStrategy.java:592)\n\tat org.mindswap.pellet.tableau.completion.CompletionStrategy.addEdge(CompletionStrategy.java:583)\n\tat org.mindswap.pellet.tableau.completion.rule.SomeValuesRule.applySomeValuesRule(SomeValuesRule.java:186)\n\tat org.mindswap.pellet.tableau.completion.rule.SomeValuesRule.apply(SomeValuesRule.java:64)\n\tat org.mindswap.pellet.tableau.completion.rule.AbstractTableauRule.apply(AbstractTableauRule.java:64",
+   "returncode": 1,
+   "n_justifications": 0,
+   "facts": [],
+   "axioms": [],
+   "closures": []
+  },
+  {
+   "key": "T1|pyproject.toml",
+   "verdict": "SupportedClaim",
+   "leaf": "PathFoundExact",
+   "seconds": 4.14,
+   "retried_on_claim_subgraph": false,
+   "error": null,
+   "returncode": 0,
+   "n_justifications": 1,
+   "facts": [
+    {
+     "prop": "extractionVotes",
+     "value": 3
+    },
+    {
+     "prop": "pathExactMatchCount",
+     "value": 1
+    }
+   ],
+   "axioms": [
+    "PathFoundExact equivalentTo A_pathExactMatchCount_ge_1 and CheckedClaim and PathExistenceClaim",
+    "A_extractionVotes_ge_wp2_consensus_min_votes equivalentTo extractionVotes some integer[>= 2]",
+    "A_pathExactMatchCount_ge_1 equivalentTo pathExactMatchCount some integer[>= 1]",
+    "CheckedClaim equivalentTo A_extractionVotes_ge_wp2_consensus_min_votes and ManifestClaim",
+    "PathFoundExact subClassOf SupportedClaim"
+   ],
+   "closures": []
+  }
+ ]
+}

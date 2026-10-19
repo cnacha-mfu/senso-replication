@@ -1,0 +1,3472 @@
+{
+ "generated": "2026-10-06T13:20:18Z",
+ "flow": {
+  "manifests": {
+   "corpus": 80,
+   "cloneable": 80,
+   "snapshot_resolved": 79,
+   "snapshot_status": {
+    "exact_at_T_upper": 77,
+    "no_match": 1,
+    "version_match": 2
+   },
+   "with_ge1_checked_claim": 68,
+   "with_ge1_verdict_claim": 68,
+   "inconsistent_aboxes": 0
+  },
+  "extraction": {
+   "nvidia/nemotron-3-super-120b-a12b": {
+    "responses": 152,
+    "parse_failures": 10,
+    "raw_claims": 2866,
+    "schema_valid": 2866,
+    "rejected_grounding": 116,
+    "rejected_shape": 1027,
+    "accepted_units_raw": 1837,
+    "quote_repaired": 0
+   },
+   "openai/gpt-oss-20b": {
+    "responses": 152,
+    "parse_failures": 2,
+    "raw_claims": 1909,
+    "schema_valid": 1905,
+    "rejected_grounding": 304,
+    "rejected_shape": 434,
+    "accepted_units_raw": 1394,
+    "quote_repaired": 0
+   },
+   "google/diffusiongemma-26b-a4b-it": {
+    "responses": 152,
+    "parse_failures": 3,
+    "raw_claims": 2455,
+    "schema_valid": 2409,
+    "rejected_grounding": 321,
+    "rejected_shape": 810,
+    "accepted_units_raw": 1457,
+    "quote_repaired": 500
+   }
+  },
+  "consensus": {
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b",
+    "google/diffusiongemma-26b-a4b-it"
+   ],
+   "units_union_pre_merge": 1994,
+   "units_after_path_merge": 1903,
+   "path_merges": 91,
+   "votes_distribution_after_merge": {
+    "1": 653,
+    "3": 565,
+    "2": 685
+   },
+   "consensus_ge2": 1250,
+   "consensus_ge2_by_type": {
+    "T1": 858,
+    "T4": 65,
+    "T5": 192,
+    "T3": 100,
+    "T6": 22,
+    "T2": 12,
+    "T7": 1
+   },
+   "consensus_ge2_mode": {
+    "asserts_existing": 1232,
+    "example": 8,
+    "to_be_created": 10
+   },
+   "consensus_ge2_asserts_existing": 1232,
+   "union_asserts_existing": 1872,
+   "consensus3_asserts_existing": 565,
+   "unanimous_mode_asserts_ge2": 548,
+   "protected_status_ge2": 8
+  },
+  "claims_in_analysed_manifests": {
+   "consensus_asserting_votes_ge1": 1834,
+   "consensus_asserting_votes_ge2": 1228,
+   "headline_eligible_votes_ge2": 1219,
+   "excluded_T7_or_protected": 9,
+   "measured": 1219,
+   "with_verdict": 1219,
+   "unmeasured_no_verdict": 0,
+   "by_verdict": {
+    "SupportedClaim": 1115,
+    "UnverifiableClaim": 35,
+    "ContradictedClaim": 65,
+    "IndeterminateClaim": 1,
+    "ConflictedClaim": 3
+   },
+   "by_type": {
+    "T1": {
+     "SupportedClaim": 772,
+     "UnverifiableClaim": 31,
+     "ContradictedClaim": 36
+    },
+    "T2": {
+     "SupportedClaim": 3,
+     "IndeterminateClaim": 1
+    },
+    "T3": {
+     "SupportedClaim": 96,
+     "ContradictedClaim": 4
+    },
+    "T4": {
+     "SupportedClaim": 51,
+     "ContradictedClaim": 14
+    },
+    "T5": {
+     "SupportedClaim": 181,
+     "ContradictedClaim": 7,
+     "UnverifiableClaim": 1
+    },
+    "T6": {
+     "SupportedClaim": 12,
+     "UnverifiableClaim": 3,
+     "ConflictedClaim": 3,
+     "ContradictedClaim": 4
+    }
+   }
+  }
+ },
+ "prevalence_checked_claims_per_manifest": {
+  "T1": {
+   "n": 79,
+   "median": 7.0,
+   "q1": 2.0,
+   "q3": 16.0,
+   "mean": 10.620253164556962,
+   "pct_manifests_with_ge1": 0.8227848101265823
+  },
+  "T2": {
+   "n": 79,
+   "median": 0.0,
+   "q1": 0.0,
+   "q3": 0.0,
+   "mean": 0.05063291139240506,
+   "pct_manifests_with_ge1": 0.02531645569620253
+  },
+  "T3": {
+   "n": 79,
+   "median": 1.0,
+   "q1": 0.0,
+   "q3": 2.0,
+   "mean": 1.2658227848101267,
+   "pct_manifests_with_ge1": 0.6075949367088608
+  },
+  "T4": {
+   "n": 79,
+   "median": 0.0,
+   "q1": 0.0,
+   "q3": 0.0,
+   "mean": 0.8227848101265823,
+   "pct_manifests_with_ge1": 0.21518987341772153
+  },
+  "T5": {
+   "n": 79,
+   "median": 0.0,
+   "q1": 0.0,
+   "q3": 3.0,
+   "mean": 2.392405063291139,
+   "pct_manifests_with_ge1": 0.379746835443038
+  },
+  "T6": {
+   "n": 79,
+   "median": 0.0,
+   "q1": 0.0,
+   "q3": 0.5,
+   "mean": 0.27848101265822783,
+   "pct_manifests_with_ge1": 0.25316455696202533
+  }
+ },
+ "n_manifests_analysed": 79,
+ "verdict_distribution_by_type": {
+  "T1": {
+   "n": 839,
+   "verdicts": {
+    "SupportedClaim": 772,
+    "UnverifiableClaim": 31,
+    "ContradictedClaim": 36
+   },
+   "leaves": {
+    "PathFoundExact": 602,
+    "PathFoundBySuffix": 170,
+    "PathUntrackedByDesign": 27,
+    "PathNeverExisted": 22,
+    "PathRemoved": 14,
+    "PathInSubmodule": 4
+   }
+  },
+  "T2": {
+   "n": 4,
+   "verdicts": {
+    "SupportedClaim": 3,
+    "IndeterminateClaim": 1
+   },
+   "leaves": {
+    "InactivePathQuiet": 3,
+    "InactivePathModerate": 1
+   }
+  },
+  "T3": {
+   "n": 100,
+   "verdicts": {
+    "SupportedClaim": 96,
+    "ContradictedClaim": 4
+   },
+   "leaves": {
+    "ToolSignatureFound": 96,
+    "ToolAbsentCompetitorPresent": 1,
+    "ToolAbsentInEcosystem": 3
+   }
+  },
+  "T4": {
+   "n": 65,
+   "verdicts": {
+    "SupportedClaim": 51,
+    "ContradictedClaim": 14
+   },
+   "leaves": {
+    "DependencyMajorInRange": 15,
+    "DependencyConfirmed": 36,
+    "DependencyUndeclared": 13,
+    "DependencyMajorTooOld": 1
+   }
+  },
+  "T5": {
+   "n": 189,
+   "verdicts": {
+    "SupportedClaim": 181,
+    "ContradictedClaim": 7,
+    "UnverifiableClaim": 1
+   },
+   "leaves": {
+    "ScriptDefinedRoot": 171,
+    "ScriptUndefined": 7,
+    "ScriptDefinedNested": 10,
+    "ScriptPossiblyDynamic": 1
+   }
+  },
+  "T6": {
+   "n": 22,
+   "verdicts": {
+    "SupportedClaim": 12,
+    "UnverifiableClaim": 3,
+    "ConflictedClaim": 3,
+    "ContradictedClaim": 4
+   },
+   "leaves": {
+    "VersionConfirmed": 12,
+    "NoVersionSource": 3,
+    "VersionSourcesConflict": 3,
+    "VersionContradicted": 4
+   }
+  }
+ },
+ "verdict_distribution_overall": {
+  "SupportedClaim": 1115,
+  "UnverifiableClaim": 35,
+  "ContradictedClaim": 65,
+  "IndeterminateClaim": 1,
+  "ConflictedClaim": 3
+ },
+ "contradiction_rate": {
+  "all_types": {
+   "n_manifests_evaluable": 68,
+   "pooled_rate": 0.054945054945054944,
+   "pooled_rate_ci95": [
+    0.035682406001046316,
+    0.07704061274523451
+   ],
+   "mean_manifest_rate": 0.06687354728214111,
+   "mean_manifest_rate_ci95": [
+    0.04060224260326627,
+    0.09742931552416721
+   ],
+   "median_manifest_rate": 0.0,
+   "iqr_manifest_rate": [
+    0.0,
+    0.07692307692307693
+   ],
+   "share_manifests_with_any_contradiction": 0.4264705882352941,
+   "share_ci95": [
+    0.3088235294117647,
+    0.5441176470588235
+   ],
+   "totals": {
+    "supported": 1115,
+    "contradicted": 65,
+    "conflicted": 3
+   }
+  },
+  "T1": {
+   "n_manifests_evaluable": 65,
+   "pooled_rate": 0.04455445544554455,
+   "pooled_rate_ci95": [
+    0.023661065681748635,
+    0.07000029171528588
+   ],
+   "mean_manifest_rate": 0.061457584415400786,
+   "mean_manifest_rate_ci95": [
+    0.028504961112777488,
+    0.10148936180307146
+   ],
+   "median_manifest_rate": 0.0,
+   "iqr_manifest_rate": [
+    0.0,
+    0.03225806451612903
+   ],
+   "share_manifests_with_any_contradiction": 0.27692307692307694,
+   "share_ci95": [
+    0.16923076923076924,
+    0.38461538461538464
+   ],
+   "totals": {
+    "supported": 772,
+    "contradicted": 36,
+    "conflicted": 0
+   }
+  },
+  "T2": {
+   "n_manifests_evaluable": 2,
+   "pooled_rate": 0.0,
+   "pooled_rate_ci95": [
+    0.0,
+    0.0
+   ],
+   "mean_manifest_rate": 0.0,
+   "mean_manifest_rate_ci95": [
+    0.0,
+    0.0
+   ],
+   "median_manifest_rate": 0.0,
+   "iqr_manifest_rate": [
+    0.0,
+    0.0
+   ],
+   "share_manifests_with_any_contradiction": 0.0,
+   "share_ci95": [
+    0.0,
+    0.0
+   ],
+   "totals": {
+    "supported": 3,
+    "contradicted": 0,
+    "conflicted": 0
+   }
+  },
+  "T3": {
+   "n_manifests_evaluable": 48,
+   "pooled_rate": 0.04,
+   "pooled_rate_ci95": [
+    0.00909090909090909,
+    0.0851063829787234
+   ],
+   "mean_manifest_rate": 0.05555555555555555,
+   "mean_manifest_rate_ci95": [
+    0.006944444444444444,
+    0.11805555555555557
+   ],
+   "median_manifest_rate": 0.0,
+   "iqr_manifest_rate": [
+    0.0,
+    0.0
+   ],
+   "share_manifests_with_any_contradiction": 0.08333333333333333,
+   "share_ci95": [
+    0.020833333333333332,
+    0.16666666666666666
+   ],
+   "totals": {
+    "supported": 96,
+    "contradicted": 4,
+    "conflicted": 0
+   }
+  },
+  "T4": {
+   "n_manifests_evaluable": 17,
+   "pooled_rate": 0.2153846153846154,
+   "pooled_rate_ci95": [
+    0.13636363636363635,
+    0.3
+   ],
+   "mean_manifest_rate": 0.18977591036414565,
+   "mean_manifest_rate_ci95": [
+    0.09915616246498597,
+    0.28698179271708674
+   ],
+   "median_manifest_rate": 0.14285714285714285,
+   "iqr_manifest_rate": [
+    0.0,
+    0.3333333333333333
+   ],
+   "share_manifests_with_any_contradiction": 0.5882352941176471,
+   "share_ci95": [
+    0.35294117647058826,
+    0.8235294117647058
+   ],
+   "totals": {
+    "supported": 51,
+    "contradicted": 14,
+    "conflicted": 0
+   }
+  },
+  "T5": {
+   "n_manifests_evaluable": 30,
+   "pooled_rate": 0.03723404255319149,
+   "pooled_rate_ci95": [
+    0.0,
+    0.0972972972972973
+   ],
+   "mean_manifest_rate": 0.02619047619047619,
+   "mean_manifest_rate_ci95": [
+    0.0,
+    0.06904761904761904
+   ],
+   "median_manifest_rate": 0.0,
+   "iqr_manifest_rate": [
+    0.0,
+    0.0
+   ],
+   "share_manifests_with_any_contradiction": 0.06666666666666667,
+   "share_ci95": [
+    0.0,
+    0.16666666666666666
+   ],
+   "totals": {
+    "supported": 181,
+    "contradicted": 7,
+    "conflicted": 0
+   }
+  },
+  "T6": {
+   "n_manifests_evaluable": 17,
+   "pooled_rate": 0.21052631578947367,
+   "pooled_rate_ci95": [
+    0.05555555555555555,
+    0.3684210526315789
+   ],
+   "mean_manifest_rate": 0.17647058823529413,
+   "mean_manifest_rate_ci95": [
+    0.029411764705882353,
+    0.35294117647058826
+   ],
+   "median_manifest_rate": 0.0,
+   "iqr_manifest_rate": [
+    0.0,
+    0.0
+   ],
+   "share_manifests_with_any_contradiction": 0.23529411764705882,
+   "share_ci95": [
+    0.058823529411764705,
+    0.47058823529411764
+   ],
+   "totals": {
+    "supported": 12,
+    "contradicted": 4,
+    "conflicted": 3
+   }
+  }
+ },
+ "pct_manifest_with_contradiction": {
+  "reasoner_label_ManifestWithContradiction_among_analysed": 0.3670886075949367,
+  "n_analysed": 79,
+  "among_manifests_with_ge1_S_C_K_claim": 0.4264705882352941,
+  "n_with_ge1_S_C_K_claim": 68,
+  "ci95_among_evaluable": [
+   0.3088235294117647,
+   0.5441176470588235
+  ]
+ },
+ "contradiction_rate_by_manifest_type": {
+  "CLAUDE.md": {
+   "n_manifests": 37,
+   "n_manifests_evaluable": 32,
+   "pooled_rate": 0.0640625,
+   "mean_manifest_rate": 0.0749542979394953,
+   "totals": {
+    "supported": 599,
+    "contradicted": 41,
+    "conflicted": 0
+   }
+  },
+  "AGENTS.md": {
+   "n_manifests": 29,
+   "n_manifests_evaluable": 25,
+   "pooled_rate": 0.03389830508474576,
+   "mean_manifest_rate": 0.055353814644137224,
+   "totals": {
+    "supported": 396,
+    "contradicted": 14,
+    "conflicted": 3
+   }
+  },
+  ".clinerules": {
+   "n_manifests": 1,
+   "n_manifests_evaluable": 1,
+   "pooled_rate": 0.19047619047619047,
+   "mean_manifest_rate": 0.19047619047619047,
+   "totals": {
+    "supported": 17,
+    "contradicted": 4,
+    "conflicted": 0
+   }
+  },
+  "copilot-instructions.md": {
+   "n_manifests": 12,
+   "n_manifests_evaluable": 10,
+   "pooled_rate": 0.05504587155963303,
+   "mean_manifest_rate": 0.05745421245421245,
+   "totals": {
+    "supported": 103,
+    "contradicted": 6,
+    "conflicted": 0
+   }
+  }
+ },
+ "contradiction_rate_by_language": {
+  "typescript": {
+   "n_manifests": 20,
+   "n_manifests_evaluable": 19,
+   "pooled_rate": 0.025943396226415096,
+   "mean_manifest_rate": 0.01002399160293897,
+   "totals": {
+    "supported": 412,
+    "contradicted": 11,
+    "conflicted": 1
+   }
+  },
+  "python": {
+   "n_manifests": 17,
+   "n_manifests_evaluable": 14,
+   "pooled_rate": 0.0945945945945946,
+   "mean_manifest_rate": 0.10586168979026123,
+   "totals": {
+    "supported": 200,
+    "contradicted": 21,
+    "conflicted": 1
+   }
+  },
+  "java": {
+   "n_manifests": 3,
+   "n_manifests_evaluable": 3,
+   "pooled_rate": 0.0273972602739726,
+   "mean_manifest_rate": 0.04151404151404151,
+   "totals": {
+    "supported": 71,
+    "contradicted": 2,
+    "conflicted": 0
+   }
+  },
+  "javascript": {
+   "n_manifests": 3,
+   "n_manifests_evaluable": 3,
+   "pooled_rate": 0.11764705882352941,
+   "mean_manifest_rate": 0.17777777777777778,
+   "totals": {
+    "supported": 15,
+    "contradicted": 2,
+    "conflicted": 0
+   }
+  },
+  "go": {
+   "n_manifests": 4,
+   "n_manifests_evaluable": 3,
+   "pooled_rate": 0.05357142857142857,
+   "mean_manifest_rate": 0.043209876543209874,
+   "totals": {
+    "supported": 53,
+    "contradicted": 3,
+    "conflicted": 0
+   }
+  },
+  "jupyter notebook": {
+   "n_manifests": 2,
+   "n_manifests_evaluable": 2,
+   "pooled_rate": 0.09615384615384616,
+   "mean_manifest_rate": 0.11136712749615975,
+   "totals": {
+    "supported": 46,
+    "contradicted": 5,
+    "conflicted": 1
+   }
+  },
+  "mdx": {
+   "n_manifests": 2,
+   "n_manifests_evaluable": 2,
+   "pooled_rate": 0.07017543859649122,
+   "mean_manifest_rate": 0.07142857142857142,
+   "totals": {
+    "supported": 53,
+    "contradicted": 4,
+    "conflicted": 0
+   }
+  },
+  "c++": {
+   "n_manifests": 1,
+   "n_manifests_evaluable": 1,
+   "pooled_rate": 0.0,
+   "mean_manifest_rate": 0.0,
+   "totals": {
+    "supported": 7,
+    "contradicted": 0,
+    "conflicted": 0
+   }
+  },
+  "kotlin": {
+   "n_manifests": 2,
+   "n_manifests_evaluable": 1,
+   "pooled_rate": 0.0,
+   "mean_manifest_rate": 0.0,
+   "totals": {
+    "supported": 20,
+    "contradicted": 0,
+    "conflicted": 0
+   }
+  },
+  "rust": {
+   "n_manifests": 6,
+   "n_manifests_evaluable": 4,
+   "pooled_rate": 0.03225806451612903,
+   "mean_manifest_rate": 0.13333333333333333,
+   "totals": {
+    "supported": 60,
+    "contradicted": 2,
+    "conflicted": 0
+   }
+  },
+  "scala": {
+   "n_manifests": 1,
+   "n_manifests_evaluable": 1,
+   "pooled_rate": 0.5,
+   "mean_manifest_rate": 0.5,
+   "totals": {
+    "supported": 3,
+    "contradicted": 3,
+    "conflicted": 0
+   }
+  },
+  "c#": {
+   "n_manifests": 7,
+   "n_manifests_evaluable": 5,
+   "pooled_rate": 0.0,
+   "mean_manifest_rate": 0.0,
+   "totals": {
+    "supported": 28,
+    "contradicted": 0,
+    "conflicted": 0
+   }
+  },
+  "swift": {
+   "n_manifests": 2,
+   "n_manifests_evaluable": 2,
+   "pooled_rate": 0.023809523809523808,
+   "mean_manifest_rate": 0.017857142857142856,
+   "totals": {
+    "supported": 41,
+    "contradicted": 1,
+    "conflicted": 0
+   }
+  },
+  "nix": {
+   "n_manifests": 1,
+   "n_manifests_evaluable": 1,
+   "pooled_rate": 0.0,
+   "mean_manifest_rate": 0.0,
+   "totals": {
+    "supported": 4,
+    "contradicted": 0,
+    "conflicted": 0
+   }
+  },
+  "php": {
+   "n_manifests": 2,
+   "n_manifests_evaluable": 2,
+   "pooled_rate": 0.07407407407407407,
+   "mean_manifest_rate": 0.07417582417582418,
+   "totals": {
+    "supported": 25,
+    "contradicted": 2,
+    "conflicted": 0
+   }
+  },
+  "elixir": {
+   "n_manifests": 1,
+   "n_manifests_evaluable": 1,
+   "pooled_rate": 0.0,
+   "mean_manifest_rate": 0.0,
+   "totals": {
+    "supported": 3,
+    "contradicted": 0,
+    "conflicted": 0
+   }
+  },
+  "dart": {
+   "n_manifests": 1,
+   "n_manifests_evaluable": 1,
+   "pooled_rate": 0.0,
+   "mean_manifest_rate": 0.0,
+   "totals": {
+    "supported": 23,
+    "contradicted": 0,
+    "conflicted": 0
+   }
+  },
+  "ruby": {
+   "n_manifests": 1,
+   "n_manifests_evaluable": 1,
+   "pooled_rate": 0.0,
+   "mean_manifest_rate": 0.0,
+   "totals": {
+    "supported": 29,
+    "contradicted": 0,
+    "conflicted": 0
+   }
+  },
+  "blade": {
+   "n_manifests": 1,
+   "n_manifests_evaluable": 1,
+   "pooled_rate": 0.42105263157894735,
+   "mean_manifest_rate": 0.42105263157894735,
+   "totals": {
+    "supported": 11,
+    "contradicted": 8,
+    "conflicted": 0
+   }
+  },
+  "shell": {
+   "n_manifests": 1,
+   "n_manifests_evaluable": 1,
+   "pooled_rate": 0.08333333333333333,
+   "mean_manifest_rate": 0.08333333333333333,
+   "totals": {
+    "supported": 11,
+    "contradicted": 1,
+    "conflicted": 0
+   }
+  },
+  "lua": {
+   "n_manifests": 1,
+   "n_manifests_evaluable": 0
+  }
+ },
+ "manifest_text_script": {
+  "latin": 73,
+  "cjk_heavy": 6
+ },
+ "age_vs_contradiction_rate_spearman": {
+  "n": 68,
+  "rho": 0.143012758838221,
+  "p": 0.2446505926236928,
+  "exploratory": true,
+  "age_days_summary": {
+   "n": 68,
+   "median": 26.141591435185184,
+   "q1": 5.174670138888889,
+   "q3": 96.98068576388889,
+   "mean": 63.63701456971679
+  }
+ },
+ "sensitivity_exclude_foreign_manifest_leaves": {
+  "excluded_leaves": [
+   "PathNeverExisted",
+   "ScriptHostMissing"
+  ],
+  "n_excluded_claims": 22,
+  "n_foreign_contradicted": 22,
+  "rate": {
+   "n_manifests_evaluable": 68,
+   "pooled_rate": 0.037037037037037035,
+   "pooled_rate_ci95": [
+    0.021416620251099645,
+    0.053585554073988184
+   ],
+   "mean_manifest_rate": 0.03630061963290513,
+   "mean_manifest_rate_ci95": [
+    0.020305454821755314,
+    0.054283921744067105
+   ],
+   "median_manifest_rate": 0.0,
+   "iqr_manifest_rate": [
+    0.0,
+    0.032526881720430105
+   ],
+   "share_manifests_with_any_contradiction": 0.29411764705882354,
+   "share_ci95": [
+    0.19117647058823528,
+    0.39705882352941174
+   ],
+   "totals": {
+    "supported": 1115,
+    "contradicted": 43,
+    "conflicted": 3
+   }
+  }
+ },
+ "sensitivity_mode_unanimous_only": {
+  "n_claims": 545,
+  "rate": {
+   "n_manifests_evaluable": 60,
+   "pooled_rate": 0.043233082706766915,
+   "pooled_rate_ci95": [
+    0.019891372472464246,
+    0.07183392368821921
+   ],
+   "mean_manifest_rate": 0.07041534391534392,
+   "mean_manifest_rate_ci95": [
+    0.030290178571428576,
+    0.11921957671957671
+   ],
+   "median_manifest_rate": 0.0,
+   "iqr_manifest_rate": [
+    0.0,
+    0.0
+   ],
+   "share_manifests_with_any_contradiction": 0.23333333333333334,
+   "share_ci95": [
+    0.13333333333333333,
+    0.35
+   ],
+   "totals": {
+    "supported": 509,
+    "contradicted": 23,
+    "conflicted": 0
+   }
+  }
+ },
+ "cue_word_check_T1_contradicted": {
+  "n_contradicted_T1": 36,
+  "n_with_cue_word": 2,
+  "share": 0.05555555555555555,
+  "meaning": "mechanical upper bound on mode errors among contradicted T1 claims"
+ },
+ "contradicted_subtypes": {
+  "PathNeverExisted": 22,
+  "ScriptUndefined": 7,
+  "PathRemoved": 14,
+  "ToolAbsentCompetitorPresent": 1,
+  "DependencyUndeclared": 13,
+  "ToolAbsentInEcosystem": 3,
+  "VersionContradicted": 4,
+  "DependencyMajorTooOld": 1
+ },
+ "reasoner_vs_recheck": {
+  "n_claims": 1227,
+  "agree_verdict": 0.9991850040749797,
+  "agree_leaf": 0.9991850040749797,
+  "kappa_verdict": 0.9951090596001151,
+  "precision_contradicted": 0.9846153846153847,
+  "recall_contradicted": 1.0,
+  "n_reasoner_contradicted": 65,
+  "n_recheck_contradicted": 64,
+  "confusion_matrix_rows_reasoner_cols_recheck": {
+   "SupportedClaim": {
+    "SupportedClaim": 1117,
+    "ContradictedClaim": 0,
+    "UnverifiableClaim": 0,
+    "IndeterminateClaim": 0,
+    "ConflictedClaim": 0,
+    "none": 0
+   },
+   "ContradictedClaim": {
+    "SupportedClaim": 1,
+    "ContradictedClaim": 64,
+    "UnverifiableClaim": 0,
+    "IndeterminateClaim": 0,
+    "ConflictedClaim": 0,
+    "none": 0
+   },
+   "UnverifiableClaim": {
+    "SupportedClaim": 0,
+    "ContradictedClaim": 0,
+    "UnverifiableClaim": 41,
+    "IndeterminateClaim": 0,
+    "ConflictedClaim": 0,
+    "none": 0
+   },
+   "IndeterminateClaim": {
+    "SupportedClaim": 0,
+    "ContradictedClaim": 0,
+    "UnverifiableClaim": 0,
+    "IndeterminateClaim": 1,
+    "ConflictedClaim": 0,
+    "none": 0
+   },
+   "ConflictedClaim": {
+    "SupportedClaim": 0,
+    "ContradictedClaim": 0,
+    "UnverifiableClaim": 0,
+    "IndeterminateClaim": 0,
+    "ConflictedClaim": 3,
+    "none": 0
+   },
+   "none": {
+    "SupportedClaim": 0,
+    "ContradictedClaim": 0,
+    "UnverifiableClaim": 0,
+    "IndeterminateClaim": 0,
+    "ConflictedClaim": 0,
+    "none": 0
+   }
+  },
+  "by_type": {
+   "T1": {
+    "n": 839,
+    "agree_verdict": 1.0,
+    "agree_leaf": 1.0,
+    "kappa": 1.0
+   },
+   "T2": {
+    "n": 12,
+    "agree_verdict": 1.0,
+    "agree_leaf": 1.0,
+    "kappa": 1.0
+   },
+   "T3": {
+    "n": 100,
+    "agree_verdict": 1.0,
+    "agree_leaf": 1.0,
+    "kappa": 1.0
+   },
+   "T4": {
+    "n": 65,
+    "agree_verdict": 0.9846153846153847,
+    "agree_leaf": 0.9846153846153847,
+    "kappa": 0.9532710280373834
+   },
+   "T5": {
+    "n": 189,
+    "agree_verdict": 1.0,
+    "agree_leaf": 1.0,
+    "kappa": 1.0
+   },
+   "T6": {
+    "n": 22,
+    "agree_verdict": 1.0,
+    "agree_leaf": 1.0,
+    "kappa": 1.0
+   }
+  },
+  "independence_check": {
+   "forbidden_imports_found": []
+  },
+  "note": "Encoding fidelity: does the reasoner decide exactly what the rules state? Not construct validity. Both sides read the same git objects through different code.",
+  "n_disagreements": 1,
+  "n_leaf_only_disagreements": 0
+ },
+ "hermit_vs_pellet": {
+  "manifests_pellet_ran": 79,
+  "manifests_pellet_crashed_or_inconsistent": 79,
+  "note": "Pellet 2.3.1 throws InternalReasonerException ('Adding type to a pruned node') while classifying the claims TBox, as it did for the WP1 TBoxes; HermiT is therefore the only complete decision procedure here. Pellet's `explain` (instance check) still succeeds for most claims; see explanations.",
+  "claims_compared": 0,
+  "verdict_agreement": null,
+  "pellet_errors_sample": [
+   "java error: Java error message is:\nClassifying 152 elements\n\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\rException in thread \"main\" org.mindswap.pellet.exceptions.Intern",
+   "java error: Java error message is:\nClassifying 152 elements\n\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\rException in thread \"main\" org.mindswap.pellet.exceptions.InternalReasonerException: Adding typ",
+   "java error: Java error message is:\nClassifying 152 elements\n\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\rException in thread \"main\" org.mindswap.pellet.exceptions.InternalReasonerException: Adding ty",
+   "java error: Java error message is:\nClassifying 152 elements\n\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\rException in thread \"main\" org.mindswap.pellet.exceptions.InternalReasonerExcep",
+   "java error: Java error message is:\nClassifying 152 elements\n\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\rException in thread \"main\" org.mindswap.pellet.exceptions.Intern"
+  ]
+ },
+ "triangulation": {
+  "summary": {
+   "github_api_calls": 6,
+   "T1_ContradictedClaim": {
+    "n": 36,
+    "corroborated": 36,
+    "rate": 1.0
+   },
+   "T1_SupportedClaim": {
+    "n": 50,
+    "corroborated": 50,
+    "rate": 1.0
+   },
+   "T2_IndeterminateClaim": {
+    "n": 1,
+    "corroborated": 1,
+    "rate": 1.0
+   },
+   "T3_ContradictedClaim": {
+    "n": 4,
+    "corroborated": 1,
+    "rate": 0.25
+   },
+   "T4_ContradictedClaim": {
+    "n": 14,
+    "corroborated": 2,
+    "rate": 0.14285714285714285
+   },
+   "T5_ContradictedClaim": {
+    "n": 7,
+    "corroborated": 7,
+    "rate": 1.0
+   },
+   "T6_reparse_agreement": {
+    "n": 22,
+    "agree_verdict": 1.0,
+    "agree_leaf": 1.0,
+    "kappa": 1.0
+   }
+  },
+  "notes": {
+   "T3_T4": "grep hits flag a signature or alias gap; zero hits corroborate. Repos above 5000 tracked files are grepped over config-like and source files only.",
+   "T2": "GitHub commits API counts all commits touching the path (merges included), so it can exceed the first-parent non-merge count.",
+   "T5": "A CI file invoking a script reported undefined flags a possible false contradiction or a broken CI."
+  }
+ },
+ "drift": {
+  "by_type": {
+   "T1": {
+    "n_claims": 808,
+    "n_contradicted": 36,
+    "n_contradicted_intro_resolved": 36,
+    "intro_unresolved": 0,
+    "drifted": 17,
+    "born_wrong": 19,
+    "drifted_share_of_resolved": 0.4722222222222222,
+    "born_wrong_share_of_resolved": 0.5277777777777778,
+    "n_flip_located": 17,
+    "median_days_false_at_S": 13
+   },
+   "T3": {
+    "n_claims": 100,
+    "n_contradicted": 4,
+    "n_contradicted_intro_resolved": 4,
+    "intro_unresolved": 0,
+    "drifted": 0,
+    "born_wrong": 4,
+    "drifted_share_of_resolved": 0.0,
+    "born_wrong_share_of_resolved": 1.0,
+    "n_flip_located": 0,
+    "median_days_false_at_S": null
+   },
+   "T4": {
+    "n_claims": 65,
+    "n_contradicted": 14,
+    "n_contradicted_intro_resolved": 14,
+    "intro_unresolved": 0,
+    "drifted": 2,
+    "born_wrong": 12,
+    "drifted_share_of_resolved": 0.14285714285714285,
+    "born_wrong_share_of_resolved": 0.8571428571428571,
+    "n_flip_located": 2,
+    "median_days_false_at_S": 113.0
+   },
+   "T5": {
+    "n_claims": 188,
+    "n_contradicted": 7,
+    "n_contradicted_intro_resolved": 7,
+    "intro_unresolved": 0,
+    "drifted": 0,
+    "born_wrong": 7,
+    "drifted_share_of_resolved": 0.0,
+    "born_wrong_share_of_resolved": 1.0,
+    "n_flip_located": 0,
+    "median_days_false_at_S": null
+   },
+   "T6": {
+    "n_claims": 16,
+    "n_contradicted": 4,
+    "n_contradicted_intro_resolved": 4,
+    "intro_unresolved": 0,
+    "drifted": 2,
+    "born_wrong": 2,
+    "drifted_share_of_resolved": 0.5,
+    "born_wrong_share_of_resolved": 0.5,
+    "n_flip_located": 2,
+    "median_days_false_at_S": 17.5
+   }
+  },
+  "overall": {
+   "n_contradicted": 65,
+   "n_intro_resolved": 65,
+   "drifted": 21,
+   "born_wrong": 44,
+   "drifted_share_of_resolved": 0.3230769230769231,
+   "born_wrong_share_of_resolved": 0.676923076923077,
+   "median_days_false_at_S": 13,
+   "n_flip_located": 21
+  },
+  "caveat": "Drifted/born-wrong are inferred by HermiT from the two measurements; the flip commit uses the independent re-check as bisection predicate and assumes a single flip."
+ },
+ "sensitivity": {
+  "mode": "one_at_a_time",
+  "n_builds": 11,
+  "variants": {
+   "baseline": {
+    "param": null,
+    "value": null,
+    "verdicts": {
+     "SupportedClaim": 1115,
+     "UnverifiableClaim": 35,
+     "ContradictedClaim": 65,
+     "IndeterminateClaim": 1,
+     "ConflictedClaim": 3
+    },
+    "leaves": {
+     "PathFoundExact": 602,
+     "ToolSignatureFound": 96,
+     "VersionConfirmed": 12,
+     "PathFoundBySuffix": 170,
+     "PathUntrackedByDesign": 27,
+     "PathNeverExisted": 22,
+     "DependencyMajorInRange": 15,
+     "ScriptDefinedRoot": 171,
+     "ScriptUndefined": 7,
+     "NoVersionSource": 3,
+     "PathRemoved": 14,
+     "InactivePathQuiet": 3,
+     "ToolAbsentCompetitorPresent": 1,
+     "ScriptDefinedNested": 10,
+     "InactivePathModerate": 1,
+     "DependencyConfirmed": 36,
+     "DependencyUndeclared": 13,
+     "PathInSubmodule": 4,
+     "VersionSourcesConflict": 3,
+     "ToolAbsentInEcosystem": 3,
+     "VersionContradicted": 4,
+     "ScriptPossiblyDynamic": 1,
+     "DependencyMajorTooOld": 1
+    },
+    "by_type": {
+     "T1": {
+      "SupportedClaim": 772,
+      "UnverifiableClaim": 31,
+      "ContradictedClaim": 36
+     },
+     "T3": {
+      "SupportedClaim": 96,
+      "ContradictedClaim": 4
+     },
+     "T6": {
+      "SupportedClaim": 12,
+      "UnverifiableClaim": 3,
+      "ConflictedClaim": 3,
+      "ContradictedClaim": 4
+     },
+     "T4": {
+      "SupportedClaim": 51,
+      "ContradictedClaim": 14
+     },
+     "T5": {
+      "SupportedClaim": 181,
+      "ContradictedClaim": 7,
+      "UnverifiableClaim": 1
+     },
+     "T2": {
+      "SupportedClaim": 3,
+      "IndeterminateClaim": 1
+     }
+    },
+    "manifests": 79,
+    "manifests_with_contradiction": 29,
+    "mean_manifest_contradiction_rate": 0.06687354728214111,
+    "n_manifests_with_rate": 68,
+    "seconds": 0.2
+   },
+   "wp2_status_window_days=90": {
+    "param": "wp2_status_window_days",
+    "value": 90,
+    "verdicts": {
+     "SupportedClaim": 1115,
+     "UnverifiableClaim": 35,
+     "ContradictedClaim": 65,
+     "IndeterminateClaim": 1,
+     "ConflictedClaim": 3
+    },
+    "leaves": {
+     "PathFoundExact": 602,
+     "ToolSignatureFound": 96,
+     "VersionConfirmed": 12,
+     "PathFoundBySuffix": 170,
+     "PathUntrackedByDesign": 27,
+     "PathNeverExisted": 22,
+     "DependencyMajorInRange": 15,
+     "ScriptDefinedRoot": 171,
+     "ScriptUndefined": 7,
+     "NoVersionSource": 3,
+     "PathRemoved": 14,
+     "InactivePathQuiet": 3,
+     "ToolAbsentCompetitorPresent": 1,
+     "ScriptDefinedNested": 10,
+     "InactivePathModerate": 1,
+     "DependencyConfirmed": 36,
+     "DependencyUndeclared": 13,
+     "PathInSubmodule": 4,
+     "VersionSourcesConflict": 3,
+     "ToolAbsentInEcosystem": 3,
+     "VersionContradicted": 4,
+     "ScriptPossiblyDynamic": 1,
+     "DependencyMajorTooOld": 1
+    },
+    "by_type": {
+     "T1": {
+      "SupportedClaim": 772,
+      "UnverifiableClaim": 31,
+      "ContradictedClaim": 36
+     },
+     "T3": {
+      "SupportedClaim": 96,
+      "ContradictedClaim": 4
+     },
+     "T6": {
+      "SupportedClaim": 12,
+      "UnverifiableClaim": 3,
+      "ConflictedClaim": 3,
+      "ContradictedClaim": 4
+     },
+     "T4": {
+      "SupportedClaim": 51,
+      "ContradictedClaim": 14
+     },
+     "T5": {
+      "SupportedClaim": 181,
+      "ContradictedClaim": 7,
+      "UnverifiableClaim": 1
+     },
+     "T2": {
+      "SupportedClaim": 3,
+      "IndeterminateClaim": 1
+     }
+    },
+    "manifests": 79,
+    "manifests_with_contradiction": 29,
+    "mean_manifest_contradiction_rate": 0.06687354728214111,
+    "n_manifests_with_rate": 68,
+    "seconds": 0.4
+   },
+   "wp2_status_window_days=365": {
+    "param": "wp2_status_window_days",
+    "value": 365,
+    "verdicts": {
+     "SupportedClaim": 1115,
+     "UnverifiableClaim": 35,
+     "ContradictedClaim": 66,
+     "ConflictedClaim": 3
+    },
+    "leaves": {
+     "PathFoundExact": 602,
+     "ToolSignatureFound": 96,
+     "VersionConfirmed": 12,
+     "PathFoundBySuffix": 170,
+     "PathUntrackedByDesign": 27,
+     "PathNeverExisted": 22,
+     "DependencyMajorInRange": 15,
+     "ScriptDefinedRoot": 171,
+     "ScriptUndefined": 7,
+     "NoVersionSource": 3,
+     "PathRemoved": 14,
+     "InactivePathQuiet": 3,
+     "ToolAbsentCompetitorPresent": 1,
+     "ScriptDefinedNested": 10,
+     "InactivePathActive": 1,
+     "DependencyConfirmed": 36,
+     "DependencyUndeclared": 13,
+     "PathInSubmodule": 4,
+     "VersionSourcesConflict": 3,
+     "ToolAbsentInEcosystem": 3,
+     "VersionContradicted": 4,
+     "ScriptPossiblyDynamic": 1,
+     "DependencyMajorTooOld": 1
+    },
+    "by_type": {
+     "T1": {
+      "SupportedClaim": 772,
+      "UnverifiableClaim": 31,
+      "ContradictedClaim": 36
+     },
+     "T3": {
+      "SupportedClaim": 96,
+      "ContradictedClaim": 4
+     },
+     "T6": {
+      "SupportedClaim": 12,
+      "UnverifiableClaim": 3,
+      "ConflictedClaim": 3,
+      "ContradictedClaim": 4
+     },
+     "T4": {
+      "SupportedClaim": 51,
+      "ContradictedClaim": 14
+     },
+     "T5": {
+      "SupportedClaim": 181,
+      "ContradictedClaim": 7,
+      "UnverifiableClaim": 1
+     },
+     "T2": {
+      "SupportedClaim": 3,
+      "ContradictedClaim": 1
+     }
+    },
+    "manifests": 79,
+    "manifests_with_contradiction": 29,
+    "mean_manifest_contradiction_rate": 0.06735985291550557,
+    "n_manifests_with_rate": 68,
+    "seconds": 0.4
+   },
+   "wp2_inactive_contradict_min_commits=3": {
+    "param": "wp2_inactive_contradict_min_commits",
+    "value": 3,
+    "verdicts": {
+     "SupportedClaim": 1115,
+     "UnverifiableClaim": 35,
+     "ContradictedClaim": 65,
+     "IndeterminateClaim": 1,
+     "ConflictedClaim": 3
+    },
+    "leaves": {
+     "PathFoundExact": 602,
+     "ToolSignatureFound": 96,
+     "VersionConfirmed": 12,
+     "PathFoundBySuffix": 170,
+     "PathUntrackedByDesign": 27,
+     "PathNeverExisted": 22,
+     "DependencyMajorInRange": 15,
+     "ScriptDefinedRoot": 171,
+     "ScriptUndefined": 7,
+     "NoVersionSource": 3,
+     "PathRemoved": 14,
+     "InactivePathQuiet": 3,
+     "ToolAbsentCompetitorPresent": 1,
+     "ScriptDefinedNested": 10,
+     "InactivePathModerate": 1,
+     "DependencyConfirmed": 36,
+     "DependencyUndeclared": 13,
+     "PathInSubmodule": 4,
+     "VersionSourcesConflict": 3,
+     "ToolAbsentInEcosystem": 3,
+     "VersionContradicted": 4,
+     "ScriptPossiblyDynamic": 1,
+     "DependencyMajorTooOld": 1
+    },
+    "by_type": {
+     "T1": {
+      "SupportedClaim": 772,
+      "UnverifiableClaim": 31,
+      "ContradictedClaim": 36
+     },
+     "T3": {
+      "SupportedClaim": 96,
+      "ContradictedClaim": 4
+     },
+     "T6": {
+      "SupportedClaim": 12,
+      "UnverifiableClaim": 3,
+      "ConflictedClaim": 3,
+      "ContradictedClaim": 4
+     },
+     "T4": {
+      "SupportedClaim": 51,
+      "ContradictedClaim": 14
+     },
+     "T5": {
+      "SupportedClaim": 181,
+      "ContradictedClaim": 7,
+      "UnverifiableClaim": 1
+     },
+     "T2": {
+      "SupportedClaim": 3,
+      "IndeterminateClaim": 1
+     }
+    },
+    "manifests": 79,
+    "manifests_with_contradiction": 29,
+    "mean_manifest_contradiction_rate": 0.06687354728214111,
+    "n_manifests_with_rate": 68,
+    "seconds": 0.4
+   },
+   "wp2_inactive_contradict_min_commits=10": {
+    "param": "wp2_inactive_contradict_min_commits",
+    "value": 10,
+    "verdicts": {
+     "SupportedClaim": 1115,
+     "UnverifiableClaim": 35,
+     "ContradictedClaim": 65,
+     "IndeterminateClaim": 1,
+     "ConflictedClaim": 3
+    },
+    "leaves": {
+     "PathFoundExact": 602,
+     "ToolSignatureFound": 96,
+     "VersionConfirmed": 12,
+     "PathFoundBySuffix": 170,
+     "PathUntrackedByDesign": 27,
+     "PathNeverExisted": 22,
+     "DependencyMajorInRange": 15,
+     "ScriptDefinedRoot": 171,
+     "ScriptUndefined": 7,
+     "NoVersionSource": 3,
+     "PathRemoved": 14,
+     "InactivePathQuiet": 3,
+     "ToolAbsentCompetitorPresent": 1,
+     "ScriptDefinedNested": 10,
+     "InactivePathModerate": 1,
+     "DependencyConfirmed": 36,
+     "DependencyUndeclared": 13,
+     "PathInSubmodule": 4,
+     "VersionSourcesConflict": 3,
+     "ToolAbsentInEcosystem": 3,
+     "VersionContradicted": 4,
+     "ScriptPossiblyDynamic": 1,
+     "DependencyMajorTooOld": 1
+    },
+    "by_type": {
+     "T1": {
+      "SupportedClaim": 772,
+      "UnverifiableClaim": 31,
+      "ContradictedClaim": 36
+     },
+     "T3": {
+      "SupportedClaim": 96,
+      "ContradictedClaim": 4
+     },
+     "T6": {
+      "SupportedClaim": 12,
+      "UnverifiableClaim": 3,
+      "ConflictedClaim": 3,
+      "ContradictedClaim": 4
+     },
+     "T4": {
+      "SupportedClaim": 51,
+      "ContradictedClaim": 14
+     },
+     "T5": {
+      "SupportedClaim": 181,
+      "ContradictedClaim": 7,
+      "UnverifiableClaim": 1
+     },
+     "T2": {
+      "SupportedClaim": 3,
+      "IndeterminateClaim": 1
+     }
+    },
+    "manifests": 79,
+    "manifests_with_contradiction": 29,
+    "mean_manifest_contradiction_rate": 0.06687354728214111,
+    "n_manifests_with_rate": 68,
+    "seconds": 0.4
+   },
+   "wp2_inactive_contradict_min_lines=50": {
+    "param": "wp2_inactive_contradict_min_lines",
+    "value": 50,
+    "verdicts": {
+     "SupportedClaim": 1115,
+     "UnverifiableClaim": 35,
+     "ContradictedClaim": 65,
+     "IndeterminateClaim": 1,
+     "ConflictedClaim": 3
+    },
+    "leaves": {
+     "PathFoundExact": 602,
+     "ToolSignatureFound": 96,
+     "VersionConfirmed": 12,
+     "PathFoundBySuffix": 170,
+     "PathUntrackedByDesign": 27,
+     "PathNeverExisted": 22,
+     "DependencyMajorInRange": 15,
+     "ScriptDefinedRoot": 171,
+     "ScriptUndefined": 7,
+     "NoVersionSource": 3,
+     "PathRemoved": 14,
+     "InactivePathQuiet": 3,
+     "ToolAbsentCompetitorPresent": 1,
+     "ScriptDefinedNested": 10,
+     "InactivePathModerate": 1,
+     "DependencyConfirmed": 36,
+     "DependencyUndeclared": 13,
+     "PathInSubmodule": 4,
+     "VersionSourcesConflict": 3,
+     "ToolAbsentInEcosystem": 3,
+     "VersionContradicted": 4,
+     "ScriptPossiblyDynamic": 1,
+     "DependencyMajorTooOld": 1
+    },
+    "by_type": {
+     "T1": {
+      "SupportedClaim": 772,
+      "UnverifiableClaim": 31,
+      "ContradictedClaim": 36
+     },
+     "T3": {
+      "SupportedClaim": 96,
+      "ContradictedClaim": 4
+     },
+     "T6": {
+      "SupportedClaim": 12,
+      "UnverifiableClaim": 3,
+      "ConflictedClaim": 3,
+      "ContradictedClaim": 4
+     },
+     "T4": {
+      "SupportedClaim": 51,
+      "ContradictedClaim": 14
+     },
+     "T5": {
+      "SupportedClaim": 181,
+      "ContradictedClaim": 7,
+      "UnverifiableClaim": 1
+     },
+     "T2": {
+      "SupportedClaim": 3,
+      "IndeterminateClaim": 1
+     }
+    },
+    "manifests": 79,
+    "manifests_with_contradiction": 29,
+    "mean_manifest_contradiction_rate": 0.06687354728214111,
+    "n_manifests_with_rate": 68,
+    "seconds": 0.4
+   },
+   "wp2_inactive_contradict_min_lines=500": {
+    "param": "wp2_inactive_contradict_min_lines",
+    "value": 500,
+    "verdicts": {
+     "SupportedClaim": 1115,
+     "UnverifiableClaim": 35,
+     "ContradictedClaim": 65,
+     "IndeterminateClaim": 1,
+     "ConflictedClaim": 3
+    },
+    "leaves": {
+     "PathFoundExact": 602,
+     "ToolSignatureFound": 96,
+     "VersionConfirmed": 12,
+     "PathFoundBySuffix": 170,
+     "PathUntrackedByDesign": 27,
+     "PathNeverExisted": 22,
+     "DependencyMajorInRange": 15,
+     "ScriptDefinedRoot": 171,
+     "ScriptUndefined": 7,
+     "NoVersionSource": 3,
+     "PathRemoved": 14,
+     "InactivePathQuiet": 3,
+     "ToolAbsentCompetitorPresent": 1,
+     "ScriptDefinedNested": 10,
+     "InactivePathModerate": 1,
+     "DependencyConfirmed": 36,
+     "DependencyUndeclared": 13,
+     "PathInSubmodule": 4,
+     "VersionSourcesConflict": 3,
+     "ToolAbsentInEcosystem": 3,
+     "VersionContradicted": 4,
+     "ScriptPossiblyDynamic": 1,
+     "DependencyMajorTooOld": 1
+    },
+    "by_type": {
+     "T1": {
+      "SupportedClaim": 772,
+      "UnverifiableClaim": 31,
+      "ContradictedClaim": 36
+     },
+     "T3": {
+      "SupportedClaim": 96,
+      "ContradictedClaim": 4
+     },
+     "T6": {
+      "SupportedClaim": 12,
+      "UnverifiableClaim": 3,
+      "ConflictedClaim": 3,
+      "ContradictedClaim": 4
+     },
+     "T4": {
+      "SupportedClaim": 51,
+      "ContradictedClaim": 14
+     },
+     "T5": {
+      "SupportedClaim": 181,
+      "ContradictedClaim": 7,
+      "UnverifiableClaim": 1
+     },
+     "T2": {
+      "SupportedClaim": 3,
+      "IndeterminateClaim": 1
+     }
+    },
+    "manifests": 79,
+    "manifests_with_contradiction": 29,
+    "mean_manifest_contradiction_rate": 0.06687354728214111,
+    "n_manifests_with_rate": 68,
+    "seconds": 0.4
+   },
+   "wp2_inactive_support_max_commits=0": {
+    "param": "wp2_inactive_support_max_commits",
+    "value": 0,
+    "verdicts": {
+     "SupportedClaim": 1114,
+     "UnverifiableClaim": 35,
+     "ContradictedClaim": 65,
+     "IndeterminateClaim": 2,
+     "ConflictedClaim": 3
+    },
+    "leaves": {
+     "PathFoundExact": 602,
+     "ToolSignatureFound": 96,
+     "VersionConfirmed": 12,
+     "PathFoundBySuffix": 170,
+     "PathUntrackedByDesign": 27,
+     "PathNeverExisted": 22,
+     "DependencyMajorInRange": 15,
+     "ScriptDefinedRoot": 171,
+     "ScriptUndefined": 7,
+     "NoVersionSource": 3,
+     "PathRemoved": 14,
+     "InactivePathQuiet": 2,
+     "ToolAbsentCompetitorPresent": 1,
+     "ScriptDefinedNested": 10,
+     "InactivePathModerate": 2,
+     "DependencyConfirmed": 36,
+     "DependencyUndeclared": 13,
+     "PathInSubmodule": 4,
+     "VersionSourcesConflict": 3,
+     "ToolAbsentInEcosystem": 3,
+     "VersionContradicted": 4,
+     "ScriptPossiblyDynamic": 1,
+     "DependencyMajorTooOld": 1
+    },
+    "by_type": {
+     "T1": {
+      "SupportedClaim": 772,
+      "UnverifiableClaim": 31,
+      "ContradictedClaim": 36
+     },
+     "T3": {
+      "SupportedClaim": 96,
+      "ContradictedClaim": 4
+     },
+     "T6": {
+      "SupportedClaim": 12,
+      "UnverifiableClaim": 3,
+      "ConflictedClaim": 3,
+      "ContradictedClaim": 4
+     },
+     "T4": {
+      "SupportedClaim": 51,
+      "ContradictedClaim": 14
+     },
+     "T5": {
+      "SupportedClaim": 181,
+      "ContradictedClaim": 7,
+      "UnverifiableClaim": 1
+     },
+     "T2": {
+      "SupportedClaim": 2,
+      "IndeterminateClaim": 2
+     }
+    },
+    "manifests": 79,
+    "manifests_with_contradiction": 29,
+    "mean_manifest_contradiction_rate": 0.06691544438286175,
+    "n_manifests_with_rate": 68,
+    "seconds": 0.4
+   },
+   "wp2_inactive_support_max_commits=2": {
+    "param": "wp2_inactive_support_max_commits",
+    "value": 2,
+    "verdicts": {
+     "SupportedClaim": 1115,
+     "UnverifiableClaim": 35,
+     "ContradictedClaim": 65,
+     "IndeterminateClaim": 1,
+     "ConflictedClaim": 3
+    },
+    "leaves": {
+     "PathFoundExact": 602,
+     "ToolSignatureFound": 96,
+     "VersionConfirmed": 12,
+     "PathFoundBySuffix": 170,
+     "PathUntrackedByDesign": 27,
+     "PathNeverExisted": 22,
+     "DependencyMajorInRange": 15,
+     "ScriptDefinedRoot": 171,
+     "ScriptUndefined": 7,
+     "NoVersionSource": 3,
+     "PathRemoved": 14,
+     "InactivePathQuiet": 3,
+     "ToolAbsentCompetitorPresent": 1,
+     "ScriptDefinedNested": 10,
+     "InactivePathModerate": 1,
+     "DependencyConfirmed": 36,
+     "DependencyUndeclared": 13,
+     "PathInSubmodule": 4,
+     "VersionSourcesConflict": 3,
+     "ToolAbsentInEcosystem": 3,
+     "VersionContradicted": 4,
+     "ScriptPossiblyDynamic": 1,
+     "DependencyMajorTooOld": 1
+    },
+    "by_type": {
+     "T1": {
+      "SupportedClaim": 772,
+      "UnverifiableClaim": 31,
+      "ContradictedClaim": 36
+     },
+     "T3": {
+      "SupportedClaim": 96,
+      "ContradictedClaim": 4
+     },
+     "T6": {
+      "SupportedClaim": 12,
+      "UnverifiableClaim": 3,
+      "ConflictedClaim": 3,
+      "ContradictedClaim": 4
+     },
+     "T4": {
+      "SupportedClaim": 51,
+      "ContradictedClaim": 14
+     },
+     "T5": {
+      "SupportedClaim": 181,
+      "ContradictedClaim": 7,
+      "UnverifiableClaim": 1
+     },
+     "T2": {
+      "SupportedClaim": 3,
+      "IndeterminateClaim": 1
+     }
+    },
+    "manifests": 79,
+    "manifests_with_contradiction": 29,
+    "mean_manifest_contradiction_rate": 0.06687354728214111,
+    "n_manifests_with_rate": 68,
+    "seconds": 89.9
+   },
+   "wp2_consensus_min_votes=1": {
+    "param": "wp2_consensus_min_votes",
+    "value": 1,
+    "verdicts": {
+     "SupportedClaim": 1561,
+     "UnverifiableClaim": 61,
+     "ContradictedClaim": 162,
+     "IndeterminateClaim": 2,
+     "ConflictedClaim": 4
+    },
+    "leaves": {
+     "PathFoundExact": 827,
+     "PathUntrackedByDesign": 48,
+     "PathNeverExisted": 85,
+     "PathFoundBySuffix": 289,
+     "ToolSignatureFound": 131,
+     "VersionConfirmed": 17,
+     "DependencyConfirmed": 68,
+     "DependencyMajorInRange": 18,
+     "ScriptDefinedRoot": 192,
+     "ScriptUndefined": 7,
+     "VersionContradicted": 17,
+     "InactivePathModerate": 2,
+     "NoVersionSource": 4,
+     "PathRemoved": 15,
+     "InactivePathQuiet": 9,
+     "ToolAbsentCompetitorPresent": 2,
+     "ScriptDefinedNested": 10,
+     "DependencyUndeclared": 32,
+     "PathInSubmodule": 4,
+     "VersionSourcesConflict": 4,
+     "ToolAbsentInEcosystem": 3,
+     "StatusPathUnresolved": 4,
+     "ScriptPossiblyDynamic": 1,
+     "DependencyMajorTooOld": 1
+    },
+    "by_type": {
+     "T1": {
+      "SupportedClaim": 1116,
+      "UnverifiableClaim": 52,
+      "ContradictedClaim": 100
+     },
+     "T3": {
+      "SupportedClaim": 131,
+      "ContradictedClaim": 5
+     },
+     "T6": {
+      "SupportedClaim": 17,
+      "ContradictedClaim": 17,
+      "UnverifiableClaim": 4,
+      "ConflictedClaim": 4
+     },
+     "T4": {
+      "SupportedClaim": 86,
+      "ContradictedClaim": 33
+     },
+     "T5": {
+      "SupportedClaim": 202,
+      "ContradictedClaim": 7,
+      "UnverifiableClaim": 1
+     },
+     "T2": {
+      "IndeterminateClaim": 2,
+      "SupportedClaim": 9,
+      "UnverifiableClaim": 4
+     }
+    },
+    "manifests": 79,
+    "manifests_with_contradiction": 40,
+    "mean_manifest_contradiction_rate": 0.08532537952509986,
+    "n_manifests_with_rate": 71,
+    "seconds": 142.6
+   },
+   "wp2_consensus_min_votes=3": {
+    "param": "wp2_consensus_min_votes",
+    "value": 3,
+    "verdicts": {
+     "SupportedClaim": 522,
+     "ContradictedClaim": 23,
+     "UnverifiableClaim": 14
+    },
+    "leaves": {
+     "ToolSignatureFound": 44,
+     "PathFoundExact": 286,
+     "ScriptDefinedRoot": 97,
+     "ScriptUndefined": 6,
+     "PathFoundBySuffix": 73,
+     "PathUntrackedByDesign": 9,
+     "PathNeverExisted": 8,
+     "PathRemoved": 5,
+     "ScriptDefinedNested": 6,
+     "DependencyConfirmed": 13,
+     "PathInSubmodule": 2,
+     "VersionConfirmed": 3,
+     "VersionContradicted": 2,
+     "ScriptPossiblyDynamic": 1,
+     "NoVersionSource": 2,
+     "DependencyUndeclared": 2
+    },
+    "by_type": {
+     "T3": {
+      "SupportedClaim": 44
+     },
+     "T1": {
+      "SupportedClaim": 359,
+      "UnverifiableClaim": 11,
+      "ContradictedClaim": 13
+     },
+     "T5": {
+      "SupportedClaim": 103,
+      "ContradictedClaim": 6,
+      "UnverifiableClaim": 1
+     },
+     "T4": {
+      "SupportedClaim": 13,
+      "ContradictedClaim": 2
+     },
+     "T6": {
+      "SupportedClaim": 3,
+      "ContradictedClaim": 2,
+      "UnverifiableClaim": 2
+     }
+    },
+    "manifests": 79,
+    "manifests_with_contradiction": 14,
+    "mean_manifest_contradiction_rate": 0.07041534391534392,
+    "n_manifests_with_rate": 60,
+    "seconds": 149.0
+   }
+  }
+ },
+ "explanations": {
+  "n_targets": 99,
+  "n_with_justification": 91,
+  "n_errors": 8,
+  "wall_s": 326.2,
+  "mean_call_s": 9.348484848484848,
+  "by_verdict": {
+   "ConflictedClaim": 3,
+   "ContradictedClaim": 65,
+   "IndeterminateClaim": 1,
+   "SupportedClaim": 30
+  },
+  "contradicted_without_justification": [
+   "T4|pywin32|",
+   "T1|expressions.py",
+   "T1|modules",
+   "T3|linter_formatter|prettier",
+   "T1|history",
+   "T4|requests|",
+   "T4|llm|"
+  ],
+  "errors_sample": [
+   "Exception in thread \"main\" org.mindswap.pellet.exceptions.InternalReasonerException: Adding type to a pruned node \"anon(1)\" http://www.w3.org/2001/XMLSchema#integer\n\tat org.mindswap.pellet.Node.addTyp",
+   "Exception in thread \"main\" org.mindswap.pellet.exceptions.InternalReasonerException: Adding type to a pruned node \"anon(1)\" http://www.w3.org/2001/XMLSchema#integer\n\tat org.mindswap.pellet.Node.addTyp",
+   "Exception in thread \"main\" org.mindswap.pellet.exceptions.InternalReasonerException: Adding type to a pruned node \"anon(3)\" http://www.w3.org/2001/XMLSchema#integer\n\tat org.mindswap.pellet.Node.addTyp",
+   "Exception in thread \"main\" org.mindswap.pellet.exceptions.InternalReasonerException: Adding type to a pruned node \"anon(7)\" http://www.w3.org/2001/XMLSchema#integer\n\tat org.mindswap.pellet.Node.addTyp",
+   "Exception in thread \"main\" org.mindswap.pellet.exceptions.InternalReasonerException: Adding type to a pruned node \"anon(1)\" http://www.w3.org/2001/XMLSchema#integer\n\tat org.mindswap.pellet.Node.addTyp",
+   "Exception in thread \"main\" org.mindswap.pellet.exceptions.InternalReasonerException: Adding type to a pruned node \"anon(2)\" http://www.w3.org/2001/XMLSchema#integer\n\tat org.mindswap.pellet.Node.addTyp",
+   "Exception in thread \"main\" org.mindswap.pellet.exceptions.InternalReasonerException: Adding type to a pruned node \"anon(6)\" http://www.w3.org/2001/XMLSchema#integer\n\tat org.mindswap.pellet.Node.addTyp",
+   "Exception in thread \"main\" org.mindswap.pellet.exceptions.InternalReasonerException: Adding type to a pruned node \"anon(5)\" http://www.w3.org/2001/XMLSchema#integer\n\tat org.mindswap.pellet.Node.addTyp"
+  ]
+ },
+ "extraction_agreement": {
+  "panel": [
+   "nvidia/nemotron-3-super-120b-a12b",
+   "openai/gpt-oss-20b",
+   "google/diffusiongemma-26b-a4b-it"
+  ],
+  "pairwise_f1_overall": {
+   "nvidia/nemotron-3-super-120b-a12b | openai/gpt-oss-20b": 0.617635107679805,
+   "nvidia/nemotron-3-super-120b-a12b | google/diffusiongemma-26b-a4b-it": 0.6704805491990846,
+   "openai/gpt-oss-20b | google/diffusiongemma-26b-a4b-it": 0.5450733752620545
+  },
+  "pairwise_f1_mean": 0.611063010713648,
+  "pairwise_f1_by_type": {
+   "T1": {
+    "nvidia/nemotron-3-super-120b-a12b | openai/gpt-oss-20b": 0.591283863368669,
+    "nvidia/nemotron-3-super-120b-a12b | google/diffusiongemma-26b-a4b-it": 0.6681367144432194,
+    "openai/gpt-oss-20b | google/diffusiongemma-26b-a4b-it": 0.5120481927710844
+   },
+   "T2": {
+    "nvidia/nemotron-3-super-120b-a12b | openai/gpt-oss-20b": 0.45714285714285713,
+    "nvidia/nemotron-3-super-120b-a12b | google/diffusiongemma-26b-a4b-it": 0.38461538461538464,
+    "openai/gpt-oss-20b | google/diffusiongemma-26b-a4b-it": 0.36363636363636365
+   },
+   "T3": {
+    "nvidia/nemotron-3-super-120b-a12b | openai/gpt-oss-20b": 0.6195652173913043,
+    "nvidia/nemotron-3-super-120b-a12b | google/diffusiongemma-26b-a4b-it": 0.7450980392156863,
+    "openai/gpt-oss-20b | google/diffusiongemma-26b-a4b-it": 0.632183908045977
+   },
+   "T4": {
+    "nvidia/nemotron-3-super-120b-a12b | openai/gpt-oss-20b": 0.5901639344262295,
+    "nvidia/nemotron-3-super-120b-a12b | google/diffusiongemma-26b-a4b-it": 0.45588235294117646,
+    "openai/gpt-oss-20b | google/diffusiongemma-26b-a4b-it": 0.4
+   },
+   "T5": {
+    "nvidia/nemotron-3-super-120b-a12b | openai/gpt-oss-20b": 0.7953890489913544,
+    "nvidia/nemotron-3-super-120b-a12b | google/diffusiongemma-26b-a4b-it": 0.8414985590778098,
+    "openai/gpt-oss-20b | google/diffusiongemma-26b-a4b-it": 0.7619047619047619
+   },
+   "T6": {
+    "nvidia/nemotron-3-super-120b-a12b | openai/gpt-oss-20b": 0.631578947368421,
+    "nvidia/nemotron-3-super-120b-a12b | google/diffusiongemma-26b-a4b-it": 0.4166666666666667,
+    "openai/gpt-oss-20b | google/diffusiongemma-26b-a4b-it": 0.43243243243243246
+   },
+   "T7": {
+    "nvidia/nemotron-3-super-120b-a12b | openai/gpt-oss-20b": 0.1111111111111111,
+    "nvidia/nemotron-3-super-120b-a12b | google/diffusiongemma-26b-a4b-it": 0.0,
+    "openai/gpt-oss-20b | google/diffusiongemma-26b-a4b-it": 0.0
+   }
+  },
+  "alpha_presence": {
+   "alpha": -0.02960591525026346,
+   "bootstrap_ci95": {
+    "lo": -0.07769547841974636,
+    "hi": 0.016434948600984524,
+    "n_valid": 1000
+   }
+  },
+  "alpha_line_level": {
+   "n_units": 17409,
+   "alpha": 0.5346531629392957,
+   "bootstrap_ci95": {
+    "lo": 0.45491957610245504,
+    "hi": 0.599217270522903,
+    "n_valid": 200
+   },
+   "note": "every manifest line is a unit, so agreement on 'no claim' counts: an upper bound; the union-of-keys alpha above is the lower bound"
+  },
+  "alpha_presence_by_type": {
+   "T1": {
+    "n_units": 1420,
+    "alpha": -0.03598158820447561
+   },
+   "T2": {
+    "n_units": 42,
+    "alpha": -0.13636363636363646
+   },
+   "T3": {
+    "n_units": 137,
+    "alpha": -0.04379961675335342
+   },
+   "T4": {
+    "n_units": 119,
+    "alpha": -0.1775332357992494
+   },
+   "T5": {
+    "n_units": 213,
+    "alpha": -0.029032258064516148
+   },
+   "T6": {
+    "n_units": 42,
+    "alpha": -0.12035851472471193
+   },
+   "T7": {
+    "n_units": 21,
+    "alpha": -0.4434589800443458
+   }
+  },
+  "alpha_mode": {
+   "n_units": 549,
+   "alpha": -0.0074164746543778914,
+   "categories": [
+    "asserts_existing",
+    "negated",
+    "to_be_created",
+    "example"
+   ]
+  },
+  "alpha_status_T2": {
+   "n_units": 6,
+   "alpha": NaN,
+   "categories": [
+    "do_not_edit"
+   ]
+  },
+  "alpha_qualifier_T6": {
+   "n_units": 7,
+   "alpha": 1.0,
+   "categories": [
+    "min",
+    "exact"
+   ]
+  },
+  "units_by_votes": {
+   "1": 803,
+   "2": 642,
+   "3": 549
+  },
+  "regex_recall": {
+   "T1": {
+    "n_candidates": 665,
+    "captured_by_consensus_ge2": 374,
+    "of_which_mode_not_asserting": 9,
+    "captured_union_only": 135,
+    "missed": 156,
+    "recall_consensus": 0.562406015037594,
+    "recall_union": 0.7654135338345864,
+    "sample_missed": [
+     [
+      "Vortiago/mcp-outline",
+      "completed/success"
+     ],
+     [
+      "javascript-obfuscator/javascript-obfuscator",
+      "Options.ts"
+     ],
+     [
+      "javascript-obfuscator/javascript-obfuscator",
+      "package.json"
+     ],
+     [
+      "nanobrowser/nanobrowser",
+      "build/**"
+     ],
+     [
+      "nanobrowser/nanobrowser",
+      "packages/tailwind-config"
+     ],
+     [
+      "nanobrowser/nanobrowser",
+      "dist/**"
+     ],
+     [
+      "nanobrowser/nanobrowser",
+      "packages/ui"
+     ],
+     [
+      "nanobrowser/nanobrowser",
+      "package.json"
+     ],
+     [
+      "nanobrowser/nanobrowser",
+      ".nvmrc"
+     ],
+     [
+      "nanobrowser/nanobrowser",
+      "pnpm-workspace.yaml"
+     ],
+     [
+      "nanobrowser/nanobrowser",
+      "turbo.json"
+     ],
+     [
+      "nanobrowser/nanobrowser",
+      ".npmrc"
+     ],
+     [
+      "nanobrowser/nanobrowser",
+      "*.test.ts"
+     ],
+     [
+      "nanobrowser/nanobrowser",
+      "tsconfig.json"
+     ],
+     [
+      "rpmuller/pyquante2",
+      "VERSION_MANAGEMENT.md"
+     ],
+     [
+      "rpmuller/pyquante2",
+      "FUTURE_TASKS.md"
+     ],
+     [
+      "rpmuller/pyquante2",
+      "src/pyquante2/cints"
+     ],
+     [
+      "lerna/lerna",
+      "package.json"
+     ],
+     [
+      "lerna/lerna",
+      ".spec.ts"
+     ],
+     [
+      "pcingola/SnpEff",
+      "config/snpEff.config"
+     ],
+     [
+      "pcingola/SnpEff",
+      ".config"
+     ],
+     [
+      "pcingola/SnpEff",
+      ".bin"
+     ],
+     [
+      "kubernetes-sigs/cloud-provider-azure",
+      "azure_*_repo.go"
+     ],
+     [
+      "kubernetes-sigs/cloud-provider-azure",
+      "azure_mock_*.go"
+     ],
+     [
+      "kubernetes-sigs/cloud-provider-azure",
+      "azure_fakes.go"
+     ],
+     [
+      "simstudioai/sim",
+      "feature.ts"
+     ],
+     [
+      "simstudioai/sim",
+      "workflow-list.tsx"
+     ],
+     [
+      "simstudioai/sim",
+      "stores/feature/store.ts"
+     ],
+     [
+      "simstudioai/sim",
+      "store.ts"
+     ],
+     [
+      "simstudioai/sim",
+      "utils.ts"
+     ],
+     [
+      "noahlh/celestite",
+      "src/celestite"
+     ],
+     [
+      "noahlh/celestite",
+      "spec/spec_helper.cr"
+     ],
+     [
+      "noahlh/celestite",
+      "src/svelte-scripts"
+     ],
+     [
+      "nats-io/nats.go",
+      "test/helper_test.go"
+     ],
+     [
+      "nats-io/nats.go",
+      "github.com/nats-io/nats.go"
+     ],
+     [
+      "nats-io/nats.go",
+      "klauspost/compress"
+     ],
+     [
+      "nats-io/nats.go",
+      "test/norace_test.go"
+     ],
+     [
+      "nats-io/nats.go",
+      "test/compat_test.go"
+     ],
+     [
+      "nats-io/nats.go",
+      "nats_test.go"
+     ],
+     [
+      "braintree/braintree-web",
+      "src/lib"
+     ]
+    ]
+   },
+   "T5": {
+    "n_candidates": 219,
+    "captured_by_consensus_ge2": 185,
+    "of_which_mode_not_asserting": 0,
+    "captured_union_only": 21,
+    "missed": 13,
+    "recall_consensus": 0.8447488584474886,
+    "recall_union": 0.9406392694063926,
+    "sample_missed": [
+     [
+      "nanobrowser/nanobrowser",
+      "script|clean:node_modules"
+     ],
+     [
+      "rpmuller/pyquante2",
+      "make|install_test"
+     ],
+     [
+      "pcingola/SnpEff",
+      "make|Build"
+     ],
+     [
+      "cellwebb/gac",
+      "make|test"
+     ],
+     [
+      "cellwebb/gac",
+      "make|type-check"
+     ],
+     [
+      "WordPress/wp-ai-client",
+      "script|build"
+     ],
+     [
+      "WordPress/wp-ai-client",
+      "script|lint-js"
+     ],
+     [
+      "WordPress/wp-ai-client",
+      "script|format-js"
+     ],
+     [
+      "WordPress/wp-ai-client",
+      "script|test-php-multisite"
+     ],
+     [
+      "cbyrohl/scida",
+      "make|changes"
+     ],
+     [
+      "cbyrohl/scida",
+      "make|localdocs"
+     ],
+     [
+      "bbc/simorgh",
+      "script|dev"
+     ],
+     [
+      "github/gh-models",
+      "make|test"
+     ]
+    ]
+   }
+  },
+  "caveat": "Presence alpha codes union-of-keys presence per model; it approximates unitizing alpha_u and is deflated by singleton units, so pairwise F1 is reported alongside it.",
+  "strict_no_quote_repair": {
+   "note": "same pipeline but claims without a model-supplied quote are rejected instead of repaired from the subject's line",
+   "per_model_accepted": {
+    "nvidia/nemotron-3-super-120b-a12b": 1837,
+    "openai/gpt-oss-20b": 1394,
+    "google/diffusiongemma-26b-a4b-it": 957
+   },
+   "agreement": {
+    "panel": [
+     "nvidia/nemotron-3-super-120b-a12b",
+     "openai/gpt-oss-20b",
+     "google/diffusiongemma-26b-a4b-it"
+    ],
+    "n_units_union": 1894,
+    "pairwise_f1_overall": {
+     "nvidia/nemotron-3-super-120b-a12b | openai/gpt-oss-20b": 0.617635107679805,
+     "nvidia/nemotron-3-super-120b-a12b | google/diffusiongemma-26b-a4b-it": 0.5305378304466728,
+     "openai/gpt-oss-20b | google/diffusiongemma-26b-a4b-it": 0.44864588656106286
+    },
+    "pairwise_f1_by_type": {
+     "T1": {
+      "nvidia/nemotron-3-super-120b-a12b | openai/gpt-oss-20b": 0.591283863368669,
+      "nvidia/nemotron-3-super-120b-a12b | google/diffusiongemma-26b-a4b-it": 0.5172638436482084,
+      "openai/gpt-oss-20b | google/diffusiongemma-26b-a4b-it": 0.42433019551049966
+     },
+     "T2": {
+      "nvidia/nemotron-3-super-120b-a12b | openai/gpt-oss-20b": 0.45714285714285713,
+      "nvidia/nemotron-3-super-120b-a12b | google/diffusiongemma-26b-a4b-it": 0.17142857142857143,
+      "openai/gpt-oss-20b | google/diffusiongemma-26b-a4b-it": 0.375
+     },
+     "T3": {
+      "nvidia/nemotron-3-super-120b-a12b | openai/gpt-oss-20b": 0.6195652173913043,
+      "nvidia/nemotron-3-super-120b-a12b | google/diffusiongemma-26b-a4b-it": 0.6,
+      "openai/gpt-oss-20b | google/diffusiongemma-26b-a4b-it": 0.4857142857142857
+     },
+     "T4": {
+      "nvidia/nemotron-3-super-120b-a12b | openai/gpt-oss-20b": 0.5901639344262295,
+      "nvidia/nemotron-3-super-120b-a12b | google/diffusiongemma-26b-a4b-it": 0.2247191011235955,
+      "openai/gpt-oss-20b | google/diffusiongemma-26b-a4b-it": 0.3010752688172043
+     },
+     "T5": {
+      "nvidia/nemotron-3-super-120b-a12b | openai/gpt-oss-20b": 0.7953890489913544,
+      "nvidia/nemotron-3-super-120b-a12b | google/diffusiongemma-26b-a4b-it": 0.7491638795986622,
+      "openai/gpt-oss-20b | google/diffusiongemma-26b-a4b-it": 0.6111111111111112
+     },
+     "T6": {
+      "nvidia/nemotron-3-super-120b-a12b | openai/gpt-oss-20b": 0.631578947368421,
+      "nvidia/nemotron-3-super-120b-a12b | google/diffusiongemma-26b-a4b-it": 0.3829787234042553,
+      "openai/gpt-oss-20b | google/diffusiongemma-26b-a4b-it": 0.3888888888888889
+     },
+     "T7": {
+      "nvidia/nemotron-3-super-120b-a12b | openai/gpt-oss-20b": 0.1111111111111111,
+      "nvidia/nemotron-3-super-120b-a12b | google/diffusiongemma-26b-a4b-it": 0.0,
+      "openai/gpt-oss-20b | google/diffusiongemma-26b-a4b-it": 0.0
+     }
+    },
+    "pairwise_f1_mean": 0.5322729415625136,
+    "alpha_presence": {
+     "alpha": -0.10292339099810377,
+     "bootstrap_ci95": {
+      "lo": -0.1619053918233864,
+      "hi": -0.05031978371300024,
+      "n_valid": 1000
+     }
+    },
+    "alpha_presence_by_type": {
+     "T1": {
+      "n_units": 1355,
+      "alpha": -0.1172801973318578
+     },
+     "T2": {
+      "n_units": 32,
+      "alpha": -0.2088635366388767
+     },
+     "T3": {
+      "n_units": 134,
+      "alpha": -0.09977798093248014
+     },
+     "T4": {
+      "n_units": 99,
+      "alpha": -0.23557168784029048
+     },
+     "T5": {
+      "n_units": 213,
+      "alpha": -0.024625267665952855
+     },
+     "T6": {
+      "n_units": 42,
+      "alpha": -0.1479591836734695
+     },
+     "T7": {
+      "n_units": 19,
+      "alpha": -0.43783783783783803
+     }
+    },
+    "alpha_line_level": {
+     "n_units": 17409,
+     "alpha": 0.46016402283215185,
+     "bootstrap_ci95": {
+      "lo": 0.36820399159284684,
+      "hi": 0.5315235949888071,
+      "n_valid": 200
+     },
+     "note": "every manifest line is a unit, so agreement on 'no claim' counts: an upper bound; the union-of-keys alpha above is the lower bound"
+    },
+    "alpha_mode": {
+     "n_units": 369,
+     "alpha": -0.003971405877680745,
+     "categories": [
+      "asserts_existing",
+      "negated",
+      "example",
+      "to_be_created"
+     ]
+    },
+    "alpha_status_T2": {
+     "n_units": 3,
+     "alpha": NaN,
+     "categories": [
+      "do_not_edit"
+     ]
+    },
+    "alpha_qualifier_T6": {
+     "n_units": 6,
+     "alpha": 1.0,
+     "categories": [
+      "min",
+      "exact"
+     ]
+    },
+    "caveat": "Presence alpha codes union-of-keys presence per model; it approximates unitizing alpha_u and is deflated by singleton units, so pairwise F1 is reported alongside it.",
+    "units_by_votes": {
+     "1": 851,
+     "2": 674,
+     "3": 369
+    }
+   }
+  }
+ },
+ "selftest": {
+  "n_cases": 47,
+  "n_failures": 0,
+  "consistent": true,
+  "verdicts_without_claims_module": 0,
+  "leaf_classes": 34
+ },
+ "timings": {
+  "extraction_latency_s_sum_per_model": {
+   "nvidia/nemotron-3-super-120b-a12b": 2238.8,
+   "openai/gpt-oss-20b": 3416.2,
+   "google/diffusiongemma-26b-a4b-it": 878.0
+  },
+  "extraction_tokens": {
+   "nvidia/nemotron-3-super-120b-a12b": {
+    "prompt": 695949,
+    "completion": 281152,
+    "latency_s": 2238.8328456036397,
+    "api_calls": 183
+   },
+   "openai/gpt-oss-20b": {
+    "prompt": 569298,
+    "completion": 179286,
+    "latency_s": 3416.2238467682037,
+    "api_calls": 168
+   },
+   "google/diffusiongemma-26b-a4b-it": {
+    "prompt": 902008,
+    "completion": 210547,
+    "latency_s": 878.0173657499254,
+    "api_calls": 238
+   }
+  },
+  "extraction_wall_s": 2238.4,
+  "measurement_s_total": 35.2,
+  "hermit_reason_s_per_manifest": {
+   "n": 79,
+   "median": 4.501407515024766,
+   "q1": 3.6251691794896033,
+   "q3": 6.7737530725135,
+   "mean": 6.2735127850680295
+  },
+  "explain_mean_call_s": 9.348484848484848
+ },
+ "per_manifest": [
+  {
+   "repo": "cypress-io/cypress",
+   "manifest": "CLAUDE.md",
+   "snapshot_status": "exact_at_T_upper",
+   "S": "ce030a33c0900d804512fea0e7db547de7d246db",
+   "S_C_K": [
+    0,
+    0,
+    0
+   ],
+   "n_checked": 0,
+   "ManifestWithContradiction": false
+  },
+  {
+   "repo": "Vortiago/mcp-outline",
+   "manifest": "CLAUDE.md",
+   "snapshot_status": "exact_at_T_upper",
+   "S": "37e6325dd57c0cea5c62b578685bcd88c062afae",
+   "S_C_K": [
+    9,
+    0,
+    0
+   ],
+   "n_checked": 9,
+   "ManifestWithContradiction": false
+  },
+  {
+   "repo": "javascript-obfuscator/javascript-obfuscator",
+   "manifest": "CLAUDE.md",
+   "snapshot_status": "exact_at_T_upper",
+   "S": "0a06d29d6830f07b5fbc4cf64643263987f6e5f8",
+   "S_C_K": [
+    77,
+    7,
+    0
+   ],
+   "n_checked": 88,
+   "ManifestWithContradiction": true
+  },
+  {
+   "repo": "nanobrowser/nanobrowser",
+   "manifest": "CLAUDE.md",
+   "snapshot_status": "exact_at_T_upper",
+   "S": "322384f8b4d48d8614343e51efca68c85e64f90b",
+   "S_C_K": [
+    39,
+    0,
+    0
+   ],
+   "n_checked": 41,
+   "ManifestWithContradiction": false
+  },
+  {
+   "repo": "the-cafe/git-ai-commit",
+   "manifest": "CLAUDE.md",
+   "snapshot_status": "exact_at_T_upper",
+   "S": "8750a213aa7890c4c1e88adbf736df6c34a625f4",
+   "S_C_K": [
+    0,
+    0,
+    0
+   ],
+   "n_checked": 0,
+   "ManifestWithContradiction": false
+  },
+  {
+   "repo": "rpmuller/pyquante2",
+   "manifest": "CLAUDE.md",
+   "snapshot_status": "exact_at_T_upper",
+   "S": "b28912ad8d5de0bf75bf82355f055f7648e5b5a3",
+   "S_C_K": [
+    19,
+    0,
+    0
+   ],
+   "n_checked": 19,
+   "ManifestWithContradiction": false
+  },
+  {
+   "repo": "lerna/lerna",
+   "manifest": "CLAUDE.md",
+   "snapshot_status": "exact_at_T_upper",
+   "S": "9e87a343d88ecb717e08841d1461072a7928c90d",
+   "S_C_K": [
+    15,
+    0,
+    0
+   ],
+   "n_checked": 15,
+   "ManifestWithContradiction": false
+  },
+  {
+   "repo": "pcingola/SnpEff",
+   "manifest": "CLAUDE.md",
+   "snapshot_status": "exact_at_T_upper",
+   "S": "1db15998ea6aad93a35848aca0f6cba81cd36738",
+   "S_C_K": [
+    12,
+    1,
+    0
+   ],
+   "n_checked": 16,
+   "ManifestWithContradiction": true
+  },
+  {
+   "repo": "run-llama/LlamaIndexTS",
+   "manifest": "CLAUDE.md",
+   "snapshot_status": "exact_at_T_upper",
+   "S": "ba24377def1b056f7eae066247e9ae1230509164",
+   "S_C_K": [
+    38,
+    1,
+    0
+   ],
+   "n_checked": 39,
+   "ManifestWithContradiction": true
+  },
+  {
+   "repo": "simstudioai/sim",
+   "manifest": "CLAUDE.md",
+   "snapshot_status": "exact_at_T_upper",
+   "S": "4f3bc37fe439c3bf8ea3b7dbfd0f3bf0ccf1df23",
+   "S_C_K": [
+    20,
+    0,
+    0
+   ],
+   "n_checked": 20,
+   "ManifestWithContradiction": false
+  },
+  {
+   "repo": "noahlh/celestite",
+   "manifest": "CLAUDE.md",
+   "snapshot_status": "exact_at_T_upper",
+   "S": "163e8357beb14730be977ae60a069e8a701d3021",
+   "S_C_K": [
+    4,
+    1,
+    0
+   ],
+   "n_checked": 5,
+   "ManifestWithContradiction": true
+  },
+  {
+   "repo": "nats-io/nats.go",
+   "manifest": "CLAUDE.md",
+   "snapshot_status": "exact_at_T_upper",
+   "S": "6c41799b052e25e09f9d92424897d11a3234ca9a",
+   "S_C_K": [
+    25,
+    2,
+    0
+   ],
+   "n_checked": 28,
+   "ManifestWithContradiction": true
+  },
+  {
+   "repo": "snowplow/snowplow-javascript-tracker",
+   "manifest": "CLAUDE.md",
+   "snapshot_status": "exact_at_T_upper",
+   "S": "41e2f50ff77dc4aef861aaf35e7594d2bedf4125",
+   "S_C_K": [
+    26,
+    1,
+    0
+   ],
+   "n_checked": 27,
+   "ManifestWithContradiction": true
+  },
+  {
+   "repo": "braintree/braintree-web",
+   "manifest": "CLAUDE.md",
+   "snapshot_status": "exact_at_T_upper",
+   "S": "1cf6bfc778e8db469ff2d7cbad2ce3c947ae7fa6",
+   "S_C_K": [
+    9,
+    0,
+    0
+   ],
+   "n_checked": 9,
+   "ManifestWithContradiction": false
+  },
+  {
+   "repo": "apache/skywalking",
+   "manifest": "CLAUDE.md",
+   "snapshot_status": "exact_at_T_upper",
+   "S": "fbcaf236619d592ce282f5aa6d426a39423f86f0",
+   "S_C_K": [
+    39,
+    0,
+    0
+   ],
+   "n_checked": 42,
+   "ManifestWithContradiction": false
+  },
+  {
+   "repo": "lambrospetrou/durable-utils",
+   "manifest": "CLAUDE.md",
+   "snapshot_status": "exact_at_T_upper",
+   "S": "9f29c7c9090231ab0df6ba1b09301a5ae3659333",
+   "S_C_K": [
+    6,
+    0,
+    0
+   ],
+   "n_checked": 6,
+   "ManifestWithContradiction": false
+  },
+  {
+   "repo": "scopewu/qrcode.vue",
+   "manifest": "AGENTS.md",
+   "snapshot_status": "exact_at_T_upper",
+   "S": "f6929f8047e67d1399d6e65030bd73c2184c0c16",
+   "S_C_K": [
+    8,
+    0,
+    0
+   ],
+   "n_checked": 9,
+   "ManifestWithContradiction": false
+  },
+  {
+   "repo": "saleor/macaw-ui",
+   "manifest": "AGENTS.md",
+   "snapshot_status": "exact_at_T_upper",
+   "S": "bf35f0d1a50f661105f908df6b44401fcc2a2909",
+   "S_C_K": [
+    21,
+    0,
+    1
+   ],
+   "n_checked": 22,
+   "ManifestWithContradiction": false
+  },
+  {
+   "repo": "cellwebb/gac",
+   "manifest": "AGENTS.md",
+   "snapshot_status": "exact_at_T_upper",
+   "S": "eea27770204f7abb6944e96321a4c68d3cc28d96",
+   "S_C_K": [
+    19,
+    0,
+    0
+   ],
+   "n_checked": 19,
+   "ManifestWithContradiction": false
+  },
+  {
+   "repo": "VCnoC/Claude-Code-Zen-mcp-Skill-Work",
+   "manifest": "CLAUDE.md",
+   "snapshot_status": "exact_at_T_upper",
+   "S": "a89bae420ab5481a4953a2170c542e59f0380c92",
+   "S_C_K": [
+    6,
+    1,
+    0
+   ],
+   "n_checked": 7,
+   "ManifestWithContradiction": true
+  },
+  {
+   "repo": "felipebarcelospro/igniter-js",
+   "manifest": "AGENTS.md",
+   "snapshot_status": "exact_at_T_upper",
+   "S": "e5d42e833983408ffd2e922cad9fd32fa462362d",
+   "S_C_K": [
+    43,
+    2,
+    0
+   ],
+   "n_checked": 45,
+   "ManifestWithContradiction": true
+  },
+  {
+   "repo": "popstas/telegram-download-chat",
+   "manifest": "CLAUDE.md",
+   "snapshot_status": "version_match",
+   "S": "d5517be39f6677551922217d6d32da968f3e08f7",
+   "S_C_K": [
+    5,
+    3,
+    0
+   ],
+   "n_checked": 8,
+   "ManifestWithContradiction": true
+  },
+  {
+   "repo": "JunDamin/hwpapi",
+   "manifest": ".clinerules",
+   "snapshot_status": "exact_at_T_upper",
+   "S": "957ac265e9661725cfa4115adf23c7bc9fe73fb8",
+   "S_C_K": [
+    17,
+    4,
+    0
+   ],
+   "n_checked": 21,
+   "ManifestWithContradiction": true
+  },
+  {
+   "repo": "tobymao/sqlglot",
+   "manifest": "CLAUDE.md",
+   "snapshot_status": "exact_at_T_upper",
+   "S": "f87ebe02103b249ec5fa2c93e019e465f77630be",
+   "S_C_K": [
+    36,
+    1,
+    0
+   ],
+   "n_checked": 37,
+   "ManifestWithContradiction": true
+  },
+  {
+   "repo": "aptos-labs/aptos-docs",
+   "manifest": "CLAUDE.md",
+   "snapshot_status": "exact_at_T_upper",
+   "S": "d59dbc6d910dc1d4dee1dec471e31d4ab97b69bc",
+   "S_C_K": [
+    24,
+    4,
+    0
+   ],
+   "n_checked": 29,
+   "ManifestWithContradiction": true
+  },
+  {
+   "repo": "zigflow/zigflow",
+   "manifest": "CLAUDE.md",
+   "snapshot_status": "exact_at_T_upper",
+   "S": "4e3d0d8d0240076b8249a71a3ac81759df932a8d",
+   "S_C_K": [
+    0,
+    0,
+    0
+   ],
+   "n_checked": 0,
+   "ManifestWithContradiction": false
+  },
+  {
+   "repo": "jonit-dev/vibe-coder-3d",
+   "manifest": "CLAUDE.md",
+   "snapshot_status": "exact_at_T_upper",
+   "S": "0315e66378e07c60495d9060359e6f6b22c2706a",
+   "S_C_K": [
+    12,
+    0,
+    0
+   ],
+   "n_checked": 13,
+   "ManifestWithContradiction": false
+  },
+  {
+   "repo": "astrolabsoftware/fink-broker",
+   "manifest": "CLAUDE.md",
+   "snapshot_status": "exact_at_T_upper",
+   "S": "6a42e11dc7943f72e173d9cebd780e6b3efeb4ce",
+   "S_C_K": [
+    0,
+    0,
+    0
+   ],
+   "n_checked": 0,
+   "ManifestWithContradiction": false
+  },
+  {
+   "repo": "ada-url/ada",
+   "manifest": "CLAUDE.md",
+   "snapshot_status": "exact_at_T_upper",
+   "S": "305c3888166bc33fe7529511a6543fa5d7b56359",
+   "S_C_K": [
+    7,
+    0,
+    0
+   ],
+   "n_checked": 8,
+   "ManifestWithContradiction": false
+  },
+  {
+   "repo": "hapifhir/org.hl7.fhir.validator-wrapper",
+   "manifest": "CLAUDE.md",
+   "snapshot_status": "exact_at_T_upper",
+   "S": "5286e60575dced3bb6a0184b667e32853f8f8471",
+   "S_C_K": [
+    20,
+    0,
+    0
+   ],
+   "n_checked": 20,
+   "ManifestWithContradiction": false
+  },
+  {
+   "repo": "bpowers/simlin",
+   "manifest": "CLAUDE.md",
+   "snapshot_status": "exact_at_T_upper",
+   "S": "a3fbf46e72524c289cca010d87c70e5e85eb9bce",
+   "S_C_K": [
+    22,
+    0,
+    0
+   ],
+   "n_checked": 28,
+   "ManifestWithContradiction": false
+  },
+  {
+   "repo": "AudiusProject/apps",
+   "manifest": "CLAUDE.md",
+   "snapshot_status": "exact_at_T_upper",
+   "S": "4d3716b4f0bac7de2b52cc822628bf87436e8cd0",
+   "S_C_K": [
+    23,
+    0,
+    0
+   ],
+   "n_checked": 23,
+   "ManifestWithContradiction": false
+  },
+  {
+   "repo": "reliverse/experiments",
+   "manifest": "AGENTS.md",
+   "snapshot_status": "exact_at_T_upper",
+   "S": "33d3ba35b730abd10de39d85f94b72a05fdbf5f0",
+   "S_C_K": [
+    6,
+    0,
+    0
+   ],
+   "n_checked": 6,
+   "ManifestWithContradiction": false
+  },
+  {
+   "repo": "derrickburns/generalized-kmeans-clustering",
+   "manifest": "CLAUDE.md",
+   "snapshot_status": "exact_at_T_upper",
+   "S": "f0668a833099db2be002abaa3ed972eb8e3318f3",
+   "S_C_K": [
+    3,
+    3,
+    0
+   ],
+   "n_checked": 6,
+   "ManifestWithContradiction": true
+  },
+  {
+   "repo": "xoofx/Tomlyn",
+   "manifest": "CLAUDE.md",
+   "snapshot_status": "exact_at_T_upper",
+   "S": "b391c83538cdc56a644b697131a8297c1e8a6421",
+   "S_C_K": [
+    0,
+    0,
+    0
+   ],
+   "n_checked": 0,
+   "ManifestWithContradiction": false
+  },
+  {
+   "repo": "rstackjs/rstack-examples",
+   "manifest": "AGENTS.md",
+   "snapshot_status": "exact_at_T_upper",
+   "S": "fc9c94807a5eba113b7a24052bc306a37267f735",
+   "S_C_K": [
+    21,
+    0,
+    0
+   ],
+   "n_checked": 21,
+   "ManifestWithContradiction": false
+  },
+  {
+   "repo": "Lakr233/ColorfulX",
+   "manifest": "AGENTS.md",
+   "snapshot_status": "exact_at_T_upper",
+   "S": "bdf19698a9fdd3d2cd3ade4a9434d443b4313b36",
+   "S_C_K": [
+    14,
+    0,
+    0
+   ],
+   "n_checked": 14,
+   "ManifestWithContradiction": false
+  },
+  {
+   "repo": "akirak/flake-templates",
+   "manifest": "AGENTS.md",
+   "snapshot_status": "exact_at_T_upper",
+   "S": "a60dec15a9d520ce39f6a18a57661491a2908496",
+   "S_C_K": [
+    4,
+    0,
+    0
+   ],
+   "n_checked": 4,
+   "ManifestWithContradiction": false
+  },
+  {
+   "repo": "Kaptensanders/skolmat",
+   "manifest": "AGENTS.md",
+   "snapshot_status": "exact_at_T_upper",
+   "S": "7157ff2210f934e7f9824ed4a4477036e25f09dc",
+   "S_C_K": [
+    19,
+    5,
+    0
+   ],
+   "n_checked": 25,
+   "ManifestWithContradiction": true
+  },
+  {
+   "repo": "mscraftsman/generative-ai",
+   "manifest": "AGENTS.md",
+   "snapshot_status": "exact_at_T_upper",
+   "S": "ed9f66e17a291c4d1b08d5e2d79c6731a588d6f4",
+   "S_C_K": [
+    8,
+    0,
+    0
+   ],
+   "n_checked": 8,
+   "ManifestWithContradiction": false
+  },
+  {
+   "repo": "WordPress/wp-ai-client",
+   "manifest": "AGENTS.md",
+   "snapshot_status": "exact_at_T_upper",
+   "S": "f53a17eeb5aa7d7e82faaa598ea553940544bcf6",
+   "S_C_K": [
+    13,
+    1,
+    0
+   ],
+   "n_checked": 15,
+   "ManifestWithContradiction": true
+  },
+  {
+   "repo": "chmouel/nextmeeting",
+   "manifest": "AGENTS.md",
+   "snapshot_status": "exact_at_T_upper",
+   "S": "b1c62e954f543b44e7b3c7d8079bec037115d325",
+   "S_C_K": [
+    13,
+    0,
+    1
+   ],
+   "n_checked": 14,
+   "ManifestWithContradiction": false
+  },
+  {
+   "repo": "iflow-ai/NioPD",
+   "manifest": "AGENTS.md",
+   "snapshot_status": "exact_at_T_upper",
+   "S": "80e85791f708bb26c92c9cc3f7d1d47d9c6d0f6b",
+   "S_C_K": [
+    2,
+    1,
+    0
+   ],
+   "n_checked": 3,
+   "ManifestWithContradiction": true
+  },
+  {
+   "repo": "vincent-uden/miro",
+   "manifest": "AGENTS.md",
+   "snapshot_status": "exact_at_T_upper",
+   "S": "a606030a627b185e829ae283bdb9463ded438139",
+   "S_C_K": [
+    0,
+    0,
+    0
+   ],
+   "n_checked": 0,
+   "ManifestWithContradiction": false
+  },
+  {
+   "repo": "openai/openai-agents-js",
+   "manifest": "AGENTS.md",
+   "snapshot_status": "exact_at_T_upper",
+   "S": "db8260e75d78f9a1a8e6690650da9568af097a02",
+   "S_C_K": [
+    37,
+    0,
+    0
+   ],
+   "n_checked": 39,
+   "ManifestWithContradiction": false
+  },
+  {
+   "repo": "getsentry/sentry-docs",
+   "manifest": "AGENTS.md",
+   "snapshot_status": "exact_at_T_upper",
+   "S": "55f70b8bce09506f1f88399380a31704f0dbddbc",
+   "S_C_K": [
+    29,
+    0,
+    0
+   ],
+   "n_checked": 30,
+   "ManifestWithContradiction": false
+  },
+  {
+   "repo": "tuist/tuist",
+   "manifest": "AGENTS.md",
+   "snapshot_status": "exact_at_T_upper",
+   "S": "48207131f1e248413d59a0dab0044fd3c2dbb48a",
+   "S_C_K": [
+    27,
+    1,
+    0
+   ],
+   "n_checked": 28,
+   "ManifestWithContradiction": true
+  },
+  {
+   "repo": "DataDog/lading",
+   "manifest": "AGENTS.md",
+   "snapshot_status": "exact_at_T_upper",
+   "S": "c60ab1b385fc4d91ec732cfb9f838ac9d51ce9a9",
+   "S_C_K": [
+    8,
+    0,
+    0
+   ],
+   "n_checked": 8,
+   "ManifestWithContradiction": false
+  },
+  {
+   "repo": "huangwb8/ChineseResearchLaTeX",
+   "manifest": "CLAUDE.md",
+   "snapshot_status": "exact_at_T_upper",
+   "S": "6d8d9287798772f96f3c5d52d07cfb53c1b62451",
+   "S_C_K": [
+    1,
+    0,
+    0
+   ],
+   "n_checked": 1,
+   "ManifestWithContradiction": false
+  },
+  {
+   "repo": "Peiiii/AgentVerse",
+   "manifest": "AGENTS.md",
+   "snapshot_status": "exact_at_T_upper",
+   "S": "3c17c5482014cbff2e4968e7b5434f1ef5eec183",
+   "S_C_K": [
+    5,
+    0,
+    0
+   ],
+   "n_checked": 5,
+   "ManifestWithContradiction": false
+  },
+  {
+   "repo": "shiguredo/mp4-rs",
+   "manifest": "AGENTS.md",
+   "snapshot_status": "exact_at_T_upper",
+   "S": "beddd1c61d6edc3fc45a1894c26004ca7391b2fb",
+   "S_C_K": [
+    0,
+    0,
+    0
+   ],
+   "n_checked": 0,
+   "ManifestWithContradiction": false
+  },
+  {
+   "repo": "agentjido/jido_ai",
+   "manifest": "AGENTS.md",
+   "snapshot_status": "exact_at_T_upper",
+   "S": "b77f337479529eafe30cfa4f61dda3cbc45e5ce2",
+   "S_C_K": [
+    3,
+    0,
+    0
+   ],
+   "n_checked": 3,
+   "ManifestWithContradiction": false
+  },
+  {
+   "repo": "sunny-chung/hello-http",
+   "manifest": "AGENTS.md",
+   "snapshot_status": "exact_at_T_upper",
+   "S": "ccc8d66045f905cfc9dda1621c153592e90e9f00",
+   "S_C_K": [
+    0,
+    0,
+    0
+   ],
+   "n_checked": 0,
+   "ManifestWithContradiction": false
+  },
+  {
+   "repo": "rabbitmq/rabbitmqadmin-ng",
+   "manifest": "AGENTS.md",
+   "snapshot_status": "exact_at_T_upper",
+   "S": "60d65cd0ff3c3a0859040289b9441730df17aba2",
+   "S_C_K": [
+    29,
+    1,
+    0
+   ],
+   "n_checked": 30,
+   "ManifestWithContradiction": true
+  },
+  {
+   "repo": "cbyrohl/scida",
+   "manifest": "CLAUDE.md",
+   "snapshot_status": "version_match",
+   "S": "8d8ba4909538673a22d00f369c086a721c251a41",
+   "S_C_K": [
+    33,
+    6,
+    0
+   ],
+   "n_checked": 39,
+   "ManifestWithContradiction": true
+  },
+  {
+   "repo": "funnyzak/weread-bot",
+   "manifest": "AGENTS.md",
+   "snapshot_status": "exact_at_T_upper",
+   "S": "096c3adb2fb697b247703743c306ef20ee9073bb",
+   "S_C_K": [
+    7,
+    1,
+    0
+   ],
+   "n_checked": 12,
+   "ManifestWithContradiction": true
+  },
+  {
+   "repo": "ipspace/netlab",
+   "manifest": "AGENTS.md",
+   "snapshot_status": "exact_at_T_upper",
+   "S": "47ace8d286cd56572f680e56f9f3be99de7be380",
+   "S_C_K": [
+    20,
+    0,
+    0
+   ],
+   "n_checked": 20,
+   "ManifestWithContradiction": false
+  },
+  {
+   "repo": "byteowlz/eaRS",
+   "manifest": "AGENTS.md",
+   "snapshot_status": "exact_at_T_upper",
+   "S": "5f9fdc955c754475b50e484c89d8e2d0f3aad327",
+   "S_C_K": [
+    1,
+    1,
+    0
+   ],
+   "n_checked": 2,
+   "ManifestWithContradiction": true
+  },
+  {
+   "repo": "rydmike/flex_seed_scheme",
+   "manifest": "CLAUDE.md",
+   "snapshot_status": "exact_at_T_upper",
+   "S": "aa7be701ad58dc8e61637373db2bef0f28d2606e",
+   "S_C_K": [
+    23,
+    0,
+    0
+   ],
+   "n_checked": 23,
+   "ManifestWithContradiction": false
+  },
+  {
+   "repo": "managedcode/Storage",
+   "manifest": "CLAUDE.md",
+   "snapshot_status": "exact_at_T_upper",
+   "S": "710b8bb1f1b4aab92fe2d6fc1d54f05061ca1c5a",
+   "S_C_K": [
+    5,
+    0,
+    0
+   ],
+   "n_checked": 5,
+   "ManifestWithContradiction": false
+  },
+  {
+   "repo": "sebastien/monitoring",
+   "manifest": "AGENTS.md",
+   "snapshot_status": "exact_at_T_upper",
+   "S": "5d781d593865999982075f4af059fcd17f081bd3",
+   "S_C_K": [
+    0,
+    0,
+    0
+   ],
+   "n_checked": 0,
+   "ManifestWithContradiction": false
+  },
+  {
+   "repo": "flightphp/core",
+   "manifest": ".github/copilot-instructions.md",
+   "snapshot_status": "exact_at_T_upper",
+   "S": "3941d44c70584e9f0de7721237d547afd300fd9d",
+   "S_C_K": [
+    12,
+    1,
+    0
+   ],
+   "n_checked": 13,
+   "ManifestWithContradiction": true
+  },
+  {
+   "repo": "dotnet/macios",
+   "manifest": ".github/copilot-instructions.md",
+   "snapshot_status": "exact_at_T_upper",
+   "S": "813c081bda171bc3ba04489625abd8c43b9d7fc8",
+   "S_C_K": [
+    12,
+    0,
+    0
+   ],
+   "n_checked": 12,
+   "ManifestWithContradiction": false
+  },
+  {
+   "repo": "microsoftgraph/msgraph-sdk-dotnet",
+   "manifest": ".github/copilot-instructions.md",
+   "snapshot_status": "exact_at_T_upper",
+   "S": "ee1578715d8875ebe195e954deebab9e82c64ebe",
+   "S_C_K": [
+    0,
+    0,
+    0
+   ],
+   "n_checked": 0,
+   "ManifestWithContradiction": false
+  },
+  {
+   "repo": "chef/chef-vault",
+   "manifest": ".github/copilot-instructions.md",
+   "snapshot_status": "exact_at_T_upper",
+   "S": "498306f339fd7aae7bcaa590f85e8f49e8dcb204",
+   "S_C_K": [
+    29,
+    0,
+    0
+   ],
+   "n_checked": 33,
+   "ManifestWithContradiction": false
+  },
+  {
+   "repo": "acepanel/panel",
+   "manifest": "CLAUDE.md",
+   "snapshot_status": "exact_at_T_upper",
+   "S": "8fdbd19061144fce785b11aaab932ab7b5cac11c",
+   "S_C_K": [
+    17,
+    1,
+    0
+   ],
+   "n_checked": 18,
+   "ManifestWithContradiction": true
+  },
+  {
+   "repo": "a16z/halmos",
+   "manifest": ".github/copilot-instructions.md",
+   "snapshot_status": "exact_at_T_upper",
+   "S": "079bb4241d1b460baf986257d56ea86977d73451",
+   "S_C_K": [
+    4,
+    1,
+    0
+   ],
+   "n_checked": 5,
+   "ManifestWithContradiction": true
+  },
+  {
+   "repo": "linux-do/cdk",
+   "manifest": ".github/copilot-instructions.md",
+   "snapshot_status": "exact_at_T_upper",
+   "S": "638756e85fbe2ec5c2e519093b4ae9143c71e565",
+   "S_C_K": [
+    1,
+    0,
+    0
+   ],
+   "n_checked": 1,
+   "ManifestWithContradiction": false
+  },
+  {
+   "repo": "daohainam/microservice-patterns",
+   "manifest": ".github/copilot-instructions.md",
+   "snapshot_status": "exact_at_T_upper",
+   "S": "16f2bee1c92c8a03b67356829a07967eaed3ebb8",
+   "S_C_K": [
+    1,
+    0,
+    0
+   ],
+   "n_checked": 1,
+   "ManifestWithContradiction": false
+  },
+  {
+   "repo": "bbc/simorgh",
+   "manifest": "AGENTS.md",
+   "snapshot_status": "exact_at_T_upper",
+   "S": "693b8cf72ba2bacaa5c4cee84cdae794657f063b",
+   "S_C_K": [
+    10,
+    0,
+    0
+   ],
+   "n_checked": 10,
+   "ManifestWithContradiction": false
+  },
+  {
+   "repo": "HassanZahirnia/laravel-package-ocean",
+   "manifest": "CLAUDE.md",
+   "snapshot_status": "exact_at_T_upper",
+   "S": "ebaad12cd853f7b8639310b488154461bac6d074",
+   "S_C_K": [
+    11,
+    8,
+    0
+   ],
+   "n_checked": 19,
+   "ManifestWithContradiction": true
+  },
+  {
+   "repo": "jaxen-xpath/jaxen",
+   "manifest": ".github/copilot-instructions.md",
+   "snapshot_status": "exact_at_T_upper",
+   "S": "7e4b5f686bc475aaecc63a311aa251aa673c111e",
+   "S_C_K": [
+    20,
+    1,
+    0
+   ],
+   "n_checked": 21,
+   "ManifestWithContradiction": true
+  },
+  {
+   "repo": "carpenike/k8s-gitops",
+   "manifest": "CLAUDE.md",
+   "snapshot_status": "exact_at_T_upper",
+   "S": "65c38879a6140d460dcb81fdeedf7ccdb7706335",
+   "S_C_K": [
+    11,
+    1,
+    0
+   ],
+   "n_checked": 12,
+   "ManifestWithContradiction": true
+  },
+  {
+   "repo": "TopSwagCode/MinimalWorker",
+   "manifest": "CLAUDE.md",
+   "snapshot_status": "exact_at_T_upper",
+   "S": "bea62b1086d4c6675a33e7f0c77f6b6ec0c87ec5",
+   "S_C_K": [
+    2,
+    0,
+    0
+   ],
+   "n_checked": 2,
+   "ManifestWithContradiction": false
+  },
+  {
+   "repo": "coffebar/dotfiles",
+   "manifest": ".github/copilot-instructions.md",
+   "snapshot_status": "exact_at_T_upper",
+   "S": "b03e903014d6c830c2357cb392ce1225ec8435d9",
+   "S_C_K": [
+    0,
+    0,
+    0
+   ],
+   "n_checked": 0,
+   "ManifestWithContradiction": false
+  },
+  {
+   "repo": "vinhnx/VT.ai",
+   "manifest": ".github/copilot-instructions.md",
+   "snapshot_status": "exact_at_T_upper",
+   "S": "5088b40737b8f411af9286e86a8680396a3a9009",
+   "S_C_K": [
+    9,
+    3,
+    0
+   ],
+   "n_checked": 12,
+   "ManifestWithContradiction": true
+  },
+  {
+   "repo": "github/gh-models",
+   "manifest": ".github/copilot-instructions.md",
+   "snapshot_status": "exact_at_T_upper",
+   "S": "af47898eb3c30571054f6dc546f8c2a2ce687f32",
+   "S_C_K": [
+    11,
+    0,
+    0
+   ],
+   "n_checked": 11,
+   "ManifestWithContradiction": false
+  },
+  {
+   "repo": "dermatologist/fhiry",
+   "manifest": "AGENTS.md",
+   "snapshot_status": "exact_at_T_upper",
+   "S": "01ccb59cb33c0d3929d4e20de81fda954bce1d98",
+   "S_C_K": [
+    29,
+    1,
+    1
+   ],
+   "n_checked": 31,
+   "ManifestWithContradiction": true
+  },
+  {
+   "repo": "yf-yang/v0-copilot",
+   "manifest": ".github/copilot-instructions.md",
+   "snapshot_status": "exact_at_T_upper",
+   "S": "b55a59a805d495c862f3deafdc14721c1015c47a",
+   "S_C_K": [
+    4,
+    0,
+    0
+   ],
+   "n_checked": 4,
+   "ManifestWithContradiction": false
+  }
+ ]
+}

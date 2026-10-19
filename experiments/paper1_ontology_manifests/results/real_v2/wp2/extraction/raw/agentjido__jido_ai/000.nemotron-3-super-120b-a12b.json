@@ -1,0 +1,21 @@
+{
+ "repo": "agentjido/jido_ai",
+ "chunk": 0,
+ "n_chunks": 1,
+ "model": "nvidia/nemotron-3-super-120b-a12b",
+ "prompt_sha256": "d0e02ff613417050168d859f2af6230c3712c6758bb5d9c40d60ff55e5ae87ca",
+ "user_sha256": "7119ed3b5183db97155faa2fb35ff800b841e3c734eace5b678733e888323436",
+ "text": "{\n  \"claims\": [\n    {\n      \"type\": \"version\",\n      \"quote\": \"- Elixir `~> 1.18`\",\n      \"line\": 7,\n      \"subject\": \"elixir\",\n      \"version\": \"1.18\",\n      \"qualifier\": \"min\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"version\",\n      \"quote\": \"- OTP `27+` (release QA baseline)\",\n      \"line\": 8,\n      \"subject\": \"otp\",\n      \"version\": \"27\",\n      \"qualifier\": \"min\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"command\",\n      \"quote\": \"- `mix test` (default alias excludes `:flaky`)\",\n      \"line\": 11,\n      \"subject\": \"test\",\n      \"runner\": \"make\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"command\",\n      \"quote\": \"- `mix test.fast` (stable smoke suite)\",\n      \"line\": 12,\n      \"subject\": \"test.fast\",\n      \"runner\": \"make\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"command\",\n      \"quote\": \"- `mix precommit` (`format`, `compile --warnings-as-errors`, `doctor --summary --raise`, `test.fast`)\",\n      \"line\": 13,\n      \"subject\": \"precommit\",\n      \"runner\": \"make\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"command\",\n      \"quote\": \"- `mix q` or `mix quality` (`format`, `compile`, `credo`, `doctor`, `dialyzer`)\",\n      \"line\": 14,\n      \"subject\": \"q\",\n      \"runner\": \"make\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"command\",\n      \"quote\": \"- `mix q` or `mix quality` (`format`, `compile`, `credo`, `doctor`, `dialyzer`)\",\n      \"line\": 14,\n      \"subject\": \"quality\",\n      \"runner\": \"make\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"command\",\n      \"quote\": \"- `mix docs`\",\n      \"line\": 15,\n      \"subject\": \"docs\",\n      \"runner\": \"make\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"path_exists\",\n      \"quote\": \"- `README.md`\",\n      \"line\": 42,\n      \"subject\": \"README.md\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"path_exists\",\n      \"quote\": \"- `usage-rules.md`\",\n      \"line\": 43,\n      \"subject\": \"usage-rules.md\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"path_exists\",\n      \"quote\": \"- `guides/`\",\n      \"line\": 44,\n      \"subject\": \"guides/\",\n      \"mode\": \"asserts_existing\"\n    }\n  ]\n}",
+ "parse_ok": true,
+ "parse_error": null,
+ "parse_retries": 0,
+ "latency_s": 4.453814954031259,
+ "usage": {
+  "prompt": 2658,
+  "completion": 719
+ },
+ "n_api_calls": 1,
+ "finish_reason": "stop",
+ "error": null,
+ "discarded_attempt_texts": []
+}

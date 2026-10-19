@@ -1,0 +1,342 @@
+{
+ "task_id": "ohsu-comp-bio__py-tes-52",
+ "repo": "ohsu-comp-bio/py-tes",
+ "stage": "initial_development",
+ "rounds": 1,
+ "rejects": {},
+ "flags": [
+  "length_violation_F_R",
+  "length_violation_F_I"
+ ],
+ "info": {
+  "slots": {
+   "test_root": "tests",
+   "P1": {
+    "replaced": null,
+    "name": "core",
+    "F_R": "tes/core",
+    "F_I": "core"
+   },
+   "P2": {
+    "replaced": null,
+    "F_R": "tes/internal.py",
+    "F_I": "internal.py"
+   },
+   "C": {
+    "F_R": "make test",
+    "F_I": "make install"
+   },
+   "D": {
+    "replaced": null,
+    "F_R": "pydantic",
+    "F_I": "pendulum"
+   }
+  },
+  "why": {
+   "test_command": [
+    {
+     "root": "tests",
+     "T3": "SupportedClaim",
+     "T1": "SupportedClaim",
+     "collect_ok": true
+    }
+   ],
+   "kind1": {
+    "p1_idx": null,
+    "gold0": "tes",
+    "unrelated": null,
+    "base_R": "tes",
+    "base_I": ""
+   },
+   "kind2": {
+    "p2_idx": null,
+    "n_deleted_py": 1,
+    "found": {
+     "F_R": "tes/internal.py",
+     "F_I": "internal.py"
+    }
+   },
+   "kind3": {
+    "run": "test",
+    "install": "install",
+    "test_ok": true,
+    "install_ok": true
+   },
+   "kind4": {
+    "deps": [
+     [
+      "attrs",
+      true
+     ],
+     [
+      "python-dateutil",
+      true
+     ],
+     [
+      "requests",
+      true
+     ]
+    ],
+    "d_idx": null,
+    "src_R": "attrs",
+    "src_I": "python-dateutil",
+    "n_decls": 8,
+    "n_dist": 28
+   }
+  },
+  "length": {
+   "T": 278,
+   "F_R": 312,
+   "F_I": 313
+  },
+  "fallbacks": {
+   "F_R": [
+    "kind2_never_existed_fallback"
+   ],
+   "F_I": [
+    "kind2_never_existed_fallback"
+   ]
+  },
+  "modes": {
+   "F_R": {
+    "1": "add",
+    "2": "add",
+    "3": "replace",
+    "4": "add"
+   },
+   "F_I": {
+    "1": "add",
+    "2": "add",
+    "3": "replace",
+    "4": "add"
+   }
+  },
+  "length_diff": {
+   "F_R": 34,
+   "F_I": 35
+  },
+  "n_claims_T": 10,
+  "n_false": {
+   "F_R": 4,
+   "F_I": 4
+  },
+  "pointer_in_issue": true,
+  "gold_dirs": [
+   "tes"
+  ],
+  "gold_files": [
+   "tes/client.py",
+   "tes/models.py",
+   "tes/utils.py"
+  ]
+ },
+ "tokens": {
+  "F_R": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "tes/core",
+     "core"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "tes/internal.py",
+     "internal.py"
+    ]
+   },
+   {
+    "kind": 3,
+    "type": "regex",
+    "regex": "\\bmake\\b[^|;&\\n]*\\btest\\b",
+    "target": "test"
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "pydantic"
+    ]
+   }
+  ],
+  "F_I": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "core",
+     "core"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "internal.py",
+     "internal.py"
+    ]
+   },
+   {
+    "kind": 3,
+    "type": "regex",
+    "regex": "\\bmake\\b[^|;&\\n]*\\binstall\\b",
+    "target": "install"
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "pendulum"
+    ]
+   }
+  ]
+ },
+ "unresolved_pre_hermit": [],
+ "sha256": {
+  "T": "547cfe821b3cb097bd3a2aeeea5fd7643c02bc87ecc81d6f80bb71ab4861f7fe",
+  "F_R": "888ffc1b1d0e0e7ad5baf63f825ae839c7111097f3514ab66a65c22078c78864",
+  "F_I": "16723a98b591b35c7465358e80b1c0a7700c128f4664da4b5caa20d7f0c1791e"
+ },
+ "chars": {
+  "T": 278,
+  "F_R": 312,
+  "F_I": 313
+ },
+ "claims": {
+  "T": [
+   "T1|tes",
+   "T1|tests",
+   "T1|tes/models.py",
+   "T3|test_framework|pytest",
+   "T1|tests",
+   "T1|setup.py",
+   "T4|attrs|",
+   "T4|python-dateutil|",
+   "T4|requests|",
+   "T6|python|3007000000@2"
+  ],
+  "F_R": [
+   "T1|tes",
+   "T1|tests",
+   "T1|tes/core",
+   "T1|tes/models.py",
+   "T1|tes/internal.py",
+   "T5|make|test",
+   "T1|setup.py",
+   "T4|attrs|",
+   "T4|python-dateutil|",
+   "T4|requests|",
+   "T4|pydantic|",
+   "T6|python|3007000000@2"
+  ],
+  "F_I": [
+   "T1|tes",
+   "T1|tests",
+   "T1|core",
+   "T1|tes/models.py",
+   "T1|internal.py",
+   "T3|test_framework|pytest",
+   "T1|tests",
+   "T5|make|install",
+   "T4|attrs|",
+   "T4|python-dateutil|",
+   "T4|requests|",
+   "T4|pendulum|",
+   "T6|python|3007000000@2"
+  ]
+ },
+ "python_spec": ">=3.7, <4",
+ "token_audit": [
+  {
+   "cond": "F_R",
+   "kind": 1,
+   "type": "path",
+   "name": "tes/core",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 2,
+   "type": "path",
+   "name": "tes/internal.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 3,
+   "type": "regex",
+   "name": "make test",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 4,
+   "type": "word",
+   "name": "pydantic",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 1,
+   "type": "path",
+   "name": "core",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 2,
+   "type": "path",
+   "name": "internal.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 3,
+   "type": "regex",
+   "name": "make install",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 4,
+   "type": "word",
+   "name": "pendulum",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  }
+ ],
+ "dist_imports_used": {
+  "attrs": [
+   "attr",
+   "attrs"
+  ],
+  "python-dateutil": [
+   "dateutil"
+  ],
+  "requests": [
+   "requests"
+  ],
+  "pydantic": null,
+  "pendulum": null
+ }
+}

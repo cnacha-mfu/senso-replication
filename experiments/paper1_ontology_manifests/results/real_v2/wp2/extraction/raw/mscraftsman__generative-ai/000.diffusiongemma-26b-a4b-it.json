@@ -1,0 +1,21 @@
+{
+ "repo": "mscraftsman/generative-ai",
+ "chunk": 0,
+ "n_chunks": 1,
+ "model": "google/diffusiongemma-26b-a4b-it",
+ "prompt_sha256": "d0e02ff613417050168d859f2af6230c3712c6758bb5d9c40d60ff55e5ae87ca",
+ "user_sha256": "b6c18c371408d0c1a332fc55951dc884d117ae34106e59c24d28c362b4f18615",
+ "text": "{\n  \"claims\": [\n    {\"type\": \"path_exists\", \"subject\": \"Mscc.GenerativeAI\", \"mode\": \"asserts_existing\"},\n    {\"type\": \"path_exists\", \"subject\": \"Mscc.GenerativeAI.Web\", \"mode\": \"asserts_existing\"},\n    {\"type\": \"path_exists\", \"subject\": \"Mscc.GenerativeAI.Google\", \"mode\": \"asserts_existing\"},\n    {\"type\": \"path_exists\", \"subject\": \"Mscc.GenerativeAI.Microsoft\", \"mode\": \"asserts_existing\"},\n    {\"type\": \"path_exists\", \"subject\": \"GenerativeAI.sln\", \"mode\": \"asserts_existing\"},\n    {\"type\": \"command\", \"subject\": \"build ./GenerativeAI.sln -c Release\", \"runner\": \"dotnet\", \"line\": 16, \"mode\": \"asserts_existing\"},\n    {\"type\": \"path_exists\", \"subject\": \"tests/Mscc.GenerativeAI/Test.Mscc.GenerativeAI.csproj\", \"mode\": \"asserts_existing\"},\n    {\"type\": \"command\", \"subject\": \"test ./tests/Mscc.GenerativeAI/Test.Mscc.GenerativeAI.csproj -c Release --logger \\\"console;verbosity=detailed\\\"\", \"runner\": \"dotnet\", \"line\": 25, \"mode\": \"asserts_existing\"},\n    {\"type\": \"path_exists\", \"subject\": \"tests/Mscc.GenerativeAI.Google/Test.Mscc.GenerativeAI.Google.csproj\", \"mode\": \"asserts_existing\"},\n    {\"type\": \"command\", \"subject\": \"test ./tests/Mscc.GenerativeAI.Google/Test.Mscc.GenerativeAI.Google.csproj -c Release --logger \\\"console;verbosity=detailed\\\"\", \"runner\": \"dotnet\", \"line\": 28, \"mode\": \"asserts_existing\"},\n    {\"type\": \"path_exists\", \"subject\": \"src/Mscc.GenerativeAI/Mscc.GenerativeAI.csproj\", \"mode\": \"asserts_existing\"},\n    {\"type\": \"command\", \"subject\": \"pack -c Release ./src/Mscc.GenerativeAI/Mscc.GenerativeAI.csproj -o output/\", \"runner\": \"dotnet\", \"line\": 39, \"mode\": \"asserts_existing\"},\n    {\"type\": \"path_exists\", \"subject\": \"src/Mscc.GenerativeAI.Web/Mscc.GenerativeAI.Web.csproj\", \"mode\": \"asserts_existing\"},\n    {\"type\": \"command\", \"subject\": \"pack -c Release ./src/Mscc.GenerativeAI.Web/Mscc.GenerativeAI.Web.csproj -o output/\", \"runner\": \"dotnet\", \"line\": 42, \"mode\": \"asserts_existing\"},\n    {\"type\": \"path_exists\", \"subject\": \"src/Mscc.GenerativeAI.Google/Mscc.GenerativeAI.Google.csproj\", \"mode\": \"asserts_existing\"},\n    {\"type\": \"command\", \"subject\": \"pack -c Release ./src/Mscc.GenerativeAI.Google/Mscc.GenerativeAI.Google.csproj -o output/\", \"runner\": \"dotnet\", \"line\": 45, \"mode\": \"asserts_existing\"},\n    {\"type\": \"path_exists\", \"subject\": \"src/Mscc.GenerativeAI.Microsoft/Mscc.GenerativeAI.Microsoft.csproj\", \"mode\": \"asserts_existing\"},\n    {\"type\": \"command\", \"subject\": \"pack -c Release ./src/Mscc.GenerativeAI.Microsoft/Mscc.GenerativeAI.Microsoft.csproj -o output/\", \"runner\": \"dotnet\", \"line\": 48, \"mode\": \"asserts_existing\"},\n    {\"type\": \"path_exists\", \"subject\": \".github/workflows/dotnetcore.yml\", \"mode\": \"asserts_existing\"},\n    {\"type\": \"path_exists\", \"subject\": \"VERSION\", \"mode\": \"asserts_existing\"}\n  ]\n}",
+ "parse_ok": true,
+ "parse_error": null,
+ "parse_retries": 0,
+ "latency_s": 1.2406508290441707,
+ "usage": {
+  "prompt": 3057,
+  "completion": 928
+ },
+ "n_api_calls": 1,
+ "finish_reason": "stop",
+ "error": null,
+ "discarded_attempt_texts": []
+}

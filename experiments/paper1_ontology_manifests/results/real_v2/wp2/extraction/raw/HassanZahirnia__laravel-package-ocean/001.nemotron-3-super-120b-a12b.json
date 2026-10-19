@@ -1,0 +1,21 @@
+{
+ "repo": "HassanZahirnia/laravel-package-ocean",
+ "chunk": 1,
+ "n_chunks": 6,
+ "model": "nvidia/nemotron-3-super-120b-a12b",
+ "prompt_sha256": "d0e02ff613417050168d859f2af6230c3712c6758bb5d9c40d60ff55e5ae87ca",
+ "user_sha256": "47eedcf49813e4b77c05aaabf2b79253fd575a0eb58b3d68682967b9ab2230c6",
+ "text": "{\n  \"claims\": [\n    {\n      \"type\": \"command\",\n      \"quote\": \"- Use `php artisan make:` commands to create new files (i.e. migrations, controllers, models, etc.). You can list available Artisan commands using the `list-artisan-commands` tool.\",\n      \"line\": 121,\n      \"subject\": \"make:\",\n      \"runner\": \"php artisan\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"command\",\n      \"quote\": \"- If you're creating a generic PHP class, use `artisan make:class`.\",\n      \"line\": 122,\n      \"subject\": \"make:class\",\n      \"runner\": \"artisan\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"command\",\n      \"quote\": \"- Pass `--no-interaction` to all Artisan commands to ensure they work without user input. You should also pass the correct `--options` to ensure correct behavior.\",\n      \"line\": 123,\n      \"subject\": \"--no-interaction\",\n      \"runner\": \"php artisan\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"command\",\n      \"quote\": \"- When creating new models, create useful factories and seeders for them too. Ask the user if they need any other things, using `list-artisan-commands` to check the available options to `php artisan make:model`.\",\n      \"line\": 133,\n      \"subject\": \"make:model\",\n      \"runner\": \"php artisan\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"command\",\n      \"quote\": \"- When creating tests, make use of `php artisan make:test [options] <name>` to create a feature test, and pass `--unit` to create a unit test. Most tests should be feature tests.\",\n      \"line\": 157,\n      \"subject\": \"make:test\",\n      \"runner\": \"php artisan\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"command\",\n      \"quote\": \"- If you receive an \\\"Illuminate\\\\Foundation\\\\ViteException: Unable to locate file in Vite manifest\\\" error, you can run `npm run build` or ask the user to run `npm run dev` or `composer run dev`.\",\n      \"line\": 160,\n      \"subject\": \"build\",\n      \"runner\": \"npm\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"command\",\n      \"quote\": \"- If you receive an \\\"Illuminate\\\\Foundation\\\\ViteException: Unable to locate file in Vite manifest\\\" error, you can run `npm run build` or ask the user to run `npm run dev` or `composer run dev`.\",\n      \"line\": 160,\n      \"subject\": \"dev\",\n      \"runner\": \"npm\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"command\",\n      \"quote\": \"- If you receive an \\\"Illuminate\\\\Foundation\\\\ViteException: Unable to locate file in Vite manifest\\\" error, you can run `npm run build` or ask the user to run `npm run dev` or `composer run dev`.\",\n      \"line\": 160,\n      \"subject\": \"dev\",\n      \"runner\": \"composer\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"command\",\n      \"quote\": \"- Use the `php artisan make:livewire [Posts\\\\CreatePost]` artisan command to create new components\",\n      \"line\": 189,\n      \"subject\": \"make:livewire\",\n      \"runner\": \"php artisan\",\n      \"mode\": \"asserts_existing\"\n    }\n  ]\n}",
+ "parse_ok": true,
+ "parse_error": null,
+ "parse_retries": 0,
+ "latency_s": 4.793940711009782,
+ "usage": {
+  "prompt": 3884,
+  "completion": 837
+ },
+ "n_api_calls": 1,
+ "finish_reason": "stop",
+ "error": null,
+ "discarded_attempt_texts": []
+}

@@ -1,0 +1,4717 @@
+{
+ "repo": "zopefoundation/Zope",
+ "snapshot_date": "2023-10-31",
+ "status": "ok",
+ "unmineable": false,
+ "unmineable_reason": null,
+ "replaces": null,
+ "settings": {
+  "dedup": true,
+  "complexity": false,
+  "dataset": null,
+  "sensitivity": false,
+  "snapshot_commit": "fe08bae876f13dc1dbc333730eaeb51f264f46a3",
+  "mode": "wp5_snapshot_commit",
+  "test_patch_files": [
+   "src/ZPublisher/tests/testHTTPRequest.py"
+  ],
+  "package_roots": [
+   "src/App",
+   "src/OFS",
+   "src/Products",
+   "src/Shared",
+   "src/Testing",
+   "src/ZPublisher",
+   "src/ZTUtils",
+   "src/Zope2",
+   "src/webdav",
+   "src/zmi"
+  ]
+ },
+ "versions": {
+  "owlready2": "0.51",
+  "pymannkendall": "1.4.3",
+  "lizard": "1.24.1",
+  "numpy": "2.5.3",
+  "scipy": "1.18.1",
+  "python": "3.12.15",
+  "git": "git version 2.53.0"
+ },
+ "task_id": "zopefoundation__Zope-1183",
+ "base_commit": "fe08bae876f13dc1dbc333730eaeb51f264f46a3",
+ "measures": {
+  "monthsObserved": 36,
+  "monthsSinceLastCommit": 0,
+  "distinctAuthorsInWindow": 23,
+  "commitMKTau": 0.109524,
+  "commitMKpValue": 0.352043,
+  "activeMonthCount": 34,
+  "activeMonthRatio": 0.944444,
+  "meanMonthlyCommits": 7.777778,
+  "commitsLast3Months": 51,
+  "commitCountCV": 0.85613,
+  "commitCountCVSample": 0.868275,
+  "commitHalfRatio": 1.258065,
+  "commitSecondHalfMean": 8.666667,
+  "churnCV": 1.501983,
+  "linesAddedCV": 1.476045,
+  "mergeMonthRatio": 0.0,
+  "multiAuthorMonthRatio": 0.805556,
+  "bugFixRatioFirstHalf": 0.223349,
+  "bugFixRatioSecondHalf": 0.130893,
+  "bugFixHalfRatio": 0.586047,
+  "locSeriesLength": 36,
+  "locRelSenSlopeAnnual": 0.013994,
+  "locMKTau": 0.973016,
+  "locMKS": 613,
+  "locMKpValue": 0.0,
+  "locSenSlope": 56.502288,
+  "locStart": 47261,
+  "locEnd": 49566,
+  "locDelta": 2305,
+  "locGrowthRate": 0.048772,
+  "locChangePct": 4.877171,
+  "locEndToStartRatio": 1.048772,
+  "locGrowthLast3": 0.012439,
+  "featureCommitsFirstHalf": 0,
+  "featureCommitsSecondHalf": 0,
+  "featureCommitsTotal": 0,
+  "locDeltaPerFeature": 2305.0,
+  "recentAgentCommitRatio": 0.0,
+  "featCommitCount": 0,
+  "bugFixCommitCount": 57,
+  "commitCount": 280,
+  "monthly_series": {
+   "months": [
+    "2019-11",
+    "2019-12",
+    "2020-01",
+    "2020-02",
+    "2020-03",
+    "2020-04",
+    "2020-05",
+    "2020-06",
+    "2020-07",
+    "2020-08",
+    "2020-09",
+    "2020-10",
+    "2020-11",
+    "2020-12",
+    "2021-01",
+    "2021-02",
+    "2021-03",
+    "2021-04",
+    "2021-05",
+    "2021-06",
+    "2021-07",
+    "2021-08",
+    "2021-09",
+    "2021-10",
+    "2021-11",
+    "2021-12",
+    "2022-01",
+    "2022-02",
+    "2022-03",
+    "2022-04",
+    "2022-05",
+    "2022-06",
+    "2022-07",
+    "2022-08",
+    "2022-09",
+    "2022-10",
+    "2022-11",
+    "2022-12",
+    "2023-01",
+    "2023-02",
+    "2023-03",
+    "2023-04",
+    "2023-05",
+    "2023-06",
+    "2023-07",
+    "2023-08",
+    "2023-09",
+    "2023-10"
+   ],
+   "commits": [
+    24,
+    8,
+    12,
+    33,
+    15,
+    12,
+    6,
+    14,
+    32,
+    3,
+    10,
+    30,
+    17,
+    2,
+    1,
+    17,
+    6,
+    3,
+    12,
+    13,
+    14,
+    0,
+    0,
+    2,
+    3,
+    3,
+    9,
+    3,
+    7,
+    12,
+    5,
+    8,
+    2,
+    4,
+    6,
+    5,
+    9,
+    19,
+    12,
+    2,
+    11,
+    5,
+    6,
+    8,
+    3,
+    2,
+    32,
+    17
+   ],
+   "loc": [
+    42167,
+    42166,
+    41921,
+    45618,
+    46018,
+    46027,
+    46086,
+    46232,
+    46621,
+    46621,
+    46696,
+    47245,
+    47261,
+    47261,
+    47261,
+    47332,
+    47340,
+    47335,
+    47451,
+    47527,
+    47608,
+    47608,
+    47608,
+    47608,
+    47609,
+    47757,
+    47874,
+    48402,
+    48402,
+    48447,
+    48459,
+    48459,
+    48472,
+    48480,
+    48482,
+    48533,
+    48534,
+    48591,
+    48639,
+    48639,
+    48682,
+    48680,
+    48794,
+    48879,
+    48957,
+    48957,
+    49262,
+    49566
+   ]
+  }
+ },
+ "window": {
+  "L": 36,
+  "first_month": "2020-11",
+  "last_month": "2023-10",
+  "n_months": 36,
+  "left_truncated": false,
+  "first_commit_month": "1996-06",
+  "mined_months": 48,
+  "commits_in_window": 280,
+  "commits_in_history": 16144
+ },
+ "loc_instrument": {
+  "instrument": "nonblank-source-lines-v1",
+  "status": "ok",
+  "months": 48,
+  "month_end_commits_distinct": 46,
+  "source_blobs": 997,
+  "blobs_fetched": 94,
+  "t_ls_tree_s": 0.7296762049663812,
+  "t_fetch_s": 0.9901088660117239,
+  "t_read_s": 0.20183643698692322,
+  "series_present": true,
+  "extensions": [
+   ".bash",
+   ".c",
+   ".cc",
+   ".cjs",
+   ".clj",
+   ".cpp",
+   ".cs",
+   ".cxx",
+   ".dart",
+   ".erl",
+   ".ex",
+   ".exs",
+   ".f90",
+   ".go",
+   ".groovy",
+   ".h",
+   ".hh",
+   ".hpp",
+   ".hs",
+   ".java",
+   ".jl",
+   ".js",
+   ".jsx",
+   ".kt",
+   ".kts",
+   ".lua",
+   ".m",
+   ".mjs",
+   ".ml",
+   ".mm",
+   ".nim",
+   ".php",
+   ".pl",
+   ".pm",
+   ".py",
+   ".pyi",
+   ".r",
+   ".rb",
+   ".rs",
+   ".scala",
+   ".sh",
+   ".sql",
+   ".svelte",
+   ".swift",
+   ".ts",
+   ".tsx",
+   ".vue",
+   ".zig"
+  ],
+  "excluded_dirs": [
+   "node_modules",
+   "vendor",
+   "vendored",
+   "third_party",
+   "site-packages",
+   "bower_components"
+  ],
+  "max_blob_bytes": 1000000,
+  "first_parent": true
+ },
+ "mining": {
+  "churn": {
+   "t_churn_raw_s": 0.15332244097953662,
+   "t_churn_fetch_s": 3.614148046995979,
+   "t_churn_numstat_s": 0.28624650300480425,
+   "blobs_fetched_churn": 1061
+  },
+  "timings": {
+   "t_clone": 0.004,
+   "t_mine": 4.519,
+   "t_loc": 1.923,
+   "t_reason_A": 3.031
+  },
+  "cached": false
+ },
+ "stage_a": {
+  "commits": 479,
+  "reasoned_commits": 448,
+  "inconsistent_chunks": 0,
+  "chunk_timings": [
+   {
+    "tbox_load_s": 0.037567700957879424,
+    "abox_load_s": 0.07175200601341203,
+    "reason_s": 2.902190544991754,
+    "extract_s": 0.006180989963468164,
+    "total_s": 3.0179982419940643,
+    "commits": 448
+   }
+  ],
+  "tbox_sha256": "f5ba00eaa76dc3582415cdf566fbd7abc1d3f2797ca928f41dad106dc1c0bdb5"
+ },
+ "activity": {
+  "last_commit_date": "2023-10-26T15:27:54+00:00",
+  "months_since_last_commit": 0,
+  "distinct_authors_in_window": 23,
+  "merge_commits_in_window": 0
+ },
+ "agent_adoption_date": "2022-04-01T06:32:11+00:00",
+ "commit_label_counts": {
+  "BugFixCommit": 57,
+  "FeatureCommit": 0,
+  "AgentCommit": 1
+ },
+ "series_months": [
+  {
+   "month": "2020-11",
+   "commit_count": 17,
+   "merge_count": 0,
+   "unique_authors": 5,
+   "lines_added": 30,
+   "lines_deleted": 12,
+   "total_churn": 42,
+   "files_changed": 8,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 47261,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2020-12",
+   "commit_count": 2,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 47261,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2021-01",
+   "commit_count": 1,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 47261,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2021-02",
+   "commit_count": 17,
+   "merge_count": 0,
+   "unique_authors": 4,
+   "lines_added": 135,
+   "lines_deleted": 59,
+   "total_churn": 194,
+   "files_changed": 26,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 47332,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2021-03",
+   "commit_count": 6,
+   "merge_count": 0,
+   "unique_authors": 2,
+   "lines_added": 73,
+   "lines_deleted": 62,
+   "total_churn": 135,
+   "files_changed": 13,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 47340,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2021-04",
+   "commit_count": 3,
+   "merge_count": 0,
+   "unique_authors": 2,
+   "lines_added": 1,
+   "lines_deleted": 7,
+   "total_churn": 8,
+   "files_changed": 2,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 47335,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2021-05",
+   "commit_count": 12,
+   "merge_count": 0,
+   "unique_authors": 3,
+   "lines_added": 183,
+   "lines_deleted": 32,
+   "total_churn": 215,
+   "files_changed": 16,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 47451,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2021-06",
+   "commit_count": 13,
+   "merge_count": 0,
+   "unique_authors": 5,
+   "lines_added": 116,
+   "lines_deleted": 26,
+   "total_churn": 142,
+   "files_changed": 8,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 47527,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2021-07",
+   "commit_count": 14,
+   "merge_count": 0,
+   "unique_authors": 2,
+   "lines_added": 200,
+   "lines_deleted": 121,
+   "total_churn": 321,
+   "files_changed": 17,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 47608,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2021-08",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 47608,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2021-09",
+   "commit_count": 0,
+   "merge_count": 0,
+   "unique_authors": 0,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 47608,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2021-10",
+   "commit_count": 2,
+   "merge_count": 0,
+   "unique_authors": 2,
+   "lines_added": 0,
+   "lines_deleted": 0,
+   "total_churn": 0,
+   "files_changed": 0,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 47608,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2021-11",
+   "commit_count": 3,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 2,
+   "lines_deleted": 1,
+   "total_churn": 3,
+   "files_changed": 1,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 47609,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2021-12",
+   "commit_count": 3,
+   "merge_count": 0,
+   "unique_authors": 2,
+   "lines_added": 185,
+   "lines_deleted": 6,
+   "total_churn": 191,
+   "files_changed": 4,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 47757,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-01",
+   "commit_count": 9,
+   "merge_count": 0,
+   "unique_authors": 3,
+   "lines_added": 193,
+   "lines_deleted": 57,
+   "total_churn": 250,
+   "files_changed": 21,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 47874,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-02",
+   "commit_count": 3,
+   "merge_count": 0,
+   "unique_authors": 3,
+   "lines_added": 785,
+   "lines_deleted": 108,
+   "total_churn": 893,
+   "files_changed": 11,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 48402,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-03",
+   "commit_count": 7,
+   "merge_count": 0,
+   "unique_authors": 3,
+   "lines_added": 17,
+   "lines_deleted": 17,
+   "total_churn": 34,
+   "files_changed": 6,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 48402,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-04",
+   "commit_count": 12,
+   "merge_count": 0,
+   "unique_authors": 4,
+   "lines_added": 74,
+   "lines_deleted": 23,
+   "total_churn": 97,
+   "files_changed": 6,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 48447,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-05",
+   "commit_count": 5,
+   "merge_count": 0,
+   "unique_authors": 5,
+   "lines_added": 20,
+   "lines_deleted": 7,
+   "total_churn": 27,
+   "files_changed": 5,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 48459,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-06",
+   "commit_count": 8,
+   "merge_count": 0,
+   "unique_authors": 2,
+   "lines_added": 4,
+   "lines_deleted": 4,
+   "total_churn": 8,
+   "files_changed": 4,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 48459,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-07",
+   "commit_count": 2,
+   "merge_count": 0,
+   "unique_authors": 2,
+   "lines_added": 35,
+   "lines_deleted": 21,
+   "total_churn": 56,
+   "files_changed": 4,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 48472,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-08",
+   "commit_count": 4,
+   "merge_count": 0,
+   "unique_authors": 2,
+   "lines_added": 16,
+   "lines_deleted": 7,
+   "total_churn": 23,
+   "files_changed": 2,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 48480,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-09",
+   "commit_count": 6,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 7,
+   "lines_deleted": 5,
+   "total_churn": 12,
+   "files_changed": 3,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 48482,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-10",
+   "commit_count": 5,
+   "merge_count": 0,
+   "unique_authors": 3,
+   "lines_added": 101,
+   "lines_deleted": 38,
+   "total_churn": 139,
+   "files_changed": 10,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 48533,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-11",
+   "commit_count": 9,
+   "merge_count": 0,
+   "unique_authors": 2,
+   "lines_added": 6,
+   "lines_deleted": 5,
+   "total_churn": 11,
+   "files_changed": 4,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 48534,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2022-12",
+   "commit_count": 19,
+   "merge_count": 0,
+   "unique_authors": 4,
+   "lines_added": 136,
+   "lines_deleted": 59,
+   "total_churn": 195,
+   "files_changed": 21,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 48591,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-01",
+   "commit_count": 12,
+   "merge_count": 0,
+   "unique_authors": 5,
+   "lines_added": 563,
+   "lines_deleted": 489,
+   "total_churn": 1052,
+   "files_changed": 35,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 48639,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-02",
+   "commit_count": 2,
+   "merge_count": 0,
+   "unique_authors": 2,
+   "lines_added": 1,
+   "lines_deleted": 1,
+   "total_churn": 2,
+   "files_changed": 1,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 48639,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-03",
+   "commit_count": 11,
+   "merge_count": 0,
+   "unique_authors": 5,
+   "lines_added": 126,
+   "lines_deleted": 75,
+   "total_churn": 201,
+   "files_changed": 13,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 48682,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-04",
+   "commit_count": 5,
+   "merge_count": 0,
+   "unique_authors": 5,
+   "lines_added": 2,
+   "lines_deleted": 4,
+   "total_churn": 6,
+   "files_changed": 1,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 48680,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-05",
+   "commit_count": 6,
+   "merge_count": 0,
+   "unique_authors": 3,
+   "lines_added": 171,
+   "lines_deleted": 44,
+   "total_churn": 215,
+   "files_changed": 7,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 48794,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-06",
+   "commit_count": 8,
+   "merge_count": 0,
+   "unique_authors": 4,
+   "lines_added": 130,
+   "lines_deleted": 22,
+   "total_churn": 152,
+   "files_changed": 14,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 48879,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-07",
+   "commit_count": 3,
+   "merge_count": 0,
+   "unique_authors": 2,
+   "lines_added": 100,
+   "lines_deleted": 8,
+   "total_churn": 108,
+   "files_changed": 5,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 48957,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-08",
+   "commit_count": 2,
+   "merge_count": 0,
+   "unique_authors": 1,
+   "lines_added": 3,
+   "lines_deleted": 3,
+   "total_churn": 6,
+   "files_changed": 3,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 48957,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-09",
+   "commit_count": 32,
+   "merge_count": 0,
+   "unique_authors": 9,
+   "lines_added": 364,
+   "lines_deleted": 23,
+   "total_churn": 387,
+   "files_changed": 23,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 49262,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  },
+  {
+   "month": "2023-10",
+   "commit_count": 17,
+   "merge_count": 0,
+   "unique_authors": 4,
+   "lines_added": 535,
+   "lines_deleted": 178,
+   "total_churn": 713,
+   "files_changed": 38,
+   "complexity_mean": null,
+   "complexity_max": 0,
+   "nloc_touched": 0,
+   "loc": 49566,
+   "feature_count": null,
+   "bug_fix_count": null,
+   "bug_fix_ratio": null
+  }
+ ],
+ "measures_derived": {
+  "bugFixRatioFirstHalf": 0.223349,
+  "bugFixRatioSecondHalf": 0.130893,
+  "bugFixHalfRatio": 0.586047,
+  "featureCommitsFirstHalf": 0,
+  "featureCommitsSecondHalf": 0,
+  "featureCommitsTotal": 0,
+  "locDeltaPerFeature": 2305.0,
+  "recentAgentCommitRatio": 0.0
+ },
+ "modules_meta": {
+  "anchor_S": "2023-11-06T07:53:05+00:00",
+  "window_months": 12,
+  "package_roots": [
+   "src/App",
+   "src/OFS",
+   "src/Products",
+   "src/Shared",
+   "src/Testing",
+   "src/ZPublisher",
+   "src/ZTUtils",
+   "src/Zope2",
+   "src/webdav",
+   "src/zmi"
+  ],
+  "n_modules": 109,
+  "n_source_files": 207,
+  "n_window_commits": 67,
+  "cached": false,
+  "timings": {
+   "t_tree_loc": 0.049,
+   "t_history": 1.785,
+   "t_numstat": 0.076
+  },
+  "module_loc_instrument": "nonblank-source-lines-v1",
+  "label_counts": {
+   "StableModule": 99,
+   "ActiveModule": 9,
+   "undetermined": 1
+  },
+  "thresholds": {
+   "mod_window_months": 12,
+   "mod_stable_max_rel_churn": 0.1,
+   "mod_stable_max_change_months": 2
+  }
+ },
+ "inferred": {
+  "a0.05_L36_D12_G0.05_orig": {
+   "classes": [
+    "CopyPasteEvidence",
+    "GrowthStage",
+    "LawIConformant",
+    "LawIIIConformant",
+    "LawIVConformant",
+    "LawVConformant",
+    "LawVIConformant",
+    "LawVIIINonConformant",
+    "LawVIIINonConformantNoMerge",
+    "LawVIINonConformant",
+    "LocPerFeatureHigh",
+    "MKApplicable",
+    "MergeInactive",
+    "MinorLocGrowth",
+    "MultiAuthorActive",
+    "NonSubstantialChange",
+    "RBServicingStage",
+    "RecentlyActive"
+   ],
+   "inconsistent": false,
+   "inconsistency_explanation": null,
+   "undetermined_reason": null,
+   "explanation_graph": "urn:senso:explanations:zopefoundation__Zope-1183:d20298612d99",
+   "tbox_sha256": "d20298612d99fa8f5c1a63c70eaab0195a3e82e2d6780de3bd1fd3ced72d6e5d",
+   "abox_triples": 1128,
+   "t_reason_B_s": 4.411
+  }
+ },
+ "primary_config": "a0.05_L36_D12_G0.05_orig",
+ "project_iri": "http://senso-framework.org/data/zopefoundation__Zope-1183",
+ "consistent": true,
+ "inferred_labels": [
+  "CopyPasteEvidence",
+  "GrowthStage",
+  "LawIConformant",
+  "LawIIIConformant",
+  "LawIVConformant",
+  "LawVConformant",
+  "LawVIConformant",
+  "LawVIIINonConformant",
+  "LawVIIINonConformantNoMerge",
+  "LawVIINonConformant",
+  "LocPerFeatureHigh",
+  "MKApplicable",
+  "MergeInactive",
+  "MinorLocGrowth",
+  "MultiAuthorActive",
+  "NonSubstantialChange",
+  "RBServicingStage",
+  "RecentlyActive"
+ ],
+ "stage_labels": [
+  "GrowthStage",
+  "RBServicingStage"
+ ],
+ "law_labels": {
+  "I": "LawIConformant",
+  "III": "LawIIIConformant",
+  "IV": "LawIVConformant",
+  "V": "LawVConformant",
+  "VI": "LawVIConformant",
+  "VII": "LawVIINonConformant",
+  "VIII": "LawVIIINonConformant"
+ },
+ "tbox_sha256_stage_b": "d20298612d99fa8f5c1a63c70eaab0195a3e82e2d6780de3bd1fd3ced72d6e5d",
+ "tbox_sha256_stage_a": "f5ba00eaa76dc3582415cdf566fbd7abc1d3f2797ca928f41dad106dc1c0bdb5",
+ "summary": {
+  "c1": "A",
+  "c2": "S",
+  "cf": "A",
+  "note": "debug summary; run_rq1_v2.py reads `inferred` and recomputes CF itself"
+ },
+ "modules": {
+  "docs": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "docs",
+    "moduleLoc": 239,
+    "moduleCommitsInWindow": 14,
+    "moduleChangeMonthsInWindow": 8,
+    "moduleLinesChangedInWindow": 42,
+    "moduleRelChurnInWindow": 0.175732,
+    "moduleMonthsSinceLastChange": 1
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/docs-71ab8b",
+   "abox_asserted": true
+  },
+  "src/App/ApplicationManager.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/App/ApplicationManager.py",
+    "moduleLoc": 328,
+    "moduleCommitsInWindow": 1,
+    "moduleChangeMonthsInWindow": 1,
+    "moduleLinesChangedInWindow": 31,
+    "moduleRelChurnInWindow": 0.094512,
+    "moduleMonthsSinceLastChange": 1
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_App_ApplicationManager.py-d914df",
+   "abox_asserted": true
+  },
+  "src/App/CacheManager.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/App/CacheManager.py",
+    "moduleLoc": 76,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 37
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_App_CacheManager.py-c008f6",
+   "abox_asserted": true
+  },
+  "src/App/Common.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/App/Common.py",
+    "moduleLoc": 97,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 30
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_App_Common.py-4d8b02",
+   "abox_asserted": true
+  },
+  "src/App/DavLockManager.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/App/DavLockManager.py",
+    "moduleLoc": 104,
+    "moduleCommitsInWindow": 1,
+    "moduleChangeMonthsInWindow": 1,
+    "moduleLinesChangedInWindow": 4,
+    "moduleRelChurnInWindow": 0.038462,
+    "moduleMonthsSinceLastChange": 1
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_App_DavLockManager.py-21aaab",
+   "abox_asserted": true
+  },
+  "src/App/Dialogs.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "RarelyChangedModule"
+   ],
+   "measures": {
+    "modulePath": "src/App/Dialogs.py",
+    "moduleLoc": 72,
+    "moduleCommitsInWindow": 1,
+    "moduleChangeMonthsInWindow": 1,
+    "moduleLinesChangedInWindow": 14,
+    "moduleRelChurnInWindow": 0.194444,
+    "moduleMonthsSinceLastChange": 11
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_App_Dialogs.py-5b1b13",
+   "abox_asserted": true
+  },
+  "src/App/Extensions.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/App/Extensions.py",
+    "moduleLoc": 156,
+    "moduleCommitsInWindow": 1,
+    "moduleChangeMonthsInWindow": 1,
+    "moduleLinesChangedInWindow": 3,
+    "moduleRelChurnInWindow": 0.019231,
+    "moduleMonthsSinceLastChange": 5
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_App_Extensions.py-196e2c",
+   "abox_asserted": true
+  },
+  "src/App/FactoryDispatcher.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/App/FactoryDispatcher.py",
+    "moduleLoc": 127,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 56
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_App_FactoryDispatcher.py-22cfcc",
+   "abox_asserted": true
+  },
+  "src/App/FindHomes.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/App/FindHomes.py",
+    "moduleLoc": 27,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 56
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_App_FindHomes.py-021193",
+   "abox_asserted": true
+  },
+  "src/App/ImageFile.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/App/ImageFile.py",
+    "moduleLoc": 117,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 32
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_App_ImageFile.py-658335",
+   "abox_asserted": true
+  },
+  "src/App/Management.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/App/Management.py",
+    "moduleLoc": 177,
+    "moduleCommitsInWindow": 1,
+    "moduleChangeMonthsInWindow": 1,
+    "moduleLinesChangedInWindow": 1,
+    "moduleRelChurnInWindow": 0.00565,
+    "moduleMonthsSinceLastChange": 11
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_App_Management.py-ced2da",
+   "abox_asserted": true
+  },
+  "src/App/ProductContext.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/App/ProductContext.py",
+    "moduleLoc": 171,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 40
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_App_ProductContext.py-7640a6",
+   "abox_asserted": true
+  },
+  "src/App/Undo.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/App/Undo.py",
+    "moduleLoc": 123,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 30
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_App_Undo.py-b4c40d",
+   "abox_asserted": true
+  },
+  "src/App/ZApplication.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/App/ZApplication.py",
+    "moduleLoc": 41,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 46
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_App_ZApplication.py-d27e9b",
+   "abox_asserted": true
+  },
+  "src/App/ZODBConnectionDebugger.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "RarelyChangedModule"
+   ],
+   "measures": {
+    "modulePath": "src/App/ZODBConnectionDebugger.py",
+    "moduleLoc": 75,
+    "moduleCommitsInWindow": 1,
+    "moduleChangeMonthsInWindow": 1,
+    "moduleLinesChangedInWindow": 90,
+    "moduleRelChurnInWindow": 1.2,
+    "moduleMonthsSinceLastChange": 1
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_App_ZODBConnectionDebugger.py-aa080b",
+   "abox_asserted": true
+  },
+  "src/App/__init__.py": {
+   "label": "undetermined",
+   "classes": [],
+   "measures": {
+    "modulePath": "src/App/__init__.py",
+    "moduleLoc": 0,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleMonthsSinceLastChange": 87
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_App___init__.py-fb4178",
+   "abox_asserted": false
+  },
+  "src/App/config.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/App/config.py",
+    "moduleLoc": 53,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 46
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_App_config.py-dbeeb9",
+   "abox_asserted": true
+  },
+  "src/App/interfaces.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/App/interfaces.py",
+    "moduleLoc": 29,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 69
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_App_interfaces.py-f534a9",
+   "abox_asserted": true
+  },
+  "src/App/special_dtml.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/App/special_dtml.py",
+    "moduleLoc": 197,
+    "moduleCommitsInWindow": 1,
+    "moduleChangeMonthsInWindow": 1,
+    "moduleLinesChangedInWindow": 9,
+    "moduleRelChurnInWindow": 0.045685,
+    "moduleMonthsSinceLastChange": 11
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_App_special_dtml.py-7b2c8a",
+   "abox_asserted": true
+  },
+  "src/App/version_txt.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/App/version_txt.py",
+    "moduleLoc": 84,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 22
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_App_version_txt.py-d55ede",
+   "abox_asserted": true
+  },
+  "src/OFS/Application.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "src/OFS/Application.py",
+    "moduleLoc": 457,
+    "moduleCommitsInWindow": 5,
+    "moduleChangeMonthsInWindow": 3,
+    "moduleLinesChangedInWindow": 151,
+    "moduleRelChurnInWindow": 0.330416,
+    "moduleMonthsSinceLastChange": 1
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_OFS_Application.py-ca3a9e",
+   "abox_asserted": true
+  },
+  "src/OFS/Cache.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/OFS/Cache.py",
+    "moduleLoc": 479,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 46
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_OFS_Cache.py-c50035",
+   "abox_asserted": true
+  },
+  "src/OFS/CopySupport.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/OFS/CopySupport.py",
+    "moduleLoc": 571,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 40
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_OFS_CopySupport.py-30c969",
+   "abox_asserted": true
+  },
+  "src/OFS/DTMLDocument.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/OFS/DTMLDocument.py",
+    "moduleLoc": 129,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 40
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_OFS_DTMLDocument.py-825986",
+   "abox_asserted": true
+  },
+  "src/OFS/DTMLMethod.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/OFS/DTMLMethod.py",
+    "moduleLoc": 409,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 28
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_OFS_DTMLMethod.py-4eba12",
+   "abox_asserted": true
+  },
+  "src/OFS/EtagSupport.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/OFS/EtagSupport.py",
+    "moduleLoc": 122,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 46
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_OFS_EtagSupport.py-b20a19",
+   "abox_asserted": true
+  },
+  "src/OFS/FindSupport.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/OFS/FindSupport.py",
+    "moduleLoc": 203,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 40
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_OFS_FindSupport.py-403970",
+   "abox_asserted": true
+  },
+  "src/OFS/Folder.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/OFS/Folder.py",
+    "moduleLoc": 81,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 45
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_OFS_Folder.py-c78d44",
+   "abox_asserted": true
+  },
+  "src/OFS/History.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/OFS/History.py",
+    "moduleLoc": 207,
+    "moduleCommitsInWindow": 1,
+    "moduleChangeMonthsInWindow": 1,
+    "moduleLinesChangedInWindow": 15,
+    "moduleRelChurnInWindow": 0.072464,
+    "moduleMonthsSinceLastChange": 10
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_OFS_History.py-95b89e",
+   "abox_asserted": true
+  },
+  "src/OFS/Image.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "RarelyChangedModule"
+   ],
+   "measures": {
+    "modulePath": "src/OFS/Image.py",
+    "moduleLoc": 995,
+    "moduleCommitsInWindow": 5,
+    "moduleChangeMonthsInWindow": 2,
+    "moduleLinesChangedInWindow": 162,
+    "moduleRelChurnInWindow": 0.162814,
+    "moduleMonthsSinceLastChange": 1
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_OFS_Image.py-3bef40",
+   "abox_asserted": true
+  },
+  "src/OFS/LockItem.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/OFS/LockItem.py",
+    "moduleLoc": 168,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 40
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_OFS_LockItem.py-4bd87f",
+   "abox_asserted": true
+  },
+  "src/OFS/Lockable.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/OFS/Lockable.py",
+    "moduleLoc": 128,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 43
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_OFS_Lockable.py-f7ffca",
+   "abox_asserted": true
+  },
+  "src/OFS/Moniker.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/OFS/Moniker.py",
+    "moduleLoc": 46,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 46
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_OFS_Moniker.py-415db7",
+   "abox_asserted": true
+  },
+  "src/OFS/ObjectManager.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/OFS/ObjectManager.py",
+    "moduleLoc": 756,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 33
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_OFS_ObjectManager.py-6e10b4",
+   "abox_asserted": true
+  },
+  "src/OFS/OrderSupport.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/OFS/OrderSupport.py",
+    "moduleLoc": 248,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 45
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_OFS_OrderSupport.py-289e85",
+   "abox_asserted": true
+  },
+  "src/OFS/OrderedFolder.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/OFS/OrderedFolder.py",
+    "moduleLoc": 37,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 56
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_OFS_OrderedFolder.py-a60c0e",
+   "abox_asserted": true
+  },
+  "src/OFS/PropertyManager.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/OFS/PropertyManager.py",
+    "moduleLoc": 335,
+    "moduleCommitsInWindow": 1,
+    "moduleChangeMonthsInWindow": 1,
+    "moduleLinesChangedInWindow": 2,
+    "moduleRelChurnInWindow": 0.00597,
+    "moduleMonthsSinceLastChange": 3
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_OFS_PropertyManager.py-aeb1de",
+   "abox_asserted": true
+  },
+  "src/OFS/PropertySheets.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/OFS/PropertySheets.py",
+    "moduleLoc": 484,
+    "moduleCommitsInWindow": 1,
+    "moduleChangeMonthsInWindow": 1,
+    "moduleLinesChangedInWindow": 2,
+    "moduleRelChurnInWindow": 0.004132,
+    "moduleMonthsSinceLastChange": 3
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_OFS_PropertySheets.py-bfc99e",
+   "abox_asserted": true
+  },
+  "src/OFS/SimpleItem.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/OFS/SimpleItem.py",
+    "moduleLoc": 330,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 37
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_OFS_SimpleItem.py-6fe6d3",
+   "abox_asserted": true
+  },
+  "src/OFS/Traversable.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/OFS/Traversable.py",
+    "moduleLoc": 322,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 45
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_OFS_Traversable.py-98f81e",
+   "abox_asserted": true
+  },
+  "src/OFS/Uninstalled.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/OFS/Uninstalled.py",
+    "moduleLoc": 75,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 46
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_OFS_Uninstalled.py-49ccd5",
+   "abox_asserted": true
+  },
+  "src/OFS/__init__.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/OFS/__init__.py",
+    "moduleLoc": 18,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 54
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_OFS___init__.py-7f7e05",
+   "abox_asserted": true
+  },
+  "src/OFS/absoluteurl.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/OFS/absoluteurl.py",
+    "moduleLoc": 103,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 40
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_OFS_absoluteurl.py-273593",
+   "abox_asserted": true
+  },
+  "src/OFS/browser": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/OFS/browser",
+    "moduleLoc": 35,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 55
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_OFS_browser-d168ee",
+   "abox_asserted": true
+  },
+  "src/OFS/event.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/OFS/event.py",
+    "moduleLoc": 43,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 56
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_OFS_event.py-0d122a",
+   "abox_asserted": true
+  },
+  "src/OFS/interfaces.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/OFS/interfaces.py",
+    "moduleLoc": 757,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 46
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_OFS_interfaces.py-234edf",
+   "abox_asserted": true
+  },
+  "src/OFS/metaconfigure.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/OFS/metaconfigure.py",
+    "moduleLoc": 136,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 56
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_OFS_metaconfigure.py-3d568c",
+   "abox_asserted": true
+  },
+  "src/OFS/metadirectives.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/OFS/metadirectives.py",
+    "moduleLoc": 56,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 46
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_OFS_metadirectives.py-029a84",
+   "abox_asserted": true
+  },
+  "src/OFS/misc_.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/OFS/misc_.py",
+    "moduleLoc": 43,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 46
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_OFS_misc_.py-4493d8",
+   "abox_asserted": true
+  },
+  "src/OFS/owner.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/OFS/owner.py",
+    "moduleLoc": 83,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 46
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_OFS_owner.py-70bf4a",
+   "abox_asserted": true
+  },
+  "src/OFS/role.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/OFS/role.py",
+    "moduleLoc": 211,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 40
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_OFS_role.py-e3e867",
+   "abox_asserted": true
+  },
+  "src/OFS/subscribers.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/OFS/subscribers.py",
+    "moduleLoc": 150,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 46
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_OFS_subscribers.py-1fe059",
+   "abox_asserted": true
+  },
+  "src/OFS/userfolder.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/OFS/userfolder.py",
+    "moduleLoc": 285,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 37
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_OFS_userfolder.py-f53c44",
+   "abox_asserted": true
+  },
+  "src/Products/Five": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/Products/Five",
+    "moduleLoc": 1833,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 33
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_Products_Five-44cab3",
+   "abox_asserted": true
+  },
+  "src/Products/OFSP": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/Products/OFSP",
+    "moduleLoc": 70,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 56
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_Products_OFSP-6cb581",
+   "abox_asserted": true
+  },
+  "src/Products/PageTemplates": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/Products/PageTemplates",
+    "moduleLoc": 1934,
+    "moduleCommitsInWindow": 1,
+    "moduleChangeMonthsInWindow": 1,
+    "moduleLinesChangedInWindow": 24,
+    "moduleRelChurnInWindow": 0.01241,
+    "moduleMonthsSinceLastChange": 5
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_Products_PageTemplates-a9bc38",
+   "abox_asserted": true
+  },
+  "src/Products/SiteAccess": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/Products/SiteAccess",
+    "moduleLoc": 251,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 37
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_Products_SiteAccess-6c3320",
+   "abox_asserted": true
+  },
+  "src/Products/__init__.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/Products/__init__.py",
+    "moduleLoc": 14,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 163
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_Products___init__.py-27ca47",
+   "abox_asserted": true
+  },
+  "src/Shared/DC": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/Shared/DC",
+    "moduleLoc": 458,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 18
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_Shared_DC-49edb6",
+   "abox_asserted": true
+  },
+  "src/Shared/__init__.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/Shared/__init__.py",
+    "moduleLoc": 13,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 160
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_Shared___init__.py-58dc06",
+   "abox_asserted": true
+  },
+  "src/Testing/ZODButil.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/Testing/ZODButil.py",
+    "moduleLoc": 10,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 56
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_Testing_ZODButil.py-cd0107",
+   "abox_asserted": true
+  },
+  "src/Testing/ZopeTestCase": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/Testing/ZopeTestCase",
+    "moduleLoc": 3556,
+    "moduleCommitsInWindow": 1,
+    "moduleChangeMonthsInWindow": 1,
+    "moduleLinesChangedInWindow": 133,
+    "moduleRelChurnInWindow": 0.037402,
+    "moduleMonthsSinceLastChange": 10
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_Testing_ZopeTestCase-2a2a2d",
+   "abox_asserted": true
+  },
+  "src/Testing/__init__.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/Testing/__init__.py",
+    "moduleLoc": 23,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 56
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_Testing___init__.py-6d8d10",
+   "abox_asserted": true
+  },
+  "src/Testing/custom_zodb.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/Testing/custom_zodb.py",
+    "moduleLoc": 27,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 56
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_Testing_custom_zodb.py-c2581a",
+   "abox_asserted": true
+  },
+  "src/Testing/makerequest.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/Testing/makerequest.py",
+    "moduleLoc": 57,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 56
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_Testing_makerequest.py-821a93",
+   "abox_asserted": true
+  },
+  "src/Testing/testbrowser.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/Testing/testbrowser.py",
+    "moduleLoc": 59,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 33
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_Testing_testbrowser.py-419e8c",
+   "abox_asserted": true
+  },
+  "src/Testing/utils.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/Testing/utils.py",
+    "moduleLoc": 22,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 38
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_Testing_utils.py-e9e2ae",
+   "abox_asserted": true
+  },
+  "src/ZPublisher/BaseRequest.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/ZPublisher/BaseRequest.py",
+    "moduleLoc": 655,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 40
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_ZPublisher_BaseRequest.py-6bb50c",
+   "abox_asserted": true
+  },
+  "src/ZPublisher/BaseResponse.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/ZPublisher/BaseResponse.py",
+    "moduleLoc": 125,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 40
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_ZPublisher_BaseResponse.py-7a4ccf",
+   "abox_asserted": true
+  },
+  "src/ZPublisher/BeforeTraverse.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/ZPublisher/BeforeTraverse.py",
+    "moduleLoc": 130,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 33
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_ZPublisher_BeforeTraverse.py-3e2707",
+   "abox_asserted": true
+  },
+  "src/ZPublisher/Converters.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/ZPublisher/Converters.py",
+    "moduleLoc": 188,
+    "moduleCommitsInWindow": 1,
+    "moduleChangeMonthsInWindow": 1,
+    "moduleLinesChangedInWindow": 14,
+    "moduleRelChurnInWindow": 0.074468,
+    "moduleMonthsSinceLastChange": 10
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_ZPublisher_Converters.py-d851d0",
+   "abox_asserted": true
+  },
+  "src/ZPublisher/HTTPRangeSupport.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/ZPublisher/HTTPRangeSupport.py",
+    "moduleLoc": 111,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 56
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_ZPublisher_HTTPRangeSupport.py-126b4b",
+   "abox_asserted": true
+  },
+  "src/ZPublisher/HTTPRequest.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "src/ZPublisher/HTTPRequest.py",
+    "moduleLoc": 1491,
+    "moduleCommitsInWindow": 12,
+    "moduleChangeMonthsInWindow": 6,
+    "moduleLinesChangedInWindow": 919,
+    "moduleRelChurnInWindow": 0.616365,
+    "moduleMonthsSinceLastChange": 1
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_ZPublisher_HTTPRequest.py-df2bc0",
+   "abox_asserted": true
+  },
+  "src/ZPublisher/HTTPResponse.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/ZPublisher/HTTPResponse.py",
+    "moduleLoc": 1007,
+    "moduleCommitsInWindow": 1,
+    "moduleChangeMonthsInWindow": 1,
+    "moduleLinesChangedInWindow": 34,
+    "moduleRelChurnInWindow": 0.033764,
+    "moduleMonthsSinceLastChange": 11
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_ZPublisher_HTTPResponse.py-dec693",
+   "abox_asserted": true
+  },
+  "src/ZPublisher/Iterators.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/ZPublisher/Iterators.py",
+    "moduleLoc": 51,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 46
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_ZPublisher_Iterators.py-f8cc62",
+   "abox_asserted": true
+  },
+  "src/ZPublisher/WSGIPublisher.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "LowRelChurnModule",
+    "OftenChangedModule"
+   ],
+   "measures": {
+    "modulePath": "src/ZPublisher/WSGIPublisher.py",
+    "moduleLoc": 351,
+    "moduleCommitsInWindow": 3,
+    "moduleChangeMonthsInWindow": 3,
+    "moduleLinesChangedInWindow": 35,
+    "moduleRelChurnInWindow": 0.099715,
+    "moduleMonthsSinceLastChange": 2
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_ZPublisher_WSGIPublisher.py-7b44a8",
+   "abox_asserted": true
+  },
+  "src/ZPublisher/__init__.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/ZPublisher/__init__.py",
+    "moduleLoc": 27,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 46
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_ZPublisher___init__.py-d7ee21",
+   "abox_asserted": true
+  },
+  "src/ZPublisher/cookie.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/ZPublisher/cookie.py",
+    "moduleLoc": 264,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 16
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_ZPublisher_cookie.py-9d1319",
+   "abox_asserted": true
+  },
+  "src/ZPublisher/httpexceptions.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/ZPublisher/httpexceptions.py",
+    "moduleLoc": 29,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 46
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_ZPublisher_httpexceptions.py-d94f95",
+   "abox_asserted": true
+  },
+  "src/ZPublisher/interfaces.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/ZPublisher/interfaces.py",
+    "moduleLoc": 122,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 21
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_ZPublisher_interfaces.py-7bf03b",
+   "abox_asserted": true
+  },
+  "src/ZPublisher/mapply.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "RarelyChangedModule"
+   ],
+   "measures": {
+    "modulePath": "src/ZPublisher/mapply.py",
+    "moduleLoc": 87,
+    "moduleCommitsInWindow": 1,
+    "moduleChangeMonthsInWindow": 1,
+    "moduleLinesChangedInWindow": 19,
+    "moduleRelChurnInWindow": 0.218391,
+    "moduleMonthsSinceLastChange": 5
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_ZPublisher_mapply.py-1d701c",
+   "abox_asserted": true
+  },
+  "src/ZPublisher/pastefilter.py": {
+   "label": "ActiveModule",
+   "classes": [
+    "ActiveModule",
+    "HighRelChurnModule",
+    "RarelyChangedModule"
+   ],
+   "measures": {
+    "modulePath": "src/ZPublisher/pastefilter.py",
+    "moduleLoc": 103,
+    "moduleCommitsInWindow": 1,
+    "moduleChangeMonthsInWindow": 1,
+    "moduleLinesChangedInWindow": 123,
+    "moduleRelChurnInWindow": 1.194175,
+    "moduleMonthsSinceLastChange": 1
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_ZPublisher_pastefilter.py-53addf",
+   "abox_asserted": true
+  },
+  "src/ZPublisher/pubevents.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/ZPublisher/pubevents.py",
+    "moduleLoc": 47,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 46
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_ZPublisher_pubevents.py-6bfe0b",
+   "abox_asserted": true
+  },
+  "src/ZPublisher/utils.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/ZPublisher/utils.py",
+    "moduleLoc": 197,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 13
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_ZPublisher_utils.py-4a0415",
+   "abox_asserted": true
+  },
+  "src/ZPublisher/xmlrpc.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/ZPublisher/xmlrpc.py",
+    "moduleLoc": 184,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 22
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_ZPublisher_xmlrpc.py-c6c3a3",
+   "abox_asserted": true
+  },
+  "src/ZTUtils/Batch.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/ZTUtils/Batch.py",
+    "moduleLoc": 113,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 56
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_ZTUtils_Batch.py-c98ac5",
+   "abox_asserted": true
+  },
+  "src/ZTUtils/Lazy.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/ZTUtils/Lazy.py",
+    "moduleLoc": 277,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 46
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_ZTUtils_Lazy.py-e8166d",
+   "abox_asserted": true
+  },
+  "src/ZTUtils/SimpleTree.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/ZTUtils/SimpleTree.py",
+    "moduleLoc": 48,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 56
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_ZTUtils_SimpleTree.py-003bbb",
+   "abox_asserted": true
+  },
+  "src/ZTUtils/Tree.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/ZTUtils/Tree.py",
+    "moduleLoc": 269,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 45
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_ZTUtils_Tree.py-977040",
+   "abox_asserted": true
+  },
+  "src/ZTUtils/Zope.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/ZTUtils/Zope.py",
+    "moduleLoc": 288,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 23
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_ZTUtils_Zope.py-bc2194",
+   "abox_asserted": true
+  },
+  "src/ZTUtils/__init__.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/ZTUtils/__init__.py",
+    "moduleLoc": 31,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 37
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_ZTUtils___init__.py-3460b7",
+   "abox_asserted": true
+  },
+  "src/Zope2/App": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/Zope2/App",
+    "moduleLoc": 327,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 37
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_Zope2_App-15cb13",
+   "abox_asserted": true
+  },
+  "src/Zope2/Startup": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/Zope2/Startup",
+    "moduleLoc": 738,
+    "moduleCommitsInWindow": 1,
+    "moduleChangeMonthsInWindow": 1,
+    "moduleLinesChangedInWindow": 8,
+    "moduleRelChurnInWindow": 0.01084,
+    "moduleMonthsSinceLastChange": 4
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_Zope2_Startup-f06cf1",
+   "abox_asserted": true
+  },
+  "src/Zope2/__init__.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/Zope2/__init__.py",
+    "moduleLoc": 44,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 50
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_Zope2___init__.py-6c2a4f",
+   "abox_asserted": true
+  },
+  "src/Zope2/utilities": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/Zope2/utilities",
+    "moduleLoc": 549,
+    "moduleCommitsInWindow": 1,
+    "moduleChangeMonthsInWindow": 1,
+    "moduleLinesChangedInWindow": 15,
+    "moduleRelChurnInWindow": 0.027322,
+    "moduleMonthsSinceLastChange": 8
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_Zope2_utilities-500712",
+   "abox_asserted": true
+  },
+  "src/webdav/Collection.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/webdav/Collection.py",
+    "moduleLoc": 130,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 32
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_webdav_Collection.py-52d249",
+   "abox_asserted": true
+  },
+  "src/webdav/NullResource.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/webdav/NullResource.py",
+    "moduleLoc": 445,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 22
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_webdav_NullResource.py-a1171f",
+   "abox_asserted": true
+  },
+  "src/webdav/PropertySheet.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/webdav/PropertySheet.py",
+    "moduleLoc": 117,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 33
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_webdav_PropertySheet.py-636aad",
+   "abox_asserted": true
+  },
+  "src/webdav/PropertySheets.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/webdav/PropertySheets.py",
+    "moduleLoc": 120,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 32
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_webdav_PropertySheets.py-d0ef30",
+   "abox_asserted": true
+  },
+  "src/webdav/Resource.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/webdav/Resource.py",
+    "moduleLoc": 601,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 32
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_webdav_Resource.py-90dd79",
+   "abox_asserted": true
+  },
+  "src/webdav/__init__.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/webdav/__init__.py",
+    "moduleLoc": 31,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 43
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_webdav___init__.py-65d78e",
+   "abox_asserted": true
+  },
+  "src/webdav/common.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/webdav/common.py",
+    "moduleLoc": 120,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 40
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_webdav_common.py-f3dba2",
+   "abox_asserted": true
+  },
+  "src/webdav/davcmds.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/webdav/davcmds.py",
+    "moduleLoc": 511,
+    "moduleCommitsInWindow": 1,
+    "moduleChangeMonthsInWindow": 1,
+    "moduleLinesChangedInWindow": 2,
+    "moduleRelChurnInWindow": 0.003914,
+    "moduleMonthsSinceLastChange": 9
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_webdav_davcmds.py-19917c",
+   "abox_asserted": true
+  },
+  "src/webdav/hookable_PUT.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/webdav/hookable_PUT.py",
+    "moduleLoc": 10,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 45
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_webdav_hookable_PUT.py-9cd8f0",
+   "abox_asserted": true
+  },
+  "src/webdav/interfaces.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/webdav/interfaces.py",
+    "moduleLoc": 110,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 40
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_webdav_interfaces.py-c6a2c6",
+   "abox_asserted": true
+  },
+  "src/webdav/xmltools.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/webdav/xmltools.py",
+    "moduleLoc": 182,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 40
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_webdav_xmltools.py-93b7ea",
+   "abox_asserted": true
+  },
+  "src/zmi/__init__.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/zmi/__init__.py",
+    "moduleLoc": 1,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 69
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_zmi___init__.py-9b2189",
+   "abox_asserted": true
+  },
+  "src/zmi/styles": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "src/zmi/styles",
+    "moduleLoc": 60,
+    "moduleCommitsInWindow": 0,
+    "moduleChangeMonthsInWindow": 0,
+    "moduleLinesChangedInWindow": 0,
+    "moduleRelChurnInWindow": 0.0,
+    "moduleMonthsSinceLastChange": 33
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_zmi_styles-13eda6",
+   "abox_asserted": true
+  },
+  "util.py": {
+   "label": "StableModule",
+   "classes": [
+    "LowRelChurnModule",
+    "RarelyChangedModule",
+    "StableModule"
+   ],
+   "measures": {
+    "modulePath": "util.py",
+    "moduleLoc": 77,
+    "moduleCommitsInWindow": 2,
+    "moduleChangeMonthsInWindow": 2,
+    "moduleLinesChangedInWindow": 4,
+    "moduleRelChurnInWindow": 0.051948,
+    "moduleMonthsSinceLastChange": 2
+   },
+   "iri": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/util.py-17c987",
+   "abox_asserted": true
+  }
+ },
+ "explanations": {
+  "stage:GrowthStage": {
+   "class": "GrowthStage",
+   "individual": "http://senso-framework.org/data/zopefoundation__Zope-1183",
+   "attempts": 3,
+   "target": "http://senso-framework.org/data/zopefoundation__Zope-1183 type http://senso-framework.org/ontology/seo#GrowthStage",
+   "justifications": [],
+   "raw_text": "",
+   "seconds": 3.529018183995504,
+   "returncode": 1,
+   "error": "Exception in thread \"main\" org.mindswap.pellet.exceptions.InternalReasonerException: Adding type to a pruned node \"anon(51)\" restrictedDatatype(http://www.w3.org/2001/XMLSchema#decimal,[facet(http://www.w3.org/2001/XMLSchema#minExclusive,literal(0.15,(),http://www.w3.org/2001/XMLSchema#decimal))])\n\tat org.mindswap.pellet.Node.addType(Node.java:448)\n\tat org.mindswap.pellet.Literal.addType(Literal.java:257)\n\tat org.mindswap.pellet.tableau.completion.CompletionStrategy.addType(CompletionStrategy.java:438)\n\tat org.mindswap.pellet.tableau.completion.rule.SomeValuesRule.applySomeValuesRule(SomeValuesRule.java:180)\n\tat org.mindswap.pellet.tableau.completion.rule.SomeValuesRule.apply(SomeValuesRule.java:64)\n\tat org.mindswap.pellet.tableau.completion.rule.AbstractTableauRule.apply(AbstractTableauRule.java:64)\n\tat org.mindswap.pellet.tableau.completion.SROIQStrategy.complete(SROIQStrategy.java:157)\n\tat org.mindswap.pellet.ABox.isConsistent(ABox.java:1423)\n\tat org.mindswap.pellet.ABox.isSatisfiab"
+  },
+  "stage:RBServicingStage": {
+   "class": "RBServicingStage",
+   "individual": "http://senso-framework.org/data/zopefoundation__Zope-1183",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/zopefoundation__Zope-1183 type http://senso-framework.org/ontology/seo#RBServicingStage",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "subclass",
+       "subject": "MinorLocGrowth",
+       "text": "MinorLocGrowth subClassOf NonSubstantialChange"
+      },
+      {
+       "kind": "definition",
+       "subject": "RBServicingStage",
+       "text": "RBServicingStage equivalentTo NonSubstantialChange and RecentlyActive and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "RecentlyActive",
+       "text": "RecentlyActive equivalentTo A_monthsSinceLastCommit_lt_rb_dormancy_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locRelSenSlopeAnnual_lt_rb_min_rel_loc_growth_per_year",
+       "text": "A_locRelSenSlopeAnnual_lt_rb_min_rel_loc_growth_per_year equivalentTo locRelSenSlopeAnnual some decimal[< 0.05]"
+      },
+      {
+       "kind": "definition",
+       "subject": "MinorLocGrowth",
+       "text": "MinorLocGrowth equivalentTo A_locRelSenSlopeAnnual_lt_rb_min_rel_loc_growth_per_year and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_monthsSinceLastCommit_lt_rb_dormancy_months",
+       "text": "A_monthsSinceLastCommit_lt_rb_dormancy_months equivalentTo monthsSinceLastCommit some integer[< 12]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "zopefoundation__Zope-1183",
+       "prop": "monthsSinceLastCommit",
+       "value": 0,
+       "raw": "zopefoundation__Zope-1183 monthsSinceLastCommit 0"
+      },
+      {
+       "subject": "zopefoundation__Zope-1183",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "zopefoundation__Zope-1183 type SoftwareProject"
+      },
+      {
+       "subject": "zopefoundation__Zope-1183",
+       "prop": "locRelSenSlopeAnnual",
+       "value": 0.013994,
+       "raw": "zopefoundation__Zope-1183 locRelSenSlopeAnnual 0.013994"
+      }
+     ],
+     "closures": [],
+     "raw": "zopefoundation__Zope-1183 monthsSinceLastCommit 0\nMinorLocGrowth subClassOf NonSubstantialChange\nzopefoundation__Zope-1183 type SoftwareProject\nzopefoundation__Zope-1183 locRelSenSlopeAnnual 0.013994\nRBServicingStage equivalentTo NonSubstantialChange and RecentlyActive and SoftwareProject\nRecentlyActive equivalentTo A_monthsSinceLastCommit_lt_rb_dormancy_months and SoftwareProject\nA_locRelSenSlopeAnnual_lt_rb_min_rel_loc_growth_per_year equivalentTo locRelSenSlopeAnnual some decimal[< 0.05]\nMinorLocGrowth equivalentTo A_locRelSenSlopeAnnual_lt_rb_min_rel_loc_growth_per_year and SoftwareProject\nA_monthsSinceLastCommit_lt_rb_dormancy_months equivalentTo monthsSinceLastCommit some integer[< 12]"
+    }
+   ],
+   "raw_text": "Axiom: zopefoundation__Zope-1183 type RBServicingStage\n\nExplanation(s): \n1)   zopefoundation__Zope-1183 monthsSinceLastCommit 0\n     MinorLocGrowth subClassOf NonSubstantialChange\n     zopefoundation__Zope-1183 type SoftwareProject\n     zopefoundation__Zope-1183 locRelSenSlopeAnnual 0.013994\n     RBServicingStage equivalentTo NonSubstantialChange\n                                   and RecentlyActive\n                                   and SoftwareProject\n     RecentlyActive equivalentTo A_monthsSinceLastCommit_lt_rb_dormancy_months\n                                 and SoftwareProject\n     A_locRelSenSlopeAnnual_lt_rb_min_rel_loc_growth_per_year equivalentTo locRelSenSlopeAnnual some decimal[< 0.05]\n     MinorLocGrowth equivalentTo A_locRelSenSlopeAnnual_lt_rb_min_rel_loc_growth_per_year\n                                 and SoftwareProject\n     A_monthsSinceLastCommit_lt_rb_dormancy_months equivalentTo monthsSinceLastCommit some integer[< 12]\n\n\n",
+   "seconds": 3.4471857079770416,
+   "returncode": 0,
+   "error": null
+  },
+  "lawI": {
+   "class": "LawIConformant",
+   "individual": "http://senso-framework.org/data/zopefoundation__Zope-1183",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/zopefoundation__Zope-1183 type http://senso-framework.org/ontology/seo#LawIConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law1_min_months",
+       "text": "A_monthsObserved_ge_p_law1_min_months equivalentTo monthsObserved some integer[>= 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawIConformant",
+       "text": "LawIConformant equivalentTo A_activeMonthRatio_ge_p_law1_active_ratio and A_monthsObserved_ge_p_law1_min_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_activeMonthRatio_ge_p_law1_active_ratio",
+       "text": "A_activeMonthRatio_ge_p_law1_active_ratio equivalentTo activeMonthRatio some decimal[>= 0.5]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "zopefoundation__Zope-1183",
+       "prop": "activeMonthRatio",
+       "value": 0.944444,
+       "raw": "zopefoundation__Zope-1183 activeMonthRatio 0.944444"
+      },
+      {
+       "subject": "zopefoundation__Zope-1183",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "zopefoundation__Zope-1183 monthsObserved 36"
+      },
+      {
+       "subject": "zopefoundation__Zope-1183",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "zopefoundation__Zope-1183 type SoftwareProject"
+      }
+     ],
+     "closures": [],
+     "raw": "zopefoundation__Zope-1183 activeMonthRatio 0.944444\nzopefoundation__Zope-1183 monthsObserved 36\nzopefoundation__Zope-1183 type SoftwareProject\nA_monthsObserved_ge_p_law1_min_months equivalentTo monthsObserved some integer[>= 2]\nLawIConformant equivalentTo A_activeMonthRatio_ge_p_law1_active_ratio and A_monthsObserved_ge_p_law1_min_months and SoftwareProject\nA_activeMonthRatio_ge_p_law1_active_ratio equivalentTo activeMonthRatio some decimal[>= 0.5]"
+    }
+   ],
+   "raw_text": "Axiom: zopefoundation__Zope-1183 type LawIConformant\n\nExplanation(s): \n1)   zopefoundation__Zope-1183 activeMonthRatio 0.944444\n     zopefoundation__Zope-1183 monthsObserved 36\n     zopefoundation__Zope-1183 type SoftwareProject\n     A_monthsObserved_ge_p_law1_min_months equivalentTo monthsObserved some integer[>= 2]\n     LawIConformant equivalentTo A_activeMonthRatio_ge_p_law1_active_ratio\n                                 and A_monthsObserved_ge_p_law1_min_months\n                                 and SoftwareProject\n     A_activeMonthRatio_ge_p_law1_active_ratio equivalentTo activeMonthRatio some decimal[>= 0.5]\n\n\n",
+   "seconds": 3.598479100037366,
+   "returncode": 0,
+   "error": null
+  },
+  "lawIII": {
+   "class": "LawIIIConformant",
+   "individual": "http://senso-framework.org/data/zopefoundation__Zope-1183",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/zopefoundation__Zope-1183 type http://senso-framework.org/ontology/seo#LawIIIConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law3_min_months",
+       "text": "A_monthsObserved_ge_p_law3_min_months equivalentTo monthsObserved some integer[>= 6]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawIIIConformant",
+       "text": "LawIIIConformant equivalentTo A_churnCV_lt_p_law3_churn_cv and A_monthsObserved_ge_p_law3_min_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_churnCV_lt_p_law3_churn_cv",
+       "text": "A_churnCV_lt_p_law3_churn_cv equivalentTo churnCV some decimal[< 2.0]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "zopefoundation__Zope-1183",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "zopefoundation__Zope-1183 monthsObserved 36"
+      },
+      {
+       "subject": "zopefoundation__Zope-1183",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "zopefoundation__Zope-1183 type SoftwareProject"
+      },
+      {
+       "subject": "zopefoundation__Zope-1183",
+       "prop": "churnCV",
+       "value": 1.501983,
+       "raw": "zopefoundation__Zope-1183 churnCV 1.501983"
+      }
+     ],
+     "closures": [],
+     "raw": "A_monthsObserved_ge_p_law3_min_months equivalentTo monthsObserved some integer[>= 6]\nzopefoundation__Zope-1183 monthsObserved 36\nzopefoundation__Zope-1183 type SoftwareProject\nLawIIIConformant equivalentTo A_churnCV_lt_p_law3_churn_cv and A_monthsObserved_ge_p_law3_min_months and SoftwareProject\nA_churnCV_lt_p_law3_churn_cv equivalentTo churnCV some decimal[< 2.0]\nzopefoundation__Zope-1183 churnCV 1.501983"
+    }
+   ],
+   "raw_text": "Axiom: zopefoundation__Zope-1183 type LawIIIConformant\n\nExplanation(s): \n1)   A_monthsObserved_ge_p_law3_min_months equivalentTo monthsObserved some integer[>= 6]\n     zopefoundation__Zope-1183 monthsObserved 36\n     zopefoundation__Zope-1183 type SoftwareProject\n     LawIIIConformant equivalentTo A_churnCV_lt_p_law3_churn_cv\n                                   and A_monthsObserved_ge_p_law3_min_months\n                                   and SoftwareProject\n     A_churnCV_lt_p_law3_churn_cv equivalentTo churnCV some decimal[< 2.0]\n     zopefoundation__Zope-1183 churnCV 1.501983\n\n\n",
+   "seconds": 3.506437481031753,
+   "returncode": 0,
+   "error": null
+  },
+  "lawIV": {
+   "class": "LawIVConformant",
+   "individual": "http://senso-framework.org/data/zopefoundation__Zope-1183",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/zopefoundation__Zope-1183 type http://senso-framework.org/ontology/seo#LawIVConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law4_min_months",
+       "text": "A_monthsObserved_ge_p_law4_min_months equivalentTo monthsObserved some integer[>= 6]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawIVConformant",
+       "text": "LawIVConformant equivalentTo A_commitCountCV_lt_p_law4_commit_cv and A_monthsObserved_ge_p_law4_min_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_commitCountCV_lt_p_law4_commit_cv",
+       "text": "A_commitCountCV_lt_p_law4_commit_cv equivalentTo commitCountCV some decimal[< 1.5]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "zopefoundation__Zope-1183",
+       "prop": "commitCountCV",
+       "value": 0.85613,
+       "raw": "zopefoundation__Zope-1183 commitCountCV 0.85613"
+      },
+      {
+       "subject": "zopefoundation__Zope-1183",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "zopefoundation__Zope-1183 monthsObserved 36"
+      },
+      {
+       "subject": "zopefoundation__Zope-1183",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "zopefoundation__Zope-1183 type SoftwareProject"
+      }
+     ],
+     "closures": [],
+     "raw": "A_monthsObserved_ge_p_law4_min_months equivalentTo monthsObserved some integer[>= 6]\nzopefoundation__Zope-1183 commitCountCV 0.85613\nzopefoundation__Zope-1183 monthsObserved 36\nzopefoundation__Zope-1183 type SoftwareProject\nLawIVConformant equivalentTo A_commitCountCV_lt_p_law4_commit_cv and A_monthsObserved_ge_p_law4_min_months and SoftwareProject\nA_commitCountCV_lt_p_law4_commit_cv equivalentTo commitCountCV some decimal[< 1.5]"
+    }
+   ],
+   "raw_text": "Axiom: zopefoundation__Zope-1183 type LawIVConformant\n\nExplanation(s): \n1)   A_monthsObserved_ge_p_law4_min_months equivalentTo monthsObserved some integer[>= 6]\n     zopefoundation__Zope-1183 commitCountCV 0.85613\n     zopefoundation__Zope-1183 monthsObserved 36\n     zopefoundation__Zope-1183 type SoftwareProject\n     LawIVConformant equivalentTo A_commitCountCV_lt_p_law4_commit_cv\n                                  and A_monthsObserved_ge_p_law4_min_months\n                                  and SoftwareProject\n     A_commitCountCV_lt_p_law4_commit_cv equivalentTo commitCountCV some decimal[< 1.5]\n\n\n",
+   "seconds": 4.551411076972727,
+   "returncode": 0,
+   "error": null
+  },
+  "lawV": {
+   "class": "LawVConformant",
+   "individual": "http://senso-framework.org/data/zopefoundation__Zope-1183",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/zopefoundation__Zope-1183 type http://senso-framework.org/ontology/seo#LawVConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "LawVConformant",
+       "text": "LawVConformant equivalentTo A_linesAddedCV_lt_p_law5_additions_cv and A_monthsObserved_ge_p_law5_min_months and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_linesAddedCV_lt_p_law5_additions_cv",
+       "text": "A_linesAddedCV_lt_p_law5_additions_cv equivalentTo linesAddedCV some decimal[< 2.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law5_min_months",
+       "text": "A_monthsObserved_ge_p_law5_min_months equivalentTo monthsObserved some integer[>= 4]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "zopefoundation__Zope-1183",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "zopefoundation__Zope-1183 monthsObserved 36"
+      },
+      {
+       "subject": "zopefoundation__Zope-1183",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "zopefoundation__Zope-1183 type SoftwareProject"
+      },
+      {
+       "subject": "zopefoundation__Zope-1183",
+       "prop": "linesAddedCV",
+       "value": 1.476045,
+       "raw": "zopefoundation__Zope-1183 linesAddedCV 1.476045"
+      }
+     ],
+     "closures": [],
+     "raw": "zopefoundation__Zope-1183 monthsObserved 36\nzopefoundation__Zope-1183 type SoftwareProject\nLawVConformant equivalentTo A_linesAddedCV_lt_p_law5_additions_cv and A_monthsObserved_ge_p_law5_min_months and SoftwareProject\nA_linesAddedCV_lt_p_law5_additions_cv equivalentTo linesAddedCV some decimal[< 2.0]\nA_monthsObserved_ge_p_law5_min_months equivalentTo monthsObserved some integer[>= 4]\nzopefoundation__Zope-1183 linesAddedCV 1.476045"
+    }
+   ],
+   "raw_text": "Axiom: zopefoundation__Zope-1183 type LawVConformant\n\nExplanation(s): \n1)   zopefoundation__Zope-1183 monthsObserved 36\n     zopefoundation__Zope-1183 type SoftwareProject\n     LawVConformant equivalentTo A_linesAddedCV_lt_p_law5_additions_cv\n                                 and A_monthsObserved_ge_p_law5_min_months\n                                 and SoftwareProject\n     A_linesAddedCV_lt_p_law5_additions_cv equivalentTo linesAddedCV some decimal[< 2.0]\n     A_monthsObserved_ge_p_law5_min_months equivalentTo monthsObserved some integer[>= 4]\n     zopefoundation__Zope-1183 linesAddedCV 1.476045\n\n\n",
+   "seconds": 6.405978613998741,
+   "returncode": 0,
+   "error": null
+  },
+  "lawVI": {
+   "class": "LawVIConformant",
+   "individual": "http://senso-framework.org/data/zopefoundation__Zope-1183",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/zopefoundation__Zope-1183 type http://senso-framework.org/ontology/seo#LawVIConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "subclass",
+       "subject": "GrowthStage",
+       "text": "GrowthStage subClassOf LawVIConformant"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKTau_gt_0",
+       "text": "A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "GrowthStage",
+       "text": "GrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locSeriesLength_ge_mk_min_months",
+       "text": "A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_locMKpValue_lt_mk_alpha",
+       "text": "A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "zopefoundation__Zope-1183",
+       "prop": "locMKpValue",
+       "value": 0.0,
+       "raw": "zopefoundation__Zope-1183 locMKpValue 0.0"
+      },
+      {
+       "subject": "zopefoundation__Zope-1183",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "zopefoundation__Zope-1183 type SoftwareProject"
+      },
+      {
+       "subject": "zopefoundation__Zope-1183",
+       "prop": "locSeriesLength",
+       "value": 36,
+       "raw": "zopefoundation__Zope-1183 locSeriesLength 36"
+      },
+      {
+       "subject": "zopefoundation__Zope-1183",
+       "prop": "locMKTau",
+       "value": 0.973016,
+       "raw": "zopefoundation__Zope-1183 locMKTau 0.973016"
+      }
+     ],
+     "closures": [],
+     "raw": "GrowthStage subClassOf LawVIConformant\nA_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\nA_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\nzopefoundation__Zope-1183 locMKpValue 0.0\nzopefoundation__Zope-1183 type SoftwareProject\nGrowthStage equivalentTo A_locMKTau_gt_0 and A_locMKpValue_lt_mk_alpha and MKApplicable and SoftwareProject\nA_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]\nzopefoundation__Zope-1183 locSeriesLength 36\nzopefoundation__Zope-1183 locMKTau 0.973016\nA_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]"
+    }
+   ],
+   "raw_text": "Axiom: zopefoundation__Zope-1183 type LawVIConformant\n\nExplanation(s): \n1)   GrowthStage subClassOf LawVIConformant\n     A_locSeriesLength_ge_mk_min_months equivalentTo MKApplicable\n     A_locMKTau_gt_0 equivalentTo locMKTau some decimal[> 0.0]\n     zopefoundation__Zope-1183 locMKpValue 0.0\n     zopefoundation__Zope-1183 type SoftwareProject\n     GrowthStage equivalentTo A_locMKTau_gt_0\n                              and A_locMKpValue_lt_mk_alpha\n                              and MKApplicable\n                              and SoftwareProject\n     A_locSeriesLength_ge_mk_min_months equivalentTo locSeriesLength some integer[>= 4]\n     zopefoundation__Zope-1183 locSeriesLength 36\n     zopefoundation__Zope-1183 locMKTau 0.973016\n     A_locMKpValue_lt_mk_alpha equivalentTo locMKpValue some decimal[< 0.05]\n\n\n",
+   "seconds": 7.191110778017901,
+   "returncode": 0,
+   "error": null
+  },
+  "lawVII": {
+   "class": "LawVIINonConformant",
+   "individual": "http://senso-framework.org/data/zopefoundation__Zope-1183",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/zopefoundation__Zope-1183 type http://senso-framework.org/ontology/seo#LawVIINonConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_bugFixRatioFirstHalf_gt_0",
+       "text": "A_bugFixRatioFirstHalf_gt_0 equivalentTo bugFixRatioFirstHalf some decimal[> 0.0]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_bugFixHalfRatio_lt_p_law7_tolerance",
+       "text": "A_bugFixHalfRatio_lt_p_law7_tolerance equivalentTo bugFixHalfRatio some decimal[< 0.9]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_activeMonthCount_ge_p_law7_min_active_months",
+       "text": "A_activeMonthCount_ge_p_law7_min_active_months equivalentTo activeMonthCount some integer[>= 4]"
+      },
+      {
+       "kind": "definition",
+       "subject": "LawVIINonConformant",
+       "text": "LawVIINonConformant equivalentTo A_activeMonthCount_ge_p_law7_min_active_months and A_bugFixHalfRatio_lt_p_law7_tolerance and A_bugFixRatioFirstHalf_gt_0 and SoftwareProject"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "zopefoundation__Zope-1183",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "zopefoundation__Zope-1183 type SoftwareProject"
+      },
+      {
+       "subject": "zopefoundation__Zope-1183",
+       "prop": "bugFixRatioFirstHalf",
+       "value": 0.223349,
+       "raw": "zopefoundation__Zope-1183 bugFixRatioFirstHalf 0.223349"
+      },
+      {
+       "subject": "zopefoundation__Zope-1183",
+       "prop": "activeMonthCount",
+       "value": 34,
+       "raw": "zopefoundation__Zope-1183 activeMonthCount 34"
+      },
+      {
+       "subject": "zopefoundation__Zope-1183",
+       "prop": "bugFixHalfRatio",
+       "value": 0.586047,
+       "raw": "zopefoundation__Zope-1183 bugFixHalfRatio 0.586047"
+      }
+     ],
+     "closures": [],
+     "raw": "zopefoundation__Zope-1183 type SoftwareProject\nA_bugFixRatioFirstHalf_gt_0 equivalentTo bugFixRatioFirstHalf some decimal[> 0.0]\nA_bugFixHalfRatio_lt_p_law7_tolerance equivalentTo bugFixHalfRatio some decimal[< 0.9]\nA_activeMonthCount_ge_p_law7_min_active_months equivalentTo activeMonthCount some integer[>= 4]\nzopefoundation__Zope-1183 bugFixRatioFirstHalf 0.223349\nLawVIINonConformant equivalentTo A_activeMonthCount_ge_p_law7_min_active_months and A_bugFixHalfRatio_lt_p_law7_tolerance and A_bugFixRatioFirstHalf_gt_0 and SoftwareProject\nzopefoundation__Zope-1183 activeMonthCount 34\nzopefoundation__Zope-1183 bugFixHalfRatio 0.586047"
+    }
+   ],
+   "raw_text": "Axiom: zopefoundation__Zope-1183 type LawVIINonConformant\n\nExplanation(s): \n1)   zopefoundation__Zope-1183 type SoftwareProject\n     A_bugFixRatioFirstHalf_gt_0 equivalentTo bugFixRatioFirstHalf some decimal[> 0.0]\n     A_bugFixHalfRatio_lt_p_law7_tolerance equivalentTo bugFixHalfRatio some decimal[< 0.9]\n     A_activeMonthCount_ge_p_law7_min_active_months equivalentTo activeMonthCount some integer[>= 4]\n     zopefoundation__Zope-1183 bugFixRatioFirstHalf 0.223349\n     LawVIINonConformant equivalentTo A_activeMonthCount_ge_p_law7_min_active_months\n                                      and A_bugFixHalfRatio_lt_p_law7_tolerance\n                                      and A_bugFixRatioFirstHalf_gt_0\n                                      and SoftwareProject\n     zopefoundation__Zope-1183 activeMonthCount 34\n     zopefoundation__Zope-1183 bugFixHalfRatio 0.586047\n\n\n",
+   "seconds": 6.56104196398519,
+   "returncode": 0,
+   "error": null
+  },
+  "lawVIII": {
+   "class": "LawVIIINonConformant",
+   "individual": "http://senso-framework.org/data/zopefoundation__Zope-1183",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/zopefoundation__Zope-1183 type http://senso-framework.org/ontology/seo#LawVIIINonConformant",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "LawVIIINonConformantNoMerge",
+       "text": "LawVIIINonConformantNoMerge equivalentTo A_monthsObserved_ge_p_law8_min_months and MergeInactive and SoftwareProject"
+      },
+      {
+       "kind": "subclass",
+       "subject": "LawVIIINonConformantNoMerge",
+       "text": "LawVIIINonConformantNoMerge subClassOf LawVIIINonConformant"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_monthsObserved_ge_p_law8_min_months",
+       "text": "A_monthsObserved_ge_p_law8_min_months equivalentTo monthsObserved some integer[>= 6]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_mergeMonthRatio_le_p_law8_merge_ratio",
+       "text": "A_mergeMonthRatio_le_p_law8_merge_ratio equivalentTo MergeInactive"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_mergeMonthRatio_le_p_law8_merge_ratio",
+       "text": "A_mergeMonthRatio_le_p_law8_merge_ratio equivalentTo mergeMonthRatio some decimal[<= 0.3]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "zopefoundation__Zope-1183",
+       "prop": "monthsObserved",
+       "value": 36,
+       "raw": "zopefoundation__Zope-1183 monthsObserved 36"
+      },
+      {
+       "subject": "zopefoundation__Zope-1183",
+       "prop": "mergeMonthRatio",
+       "value": 0.0,
+       "raw": "zopefoundation__Zope-1183 mergeMonthRatio 0.0"
+      },
+      {
+       "subject": "zopefoundation__Zope-1183",
+       "prop": "type",
+       "value": "SoftwareProject",
+       "raw": "zopefoundation__Zope-1183 type SoftwareProject"
+      }
+     ],
+     "closures": [],
+     "raw": "zopefoundation__Zope-1183 monthsObserved 36\nLawVIIINonConformantNoMerge equivalentTo A_monthsObserved_ge_p_law8_min_months and MergeInactive and SoftwareProject\nLawVIIINonConformantNoMerge subClassOf LawVIIINonConformant\nzopefoundation__Zope-1183 mergeMonthRatio 0.0\nzopefoundation__Zope-1183 type SoftwareProject\nA_monthsObserved_ge_p_law8_min_months equivalentTo monthsObserved some integer[>= 6]\nA_mergeMonthRatio_le_p_law8_merge_ratio equivalentTo MergeInactive\nA_mergeMonthRatio_le_p_law8_merge_ratio equivalentTo mergeMonthRatio some decimal[<= 0.3]"
+    }
+   ],
+   "raw_text": "Axiom: zopefoundation__Zope-1183 type LawVIIINonConformant\n\nExplanation(s): \n1)   zopefoundation__Zope-1183 monthsObserved 36\n     LawVIIINonConformantNoMerge equivalentTo A_monthsObserved_ge_p_law8_min_months\n                                              and MergeInactive\n                                              and SoftwareProject\n     LawVIIINonConformantNoMerge subClassOf LawVIIINonConformant\n     zopefoundation__Zope-1183 mergeMonthRatio 0.0\n     zopefoundation__Zope-1183 type SoftwareProject\n     A_monthsObserved_ge_p_law8_min_months equivalentTo monthsObserved some integer[>= 6]\n     A_mergeMonthRatio_le_p_law8_merge_ratio equivalentTo MergeInactive\n     A_mergeMonthRatio_le_p_law8_merge_ratio equivalentTo mergeMonthRatio some decimal[<= 0.3]\n\n\n",
+   "seconds": 7.770275507995393,
+   "returncode": 0,
+   "error": null
+  },
+  "module:src/Testing/ZopeTestCase": {
+   "class": "StableModule",
+   "individual": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_Testing_ZopeTestCase-2a2a2d",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_Testing_ZopeTestCase-2a2a2d type http://senso-framework.org/ontology/seo#StableModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "StableModule",
+       "text": "StableModule equivalentTo LowRelChurnModule and RarelyChangedModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "LowRelChurnModule",
+       "text": "LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "definition",
+       "subject": "RarelyChangedModule",
+       "text": "RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "src_Testing_ZopeTestCase-2a2a2d",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 1,
+       "raw": "src_Testing_ZopeTestCase-2a2a2d moduleChangeMonthsInWindow 1"
+      },
+      {
+       "subject": "src_Testing_ZopeTestCase-2a2a2d",
+       "prop": "type",
+       "value": "Module",
+       "raw": "src_Testing_ZopeTestCase-2a2a2d type Module"
+      },
+      {
+       "subject": "src_Testing_ZopeTestCase-2a2a2d",
+       "prop": "moduleRelChurnInWindow",
+       "value": 0.037402,
+       "raw": "src_Testing_ZopeTestCase-2a2a2d moduleRelChurnInWindow 0.037402"
+      }
+     ],
+     "closures": [],
+     "raw": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\nsrc_Testing_ZopeTestCase-2a2a2d moduleChangeMonthsInWindow 1\nA_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\nsrc_Testing_ZopeTestCase-2a2a2d type Module\nStableModule equivalentTo LowRelChurnModule and RarelyChangedModule\nLowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module\nRarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module\nsrc_Testing_ZopeTestCase-2a2a2d moduleRelChurnInWindow 0.037402"
+    }
+   ],
+   "raw_text": "Axiom: src_Testing_ZopeTestCase-2a2a2d type StableModule\n\nExplanation(s): \n1)   A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\n     src_Testing_ZopeTestCase-2a2a2d moduleChangeMonthsInWindow 1\n     A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\n     src_Testing_ZopeTestCase-2a2a2d type Module\n     StableModule equivalentTo LowRelChurnModule\n                               and RarelyChangedModule\n     LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn\n                                    and Module\n     RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months\n                                      and Module\n     src_Testing_ZopeTestCase-2a2a2d moduleRelChurnInWindow 0.037402\n\n\n",
+   "seconds": 7.481222400965635,
+   "returncode": 0,
+   "error": null
+  },
+  "module:src/Products/PageTemplates": {
+   "class": "StableModule",
+   "individual": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_Products_PageTemplates-a9bc38",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_Products_PageTemplates-a9bc38 type http://senso-framework.org/ontology/seo#StableModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "StableModule",
+       "text": "StableModule equivalentTo LowRelChurnModule and RarelyChangedModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "LowRelChurnModule",
+       "text": "LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "definition",
+       "subject": "RarelyChangedModule",
+       "text": "RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "src_Products_PageTemplates-a9bc38",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 1,
+       "raw": "src_Products_PageTemplates-a9bc38 moduleChangeMonthsInWindow 1"
+      },
+      {
+       "subject": "src_Products_PageTemplates-a9bc38",
+       "prop": "moduleRelChurnInWindow",
+       "value": 0.01241,
+       "raw": "src_Products_PageTemplates-a9bc38 moduleRelChurnInWindow 0.01241"
+      },
+      {
+       "subject": "src_Products_PageTemplates-a9bc38",
+       "prop": "type",
+       "value": "Module",
+       "raw": "src_Products_PageTemplates-a9bc38 type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\nsrc_Products_PageTemplates-a9bc38 moduleChangeMonthsInWindow 1\nA_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\nsrc_Products_PageTemplates-a9bc38 moduleRelChurnInWindow 0.01241\nStableModule equivalentTo LowRelChurnModule and RarelyChangedModule\nLowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module\nRarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module\nsrc_Products_PageTemplates-a9bc38 type Module"
+    }
+   ],
+   "raw_text": "Axiom: src_Products_PageTemplates-a9bc38 type StableModule\n\nExplanation(s): \n1)   A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\n     src_Products_PageTemplates-a9bc38 moduleChangeMonthsInWindow 1\n     A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\n     src_Products_PageTemplates-a9bc38 moduleRelChurnInWindow 0.01241\n     StableModule equivalentTo LowRelChurnModule\n                               and RarelyChangedModule\n     LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn\n                                    and Module\n     RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months\n                                      and Module\n     src_Products_PageTemplates-a9bc38 type Module\n\n\n",
+   "seconds": 3.2287185699678957,
+   "returncode": 0,
+   "error": null
+  },
+  "module:src/Products/Five": {
+   "class": "StableModule",
+   "individual": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_Products_Five-44cab3",
+   "attempts": 3,
+   "target": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_Products_Five-44cab3 type http://senso-framework.org/ontology/seo#StableModule",
+   "justifications": [],
+   "raw_text": "",
+   "seconds": 3.1705582499853335,
+   "returncode": 1,
+   "error": "Exception in thread \"main\" org.mindswap.pellet.exceptions.InternalReasonerException: Adding type to a pruned node \"anon(50)\" restrictedDatatype(http://www.w3.org/2001/XMLSchema#decimal,[facet(http://www.w3.org/2001/XMLSchema#minExclusive,literal(0.15,(),http://www.w3.org/2001/XMLSchema#decimal))])\n\tat org.mindswap.pellet.Node.addType(Node.java:448)\n\tat org.mindswap.pellet.Literal.addType(Literal.java:257)\n\tat org.mindswap.pellet.tableau.completion.CompletionStrategy.addType(CompletionStrategy.java:438)\n\tat org.mindswap.pellet.tableau.completion.rule.SomeValuesRule.applySomeValuesRule(SomeValuesRule.java:180)\n\tat org.mindswap.pellet.tableau.completion.rule.SomeValuesRule.apply(SomeValuesRule.java:64)\n\tat org.mindswap.pellet.tableau.completion.rule.AbstractTableauRule.apply(AbstractTableauRule.java:64)\n\tat org.mindswap.pellet.tableau.completion.SROIQStrategy.complete(SROIQStrategy.java:157)\n\tat org.mindswap.pellet.ABox.isConsistent(ABox.java:1423)\n\tat org.mindswap.pellet.ABox.isSatisfiab"
+  },
+  "module:src/ZPublisher/HTTPRequest.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_ZPublisher_HTTPRequest.py-df2bc0",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_ZPublisher_HTTPRequest.py-df2bc0 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "src_ZPublisher_HTTPRequest.py-df2bc0",
+       "prop": "type",
+       "value": "Module",
+       "raw": "src_ZPublisher_HTTPRequest.py-df2bc0 type Module"
+      },
+      {
+       "subject": "src_ZPublisher_HTTPRequest.py-df2bc0",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 6,
+       "raw": "src_ZPublisher_HTTPRequest.py-df2bc0 moduleChangeMonthsInWindow 6"
+      }
+     ],
+     "closures": [],
+     "raw": "src_ZPublisher_HTTPRequest.py-df2bc0 type Module\nA_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\nOftenChangedModule subClassOf ActiveModule\nsrc_ZPublisher_HTTPRequest.py-df2bc0 moduleChangeMonthsInWindow 6"
+    }
+   ],
+   "raw_text": "Axiom: src_ZPublisher_HTTPRequest.py-df2bc0 type ActiveModule\n\nExplanation(s): \n1)   src_ZPublisher_HTTPRequest.py-df2bc0 type Module\n     A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     OftenChangedModule subClassOf ActiveModule\n     src_ZPublisher_HTTPRequest.py-df2bc0 moduleChangeMonthsInWindow 6\n\n\n",
+   "seconds": 3.2390899999882095,
+   "returncode": 0,
+   "error": null
+  },
+  "module:src/ZPublisher/HTTPResponse.py": {
+   "class": "StableModule",
+   "individual": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_ZPublisher_HTTPResponse.py-dec693",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_ZPublisher_HTTPResponse.py-dec693 type http://senso-framework.org/ontology/seo#StableModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "StableModule",
+       "text": "StableModule equivalentTo LowRelChurnModule and RarelyChangedModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "LowRelChurnModule",
+       "text": "LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "definition",
+       "subject": "RarelyChangedModule",
+       "text": "RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "src_ZPublisher_HTTPResponse.py-dec693",
+       "prop": "moduleRelChurnInWindow",
+       "value": 0.033764,
+       "raw": "src_ZPublisher_HTTPResponse.py-dec693 moduleRelChurnInWindow 0.033764"
+      },
+      {
+       "subject": "src_ZPublisher_HTTPResponse.py-dec693",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 1,
+       "raw": "src_ZPublisher_HTTPResponse.py-dec693 moduleChangeMonthsInWindow 1"
+      },
+      {
+       "subject": "src_ZPublisher_HTTPResponse.py-dec693",
+       "prop": "type",
+       "value": "Module",
+       "raw": "src_ZPublisher_HTTPResponse.py-dec693 type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\nsrc_ZPublisher_HTTPResponse.py-dec693 moduleRelChurnInWindow 0.033764\nA_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\nsrc_ZPublisher_HTTPResponse.py-dec693 moduleChangeMonthsInWindow 1\nStableModule equivalentTo LowRelChurnModule and RarelyChangedModule\nsrc_ZPublisher_HTTPResponse.py-dec693 type Module\nLowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module\nRarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module"
+    }
+   ],
+   "raw_text": "Axiom: src_ZPublisher_HTTPResponse.py-dec693 type StableModule\n\nExplanation(s): \n1)   A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\n     src_ZPublisher_HTTPResponse.py-dec693 moduleRelChurnInWindow 0.033764\n     A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\n     src_ZPublisher_HTTPResponse.py-dec693 moduleChangeMonthsInWindow 1\n     StableModule equivalentTo LowRelChurnModule\n                               and RarelyChangedModule\n     src_ZPublisher_HTTPResponse.py-dec693 type Module\n     LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn\n                                    and Module\n     RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months\n                                      and Module\n\n\n",
+   "seconds": 3.384645404003095,
+   "returncode": 0,
+   "error": null
+  },
+  "module:src/OFS/Image.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_OFS_Image.py-3bef40",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_OFS_Image.py-3bef40 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "HighRelChurnModule",
+       "text": "HighRelChurnModule subClassOf ActiveModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "src_OFS_Image.py-3bef40",
+       "prop": "type",
+       "value": "Module",
+       "raw": "src_OFS_Image.py-3bef40 type Module"
+      },
+      {
+       "subject": "src_OFS_Image.py-3bef40",
+       "prop": "moduleRelChurnInWindow",
+       "value": 0.162814,
+       "raw": "src_OFS_Image.py-3bef40 moduleRelChurnInWindow 0.162814"
+      }
+     ],
+     "closures": [],
+     "raw": "HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn and Module\nsrc_OFS_Image.py-3bef40 type Module\nHighRelChurnModule subClassOf ActiveModule\nsrc_OFS_Image.py-3bef40 moduleRelChurnInWindow 0.162814\nA_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]"
+    }
+   ],
+   "raw_text": "Axiom: src_OFS_Image.py-3bef40 type ActiveModule\n\nExplanation(s): \n1)   HighRelChurnModule equivalentTo A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn\n                                     and Module\n     src_OFS_Image.py-3bef40 type Module\n     HighRelChurnModule subClassOf ActiveModule\n     src_OFS_Image.py-3bef40 moduleRelChurnInWindow 0.162814\n     A_moduleRelChurnInWindow_ge_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[>= 0.1]\n\n\n",
+   "seconds": 3.2669685789733194,
+   "returncode": 0,
+   "error": null
+  },
+  "module:src/OFS/interfaces.py": {
+   "class": "StableModule",
+   "individual": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_OFS_interfaces.py-234edf",
+   "attempts": 3,
+   "target": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_OFS_interfaces.py-234edf type http://senso-framework.org/ontology/seo#StableModule",
+   "justifications": [],
+   "raw_text": "",
+   "seconds": 3.2255369359627366,
+   "returncode": 1,
+   "error": "Exception in thread \"main\" org.mindswap.pellet.exceptions.InternalReasonerException: Adding type to a pruned node \"anon(50)\" restrictedDatatype(http://www.w3.org/2001/XMLSchema#decimal,[facet(http://www.w3.org/2001/XMLSchema#minExclusive,literal(0.15,(),http://www.w3.org/2001/XMLSchema#decimal))])\n\tat org.mindswap.pellet.Node.addType(Node.java:448)\n\tat org.mindswap.pellet.Literal.addType(Literal.java:257)\n\tat org.mindswap.pellet.tableau.completion.CompletionStrategy.addType(CompletionStrategy.java:438)\n\tat org.mindswap.pellet.tableau.completion.rule.SomeValuesRule.applySomeValuesRule(SomeValuesRule.java:180)\n\tat org.mindswap.pellet.tableau.completion.rule.SomeValuesRule.apply(SomeValuesRule.java:64)\n\tat org.mindswap.pellet.tableau.completion.rule.AbstractTableauRule.apply(AbstractTableauRule.java:64)\n\tat org.mindswap.pellet.tableau.completion.SROIQStrategy.complete(SROIQStrategy.java:157)\n\tat org.mindswap.pellet.ABox.isConsistent(ABox.java:1423)\n\tat org.mindswap.pellet.ABox.isSatisfiab"
+  },
+  "module:src/OFS/ObjectManager.py": {
+   "class": "StableModule",
+   "individual": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_OFS_ObjectManager.py-6e10b4",
+   "attempts": 3,
+   "target": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_OFS_ObjectManager.py-6e10b4 type http://senso-framework.org/ontology/seo#StableModule",
+   "justifications": [],
+   "raw_text": "",
+   "seconds": 3.251726442016661,
+   "returncode": 1,
+   "error": "Exception in thread \"main\" org.mindswap.pellet.exceptions.InternalReasonerException: Adding type to a pruned node \"anon(50)\" restrictedDatatype(http://www.w3.org/2001/XMLSchema#decimal,[facet(http://www.w3.org/2001/XMLSchema#minExclusive,literal(0.15,(),http://www.w3.org/2001/XMLSchema#decimal))])\n\tat org.mindswap.pellet.Node.addType(Node.java:448)\n\tat org.mindswap.pellet.Literal.addType(Literal.java:257)\n\tat org.mindswap.pellet.tableau.completion.CompletionStrategy.addType(CompletionStrategy.java:438)\n\tat org.mindswap.pellet.tableau.completion.rule.SomeValuesRule.applySomeValuesRule(SomeValuesRule.java:180)\n\tat org.mindswap.pellet.tableau.completion.rule.SomeValuesRule.apply(SomeValuesRule.java:64)\n\tat org.mindswap.pellet.tableau.completion.rule.AbstractTableauRule.apply(AbstractTableauRule.java:64)\n\tat org.mindswap.pellet.tableau.completion.SROIQStrategy.complete(SROIQStrategy.java:157)\n\tat org.mindswap.pellet.ABox.isConsistent(ABox.java:1423)\n\tat org.mindswap.pellet.ABox.isSatisfiab"
+  },
+  "module:src/Zope2/Startup": {
+   "class": "StableModule",
+   "individual": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_Zope2_Startup-f06cf1",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_Zope2_Startup-f06cf1 type http://senso-framework.org/ontology/seo#StableModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "StableModule",
+       "text": "StableModule equivalentTo LowRelChurnModule and RarelyChangedModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "LowRelChurnModule",
+       "text": "LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "definition",
+       "subject": "RarelyChangedModule",
+       "text": "RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "src_Zope2_Startup-f06cf1",
+       "prop": "moduleRelChurnInWindow",
+       "value": 0.01084,
+       "raw": "src_Zope2_Startup-f06cf1 moduleRelChurnInWindow 0.01084"
+      },
+      {
+       "subject": "src_Zope2_Startup-f06cf1",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 1,
+       "raw": "src_Zope2_Startup-f06cf1 moduleChangeMonthsInWindow 1"
+      },
+      {
+       "subject": "src_Zope2_Startup-f06cf1",
+       "prop": "type",
+       "value": "Module",
+       "raw": "src_Zope2_Startup-f06cf1 type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\nsrc_Zope2_Startup-f06cf1 moduleRelChurnInWindow 0.01084\nsrc_Zope2_Startup-f06cf1 moduleChangeMonthsInWindow 1\nA_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\nsrc_Zope2_Startup-f06cf1 type Module\nStableModule equivalentTo LowRelChurnModule and RarelyChangedModule\nLowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module\nRarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module"
+    }
+   ],
+   "raw_text": "Axiom: src_Zope2_Startup-f06cf1 type StableModule\n\nExplanation(s): \n1)   A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\n     src_Zope2_Startup-f06cf1 moduleRelChurnInWindow 0.01084\n     src_Zope2_Startup-f06cf1 moduleChangeMonthsInWindow 1\n     A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\n     src_Zope2_Startup-f06cf1 type Module\n     StableModule equivalentTo LowRelChurnModule\n                               and RarelyChangedModule\n     LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn\n                                    and Module\n     RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months\n                                      and Module\n\n\n",
+   "seconds": 3.3213880559778772,
+   "returncode": 0,
+   "error": null
+  },
+  "module:src/ZPublisher/BaseRequest.py": {
+   "class": "StableModule",
+   "individual": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_ZPublisher_BaseRequest.py-6bb50c",
+   "attempts": 3,
+   "target": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_ZPublisher_BaseRequest.py-6bb50c type http://senso-framework.org/ontology/seo#StableModule",
+   "justifications": [],
+   "raw_text": "",
+   "seconds": 3.1945102590252645,
+   "returncode": 1,
+   "error": "Exception in thread \"main\" org.mindswap.pellet.exceptions.InternalReasonerException: Adding type to a pruned node \"anon(50)\" restrictedDatatype(http://www.w3.org/2001/XMLSchema#decimal,[facet(http://www.w3.org/2001/XMLSchema#minExclusive,literal(0.15,(),http://www.w3.org/2001/XMLSchema#decimal))])\n\tat org.mindswap.pellet.Node.addType(Node.java:448)\n\tat org.mindswap.pellet.Literal.addType(Literal.java:257)\n\tat org.mindswap.pellet.tableau.completion.CompletionStrategy.addType(CompletionStrategy.java:438)\n\tat org.mindswap.pellet.tableau.completion.rule.SomeValuesRule.applySomeValuesRule(SomeValuesRule.java:180)\n\tat org.mindswap.pellet.tableau.completion.rule.SomeValuesRule.apply(SomeValuesRule.java:64)\n\tat org.mindswap.pellet.tableau.completion.rule.AbstractTableauRule.apply(AbstractTableauRule.java:64)\n\tat org.mindswap.pellet.tableau.completion.SROIQStrategy.complete(SROIQStrategy.java:157)\n\tat org.mindswap.pellet.ABox.isConsistent(ABox.java:1423)\n\tat org.mindswap.pellet.ABox.isSatisfiab"
+  },
+  "module:src/webdav/Resource.py": {
+   "class": "StableModule",
+   "individual": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_webdav_Resource.py-90dd79",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_webdav_Resource.py-90dd79 type http://senso-framework.org/ontology/seo#StableModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "StableModule",
+       "text": "StableModule equivalentTo LowRelChurnModule and RarelyChangedModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "LowRelChurnModule",
+       "text": "LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "definition",
+       "subject": "RarelyChangedModule",
+       "text": "RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "src_webdav_Resource.py-90dd79",
+       "prop": "type",
+       "value": "Module",
+       "raw": "src_webdav_Resource.py-90dd79 type Module"
+      },
+      {
+       "subject": "src_webdav_Resource.py-90dd79",
+       "prop": "moduleRelChurnInWindow",
+       "value": 0.0,
+       "raw": "src_webdav_Resource.py-90dd79 moduleRelChurnInWindow 0.0"
+      },
+      {
+       "subject": "src_webdav_Resource.py-90dd79",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 0,
+       "raw": "src_webdav_Resource.py-90dd79 moduleChangeMonthsInWindow 0"
+      }
+     ],
+     "closures": [],
+     "raw": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\nA_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\nStableModule equivalentTo LowRelChurnModule and RarelyChangedModule\nsrc_webdav_Resource.py-90dd79 type Module\nsrc_webdav_Resource.py-90dd79 moduleRelChurnInWindow 0.0\nLowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module\nRarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module\nsrc_webdav_Resource.py-90dd79 moduleChangeMonthsInWindow 0"
+    }
+   ],
+   "raw_text": "Axiom: src_webdav_Resource.py-90dd79 type StableModule\n\nExplanation(s): \n1)   A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\n     A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\n     StableModule equivalentTo LowRelChurnModule\n                               and RarelyChangedModule\n     src_webdav_Resource.py-90dd79 type Module\n     src_webdav_Resource.py-90dd79 moduleRelChurnInWindow 0.0\n     LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn\n                                    and Module\n     RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months\n                                      and Module\n     src_webdav_Resource.py-90dd79 moduleChangeMonthsInWindow 0\n\n\n",
+   "seconds": 3.195073813025374,
+   "returncode": 0,
+   "error": null
+  },
+  "module:src/OFS/CopySupport.py": {
+   "class": "StableModule",
+   "individual": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_OFS_CopySupport.py-30c969",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_OFS_CopySupport.py-30c969 type http://senso-framework.org/ontology/seo#StableModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "StableModule",
+       "text": "StableModule equivalentTo LowRelChurnModule and RarelyChangedModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "LowRelChurnModule",
+       "text": "LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "definition",
+       "subject": "RarelyChangedModule",
+       "text": "RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "src_OFS_CopySupport.py-30c969",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 0,
+       "raw": "src_OFS_CopySupport.py-30c969 moduleChangeMonthsInWindow 0"
+      },
+      {
+       "subject": "src_OFS_CopySupport.py-30c969",
+       "prop": "type",
+       "value": "Module",
+       "raw": "src_OFS_CopySupport.py-30c969 type Module"
+      },
+      {
+       "subject": "src_OFS_CopySupport.py-30c969",
+       "prop": "moduleRelChurnInWindow",
+       "value": 0.0,
+       "raw": "src_OFS_CopySupport.py-30c969 moduleRelChurnInWindow 0.0"
+      }
+     ],
+     "closures": [],
+     "raw": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\nA_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\nsrc_OFS_CopySupport.py-30c969 moduleChangeMonthsInWindow 0\nsrc_OFS_CopySupport.py-30c969 type Module\nStableModule equivalentTo LowRelChurnModule and RarelyChangedModule\nsrc_OFS_CopySupport.py-30c969 moduleRelChurnInWindow 0.0\nLowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module\nRarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module"
+    }
+   ],
+   "raw_text": "Axiom: src_OFS_CopySupport.py-30c969 type StableModule\n\nExplanation(s): \n1)   A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\n     A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\n     src_OFS_CopySupport.py-30c969 moduleChangeMonthsInWindow 0\n     src_OFS_CopySupport.py-30c969 type Module\n     StableModule equivalentTo LowRelChurnModule\n                               and RarelyChangedModule\n     src_OFS_CopySupport.py-30c969 moduleRelChurnInWindow 0.0\n     LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn\n                                    and Module\n     RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months\n                                      and Module\n\n\n",
+   "seconds": 3.4598125080228783,
+   "returncode": 0,
+   "error": null
+  },
+  "module:src/Zope2/utilities": {
+   "class": "StableModule",
+   "individual": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_Zope2_utilities-500712",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_Zope2_utilities-500712 type http://senso-framework.org/ontology/seo#StableModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "StableModule",
+       "text": "StableModule equivalentTo LowRelChurnModule and RarelyChangedModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "LowRelChurnModule",
+       "text": "LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "definition",
+       "subject": "RarelyChangedModule",
+       "text": "RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "src_Zope2_utilities-500712",
+       "prop": "moduleRelChurnInWindow",
+       "value": 0.027322,
+       "raw": "src_Zope2_utilities-500712 moduleRelChurnInWindow 0.027322"
+      },
+      {
+       "subject": "src_Zope2_utilities-500712",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 1,
+       "raw": "src_Zope2_utilities-500712 moduleChangeMonthsInWindow 1"
+      },
+      {
+       "subject": "src_Zope2_utilities-500712",
+       "prop": "type",
+       "value": "Module",
+       "raw": "src_Zope2_utilities-500712 type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\nsrc_Zope2_utilities-500712 moduleRelChurnInWindow 0.027322\nA_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\nStableModule equivalentTo LowRelChurnModule and RarelyChangedModule\nsrc_Zope2_utilities-500712 moduleChangeMonthsInWindow 1\nLowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module\nsrc_Zope2_utilities-500712 type Module\nRarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module"
+    }
+   ],
+   "raw_text": "Axiom: src_Zope2_utilities-500712 type StableModule\n\nExplanation(s): \n1)   A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\n     src_Zope2_utilities-500712 moduleRelChurnInWindow 0.027322\n     A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\n     StableModule equivalentTo LowRelChurnModule\n                               and RarelyChangedModule\n     src_Zope2_utilities-500712 moduleChangeMonthsInWindow 1\n     LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn\n                                    and Module\n     src_Zope2_utilities-500712 type Module\n     RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months\n                                      and Module\n\n\n",
+   "seconds": 7.5210510159959085,
+   "returncode": 0,
+   "error": null
+  },
+  "module:src/webdav/davcmds.py": {
+   "class": "StableModule",
+   "individual": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_webdav_davcmds.py-19917c",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_webdav_davcmds.py-19917c type http://senso-framework.org/ontology/seo#StableModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "StableModule",
+       "text": "StableModule equivalentTo LowRelChurnModule and RarelyChangedModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "LowRelChurnModule",
+       "text": "LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "definition",
+       "subject": "RarelyChangedModule",
+       "text": "RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "src_webdav_davcmds.py-19917c",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 1,
+       "raw": "src_webdav_davcmds.py-19917c moduleChangeMonthsInWindow 1"
+      },
+      {
+       "subject": "src_webdav_davcmds.py-19917c",
+       "prop": "type",
+       "value": "Module",
+       "raw": "src_webdav_davcmds.py-19917c type Module"
+      },
+      {
+       "subject": "src_webdav_davcmds.py-19917c",
+       "prop": "moduleRelChurnInWindow",
+       "value": 0.003914,
+       "raw": "src_webdav_davcmds.py-19917c moduleRelChurnInWindow 0.003914"
+      }
+     ],
+     "closures": [],
+     "raw": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\nsrc_webdav_davcmds.py-19917c moduleChangeMonthsInWindow 1\nA_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\nStableModule equivalentTo LowRelChurnModule and RarelyChangedModule\nsrc_webdav_davcmds.py-19917c type Module\nsrc_webdav_davcmds.py-19917c moduleRelChurnInWindow 0.003914\nLowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module\nRarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module"
+    }
+   ],
+   "raw_text": "Axiom: src_webdav_davcmds.py-19917c type StableModule\n\nExplanation(s): \n1)   A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\n     src_webdav_davcmds.py-19917c moduleChangeMonthsInWindow 1\n     A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\n     StableModule equivalentTo LowRelChurnModule\n                               and RarelyChangedModule\n     src_webdav_davcmds.py-19917c type Module\n     src_webdav_davcmds.py-19917c moduleRelChurnInWindow 0.003914\n     LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn\n                                    and Module\n     RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months\n                                      and Module\n\n\n",
+   "seconds": 8.202157859981526,
+   "returncode": 0,
+   "error": null
+  },
+  "module:src/OFS/PropertySheets.py": {
+   "class": "StableModule",
+   "individual": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_OFS_PropertySheets.py-bfc99e",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_OFS_PropertySheets.py-bfc99e type http://senso-framework.org/ontology/seo#StableModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "StableModule",
+       "text": "StableModule equivalentTo LowRelChurnModule and RarelyChangedModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "LowRelChurnModule",
+       "text": "LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "definition",
+       "subject": "RarelyChangedModule",
+       "text": "RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "src_OFS_PropertySheets.py-bfc99e",
+       "prop": "moduleRelChurnInWindow",
+       "value": 0.004132,
+       "raw": "src_OFS_PropertySheets.py-bfc99e moduleRelChurnInWindow 0.004132"
+      },
+      {
+       "subject": "src_OFS_PropertySheets.py-bfc99e",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 1,
+       "raw": "src_OFS_PropertySheets.py-bfc99e moduleChangeMonthsInWindow 1"
+      },
+      {
+       "subject": "src_OFS_PropertySheets.py-bfc99e",
+       "prop": "type",
+       "value": "Module",
+       "raw": "src_OFS_PropertySheets.py-bfc99e type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\nA_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\nsrc_OFS_PropertySheets.py-bfc99e moduleRelChurnInWindow 0.004132\nsrc_OFS_PropertySheets.py-bfc99e moduleChangeMonthsInWindow 1\nStableModule equivalentTo LowRelChurnModule and RarelyChangedModule\nsrc_OFS_PropertySheets.py-bfc99e type Module\nLowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module\nRarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module"
+    }
+   ],
+   "raw_text": "Axiom: src_OFS_PropertySheets.py-bfc99e type StableModule\n\nExplanation(s): \n1)   A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\n     A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\n     src_OFS_PropertySheets.py-bfc99e moduleRelChurnInWindow 0.004132\n     src_OFS_PropertySheets.py-bfc99e moduleChangeMonthsInWindow 1\n     StableModule equivalentTo LowRelChurnModule\n                               and RarelyChangedModule\n     src_OFS_PropertySheets.py-bfc99e type Module\n     LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn\n                                    and Module\n     RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months\n                                      and Module\n\n\n",
+   "seconds": 7.50426710001193,
+   "returncode": 0,
+   "error": null
+  },
+  "module:src/OFS/Cache.py": {
+   "class": "StableModule",
+   "individual": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_OFS_Cache.py-c50035",
+   "attempts": 3,
+   "target": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_OFS_Cache.py-c50035 type http://senso-framework.org/ontology/seo#StableModule",
+   "justifications": [],
+   "raw_text": "",
+   "seconds": 3.091365742031485,
+   "returncode": 1,
+   "error": "Exception in thread \"main\" org.mindswap.pellet.exceptions.InternalReasonerException: Adding type to a pruned node \"anon(50)\" restrictedDatatype(http://www.w3.org/2001/XMLSchema#decimal,[facet(http://www.w3.org/2001/XMLSchema#minExclusive,literal(0.15,(),http://www.w3.org/2001/XMLSchema#decimal))])\n\tat org.mindswap.pellet.Node.addType(Node.java:448)\n\tat org.mindswap.pellet.Literal.addType(Literal.java:257)\n\tat org.mindswap.pellet.tableau.completion.CompletionStrategy.addType(CompletionStrategy.java:438)\n\tat org.mindswap.pellet.tableau.completion.rule.SomeValuesRule.applySomeValuesRule(SomeValuesRule.java:180)\n\tat org.mindswap.pellet.tableau.completion.rule.SomeValuesRule.apply(SomeValuesRule.java:64)\n\tat org.mindswap.pellet.tableau.completion.rule.AbstractTableauRule.apply(AbstractTableauRule.java:64)\n\tat org.mindswap.pellet.tableau.completion.SROIQStrategy.complete(SROIQStrategy.java:157)\n\tat org.mindswap.pellet.ABox.isConsistent(ABox.java:1423)\n\tat org.mindswap.pellet.ABox.isSatisfiab"
+  },
+  "module:src/Shared/DC": {
+   "class": "StableModule",
+   "individual": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_Shared_DC-49edb6",
+   "attempts": 3,
+   "target": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_Shared_DC-49edb6 type http://senso-framework.org/ontology/seo#StableModule",
+   "justifications": [],
+   "raw_text": "",
+   "seconds": 3.109630319988355,
+   "returncode": 1,
+   "error": "Exception in thread \"main\" org.mindswap.pellet.exceptions.InternalReasonerException: Adding type to a pruned node \"anon(50)\" restrictedDatatype(http://www.w3.org/2001/XMLSchema#decimal,[facet(http://www.w3.org/2001/XMLSchema#minExclusive,literal(0.15,(),http://www.w3.org/2001/XMLSchema#decimal))])\n\tat org.mindswap.pellet.Node.addType(Node.java:448)\n\tat org.mindswap.pellet.Literal.addType(Literal.java:257)\n\tat org.mindswap.pellet.tableau.completion.CompletionStrategy.addType(CompletionStrategy.java:438)\n\tat org.mindswap.pellet.tableau.completion.rule.SomeValuesRule.applySomeValuesRule(SomeValuesRule.java:180)\n\tat org.mindswap.pellet.tableau.completion.rule.SomeValuesRule.apply(SomeValuesRule.java:64)\n\tat org.mindswap.pellet.tableau.completion.rule.AbstractTableauRule.apply(AbstractTableauRule.java:64)\n\tat org.mindswap.pellet.tableau.completion.SROIQStrategy.complete(SROIQStrategy.java:157)\n\tat org.mindswap.pellet.ABox.isConsistent(ABox.java:1423)\n\tat org.mindswap.pellet.ABox.isSatisfiab"
+  },
+  "module:src/OFS/Application.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_OFS_Application.py-ca3a9e",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_OFS_Application.py-ca3a9e type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "src_OFS_Application.py-ca3a9e",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 3,
+       "raw": "src_OFS_Application.py-ca3a9e moduleChangeMonthsInWindow 3"
+      },
+      {
+       "subject": "src_OFS_Application.py-ca3a9e",
+       "prop": "type",
+       "value": "Module",
+       "raw": "src_OFS_Application.py-ca3a9e type Module"
+      }
+     ],
+     "closures": [],
+     "raw": "src_OFS_Application.py-ca3a9e moduleChangeMonthsInWindow 3\nA_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\nsrc_OFS_Application.py-ca3a9e type Module\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\nOftenChangedModule subClassOf ActiveModule"
+    }
+   ],
+   "raw_text": "Axiom: src_OFS_Application.py-ca3a9e type ActiveModule\n\nExplanation(s): \n1)   src_OFS_Application.py-ca3a9e moduleChangeMonthsInWindow 3\n     A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     src_OFS_Application.py-ca3a9e type Module\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     OftenChangedModule subClassOf ActiveModule\n\n\n",
+   "seconds": 3.157011520001106,
+   "returncode": 0,
+   "error": null
+  },
+  "module:src/webdav/NullResource.py": {
+   "class": "StableModule",
+   "individual": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_webdav_NullResource.py-a1171f",
+   "attempts": 3,
+   "target": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_webdav_NullResource.py-a1171f type http://senso-framework.org/ontology/seo#StableModule",
+   "justifications": [],
+   "raw_text": "",
+   "seconds": 3.1089148839819245,
+   "returncode": 1,
+   "error": "Exception in thread \"main\" org.mindswap.pellet.exceptions.InternalReasonerException: Adding type to a pruned node \"anon(50)\" restrictedDatatype(http://www.w3.org/2001/XMLSchema#decimal,[facet(http://www.w3.org/2001/XMLSchema#minExclusive,literal(0.15,(),http://www.w3.org/2001/XMLSchema#decimal))])\n\tat org.mindswap.pellet.Node.addType(Node.java:448)\n\tat org.mindswap.pellet.Literal.addType(Literal.java:257)\n\tat org.mindswap.pellet.tableau.completion.CompletionStrategy.addType(CompletionStrategy.java:438)\n\tat org.mindswap.pellet.tableau.completion.rule.SomeValuesRule.applySomeValuesRule(SomeValuesRule.java:180)\n\tat org.mindswap.pellet.tableau.completion.rule.SomeValuesRule.apply(SomeValuesRule.java:64)\n\tat org.mindswap.pellet.tableau.completion.rule.AbstractTableauRule.apply(AbstractTableauRule.java:64)\n\tat org.mindswap.pellet.tableau.completion.SROIQStrategy.complete(SROIQStrategy.java:157)\n\tat org.mindswap.pellet.ABox.isConsistent(ABox.java:1423)\n\tat org.mindswap.pellet.ABox.isSatisfiab"
+  },
+  "module:src/OFS/DTMLMethod.py": {
+   "class": "StableModule",
+   "individual": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_OFS_DTMLMethod.py-4eba12",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_OFS_DTMLMethod.py-4eba12 type http://senso-framework.org/ontology/seo#StableModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "StableModule",
+       "text": "StableModule equivalentTo LowRelChurnModule and RarelyChangedModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "LowRelChurnModule",
+       "text": "LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "definition",
+       "subject": "RarelyChangedModule",
+       "text": "RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "src_OFS_DTMLMethod.py-4eba12",
+       "prop": "moduleRelChurnInWindow",
+       "value": 0.0,
+       "raw": "src_OFS_DTMLMethod.py-4eba12 moduleRelChurnInWindow 0.0"
+      },
+      {
+       "subject": "src_OFS_DTMLMethod.py-4eba12",
+       "prop": "type",
+       "value": "Module",
+       "raw": "src_OFS_DTMLMethod.py-4eba12 type Module"
+      },
+      {
+       "subject": "src_OFS_DTMLMethod.py-4eba12",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 0,
+       "raw": "src_OFS_DTMLMethod.py-4eba12 moduleChangeMonthsInWindow 0"
+      }
+     ],
+     "closures": [],
+     "raw": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\nsrc_OFS_DTMLMethod.py-4eba12 moduleRelChurnInWindow 0.0\nA_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\nsrc_OFS_DTMLMethod.py-4eba12 type Module\nStableModule equivalentTo LowRelChurnModule and RarelyChangedModule\nsrc_OFS_DTMLMethod.py-4eba12 moduleChangeMonthsInWindow 0\nLowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module\nRarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module"
+    }
+   ],
+   "raw_text": "Axiom: src_OFS_DTMLMethod.py-4eba12 type StableModule\n\nExplanation(s): \n1)   A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\n     src_OFS_DTMLMethod.py-4eba12 moduleRelChurnInWindow 0.0\n     A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\n     src_OFS_DTMLMethod.py-4eba12 type Module\n     StableModule equivalentTo LowRelChurnModule\n                               and RarelyChangedModule\n     src_OFS_DTMLMethod.py-4eba12 moduleChangeMonthsInWindow 0\n     LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn\n                                    and Module\n     RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months\n                                      and Module\n\n\n",
+   "seconds": 3.214001176005695,
+   "returncode": 0,
+   "error": null
+  },
+  "module:src/ZPublisher/WSGIPublisher.py": {
+   "class": "ActiveModule",
+   "individual": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_ZPublisher_WSGIPublisher.py-7b44a8",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_ZPublisher_WSGIPublisher.py-7b44a8 type http://senso-framework.org/ontology/seo#ActiveModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module"
+      },
+      {
+       "kind": "subclass",
+       "subject": "OftenChangedModule",
+       "text": "OftenChangedModule subClassOf ActiveModule"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "src_ZPublisher_WSGIPublisher.py-7b44a8",
+       "prop": "type",
+       "value": "Module",
+       "raw": "src_ZPublisher_WSGIPublisher.py-7b44a8 type Module"
+      },
+      {
+       "subject": "src_ZPublisher_WSGIPublisher.py-7b44a8",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 3,
+       "raw": "src_ZPublisher_WSGIPublisher.py-7b44a8 moduleChangeMonthsInWindow 3"
+      }
+     ],
+     "closures": [],
+     "raw": "src_ZPublisher_WSGIPublisher.py-7b44a8 type Module\nA_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\nOftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months and Module\nsrc_ZPublisher_WSGIPublisher.py-7b44a8 moduleChangeMonthsInWindow 3\nOftenChangedModule subClassOf ActiveModule"
+    }
+   ],
+   "raw_text": "Axiom: src_ZPublisher_WSGIPublisher.py-7b44a8 type ActiveModule\n\nExplanation(s): \n1)   src_ZPublisher_WSGIPublisher.py-7b44a8 type Module\n     A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[> 2]\n     OftenChangedModule equivalentTo A_moduleChangeMonthsInWindow_gt_mod_stable_max_change_months\n                                     and Module\n     src_ZPublisher_WSGIPublisher.py-7b44a8 moduleChangeMonthsInWindow 3\n     OftenChangedModule subClassOf ActiveModule\n\n\n",
+   "seconds": 3.1317037920234725,
+   "returncode": 0,
+   "error": null
+  },
+  "module:src/OFS/PropertyManager.py": {
+   "class": "StableModule",
+   "individual": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_OFS_PropertyManager.py-aeb1de",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_OFS_PropertyManager.py-aeb1de type http://senso-framework.org/ontology/seo#StableModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "StableModule",
+       "text": "StableModule equivalentTo LowRelChurnModule and RarelyChangedModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "LowRelChurnModule",
+       "text": "LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "definition",
+       "subject": "RarelyChangedModule",
+       "text": "RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "src_OFS_PropertyManager.py-aeb1de",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 1,
+       "raw": "src_OFS_PropertyManager.py-aeb1de moduleChangeMonthsInWindow 1"
+      },
+      {
+       "subject": "src_OFS_PropertyManager.py-aeb1de",
+       "prop": "type",
+       "value": "Module",
+       "raw": "src_OFS_PropertyManager.py-aeb1de type Module"
+      },
+      {
+       "subject": "src_OFS_PropertyManager.py-aeb1de",
+       "prop": "moduleRelChurnInWindow",
+       "value": 0.00597,
+       "raw": "src_OFS_PropertyManager.py-aeb1de moduleRelChurnInWindow 0.00597"
+      }
+     ],
+     "closures": [],
+     "raw": "src_OFS_PropertyManager.py-aeb1de moduleChangeMonthsInWindow 1\nA_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\nsrc_OFS_PropertyManager.py-aeb1de type Module\nA_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\nStableModule equivalentTo LowRelChurnModule and RarelyChangedModule\nsrc_OFS_PropertyManager.py-aeb1de moduleRelChurnInWindow 0.00597\nLowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module\nRarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module"
+    }
+   ],
+   "raw_text": "Axiom: src_OFS_PropertyManager.py-aeb1de type StableModule\n\nExplanation(s): \n1)   src_OFS_PropertyManager.py-aeb1de moduleChangeMonthsInWindow 1\n     A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\n     src_OFS_PropertyManager.py-aeb1de type Module\n     A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\n     StableModule equivalentTo LowRelChurnModule\n                               and RarelyChangedModule\n     src_OFS_PropertyManager.py-aeb1de moduleRelChurnInWindow 0.00597\n     LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn\n                                    and Module\n     RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months\n                                      and Module\n\n\n",
+   "seconds": 3.249697808001656,
+   "returncode": 0,
+   "error": null
+  },
+  "module:src/OFS/SimpleItem.py": {
+   "class": "StableModule",
+   "individual": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_OFS_SimpleItem.py-6fe6d3",
+   "attempts": 3,
+   "target": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_OFS_SimpleItem.py-6fe6d3 type http://senso-framework.org/ontology/seo#StableModule",
+   "justifications": [],
+   "raw_text": "",
+   "seconds": 3.1321563349920325,
+   "returncode": 1,
+   "error": "Exception in thread \"main\" org.mindswap.pellet.exceptions.InternalReasonerException: Adding type to a pruned node \"anon(50)\" restrictedDatatype(http://www.w3.org/2001/XMLSchema#decimal,[facet(http://www.w3.org/2001/XMLSchema#minExclusive,literal(0.15,(),http://www.w3.org/2001/XMLSchema#decimal))])\n\tat org.mindswap.pellet.Node.addType(Node.java:448)\n\tat org.mindswap.pellet.Literal.addType(Literal.java:257)\n\tat org.mindswap.pellet.tableau.completion.CompletionStrategy.addType(CompletionStrategy.java:438)\n\tat org.mindswap.pellet.tableau.completion.rule.SomeValuesRule.applySomeValuesRule(SomeValuesRule.java:180)\n\tat org.mindswap.pellet.tableau.completion.rule.SomeValuesRule.apply(SomeValuesRule.java:64)\n\tat org.mindswap.pellet.tableau.completion.rule.AbstractTableauRule.apply(AbstractTableauRule.java:64)\n\tat org.mindswap.pellet.tableau.completion.SROIQStrategy.complete(SROIQStrategy.java:157)\n\tat org.mindswap.pellet.ABox.isConsistent(ABox.java:1423)\n\tat org.mindswap.pellet.ABox.isSatisfiab"
+  },
+  "module:src/App/ApplicationManager.py": {
+   "class": "StableModule",
+   "individual": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_App_ApplicationManager.py-d914df",
+   "attempts": 1,
+   "target": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_App_ApplicationManager.py-d914df type http://senso-framework.org/ontology/seo#StableModule",
+   "justifications": [
+    {
+     "axioms": [
+      {
+       "kind": "definition",
+       "subject": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn",
+       "text": "A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]"
+      },
+      {
+       "kind": "definition",
+       "subject": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months",
+       "text": "A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]"
+      },
+      {
+       "kind": "definition",
+       "subject": "StableModule",
+       "text": "StableModule equivalentTo LowRelChurnModule and RarelyChangedModule"
+      },
+      {
+       "kind": "definition",
+       "subject": "LowRelChurnModule",
+       "text": "LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module"
+      },
+      {
+       "kind": "definition",
+       "subject": "RarelyChangedModule",
+       "text": "RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module"
+      }
+     ],
+     "facts": [
+      {
+       "subject": "src_App_ApplicationManager.py-d914df",
+       "prop": "type",
+       "value": "Module",
+       "raw": "src_App_ApplicationManager.py-d914df type Module"
+      },
+      {
+       "subject": "src_App_ApplicationManager.py-d914df",
+       "prop": "moduleChangeMonthsInWindow",
+       "value": 1,
+       "raw": "src_App_ApplicationManager.py-d914df moduleChangeMonthsInWindow 1"
+      },
+      {
+       "subject": "src_App_ApplicationManager.py-d914df",
+       "prop": "moduleRelChurnInWindow",
+       "value": 0.094512,
+       "raw": "src_App_ApplicationManager.py-d914df moduleRelChurnInWindow 0.094512"
+      }
+     ],
+     "closures": [],
+     "raw": "src_App_ApplicationManager.py-d914df type Module\nA_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\nA_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\nStableModule equivalentTo LowRelChurnModule and RarelyChangedModule\nLowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn and Module\nsrc_App_ApplicationManager.py-d914df moduleChangeMonthsInWindow 1\nsrc_App_ApplicationManager.py-d914df moduleRelChurnInWindow 0.094512\nRarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months and Module"
+    }
+   ],
+   "raw_text": "Axiom: src_App_ApplicationManager.py-d914df type StableModule\n\nExplanation(s): \n1)   src_App_ApplicationManager.py-d914df type Module\n     A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn equivalentTo moduleRelChurnInWindow some decimal[< 0.1]\n     A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months equivalentTo moduleChangeMonthsInWindow some integer[<= 2]\n     StableModule equivalentTo LowRelChurnModule\n                               and RarelyChangedModule\n     LowRelChurnModule equivalentTo A_moduleRelChurnInWindow_lt_mod_stable_max_rel_churn\n                                    and Module\n     src_App_ApplicationManager.py-d914df moduleChangeMonthsInWindow 1\n     src_App_ApplicationManager.py-d914df moduleRelChurnInWindow 0.094512\n     RarelyChangedModule equivalentTo A_moduleChangeMonthsInWindow_le_mod_stable_max_change_months\n                                      and Module\n\n\n",
+   "seconds": 3.1974860730115324,
+   "returncode": 0,
+   "error": null
+  },
+  "module:src/Zope2/App": {
+   "class": "StableModule",
+   "individual": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_Zope2_App-15cb13",
+   "attempts": 3,
+   "target": "http://senso-framework.org/data/zopefoundation__Zope-1183/module/src_Zope2_App-15cb13 type http://senso-framework.org/ontology/seo#StableModule",
+   "justifications": [],
+   "raw_text": "",
+   "seconds": 3.191516453982331,
+   "returncode": 1,
+   "error": "Exception in thread \"main\" org.mindswap.pellet.exceptions.InternalReasonerException: Adding type to a pruned node \"anon(50)\" restrictedDatatype(http://www.w3.org/2001/XMLSchema#decimal,[facet(http://www.w3.org/2001/XMLSchema#minExclusive,literal(0.15,(),http://www.w3.org/2001/XMLSchema#decimal))])\n\tat org.mindswap.pellet.Node.addType(Node.java:448)\n\tat org.mindswap.pellet.Literal.addType(Literal.java:257)\n\tat org.mindswap.pellet.tableau.completion.CompletionStrategy.addType(CompletionStrategy.java:438)\n\tat org.mindswap.pellet.tableau.completion.rule.SomeValuesRule.applySomeValuesRule(SomeValuesRule.java:180)\n\tat org.mindswap.pellet.tableau.completion.rule.SomeValuesRule.apply(SomeValuesRule.java:64)\n\tat org.mindswap.pellet.tableau.completion.rule.AbstractTableauRule.apply(AbstractTableauRule.java:64)\n\tat org.mindswap.pellet.tableau.completion.SROIQStrategy.complete(SROIQStrategy.java:157)\n\tat org.mindswap.pellet.ABox.isConsistent(ABox.java:1423)\n\tat org.mindswap.pellet.ABox.isSatisfiab"
+  }
+ },
+ "timings": {
+  "t_clone": 0.004,
+  "t_mine": 4.519,
+  "t_loc": 1.923,
+  "t_reason_A": 3.031,
+  "mining_cached": false,
+  "t_modules": 2.083,
+  "t_reason_B": 4.411,
+  "n_configs": 1,
+  "t_explain": 212.607,
+  "n_explain_calls": 34,
+  "t_writeback": 0.0,
+  "t_total": 230.199
+ }
+}

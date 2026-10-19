@@ -1,0 +1,46 @@
+{
+ "repo": "acepanel/panel",
+ "slug": "acepanel__panel",
+ "input_sha": "741da50b2905aa4f182d7c208db742111172ab3edbb5083d43402491776c16e5",
+ "explanations": [
+  {
+   "key": "T6|go|1025000000@2",
+   "verdict": "ContradictedClaim",
+   "leaf": "VersionContradicted",
+   "seconds": 4.74,
+   "retried_on_claim_subgraph": false,
+   "error": null,
+   "returncode": 0,
+   "n_justifications": 1,
+   "facts": [
+    {
+     "prop": "hasEvidence",
+     "value": "ev0"
+    },
+    {
+     "prop": "versionLowerDelta",
+     "value": 1000000
+    },
+    {
+     "prop": "extractionVotes",
+     "value": 3
+    },
+    {
+     "prop": "evidenceFor",
+     "value": "e01482db31a7"
+    }
+   ],
+   "axioms": [
+    "A_versionLowerDelta_gt_0 equivalentTo versionLowerDelta some integer[> 0]",
+    "A_extractionVotes_ge_wp2_consensus_min_votes equivalentTo extractionVotes some integer[>= 2]",
+    "DisagreeingVersionEvidence subClassOf NonAgreeingVersionEvidence",
+    "CheckedClaim equivalentTo A_extractionVotes_ge_wp2_consensus_min_votes and ManifestClaim",
+    "VersionContradicted equivalentTo CheckedClaim and VersionClaim and hasEvidence only NonAgreeingVersionEvidence and hasEvidence some DisagreeingVersionEvidence",
+    "ExactVersionBelowRange equivalentTo A_versionLowerDelta_gt_0 and VersionEvidence and evidenceFor some ExactVersionClaim",
+    "VersionContradicted subClassOf ContradictedClaim",
+    "ExactVersionBelowRange subClassOf DisagreeingVersionEvidence"
+   ],
+   "closures": []
+  }
+ ]
+}

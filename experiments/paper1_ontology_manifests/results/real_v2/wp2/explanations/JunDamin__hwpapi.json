@@ -1,0 +1,130 @@
+{
+ "repo": "JunDamin/hwpapi",
+ "slug": "JunDamin__hwpapi",
+ "input_sha": "51da7ffc0e39c17cdfc09dc59a575199bccc2afb7dc823fb1cff9186e3a5c055",
+ "explanations": [
+  {
+   "key": "T3|test_framework|pytest",
+   "verdict": "ContradictedClaim",
+   "leaf": "ToolAbsentInEcosystem",
+   "seconds": 10.04,
+   "retried_on_claim_subgraph": true,
+   "error": null,
+   "returncode": 0,
+   "n_justifications": 1,
+   "facts": [
+    {
+     "prop": "toolSignatureHitCount",
+     "value": 0
+    },
+    {
+     "prop": "toolEcosystemAnchorCount",
+     "value": 2
+    },
+    {
+     "prop": "extractionVotes",
+     "value": 2
+    }
+   ],
+   "axioms": [
+    "ToolAbsentInEcosystem equivalentTo A_toolEcosystemAnchorCount_ge_1 and A_toolSignatureHitCount_ge_0_le_0 and CheckedClaim and NoCompetingPackageManagerEvidence and ToolUsageClaim",
+    "A_extractionVotes_ge_wp2_consensus_min_votes equivalentTo extractionVotes some integer[>= 2]",
+    "A_toolEcosystemAnchorCount_ge_1 equivalentTo toolEcosystemAnchorCount some integer[>= 1]",
+    "NonPackageManagerToolClaim subClassOf NoCompetingPackageManagerEvidence",
+    "ToolAbsentInEcosystem subClassOf ContradictedClaim",
+    "CheckedClaim equivalentTo A_extractionVotes_ge_wp2_consensus_min_votes and ManifestClaim",
+    "A_toolSignatureHitCount_ge_0_le_0 equivalentTo toolSignatureHitCount some integer[>= 0, <= 0]"
+   ],
+   "closures": []
+  },
+  {
+   "key": "T4|nbdev|",
+   "verdict": "ContradictedClaim",
+   "leaf": "DependencyUndeclared",
+   "seconds": 12.3,
+   "retried_on_claim_subgraph": true,
+   "error": null,
+   "returncode": 0,
+   "n_justifications": 1,
+   "facts": [
+    {
+     "prop": "dependencyExactMatchCount",
+     "value": 0
+    },
+    {
+     "prop": "extractionVotes",
+     "value": 2
+    },
+    {
+     "prop": "dependencyManifestParsedCount",
+     "value": 2
+    },
+    {
+     "prop": "dependencySuffixMatchCount",
+     "value": 0
+    }
+   ],
+   "axioms": [
+    "A_extractionVotes_ge_wp2_consensus_min_votes equivalentTo extractionVotes some integer[>= 2]",
+    "A_dependencyManifestParsedCount_ge_1 equivalentTo dependencyManifestParsedCount some integer[>= 1]",
+    "DependencyUndeclared equivalentTo A_dependencyExactMatchCount_ge_0_le_0 and A_dependencyManifestParsedCount_ge_1 and A_dependencySuffixMatchCount_ge_0_le_0 and CheckedClaim and DependencyClaim",
+    "A_dependencySuffixMatchCount_ge_0_le_0 equivalentTo dependencySuffixMatchCount some integer[>= 0, <= 0]",
+    "CheckedClaim equivalentTo A_extractionVotes_ge_wp2_consensus_min_votes and ManifestClaim",
+    "A_dependencyExactMatchCount_ge_0_le_0 equivalentTo dependencyExactMatchCount some integer[>= 0, <= 0]"
+   ],
+   "closures": []
+  },
+  {
+   "key": "T4|pywin32|",
+   "verdict": "ContradictedClaim",
+   "leaf": "DependencyUndeclared",
+   "seconds": 6.52,
+   "retried_on_claim_subgraph": true,
+   "error": "Exception in thread \"main\" org.mindswap.pellet.exceptions.InternalReasonerException: Adding type to a pruned node \"anon(1)\" http://www.w3.org/2001/XMLSchema#integer\n\tat org.mindswap.pellet.Node.addType(Node.java:448)\n\tat org.mindswap.pellet.Literal.addType(Literal.java:257)\n\tat org.mindswap.pellet.tableau.completion.CompletionStrategy.addType(CompletionStrategy.java:438)\n\tat org.mindswap.pellet.tableau.completion.CompletionStrategy.applyDomainRange(CompletionStrategy.java:631)\n\tat org.mindswap.pellet.tableau.completion.CompletionStrategy.applyPropertyRestrictions(CompletionStrategy.java:592)\n\tat org.mindswap.pellet.tableau.completion.CompletionStrategy.addEdge(CompletionStrategy.java:583)\n\tat org.mindswap.pellet.tableau.completion.rule.SomeValuesRule.applySomeValuesRule(SomeValuesRule.java:186)\n\tat org.mindswap.pellet.tableau.completion.rule.SomeValuesRule.apply(SomeValuesRule.java:64)\n\tat org.mindswap.pellet.tableau.completion.rule.AbstractTableauRule.apply(AbstractTableauRule.java:64",
+   "returncode": 1,
+   "n_justifications": 0,
+   "facts": [],
+   "axioms": [],
+   "closures": []
+  },
+  {
+   "key": "T6|project_self|2002@4",
+   "verdict": "ContradictedClaim",
+   "leaf": "VersionContradicted",
+   "seconds": 8.28,
+   "retried_on_claim_subgraph": true,
+   "error": null,
+   "returncode": 0,
+   "n_justifications": 1,
+   "facts": [
+    {
+     "prop": "hasEvidence",
+     "value": "ev0"
+    },
+    {
+     "prop": "extractionVotes",
+     "value": 2
+    },
+    {
+     "prop": "evidenceFor",
+     "value": "f8e74668c922"
+    },
+    {
+     "prop": "versionLowerDelta",
+     "value": 3
+    }
+   ],
+   "axioms": [
+    "A_extractionVotes_ge_wp2_consensus_min_votes equivalentTo extractionVotes some integer[>= 2]",
+    "DisagreeingVersionEvidence subClassOf NonAgreeingVersionEvidence",
+    "ExactVersionBelowRange equivalentTo A_versionLowerDelta_gt_0 and VersionEvidence and evidenceFor some ExactVersionClaim",
+    "CheckedClaim equivalentTo A_extractionVotes_ge_wp2_consensus_min_votes and ManifestClaim",
+    "VersionContradicted subClassOf ContradictedClaim",
+    "ExactVersionBelowRange subClassOf DisagreeingVersionEvidence",
+    "A_versionLowerDelta_gt_0 equivalentTo versionLowerDelta some integer[> 0]",
+    "VersionContradicted equivalentTo CheckedClaim and VersionClaim and hasEvidence only NonAgreeingVersionEvidence and hasEvidence some DisagreeingVersionEvidence"
+   ],
+   "closures": []
+  }
+ ]
+}

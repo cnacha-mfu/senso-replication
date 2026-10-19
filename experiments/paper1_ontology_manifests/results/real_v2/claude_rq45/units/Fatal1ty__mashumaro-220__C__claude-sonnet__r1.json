@@ -1,0 +1,111 @@
+{
+ "unit_id": "Fatal1ty__mashumaro-220__C__claude-sonnet__r1",
+ "task_id": "Fatal1ty__mashumaro-220",
+ "repo": "Fatal1ty/mashumaro",
+ "stage": "phase_out",
+ "condition": "C",
+ "model": "claude-code/sonnet",
+ "run": 1,
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 4134,
+  "sha256": "b1f09cf0f74c32c0fc2baaa471dbbf58a669c05c291e6df97a12d8b96468aa23"
+ },
+ "started": "2026-10-18T03:12:27.526267+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 13,
+ "tool_calls": 12,
+ "usage": {
+  "input_tokens": 24,
+  "cache_creation_input_tokens": 14786,
+  "cache_read_input_tokens": 267501,
+  "output_tokens": 2680,
+  "output_tokens_details": {
+   "thinking_tokens": 225
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 14786,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 24,
+   "outputTokens": 2680,
+   "cacheReadInputTokens": 267501,
+   "cacheCreationInputTokens": 14786,
+   "webSearchRequests": 0,
+   "costUSD": 0.1127421,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 225,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.1127421,
+ "result_text": "I fixed the `RecursionError`: your example now builds and round-trips, with `C.from_dict({\"x\": 1}).to_dict()` returning `{'x': 1}`.\n\nThe field-level `serialization_strategy` stayed in the field metadata. When the annotated strategy built the packer or unpacker for its own return or argument type, it looked up strategies again, found the same one, and recursed forever.\n\nIn `mashumaro/core/meta/types/pack.py` and `mashumaro/core/meta/types/unpack.py` I added a small `_without_strategy` helper. It drops `serialization_strategy` from the field metadata before the inner lookup. The same change covers generic strategies, which went through the same code path.\n\n`tests/test_serialization_strategy.py` passes (4 tests). The full suite can't run in this environment: `msgpack` and some other modules are missing, and some tests fail to import because `typing_extensions.NoDefault` isn't supported. The unchanged code gives the same collection errors. As a result, `test_data_types.py` and `test_generics.py` weren't run, and I didn't add a regression test, since you asked for source changes only.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792309800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0.01,
+    "resetsAt": 1792309800
+   },
+   "seven_day": {
+    "utilization": 0.12,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 64.2,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 2,
+   "Y6": 13,
+   "hit_step_limit": 0,
+   "changed_lines": 23,
+   "gold_changed_lines": 23,
+   "Y1": 2,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": 0.0
+  },
+  "f2p_pass": 1,
+  "f2p_total": 1,
+  "p2p_pass": 4,
+  "p2p_total": 4,
+  "f2p_all_pass": true,
+  "p2p_all_pass": true,
+  "resolved": true,
+  "reason": "resolved",
+  "test_seconds": 0.9
+ },
+ "status": "done",
+ "finished": "2026-10-18T03:13:33.768351+00:00"
+}

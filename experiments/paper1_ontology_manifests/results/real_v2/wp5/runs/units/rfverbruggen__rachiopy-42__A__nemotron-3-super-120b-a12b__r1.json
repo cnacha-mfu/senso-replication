@@ -1,0 +1,71 @@
+{
+ "unit_id": "rfverbruggen__rachiopy-42__A__nemotron-3-super-120b-a12b__r1",
+ "task_id": "rfverbruggen__rachiopy-42",
+ "repo": "rfverbruggen/rachiopy",
+ "stage": "initial_development",
+ "condition": "A",
+ "model": "nvidia/nemotron-3-super-120b-a12b",
+ "run": 1,
+ "order": 981,
+ "env_build_s": 28.8,
+ "real_agent_manifest_at_base": [],
+ "started": "2026-10-07T14:45:43.455574+00:00",
+ "condition_meta": {},
+ "condition_available": true,
+ "retries": 0,
+ "exit_status": "LimitsExceeded",
+ "error": "",
+ "steps": 40,
+ "wall_s": 96.7,
+ "prompt_tokens": 537059,
+ "completion_tokens": 4488,
+ "format_errors": 0,
+ "length_cutoffs": 0,
+ "api_errors": {
+  "429": 4
+ },
+ "n_queries": 40,
+ "keys_used": {
+  "NVIDIA_API_KEY": 12,
+  "NVIDIA_API_KEY_4": 12,
+  "NVIDIA_API_KEY_2": 8,
+  "NVIDIA_API_KEY_5": 12
+ },
+ "temperature": 0.7,
+ "top_p": 0.95,
+ "model_id_returned": "nvidia/nemotron-3-super-120b-a12b",
+ "mini_version": "2.4.6",
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 40,
+   "hit_step_limit": 1,
+   "changed_lines": 5,
+   "gold_changed_lines": 13,
+   "Y1": 0,
+   "Y2": 0,
+   "Y3": 0.0,
+   "Y3_gold": 0.0,
+   "Y3_excess": 0.0,
+   "Y3w": 0.6666666666666666,
+   "Y4": -1.3785116232537298
+  },
+  "f2p_pass": 2,
+  "f2p_total": 17,
+  "p2p_pass": 14,
+  "p2p_total": 14,
+  "f2p_all_pass": false,
+  "p2p_all_pass": true,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 1.5
+ },
+ "status": "done",
+ "finished": "2026-10-07T14:47:21.691851+00:00"
+}

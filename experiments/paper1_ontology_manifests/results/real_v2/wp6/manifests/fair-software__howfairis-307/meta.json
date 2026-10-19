@@ -1,0 +1,334 @@
+{
+ "task_id": "fair-software__howfairis-307",
+ "repo": "fair-software/howfairis",
+ "stage": "initial_development",
+ "rounds": 1,
+ "rejects": {},
+ "flags": [
+  "kind3_dropped",
+  "kind4_R_used_I_competitor"
+ ],
+ "info": {
+  "slots": {
+   "test_root": "tests",
+   "P1": {
+    "replaced": "howfairis/workarounds",
+    "name": "core",
+    "F_R": "howfairis/core",
+    "F_I": "howfairis/cli/core"
+   },
+   "P2": {
+    "replaced": "howfairis/cli/cli.py",
+    "F_R": "howfairis/config.py",
+    "F_I": "tests/github/repo1/test_checker_with_noreason_user_config.py"
+   },
+   "D": {
+    "replaced": "voluptuous",
+    "F_R": "boltons",
+    "F_I": "boltons"
+   }
+  },
+  "why": {
+   "test_command": [
+    {
+     "root": "tests",
+     "T3": "SupportedClaim",
+     "T1": "SupportedClaim",
+     "collect_ok": true
+    }
+   ],
+   "kind1": {
+    "p1_idx": 5,
+    "gold0": "howfairis",
+    "unrelated": "howfairis/cli",
+    "base_R": "howfairis",
+    "base_I": "howfairis/cli"
+   },
+   "kind2": {
+    "p2_idx": 2,
+    "n_deleted_py": 169,
+    "found": {
+     "F_R": "howfairis/config.py",
+     "F_I": "tests/github/repo1/test_checker_with_noreason_user_config.py"
+    }
+   },
+   "kind3": {
+    "run": null,
+    "install": null,
+    "test_ok": true,
+    "install_ok": true
+   },
+   "kind4": {
+    "deps": [
+     [
+      "requests",
+      false
+     ],
+     [
+      "backoff",
+      false
+     ],
+     [
+      "ratelimit",
+      false
+     ],
+     [
+      "colorama",
+      false
+     ],
+     [
+      "voluptuous",
+      false
+     ]
+    ],
+    "d_idx": 4,
+    "src_R": "voluptuous",
+    "src_I": "voluptuous",
+    "n_decls": 8,
+    "n_dist": 80
+   }
+  },
+  "length": {
+   "T": 505,
+   "F_R": 485,
+   "F_I": 530
+  },
+  "fallbacks": {
+   "F_R": [
+    "kind4_I_competitor"
+   ],
+   "F_I": []
+  },
+  "modes": {
+   "F_R": {
+    "1": "replace",
+    "2": "replace",
+    "4": "replace"
+   },
+   "F_I": {
+    "1": "replace",
+    "2": "replace",
+    "4": "replace"
+   }
+  },
+  "length_diff": {
+   "F_R": -20,
+   "F_I": 25
+  },
+  "n_claims_T": 18,
+  "n_false": {
+   "F_R": 3,
+   "F_I": 3
+  },
+  "pointer_in_issue": true,
+  "gold_dirs": [
+   "howfairis"
+  ],
+  "gold_files": [
+   "CHANGELOG.md",
+   "howfairis/compliance.py"
+  ]
+ },
+ "tokens": {
+  "F_R": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "howfairis/core",
+     "core"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "howfairis/config.py",
+     "config.py"
+    ]
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "boltons"
+    ]
+   }
+  ],
+  "F_I": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "howfairis/cli/core",
+     "core"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "tests/github/repo1/test_checker_with_noreason_user_config.py",
+     "test_checker_with_noreason_user_config.py"
+    ]
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "boltons"
+    ]
+   }
+  ]
+ },
+ "unresolved_pre_hermit": [],
+ "sha256": {
+  "T": "cee77a6c8d593a8ca8ecdb24e8b498e554c8e67a2e87f606eda940c191301cad",
+  "F_R": "4991e94aa8bab05ed7cf5c34a6e14343dfea894887f5727aec7cf9aaac8a23ee",
+  "F_I": "cc9efc7e3d6c938b4d67d08078294a05da1154a4da51c0281c1771f813e7bff7"
+ },
+ "chars": {
+  "T": 505,
+  "F_R": 485,
+  "F_I": 530
+ },
+ "claims": {
+  "T": [
+   "T1|howfairis",
+   "T1|howfairis/cli",
+   "T1|howfairis/exceptions",
+   "T1|howfairis/mixins",
+   "T1|howfairis/requesting",
+   "T1|howfairis/workarounds",
+   "T1|tests",
+   "T1|howfairis/checker.py",
+   "T1|howfairis/requesting/get_from_gitlab_no_auth.py",
+   "T1|howfairis/cli/cli.py",
+   "T3|test_framework|pytest",
+   "T1|tests",
+   "T1|setup.py",
+   "T4|requests|",
+   "T4|backoff|",
+   "T4|ratelimit|",
+   "T4|colorama|",
+   "T4|voluptuous|"
+  ],
+  "F_R": [
+   "T1|howfairis",
+   "T1|howfairis/cli",
+   "T1|howfairis/exceptions",
+   "T1|howfairis/mixins",
+   "T1|howfairis/requesting",
+   "T1|howfairis/core",
+   "T1|tests",
+   "T1|howfairis/checker.py",
+   "T1|howfairis/requesting/get_from_gitlab_no_auth.py",
+   "T1|howfairis/config.py",
+   "T3|test_framework|pytest",
+   "T1|tests",
+   "T1|setup.py",
+   "T4|requests|",
+   "T4|backoff|",
+   "T4|ratelimit|",
+   "T4|colorama|",
+   "T4|boltons|"
+  ],
+  "F_I": [
+   "T1|howfairis",
+   "T1|howfairis/cli",
+   "T1|howfairis/exceptions",
+   "T1|howfairis/mixins",
+   "T1|howfairis/requesting",
+   "T1|howfairis/cli/core",
+   "T1|tests",
+   "T1|howfairis/checker.py",
+   "T1|howfairis/requesting/get_from_gitlab_no_auth.py",
+   "T1|tests/github/repo1/test_checker_with_noreason_user_config.py",
+   "T3|test_framework|pytest",
+   "T1|tests",
+   "T1|setup.py",
+   "T4|requests|",
+   "T4|backoff|",
+   "T4|ratelimit|",
+   "T4|colorama|",
+   "T4|boltons|"
+  ]
+ },
+ "python_spec": null,
+ "token_audit": [
+  {
+   "cond": "F_R",
+   "kind": 1,
+   "type": "path",
+   "name": "howfairis/core",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 2,
+   "type": "path",
+   "name": "howfairis/config.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 4,
+   "type": "word",
+   "name": "boltons",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 1,
+   "type": "path",
+   "name": "howfairis/cli/core",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 2,
+   "type": "path",
+   "name": "tests/github/repo1/test_checker_with_noreason_user_config.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 4,
+   "type": "word",
+   "name": "boltons",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  }
+ ],
+ "dist_imports_used": {
+  "requests": [
+   "requests"
+  ],
+  "backoff": [
+   "backoff"
+  ],
+  "ratelimit": [
+   "ratelimit"
+  ],
+  "colorama": [
+   "colorama"
+  ],
+  "voluptuous": [
+   "voluptuous"
+  ],
+  "boltons": null
+ }
+}

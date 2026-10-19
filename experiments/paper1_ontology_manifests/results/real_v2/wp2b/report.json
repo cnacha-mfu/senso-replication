@@ -1,0 +1,428 @@
+{
+ "design": "papers/paper1/wp2b-persistence-design.md (tag wp2b-prereg)",
+ "head_fetch": {
+  "fetch_date": "2026-10-09",
+  "fetch_started": "2026-10-09T04:01:38+00:00",
+  "fetch_finished": "2026-10-09T04:02:23+00:00",
+  "n_repos": 68,
+  "n_unavailable": 0,
+  "n_archived": 3,
+  "n_S_not_ancestor": 0
+ },
+ "population": {
+  "n_claims": 1177,
+  "n_contradicted": 65,
+  "n_supported": 1112,
+  "n_manifests": 68,
+  "n_manifests_with_contradicted": 29,
+  "outcomes_contradicted": {
+   "U": 0,
+   "G": 0,
+   "R": 10,
+   "P-C": 52,
+   "P-S": 3,
+   "P-O": 0
+  },
+  "outcomes_supported": {
+   "U": 0,
+   "G": 42,
+   "R": 64,
+   "P-C": 9,
+   "P-S": 997,
+   "P-O": 0
+  }
+ },
+ "A1": {
+  "n_claims": 65,
+  "n_manifests": 29,
+  "n_persisted": 52,
+  "estimate": 0.8,
+  "wilson_ci": [
+   0.6872986736183406,
+   0.8792204075879453
+  ],
+  "cluster_bootstrap_ci": [
+   0.6530541383219954,
+   0.9344262295081968
+  ],
+  "wording": "most persist"
+ },
+ "A2": {
+  "n_manifests_both_kinds": 29,
+  "n_contradicted": 65,
+  "n_supported": 557,
+  "removed_contradicted": 10,
+  "removed_supported": 15,
+  "rr_mh": 3.5869200884268695,
+  "rr_ci": [
+   1.5875098439753428,
+   11.320824494008345
+  ],
+  "rd_mh": 0.10248189587867962,
+  "rd_ci": [
+   0.015480495882409824,
+   0.20414565520923442
+  ],
+  "n_boot_rr_infinite": 0,
+  "wording": "contradicted claims are removed more often than other claims"
+ },
+ "robustness": {
+  "a_conditional_logit_and_b_gee": {
+   "n_obs": 1177,
+   "n_manifests": 68,
+   "conditional_logit_by_manifest": {
+    "converged": true,
+    "log_odds": 2.2131789404273396,
+    "odds_ratio": 9.14474082142811,
+    "or_ci": [
+     2.962591669655988,
+     28.689171184387614
+    ],
+    "p": 0.0239880059970015,
+    "n_boot_ok": 2000
+   },
+   "gee_exchangeable": {
+    "converged": true,
+    "log_odds": 0.8600845867570157,
+    "odds_ratio": 2.3633605942595333,
+    "or_ci": [
+     1.1302960259572665,
+     4.941602173438009
+    ],
+    "fallback_used": null,
+    "n_clusters": 68
+   }
+  },
+  "pooled_rr": {
+   "rr": 1.613933236574746,
+   "ci": [
+    0.30844314460302136,
+    4.030103035771457
+   ],
+   "wording": "no detectable difference; the study cannot exclude an RR of 0.31 or 4.03"
+  },
+  "c_edited_manifests": {
+   "n_manifests": 36,
+   "A1": {
+    "n_claims": 38,
+    "n_manifests": 14,
+    "n_persisted": 27,
+    "estimate": 0.7105263157894737,
+    "wilson_ci": [
+     0.5524286232424794,
+     0.8299672217151693
+    ],
+    "cluster_bootstrap_ci": [
+     0.48,
+     0.9130434782608695
+    ],
+    "wording": "about half persist; the data cannot say whether most do"
+   },
+   "A2": {
+    "n_manifests_both_kinds": 14,
+    "n_contradicted": 38,
+    "n_supported": 348,
+    "removed_contradicted": 10,
+    "removed_supported": 15,
+    "rr_mh": 3.586920088426868,
+    "rr_ci": [
+     1.6196558838975574,
+     10.517674483998183
+    ],
+    "rd_mh": 0.17290191866508084,
+    "rd_ci": [
+     0.030956508106732842,
+     0.3459720766528682
+    ],
+    "n_boot_rr_infinite": 0,
+    "wording": "contradicted claims are removed more often than other claims"
+   }
+  },
+  "d_excl_archived_and_non_ancestor": {
+   "n_manifests": 65,
+   "A1": {
+    "n_claims": 63,
+    "n_manifests": 27,
+    "n_persisted": 50,
+    "estimate": 0.7936507936507936,
+    "wilson_ci": [
+     0.6783018567138666,
+     0.8752468038450618
+    ],
+    "cluster_bootstrap_ci": [
+     0.640625,
+     0.9310344827586207
+    ],
+    "wording": "most persist"
+   },
+   "A2": {
+    "n_manifests_both_kinds": 27,
+    "n_contradicted": 63,
+    "n_supported": 508,
+    "removed_contradicted": 10,
+    "removed_supported": 15,
+    "rr_mh": 3.5869200884268686,
+    "rr_ci": [
+     1.5754225576698206,
+     10.924590838786807
+    ],
+    "rd_mh": 0.10636969711023328,
+    "rd_ci": [
+     0.01566567658775143,
+     0.2119183755497631
+    ],
+    "n_boot_rr_infinite": 0,
+    "wording": "contradicted claims are removed more often than other claims"
+   }
+  },
+  "e_reasoner_recheck_agree": {
+   "n_contradicted_dropped": 1,
+   "A1": {
+    "n_claims": 64,
+    "n_manifests": 29,
+    "n_persisted": 51,
+    "estimate": 0.796875,
+    "wilson_ci": [
+     0.6828636426898583,
+     0.8772658218081634
+    ],
+    "cluster_bootstrap_ci": [
+     0.6461458333333334,
+     0.9333606557377045
+    ],
+    "wording": "most persist"
+   },
+   "A2": {
+    "n_manifests_both_kinds": 29,
+    "n_contradicted": 64,
+    "n_supported": 557,
+    "removed_contradicted": 10,
+    "removed_supported": 15,
+    "rr_mh": 3.5869200884268695,
+    "rr_ci": [
+     1.5875098439753428,
+     11.320824494008345
+    ],
+    "rd_mh": 0.10385548758862716,
+    "rd_ci": [
+     0.015740425044953266,
+     0.2063504324955707
+    ],
+    "n_boot_rr_infinite": 0,
+    "wording": "contradicted claims are removed more often than other claims"
+   }
+  },
+  "f_removed_by_quote_disappearance": {
+   "n_manifests_both_kinds": 29,
+   "n_contradicted": 65,
+   "n_supported": 557,
+   "removed_contradicted": 14,
+   "removed_supported": 34,
+   "rr_mh": 2.457694794434614,
+   "rr_ci": [
+    1.2005582623084297,
+    3.930799406735529
+   ],
+   "rd_mh": 0.12169873554258855,
+   "rd_ci": [
+    0.012940146629508577,
+    0.2439061160095199
+   ],
+   "n_boot_rr_infinite": 0,
+   "wording": "contradicted claims are removed more often than other claims"
+  }
+ },
+ "exploratory": {
+  "outcomes_by_type": {
+   "T1": {
+    "contradicted": {
+     "U": 0,
+     "G": 0,
+     "R": 6,
+     "P-C": 30,
+     "P-S": 0,
+     "P-O": 0
+    },
+    "supported": {
+     "U": 0,
+     "G": 32,
+     "R": 31,
+     "P-C": 6,
+     "P-S": 703,
+     "P-O": 0
+    }
+   },
+   "T3": {
+    "contradicted": {
+     "U": 0,
+     "G": 0,
+     "R": 0,
+     "P-C": 3,
+     "P-S": 1,
+     "P-O": 0
+    },
+    "supported": {
+     "U": 0,
+     "G": 2,
+     "R": 3,
+     "P-C": 1,
+     "P-S": 90,
+     "P-O": 0
+    }
+   },
+   "T4": {
+    "contradicted": {
+     "U": 0,
+     "G": 0,
+     "R": 3,
+     "P-C": 9,
+     "P-S": 2,
+     "P-O": 0
+    },
+    "supported": {
+     "U": 0,
+     "G": 2,
+     "R": 8,
+     "P-C": 1,
+     "P-S": 40,
+     "P-O": 0
+    }
+   },
+   "T5": {
+    "contradicted": {
+     "U": 0,
+     "G": 0,
+     "R": 0,
+     "P-C": 7,
+     "P-S": 0,
+     "P-O": 0
+    },
+    "supported": {
+     "U": 0,
+     "G": 6,
+     "R": 20,
+     "P-C": 0,
+     "P-S": 155,
+     "P-O": 0
+    }
+   },
+   "T6": {
+    "contradicted": {
+     "U": 0,
+     "G": 0,
+     "R": 1,
+     "P-C": 3,
+     "P-S": 0,
+     "P-O": 0
+    },
+    "supported": {
+     "U": 0,
+     "G": 0,
+     "R": 2,
+     "P-C": 1,
+     "P-S": 9,
+     "P-O": 0
+    }
+   }
+  },
+  "outcomes_contradicted_by_origin": {
+   "drifted": {
+    "U": 0,
+    "G": 0,
+    "R": 4,
+    "P-C": 16,
+    "P-S": 1,
+    "P-O": 0
+   },
+   "born_wrong": {
+    "U": 0,
+    "G": 0,
+    "R": 6,
+    "P-C": 36,
+    "P-S": 2,
+    "P-O": 0
+   }
+  },
+  "days_S_to_H_per_manifest": {
+   "median": 199.95951967592595,
+   "range": [
+    0.0,
+    474.37675925925925
+   ],
+   "n_manifests": 68
+  },
+  "commits_S_to_H_per_manifest": {
+   "median": 37.5,
+   "n_manifests_zero_commits": 14,
+   "n_manifests_manifest_edited": 36,
+   "n_manifests_gone": 3
+  },
+  "forward_drift": {
+   "n_retained_supported": 1006,
+   "n_now_contradicted": 9,
+   "share": 0.008946322067594433,
+   "wilson_ci": [
+    0.004713736433890305,
+    0.016914865392579432
+   ],
+   "claim_years": 460.28039223515094,
+   "per_claim_year": 0.019553298710586878
+  },
+  "minimum_age_of_uncorrected_error_days": {
+   "n": 52,
+   "median": 219.1984375,
+   "range": [
+    14.316145833333334,
+    527.2350115740741
+   ]
+  },
+  "days_since_flip_for_persisting_drifted_days": {
+   "n": 16,
+   "median": 210.58490162037037,
+   "range": [
+    100.6434837962963,
+    492.39197916666666
+   ]
+  },
+  "removal": {
+   "n_R": 74,
+   "n_removal_commit_found": 74,
+   "median_days_S_to_removal": 131.67652777777778,
+   "range": [
+    1.715439814814815,
+    311.95016203703705
+   ],
+   "hunk_shape": {
+    "replacement": 70,
+    "pure_deletion": 4
+   },
+   "agent_signal": {
+    "None": 66,
+    "generic_agent": 3,
+    "claude_code": 5
+   },
+   "method": {
+    "pickaxe": 70,
+    "scan": 4
+   },
+   "by_verdict": {
+    "contradicted": 10,
+    "supported": 64
+   }
+  },
+  "recheck_agreement_at_H": {
+   "n": 1061,
+   "agree": 1061,
+   "kappa": 1.0,
+   "n_disagree_contradicted": 0
+  },
+  "retained_contradicted_quote_edited": {
+   "P-C_quote_verbatim": 48,
+   "P-C_quote_edited": 4
+  },
+  "P-S_from_contradicted_leaves": {
+   "ToolAbsentInEcosystem->ToolSignatureFound": 1,
+   "DependencyUndeclared->DependencyConfirmed": 2
+  }
+ }
+}

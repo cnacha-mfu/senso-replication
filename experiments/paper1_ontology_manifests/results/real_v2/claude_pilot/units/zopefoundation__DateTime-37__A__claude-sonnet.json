@@ -1,0 +1,89 @@
+{
+ "unit_id": "zopefoundation__DateTime-37__A__claude-sonnet",
+ "task_id": "zopefoundation__DateTime-37",
+ "repo": "zopefoundation/DateTime",
+ "stage": "servicing",
+ "condition": "A",
+ "model": "claude-code/sonnet",
+ "run": 1,
+ "condition_meta": {},
+ "started": "2026-10-18T01:16:10.995382+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 5,
+ "tool_calls": 4,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 7289,
+  "cache_read_input_tokens": 60050,
+  "output_tokens": 970,
+  "output_tokens_details": {
+   "thinking_tokens": 35
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 7289,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 8,
+   "outputTokens": 970,
+   "cacheReadInputTokens": 60050,
+   "cacheCreationInputTokens": 7289,
+   "webSearchRequests": 0,
+   "costUSD": 0.044877,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 35,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.044877,
+ "result_text": "`DateTime` objects now work in f-strings and `str.format`, the same way `datetime` does. I added a `__format__` method in `src/DateTime/DateTime.py`, right after `strftime`.\n\nA non-empty format spec is passed to `strftime`. An empty spec returns `str(self)`, so `f'{d}'` behaves as it did before.\n\nI checked it with a quick script. For a DateTime of `2022/05/26 05:45:00 UTC`:\n- `f'{d:%d.%m.%Y %H:%M}'` gives `26.05.2022 05:45`.\n- `f'{d}'` gives `2022/05/26 05:45:00 UTC`.\n- `'{:%Y}'.format(d)` gives `2022`.\n\nI didn't run the repo's test suite or the issue's exact `{now = :%-d.%-m.%Y %H:%M}` example. The `%-d` flag isn't part of Python's own `strftime`, so on this code path it depends on your platform's C library, as it does for `datetime`.",
+ "wall_s": 16.8,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 5,
+   "hit_step_limit": 0,
+   "changed_lines": 6,
+   "gold_changed_lines": 11,
+   "Y1": 2,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": -0.8744691179161412
+  },
+  "f2p_pass": 1,
+  "f2p_total": 1,
+  "p2p_pass": 47,
+  "p2p_total": 47,
+  "f2p_all_pass": true,
+  "p2p_all_pass": true,
+  "resolved": true,
+  "reason": "resolved",
+  "test_seconds": 0.9
+ },
+ "status": "done",
+ "finished": "2026-10-18T01:16:29.769605+00:00"
+}

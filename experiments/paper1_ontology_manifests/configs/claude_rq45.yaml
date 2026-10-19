@@ -1,0 +1,10 @@
+# Claude Code study (74 tasks x A/C/D x 2), after the pilot for RQ4/RQ5 (exploratory; WP5 deviation 17). Runner: run_claude_pilot.py. Same tasks, manifests (symlinked
+# from wp5/), venv handling and evaluation as configs/wp5_rep.yaml; the agent is Claude Code in a docker container.
+base_config: experiments/paper1_ontology_manifests/configs/wp5.yaml
+
+output_dir: experiments/paper1_ontology_manifests/results/real_v2/claude_rq45
+work_dir: /home/adtgrade/research/data/claude_rq45
+shared_work_dir: /home/adtgrade/research/data/wp5
+wp5_tasks: experiments/paper1_ontology_manifests/results/real_v2/wp5/wp5_tasks.json
+wp5_output_dir: experiments/paper1_ontology_manifests/results/real_v2/wp5
+rep_tasks: experiments/paper1_ontology_manifests/results/real_v2/wp5_rep/wp5_tasks.json   # complete tasks of the Ultra replication

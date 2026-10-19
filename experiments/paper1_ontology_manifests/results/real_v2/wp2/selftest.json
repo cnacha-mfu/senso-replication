@@ -1,0 +1,574 @@
+{
+ "n_cases": 47,
+ "n_failures": 0,
+ "failures": [],
+ "cases": [
+  {
+   "case": "t1_exact",
+   "expected_leaf": "PathFoundExact",
+   "expected_verdict": "SupportedClaim",
+   "got_leaves": [
+    "PathFoundExact"
+   ],
+   "got_verdicts": [
+    "SupportedClaim"
+   ],
+   "pass": true
+  },
+  {
+   "case": "t1_suffix",
+   "expected_leaf": "PathFoundBySuffix",
+   "expected_verdict": "SupportedClaim",
+   "got_leaves": [
+    "PathFoundBySuffix"
+   ],
+   "got_verdicts": [
+    "SupportedClaim"
+   ],
+   "pass": true
+  },
+  {
+   "case": "t1_ignored",
+   "expected_leaf": "PathUntrackedByDesign",
+   "expected_verdict": "UnverifiableClaim",
+   "got_leaves": [
+    "PathUntrackedByDesign"
+   ],
+   "got_verdicts": [
+    "UnverifiableClaim"
+   ],
+   "pass": true
+  },
+  {
+   "case": "t1_submodule",
+   "expected_leaf": "PathInSubmodule",
+   "expected_verdict": "UnverifiableClaim",
+   "got_leaves": [
+    "PathInSubmodule"
+   ],
+   "got_verdicts": [
+    "UnverifiableClaim"
+   ],
+   "pass": true
+  },
+  {
+   "case": "t1_removed_boundary1",
+   "expected_leaf": "PathRemoved",
+   "expected_verdict": "ContradictedClaim",
+   "got_leaves": [
+    "PathRemoved"
+   ],
+   "got_verdicts": [
+    "ContradictedClaim"
+   ],
+   "pass": true
+  },
+  {
+   "case": "t1_never_boundary0",
+   "expected_leaf": "PathNeverExisted",
+   "expected_verdict": "ContradictedClaim",
+   "got_leaves": [
+    "PathNeverExisted"
+   ],
+   "got_verdicts": [
+    "ContradictedClaim"
+   ],
+   "pass": true
+  },
+  {
+   "case": "t1_unmeasured",
+   "expected_leaf": null,
+   "expected_verdict": null,
+   "got_leaves": [],
+   "got_verdicts": [],
+   "pass": true
+  },
+  {
+   "case": "t1_one_vote_only",
+   "expected_leaf": null,
+   "expected_verdict": null,
+   "got_leaves": [],
+   "got_verdicts": [],
+   "pass": true
+  },
+  {
+   "case": "t2_commits0",
+   "expected_leaf": "InactivePathQuiet",
+   "expected_verdict": "SupportedClaim",
+   "got_leaves": [
+    "InactivePathQuiet"
+   ],
+   "got_verdicts": [
+    "SupportedClaim"
+   ],
+   "pass": true
+  },
+  {
+   "case": "t2_commits1_boundary",
+   "expected_leaf": "InactivePathQuiet",
+   "expected_verdict": "SupportedClaim",
+   "got_leaves": [
+    "InactivePathQuiet"
+   ],
+   "got_verdicts": [
+    "SupportedClaim"
+   ],
+   "pass": true
+  },
+  {
+   "case": "t2_commits2_moderate",
+   "expected_leaf": "InactivePathModerate",
+   "expected_verdict": "IndeterminateClaim",
+   "got_leaves": [
+    "InactivePathModerate"
+   ],
+   "got_verdicts": [
+    "IndeterminateClaim"
+   ],
+   "pass": true
+  },
+  {
+   "case": "t2_commits4_moderate",
+   "expected_leaf": "InactivePathModerate",
+   "expected_verdict": "IndeterminateClaim",
+   "got_leaves": [
+    "InactivePathModerate"
+   ],
+   "got_verdicts": [
+    "IndeterminateClaim"
+   ],
+   "pass": true
+  },
+  {
+   "case": "t2_commits5_lines99_moderate",
+   "expected_leaf": "InactivePathModerate",
+   "expected_verdict": "IndeterminateClaim",
+   "got_leaves": [
+    "InactivePathModerate"
+   ],
+   "got_verdicts": [
+    "IndeterminateClaim"
+   ],
+   "pass": true
+  },
+  {
+   "case": "t2_commits5_lines100_active",
+   "expected_leaf": "InactivePathActive",
+   "expected_verdict": "ContradictedClaim",
+   "got_leaves": [
+    "InactivePathActive"
+   ],
+   "got_verdicts": [
+    "ContradictedClaim"
+   ],
+   "pass": true
+  },
+  {
+   "case": "t2_unresolved",
+   "expected_leaf": "StatusPathUnresolved",
+   "expected_verdict": "UnverifiableClaim",
+   "got_leaves": [
+    "StatusPathUnresolved"
+   ],
+   "got_verdicts": [
+    "UnverifiableClaim"
+   ],
+   "pass": true
+  },
+  {
+   "case": "t2_ambiguous",
+   "expected_leaf": "StatusPathAmbiguous",
+   "expected_verdict": "UnverifiableClaim",
+   "got_leaves": [
+    "StatusPathAmbiguous"
+   ],
+   "got_verdicts": [
+    "UnverifiableClaim"
+   ],
+   "pass": true
+  },
+  {
+   "case": "t3_found",
+   "expected_leaf": "ToolSignatureFound",
+   "expected_verdict": "SupportedClaim",
+   "got_leaves": [
+    "ToolSignatureFound"
+   ],
+   "got_verdicts": [
+    "SupportedClaim"
+   ],
+   "pass": true
+  },
+  {
+   "case": "t3_competitor",
+   "expected_leaf": "ToolAbsentCompetitorPresent",
+   "expected_verdict": "ContradictedClaim",
+   "got_leaves": [
+    "ToolAbsentCompetitorPresent"
+   ],
+   "got_verdicts": [
+    "ContradictedClaim"
+   ],
+   "pass": true
+  },
+  {
+   "case": "t3_pkgmgr_absent_no_competitor",
+   "expected_leaf": "ToolAbsentInEcosystem",
+   "expected_verdict": "ContradictedClaim",
+   "got_leaves": [
+    "ToolAbsentInEcosystem"
+   ],
+   "got_verdicts": [
+    "ContradictedClaim"
+   ],
+   "pass": true
+  },
+  {
+   "case": "t3_test_absent_with_competing",
+   "expected_leaf": "ToolAbsentInEcosystem",
+   "expected_verdict": "ContradictedClaim",
+   "got_leaves": [
+    "ToolAbsentInEcosystem"
+   ],
+   "got_verdicts": [
+    "ContradictedClaim"
+   ],
+   "pass": true
+  },
+  {
+   "case": "t3_ecosystem_absent",
+   "expected_leaf": "ToolEcosystemAbsent",
+   "expected_verdict": "UnverifiableClaim",
+   "got_leaves": [
+    "ToolEcosystemAbsent"
+   ],
+   "got_verdicts": [
+    "UnverifiableClaim"
+   ],
+   "pass": true
+  },
+  {
+   "case": "t4_confirmed",
+   "expected_leaf": "DependencyConfirmed",
+   "expected_verdict": "SupportedClaim",
+   "got_leaves": [
+    "DependencyConfirmed"
+   ],
+   "got_verdicts": [
+    "SupportedClaim"
+   ],
+   "pass": true
+  },
+  {
+   "case": "t4_confirmed_suffix",
+   "expected_leaf": "DependencyConfirmed",
+   "expected_verdict": "SupportedClaim",
+   "got_leaves": [
+    "DependencyConfirmed"
+   ],
+   "got_verdicts": [
+    "SupportedClaim"
+   ],
+   "pass": true
+  },
+  {
+   "case": "t4_undeclared",
+   "expected_leaf": "DependencyUndeclared",
+   "expected_verdict": "ContradictedClaim",
+   "got_leaves": [
+    "DependencyUndeclared"
+   ],
+   "got_verdicts": [
+    "ContradictedClaim"
+   ],
+   "pass": true
+  },
+  {
+   "case": "t4_nomanifest",
+   "expected_leaf": "DependencyNoManifest",
+   "expected_verdict": "UnverifiableClaim",
+   "got_leaves": [
+    "DependencyNoManifest"
+   ],
+   "got_verdicts": [
+    "UnverifiableClaim"
+   ],
+   "pass": true
+  },
+  {
+   "case": "t4_too_old",
+   "expected_leaf": "DependencyMajorTooOld",
+   "expected_verdict": "ContradictedClaim",
+   "got_leaves": [
+    "DependencyMajorTooOld"
+   ],
+   "got_verdicts": [
+    "ContradictedClaim"
+   ],
+   "pass": true
+  },
+  {
+   "case": "t4_too_new",
+   "expected_leaf": "DependencyMajorTooNew",
+   "expected_verdict": "ContradictedClaim",
+   "got_leaves": [
+    "DependencyMajorTooNew"
+   ],
+   "got_verdicts": [
+    "ContradictedClaim"
+   ],
+   "pass": true
+  },
+  {
+   "case": "t4_in_range_pinned",
+   "expected_leaf": "DependencyMajorInRange",
+   "expected_verdict": "SupportedClaim",
+   "got_leaves": [
+    "DependencyMajorInRange"
+   ],
+   "got_verdicts": [
+    "SupportedClaim"
+   ],
+   "pass": true
+  },
+  {
+   "case": "t4_in_range_unbounded",
+   "expected_leaf": "DependencyMajorInRange",
+   "expected_verdict": "SupportedClaim",
+   "got_leaves": [
+    "DependencyMajorInRange"
+   ],
+   "got_verdicts": [
+    "SupportedClaim"
+   ],
+   "pass": true
+  },
+  {
+   "case": "t4_versioned_undeclared",
+   "expected_leaf": "DependencyUndeclared",
+   "expected_verdict": "ContradictedClaim",
+   "got_leaves": [
+    "DependencyUndeclared"
+   ],
+   "got_verdicts": [
+    "ContradictedClaim"
+   ],
+   "pass": true
+  },
+  {
+   "case": "t5_root",
+   "expected_leaf": "ScriptDefinedRoot",
+   "expected_verdict": "SupportedClaim",
+   "got_leaves": [
+    "ScriptDefinedRoot"
+   ],
+   "got_verdicts": [
+    "SupportedClaim"
+   ],
+   "pass": true
+  },
+  {
+   "case": "t5_nested",
+   "expected_leaf": "ScriptDefinedNested",
+   "expected_verdict": "SupportedClaim",
+   "got_leaves": [
+    "ScriptDefinedNested"
+   ],
+   "got_verdicts": [
+    "SupportedClaim"
+   ],
+   "pass": true
+  },
+  {
+   "case": "t5_undefined",
+   "expected_leaf": "ScriptUndefined",
+   "expected_verdict": "ContradictedClaim",
+   "got_leaves": [
+    "ScriptUndefined"
+   ],
+   "got_verdicts": [
+    "ContradictedClaim"
+   ],
+   "pass": true
+  },
+  {
+   "case": "t5_host_missing",
+   "expected_leaf": "ScriptHostMissing",
+   "expected_verdict": "ContradictedClaim",
+   "got_leaves": [
+    "ScriptHostMissing"
+   ],
+   "got_verdicts": [
+    "ContradictedClaim"
+   ],
+   "pass": true
+  },
+  {
+   "case": "t5_dynamic",
+   "expected_leaf": "ScriptPossiblyDynamic",
+   "expected_verdict": "UnverifiableClaim",
+   "got_leaves": [
+    "ScriptPossiblyDynamic"
+   ],
+   "got_verdicts": [
+    "UnverifiableClaim"
+   ],
+   "pass": true
+  },
+  {
+   "case": "t6_min_confirmed",
+   "expected_leaf": "VersionConfirmed",
+   "expected_verdict": "SupportedClaim",
+   "got_leaves": [
+    "VersionConfirmed"
+   ],
+   "got_verdicts": [
+    "SupportedClaim"
+   ],
+   "pass": true
+  },
+  {
+   "case": "t6_min_contradicted_below",
+   "expected_leaf": "VersionContradicted",
+   "expected_verdict": "ContradictedClaim",
+   "got_leaves": [
+    "VersionContradicted"
+   ],
+   "got_verdicts": [
+    "ContradictedClaim"
+   ],
+   "pass": true
+  },
+  {
+   "case": "t6_min_contradicted_above",
+   "expected_leaf": "VersionContradicted",
+   "expected_verdict": "ContradictedClaim",
+   "got_leaves": [
+    "VersionContradicted"
+   ],
+   "got_verdicts": [
+    "ContradictedClaim"
+   ],
+   "pass": true
+  },
+  {
+   "case": "t6_min_conflict",
+   "expected_leaf": "VersionSourcesConflict",
+   "expected_verdict": "ConflictedClaim",
+   "got_leaves": [
+    "VersionSourcesConflict"
+   ],
+   "got_verdicts": [
+    "ConflictedClaim"
+   ],
+   "pass": true
+  },
+  {
+   "case": "t6_exact_confirmed",
+   "expected_leaf": "VersionConfirmed",
+   "expected_verdict": "SupportedClaim",
+   "got_leaves": [
+    "VersionConfirmed"
+   ],
+   "got_verdicts": [
+    "SupportedClaim"
+   ],
+   "pass": true
+  },
+  {
+   "case": "t6_exact_confirmed_bounded",
+   "expected_leaf": "VersionConfirmed",
+   "expected_verdict": "SupportedClaim",
+   "got_leaves": [
+    "VersionConfirmed"
+   ],
+   "got_verdicts": [
+    "SupportedClaim"
+   ],
+   "pass": true
+  },
+  {
+   "case": "t6_exact_below_range",
+   "expected_leaf": "VersionContradicted",
+   "expected_verdict": "ContradictedClaim",
+   "got_leaves": [
+    "VersionContradicted"
+   ],
+   "got_verdicts": [
+    "ContradictedClaim"
+   ],
+   "pass": true
+  },
+  {
+   "case": "t6_exact_above_range",
+   "expected_leaf": "VersionContradicted",
+   "expected_verdict": "ContradictedClaim",
+   "got_leaves": [
+    "VersionContradicted"
+   ],
+   "got_verdicts": [
+    "ContradictedClaim"
+   ],
+   "pass": true
+  },
+  {
+   "case": "t6_no_source",
+   "expected_leaf": "NoVersionSource",
+   "expected_verdict": "UnverifiableClaim",
+   "got_leaves": [
+    "NoVersionSource"
+   ],
+   "got_verdicts": [
+    "UnverifiableClaim"
+   ],
+   "pass": true
+  },
+  {
+   "case": "t7_violated_boundary1",
+   "expected_leaf": "ImportRuleViolated",
+   "expected_verdict": "ContradictedClaim",
+   "got_leaves": [
+    "ImportRuleViolated"
+   ],
+   "got_verdicts": [
+    "ContradictedClaim"
+   ],
+   "pass": true
+  },
+  {
+   "case": "t7_held",
+   "expected_leaf": "ImportRuleHeld",
+   "expected_verdict": "SupportedClaim",
+   "got_leaves": [
+    "ImportRuleHeld"
+   ],
+   "got_verdicts": [
+    "SupportedClaim"
+   ],
+   "pass": true
+  },
+  {
+   "case": "t7_scope_empty",
+   "expected_leaf": "ImportScopeEmpty",
+   "expected_verdict": "UnverifiableClaim",
+   "got_leaves": [
+    "ImportScopeEmpty"
+   ],
+   "got_verdicts": [
+    "UnverifiableClaim"
+   ],
+   "pass": true
+  }
+ ],
+ "consistent": true,
+ "tbox_sha256": "1d61d8d6b4b90e51346b9ce3a91bc0e87fa401acb55b84aa83d578f94b76e751",
+ "timings": {
+  "tbox_load_s": 0.04215550801018253,
+  "abox_load_s": 0.01822390902088955,
+  "reason_s": 5.235040051979013,
+  "extract_s": 0.01250084099592641,
+  "total_s": 5.309715216979384
+ },
+ "verdicts_without_claims_module": 0,
+ "leaf_classes": 34
+}

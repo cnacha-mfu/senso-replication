@@ -1,0 +1,187 @@
+{
+ "repo": "funnyzak/weread-bot",
+ "slug": "funnyzak__weread-bot",
+ "S": "096c3adb2fb697b247703743c306ef20ee9073bb",
+ "S_epoch": 1773734342,
+ "manifest_path_S": "AGENTS.md",
+ "fetch": {
+  "default_branch": "main",
+  "archived": false,
+  "fetch_ok": true,
+  "H": "0cc9b5c309d1ede76b60f7fd453f6eb403b6307b",
+  "H_epoch": 1789611787,
+  "S_is_ancestor_of_H": true,
+  "fetched_at": "2026-10-09T04:02:09+00:00"
+ },
+ "manifest_status": "present",
+ "manifest_path_H": "AGENTS.md",
+ "manifest_via": "path",
+ "n_commits_S_H": 5,
+ "n_manifest_commits_S_H": 2,
+ "manifest_sha_changed": true,
+ "abox_head": "abox_head/funnyzak__weread-bot.nt",
+ "rows": [
+  {
+   "key": "T1|docs",
+   "tcode": "T1",
+   "quote": "Docs and deployment references belong under `docs/`, persistent logs under `logs/`, and disposable experiments or generators inside `tmp/` to keep history clean",
+   "verdict_S": "SupportedClaim",
+   "leaf_S": "PathFoundExact",
+   "drifted": false,
+   "born_wrong": false,
+   "tree_derived": false,
+   "key_present": false,
+   "quote_verbatim": false,
+   "outcome": "R",
+   "removal": {
+    "commit": "43a7b78c5e1468fd9cf0a45ccd7f3295de9bcc96",
+    "epoch": 1784617354,
+    "method": "pickaxe",
+    "shape": "replacement",
+    "agent_signal": null
+   }
+  },
+  {
+   "key": "T1|docs/github-action-autoread-guide.md",
+   "tcode": "T1",
+   "quote": "`docs/github-action-autoread-guide.md`",
+   "verdict_S": "SupportedClaim",
+   "leaf_S": "PathFoundExact",
+   "drifted": false,
+   "born_wrong": false,
+   "tree_derived": false,
+   "key_present": false,
+   "quote_verbatim": false,
+   "outcome": "R",
+   "removal": {
+    "commit": "9899325b79dc4b58e5822b8eb313a82b3df84ceb",
+    "epoch": 1784614140,
+    "method": "pickaxe",
+    "shape": "replacement",
+    "agent_signal": null
+   }
+  },
+  {
+   "key": "T1|weread-bot.py",
+   "tcode": "T1",
+   "quote": "Main automation logic lives in `weread-bot.py`, orchestrating scheduling, reading simulation, and notifications.",
+   "verdict_S": "SupportedClaim",
+   "leaf_S": "PathFoundExact",
+   "drifted": false,
+   "born_wrong": false,
+   "tree_derived": false,
+   "key_present": true,
+   "quote_verbatim": false,
+   "outcome": "P-S",
+   "head_iri": "http://senso-framework.org/data/claim/funnyzak_weread-bot/1628417f0ba5/head",
+   "recheck_verdict_H": "SupportedClaim",
+   "recheck_leaf_H": "PathFoundExact",
+   "measure_error_H": null,
+   "verdict_H": "SupportedClaim",
+   "leaf_H": "PathFoundExact"
+  },
+  {
+   "key": "T4|apprise|",
+   "tcode": "T4",
+   "quote": "- `pip install -r requirements.txt`: install runtime dependencies (requests, schedule, apprise, PyYAML, urllib3).",
+   "verdict_S": "SupportedClaim",
+   "leaf_S": "DependencyConfirmed",
+   "drifted": false,
+   "born_wrong": false,
+   "tree_derived": false,
+   "key_present": false,
+   "quote_verbatim": false,
+   "outcome": "R",
+   "removal": {
+    "commit": "9899325b79dc4b58e5822b8eb313a82b3df84ceb",
+    "epoch": 1784614140,
+    "method": "pickaxe",
+    "shape": "replacement",
+    "agent_signal": null
+   }
+  },
+  {
+   "key": "T4|pyyaml|",
+   "tcode": "T4",
+   "quote": "- `pip install -r requirements.txt`: install runtime dependencies (requests, schedule, apprise, PyYAML, urllib3).",
+   "verdict_S": "SupportedClaim",
+   "leaf_S": "DependencyConfirmed",
+   "drifted": false,
+   "born_wrong": false,
+   "tree_derived": false,
+   "key_present": false,
+   "quote_verbatim": false,
+   "outcome": "R",
+   "removal": {
+    "commit": "9899325b79dc4b58e5822b8eb313a82b3df84ceb",
+    "epoch": 1784614140,
+    "method": "scan",
+    "shape": "replacement",
+    "agent_signal": null
+   }
+  },
+  {
+   "key": "T4|requests|",
+   "tcode": "T4",
+   "quote": "- `pip install -r requirements.txt`: install runtime dependencies (requests, schedule, apprise, PyYAML, urllib3).",
+   "verdict_S": "SupportedClaim",
+   "leaf_S": "DependencyConfirmed",
+   "drifted": false,
+   "born_wrong": false,
+   "tree_derived": false,
+   "key_present": false,
+   "quote_verbatim": false,
+   "outcome": "R",
+   "removal": {
+    "commit": "9899325b79dc4b58e5822b8eb313a82b3df84ceb",
+    "epoch": 1784614140,
+    "method": "pickaxe",
+    "shape": "replacement",
+    "agent_signal": null
+   }
+  },
+  {
+   "key": "T4|schedule|",
+   "tcode": "T4",
+   "quote": "- `pip install -r requirements.txt`: install runtime dependencies (requests, schedule, apprise, PyYAML, urllib3).",
+   "verdict_S": "ContradictedClaim",
+   "leaf_S": "DependencyUndeclared",
+   "drifted": false,
+   "born_wrong": true,
+   "tree_derived": false,
+   "key_present": false,
+   "quote_verbatim": false,
+   "outcome": "R",
+   "removal": {
+    "commit": "9899325b79dc4b58e5822b8eb313a82b3df84ceb",
+    "epoch": 1784614140,
+    "method": "pickaxe",
+    "shape": "replacement",
+    "agent_signal": null
+   },
+   "intro_commit_epoch": 1763772362
+  },
+  {
+   "key": "T4|urllib3|",
+   "tcode": "T4",
+   "quote": "- `pip install -r requirements.txt`: install runtime dependencies (requests, schedule, apprise, PyYAML, urllib3).",
+   "verdict_S": "SupportedClaim",
+   "leaf_S": "DependencyConfirmed",
+   "drifted": false,
+   "born_wrong": false,
+   "tree_derived": false,
+   "key_present": false,
+   "quote_verbatim": false,
+   "outcome": "R",
+   "removal": {
+    "commit": "9899325b79dc4b58e5822b8eb313a82b3df84ceb",
+    "epoch": 1784614140,
+    "method": "pickaxe",
+    "shape": "replacement",
+    "agent_signal": null
+   }
+  }
+ ],
+ "guard_ok": true,
+ "guard_bad": []
+}

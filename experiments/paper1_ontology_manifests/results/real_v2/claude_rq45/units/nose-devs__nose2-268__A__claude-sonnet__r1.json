@@ -1,0 +1,107 @@
+{
+ "unit_id": "nose-devs__nose2-268__A__claude-sonnet__r1",
+ "task_id": "nose-devs__nose2-268",
+ "repo": "nose-devs/nose2",
+ "stage": "phase_out",
+ "condition": "A",
+ "model": "claude-code/sonnet",
+ "run": 1,
+ "condition_meta": {},
+ "started": "2026-10-18T07:21:11.093427+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 6,
+ "tool_calls": 5,
+ "usage": {
+  "input_tokens": 12,
+  "cache_creation_input_tokens": 11214,
+  "cache_read_input_tokens": 109814,
+  "output_tokens": 2306,
+  "output_tokens_details": {
+   "thinking_tokens": 987
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 11214,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 12,
+   "outputTokens": 2306,
+   "cacheReadInputTokens": 109814,
+   "cacheCreationInputTokens": 11214,
+   "webSearchRequests": 0,
+   "costUSD": 0.0789214,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 987,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.0789214,
+ "result_text": "I fixed it in `nose2/suite.py`. A layer's `setUp` no longer runs while a preceding normal test class is still waiting for its `tearDownClass`. I haven't run your gist or added a test for the interleaving, so the fix itself is unchecked.\n\n**Cause.** Normal tests are added flat to the top-level suite, and each layer runs as a nested `LayerSuite` after them. `LayerSuite.run` never triggered the teardown of the last normal class. That class's `tearDownClass` therefore only ran later, after the layer's `setUp` had already run. Your `UniqueResource` is locked in one and unlocked in the other, which is why it raised \"already locked\".\n\n**Fix.** `LayerSuite.run` now tears down any pending class-level fixtures before it calls its own `setUp`. This is a new `_tearDownPreviousClass` helper.\n\n**Tests.** I ran the functional tests. One test fails, `test_loadtests_plugin.TestLoadTestsPlugin.test_package`. It fails the same way with my change stashed, so it isn't caused by this fix. I didn't run the unit tests.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792309800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0.19,
+    "resetsAt": 1792309800
+   },
+   "seven_day": {
+    "utilization": 0.13,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 454.5,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 6,
+   "hit_step_limit": 0,
+   "changed_lines": 13,
+   "gold_changed_lines": 16,
+   "Y1": 3,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": -0.2995602818589078
+  },
+  "f2p_pass": 1,
+  "f2p_total": 1,
+  "p2p_pass": 16,
+  "p2p_total": 16,
+  "f2p_all_pass": true,
+  "p2p_all_pass": true,
+  "resolved": true,
+  "reason": "resolved",
+  "test_seconds": 0.8
+ },
+ "status": "done",
+ "finished": "2026-10-18T07:28:47.138643+00:00"
+}

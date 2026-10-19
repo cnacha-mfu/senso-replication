@@ -1,0 +1,73 @@
+{
+ "repo": "rabbitmq/rabbitmqadmin-ng",
+ "slug": "rabbitmq__rabbitmqadmin-ng",
+ "input_sha": "9f1481c1aab142bbdd2cbf177fec59d424168e3365af01a9a5044c0f91994b1d",
+ "explanations": [
+  {
+   "key": "T4|aws_lc_rs|",
+   "verdict": "ContradictedClaim",
+   "leaf": "DependencyUndeclared",
+   "seconds": 3.9,
+   "retried_on_claim_subgraph": false,
+   "error": null,
+   "returncode": 0,
+   "n_justifications": 1,
+   "facts": [
+    {
+     "prop": "dependencySuffixMatchCount",
+     "value": 0
+    },
+    {
+     "prop": "extractionVotes",
+     "value": 2
+    },
+    {
+     "prop": "dependencyManifestParsedCount",
+     "value": 1
+    },
+    {
+     "prop": "dependencyExactMatchCount",
+     "value": 0
+    }
+   ],
+   "axioms": [
+    "DependencyUndeclared subClassOf ContradictedClaim",
+    "A_extractionVotes_ge_wp2_consensus_min_votes equivalentTo extractionVotes some integer[>= 2]",
+    "A_dependencyManifestParsedCount_ge_1 equivalentTo dependencyManifestParsedCount some integer[>= 1]",
+    "DependencyUndeclared equivalentTo A_dependencyExactMatchCount_ge_0_le_0 and A_dependencyManifestParsedCount_ge_1 and A_dependencySuffixMatchCount_ge_0_le_0 and CheckedClaim and DependencyClaim",
+    "A_dependencySuffixMatchCount_ge_0_le_0 equivalentTo dependencySuffixMatchCount some integer[>= 0, <= 0]",
+    "CheckedClaim equivalentTo A_extractionVotes_ge_wp2_consensus_min_votes and ManifestClaim",
+    "A_dependencyExactMatchCount_ge_0_le_0 equivalentTo dependencyExactMatchCount some integer[>= 0, <= 0]"
+   ],
+   "closures": []
+  },
+  {
+   "key": "T1|bin/ci/*",
+   "verdict": "SupportedClaim",
+   "leaf": "PathFoundExact",
+   "seconds": 3.84,
+   "retried_on_claim_subgraph": false,
+   "error": null,
+   "returncode": 0,
+   "n_justifications": 1,
+   "facts": [
+    {
+     "prop": "pathExactMatchCount",
+     "value": 2
+    },
+    {
+     "prop": "extractionVotes",
+     "value": 3
+    }
+   ],
+   "axioms": [
+    "PathFoundExact equivalentTo A_pathExactMatchCount_ge_1 and CheckedClaim and PathExistenceClaim",
+    "A_extractionVotes_ge_wp2_consensus_min_votes equivalentTo extractionVotes some integer[>= 2]",
+    "A_pathExactMatchCount_ge_1 equivalentTo pathExactMatchCount some integer[>= 1]",
+    "CheckedClaim equivalentTo A_extractionVotes_ge_wp2_consensus_min_votes and ManifestClaim",
+    "PathFoundExact subClassOf SupportedClaim"
+   ],
+   "closures": []
+  }
+ ]
+}

@@ -1,0 +1,111 @@
+{
+ "unit_id": "maxhumber__gif-17__C__claude-sonnet__r2",
+ "task_id": "maxhumber__gif-17",
+ "repo": "maxhumber/gif",
+ "stage": "phase_out",
+ "condition": "C",
+ "model": "claude-code/sonnet",
+ "run": 2,
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 2641,
+  "sha256": "46e572c8a94d18f151e7ba2c9173c78647280a0c134bc2dc7e255b8b95031ed6"
+ },
+ "started": "2026-10-18T06:37:02.380312+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 5,
+ "tool_calls": 4,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 2302,
+  "cache_read_input_tokens": 75362,
+  "output_tokens": 1824,
+  "output_tokens_details": {
+   "thinking_tokens": 159
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 2302,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 8,
+   "outputTokens": 1824,
+   "cacheReadInputTokens": 75362,
+   "cacheCreationInputTokens": 2302,
+   "webSearchRequests": 0,
+   "costUSD": 0.0350002,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 159,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.0350002,
+ "result_text": "`gif.save` now uses the size optimization from the issue whenever `overlapping=True` and there is more than one frame. I only ran a small smoke test (5 frames saved and re-read), and the existing 4 tests pass. I didn't measure file size, so I haven't confirmed the issue's 176 KiB vs 3400 KiB result.\n\nThe change is in `gif.py`:\n- **Shared palette:** all frames are quantized together to 255 colors, with index 0 reserved as transparent.\n- **Transparent unchanged pixels:** pixels identical to the previous frame are set to the transparent index.\n- **Output:** the result is saved with `disposal=0` and `transparency=0`.\n\nSingle-frame GIFs and `overlapping=False` use the original save path, because unchanged-pixel transparency only works when frames are drawn on top of each other.\n\nThe issue warned that this approach is slower and uses more memory, and I didn't try to reduce that. It also adds `numpy` as an import. It isn't declared in this repo's dependencies, but `matplotlib` already requires it. I didn't add an option to turn the optimization off.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792309800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0.16,
+    "resetsAt": 1792309800
+   },
+   "seven_day": {
+    "utilization": 0.13,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 44.0,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 5,
+   "hit_step_limit": 0,
+   "changed_lines": 29,
+   "gold_changed_lines": 32,
+   "Y1": 7,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": -0.14201900487242788
+  },
+  "f2p_pass": 0,
+  "f2p_total": 1,
+  "p2p_pass": 4,
+  "p2p_total": 4,
+  "f2p_all_pass": false,
+  "p2p_all_pass": true,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 5.2
+ },
+ "status": "done",
+ "finished": "2026-10-18T06:37:57.119605+00:00"
+}

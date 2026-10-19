@@ -1,0 +1,711 @@
+{
+ "panel": [
+  "nvidia/nemotron-3-super-120b-a12b",
+  "openai/gpt-oss-20b",
+  "google/diffusiongemma-26b-a4b-it"
+ ],
+ "n_units_union": 1994,
+ "pairwise_f1_overall": {
+  "nvidia/nemotron-3-super-120b-a12b | openai/gpt-oss-20b": 0.617635107679805,
+  "nvidia/nemotron-3-super-120b-a12b | google/diffusiongemma-26b-a4b-it": 0.6704805491990846,
+  "openai/gpt-oss-20b | google/diffusiongemma-26b-a4b-it": 0.5450733752620545
+ },
+ "pairwise_f1_by_type": {
+  "T1": {
+   "nvidia/nemotron-3-super-120b-a12b | openai/gpt-oss-20b": 0.591283863368669,
+   "nvidia/nemotron-3-super-120b-a12b | google/diffusiongemma-26b-a4b-it": 0.6681367144432194,
+   "openai/gpt-oss-20b | google/diffusiongemma-26b-a4b-it": 0.5120481927710844
+  },
+  "T2": {
+   "nvidia/nemotron-3-super-120b-a12b | openai/gpt-oss-20b": 0.45714285714285713,
+   "nvidia/nemotron-3-super-120b-a12b | google/diffusiongemma-26b-a4b-it": 0.38461538461538464,
+   "openai/gpt-oss-20b | google/diffusiongemma-26b-a4b-it": 0.36363636363636365
+  },
+  "T3": {
+   "nvidia/nemotron-3-super-120b-a12b | openai/gpt-oss-20b": 0.6195652173913043,
+   "nvidia/nemotron-3-super-120b-a12b | google/diffusiongemma-26b-a4b-it": 0.7450980392156863,
+   "openai/gpt-oss-20b | google/diffusiongemma-26b-a4b-it": 0.632183908045977
+  },
+  "T4": {
+   "nvidia/nemotron-3-super-120b-a12b | openai/gpt-oss-20b": 0.5901639344262295,
+   "nvidia/nemotron-3-super-120b-a12b | google/diffusiongemma-26b-a4b-it": 0.45588235294117646,
+   "openai/gpt-oss-20b | google/diffusiongemma-26b-a4b-it": 0.4
+  },
+  "T5": {
+   "nvidia/nemotron-3-super-120b-a12b | openai/gpt-oss-20b": 0.7953890489913544,
+   "nvidia/nemotron-3-super-120b-a12b | google/diffusiongemma-26b-a4b-it": 0.8414985590778098,
+   "openai/gpt-oss-20b | google/diffusiongemma-26b-a4b-it": 0.7619047619047619
+  },
+  "T6": {
+   "nvidia/nemotron-3-super-120b-a12b | openai/gpt-oss-20b": 0.631578947368421,
+   "nvidia/nemotron-3-super-120b-a12b | google/diffusiongemma-26b-a4b-it": 0.4166666666666667,
+   "openai/gpt-oss-20b | google/diffusiongemma-26b-a4b-it": 0.43243243243243246
+  },
+  "T7": {
+   "nvidia/nemotron-3-super-120b-a12b | openai/gpt-oss-20b": 0.1111111111111111,
+   "nvidia/nemotron-3-super-120b-a12b | google/diffusiongemma-26b-a4b-it": 0.0,
+   "openai/gpt-oss-20b | google/diffusiongemma-26b-a4b-it": 0.0
+  }
+ },
+ "pairwise_f1_mean": 0.611063010713648,
+ "alpha_presence": {
+  "alpha": -0.02960591525026346,
+  "bootstrap_ci95": {
+   "lo": -0.07769547841974636,
+   "hi": 0.016434948600984524,
+   "n_valid": 1000
+  }
+ },
+ "alpha_presence_by_type": {
+  "T1": {
+   "n_units": 1420,
+   "alpha": -0.03598158820447561
+  },
+  "T2": {
+   "n_units": 42,
+   "alpha": -0.13636363636363646
+  },
+  "T3": {
+   "n_units": 137,
+   "alpha": -0.04379961675335342
+  },
+  "T4": {
+   "n_units": 119,
+   "alpha": -0.1775332357992494
+  },
+  "T5": {
+   "n_units": 213,
+   "alpha": -0.029032258064516148
+  },
+  "T6": {
+   "n_units": 42,
+   "alpha": -0.12035851472471193
+  },
+  "T7": {
+   "n_units": 21,
+   "alpha": -0.4434589800443458
+  }
+ },
+ "alpha_line_level": {
+  "n_units": 17409,
+  "alpha": 0.5346531629392957,
+  "bootstrap_ci95": {
+   "lo": 0.45491957610245504,
+   "hi": 0.599217270522903,
+   "n_valid": 200
+  },
+  "note": "every manifest line is a unit, so agreement on 'no claim' counts: an upper bound; the union-of-keys alpha above is the lower bound"
+ },
+ "alpha_mode": {
+  "n_units": 549,
+  "alpha": -0.0074164746543778914,
+  "categories": [
+   "asserts_existing",
+   "negated",
+   "to_be_created",
+   "example"
+  ]
+ },
+ "alpha_status_T2": {
+  "n_units": 6,
+  "alpha": NaN,
+  "categories": [
+   "do_not_edit"
+  ]
+ },
+ "alpha_qualifier_T6": {
+  "n_units": 7,
+  "alpha": 1.0,
+  "categories": [
+   "min",
+   "exact"
+  ]
+ },
+ "caveat": "Presence alpha codes union-of-keys presence per model; it approximates unitizing alpha_u and is deflated by singleton units, so pairwise F1 is reported alongside it.",
+ "units_by_votes": {
+  "1": 803,
+  "2": 642,
+  "3": 549
+ },
+ "per_model": {
+  "nvidia/nemotron-3-super-120b-a12b": {
+   "responses": 152,
+   "parse_retries": 31,
+   "raw_claims": 2866,
+   "schema_invalid": 0,
+   "schema_valid": 2866,
+   "rejected_shape": 1027,
+   "quote_repaired": 0,
+   "accepted_units_raw": 1837,
+   "rejected_grounding": 116,
+   "parse_failures": 10,
+   "reject_reasons": {
+    "alias_or_package_specifier": 27,
+    "bad_runner": 335,
+    "ungrounded_quote": 50,
+    "empty_subject": 5,
+    "not_path_shaped": 117,
+    "tool_out_of_vocabulary": 167,
+    "bad_version_subject": 37,
+    "prose_mention_not_code": 57,
+    "subject_not_in_quote": 66,
+    "code_import_not_dependency_claim": 2,
+    "command_not_in_quote": 129,
+    "bad_target": 5,
+    "builtin_command": 18,
+    "not_a_path": 26,
+    "no_version_number": 10,
+    "non_identifier_mention": 7,
+    "self_reference": 1,
+    "system_path": 5,
+    "placeholder_or_url": 43,
+    "code_import_not_path_claim": 9,
+    "tree_no_paths": 2,
+    "version_not_in_quote": 11,
+    "bare_extension": 1,
+    "manifest_own_path": 9,
+    "glob_dependency_name": 1,
+    "non_literal_target": 3
+   },
+   "accepted_by_type": {
+    "T1": 1171,
+    "T3": 273,
+    "T6": 38,
+    "T7": 18,
+    "T5": 248,
+    "T4": 59,
+    "T2": 30
+   },
+   "usage": {
+    "prompt": 695949,
+    "completion": 281152,
+    "latency_s": 2238.8328456036397,
+    "api_calls": 183
+   },
+   "parse_failure_rate": 0.06578947368421052,
+   "grounding_failure_rate": 0.040474528960223306
+  },
+  "openai/gpt-oss-20b": {
+   "responses": 152,
+   "parse_retries": 16,
+   "raw_claims": 1909,
+   "schema_invalid": 4,
+   "schema_valid": 1905,
+   "rejected_shape": 434,
+   "quote_repaired": 0,
+   "accepted_units_raw": 1394,
+   "rejected_grounding": 304,
+   "parse_failures": 2,
+   "reject_reasons": {
+    "bad_runner": 100,
+    "tool_out_of_vocabulary": 31,
+    "prose_mention_not_code": 44,
+    "command_not_in_quote": 59,
+    "builtin_command": 17,
+    "ungrounded_quote": 222,
+    "non_identifier_mention": 3,
+    "not_a_path": 14,
+    "self_reference": 2,
+    "placeholder_or_url": 34,
+    "alias_or_package_specifier": 4,
+    "subject_not_in_quote": 81,
+    "not_path_shaped": 56,
+    "tree_no_paths": 3,
+    "ungrounded_component": 1,
+    "code_import_not_dependency_claim": 13,
+    "code_import_not_path_claim": 10,
+    "bad_version_subject": 32,
+    "manifest_own_path": 2,
+    "bare_extension": 1,
+    "system_path": 6,
+    "bad_target": 3
+   },
+   "accepted_by_type": {
+    "T1": 934,
+    "T3": 150,
+    "T6": 24,
+    "T4": 64,
+    "T5": 209,
+    "T2": 12,
+    "T7": 1
+   },
+   "usage": {
+    "prompt": 569298,
+    "completion": 179286,
+    "latency_s": 3416.2238467682037,
+    "api_calls": 168
+   },
+   "parse_failure_rate": 0.013157894736842105,
+   "grounding_failure_rate": 0.15958005249343832
+  },
+  "google/diffusiongemma-26b-a4b-it": {
+   "responses": 152,
+   "parse_retries": 86,
+   "raw_claims": 2455,
+   "schema_invalid": 46,
+   "schema_valid": 2409,
+   "quote_repaired": 500,
+   "accepted_units_raw": 1457,
+   "rejected_grounding": 321,
+   "rejected_shape": 810,
+   "parse_failures": 3,
+   "reject_reasons": {
+    "ungrounded_quote": 282,
+    "not_path_shaped": 80,
+    "bad_runner": 250,
+    "ungrounded_component": 2,
+    "prose_mention_not_code": 94,
+    "builtin_command": 16,
+    "command_not_in_quote": 74,
+    "non_identifier_mention": 9,
+    "tool_out_of_vocabulary": 85,
+    "tree_no_paths": 34,
+    "code_import_not_dependency_claim": 15,
+    "no_version_number": 2,
+    "self_reference": 1,
+    "bad_version_subject": 35,
+    "version_not_in_quote": 14,
+    "alias_or_package_specifier": 22,
+    "placeholder_or_url": 20,
+    "code_import_not_path_claim": 22,
+    "subject_not_in_quote": 37,
+    "bracket_placeholder": 1,
+    "empty_subject": 4,
+    "glob_dependency_name": 1,
+    "manifest_own_path": 8,
+    "bad_status": 7,
+    "not_a_path": 6,
+    "bad_chars": 2,
+    "non_literal_target": 1,
+    "system_path": 6,
+    "bad_target": 1
+   },
+   "accepted_by_type": {
+    "T1": 958,
+    "T3": 160,
+    "T4": 78,
+    "T5": 216,
+    "T2": 26,
+    "T7": 4,
+    "T6": 15
+   },
+   "usage": {
+    "prompt": 902008,
+    "completion": 210547,
+    "latency_s": 878.0173657499254,
+    "api_calls": 238
+   },
+   "parse_failure_rate": 0.019736842105263157,
+   "grounding_failure_rate": 0.13325031133250312
+  }
+ },
+ "strict_no_quote_repair": {
+  "note": "same pipeline but claims without a model-supplied quote are rejected instead of repaired from the subject's line",
+  "per_model_accepted": {
+   "nvidia/nemotron-3-super-120b-a12b": 1837,
+   "openai/gpt-oss-20b": 1394,
+   "google/diffusiongemma-26b-a4b-it": 957
+  },
+  "agreement": {
+   "panel": [
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b",
+    "google/diffusiongemma-26b-a4b-it"
+   ],
+   "n_units_union": 1894,
+   "pairwise_f1_overall": {
+    "nvidia/nemotron-3-super-120b-a12b | openai/gpt-oss-20b": 0.617635107679805,
+    "nvidia/nemotron-3-super-120b-a12b | google/diffusiongemma-26b-a4b-it": 0.5305378304466728,
+    "openai/gpt-oss-20b | google/diffusiongemma-26b-a4b-it": 0.44864588656106286
+   },
+   "pairwise_f1_by_type": {
+    "T1": {
+     "nvidia/nemotron-3-super-120b-a12b | openai/gpt-oss-20b": 0.591283863368669,
+     "nvidia/nemotron-3-super-120b-a12b | google/diffusiongemma-26b-a4b-it": 0.5172638436482084,
+     "openai/gpt-oss-20b | google/diffusiongemma-26b-a4b-it": 0.42433019551049966
+    },
+    "T2": {
+     "nvidia/nemotron-3-super-120b-a12b | openai/gpt-oss-20b": 0.45714285714285713,
+     "nvidia/nemotron-3-super-120b-a12b | google/diffusiongemma-26b-a4b-it": 0.17142857142857143,
+     "openai/gpt-oss-20b | google/diffusiongemma-26b-a4b-it": 0.375
+    },
+    "T3": {
+     "nvidia/nemotron-3-super-120b-a12b | openai/gpt-oss-20b": 0.6195652173913043,
+     "nvidia/nemotron-3-super-120b-a12b | google/diffusiongemma-26b-a4b-it": 0.6,
+     "openai/gpt-oss-20b | google/diffusiongemma-26b-a4b-it": 0.4857142857142857
+    },
+    "T4": {
+     "nvidia/nemotron-3-super-120b-a12b | openai/gpt-oss-20b": 0.5901639344262295,
+     "nvidia/nemotron-3-super-120b-a12b | google/diffusiongemma-26b-a4b-it": 0.2247191011235955,
+     "openai/gpt-oss-20b | google/diffusiongemma-26b-a4b-it": 0.3010752688172043
+    },
+    "T5": {
+     "nvidia/nemotron-3-super-120b-a12b | openai/gpt-oss-20b": 0.7953890489913544,
+     "nvidia/nemotron-3-super-120b-a12b | google/diffusiongemma-26b-a4b-it": 0.7491638795986622,
+     "openai/gpt-oss-20b | google/diffusiongemma-26b-a4b-it": 0.6111111111111112
+    },
+    "T6": {
+     "nvidia/nemotron-3-super-120b-a12b | openai/gpt-oss-20b": 0.631578947368421,
+     "nvidia/nemotron-3-super-120b-a12b | google/diffusiongemma-26b-a4b-it": 0.3829787234042553,
+     "openai/gpt-oss-20b | google/diffusiongemma-26b-a4b-it": 0.3888888888888889
+    },
+    "T7": {
+     "nvidia/nemotron-3-super-120b-a12b | openai/gpt-oss-20b": 0.1111111111111111,
+     "nvidia/nemotron-3-super-120b-a12b | google/diffusiongemma-26b-a4b-it": 0.0,
+     "openai/gpt-oss-20b | google/diffusiongemma-26b-a4b-it": 0.0
+    }
+   },
+   "pairwise_f1_mean": 0.5322729415625136,
+   "alpha_presence": {
+    "alpha": -0.10292339099810377,
+    "bootstrap_ci95": {
+     "lo": -0.1619053918233864,
+     "hi": -0.05031978371300024,
+     "n_valid": 1000
+    }
+   },
+   "alpha_presence_by_type": {
+    "T1": {
+     "n_units": 1355,
+     "alpha": -0.1172801973318578
+    },
+    "T2": {
+     "n_units": 32,
+     "alpha": -0.2088635366388767
+    },
+    "T3": {
+     "n_units": 134,
+     "alpha": -0.09977798093248014
+    },
+    "T4": {
+     "n_units": 99,
+     "alpha": -0.23557168784029048
+    },
+    "T5": {
+     "n_units": 213,
+     "alpha": -0.024625267665952855
+    },
+    "T6": {
+     "n_units": 42,
+     "alpha": -0.1479591836734695
+    },
+    "T7": {
+     "n_units": 19,
+     "alpha": -0.43783783783783803
+    }
+   },
+   "alpha_line_level": {
+    "n_units": 17409,
+    "alpha": 0.46016402283215185,
+    "bootstrap_ci95": {
+     "lo": 0.36820399159284684,
+     "hi": 0.5315235949888071,
+     "n_valid": 200
+    },
+    "note": "every manifest line is a unit, so agreement on 'no claim' counts: an upper bound; the union-of-keys alpha above is the lower bound"
+   },
+   "alpha_mode": {
+    "n_units": 369,
+    "alpha": -0.003971405877680745,
+    "categories": [
+     "asserts_existing",
+     "negated",
+     "example",
+     "to_be_created"
+    ]
+   },
+   "alpha_status_T2": {
+    "n_units": 3,
+    "alpha": NaN,
+    "categories": [
+     "do_not_edit"
+    ]
+   },
+   "alpha_qualifier_T6": {
+    "n_units": 6,
+    "alpha": 1.0,
+    "categories": [
+     "min",
+     "exact"
+    ]
+   },
+   "caveat": "Presence alpha codes union-of-keys presence per model; it approximates unitizing alpha_u and is deflated by singleton units, so pairwise F1 is reported alongside it.",
+   "units_by_votes": {
+    "1": 851,
+    "2": 674,
+    "3": 369
+   }
+  }
+ },
+ "flow": {
+  "models": [
+   "nvidia/nemotron-3-super-120b-a12b",
+   "openai/gpt-oss-20b",
+   "google/diffusiongemma-26b-a4b-it"
+  ],
+  "units_union_pre_merge": 1994,
+  "units_after_path_merge": 1903,
+  "path_merges": 91,
+  "votes_distribution_after_merge": {
+   "1": 653,
+   "3": 565,
+   "2": 685
+  },
+  "consensus_ge2": 1250,
+  "consensus_ge2_by_type": {
+   "T1": 858,
+   "T4": 65,
+   "T5": 192,
+   "T3": 100,
+   "T6": 22,
+   "T2": 12,
+   "T7": 1
+  },
+  "consensus_ge2_mode": {
+   "asserts_existing": 1232,
+   "example": 8,
+   "to_be_created": 10
+  },
+  "consensus_ge2_asserts_existing": 1232,
+  "union_asserts_existing": 1872,
+  "consensus3_asserts_existing": 565,
+  "unanimous_mode_asserts_ge2": 548,
+  "protected_status_ge2": 8
+ },
+ "regex_recall": {
+  "T1": {
+   "n_candidates": 665,
+   "captured_by_consensus_ge2": 374,
+   "of_which_mode_not_asserting": 9,
+   "captured_union_only": 135,
+   "missed": 156,
+   "recall_consensus": 0.562406015037594,
+   "recall_union": 0.7654135338345864,
+   "sample_missed": [
+    [
+     "Vortiago/mcp-outline",
+     "completed/success"
+    ],
+    [
+     "javascript-obfuscator/javascript-obfuscator",
+     "Options.ts"
+    ],
+    [
+     "javascript-obfuscator/javascript-obfuscator",
+     "package.json"
+    ],
+    [
+     "nanobrowser/nanobrowser",
+     "build/**"
+    ],
+    [
+     "nanobrowser/nanobrowser",
+     "packages/tailwind-config"
+    ],
+    [
+     "nanobrowser/nanobrowser",
+     "dist/**"
+    ],
+    [
+     "nanobrowser/nanobrowser",
+     "packages/ui"
+    ],
+    [
+     "nanobrowser/nanobrowser",
+     "package.json"
+    ],
+    [
+     "nanobrowser/nanobrowser",
+     ".nvmrc"
+    ],
+    [
+     "nanobrowser/nanobrowser",
+     "pnpm-workspace.yaml"
+    ],
+    [
+     "nanobrowser/nanobrowser",
+     "turbo.json"
+    ],
+    [
+     "nanobrowser/nanobrowser",
+     ".npmrc"
+    ],
+    [
+     "nanobrowser/nanobrowser",
+     "*.test.ts"
+    ],
+    [
+     "nanobrowser/nanobrowser",
+     "tsconfig.json"
+    ],
+    [
+     "rpmuller/pyquante2",
+     "VERSION_MANAGEMENT.md"
+    ],
+    [
+     "rpmuller/pyquante2",
+     "FUTURE_TASKS.md"
+    ],
+    [
+     "rpmuller/pyquante2",
+     "src/pyquante2/cints"
+    ],
+    [
+     "lerna/lerna",
+     "package.json"
+    ],
+    [
+     "lerna/lerna",
+     ".spec.ts"
+    ],
+    [
+     "pcingola/SnpEff",
+     "config/snpEff.config"
+    ],
+    [
+     "pcingola/SnpEff",
+     ".config"
+    ],
+    [
+     "pcingola/SnpEff",
+     ".bin"
+    ],
+    [
+     "kubernetes-sigs/cloud-provider-azure",
+     "azure_*_repo.go"
+    ],
+    [
+     "kubernetes-sigs/cloud-provider-azure",
+     "azure_mock_*.go"
+    ],
+    [
+     "kubernetes-sigs/cloud-provider-azure",
+     "azure_fakes.go"
+    ],
+    [
+     "simstudioai/sim",
+     "feature.ts"
+    ],
+    [
+     "simstudioai/sim",
+     "workflow-list.tsx"
+    ],
+    [
+     "simstudioai/sim",
+     "stores/feature/store.ts"
+    ],
+    [
+     "simstudioai/sim",
+     "store.ts"
+    ],
+    [
+     "simstudioai/sim",
+     "utils.ts"
+    ],
+    [
+     "noahlh/celestite",
+     "src/celestite"
+    ],
+    [
+     "noahlh/celestite",
+     "spec/spec_helper.cr"
+    ],
+    [
+     "noahlh/celestite",
+     "src/svelte-scripts"
+    ],
+    [
+     "nats-io/nats.go",
+     "test/helper_test.go"
+    ],
+    [
+     "nats-io/nats.go",
+     "github.com/nats-io/nats.go"
+    ],
+    [
+     "nats-io/nats.go",
+     "klauspost/compress"
+    ],
+    [
+     "nats-io/nats.go",
+     "test/norace_test.go"
+    ],
+    [
+     "nats-io/nats.go",
+     "test/compat_test.go"
+    ],
+    [
+     "nats-io/nats.go",
+     "nats_test.go"
+    ],
+    [
+     "braintree/braintree-web",
+     "src/lib"
+    ]
+   ]
+  },
+  "T5": {
+   "n_candidates": 219,
+   "captured_by_consensus_ge2": 185,
+   "of_which_mode_not_asserting": 0,
+   "captured_union_only": 21,
+   "missed": 13,
+   "recall_consensus": 0.8447488584474886,
+   "recall_union": 0.9406392694063926,
+   "sample_missed": [
+    [
+     "nanobrowser/nanobrowser",
+     "script|clean:node_modules"
+    ],
+    [
+     "rpmuller/pyquante2",
+     "make|install_test"
+    ],
+    [
+     "pcingola/SnpEff",
+     "make|Build"
+    ],
+    [
+     "cellwebb/gac",
+     "make|test"
+    ],
+    [
+     "cellwebb/gac",
+     "make|type-check"
+    ],
+    [
+     "WordPress/wp-ai-client",
+     "script|build"
+    ],
+    [
+     "WordPress/wp-ai-client",
+     "script|lint-js"
+    ],
+    [
+     "WordPress/wp-ai-client",
+     "script|format-js"
+    ],
+    [
+     "WordPress/wp-ai-client",
+     "script|test-php-multisite"
+    ],
+    [
+     "cbyrohl/scida",
+     "make|changes"
+    ],
+    [
+     "cbyrohl/scida",
+     "make|localdocs"
+    ],
+    [
+     "bbc/simorgh",
+     "script|dev"
+    ],
+    [
+     "github/gh-models",
+     "make|test"
+    ]
+   ]
+  }
+ }
+}

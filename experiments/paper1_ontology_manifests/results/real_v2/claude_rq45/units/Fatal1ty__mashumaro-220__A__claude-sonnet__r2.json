@@ -1,0 +1,107 @@
+{
+ "unit_id": "Fatal1ty__mashumaro-220__A__claude-sonnet__r2",
+ "task_id": "Fatal1ty__mashumaro-220",
+ "repo": "Fatal1ty/mashumaro",
+ "stage": "phase_out",
+ "condition": "A",
+ "model": "claude-code/sonnet",
+ "run": 2,
+ "condition_meta": {},
+ "started": "2026-10-18T03:09:24.619894+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 9,
+ "tool_calls": 8,
+ "usage": {
+  "input_tokens": 18,
+  "cache_creation_input_tokens": 7758,
+  "cache_read_input_tokens": 174828,
+  "output_tokens": 2279,
+  "output_tokens_details": {
+   "thinking_tokens": 232
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 7758,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 18,
+   "outputTokens": 2279,
+   "cacheReadInputTokens": 174828,
+   "cacheCreationInputTokens": 7758,
+   "webSearchRequests": 0,
+   "costUSD": 0.07134080000000001,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 232,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.07134080000000001,
+ "result_text": "I fixed the `RecursionError`. Your example now works: `C(1).to_dict()` returns `{'x': 1}` and `C.from_dict({\"x\": 2})` returns `C(x=2)`.\n\n**Cause:** when a strategy has `use_annotations=True`, mashumaro builds the code for the type taken from the strategy's annotation (here `Any`). It did that with the field's metadata still attached, so the same strategy was found again for the inner type and the lookup never ended.\n\n**Fix:** the recursive lookup now drops the field-level `serialization_strategy` from the metadata. The change is in `_pack_with_annotated_serialization_strategy` in `mashumaro/core/meta/types/pack.py` and `_unpack_with_annotated_serialization_strategy` in `mashumaro/core/meta/types/unpack.py`. Strategies set in dialects and config still apply to the inner type.\n\n**Tests:** I couldn't check for regressions. The test suite fails to collect with 23 errors, and it fails the same way with my change stashed. The error I saw is `typing_extensions.NoDefault as a field type is not supported by mashumaro`, which looks like the environment's `typing_extensions` version rather than this change. I didn't run any other tests.\n\nI didn't commit or touch any tests.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792309800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0.01,
+    "resetsAt": 1792309800
+   },
+   "seven_day": {
+    "utilization": 0.12,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 47.5,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 2,
+   "Y6": 9,
+   "hit_step_limit": 0,
+   "changed_lines": 21,
+   "gold_changed_lines": 23,
+   "Y1": 5,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": -0.13124453327825267
+  },
+  "f2p_pass": 1,
+  "f2p_total": 1,
+  "p2p_pass": 4,
+  "p2p_total": 4,
+  "f2p_all_pass": true,
+  "p2p_all_pass": true,
+  "resolved": true,
+  "reason": "resolved",
+  "test_seconds": 1.0
+ },
+ "status": "done",
+ "finished": "2026-10-18T03:10:14.162274+00:00"
+}

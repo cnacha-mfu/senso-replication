@@ -1,0 +1,111 @@
+{
+ "unit_id": "VirtusLab__git-machete-534__C__claude-sonnet__r1",
+ "task_id": "VirtusLab__git-machete-534",
+ "repo": "VirtusLab/git-machete",
+ "stage": "phase_out",
+ "condition": "C",
+ "model": "claude-code/sonnet",
+ "run": 1,
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 4007,
+  "sha256": "42d441fae8d44fb82281c24d1ec7ffcd6d111212b0e29817d1856575ce316fe8"
+ },
+ "started": "2026-10-18T04:26:38.077776+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 5,
+ "tool_calls": 4,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 8721,
+  "cache_read_input_tokens": 68286,
+  "output_tokens": 1187,
+  "output_tokens_details": {
+   "thinking_tokens": 0
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 8721,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 8,
+   "outputTokens": 1187,
+   "cacheReadInputTokens": 68286,
+   "cacheCreationInputTokens": 8721,
+   "webSearchRequests": 0,
+   "costUSD": 0.0535986,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.0535986,
+ "result_text": "I didn't remove the authentication requirement. I improved the error message instead, which the issue offered as the fallback. I only checked that `git_machete.github` still imports. I didn't run the tests or try a real `create-pr`.\n\nReading public repos works without a token, which is why the URL opens in a browser. `create-pr` sends a `POST` to `/pulls`, and GitHub needs a token for that. When the request has no token, GitHub answers a `POST` to `/pulls` with `404` instead of `401`/`403`. That `404` is what produced the \"not found \u2026 (expired token?)\" message.\n\nThe `404` handler in `git_machete/github.py` now words the error differently depending on whether a token was sent:\n- **No token:** the message says the endpoint doesn't exist or needs authentication, and that creating a PR needs a token even on a public repo. It also lists where to set a token and links to `https://github.com/settings/tokens`.\n- **Token present:** the message says the endpoint may not exist, or the token may be expired or lack `repo` access.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792309800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0.07,
+    "resetsAt": 1792309800
+   },
+   "seven_day": {
+    "utilization": 0.12,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 20.5,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 5,
+   "hit_step_limit": 0,
+   "changed_lines": 15,
+   "gold_changed_lines": 7,
+   "Y1": 1,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": 1.0995356735509143
+  },
+  "f2p_pass": 0,
+  "f2p_total": 1,
+  "p2p_pass": 7,
+  "p2p_total": 7,
+  "f2p_all_pass": false,
+  "p2p_all_pass": true,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 22.4
+ },
+ "status": "done",
+ "finished": "2026-10-18T04:27:21.647115+00:00"
+}

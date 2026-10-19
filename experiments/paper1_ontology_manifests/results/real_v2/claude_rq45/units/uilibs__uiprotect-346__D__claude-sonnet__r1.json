@@ -1,0 +1,111 @@
+{
+ "unit_id": "uilibs__uiprotect-346__D__claude-sonnet__r1",
+ "task_id": "uilibs__uiprotect-346",
+ "repo": "uilibs/uiprotect",
+ "stage": "phase_out",
+ "condition": "D",
+ "model": "claude-code/sonnet",
+ "run": 1,
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 3483,
+  "sha256": "5807623d59d2d7b51610cd53f6eedc393f86c35e5cbcce5057576f9c1380e448"
+ },
+ "started": "2026-10-18T09:21:59.252414+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 4,
+ "tool_calls": 3,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 9940,
+  "cache_read_input_tokens": 67034,
+  "output_tokens": 1270,
+  "output_tokens_details": {
+   "thinking_tokens": 0
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 9940,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 8,
+   "outputTokens": 1270,
+   "cacheReadInputTokens": 67034,
+   "cacheCreationInputTokens": 9940,
+   "webSearchRequests": 0,
+   "costUSD": 0.05917940000000001,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.05917940000000001,
+ "result_text": "`Chime.play()` and `ProtectApiClient.play_speaker()` now take two new optional arguments, `ringtone_id` and `track_no`, so you can play a specific sound on a chime. I haven't run any tests or tried it against a real chime. The changes are in `src/uiprotect/api.py` and `src/uiprotect/data/devices.py`.\n\n- **`ringtone_id`:** this is sent to the chime as `ringtoneId` in the play request. I assumed that name from the API's other camel-case fields, so it's the first thing to check on a real chime.\n- **`track_no`:** this replaces the chime's current track number for that one play. The `or` check treats `track_no=0` as unset, so I handled it separately to let 0 through.\n- **Defaults:** volume and repeat count still come from the chime's own settings when you don't pass them. Playing a sound this way doesn't change the sounds set for a connected doorbell.\n\nI didn't add a way to list the built-in or uploaded sounds, so you'd need to know the ringtone ID or track number already.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792327800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0.08,
+    "resetsAt": 1792327800
+   },
+   "seven_day": {
+    "utilization": 0.14,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 23.9,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 2,
+   "Y6": 4,
+   "hit_step_limit": 0,
+   "changed_lines": 18,
+   "gold_changed_lines": 21,
+   "Y1": 4,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": -0.22239242133644802
+  },
+  "f2p_pass": 0,
+  "f2p_total": 2,
+  "p2p_pass": 57,
+  "p2p_total": 57,
+  "f2p_all_pass": false,
+  "p2p_all_pass": true,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 13.5
+ },
+ "status": "done",
+ "finished": "2026-10-18T09:22:38.750699+00:00"
+}

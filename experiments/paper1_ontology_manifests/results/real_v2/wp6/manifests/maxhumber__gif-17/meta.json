@@ -1,0 +1,258 @@
+{
+ "task_id": "maxhumber__gif-17",
+ "repo": "maxhumber/gif",
+ "stage": "phase_out",
+ "rounds": 1,
+ "rejects": {
+  "drop": [
+   "test_cmd"
+  ]
+ },
+ "flags": [
+  "no_test_command",
+  "kind3_dropped",
+  "length_violation_F_R",
+  "length_violation_F_I"
+ ],
+ "info": {
+  "slots": {
+   "P1": {
+    "replaced": null,
+    "name": "core",
+    "F_R": "examples/core",
+    "F_I": "images/core"
+   },
+   "P2": {
+    "replaced": null,
+    "F_R": "examples/beating_heart.py",
+    "F_I": "tests/test_matplotlib.py"
+   },
+   "D": {
+    "replaced": null,
+    "F_R": "bokeh",
+    "F_I": "wand"
+   }
+  },
+  "why": {
+   "kind1": {
+    "p1_idx": null,
+    "gold0": "examples",
+    "unrelated": null,
+    "base_R": "examples",
+    "base_I": "images"
+   },
+   "kind2": {
+    "p2_idx": null,
+    "n_deleted_py": 39,
+    "found": {
+     "F_R": "examples/beating_heart.py",
+     "F_I": "tests/test_matplotlib.py"
+    }
+   },
+   "kind3": {
+    "run": null,
+    "install": "install",
+    "test_ok": false,
+    "install_ok": true
+   },
+   "kind4": {
+    "deps": [],
+    "d_idx": null,
+    "src_R": "matplotlib",
+    "src_I": "pillow",
+    "n_decls": 2,
+    "n_dist": 39
+   }
+  },
+  "length": {
+   "T": 130,
+   "F_R": 216,
+   "F_I": 212
+  },
+  "fallbacks": {
+   "F_R": [],
+   "F_I": []
+  },
+  "modes": {
+   "F_R": {
+    "1": "add",
+    "2": "add",
+    "4": "add"
+   },
+   "F_I": {
+    "1": "add",
+    "2": "add",
+    "4": "add"
+   }
+  },
+  "length_diff": {
+   "F_R": 86,
+   "F_I": 82
+  },
+  "n_claims_T": 4,
+  "n_false": {
+   "F_R": 3,
+   "F_I": 3
+  },
+  "pointer_in_issue": false,
+  "gold_dirs": [
+   "examples"
+  ],
+  "gold_files": [
+   "examples/spiral.py",
+   "gif.py"
+  ]
+ },
+ "tokens": {
+  "F_R": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "examples/core",
+     "core"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "examples/beating_heart.py",
+     "beating_heart.py"
+    ]
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "bokeh"
+    ]
+   }
+  ],
+  "F_I": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "images/core",
+     "core"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "tests/test_matplotlib.py",
+     "test_matplotlib.py"
+    ]
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "wand"
+    ]
+   }
+  ]
+ },
+ "unresolved_pre_hermit": [],
+ "sha256": {
+  "T": "234849d47656f541e06c198e2fab0d4b93484617e2c71482899807b5a0c3592f",
+  "F_R": "ad5938ced687541ec7bff5d4831bf90602402dd95b0bfb288f125d0b77193949",
+  "F_I": "bcebd7e43a0a94d7e3dbcacfd79cee699288ab0135cb26a6e942bd8032692061"
+ },
+ "chars": {
+  "T": 130,
+  "F_R": 216,
+  "F_I": 212
+ },
+ "claims": {
+  "T": [
+   "T1|examples",
+   "T1|tests",
+   "T1|setup.py",
+   "T6|python|3009000000@2"
+  ],
+  "F_R": [
+   "T1|examples",
+   "T1|tests",
+   "T1|examples/core",
+   "T1|examples/beating_heart.py",
+   "T1|setup.py",
+   "T4|bokeh|",
+   "T6|python|3009000000@2"
+  ],
+  "F_I": [
+   "T1|examples",
+   "T1|tests",
+   "T1|images/core",
+   "T1|tests/test_matplotlib.py",
+   "T1|setup.py",
+   "T4|wand|",
+   "T6|python|3009000000@2"
+  ]
+ },
+ "python_spec": ">=3.9",
+ "token_audit": [
+  {
+   "cond": "F_R",
+   "kind": 1,
+   "type": "path",
+   "name": "examples/core",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 2,
+   "type": "path",
+   "name": "examples/beating_heart.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 4,
+   "type": "word",
+   "name": "bokeh",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 1,
+   "type": "path",
+   "name": "images/core",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 2,
+   "type": "path",
+   "name": "tests/test_matplotlib.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 4,
+   "type": "word",
+   "name": "wand",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  }
+ ],
+ "dist_imports_used": {
+  "bokeh": null,
+  "wand": null
+ }
+}

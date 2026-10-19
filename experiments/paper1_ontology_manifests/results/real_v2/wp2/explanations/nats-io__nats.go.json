@@ -1,0 +1,116 @@
+{
+ "repo": "nats-io/nats.go",
+ "slug": "nats-io__nats.go",
+ "input_sha": "1ee904857cdb514276c85d108f147478887a9500d7200c3f47ec01da72334fd8",
+ "explanations": [
+  {
+   "key": "T2|js.go|inactive",
+   "verdict": "IndeterminateClaim",
+   "leaf": "InactivePathModerate",
+   "seconds": 7.27,
+   "retried_on_claim_subgraph": false,
+   "error": null,
+   "returncode": 0,
+   "n_justifications": 1,
+   "facts": [
+    {
+     "prop": "pathCommitsIn180d",
+     "value": 4
+    },
+    {
+     "prop": "extractionVotes",
+     "value": 2
+    },
+    {
+     "prop": "pathLinesChangedIn180d",
+     "value": 18
+    }
+   ],
+   "axioms": [
+    "InactivePathModerate equivalentTo A_pathCommitsIn180d_gt_wp2_inactive_support_max_commits and CheckedClaim and InactiveNotActive and InactiveStatusClaim",
+    "A_extractionVotes_ge_wp2_consensus_min_votes equivalentTo extractionVotes some integer[>= 2]",
+    "CheckedClaim equivalentTo A_extractionVotes_ge_wp2_consensus_min_votes and ManifestClaim",
+    "A_pathCommitsIn180d_gt_wp2_inactive_support_max_commits equivalentTo pathCommitsIn180d some integer[> 1]",
+    "InactivePathModerate subClassOf IndeterminateClaim",
+    "A_pathLinesChangedIn180d_lt_wp2_inactive_contradict_min_lines equivalentTo pathLinesChangedIn180d some integer[< 100]",
+    "A_pathLinesChangedIn180d_lt_wp2_inactive_contradict_min_lines subClassOf InactiveNotActive"
+   ],
+   "closures": []
+  },
+  {
+   "key": "T4|nats-server|",
+   "verdict": "ContradictedClaim",
+   "leaf": "DependencyUndeclared",
+   "seconds": 21.26,
+   "retried_on_claim_subgraph": true,
+   "error": null,
+   "returncode": 0,
+   "n_justifications": 1,
+   "facts": [
+    {
+     "prop": "dependencySuffixMatchCount",
+     "value": 0
+    },
+    {
+     "prop": "dependencyManifestParsedCount",
+     "value": 1
+    },
+    {
+     "prop": "extractionVotes",
+     "value": 2
+    },
+    {
+     "prop": "dependencyExactMatchCount",
+     "value": 0
+    }
+   ],
+   "axioms": [
+    "A_extractionVotes_ge_wp2_consensus_min_votes equivalentTo extractionVotes some integer[>= 2]",
+    "A_dependencyManifestParsedCount_ge_1 equivalentTo dependencyManifestParsedCount some integer[>= 1]",
+    "DependencyUndeclared equivalentTo A_dependencyExactMatchCount_ge_0_le_0 and A_dependencyManifestParsedCount_ge_1 and A_dependencySuffixMatchCount_ge_0_le_0 and CheckedClaim and DependencyClaim",
+    "A_dependencySuffixMatchCount_ge_0_le_0 equivalentTo dependencySuffixMatchCount some integer[>= 0, <= 0]",
+    "CheckedClaim equivalentTo A_extractionVotes_ge_wp2_consensus_min_votes and ManifestClaim",
+    "A_dependencyExactMatchCount_ge_0_le_0 equivalentTo dependencyExactMatchCount some integer[>= 0, <= 0]"
+   ],
+   "closures": []
+  },
+  {
+   "key": "T4|protobuf|",
+   "verdict": "ContradictedClaim",
+   "leaf": "DependencyUndeclared",
+   "seconds": 11.73,
+   "retried_on_claim_subgraph": false,
+   "error": null,
+   "returncode": 0,
+   "n_justifications": 1,
+   "facts": [
+    {
+     "prop": "dependencySuffixMatchCount",
+     "value": 0
+    },
+    {
+     "prop": "dependencyManifestParsedCount",
+     "value": 1
+    },
+    {
+     "prop": "extractionVotes",
+     "value": 2
+    },
+    {
+     "prop": "dependencyExactMatchCount",
+     "value": 0
+    }
+   ],
+   "axioms": [
+    "DependencyUndeclared subClassOf ContradictedClaim",
+    "A_extractionVotes_ge_wp2_consensus_min_votes equivalentTo extractionVotes some integer[>= 2]",
+    "A_dependencyManifestParsedCount_ge_1 equivalentTo dependencyManifestParsedCount some integer[>= 1]",
+    "DependencyUndeclared equivalentTo A_dependencyExactMatchCount_ge_0_le_0 and A_dependencyManifestParsedCount_ge_1 and A_dependencySuffixMatchCount_ge_0_le_0 and CheckedClaim and DependencyClaim",
+    "CheckedClaim equivalentTo A_extractionVotes_ge_wp2_consensus_min_votes and ManifestClaim",
+    "A_dependencyExactMatchCount_ge_0_le_0 equivalentTo dependencyExactMatchCount some integer[>= 0, <= 0]",
+    "A_dependencySuffixMatchCount_ge_0_le_0 equivalentTo dependencySuffixMatchCount some integer[>= 0, <= 0]"
+   ],
+   "closures": []
+  }
+ ]
+}

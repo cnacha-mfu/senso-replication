@@ -1,0 +1,308 @@
+{
+ "task_id": "ttu__ruuvitag-sensor-41",
+ "repo": "ttu/ruuvitag-sensor",
+ "stage": "phase_out",
+ "rounds": 1,
+ "rejects": {},
+ "flags": [
+  "no_test_command",
+  "kind4_R_used_I_competitor",
+  "length_violation_F_R",
+  "length_violation_F_I"
+ ],
+ "info": {
+  "slots": {
+   "P1": {
+    "replaced": null,
+    "name": "core",
+    "F_R": "ruuvitag_sensor/core",
+    "F_I": "examples/core"
+   },
+   "P2": {
+    "replaced": null,
+    "F_R": "ruuvitag_sensor/common.py",
+    "F_I": "tests/test_url_decoder.py"
+   },
+   "C": {
+    "F_R": "make test",
+    "F_I": "make dev"
+   },
+   "D": {
+    "replaced": "rx",
+    "F_R": "boltons",
+    "F_I": "boltons"
+   }
+  },
+  "why": {
+   "test_command": [
+    {
+     "root": "tests",
+     "T3": "ContradictedClaim",
+     "T1": "SupportedClaim",
+     "collect_ok": null
+    }
+   ],
+   "kind1": {
+    "p1_idx": null,
+    "gold0": "ruuvitag_sensor",
+    "unrelated": null,
+    "base_R": "ruuvitag_sensor",
+    "base_I": "examples"
+   },
+   "kind2": {
+    "p2_idx": null,
+    "n_deleted_py": 4,
+    "found": {
+     "F_R": "ruuvitag_sensor/common.py",
+     "F_I": "tests/test_url_decoder.py"
+    }
+   },
+   "kind3": {
+    "run": "test",
+    "install": "dev",
+    "test_ok": false,
+    "install_ok": true
+   },
+   "kind4": {
+    "deps": [
+     [
+      "rx",
+      false
+     ]
+    ],
+    "d_idx": 0,
+    "src_R": "rx",
+    "src_I": "rx",
+    "n_decls": 4,
+    "n_dist": 15
+   }
+  },
+  "length": {
+   "T": 183,
+   "F_R": 273,
+   "F_I": 229
+  },
+  "fallbacks": {
+   "F_R": [
+    "kind4_I_competitor"
+   ],
+   "F_I": []
+  },
+  "modes": {
+   "F_R": {
+    "1": "add",
+    "2": "add",
+    "3": "add",
+    "4": "replace"
+   },
+   "F_I": {
+    "1": "add",
+    "2": "add",
+    "3": "replace",
+    "4": "replace"
+   }
+  },
+  "length_diff": {
+   "F_R": 90,
+   "F_I": 46
+  },
+  "n_claims_T": 5,
+  "n_false": {
+   "F_R": 4,
+   "F_I": 4
+  },
+  "pointer_in_issue": false,
+  "gold_dirs": [
+   "ruuvitag_sensor"
+  ],
+  "gold_files": [
+   "ruuvitag_sensor/ruuvi.py"
+  ]
+ },
+ "tokens": {
+  "F_R": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "ruuvitag_sensor/core",
+     "core"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "ruuvitag_sensor/common.py",
+     "common.py"
+    ]
+   },
+   {
+    "kind": 3,
+    "type": "regex",
+    "regex": "\\bmake\\b[^|;&\\n]*\\btest\\b",
+    "target": "test"
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "boltons"
+    ]
+   }
+  ],
+  "F_I": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "examples/core",
+     "core"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "tests/test_url_decoder.py",
+     "test_url_decoder.py"
+    ]
+   },
+   {
+    "kind": 3,
+    "type": "regex",
+    "regex": "\\bmake\\b[^|;&\\n]*\\bdev\\b",
+    "target": "dev"
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "boltons"
+    ]
+   }
+  ]
+ },
+ "unresolved_pre_hermit": [],
+ "sha256": {
+  "T": "a9b157d9a07c59844c82f3c2d0c05ce52a6882f17059fac1d1b75e4f664d5426",
+  "F_R": "260697d00c1ba33182313b4619bc07322b65a24713601e0e7bc39417cd2887fe",
+  "F_I": "b62b321b747d4f66855c2394b69bac77bfa95b8b1ddf6bbd8a0fbed1008ddfb6"
+ },
+ "chars": {
+  "T": 183,
+  "F_R": 273,
+  "F_I": 229
+ },
+ "claims": {
+  "T": [
+   "T1|ruuvitag_sensor",
+   "T1|tests",
+   "T1|ruuvitag_sensor/ruuvi.py",
+   "T1|setup.py",
+   "T4|rx|"
+  ],
+  "F_R": [
+   "T1|ruuvitag_sensor",
+   "T1|tests",
+   "T1|ruuvitag_sensor/core",
+   "T1|ruuvitag_sensor/ruuvi.py",
+   "T1|ruuvitag_sensor/common.py",
+   "T1|setup.py",
+   "T5|make|test",
+   "T4|boltons|"
+  ],
+  "F_I": [
+   "T1|ruuvitag_sensor",
+   "T1|tests",
+   "T1|examples/core",
+   "T1|ruuvitag_sensor/ruuvi.py",
+   "T1|tests/test_url_decoder.py",
+   "T5|make|dev",
+   "T4|boltons|"
+  ]
+ },
+ "python_spec": null,
+ "token_audit": [
+  {
+   "cond": "F_R",
+   "kind": 1,
+   "type": "path",
+   "name": "ruuvitag_sensor/core",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 2,
+   "type": "path",
+   "name": "ruuvitag_sensor/common.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 3,
+   "type": "regex",
+   "name": "make test",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 4,
+   "type": "word",
+   "name": "boltons",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 1,
+   "type": "path",
+   "name": "examples/core",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 2,
+   "type": "path",
+   "name": "tests/test_url_decoder.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 3,
+   "type": "regex",
+   "name": "make dev",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 4,
+   "type": "word",
+   "name": "boltons",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  }
+ ],
+ "dist_imports_used": {
+  "rx": [
+   "rx"
+  ],
+  "boltons": null
+ }
+}

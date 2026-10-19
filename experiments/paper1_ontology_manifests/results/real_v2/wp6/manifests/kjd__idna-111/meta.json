@@ -1,0 +1,253 @@
+{
+ "task_id": "kjd__idna-111",
+ "repo": "kjd/idna",
+ "stage": "phase_out",
+ "rounds": 1,
+ "rejects": {},
+ "flags": [
+  "no_test_command",
+  "kind4_dropped",
+  "length_violation_F_R",
+  "length_violation_F_I"
+ ],
+ "info": {
+  "slots": {
+   "P1": {
+    "replaced": null,
+    "name": "internal",
+    "F_R": "idna/internal",
+    "F_I": "tools/internal"
+   },
+   "P2": {
+    "replaced": null,
+    "F_R": "tools/build-idnadata.py",
+    "F_I": "tools/build-uts46data.py"
+   },
+   "C": {
+    "F_R": "make test",
+    "F_I": "make install"
+   }
+  },
+  "why": {
+   "test_command": [
+    {
+     "root": "tests",
+     "T3": "ContradictedClaim",
+     "T1": "SupportedClaim",
+     "collect_ok": null
+    }
+   ],
+   "kind1": {
+    "p1_idx": null,
+    "gold0": "idna",
+    "unrelated": null,
+    "base_R": "idna",
+    "base_I": "tools"
+   },
+   "kind2": {
+    "p2_idx": null,
+    "n_deleted_py": 3,
+    "found": {
+     "F_R": "tools/build-idnadata.py",
+     "F_I": "tools/build-uts46data.py"
+    }
+   },
+   "kind3": {
+    "run": "test",
+    "install": "install",
+    "test_ok": false,
+    "install_ok": true
+   },
+   "kind4": {
+    "deps": [],
+    "d_idx": null,
+    "src_R": null,
+    "src_I": null,
+    "n_decls": 0,
+    "n_dist": 16,
+    "no_parsed_manifest": true
+   }
+  },
+  "length": {
+   "T": 143,
+   "F_R": 219,
+   "F_I": 188
+  },
+  "fallbacks": {
+   "F_R": [],
+   "F_I": []
+  },
+  "modes": {
+   "F_R": {
+    "1": "add",
+    "2": "add",
+    "3": "add"
+   },
+   "F_I": {
+    "1": "add",
+    "2": "add",
+    "3": "replace"
+   }
+  },
+  "length_diff": {
+   "F_R": 76,
+   "F_I": 45
+  },
+  "n_claims_T": 4,
+  "n_false": {
+   "F_R": 3,
+   "F_I": 3
+  },
+  "pointer_in_issue": true,
+  "gold_dirs": [
+   "idna"
+  ],
+  "gold_files": [
+   "idna/core.py"
+  ]
+ },
+ "tokens": {
+  "F_R": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "idna/internal",
+     "internal"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "tools/build-idnadata.py",
+     "build-idnadata.py"
+    ]
+   },
+   {
+    "kind": 3,
+    "type": "regex",
+    "regex": "\\bmake\\b[^|;&\\n]*\\btest\\b",
+    "target": "test"
+   }
+  ],
+  "F_I": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "tools/internal",
+     "internal"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "tools/build-uts46data.py",
+     "build-uts46data.py"
+    ]
+   },
+   {
+    "kind": 3,
+    "type": "regex",
+    "regex": "\\bmake\\b[^|;&\\n]*\\binstall\\b",
+    "target": "install"
+   }
+  ]
+ },
+ "unresolved_pre_hermit": [],
+ "sha256": {
+  "T": "abef9991d7223126ea290055d5e3e7796c9f4e8ad5fcbd26a2113d15d6f51bce",
+  "F_R": "69d88972e79bd4481cd4ee50111bc2bd1f7867d00b94d3cbde1366947067c63f",
+  "F_I": "2e8e554d61ebc8c54b71e5b1e16de500cdbdf947ab2ce24f2e5c3d738653c2ea"
+ },
+ "chars": {
+  "T": 143,
+  "F_R": 219,
+  "F_I": 188
+ },
+ "claims": {
+  "T": [
+   "T1|idna",
+   "T1|tests",
+   "T1|idna/uts46data.py",
+   "T1|setup.py"
+  ],
+  "F_R": [
+   "T1|idna",
+   "T1|tests",
+   "T1|idna/internal",
+   "T1|idna/uts46data.py",
+   "T1|tools/build-idnadata.py",
+   "T1|setup.py",
+   "T5|make|test"
+  ],
+  "F_I": [
+   "T1|idna",
+   "T1|tests",
+   "T1|tools/internal",
+   "T1|idna/uts46data.py",
+   "T1|tools/build-uts46data.py",
+   "T5|make|install"
+  ]
+ },
+ "python_spec": null,
+ "token_audit": [
+  {
+   "cond": "F_R",
+   "kind": 1,
+   "type": "path",
+   "name": "idna/internal",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 2,
+   "type": "path",
+   "name": "tools/build-idnadata.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 3,
+   "type": "regex",
+   "name": "make test",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 1,
+   "type": "path",
+   "name": "tools/internal",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 2,
+   "type": "path",
+   "name": "tools/build-uts46data.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 3,
+   "type": "regex",
+   "name": "make install",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "ok": true
+  }
+ ],
+ "dist_imports_used": {}
+}

@@ -1,0 +1,335 @@
+{
+ "task_id": "taverntesting__tavern-851",
+ "repo": "taverntesting/tavern",
+ "stage": "phase_out",
+ "rounds": 1,
+ "rejects": {},
+ "flags": [
+  "kind3_dropped"
+ ],
+ "info": {
+  "slots": {
+   "test_root": "tests",
+   "P1": {
+    "replaced": null,
+    "name": "internal",
+    "F_R": "tavern/internal",
+    "F_I": "docs/internal"
+   },
+   "P2": {
+    "replaced": "tavern/_plugins/rest/request.py",
+    "F_R": "tavern/request/base.py",
+    "F_I": "setup.py"
+   },
+   "D": {
+    "replaced": "jmespath",
+    "F_R": "toolz",
+    "F_I": "boltons"
+   }
+  },
+  "why": {
+   "test_command": [
+    {
+     "root": "tests",
+     "T3": "SupportedClaim",
+     "T1": "SupportedClaim",
+     "collect_ok": true
+    }
+   ],
+   "kind1": {
+    "p1_idx": null,
+    "gold0": "tavern",
+    "unrelated": null,
+    "base_R": "tavern",
+    "base_I": "docs"
+   },
+   "kind2": {
+    "p2_idx": 2,
+    "n_deleted_py": 54,
+    "found": {
+     "F_R": "tavern/request/base.py",
+     "F_I": "setup.py"
+    }
+   },
+   "kind3": {
+    "run": null,
+    "install": null,
+    "test_ok": true,
+    "install_ok": true
+   },
+   "kind4": {
+    "deps": [
+     [
+      "python-box",
+      true
+     ],
+     [
+      "pyyaml",
+      false
+     ],
+     [
+      "pytest",
+      false
+     ],
+     [
+      "requests",
+      true
+     ],
+     [
+      "jmespath",
+      false
+     ]
+    ],
+    "d_idx": 4,
+    "src_R": "python-box",
+    "src_I": "jmespath",
+    "n_decls": 148,
+    "n_dist": 109
+   }
+  },
+  "length": {
+   "T": 442,
+   "F_R": 445,
+   "F_I": 431
+  },
+  "fallbacks": {
+   "F_R": [],
+   "F_I": []
+  },
+  "modes": {
+   "F_R": {
+    "1": "add",
+    "2": "replace",
+    "4": "replace"
+   },
+   "F_I": {
+    "1": "add",
+    "2": "replace",
+    "4": "replace"
+   }
+  },
+  "length_diff": {
+   "F_R": 3,
+   "F_I": -11
+  },
+  "n_claims_T": 16,
+  "n_false": {
+   "F_R": 3,
+   "F_I": 3
+  },
+  "pointer_in_issue": true,
+  "gold_dirs": [
+   "tavern",
+   "tavern/_core",
+   "tavern/_plugins"
+  ],
+  "gold_files": [
+   "tavern/_core/exceptions.py",
+   "tavern/_core/extfunctions.py",
+   "tavern/_plugins/mqtt/request.py",
+   "tavern/_plugins/mqtt/response.py",
+   "tavern/_plugins/rest/response.py",
+   "tavern/response.py"
+  ]
+ },
+ "tokens": {
+  "F_R": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "tavern/internal",
+     "internal"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "tavern/request/base.py",
+     "base.py"
+    ]
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "toolz"
+    ]
+   }
+  ],
+  "F_I": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "docs/internal",
+     "internal"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "setup.py",
+     "setup.py"
+    ]
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "boltons"
+    ]
+   }
+  ]
+ },
+ "unresolved_pre_hermit": [],
+ "sha256": {
+  "T": "554adaf948c8063b118899273f0a39d33838c41db1fbd9f31bab60b330a1ea58",
+  "F_R": "ed54c9640b4267b1fbc1116d0c0821bc14284ab5df636a6c08d5be0b30f75304",
+  "F_I": "2afb1851cf627856351352081d6be2570c6d4c91eb2804a649772e56feeddc06"
+ },
+ "chars": {
+  "T": 442,
+  "F_R": 445,
+  "F_I": 431
+ },
+ "claims": {
+  "T": [
+   "T1|tavern",
+   "T1|tavern/_core",
+   "T1|tavern/_plugins",
+   "T1|tests",
+   "T1|tavern/_core/dict_util.py",
+   "T1|tavern/_core/schema/extensions.py",
+   "T1|tavern/_plugins/rest/request.py",
+   "T3|test_framework|pytest",
+   "T1|tests",
+   "T1|pyproject.toml",
+   "T4|python-box|",
+   "T4|pyyaml|",
+   "T4|pytest|",
+   "T4|requests|",
+   "T4|jmespath|",
+   "T6|python|3008000000@2"
+  ],
+  "F_R": [
+   "T1|tavern",
+   "T1|tavern/_core",
+   "T1|tavern/_plugins",
+   "T1|tests",
+   "T1|tavern/internal",
+   "T1|tavern/_core/dict_util.py",
+   "T1|tavern/_core/schema/extensions.py",
+   "T1|tavern/request/base.py",
+   "T3|test_framework|pytest",
+   "T1|tests",
+   "T1|pyproject.toml",
+   "T4|python-box|",
+   "T4|pyyaml|",
+   "T4|pytest|",
+   "T4|requests|",
+   "T4|toolz|",
+   "T6|python|3008000000@2"
+  ],
+  "F_I": [
+   "T1|tavern",
+   "T1|tavern/_core",
+   "T1|tavern/_plugins",
+   "T1|tests",
+   "T1|docs/internal",
+   "T1|tavern/_core/dict_util.py",
+   "T1|tavern/_core/schema/extensions.py",
+   "T1|setup.py",
+   "T3|test_framework|pytest",
+   "T1|tests",
+   "T1|pyproject.toml",
+   "T4|python-box|",
+   "T4|pyyaml|",
+   "T4|pytest|",
+   "T4|requests|",
+   "T4|boltons|",
+   "T6|python|3008000000@2"
+  ]
+ },
+ "python_spec": ">=3.8",
+ "token_audit": [
+  {
+   "cond": "F_R",
+   "kind": 1,
+   "type": "path",
+   "name": "tavern/internal",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 2,
+   "type": "path",
+   "name": "tavern/request/base.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 4,
+   "type": "word",
+   "name": "toolz",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 1,
+   "type": "path",
+   "name": "docs/internal",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 2,
+   "type": "path",
+   "name": "setup.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 4,
+   "type": "word",
+   "name": "boltons",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  }
+ ],
+ "dist_imports_used": {
+  "python-box": [
+   "box"
+  ],
+  "pyyaml": [
+   "yaml"
+  ],
+  "pytest": [
+   "py",
+   "pytest"
+  ],
+  "requests": [
+   "requests"
+  ],
+  "jmespath": [
+   "jmespath"
+  ],
+  "toolz": null,
+  "boltons": null
+ }
+}

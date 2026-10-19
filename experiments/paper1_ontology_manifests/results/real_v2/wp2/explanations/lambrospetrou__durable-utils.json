@@ -1,0 +1,35 @@
+{
+ "repo": "lambrospetrou/durable-utils",
+ "slug": "lambrospetrou__durable-utils",
+ "input_sha": "a3714b118d2cb64c247e1e64ccf063102537ca0226410bf5f9b77b5b65898cee",
+ "explanations": [
+  {
+   "key": "T5|script|release",
+   "verdict": "SupportedClaim",
+   "leaf": "ScriptDefinedRoot",
+   "seconds": 3.71,
+   "retried_on_claim_subgraph": false,
+   "error": null,
+   "returncode": 0,
+   "n_justifications": 1,
+   "facts": [
+    {
+     "prop": "scriptDefinedRootCount",
+     "value": 1
+    },
+    {
+     "prop": "extractionVotes",
+     "value": 3
+    }
+   ],
+   "axioms": [
+    "A_scriptDefinedRootCount_ge_1 equivalentTo scriptDefinedRootCount some integer[>= 1]",
+    "ScriptDefinedRoot equivalentTo A_scriptDefinedRootCount_ge_1 and CheckedClaim and CommandClaim",
+    "A_extractionVotes_ge_wp2_consensus_min_votes equivalentTo extractionVotes some integer[>= 2]",
+    "ScriptDefinedRoot subClassOf SupportedClaim",
+    "CheckedClaim equivalentTo A_extractionVotes_ge_wp2_consensus_min_votes and ManifestClaim"
+   ],
+   "closures": []
+  }
+ ]
+}

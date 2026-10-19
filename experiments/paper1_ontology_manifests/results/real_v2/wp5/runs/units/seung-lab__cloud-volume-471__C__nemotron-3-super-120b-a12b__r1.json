@@ -1,0 +1,73 @@
+{
+ "unit_id": "seung-lab__cloud-volume-471__C__nemotron-3-super-120b-a12b__r1",
+ "task_id": "seung-lab__cloud-volume-471",
+ "repo": "seung-lab/cloud-volume",
+ "stage": "phase_out",
+ "condition": "C",
+ "model": "nvidia/nemotron-3-super-120b-a12b",
+ "run": 1,
+ "order": 1067,
+ "env_build_s": 378.2,
+ "real_agent_manifest_at_base": [],
+ "started": "2026-10-07T16:29:50.359923+00:00",
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 6582,
+  "sha256": "1d212d933d0edc6c03e438a5116202c5beb9b1f76f913116d37d3e070fabf98a"
+ },
+ "condition_available": true,
+ "retries": 0,
+ "exit_status": "LimitsExceeded",
+ "error": "",
+ "steps": 40,
+ "wall_s": 118.7,
+ "prompt_tokens": 368941,
+ "completion_tokens": 6097,
+ "format_errors": 0,
+ "length_cutoffs": 0,
+ "api_errors": {},
+ "n_queries": 40,
+ "keys_used": {
+  "NVIDIA_API_KEY_5": 18,
+  "NVIDIA_API_KEY_4": 11,
+  "NVIDIA_API_KEY_2": 3,
+  "NVIDIA_API_KEY": 8
+ },
+ "temperature": 0.7,
+ "top_p": 0.95,
+ "model_id_returned": "nvidia/nemotron-3-super-120b-a12b",
+ "mini_version": "2.4.6",
+ "uptake": {
+  "repo_context": true,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 40,
+   "hit_step_limit": 1,
+   "changed_lines": 11,
+   "gold_changed_lines": 33,
+   "Y1": -27,
+   "Y2": 0,
+   "Y3": 0.0,
+   "Y3_gold": 0.0,
+   "Y3_excess": 0.0,
+   "Y3w": 0.5555555555555556,
+   "Y4": -1.5849625007211563
+  },
+  "f2p_pass": 0,
+  "f2p_total": 1,
+  "p2p_pass": 0,
+  "p2p_total": 3,
+  "f2p_all_pass": false,
+  "p2p_all_pass": false,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 2.8
+ },
+ "status": "done",
+ "finished": "2026-10-07T16:31:52.077817+00:00"
+}

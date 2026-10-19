@@ -1,0 +1,21 @@
+{
+ "repo": "braintree/braintree-web",
+ "chunk": 2,
+ "n_chunks": 3,
+ "model": "google/diffusiongemma-26b-a4b-it",
+ "prompt_sha256": "d0e02ff613417050168d859f2af6230c3712c6758bb5d9c40d60ff55e5ae87ca",
+ "user_sha256": "3c92bf4ff83493b2c483df29efc8af93f1c7bb10600d3e288db1a55b893f7b8c",
+ "text": "```json\n{\"claims\": [\n  {\"type\": \"command\", \"quote\": \"Run `npm test` after making changes (includes linting)\", \"line\": 366, \"subject\": \"test\", \"runner\": \"npm\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"command\", \"quote\": \"Use `npm run build <component>` to build specific components during development\", \"line\": 367, \"subject\": \"build <component>\", \"runner\": \"npm\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"path_exists\", \"quote\": \"Use `scripts/npm-to-gulp` wrapper for component-specific commands\", \"line\": 370, \"subject\": \"scripts/npm-to-gulp\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"path_exists\", \"quote\": \"For components requiring secure UI (popups/modals), use Frame Service (see `/src/lib/frame-service/CLAUDE.md`)\", \"line\": 373, \"subject\": \"/src/lib/frame-service/CLAUDE.md\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"path_exists\", \"quote\": \"For components requiring card input, use Hosted Fields (see `/src/hosted-fields/CLAUDE.md`)\", \"line\": 374, \"subject\": \"/src/hosted-fields/CLAUDE.md\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"path_exists\", \"quote\": \"For transactions requiring 3DS authentication, integrate with 3D Secure component (see `/src/three-d-secure/CLAUDE.md`)\", \"line\": 375, \"subject\": \"/src/three-d-secure/CLAUDE.md\", \"mode\": \"asserts_existing\"}\n]}\n```",
+ "parse_ok": true,
+ "parse_error": null,
+ "parse_retries": 0,
+ "latency_s": 1.1651757879881188,
+ "usage": {
+  "prompt": 2302,
+  "completion": 420
+ },
+ "n_api_calls": 1,
+ "finish_reason": "stop",
+ "error": null,
+ "discarded_attempt_texts": []
+}

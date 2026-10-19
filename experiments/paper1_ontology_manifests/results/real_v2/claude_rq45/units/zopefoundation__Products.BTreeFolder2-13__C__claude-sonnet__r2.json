@@ -1,0 +1,111 @@
+{
+ "unit_id": "zopefoundation__Products.BTreeFolder2-13__C__claude-sonnet__r2",
+ "task_id": "zopefoundation__Products.BTreeFolder2-13",
+ "repo": "zopefoundation/Products.BTreeFolder2",
+ "stage": "servicing",
+ "condition": "C",
+ "model": "claude-code/sonnet",
+ "run": 2,
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 2836,
+  "sha256": "3b040d1bb148ba2c4dea073fffaf7ed905b380db85dab9623b7ba7eae1ed071d"
+ },
+ "started": "2026-10-18T09:46:52.076892+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 4,
+ "tool_calls": 3,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 9231,
+  "cache_read_input_tokens": 67536,
+  "output_tokens": 1441,
+  "output_tokens_details": {
+   "thinking_tokens": 298
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 9231,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 8,
+   "outputTokens": 1441,
+   "cacheReadInputTokens": 67536,
+   "cacheCreationInputTokens": 9231,
+   "webSearchRequests": 0,
+   "costUSD": 0.058103600000000005,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 298,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.058103600000000005,
+ "result_text": "I added a \"Delete All\" button to the contents view. It deletes every object in the folder, not just the 1000 shown on the current page. I only checked that the module still imports; I haven't clicked the button in a running Zope or run the test suite.\n\n- **`BTreeFolder2.py`:** a new `manage_clean` method deletes all contained objects one by one. It is protected by the \"Delete objects\" permission. When called from the ZMI it re-renders the contents view afterwards.\n- **`contents.dtml`:** the button sits next to \"Delete\" and shows only to users with that permission. It asks for confirmation before submitting.\n\nThe method is called `manage_clean` because that was my best guess at the upstream name; I couldn't confirm it. If you want a different name, it's a one-line change in both files.\n\nDeleting a very large folder in one request may be slow or use a lot of memory, since it all happens in a single transaction.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792327800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0.1,
+    "resetsAt": 1792327800
+   },
+   "seven_day": {
+    "utilization": 0.14,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 22.0,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 2,
+   "Y6": 4,
+   "hit_step_limit": 0,
+   "changed_lines": 12,
+   "gold_changed_lines": 11,
+   "Y1": 3,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": 0.12553088208385882
+  },
+  "f2p_pass": 0,
+  "f2p_total": 1,
+  "p2p_pass": 31,
+  "p2p_total": 31,
+  "f2p_all_pass": false,
+  "p2p_all_pass": true,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 1.5
+ },
+ "status": "done",
+ "finished": "2026-10-18T09:47:18.004240+00:00"
+}

@@ -1,0 +1,79 @@
+{
+ "unit_id": "VirtusLab__git-machete-483__F_R__nemotron-3-ultra-550b-a55b__r1",
+ "task_id": "VirtusLab__git-machete-483",
+ "repo": "VirtusLab/git-machete",
+ "stage": "phase_out",
+ "condition": "F_R",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "run": 1,
+ "order": 614,
+ "env_build_s": 15.9,
+ "started": "2026-10-14T21:44:56.484515+00:00",
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 301,
+  "sha256": "ef0f10dc5fb5c4da0acfe8a1e1e41551cbded851dfada6878b9dbbd388f8fd73"
+ },
+ "condition_available": true,
+ "venv_reset_s": 0.58,
+ "stray_procs_killed": 0,
+ "retries": 0,
+ "venv_hash_before": "d48076bf7ddcf383",
+ "venv_hash_after": "d48076bf7ddcf383",
+ "venv_mutated": false,
+ "exit_status": "LimitsExceeded",
+ "error": "",
+ "steps": 40,
+ "wall_s": 338.5,
+ "prompt_tokens": 576986,
+ "completion_tokens": 7670,
+ "format_errors": 0,
+ "length_cutoffs": 0,
+ "api_errors": {
+  "429": 6
+ },
+ "n_queries": 40,
+ "keys_used": {
+  "NVIDIA_API_KEY_4": 11,
+  "NVIDIA_API_KEY_5": 7,
+  "NVIDIA_API_KEY": 14,
+  "NVIDIA_API_KEY_2": 14
+ },
+ "temperature": 0.7,
+ "top_p": 0.95,
+ "model_id_returned": "nvidia/nemotron-3-ultra-550b-a55b",
+ "mini_version": "2.4.6",
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 2,
+   "Y6": 40,
+   "hit_step_limit": 1,
+   "changed_lines": 53,
+   "gold_changed_lines": 36,
+   "Y1": 0,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": 0.5579954531208869
+  },
+  "f2p_pass": 1,
+  "f2p_total": 2,
+  "p2p_pass": 46,
+  "p2p_total": 46,
+  "f2p_all_pass": false,
+  "p2p_all_pass": true,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 59.5
+ },
+ "status": "done",
+ "finished": "2026-10-14T21:51:36.270245+00:00"
+}

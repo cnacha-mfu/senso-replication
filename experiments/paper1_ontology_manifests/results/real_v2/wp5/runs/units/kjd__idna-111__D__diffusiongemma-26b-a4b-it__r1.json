@@ -1,0 +1,75 @@
+{
+ "unit_id": "kjd__idna-111__D__diffusiongemma-26b-a4b-it__r1",
+ "task_id": "kjd__idna-111",
+ "repo": "kjd/idna",
+ "stage": "phase_out",
+ "condition": "D",
+ "model": "google/diffusiongemma-26b-a4b-it",
+ "run": 1,
+ "order": 1100,
+ "env_build_s": 26.5,
+ "real_agent_manifest_at_base": [],
+ "started": "2026-10-07T16:30:23.292227+00:00",
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 3532,
+  "sha256": "8f53261b4847c25a5a64edb04c0f21fca59db7348f485b3f3bef1bb5d1654694"
+ },
+ "condition_available": true,
+ "retries": 0,
+ "exit_status": "LimitsExceeded",
+ "error": "",
+ "steps": 40,
+ "wall_s": 173.9,
+ "prompt_tokens": 403753,
+ "completion_tokens": 3888,
+ "format_errors": 4,
+ "length_cutoffs": 0,
+ "api_errors": {
+  "429": 5
+ },
+ "n_queries": 40,
+ "keys_used": {
+  "NVIDIA_API_KEY_5": 20,
+  "NVIDIA_API_KEY_4": 15,
+  "NVIDIA_API_KEY": 5,
+  "NVIDIA_API_KEY_2": 5
+ },
+ "temperature": 0.7,
+ "top_p": 0.95,
+ "model_id_returned": "google/diffusiongemma-26b-a4b-it",
+ "mini_version": "2.4.6",
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 2,
+   "Y6": 40,
+   "hit_step_limit": 1,
+   "changed_lines": 24,
+   "gold_changed_lines": 7,
+   "Y1": 4,
+   "Y2": 0,
+   "Y3": 0.0,
+   "Y3_gold": 0.0,
+   "Y3_excess": 0.0,
+   "Y3w": 0.5555555555555556,
+   "Y4": 1.777607578663552
+  },
+  "f2p_pass": 0,
+  "f2p_total": 1,
+  "p2p_pass": 0,
+  "p2p_total": 9,
+  "f2p_all_pass": false,
+  "p2p_all_pass": false,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 0.9
+ },
+ "status": "done",
+ "finished": "2026-10-07T16:33:18.254130+00:00"
+}

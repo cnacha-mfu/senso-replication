@@ -1,0 +1,111 @@
+{
+ "unit_id": "VirtusLab__git-machete-350__D__claude-sonnet__r1",
+ "task_id": "VirtusLab__git-machete-350",
+ "repo": "VirtusLab/git-machete",
+ "stage": "phase_out",
+ "condition": "D",
+ "model": "claude-code/sonnet",
+ "run": 1,
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 3741,
+  "sha256": "4f4e45ae186c3bfd445190044b87ab38c72adac24368c3569e98c1cbf53fc3f6"
+ },
+ "started": "2026-10-18T04:01:38.600293+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 4,
+ "tool_calls": 3,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 8496,
+  "cache_read_input_tokens": 70095,
+  "output_tokens": 714,
+  "output_tokens_details": {
+   "thinking_tokens": 0
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 8496,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 8,
+   "outputTokens": 714,
+   "cacheReadInputTokens": 70095,
+   "cacheCreationInputTokens": 8496,
+   "webSearchRequests": 0,
+   "costUSD": 0.0481495,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.0481495,
+ "result_text": "`create_pull_request` in `git_machete/github.py` now posts the PR straight away. I removed the `derive_pull_requests` call and the \"already created\" check. I also dropped the `find_or_none` import, which nothing else in that file used. I didn't run the tests or flake8 (flake8 isn't installed here), so none of this has been run.\n\nIf a PR for that branch already exists, GitHub answers with a 422. The existing `UnprocessableEntityHTTPError` handling will turn that into the error message. I didn't check what text GitHub puts in that 422 body, so the \"already exists\" message may be worded differently from the old one. The old message included the PR link and details, and the new one won't.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792309800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0.05,
+    "resetsAt": 1792309800
+   },
+   "seven_day": {
+    "utilization": 0.12,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 13.8,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 4,
+   "hit_step_limit": 0,
+   "changed_lines": 11,
+   "gold_changed_lines": 17,
+   "Y1": -2,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": -0.6280312226130421
+  },
+  "f2p_pass": 0,
+  "f2p_total": 1,
+  "p2p_pass": 45,
+  "p2p_total": 45,
+  "f2p_all_pass": false,
+  "p2p_all_pass": true,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 61.4
+ },
+ "status": "done",
+ "finished": "2026-10-18T04:02:54.455813+00:00"
+}

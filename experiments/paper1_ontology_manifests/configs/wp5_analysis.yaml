@@ -1,0 +1,46 @@
+# WP5 analysis configuration (papers/paper1/wp5-analysis-plan.md). FROZEN with wp5-run-freeze:
+# its sha256 is recorded in wp5_run_manifest.json (hashes.analysis_config) and checked by
+# run_wp5_analysis.py (plan section 0). Paths are relative to the results directory.
+plan: papers/paper1/wp5-analysis-plan.md
+seed: 20261006
+alpha_familywise: 0.05
+freeze_tag: wp5-run-freeze
+models:
+  - nvidia/nemotron-3-super-120b-a12b
+  - google/diffusiongemma-26b-a4b-it
+conditions_confirmatory: [A, C, D]
+replicates: 2                      # runs per task x condition x model
+min_tasks_confirmatory: 40         # plan 7.4 rule 4: below this WP5 is exploratory as a whole
+rq1_verdict: unknown               # GO / NOGO / unknown; fixed at wp5-generator-freeze (plan 3.8, 10)
+stage:
+  active: [ID, EVO]                # collapsed ACTIVE (plan 2.2)
+  servicing: [SERV]
+  po: [PO]
+  po_h3_min_tasks: 10              # PO is a third H3 level only with >= 10 tasks from >= 4 repos
+  po_h3_min_repos: 4
+  within_stage_min_tasks: 15       # plan 7.4 rule 6
+  within_stage_min_repos: 5
+bootstrap:
+  n_boot: 10000
+  n_boot_clogit: 10000
+  n_boot_two_stage: 10000
+terminal_states: [Submitted, LimitsExceeded, RepeatedFormatError, WallTimeExceeded, WallTimeLimit, TimeLimit, infra_failure, InfraFailure]
+infra_states: [infra_failure, InfraFailure]
+sa9_variants: [Rs=0.05, Rs=0.20, Ms=0, Ms=1, Ms=4, W=6, W=24]
+step_grid: [5, 10, 15, 20, 25, 30, 35, 40]
+power:
+  n_rep: 1000
+  cap_tasks: 80
+  repo_share: 0.2
+  icc_grid: [0.3, 0.5, 0.7]
+  icc_primary: 0.5
+  or_grid: [1.25, 1.5, 2.0, 2.5, 3.0]
+  h3_servicing_or: 2.5
+  model_logor_clip: 1.5
+  jeffreys_level: 0.80
+  label_or: 2.0
+  powered_min: 0.80
+  underpowered_min: 0.50
+  p0_uninformative_below: 0.05
+  p0_uninformative_above: 0.90
+  min_tasks_confirmatory: 40

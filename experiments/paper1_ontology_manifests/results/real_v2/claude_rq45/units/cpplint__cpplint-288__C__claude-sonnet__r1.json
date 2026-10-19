@@ -1,0 +1,111 @@
+{
+ "unit_id": "cpplint__cpplint-288__C__claude-sonnet__r1",
+ "task_id": "cpplint__cpplint-288",
+ "repo": "cpplint/cpplint",
+ "stage": "evolution",
+ "condition": "C",
+ "model": "claude-code/sonnet",
+ "run": 1,
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 2805,
+  "sha256": "f15a2ab8ff90eb6b1aa85f69120d221af4195c4e7cbeffe07ad4c99608bb8269"
+ },
+ "started": "2026-10-18T05:29:01.497270+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 7,
+ "tool_calls": 6,
+ "usage": {
+  "input_tokens": 12,
+  "cache_creation_input_tokens": 2481,
+  "cache_read_input_tokens": 117207,
+  "output_tokens": 959,
+  "output_tokens_details": {
+   "thinking_tokens": 225
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 2481,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 12,
+   "outputTokens": 959,
+   "cacheReadInputTokens": 117207,
+   "cacheCreationInputTokens": 2481,
+   "webSearchRequests": 0,
+   "costUSD": 0.0312587,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 225,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.0312587,
+ "result_text": "cpplint no longer flags the `;` after a C++20 `requires(...) { ... }` block as redundant. I ran it on your `concept` example, and the only warning left is the missing copyright line. I didn't run the repo's test suite or add tests, as you asked.\n\nThe check in `CheckTrailingSemicolon` already skipped certain macros, lambdas and `decltype`. I added `requires` to that list (`cpplint.py:4557`).\n\nThis covers `requires(T t) {` as in your example. I didn't test other forms such as `requires {` with no parentheses, or a nested `requires requires (T t) {`.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792309800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0.11,
+    "resetsAt": 1792309800
+   },
+   "seven_day": {
+    "utilization": 0.12,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 47.1,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 7,
+   "hit_step_limit": 0,
+   "changed_lines": 1,
+   "gold_changed_lines": 3,
+   "Y1": 1,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": -1.5849625007211563
+  },
+  "f2p_pass": 1,
+  "f2p_total": 1,
+  "p2p_pass": 202,
+  "p2p_total": 202,
+  "f2p_all_pass": true,
+  "p2p_all_pass": true,
+  "resolved": true,
+  "reason": "resolved",
+  "test_seconds": 6.9
+ },
+ "status": "done",
+ "finished": "2026-10-18T05:29:57.266649+00:00"
+}

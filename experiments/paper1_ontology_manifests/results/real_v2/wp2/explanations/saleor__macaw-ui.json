@@ -1,0 +1,60 @@
+{
+ "repo": "saleor/macaw-ui",
+ "slug": "saleor__macaw-ui",
+ "input_sha": "c8933feb743110163a9be33b75cc6db84aa593611fb0bcb290fea74c24162939",
+ "explanations": [
+  {
+   "key": "T6|node|20000000000@1",
+   "verdict": "ConflictedClaim",
+   "leaf": "VersionSourcesConflict",
+   "seconds": 8.69,
+   "retried_on_claim_subgraph": false,
+   "error": null,
+   "returncode": 0,
+   "n_justifications": 1,
+   "facts": [
+    {
+     "prop": "extractionVotes",
+     "value": 2
+    },
+    {
+     "prop": "hasEvidence",
+     "value": "ev0"
+    },
+    {
+     "prop": "versionLowerDelta",
+     "value": 4000000000
+    },
+    {
+     "prop": "evidenceFor",
+     "value": "79b2b2119dd6"
+    },
+    {
+     "prop": "versionLowerDelta",
+     "value": 0
+    },
+    {
+     "prop": "evidenceFor",
+     "value": "79b2b2119dd6"
+    },
+    {
+     "prop": "hasEvidence",
+     "value": "ev1"
+    }
+   ],
+   "axioms": [
+    "MinVersionAgreement subClassOf AgreeingVersionEvidence",
+    "A_extractionVotes_ge_wp2_consensus_min_votes equivalentTo extractionVotes some integer[>= 2]",
+    "VersionSourcesConflict subClassOf ConflictedClaim",
+    "A_versionLowerDelta_ge_0_le_0 equivalentTo versionLowerDelta some integer[>= 0, <= 0]",
+    "CheckedClaim equivalentTo A_extractionVotes_ge_wp2_consensus_min_votes and ManifestClaim",
+    "VersionSourcesConflict equivalentTo CheckedClaim and VersionClaim and hasEvidence some AgreeingVersionEvidence and hasEvidence some DisagreeingVersionEvidence",
+    "MinVersionHigherThanClaimed subClassOf DisagreeingVersionEvidence",
+    "A_versionLowerDelta_gt_0 equivalentTo versionLowerDelta some integer[> 0]",
+    "MinVersionHigherThanClaimed equivalentTo A_versionLowerDelta_gt_0 and VersionEvidence and evidenceFor some MinVersionClaim",
+    "MinVersionAgreement equivalentTo A_versionLowerDelta_ge_0_le_0 and VersionEvidence and evidenceFor some MinVersionClaim"
+   ],
+   "closures": []
+  }
+ ]
+}

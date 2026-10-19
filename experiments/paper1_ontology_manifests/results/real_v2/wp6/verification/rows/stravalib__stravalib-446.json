@@ -1,0 +1,754 @@
+{
+ "task_id": "stravalib__stravalib-446",
+ "claims": {
+  "T1|docs/get-started": {
+   "claim": {
+    "key_str": "T1|docs/get-started",
+    "tcode": "T1",
+    "attrs": {
+     "path": "docs/get-started",
+     "is_dir": true,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "docs/get-started/",
+    "role": "true",
+    "slot": "layout",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "exists",
+     "path": "docs/get-started"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "PathFoundExact"
+   },
+   "probe": {
+    "ok": true,
+    "type": "exists"
+   },
+   "measure_error": null
+  },
+  "T1|docs/reference": {
+   "claim": {
+    "key_str": "T1|docs/reference",
+    "tcode": "T1",
+    "attrs": {
+     "path": "docs/reference",
+     "is_dir": true,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "docs/reference/",
+    "role": "true",
+    "slot": "layout",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "exists",
+     "path": "docs/reference"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "PathFoundExact"
+   },
+   "probe": {
+    "ok": true,
+    "type": "exists"
+   },
+   "measure_error": null
+  },
+  "T1|src/stravalib": {
+   "claim": {
+    "key_str": "T1|src/stravalib",
+    "tcode": "T1",
+    "attrs": {
+     "path": "src/stravalib",
+     "is_dir": true,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "src/stravalib/",
+    "role": "true",
+    "slot": "layout",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "exists",
+     "path": "src/stravalib"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "PathFoundExact"
+   },
+   "probe": {
+    "ok": true,
+    "type": "exists"
+   },
+   "measure_error": null
+  },
+  "T1|src/stravalib/tests": {
+   "claim": {
+    "key_str": "T1|src/stravalib/tests",
+    "tcode": "T1",
+    "attrs": {
+     "path": "src/stravalib/tests",
+     "is_dir": true,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "src/stravalib/tests/",
+    "role": "true",
+    "slot": "layout",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "exists",
+     "path": "src/stravalib/tests"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "PathFoundExact"
+   },
+   "probe": {
+    "ok": true,
+    "type": "exists"
+   },
+   "measure_error": null
+  },
+  "T1|src/stravalib/client.py": {
+   "claim": {
+    "key_str": "T1|src/stravalib/client.py",
+    "tcode": "T1",
+    "attrs": {
+     "path": "src/stravalib/client.py",
+     "is_dir": false,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "src/stravalib/client.py",
+    "role": "true",
+    "slot": "key_file",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "exists",
+     "path": "src/stravalib/client.py"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "PathFoundExact"
+   },
+   "probe": {
+    "ok": true,
+    "type": "exists"
+   },
+   "measure_error": null
+  },
+  "T3|test_framework|pytest": {
+   "claim": {
+    "key_str": "T3|test_framework|pytest",
+    "tcode": "T3",
+    "attrs": {
+     "tool": "pytest",
+     "category": "test_framework"
+    },
+    "quote": "python -m pytest src/stravalib/tests",
+    "role": "true",
+    "slot": "test_cmd",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "pytest",
+     "root": "src/stravalib/tests"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "ToolSignatureFound"
+   },
+   "probe": {
+    "ok": true,
+    "type": "pytest"
+   },
+   "measure_error": null
+  },
+  "T1|pyproject.toml": {
+   "claim": {
+    "key_str": "T1|pyproject.toml",
+    "tcode": "T1",
+    "attrs": {
+     "path": "pyproject.toml",
+     "is_dir": false,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "pyproject.toml",
+    "role": "true",
+    "slot": "install_cmd",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "exists",
+     "path": "pyproject.toml"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "PathFoundExact"
+   },
+   "probe": {
+    "ok": true,
+    "type": "exists"
+   },
+   "measure_error": null
+  },
+  "T4|pint|": {
+   "claim": {
+    "key_str": "T4|pint|",
+    "tcode": "T4",
+    "attrs": {
+     "name": "pint",
+     "major": null,
+     "ecosystem_hint": "pypi"
+    },
+    "quote": "`pint`",
+    "role": "true",
+    "slot": "dep",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "import_ok",
+     "modules": [
+      "pint"
+     ]
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "DependencyConfirmed"
+   },
+   "probe": {
+    "ok": true,
+    "type": "import_ok"
+   },
+   "measure_error": null
+  },
+  "T4|pydantic|": {
+   "claim": {
+    "key_str": "T4|pydantic|",
+    "tcode": "T4",
+    "attrs": {
+     "name": "pydantic",
+     "major": null,
+     "ecosystem_hint": "pypi"
+    },
+    "quote": "`pydantic==1.10.9`",
+    "role": "true",
+    "slot": "dep",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "import_ok",
+     "modules": [
+      "pydantic"
+     ]
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "DependencyConfirmed"
+   },
+   "probe": {
+    "ok": true,
+    "type": "import_ok"
+   },
+   "measure_error": null
+  },
+  "T4|requests|": {
+   "claim": {
+    "key_str": "T4|requests|",
+    "tcode": "T4",
+    "attrs": {
+     "name": "requests",
+     "major": null,
+     "ecosystem_hint": "pypi"
+    },
+    "quote": "`requests`",
+    "role": "true",
+    "slot": "dep",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "import_ok",
+     "modules": [
+      "requests"
+     ]
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "DependencyConfirmed"
+   },
+   "probe": {
+    "ok": true,
+    "type": "import_ok"
+   },
+   "measure_error": null
+  },
+  "T4|arrow|": {
+   "claim": {
+    "key_str": "T4|arrow|",
+    "tcode": "T4",
+    "attrs": {
+     "name": "arrow",
+     "major": null,
+     "ecosystem_hint": "pypi"
+    },
+    "quote": "`arrow`",
+    "role": "true",
+    "slot": "dep",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "import_ok",
+     "modules": [
+      "arrow"
+     ]
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "DependencyConfirmed"
+   },
+   "probe": {
+    "ok": true,
+    "type": "import_ok"
+   },
+   "measure_error": null
+  },
+  "T4|pytz|": {
+   "claim": {
+    "key_str": "T4|pytz|",
+    "tcode": "T4",
+    "attrs": {
+     "name": "pytz",
+     "major": null,
+     "ecosystem_hint": "pypi"
+    },
+    "quote": "`pytz`",
+    "role": "true",
+    "slot": "dep",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "import_ok",
+     "modules": [
+      "pytz"
+     ]
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "DependencyConfirmed"
+   },
+   "probe": {
+    "ok": true,
+    "type": "import_ok"
+   },
+   "measure_error": null
+  },
+  "T6|python|3009000000@2": {
+   "claim": {
+    "key_str": "T6|python|3009000000@2",
+    "tcode": "T6",
+    "attrs": {
+     "subject_type": "python",
+     "version": "3.9",
+     "code": 3009000000,
+     "precision": 2,
+     "qualifier": "min"
+    },
+    "quote": "Python: >=3.9",
+    "role": "true",
+    "slot": "python",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": null,
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "VersionConfirmed"
+   },
+   "probe": {
+    "ok": true,
+    "type": "none"
+   },
+   "measure_error": null
+  },
+  "T1|docs/get-started/core": {
+   "claim": {
+    "key_str": "T1|docs/get-started/core",
+    "tcode": "T1",
+    "attrs": {
+     "path": "docs/get-started/core",
+     "is_dir": true,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "docs/get-started/core/",
+    "role": "false",
+    "slot": "P1",
+    "kind": 1,
+    "expect_verdict": "ContradictedClaim",
+    "expect_leaves": [
+     "PathNeverExisted"
+    ],
+    "probe": {
+     "type": "absent",
+     "path": "docs/get-started/core",
+     "history": "none"
+    },
+    "mode": "add"
+   },
+   "recheck": {
+    "verdict": "ContradictedClaim",
+    "leaf": "PathNeverExisted"
+   },
+   "probe": {
+    "ok": true,
+    "type": "absent",
+    "log_count": 0
+   },
+   "measure_error": null
+  },
+  "T1|stravalib/attributes.py": {
+   "claim": {
+    "key_str": "T1|stravalib/attributes.py",
+    "tcode": "T1",
+    "attrs": {
+     "path": "stravalib/attributes.py",
+     "is_dir": false,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "stravalib/attributes.py",
+    "role": "false",
+    "slot": "P2",
+    "kind": 2,
+    "expect_verdict": "ContradictedClaim",
+    "expect_leaves": [
+     "PathRemoved"
+    ],
+    "probe": {
+     "type": "absent",
+     "path": "stravalib/attributes.py",
+     "history": "some"
+    },
+    "mode": "add"
+   },
+   "recheck": {
+    "verdict": "ContradictedClaim",
+    "leaf": "PathRemoved"
+   },
+   "probe": {
+    "ok": true,
+    "type": "absent",
+    "log_count": 38
+   },
+   "measure_error": null
+  },
+  "T5|make|tests": {
+   "claim": {
+    "key_str": "T5|make|tests",
+    "tcode": "T5",
+    "attrs": {
+     "runner": "make",
+     "kind": "make",
+     "target": "tests"
+    },
+    "quote": "make tests",
+    "role": "false",
+    "slot": "C_R",
+    "kind": 3,
+    "expect_verdict": "ContradictedClaim",
+    "expect_leaves": [
+     "ScriptUndefined",
+     "ScriptHostMissing"
+    ],
+    "probe": {
+     "type": "make_fail",
+     "target": "tests"
+    },
+    "mode": "replace"
+   },
+   "recheck": {
+    "verdict": "ContradictedClaim",
+    "leaf": "ScriptHostMissing"
+   },
+   "probe": {
+    "ok": true,
+    "type": "make_fail",
+    "result": {
+     "rc": 2,
+     "tail": "make: *** No rule to make target 'tests'.  Stop.\n"
+    }
+   },
+   "measure_error": null
+  },
+  "T4|httpx|": {
+   "claim": {
+    "key_str": "T4|httpx|",
+    "tcode": "T4",
+    "attrs": {
+     "name": "httpx",
+     "major": null,
+     "ecosystem_hint": "pypi"
+    },
+    "quote": "`httpx`",
+    "role": "false",
+    "slot": "D",
+    "kind": 4,
+    "expect_verdict": "ContradictedClaim",
+    "expect_leaves": [
+     "DependencyUndeclared"
+    ],
+    "probe": {
+     "type": "import_fail",
+     "modules": [
+      "httpx"
+     ]
+    },
+    "mode": "replace"
+   },
+   "recheck": {
+    "verdict": "ContradictedClaim",
+    "leaf": "DependencyUndeclared"
+   },
+   "probe": {
+    "ok": true,
+    "type": "import_fail"
+   },
+   "measure_error": null
+  },
+  "T1|examples/core": {
+   "claim": {
+    "key_str": "T1|examples/core",
+    "tcode": "T1",
+    "attrs": {
+     "path": "examples/core",
+     "is_dir": true,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "examples/core/",
+    "role": "false",
+    "slot": "P1",
+    "kind": 1,
+    "expect_verdict": "ContradictedClaim",
+    "expect_leaves": [
+     "PathNeverExisted"
+    ],
+    "probe": {
+     "type": "absent",
+     "path": "examples/core",
+     "history": "none"
+    },
+    "mode": "add"
+   },
+   "recheck": {
+    "verdict": "ContradictedClaim",
+    "leaf": "PathNeverExisted"
+   },
+   "probe": {
+    "ok": true,
+    "type": "absent",
+    "log_count": 0
+   },
+   "measure_error": null
+  },
+  "T1|stravalib/tests/unit/test_attributes.py": {
+   "claim": {
+    "key_str": "T1|stravalib/tests/unit/test_attributes.py",
+    "tcode": "T1",
+    "attrs": {
+     "path": "stravalib/tests/unit/test_attributes.py",
+     "is_dir": false,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "stravalib/tests/unit/test_attributes.py",
+    "role": "false",
+    "slot": "P2",
+    "kind": 2,
+    "expect_verdict": "ContradictedClaim",
+    "expect_leaves": [
+     "PathRemoved"
+    ],
+    "probe": {
+     "type": "absent",
+     "path": "stravalib/tests/unit/test_attributes.py",
+     "history": "some"
+    },
+    "mode": "add"
+   },
+   "recheck": {
+    "verdict": "ContradictedClaim",
+    "leaf": "PathRemoved"
+   },
+   "probe": {
+    "ok": true,
+    "type": "absent",
+    "log_count": 9
+   },
+   "measure_error": null
+  },
+  "T5|make|install": {
+   "claim": {
+    "key_str": "T5|make|install",
+    "tcode": "T5",
+    "attrs": {
+     "runner": "make",
+     "kind": "make",
+     "target": "install"
+    },
+    "quote": "make install",
+    "role": "false",
+    "slot": "C_I",
+    "kind": 3,
+    "expect_verdict": "ContradictedClaim",
+    "expect_leaves": [
+     "ScriptUndefined",
+     "ScriptHostMissing"
+    ],
+    "probe": {
+     "type": "make_fail",
+     "target": "install"
+    },
+    "mode": "replace"
+   },
+   "recheck": {
+    "verdict": "ContradictedClaim",
+    "leaf": "ScriptHostMissing"
+   },
+   "probe": {
+    "ok": true,
+    "type": "make_fail",
+    "result": {
+     "rc": 2,
+     "tail": "make: *** No rule to make target 'install'.  Stop.\n"
+    }
+   },
+   "measure_error": null
+  },
+  "T4|tzlocal|": {
+   "claim": {
+    "key_str": "T4|tzlocal|",
+    "tcode": "T4",
+    "attrs": {
+     "name": "tzlocal",
+     "major": null,
+     "ecosystem_hint": "pypi"
+    },
+    "quote": "`tzlocal`",
+    "role": "false",
+    "slot": "D",
+    "kind": 4,
+    "expect_verdict": "ContradictedClaim",
+    "expect_leaves": [
+     "DependencyUndeclared"
+    ],
+    "probe": {
+     "type": "import_fail",
+     "modules": [
+      "tzlocal"
+     ]
+    },
+    "mode": "replace"
+   },
+   "recheck": {
+    "verdict": "ContradictedClaim",
+    "leaf": "DependencyUndeclared"
+   },
+   "probe": {
+    "ok": true,
+    "type": "import_fail"
+   },
+   "measure_error": null
+  }
+ },
+ "probe_log": {
+  "pytest:src/stravalib/tests": {
+   "rc": 0,
+   "tail": "ntity_type[obj3-True-DeprecationWarning]\nsrc/stravalib/tests/unit/test_unithelper.py::test_is_quantity_type[42-False-None]\nsrc/stravalib/tests/unit/test_unithelper.py::test_legacy_accessors\nsrc/stravalib/tests/unit/test_unithelper.py::test_arithmetic_comparison_support\n\n227 tests collected in 2.00s\n"
+  },
+  "import:pint": {
+   "rc": 0,
+   "tail": ""
+  },
+  "import:pydantic": {
+   "rc": 0,
+   "tail": ""
+  },
+  "import:requests": {
+   "rc": 0,
+   "tail": ""
+  },
+  "import:arrow": {
+   "rc": 0,
+   "tail": ""
+  },
+  "import:pytz": {
+   "rc": 0,
+   "tail": ""
+  },
+  "make:tests": {
+   "rc": 2,
+   "tail": "make: *** No rule to make target 'tests'.  Stop.\n"
+  },
+  "make:install": {
+   "rc": 2,
+   "tail": "make: *** No rule to make target 'install'.  Stop.\n"
+  },
+  "import:tzlocal": {
+   "rc": 1,
+   "tail": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\nModuleNotFoundError: No module named 'tzlocal'\n"
+  },
+  "import:httpx": {
+   "rc": 1,
+   "tail": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\nModuleNotFoundError: No module named 'httpx'\n"
+  }
+ }
+}

@@ -1,0 +1,194 @@
+{
+ "repo": "WordPress/wp-ai-client",
+ "slug": "WordPress__wp-ai-client",
+ "engine": "hermit",
+ "tbox_sha256": "8266af98a762ae7567a0deb684fdd394c180f7c6875ac55011cd3e6e6b080b43",
+ "abox_sha256": "6bf3dbcbf05b67e33ae67cf00d45fcbd43f0244261f808f77ea272e73af6ed34",
+ "consistent": true,
+ "error": null,
+ "timings": {
+  "tbox_load_s": 0.0793489640345797,
+  "abox_load_s": 0.017888989998027682,
+  "reason_s": 5.759898770018481,
+  "extract_s": 0.013582470011897385,
+  "total_s": 5.871186544012744
+ },
+ "n_claims": 22,
+ "seconds": 5.87,
+ "abox_triples": 289,
+ "claims": {
+  "T1|API_Credentials": {
+   "leaves": [
+    "PathFoundBySuffix"
+   ],
+   "verdicts": [
+    "SupportedClaim"
+   ],
+   "chained": []
+  },
+  "T1|Builders": {
+   "leaves": [
+    "PathFoundBySuffix"
+   ],
+   "verdicts": [
+    "SupportedClaim"
+   ],
+   "chained": []
+  },
+  "T1|Capabilities": {
+   "leaves": [
+    "PathFoundBySuffix"
+   ],
+   "verdicts": [
+    "SupportedClaim"
+   ],
+   "chained": []
+  },
+  "T1|HTTP": {
+   "leaves": [
+    "PathFoundBySuffix"
+   ],
+   "verdicts": [
+    "SupportedClaim"
+   ],
+   "chained": []
+  },
+  "T1|REST_API": {
+   "leaves": [
+    "PathFoundBySuffix"
+   ],
+   "verdicts": [
+    "SupportedClaim"
+   ],
+   "chained": []
+  },
+  "T1|build": {
+   "leaves": [
+    "PathFoundExact"
+   ],
+   "verdicts": [
+    "SupportedClaim"
+   ],
+   "chained": []
+  },
+  "T1|includes": {
+   "leaves": [
+    "PathFoundExact"
+   ],
+   "verdicts": [
+    "SupportedClaim"
+   ],
+   "chained": []
+  },
+  "T1|includes/REST_API": {
+   "leaves": [],
+   "verdicts": [],
+   "chained": []
+  },
+  "T1|phpunit": {
+   "leaves": [
+    "PathFoundBySuffix"
+   ],
+   "verdicts": [
+    "SupportedClaim"
+   ],
+   "chained": []
+  },
+  "T1|src": {
+   "leaves": [
+    "PathFoundExact"
+   ],
+   "verdicts": [
+    "SupportedClaim"
+   ],
+   "chained": []
+  },
+  "T1|tests": {
+   "leaves": [
+    "PathFoundExact"
+   ],
+   "verdicts": [
+    "SupportedClaim"
+   ],
+   "chained": []
+  },
+  "T1|tests/phpunit": {
+   "leaves": [],
+   "verdicts": [],
+   "chained": []
+  },
+  "T1|tests/phpunit/tests": {
+   "leaves": [],
+   "verdicts": [],
+   "chained": []
+  },
+  "T1|vendor": {
+   "leaves": [
+    "PathUntrackedByDesign"
+   ],
+   "verdicts": [
+    "UnverifiableClaim"
+   ],
+   "chained": []
+  },
+  "T3|linter_formatter|prettier": {
+   "leaves": [
+    "ToolAbsentInEcosystem"
+   ],
+   "verdicts": [
+    "ContradictedClaim"
+   ],
+   "chained": []
+  },
+  "T3|package_manager|composer": {
+   "leaves": [
+    "ToolSignatureFound"
+   ],
+   "verdicts": [
+    "SupportedClaim"
+   ],
+   "chained": []
+  },
+  "T3|package_manager|npm": {
+   "leaves": [
+    "ToolSignatureFound"
+   ],
+   "verdicts": [
+    "SupportedClaim"
+   ],
+   "chained": []
+  },
+  "T3|test_framework|phpunit": {
+   "leaves": [],
+   "verdicts": [],
+   "chained": []
+  },
+  "T4|wordpress/php-ai-client|": {
+   "leaves": [],
+   "verdicts": [],
+   "chained": []
+  },
+  "T5|script|lint-php": {
+   "leaves": [],
+   "verdicts": [],
+   "chained": []
+  },
+  "T5|script|test-php": {
+   "leaves": [],
+   "verdicts": [],
+   "chained": []
+  },
+  "T6|php|7004000000@2": {
+   "leaves": [
+    "VersionConfirmed"
+   ],
+   "verdicts": [
+    "SupportedClaim"
+   ],
+   "chained": []
+  }
+ },
+ "document": [
+  "ManifestWithContradiction"
+ ]
+}

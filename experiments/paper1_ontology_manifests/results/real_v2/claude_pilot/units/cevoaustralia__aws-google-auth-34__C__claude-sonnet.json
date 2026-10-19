@@ -1,0 +1,93 @@
+{
+ "unit_id": "cevoaustralia__aws-google-auth-34__C__claude-sonnet",
+ "task_id": "cevoaustralia__aws-google-auth-34",
+ "repo": "cevoaustralia/aws-google-auth",
+ "stage": "initial_development",
+ "condition": "C",
+ "model": "claude-code/sonnet",
+ "run": 1,
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 3197,
+  "sha256": "e343dc93ceee396264493f578132d18503825bf7652b6d2d75ae2425a6572f97"
+ },
+ "started": "2026-10-18T01:03:16.227700+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 5,
+ "tool_calls": 4,
+ "usage": {
+  "input_tokens": 10,
+  "cache_creation_input_tokens": 8597,
+  "cache_read_input_tokens": 87513,
+  "output_tokens": 772,
+  "output_tokens_details": {
+   "thinking_tokens": 55
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 8597,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 10,
+   "outputTokens": 772,
+   "cacheReadInputTokens": 87513,
+   "cacheCreationInputTokens": 8597,
+   "webSearchRequests": 0,
+   "costUSD": 0.050879299999999995,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 55,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.050879299999999995,
+ "result_text": "I fixed the duplicate `[None]` sections, but I haven't run the tool or any tests.\n\nWhen no profile was set (no `--profile` and no `$AWS_PROFILE`), the profile name was `None`. `_store` then wrote it out as a literal `[None]` section in the credentials and config files. The first run made one, and the config parser raised `DuplicateSectionError` on a later run.\n\nIn `aws_google_auth/__init__.py`, the credentials are now only stored when a profile is set. With no profile, the tool prints the `export ...` line and writes nothing to disk.\n\nThe catch is that a run with no profile no longer saves anything under `~/.aws`. Before, it also wrote a bogus `[None]` entry there. If you'd rather save such runs under `default`, that is a different change.\n\nAn existing `~/.aws/credentials` that already has two `[None]` sections will stay broken. Delete the `[None]` sections by hand.",
+ "wall_s": 19.7,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 5,
+   "hit_step_limit": 0,
+   "changed_lines": 4,
+   "gold_changed_lines": 10,
+   "Y1": 0,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": -1.3219280948873622
+  },
+  "f2p_pass": 0,
+  "f2p_total": 1,
+  "p2p_pass": 1,
+  "p2p_total": 1,
+  "f2p_all_pass": false,
+  "p2p_all_pass": true,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 1.4
+ },
+ "status": "done",
+ "finished": "2026-10-18T01:03:39.104334+00:00"
+}

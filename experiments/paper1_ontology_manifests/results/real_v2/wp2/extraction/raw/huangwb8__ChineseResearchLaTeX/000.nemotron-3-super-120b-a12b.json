@@ -1,0 +1,21 @@
+{
+ "repo": "huangwb8/ChineseResearchLaTeX",
+ "chunk": 0,
+ "n_chunks": 1,
+ "model": "nvidia/nemotron-3-super-120b-a12b",
+ "prompt_sha256": "d0e02ff613417050168d859f2af6230c3712c6758bb5d9c40d60ff55e5ae87ca",
+ "user_sha256": "c11567af4b69c37631aeefb982733dfaeb09622f0b49186965d1b4f4bd1588bc",
+ "text": "{\n  \"claims\": [\n    {\n      \"type\": \"path_exists\",\n      \"quote\": \"@./AGENTS.md\",\n      \"line\": 5,\n      \"subject\": \"./AGENTS.md\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"path_exists\",\n      \"quote\": \"使用 TodoWrite 工具跟踪复杂任务的进度\",\n      \"line\": 19,\n      \"subject\": \"TodoWrite\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"path_exists\",\n      \"quote\": \"使用 Edit 工具进行精确修改\",\n      \"line\": 27,\n      \"subject\": \"Edit\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"path_exists\",\n      \"quote\": \"使用 Read 工具阅读文件\",\n      \"line\": 26,\n      \"subject\": \"Read\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"command\",\n      \"quote\": \"将 `python scripts/pack_release.py --tag <tag> --upload` 视为默认必做检查点\",\n      \"line\": 22,\n      \"subject\": \"pack_release.py\",\n      \"runner\": \"python\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"path_exists\",\n      \"quote\": \"请立即在 `CHANGELOG.md` 中记录变更\",\n      \"line\": 42,\n      \"subject\": \"CHANGELOG.md\",\n      \"mode\": \"asserts_existing\"\n    }\n  ]\n}",
+ "parse_ok": true,
+ "parse_error": null,
+ "parse_retries": 0,
+ "latency_s": 3.0249861289630644,
+ "usage": {
+  "prompt": 2766,
+  "completion": 366
+ },
+ "n_api_calls": 1,
+ "finish_reason": "stop",
+ "error": null,
+ "discarded_attempt_texts": []
+}

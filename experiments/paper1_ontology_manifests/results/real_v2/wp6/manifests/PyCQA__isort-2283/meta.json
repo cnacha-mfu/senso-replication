@@ -1,0 +1,317 @@
+{
+ "task_id": "PyCQA__isort-2283",
+ "repo": "PyCQA/isort",
+ "stage": "servicing",
+ "rounds": 1,
+ "rejects": {},
+ "flags": [
+  "length_violation_F_I"
+ ],
+ "info": {
+  "slots": {
+   "test_root": "tests",
+   "P1": {
+    "replaced": "isort/stdlibs",
+    "name": "internal",
+    "F_R": "isort/internal",
+    "F_I": "example_isort_formatting_plugin/internal"
+   },
+   "P2": {
+    "replaced": "isort/deprecated/finders.py",
+    "F_R": "isort/_future/_dataclasses.py",
+    "F_I": "tests/test_integration.py"
+   },
+   "C": {
+    "F_R": "make test",
+    "F_I": "make install"
+   },
+   "D": {
+    "replaced": null,
+    "F_R": "toolz",
+    "F_I": "boltons"
+   }
+  },
+  "why": {
+   "test_command": [
+    {
+     "root": "tests",
+     "T3": "SupportedClaim",
+     "T1": "SupportedClaim",
+     "collect_ok": true
+    }
+   ],
+   "kind1": {
+    "p1_idx": 5,
+    "gold0": "isort",
+    "unrelated": "example_isort_formatting_plugin",
+    "base_R": "isort",
+    "base_I": "example_isort_formatting_plugin"
+   },
+   "kind2": {
+    "p2_idx": 2,
+    "n_deleted_py": 56,
+    "found": {
+     "F_R": "isort/_future/_dataclasses.py",
+     "F_I": "tests/test_integration.py"
+    }
+   },
+   "kind3": {
+    "run": "test",
+    "install": "install",
+    "test_ok": true,
+    "install_ok": true
+   },
+   "kind4": {
+    "deps": [],
+    "d_idx": null,
+    "src_R": "bandit",
+    "src_I": "black",
+    "n_decls": 43,
+    "n_dist": 12
+   }
+  },
+  "length": {
+   "T": 386,
+   "F_R": 401,
+   "F_I": 434
+  },
+  "fallbacks": {
+   "F_R": [],
+   "F_I": []
+  },
+  "modes": {
+   "F_R": {
+    "1": "replace",
+    "2": "replace",
+    "3": "replace",
+    "4": "add"
+   },
+   "F_I": {
+    "1": "replace",
+    "2": "replace",
+    "3": "replace",
+    "4": "add"
+   }
+  },
+  "length_diff": {
+   "F_R": 15,
+   "F_I": 48
+  },
+  "n_claims_T": 13,
+  "n_false": {
+   "F_R": 4,
+   "F_I": 4
+  },
+  "pointer_in_issue": true,
+  "gold_dirs": [
+   "isort"
+  ],
+  "gold_files": [
+   "isort/core.py"
+  ]
+ },
+ "tokens": {
+  "F_R": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "isort/internal",
+     "internal"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "isort/_future/_dataclasses.py",
+     "_dataclasses.py"
+    ]
+   },
+   {
+    "kind": 3,
+    "type": "regex",
+    "regex": "\\bmake\\b[^|;&\\n]*\\btest\\b",
+    "target": "test"
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "toolz"
+    ]
+   }
+  ],
+  "F_I": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "example_isort_formatting_plugin/internal",
+     "internal"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "tests/test_integration.py",
+     "test_integration.py"
+    ]
+   },
+   {
+    "kind": 3,
+    "type": "regex",
+    "regex": "\\bmake\\b[^|;&\\n]*\\binstall\\b",
+    "target": "install"
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "boltons"
+    ]
+   }
+  ]
+ },
+ "unresolved_pre_hermit": [],
+ "sha256": {
+  "T": "e2dfc0c980d4902bde12b9637c9ca1d44ab3602b9f5561b0db79f57899098f5b",
+  "F_R": "ab876906ae4332d7ada8df45c649ca91ff33b3e87eef30574dafc66e70238ef1",
+  "F_I": "503466d373f2296973f3b45a4e95c0c81153c430e6d46f81fe39bb75459e3556"
+ },
+ "chars": {
+  "T": 386,
+  "F_R": 401,
+  "F_I": 434
+ },
+ "claims": {
+  "T": [
+   "T1|example_isort_formatting_plugin",
+   "T1|example_isort_sorting_plugin",
+   "T1|example_shared_isort_profile",
+   "T1|isort",
+   "T1|isort/deprecated",
+   "T1|isort/stdlibs",
+   "T1|tests",
+   "T1|isort/main.py",
+   "T1|isort/stdlibs/py27.py",
+   "T1|isort/deprecated/finders.py",
+   "T3|test_framework|pytest",
+   "T1|tests",
+   "T1|pyproject.toml"
+  ],
+  "F_R": [
+   "T1|example_isort_formatting_plugin",
+   "T1|example_isort_sorting_plugin",
+   "T1|example_shared_isort_profile",
+   "T1|isort",
+   "T1|isort/deprecated",
+   "T1|isort/internal",
+   "T1|tests",
+   "T1|isort/main.py",
+   "T1|isort/stdlibs/py27.py",
+   "T1|isort/_future/_dataclasses.py",
+   "T5|make|test",
+   "T1|pyproject.toml",
+   "T4|toolz|"
+  ],
+  "F_I": [
+   "T1|example_isort_formatting_plugin",
+   "T1|example_isort_sorting_plugin",
+   "T1|example_shared_isort_profile",
+   "T1|isort",
+   "T1|isort/deprecated",
+   "T1|example_isort_formatting_plugin/internal",
+   "T1|tests",
+   "T1|isort/main.py",
+   "T1|isort/stdlibs/py27.py",
+   "T1|tests/test_integration.py",
+   "T3|test_framework|pytest",
+   "T1|tests",
+   "T5|make|install",
+   "T4|boltons|"
+  ]
+ },
+ "python_spec": ">=3.8.0",
+ "token_audit": [
+  {
+   "cond": "F_R",
+   "kind": 1,
+   "type": "path",
+   "name": "isort/internal",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 2,
+   "type": "path",
+   "name": "isort/_future/_dataclasses.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 3,
+   "type": "regex",
+   "name": "make test",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 4,
+   "type": "word",
+   "name": "toolz",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 1,
+   "type": "path",
+   "name": "example_isort_formatting_plugin/internal",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 2,
+   "type": "path",
+   "name": "tests/test_integration.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 3,
+   "type": "regex",
+   "name": "make install",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 4,
+   "type": "word",
+   "name": "boltons",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  }
+ ],
+ "dist_imports_used": {
+  "toolz": null,
+  "boltons": null
+ }
+}

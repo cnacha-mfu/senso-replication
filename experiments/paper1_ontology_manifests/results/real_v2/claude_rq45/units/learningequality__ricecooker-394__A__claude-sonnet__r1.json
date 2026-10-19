@@ -1,0 +1,107 @@
+{
+ "unit_id": "learningequality__ricecooker-394__A__claude-sonnet__r1",
+ "task_id": "learningequality__ricecooker-394",
+ "repo": "learningequality/ricecooker",
+ "stage": "evolution",
+ "condition": "A",
+ "model": "claude-code/sonnet",
+ "run": 1,
+ "condition_meta": {},
+ "started": "2026-10-18T06:23:33.970252+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 4,
+ "tool_calls": 3,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 9590,
+  "cache_read_input_tokens": 64461,
+  "output_tokens": 1506,
+  "output_tokens_details": {
+   "thinking_tokens": 101
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 9590,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 8,
+   "outputTokens": 1506,
+   "cacheReadInputTokens": 64461,
+   "cacheCreationInputTokens": 9590,
+   "webSearchRequests": 0,
+   "costUSD": 0.05988210000000001,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 101,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.05988210000000001,
+ "result_text": "Topic nodes no longer send `grade_levels: null` (or the other five structured metadata fields), so Studio's \"must pass a list of values\" check should no longer reject them. I confirmed the module still imports, but I didn't run the tests or try an upload against Studio.\n\nThe change is in `ricecooker/classes/nodes.py`:\n- **`TreeNode.to_dict()`:** it no longer includes `grade_levels`, `resource_types`, `learning_activities`, `accessibility_categories`, `subjects` or `needs`.\n- **`ContentNode.to_dict()`:** it now includes each of those six fields only when it has a value. A content node with no grade levels set also leaves that key out of the payload, instead of sending `null`.\n\nI assumed Studio only checks these fields when the key is present. If any tests assert that `to_dict()` output contains those keys with `None`, they will now fail.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792309800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0.14,
+    "resetsAt": 1792309800
+   },
+   "seven_day": {
+    "utilization": 0.13,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 39.3,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 4,
+   "hit_step_limit": 0,
+   "changed_lines": 26,
+   "gold_changed_lines": 45,
+   "Y1": 2,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": -0.7914133781885827
+  },
+  "f2p_pass": 0,
+  "f2p_total": 9,
+  "p2p_pass": 2,
+  "p2p_total": 2,
+  "f2p_all_pass": false,
+  "p2p_all_pass": true,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 15.9
+ },
+ "status": "done",
+ "finished": "2026-10-18T06:24:32.256702+00:00"
+}

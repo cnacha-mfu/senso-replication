@@ -1,0 +1,107 @@
+{
+ "unit_id": "nose-devs__nose2-615__A__claude-sonnet__r1",
+ "task_id": "nose-devs__nose2-615",
+ "repo": "nose-devs/nose2",
+ "stage": "phase_out",
+ "condition": "A",
+ "model": "claude-code/sonnet",
+ "run": 1,
+ "condition_meta": {},
+ "started": "2026-10-18T07:52:38.298418+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 4,
+ "tool_calls": 3,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 2344,
+  "cache_read_input_tokens": 70452,
+  "output_tokens": 772,
+  "output_tokens_details": {
+   "thinking_tokens": 0
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 2344,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 8,
+   "outputTokens": 772,
+   "cacheReadInputTokens": 70452,
+   "cacheCreationInputTokens": 2344,
+   "webSearchRequests": 0,
+   "costUSD": 0.024157199999999997,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 0,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.024157199999999997,
+ "result_text": "I fixed it in `nose2/session.py`. `nose2 -c tox.ini` should now load your `[unittest]` plugins, so `--junit-xml` is recognised again. I haven't run it or the tests.\n\nIn 0.15.0, `loadConfigFiles` only read files ending in `.cfg` and `pyproject.toml`. A `tox.ini` was silently skipped, so your `plugins =` list was never loaded and the junitxml plugin never registered its option.\n\nAny file ending in `.toml` is now parsed as TOML. Every other file is parsed as ini, so `tox.ini` and other `.ini` files work, as does anything else passed with `-c`. I widened the TOML check from `pyproject.toml` to any `.toml` file, so a differently named TOML file passed with `-c` is now parsed as TOML instead of being skipped.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792327800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0,
+    "resetsAt": 1792327800
+   },
+   "seven_day": {
+    "utilization": 0.13,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 21.6,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 4,
+   "hit_step_limit": 0,
+   "changed_lines": 6,
+   "gold_changed_lines": 25,
+   "Y1": -1,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": -2.0588936890535687
+  },
+  "f2p_pass": 1,
+  "f2p_total": 1,
+  "p2p_pass": 8,
+  "p2p_total": 8,
+  "f2p_all_pass": true,
+  "p2p_all_pass": true,
+  "resolved": true,
+  "reason": "resolved",
+  "test_seconds": 0.5
+ },
+ "status": "done",
+ "finished": "2026-10-18T07:53:02.567815+00:00"
+}

@@ -1,0 +1,80 @@
+{
+ "unit_id": "stravalib__stravalib-446__F_I__nemotron-3-ultra-550b-a55b__r1",
+ "task_id": "stravalib__stravalib-446",
+ "repo": "stravalib/stravalib",
+ "stage": "evolution",
+ "condition": "F_I",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "run": 1,
+ "order": 260,
+ "env_build_s": 115.5,
+ "started": "2026-10-13T15:16:30.193197+00:00",
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 426,
+  "sha256": "6dc06a02904a27504b43d64130529cc6816eb9636e15a83e28fa179651dbbf5c"
+ },
+ "condition_available": true,
+ "venv_reset_s": 5.27,
+ "retries": 0,
+ "venv_hash_before": "ed4c627890e0b7e9",
+ "venv_hash_after": "ed4c627890e0b7e9",
+ "venv_mutated": false,
+ "exit_status": "RepeatedFormatError",
+ "error": "",
+ "steps": 21,
+ "wall_s": 1017.1,
+ "prompt_tokens": 153521,
+ "completion_tokens": 1873,
+ "format_errors": 0,
+ "length_cutoffs": 5,
+ "api_errors": {
+  "timeout": 1,
+  "429": 76,
+  "503": 9
+ },
+ "n_queries": 42,
+ "keys_used": {
+  "NVIDIA_API_KEY_4": 27,
+  "NVIDIA_API_KEY": 26,
+  "NVIDIA_API_KEY_2": 28,
+  "NVIDIA_API_KEY_5": 26
+ },
+ "temperature": 0.7,
+ "top_p": 0.95,
+ "model_id_returned": "nvidia/nemotron-3-ultra-550b-a55b",
+ "mini_version": "2.4.6",
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 21,
+   "hit_step_limit": 0,
+   "changed_lines": 483,
+   "gold_changed_lines": 388,
+   "Y1": 0,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": 0.3159665366486455
+  },
+  "f2p_pass": 0,
+  "f2p_total": 15,
+  "p2p_pass": 7,
+  "p2p_total": 7,
+  "f2p_all_pass": false,
+  "p2p_all_pass": true,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 2.5
+ },
+ "status": "done",
+ "finished": "2026-10-13T15:33:42.004845+00:00"
+}

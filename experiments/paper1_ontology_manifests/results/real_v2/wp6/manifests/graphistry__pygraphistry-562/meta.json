@@ -1,0 +1,289 @@
+{
+ "task_id": "graphistry__pygraphistry-562",
+ "repo": "graphistry/pygraphistry",
+ "stage": "servicing",
+ "rounds": 1,
+ "rejects": {},
+ "flags": [
+  "kind3_dropped",
+  "length_violation_F_R"
+ ],
+ "info": {
+  "slots": {
+   "test_root": "graphistry/tests",
+   "P1": {
+    "replaced": "graphistry/validate",
+    "name": "core",
+    "F_R": "graphistry/compute/core",
+    "F_I": "graphistry/layout/core"
+   },
+   "P2": {
+    "replaced": "graphistry/compute/collapse.py",
+    "F_R": "graphistry/graph_vector_pb2.py",
+    "F_I": "graphistry2.py"
+   },
+   "D": {
+    "replaced": null,
+    "F_R": "boltons",
+    "F_I": "boltons"
+   }
+  },
+  "why": {
+   "test_command": [
+    {
+     "root": "graphistry/tests",
+     "T3": "SupportedClaim",
+     "T1": "SupportedClaim",
+     "collect_ok": true
+    }
+   ],
+   "kind1": {
+    "p1_idx": 7,
+    "gold0": "graphistry/compute",
+    "unrelated": "graphistry/layout",
+    "base_R": "graphistry/compute",
+    "base_I": "graphistry/layout"
+   },
+   "kind2": {
+    "p2_idx": 2,
+    "n_deleted_py": 17,
+    "found": {
+     "F_R": "graphistry/graph_vector_pb2.py",
+     "F_I": "graphistry2.py"
+    }
+   },
+   "kind3": {
+    "run": null,
+    "install": null,
+    "test_ok": true,
+    "install_ok": true
+   },
+   "kind4": {
+    "deps": [],
+    "d_idx": null,
+    "src_R": null,
+    "src_I": null,
+    "n_decls": 0,
+    "n_dist": 100
+   }
+  },
+  "length": {
+   "T": 472,
+   "F_R": 503,
+   "F_I": 486
+  },
+  "fallbacks": {
+   "F_R": [],
+   "F_I": []
+  },
+  "modes": {
+   "F_R": {
+    "1": "replace",
+    "2": "replace",
+    "4": "add"
+   },
+   "F_I": {
+    "1": "replace",
+    "2": "replace",
+    "4": "add"
+   }
+  },
+  "length_diff": {
+   "F_R": 31,
+   "F_I": 14
+  },
+  "n_claims_T": 15,
+  "n_false": {
+   "F_R": 3,
+   "F_I": 3
+  },
+  "pointer_in_issue": false,
+  "gold_dirs": [
+   "graphistry/compute"
+  ],
+  "gold_files": [
+   "CHANGELOG.md",
+   "graphistry/compute/ast.py"
+  ]
+ },
+ "tokens": {
+  "F_R": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "graphistry/compute/core",
+     "core"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "graphistry/graph_vector_pb2.py",
+     "graph_vector_pb2.py"
+    ]
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "boltons"
+    ]
+   }
+  ],
+  "F_I": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "graphistry/layout/core",
+     "core"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "graphistry2.py",
+     "graphistry2.py"
+    ]
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "boltons"
+    ]
+   }
+  ]
+ },
+ "unresolved_pre_hermit": [],
+ "sha256": {
+  "T": "0923b3621d896c873d81cda84724e4feabf5bcdeae7de9e731afc0d9124be552",
+  "F_R": "6d603c9f729b5735febf5678d4a28a948003fe3a58fe7316345d5bf53858d0f5",
+  "F_I": "93c9628abafd2ef9055b2a084f8f05c7fad34557a4561f4fd3490a824685038f"
+ },
+ "chars": {
+  "T": 472,
+  "F_R": 503,
+  "F_I": 486
+ },
+ "claims": {
+  "T": [
+   "T1|graphistry",
+   "T1|graphistry/compute",
+   "T1|graphistry/layout",
+   "T1|graphistry/plugins",
+   "T1|graphistry/plugins_types",
+   "T1|graphistry/tests",
+   "T1|graphistry/utils",
+   "T1|graphistry/validate",
+   "T1|graphistry/feature_utils.py",
+   "T1|graphistry/layout/sugiyama/sugiyamaLayout.py",
+   "T1|graphistry/compute/collapse.py",
+   "T3|test_framework|pytest",
+   "T1|graphistry/tests",
+   "T1|setup.py",
+   "T6|python|3007000000@2"
+  ],
+  "F_R": [
+   "T1|graphistry",
+   "T1|graphistry/compute",
+   "T1|graphistry/layout",
+   "T1|graphistry/plugins",
+   "T1|graphistry/plugins_types",
+   "T1|graphistry/tests",
+   "T1|graphistry/utils",
+   "T1|graphistry/compute/core",
+   "T1|graphistry/feature_utils.py",
+   "T1|graphistry/layout/sugiyama/sugiyamaLayout.py",
+   "T1|graphistry/graph_vector_pb2.py",
+   "T3|test_framework|pytest",
+   "T1|graphistry/tests",
+   "T1|setup.py",
+   "T4|boltons|",
+   "T6|python|3007000000@2"
+  ],
+  "F_I": [
+   "T1|graphistry",
+   "T1|graphistry/compute",
+   "T1|graphistry/layout",
+   "T1|graphistry/plugins",
+   "T1|graphistry/plugins_types",
+   "T1|graphistry/tests",
+   "T1|graphistry/utils",
+   "T1|graphistry/layout/core",
+   "T1|graphistry/feature_utils.py",
+   "T1|graphistry/layout/sugiyama/sugiyamaLayout.py",
+   "T1|graphistry2.py",
+   "T3|test_framework|pytest",
+   "T1|graphistry/tests",
+   "T1|setup.py",
+   "T4|boltons|",
+   "T6|python|3007000000@2"
+  ]
+ },
+ "python_spec": ">=3.7",
+ "token_audit": [
+  {
+   "cond": "F_R",
+   "kind": 1,
+   "type": "path",
+   "name": "graphistry/compute/core",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 2,
+   "type": "path",
+   "name": "graphistry/graph_vector_pb2.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 4,
+   "type": "word",
+   "name": "boltons",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 1,
+   "type": "path",
+   "name": "graphistry/layout/core",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 2,
+   "type": "path",
+   "name": "graphistry2.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 4,
+   "type": "word",
+   "name": "boltons",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  }
+ ],
+ "dist_imports_used": {
+  "boltons": null
+ }
+}

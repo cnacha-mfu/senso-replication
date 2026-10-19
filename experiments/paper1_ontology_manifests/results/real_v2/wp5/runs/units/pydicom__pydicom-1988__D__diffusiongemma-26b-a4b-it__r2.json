@@ -1,0 +1,73 @@
+{
+ "unit_id": "pydicom__pydicom-1988__D__diffusiongemma-26b-a4b-it__r2",
+ "task_id": "pydicom__pydicom-1988",
+ "repo": "pydicom/pydicom",
+ "stage": "evolution",
+ "condition": "D",
+ "model": "google/diffusiongemma-26b-a4b-it",
+ "run": 2,
+ "order": 269,
+ "env_build_s": 49.4,
+ "real_agent_manifest_at_base": [],
+ "started": "2026-10-07T06:04:01.159585+00:00",
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 5622,
+  "sha256": "36e63ee0a34a8d8c225c007af7466f1b282da93dcfd61f5416728d537f07d321"
+ },
+ "condition_available": true,
+ "retries": 0,
+ "exit_status": "TimeExceeded",
+ "error": "",
+ "steps": 39,
+ "wall_s": 1829.7,
+ "prompt_tokens": 1801715,
+ "completion_tokens": 9057,
+ "format_errors": 4,
+ "length_cutoffs": 0,
+ "api_errors": {},
+ "n_queries": 39,
+ "keys_used": {
+  "NVIDIA_API_KEY": 9,
+  "NVIDIA_API_KEY_4": 9,
+  "NVIDIA_API_KEY_2": 10,
+  "NVIDIA_API_KEY_5": 11
+ },
+ "temperature": 0.7,
+ "top_p": 0.95,
+ "model_id_returned": "google/diffusiongemma-26b-a4b-it",
+ "mini_version": "2.4.6",
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 39,
+   "hit_step_limit": 0,
+   "changed_lines": 23,
+   "gold_changed_lines": 42,
+   "Y1": 4,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": 0.0,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": -0.8687554667217473
+  },
+  "f2p_pass": 0,
+  "f2p_total": 1,
+  "p2p_pass": 179,
+  "p2p_total": 185,
+  "f2p_all_pass": false,
+  "p2p_all_pass": false,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 4.5
+ },
+ "status": "done",
+ "finished": "2026-10-07T06:34:35.885511+00:00"
+}

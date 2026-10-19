@@ -1,0 +1,78 @@
+{
+ "unit_id": "sigma67__ytmusicapi-560__F_I__diffusiongemma-26b-a4b-it__r1",
+ "task_id": "sigma67__ytmusicapi-560",
+ "repo": "sigma67/ytmusicapi",
+ "stage": "dev",
+ "condition": "F_I",
+ "model": "google/diffusiongemma-26b-a4b-it",
+ "run": 1,
+ "order": 7,
+ "env_build_s": 38.7,
+ "started": "2026-10-09T05:21:53.362333+00:00",
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 383,
+  "sha256": "fb0e814e7ddb20a32eb518232e838c4710bb6ad432ec137871207e16491b679a"
+ },
+ "condition_available": true,
+ "venv_reset_s": 1.55,
+ "retries": 0,
+ "venv_hash_before": "0fe96fe38177e7bf",
+ "venv_hash_after": "0fe96fe38177e7bf",
+ "venv_mutated": false,
+ "exit_status": "LimitsExceeded",
+ "error": "",
+ "steps": 40,
+ "wall_s": 209.9,
+ "prompt_tokens": 800387,
+ "completion_tokens": 11675,
+ "format_errors": 4,
+ "length_cutoffs": 0,
+ "api_errors": {
+  "429": 27
+ },
+ "n_queries": 41,
+ "keys_used": {
+  "NVIDIA_API_KEY": 17,
+  "NVIDIA_API_KEY_2": 19,
+  "NVIDIA_API_KEY_4": 16,
+  "NVIDIA_API_KEY_5": 15
+ },
+ "temperature": 0.7,
+ "top_p": 0.95,
+ "model_id_returned": "google/diffusiongemma-26b-a4b-it",
+ "mini_version": "2.4.6",
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 40,
+   "hit_step_limit": 1,
+   "changed_lines": 2,
+   "gold_changed_lines": 59,
+   "Y1": 1,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": -4.882643049361842
+  },
+  "f2p_pass": 0,
+  "f2p_total": 1,
+  "p2p_pass": 4,
+  "p2p_total": 5,
+  "f2p_all_pass": false,
+  "p2p_all_pass": false,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 7.8
+ },
+ "status": "done",
+ "finished": "2026-10-09T05:25:34.120546+00:00"
+}

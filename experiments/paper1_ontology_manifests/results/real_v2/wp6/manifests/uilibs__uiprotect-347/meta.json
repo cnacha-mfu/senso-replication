@@ -1,0 +1,321 @@
+{
+ "task_id": "uilibs__uiprotect-347",
+ "repo": "uilibs/uiprotect",
+ "stage": "phase_out",
+ "rounds": 1,
+ "rejects": {},
+ "flags": [
+  "kind3_dropped",
+  "length_violation_F_R",
+  "length_violation_F_I"
+ ],
+ "info": {
+  "slots": {
+   "test_root": "tests",
+   "P1": {
+    "replaced": null,
+    "name": "internal",
+    "F_R": "src/uiprotect/internal",
+    "F_I": "docs/internal"
+   },
+   "P2": {
+    "replaced": null,
+    "F_R": "tests/test_main.py",
+    "F_I": "docs/engine.py"
+   },
+   "D": {
+    "replaced": "convertertools",
+    "F_R": "toolz",
+    "F_I": "boltons"
+   }
+  },
+  "why": {
+   "test_command": [
+    {
+     "root": "tests",
+     "T3": "SupportedClaim",
+     "T1": "SupportedClaim",
+     "collect_ok": true
+    }
+   ],
+   "kind1": {
+    "p1_idx": null,
+    "gold0": "src/uiprotect",
+    "unrelated": null,
+    "base_R": "src/uiprotect",
+    "base_I": "docs"
+   },
+   "kind2": {
+    "p2_idx": null,
+    "n_deleted_py": 20,
+    "found": {
+     "F_R": "tests/test_main.py",
+     "F_I": "docs/engine.py"
+    }
+   },
+   "kind3": {
+    "run": null,
+    "install": null,
+    "test_ok": true,
+    "install_ok": true
+   },
+   "kind4": {
+    "deps": [
+     [
+      "typer",
+      false
+     ],
+     [
+      "pydantic",
+      false
+     ],
+     [
+      "orjson",
+      true
+     ],
+     [
+      "aiohttp",
+      true
+     ],
+     [
+      "convertertools",
+      false
+     ]
+    ],
+    "d_idx": 4,
+    "src_R": "orjson",
+    "src_I": "convertertools",
+    "n_decls": 42,
+    "n_dist": 52
+   }
+  },
+  "length": {
+   "T": 343,
+   "F_R": 378,
+   "F_I": 367
+  },
+  "fallbacks": {
+   "F_R": [],
+   "F_I": [
+    "kind2_never_existed_fallback"
+   ]
+  },
+  "modes": {
+   "F_R": {
+    "1": "add",
+    "2": "add",
+    "4": "replace"
+   },
+   "F_I": {
+    "1": "add",
+    "2": "add",
+    "4": "replace"
+   }
+  },
+  "length_diff": {
+   "F_R": 35,
+   "F_I": 24
+  },
+  "n_claims_T": 12,
+  "n_false": {
+   "F_R": 3,
+   "F_I": 3
+  },
+  "pointer_in_issue": false,
+  "gold_dirs": [
+   "src/uiprotect"
+  ],
+  "gold_files": [
+   "src/uiprotect/api.py"
+  ]
+ },
+ "tokens": {
+  "F_R": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "src/uiprotect/internal",
+     "internal"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "tests/test_main.py",
+     "test_main.py"
+    ]
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "toolz"
+    ]
+   }
+  ],
+  "F_I": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "docs/internal",
+     "internal"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "docs/engine.py",
+     "engine.py"
+    ]
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "boltons"
+    ]
+   }
+  ]
+ },
+ "unresolved_pre_hermit": [],
+ "sha256": {
+  "T": "1b51d05ebcf402462443561c49f10adfac7d1932d39a80a1c2712bc56b3a9af8",
+  "F_R": "7d7574b599b9ba30bb89ad263fa0726d5f49ef0dfddd6a8a8a22e26df6e5ff8a",
+  "F_I": "34e4b08950ab17a4cfb8271a37bdf4f9aa912ff72b22ccf1247c15d4f7bc2026"
+ },
+ "chars": {
+  "T": 343,
+  "F_R": 378,
+  "F_I": 367
+ },
+ "claims": {
+  "T": [
+   "T1|src/uiprotect",
+   "T1|tests",
+   "T1|src/uiprotect/data/devices.py",
+   "T3|test_framework|pytest",
+   "T1|tests",
+   "T1|pyproject.toml",
+   "T4|typer|",
+   "T4|pydantic|",
+   "T4|orjson|",
+   "T4|aiohttp|",
+   "T4|convertertools|",
+   "T6|python|3010000000@2"
+  ],
+  "F_R": [
+   "T1|src/uiprotect",
+   "T1|tests",
+   "T1|src/uiprotect/internal",
+   "T1|src/uiprotect/data/devices.py",
+   "T1|tests/test_main.py",
+   "T3|test_framework|pytest",
+   "T1|tests",
+   "T1|pyproject.toml",
+   "T4|typer|",
+   "T4|pydantic|",
+   "T4|orjson|",
+   "T4|aiohttp|",
+   "T4|toolz|",
+   "T6|python|3010000000@2"
+  ],
+  "F_I": [
+   "T1|src/uiprotect",
+   "T1|tests",
+   "T1|docs/internal",
+   "T1|src/uiprotect/data/devices.py",
+   "T1|docs/engine.py",
+   "T3|test_framework|pytest",
+   "T1|tests",
+   "T1|pyproject.toml",
+   "T4|typer|",
+   "T4|pydantic|",
+   "T4|orjson|",
+   "T4|aiohttp|",
+   "T4|boltons|",
+   "T6|python|3010000000@2"
+  ]
+ },
+ "python_spec": ">=3.10",
+ "token_audit": [
+  {
+   "cond": "F_R",
+   "kind": 1,
+   "type": "path",
+   "name": "src/uiprotect/internal",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 2,
+   "type": "path",
+   "name": "tests/test_main.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 4,
+   "type": "word",
+   "name": "toolz",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 1,
+   "type": "path",
+   "name": "docs/internal",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 2,
+   "type": "path",
+   "name": "docs/engine.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 4,
+   "type": "word",
+   "name": "boltons",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  }
+ ],
+ "dist_imports_used": {
+  "typer": [
+   "typer"
+  ],
+  "pydantic": [
+   "pydantic"
+  ],
+  "orjson": [
+   "orjson"
+  ],
+  "aiohttp": [
+   "aiohttp"
+  ],
+  "convertertools": [
+   "convertertools"
+  ],
+  "toolz": null,
+  "boltons": null
+ }
+}

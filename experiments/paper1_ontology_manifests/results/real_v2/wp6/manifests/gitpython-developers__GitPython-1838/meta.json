@@ -1,0 +1,340 @@
+{
+ "task_id": "gitpython-developers__GitPython-1838",
+ "repo": "gitpython-developers/GitPython",
+ "stage": "servicing",
+ "rounds": 1,
+ "rejects": {},
+ "flags": [
+  "kind4_R_used_I_competitor",
+  "length_violation_F_R"
+ ],
+ "info": {
+  "slots": {
+   "test_root": "test",
+   "P1": {
+    "replaced": "git/repo",
+    "name": "core",
+    "F_R": "git/core",
+    "F_I": "git/index/core"
+   },
+   "P2": {
+    "replaced": "git/refs/symbolic.py",
+    "F_R": "git/compat/typing.py",
+    "F_I": "test/testrunner.py"
+   },
+   "C": {
+    "F_R": "make tests",
+    "F_I": "make install"
+   },
+   "D": {
+    "replaced": "typing-extensions",
+    "F_R": "typing-inspect",
+    "F_I": "typing-inspect"
+   }
+  },
+  "why": {
+   "test_command": [
+    {
+     "root": "test",
+     "T3": "SupportedClaim",
+     "T1": "SupportedClaim",
+     "collect_ok": true
+    }
+   ],
+   "kind1": {
+    "p1_idx": 4,
+    "gold0": "git",
+    "unrelated": "git/index",
+    "base_R": "git",
+    "base_I": "git/index"
+   },
+   "kind2": {
+    "p2_idx": 2,
+    "n_deleted_py": 215,
+    "found": {
+     "F_R": "git/compat/typing.py",
+     "F_I": "test/testrunner.py"
+    }
+   },
+   "kind3": {
+    "run": "tests",
+    "install": "install",
+    "test_ok": true,
+    "install_ok": true
+   },
+   "kind4": {
+    "deps": [
+     [
+      "gitdb",
+      false
+     ],
+     [
+      "typing-extensions",
+      false
+     ]
+    ],
+    "d_idx": 1,
+    "src_R": "typing-extensions",
+    "src_I": "typing-extensions",
+    "n_decls": 24,
+    "n_dist": 38
+   }
+  },
+  "length": {
+   "T": 388,
+   "F_R": 365,
+   "F_I": 376
+  },
+  "fallbacks": {
+   "F_R": [
+    "kind4_I_competitor"
+   ],
+   "F_I": []
+  },
+  "modes": {
+   "F_R": {
+    "1": "replace",
+    "2": "replace",
+    "3": "replace",
+    "4": "replace"
+   },
+   "F_I": {
+    "1": "replace",
+    "2": "replace",
+    "3": "replace",
+    "4": "replace"
+   }
+  },
+  "length_diff": {
+   "F_R": -23,
+   "F_I": -12
+  },
+  "n_claims_T": 15,
+  "n_false": {
+   "F_R": 4,
+   "F_I": 4
+  },
+  "pointer_in_issue": true,
+  "gold_dirs": [
+   "git"
+  ],
+  "gold_files": [
+   "git/cmd.py"
+  ]
+ },
+ "tokens": {
+  "F_R": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "git/core",
+     "core"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "git/compat/typing.py",
+     "typing.py"
+    ]
+   },
+   {
+    "kind": 3,
+    "type": "regex",
+    "regex": "\\bmake\\b[^|;&\\n]*\\btests\\b",
+    "target": "tests"
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "typing-inspect",
+     "typing_inspect"
+    ]
+   }
+  ],
+  "F_I": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "git/index/core",
+     "core"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "test/testrunner.py",
+     "testrunner.py"
+    ]
+   },
+   {
+    "kind": 3,
+    "type": "regex",
+    "regex": "\\bmake\\b[^|;&\\n]*\\binstall\\b",
+    "target": "install"
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "typing-inspect",
+     "typing_inspect"
+    ]
+   }
+  ]
+ },
+ "unresolved_pre_hermit": [],
+ "sha256": {
+  "T": "10bcf7dcf133f882c1600aa1e9785be23ad7b53c3f97817c4bc76a1abffbd1ad",
+  "F_R": "2d753b93364c877915f140d0ff814a25971608f58299c924aba4015905286d20",
+  "F_I": "5cafa51e4b25f1022b5153da7ba13e9d48d03b39d0b3ee079283f698af3fd8e0"
+ },
+ "chars": {
+  "T": 388,
+  "F_R": 365,
+  "F_I": 376
+ },
+ "claims": {
+  "T": [
+   "T1|git",
+   "T1|git/index",
+   "T1|git/objects",
+   "T1|git/refs",
+   "T1|git/repo",
+   "T1|test",
+   "T1|git/objects/submodule/base.py",
+   "T1|git/objects/commit.py",
+   "T1|git/refs/symbolic.py",
+   "T3|test_framework|pytest",
+   "T1|test",
+   "T1|pyproject.toml",
+   "T4|gitdb|",
+   "T4|typing-extensions|",
+   "T6|python|3007000000@2"
+  ],
+  "F_R": [
+   "T1|git",
+   "T1|git/index",
+   "T1|git/objects",
+   "T1|git/refs",
+   "T1|git/core",
+   "T1|test",
+   "T1|git/objects/submodule/base.py",
+   "T1|git/objects/commit.py",
+   "T1|git/compat/typing.py",
+   "T5|make|tests",
+   "T1|pyproject.toml",
+   "T4|gitdb|",
+   "T4|typing-inspect|",
+   "T6|python|3007000000@2"
+  ],
+  "F_I": [
+   "T1|git",
+   "T1|git/index",
+   "T1|git/objects",
+   "T1|git/refs",
+   "T1|git/index/core",
+   "T1|test",
+   "T1|git/objects/submodule/base.py",
+   "T1|git/objects/commit.py",
+   "T1|test/testrunner.py",
+   "T3|test_framework|pytest",
+   "T1|test",
+   "T5|make|install",
+   "T4|gitdb|",
+   "T4|typing-inspect|",
+   "T6|python|3007000000@2"
+  ]
+ },
+ "python_spec": ">=3.7",
+ "token_audit": [
+  {
+   "cond": "F_R",
+   "kind": 1,
+   "type": "path",
+   "name": "git/core",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 2,
+   "type": "path",
+   "name": "git/compat/typing.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 3,
+   "type": "regex",
+   "name": "make tests",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 4,
+   "type": "word",
+   "name": "typing-inspect",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 1,
+   "type": "path",
+   "name": "git/index/core",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 2,
+   "type": "path",
+   "name": "test/testrunner.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 3,
+   "type": "regex",
+   "name": "make install",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 4,
+   "type": "word",
+   "name": "typing-inspect",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  }
+ ],
+ "dist_imports_used": {
+  "gitdb": [
+   "gitdb"
+  ],
+  "typing-extensions": [
+   "typing_extensions"
+  ],
+  "typing-inspect": null
+ }
+}

@@ -1,0 +1,365 @@
+{
+ "task_id": "zopefoundation__Products.ZSQLMethods-35",
+ "repo": "zopefoundation/Products.ZSQLMethods",
+ "stage": "servicing",
+ "rounds": 1,
+ "rejects": {},
+ "flags": [],
+ "info": {
+  "slots": {
+   "test_root": "src/Shared/DC/ZRDB/tests",
+   "P1": {
+    "replaced": "src/Products",
+    "name": "core",
+    "F_R": "src/Shared/core",
+    "F_I": "src/Products/core"
+   },
+   "P2": {
+    "replaced": null,
+    "F_R": "src/Products/ZSQLMethods/help/ZSQLMethod.py",
+    "F_I": "bootstrap.py"
+   },
+   "C": {
+    "F_R": "make test",
+    "F_I": "make install"
+   },
+   "D": {
+    "replaced": "missing",
+    "F_R": "toolz",
+    "F_I": "boltons"
+   }
+  },
+  "why": {
+   "test_command": [
+    {
+     "root": "src/Shared/DC/ZRDB/tests",
+     "T3": "SupportedClaim",
+     "T1": "SupportedClaim",
+     "collect_ok": true
+    }
+   ],
+   "kind1": {
+    "p1_idx": 0,
+    "gold0": "src/Shared",
+    "unrelated": "src/Products",
+    "base_R": "src/Shared",
+    "base_I": "src/Products"
+   },
+   "kind2": {
+    "p2_idx": null,
+    "n_deleted_py": 2,
+    "found": {
+     "F_R": "src/Products/ZSQLMethods/help/ZSQLMethod.py",
+     "F_I": "bootstrap.py"
+    }
+   },
+   "kind3": {
+    "run": "test",
+    "install": "install",
+    "test_ok": true,
+    "install_ok": true
+   },
+   "kind4": {
+    "deps": [
+     [
+      "six",
+      false
+     ],
+     [
+      "documenttemplate",
+      false
+     ],
+     [
+      "zope",
+      true
+     ],
+     [
+      "record",
+      false
+     ],
+     [
+      "missing",
+      false
+     ]
+    ],
+    "d_idx": 4,
+    "src_R": "zope",
+    "src_I": "missing",
+    "n_decls": 6,
+    "n_dist": 93
+   }
+  },
+  "length": {
+   "T": 399,
+   "F_R": 416,
+   "F_I": 417
+  },
+  "fallbacks": {
+   "F_R": [],
+   "F_I": []
+  },
+  "modes": {
+   "F_R": {
+    "1": "replace",
+    "2": "add",
+    "3": "replace",
+    "4": "replace"
+   },
+   "F_I": {
+    "1": "replace",
+    "2": "add",
+    "3": "replace",
+    "4": "replace"
+   }
+  },
+  "length_diff": {
+   "F_R": 17,
+   "F_I": 18
+  },
+  "n_claims_T": 14,
+  "n_false": {
+   "F_R": 4,
+   "F_I": 4
+  },
+  "pointer_in_issue": true,
+  "gold_dirs": [
+   "src/Shared"
+  ],
+  "gold_files": [
+   "CHANGES.rst",
+   "src/Shared/DC/ZRDB/Search.py"
+  ]
+ },
+ "tokens": {
+  "F_R": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "src/Shared/core",
+     "core"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "src/Products/ZSQLMethods/help/ZSQLMethod.py",
+     "ZSQLMethod.py"
+    ]
+   },
+   {
+    "kind": 3,
+    "type": "regex",
+    "regex": "\\bmake\\b[^|;&\\n]*\\btest\\b",
+    "target": "test"
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "toolz"
+    ]
+   }
+  ],
+  "F_I": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "src/Products/core",
+     "core"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "bootstrap.py",
+     "bootstrap.py"
+    ]
+   },
+   {
+    "kind": 3,
+    "type": "regex",
+    "regex": "\\bmake\\b[^|;&\\n]*\\binstall\\b",
+    "target": "install"
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "boltons"
+    ]
+   }
+  ]
+ },
+ "unresolved_pre_hermit": [],
+ "sha256": {
+  "T": "a70a065a77a87053f9e87cd5ae0f83ff2a9fefdc7b9fd6440533cad7ec609ff2",
+  "F_R": "9073da8af49405355efcae662e4602f4e970576d6c2d3152cddbc63963b22430",
+  "F_I": "ba789280ba19fb83eacb7176aa3ea5a2d5475dcdd212e20479cb56df01a88370"
+ },
+ "chars": {
+  "T": 399,
+  "F_R": 416,
+  "F_I": 417
+ },
+ "claims": {
+  "T": [
+   "T1|src/Products",
+   "T1|src/Shared",
+   "T1|src/Shared/DC/ZRDB/tests",
+   "T1|src/Shared/DC/ZRDB/DA.py",
+   "T1|src/Products/ZSQLMethods/SQL.py",
+   "T3|test_framework|pytest",
+   "T1|src/Shared/DC/ZRDB/tests",
+   "T1|setup.py",
+   "T4|six|",
+   "T4|documenttemplate|",
+   "T4|zope|",
+   "T4|record|",
+   "T4|missing|",
+   "T6|python|2007000000@2"
+  ],
+  "F_R": [
+   "T1|src/Shared/core",
+   "T1|src/Shared",
+   "T1|src/Shared/DC/ZRDB/tests",
+   "T1|src/Shared/DC/ZRDB/DA.py",
+   "T1|src/Products/ZSQLMethods/SQL.py",
+   "T1|src/Products/ZSQLMethods/help/ZSQLMethod.py",
+   "T5|make|test",
+   "T1|setup.py",
+   "T4|six|",
+   "T4|documenttemplate|",
+   "T4|zope|",
+   "T4|record|",
+   "T4|toolz|",
+   "T6|python|2007000000@2"
+  ],
+  "F_I": [
+   "T1|src/Products/core",
+   "T1|src/Shared",
+   "T1|src/Shared/DC/ZRDB/tests",
+   "T1|src/Shared/DC/ZRDB/DA.py",
+   "T1|src/Products/ZSQLMethods/SQL.py",
+   "T1|bootstrap.py",
+   "T3|test_framework|pytest",
+   "T1|src/Shared/DC/ZRDB/tests",
+   "T5|make|install",
+   "T4|six|",
+   "T4|documenttemplate|",
+   "T4|zope|",
+   "T4|record|",
+   "T4|boltons|",
+   "T6|python|2007000000@2"
+  ]
+ },
+ "python_spec": ">=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*",
+ "token_audit": [
+  {
+   "cond": "F_R",
+   "kind": 1,
+   "type": "path",
+   "name": "src/Shared/core",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 2,
+   "type": "path",
+   "name": "src/Products/ZSQLMethods/help/ZSQLMethod.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 3,
+   "type": "regex",
+   "name": "make test",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 4,
+   "type": "word",
+   "name": "toolz",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 1,
+   "type": "path",
+   "name": "src/Products/core",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 2,
+   "type": "path",
+   "name": "bootstrap.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 3,
+   "type": "regex",
+   "name": "make install",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 4,
+   "type": "word",
+   "name": "boltons",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  }
+ ],
+ "dist_imports_used": {
+  "six": [
+   "six"
+  ],
+  "documenttemplate": [
+   "DocumentTemplate",
+   "TreeDisplay"
+  ],
+  "zope": [
+   "App",
+   "OFS",
+   "Products",
+   "Shared",
+   "Testing",
+   "ZPublisher",
+   "ZTUtils",
+   "Zope2",
+   "webdav",
+   "zmi"
+  ],
+  "record": [
+   "Record"
+  ],
+  "missing": [
+   "Missing"
+  ],
+  "toolz": null,
+  "boltons": null
+ }
+}

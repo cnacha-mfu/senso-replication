@@ -1,0 +1,73 @@
+{
+ "unit_id": "CleanCut__green-256__C__diffusiongemma-26b-a4b-it__r2",
+ "task_id": "CleanCut__green-256",
+ "repo": "CleanCut/green",
+ "stage": "servicing",
+ "condition": "C",
+ "model": "google/diffusiongemma-26b-a4b-it",
+ "run": 2,
+ "order": 309,
+ "env_build_s": 36.1,
+ "real_agent_manifest_at_base": [],
+ "started": "2026-10-07T06:46:28.612858+00:00",
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 5358,
+  "sha256": "ef881f9406ab8429c207501c0339a4753766fd9687be53cf22d08c822595a98a"
+ },
+ "condition_available": true,
+ "retries": 0,
+ "exit_status": "Submitted",
+ "error": "",
+ "steps": 12,
+ "wall_s": 49.2,
+ "prompt_tokens": 86165,
+ "completion_tokens": 2150,
+ "format_errors": 0,
+ "length_cutoffs": 0,
+ "api_errors": {},
+ "n_queries": 12,
+ "keys_used": {
+  "NVIDIA_API_KEY_4": 4,
+  "NVIDIA_API_KEY_5": 3,
+  "NVIDIA_API_KEY": 4,
+  "NVIDIA_API_KEY_2": 1
+ },
+ "temperature": 0.7,
+ "top_p": 0.95,
+ "model_id_returned": "google/diffusiongemma-26b-a4b-it",
+ "mini_version": "2.4.6",
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 12,
+   "hit_step_limit": 0,
+   "changed_lines": 6,
+   "gold_changed_lines": 18,
+   "Y1": 0,
+   "Y2": 0,
+   "Y3": 1.0,
+   "Y3_gold": 1.0,
+   "Y3_excess": 0.0,
+   "Y3w": 0.6470588235294118,
+   "Y4": -1.5849625007211563
+  },
+  "f2p_pass": 1,
+  "f2p_total": 2,
+  "p2p_pass": 37,
+  "p2p_total": 41,
+  "f2p_all_pass": false,
+  "p2p_all_pass": false,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 2.0
+ },
+ "status": "done",
+ "finished": "2026-10-07T06:47:19.995226+00:00"
+}

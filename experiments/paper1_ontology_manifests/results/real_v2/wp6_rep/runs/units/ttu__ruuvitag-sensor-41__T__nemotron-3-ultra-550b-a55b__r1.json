@@ -1,0 +1,80 @@
+{
+ "unit_id": "ttu__ruuvitag-sensor-41__T__nemotron-3-ultra-550b-a55b__r1",
+ "task_id": "ttu__ruuvitag-sensor-41",
+ "repo": "ttu/ruuvitag-sensor",
+ "stage": "phase_out",
+ "condition": "T",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "run": 1,
+ "order": 470,
+ "env_build_s": 24.2,
+ "started": "2026-10-14T12:13:40.510365+00:00",
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 183,
+  "sha256": "a9b157d9a07c59844c82f3c2d0c05ce52a6882f17059fac1d1b75e4f664d5426"
+ },
+ "condition_available": true,
+ "venv_reset_s": 0.74,
+ "stray_procs_killed": 0,
+ "retries": 0,
+ "venv_hash_before": "c94d1dcd2aa05ce3",
+ "venv_hash_after": "c94d1dcd2aa05ce3",
+ "venv_mutated": false,
+ "exit_status": "LimitsExceeded",
+ "error": "",
+ "steps": 40,
+ "wall_s": 501.7,
+ "prompt_tokens": 476234,
+ "completion_tokens": 7389,
+ "format_errors": 0,
+ "length_cutoffs": 0,
+ "api_errors": {
+  "503": 13,
+  "429": 4
+ },
+ "n_queries": 53,
+ "keys_used": {
+  "NVIDIA_API_KEY_2": 18,
+  "NVIDIA_API_KEY_4": 15,
+  "NVIDIA_API_KEY_5": 10,
+  "NVIDIA_API_KEY": 14
+ },
+ "temperature": 0.7,
+ "top_p": 0.95,
+ "model_id_returned": "nvidia/nemotron-3-ultra-550b-a55b",
+ "mini_version": "2.4.6",
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 2,
+   "Y6": 40,
+   "hit_step_limit": 1,
+   "changed_lines": 42,
+   "gold_changed_lines": 9,
+   "Y1": 6,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": 2.222392421336448
+  },
+  "f2p_pass": 2,
+  "f2p_total": 2,
+  "p2p_pass": 13,
+  "p2p_total": 13,
+  "f2p_all_pass": true,
+  "p2p_all_pass": true,
+  "resolved": true,
+  "reason": "resolved",
+  "test_seconds": 0.7
+ },
+ "status": "done",
+ "finished": "2026-10-14T12:22:04.628377+00:00"
+}

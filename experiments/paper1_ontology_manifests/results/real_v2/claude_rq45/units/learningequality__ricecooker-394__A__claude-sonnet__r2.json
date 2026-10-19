@@ -1,0 +1,107 @@
+{
+ "unit_id": "learningequality__ricecooker-394__A__claude-sonnet__r2",
+ "task_id": "learningequality__ricecooker-394",
+ "repo": "learningequality/ricecooker",
+ "stage": "evolution",
+ "condition": "A",
+ "model": "claude-code/sonnet",
+ "run": 2,
+ "condition_meta": {},
+ "started": "2026-10-18T06:26:41.548330+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 5,
+ "tool_calls": 4,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 2728,
+  "cache_read_input_tokens": 72103,
+  "output_tokens": 1224,
+  "output_tokens_details": {
+   "thinking_tokens": 74
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 2728,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 8,
+   "outputTokens": 1224,
+   "cacheReadInputTokens": 72103,
+   "cacheCreationInputTokens": 2728,
+   "webSearchRequests": 0,
+   "costUSD": 0.030378300000000004,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 74,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.030378300000000004,
+ "result_text": "`to_dict()` no longer sends `null` for the structured metadata fields, so Studio's \"must pass a list of values\" check shouldn't reject topic nodes any more. I only confirmed that the module imports. I didn't run the test suite or try an upload.\n\nThe change is in `ricecooker/classes/nodes.py`:\n- **Topic nodes:** `TreeNode.to_dict()` now leaves out `grade_levels`, `resource_types`, `learning_activities`, `accessibility_categories`, `subjects` and `needs` entirely.\n- **Content nodes:** `ContentNode.to_dict()` drops any of those six keys whose value is `None`. A video with no `grade_levels` set would have hit the same Studio error, so I fixed it there too. Fields that are set still go out as lists.\n\nI added a module-level `_METADATA_KEYS` tuple listing the six fields, which the content-node filter uses.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792309800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0.15,
+    "resetsAt": 1792309800
+   },
+   "seven_day": {
+    "utilization": 0.13,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 21.4,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 5,
+   "hit_step_limit": 0,
+   "changed_lines": 20,
+   "gold_changed_lines": 45,
+   "Y1": 0,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": -1.1699250014423124
+  },
+  "f2p_pass": 0,
+  "f2p_total": 9,
+  "p2p_pass": 2,
+  "p2p_total": 2,
+  "f2p_all_pass": false,
+  "p2p_all_pass": true,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 12.4
+ },
+ "status": "done",
+ "finished": "2026-10-18T06:27:18.416477+00:00"
+}

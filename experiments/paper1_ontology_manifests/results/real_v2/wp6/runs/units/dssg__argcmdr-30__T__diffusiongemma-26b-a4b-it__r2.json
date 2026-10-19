@@ -1,0 +1,79 @@
+{
+ "unit_id": "dssg__argcmdr-30__T__diffusiongemma-26b-a4b-it__r2",
+ "task_id": "dssg__argcmdr-30",
+ "repo": "dssg/argcmdr",
+ "stage": "servicing",
+ "condition": "T",
+ "model": "google/diffusiongemma-26b-a4b-it",
+ "run": 2,
+ "order": 254,
+ "env_build_s": 37.6,
+ "started": "2026-10-09T10:50:38.867029+00:00",
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 272,
+  "sha256": "37b5d6f34efd3aa7413477d991e71e6a07676ea7d10db21c580be1fc087a002e"
+ },
+ "condition_available": true,
+ "venv_reset_s": 0.96,
+ "retries": 0,
+ "venv_hash_before": "9849cb48e077e24b",
+ "venv_hash_after": "9849cb48e077e24b",
+ "venv_mutated": false,
+ "exit_status": "LimitsExceeded",
+ "error": "",
+ "steps": 40,
+ "wall_s": 546.1,
+ "prompt_tokens": 401779,
+ "completion_tokens": 5767,
+ "format_errors": 5,
+ "length_cutoffs": 0,
+ "api_errors": {
+  "429": 100,
+  "timeout": 1
+ },
+ "n_queries": 58,
+ "keys_used": {
+  "NVIDIA_API_KEY_5": 33,
+  "NVIDIA_API_KEY": 33,
+  "NVIDIA_API_KEY_2": 40,
+  "NVIDIA_API_KEY_4": 35
+ },
+ "temperature": 0.7,
+ "top_p": 0.95,
+ "model_id_returned": "google/diffusiongemma-26b-a4b-it",
+ "mini_version": "2.4.6",
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 40,
+   "hit_step_limit": 1,
+   "changed_lines": 10,
+   "gold_changed_lines": 174,
+   "Y1": 0,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": -4.121015400961366
+  },
+  "f2p_pass": 0,
+  "f2p_total": 24,
+  "p2p_pass": 31,
+  "p2p_total": 31,
+  "f2p_all_pass": false,
+  "p2p_all_pass": true,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 1.1
+ },
+ "status": "done",
+ "finished": "2026-10-09T10:59:48.369237+00:00"
+}

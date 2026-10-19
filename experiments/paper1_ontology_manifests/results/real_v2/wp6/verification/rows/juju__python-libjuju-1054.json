@@ -1,0 +1,621 @@
+{
+ "task_id": "juju__python-libjuju-1054",
+ "claims": {
+  "T1|juju": {
+   "claim": {
+    "key_str": "T1|juju",
+    "tcode": "T1",
+    "attrs": {
+     "path": "juju",
+     "is_dir": true,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "juju/",
+    "role": "true",
+    "slot": "layout",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "exists",
+     "path": "juju"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "PathFoundExact"
+   },
+   "probe": {
+    "ok": true,
+    "type": "exists"
+   },
+   "measure_error": null
+  },
+  "T1|juju/client": {
+   "claim": {
+    "key_str": "T1|juju/client",
+    "tcode": "T1",
+    "attrs": {
+     "path": "juju/client",
+     "is_dir": true,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "juju/client/",
+    "role": "true",
+    "slot": "layout",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "exists",
+     "path": "juju/client"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "PathFoundExact"
+   },
+   "probe": {
+    "ok": true,
+    "type": "exists"
+   },
+   "measure_error": null
+  },
+  "T1|tests": {
+   "claim": {
+    "key_str": "T1|tests",
+    "tcode": "T1",
+    "attrs": {
+     "path": "tests",
+     "is_dir": true,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "tests/",
+    "role": "true",
+    "slot": "layout",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "exists",
+     "path": "tests"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "PathFoundExact"
+   },
+   "probe": {
+    "ok": true,
+    "type": "exists"
+   },
+   "measure_error": null
+  },
+  "T1|juju/client/_definitions.py": {
+   "claim": {
+    "key_str": "T1|juju/client/_definitions.py",
+    "tcode": "T1",
+    "attrs": {
+     "path": "juju/client/_definitions.py",
+     "is_dir": false,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "juju/client/_definitions.py",
+    "role": "true",
+    "slot": "key_file",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "exists",
+     "path": "juju/client/_definitions.py"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "PathFoundExact"
+   },
+   "probe": {
+    "ok": true,
+    "type": "exists"
+   },
+   "measure_error": null
+  },
+  "T1|juju/client/_client1.py": {
+   "claim": {
+    "key_str": "T1|juju/client/_client1.py",
+    "tcode": "T1",
+    "attrs": {
+     "path": "juju/client/_client1.py",
+     "is_dir": false,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "juju/client/_client1.py",
+    "role": "true",
+    "slot": "key_file",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "exists",
+     "path": "juju/client/_client1.py"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "PathFoundExact"
+   },
+   "probe": {
+    "ok": true,
+    "type": "exists"
+   },
+   "measure_error": null
+  },
+  "T3|test_framework|pytest": {
+   "claim": {
+    "key_str": "T3|test_framework|pytest",
+    "tcode": "T3",
+    "attrs": {
+     "tool": "pytest",
+     "category": "test_framework"
+    },
+    "quote": "python -m pytest tests",
+    "role": "true",
+    "slot": "test_cmd",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "pytest",
+     "root": "tests"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "ToolSignatureFound"
+   },
+   "probe": {
+    "ok": true,
+    "type": "pytest"
+   },
+   "measure_error": null
+  },
+  "T1|setup.py": {
+   "claim": {
+    "key_str": "T1|setup.py",
+    "tcode": "T1",
+    "attrs": {
+     "path": "setup.py",
+     "is_dir": false,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "setup.py",
+    "role": "true",
+    "slot": "install_cmd",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "exists",
+     "path": "setup.py"
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "PathFoundExact"
+   },
+   "probe": {
+    "ok": true,
+    "type": "exists"
+   },
+   "measure_error": null
+  },
+  "T4|pyyaml|": {
+   "claim": {
+    "key_str": "T4|pyyaml|",
+    "tcode": "T4",
+    "attrs": {
+     "name": "pyyaml",
+     "major": null,
+     "ecosystem_hint": "pypi"
+    },
+    "quote": "`pyyaml>=5.1.2`",
+    "role": "true",
+    "slot": "dep",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "import_ok",
+     "modules": [
+      "yaml"
+     ]
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "DependencyConfirmed"
+   },
+   "probe": {
+    "ok": true,
+    "type": "import_ok"
+   },
+   "measure_error": null
+  },
+  "T4|pyrfc3339|": {
+   "claim": {
+    "key_str": "T4|pyrfc3339|",
+    "tcode": "T4",
+    "attrs": {
+     "name": "pyrfc3339",
+     "major": null,
+     "ecosystem_hint": "pypi"
+    },
+    "quote": "`pyrfc3339>=1.0,<2.0`",
+    "role": "true",
+    "slot": "dep",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "import_ok",
+     "modules": [
+      "pyrfc3339"
+     ]
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "DependencyConfirmed"
+   },
+   "probe": {
+    "ok": true,
+    "type": "import_ok"
+   },
+   "measure_error": null
+  },
+  "T4|websockets|": {
+   "claim": {
+    "key_str": "T4|websockets|",
+    "tcode": "T4",
+    "attrs": {
+     "name": "websockets",
+     "major": null,
+     "ecosystem_hint": "pypi"
+    },
+    "quote": "`websockets>=8.1`",
+    "role": "true",
+    "slot": "dep",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "import_ok",
+     "modules": [
+      "websockets"
+     ]
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "DependencyConfirmed"
+   },
+   "probe": {
+    "ok": true,
+    "type": "import_ok"
+   },
+   "measure_error": null
+  },
+  "T4|macaroonbakery|": {
+   "claim": {
+    "key_str": "T4|macaroonbakery|",
+    "tcode": "T4",
+    "attrs": {
+     "name": "macaroonbakery",
+     "major": null,
+     "ecosystem_hint": "pypi"
+    },
+    "quote": "`macaroonbakery>=1.1,<2.0`",
+    "role": "true",
+    "slot": "dep",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "import_ok",
+     "modules": [
+      "macaroonbakery"
+     ]
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "DependencyConfirmed"
+   },
+   "probe": {
+    "ok": true,
+    "type": "import_ok"
+   },
+   "measure_error": null
+  },
+  "T4|kubernetes|": {
+   "claim": {
+    "key_str": "T4|kubernetes|",
+    "tcode": "T4",
+    "attrs": {
+     "name": "kubernetes",
+     "major": null,
+     "ecosystem_hint": "pypi"
+    },
+    "quote": "`kubernetes>=12.0.1`",
+    "role": "true",
+    "slot": "dep",
+    "kind": null,
+    "expect_verdict": "SupportedClaim",
+    "expect_leaves": [],
+    "probe": {
+     "type": "import_ok",
+     "modules": [
+      "kubernetes"
+     ]
+    },
+    "mode": null
+   },
+   "recheck": {
+    "verdict": "SupportedClaim",
+    "leaf": "DependencyConfirmed"
+   },
+   "probe": {
+    "ok": true,
+    "type": "import_ok"
+   },
+   "measure_error": null
+  },
+  "T1|juju/internal": {
+   "claim": {
+    "key_str": "T1|juju/internal",
+    "tcode": "T1",
+    "attrs": {
+     "path": "juju/internal",
+     "is_dir": true,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "juju/internal/",
+    "role": "false",
+    "slot": "P1",
+    "kind": 1,
+    "expect_verdict": "ContradictedClaim",
+    "expect_leaves": [
+     "PathNeverExisted"
+    ],
+    "probe": {
+     "type": "absent",
+     "path": "juju/internal",
+     "history": "none"
+    },
+    "mode": "replace"
+   },
+   "recheck": {
+    "verdict": "ContradictedClaim",
+    "leaf": "PathNeverExisted"
+   },
+   "probe": {
+    "ok": true,
+    "type": "absent",
+    "log_count": 0
+   },
+   "measure_error": null
+  },
+  "T1|juju/charmstore.py": {
+   "claim": {
+    "key_str": "T1|juju/charmstore.py",
+    "tcode": "T1",
+    "attrs": {
+     "path": "juju/charmstore.py",
+     "is_dir": false,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "juju/charmstore.py",
+    "role": "false",
+    "slot": "P2",
+    "kind": 2,
+    "expect_verdict": "ContradictedClaim",
+    "expect_leaves": [
+     "PathRemoved"
+    ],
+    "probe": {
+     "type": "absent",
+     "path": "juju/charmstore.py",
+     "history": "some"
+    },
+    "mode": "add"
+   },
+   "recheck": {
+    "verdict": "ContradictedClaim",
+    "leaf": "PathRemoved"
+   },
+   "probe": {
+    "ok": true,
+    "type": "absent",
+    "log_count": 9
+   },
+   "measure_error": null
+  },
+  "T4|boltons|": {
+   "claim": {
+    "key_str": "T4|boltons|",
+    "tcode": "T4",
+    "attrs": {
+     "name": "boltons",
+     "major": null,
+     "ecosystem_hint": "pypi"
+    },
+    "quote": "`boltons`",
+    "role": "false",
+    "slot": "D",
+    "kind": 4,
+    "expect_verdict": "ContradictedClaim",
+    "expect_leaves": [
+     "DependencyUndeclared"
+    ],
+    "probe": {
+     "type": "import_fail",
+     "modules": [
+      "boltons"
+     ]
+    },
+    "mode": "replace"
+   },
+   "recheck": {
+    "verdict": "ContradictedClaim",
+    "leaf": "DependencyUndeclared"
+   },
+   "probe": {
+    "ok": true,
+    "type": "import_fail"
+   },
+   "measure_error": null
+  },
+  "T1|juju/client/internal": {
+   "claim": {
+    "key_str": "T1|juju/client/internal",
+    "tcode": "T1",
+    "attrs": {
+     "path": "juju/client/internal",
+     "is_dir": true,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "juju/client/internal/",
+    "role": "false",
+    "slot": "P1",
+    "kind": 1,
+    "expect_verdict": "ContradictedClaim",
+    "expect_leaves": [
+     "PathNeverExisted"
+    ],
+    "probe": {
+     "type": "absent",
+     "path": "juju/client/internal",
+     "history": "none"
+    },
+    "mode": "replace"
+   },
+   "recheck": {
+    "verdict": "ContradictedClaim",
+    "leaf": "PathNeverExisted"
+   },
+   "probe": {
+    "ok": true,
+    "type": "absent",
+    "log_count": 0
+   },
+   "measure_error": null
+  },
+  "T1|juju/client/engine.py": {
+   "claim": {
+    "key_str": "T1|juju/client/engine.py",
+    "tcode": "T1",
+    "attrs": {
+     "path": "juju/client/engine.py",
+     "is_dir": false,
+     "glob": false,
+     "bracket": false
+    },
+    "quote": "juju/client/engine.py",
+    "role": "false",
+    "slot": "P2",
+    "kind": 2,
+    "expect_verdict": "ContradictedClaim",
+    "expect_leaves": [
+     "PathNeverExisted"
+    ],
+    "probe": {
+     "type": "absent",
+     "path": "juju/client/engine.py",
+     "history": "none"
+    },
+    "mode": "add"
+   },
+   "recheck": {
+    "verdict": "ContradictedClaim",
+    "leaf": "PathNeverExisted"
+   },
+   "probe": {
+    "ok": true,
+    "type": "absent",
+    "log_count": 0
+   },
+   "measure_error": null
+  }
+ },
+ "probe_log": {
+  "pytest:tests": {
+   "rc": 2,
+   "tail": "jujudata.py\nERROR tests/unit/test_machine.py\nERROR tests/unit/test_model.py\nERROR tests/unit/test_offerendpoint.py\nERROR tests/unit/test_relation.py\nERROR tests/unit/test_unit.py\n!!!!!!!!!!!!!!!!!!! Interrupted: 12 errors during collection !!!!!!!!!!!!!!!!!!!\n211 tests collected, 12 errors in 4.90s\n"
+  },
+  "import:yaml": {
+   "rc": 0,
+   "tail": ""
+  },
+  "import:pyrfc3339": {
+   "rc": 0,
+   "tail": ""
+  },
+  "import:websockets": {
+   "rc": 0,
+   "tail": ""
+  },
+  "import:macaroonbakery": {
+   "rc": 0,
+   "tail": ""
+  },
+  "import:kubernetes": {
+   "rc": 0,
+   "tail": ""
+  },
+  "make:tests": {
+   "rc": 0,
+   "tail": "make: Nothing to be done for 'tests'.\n"
+  },
+  "make:check": {
+   "rc": 2,
+   "tail": "make: *** No rule to make target 'check'.  Stop.\n"
+  },
+  "make:install": {
+   "rc": 2,
+   "tail": "make: *** No rule to make target 'install'.  Stop.\n"
+  },
+  "make:dev": {
+   "rc": 2,
+   "tail": "make: *** No rule to make target 'dev'.  Stop.\n"
+  },
+  "make:develop": {
+   "rc": 2,
+   "tail": "make: *** No rule to make target 'develop'.  Stop.\n"
+  },
+  "import:boltons": {
+   "rc": 1,
+   "tail": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\nModuleNotFoundError: No module named 'boltons'\n"
+  }
+ }
+}

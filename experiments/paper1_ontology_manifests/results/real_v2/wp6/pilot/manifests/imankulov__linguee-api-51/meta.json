@@ -1,0 +1,355 @@
+{
+ "task_id": "imankulov__linguee-api-51",
+ "repo": "imankulov/linguee-api",
+ "stage": "dev",
+ "rounds": 1,
+ "rejects": {},
+ "flags": [],
+ "info": {
+  "slots": {
+   "test_root": "tests",
+   "P1": {
+    "replaced": "linguee_api/downloaders",
+    "name": "core",
+    "F_R": "linguee_api/core",
+    "F_I": "linguee_api/downloaders/core"
+   },
+   "P2": {
+    "replaced": null,
+    "F_R": "linguee_api/schema.py",
+    "F_I": "scripts/examples.py"
+   },
+   "C": {
+    "F_R": "make test",
+    "F_I": "make install"
+   },
+   "D": {
+    "replaced": "fastapi",
+    "F_R": "toolz",
+    "F_I": "boltons"
+   }
+  },
+  "why": {
+   "test_command": [
+    {
+     "root": "tests",
+     "T3": "SupportedClaim",
+     "T1": "SupportedClaim",
+     "collect_ok": true
+    }
+   ],
+   "kind1": {
+    "p1_idx": 1,
+    "gold0": "linguee_api",
+    "unrelated": "linguee_api/downloaders",
+    "base_R": "linguee_api",
+    "base_I": "linguee_api/downloaders"
+   },
+   "kind2": {
+    "p2_idx": null,
+    "n_deleted_py": 11,
+    "found": {
+     "F_R": "linguee_api/schema.py",
+     "F_I": "scripts/examples.py"
+    }
+   },
+   "kind3": {
+    "run": "test",
+    "install": "install",
+    "test_ok": true,
+    "install_ok": true
+   },
+   "kind4": {
+    "deps": [
+     [
+      "pydantic",
+      false
+     ],
+     [
+      "xextract",
+      true
+     ],
+     [
+      "aiosqlite",
+      false
+     ],
+     [
+      "async-lru",
+      false
+     ],
+     [
+      "fastapi",
+      false
+     ]
+    ],
+    "d_idx": 4,
+    "src_R": "xextract",
+    "src_I": "fastapi",
+    "n_decls": 24,
+    "n_dist": 34
+   }
+  },
+  "length": {
+   "T": 402,
+   "F_R": 398,
+   "F_I": 419
+  },
+  "fallbacks": {
+   "F_R": [],
+   "F_I": []
+  },
+  "modes": {
+   "F_R": {
+    "1": "replace",
+    "2": "add",
+    "3": "replace",
+    "4": "replace"
+   },
+   "F_I": {
+    "1": "replace",
+    "2": "add",
+    "3": "replace",
+    "4": "replace"
+   }
+  },
+  "length_diff": {
+   "F_R": -4,
+   "F_I": 17
+  },
+  "n_claims_T": 14,
+  "n_false": {
+   "F_R": 4,
+   "F_I": 4
+  },
+  "pointer_in_issue": false,
+  "gold_dirs": [
+   "linguee_api"
+  ],
+  "gold_files": [
+   "linguee_api/parser_utils.py",
+   "linguee_api/parsers.py"
+  ]
+ },
+ "tokens": {
+  "F_R": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "linguee_api/core",
+     "core"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "linguee_api/schema.py",
+     "schema.py"
+    ]
+   },
+   {
+    "kind": 3,
+    "type": "regex",
+    "regex": "\\bmake\\b[^|;&\\n]*\\btest\\b",
+    "target": "test"
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "toolz"
+    ]
+   }
+  ],
+  "F_I": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "linguee_api/downloaders/core",
+     "core"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "scripts/examples.py",
+     "examples.py"
+    ]
+   },
+   {
+    "kind": 3,
+    "type": "regex",
+    "regex": "\\bmake\\b[^|;&\\n]*\\binstall\\b",
+    "target": "install"
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "boltons"
+    ]
+   }
+  ]
+ },
+ "unresolved_pre_hermit": [],
+ "sha256": {
+  "T": "7af751c89663521311a6cd293a9506495bacad2e14ae05eb67b0f0ea80f1cbf1",
+  "F_R": "87a515b1c2a941f543100d84d65076577d5c2fdd5796bd7acad952d4ce48fcd6",
+  "F_I": "873b7c37a199401e4eb00aa450ca90b066d7c6254b243ec3f8233987b24adca6"
+ },
+ "chars": {
+  "T": 402,
+  "F_R": 398,
+  "F_I": 419
+ },
+ "claims": {
+  "T": [
+   "T1|linguee_api",
+   "T1|linguee_api/downloaders",
+   "T1|tests",
+   "T1|linguee_api/parsers.py",
+   "T1|linguee_api/downloaders/sqlite_cache.py",
+   "T3|test_framework|pytest",
+   "T1|tests",
+   "T1|pyproject.toml",
+   "T4|pydantic|",
+   "T4|xextract|",
+   "T4|aiosqlite|",
+   "T4|async-lru|",
+   "T4|fastapi|",
+   "T6|python|3008000000@2"
+  ],
+  "F_R": [
+   "T1|linguee_api",
+   "T1|linguee_api/core",
+   "T1|tests",
+   "T1|linguee_api/parsers.py",
+   "T1|linguee_api/downloaders/sqlite_cache.py",
+   "T1|linguee_api/schema.py",
+   "T5|make|test",
+   "T1|pyproject.toml",
+   "T4|pydantic|",
+   "T4|xextract|",
+   "T4|aiosqlite|",
+   "T4|async-lru|",
+   "T4|toolz|",
+   "T6|python|3008000000@2"
+  ],
+  "F_I": [
+   "T1|linguee_api",
+   "T1|linguee_api/downloaders/core",
+   "T1|tests",
+   "T1|linguee_api/parsers.py",
+   "T1|linguee_api/downloaders/sqlite_cache.py",
+   "T1|scripts/examples.py",
+   "T3|test_framework|pytest",
+   "T1|tests",
+   "T5|make|install",
+   "T4|pydantic|",
+   "T4|xextract|",
+   "T4|aiosqlite|",
+   "T4|async-lru|",
+   "T4|boltons|",
+   "T6|python|3008000000@2"
+  ]
+ },
+ "python_spec": "^3.8",
+ "token_audit": [
+  {
+   "cond": "F_R",
+   "kind": 1,
+   "type": "path",
+   "name": "linguee_api/core",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 2,
+   "type": "path",
+   "name": "linguee_api/schema.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 3,
+   "type": "regex",
+   "name": "make test",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 4,
+   "type": "word",
+   "name": "toolz",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 1,
+   "type": "path",
+   "name": "linguee_api/downloaders/core",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 2,
+   "type": "path",
+   "name": "scripts/examples.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 3,
+   "type": "regex",
+   "name": "make install",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 4,
+   "type": "word",
+   "name": "boltons",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  }
+ ],
+ "dist_imports_used": {
+  "pydantic": [
+   "pydantic"
+  ],
+  "xextract": [
+   "xextract"
+  ],
+  "aiosqlite": [
+   "aiosqlite"
+  ],
+  "async-lru": [
+   "async_lru"
+  ],
+  "fastapi": [
+   "fastapi"
+  ],
+  "toolz": null,
+  "boltons": null
+ }
+}

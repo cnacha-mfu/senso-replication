@@ -1,0 +1,21 @@
+{
+ "repo": "cellwebb/gac",
+ "chunk": 1,
+ "n_chunks": 2,
+ "model": "nvidia/nemotron-3-super-120b-a12b",
+ "prompt_sha256": "d0e02ff613417050168d859f2af6230c3712c6758bb5d9c40d60ff55e5ae87ca",
+ "user_sha256": "83257827af1d10d23461194b37c706e0b01e4e44837bd6fe505f40cfe7715c58",
+ "text": "{\n  \"claims\": [\n    {\n      \"type\": \"dependency\",\n      \"quote\": \"- `httpx>=0.28.0` - HTTP client with async support and proper connection pooling\",\n      \"line\": 171,\n      \"subject\": \"httpx\",\n      \"ecosystem_hint\": \"pypi\",\n      \"version\": \"0.28.0\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"dependency\",\n      \"quote\": \"- `pydantic>=2.12.0` - Data validation and serialization for provider configs\",\n      \"line\": 172,\n      \"subject\": \"pydantic\",\n      \"ecosystem_hint\": \"pypi\",\n      \"version\": \"2.12.0\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"dependency\",\n      \"quote\": \"- `click>=8.3.0` - CLI framework with rich formatting integration\",\n      \"line\": 173,\n      \"subject\": \"click\",\n      \"ecosystem_hint\": \"pypi\",\n      \"version\": \"8.3.0\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"dependency\",\n      \"quote\": \"- `rich>=14.1.0` - Terminal formatting for beautiful CLI output\",\n      \"line\": 174,\n      \"subject\": \"rich\",\n      \"ecosystem_hint\": \"pypi\",\n      \"version\": \"14.1.0\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"tool_used\",\n      \"quote\": \"**UV HARD REQUIREMENT:**\",\n      \"line\": 176,\n      \"subject\": \"UV\",\n      \"tool_category\": \"package_manager\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"path_exists\",\n      \"quote\": \"The dependency lockfile (`uv.lock`) ensures reproducible builds across all environments - development, testing, CI/CD, and production.\",\n      \"line\": 178,\n      \"subject\": \"uv.lock\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"command\",\n      \"quote\": \"**NEVER use vanilla Python tools.** They will:\",\n      \"line\": 180,\n      \"subject\": \"vanilla Python tools\",\n      \"runner\": \"python\",\n      \"mode\": \"negated\"\n    },\n    {\n      \"type\": \"command\",\n      \"quote\": \"**ALWAYS use UV.** It provides:\",\n      \"line\": 187,\n      \"subject\": \"UV\",\n      \"runner\": \"uv\",\n      \"mode\": \"asserts_existing\"\n    }\n  ]\n}",
+ "parse_ok": true,
+ "parse_error": null,
+ "parse_retries": 0,
+ "latency_s": 6.968140968005173,
+ "usage": {
+  "prompt": 2326,
+  "completion": 609
+ },
+ "n_api_calls": 1,
+ "finish_reason": "stop",
+ "error": null,
+ "discarded_attempt_texts": []
+}

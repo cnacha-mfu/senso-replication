@@ -1,0 +1,111 @@
+{
+ "unit_id": "PyCQA__flake8-bugbear-12__C__claude-sonnet__r1",
+ "task_id": "PyCQA__flake8-bugbear-12",
+ "repo": "PyCQA/flake8-bugbear",
+ "stage": "initial_development",
+ "condition": "C",
+ "model": "claude-code/sonnet",
+ "run": 1,
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 2490,
+  "sha256": "7840ff57e546111e7f57b6bf09fcc3534922da42df8abe7c5263ce69d4c765a3"
+ },
+ "started": "2026-10-18T03:19:28.993357+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 5,
+ "tool_calls": 4,
+ "usage": {
+  "input_tokens": 10,
+  "cache_creation_input_tokens": 8534,
+  "cache_read_input_tokens": 86144,
+  "output_tokens": 1505,
+  "output_tokens_details": {
+   "thinking_tokens": 261
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 8534,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 10,
+   "outputTokens": 1505,
+   "cacheReadInputTokens": 86144,
+   "cacheCreationInputTokens": 8534,
+   "webSearchRequests": 0,
+   "costUSD": 0.057820399999999994,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 261,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.057820399999999994,
+ "result_text": "B902 no longer flags a metaclass's `__init__(cls, ...)` or other instance methods that use `cls`. The change is in `check_for_b902` in `bugbear.py`.\n\nI ran the existing tests: 14 pass and `test_selfclean_bugbear` fails. The failures it reports are W504 \"line break after binary operator\" warnings, one of them at line 177, which I didn't touch. Two more are in the lines I touched, 318 and 324, which have the same style as the existing code. I didn't add a test or try the check on a sample metaclass.\n\nA class counts as a metaclass if one of its bases is `type` (plain or as an attribute, e.g. `abc.type`). Inside one:\n- **Instance methods:** `cls` is the only name accepted as first argument.\n- **`@classmethod`, `__new__` and `__init_subclass__`:** the accepted names are `metacls`, `metaclass`, `typ` and `mcs`. I picked these names, so say if you want a different list.\n- **Messages:** the error text calls these \"metaclass instance\" and \"metaclass class\" methods.\n\nOnly classes that list `type` directly are recognised. A subclass of another metaclass, like `class Sub(StorageMeta)`, is still checked as an ordinary class.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792309800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0.02,
+    "resetsAt": 1792309800
+   },
+   "seven_day": {
+    "utilization": 0.12,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 24.9,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 5,
+   "hit_step_limit": 0,
+   "changed_lines": 13,
+   "gold_changed_lines": 11,
+   "Y1": 7,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": 0.24100809950379498
+  },
+  "f2p_pass": 1,
+  "f2p_total": 1,
+  "p2p_pass": 13,
+  "p2p_total": 13,
+  "f2p_all_pass": true,
+  "p2p_all_pass": true,
+  "resolved": true,
+  "reason": "resolved",
+  "test_seconds": 1.7
+ },
+ "status": "done",
+ "finished": "2026-10-18T03:19:56.465640+00:00"
+}

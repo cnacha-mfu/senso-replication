@@ -1,0 +1,73 @@
+{
+ "unit_id": "BlueBrain__NeuroM-1001__D__diffusiongemma-26b-a4b-it__r2",
+ "task_id": "BlueBrain__NeuroM-1001",
+ "repo": "BlueBrain/NeuroM",
+ "stage": "servicing",
+ "condition": "D",
+ "model": "google/diffusiongemma-26b-a4b-it",
+ "run": 2,
+ "order": 499,
+ "env_build_s": 80.0,
+ "real_agent_manifest_at_base": [],
+ "started": "2026-10-07T09:49:43.918424+00:00",
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 4155,
+  "sha256": "699dfb7cf628276f9a91e2b7189386c09c27816670a7bb769cbfb2527381a378"
+ },
+ "condition_available": true,
+ "retries": 0,
+ "exit_status": "Submitted",
+ "error": "",
+ "steps": 28,
+ "wall_s": 159.1,
+ "prompt_tokens": 347765,
+ "completion_tokens": 5162,
+ "format_errors": 5,
+ "length_cutoffs": 0,
+ "api_errors": {},
+ "n_queries": 28,
+ "keys_used": {
+  "NVIDIA_API_KEY": 8,
+  "NVIDIA_API_KEY_2": 8,
+  "NVIDIA_API_KEY_4": 6,
+  "NVIDIA_API_KEY_5": 6
+ },
+ "temperature": 0.7,
+ "top_p": 0.95,
+ "model_id_returned": "google/diffusiongemma-26b-a4b-it",
+ "mini_version": "2.4.6",
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 2,
+   "Y6": 28,
+   "hit_step_limit": 0,
+   "changed_lines": 38,
+   "gold_changed_lines": 22,
+   "Y1": 6,
+   "Y2": 3,
+   "Y3": 0.0,
+   "Y3_gold": 0.0,
+   "Y3_excess": 0.0,
+   "Y3w": 0.8666666666666667,
+   "Y4": 0.7884958948062882
+  },
+  "f2p_pass": 1,
+  "f2p_total": 1,
+  "p2p_pass": 5,
+  "p2p_total": 5,
+  "f2p_all_pass": true,
+  "p2p_all_pass": true,
+  "resolved": true,
+  "reason": "resolved",
+  "test_seconds": 1.5
+ },
+ "status": "done",
+ "finished": "2026-10-07T09:52:24.688296+00:00"
+}

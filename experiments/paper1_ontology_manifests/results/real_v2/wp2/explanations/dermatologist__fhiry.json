@@ -1,0 +1,101 @@
+{
+ "repo": "dermatologist/fhiry",
+ "slug": "dermatologist__fhiry",
+ "input_sha": "eba0f908b9c6d422d1b148406560d441813e15033eb6b2a4946a3b7972ed0456",
+ "explanations": [
+  {
+   "key": "T4|llm|",
+   "verdict": "ContradictedClaim",
+   "leaf": "DependencyUndeclared",
+   "seconds": 7.34,
+   "retried_on_claim_subgraph": true,
+   "error": "Exception in thread \"main\" org.mindswap.pellet.exceptions.InternalReasonerException: Adding type to a pruned node \"anon(5)\" http://www.w3.org/2001/XMLSchema#integer\n\tat org.mindswap.pellet.Node.addType(Node.java:448)\n\tat org.mindswap.pellet.Literal.addType(Literal.java:257)\n\tat org.mindswap.pellet.tableau.completion.CompletionStrategy.addType(CompletionStrategy.java:438)\n\tat org.mindswap.pellet.tableau.completion.CompletionStrategy.applyDomainRange(CompletionStrategy.java:631)\n\tat org.mindswap.pellet.tableau.completion.CompletionStrategy.applyPropertyRestrictions(CompletionStrategy.java:592)\n\tat org.mindswap.pellet.tableau.completion.CompletionStrategy.addEdge(CompletionStrategy.java:583)\n\tat org.mindswap.pellet.tableau.completion.rule.SomeValuesRule.applySomeValuesRule(SomeValuesRule.java:186)\n\tat org.mindswap.pellet.tableau.completion.rule.SomeValuesRule.apply(SomeValuesRule.java:64)\n\tat org.mindswap.pellet.tableau.completion.rule.AbstractTableauRule.apply(AbstractTableauRule.java:64",
+   "returncode": 1,
+   "n_justifications": 0,
+   "facts": [],
+   "axioms": [],
+   "closures": []
+  },
+  {
+   "key": "T6|python|3010000000@2",
+   "verdict": "ConflictedClaim",
+   "leaf": "VersionSourcesConflict",
+   "seconds": 8.85,
+   "retried_on_claim_subgraph": true,
+   "error": null,
+   "returncode": 0,
+   "n_justifications": 1,
+   "facts": [
+    {
+     "prop": "versionLowerDelta",
+     "value": -2000000
+    },
+    {
+     "prop": "extractionVotes",
+     "value": 2
+    },
+    {
+     "prop": "hasEvidence",
+     "value": "ev1"
+    },
+    {
+     "prop": "evidenceFor",
+     "value": "91cd75e129ce"
+    },
+    {
+     "prop": "versionLowerDelta",
+     "value": 0
+    },
+    {
+     "prop": "evidenceFor",
+     "value": "91cd75e129ce"
+    },
+    {
+     "prop": "hasEvidence",
+     "value": "ev0"
+    }
+   ],
+   "axioms": [
+    "MinVersionAgreement subClassOf AgreeingVersionEvidence",
+    "A_extractionVotes_ge_wp2_consensus_min_votes equivalentTo extractionVotes some integer[>= 2]",
+    "A_versionLowerDelta_lt_0 equivalentTo versionLowerDelta some integer[< 0]",
+    "VersionSourcesConflict subClassOf ConflictedClaim",
+    "A_versionLowerDelta_ge_0_le_0 equivalentTo versionLowerDelta some integer[>= 0, <= 0]",
+    "CheckedClaim equivalentTo A_extractionVotes_ge_wp2_consensus_min_votes and ManifestClaim",
+    "VersionSourcesConflict equivalentTo CheckedClaim and VersionClaim and hasEvidence some AgreeingVersionEvidence and hasEvidence some DisagreeingVersionEvidence",
+    "MinVersionLowerThanClaimed equivalentTo A_versionLowerDelta_lt_0 and VersionEvidence and evidenceFor some MinVersionClaim",
+    "MinVersionLowerThanClaimed subClassOf DisagreeingVersionEvidence",
+    "MinVersionAgreement equivalentTo A_versionLowerDelta_ge_0_le_0 and VersionEvidence and evidenceFor some MinVersionClaim"
+   ],
+   "closures": []
+  },
+  {
+   "key": "T1|src/fhiry",
+   "verdict": "SupportedClaim",
+   "leaf": "PathFoundExact",
+   "seconds": 5.45,
+   "retried_on_claim_subgraph": false,
+   "error": null,
+   "returncode": 0,
+   "n_justifications": 1,
+   "facts": [
+    {
+     "prop": "extractionVotes",
+     "value": 2
+    },
+    {
+     "prop": "pathExactMatchCount",
+     "value": 9
+    }
+   ],
+   "axioms": [
+    "PathFoundExact equivalentTo A_pathExactMatchCount_ge_1 and CheckedClaim and PathExistenceClaim",
+    "A_extractionVotes_ge_wp2_consensus_min_votes equivalentTo extractionVotes some integer[>= 2]",
+    "A_pathExactMatchCount_ge_1 equivalentTo pathExactMatchCount some integer[>= 1]",
+    "CheckedClaim equivalentTo A_extractionVotes_ge_wp2_consensus_min_votes and ManifestClaim",
+    "PathFoundExact subClassOf SupportedClaim"
+   ],
+   "closures": []
+  }
+ ]
+}

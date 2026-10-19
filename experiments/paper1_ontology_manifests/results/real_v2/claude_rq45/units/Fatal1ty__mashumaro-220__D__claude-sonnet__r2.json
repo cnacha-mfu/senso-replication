@@ -1,0 +1,111 @@
+{
+ "unit_id": "Fatal1ty__mashumaro-220__D__claude-sonnet__r2",
+ "task_id": "Fatal1ty__mashumaro-220",
+ "repo": "Fatal1ty/mashumaro",
+ "stage": "phase_out",
+ "condition": "D",
+ "model": "claude-code/sonnet",
+ "run": 2,
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 3862,
+  "sha256": "4bdf20d4edd3844d3d278b8d4968b9e070b9874bca4f56deb003b89266d0b74a"
+ },
+ "started": "2026-10-18T03:10:14.810438+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 12,
+ "tool_calls": 11,
+ "usage": {
+  "input_tokens": 24,
+  "cache_creation_input_tokens": 14612,
+  "cache_read_input_tokens": 262127,
+  "output_tokens": 2995,
+  "output_tokens_details": {
+   "thinking_tokens": 393
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 14612,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 24,
+   "outputTokens": 2995,
+   "cacheReadInputTokens": 262127,
+   "cacheCreationInputTokens": 14612,
+   "webSearchRequests": 0,
+   "costUSD": 0.11465869999999999,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 393,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.11465869999999999,
+ "result_text": "I fixed the `RecursionError`. Your example now runs: `C(1).to_dict()` gives `{'x': 1}` and `C.from_dict({\"x\": 2})` gives `C(x=2)`.\n\n**Cause:** When a strategy with `use_annotations=True` is set on a field, mashumaro builds the code for the type taken from the strategy's annotations (here `Any`). That inner step still saw the same field-level `serialization_strategy`, so it applied the strategy again and never stopped.\n\n**Fix:** The inner step now gets the field context without `serialization_strategy`. I added a small helper, `_without_strategy`, in `mashumaro/core/meta/types/common.py`. It's used in `_pack_with_annotated_serialization_strategy` in `pack.py` and `_unpack_with_annotated_serialization_strategy` in `unpack.py`.\n\n**Tests:** 23 test modules fail to import in this environment, and they fail the same way without my change. The one error I looked at is `typing_extensions.NoDefault as a field type is not supported`. The 203 tests that do run pass, apart from one failure in `tests/test_pep_646.py` that also fails without my change. Because of the import errors, the modules most likely to exercise strategies, such as `tests/test_types.py`, couldn't run. I didn't add or change any tests, and I haven't committed.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792309800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0.01,
+    "resetsAt": 1792309800
+   },
+   "seven_day": {
+    "utilization": 0.12,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 80.9,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 3,
+   "Y6": 12,
+   "hit_step_limit": 0,
+   "changed_lines": 19,
+   "gold_changed_lines": 23,
+   "Y1": 3,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": -0.27563444261342734
+  },
+  "f2p_pass": 1,
+  "f2p_total": 1,
+  "p2p_pass": 4,
+  "p2p_total": 4,
+  "f2p_all_pass": true,
+  "p2p_all_pass": true,
+  "resolved": true,
+  "reason": "resolved",
+  "test_seconds": 1.0
+ },
+ "status": "done",
+ "finished": "2026-10-18T03:11:37.734899+00:00"
+}

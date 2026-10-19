@@ -1,0 +1,21 @@
+{
+ "repo": "WordPress/wp-ai-client",
+ "chunk": 0,
+ "n_chunks": 1,
+ "model": "google/diffusiongemma-26b-a4b-it",
+ "prompt_sha256": "d0e02ff613417050168d859f2af6230c3712c6758bb5d9c40d60ff55e5ae87ca",
+ "user_sha256": "30f22c35731ade22a63ddf979edcc22c9273321e29a284cd9f94e1409e371836",
+ "text": "{\n  \"claims\": [\n    {\"type\": \"command\", \"subject\": \"lint\", \"runner\": \"composer\", \"mode\": \"asserts_existing\"},\n    {\"type\": \"command\", \"subject\": \"phpcs\", \"runner\": \"composer\", \"mode\": \"asserts_existing\"},\n    {\"type\": \"command\", \"subject\": \"phpstan\", \"runner\": \"composer\", \"mode\": \"asserts_existing\"},\n    {\"type\": \"command\", \"subject\": \"build\", \"runner\": \"npm\", \"mode\": \"asserts_existing\"},\n    {\"type\": \"command\", \"subject\": \"format-js\", \"runner\": \"npm\", \"mode\": \"asserts_existing\"},\n    {\"type\": \"command\", \"subject\": \"lint-js\", \"runner\": \"npm\", \"mode\": \"asserts_existing\"},\n    {\"type\": \"command\", \"subject\": \"lint-php\", \"runner\": \"npm\", \"mode\": \"asserts_existing\"},\n    {\"type\": \"command\", \"subject\": \"test-php\", \"runner\": \"npm\", \"mode\": \"asserts_existing\"},\n    {\"type\": \"command\", \"subject\": \"test-php-multisite\", \"runner\": \"npm\", \"mode\": \"asserts_existing\"},\n    {\"type\": \"tool_used\", \"subject\": \"composer\", \"tool_category\": \"package_manager\", \"mode\": \"asserts_existing\"},\n    {\"type\": \"tool_used\", \"subject\": \"npm\", \"tool_category\": \"package_manager\", \"mode\": \"asserts_existing\"},\n    {\"type\": \"tool_used\", \"subject\": \"prettier\", \"tool_category\": \"linter_formatter\", \"mode\": \"asserts_existing\"},\n    {\"type\": \"tool_used\", \"subject\": \"phpunit\", \"tool_category\": \"test_framework\", \"mode\": \"asserts_existing\"},\n    {\"type\": \"dependency\", \"subject\": \"wordpress/php-ai-client\", \"ecosystem_hint\": \"composer\", \"mode\": \"asserts_existing\"},\n    {\"type\": \"version\", \"subject\": \"php\", \"version\": \"7.4\", \"qualifier\": \"exact\", \"mode\": \"asserts_existing\"},\n    {\"type\": \"path_exists\", \"subject\": \"CONTRIBUTING.md\", \"mode\": \"asserts_existing\"},\n    {\"type\": \"path_exists\", \"subject\": \"includes/\", \"mode\": \"asserts_existing\"},\n    {\"type\": \"path_exists\", \"subject\": \"includes/REST_API/\", \"mode\": \"asserts_existing\"},\n    {\"type\": \"path_exists\", \"subject\": \"src/\", \"mode\": \"asserts_existing\"},\n    {\"type\": \"path_exists\", \"subject\": \"build/\", \"mode\": \"asserts_existing\"},\n    {\"type\": \"path_exists\", \"subject\": \"includes/\", \"mode\": \"asserts_existing\"},\n    {\"type\": \"path_exists\", \"subject\": \"includes/API_Credentials/\", \"mode\": \"asserts_existing\"},\n    {\"type\": \"path_exists\", \"subject\": \"includes/Builders/\", \"mode\": \"asserts_existing\"},\n    {\"type\": \"path_exists\", \"subject\": \"includes/Capabilities/\", \"mode\": \"asserts_existing\"},\n    {\"type\": \"path_exists\", \"subject\": \"includes/HTTP/\", \"mode\": \"asserts_existing\"},\n    {\"type\": \"path_exists\", \"subject\": \"includes/REST_API/\", \"mode\": \"asserts_existing\"},\n    {\"type\": \"path_exists\", \"subject\": \"src/\", \"mode\": \"asserts_existing\"},\n    {\"type\": \"path_exists\", \"subject\": \"tests/\", \"mode\": \"asserts_existing\"},\n    {\"type\": \"path_exists\", \"subject\": \"tests/phpunit/\", \"mode\": \"asserts_existing\"},\n    {\"type\": \"path_exists\", \"subject\": \"vendor/\", \"mode\": \"asserts_existing\"},\n    {\"type\": \"path_exists\", \"subject\": \"tests/phpunit/tests/\", \"mode\": \"asserts_existing\"}\n  ]\n}",
+ "parse_ok": true,
+ "parse_error": null,
+ "parse_retries": 0,
+ "latency_s": 1.7537855370319448,
+ "usage": {
+  "prompt": 3630,
+  "completion": 935
+ },
+ "n_api_calls": 1,
+ "finish_reason": "stop",
+ "error": null,
+ "discarded_attempt_texts": []
+}

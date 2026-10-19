@@ -1,0 +1,21 @@
+{
+ "repo": "lerna/lerna",
+ "chunk": 0,
+ "n_chunks": 2,
+ "model": "google/diffusiongemma-26b-a4b-it",
+ "prompt_sha256": "d0e02ff613417050168d859f2af6230c3712c6758bb5d9c40d60ff55e5ae87ca",
+ "user_sha256": "4a6ee879a86662c67899b0e57e3106fa2a82354f5341ab06b54d9d8709f04f83",
+ "text": "{\n  \"claims\": [\n    {\"type\": \"tool_used\", \"subject\": \"Nx\", \"tool_category\": \"build_tool\", \"mode\": \"asserts_existing\"},\n    {\"type\": \"tool_used\", \"subject\": \"npm\", \"tool_category\": \"package_manager\", \"mode\": \"asserts_existing\"},\n    {\"type\": \"version\", \"subject\": \"npm\", \"version\": \"10.8.0\", \"qualifier\": \"exact\", \"mode\": \"asserts_existing\"},\n    {\"type\": \"negated\", \"subject\": \"pnpm\", \"mode\": \"negated\"},\n    {\"type\": \"negated\", \"subject\": \"yarn\", \"mode\": \"negated\"},\n    {\"type\": \"command\", \"subject\": \"format:check\", \"runner\": \"npm\", \"mode\": \"asserts_existing\"},\n    {\"type\": \"command\", \"subject\": \"lint\", \"runner\": \"npm\", \"mode\": \"asserts_existing\"},\n    {\"type\": \"command\", \"subject\": \"test\", \"runner\": \"npm\", \"mode\": \"asserts_existing\"},\n    {\"type\": \"command\", \"subject\": \"integration\", \"runner\": \"npm\", \"mode\": \"asserts_existing\"},\n    {\"type\": \"command\", \"subject\": \"test commands-publish\", \"runner\": \"nx\", \"mode\": \"asserts_existing\"},\n    {\"type\": \"command\", \"subject\": \"e2e publish\", \"runner\": \"nx\", \"mode\": \"asserts_existing\"},\n    {\"type\": \"command\", \"subject\": \"run-many -t build\", \"runner\": \"nx\", \"mode\": \"asserts_existing\"},\n    {\"type\": \"command\", \"subject\": \"run-many -t test\", \"runner\": \"nx\", \"mode\": \"asserts_existing\"},\n    {\"type\": \"command\", \"subject\": \"run-many -t lint\", \"runner\": \"nx\", \"mode\": \"asserts_existing\"},\n    {\"type\": \"path_exists\", \"subject\": \"libs/\", \"mode\": \"asserts_existing\"},\n    {\"type\": \"path_exists\", \"subject\": \"packages/\", \"mode\": \"asserts_existing\"},\n    {\"type\": \"path_exists\", \"subject\": \"e2e/\", \"mode\": \"asserts_existing\"},\n    {\"type\": \"path_exists\", \"subject\": \"__fixtures__/\", \"mode\": \"asserts_existing\"},\n    {\"type\": \"version\", \"subject\": \"node\", \"version\": \"20.18.3\", \"qualifier\": \"exact\", \"mode\": \"asserts_existing\"},\n    {\"type\": \"path_exists\", \"subject\": \"eslint.config.mjs\", \"mode\": \"asserts_existing\"},\n    {\"type\": \"tool_used\", \"subject\": \"jest\", \"tool_category\": \"test_framework\", \"mode\": \"asserts_existing\"},\n    {\"type\": \"tool_used\", \"subject\": \"esbuild\", \"tool_category\": \"build_tool\", \"mode\": \"asserts_existing\"}\n  ]\n}",
+ "parse_ok": true,
+ "parse_error": null,
+ "parse_retries": 0,
+ "latency_s": 2.2615523299900815,
+ "usage": {
+  "prompt": 4127,
+  "completion": 699
+ },
+ "n_api_calls": 1,
+ "finish_reason": "stop",
+ "error": null,
+ "discarded_attempt_texts": []
+}

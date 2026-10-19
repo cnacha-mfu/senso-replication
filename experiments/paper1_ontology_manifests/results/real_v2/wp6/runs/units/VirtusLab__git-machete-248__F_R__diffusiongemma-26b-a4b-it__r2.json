@@ -1,0 +1,79 @@
+{
+ "unit_id": "VirtusLab__git-machete-248__F_R__diffusiongemma-26b-a4b-it__r2",
+ "task_id": "VirtusLab__git-machete-248",
+ "repo": "VirtusLab/git-machete",
+ "stage": "phase_out",
+ "condition": "F_R",
+ "model": "google/diffusiongemma-26b-a4b-it",
+ "run": 2,
+ "order": 1188,
+ "env_build_s": 19.1,
+ "started": "2026-10-10T08:12:37.336151+00:00",
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 282,
+  "sha256": "eed6566ed9a8579a5c9fc0ca0a741acf2d8b94c1c67e99c2d3ed13ec9747f8c1"
+ },
+ "condition_available": true,
+ "venv_reset_s": 0.6,
+ "retries": 0,
+ "venv_hash_before": "aab20113be49fd75",
+ "venv_hash_after": "aab20113be49fd75",
+ "venv_mutated": false,
+ "exit_status": "LimitsExceeded",
+ "error": "",
+ "steps": 40,
+ "wall_s": 592.4,
+ "prompt_tokens": 551250,
+ "completion_tokens": 4493,
+ "format_errors": 6,
+ "length_cutoffs": 1,
+ "api_errors": {
+  "429": 132,
+  "timeout": 1
+ },
+ "n_queries": 64,
+ "keys_used": {
+  "NVIDIA_API_KEY_2": 46,
+  "NVIDIA_API_KEY_5": 42,
+  "NVIDIA_API_KEY_4": 43,
+  "NVIDIA_API_KEY": 42
+ },
+ "temperature": 0.7,
+ "top_p": 0.95,
+ "model_id_returned": "google/diffusiongemma-26b-a4b-it",
+ "mini_version": "2.4.6",
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 40,
+   "hit_step_limit": 1,
+   "changed_lines": 4,
+   "gold_changed_lines": 51,
+   "Y1": 0,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": -3.6724253419714956
+  },
+  "f2p_pass": 0,
+  "f2p_total": 2,
+  "p2p_pass": 31,
+  "p2p_total": 34,
+  "f2p_all_pass": false,
+  "p2p_all_pass": false,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 40.9
+ },
+ "status": "done",
+ "finished": "2026-10-10T08:23:12.169919+00:00"
+}

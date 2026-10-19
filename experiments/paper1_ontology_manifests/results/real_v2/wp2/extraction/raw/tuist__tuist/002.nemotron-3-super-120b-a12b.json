@@ -1,0 +1,21 @@
+{
+ "repo": "tuist/tuist",
+ "chunk": 2,
+ "n_chunks": 4,
+ "model": "nvidia/nemotron-3-super-120b-a12b",
+ "prompt_sha256": "d0e02ff613417050168d859f2af6230c3712c6758bb5d9c40d60ff55e5ae87ca",
+ "user_sha256": "64a9b359b0cdffc80400ccc654a61838baa5ea165ae46ebb742c965a437377da",
+ "text": "{\n  \"claims\": [\n    {\n      \"type\": \"command\",\n      \"quote\": \"- **Build command**: `mise run handbook:build` (can be run from any directory)\",\n      \"line\": 268,\n      \"subject\": \"handbook:build\",\n      \"runner\": \"mise\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"command\",\n      \"quote\": \"- **Development server**: `mise run handbook:dev` (from the handbook directory)\",\n      \"line\": 270,\n      \"subject\": \"handbook:dev\",\n      \"runner\": \"mise\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"path_exists\",\n      \"quote\": \"```\\nhandbook/\\n├── .vitepress/\\n│   └── config.mjs    # Navigation and site configuration\\n├── handbook/         # Content directory\\n│   ├── company/\\n│   ├── security/\\n│   ├── engineering/\\n│   ├── people/\\n│   ├── marketing/\\n│   ├── product/\\n│   ├── support/\\n│   └── community/\\n└── package.json\\n```\",\n      \"line\": 275,\n      \"subject\": \"handbook/\",\n      \"path_components\": [\n        \"handbook/\",\n        \".vitepress/\",\n        \"config.mjs\",\n        \"handbook/\",\n        \"company/\",\n        \"security/\",\n        \"engineering/\",\n        \"people/\",\n        \"marketing/\",\n        \"product/\",\n        \"support/\",\n        \"community/\",\n        \"package.json\"\n      ],\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"command\",\n      \"quote\": \"Run `mise run handbook:build` to verify\",\n      \"line\": 378,\n      \"subject\": \"handbook:build\",\n      \"runner\": \"mise\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"command\",\n      \"quote\": \"Run `mise run handbook:build` to test\",\n      \"line\": 385,\n      \"subject\": \"handbook:build\",\n      \"runner\": \"mise\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"command\",\n      \"quote\": \"Run `mise run handbook:build` to verify all links\",\n      \"line\": 395,\n      \"subject\": \"handbook:build\",\n      \"runner\": \"mise\",\n      \"mode\": \"asserts_existing\"\n    },\n    {\n      \"type\": \"path_exists\",\n      \"quote\": \"The `server/data-export.md` file documents all personal and organizational data that Tuist stores and can export for customers upon legal request.\",\n      \"line\": 402,\n      \"subject\": \"server/data-export.md\",\n      \"mode\": \"asserts_existing\"\n    }\n  ]\n}",
+ "parse_ok": true,
+ "parse_error": null,
+ "parse_retries": 0,
+ "latency_s": 4.1165455259615555,
+ "usage": {
+  "prompt": 4171,
+  "completion": 635
+ },
+ "n_api_calls": 1,
+ "finish_reason": "stop",
+ "error": null,
+ "discarded_attempt_texts": []
+}

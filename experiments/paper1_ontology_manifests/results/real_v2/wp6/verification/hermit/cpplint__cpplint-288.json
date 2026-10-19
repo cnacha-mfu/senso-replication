@@ -1,0 +1,83 @@
+{
+ "task": "cpplint__cpplint-288",
+ "consistent": true,
+ "error": null,
+ "items_mtime": 1791525823.4224703,
+ "seconds": 1.98,
+ "tbox_sha256": "8266af98a762ae7567a0deb684fdd394c180f7c6875ac55011cd3e6e6b080b43",
+ "n_claims": 8,
+ "claims": {
+  "T1|pyproject.toml": {
+   "leaves": [
+    "PathFoundExact"
+   ],
+   "verdicts": [
+    "SupportedClaim"
+   ],
+   "chained": []
+  },
+  "T1|core": {
+   "leaves": [
+    "PathNeverExisted"
+   ],
+   "verdicts": [
+    "ContradictedClaim"
+   ],
+   "chained": []
+  },
+  "T1|internal.py": {
+   "leaves": [
+    "PathNeverExisted"
+   ],
+   "verdicts": [
+    "ContradictedClaim"
+   ],
+   "chained": []
+  },
+  "T5|make|test": {
+   "leaves": [
+    "ScriptHostMissing"
+   ],
+   "verdicts": [
+    "ContradictedClaim"
+   ],
+   "chained": []
+  },
+  "T4|boltons|": {
+   "leaves": [
+    "DependencyUndeclared"
+   ],
+   "verdicts": [
+    "ContradictedClaim"
+   ],
+   "chained": []
+  },
+  "T1|samples/core": {
+   "leaves": [
+    "PathNeverExisted"
+   ],
+   "verdicts": [
+    "ContradictedClaim"
+   ],
+   "chained": []
+  },
+  "T1|samples/internal.py": {
+   "leaves": [
+    "PathNeverExisted"
+   ],
+   "verdicts": [
+    "ContradictedClaim"
+   ],
+   "chained": []
+  },
+  "T5|make|install": {
+   "leaves": [
+    "ScriptHostMissing"
+   ],
+   "verdicts": [
+    "ContradictedClaim"
+   ],
+   "chained": []
+  }
+ }
+}

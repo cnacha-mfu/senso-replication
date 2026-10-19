@@ -1,0 +1,24 @@
+{
+ "repo": "linux-do/cdk",
+ "chunk": 0,
+ "n_chunks": 1,
+ "model": "google/diffusiongemma-26b-a4b-it",
+ "prompt_sha256": "d0e02ff613417050168d859f2af6230c3712c6758bb5d9c40d60ff55e5ae87ca",
+ "user_sha256": "e7dc00905da05b6b0bad063999b50f4454282efc1acdeaba0dae424f263a6047",
+ "text": "{\"claims\": [{\"type\": \"version\", \"quote\": \"后端开发使用 Go 语言，所有接口需要符合 Restful 风格\", \"line\": 18, \"subject\": \"go\", \"mode\": \"asserts_existing\"}, {\"type\": \"dependency\", \"quote\": \"数据库使用 MySQL 作为主存储，Redis 作为缓存和会话存储\", \"line\": 19, \"subject\": \"MySQL\", \"mode\": \"asserts_existing\"}, {\"type\": \"dependency\", \"quote\": \"数据库使用 MySQL 作为主存储，Redis 作为缓存和会话存储\", \"line\": 19, \"subject\": \"Redis\", \"mode\": \"asserts_existing\"}, {\"type\": \"path_exists\", \"quote\": \"组件按功能分类：公共组件放在 components/common，UI 组件放在 components/ui\", \"line\": 29, \"subject\": \"components/common\", \"path_components\": [\"components/common\", \"components/ui\"], \"mode\": \"asserts_existing\"}, {\"type\": \"path_exists\", \"quote\": \"组件按功能分类：公共组件放在 components/common，UI 组件放在 components/ui\", \"line\": 29, \"subject\": \"components/ui\", \"path_components\": [\"components/common\", \"components/ui\"], \"mode\": \"asserts_existing\"}, {\"type\": \"path_exists\", \"quote\": \"自定义图标统一放置在 components/icons 目录，常规图标使用 Lucide 库\", \"line\": 30, \"subject\": \"components/icons\", \"path_components\": [\"components/icons\"], \"mode\": \"asserts_existing\"}, {\"type\": \"dependency\", \"quote\": \"自定义图标统一放置在 components/icons 目录，常规图标使用 Lucide 库\", \"line\": 30, \"subject\": \"Lucide\", \"mode\": \"asserts_existing\"}]}",
+ "parse_ok": true,
+ "parse_error": null,
+ "parse_retries": 2,
+ "latency_s": 4.648169970954768,
+ "usage": {
+  "prompt": 7751,
+  "completion": 958
+ },
+ "n_api_calls": 3,
+ "finish_reason": "stop",
+ "error": null,
+ "discarded_attempt_texts": [
+  "{\"claims\": [\n  {\"type\": \"path_exists\", \"quote\": \"公共组件放在 components/common，UI 组件放在 components/ui\", \"line\": 29, \"subject\": \"components/common\", \"path_components\": [\"components\", \"common\"], \"mode\": \"asserts_existing\"},\n  {\"type\": \"path_exists\", \"quote\": \"公共组件放在 components/common，UI 组件放在 components/ui\", \"line\": 29, \"subject\": \"components/ui\", \"path_components\": [\"components\", \"ui\"], \"mode\": \"asserts_existing\"},\n  {\"type\": \"path_exists\", \"quote\": \"自定义图标统一放置在 components/icons 目录，常规图标使用 Lucide 库\", \"line\": 30, \"subject\": \"components/icons\", \"path_components\": [\"components\", \"icons\"], \"mode\": \"asserts_existing\"},\n  {\"type\": \"dependency\", \"quote\": \"常规图标使用 Lucide 库\", \"line\": 30, \"subject\": \"Lucide\", \"mode\": \"asserts_existing\"]}]}",
+  "{\"claims\": [{\"type\": \"path_exists\", \"quote\": \"后端开发使用 Go 语言\", \"line\": 018, \"subject\": \"Go\", \"mode\": \"asserts_existing\"}, {\"type\": \"path_exists\", \"quote\": \"数据库使用 MySQL 作为主存储\", \"line\": 019, \"subject\": \"MySQL\", \"mode\": \"asserts_existing\"}, {\"type\": \"path_exists\", \"quote\": \"Redis 作为缓存和会话存储\", \"line\": 019, \"subject\": \"Redis\", \"mode\": \"asserts_existing\"}, {\"type\": \"path_exists\", \"quote\": \"公共组件放在 components/common\", \"line\": 029, \"subject\": \"components/common\", \"mode\": \"asserts_existing\"}, {\"type\": \"path_exists\", \"quote\": \"UI 组件放在 components/ui\", \"line\": 029, \"subject\": \"components/ui\", \"mode\": \"asserts_existing\"}, {\"type\": \"path_exists\", \"quote\": \"自定义图标统一放置在 components/icons 目录\", \"line\": 030, \"subject\": \"components/icons\", \"mode\": \"asserts_existing\"}, {\"type\": \"dependency\", \"quote\": \"常规图标使用 Lucide 库\", \"line\": 030, \"subject\": \"Lucide\", \"mode\": \"asserts_existing\"}]}"
+ ]
+}

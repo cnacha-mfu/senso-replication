@@ -1,0 +1,79 @@
+{
+ "unit_id": "tkarabela__pysubs2-77__T__nemotron-3-super-120b-a12b__r1",
+ "task_id": "tkarabela__pysubs2-77",
+ "repo": "tkarabela/pysubs2",
+ "stage": "evolution",
+ "condition": "T",
+ "model": "nvidia/nemotron-3-super-120b-a12b",
+ "run": 1,
+ "order": 330,
+ "env_build_s": 53.3,
+ "started": "2026-10-09T12:30:14.694253+00:00",
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 206,
+  "sha256": "079e5850f04308467b8ac6268902f2f26375aafeb00d2b8ff0e3ebfe9737fd0b"
+ },
+ "condition_available": true,
+ "venv_reset_s": 2.78,
+ "retries": 0,
+ "venv_hash_before": "bf4ed340ad0b7a5c",
+ "venv_hash_after": "bf4ed340ad0b7a5c",
+ "venv_mutated": false,
+ "exit_status": "LimitsExceeded",
+ "error": "",
+ "steps": 40,
+ "wall_s": 851.7,
+ "prompt_tokens": 668446,
+ "completion_tokens": 6407,
+ "format_errors": 0,
+ "length_cutoffs": 0,
+ "api_errors": {
+  "429": 273,
+  "timeout": 1
+ },
+ "n_queries": 97,
+ "keys_used": {
+  "NVIDIA_API_KEY_4": 74,
+  "NVIDIA_API_KEY": 86,
+  "NVIDIA_API_KEY_5": 73,
+  "NVIDIA_API_KEY_2": 81
+ },
+ "temperature": 0.7,
+ "top_p": 0.95,
+ "model_id_returned": "nvidia/nemotron-3-super-120b-a12b",
+ "mini_version": "2.4.6",
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 5,
+   "Y6": 40,
+   "hit_step_limit": 1,
+   "changed_lines": 471,
+   "gold_changed_lines": 16,
+   "Y1": 3,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": 4.879583249612783
+  },
+  "f2p_pass": 1,
+  "f2p_total": 1,
+  "p2p_pass": 18,
+  "p2p_total": 18,
+  "f2p_all_pass": true,
+  "p2p_all_pass": true,
+  "resolved": true,
+  "reason": "resolved",
+  "test_seconds": 0.8
+ },
+ "status": "done",
+ "finished": "2026-10-09T12:44:33.165687+00:00"
+}

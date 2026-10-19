@@ -1,0 +1,341 @@
+{
+ "task_id": "zopefoundation__Zope-1183",
+ "repo": "zopefoundation/Zope",
+ "stage": "servicing",
+ "rounds": 1,
+ "rejects": {},
+ "flags": [
+  "kind3_dropped",
+  "length_violation_F_R"
+ ],
+ "info": {
+  "slots": {
+   "test_root": "src/OFS/tests",
+   "P1": {
+    "replaced": "src/webdav",
+    "name": "core",
+    "F_R": "src/ZPublisher/core",
+    "F_I": "src/App/core"
+   },
+   "P2": {
+    "replaced": "src/OFS/Image.py",
+    "F_R": "src/ZPublisher/maybe_lock.py",
+    "F_I": "bootstrap.py"
+   },
+   "D": {
+    "replaced": null,
+    "F_R": "toolz",
+    "F_I": "boltons"
+   }
+  },
+  "why": {
+   "test_command": [
+    {
+     "root": "src/OFS/tests",
+     "T3": "SupportedClaim",
+     "T1": "SupportedClaim",
+     "collect_ok": true
+    }
+   ],
+   "kind1": {
+    "p1_idx": 7,
+    "gold0": "src/ZPublisher",
+    "unrelated": "src/App",
+    "base_R": "src/ZPublisher",
+    "base_I": "src/App"
+   },
+   "kind2": {
+    "p2_idx": 2,
+    "n_deleted_py": 2866,
+    "found": {
+     "F_R": "src/ZPublisher/maybe_lock.py",
+     "F_I": "bootstrap.py"
+    }
+   },
+   "kind3": {
+    "run": null,
+    "install": null,
+    "test_ok": true,
+    "install_ok": true
+   },
+   "kind4": {
+    "deps": [
+     [
+      "zope-annotation",
+      true
+     ],
+     [
+      "zope-browser",
+      true
+     ],
+     [
+      "zope-browsermenu",
+      true
+     ],
+     [
+      "zope-browserpage",
+      true
+     ],
+     [
+      "zope-browserresource",
+      true
+     ]
+    ],
+    "d_idx": null,
+    "src_R": "zope-annotation",
+    "src_I": "accesscontrol",
+    "n_decls": 123,
+    "n_dist": 96
+   }
+  },
+  "length": {
+   "T": 561,
+   "F_R": 592,
+   "F_I": 571
+  },
+  "fallbacks": {
+   "F_R": [],
+   "F_I": []
+  },
+  "modes": {
+   "F_R": {
+    "1": "replace",
+    "2": "replace",
+    "4": "add"
+   },
+   "F_I": {
+    "1": "replace",
+    "2": "replace",
+    "4": "add"
+   }
+  },
+  "length_diff": {
+   "F_R": 31,
+   "F_I": 10
+  },
+  "n_claims_T": 20,
+  "n_false": {
+   "F_R": 3,
+   "F_I": 3
+  },
+  "pointer_in_issue": true,
+  "gold_dirs": [
+   "src/ZPublisher"
+  ],
+  "gold_files": [
+   "CHANGES.rst",
+   "src/ZPublisher/HTTPRequest.py"
+  ]
+ },
+ "tokens": {
+  "F_R": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "src/ZPublisher/core",
+     "core"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "src/ZPublisher/maybe_lock.py",
+     "maybe_lock.py"
+    ]
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "toolz"
+    ]
+   }
+  ],
+  "F_I": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "src/App/core",
+     "core"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "bootstrap.py",
+     "bootstrap.py"
+    ]
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "boltons"
+    ]
+   }
+  ]
+ },
+ "unresolved_pre_hermit": [],
+ "sha256": {
+  "T": "4bf0ba1f8686bdcd48b438fd12c6362d35629d9616090b0be71a356f2be940bd",
+  "F_R": "d7955d359f13bf09690e56a5bc3ccbeb3dc61c5c36de00fda449fb0ed35757fa",
+  "F_I": "cf6ae2eeb1f16ac319624862f9acc6067c6fc153a35fdd15694c3c036b1aff5c"
+ },
+ "chars": {
+  "T": 561,
+  "F_R": 592,
+  "F_I": 571
+ },
+ "claims": {
+  "T": [
+   "T1|src/App",
+   "T1|src/OFS",
+   "T1|src/OFS/tests",
+   "T1|src/Products",
+   "T1|src/Testing",
+   "T1|src/ZPublisher",
+   "T1|src/Zope2",
+   "T1|src/webdav",
+   "T1|src/Products/Five/browser/metaconfigure.py",
+   "T1|src/Testing/ZopeTestCase/testPortalTestCase.py",
+   "T1|src/OFS/Image.py",
+   "T3|test_framework|pytest",
+   "T1|src/OFS/tests",
+   "T1|setup.py",
+   "T4|zope-annotation|",
+   "T4|zope-browser|",
+   "T4|zope-browsermenu|",
+   "T4|zope-browserpage|",
+   "T4|zope-browserresource|",
+   "T6|python|3007000000@2"
+  ],
+  "F_R": [
+   "T1|src/App",
+   "T1|src/OFS",
+   "T1|src/OFS/tests",
+   "T1|src/Products",
+   "T1|src/Testing",
+   "T1|src/ZPublisher",
+   "T1|src/Zope2",
+   "T1|src/ZPublisher/core",
+   "T1|src/Products/Five/browser/metaconfigure.py",
+   "T1|src/Testing/ZopeTestCase/testPortalTestCase.py",
+   "T1|src/ZPublisher/maybe_lock.py",
+   "T3|test_framework|pytest",
+   "T1|src/OFS/tests",
+   "T1|setup.py",
+   "T4|zope-annotation|",
+   "T4|zope-browser|",
+   "T4|zope-browsermenu|",
+   "T4|zope-browserpage|",
+   "T4|zope-browserresource|",
+   "T4|toolz|",
+   "T6|python|3007000000@2"
+  ],
+  "F_I": [
+   "T1|src/App",
+   "T1|src/OFS",
+   "T1|src/OFS/tests",
+   "T1|src/Products",
+   "T1|src/Testing",
+   "T1|src/ZPublisher",
+   "T1|src/Zope2",
+   "T1|src/App/core",
+   "T1|src/Products/Five/browser/metaconfigure.py",
+   "T1|src/Testing/ZopeTestCase/testPortalTestCase.py",
+   "T1|bootstrap.py",
+   "T3|test_framework|pytest",
+   "T1|src/OFS/tests",
+   "T1|setup.py",
+   "T4|zope-annotation|",
+   "T4|zope-browser|",
+   "T4|zope-browsermenu|",
+   "T4|zope-browserpage|",
+   "T4|zope-browserresource|",
+   "T4|boltons|",
+   "T6|python|3007000000@2"
+  ]
+ },
+ "python_spec": ">= 3.7",
+ "token_audit": [
+  {
+   "cond": "F_R",
+   "kind": 1,
+   "type": "path",
+   "name": "src/ZPublisher/core",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 2,
+   "type": "path",
+   "name": "src/ZPublisher/maybe_lock.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 4,
+   "type": "word",
+   "name": "toolz",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 1,
+   "type": "path",
+   "name": "src/App/core",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 2,
+   "type": "path",
+   "name": "bootstrap.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 4,
+   "type": "word",
+   "name": "boltons",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  }
+ ],
+ "dist_imports_used": {
+  "zope-annotation": [
+   "zope"
+  ],
+  "zope-browser": [
+   "zope"
+  ],
+  "zope-browsermenu": [
+   "zope"
+  ],
+  "zope-browserpage": [
+   "zope"
+  ],
+  "zope-browserresource": [
+   "zope"
+  ],
+  "toolz": null,
+  "boltons": null
+ }
+}

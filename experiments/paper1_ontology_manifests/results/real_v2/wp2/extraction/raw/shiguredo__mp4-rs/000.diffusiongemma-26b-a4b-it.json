@@ -1,0 +1,23 @@
+{
+ "repo": "shiguredo/mp4-rs",
+ "chunk": 0,
+ "n_chunks": 1,
+ "model": "google/diffusiongemma-26b-a4b-it",
+ "prompt_sha256": "d0e02ff613417050168d859f2af6230c3712c6758bb5d9c40d60ff55e5ae87ca",
+ "user_sha256": "cb88d5ad657a0b677ba154b178c6f16ec9b6b07abcda765b6ef58657c138b81e",
+ "text": "{\"claims\": [\n  {\"type\": \"version\", \"quote\": \"rustc 1.93.0\", \"line\": 31, \"subject\": \"rustc\", \"version\": \"1.93.0\", \"qualifier\": \"exact\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"version\", \"quote\": \"rust edition 2024\", \"line\": 32, \"subject\": \"rust edition\", \"version\": \"2024\", \"qualifier\": \"exact\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"tool_used\", \"quote\": \"llvm-cov を利用すること\", \"line\": 41, \"subject\": \"llvm-cov\", \"tool_category\": \"build_tool\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"command\", \"quote\": \"cargo fmt / cargo clippy / cargo check / cargo test を実行すること\", \"line\": 55, \"subject\": \"cargo fmt\", \"runner\": \"make\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"command\", \"quote\": \"cargo fmt / cargo clippy / cargo check / cargo test を実行すること\", \"line\": 55, \"subject\": \"cargo clippy\", \"runner\": \"make\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"command\", \"quote\": \"cargo fmt / cargo clippy / cargo check / cargo test を実行すること\", \"line\": 55, \"subject\": \"cargo check\", \"runner\": \"make\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"command\", \"quote\": \"cargo fmt / cargo clippy / cargo check / cargo test を実行すること\", \"line\": 55, \"subject\": \"cargo test\", \"runner\": \"make\", \"mode\": \"asserts_existing\"},\n  {\"type\": \"path_exists\", \"quote\": \"CHANGES.md\", \"line\": 74, \"subject\": \"CHANGES.md\", \"mode\": \"asserts_existing\"}\n]}",
+ "parse_ok": true,
+ "parse_error": null,
+ "parse_retries": 1,
+ "latency_s": 2.587760638038162,
+ "usage": {
+  "prompt": 6997,
+  "completion": 790
+ },
+ "n_api_calls": 2,
+ "finish_reason": "stop",
+ "error": null,
+ "discarded_attempt_texts": [
+  "```json\n[\n  {\"type\": \"version\", \"subject\": \"rustc\", \"version\": \"1.93.0\", \"qualifier\": \"exact\", \"line\": 31, \"mode\": \"asserts_existing\"},\n  {\"type\": \"version\", \"subject\": \"rust edition\", \"version\": \"2024\", \"qualifier\": \"exact\", \"line\": 32, \"mode\": \"asserts_existing\"},\n  {\"type\": \"tool_used\", \"subject\": \"llvm-cov\", \"tool_category\": \"build_tool\", \"line\": 41, \"mode\": \"asserts_existing\"},\n  {\"type\": \"command\", \"subject\": \"cargo fmt\", \"runner\": \"cargo\", \"line\": 55, \"mode\": \"asserts_existing\"},\n  {\"type\": \"command\", \"subject\": \"cargo clippy\", \"runner\": \"cargo\", \"line\": 55, \"mode\": \"asserts_existing\"},\n  {\"type\": \"command\", \"subject\": \"cargo check\", \"runner\": \"cargo\", \"line\": 55, \"mode\": \"asserts_existing\"},\n  {\"type\": \"command\", \"subject\": \"cargo test\", \"runner\": \"cargo\", \"line\": 55, \"mode\": \"asserts_existing\"},\n  {\"type\": \"path_exists\", \"subject\": \"CHANGES.md\", \"line\": 74, \"mode\": \"asserts_existing\"}\n]\n```"
+ ]
+}

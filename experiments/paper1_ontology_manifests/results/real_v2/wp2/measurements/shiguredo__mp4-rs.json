@@ -1,0 +1,81 @@
+{
+ "repo": "shiguredo/mp4-rs",
+ "slug": "shiguredo__mp4-rs",
+ "S": "beddd1c61d6edc3fc45a1894c26004ca7391b2fb",
+ "manifest_path": "AGENTS.md",
+ "input_sha": "0b345357fd8a13990b2f950045bab0b2c348ffa1ba29af2a16df315e245e712b",
+ "n_claims": 2,
+ "n_tree_files": 180,
+ "n_dep_manifests_parsed": null,
+ "seconds": 0.0,
+ "claims": [
+  {
+   "key_str": "T1|CHANGES.md",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "CHANGES.md",
+   "quote": "CHANGES.md",
+   "line": 74,
+   "votes": 1,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it"
+   ],
+   "attrs": {
+    "path": "CHANGES.md",
+    "is_dir": false,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 1,
+     "pathSuffixMatchCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T6|rust|2024000000000@1",
+   "tcode": "T6",
+   "types": [
+    "VersionClaim",
+    "ExactVersionClaim"
+   ],
+   "headline": true,
+   "subject": "rust",
+   "quote": "rust edition 2024",
+   "line": 32,
+   "votes": 1,
+   "models": [
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "attrs": {
+    "subject_type": "rust",
+    "version": "2024",
+    "code": 2024000000000,
+    "precision": 1,
+    "qualifier": "exact"
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "versionSourceCount": 1
+    },
+    "evidences": [
+     {
+      "versionSourcePath": "Cargo.toml",
+      "versionSourceRaw": "1.88",
+      "versionLowerDelta": -2023000000000,
+      "versionUpperUnboundedCount": 1
+     }
+    ],
+    "meta": {}
+   }
+  }
+ ]
+}

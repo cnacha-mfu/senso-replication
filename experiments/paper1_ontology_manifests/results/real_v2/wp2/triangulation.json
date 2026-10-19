@@ -1,0 +1,1101 @@
+{
+ "summary": {
+  "github_api_calls": 6,
+  "T1_ContradictedClaim": {
+   "n": 36,
+   "corroborated": 36,
+   "rate": 1.0
+  },
+  "T1_SupportedClaim": {
+   "n": 50,
+   "corroborated": 50,
+   "rate": 1.0
+  },
+  "T2_IndeterminateClaim": {
+   "n": 1,
+   "corroborated": 1,
+   "rate": 1.0
+  },
+  "T3_ContradictedClaim": {
+   "n": 4,
+   "corroborated": 1,
+   "rate": 0.25
+  },
+  "T4_ContradictedClaim": {
+   "n": 14,
+   "corroborated": 2,
+   "rate": 0.14285714285714285
+  },
+  "T5_ContradictedClaim": {
+   "n": 7,
+   "corroborated": 7,
+   "rate": 1.0
+  },
+  "T6_reparse_agreement": {
+   "n": 22,
+   "agree_verdict": 1.0,
+   "agree_leaf": 1.0,
+   "kappa": 1.0
+  }
+ },
+ "rows": [
+  {
+   "repo": "javascript-obfuscator/javascript-obfuscator",
+   "key": "T1|src/node-transformers/converting-transformers/StringArrayTransformer.ts",
+   "tcode": "T1",
+   "reasoner_verdict": "ContradictedClaim",
+   "instrument": "github_contents",
+   "http_status": 404,
+   "corroborates": true
+  },
+  {
+   "repo": "javascript-obfuscator/javascript-obfuscator",
+   "key": "T5|script|lint:analyzers",
+   "tcode": "T5",
+   "reasoner_verdict": "ContradictedClaim",
+   "instrument": "ci_config",
+   "ci_files_invoking": 0,
+   "corroborates": true,
+   "possible_false_contradiction": false
+  },
+  {
+   "repo": "javascript-obfuscator/javascript-obfuscator",
+   "key": "T5|script|lint:fix",
+   "tcode": "T5",
+   "reasoner_verdict": "ContradictedClaim",
+   "instrument": "ci_config",
+   "ci_files_invoking": 0,
+   "corroborates": true,
+   "possible_false_contradiction": false
+  },
+  {
+   "repo": "javascript-obfuscator/javascript-obfuscator",
+   "key": "T5|script|lint:transformers",
+   "tcode": "T5",
+   "reasoner_verdict": "ContradictedClaim",
+   "instrument": "ci_config",
+   "ci_files_invoking": 0,
+   "corroborates": true,
+   "possible_false_contradiction": false
+  },
+  {
+   "repo": "javascript-obfuscator/javascript-obfuscator",
+   "key": "T5|script|test:analyzers",
+   "tcode": "T5",
+   "reasoner_verdict": "ContradictedClaim",
+   "instrument": "ci_config",
+   "ci_files_invoking": 0,
+   "corroborates": true,
+   "possible_false_contradiction": false
+  },
+  {
+   "repo": "javascript-obfuscator/javascript-obfuscator",
+   "key": "T5|script|test:options",
+   "tcode": "T5",
+   "reasoner_verdict": "ContradictedClaim",
+   "instrument": "ci_config",
+   "ci_files_invoking": 0,
+   "corroborates": true,
+   "possible_false_contradiction": false
+  },
+  {
+   "repo": "javascript-obfuscator/javascript-obfuscator",
+   "key": "T5|script|test:transformers",
+   "tcode": "T5",
+   "reasoner_verdict": "ContradictedClaim",
+   "instrument": "ci_config",
+   "ci_files_invoking": 0,
+   "corroborates": true,
+   "possible_false_contradiction": false
+  },
+  {
+   "repo": "pcingola/SnpEff",
+   "key": "T1|zip",
+   "tcode": "T1",
+   "reasoner_verdict": "ContradictedClaim",
+   "instrument": "github_contents",
+   "http_status": 404,
+   "corroborates": true
+  },
+  {
+   "repo": "run-llama/LlamaIndexTS",
+   "key": "T1|packages/cloud",
+   "tcode": "T1",
+   "reasoner_verdict": "ContradictedClaim",
+   "instrument": "github_contents",
+   "http_status": 404,
+   "corroborates": true
+  },
+  {
+   "repo": "noahlh/celestite",
+   "key": "T3|package_manager|bun",
+   "tcode": "T3",
+   "reasoner_verdict": "ContradictedClaim",
+   "instrument": "git_grep",
+   "grep_files": 4,
+   "corroborates": false,
+   "possible_signature_gap": true,
+   "grep_restricted_to_config_files": false
+  },
+  {
+   "repo": "nats-io/nats.go",
+   "key": "T2|js.go|inactive",
+   "tcode": "T2",
+   "reasoner_verdict": "IndeterminateClaim",
+   "instrument": "github_commits",
+   "api_commits_180d": 4,
+   "measured_commits_180d": 4,
+   "http_status": 200,
+   "corroborates": true
+  },
+  {
+   "repo": "nats-io/nats.go",
+   "key": "T4|nats-server|",
+   "tcode": "T4",
+   "reasoner_verdict": "ContradictedClaim",
+   "instrument": "git_grep",
+   "grep_files": 33,
+   "corroborates": false,
+   "possible_signature_gap": true,
+   "grep_restricted_to_config_files": false
+  },
+  {
+   "repo": "nats-io/nats.go",
+   "key": "T4|protobuf|",
+   "tcode": "T4",
+   "reasoner_verdict": "ContradictedClaim",
+   "instrument": "git_grep",
+   "grep_files": 7,
+   "corroborates": false,
+   "possible_signature_gap": true,
+   "grep_restricted_to_config_files": false
+  },
+  {
+   "repo": "snowplow/snowplow-javascript-tracker",
+   "key": "T1|package",
+   "tcode": "T1",
+   "reasoner_verdict": "ContradictedClaim",
+   "instrument": "github_contents",
+   "http_status": 404,
+   "corroborates": true
+  },
+  {
+   "repo": "VCnoC/Claude-Code-Zen-mcp-Skill-Work",
+   "key": "T1|docs/adr",
+   "tcode": "T1",
+   "reasoner_verdict": "ContradictedClaim",
+   "instrument": "github_contents",
+   "http_status": 404,
+   "corroborates": true
+  },
+  {
+   "repo": "felipebarcelospro/igniter-js",
+   "key": "T1|igniter-js",
+   "tcode": "T1",
+   "reasoner_verdict": "ContradictedClaim",
+   "instrument": "github_contents",
+   "http_status": 404,
+   "corroborates": true
+  },
+  {
+   "repo": "felipebarcelospro/igniter-js",
+   "key": "T4|@model-context/server|",
+   "tcode": "T4",
+   "reasoner_verdict": "ContradictedClaim",
+   "instrument": "git_grep",
+   "grep_files": 0,
+   "corroborates": true,
+   "possible_signature_gap": false,
+   "grep_restricted_to_config_files": false
+  },
+  {
+   "repo": "popstas/telegram-download-chat",
+   "key": "T1|_pyinstaller",
+   "tcode": "T1",
+   "reasoner_verdict": "ContradictedClaim",
+   "instrument": "github_contents",
+   "http_status": 404,
+   "corroborates": true
+  },
+  {
+   "repo": "popstas/telegram-download-chat",
+   "key": "T1|cli.py",
+   "tcode": "T1",
+   "reasoner_verdict": "ContradictedClaim",
+   "instrument": "github_contents",
+   "http_status": 404,
+   "corroborates": true
+  },
+  {
+   "repo": "popstas/telegram-download-chat",
+   "key": "T1|gui_app.py",
+   "tcode": "T1",
+   "reasoner_verdict": "ContradictedClaim",
+   "instrument": "github_contents",
+   "http_status": 404,
+   "corroborates": true
+  },
+  {
+   "repo": "JunDamin/hwpapi",
+   "key": "T3|test_framework|pytest",
+   "tcode": "T3",
+   "reasoner_verdict": "ContradictedClaim",
+   "instrument": "git_grep",
+   "grep_files": 1,
+   "corroborates": false,
+   "possible_signature_gap": true,
+   "grep_restricted_to_config_files": false
+  },
+  {
+   "repo": "JunDamin/hwpapi",
+   "key": "T4|nbdev|",
+   "tcode": "T4",
+   "reasoner_verdict": "ContradictedClaim",
+   "instrument": "git_grep",
+   "grep_files": 15,
+   "corroborates": false,
+   "possible_signature_gap": true,
+   "grep_restricted_to_config_files": false
+  },
+  {
+   "repo": "JunDamin/hwpapi",
+   "key": "T4|pywin32|",
+   "tcode": "T4",
+   "reasoner_verdict": "ContradictedClaim",
+   "instrument": "git_grep",
+   "grep_files": 3,
+   "corroborates": false,
+   "possible_signature_gap": true,
+   "grep_restricted_to_config_files": false
+  },
+  {
+   "repo": "tobymao/sqlglot",
+   "key": "T1|expressions.py",
+   "tcode": "T1",
+   "reasoner_verdict": "ContradictedClaim",
+   "instrument": "github_contents",
+   "http_status": 404,
+   "corroborates": true
+  },
+  {
+   "repo": "aptos-labs/aptos-docs",
+   "key": "T1|src/content/docs/es",
+   "tcode": "T1",
+   "reasoner_verdict": "ContradictedClaim",
+   "instrument": "github_contents",
+   "http_status": 404,
+   "corroborates": true
+  },
+  {
+   "repo": "aptos-labs/aptos-docs",
+   "key": "T1|src/content/docs/es/network/glossary.mdx",
+   "tcode": "T1",
+   "reasoner_verdict": "ContradictedClaim",
+   "instrument": "github_contents",
+   "http_status": 404,
+   "corroborates": true
+  },
+  {
+   "repo": "aptos-labs/aptos-docs",
+   "key": "T4|esbuild|",
+   "tcode": "T4",
+   "reasoner_verdict": "ContradictedClaim",
+   "instrument": "git_grep",
+   "grep_files": 1,
+   "corroborates": false,
+   "possible_signature_gap": true,
+   "grep_restricted_to_config_files": false
+  },
+  {
+   "repo": "derrickburns/generalized-kmeans-clustering",
+   "key": "T1|adapters",
+   "tcode": "T1",
+   "reasoner_verdict": "ContradictedClaim",
+   "instrument": "github_contents",
+   "http_status": 404,
+   "corroborates": true
+  },
+  {
+   "repo": "derrickburns/generalized-kmeans-clustering",
+   "key": "T1|core",
+   "tcode": "T1",
+   "reasoner_verdict": "ContradictedClaim",
+   "instrument": "github_contents",
+   "http_status": 404,
+   "corroborates": true
+  },
+  {
+   "repo": "derrickburns/generalized-kmeans-clustering",
+   "key": "T1|modules",
+   "tcode": "T1",
+   "reasoner_verdict": "ContradictedClaim",
+   "instrument": "github_contents",
+   "http_status": 404,
+   "corroborates": true
+  },
+  {
+   "repo": "Kaptensanders/skolmat",
+   "key": "T1|docs/context.md",
+   "tcode": "T1",
+   "reasoner_verdict": "ContradictedClaim",
+   "instrument": "github_contents",
+   "http_status": 404,
+   "corroborates": true
+  },
+  {
+   "repo": "Kaptensanders/skolmat",
+   "key": "T1|docs/design/filtering-config-flow-design.md",
+   "tcode": "T1",
+   "reasoner_verdict": "ContradictedClaim",
+   "instrument": "github_contents",
+   "http_status": 404,
+   "corroborates": true
+  },
+  {
+   "repo": "Kaptensanders/skolmat",
+   "key": "T1|docs/design/filtering-design-checkpoint.md",
+   "tcode": "T1",
+   "reasoner_verdict": "ContradictedClaim",
+   "instrument": "github_contents",
+   "http_status": 404,
+   "corroborates": true
+  },
+  {
+   "repo": "Kaptensanders/skolmat",
+   "key": "T1|docs/resume_prompt.txt",
+   "tcode": "T1",
+   "reasoner_verdict": "ContradictedClaim",
+   "instrument": "github_contents",
+   "http_status": 404,
+   "corroborates": true
+  },
+  {
+   "repo": "Kaptensanders/skolmat",
+   "key": "T1|docs/vibe/context.md",
+   "tcode": "T1",
+   "reasoner_verdict": "ContradictedClaim",
+   "instrument": "github_contents",
+   "http_status": 404,
+   "corroborates": true
+  },
+  {
+   "repo": "WordPress/wp-ai-client",
+   "key": "T3|linter_formatter|prettier",
+   "tcode": "T3",
+   "reasoner_verdict": "ContradictedClaim",
+   "instrument": "git_grep",
+   "grep_files": 0,
+   "corroborates": true,
+   "possible_signature_gap": false,
+   "grep_restricted_to_config_files": false
+  },
+  {
+   "repo": "iflow-ai/NioPD",
+   "key": "T1|niopd-workspace",
+   "tcode": "T1",
+   "reasoner_verdict": "ContradictedClaim",
+   "instrument": "github_contents",
+   "http_status": 404,
+   "corroborates": true
+  },
+  {
+   "repo": "tuist/tuist",
+   "key": "T1|priv/secrets/dev.key",
+   "tcode": "T1",
+   "reasoner_verdict": "ContradictedClaim",
+   "instrument": "github_contents",
+   "http_status": 404,
+   "corroborates": true
+  },
+  {
+   "repo": "rabbitmq/rabbitmqadmin-ng",
+   "key": "T4|aws_lc_rs|",
+   "tcode": "T4",
+   "reasoner_verdict": "ContradictedClaim",
+   "instrument": "git_grep",
+   "grep_files": 2,
+   "corroborates": false,
+   "possible_signature_gap": true,
+   "grep_restricted_to_config_files": false
+  },
+  {
+   "repo": "cbyrohl/scida",
+   "key": "T1|branches",
+   "tcode": "T1",
+   "reasoner_verdict": "ContradictedClaim",
+   "instrument": "github_contents",
+   "http_status": 404,
+   "corroborates": true
+  },
+  {
+   "repo": "cbyrohl/scida",
+   "key": "T1|tests/customs/test_arepo.py",
+   "tcode": "T1",
+   "reasoner_verdict": "ContradictedClaim",
+   "instrument": "github_contents",
+   "http_status": 404,
+   "corroborates": true
+  },
+  {
+   "repo": "cbyrohl/scida",
+   "key": "T1|tests/customs/test_swift.py",
+   "tcode": "T1",
+   "reasoner_verdict": "ContradictedClaim",
+   "instrument": "github_contents",
+   "http_status": 404,
+   "corroborates": true
+  },
+  {
+   "repo": "cbyrohl/scida",
+   "key": "T1|tests/simulations",
+   "tcode": "T1",
+   "reasoner_verdict": "ContradictedClaim",
+   "instrument": "github_contents",
+   "http_status": 404,
+   "corroborates": true
+  },
+  {
+   "repo": "cbyrohl/scida",
+   "key": "T1|tests/test_interface.py",
+   "tcode": "T1",
+   "reasoner_verdict": "ContradictedClaim",
+   "instrument": "github_contents",
+   "http_status": 404,
+   "corroborates": true
+  },
+  {
+   "repo": "cbyrohl/scida",
+   "key": "T1|tests/test_units.py",
+   "tcode": "T1",
+   "reasoner_verdict": "ContradictedClaim",
+   "instrument": "github_contents",
+   "http_status": 404,
+   "corroborates": true
+  },
+  {
+   "repo": "funnyzak/weread-bot",
+   "key": "T4|schedule|",
+   "tcode": "T4",
+   "reasoner_verdict": "ContradictedClaim",
+   "instrument": "git_grep",
+   "grep_files": 5,
+   "corroborates": false,
+   "possible_signature_gap": true,
+   "grep_restricted_to_config_files": false
+  },
+  {
+   "repo": "byteowlz/eaRS",
+   "key": "T1|history",
+   "tcode": "T1",
+   "reasoner_verdict": "ContradictedClaim",
+   "instrument": "github_contents",
+   "http_status": 404,
+   "corroborates": true
+  },
+  {
+   "repo": "flightphp/core",
+   "key": "T4|spatie/phpunit-watcher|",
+   "tcode": "T4",
+   "reasoner_verdict": "ContradictedClaim",
+   "instrument": "git_grep",
+   "grep_files": 0,
+   "corroborates": true,
+   "possible_signature_gap": false,
+   "grep_restricted_to_config_files": false
+  },
+  {
+   "repo": "a16z/halmos",
+   "key": "T3|package_manager|uv",
+   "tcode": "T3",
+   "reasoner_verdict": "ContradictedClaim",
+   "instrument": "git_grep",
+   "grep_files": 7,
+   "corroborates": false,
+   "possible_signature_gap": true,
+   "grep_restricted_to_config_files": false
+  },
+  {
+   "repo": "HassanZahirnia/laravel-package-ocean",
+   "key": "T1|Actions",
+   "tcode": "T1",
+   "reasoner_verdict": "ContradictedClaim",
+   "instrument": "github_contents",
+   "http_status": 404,
+   "corroborates": true
+  },
+  {
+   "repo": "HassanZahirnia/laravel-package-ocean",
+   "key": "T1|Schemas/Components",
+   "tcode": "T1",
+   "reasoner_verdict": "ContradictedClaim",
+   "instrument": "github_contents",
+   "http_status": 404,
+   "corroborates": true
+  },
+  {
+   "repo": "HassanZahirnia/laravel-package-ocean",
+   "key": "T1|Tables/Columns",
+   "tcode": "T1",
+   "reasoner_verdict": "ContradictedClaim",
+   "instrument": "github_contents",
+   "http_status": 404,
+   "corroborates": true
+  },
+  {
+   "repo": "HassanZahirnia/laravel-package-ocean",
+   "key": "T1|Tables/Filters",
+   "tcode": "T1",
+   "reasoner_verdict": "ContradictedClaim",
+   "instrument": "github_contents",
+   "http_status": 404,
+   "corroborates": true
+  },
+  {
+   "repo": "HassanZahirnia/laravel-package-ocean",
+   "key": "T4|laravel/mcp|0",
+   "tcode": "T4",
+   "reasoner_verdict": "ContradictedClaim",
+   "instrument": "git_grep",
+   "grep_files": 1,
+   "corroborates": false,
+   "possible_signature_gap": true,
+   "grep_restricted_to_config_files": false
+  },
+  {
+   "repo": "HassanZahirnia/laravel-package-ocean",
+   "key": "T4|pestphp/pest|3",
+   "tcode": "T4",
+   "reasoner_verdict": "ContradictedClaim",
+   "instrument": "git_grep",
+   "grep_files": 3,
+   "corroborates": false,
+   "possible_signature_gap": true,
+   "grep_restricted_to_config_files": false
+  },
+  {
+   "repo": "HassanZahirnia/laravel-package-ocean",
+   "key": "T4|phpunit/phpunit|11",
+   "tcode": "T4",
+   "reasoner_verdict": "ContradictedClaim",
+   "instrument": "git_grep",
+   "grep_files": 2,
+   "corroborates": false,
+   "possible_signature_gap": true,
+   "grep_restricted_to_config_files": false
+  },
+  {
+   "repo": "HassanZahirnia/laravel-package-ocean",
+   "key": "T5|composer|dev",
+   "tcode": "T5",
+   "reasoner_verdict": "ContradictedClaim",
+   "instrument": "ci_config",
+   "ci_files_invoking": 0,
+   "corroborates": true,
+   "possible_false_contradiction": false
+  },
+  {
+   "repo": "carpenike/k8s-gitops",
+   "key": "T1|.kubeconform.yaml",
+   "tcode": "T1",
+   "reasoner_verdict": "ContradictedClaim",
+   "instrument": "github_contents",
+   "http_status": 404,
+   "corroborates": true
+  },
+  {
+   "repo": "vinhnx/VT.ai",
+   "key": "T1|src",
+   "tcode": "T1",
+   "reasoner_verdict": "ContradictedClaim",
+   "instrument": "github_contents",
+   "http_status": 404,
+   "corroborates": true
+  },
+  {
+   "repo": "vinhnx/VT.ai",
+   "key": "T1|vt_ai",
+   "tcode": "T1",
+   "reasoner_verdict": "ContradictedClaim",
+   "instrument": "github_contents",
+   "http_status": 404,
+   "corroborates": true
+  },
+  {
+   "repo": "vinhnx/VT.ai",
+   "key": "T4|requests|",
+   "tcode": "T4",
+   "reasoner_verdict": "ContradictedClaim",
+   "instrument": "git_grep",
+   "grep_files": 4,
+   "corroborates": false,
+   "possible_signature_gap": true,
+   "grep_restricted_to_config_files": false
+  },
+  {
+   "repo": "dermatologist/fhiry",
+   "key": "T4|llm|",
+   "tcode": "T4",
+   "reasoner_verdict": "ContradictedClaim",
+   "instrument": "git_grep",
+   "grep_files": 3,
+   "corroborates": false,
+   "possible_signature_gap": true,
+   "grep_restricted_to_config_files": false
+  },
+  {
+   "repo": "Kaptensanders/skolmat",
+   "key": "T1|.devcontainer/setup-project",
+   "tcode": "T1",
+   "reasoner_verdict": "SupportedClaim",
+   "instrument": "github_contents",
+   "http_status": 200,
+   "corroborates": true
+  },
+  {
+   "repo": "ipspace/netlab",
+   "key": "T1|netsim/outputs",
+   "tcode": "T1",
+   "reasoner_verdict": "SupportedClaim",
+   "instrument": "github_contents",
+   "http_status": 200,
+   "corroborates": true
+  },
+  {
+   "repo": "Lakr233/ColorfulX",
+   "key": "T1|Sources/ColorfulX/MetalView+AppKit.swift",
+   "tcode": "T1",
+   "reasoner_verdict": "SupportedClaim",
+   "instrument": "github_contents",
+   "http_status": 200,
+   "corroborates": true
+  },
+  {
+   "repo": "Kaptensanders/skolmat",
+   "key": "T1|README.md",
+   "tcode": "T1",
+   "reasoner_verdict": "SupportedClaim",
+   "instrument": "github_contents",
+   "http_status": 200,
+   "corroborates": true
+  },
+  {
+   "repo": "felipebarcelospro/igniter-js",
+   "key": "T1|apps/www/content/blog",
+   "tcode": "T1",
+   "reasoner_verdict": "SupportedClaim",
+   "instrument": "github_contents",
+   "http_status": 200,
+   "corroborates": true
+  },
+  {
+   "repo": "tuist/tuist",
+   "key": "T1|handbook/handbook/people",
+   "tcode": "T1",
+   "reasoner_verdict": "SupportedClaim",
+   "instrument": "github_contents",
+   "http_status": 200,
+   "corroborates": true
+  },
+  {
+   "repo": "apache/skywalking",
+   "key": "T1|docs/en/concepts-and-designs",
+   "tcode": "T1",
+   "reasoner_verdict": "SupportedClaim",
+   "instrument": "github_contents",
+   "http_status": 200,
+   "corroborates": true
+  },
+  {
+   "repo": "jaxen-xpath/jaxen",
+   "key": "T1|integration-tests",
+   "tcode": "T1",
+   "reasoner_verdict": "SupportedClaim",
+   "instrument": "github_contents",
+   "http_status": 200,
+   "corroborates": true
+  },
+  {
+   "repo": "TopSwagCode/MinimalWorker",
+   "key": "T1|src/MinimalWorker.Generators",
+   "tcode": "T1",
+   "reasoner_verdict": "SupportedClaim",
+   "instrument": "github_contents",
+   "http_status": 200,
+   "corroborates": true
+  },
+  {
+   "repo": "simstudioai/sim",
+   "key": "T1|apps/sim/app",
+   "tcode": "T1",
+   "reasoner_verdict": "SupportedClaim",
+   "instrument": "github_contents",
+   "http_status": 200,
+   "corroborates": true
+  },
+  {
+   "repo": "rabbitmq/rabbitmqadmin-ng",
+   "key": "T1|src/tanzu_cli.rs",
+   "tcode": "T1",
+   "reasoner_verdict": "SupportedClaim",
+   "instrument": "github_contents",
+   "http_status": 200,
+   "corroborates": true
+  },
+  {
+   "repo": "dermatologist/fhiry",
+   "key": "T1|src/fhiry/fhirndjson.py",
+   "tcode": "T1",
+   "reasoner_verdict": "SupportedClaim",
+   "instrument": "github_contents",
+   "http_status": 200,
+   "corroborates": true
+  },
+  {
+   "repo": "DataDog/lading",
+   "key": "T1|docs/adr/008-dependency-philosophy.md",
+   "tcode": "T1",
+   "reasoner_verdict": "SupportedClaim",
+   "instrument": "github_contents",
+   "http_status": 200,
+   "corroborates": true
+  },
+  {
+   "repo": "chef/chef-vault",
+   "key": "T1|chef-vault/DEMO.md",
+   "tcode": "T1",
+   "reasoner_verdict": "SupportedClaim",
+   "instrument": "github_contents",
+   "http_status": 200,
+   "corroborates": true
+  },
+  {
+   "repo": "rabbitmq/rabbitmqadmin-ng",
+   "key": "T1|tests/proptests",
+   "tcode": "T1",
+   "reasoner_verdict": "SupportedClaim",
+   "instrument": "github_contents",
+   "http_status": 200,
+   "corroborates": true
+  },
+  {
+   "repo": "chef/chef-vault",
+   "key": "T1|habitat/plan.sh",
+   "tcode": "T1",
+   "reasoner_verdict": "SupportedClaim",
+   "instrument": "github_contents",
+   "http_status": 200,
+   "corroborates": true
+  },
+  {
+   "repo": "managedcode/Storage",
+   "key": "T1|Tests/ManagedCode.Storage.Tests",
+   "tcode": "T1",
+   "reasoner_verdict": "SupportedClaim",
+   "instrument": "github_contents",
+   "http_status": 200,
+   "corroborates": true
+  },
+  {
+   "repo": "dotnet/macios",
+   "key": "T1|msbuild",
+   "tcode": "T1",
+   "reasoner_verdict": "SupportedClaim",
+   "instrument": "github_contents",
+   "http_status": 200,
+   "corroborates": true
+  },
+  {
+   "repo": "saleor/macaw-ui",
+   "key": "T1|src/components/Box",
+   "tcode": "T1",
+   "reasoner_verdict": "SupportedClaim",
+   "instrument": "github_contents",
+   "http_status": 200,
+   "corroborates": true
+  },
+  {
+   "repo": "simstudioai/sim",
+   "key": "T1|apps/sim/hooks",
+   "tcode": "T1",
+   "reasoner_verdict": "SupportedClaim",
+   "instrument": "github_contents",
+   "http_status": 200,
+   "corroborates": true
+  },
+  {
+   "repo": "a16z/halmos",
+   "key": "T1|src",
+   "tcode": "T1",
+   "reasoner_verdict": "SupportedClaim",
+   "instrument": "github_contents",
+   "http_status": 200,
+   "corroborates": true
+  },
+  {
+   "repo": "javascript-obfuscator/javascript-obfuscator",
+   "key": "T1|test/functional-tests/options/Options.spec.ts",
+   "tcode": "T1",
+   "reasoner_verdict": "SupportedClaim",
+   "instrument": "github_contents",
+   "http_status": 200,
+   "corroborates": true
+  },
+  {
+   "repo": "rabbitmq/rabbitmqadmin-ng",
+   "key": "T1|src/arg_helpers.rs",
+   "tcode": "T1",
+   "reasoner_verdict": "SupportedClaim",
+   "instrument": "github_contents",
+   "http_status": 200,
+   "corroborates": true
+  },
+  {
+   "repo": "openai/openai-agents-js",
+   "key": "T1|scripts/embedMeta.ts",
+   "tcode": "T1",
+   "reasoner_verdict": "SupportedClaim",
+   "instrument": "github_contents",
+   "http_status": 200,
+   "corroborates": true
+  },
+  {
+   "repo": "rstackjs/rstack-examples",
+   "key": "T1|rslib",
+   "tcode": "T1",
+   "reasoner_verdict": "SupportedClaim",
+   "instrument": "github_contents",
+   "http_status": 200,
+   "corroborates": true
+  },
+  {
+   "repo": "ada-url/ada",
+   "key": "T1|include/ada",
+   "tcode": "T1",
+   "reasoner_verdict": "SupportedClaim",
+   "instrument": "github_contents",
+   "http_status": 200,
+   "corroborates": true
+  },
+  {
+   "repo": "nats-io/nats.go",
+   "key": "T1|go.mod",
+   "tcode": "T1",
+   "reasoner_verdict": "SupportedClaim",
+   "instrument": "github_contents",
+   "http_status": 200,
+   "corroborates": true
+  },
+  {
+   "repo": "pcingola/SnpEff",
+   "key": "T1|scripts_build/make.sh",
+   "tcode": "T1",
+   "reasoner_verdict": "SupportedClaim",
+   "instrument": "github_contents",
+   "http_status": 200,
+   "corroborates": true
+  },
+  {
+   "repo": "run-llama/LlamaIndexTS",
+   "key": "T1|packages/tools",
+   "tcode": "T1",
+   "reasoner_verdict": "SupportedClaim",
+   "instrument": "github_contents",
+   "http_status": 200,
+   "corroborates": true
+  },
+  {
+   "repo": "Kaptensanders/skolmat",
+   "key": "T1|docs/design/calendar-contract.md",
+   "tcode": "T1",
+   "reasoner_verdict": "SupportedClaim",
+   "instrument": "github_contents",
+   "http_status": 200,
+   "corroborates": true
+  },
+  {
+   "repo": "javascript-obfuscator/javascript-obfuscator",
+   "key": "T1|CONTRIBUTING.md",
+   "tcode": "T1",
+   "reasoner_verdict": "SupportedClaim",
+   "instrument": "github_contents",
+   "http_status": 200,
+   "corroborates": true
+  },
+  {
+   "repo": "felipebarcelospro/igniter-js",
+   "key": "T1|igniter-js/packages/adapter-mcp-server",
+   "tcode": "T1",
+   "reasoner_verdict": "SupportedClaim",
+   "instrument": "github_contents",
+   "http_status": 200,
+   "corroborates": true
+  },
+  {
+   "repo": "getsentry/sentry-docs",
+   "key": "T1|docs",
+   "tcode": "T1",
+   "reasoner_verdict": "SupportedClaim",
+   "instrument": "github_contents",
+   "http_status": 200,
+   "corroborates": true
+  },
+  {
+   "repo": "felipebarcelospro/igniter-js",
+   "key": "T1|igniter-js/apps/www",
+   "tcode": "T1",
+   "reasoner_verdict": "SupportedClaim",
+   "instrument": "github_contents",
+   "http_status": 200,
+   "corroborates": true
+  },
+  {
+   "repo": "saleor/macaw-ui",
+   "key": "T1|adr",
+   "tcode": "T1",
+   "reasoner_verdict": "SupportedClaim",
+   "instrument": "github_contents",
+   "http_status": 200,
+   "corroborates": true
+  },
+  {
+   "repo": "JunDamin/hwpapi",
+   "key": "T1|nbs/02_api/00_core.ipynb",
+   "tcode": "T1",
+   "reasoner_verdict": "SupportedClaim",
+   "instrument": "github_contents",
+   "http_status": 200,
+   "corroborates": true
+  },
+  {
+   "repo": "acepanel/panel",
+   "key": "T1|internal/http",
+   "tcode": "T1",
+   "reasoner_verdict": "SupportedClaim",
+   "instrument": "github_contents",
+   "http_status": 200,
+   "corroborates": true
+  },
+  {
+   "repo": "Vortiago/mcp-outline",
+   "key": "T1|.mcp.json",
+   "tcode": "T1",
+   "reasoner_verdict": "SupportedClaim",
+   "instrument": "github_contents",
+   "http_status": 200,
+   "corroborates": true
+  },
+  {
+   "repo": "apache/skywalking",
+   "key": "T1|skywalking/apm-protocol",
+   "tcode": "T1",
+   "reasoner_verdict": "SupportedClaim",
+   "instrument": "github_contents",
+   "http_status": 200,
+   "corroborates": true
+  },
+  {
+   "repo": "javascript-obfuscator/javascript-obfuscator",
+   "key": "T1|webpack/webpack.node.config.js",
+   "tcode": "T1",
+   "reasoner_verdict": "SupportedClaim",
+   "instrument": "github_contents",
+   "http_status": 200,
+   "corroborates": true
+  },
+  {
+   "repo": "openai/openai-agents-js",
+   "key": "T1|CONTRIBUTING.md",
+   "tcode": "T1",
+   "reasoner_verdict": "SupportedClaim",
+   "instrument": "github_contents",
+   "http_status": 200,
+   "corroborates": true
+  },
+  {
+   "repo": "felipebarcelospro/igniter-js",
+   "key": "T1|igniter-js/apps/starter-bun-rest-api",
+   "tcode": "T1",
+   "reasoner_verdict": "SupportedClaim",
+   "instrument": "github_contents",
+   "http_status": 200,
+   "corroborates": true
+  },
+  {
+   "repo": "simstudioai/sim",
+   "key": "T1|apps/sim",
+   "tcode": "T1",
+   "reasoner_verdict": "SupportedClaim",
+   "instrument": "github_contents",
+   "http_status": 200,
+   "corroborates": true
+  },
+  {
+   "repo": "dermatologist/fhiry",
+   "key": "T1|CONTRIBUTING.md",
+   "tcode": "T1",
+   "reasoner_verdict": "SupportedClaim",
+   "instrument": "github_contents",
+   "http_status": 200,
+   "corroborates": true
+  },
+  {
+   "repo": "VCnoC/Claude-Code-Zen-mcp-Skill-Work",
+   "key": "T1|references/standards/cli_env_g10.md",
+   "tcode": "T1",
+   "reasoner_verdict": "SupportedClaim",
+   "instrument": "github_contents",
+   "http_status": 200,
+   "corroborates": true
+  },
+  {
+   "repo": "apache/skywalking",
+   "key": "T1|skywalking/oap-server/server-core",
+   "tcode": "T1",
+   "reasoner_verdict": "SupportedClaim",
+   "instrument": "github_contents",
+   "http_status": 200,
+   "corroborates": true
+  },
+  {
+   "repo": "bpowers/simlin",
+   "key": "T1|docs/tech-debt.md",
+   "tcode": "T1",
+   "reasoner_verdict": "SupportedClaim",
+   "instrument": "github_contents",
+   "http_status": 200,
+   "corroborates": true
+  },
+  {
+   "repo": "tuist/tuist",
+   "key": "T1|server/data-export.md",
+   "tcode": "T1",
+   "reasoner_verdict": "SupportedClaim",
+   "instrument": "github_contents",
+   "http_status": 200,
+   "corroborates": true
+  },
+  {
+   "repo": "bbc/simorgh",
+   "key": "T1|src/app/components/Paragraph",
+   "tcode": "T1",
+   "reasoner_verdict": "SupportedClaim",
+   "instrument": "github_contents",
+   "http_status": 200,
+   "corroborates": true
+  },
+  {
+   "repo": "snowplow/snowplow-javascript-tracker",
+   "key": "T1|tsconfig.json",
+   "tcode": "T1",
+   "reasoner_verdict": "SupportedClaim",
+   "instrument": "github_contents",
+   "http_status": 200,
+   "corroborates": true
+  }
+ ],
+ "notes": {
+  "T3_T4": "grep hits flag a signature or alias gap; zero hits corroborate. Repos above 5000 tracked files are grepped over config-like and source files only.",
+  "T2": "GitHub commits API counts all commits touching the path (merges included), so it can exceed the first-parent non-merge count.",
+  "T5": "A CI file invoking a script reported undefined flags a possible false contradiction or a broken CI."
+ }
+}

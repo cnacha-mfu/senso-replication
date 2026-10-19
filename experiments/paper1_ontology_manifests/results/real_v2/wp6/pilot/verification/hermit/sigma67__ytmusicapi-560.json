@@ -1,0 +1,164 @@
+{
+ "task": "sigma67__ytmusicapi-560",
+ "consistent": true,
+ "error": null,
+ "items_mtime": 1791527962.445995,
+ "seconds": 3.54,
+ "tbox_sha256": "8266af98a762ae7567a0deb684fdd394c180f7c6875ac55011cd3e6e6b080b43",
+ "n_claims": 17,
+ "claims": {
+  "T1|tests": {
+   "leaves": [
+    "PathFoundExact"
+   ],
+   "verdicts": [
+    "SupportedClaim"
+   ],
+   "chained": []
+  },
+  "T1|ytmusicapi": {
+   "leaves": [
+    "PathFoundExact"
+   ],
+   "verdicts": [
+    "SupportedClaim"
+   ],
+   "chained": []
+  },
+  "T1|ytmusicapi/auth": {
+   "leaves": [
+    "PathFoundExact"
+   ],
+   "verdicts": [
+    "SupportedClaim"
+   ],
+   "chained": []
+  },
+  "T1|ytmusicapi/mixins": {
+   "leaves": [
+    "PathFoundExact"
+   ],
+   "verdicts": [
+    "SupportedClaim"
+   ],
+   "chained": []
+  },
+  "T1|ytmusicapi/parsers": {
+   "leaves": [
+    "PathFoundExact"
+   ],
+   "verdicts": [
+    "SupportedClaim"
+   ],
+   "chained": []
+  },
+  "T1|ytmusicapi/mixins/browsing.py": {
+   "leaves": [
+    "PathFoundExact"
+   ],
+   "verdicts": [
+    "SupportedClaim"
+   ],
+   "chained": []
+  },
+  "T1|ytmusicapi/parsers/search.py": {
+   "leaves": [
+    "PathFoundExact"
+   ],
+   "verdicts": [
+    "SupportedClaim"
+   ],
+   "chained": []
+  },
+  "T1|ytmusicapi/mixins/library.py": {
+   "leaves": [
+    "PathFoundExact"
+   ],
+   "verdicts": [
+    "SupportedClaim"
+   ],
+   "chained": []
+  },
+  "T3|test_framework|pytest": {
+   "leaves": [
+    "ToolSignatureFound"
+   ],
+   "verdicts": [
+    "SupportedClaim"
+   ],
+   "chained": []
+  },
+  "T1|pyproject.toml": {
+   "leaves": [
+    "PathFoundExact"
+   ],
+   "verdicts": [
+    "SupportedClaim"
+   ],
+   "chained": []
+  },
+  "T4|requests|": {
+   "leaves": [
+    "DependencyConfirmed"
+   ],
+   "verdicts": [
+    "SupportedClaim"
+   ],
+   "chained": []
+  },
+  "T6|python|3008000000@2": {
+   "leaves": [
+    "VersionConfirmed"
+   ],
+   "verdicts": [
+    "SupportedClaim"
+   ],
+   "chained": []
+  },
+  "T1|ytmusicapi/core": {
+   "leaves": [
+    "PathNeverExisted"
+   ],
+   "verdicts": [
+    "ContradictedClaim"
+   ],
+   "chained": []
+  },
+  "T1|ytmusicapi/auth/oauth/base.py": {
+   "leaves": [
+    "PathRemoved"
+   ],
+   "verdicts": [
+    "ContradictedClaim"
+   ],
+   "chained": []
+  },
+  "T4|httpx|": {
+   "leaves": [
+    "DependencyUndeclared"
+   ],
+   "verdicts": [
+    "ContradictedClaim"
+   ],
+   "chained": []
+  },
+  "T1|ytmusicapi/auth/core": {
+   "leaves": [
+    "PathNeverExisted"
+   ],
+   "verdicts": [
+    "ContradictedClaim"
+   ],
+   "chained": []
+  },
+  "T1|ytmusicapi/auth/internal.py": {
+   "leaves": [
+    "PathNeverExisted"
+   ],
+   "verdicts": [
+    "ContradictedClaim"
+   ],
+   "chained": []
+  }
+ }
+}

@@ -1,0 +1,349 @@
+{
+ "task_id": "myusuf3__delorean-103",
+ "repo": "myusuf3/delorean",
+ "stage": "initial_development",
+ "rounds": 1,
+ "rejects": {},
+ "flags": [
+  "no_test_command",
+  "length_violation_F_R",
+  "length_violation_F_I"
+ ],
+ "info": {
+  "slots": {
+   "P1": {
+    "replaced": null,
+    "name": "core",
+    "F_R": "delorean/core",
+    "F_I": "docs/core"
+   },
+   "P2": {
+    "replaced": null,
+    "F_R": "delorean/data.py",
+    "F_I": "tests/test_data.py"
+   },
+   "C": {
+    "F_R": "make check",
+    "F_I": "make install"
+   },
+   "D": {
+    "replaced": "humanize",
+    "F_R": "pendulum",
+    "F_I": "boltons"
+   }
+  },
+  "why": {
+   "test_command": [
+    {
+     "root": "tests",
+     "T3": "ContradictedClaim",
+     "T1": "SupportedClaim",
+     "collect_ok": null
+    }
+   ],
+   "kind1": {
+    "p1_idx": null,
+    "gold0": "delorean",
+    "unrelated": null,
+    "base_R": "delorean",
+    "base_I": "docs"
+   },
+   "kind2": {
+    "p2_idx": null,
+    "n_deleted_py": 10,
+    "found": {
+     "F_R": "delorean/data.py",
+     "F_I": "tests/test_data.py"
+    }
+   },
+   "kind3": {
+    "run": "check",
+    "install": "install",
+    "test_ok": false,
+    "install_ok": true
+   },
+   "kind4": {
+    "deps": [
+     [
+      "python-dateutil",
+      true
+     ],
+     [
+      "pytz",
+      true
+     ],
+     [
+      "tzlocal",
+      true
+     ],
+     [
+      "babel",
+      false
+     ],
+     [
+      "humanize",
+      false
+     ]
+    ],
+    "d_idx": 4,
+    "src_R": "python-dateutil",
+    "src_I": "humanize",
+    "n_decls": 42,
+    "n_dist": 20
+   }
+  },
+  "length": {
+   "T": 260,
+   "F_R": 323,
+   "F_I": 286
+  },
+  "fallbacks": {
+   "F_R": [],
+   "F_I": []
+  },
+  "modes": {
+   "F_R": {
+    "1": "add",
+    "2": "add",
+    "3": "add",
+    "4": "replace"
+   },
+   "F_I": {
+    "1": "add",
+    "2": "add",
+    "3": "replace",
+    "4": "replace"
+   }
+  },
+  "length_diff": {
+   "F_R": 63,
+   "F_I": 26
+  },
+  "n_claims_T": 9,
+  "n_false": {
+   "F_R": 4,
+   "F_I": 4
+  },
+  "pointer_in_issue": true,
+  "gold_dirs": [
+   "delorean"
+  ],
+  "gold_files": [
+   ".travis.yml",
+   "delorean/interface.py",
+   "requirements.txt",
+   "setup.py"
+  ]
+ },
+ "tokens": {
+  "F_R": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "delorean/core",
+     "core"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "delorean/data.py",
+     "data.py"
+    ]
+   },
+   {
+    "kind": 3,
+    "type": "regex",
+    "regex": "\\bmake\\b[^|;&\\n]*\\bcheck\\b",
+    "target": "check"
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "pendulum"
+    ]
+   }
+  ],
+  "F_I": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "docs/core",
+     "core"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "tests/test_data.py",
+     "test_data.py"
+    ]
+   },
+   {
+    "kind": 3,
+    "type": "regex",
+    "regex": "\\bmake\\b[^|;&\\n]*\\binstall\\b",
+    "target": "install"
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "boltons"
+    ]
+   }
+  ]
+ },
+ "unresolved_pre_hermit": [],
+ "sha256": {
+  "T": "92a39e97428d511d2828fe7a5510e0ffa50638770c164200d8db1709fac94858",
+  "F_R": "b5992cdab609f990c06c58f7f888dbb5dd0a207b227bd5c048a5b9403b494316",
+  "F_I": "f2feaf420b89252d434957197bfc0deacac752fb5f53a04ea020841a0bc1e4a1"
+ },
+ "chars": {
+  "T": 260,
+  "F_R": 323,
+  "F_I": 286
+ },
+ "claims": {
+  "T": [
+   "T1|delorean",
+   "T1|tests",
+   "T1|delorean/dates.py",
+   "T1|setup.py",
+   "T4|python-dateutil|",
+   "T4|pytz|",
+   "T4|tzlocal|",
+   "T4|babel|",
+   "T4|humanize|"
+  ],
+  "F_R": [
+   "T1|delorean",
+   "T1|tests",
+   "T1|delorean/core",
+   "T1|delorean/dates.py",
+   "T1|delorean/data.py",
+   "T1|setup.py",
+   "T5|make|check",
+   "T4|python-dateutil|",
+   "T4|pytz|",
+   "T4|tzlocal|",
+   "T4|babel|",
+   "T4|pendulum|"
+  ],
+  "F_I": [
+   "T1|delorean",
+   "T1|tests",
+   "T1|docs/core",
+   "T1|delorean/dates.py",
+   "T1|tests/test_data.py",
+   "T5|make|install",
+   "T4|python-dateutil|",
+   "T4|pytz|",
+   "T4|tzlocal|",
+   "T4|babel|",
+   "T4|boltons|"
+  ]
+ },
+ "python_spec": null,
+ "token_audit": [
+  {
+   "cond": "F_R",
+   "kind": 1,
+   "type": "path",
+   "name": "delorean/core",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 2,
+   "type": "path",
+   "name": "delorean/data.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 3,
+   "type": "regex",
+   "name": "make check",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 4,
+   "type": "word",
+   "name": "pendulum",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 1,
+   "type": "path",
+   "name": "docs/core",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 2,
+   "type": "path",
+   "name": "tests/test_data.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 3,
+   "type": "regex",
+   "name": "make install",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 4,
+   "type": "word",
+   "name": "boltons",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  }
+ ],
+ "dist_imports_used": {
+  "python-dateutil": [
+   "dateutil"
+  ],
+  "pytz": [
+   "pytz"
+  ],
+  "tzlocal": [
+   "tzlocal"
+  ],
+  "babel": [
+   "babel"
+  ],
+  "humanize": [
+   "humanize"
+  ],
+  "pendulum": null,
+  "boltons": null
+ }
+}

@@ -1,0 +1,79 @@
+{
+ "unit_id": "zopefoundation__Zope-1183__B__nemotron-3-ultra-550b-a55b__r1",
+ "task_id": "zopefoundation__Zope-1183",
+ "repo": "zopefoundation/Zope",
+ "stage": "servicing",
+ "condition": "B",
+ "model": "nvidia/nemotron-3-ultra-550b-a55b",
+ "run": 1,
+ "order": 14,
+ "env_build_s": 130.3,
+ "started": "2026-10-18T06:12:55.762697+00:00",
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 941,
+  "sha256": "967c8d4babf61aa7593b22f249f0e28603a97e533d3f1a4e95cf757531ec27bf"
+ },
+ "condition_available": true,
+ "venv_reset_s": 3.44,
+ "stray_procs_killed": 0,
+ "retries": 0,
+ "venv_hash_before": "7a2e34f06c83494e",
+ "venv_hash_after": "7a2e34f06c83494e",
+ "venv_mutated": false,
+ "exit_status": "LimitsExceeded",
+ "error": "",
+ "steps": 40,
+ "wall_s": 124.9,
+ "prompt_tokens": 423039,
+ "completion_tokens": 5290,
+ "format_errors": 0,
+ "length_cutoffs": 0,
+ "api_errors": {
+  "429": 32
+ },
+ "n_queries": 43,
+ "keys_used": {
+  "NVIDIA_API_KEY_4": 17,
+  "NVIDIA_API_KEY_5": 19,
+  "NVIDIA_API_KEY": 17,
+  "NVIDIA_API_KEY_2": 19
+ },
+ "temperature": 0.7,
+ "top_p": 0.95,
+ "model_id_returned": "nvidia/nemotron-3-ultra-550b-a55b",
+ "mini_version": "2.4.6",
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 40,
+   "hit_step_limit": 1,
+   "changed_lines": 3,
+   "gold_changed_lines": 28,
+   "Y1": 1,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": -3.222392421336448
+  },
+  "f2p_pass": 1,
+  "f2p_total": 1,
+  "p2p_pass": 88,
+  "p2p_total": 88,
+  "f2p_all_pass": true,
+  "p2p_all_pass": true,
+  "resolved": true,
+  "reason": "resolved",
+  "test_seconds": 2.3
+ },
+ "status": "done",
+ "finished": "2026-10-18T06:15:09.281150+00:00"
+}

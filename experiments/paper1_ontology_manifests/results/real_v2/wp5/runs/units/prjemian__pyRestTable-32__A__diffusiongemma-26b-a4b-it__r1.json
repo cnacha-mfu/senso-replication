@@ -1,0 +1,71 @@
+{
+ "unit_id": "prjemian__pyRestTable-32__A__diffusiongemma-26b-a4b-it__r1",
+ "task_id": "prjemian__pyRestTable-32",
+ "repo": "prjemian/pyRestTable",
+ "stage": "servicing",
+ "condition": "A",
+ "model": "google/diffusiongemma-26b-a4b-it",
+ "run": 1,
+ "order": 189,
+ "env_build_s": 35.6,
+ "real_agent_manifest_at_base": [],
+ "started": "2026-10-07T04:15:36.505383+00:00",
+ "condition_meta": {},
+ "condition_available": true,
+ "retries": 0,
+ "exit_status": "LimitsExceeded",
+ "error": "",
+ "steps": 40,
+ "wall_s": 987.5,
+ "prompt_tokens": 275281,
+ "completion_tokens": 6740,
+ "format_errors": 9,
+ "length_cutoffs": 2,
+ "api_errors": {
+  "timeout": 2
+ },
+ "n_queries": 42,
+ "keys_used": {
+  "NVIDIA_API_KEY_2": 7,
+  "NVIDIA_API_KEY": 15,
+  "NVIDIA_API_KEY_4": 8,
+  "NVIDIA_API_KEY_5": 12
+ },
+ "temperature": 0.7,
+ "top_p": 0.95,
+ "model_id_returned": "google/diffusiongemma-26b-a4b-it",
+ "mini_version": "2.4.6",
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 3,
+   "Y6": 40,
+   "hit_step_limit": 1,
+   "changed_lines": 531,
+   "gold_changed_lines": 20,
+   "Y1": -30,
+   "Y2": 1,
+   "Y3": 0.0,
+   "Y3_gold": 0.0,
+   "Y3_excess": 0.0,
+   "Y3w": 0.875,
+   "Y4": 4.730639955916791
+  },
+  "f2p_pass": 0,
+  "f2p_total": 1,
+  "p2p_pass": 0,
+  "p2p_total": 17,
+  "f2p_all_pass": false,
+  "p2p_all_pass": false,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 1.2
+ },
+ "status": "done",
+ "finished": "2026-10-07T04:32:05.351767+00:00"
+}

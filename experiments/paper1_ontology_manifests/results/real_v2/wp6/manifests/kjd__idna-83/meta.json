@@ -1,0 +1,296 @@
+{
+ "task_id": "kjd__idna-83",
+ "repo": "kjd/idna",
+ "stage": "phase_out",
+ "rounds": 1,
+ "rejects": {},
+ "flags": [
+  "no_test_command",
+  "length_violation_F_R",
+  "length_violation_F_I"
+ ],
+ "info": {
+  "slots": {
+   "P1": {
+    "replaced": null,
+    "name": "internal",
+    "F_R": "idna/internal",
+    "F_I": "tools/internal"
+   },
+   "P2": {
+    "replaced": null,
+    "F_R": "tools/build-idnadata.py",
+    "F_I": "tools/build-uts46data.py"
+   },
+   "C": {
+    "F_R": "make test",
+    "F_I": "make install"
+   },
+   "D": {
+    "replaced": null,
+    "F_R": "boltons",
+    "F_I": "boltons"
+   }
+  },
+  "why": {
+   "test_command": [
+    {
+     "root": "tests",
+     "T3": "ContradictedClaim",
+     "T1": "SupportedClaim",
+     "collect_ok": null
+    }
+   ],
+   "kind1": {
+    "p1_idx": null,
+    "gold0": "idna",
+    "unrelated": null,
+    "base_R": "idna",
+    "base_I": "tools"
+   },
+   "kind2": {
+    "p2_idx": null,
+    "n_deleted_py": 3,
+    "found": {
+     "F_R": "tools/build-idnadata.py",
+     "F_I": "tools/build-uts46data.py"
+    }
+   },
+   "kind3": {
+    "run": "test",
+    "install": "install",
+    "test_ok": false,
+    "install_ok": true
+   },
+   "kind4": {
+    "deps": [],
+    "d_idx": null,
+    "src_R": null,
+    "src_I": null,
+    "n_decls": 0,
+    "n_dist": 12
+   }
+  },
+  "length": {
+   "T": 143,
+   "F_R": 246,
+   "F_I": 215
+  },
+  "fallbacks": {
+   "F_R": [],
+   "F_I": []
+  },
+  "modes": {
+   "F_R": {
+    "1": "add",
+    "2": "add",
+    "3": "add",
+    "4": "add"
+   },
+   "F_I": {
+    "1": "add",
+    "2": "add",
+    "3": "replace",
+    "4": "add"
+   }
+  },
+  "length_diff": {
+   "F_R": 103,
+   "F_I": 72
+  },
+  "n_claims_T": 4,
+  "n_false": {
+   "F_R": 4,
+   "F_I": 4
+  },
+  "pointer_in_issue": true,
+  "gold_dirs": [
+   "idna"
+  ],
+  "gold_files": [
+   "idna/core.py"
+  ]
+ },
+ "tokens": {
+  "F_R": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "idna/internal",
+     "internal"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "tools/build-idnadata.py",
+     "build-idnadata.py"
+    ]
+   },
+   {
+    "kind": 3,
+    "type": "regex",
+    "regex": "\\bmake\\b[^|;&\\n]*\\btest\\b",
+    "target": "test"
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "boltons"
+    ]
+   }
+  ],
+  "F_I": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "tools/internal",
+     "internal"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "tools/build-uts46data.py",
+     "build-uts46data.py"
+    ]
+   },
+   {
+    "kind": 3,
+    "type": "regex",
+    "regex": "\\bmake\\b[^|;&\\n]*\\binstall\\b",
+    "target": "install"
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "boltons"
+    ]
+   }
+  ]
+ },
+ "unresolved_pre_hermit": [],
+ "sha256": {
+  "T": "abef9991d7223126ea290055d5e3e7796c9f4e8ad5fcbd26a2113d15d6f51bce",
+  "F_R": "e0579c59e79628d1a5f15a8c904328901e2e3b8435a7474dc3e54633a26e8463",
+  "F_I": "5a9f6774716992cd373e0f2f50a4f8b588a674baeecc9417672727ed8d917f8c"
+ },
+ "chars": {
+  "T": 143,
+  "F_R": 246,
+  "F_I": 215
+ },
+ "claims": {
+  "T": [
+   "T1|idna",
+   "T1|tests",
+   "T1|idna/uts46data.py",
+   "T1|setup.py"
+  ],
+  "F_R": [
+   "T1|idna",
+   "T1|tests",
+   "T1|idna/internal",
+   "T1|idna/uts46data.py",
+   "T1|tools/build-idnadata.py",
+   "T1|setup.py",
+   "T5|make|test",
+   "T4|boltons|"
+  ],
+  "F_I": [
+   "T1|idna",
+   "T1|tests",
+   "T1|tools/internal",
+   "T1|idna/uts46data.py",
+   "T1|tools/build-uts46data.py",
+   "T5|make|install",
+   "T4|boltons|"
+  ]
+ },
+ "python_spec": null,
+ "token_audit": [
+  {
+   "cond": "F_R",
+   "kind": 1,
+   "type": "path",
+   "name": "idna/internal",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 2,
+   "type": "path",
+   "name": "tools/build-idnadata.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 3,
+   "type": "regex",
+   "name": "make test",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 4,
+   "type": "word",
+   "name": "boltons",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 1,
+   "type": "path",
+   "name": "tools/internal",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 2,
+   "type": "path",
+   "name": "tools/build-uts46data.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 3,
+   "type": "regex",
+   "name": "make install",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 4,
+   "type": "word",
+   "name": "boltons",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  }
+ ],
+ "dist_imports_used": {
+  "boltons": null
+ }
+}

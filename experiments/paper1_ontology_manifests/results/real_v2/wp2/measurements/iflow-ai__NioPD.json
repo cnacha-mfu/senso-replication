@@ -1,0 +1,144 @@
+{
+ "repo": "iflow-ai/NioPD",
+ "slug": "iflow-ai__NioPD",
+ "S": "80e85791f708bb26c92c9cc3f7d1d47d9c6d0f6b",
+ "manifest_path": "AGENTS.md",
+ "input_sha": "28c433a9d73266dab1ca3d6552701e033c2ad0d4b405dd2512e1f61e9740b047",
+ "n_claims": 4,
+ "n_tree_files": 165,
+ "n_dep_manifests_parsed": null,
+ "seconds": 0.0,
+ "claims": [
+  {
+   "key_str": "T1|agents/niopd",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "agents/niopd",
+   "quote": "Your primary role as an agent is to follow the instructions defined in the `commands/niopd/` and `agents/niopd/` directories",
+   "line": 15,
+   "votes": 2,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "attrs": {
+    "path": "agents/niopd",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 0,
+     "pathSuffixMatchCount": 1
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|commands/niopd",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "commands/niopd",
+   "quote": "Your primary role as an agent is to follow the instructions defined in the `commands/niopd/` and `agents/niopd/` directories",
+   "line": 15,
+   "votes": 2,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b"
+   ],
+   "attrs": {
+    "path": "commands/niopd",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 0,
+     "pathSuffixMatchCount": 1
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|niopd-workspace",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "niopd-workspace",
+   "quote": "All data is stored in markdown files within the `niopd-workspace/` directory",
+   "line": 9,
+   "votes": 3,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it",
+    "nvidia/nemotron-3-super-120b-a12b",
+    "openai/gpt-oss-20b"
+   ],
+   "attrs": {
+    "path": "niopd-workspace",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": true,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 0,
+     "pathSuffixMatchCount": 0,
+     "pathIgnoredCount": 0,
+     "pathSubmoduleCount": 0,
+     "pathEverTrackedCount": 2,
+     "daysSincePathLastTracked": 121
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  },
+  {
+   "key_str": "T1|niopd-workspace/initiatives",
+   "tcode": "T1",
+   "types": [
+    "PathExistenceClaim"
+   ],
+   "headline": true,
+   "subject": "niopd-workspace/initiatives",
+   "quote": "All files in the `niopd-workspace/initiatives/` directory.",
+   "line": 61,
+   "votes": 1,
+   "models": [
+    "google/diffusiongemma-26b-a4b-it"
+   ],
+   "attrs": {
+    "path": "niopd-workspace/initiatives",
+    "is_dir": true,
+    "glob": false,
+    "bracket": false
+   },
+   "mode_unanimous": false,
+   "m": {
+    "props": {
+     "pathExactMatchCount": 0,
+     "pathSuffixMatchCount": 0,
+     "pathIgnoredCount": 0,
+     "pathSubmoduleCount": 0,
+     "pathEverTrackedCount": 0
+    },
+    "evidences": [],
+    "meta": {}
+   }
+  }
+ ]
+}

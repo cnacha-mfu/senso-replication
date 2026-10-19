@@ -1,0 +1,40 @@
+{
+ "repo": "noahlh/celestite",
+ "slug": "noahlh__celestite",
+ "input_sha": "cbd93af558d4e41dd778863ec9a555a7fb255d9db9a915f53f506b99c31b4da8",
+ "explanations": [
+  {
+   "key": "T3|package_manager|bun",
+   "verdict": "ContradictedClaim",
+   "leaf": "ToolAbsentCompetitorPresent",
+   "seconds": 5.65,
+   "retried_on_claim_subgraph": false,
+   "error": null,
+   "returncode": 0,
+   "n_justifications": 1,
+   "facts": [
+    {
+     "prop": "toolSignatureHitCount",
+     "value": 0
+    },
+    {
+     "prop": "extractionVotes",
+     "value": 2
+    },
+    {
+     "prop": "competingToolSignatureCount",
+     "value": 1
+    }
+   ],
+   "axioms": [
+    "A_extractionVotes_ge_wp2_consensus_min_votes equivalentTo extractionVotes some integer[>= 2]",
+    "A_competingToolSignatureCount_ge_1 equivalentTo competingToolSignatureCount some integer[>= 1]",
+    "CheckedClaim equivalentTo A_extractionVotes_ge_wp2_consensus_min_votes and ManifestClaim",
+    "A_toolSignatureHitCount_ge_0_le_0 equivalentTo toolSignatureHitCount some integer[>= 0, <= 0]",
+    "ToolAbsentCompetitorPresent subClassOf ContradictedClaim",
+    "ToolAbsentCompetitorPresent equivalentTo A_competingToolSignatureCount_ge_1 and A_toolSignatureHitCount_ge_0_le_0 and CheckedClaim and PackageManagerClaim and ToolUsageClaim"
+   ],
+   "closures": []
+  }
+ ]
+}

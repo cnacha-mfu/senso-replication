@@ -1,0 +1,348 @@
+{
+ "task_id": "ncclient__ncclient-452",
+ "repo": "ncclient/ncclient",
+ "stage": "evolution",
+ "rounds": 1,
+ "rejects": {},
+ "flags": [
+  "length_violation_F_R"
+ ],
+ "info": {
+  "slots": {
+   "test_root": "test",
+   "P1": {
+    "replaced": "ncclient/transport",
+    "name": "core",
+    "F_R": "ncclient/core",
+    "F_I": "ncclient/transport/core"
+   },
+   "P2": {
+    "replaced": "ncclient/devices/default.py",
+    "F_R": "ncclient/ElementTree.py",
+    "F_I": "examples/misc.py"
+   },
+   "C": {
+    "F_R": "make tests",
+    "F_I": "make install"
+   },
+   "D": {
+    "replaced": "paramiko",
+    "F_R": "selectolax",
+    "F_I": "asyncssh"
+   }
+  },
+  "why": {
+   "test_command": [
+    {
+     "root": "test",
+     "T3": "SupportedClaim",
+     "T1": "SupportedClaim",
+     "collect_ok": true
+    }
+   ],
+   "kind1": {
+    "p1_idx": 3,
+    "gold0": "ncclient",
+    "unrelated": "ncclient/transport",
+    "base_R": "ncclient",
+    "base_I": "ncclient/transport"
+   },
+   "kind2": {
+    "p2_idx": 2,
+    "n_deleted_py": 71,
+    "found": {
+     "F_R": "ncclient/ElementTree.py",
+     "F_I": "examples/misc.py"
+    }
+   },
+   "kind3": {
+    "run": "tests",
+    "install": "install",
+    "test_ok": true,
+    "install_ok": true
+   },
+   "kind4": {
+    "deps": [
+     [
+      "lxml",
+      true
+     ],
+     [
+      "six",
+      true
+     ],
+     [
+      "paramiko",
+      false
+     ]
+    ],
+    "d_idx": 2,
+    "src_R": "lxml",
+    "src_I": "paramiko",
+    "n_decls": 12,
+    "n_dist": 23
+   }
+  },
+  "length": {
+   "T": 406,
+   "F_R": 380,
+   "F_I": 388
+  },
+  "fallbacks": {
+   "F_R": [],
+   "F_I": []
+  },
+  "modes": {
+   "F_R": {
+    "1": "replace",
+    "2": "replace",
+    "3": "replace",
+    "4": "replace"
+   },
+   "F_I": {
+    "1": "replace",
+    "2": "replace",
+    "3": "replace",
+    "4": "replace"
+   }
+  },
+  "length_diff": {
+   "F_R": -26,
+   "F_I": -18
+  },
+  "n_claims_T": 15,
+  "n_false": {
+   "F_R": 4,
+   "F_I": 4
+  },
+  "pointer_in_issue": true,
+  "gold_dirs": [
+   "ncclient",
+   "ncclient/devices",
+   "ncclient/operations"
+  ],
+  "gold_files": [
+   "ncclient/devices/default.py",
+   "ncclient/devices/junos.py",
+   "ncclient/operations/rpc.py",
+   "ncclient/xml_.py"
+  ]
+ },
+ "tokens": {
+  "F_R": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "ncclient/core",
+     "core"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "ncclient/ElementTree.py",
+     "ElementTree.py"
+    ]
+   },
+   {
+    "kind": 3,
+    "type": "regex",
+    "regex": "\\bmake\\b[^|;&\\n]*\\btests\\b",
+    "target": "tests"
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "selectolax"
+    ]
+   }
+  ],
+  "F_I": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "ncclient/transport/core",
+     "core"
+    ]
+   },
+   {
+    "kind": 2,
+    "type": "path",
+    "values": [
+     "examples/misc.py",
+     "misc.py"
+    ]
+   },
+   {
+    "kind": 3,
+    "type": "regex",
+    "regex": "\\bmake\\b[^|;&\\n]*\\binstall\\b",
+    "target": "install"
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "asyncssh"
+    ]
+   }
+  ]
+ },
+ "unresolved_pre_hermit": [],
+ "sha256": {
+  "T": "e86f1b004a69b354404600c75d84e28790fa89ee9b2c982993a12acf21a49041",
+  "F_R": "7cd9ab7a3d4b4386d0ea6a134ab844b849f43fac41bd425dce0ace9feb764202",
+  "F_I": "4818f6e49e70a7ca32e1269e4b6eba9533651c46554cb16b3335e2e10b2f99c1"
+ },
+ "chars": {
+  "T": 406,
+  "F_R": 380,
+  "F_I": 388
+ },
+ "claims": {
+  "T": [
+   "T1|ncclient",
+   "T1|ncclient/devices",
+   "T1|ncclient/operations",
+   "T1|ncclient/transport",
+   "T1|test",
+   "T1|ncclient/transport/ssh.py",
+   "T1|ncclient/operations/rpc.py",
+   "T1|ncclient/devices/default.py",
+   "T3|test_framework|pytest",
+   "T1|test",
+   "T1|setup.py",
+   "T4|lxml|",
+   "T4|six|",
+   "T4|paramiko|",
+   "T6|python|2007000000@2"
+  ],
+  "F_R": [
+   "T1|ncclient",
+   "T1|ncclient/devices",
+   "T1|ncclient/operations",
+   "T1|ncclient/core",
+   "T1|test",
+   "T1|ncclient/transport/ssh.py",
+   "T1|ncclient/operations/rpc.py",
+   "T1|ncclient/ElementTree.py",
+   "T5|make|tests",
+   "T1|setup.py",
+   "T4|lxml|",
+   "T4|six|",
+   "T4|selectolax|",
+   "T6|python|2007000000@2"
+  ],
+  "F_I": [
+   "T1|ncclient",
+   "T1|ncclient/devices",
+   "T1|ncclient/operations",
+   "T1|ncclient/transport/core",
+   "T1|test",
+   "T1|ncclient/transport/ssh.py",
+   "T1|ncclient/operations/rpc.py",
+   "T1|examples/misc.py",
+   "T3|test_framework|pytest",
+   "T1|test",
+   "T5|make|install",
+   "T4|lxml|",
+   "T4|six|",
+   "T4|asyncssh|",
+   "T6|python|2007000000@2"
+  ]
+ },
+ "python_spec": ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*",
+ "token_audit": [
+  {
+   "cond": "F_R",
+   "kind": 1,
+   "type": "path",
+   "name": "ncclient/core",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 2,
+   "type": "path",
+   "name": "ncclient/ElementTree.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 3,
+   "type": "regex",
+   "name": "make tests",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 4,
+   "type": "word",
+   "name": "selectolax",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 1,
+   "type": "path",
+   "name": "ncclient/transport/core",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 2,
+   "type": "path",
+   "name": "examples/misc.py",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 3,
+   "type": "regex",
+   "name": "make install",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 4,
+   "type": "word",
+   "name": "asyncssh",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  }
+ ],
+ "dist_imports_used": {
+  "lxml": [
+   "lxml"
+  ],
+  "six": [
+   "six"
+  ],
+  "paramiko": [
+   "paramiko"
+  ],
+  "selectolax": null,
+  "asyncssh": null
+ }
+}

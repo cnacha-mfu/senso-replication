@@ -1,0 +1,111 @@
+{
+ "unit_id": "PyCQA__isort-2283__C__claude-sonnet__r1",
+ "task_id": "PyCQA__isort-2283",
+ "repo": "PyCQA/isort",
+ "stage": "servicing",
+ "condition": "C",
+ "model": "claude-code/sonnet",
+ "run": 1,
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 6434,
+  "sha256": "019404ff6a4bfc2865241df58d85d9211ebaa7623244a2176e78f4199e282543"
+ },
+ "started": "2026-10-18T03:24:03.808524+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 11,
+ "tool_calls": 10,
+ "usage": {
+  "input_tokens": 20,
+  "cache_creation_input_tokens": 9754,
+  "cache_read_input_tokens": 236124,
+  "output_tokens": 4240,
+  "output_tokens_details": {
+   "thinking_tokens": 1754
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 9754,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 20,
+   "outputTokens": 4240,
+   "cacheReadInputTokens": 236124,
+   "cacheCreationInputTokens": 9754,
+   "webSearchRequests": 0,
+   "costUSD": 0.1050684,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 1754,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.1050684,
+ "result_text": "`--sort-reexports` now handles a multi-line `__all__` that follows a reformatted import block. On a file like your example, `isort --sort-reexports` rewrites the imports to `from mylib import module1, module2` and sorts `__all__` into `('func1', 'func2')`. It no longer overwrites the start of the file. I changed only `isort/core.py`.\n\nI ran `tests/unit/test_isort.py` and `tests/unit/test_regressions.py`, which pass (285 passed, 1 skipped). I didn't run the full test suite. I also didn't test the issue's second case, a comment at the top of the file.\n\n**Cause:** isort worked out where `__all__` starts in the output by counting input characters. Once the import block is reformatted (the multi-line `from mylib import (...)` collapsing to one line), that count no longer matches the output, so the sorted `__all__` was written at the wrong offset.\n\n**Fix:** isort now records the real output position at the point where the `__all__` line is written. That position is used when the sorted `__all__` is written back.\n\nThe output is `__all__ = ('func1', 'func2')` rather than your original multi-line parenthesised layout. That is how the sorter formats it.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792309800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0.03,
+    "resetsAt": 1792309800
+   },
+   "seven_day": {
+    "utilization": 0.12,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 62.2,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 11,
+   "hit_step_limit": 0,
+   "changed_lines": 12,
+   "gold_changed_lines": 22,
+   "Y1": 4,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": -0.8744691179161412
+  },
+  "f2p_pass": 2,
+  "f2p_total": 3,
+  "p2p_pass": 213,
+  "p2p_total": 213,
+  "f2p_all_pass": false,
+  "p2p_all_pass": true,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 4.5
+ },
+ "status": "done",
+ "finished": "2026-10-18T03:25:11.267998+00:00"
+}

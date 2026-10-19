@@ -1,0 +1,73 @@
+{
+ "unit_id": "learningequality__ricecooker-394__D__diffusiongemma-26b-a4b-it__r2",
+ "task_id": "learningequality__ricecooker-394",
+ "repo": "learningequality/ricecooker",
+ "stage": "evolution",
+ "condition": "D",
+ "model": "google/diffusiongemma-26b-a4b-it",
+ "run": 2,
+ "order": 452,
+ "env_build_s": 95.5,
+ "real_agent_manifest_at_base": [],
+ "started": "2026-10-07T09:06:35.611312+00:00",
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 3968,
+  "sha256": "c50ff6acc24980968886fb50ecc8dd9530de873fe979b6c60736e37d96b2f910"
+ },
+ "condition_available": true,
+ "retries": 0,
+ "exit_status": "LimitsExceeded",
+ "error": "",
+ "steps": 40,
+ "wall_s": 318.1,
+ "prompt_tokens": 506225,
+ "completion_tokens": 9647,
+ "format_errors": 3,
+ "length_cutoffs": 1,
+ "api_errors": {},
+ "n_queries": 40,
+ "keys_used": {
+  "NVIDIA_API_KEY_5": 9,
+  "NVIDIA_API_KEY_2": 12,
+  "NVIDIA_API_KEY_4": 10,
+  "NVIDIA_API_KEY": 9
+ },
+ "temperature": 0.7,
+ "top_p": 0.95,
+ "model_id_returned": "google/diffusiongemma-26b-a4b-it",
+ "mini_version": "2.4.6",
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 2,
+   "Y6": 40,
+   "hit_step_limit": 1,
+   "changed_lines": 45,
+   "gold_changed_lines": 45,
+   "Y1": 3,
+   "Y2": 1,
+   "Y3": 0.0,
+   "Y3_gold": 0.0,
+   "Y3_excess": 0.0,
+   "Y3w": 0.8333333333333334,
+   "Y4": 0.0
+  },
+  "f2p_pass": 0,
+  "f2p_total": 9,
+  "p2p_pass": 2,
+  "p2p_total": 2,
+  "f2p_all_pass": false,
+  "p2p_all_pass": true,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 12.3
+ },
+ "status": "done",
+ "finished": "2026-10-07T09:12:06.339296+00:00"
+}

@@ -1,0 +1,245 @@
+{
+ "task_id": "PyCQA__flake8-bugbear-12",
+ "repo": "PyCQA/flake8-bugbear",
+ "stage": "initial_development",
+ "rounds": 1,
+ "rejects": {},
+ "flags": [
+  "no_gold_dir",
+  "no_test_command",
+  "kind2_dropped",
+  "length_violation_F_R",
+  "length_violation_F_I"
+ ],
+ "info": {
+  "slots": {
+   "P1": {
+    "replaced": null,
+    "name": "core",
+    "F_R": "core",
+    "F_I": "core"
+   },
+   "C": {
+    "F_R": "make check",
+    "F_I": "make install"
+   },
+   "D": {
+    "replaced": null,
+    "F_R": "pydantic",
+    "F_I": "boltons"
+   }
+  },
+  "why": {
+   "test_command": [
+    {
+     "root": "tests",
+     "T3": "ContradictedClaim",
+     "T1": "SupportedClaim",
+     "collect_ok": null
+    }
+   ],
+   "kind1": {
+    "p1_idx": null,
+    "gold0": null,
+    "unrelated": null,
+    "base_R": "",
+    "base_I": ""
+   },
+   "kind2": {
+    "p2_idx": null,
+    "n_deleted_py": 0
+   },
+   "kind3": {
+    "run": "check",
+    "install": "install",
+    "test_ok": false,
+    "install_ok": true
+   },
+   "kind4": {
+    "deps": [],
+    "d_idx": null,
+    "src_R": "attrs",
+    "src_I": "flake8",
+    "n_decls": 2,
+    "n_dist": 17
+   }
+  },
+  "length": {
+   "T": 99,
+   "F_R": 167,
+   "F_I": 132
+  },
+  "fallbacks": {
+   "F_R": [],
+   "F_I": []
+  },
+  "modes": {
+   "F_R": {
+    "1": "add",
+    "3": "add",
+    "4": "add"
+   },
+   "F_I": {
+    "1": "add",
+    "3": "replace",
+    "4": "add"
+   }
+  },
+  "length_diff": {
+   "F_R": 68,
+   "F_I": 33
+  },
+  "n_claims_T": 2,
+  "n_false": {
+   "F_R": 3,
+   "F_I": 3
+  },
+  "pointer_in_issue": false,
+  "gold_dirs": [],
+  "gold_files": [
+   "README.rst",
+   "bugbear.py"
+  ]
+ },
+ "tokens": {
+  "F_R": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "core",
+     "core"
+    ]
+   },
+   {
+    "kind": 3,
+    "type": "regex",
+    "regex": "\\bmake\\b[^|;&\\n]*\\bcheck\\b",
+    "target": "check"
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "pydantic"
+    ]
+   }
+  ],
+  "F_I": [
+   {
+    "kind": 1,
+    "type": "path",
+    "values": [
+     "core",
+     "core"
+    ]
+   },
+   {
+    "kind": 3,
+    "type": "regex",
+    "regex": "\\bmake\\b[^|;&\\n]*\\binstall\\b",
+    "target": "install"
+   },
+   {
+    "kind": 4,
+    "type": "word",
+    "values": [
+     "boltons"
+    ]
+   }
+  ]
+ },
+ "unresolved_pre_hermit": [],
+ "sha256": {
+  "T": "b7b7484da856a60930f3e362854e471eacf6d8686a06f416c870c84490af8522",
+  "F_R": "493e0a7bd47548f93e5c2b27681d807c3670efd2e5a8878b488c8ef5e06a170d",
+  "F_I": "56d0feed66205182574e9f90ad0a509a0adf3a8506018c19014ef8672c64695d"
+ },
+ "chars": {
+  "T": 99,
+  "F_R": 167,
+  "F_I": 132
+ },
+ "claims": {
+  "T": [
+   "T1|tests",
+   "T1|setup.py"
+  ],
+  "F_R": [
+   "T1|tests",
+   "T1|core",
+   "T1|setup.py",
+   "T5|make|check",
+   "T4|pydantic|"
+  ],
+  "F_I": [
+   "T1|tests",
+   "T1|core",
+   "T5|make|install",
+   "T4|boltons|"
+  ]
+ },
+ "python_spec": null,
+ "token_audit": [
+  {
+   "cond": "F_R",
+   "kind": 1,
+   "type": "path",
+   "name": "core",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 3,
+   "type": "regex",
+   "name": "make check",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "ok": true
+  },
+  {
+   "cond": "F_R",
+   "kind": 4,
+   "type": "word",
+   "name": "pydantic",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 1,
+   "type": "path",
+   "name": "core",
+   "final_component_absent_from_tree": true,
+   "absent_from_issue": true,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 3,
+   "type": "regex",
+   "name": "make install",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "ok": true
+  },
+  {
+   "cond": "F_I",
+   "kind": 4,
+   "type": "word",
+   "name": "boltons",
+   "absent_from_issue": true,
+   "repo_hits": 0,
+   "import_fails": true,
+   "ok": true
+  }
+ ],
+ "dist_imports_used": {
+  "pydantic": null,
+  "boltons": null
+ }
+}

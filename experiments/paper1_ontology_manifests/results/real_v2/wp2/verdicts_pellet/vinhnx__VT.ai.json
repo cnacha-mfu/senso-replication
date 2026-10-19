@@ -1,0 +1,18 @@
+{
+ "repo": "vinhnx/VT.ai",
+ "slug": "vinhnx__VT.ai",
+ "engine": "pellet",
+ "tbox_sha256": "8266af98a762ae7567a0deb684fdd394c180f7c6875ac55011cd3e6e6b080b43",
+ "abox_sha256": "b8989228d1bd9f93098caaa4e91ffe220430f6c3b2eed6d24df510773da21fce",
+ "consistent": false,
+ "error": "java error: Java error message is:\nClassifying 152 elements\n\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\rException in thread \"main\" org.mindswap.pellet.exceptions.InternalReasonerException: Adding type to a pruned node \"anon(16)\" not(restrictedDatatype(http://www.w3.org/2001/XMLSchema#integer,[facet(http://www.w3.org/2001/XMLSchema#minInclusive,literal(2,(),http://www.w3.org/2001/XMLSchema#integer))]))\n\tat org.mindswap.pellet.Node.addType(Node.java:448)\n\tat org.mindswap.pellet.Literal.addType(Literal.java:257)\n\tat org.mindswap.pellet.tableau.completion.CompletionStrategy.addType(CompletionStrategy.java:438)\n\tat org.mindswap.pellet.tableau.completion.rule.AllValuesRule.applyAllValues(AllValuesRule.java:175)\n\tat org.mindswap.pellet.tableau.completion.rule.SimpleAllValuesRule.applyAllValues(SimpleAllValuesRule.java:68)\n\tat org.mindswap.pellet.tableau.completion.CompletionStrategy.addType(CompletionStrategy.java:469)\n\tat org.mindswap.pellet.tableau.completion.rule.UnfoldingRule.applyUnfoldingRule(UnfoldingRule.java:98)\n\tat org.mindswap.pellet.tableau.completion.rule.UnfoldingRule.apply(UnfoldingRule.java:61)\n\tat org.mindswap.pellet.tableau.completion.rule.AbstractTableauRule.apply(AbstractTableauRule.java:64)\n\tat org.mindswap.pellet.tableau.completion.SROIQStrategy.complete(SROIQStrategy.java:157)\n\tat org.mindswap.pellet.ABox.isConsistent(ABox.java:1423)\n\tat org.mindswap.pellet.ABox.isSatisfiable(ABox.java:595)\n\tat org.mindswap.pellet.taxonomy.CDOptimizedTaxonomyBuilder.checkSatisfiability(CDOptimizedTaxonomyBuilder.java:763)\n\tat org.mindswap.pellet.taxonomy.CDOptimizedTaxonomyBuilder.classify(CDOptimizedTaxonomyBuilder.java:814)\n\tat org.mindswap.pellet.taxonomy.CDOptimizedTaxonomyBuilder.classify(CDOptimizedTaxonomyBuilder.java:265)\n\tat org.mindswap.pellet.taxonomy.CDOptimizedTaxonomyBuilder.classify(CDOptimizedTaxonomyBuilder.java:218)\n\tat org.mindswap.pellet.KnowledgeBase.classify(KnowledgeBase.java:2095)\n\tat pellet.PelletRealize.run(PelletRealize.java:77)\n\tat pellet.Pellet.run(Pellet.java:105)\n\tat pellet.Pellet.main(Pellet.java:59)\n",
+ "timings": {
+  "tbox_load_s": 0.04684143798658624,
+  "abox_load_s": 0.007647438964340836,
+  "reason_s": 4.659963199985214,
+  "total_s": 4.714832843979821
+ },
+ "n_claims": 12,
+ "seconds": 4.72,
+ "abox_triples": 178
+}

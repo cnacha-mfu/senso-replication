@@ -1,0 +1,111 @@
+{
+ "unit_id": "VirtusLab__git-machete-248__C__claude-sonnet__r2",
+ "task_id": "VirtusLab__git-machete-248",
+ "repo": "VirtusLab/git-machete",
+ "stage": "phase_out",
+ "condition": "C",
+ "model": "claude-code/sonnet",
+ "run": 2,
+ "condition_meta": {
+  "source": "generator_file",
+  "chars": 4006,
+  "sha256": "fcf33ec0df4917de8702d8c2006d14f92e02f236f59eee6eb8f5d7078dc08ed3"
+ },
+ "started": "2026-10-18T03:41:36.600099+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 8,
+ "tool_calls": 7,
+ "usage": {
+  "input_tokens": 10,
+  "cache_creation_input_tokens": 4417,
+  "cache_read_input_tokens": 93826,
+  "output_tokens": 1589,
+  "output_tokens_details": {
+   "thinking_tokens": 171
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 4417,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 10,
+   "outputTokens": 1589,
+   "cacheReadInputTokens": 93826,
+   "cacheCreationInputTokens": 4417,
+   "webSearchRequests": 0,
+   "costUSD": 0.0429606,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 171,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.0429606,
+ "result_text": "`git machete github checkout-pr` now says \"PR #N is closed in repository `org/repo`\" when the PR exists but is closed. It keeps the \"is not found\" message when the PR doesn't exist. I haven't run it or the tests.\n\nThe open-PR list doesn't contain closed PRs. So when the number isn't in that list, the code now asks GitHub for that PR directly (`GET /repos/{org}/{repo}/pulls/{number}`) and checks whether its state is `closed`. The new helper is `is_pull_request_closed` in `git_machete/github.py`, called from `checkout_github_prs` in `git_machete/client.py`.\n\nThe helper treats any `MacheteException` from that lookup as \"not closed\", so the \"not found\" message is shown in those cases. The same exception also covers the 401, 403 and 404 responses, so a token or permission problem on the lookup would also end up as \"not found\" instead of showing the auth error.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792309800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0.04,
+    "resetsAt": 1792309800
+   },
+   "seven_day": {
+    "utilization": 0.12,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 21.5,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 2,
+   "Y6": 8,
+   "hit_step_limit": 0,
+   "changed_lines": 13,
+   "gold_changed_lines": 51,
+   "Y1": 3,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": -1.9719856238304034
+  },
+  "f2p_pass": 0,
+  "f2p_total": 2,
+  "p2p_pass": 34,
+  "p2p_total": 34,
+  "f2p_all_pass": false,
+  "p2p_all_pass": true,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 49.5
+ },
+ "status": "done",
+ "finished": "2026-10-18T03:42:48.755762+00:00"
+}

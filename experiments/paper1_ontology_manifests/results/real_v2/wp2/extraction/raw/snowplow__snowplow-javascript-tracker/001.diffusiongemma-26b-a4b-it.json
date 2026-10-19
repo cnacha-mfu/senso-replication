@@ -1,0 +1,23 @@
+{
+ "repo": "snowplow/snowplow-javascript-tracker",
+ "chunk": 1,
+ "n_chunks": 3,
+ "model": "google/diffusiongemma-26b-a4b-it",
+ "prompt_sha256": "d0e02ff613417050168d859f2af6230c3712c6758bb5d9c40d60ff55e5ae87ca",
+ "user_sha256": "235715adebfed09f82178fa6d00d4f38ebb3ab2b08a0d3420ef7b22e8f07fec5",
+ "text": "{\"claims\": [{\"type\": \"path_exists\", \"subject\": \"schemata.ts\"}, {\"type\": \"path_exists\", \"subject\": \"types.ts\"}, {\"type\": \"dependency\", \"subject\": \"@snowplow/browser-plugin-ad-tracking\"}, {\"type\": \"tool_used\", \"subject\": \"jest\", \"tool_category\": \"test_framework\"}, {\"type\": \"path_exists\", \"subject\": \"plugins/browser-plugin-[feature]/\", \"path_components\": [\"plugins/browser-plugin-[feature]/\", \"src\", \"index.ts\", \"api.ts\", \"types.ts\", \"schemata.ts\", \"contexts.ts\", \"test\", \"[feature].test.ts\", \"package.json\", \"tsconfig.json\", \"rollup.config.js\", \"README.md\"]}, {\"type\": \"path_exists\", \"subject\": \"package/test/\", \"path_components\": [\"package\", \"test\", \"*.test.ts\", \"integration/\", \"functional/\", \"__snapshots__\"]}, {\"type\": \"dependency\", \"subject\": \"lodash/fp\", \"ecosystem_hint\": \"npm\"}]}",
+ "parse_ok": true,
+ "parse_error": null,
+ "parse_retries": 1,
+ "latency_s": 14.257044395024423,
+ "usage": {
+  "prompt": 9482,
+  "completion": 692
+ },
+ "n_api_calls": 2,
+ "finish_reason": "stop",
+ "error": null,
+ "discarded_attempt_texts": [
+  "```thought_thought\npath_exists, subject: \"schemata.ts\"\npath_exists, subject: \"types.ts\"\ndependency, subject: \"@snowplow/browser-plugin-ad-tracking\"\npath_exists, subject: \"plugins/browser-plugin-[feature]/\"\npath_exists, subject: \"plugins/browser-plugin-[feature]/src/\"\npath_exists, subject: \"plugins/browser-plugin-[feature]/index.ts\"\npath_exists, subject: \"plugins/browser-plugin-[feature]/api.ts\"\npath_exists, subject: \"plugins/browser-plugin-[feature]/types.ts\"\npath_exists, subject: \"plugins/browser-plugin-[feature]/schemata.ts\"\npath_exists, subject: \"plugins/browser-plugin-[feature]/contexts.ts\"\npath_exists, subject: \"plugins/browser-plugin-[feature]/test/\"\npath_exists, subject: \"plugins/browser-plugin-[feature]/test/[feature].test.ts\"\npath_exists, subject: \"plugins/browser-plugin-[feature]/package.json\"\npath_exists, subject: \"plugins/browser-plugin-[feature]/tsconfig.json\"\npath_exists, subject: \"plugins/browser-plugin-[feature]/rollup.config.js\"\npath_exists, subject: \"plugins/browser-plugin-[feature]/README.md\"\npath_exists, subject: \"package/\"\npath_exists, subject: \"package/test/\"\npath_exists, subject: \"package/test/*.test.ts\"\npath_exists, subject: \"package/test/integration/\"\npath_exists, subject: \"package/test/functional/\"\npath_exists, subject: \"package/test/__snapshots__/\"\ntool_used, subject: \"jest\", tool_category: \"test_framework\"\ndependency, subject: \"lodash/fp\", ecosystem_hint: \"npm\"\ntool_used, subject: \"rollup\", tool_category: \"build_tool\"\n```"
+ ]
+}

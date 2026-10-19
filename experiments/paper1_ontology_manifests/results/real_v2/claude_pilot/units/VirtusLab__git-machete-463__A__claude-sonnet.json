@@ -1,0 +1,89 @@
+{
+ "unit_id": "VirtusLab__git-machete-463__A__claude-sonnet",
+ "task_id": "VirtusLab__git-machete-463",
+ "repo": "VirtusLab/git-machete",
+ "stage": "phase_out",
+ "condition": "A",
+ "model": "claude-code/sonnet",
+ "run": 1,
+ "condition_meta": {},
+ "started": "2026-10-18T01:00:45.839271+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 4,
+ "tool_calls": 3,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 8258,
+  "cache_read_input_tokens": 63944,
+  "output_tokens": 1327,
+  "output_tokens_details": {
+   "thinking_tokens": 169
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 8258,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 8,
+   "outputTokens": 1327,
+   "cacheReadInputTokens": 63944,
+   "cacheCreationInputTokens": 8258,
+   "webSearchRequests": 0,
+   "costUSD": 0.0527124,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 169,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.0527124,
+ "result_text": "`checkout_github_prs()` now warns and returns normally when no PRs match, instead of raising an exception. I haven't run the tests or the command.\n\nAll the changes are in `git_machete/client.py`:\n- **`__get_valid_pull_requests`:** these cases now call `warn(...)` instead of raising `MacheteException`:\n  - no PRs are open in the repository (`--all`);\n  - the current user has no open PRs (`--mine`);\n  - the given user has no open PRs (`--by`);\n  - an explicitly requested PR number isn't found. This now only warns, even when it's the only PR number given. Before, a single missing number was an error.\n  - none of the given PR numbers are found.\n- **`checkout_github_prs`:** if no valid PRs come back, it returns right away. It skips the fetch, branch checkout, and annotation sync.\n\nIf any existing tests expect these errors, they'll fail now. I left the tests alone, as you asked.",
+ "wall_s": 20.4,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 4,
+   "hit_step_limit": 0,
+   "changed_lines": 18,
+   "gold_changed_lines": 15,
+   "Y1": 0,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": 0.2630344058337938
+  },
+  "f2p_pass": 0,
+  "f2p_total": 1,
+  "p2p_pass": 45,
+  "p2p_total": 45,
+  "f2p_all_pass": false,
+  "p2p_all_pass": true,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 64.3
+ },
+ "status": "done",
+ "finished": "2026-10-18T01:02:11.572617+00:00"
+}

@@ -1,0 +1,35 @@
+{
+ "repo": "rpmuller/pyquante2",
+ "slug": "rpmuller__pyquante2",
+ "input_sha": "7bbf2a56db35fbca590b420d29837e561d1a6adb05f7f6fce06eb7cc3d8d257c",
+ "explanations": [
+  {
+   "key": "T1|pyquante2/src/pyquante2/graphics",
+   "verdict": "SupportedClaim",
+   "leaf": "PathFoundExact",
+   "seconds": 4.03,
+   "retried_on_claim_subgraph": false,
+   "error": null,
+   "returncode": 0,
+   "n_justifications": 1,
+   "facts": [
+    {
+     "prop": "extractionVotes",
+     "value": 2
+    },
+    {
+     "prop": "pathExactMatchCount",
+     "value": 5
+    }
+   ],
+   "axioms": [
+    "PathFoundExact equivalentTo A_pathExactMatchCount_ge_1 and CheckedClaim and PathExistenceClaim",
+    "A_extractionVotes_ge_wp2_consensus_min_votes equivalentTo extractionVotes some integer[>= 2]",
+    "A_pathExactMatchCount_ge_1 equivalentTo pathExactMatchCount some integer[>= 1]",
+    "CheckedClaim equivalentTo A_extractionVotes_ge_wp2_consensus_min_votes and ManifestClaim",
+    "PathFoundExact subClassOf SupportedClaim"
+   ],
+   "closures": []
+  }
+ ]
+}

@@ -1,0 +1,71 @@
+{
+ "unit_id": "uilibs__uiprotect-346__A__diffusiongemma-26b-a4b-it__r2",
+ "task_id": "uilibs__uiprotect-346",
+ "repo": "uilibs/uiprotect",
+ "stage": "phase_out",
+ "condition": "A",
+ "model": "google/diffusiongemma-26b-a4b-it",
+ "run": 2,
+ "order": 935,
+ "env_build_s": 69.6,
+ "real_agent_manifest_at_base": [],
+ "started": "2026-10-07T14:34:43.605413+00:00",
+ "condition_meta": {},
+ "condition_available": true,
+ "retries": 0,
+ "exit_status": "Submitted",
+ "error": "",
+ "steps": 22,
+ "wall_s": 482.1,
+ "prompt_tokens": 170980,
+ "completion_tokens": 2311,
+ "format_errors": 1,
+ "length_cutoffs": 0,
+ "api_errors": {
+  "timeout": 1
+ },
+ "n_queries": 23,
+ "keys_used": {
+  "NVIDIA_API_KEY_5": 7,
+  "NVIDIA_API_KEY_2": 8,
+  "NVIDIA_API_KEY_4": 6,
+  "NVIDIA_API_KEY": 2
+ },
+ "temperature": 0.7,
+ "top_p": 0.95,
+ "model_id_returned": "google/diffusiongemma-26b-a4b-it",
+ "mini_version": "2.4.6",
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 3,
+   "Y6": 22,
+   "hit_step_limit": 0,
+   "changed_lines": 10,
+   "gold_changed_lines": 21,
+   "Y1": 1,
+   "Y2": 0,
+   "Y3": 0.0,
+   "Y3_gold": 0.0,
+   "Y3_excess": 0.0,
+   "Y3w": 0.5333333333333334,
+   "Y4": -1.070389327891398
+  },
+  "f2p_pass": 0,
+  "f2p_total": 2,
+  "p2p_pass": 57,
+  "p2p_total": 57,
+  "f2p_all_pass": false,
+  "p2p_all_pass": true,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 13.7
+ },
+ "status": "done",
+ "finished": "2026-10-07T14:43:00.186549+00:00"
+}

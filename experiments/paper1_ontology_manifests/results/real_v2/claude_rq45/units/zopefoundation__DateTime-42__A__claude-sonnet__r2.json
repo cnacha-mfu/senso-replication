@@ -1,0 +1,107 @@
+{
+ "unit_id": "zopefoundation__DateTime-42__A__claude-sonnet__r2",
+ "task_id": "zopefoundation__DateTime-42",
+ "repo": "zopefoundation/DateTime",
+ "stage": "servicing",
+ "condition": "A",
+ "model": "claude-code/sonnet",
+ "run": 2,
+ "condition_meta": {},
+ "started": "2026-10-18T09:37:44.930238+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 7,
+ "tool_calls": 6,
+ "usage": {
+  "input_tokens": 12,
+  "cache_creation_input_tokens": 12822,
+  "cache_read_input_tokens": 111551,
+  "output_tokens": 1416,
+  "output_tokens_details": {
+   "thinking_tokens": 291
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 12822,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 12,
+   "outputTokens": 1416,
+   "cacheReadInputTokens": 111551,
+   "cacheCreationInputTokens": 12822,
+   "webSearchRequests": 0,
+   "costUSD": 0.0766271,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 291,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.0766271,
+ "result_text": "I made two small changes in `src/DateTime/DateTime.py`. I haven't confirmed they fix the post-2038 failures, because I didn't run the tests with the clock set to 2038. The existing tests pass today (48 passed).\n\n- **Constructor, `DateTime.py:867`:** microseconds were computed as `floor(t * 1e6)`. Once `t` is large, float error can leave that product just below the true integer, so the floor drops a microsecond. It now rounds instead.\n- **`__add__`, `DateTime.py:1763`:** the exact integer microsecond total (`tmicros`) was computed and then discarded. The result was rebuilt from a float. It now passes `tmicros` through, so repeated additions and subtractions no longer drift.\n\nI think these account for the three failing tests, `testAddPrecision`, `testConstructor4` and `testSubtraction`. That is a diagnosis from reading the code. I didn't reproduce the failures.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792327800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0.09,
+    "resetsAt": 1792327800
+   },
+   "seven_day": {
+    "utilization": 0.14,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 26.4,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 7,
+   "hit_step_limit": 0,
+   "changed_lines": 4,
+   "gold_changed_lines": 9,
+   "Y1": 0,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": -1.1699250014423124
+  },
+  "f2p_pass": 1,
+  "f2p_total": 1,
+  "p2p_pass": 48,
+  "p2p_total": 48,
+  "f2p_all_pass": true,
+  "p2p_all_pass": true,
+  "resolved": true,
+  "reason": "resolved",
+  "test_seconds": 0.8
+ },
+ "status": "done",
+ "finished": "2026-10-18T09:38:13.216657+00:00"
+}

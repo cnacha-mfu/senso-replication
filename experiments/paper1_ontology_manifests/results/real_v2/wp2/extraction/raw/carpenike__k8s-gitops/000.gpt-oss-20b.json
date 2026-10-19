@@ -1,0 +1,21 @@
+{
+ "repo": "carpenike/k8s-gitops",
+ "chunk": 0,
+ "n_chunks": 1,
+ "model": "openai/gpt-oss-20b",
+ "prompt_sha256": "d0e02ff613417050168d859f2af6230c3712c6758bb5d9c40d60ff55e5ae87ca",
+ "user_sha256": "77288c5483ca9415464e57157898420543e882e6445e2939116b8934c83270f9",
+ "text": "{\"claims\":[{\"type\":\"path_exists\",\"quote\":\"- `kubernetes/cluster-0/` - Primary production cluster\",\"line\":11,\"subject\":\"kubernetes/cluster-0/\",\"mode\":\"asserts_existing\"},{\"type\":\"path_exists\",\"quote\":\"- `kubernetes/nas-1/` - Backup NAS cluster\",\"line\":12,\"subject\":\"kubernetes/nas-1/\",\"mode\":\"asserts_existing\"},{\"type\":\"path_exists\",\"quote\":\"- `.taskfiles/` - Task automation definitions\",\"line\":13,\"subject\":\".taskfiles/\",\"mode\":\"asserts_existing\"},{\"type\":\"path_exists\",\"quote\":\"- `docs/` - Comprehensive documentation and guides\",\"line\":14,\"subject\":\"docs/\",\"mode\":\"asserts_existing\"},{\"type\":\"path_exists\",\"quote\":\"apps/<namespace>/<app-name>/\\n├── app/                    # Application resources\\n│   ├── helmrelease.yaml   # Main Helm chart definition\\n│   ├── kustomization.yaml # Resource aggregation\\n│   ├── externalsecret.yaml # Secrets from 1Password\\n│   └── pvc.yaml           # Additional storage\\n└── ks.yaml                # Flux Kustomization\",\"line\":20,\"subject\":\"apps/<namespace>/<app-name>/\",\"path_components\":[\"apps\",\"<namespace>\",\"<app-name>\",\"app\",\"helmrelease.yaml\",\"kustomization.yaml\",\"externalsecret.yaml\",\"pvc.yaml\",\"ks.yaml\"],\"mode\":\"asserts_existing\"}]}",
+ "parse_ok": true,
+ "parse_error": null,
+ "parse_retries": 0,
+ "latency_s": 23.673388082010206,
+ "usage": {
+  "prompt": 3058,
+  "completion": 528
+ },
+ "n_api_calls": 1,
+ "finish_reason": "stop",
+ "error": null,
+ "discarded_attempt_texts": []
+}

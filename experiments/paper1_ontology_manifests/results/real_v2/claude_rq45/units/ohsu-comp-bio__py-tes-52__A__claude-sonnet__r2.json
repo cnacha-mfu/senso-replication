@@ -1,0 +1,107 @@
+{
+ "unit_id": "ohsu-comp-bio__py-tes-52__A__claude-sonnet__r2",
+ "task_id": "ohsu-comp-bio__py-tes-52",
+ "repo": "ohsu-comp-bio/py-tes",
+ "stage": "initial_development",
+ "condition": "A",
+ "model": "claude-code/sonnet",
+ "run": 2,
+ "condition_meta": {},
+ "started": "2026-10-18T07:53:36.631807+00:00",
+ "stray_procs_killed": 0,
+ "exit_status": "Submitted",
+ "steps": 4,
+ "tool_calls": 3,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 9649,
+  "cache_read_input_tokens": 65012,
+  "output_tokens": 1151,
+  "output_tokens_details": {
+   "thinking_tokens": 178
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 9649,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "global",
+  "iterations": [],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "model_usage": {
+  "claude-sonnet-5-5": {
+   "inputTokens": 8,
+   "outputTokens": 1151,
+   "cacheReadInputTokens": 65012,
+   "cacheCreationInputTokens": 9649,
+   "webSearchRequests": 0,
+   "costUSD": 0.05662319999999999,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 178,
+   "canonicalModel": "claude-sonnet-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "cost_estimate_usd": 0.05662319999999999,
+ "result_text": "The issue asks for new unit tests, but you told me to change source only. So I didn't add any tests. What I did instead was fix three bugs in `tes/models.py` that I spotted in the lines the coverage report lists as untested. I didn't check `tes/client.py` or `tes/utils.py`, and the existing 17 tests pass. I haven't run coverage or exercised the new behaviour, since the fixes sit in code the current tests don't reach.\n\n- **Env and tag validation:** `Task.is_valid` looped over `e.env` and `self.tags` as if they were lists of pairs, but they are dicts, so it would have raised an error on any task that set them. It now iterates with `.items()`.\n- **Key/value type check:** the check tested `k` twice and never looked at `v`. It now rejects a key or a value that isn't a string.\n- **List validator error message:** `_ListOfValidator` built its message from plain strings, so the placeholders were never filled in. It also referred to `values[0]`, which doesn't exist. It now uses f-strings and `value[0]`.\n\nNothing is committed.",
+ "rate_limit": {
+  "status": "allowed",
+  "resetsAt": 1792327800,
+  "rateLimitType": "five_hour",
+  "overageStatus": "rejected",
+  "overageDisabledReason": "org_level_disabled",
+  "isUsingOverage": false,
+  "unifiedWindows": {
+   "five_hour": {
+    "utilization": 0,
+    "resetsAt": 1792327800
+   },
+   "seven_day": {
+    "utilization": 0.13,
+    "resetsAt": 1792537200
+   }
+  }
+ },
+ "wall_s": 25.1,
+ "uptake": {
+  "repo_context": false,
+  "label_term": false,
+  "d1_name": false
+ },
+ "eval": {
+  "outcomes": {
+   "Y0": 1,
+   "Y5": 1,
+   "Y6": 4,
+   "hit_step_limit": 0,
+   "changed_lines": 12,
+   "gold_changed_lines": 64,
+   "Y1": 0,
+   "Y2": 0,
+   "Y3": null,
+   "Y3_gold": null,
+   "Y3_excess": null,
+   "Y3w": null,
+   "Y4": -2.415037499278844
+  },
+  "f2p_pass": 0,
+  "f2p_total": 4,
+  "p2p_pass": 18,
+  "p2p_total": 18,
+  "f2p_all_pass": false,
+  "p2p_all_pass": true,
+  "resolved": false,
+  "reason": "f2p_failing",
+  "test_seconds": 2.9
+ },
+ "status": "done",
+ "finished": "2026-10-18T07:54:05.561831+00:00"
+}
