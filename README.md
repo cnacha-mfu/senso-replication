@@ -1,6 +1,6 @@
 # SENSO Paper 1 replication package
 
-This package supports the paper **"SENSO: Checking Coding-Agent Manifests Against Repository History"**
+This package supports the paper **"SENSO: Ontology-Based Checking of Coding-Agent Manifests Against Repository History"**
 by Nacha Chondamrongkul and Jing Sun (submitted to the Journal of Software: Evolution and Process).
 
 It holds the code, the configuration, the pre-registered plans and every result file that the paper's
